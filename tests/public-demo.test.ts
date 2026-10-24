@@ -3,6 +3,11 @@ import assert from 'node:assert/strict';
 import {createMockAccount} from '../src/preview-mock/account';
 import {PUBLIC_DEMO_LOGIN} from '../src/preview-mock/public-demo-login';
 import {createMemoryPersistence,createMemorySessionToken} from '../src/preview-mock/storage';
+import {createMemoryBusinessPersistence} from '../src/preview-mock/business-persistence';
+import {installPreviewMock} from '../src/preview-mock';
+import {createApiClient} from '../src/data/http/api-client';
+import {createPublicDemoSetup} from '../src/preview-mock/public-demo-setup';
+import {createCatalogCreateAdapter} from '../src/data/http/catalog-create-adapter';
 test('public Demo confirms the approved synthetic actor and persists across account reload',async()=>{
  const persistence=createMemoryPersistence(),sessionToken=createMemorySessionToken();
  const options={persistence,sessionToken,namespace:'public-demo-test',credentialProfile:PUBLIC_DEMO_LOGIN};
@@ -17,4 +22,17 @@ test('public Demo confirms the approved synthetic actor and persists across acco
  assert.ok(!JSON.stringify(await persistence.read()).includes('HoaNamDemo@2026'));
  const other=createMockAccount({...options,persistence:createMemoryPersistence(),sessionToken:createMemorySessionToken()});
  assert.equal(await other.recoveryActor(),null);
+});
+test('public onboarding requires login, creates valid Demo setup and does not reset an existing scenario',async()=>{
+ const client=createApiClient({baseURL:'https://public-demo.test/api/v1'});
+ const runtime=installPreviewMock(client,{origin:'https://public-demo.test',approvedPreviewCommands:true,credentialProfile:PUBLIC_DEMO_LOGIN,persistence:createMemoryPersistence(),sessionToken:createMemorySessionToken(),businessPersistence:createMemoryBusinessPersistence(),recoveryPersistence:createMemoryBusinessPersistence(),notificationPersistence:createMemoryPersistence()});
+ const setup=createPublicDemoSetup(client);
+ await assert.rejects(setup.initialize());
+ await client.post('auth/login',{username:'demo',password:'HoaNamDemo@2026'});await client.post('auth/confirm',{});
+ assert.equal(await setup.ready(),false);
+ const first=await setup.initialize();assert.ok(first.scenario);assert.equal(first.profiles.length,2);assert.equal(first.token.generation,1);assert.equal(first.receipts.length,0);
+ const catalog=await createCatalogCreateAdapter('sku',client,{available:true}).readSnapshot();assert.equal(catalog.products.length,2);assert.equal(catalog.skus.length,2);assert.equal(catalog.recipients.length,1);
+ assert.equal(await setup.ready(),true);const before=await runtime.business.readSnapshot();
+ const second=await createPublicDemoSetup(client).initialize();assert.equal(second.scenario?.id,first.scenario?.id);assert.deepEqual(await runtime.business.readSnapshot(),before);
+ runtime.uninstall();
 });

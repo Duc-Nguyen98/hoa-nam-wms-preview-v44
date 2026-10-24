@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './app/App';
+import { PublicDemoGate } from './preview-mock/PublicDemoGate';
 import { AccountCenterProvider } from './account/AccountCenterContext';
 import { recordUnresolvedAction } from './app/review-diagnostics';
 import { ShellActionProvider } from './shared/ShellActionContext';
@@ -28,4 +29,4 @@ function reportShellAction({ key, screenKey }: ShellAction) {
 }
 
 initializeBrowserPreview();
-createRoot(document.getElementById('root')!).render(<StrictMode><ShellPreferencesRuntime><GlobalToastProvider><ShellActionProvider onAction={reportShellAction}><AccountCenterProvider><App /></AccountCenterProvider></ShellActionProvider></GlobalToastProvider></ShellPreferencesRuntime></StrictMode>);
+createRoot(document.getElementById('root')!).render(<StrictMode><ShellPreferencesRuntime><GlobalToastProvider><ShellActionProvider onAction={reportShellAction}><AccountCenterProvider><PublicDemoGate><App /></PublicDemoGate></AccountCenterProvider></ShellActionProvider></GlobalToastProvider></ShellPreferencesRuntime></StrictMode>);

@@ -1,5 +1,5 @@
 {
-  "version": "HN-B17-PUBLIC-CANDIDATE-20261024.1",
+  "version": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
   "sourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
   "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
   "mode": "MOCK",
@@ -2261,7 +2261,9 @@
     "Use public synthetic Demo credential instead of LAN credential profile",
     "Enable browser-only Demo explicitly",
     "Show public Demo instructions on login",
-    "Add public build provenance"
+    "Add public build provenance",
+    "First-visit Demo setup uses existing validated commands and preserves existing scenarios",
+    "Public release page and Scanner links"
   ],
   "excluded": [
     "LAN credential profile",
