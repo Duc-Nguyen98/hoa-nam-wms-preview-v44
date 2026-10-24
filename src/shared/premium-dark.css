@@ -1,0 +1,82 @@
+/* Recovery compatibility: use the existing dark palette for Premium aliases.
+   Light-mode dimensions, typography, controls and toast placement stay owned
+   by their established stylesheets. */
+/* Premium aliases now inherit the canonical dark semantic roles. */
+html[data-hn-theme='dark'] .hn-shell:has([data-visual-variant='premium']) .hn-main { background: var(--hn-page); }
+html[data-hn-theme='dark'] .hn-catalogue-nav-count { background: #203448; color: #aebdca; }
+html[data-hn-theme='dark'] .hn-catalogue-nav-item:hover,
+html[data-hn-theme='dark'] .hn-catalogue-nav-item[aria-current='page'] > .hn-catalogue-nav-count { background: #24425e; color: #8ed8ed; }
+html[data-hn-theme='dark'] .hn-catalogue-nav-item[aria-current='page'] { color: #8ed8ed; border-color: #8ed8ed; }
+html[data-hn-theme='dark'] .hn-table tbody tr[data-selected='true'] > td { background: #24425e; }
+html[data-hn-theme='dark'] .hn-table tbody tr[data-selected='true']:hover > td { background: #2c4b67; }
+html[data-hn-theme='dark'] .hn-shell .hn-table[data-row-action-appearance='quiet'] td .hn-button--ghost:hover:not(:disabled) { color: #e7eef5; background: #24425e; border-color: #49647a; }
+html[data-hn-theme='dark'] .df-form-blocked-note { background: #203448; border-color: #49647a; color: #aebdca; }
+html[data-hn-theme='dark'] .hn-page-state--error { background: #392d34; border-color: #8c5b63; }
+html[data-hn-theme='dark'] .hn-page-state--warning { background: #373323; border-color: #82703c; }
+html[data-hn-theme='dark'] .hn-shell .hn-count { background: #203448; color: #aebdca; border-color: #49647a; }
+html[data-hn-theme='dark'] .hn-table[data-sticky-header='true'] > thead > tr > th { background: #203448; color: #b9c8d5; }
+html[data-hn-theme='dark'] .hn-table tbody tr:hover > td { background: #203448; }
+html[data-hn-theme='dark'] .s28-screen { --s28-surface-soft: #203448; --s28-ink-soft: #aebdca; --s28-border-strong: #49647a; }
+html[data-hn-theme='dark'] .s28-heading h1,
+html[data-hn-theme='dark'] .s28-card .hn-card__header h2 { color: #e7eef5; }
+html[data-hn-theme='dark'] .s28-breadcrumb strong { color: #8ed8ed; }
+html[data-hn-theme='dark'] .s28-context-status { color: #91dfb1; }
+html[data-hn-theme='dark'] .s28-address-empty { background: #203448; border-color: #49647a; }
+html[data-hn-theme='dark'] .s28-address-empty__icon { background: #24425e; color: #8ed8ed; }
+html[data-hn-theme='dark'] .s29-result-count,
+html[data-hn-theme='dark'] .s29-permissions-missing { color: #b9c8d5; }
+html[data-hn-theme='dark'] :is(.s27-screen, .s29-screen) .hn-page-heading h1 { color: #e7eef5; }
+html[data-hn-theme='dark'] .s08-instruction { background: #203448; color: #8ed8ed; }
+html[data-hn-theme='dark'] .s08-avatar { background: #24425e; color: #8ed8ed; }
+html[data-hn-theme='dark'] :is(.s08-warehouse > svg, .s07-access > svg) { color: #8ed8ed; }
+html[data-hn-theme='dark'] :is(.s18-bar, .s19-bar, .s25-bar, .s25-legend i) { background: #8ed8ed; }
+html[data-hn-theme='dark'] .s25-chart-share strong { color: #8ed8ed; }
+html[data-hn-theme='dark'] .s25-ring-value { stroke: #8ed8ed; }
+html[data-hn-theme='dark'] .s25-legend > div + div i { background: var(--hn-muted); }
+html[data-hn-theme='dark'] .s25-progress progress { accent-color: #8ed8ed; }
+html[data-hn-theme='dark'] .s25-progress progress::-webkit-progress-value { background: #8ed8ed; }
+html[data-hn-theme='dark'] .s25-progress progress::-moz-progress-bar { background: #8ed8ed; }
+html[data-hn-theme='dark'] .hn-shell .df-screen[data-visual-variant='premium'] .df-form :is(input, select, textarea) { background: #172638; color: #e7eef5; border-color: #49647a; }
+html[data-hn-theme='dark'] .hn-shell .df-screen[data-visual-variant='premium'] .df-form :is(input, textarea)::placeholder { color: #aebdca; opacity: 1; }
+html[data-hn-theme='dark'] .hn-shell .df-screen[data-visual-variant='premium'] :is(.df-form-blocked-note, .df-form-notice, .df-readonly-note, .df-detail-fields > div) { background: #203448; color: #aebdca; border-color: #49647a; }
+html[data-hn-theme='dark'] .hn-shell .df-screen[data-visual-variant='premium'] .df-dirty-state { color: #f4d08b; }
+html[data-hn-theme='dark'] .hn-shell .df-screen[data-visual-variant='premium'] .df-form .hn-form-field__error { color: #ffb0b5; }
+html[data-hn-theme='dark'] .hn-shell .hn-form-field__required { color: #ffb0b5; }
+html[data-hn-theme='dark'] .hn-shell .df-screen[data-visual-variant='premium'] .df-form .hn-form-field--error :is(input, select, textarea)[aria-invalid='true'] { border-color: #ffb0b5; }
+html[data-hn-theme='dark'] .hn-shell .df-screen[data-visual-variant='premium'] .hn-list-heading .hn-count { background: #203448; color: #aebdca; border-color: #49647a; }
+
+/* Chart geometry and its legend share the dark semantic palette. Attribute
+   selectors retain each source series even when zero-value segments disappear.
+   The legend overrides are important only because React sets inline colours. */
+html[data-hn-theme='dark'] {
+  --hn-chart-primary: #8ed8ed;
+  --hn-chart-success: #91dfb1;
+  --hn-chart-warning: #f4d08b;
+  --hn-chart-danger: #ffb0b5;
+  --hn-chart-neutral: #b7c7d4;
+}
+html[data-hn-theme='dark'] .ov-document-chart__bar--inbound { fill: var(--hn-chart-primary); }
+html[data-hn-theme='dark'] .ov-document-chart__dot--inbound { background: var(--hn-chart-primary); }
+html[data-hn-theme='dark'] .s18-donut circle[stroke='#0A3765' i] { stroke: var(--hn-chart-primary); }
+html[data-hn-theme='dark'] .s18-legend > li:first-child i { background: var(--hn-chart-primary) !important; }
+html[data-hn-theme='dark'] .s19-donut circle[stroke='#286645' i] { stroke: var(--hn-chart-success); }
+html[data-hn-theme='dark'] .s19-donut circle[stroke='#526174' i] { stroke: var(--hn-chart-neutral); }
+html[data-hn-theme='dark'] .s19-donut circle[stroke='#835811' i] { stroke: var(--hn-chart-warning); }
+html[data-hn-theme='dark'] .s19-legend > li:nth-child(1) i { background: var(--hn-chart-success) !important; }
+html[data-hn-theme='dark'] .s19-legend > li:nth-child(2) i { background: var(--hn-chart-neutral) !important; }
+html[data-hn-theme='dark'] .s19-legend > li:nth-child(3) i { background: var(--hn-chart-warning) !important; }
+html[data-hn-theme='dark'] .s21-stock-line { stroke: var(--hn-chart-primary); }
+html[data-hn-theme='dark'] :is(.s21-stock-point i, .s21-chart-legend .s21-closing) { background: var(--hn-chart-primary); }
+html[data-hn-theme='dark'] .s24-stacked-chart rect[fill='#34785a' i] { fill: var(--hn-chart-success); }
+html[data-hn-theme='dark'] .s24-stacked-chart rect[fill='#bf7d16' i] { fill: var(--hn-chart-warning); }
+html[data-hn-theme='dark'] .s24-stacked-chart rect[fill='#ba3a35' i] { fill: var(--hn-chart-danger); }
+html[data-hn-theme='dark'] :is(.s24-ring, .s26-ring) circle[stroke='#34785a' i] { stroke: var(--hn-chart-success); }
+html[data-hn-theme='dark'] :is(.s24-ring, .s26-ring) circle[stroke='#bf7d16' i] { stroke: var(--hn-chart-warning); }
+html[data-hn-theme='dark'] :is(.s24-ring, .s26-ring) circle[stroke='#ba3a35' i] { stroke: var(--hn-chart-danger); }
+html[data-hn-theme='dark'] .s24-dot--match { background: var(--hn-chart-success); }
+html[data-hn-theme='dark'] .s24-dot--different { background: var(--hn-chart-warning); }
+html[data-hn-theme='dark'] .s24-dot--error { background: var(--hn-chart-danger); }
+html[data-hn-theme='dark'] :is(.s24-quality-legend, .s26-quality-legend) > li:nth-child(1) i { background: var(--hn-chart-success) !important; }
+html[data-hn-theme='dark'] :is(.s24-quality-legend, .s26-quality-legend) > li:nth-child(2) i { background: var(--hn-chart-warning) !important; }
+html[data-hn-theme='dark'] :is(.s24-quality-legend, .s26-quality-legend) > li:nth-child(3) i { background: var(--hn-chart-danger) !important; }
+html[data-hn-theme='dark'] .s26-bar-chart rect[fill='#004E74' i] { fill: var(--hn-chart-primary); }

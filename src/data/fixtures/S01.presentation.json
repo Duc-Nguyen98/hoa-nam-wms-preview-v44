@@ -1,0 +1,12 @@
+{
+  "source": "S01 DEFAULT_2026-10-08 five approved reference PNGs; Page sequence 3",
+  "provenance": "OBSERVED_PREVIEW",
+  "profile": { "displayName": "Đức Quang", "initials": "DQ" },
+  "profile_note": "Visible identity label from reference only; no role or permission asserted",
+  "quickAccess": [
+    { "key": "stock-report", "label": "Báo cáo tồn kho", "icon": "chart", "route": null },
+    { "key": "document-history", "label": "Lịch sử nhập – xuất", "icon": "history", "route": null },
+    { "key": "traceability", "label": "Truy vết hàng hóa", "icon": "search", "route": null },
+    { "key": "packaging-label", "label": "Nhãn đóng gói", "icon": "tag", "route": null }
+  ]
+}

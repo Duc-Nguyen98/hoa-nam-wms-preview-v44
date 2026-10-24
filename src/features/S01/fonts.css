@@ -1,0 +1,35 @@
+/* Unmodified USWDS Public Sans static faces; pinned source, license and hashes:
+   public/assets/fonts/s01/FONT_PROVENANCE.json. The unique CSS alias prevents
+   this S01-only adoption from resolving the shared/S02 'Public Sans' fallback.
+   No local() lookup: the verified files supply each declared weight. */
+@font-face {
+  font-family: 'HN S01 Public Sans';
+  src: url('/assets/fonts/s01/PublicSans-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HN S01 Public Sans';
+  src: url('/assets/fonts/s01/PublicSans-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HN S01 Public Sans';
+  src: url('/assets/fonts/s01/PublicSans-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HN S01 Public Sans';
+  src: url('/assets/fonts/s01/PublicSans-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

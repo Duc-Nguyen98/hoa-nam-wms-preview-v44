@@ -1,0 +1,25 @@
+{
+  "screen": "S21",
+  "source": "S21_BAO_CAO_TON_KHO_DOI_SOAT.md + Page P08/W06 sequence 4",
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "statusOptions": ["Cần kiểm tra", "Khớp"],
+  "summary": {
+    "opening": 512, "inbound": 1284, "outboundProducts": 1186, "outboundWarranty": 82,
+    "reversals": 18, "closing": 546, "actual": 542, "difference": -4, "needsReview": 3,
+    "daily": [
+      {"date":"2026-09-04","opening":512,"inbound":180,"outboundProducts":160,"outboundWarranty":10,"reversals":2,"closing":524},
+      {"date":"2026-09-05","opening":524,"inbound":200,"outboundProducts":170,"outboundWarranty":12,"reversals":0,"closing":542},
+      {"date":"2026-09-06","opening":542,"inbound":160,"outboundProducts":180,"outboundWarranty":12,"reversals":3,"closing":513},
+      {"date":"2026-09-07","opening":513,"inbound":210,"outboundProducts":190,"outboundWarranty":14,"reversals":4,"closing":523},
+      {"date":"2026-09-08","opening":523,"inbound":190,"outboundProducts":150,"outboundWarranty":10,"reversals":0,"closing":553},
+      {"date":"2026-09-09","opening":553,"inbound":170,"outboundProducts":160,"outboundWarranty":10,"reversals":5,"closing":558},
+      {"date":"2026-09-10","opening":558,"inbound":174,"outboundProducts":176,"outboundWarranty":14,"reversals":4,"closing":546}
+    ]
+  },
+  "rows": [
+    {"renderKey":"S21-SP-0001","sku":"SP-0001","name":"Cáp mạng CAT6","opening":120,"inbound":200,"outboundProducts":180,"outboundWarranty":10,"reversals":5,"closing":135,"actual":134,"difference":-1,"status":"Cần kiểm tra"},
+    {"renderKey":"S21-SP-0002","sku":"SP-0002","name":"Bộ nguồn 12V","opening":80,"inbound":320,"outboundProducts":290,"outboundWarranty":20,"reversals":8,"closing":98,"actual":96,"difference":-2,"status":"Cần kiểm tra"},
+    {"renderKey":"S21-SP-0003","sku":"SP-0003","name":"Máy quét mã vạch","opening":200,"inbound":500,"outboundProducts":420,"outboundWarranty":40,"reversals":5,"closing":245,"actual":245,"difference":0,"status":"Khớp"},
+    {"renderKey":"S21-SP-0004","sku":"SP-0004","name":"Tem nhãn nhiệt 50×30","opening":112,"inbound":264,"outboundProducts":296,"outboundWarranty":12,"reversals":0,"closing":68,"actual":67,"difference":-1,"status":"Cần kiểm tra"}
+  ]
+}

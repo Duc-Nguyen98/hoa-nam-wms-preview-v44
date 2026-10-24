@@ -1,0 +1,35 @@
+/* Opt-in report state presentation. Foundation tokens and shell stay unchanged. */
+.hn-report-empty {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  color: var(--hn-muted);
+  text-align: center;
+  line-height: 1.5;
+}
+.hn-report-empty strong { color: var(--hn-text); font-size: 14px; }
+.hn-report-empty span { max-width: 52ch; font-size: 13px; }
+.hn-report-scope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0;
+  color: var(--hn-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.hn-report-scope > span:first-child { font-weight: 600; }
+.hn-report-read-state {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  min-height: 128px;
+  padding: 24px;
+  border: 1px solid var(--hn-border);
+  border-radius: var(--hn-card-radius);
+  background: var(--hn-surface);
+  color: var(--hn-muted);
+  text-align: center;
+}
+.hn-report-read-state p { margin: 0; line-height: 1.5; }

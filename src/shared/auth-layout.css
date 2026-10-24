@@ -1,0 +1,319 @@
+/*
+ * HN_AUTH_LAYOUT_v1.0.0
+ * Additive AuthLayout composition for S08. Scope is intentionally isolated
+ * from the CMS shell and from S07's feature-owned `.s07-*` rules.
+ */
+.hn-auth-layout {
+  --hn-auth-identity-width: 48%;
+  min-width: 0;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--hn-page);
+  color: var(--hn-text);
+  font-family: var(--hn-font-family);
+}
+
+.hn-auth-layout__identity {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  overflow: hidden;
+  padding: 28px 32px 48px;
+  background: var(--hn-brand);
+  color: #fff;
+}
+
+.hn-auth-layout__hero-art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--hn-brand);
+  background-image: linear-gradient(180deg, #0a3765dc, #0a3765c4 46%, #0a3765ef), var(--hn-auth-hero-image, none);
+  background-position: center;
+  background-size: cover;
+}
+
+.hn-auth-layout__brand,
+.hn-auth-layout__hero-copy {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 520px;
+  margin-inline: auto;
+  overflow-wrap: anywhere;
+}
+
+.hn-auth-layout__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hn-auth-layout__brand > svg {
+  flex: 0 0 auto;
+  color: #fff;
+}
+
+.hn-auth-layout__brand strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: .015em;
+}
+
+.hn-auth-layout__brand p {
+  margin: 4px 0 0;
+  color: #ffffffe0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.hn-auth-layout__hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding-top: 20px;
+}
+
+.hn-auth-layout__hero-copy h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+  font-weight: 700;
+}
+
+.hn-auth-layout__hero-copy h1 span + span::before {
+  content: " ";
+}
+
+.hn-auth-layout__hero-copy p {
+  max-width: 48ch;
+  margin: 0;
+  color: #ffffffe0;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.hn-auth-layout__pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0;
+  border-top: 1px solid #ffffff26;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: .025em;
+}
+
+.hn-auth-layout__pillars li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hn-auth-layout__pillars li::before {
+  width: 3px;
+  height: 3px;
+  flex: 0 0 3px;
+  border-radius: 50%;
+  background: #ffffff80;
+  content: "";
+}
+
+.hn-auth-layout__content {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 28px;
+  padding: 0 32px 28px;
+}
+
+.hn-auth-layout__form-region {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-width: 0;
+  justify-content: center;
+  margin-top: -24px;
+}
+
+.hn-auth-layout__form-region > * {
+  min-width: 0;
+}
+
+.hn-auth-layout__footer {
+  flex: 0 0 auto;
+  color: var(--hn-muted);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.hn-auth-layout__footer strong {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .025em;
+}
+
+.hn-auth-layout__footer p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Preserve the sourced S08 hero/card boundary in portrait. Min-height can
+   grow with text; there is no fixed-height crop or hidden form scrollport. */
+.hn-auth-layout--split-landscape .hn-auth-layout__identity {
+  display: flex;
+  flex-direction: column;
+  min-height: min(45svh, 576px);
+  padding: clamp(32px, 5vw, 64px) 32px 48px;
+}
+
+.hn-auth-layout--split-landscape .hn-auth-layout__brand,
+.hn-auth-layout--split-landscape .hn-auth-layout__hero-copy {
+  max-width: 640px;
+}
+
+.hn-auth-layout--split-landscape .hn-auth-layout__hero-copy {
+  margin-block: auto;
+  padding-block: 36px;
+  gap: 24px;
+}
+
+.hn-auth-layout--split-landscape .hn-auth-layout__hero-copy h1 {
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.12;
+  margin-bottom: 16px;
+}
+
+.hn-auth-layout--split-landscape .hn-auth-layout__hero-copy h1 span {
+  display: block;
+}
+
+.hn-auth-layout--split-landscape .hn-auth-layout__hero-copy h1 span + span::before {
+  content: none;
+}
+
+.hn-auth-layout--split-landscape .hn-auth-layout__hero-copy p {
+  font-size: 18px;
+}
+
+/* Landscape split is an opt-in S08 composition. The threshold is an
+   implementation fit choice, not phone detection or an Owner-locked token. */
+@media (min-width: 1024px) and (orientation: landscape) {
+  .hn-auth-layout--split-landscape {
+    display: grid;
+    grid-template-columns: var(--hn-auth-identity-width) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__identity {
+    min-height: 100dvh;
+    padding: clamp(40px, 4vw, 72px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__brand,
+  .hn-auth-layout--split-landscape .hn-auth-layout__hero-copy {
+    max-width: none;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__brand {
+    gap: 14px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__brand > svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__brand strong {
+    font-size: 22px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__brand p {
+    font-size: 14px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__hero-copy {
+    margin-block: auto;
+    padding: 64px 0 100px;
+    gap: 32px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__hero-copy h1 {
+    margin-bottom: 20px;
+    font-size: clamp(44px, 3.2vw, 56px);
+    line-height: 1.12;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__hero-copy h1 span {
+    display: block;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__hero-copy h1 span + span::before {
+    content: none;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__hero-copy p {
+    max-width: 40ch;
+    font-size: 18px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__pillars {
+    padding-top: 20px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__content {
+    min-height: 100dvh;
+    padding: 48px clamp(32px, 4vw, 80px) 32px;
+    gap: 32px;
+  }
+
+  .hn-auth-layout--split-landscape .hn-auth-layout__form-region {
+    align-items: center;
+    flex: 1;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1366px) and (orientation: landscape) {
+  .hn-auth-layout--split-landscape {
+    --hn-auth-identity-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hn-auth-layout__identity,
+  .hn-auth-layout--split-landscape .hn-auth-layout__identity {
+    padding: 24px 24px 44px;
+  }
+
+  .hn-auth-layout__hero-copy h1 {
+    font-size: 28px;
+  }
+
+  .hn-auth-layout__hero-copy p,
+  .hn-auth-layout--split-landscape .hn-auth-layout__hero-copy p {
+    font-size: 14px;
+  }
+
+  .hn-auth-layout__pillars {
+    column-gap: 12px;
+  }
+
+  .hn-auth-layout__content {
+    padding: 0 16px 24px;
+  }
+}
+

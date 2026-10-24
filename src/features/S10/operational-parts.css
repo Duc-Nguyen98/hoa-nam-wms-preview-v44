@@ -1,0 +1,8 @@
+.s10-cohort, .s10-operational__links { display: flex; flex-wrap: wrap; gap: 12px; }
+.s10-operational { padding-block: 20px; }
+.s10-operational__heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.s10-operational__heading h2 { margin: 0; font-size: 18px; line-height: 26px; font-weight: 600; }
+.s10-operational__detail { display: grid; gap: 16px; min-width: 0; }
+.s10-operational__detail :is(h3, h4, p) { margin: 0; }
+.s10-operational__detail :is(td, small) { overflow-wrap: anywhere; }
+.s10-operational__detail section { display: grid; gap: 12px; }

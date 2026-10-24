@@ -1,0 +1,5 @@
+.df-help { display: inline-flex; flex: 0 0 44px; width: 44px; height: 44px; vertical-align: middle; }
+.df-screen .hn-button.df-help__trigger { width: 44px; min-width: 44px; height: 44px; min-height: 44px; padding: 0; border-color: transparent; border-radius: 8px; color: var(--hn-control, #004e74); background: transparent; }
+.df-screen .df-help__trigger:hover, .df-screen .df-help__trigger[data-help-open="true"] { background: #edf5fa; border-color: #d8e8f1; }
+.df-screen .df-help__trigger:focus-visible { outline: 2px solid var(--hn-control, #004e74); outline-offset: 2px; }
+.df-help-tooltip { position: fixed; z-index: 45; box-sizing: border-box; width: max-content; max-width: min(280px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); overflow: auto; padding: 10px 12px; border: 1px solid #cbdde9; border-radius: 8px; background: #edf5fa; color: #123f5b; box-shadow: 0 4px 16px #0a37651a; font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }

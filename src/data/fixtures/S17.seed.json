@@ -1,0 +1,26 @@
+{
+  "screenId": "S17",
+  "businessCode": "REV-00",
+  "revision": "P01_r01_REVIEW",
+  "provenance": "SOURCE_FIXTURE",
+  "sourceDocument": "S17_DANH_SACH_PHIEU_DAO.md / Một phiếu chi tiết từ nguồn",
+  "visualApproval": "OWNER_REVIEW_PENDING",
+  "backendId": null,
+  "rows": [
+    {
+      "code": "REV-20260817-0001",
+      "originalDocument": "OUT-20260802-014",
+      "totalQuantity": 1,
+      "status": "POSTED",
+      "reason": "Giao nhầm Item",
+      "reasonDetail": "Điều chỉnh sai sót",
+      "createdAt": "17-08-2026 07:00",
+      "createdBy": null
+    }
+  ],
+  "missingValueLabel": "—",
+  "statusOptions": ["DRAFT", "POSTED", "CANCELLED"],
+  "warehouseTotal": null,
+  "api": null,
+  "permission": null
+}

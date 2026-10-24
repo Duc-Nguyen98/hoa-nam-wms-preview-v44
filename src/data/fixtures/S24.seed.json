@@ -1,0 +1,31 @@
+{
+  "screen": "S24",
+  "provenance": {
+    "status": "CONFIRMED_DECISION",
+    "source": "S24_BAO_CAO_NHAP_LIEU_DOI_CHIEU_LOI_DU_LIEU.md — P07/W05, P01 r01 REVIEW",
+    "selection": "Five P01 records and Loại dữ liệu=Tất cả; source decision 2026-10-11T22:47:53+07:00",
+    "referenceJson": "NOT_AVAILABLE_IN_SUPPLIED_PACKAGE",
+    "backendBindings": null
+  },
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "timeZone": "Asia/Ho_Chi_Minh",
+  "summary": {
+    "total": 1284, "matched": 1246, "different": 25, "errors": 13, "needsReview": 38, "qualityRate": "97,0%",
+    "daily": [
+      { "date": "2026-09-04", "matched": 160, "different": 3, "errors": 1 },
+      { "date": "2026-09-05", "matched": 167, "different": 3, "errors": 2 },
+      { "date": "2026-09-06", "matched": 175, "different": 4, "errors": 2 },
+      { "date": "2026-09-07", "matched": 187, "different": 4, "errors": 2 },
+      { "date": "2026-09-08", "matched": 199, "different": 4, "errors": 2 },
+      { "date": "2026-09-09", "matched": 190, "different": 4, "errors": 2 },
+      { "date": "2026-09-10", "matched": 168, "different": 3, "errors": 2 }
+    ]
+  },
+  "rows": [
+    { "referenceCode": "PN-260910-024", "object": "HN-A01", "systemValue": "Số lượng: 120", "comparisonValue": "Số lượng: 120", "result": "Khớp", "detail": "Không có sai lệch", "updatedAt": "2026-09-10T15:42:00+07:00" },
+    { "referenceCode": "PX-260910-019", "object": "SN-260918-00184", "systemValue": "Đang tồn kho", "comparisonValue": "Đã xuất kho", "result": "Chênh lệch", "detail": "Lệch trạng thái", "updatedAt": "2026-09-10T15:30:00+07:00" },
+    { "referenceCode": "KK-260910-012", "object": "HN-C03", "systemValue": "Kệ A-05 · Ô 01", "comparisonValue": "Kệ A-03 · Ô 02", "result": "Chênh lệch", "detail": "Lệch vị trí", "updatedAt": "2026-09-10T14:55:00+07:00" },
+    { "referenceCode": "DL-260910-007", "object": "PAL-HN-0250", "systemValue": null, "comparisonValue": "Khu C · Kệ C-02", "result": "Lỗi dữ liệu", "detail": "Thiếu giá trị hệ thống", "updatedAt": "2026-09-10T14:20:00+07:00" },
+    { "referenceCode": "PN-260909-041", "object": "LOT-260905", "systemValue": "Số lượng: 80", "comparisonValue": "Số lượng: 80", "result": "Khớp", "detail": "Không có sai lệch", "updatedAt": "2026-09-09T16:10:00+07:00" }
+  ]
+}

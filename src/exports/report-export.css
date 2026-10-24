@@ -1,0 +1,3 @@
+.hn-report-export { display: inline-flex; align-items: center; flex: 0 0 auto; }
+.hn-report-export .hn-report-export-button { min-width: 140px; white-space: nowrap; }
+.ov-activity-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 12px; }

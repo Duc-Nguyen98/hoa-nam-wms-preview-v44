@@ -1,0 +1,10 @@
+{
+  "provenance": "OBSERVED_PREVIEW",
+  "source": "HN_DangNhap_XacNhanPhien_P01_r01_HoSo_2026-10-08.json / AUTH-02 P01 r01 three frames",
+  "content": {
+    "title": "Xác nhận phiên đăng nhập",
+    "instruction": "Kiểm tra thông tin tài khoản và kho trước khi tiếp tục.",
+    "confirm": "Bắt đầu làm việc",
+    "logout": "Đăng xuất"
+  }
+}

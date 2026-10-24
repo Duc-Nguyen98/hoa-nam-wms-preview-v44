@@ -1,0 +1,130 @@
+/* S00 r1, 10/10/2026: Basic presentation; no Vuexy/Vuetify source or dependency. */
+:root {
+  --hn-field-border: var(--hn-control-border);
+  --hn-field-radius: var(--hn-radius);
+  --hn-field-height: 44px;
+  --hn-picker-shadow: 0 5px 22px #18365224;
+}
+.hn-basic-select {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  min-height: var(--hn-field-height);
+  padding: 10px 36px 10px 12px;
+  border: 1px solid var(--hn-field-border);
+  border-radius: var(--hn-field-radius);
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%2353677a' stroke-width='1.6'%3E%3Cpath d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+  background-position: right 10px center;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  appearance: none;
+  color: var(--hn-text);
+  font: 400 14px/22px var(--hn-font-family);
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.hn-basic-select:hover:not(:disabled) { border-color: #8198ab; }
+.hn-basic-select:focus-visible { outline: 2px solid var(--hn-control); outline-offset: 3px; }
+.hn-basic-select:disabled { color: var(--hn-muted); background-color: #f2f5f8; cursor: not-allowed; opacity: .7; }
+
+/* Label above the control, shared by the catalogue and overview layouts. */
+.hn-shell[data-shell-version] .hn-filter-select.hn-basic-field, .hn-filter-select.hn-basic-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 5px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  outline: none;
+}
+.hn-shell .hn-filter-select.hn-basic-field > span, .hn-filter-select.hn-basic-field > span {
+  position: static;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--hn-text);
+  white-space: normal;
+}
+.hn-shell[data-shell-version] .hn-filter-select.hn-basic-field > select, .hn-filter-select.hn-basic-field > select {
+  width: 100%;
+  min-width: 0;
+  min-height: var(--hn-field-height);
+  margin: 0;
+  padding: 10px 36px 10px 12px;
+  border: 1px solid var(--hn-field-border);
+  border-radius: var(--hn-field-radius);
+  color: var(--hn-text);
+  font: 400 14px/22px var(--hn-font-family);
+  background-color: #fff;
+}
+.hn-shell .hn-basic-field:focus-within > span { color: var(--hn-control); }
+.hn-shell .hn-basic-field > select:focus-visible { outline: 2px solid var(--hn-control); outline-offset: 3px; border-color: var(--hn-control); }
+.hn-shell .hn-catalogue-toolbar .hn-catalogue-fields { padding-top: 0; }
+.hn-shell .hn-catalogue-toolbar[data-compact='true'] .hn-catalogue-fields { padding-top: 16px; gap: 16px 12px; }
+.hn-shell .hn-catalogue-fields .hn-filter-close { width: 44px; min-width: 44px; padding: 0; margin-top: 25px; align-self: start; }
+.hn-shell .hn-pagination .hn-basic-select { padding: 10px 36px 10px 12px; font-size: 14px; }
+
+/* Progressive enhancement retains native select behavior and a native fallback. */
+@supports (appearance: base-select) {
+  .hn-shell .hn-basic-select, .hn-basic-select, .hn-basic-select::picker(select) { appearance: base-select; }
+  .hn-shell[data-shell-version] .hn-filter-select.hn-basic-field > select, .hn-shell .hn-pagination .hn-basic-select, .hn-basic-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-right: 12px;
+    background-image: none;
+  }
+  .hn-basic-select::picker-icon {
+    content: '';
+    flex-shrink: 0;
+    width: 7px;
+    height: 7px;
+    border-right: 1.6px solid currentColor;
+    border-bottom: 1.6px solid currentColor;
+    rotate: 45deg;
+    margin: -4px 3px 0 8px;
+    color: var(--hn-muted);
+  }
+  .hn-basic-select:open { border-color: var(--hn-control); box-shadow: 0 0 0 1px var(--hn-control); }
+  .hn-basic-select:open::picker-icon { rotate: 225deg; margin-top: 4px; }
+  .hn-basic-select::picker(select) {
+    min-width: anchor-size(width);
+    max-width: calc(100vw - 24px);
+    max-height: min(280px, calc(100dvh - 24px));
+    padding: 6px;
+    margin-top: 5px;
+    border: 1px solid var(--hn-border);
+    border-radius: var(--hn-field-radius);
+    background: #fff;
+    color: var(--hn-text);
+    box-shadow: var(--hn-picker-shadow);
+    font: 400 14px/22px var(--hn-font-family);
+    overflow: auto;
+    overscroll-behavior: contain;
+  }
+  .hn-basic-select option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--hn-text);
+    white-space: normal;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+  }
+  .hn-basic-select option::checkmark { order: 1; color: var(--hn-control); }
+  .hn-basic-select option:checked { background: #eaf2f7; color: var(--hn-control); font-weight: 500; }
+  .hn-basic-select option:hover { background: #f0f4f8; }
+  .hn-basic-select option:focus-visible { outline: 2px solid var(--hn-control); outline-offset: -2px; background: #eaf2f7; }
+  .hn-basic-select option:disabled { color: #6c7e8f; opacity: .6; cursor: not-allowed; }
+}

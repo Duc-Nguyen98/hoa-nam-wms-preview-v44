@@ -1,0 +1,979 @@
+/*
+ * HN_UI_SHARED dark theme layer.
+ *
+ * The theme is opt-in through html[data-hn-theme]; native controls follow
+ * the selected app theme rather than the operating-system preference.
+ * This file owns shared surfaces and the
+ * common screen panel/table classes used by the preview screens. It does
+ * not invent business states or replace the Hoa Nam brand/control colours.
+ */
+
+html[data-hn-theme='light'] {
+  color-scheme: light;
+}
+
+html[data-hn-theme='dark'] {
+  color-scheme: dark;
+  --hn-page: #101b28;
+  --hn-surface: #172638;
+  --hn-text: #e7eef5;
+  --hn-muted: #aebdca;
+  --hn-border: #35495d;
+  --hn-border-subtle: #2d4053;
+  --hn-control-border: #49647a;
+  --hn-fill: #203448;
+  --hn-hover: #203448;
+  --hn-action-fill: #24425e;
+  --hn-modal-shadow: 0 18px 42px #00000052;
+  --hn-focus: #72d5eb;
+  --hn-danger: #ffb0b5;
+  --hn-accent-text: #8ed8ed;
+  --hn-s00-text: #dce7f0;
+  --hn-s00-muted: #aebdca;
+  --hn-s00-border: #34495d;
+  --hn-s00-shadow: none;
+  background: var(--hn-page);
+  color: var(--hn-text);
+}
+
+html[data-hn-theme='dark'] body {
+  background: var(--hn-page);
+  color: var(--hn-text);
+}
+
+/* Shared shell and sticky backdrop. The brand remains #0A3765 and control
+   remains #004E74; only the neutral corridor and card surfaces change. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] {
+  --hn-header-backdrop-solid: #101b28;
+  --hn-header-backdrop-translucent: rgb(16 27 40 / 78%);
+  color: var(--hn-text);
+  background: var(--hn-page);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header {
+  background: #172638;
+  color: var(--hn-s00-text);
+  box-shadow: var(--hn-component-shadow);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-sidebar {
+  background: #0a3765;
+  color: #e7eef5;
+  box-shadow: 1px 0 12px #00000038;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-drawer {
+  background: #172638;
+  color: var(--hn-s00-text);
+  box-shadow: 8px 0 28px #00000052;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-navigation__link {
+  color: #dce7f0;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-navigation__link:hover,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-navigation__link[data-active-parent='true'] {
+  background: #24425e;
+  color: #fff;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-sidebar__warehouse,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-drawer__warehouse {
+  border-color: #416786;
+  color: #b9cede;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shell-search,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-menu-toggle,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-icon-button,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-profile {
+  color: var(--hn-s00-text);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shell-search:hover,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-menu-toggle:hover,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-icon-button:hover,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-profile:hover {
+  background: #263e56;
+  color: #fff;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-search-shortcut {
+  border-color: #50677c;
+  color: #c3d3df;
+  background: #20354a;
+}
+
+/* Header popups, search, navigation feedback and all native shell dialogs. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-header-popup, .hn-shell-dialog, .hn-shell-notice) {
+  border-color: var(--hn-s00-border);
+  background: #172638;
+  color: var(--hn-s00-text);
+  box-shadow: 0 12px 48px #00000066;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-popup-header, .hn-search-field) {
+  border-color: var(--hn-s00-border);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-popup-header h2, .hn-popup-header h3, .hn-popup-header p, .hn-search-field input, .hn-profile-summary strong) {
+  color: var(--hn-text);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-search-field input {
+  background: transparent;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-shortcut-link, .hn-search-results a) {
+  color: var(--hn-s00-text);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-shortcut-link:hover, .hn-search-results a:hover) {
+  background: #263e56;
+  color: #fff;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-shortcut-link[aria-current='page'], .hn-search-results a[aria-current='page']) {
+  background: #214b68;
+  color: #fff;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shortcut-link[aria-current='page'] .hn-shortcut-arrow {
+  color: inherit;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-shortcut-icon, .hn-profile__avatar) {
+  background: #dcecf3;
+  color: #0a3765;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shell-dialog::backdrop,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-drawer::backdrop {
+  background: #020913b8;
+}
+
+/* Shared controls and picker. Keep control blue and one visible focus ring. */
+html[data-hn-theme='dark'] :is(.hn-basic-select, .hn-filter-input, .hn-filter-select, .hn-page-size select, .hn-date-picker__field, .hn-search-field) {
+  border-color: #50677c;
+  background-color: #172638;
+  color: var(--hn-text);
+}
+
+html[data-hn-theme='dark'] :is(.hn-filter-input input, .hn-filter-select select, .hn-page-size select, .hn-date-picker__trigger) {
+  color: var(--hn-text);
+  background-color: transparent;
+}
+
+html[data-hn-theme='dark'] :is(.hn-filter-input input, .hn-search-field input)::placeholder {
+  color: #aebdca;
+}
+
+html[data-hn-theme='dark'] :is(.hn-basic-select option, .hn-filter-select option) {
+  color: var(--hn-text);
+  background: #172638;
+}
+
+html[data-hn-theme='dark'] .hn-basic-select:disabled,
+html[data-hn-theme='dark'] .hn-date-picker[data-disabled] .hn-date-picker__field {
+  color: #8ea1b1;
+  background-color: #223447;
+}
+
+html[data-hn-theme='dark'] .hn-date-picker__popup {
+  border-color: var(--hn-s00-border);
+  background: #172638;
+  color: var(--hn-text);
+  box-shadow: 0 12px 34px #00000066;
+}
+
+html[data-hn-theme='dark'] .hn-date-picker__day[data-range],
+html[data-hn-theme='dark'] .hn-date-picker__day[data-range-preview][data-range='between'] {
+  background: #244b63;
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-date-picker__day[data-outside] {
+  color: #8195a6;
+}
+
+/* Today and the field focus ring need a visible edge on the dark surface. */
+html[data-hn-theme='dark'] .hn-date-picker__day[aria-current='date']:not([data-selected]):not([data-range]) {
+  color: #8bd8eb;
+  border-color: #72d5eb;
+}
+
+html[data-hn-theme='dark'] .hn-date-picker__field:focus-within {
+  border-color: var(--hn-focus);
+  outline-color: var(--hn-focus);
+}
+
+@media (hover: hover) {
+  html[data-hn-theme='dark'] .hn-date-picker__popup button:hover:not(:disabled):not([data-selected]) {
+    background: #263e56;
+    color: #ffffff;
+  }
+}
+
+html[data-hn-theme='dark'] :is(.hn-shell, .hn-date-picker__popup, .hn-shell-dialog) :focus-visible {
+  outline-color: var(--hn-focus);
+}
+
+/* Common cards, catalogue panels, data tables and pagination. */
+html[data-hn-theme='dark'] :is(.hn-card, .hn-catalogue-summary, .hn-catalogue-screen .df-list, .hn-catalogue-screen .pr-list, .hn-catalogue-screen .sku-list, .hn-catalogue-screen .recipient-list, .hn-panel, .hn-table-scroll, .hn-pagination) {
+  border-color: var(--hn-border);
+  background: var(--hn-surface);
+  color: var(--hn-text);
+}
+
+html[data-hn-theme='dark'] :is(.hn-card__header p, .hn-page-description, .hn-count, .hn-pagination, .hn-source-scope, .hn-query-context, .hn-search-result-count, .hn-search-empty) {
+  color: var(--hn-muted);
+}
+
+html[data-hn-theme='dark'] :is(.hn-table, .hn-table th, .hn-table td, .hn-table caption) {
+  color: var(--hn-text);
+  border-color: var(--hn-border);
+}
+
+html[data-hn-theme='dark'] :is(.hn-table th, .hn-table-refined thead th) {
+  background: #203448;
+}
+
+html[data-hn-theme='dark'] :is(.hn-table tbody tr:hover, .hn-table-refined tbody tr:hover) {
+  background: #1e354a;
+}
+
+html[data-hn-theme='dark'] .hn-count {
+  background: #263d52;
+}
+
+html[data-hn-theme='dark'] .hn-feedback {
+  border-color: #49647a;
+  background: #1c3348;
+  color: var(--hn-text);
+}
+
+html[data-hn-theme='dark'] .hn-feedback--success { background: #173b35; }
+html[data-hn-theme='dark'] .hn-feedback--warning { background: #44371e; }
+html[data-hn-theme='dark'] .hn-feedback--error { background: #47282d; }
+
+/* Known screen panel families use shared neutral surfaces; feature semantics,
+   data and status colours remain owned by each screen. */
+html[data-hn-theme='dark'] :is(
+  .ov-panel, .ov-metric, .ov-chart, .ov-quick, .ov-activity,
+  .df-panel, .pr-panel, .sku-panel, .recipient-panel,
+  .pv-overview, .pv-list, .s09-summary, .s09-list, .s10-summary, .s10-list,
+  .s11-summary, .s11-list, .s12-summary, .s12-list, .s13-summary, .s13-list,
+  .s14-summary, .s14-list, .s15-summary, .s15-list, .s16-summary, .s16-list,
+  .s17-summary, .s17-list, .s18-panel
+) {
+  border-color: var(--hn-border);
+  background: var(--hn-surface);
+  color: var(--hn-text);
+}
+
+html[data-hn-theme='dark'] :is(.ov-quick__link, .ov-document-link, .ov-view-all) {
+  color: #dce7f0;
+  background: transparent;
+  border-color: #3a5166;
+}
+
+html[data-hn-theme='dark'] :is(.ov-quick__link:hover, .ov-document-link:hover, .ov-view-all:hover) {
+  background: #263e56;
+  color: #fff;
+}
+
+/* Screen-owned selectors below have deliberately matched screen specificity:
+   several approved screen styles use literal light colours instead of shared
+   tokens. Keeping these corrections here preserves the S00-only ownership of
+   theme behaviour without modifying any feature stylesheet. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) {
+  --hn-s00-text: #e7eef5;
+  --hn-s00-muted: #b7c7d4;
+  --hn-s00-border: #3b5267;
+  --ov-ink: #e7eef5;
+  --ov-muted: #b7c7d4;
+  --ov-line: #3b5267;
+  background: #101b28;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .hn-main {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) :is(.ov-screen h1, .ov-screen h2, .ov-chart.ov-document-chart h2) {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) :is(.ov-metric, .ov-panel) {
+  background: #172638;
+  border-color: #3b5267;
+  box-shadow: var(--hn-component-shadow);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-metric h2 {
+  color: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) :is(.ov-metric__value strong, .ov-metric__value > span, .ov-metric__foot, .ov-document-chart__heading p, .ov-document-chart__legend, .ov-document-time > span:last-child) {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-metric__scope {
+  color: #dbe8f1;
+  background: #263d52;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) :is(.ov-quick__link, .ov-quick__link .ov-icon-tile) {
+  background: #1d3348;
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-quick__link > svg {
+  color: #a9bdcc;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) :is(.ov-document-chart__tooltip, .ov-document-chart__tooltip > strong) {
+  background: #20364b;
+  border-color: #4a6276;
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-wms-brand-mark, .hn-wms-brand-name, .hn-wms-brand-name > span) {
+  color: #f4f8fb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-brand {
+  color: #f4f8fb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-document-chart.ov-chart {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-document-chart .ov-chart__plot text {
+  fill: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-document-chart .ov-chart__plot .ov-document-chart__value {
+  fill: #f0f6fa;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-document-chart__axis line {
+  stroke: #3a5268;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.ov-screen) .ov-document-chart__axis line.ov-document-chart__baseline {
+  stroke: #5b7489;
+}
+
+/* Header controls introduced by the shared header-controls layer. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-option {
+  background: transparent;
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-option:hover,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-option[aria-pressed='true'] {
+  background: #263e56;
+  color: #f4f8fb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-option small,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-popup__hint {
+  color: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-empty-state {
+  color: #dbe8f1;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-empty-state p {
+  color: #b7c7d4;
+}
+
+/* S02–S05 catalogue headings, panels and their literal light table tones. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.df-screen, .pr-screen, .sku-screen, .recipient-screen) {
+  --df-ink: #e7eef5;
+  --df-muted: #b7c7d4;
+  --df-line: #3b5267;
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.df-screen, .pr-screen, .sku-screen, .recipient-screen) :is(h1, h2, .df-list-heading h2, .pr-list-heading h2, .sku-list-heading h2, .recipient-list h2) {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.df-panel, .pr-panel, .sku-panel, .recipient-panel) {
+  background: #172638;
+  border-color: #3b5267;
+  box-shadow: var(--hn-component-shadow);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.df-table .hn-table th, .pr-table .hn-table th, .sku-table .hn-table th, .recipient-table .hn-table th) {
+  background: #203448;
+  color: #c5d3de;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.df-table .hn-table td, .pr-table .hn-table td, .sku-table .hn-table td, .recipient-table .hn-table td) {
+  background: #172638;
+  color: #e7eef5;
+  border-color: #30485c;
+}
+
+/* S06 and S09–S18 contain a few screen-specific literal dark-ink values. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.pv-screen, .s09-screen, .s10-screen, .s11-screen, .s12-screen, .s13-screen, .s14-screen, .s15-screen, .s16-screen, .s17-screen, .s18-screen) {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.pv-screen, .s09-screen, .s10-screen, .s11-screen, .s12-screen, .s13-screen, .s14-screen, .s15-screen, .s16-screen, .s17-screen, .s18-screen) :is(h1, h2, h3, strong, .s18-kpi-value, .s18-panel h2, .s18-bar strong, .s18-chart-foot strong, .s18-donut strong, .s18-legend strong, .s18-cell > span, .s18-number, .s11-code, .s11-order, .s11-number, .s12-code, .s12-primary, .s12-number) {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.pv-overview, .pv-list, .s09-list, .s10-list, .s11-list, .s12-list, .s13-list, .s14-list, .s15-list, .s16-list, .s17-list, .s18-panel) {
+  background: #172638;
+  border-color: #3b5267;
+  box-shadow: var(--hn-component-shadow);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.pv-table .hn-table, .s09-table .hn-table, .s10-table .hn-table, .s11-table .hn-table, .s12-table .hn-table, .s13-table .hn-table, .s14-table .hn-table, .s15-table .hn-table, .s16-table .hn-table, .s17-table .hn-table, .s18-table .hn-table) :is(th, td) {
+  background: #172638;
+  color: #e7eef5;
+  border-color: #30485c;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.pv-table .hn-table th, .s09-table .hn-table th, .s10-table .hn-table th, .s11-table .hn-table th, .s12-table .hn-table th, .s13-table .hn-table th, .s14-table .hn-table th, .s15-table .hn-table th, .s16-table .hn-table th, .s17-table .hn-table th, .s18-table .hn-table th) {
+  background: #203448;
+  color: #c5d3de;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.s09-summary, .s10-summary, .s11-summary, .s12-summary, .s13-summary, .s14-summary, .s15-summary, .s16-summary, .s17-summary) :is(.hn-summary-metric strong, .s09-metric strong, .s10-metric strong) {
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.s18-completion, .s18-trend) {
+  background: #204536;
+  color: #bde8cf;
+}
+
+/* Every WMS shell sets these neutral variables locally, so repeat the values
+   at shell scope rather than relying on inheritance from html. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] {
+  --hn-s00-text: #e7eef5;
+  --hn-s00-muted: #b7c7d4;
+  --hn-s00-border: #3b5267;
+  --hn-s00-shadow: var(--hn-component-shadow);
+  --hn-text: #e7eef5;
+  --hn-muted: #b7c7d4;
+  --hn-border: #3b5267;
+  --hn-surface: #172638;
+  --hn-page: #101b28;
+  --hn-focus: #72d5eb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-main {
+  background: #101b28;
+  color: #e7eef5;
+}
+
+/* BasicSelect and catalogue toolbar rules intentionally outrank the old
+   light control rules with the same shell/toolbar scope. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-filter-select.hn-basic-field > select,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-pagination .hn-basic-select,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-toolbar .hn-filter-input,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-toolbar .hn-filter-select {
+  background-color: #172638;
+  border-color: #50677c;
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-toolbar :is(input, select),
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-filter-select.hn-basic-field > select {
+  background-color: transparent;
+  color: #e7eef5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-basic-select option, .hn-filter-select option) {
+  background: #172638;
+  color: #e7eef5;
+}
+
+/* Portaled controls can opt into the same palette without duplicating it. */
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], [data-hn-control-theme], .s07-auth, .hn-auth-layout) .hn-button.hn-button--secondary[data-hn-control='button'] {
+  background: #172638;
+  border-color: #50677c;
+  color: #dcecf3;
+}
+
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], [data-hn-control-theme], .s07-auth, .hn-auth-layout) .hn-button.hn-button--ghost[data-hn-control='button'] {
+  --hn-button-ink: #8bd8eb;
+  color: #8bd8eb;
+  background: transparent;
+}
+
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], [data-hn-control-theme], .s07-auth, .hn-auth-layout) .hn-button:is(.hn-button--secondary, .hn-button--ghost)[data-hn-control='button']:hover:not(:disabled):not([aria-disabled='true']):not([data-loading='true']):not([aria-pressed='true']) {
+  background: #263e56;
+  border-color: #638097;
+  color: #f4f8fb;
+}
+
+/* Keep unavailable actions distinct; loading retains its pending indicator. */
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], [data-hn-control-theme], .s07-auth, .hn-auth-layout) .hn-button[data-hn-control='button']:is(:disabled, [aria-disabled='true']):not([data-loading='true']),
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], [data-hn-control-theme], .s07-auth, .hn-auth-layout) .hn-button[data-hn-control='button']:is(:disabled, [aria-disabled='true']):not([data-loading='true']):is(:hover, :active) {
+  --hn-button-ink: #8ea1b1;
+  color: var(--hn-button-ink);
+  background: #223447;
+  border-color: #35495d;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 1;
+}
+
+/* Shared catalogue summary numbers otherwise inherit the navy brand colour. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-summary-metric strong, .hn-catalogue-summary[data-appearance='inline'] .hn-summary-metric strong) {
+  color: #f0f6fa;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .sku-code {
+  color: #b9e4ef;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.recipient-type-label, .recipient-type-label svg, .recipient-code, .recipient-phone, .recipient-stack > span + span, .recipient-copy small) {
+  color: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .recipient-name {
+  color: #edf5fa;
+}
+
+/* Screen-specific surfaces that keep the shared table and card primitives
+   readable when a screen supplies its own light-mode palette.  These rules
+   are opt-in to the dark theme so the locked light baseline is unchanged. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-screen,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-screen .hn-page-heading h1,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-page-sort,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-product,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-codes,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-updated {
+  color: #dce8f0;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-screen .hn-summary-metric h2,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-screen .hn-summary-metric strong,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-product strong,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-codes strong {
+  color: #f0f6fa;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-updated > span:first-child,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-action-tip {
+  color: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-missing-image {
+  color: #f0bd72;
+  background: #382c1b;
+  border-color: #806338;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-thumbnail {
+  background: #1b2b3c;
+  border-color: #50677c;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-row-actions .hn-button {
+  color: #c9eaf2;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-row-actions .hn-button:hover,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-row-actions .hn-button:focus-visible {
+  color: #f4fbfd;
+  background: #263e56;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-table .hn-table,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-table .hn-table th,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-table .hn-table td {
+  background: #172638;
+  color: #dce8f0;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s09-metric,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s09-customer {
+  color: #c9d9e5;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s09-metric strong,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s09-metric .s09-ratio {
+  color: #f0f6fa;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s09-overdue {
+  color: #ff9c9c;
+  background: #42242a;
+  border-color: #8d4b56;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s10-component-name,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s10-code,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s12-rate {
+  color: #dce8f0;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-nav-item {
+  color: #b7c7d4;
+  border-color: transparent;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-nav-item:hover,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-nav-item[aria-current='page'] {
+  color: #f0f6fa;
+  background: #1d3952;
+  border-color: #3b6b87;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-nav-label,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-nav-count {
+  color: inherit;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s14-guidance-content {
+  color: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-summary-grid,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-source-limit {
+  background: #172638;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-total > strong,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-count,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-source-limit strong {
+  color: #f0f6fa;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-flow-note,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-list {
+  color: #b7c7d4;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-list .hn-table,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-list .hn-table th,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-list .hn-table td,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-table-view .hn-table,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-table-view .hn-table th,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-table-view .hn-table td,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s18-list .hn-table,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s18-list .hn-table th,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s18-list .hn-table td {
+  background: #172638;
+  color: #dce8f0;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-workspace-top,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-card,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-card-grid > div {
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-help-panel {
+  background: #172638;
+  color: #b7c7d4;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-code,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s16-item-type {
+  color: #b9e4ef;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.s16-number--warning, .s16-card-grid dd.s16-number--warning, .s18-kpi-attention) {
+  color: #f0bd72;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.s18-kpi-value, .s18-panel h2, .s18-bar strong, .s18-chart-foot strong, .s18-donut strong, .s18-legend strong, .s18-number, .s18-cell > span) {
+  color: #f0f6fa;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.s18-trend, .s18-trend small, .s18-trend span, .s18-cell > span, .s18-panel, .s18-flow-note) {
+  color: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s18-gridlines i {
+  border-color: #3b5267;
+}
+
+/* Dark focus contract: the shell's legacy focus rule is intentionally kept
+   for light mode, while this scoped rule wins for the dark shell controls. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-sidebar, .hn-header, .hn-drawer, .hn-shell-dialog) :is(button, a, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid #72d5eb !important;
+  outline-offset: 3px !important;
+}
+
+html[data-hn-theme='dark'] :is(.hn-date-picker__popup, .hn-header-popup, .hn-shell-dialog, [data-hn-control-theme], .s07-auth, .hn-auth-layout) :is(button, a, input, select, textarea, [tabindex]):focus-visible {
+  outline-color: #72d5eb;
+}
+
+/* Calendar range endpoints remain distinct from the middle of a range. */
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__day[data-range='start'],
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__day[data-range='end'],
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__day[data-range='both'],
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__day[data-range][data-selected] {
+  color: #ffffff;
+  background: #004e74;
+  border-color: #72d5eb;
+}
+
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__footer {
+  border-color: #3b5267;
+  background: #172638;
+}
+
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__text-button {
+  color: #8bd8eb;
+  background: transparent;
+}
+
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__text-button:hover:not(:disabled),
+html[data-hn-theme='dark'] .hn-date-picker__popup .hn-date-picker__text-button:focus-visible {
+  color: #ffffff;
+  background: #263e56;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-table .hn-status-badge--neutral {
+  color: #c3d0dc;
+  background: #2a3b4d;
+  border-color: #50677c;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-table .hn-status-badge--success {
+  color: #9be2b4;
+  background: #1d4633;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-table .hn-status-badge--warning {
+  color: #f0bd72;
+  background: #493820;
+}
+
+/* StatusBadge is also used in auth, detail dialogs and summary cards.
+   Keep the existing table palette untouched while covering those consumers. */
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], .hn-auth-layout, [data-hn-control-theme]) .hn-status-badge--neutral:not(.hn-table *) {
+  color: #c3d0dc;
+  background: #2a3b4d;
+  border-color: #50677c;
+}
+
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], .hn-auth-layout, [data-hn-control-theme]) .hn-status-badge--success:not(.hn-table *) {
+  color: #9be2b4;
+  background: #1d4633;
+  border-color: #3f7857;
+}
+
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], .hn-auth-layout, [data-hn-control-theme]) .hn-status-badge--warning:not(.hn-table *) {
+  color: #f0bd72;
+  background: #493820;
+  border-color: #806338;
+}
+
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], .hn-auth-layout, [data-hn-control-theme]) .hn-status-badge--error:not(.hn-table *) {
+  color: #ffb0b5;
+  background: #42242a;
+  border-color: #8d4b56;
+}
+
+html[data-hn-theme='dark'] :is(.hn-shell[data-shell-version='s00'][data-variant][data-layout], .hn-auth-layout, [data-hn-control-theme]) .hn-status-badge--info:not(.hn-table *) {
+  color: #9edceb;
+  background: #1d3d50;
+  border-color: #3b6b87;
+}
+
+/* Native Dialog actions use the shared classes without the Button marker. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] dialog .hn-button--secondary:not([data-hn-control]) {
+  color: #dcecf3;
+  background: #172638;
+  border-color: #50677c;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] dialog .hn-button--ghost:not([data-hn-control]) {
+  color: #8bd8eb;
+  background: transparent;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] dialog .hn-button:is(.hn-button--secondary, .hn-button--ghost):not([data-hn-control]):hover:not(:disabled):not([aria-disabled='true']) {
+  color: #f4f8fb;
+  background: #263e56;
+  border-color: #638097;
+}
+
+/* Remaining feature supplied labels/surfaces. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-activity .hn-table th,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-activity .hn-table td {
+  background: #172638;
+  color: #dce8f0;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.s09-metric .s09-ratio, .s09-ratio) {
+  color: #f0f6fa;
+}
+
+/* S09 renders the completion percentage as the unclassed sibling inside
+   .s09-completion; keep the metric readable on the dark surface. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s09-completion > span {
+  color: #f0f6fa;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-catalogue-nav-count {
+  color: #dcecf3;
+  background: #214b68;
+  border-color: #3b6b87;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-count {
+  color: #f0f6fa;
+  background: #263e56;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s17-list .hn-table,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s17-list .hn-table th,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s17-list .hn-table td {
+  background: #172638;
+  color: #dce8f0;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s06-screen .hn-page-warehouse,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-screen .hn-page-warehouse,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-stock-note {
+  color: #b7c7d4;
+}
+
+/* The compact S06 cells expose the product codes below the name; their
+   literal light-mode muted colour needs the same dark palette as full cells. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .pv-compact-codes {
+  color: #b7c7d4;
+}
+
+/* S20 is present in this integration. Its brand-coloured data and chart marks
+   need the same opt-in dark treatment as the earlier report screens. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s20-screen :is(h1, .s20-list-heading h2, .s20-cell > strong, .s20-code) {
+  color: var(--hn-text);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s20-list .hn-table,
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s20-list .hn-table :is(th, td) {
+  background: #172638;
+  color: #dce8f0;
+  border-color: #3b5267;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s20-screen :is(.s20-bar, .s20-chart-legend i, .s20-legend i, .s20-ratio-bar span:first-child) {
+  background: #79b8f1;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s20-screen :is(.s20-bar-out, .s20-chart-legend span:last-child i, .s20-legend li:last-child i, .s20-ratio-bar span:last-child) {
+  background: #64d1ca;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s20-movement-type svg {
+  color: #79b8f1;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s20-movement-type[data-direction='out'] svg {
+  color: #64d1ca;
+}
+
+/* Keep the S05 scroll guidance on a dark surface with the table it controls. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .recipient-scroll-hint {
+  background: #203448;
+  color: #b7c7d4;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-scroll-tools {
+  background: #203448;
+  border-color: #3b5267;
+  color: #b7c7d4;
+}
+
+/* Expanded compact filters share the surrounding dark card surface. */
+html[data-hn-theme='dark'] .hn-catalogue-toolbar[data-compact='true'] .hn-catalogue-fields {
+  background: var(--hn-surface);
+}
+
+/* Keep the active sort glyph visible without brightening quiet idle arrows. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-table:is([data-appearance='refined'], [data-sort-indicator-appearance='quiet']) .hn-table-sort > span[aria-hidden='true'] {
+  color: #8bd8eb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-table[data-sort-indicator-appearance='quiet'] th[aria-sort='none'] .hn-table-sort:not(:hover):not(:focus-visible) > span[aria-hidden='true'] {
+  color: var(--hn-muted);
+}
+
+/* BasicSelect owns one focus ring; its label, picker and semantic states must
+   stay readable after the legacy filter/pagination composition rules apply. */
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-field:focus-within > span {
+  color: #8bd8eb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-basic-select, .hn-basic-field > .hn-basic-select):focus-visible {
+  outline-color: #72d5eb;
+  border-color: #72d5eb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-basic-select, .hn-basic-field > .hn-basic-select):open {
+  border-color: #72d5eb;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-basic-select, .hn-basic-field > .hn-basic-select):disabled {
+  color: #8ea1b1;
+  background-color: #223447;
+  border-color: #35495d;
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-basic-select, .hn-basic-field > .hn-basic-select)[aria-invalid='true'] {
+  border-color: var(--hn-danger);
+}
+
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-field:has(> .hn-basic-select[aria-invalid='true']) > span {
+  color: var(--hn-danger);
+}
+
+@supports (appearance: base-select) {
+  html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select::picker(select) {
+    color: #e7eef5;
+    background: #172638;
+    border-color: #50677c;
+  }
+
+  html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select option::checkmark {
+    color: #8bd8eb;
+  }
+
+  html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select option:checked {
+    color: #ffffff;
+    background: #214b68;
+  }
+
+  html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select option:hover:not(:disabled),
+  html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select option:focus-visible {
+    color: #ffffff;
+    background: #263e56;
+    outline-color: #72d5eb;
+  }
+
+  html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select option:checked:is(:hover, :focus-visible) {
+    background: #2a5b7c;
+  }
+
+  html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-basic-select option:disabled {
+    color: #8ea1b1;
+    background: #223447;
+  }
+}

@@ -1,0 +1,40 @@
+.ov-chart.ov-document-chart {
+  min-width: 0;
+  padding: var(--ov-panel-space);
+  color: #243b53;
+}
+.ov-document-chart__heading { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; }
+.ov-document-chart__heading > div { min-width: 0; }
+.ov-chart.ov-document-chart h2 { margin: 0; color: #243b53; font-size: 18px; font-weight: 600; line-height: 28px; letter-spacing: -.015em; }
+.ov-document-chart__heading p { margin: 5px 0 0; color: #60748a; font-size: 13px; line-height: 20px; }
+.ov-document-chart__legend { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 18px; margin: 3px 0 0; padding: 0; list-style: none; color: #60748a; font-size: 13px; line-height: 20px; }
+.ov-document-chart__legend li, .ov-document-chart__tooltip > div > span { display: inline-flex; align-items: center; gap: 8px; }
+.ov-document-chart__legend i, .ov-document-chart__tooltip i { display: inline-block; width: 9px; height: 9px; border-radius: 3px; flex: 0 0 9px; }
+.ov-document-chart__dot--inbound { background: #004e74; }
+.ov-document-chart__dot--outbound { background: #54b9f7; }
+.ov-document-chart__canvas { position: relative; min-width: 0; margin-top: 14px; }
+.ov-document-chart .ov-chart__plot { display: block; width: 100%; height: 190px; overflow: visible; }
+.ov-document-chart .ov-chart__plot text { font-family: var(--hn-font-family); font-size: 13px; fill: #60748a; }
+.ov-document-chart__axis line { stroke: #e8eef4; stroke-width: 1; }
+.ov-document-chart__axis line.ov-document-chart__baseline { stroke: #d7e2ec; }
+.ov-document-chart__bar--inbound { fill: #004e74; }
+.ov-document-chart__bar--outbound { fill: #54b9f7; }
+.ov-document-chart .ov-chart__plot .ov-document-chart__value { fill: #243b53; font-size: 13px; font-weight: 600; }
+.ov-document-chart .ov-chart__plot .ov-document-chart__date { font-size: 13px; font-weight: 500; }
+.ov-document-chart__targets { position: absolute; inset: 18px 12px 3px 30px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ov-document-chart__target { position: relative; display: block; min-width: 44px; min-height: 44px; padding: 0; border: 0; border-radius: 8px; background: transparent; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.ov-document-chart__target:hover, .ov-document-chart__target[aria-pressed='true'] { background: rgb(0 78 116 / 4%); }
+.ov-document-chart__target:focus-visible { outline: none; background: rgb(0 78 116 / 4%); }
+.ov-document-chart__target:focus-visible::after { content: ''; position: absolute; inset: auto 5px 1px; height: 32px; border: 2px solid #004e74; border-radius: 8px; pointer-events: none; }
+.ov-document-chart__tooltip { position: absolute; top: 4px; z-index: 2; box-sizing: border-box; max-width: calc(100% - 16px); padding: 12px 16px; border: 1px solid #dce6ef; border-radius: 8px; background: #fff; box-shadow: 0 8px 24px rgb(10 55 101 / 12%); color: #243b53; font-size: 13px; line-height: 18px; }
+.ov-document-chart__tooltip > strong { display: block; margin-bottom: 6px; color: #0a3765; font-size: 13px; font-weight: 600; }
+.ov-document-chart__tooltip > div { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 4px; }
+.ov-document-chart__tooltip b { white-space: nowrap; font-size: 13px; font-weight: 600; }
+.ov-document-chart__tooltip b > span { color: #60748a; font-size: 13px; font-weight: 400; }
+@container s01 (max-width: 560px) {
+  .ov-document-chart__heading { gap: 10px; }
+  .ov-document-chart__legend { margin-top: 0; }
+  .ov-document-chart__canvas { margin-top: 8px; }
+  .ov-document-chart .ov-chart__plot .ov-document-chart__axis text,
+  .ov-document-chart .ov-chart__plot .ov-document-chart__date { font-size: 12px; }
+}

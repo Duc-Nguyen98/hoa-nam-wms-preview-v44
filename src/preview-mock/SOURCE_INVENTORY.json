@@ -1,0 +1,2024 @@
+{
+  "generated_at": "2026-10-17T19:44:21.8728702Z",
+  "mode": "MOCK",
+  "entrypoint": "src/preview-mock/index.ts",
+  "method": "Recursive static local import/export traversal, including type-only dependencies; SHA-256 hashes; no bundle or runtime execution",
+  "files": [
+    {
+      "path": "src/account/account-api-contract.ts",
+      "sha256": "f098f32cf2e757c21ab74f9bcfd7c3ac0ff9f326d2b1c744625252437e92bc75"
+    },
+    {
+      "path": "src/account/account-center-model.ts",
+      "sha256": "67448a28f213c958437c11db5fe9a7c86d0b267482bc4794763a310798f38b13"
+    },
+    {
+      "path": "src/contracts/data-quality-report.ts",
+      "sha256": "cd7ef63a6fbd5911f9d39142a160dd427105891b70f31ddd04cf8d32c48831ae"
+    },
+    {
+      "path": "src/contracts/dealer-export-report.ts",
+      "sha256": "32f00505a0ac0c5508961efd6b670a4f5ad5b5332c5c22dbf0a99d609ae210a5"
+    },
+    {
+      "path": "src/contracts/defects.ts",
+      "sha256": "c5cc0258efeeb7cdb35f4f2d765bdf3059abc013744e9062a87f7fbbb7d51d18"
+    },
+    {
+      "path": "src/contracts/goods-trace-report.ts",
+      "sha256": "c48931ec5e8b7db926cf6c42e3c7982d12b18059fdce4424447716d33a3b9099"
+    },
+    {
+      "path": "src/contracts/inbound-report.ts",
+      "sha256": "023e924e0786c964d291640cee537c1c365448205fd6b291cccc42cc288bad1c"
+    },
+    {
+      "path": "src/contracts/inventory-reconciliation.ts",
+      "sha256": "b5734c178a4965d820816793cff149e5b41d2aef3250276ab5363b853cfa70e2"
+    },
+    {
+      "path": "src/contracts/inventory-report.ts",
+      "sha256": "00067612c39b49907cd30d72588887e8b86cf39774be863b4052e6dba2c3a65e"
+    },
+    {
+      "path": "src/contracts/label-report.ts",
+      "sha256": "377bf76a46edde8a50c88fdc0e13b47f873ccdf70873839a5d585a82a8065efe"
+    },
+    {
+      "path": "src/contracts/movement-history.ts",
+      "sha256": "e42e3181f5aefcd8bda4a7dac6591a81341104c2a2e6a29a375a1a6ee18bbe0c"
+    },
+    {
+      "path": "src/contracts/outbound-report.ts",
+      "sha256": "2c210362d32e5d43090340534f47ed4c135fd9620b833f046403c6095e5a886b"
+    },
+    {
+      "path": "src/contracts/outbound-slips.ts",
+      "sha256": "15cf6c1929606dd364ac433b29701455c329eec4f175787cb0fc8b97a46274e8"
+    },
+    {
+      "path": "src/contracts/overview.ts",
+      "sha256": "66d373779943dcbfe20d4529a6fbf4e23c97d902e3019a05b37b970b31b4c290"
+    },
+    {
+      "path": "src/contracts/parts-slips.ts",
+      "sha256": "ecd01d429d3460466e75a00d86d70a1a84f5566b876971a0df25f6922f870b2f"
+    },
+    {
+      "path": "src/contracts/products.ts",
+      "sha256": "a6c6c04239eeefdd22c7ec195ae23b85d96cb796af87c4f701c2f55e269f8c9b"
+    },
+    {
+      "path": "src/contracts/putaway-orders.ts",
+      "sha256": "b301b70add81d0ae5054c39a6e1cdc49a6ef38a979483a0fb2ee438ef642fbde"
+    },
+    {
+      "path": "src/contracts/putaway-queue.ts",
+      "sha256": "bc52b93394bc16cd261a7485bd2faa950202c3ac96a678cab7636cacc8e3a312"
+    },
+    {
+      "path": "src/contracts/pv-products.ts",
+      "sha256": "03027f523a34c689c20c800c8bd0d08576da80a00fc6367ae50bcc2c23412a84"
+    },
+    {
+      "path": "src/contracts/receipts.ts",
+      "sha256": "ec6a36e450eb4bad681f3feadd9d69d7c919fb1fc8c09efeeeb4b4d5dec63ec3"
+    },
+    {
+      "path": "src/contracts/recipients.ts",
+      "sha256": "9c06de158adeb7fc68129b6b5d4b348b8a997b1a522a5d88f1e1a23f327a3f55"
+    },
+    {
+      "path": "src/contracts/reversal-slips.ts",
+      "sha256": "379fd6ab3ad33c491b3dad67c6b7dc66ef7ad52a673e769acdb4abddc13dfe7b"
+    },
+    {
+      "path": "src/contracts/s29-users-rbac.ts",
+      "sha256": "2f51205886b264cc3351b3be9e024f259891f69cfd70408808e3c641b3005965"
+    },
+    {
+      "path": "src/contracts/skus.ts",
+      "sha256": "3171a3bf70d7a6dfb56b5d1a1c5677788b931c0fb9b0c0a0f70d1ac7dea36061"
+    },
+    {
+      "path": "src/contracts/system-audit.ts",
+      "sha256": "bbfa32283fbe893fbf02039f4fd424bacd8671d21ed51c8a8c0c926de7306e95"
+    },
+    {
+      "path": "src/contracts/trays.ts",
+      "sha256": "f120aa4c702128ac75226bbf1c86d5bc8a4cb350bf3e6d97613b131a9a9256f3"
+    },
+    {
+      "path": "src/contracts/warehouse-config.ts",
+      "sha256": "e3b7ff307a8919988740aa552b7a556d55c797f9eaab3df46ace8dd0cbdf69c7"
+    },
+    {
+      "path": "src/contracts/warranty-cases.ts",
+      "sha256": "4ca73d7be96d0df1b63a35fd97f94554693bfd2fa0cb87776f863f722f68fc04"
+    },
+    {
+      "path": "src/contracts/warranty-parts-report.ts",
+      "sha256": "b4620b77f29f6a2a390b3f7267a692ee5d998d1a8b6fda86707794278ffeebd6"
+    },
+    {
+      "path": "src/controllers/products-policy.ts",
+      "sha256": "c3099e078704d0ded11b84ee8e21a20246baa4a4c45a3f6b79a150ab51f7162a"
+    },
+    {
+      "path": "src/controllers/skus-policy.ts",
+      "sha256": "c16777125efe75b739bd11f9f248cf0e12bd5479fd583f9bf88a053f3bbdefee"
+    },
+    {
+      "path": "src/data/adapters/data-quality-fixture-adapter.ts",
+      "sha256": "c1a591bceb48c93f120410861ef5b934ebd2294b5dff94146c0f09697cc7f2bd"
+    },
+    {
+      "path": "src/data/adapters/dealer-export-fixture-adapter.ts",
+      "sha256": "f5f3badf1186d2a159ce6f288bbf77f5b24c8eb4ab396efe7c17eca8c562c74f"
+    },
+    {
+      "path": "src/data/adapters/defects-fixture-adapter.ts",
+      "sha256": "b7b63b534b58ebcb048ceafea1ca6e643435e61848e9996aebda63302fb93618"
+    },
+    {
+      "path": "src/data/adapters/defects-query.ts",
+      "sha256": "d699b17c5a96818e3be1494757519d1bef3feb4d5aa03974291c3530dc54c389"
+    },
+    {
+      "path": "src/data/adapters/goods-trace-fixture-adapter.ts",
+      "sha256": "000927af6bf2ce509a0887e2fecc3dfbf295c3da560cdf564c86b362e1ef0d53"
+    },
+    {
+      "path": "src/data/adapters/inbound-report-fixture-adapter.ts",
+      "sha256": "6cefb4a1211692858583e5cdc54cfd223aae2c4efc377bb87b826995593f7d6e"
+    },
+    {
+      "path": "src/data/adapters/inventory-fixture-adapter.ts",
+      "sha256": "42a91ac888c02f2a9f83315de953fc67455a1508444dce7bd1dd2c5ea46d64b5"
+    },
+    {
+      "path": "src/data/adapters/inventory-report-fixture-adapter.ts",
+      "sha256": "b93b0d1f61fc6aba03fc638268069caaa6a36db5c6753292f58db88c5c20144e"
+    },
+    {
+      "path": "src/data/adapters/label-report-fixture-adapter.ts",
+      "sha256": "685eb16eeba792a22ca8bd5f52c0079a8df2aa86256dbefdefd8eb10e8f46676"
+    },
+    {
+      "path": "src/data/adapters/movement-history-fixture-adapter.ts",
+      "sha256": "e67d24d0539d5a693cfec181b53491c22efa4ec8687d9ffa482d93e6e296d70f"
+    },
+    {
+      "path": "src/data/adapters/outbound-report-fixture-adapter.ts",
+      "sha256": "289937c2d830d8b86896b461b2076353f6314ae749585321af3d7458c1dd43c8"
+    },
+    {
+      "path": "src/data/adapters/outbound-slips-fixture-adapter.ts",
+      "sha256": "1905aec725ddcec06d31b32d3e82882ec73ec192c821fbe518f517433c7c1cc2"
+    },
+    {
+      "path": "src/data/adapters/overview-fixture-adapter.ts",
+      "sha256": "b56ee095e3b707e3eb173f73a862640560413e935f0e5a4a74de5cb6e09809de"
+    },
+    {
+      "path": "src/data/adapters/overview-table-query.ts",
+      "sha256": "ffc85bdd5dd80e7da944b541e2983abf78eaff4832a28a228abb0e63f31fc0c8"
+    },
+    {
+      "path": "src/data/adapters/parts-slips-fixture-adapter.ts",
+      "sha256": "e284d4feee6d4e1b6acaa268bb2936d831de444689db89f976d4638957ad4c53"
+    },
+    {
+      "path": "src/data/adapters/products-fixture-adapter.ts",
+      "sha256": "baf879ddb497058ba4716baf7bb9885a59ee460f276dd4360848d075d0a603c8"
+    },
+    {
+      "path": "src/data/adapters/putaway-orders-fixture-adapter.ts",
+      "sha256": "3d7d58ac972df9db8997833307cd67eed362778d4ea56ca1be53e29247389b12"
+    },
+    {
+      "path": "src/data/adapters/putaway-queue-fixture-adapter.ts",
+      "sha256": "b3f1561d711f4bcdc8f9cd584535c81a3b382465e3ab90645f34821da2353495"
+    },
+    {
+      "path": "src/data/adapters/pv-products-fixture-adapter.ts",
+      "sha256": "8f0519cb09406dcd2bf5fbd5096e86d85ceb099a2fb9f4ef59be658f7887a6a9"
+    },
+    {
+      "path": "src/data/adapters/receipts-fixture-adapter.ts",
+      "sha256": "90b468c006602733e0ad5a9669f50fce68e85eec0ed61241d6565fd60010c73b"
+    },
+    {
+      "path": "src/data/adapters/recipients-fixture-adapter.ts",
+      "sha256": "65a255c905ae8941c19c3d9ba4fecd0a53650062436b53d2db881500bc294bce"
+    },
+    {
+      "path": "src/data/adapters/reversal-fixture-adapter.ts",
+      "sha256": "7ad1844bcb602884b020824989b3d33db31c478668cf12b6d2bdd2d55178b72b"
+    },
+    {
+      "path": "src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+      "sha256": "0af99483fa6e5d85af12641a2515b2f6b4611b393e35804b7324a2f2d0e4ef38"
+    },
+    {
+      "path": "src/data/adapters/skus-fixture-adapter.ts",
+      "sha256": "6f4a41c96a67d8192ff1c7b0ed8b876f0513f97f5ea5abfcf84d9280dc7f6744"
+    },
+    {
+      "path": "src/data/adapters/system-audit-fixture-adapter.ts",
+      "sha256": "cd07dae6f42747549ba4b2fb4fb55edd412d03c48ef9f7f220f348d0385bf7d3"
+    },
+    {
+      "path": "src/data/adapters/trays-fixture-adapter.ts",
+      "sha256": "e911347657346d2a6578d1b86207a6fcce8ba0cf5d86d92a4ebbb76a7e83856f"
+    },
+    {
+      "path": "src/data/adapters/warranty-cases-fixture-adapter.ts",
+      "sha256": "84c1e882cba1bd4e75649a6f1522547d985c801bbae7e556ae6da79983a3fbb4"
+    },
+    {
+      "path": "src/data/adapters/warranty-parts-report-fixture-adapter.ts",
+      "sha256": "603537bbb6ca12b16ef06b215e51b6ad510478eded07a304f0e86df5a54b23c9"
+    },
+    {
+      "path": "src/data/fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "sha256": "876d09340b11ac4829c5dfaa96f98171a168aba5eeb74a46f4c65c01709a095a"
+    },
+    {
+      "path": "src/data/fixtures/S01_SCANNER_PINNED.json",
+      "sha256": "e899bd78eba88cc6ab5cfc47a6e6b87ccf033cebe3a9bef01f6a41d509644f02"
+    },
+    {
+      "path": "src/data/fixtures/S01.presentation.json",
+      "sha256": "79a04b0b4a228b766fab0b00a31fc2aab01063e0310b5807644fa568ab0f2c5c"
+    },
+    {
+      "path": "src/data/fixtures/S06.seed.json",
+      "sha256": "b25ac3c58cc2cffe8a30148258080f14dcb89eb56f10f2f0547608a4d6900bcc"
+    },
+    {
+      "path": "src/data/fixtures/S09.seed.json",
+      "sha256": "1f8fc978a2e7e4873d55e79b81fefcd000ff455ed6aebfddae698d7fd2a49671"
+    },
+    {
+      "path": "src/data/fixtures/S10.seed.json",
+      "sha256": "ef454c09293a96477f0d6b0e716c47f691cab38fac88d5966ab905298c63539d"
+    },
+    {
+      "path": "src/data/fixtures/S11.seed.json",
+      "sha256": "8000c592328da60deaa13f2f6354a45acae9c78d09b4ad432bd713db9ad455d6"
+    },
+    {
+      "path": "src/data/fixtures/S12.seed.json",
+      "sha256": "1f4b5d023b3be60013fa2f2c32c67fe25b2fe156f4d993847127755770fb468e"
+    },
+    {
+      "path": "src/data/fixtures/S13.seed.json",
+      "sha256": "16d752fd1455d2f6362fc126a972f09adf3c6f5acf8926f29c4c10d0f236b46b"
+    },
+    {
+      "path": "src/data/fixtures/S14.seed.json",
+      "sha256": "af5d03b7b0d434816d40c2b064f0b1d255e85ad62eee041b960a879989d5b7bb"
+    },
+    {
+      "path": "src/data/fixtures/S15.seed.json",
+      "sha256": "de3a668646445411d59d610dde556bc6ddfe0f00e1f8254f9844e501479c7a6e"
+    },
+    {
+      "path": "src/data/fixtures/S16.seed.json",
+      "sha256": "c0207e8e6ac5ea880015fb8c161674b446bad9670b7e49f87f66c680ccccea8e"
+    },
+    {
+      "path": "src/data/fixtures/S17.seed.json",
+      "sha256": "a0cba259f705fe4897f49d6c0c1aa28a0ce80cb0713431639f240cd9fb7525ad"
+    },
+    {
+      "path": "src/data/fixtures/S18.seed.json",
+      "sha256": "ffab52f54cc988d3f564144301c66cd6e64a843b58c8e8e27aa47bc12c69aebe"
+    },
+    {
+      "path": "src/data/fixtures/S19.seed.json",
+      "sha256": "061f2978dd56ac9054c2f8a744d4f1a39d500c7a7a6166a2f2e8d0c495a42e88"
+    },
+    {
+      "path": "src/data/fixtures/S20.seed.json",
+      "sha256": "8f48c998e3cd5ca4039ffc39bc69abd4400faee5a8146c43ce76367fc97695c7"
+    },
+    {
+      "path": "src/data/fixtures/S21.seed.json",
+      "sha256": "d372f922a535b40a89ef62fa27d1216e12b75feb859c5fa9da2c865488f64401"
+    },
+    {
+      "path": "src/data/fixtures/S22.desktop.json",
+      "sha256": "c97bdae8a735695203c47d61d9aee3f3b59711a497b94d9ff005bf6696c83680"
+    },
+    {
+      "path": "src/data/fixtures/S22.summary.json",
+      "sha256": "1cb063da33b91857f6fb99a89f2b80c83c924362a88e0696b9346974f6b285e3"
+    },
+    {
+      "path": "src/data/fixtures/S23.seed.json",
+      "sha256": "f2cab21665ffc9a1b5af09f0d2addff57ba5d7f559bc1bea37f6d7a411aaa638"
+    },
+    {
+      "path": "src/data/fixtures/S24.seed.json",
+      "sha256": "c0e1836d0b4730c34a3ac105f7d1e6d06749e27840894977ec335e2c72eca29c"
+    },
+    {
+      "path": "src/data/fixtures/S25.seed.json",
+      "sha256": "bdbc500618e8302a7669355ea50ee30fa87bc67ac56d6bb98adbe4434e9f184e"
+    },
+    {
+      "path": "src/data/fixtures/S26.seed.json",
+      "sha256": "33fafaaebcadbf64fa52eeadbde722adf74b3d1fac52e0e76f045347770441d9"
+    },
+    {
+      "path": "src/data/fixtures/SCREEN_CONTRACTS.seed.json",
+      "sha256": "00463913c7ee2e4580fa8e5cd7a673de51757f97567987d2bc925c64caaac20c"
+    },
+    {
+      "path": "src/data/http/api-contract.ts",
+      "sha256": "79b3b13686dc9ee3056c83d9d38e884008e2e56c7d2c00d702ff972bce0e61e9"
+    },
+    {
+      "path": "src/data/http/resource-defaults.ts",
+      "sha256": "64e2a1540db952abc2a65c4c297b1deb827673713ec74c5207db34514f69a78a"
+    },
+    {
+      "path": "src/data/pv-page-sort.ts",
+      "sha256": "5415205759b0077ddd2be445b8453841c7f58a367fe7fca3e701e860c64c88f6"
+    },
+    {
+      "path": "src/preview-mock/account.ts",
+      "sha256": "357f621b2239bbde7023f1315a39b1ec1ce4ea7e7bf297f1fbed6372c5ac28e2"
+    },
+    {
+      "path": "src/preview-mock/admin-data.ts",
+      "sha256": "f61c5e3b816719542051b2460cf394107e8c668fce0fde278d1ab3d6151d266c"
+    },
+    {
+      "path": "src/preview-mock/domain.ts",
+      "sha256": "80b2fc67315d7a1248290c52b3babf3438c093a8d786bd40600292b0f4fbf909"
+    },
+    {
+      "path": "src/preview-mock/errors.ts",
+      "sha256": "27a4c4a48b737076f5a108800bf510d7bc400d74c259e8626b570297e56559f2"
+    },
+    {
+      "path": "src/preview-mock/index.ts",
+      "sha256": "2e0b64f76e643e8708fb8c48779d1ca49cd6dbe9ecf5a3f74ac3623e05ecd33b"
+    },
+    {
+      "path": "src/preview-mock/query-validation.ts",
+      "sha256": "31c663f71f54160d225af4dca7b99378af0e2bc9202b2e3f6bafbcaaef20bed5"
+    },
+    {
+      "path": "src/preview-mock/readers.ts",
+      "sha256": "27ebc70c6d070ff28d508e548b8e947dcee00927b0f9e5c871d01c1ba702bdef"
+    },
+    {
+      "path": "src/preview-mock/storage.ts",
+      "sha256": "e66b6fc1b5238b3e6786219424c25112d087f71aacfc6b6370528114c1e141c5"
+    },
+    {
+      "path": "src/shared/date-picker-calendar.ts",
+      "sha256": "285d053809c0dda30a906396e2c3f9735a973ae499d2f1195c761f70811b7fa5"
+    },
+    {
+      "path": "src/shared/foundation.ts",
+      "sha256": "9ada9ed7ed12da8eb2fa53e5850de1920682fee7ce33fc1f6c8e7969117e10e6"
+    },
+    {
+      "path": "src/shared/list-runtime.ts",
+      "sha256": "7feadbd7d16712174692bc17c50630a20139982422f626dc259b6f4aa4b3df43"
+    },
+    {
+      "path": "src/shared/screen-foundation.ts",
+      "sha256": "6ba420c1baea37f5d99ae97b6e72cdc18057751ed63e94a1cab33f7d3a0015ac"
+    },
+    {
+      "path": "src/shared/search.ts",
+      "sha256": "fc508d495ce346fb32649225b8156aace7cc15343e5dc118e8b0f1426baa45b5"
+    },
+    {
+      "path": "src/shared/table-query.ts",
+      "sha256": "46a1ccb56f2403a14812c8cede674fe4d81e1f1c946663e23a30ec930b7edf5b"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "axios",
+      "target": null,
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "../data/http/api-contract",
+      "target": "src/data/http/api-contract.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "./account",
+      "target": "src/preview-mock/account.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "./domain",
+      "target": "src/preview-mock/domain.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "./errors",
+      "target": "src/preview-mock/errors.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "./storage",
+      "target": "src/preview-mock/storage.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "./account",
+      "target": "src/preview-mock/account.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "./errors",
+      "target": "src/preview-mock/errors.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/index.ts",
+      "specifier": "./storage",
+      "target": "src/preview-mock/storage.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/account.ts",
+      "specifier": "../account/account-api-contract",
+      "target": "src/account/account-api-contract.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/account.ts",
+      "specifier": "../account/account-center-model",
+      "target": "src/account/account-center-model.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/account.ts",
+      "specifier": "../data/http/api-contract",
+      "target": "src/data/http/api-contract.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/account.ts",
+      "specifier": "./errors",
+      "target": "src/preview-mock/errors.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/account.ts",
+      "specifier": "./storage",
+      "target": "src/preview-mock/storage.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/domain.ts",
+      "specifier": "../data/http/api-contract",
+      "target": "src/data/http/api-contract.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/domain.ts",
+      "specifier": "../data/http/resource-defaults",
+      "target": "src/data/http/resource-defaults.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/domain.ts",
+      "specifier": "./readers",
+      "target": "src/preview-mock/readers.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/domain.ts",
+      "specifier": "./query-validation",
+      "target": "src/preview-mock/query-validation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/domain.ts",
+      "specifier": "./admin-data",
+      "target": "src/preview-mock/admin-data.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/domain.ts",
+      "specifier": "./errors",
+      "target": "src/preview-mock/errors.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/storage.ts",
+      "specifier": "./errors",
+      "target": "src/preview-mock/errors.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/account/account-api-contract.ts",
+      "specifier": "./account-center-model",
+      "target": "src/account/account-center-model.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/account/account-center-model.ts",
+      "specifier": "../data/fixtures/S01.presentation.json",
+      "target": "src/data/fixtures/S01.presentation.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/overview",
+      "target": "src/contracts/overview.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/defects",
+      "target": "src/contracts/defects.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/products",
+      "target": "src/contracts/products.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/skus",
+      "target": "src/contracts/skus.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/recipients",
+      "target": "src/contracts/recipients.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/pv-products",
+      "target": "src/contracts/pv-products.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/warranty-cases",
+      "target": "src/contracts/warranty-cases.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/parts-slips",
+      "target": "src/contracts/parts-slips.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/trays",
+      "target": "src/contracts/trays.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/receipts",
+      "target": "src/contracts/receipts.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/putaway-queue",
+      "target": "src/contracts/putaway-queue.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/putaway-orders",
+      "target": "src/contracts/putaway-orders.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/outbound-slips",
+      "target": "src/contracts/outbound-slips.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/inventory-reconciliation",
+      "target": "src/contracts/inventory-reconciliation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/reversal-slips",
+      "target": "src/contracts/reversal-slips.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/inbound-report",
+      "target": "src/contracts/inbound-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/outbound-report",
+      "target": "src/contracts/outbound-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/movement-history",
+      "target": "src/contracts/movement-history.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/inventory-report",
+      "target": "src/contracts/inventory-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/warranty-parts-report",
+      "target": "src/contracts/warranty-parts-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/label-report",
+      "target": "src/contracts/label-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/data-quality-report",
+      "target": "src/contracts/data-quality-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "./api-contract",
+      "target": "src/data/http/api-contract.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/dealer-export-report",
+      "target": "src/contracts/dealer-export-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/http/resource-defaults.ts",
+      "specifier": "../../contracts/goods-trace-report",
+      "target": "src/contracts/goods-trace-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/http/resource-defaults",
+      "target": "src/data/http/resource-defaults.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/http/api-contract",
+      "target": "src/data/http/api-contract.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/overview-fixture-adapter",
+      "target": "src/data/adapters/overview-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/defects-fixture-adapter",
+      "target": "src/data/adapters/defects-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/products-fixture-adapter",
+      "target": "src/data/adapters/products-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/skus-fixture-adapter",
+      "target": "src/data/adapters/skus-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/recipients-fixture-adapter",
+      "target": "src/data/adapters/recipients-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/pv-products-fixture-adapter",
+      "target": "src/data/adapters/pv-products-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/warranty-cases-fixture-adapter",
+      "target": "src/data/adapters/warranty-cases-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/parts-slips-fixture-adapter",
+      "target": "src/data/adapters/parts-slips-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/trays-fixture-adapter",
+      "target": "src/data/adapters/trays-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/receipts-fixture-adapter",
+      "target": "src/data/adapters/receipts-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/putaway-queue-fixture-adapter",
+      "target": "src/data/adapters/putaway-queue-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/putaway-orders-fixture-adapter",
+      "target": "src/data/adapters/putaway-orders-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/outbound-slips-fixture-adapter",
+      "target": "src/data/adapters/outbound-slips-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/inventory-fixture-adapter",
+      "target": "src/data/adapters/inventory-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/reversal-fixture-adapter",
+      "target": "src/data/adapters/reversal-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/inbound-report-fixture-adapter",
+      "target": "src/data/adapters/inbound-report-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/outbound-report-fixture-adapter",
+      "target": "src/data/adapters/outbound-report-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/movement-history-fixture-adapter",
+      "target": "src/data/adapters/movement-history-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/inventory-report-fixture-adapter",
+      "target": "src/data/adapters/inventory-report-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/warranty-parts-report-fixture-adapter",
+      "target": "src/data/adapters/warranty-parts-report-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/label-report-fixture-adapter",
+      "target": "src/data/adapters/label-report-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/data-quality-fixture-adapter",
+      "target": "src/data/adapters/data-quality-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/dealer-export-fixture-adapter",
+      "target": "src/data/adapters/dealer-export-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/readers.ts",
+      "specifier": "../data/adapters/goods-trace-fixture-adapter",
+      "target": "src/data/adapters/goods-trace-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../data/http/api-contract",
+      "target": "src/data/http/api-contract.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../data/http/api-contract",
+      "target": "src/data/http/api-contract.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/pv-products",
+      "target": "src/contracts/pv-products.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/recipients",
+      "target": "src/contracts/recipients.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/reversal-slips",
+      "target": "src/contracts/reversal-slips.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/inbound-report",
+      "target": "src/contracts/inbound-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/outbound-report",
+      "target": "src/contracts/outbound-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/movement-history",
+      "target": "src/contracts/movement-history.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/inventory-report",
+      "target": "src/contracts/inventory-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/label-report",
+      "target": "src/contracts/label-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/data-quality-report",
+      "target": "src/contracts/data-quality-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/dealer-export-report",
+      "target": "src/contracts/dealer-export-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/goods-trace-report",
+      "target": "src/contracts/goods-trace-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/overview",
+      "target": "src/contracts/overview.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/defects",
+      "target": "src/contracts/defects.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/products",
+      "target": "src/contracts/products.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/skus",
+      "target": "src/contracts/skus.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/query-validation.ts",
+      "specifier": "../contracts/inventory-reconciliation",
+      "target": "src/contracts/inventory-reconciliation.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/preview-mock/admin-data.ts",
+      "specifier": "../data/adapters/s29-users-rbac-fixture-adapter",
+      "target": "src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/admin-data.ts",
+      "specifier": "../data/adapters/system-audit-fixture-adapter",
+      "target": "src/data/adapters/system-audit-fixture-adapter.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/admin-data.ts",
+      "specifier": "../contracts/s29-users-rbac",
+      "target": "src/contracts/s29-users-rbac.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/admin-data.ts",
+      "specifier": "../contracts/system-audit",
+      "target": "src/contracts/system-audit.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/preview-mock/admin-data.ts",
+      "specifier": "../contracts/warehouse-config",
+      "target": "src/contracts/warehouse-config.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/overview.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/defects.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/products.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/skus.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/recipients.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/recipients.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/recipients.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/pv-products.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/warranty-cases.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/warranty-cases.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/parts-slips.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/parts-slips.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/trays.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/receipts.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/putaway-queue.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/putaway-orders.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/outbound-slips.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/inventory-reconciliation.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/reversal-slips.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/inbound-report.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/outbound-report.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/movement-history.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/inventory-report.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/label-report.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/data-quality-report.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/dealer-export-report.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/goods-trace-report.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/overview-fixture-adapter.ts",
+      "specifier": "../fixtures/S01_SCANNER_PINNED.json",
+      "target": "src/data/fixtures/S01_SCANNER_PINNED.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/overview-fixture-adapter.ts",
+      "specifier": "./overview-table-query",
+      "target": "src/data/adapters/overview-table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/overview-fixture-adapter.ts",
+      "specifier": "../../contracts/overview",
+      "target": "src/contracts/overview.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/defects-fixture-adapter.ts",
+      "specifier": "../fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "target": "src/data/fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/defects-fixture-adapter.ts",
+      "specifier": "../fixtures/SCREEN_CONTRACTS.seed.json",
+      "target": "src/data/fixtures/SCREEN_CONTRACTS.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/defects-fixture-adapter.ts",
+      "specifier": "./defects-query",
+      "target": "src/data/adapters/defects-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/defects-fixture-adapter.ts",
+      "specifier": "../../contracts/defects",
+      "target": "src/contracts/defects.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/products-fixture-adapter.ts",
+      "specifier": "../fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "target": "src/data/fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/products-fixture-adapter.ts",
+      "specifier": "../fixtures/SCREEN_CONTRACTS.seed.json",
+      "target": "src/data/fixtures/SCREEN_CONTRACTS.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/products-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/products-fixture-adapter.ts",
+      "specifier": "../../shared/screen-foundation",
+      "target": "src/shared/screen-foundation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/products-fixture-adapter.ts",
+      "specifier": "../../controllers/products-policy",
+      "target": "src/controllers/products-policy.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/products-fixture-adapter.ts",
+      "specifier": "../../contracts/products",
+      "target": "src/contracts/products.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/skus-fixture-adapter.ts",
+      "specifier": "../fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "target": "src/data/fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/skus-fixture-adapter.ts",
+      "specifier": "../fixtures/SCREEN_CONTRACTS.seed.json",
+      "target": "src/data/fixtures/SCREEN_CONTRACTS.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/skus-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/skus-fixture-adapter.ts",
+      "specifier": "../../shared/screen-foundation",
+      "target": "src/shared/screen-foundation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/skus-fixture-adapter.ts",
+      "specifier": "../../controllers/skus-policy",
+      "target": "src/controllers/skus-policy.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/skus-fixture-adapter.ts",
+      "specifier": "../../contracts/skus",
+      "target": "src/contracts/skus.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/recipients-fixture-adapter.ts",
+      "specifier": "../fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "target": "src/data/fixtures/DESIGN_FIXTURE_SNAPSHOT.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/recipients-fixture-adapter.ts",
+      "specifier": "../fixtures/SCREEN_CONTRACTS.seed.json",
+      "target": "src/data/fixtures/SCREEN_CONTRACTS.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/recipients-fixture-adapter.ts",
+      "specifier": "../../contracts/recipients",
+      "target": "src/contracts/recipients.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/recipients-fixture-adapter.ts",
+      "specifier": "../../contracts/recipients",
+      "target": "src/contracts/recipients.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/recipients-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/recipients-fixture-adapter.ts",
+      "specifier": "../../shared/screen-foundation",
+      "target": "src/shared/screen-foundation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/pv-products-fixture-adapter.ts",
+      "specifier": "../fixtures/S06.seed.json",
+      "target": "src/data/fixtures/S06.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/pv-products-fixture-adapter.ts",
+      "specifier": "../../contracts/pv-products",
+      "target": "src/contracts/pv-products.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/pv-products-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/pv-products-fixture-adapter.ts",
+      "specifier": "../pv-page-sort",
+      "target": "src/data/pv-page-sort.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/warranty-cases-fixture-adapter.ts",
+      "specifier": "../fixtures/S09.seed.json",
+      "target": "src/data/fixtures/S09.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/warranty-cases-fixture-adapter.ts",
+      "specifier": "../../contracts/warranty-cases",
+      "target": "src/contracts/warranty-cases.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/warranty-cases-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/parts-slips-fixture-adapter.ts",
+      "specifier": "../fixtures/S10.seed.json",
+      "target": "src/data/fixtures/S10.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/parts-slips-fixture-adapter.ts",
+      "specifier": "../../contracts/parts-slips",
+      "target": "src/contracts/parts-slips.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/parts-slips-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/trays-fixture-adapter.ts",
+      "specifier": "../fixtures/S11.seed.json",
+      "target": "src/data/fixtures/S11.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/trays-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/trays-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/trays-fixture-adapter.ts",
+      "specifier": "../../contracts/trays",
+      "target": "src/contracts/trays.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/receipts-fixture-adapter.ts",
+      "specifier": "../fixtures/S12.seed.json",
+      "target": "src/data/fixtures/S12.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/receipts-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/receipts-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/receipts-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/receipts-fixture-adapter.ts",
+      "specifier": "../../contracts/receipts",
+      "target": "src/contracts/receipts.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-queue-fixture-adapter.ts",
+      "specifier": "../fixtures/S13.seed.json",
+      "target": "src/data/fixtures/S13.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-queue-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-queue-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-queue-fixture-adapter.ts",
+      "specifier": "../../contracts/putaway-queue",
+      "target": "src/contracts/putaway-queue.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-orders-fixture-adapter.ts",
+      "specifier": "../fixtures/S14.seed.json",
+      "target": "src/data/fixtures/S14.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-orders-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-orders-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/putaway-orders-fixture-adapter.ts",
+      "specifier": "../../contracts/putaway-orders",
+      "target": "src/contracts/putaway-orders.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-slips-fixture-adapter.ts",
+      "specifier": "../fixtures/S15.seed.json",
+      "target": "src/data/fixtures/S15.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-slips-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-slips-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-slips-fixture-adapter.ts",
+      "specifier": "../../contracts/outbound-slips",
+      "target": "src/contracts/outbound-slips.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-fixture-adapter.ts",
+      "specifier": "../fixtures/S16.seed.json",
+      "target": "src/data/fixtures/S16.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-fixture-adapter.ts",
+      "specifier": "../../contracts/inventory-reconciliation",
+      "target": "src/contracts/inventory-reconciliation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/reversal-fixture-adapter.ts",
+      "specifier": "../fixtures/S17.seed.json",
+      "target": "src/data/fixtures/S17.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/reversal-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/reversal-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/reversal-fixture-adapter.ts",
+      "specifier": "../../contracts/reversal-slips",
+      "target": "src/contracts/reversal-slips.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inbound-report-fixture-adapter.ts",
+      "specifier": "../fixtures/S18.seed.json",
+      "target": "src/data/fixtures/S18.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inbound-report-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inbound-report-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inbound-report-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inbound-report-fixture-adapter.ts",
+      "specifier": "../../contracts/inbound-report",
+      "target": "src/contracts/inbound-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-report-fixture-adapter.ts",
+      "specifier": "../fixtures/S19.seed.json",
+      "target": "src/data/fixtures/S19.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-report-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-report-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-report-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/outbound-report-fixture-adapter.ts",
+      "specifier": "../../contracts/outbound-report",
+      "target": "src/contracts/outbound-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/movement-history-fixture-adapter.ts",
+      "specifier": "../fixtures/S20.seed.json",
+      "target": "src/data/fixtures/S20.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/movement-history-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/movement-history-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/movement-history-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/movement-history-fixture-adapter.ts",
+      "specifier": "../../contracts/movement-history",
+      "target": "src/contracts/movement-history.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-report-fixture-adapter.ts",
+      "specifier": "../fixtures/S21.seed.json",
+      "target": "src/data/fixtures/S21.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-report-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-report-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-report-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/inventory-report-fixture-adapter.ts",
+      "specifier": "../../contracts/inventory-report",
+      "target": "src/contracts/inventory-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/warranty-parts-report-fixture-adapter.ts",
+      "specifier": "../fixtures/S22.summary.json",
+      "target": "src/data/fixtures/S22.summary.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/warranty-parts-report-fixture-adapter.ts",
+      "specifier": "../fixtures/S22.desktop.json",
+      "target": "src/data/fixtures/S22.desktop.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/warranty-parts-report-fixture-adapter.ts",
+      "specifier": "../../contracts/warranty-parts-report",
+      "target": "src/contracts/warranty-parts-report.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/label-report-fixture-adapter.ts",
+      "specifier": "../fixtures/S23.seed.json",
+      "target": "src/data/fixtures/S23.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/label-report-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/label-report-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/label-report-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/label-report-fixture-adapter.ts",
+      "specifier": "../../contracts/label-report",
+      "target": "src/contracts/label-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/data-quality-fixture-adapter.ts",
+      "specifier": "../fixtures/S24.seed.json",
+      "target": "src/data/fixtures/S24.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/data-quality-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/data-quality-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/data-quality-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/data-quality-fixture-adapter.ts",
+      "specifier": "../../contracts/data-quality-report",
+      "target": "src/contracts/data-quality-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/dealer-export-fixture-adapter.ts",
+      "specifier": "../fixtures/S25.seed.json",
+      "target": "src/data/fixtures/S25.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/dealer-export-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/dealer-export-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/dealer-export-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/dealer-export-fixture-adapter.ts",
+      "specifier": "../../contracts/dealer-export-report",
+      "target": "src/contracts/dealer-export-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/goods-trace-fixture-adapter.ts",
+      "specifier": "../fixtures/S26.seed.json",
+      "target": "src/data/fixtures/S26.seed.json",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/goods-trace-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/goods-trace-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/goods-trace-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/goods-trace-fixture-adapter.ts",
+      "specifier": "../../contracts/goods-trace-report",
+      "target": "src/contracts/goods-trace-report.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+      "specifier": "../../contracts/s29-users-rbac",
+      "target": "src/contracts/s29-users-rbac.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+      "specifier": "../../contracts/s29-users-rbac",
+      "target": "src/contracts/s29-users-rbac.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/system-audit-fixture-adapter.ts",
+      "specifier": "../../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/system-audit-fixture-adapter.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/system-audit-fixture-adapter.ts",
+      "specifier": "../../shared/date-picker-calendar",
+      "target": "src/shared/date-picker-calendar.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/system-audit-fixture-adapter.ts",
+      "specifier": "../../contracts/system-audit",
+      "target": "src/contracts/system-audit.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/contracts/s29-users-rbac.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/contracts/system-audit.ts",
+      "specifier": "../shared/list-runtime",
+      "target": "src/shared/list-runtime.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/shared/table-query.ts",
+      "specifier": "./foundation",
+      "target": "src/shared/foundation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/shared/table-query.ts",
+      "specifier": "./search",
+      "target": "src/shared/search.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/shared/list-runtime.ts",
+      "specifier": "./foundation",
+      "target": "src/shared/foundation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/shared/list-runtime.ts",
+      "specifier": "./table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/overview-table-query.ts",
+      "specifier": "../../contracts/overview",
+      "target": "src/contracts/overview.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/overview-table-query.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/overview-table-query.ts",
+      "specifier": "../../shared/screen-foundation",
+      "target": "src/shared/screen-foundation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/overview-table-query.ts",
+      "specifier": "../../shared/search",
+      "target": "src/shared/search.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/adapters/defects-query.ts",
+      "specifier": "../../contracts/defects",
+      "target": "src/contracts/defects.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/adapters/defects-query.ts",
+      "specifier": "../../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/shared/screen-foundation.ts",
+      "specifier": "../contracts/overview",
+      "target": "src/contracts/overview.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/shared/screen-foundation.ts",
+      "specifier": "../contracts/defects",
+      "target": "src/contracts/defects.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/shared/screen-foundation.ts",
+      "specifier": "../contracts/products",
+      "target": "src/contracts/products.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/shared/screen-foundation.ts",
+      "specifier": "../contracts/skus",
+      "target": "src/contracts/skus.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/shared/screen-foundation.ts",
+      "specifier": "../contracts/recipients",
+      "target": "src/contracts/recipients.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/shared/screen-foundation.ts",
+      "specifier": "../contracts/pv-products",
+      "target": "src/contracts/pv-products.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/shared/screen-foundation.ts",
+      "specifier": "./table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/controllers/products-policy.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/controllers/products-policy.ts",
+      "specifier": "../shared/search",
+      "target": "src/shared/search.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/controllers/products-policy.ts",
+      "specifier": "../shared/screen-foundation",
+      "target": "src/shared/screen-foundation.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/controllers/skus-policy.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/data/pv-page-sort.ts",
+      "specifier": "../contracts/pv-products",
+      "target": "src/contracts/pv-products.ts",
+      "type_only": true
+    },
+    {
+      "source": "src/data/pv-page-sort.ts",
+      "specifier": "../shared/table-query",
+      "target": "src/shared/table-query.ts",
+      "type_only": false
+    },
+    {
+      "source": "src/shared/date-picker-calendar.ts",
+      "specifier": "./foundation",
+      "target": "src/shared/foundation.ts",
+      "type_only": false
+    }
+  ],
+  "external_specifiers": [
+    "axios"
+  ],
+  "forbidden_node_or_server_edges": [],
+  "extractions": [
+    {
+      "source": "mock/baseline-readers.ts",
+      "target": "src/preview-mock/readers.ts",
+      "source_sha256": "d81e867ca57332de77844bb8974eefd88f0aad0ed04c8f8f6d97d3c8efb02abb",
+      "only_import_paths_and_authorized_boundary_comment_changed": true
+    },
+    {
+      "source": "mock/query-validation.ts",
+      "target": "src/preview-mock/query-validation.ts",
+      "source_sha256": "198057264ca641905cced577b1105c5ff8508088224fab0f47e2c86022027cee",
+      "only_import_paths_and_authorized_boundary_comment_changed": true
+    },
+    {
+      "source": "mock/admin-data.ts",
+      "target": "src/preview-mock/admin-data.ts",
+      "source_sha256": "26a8346effb6834565ba56948657a0226c24300368c68456735dffaff2bac58c",
+      "only_import_paths_and_authorized_boundary_comment_changed": true
+    }
+  ]
+}

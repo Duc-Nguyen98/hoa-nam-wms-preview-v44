@@ -1,0 +1,32 @@
+{
+  "screenId": "S16",
+  "businessCode": "INV-01",
+  "state": "P01_Default",
+  "source": "HN_INV01_TRA_CUU_TON_DOI_SOAT_BASELINE_STATE_PROMPTS_v1.0 / S16_TON_KHO_DOI_SOAT.md",
+  "scope": "detail",
+  "completeness": "complete",
+  "fields": [
+    "sku",
+    "name",
+    "itemType",
+    "stockStatus",
+    "available",
+    "onHand",
+    "ledger",
+    "difference",
+    "unit",
+    "suggestedLocation",
+    "reconciliation",
+    "warehouse"
+  ],
+  "optionCatalogue": {
+    "itemType": ["Sản phẩm", "Linh kiện"],
+    "stockStatus": ["Khả dụng", "Không thể bán/xuất", "Hàng lỗi", "Chờ kiểm tra"]
+  },
+  "visibleRows": [
+    ["MH-SP-001", "Máy khoan cầm tay", "Sản phẩm", "Khả dụng", 12, 14, 14, 0, "cái", "Hộp MH-H01 / Khay MH-K01", "Khớp", "Kho Hoa Nam"],
+    ["MH-SP-002", "Máy cắt cầm tay", "Sản phẩm", "Hàng lỗi", 0, 3, 3, 0, "cái", "Hộp MH-H02 / Khay MH-K02", "Khớp", "Kho Hoa Nam"],
+    ["MH-LK-001", "Bộ công tắc", "Linh kiện", "Khả dụng", 24, 26, 28, -2, "bộ", "Hộp MH-H03 / Khay MH-K03", "Có chênh lệch", "Kho Hoa Nam"],
+    ["MH-LK-002", "Bộ nguồn 12V", "Linh kiện", "Chờ kiểm tra", 0, 8, 8, 0, "bộ", "Hộp MH-H04 / Khay MH-K04", "Khớp", "Kho Hoa Nam"]
+  ]
+}

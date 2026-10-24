@@ -1,0 +1,73 @@
+.hn-shell .s27-screen { min-width: 0; gap: 14px; }
+.s27-pv { display: grid; gap: 14px; min-width: 0; }
+.s27-pv code, .s27-pv-detail code { overflow-wrap: anywhere; white-space: normal; }
+.s27-pv .s27-list .hn-catalogue-toolbar > .hn-catalogue-trailing { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.s27-pv-detail dl { display: grid; gap: 16px; margin: 0 0 20px; overflow-wrap: anywhere; }
+.s27-pv-detail dd { margin: 4px 0 0; }
+.s27-pv-comparison { max-width: 100%; overflow: auto; }
+.s27-pv-comparison table { border-collapse: collapse; width: 100%; min-width: 560px; table-layout: fixed; }
+.s27-pv-comparison th, .s27-pv-comparison td { text-align: start; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--hn-border); overflow-wrap: anywhere; }
+.s27-pv-comparison th { color: var(--hn-text); font-weight: 600; }
+.s27-cohorts, .s27-operational-period { display: flex; flex-wrap: wrap; align-items: end; gap: 8px 16px; }
+.s27-operational { display: grid; gap: 14px; min-width: 0; }
+.s27-operational-codes { display: grid; gap: 4px; }
+.s27-operational .hn-table code { overflow-wrap: anywhere; font-size: 12px; }
+.s27-operational .hn-table { min-width: 1900px; }
+.s27-dev-banner { position: relative; z-index: 46; min-height: 32px; overflow-wrap: anywhere; }
+/* The DEV banner is outside GlobalShell by design. Match its workspace offset
+   so the shared fixed rail never clips its scope text in the QA harness. */
+body:has(.hn-shell[data-layout='desktop'][data-collapsed='false']) .s27-dev-banner { margin-inline-start: 260px; }
+body:has(.hn-shell[data-layout='desktop'][data-collapsed='true']) .s27-dev-banner,
+body:has(.hn-shell[data-layout='rail']) .s27-dev-banner { margin-inline-start: 70px; }
+body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start: 0; }
+.s27-screen .hn-page-description { max-width: 640px; }
+.s27-screen .hn-page-actions { align-items: end; }
+.s27-scope { display: flex; align-items: center; gap: 7px; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+.s27-scope svg { flex: 0 0 auto; }
+.s27-list { min-width: 0; background: var(--hn-surface); border: 1px solid var(--hn-border); border-radius: var(--hn-card-radius); box-shadow: var(--hn-component-shadow); overflow: hidden; }
+.s27-list-heading { display: flex; align-items: start; justify-content: space-between; gap: 16px; padding: 18px 20px 10px; }
+.s27-list-heading h2 { margin: 0; color: var(--hn-text); font-size: 19px; line-height: 26px; }
+.s27-list-heading p { margin: 3px 0 0; color: var(--hn-muted); font-size: 12px; line-height: 19px; }
+.s27-list-heading strong { padding-top: 4px; color: var(--hn-text); font-size: 13px; white-space: nowrap; }
+.s27-list .hn-catalogue-toolbar { padding-inline: 20px; }
+.s27-list .hn-catalogue-toolbar[data-layout='worklist'] { align-items: end; }
+.s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-trailing { flex: 1 1 560px; max-width: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; }
+.s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-trailing > * { min-width: 0; max-width: none; }
+.s27-list .hn-active-filters { padding-inline: 20px; }
+.s27-list .hn-table-scroll { max-height: 560px; overflow: auto; border-top: 1px solid var(--hn-border); }
+.s27-list .hn-table { min-width: 1120px; }
+.s27-list [data-column="ordinal"] { min-width: 54px; }
+.s27-list [data-column="at"] { min-width: 165px; }
+.s27-list [data-column="actorName"] { min-width: 160px; }
+.s27-list [data-column="eventType"] { min-width: 180px; }
+.s27-list [data-column="module"] { min-width: 120px; }
+.s27-list [data-column="id"] { min-width: 250px; }
+.s27-list [data-column="detail"] { min-width: 245px; }
+.s27-time, .s27-code { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.s27-code { font-size: 12px; color: var(--hn-text); }
+.s27-muted { color: var(--hn-muted); }
+.s27-detail { display: grid; gap: 3px; }
+.s27-detail span { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 7px; align-items: baseline; }
+.s27-detail b { color: var(--hn-muted); font-size: 11px; font-weight: 500; }
+.s27-detail code { overflow-wrap: anywhere; color: var(--hn-text); font-size: 12px; }
+.s27-footer { display: grid; gap: 6px; padding: 8px 20px 14px; border-top: 1px solid var(--hn-border); }
+.s27-footer p { display: flex; gap: 6px; align-items: center; margin: 0; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+.s27-footer p svg { flex: 0 0 auto; }
+.s27-no-result { display: grid; justify-items: center; gap: 8px; padding: 30px 20px; color: var(--hn-muted); }
+.s27-no-result strong { color: var(--hn-text); }
+.s27-loading { padding: 28px 20px; color: var(--hn-muted); }
+.s27-source-pending { margin: 0; padding: 16px; border: 1px solid var(--hn-border); border-radius: var(--hn-card-radius); background: var(--hn-surface); color: var(--hn-muted); line-height: 1.6; }
+.s27-scroll-hint { margin: 0; padding: 0 20px 10px; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+@media (max-width: 900px) {
+  .s27-screen .hn-page-actions { width: 100%; align-items: stretch; }
+  .s27-screen .hn-page-actions .hn-date-picker { width: min(100%, 320px); }
+  .s27-list .hn-catalogue-toolbar[data-layout='worklist'] { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+  .s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-search { flex-basis: 100%; margin-top: 0; grid-column: 1 / -1; }
+  .s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-trailing { flex-basis: auto; grid-column: 1; width: 100%; }
+  .s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-actions { grid-column: 2; grid-row: 2; margin-top: 25px; }
+  .s27-list-heading { flex-direction: column; gap: 4px; }
+  .s27-list-heading strong { padding-top: 0; }
+}
+@media (max-width: 560px) {
+  .s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-trailing { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

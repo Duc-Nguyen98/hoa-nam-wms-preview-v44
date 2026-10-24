@@ -1,0 +1,30 @@
+{
+  "provenance": {
+    "classification": "SOURCE_FIXTURE",
+    "source": "S18_BAO_CAO_NHAP_KHO.md — Dữ liệu và snapshot nguồn",
+    "sourceScreen": "golden-screen-02",
+    "revision": "P01 r01 REVIEW",
+    "transcription": "Transcribed from the Owner-assigned MD; referenced JSON and five design PNGs unavailable at implementation start.",
+    "backendMapping": null
+  },
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "summary": {
+    "products": 1284, "receipts": 42, "completed": 32, "completedPercentage": "76,2%", "suppliers": 18, "needsAttention": 8,
+    "previousProducts": 1070, "increasePercentage": 20,
+    "daily": [
+      { "date": "2026-09-04", "quantity": 120 }, { "date": "2026-09-05", "quantity": 144 },
+      { "date": "2026-09-06", "quantity": 160 }, { "date": "2026-09-07", "quantity": 184 },
+      { "date": "2026-09-08", "quantity": 220 }, { "date": "2026-09-09", "quantity": 260 },
+      { "date": "2026-09-10", "quantity": 196 }
+    ],
+    "progress": [ { "status": "Hoàn tất", "count": 32 }, { "status": "Đang nhập", "count": 4 }, { "status": "Chờ duyệt", "count": 4 }, { "status": "Đã hủy", "count": 2 } ]
+  },
+  "statusOptions": ["Hoàn tất", "Đang nhập", "Chờ duyệt", "Đã hủy"],
+  "rows": [
+    { "renderKey": "s18-source-1", "code": "PN-0042", "receivedDate": "2026-09-10", "supplier": "Công ty Hoàng Phát", "receivedQuantity": 196, "status": "Hoàn tất", "creator": "Nguyễn Văn B" },
+    { "renderKey": "s18-source-2", "code": "PN-0041", "receivedDate": "2026-09-10", "supplier": "Đại lý Minh Phát", "receivedQuantity": null, "status": "Chờ duyệt", "creator": "Trần Thị C" },
+    { "renderKey": "s18-source-3", "code": "PN-0040", "receivedDate": "2026-09-10", "supplier": "Công ty ABC", "receivedQuantity": null, "status": "Đang nhập", "creator": "Lê Minh D" },
+    { "renderKey": "s18-source-4", "code": "PN-0039", "receivedDate": "2026-09-09", "supplier": "Công ty Hoàng Phát", "receivedQuantity": 140, "status": "Hoàn tất", "creator": "Nguyễn Văn B" },
+    { "renderKey": "s18-source-5", "code": "PN-0038", "receivedDate": "2026-09-09", "supplier": "Công ty Bắc Nam", "receivedQuantity": 120, "status": "Hoàn tất", "creator": "Phạm Thị E" }
+  ]
+}

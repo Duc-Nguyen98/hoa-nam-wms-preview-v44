@@ -1,0 +1,8 @@
+.op-preview { max-width: 72rem; margin: 0 auto; padding: 1.5rem; color: inherit; }
+.op-preview nav, .op-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-block: 1rem; }
+.op-preview section, .op-preview fieldset { margin-block: 1rem; padding: 1rem; border: 1px solid currentColor; border-radius: .5rem; }
+.op-preview label { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-block: .75rem; }
+.op-preview input:not([type=checkbox]), .op-preview select, .op-preview textarea { max-width: 100%; min-width: 12rem; padding: .5rem; font: inherit; color: inherit; background: transparent; border: 1px solid currentColor; border-radius: .25rem; }
+.op-preview select option { color: CanvasText; background: Canvas; }
+.op-preview pre { overflow: auto; max-height: 28rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.op-preview button { margin: .25rem; }

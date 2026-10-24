@@ -1,0 +1,3 @@
+.hn-preview-demo-action { margin-block-end: 12px; }
+.hn-preview-build-link { color: inherit; text-underline-offset: 3px; }
+.hn-preview-build-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }

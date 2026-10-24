@@ -1,0 +1,34 @@
+{
+  "screen_id": "S07",
+  "title": "Đăng nhập",
+  "schema_role": "frontend_seed_not_backend_DTO",
+  "source_record": "references/source-records/HN_DangNhap_XacNhanPhien_P01_r01_HoSo_2026-10-08.json",
+  "source_revision": "P01 r01 REVIEW · 08/10/2026",
+  "approval_at": "2026-10-09T17:06:04+07:00",
+  "approval_scope": "P01 visual only, not validation of full business dataset",
+  "fixture": {
+    "kind": "AUTH01_DEFAULT",
+    "username": "",
+    "password": "",
+    "passwordVisible": false,
+    "errors": null,
+    "session": null,
+    "scenarioOutcome": null,
+    "credentialsProvided": false,
+    "fixture_note": "No real credentials; a password policy or accepted credential pair has not been supplied."
+  },
+  "completeness": {
+    "total_in_design": null,
+    "provided_detail_records": 0,
+    "missing_detail_records": null,
+    "page_size": null,
+    "full_dataset": null,
+    "api_verified": false
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  },
+  "runtime_execution_status": "NOT_RUN_IN_PROMPT_PACKAGE"
+}

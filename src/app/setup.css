@@ -1,0 +1,23 @@
+.setup-container { max-width: 1040px; margin: 0 auto; display: grid; gap: 24px; }
+.setup-intro { padding: 12px 0 2px; }
+.setup-intro h1 { font-size: clamp(1.6rem, 3vw, 2rem); color: var(--hn-brand, #0A3765); margin: 8px 0 12px; line-height: 1.25; }
+.setup-intro > p:last-child { margin: 0; color: #526277; line-height: 1.65; }
+.setup-eyebrow { margin: 0; color: #526277; font-size: .75rem; letter-spacing: .13em; font-weight: 700; }
+.setup-health { display: flex; align-items: center; gap: 10px; line-height: 1.6; }
+.setup-status-dot { width: 9px; height: 9px; flex: 0 0 9px; background: #718096; border-radius: 50%; }
+.setup-status-dot[data-ready="true"] { background: #278454; }
+.setup-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 22px 32px; margin: 26px 0 0; padding-top: 24px; border-top: 1px solid #e3e9ef; }
+.setup-facts dt { color: #64748b; font-size: .85rem; margin-bottom: 7px; }
+.setup-facts dd { margin: 0; font-weight: 600; }
+.setup-screen-list { list-style: none; padding: 0; margin: 0; }
+.setup-screen-list li { display: flex; align-items: center; gap: 16px; padding: 15px 0; border-bottom: 1px solid #e3e9ef; min-width: 0; }
+.setup-screen-list li:last-child { border-bottom: 0; }
+.setup-screen-key { font-size: .85rem; color: #64748b; font-variant-numeric: tabular-nums; }
+.setup-screen-list li > div { min-width: 0; flex: 1; }
+.setup-screen-list a { display: inline-flex; align-items: center; min-height: 44px; color: #0A3765; text-decoration-thickness: 1px; text-underline-offset: 4px; font-weight: 600; }
+.setup-screen-list p { margin: 0; font-size: .75rem; color: #64748b; overflow-wrap: anywhere; }
+.setup-pending { color: #64748b; font-size: .8rem; }
+.setup-footer { margin: 0; color: #64748b; font-size: .8rem; line-height: 1.8; overflow-wrap: anywhere; }
+.setup-mono { font-family: ui-monospace, monospace; overflow-wrap: anywhere; font-size: .85rem; }
+.setup-link { display: inline-flex; min-height: 44px; align-items: center; color: #004E74; }
+@media (max-width: 580px) { .setup-pending { display: none; } .setup-screen-list li { gap: 10px; } }

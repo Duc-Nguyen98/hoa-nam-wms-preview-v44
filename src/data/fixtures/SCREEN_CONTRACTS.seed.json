@@ -1,0 +1,1187 @@
+{
+  "package_id": "HN_WEB_5_SCREEN_STATIC_UI_r2.0",
+  "schema_purpose": "Design coordination metadata; not a production API or business enum schema",
+  "authoring_status": "CONTRACT_LOCKED_RUNTIME_NOT_EXECUTED",
+  "screens": [
+    {
+      "screen_id": "S01",
+      "title": "Tổng quan vận hành",
+      "prompt_file": "prompts/S01_TONG_QUAN_VAN_HANH.md",
+      "legacy_prompt": "P02",
+      "legacy_group": "R02",
+      "state_namespace_note": "P01 Default is a screen state label, not the legacy P01 session prompt.",
+      "business_scope": "Theo dõi tổng quan và chứng từ",
+      "sources": {
+        "page_url": "https://chatgpt.com/space/page_d79b0a4265688191a26d6bae9aeed838",
+        "snapshot": "references/S01_TONG_QUAN_VAN_HANH.snapshot.md",
+        "snapshot_sequence": 3
+      },
+      "visual": {
+        "current_revision": "DEFAULT_2026-10-08",
+        "current_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "approved_reference_revision": "DEFAULT_2026-10-08",
+        "approval_scope": "Default visual only; exact five variants; not API/RBAC/full states/runtime",
+        "approval_evidence": "Screen approval log and parent registry; five-screen confirmation 2026-10-08 03:36 UTC+7",
+        "current_png_hashes_verified_in_this_package": false,
+        "variants": [
+          {
+            "device": "desktop-mo-rong",
+            "label": "Desktop mở rộng",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#tong-quan-van-hanh/desktop-mo-rong",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9hZ0V1R1UwSFA3aVVuQWU0ZHVOYnRB_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "DEFAULT_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "desktop-thu-gon",
+            "label": "Desktop thu gọn",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#tong-quan-van-hanh/desktop-thu-gon",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV91Vmw4X0ZXZEdJMFR5LVNNWWRxOF9n_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "DEFAULT_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-ngang",
+            "label": "Tablet ngang",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#tong-quan-van-hanh/tablet-ngang",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9sZTZqaTFLaDY1Y0taNVBCblZxai1B_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "DEFAULT_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-doc",
+            "label": "Tablet dọc",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#tong-quan-van-hanh/tablet-doc",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9yZ05lcmtULXY3MG9XcFQxaFZ2Ukhn_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "DEFAULT_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "drawer-mo",
+            "label": "Tablet dọc Drawer mở",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#tong-quan-van-hanh/drawer-mo",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9Na1lfMWJFeTUxbjMyNWx5eFVLSlFn_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "DEFAULT_2026-10-08",
+            "reference_bytes_in_package": false
+          }
+        ],
+        "implementation_reference_revision": "DEFAULT_2026-10-08",
+        "implementation_reference_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "implementation_authorization_evidence": "references/OWNER_STATIC_UI_DECISION_2026-10-08.md"
+      },
+      "fields": [],
+      "field_registry_status": "NEEDS_SOURCE_AND_VISUAL_EXTRACTION",
+      "query": {
+        "search_ui_fields": null,
+        "filters_ui_labels": [
+          "Loại phiếu",
+          "Trạng thái"
+        ],
+        "filter_default": "Tất cả",
+        "full_filter_options": null,
+        "search_trigger": null,
+        "search_match_mode": null,
+        "sort_ui_default": {
+          "label": "Thời gian",
+          "direction": "descending"
+        },
+        "sort_api_field": null,
+        "sort_secondary_key": null,
+        "pagination": {
+          "page": 1,
+          "page_size": 10,
+          "total": 16,
+          "page_count": 2,
+          "page_size_options": null,
+          "visible_row_count_is_page_size": false,
+          "go_to_first_page_on": [
+            "search_change",
+            "filter_change",
+            "page_size_change"
+          ]
+        },
+        "summary_scope_after_filter": "PROPOSED_TABLE_ONLY_FILTER_DOES_NOT_CHANGE_KPI_CHART",
+        "date_range": {
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "scope": [
+            "inbound_count",
+            "outbound_count",
+            "chart",
+            "documents_table"
+          ],
+          "business_date_field": null,
+          "timezone": null,
+          "boundaries_confirmed": false
+        },
+        "reset_scope_status": "REQUIRES_OWNER_CONFIRMATION"
+      },
+      "entry_points": {
+        "primary_cta": null,
+        "row_action": null,
+        "form_or_detail_contract": null,
+        "authorization_inferred_from_button": false
+      },
+      "summary_fixture": {
+        "inbound_documents": 8,
+        "outbound_documents": 8,
+        "stock_total": null,
+        "stock_display": "—",
+        "stock_help": "Chưa có số liệu xác nhận",
+        "open_warranty_cases": 4,
+        "posted_documents": 11,
+        "waiting_on_web_documents": 5
+      },
+      "api": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "application_route": null,
+        "endpoints": null,
+        "dto_mapping": null,
+        "business_enum_mapping": null
+      },
+      "rbac": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "roles": null,
+        "permission_keys": null
+      },
+      "design_locked": false,
+      "verification": {
+        "visual": "NOT_RUN",
+        "behavior": "NOT_RUN",
+        "integration": "NOT_RUN",
+        "note": "This package records prior approval evidence; it does not run screen QA."
+      },
+      "issues": [
+        {
+          "id": "S01-KPI_DEFINITION",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Trường ngày/timezone, biên kỳ, KPI/count/status/unit và phạm vi tổng hợp chưa là API contract."
+        },
+        {
+          "id": "S01-FIXTURE_RECORDS",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Gói chỉ chứa tổng/chart; cần nguồn chi tiết 16 chứng từ."
+        },
+        {
+          "id": "S01-TABLE_BINDING",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Column registry, search fields, row action, query API và quyền cần đối chiếu đúng ảnh/nguồn."
+        },
+        {
+          "id": "S01-API_RBAC",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "API/RBAC, exact query bindings and full option sets need authoritative contract."
+        },
+        {
+          "id": "S01-STATE_COVERAGE",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Remaining state/form scope requires specified task and review, not automatic execution."
+        }
+      ],
+      "work_mode": "STATIC_UI_IMPLEMENTATION",
+      "static_ui_implementation_authorized": true,
+      "production_implementation_authorized": false,
+      "real_business_api_enabled": false,
+      "implementation_status": "NOT_STARTED",
+      "runtime_setup_required": true,
+      "api_adapter_state": "NOT_CONFIGURED",
+      "data_adapter_contract": {
+        "source": "fixture_adapter",
+        "view_model_status": "FRONTEND_CONTRACT_TO_DEFINE_FROM_UI_SOURCE",
+        "api_dto_status": "REQUIRES_OWNER_CONFIRMATION",
+        "missing_fixture_must_not_return_success": true,
+        "backend_required_to_render_static": false
+      }
+    },
+    {
+      "screen_id": "S02",
+      "title": "Danh mục bệnh/lỗi",
+      "prompt_file": "prompts/S02_DANH_MUC_BENH_LOI.md",
+      "legacy_prompt": "P14",
+      "legacy_group": "W12",
+      "state_namespace_note": "P01 Default is a screen state label, not the legacy P01 session prompt.",
+      "business_scope": "Danh mục bệnh/lỗi",
+      "sources": {
+        "page_url": "https://chatgpt.com/space/page_e72b9ec0d67481918548cbe435f01d60",
+        "snapshot": "references/S02_DANH_MUC_BENH_LOI.snapshot.md",
+        "snapshot_sequence": 3
+      },
+      "visual": {
+        "current_revision": "P01_REVIEW_2026-10-08",
+        "current_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "approved_reference_revision": "P01_REVIEW_2026-10-08",
+        "approval_scope": "Default visual only; exact five variants; not API/RBAC/full states/runtime",
+        "approval_evidence": "Screen approval log and parent registry; five-screen confirmation 2026-10-08 03:36 UTC+7",
+        "current_png_hashes_verified_in_this_package": false,
+        "variants": [
+          {
+            "device": "desktop-mo-rong",
+            "label": "Desktop mở rộng",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-benh-loi/desktop-mo-rong",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9DZmRzVWEwS1dlNVdEREdKOUs0MURn_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "desktop-thu-gon",
+            "label": "Desktop thu gọn",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-benh-loi/desktop-thu-gon",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV81SlFlS1RCOE5NQlFzZWhUZUFNdDhB_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-ngang",
+            "label": "Tablet ngang",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-benh-loi/tablet-ngang",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV93X3FDVU41RDRyWmI2TTVEeGJfR1BB_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-doc",
+            "label": "Tablet dọc",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-benh-loi/tablet-doc",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9BVzdHV2xsbUc3RE1kdDVjWEFLQ0dn_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "drawer-mo",
+            "label": "Tablet dọc Drawer mở",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-benh-loi/drawer-mo",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9XeWNSYzRkdjNkeTU0QXgzb0QtMEZB_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          }
+        ],
+        "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+        "implementation_reference_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "implementation_authorization_evidence": "references/OWNER_STATIC_UI_DECISION_2026-10-08.md"
+      },
+      "fields": [
+        {
+          "label": "Mã lỗi",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Tên lỗi / bệnh",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Mô tả",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Trạng thái",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        }
+      ],
+      "field_registry_status": "UI_LABELS_IDENTIFIED_API_MAPPING_UNCONFIRMED",
+      "query": {
+        "search_ui_fields": [
+          "Mã lỗi",
+          "Tên lỗi / bệnh"
+        ],
+        "filters_ui_labels": [
+          "Trạng thái"
+        ],
+        "filter_default": "Tất cả",
+        "full_filter_options": null,
+        "search_trigger": null,
+        "search_match_mode": null,
+        "sort_ui_default": null,
+        "sort_api_field": null,
+        "sort_secondary_key": null,
+        "pagination": {
+          "page": 1,
+          "page_size": 15,
+          "total": 10,
+          "page_count": 1,
+          "page_size_options": null,
+          "visible_row_count_is_page_size": false,
+          "go_to_first_page_on": [
+            "search_change",
+            "filter_change",
+            "page_size_change"
+          ]
+        },
+        "summary_scope_after_filter": null,
+        "date_range": null,
+        "reset_scope_status": "Reset screen search and filters to default"
+      },
+      "entry_points": {
+        "primary_cta": "Thêm lỗi / bệnh",
+        "row_action": "Sửa",
+        "form_or_detail_contract": null,
+        "authorization_inferred_from_button": false
+      },
+      "summary_fixture": {
+        "total": 10,
+        "Đang sử dụng": 8,
+        "Ngừng sử dụng": 2,
+        "percentages_display": [
+          "80%",
+          "20%"
+        ]
+      },
+      "api": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "application_route": null,
+        "endpoints": null,
+        "dto_mapping": null,
+        "business_enum_mapping": null
+      },
+      "rbac": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "roles": null,
+        "permission_keys": null
+      },
+      "design_locked": false,
+      "verification": {
+        "visual": "NOT_RUN",
+        "behavior": "NOT_RUN",
+        "integration": "NOT_RUN",
+        "note": "This package records prior approval evidence; it does not run screen QA."
+      },
+      "issues": [
+        {
+          "id": "S02-EDIT_CODE_AND_FORM",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Quyền sửa mã, uniqueness, schema/validation form và full status enum chưa xác nhận."
+        },
+        {
+          "id": "S02-FIXTURE_BUSINESS_MATCH",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Fixture REVIEW không phải dữ liệu API được xác minh."
+        },
+        {
+          "id": "S02-API_RBAC",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "API/RBAC, exact query bindings and full option sets need authoritative contract."
+        },
+        {
+          "id": "S02-STATE_COVERAGE",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Remaining state/form scope requires specified task and review, not automatic execution."
+        }
+      ],
+      "work_mode": "STATIC_UI_IMPLEMENTATION",
+      "static_ui_implementation_authorized": true,
+      "production_implementation_authorized": false,
+      "real_business_api_enabled": false,
+      "implementation_status": "NOT_STARTED",
+      "runtime_setup_required": true,
+      "api_adapter_state": "NOT_CONFIGURED",
+      "data_adapter_contract": {
+        "source": "fixture_adapter",
+        "view_model_status": "FRONTEND_CONTRACT_TO_DEFINE_FROM_UI_SOURCE",
+        "api_dto_status": "REQUIRES_OWNER_CONFIRMATION",
+        "missing_fixture_must_not_return_success": true,
+        "backend_required_to_render_static": false
+      }
+    },
+    {
+      "screen_id": "S03",
+      "title": "Danh mục sản phẩm",
+      "prompt_file": "prompts/S03_DANH_MUC_SAN_PHAM.md",
+      "legacy_prompt": "P16",
+      "legacy_group": "W14",
+      "state_namespace_note": "P01 Default is a screen state label, not the legacy P01 session prompt.",
+      "business_scope": "Sản phẩm gốc / SKU liên kết",
+      "sources": {
+        "page_url": "https://chatgpt.com/space/page_6fbc322c04a08191adc159e11a742412",
+        "snapshot": "references/S03_DANH_MUC_SAN_PHAM.snapshot.md",
+        "snapshot_sequence": 3
+      },
+      "visual": {
+        "current_revision": "P01_REVIEW_2026-10-08",
+        "current_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "approved_reference_revision": "P01_REVIEW_2026-10-08",
+        "approval_scope": "Default visual only; exact five variants; not API/RBAC/full states/runtime",
+        "approval_evidence": "Screen approval log and parent registry; five-screen confirmation 2026-10-08 03:36 UTC+7",
+        "current_png_hashes_verified_in_this_package": false,
+        "variants": [
+          {
+            "device": "desktop-mo-rong",
+            "label": "Desktop mở rộng",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-san-pham/desktop-mo-rong",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9hR0NncnJ1dkl0NXE1dkQyWldRWk1R_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "desktop-thu-gon",
+            "label": "Desktop thu gọn",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-san-pham/desktop-thu-gon",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV84cFI3YXZMU0wtYVRQYkpvcm5fUk5R_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-ngang",
+            "label": "Tablet ngang",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-san-pham/tablet-ngang",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV93dkVHNTlxcTl0SUF0SzVVMl9KQU13_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-doc",
+            "label": "Tablet dọc",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-san-pham/tablet-doc",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV8yVjFoc0RfRUVtR2tpTnpDNUIzVXdR_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "drawer-mo",
+            "label": "Tablet dọc Drawer mở",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-san-pham/drawer-mo",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9mdFR2d0tqc0VaSHJmczhvY3U5VS1B_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          }
+        ],
+        "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+        "implementation_reference_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "implementation_authorization_evidence": "references/OWNER_STATIC_UI_DECISION_2026-10-08.md"
+      },
+      "fields": [
+        {
+          "label": "Mã sản phẩm",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Tên sản phẩm",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Nhóm hàng",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Số SKU",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "ĐVT",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Trạng thái",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Cập nhật",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        }
+      ],
+      "field_registry_status": "UI_LABELS_IDENTIFIED_API_MAPPING_UNCONFIRMED",
+      "query": {
+        "search_ui_fields": [
+          "Mã sản phẩm",
+          "Tên sản phẩm"
+        ],
+        "filters_ui_labels": [
+          "Nhóm hàng",
+          "Trạng thái",
+          "Đơn vị tính"
+        ],
+        "filter_default": "Tất cả",
+        "full_filter_options": null,
+        "search_trigger": null,
+        "search_match_mode": null,
+        "sort_ui_default": null,
+        "sort_api_field": null,
+        "sort_secondary_key": null,
+        "pagination": {
+          "page": 1,
+          "page_size": 7,
+          "total": 326,
+          "page_count": 47,
+          "page_size_options": null,
+          "visible_row_count_is_page_size": false,
+          "go_to_first_page_on": [
+            "search_change",
+            "filter_change",
+            "page_size_change"
+          ]
+        },
+        "summary_scope_after_filter": null,
+        "date_range": null,
+        "reset_scope_status": "Reset screen search and filters to default"
+      },
+      "entry_points": {
+        "primary_cta": "Thêm sản phẩm",
+        "row_action": "Xem",
+        "form_or_detail_contract": null,
+        "authorization_inferred_from_button": false
+      },
+      "summary_fixture": {
+        "products_total": 326,
+        "linked_skus": 1284,
+        "Đang hoạt động": 312,
+        "Ngừng sử dụng": 14,
+        "percentages_display": [
+          "95,7%",
+          "4,3%"
+        ]
+      },
+      "api": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "application_route": null,
+        "endpoints": null,
+        "dto_mapping": null,
+        "business_enum_mapping": null
+      },
+      "rbac": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "roles": null,
+        "permission_keys": null
+      },
+      "design_locked": false,
+      "verification": {
+        "visual": "NOT_RUN",
+        "behavior": "NOT_RUN",
+        "integration": "NOT_RUN",
+        "note": "This package records prior approval evidence; it does not run screen QA."
+      },
+      "issues": [
+        {
+          "id": "S03-PRODUCT_SKU_RELATION",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Thiếu ID/mapping sản phẩm gốc và SKU; không suy từ tên."
+        },
+        {
+          "id": "S03-CREATE_AND_VIEW",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Form thêm và nội dung Xem chưa khóa."
+        },
+        {
+          "id": "S03-INCOMPLETE_ROWS",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Chỉ có 7/326 bản ghi chi tiết trong snapshot."
+        },
+        {
+          "id": "S03-API_RBAC",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "API/RBAC, exact query bindings and full option sets need authoritative contract."
+        },
+        {
+          "id": "S03-STATE_COVERAGE",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Remaining state/form scope requires specified task and review, not automatic execution."
+        }
+      ],
+      "work_mode": "STATIC_UI_IMPLEMENTATION",
+      "static_ui_implementation_authorized": true,
+      "production_implementation_authorized": false,
+      "real_business_api_enabled": false,
+      "implementation_status": "NOT_STARTED",
+      "runtime_setup_required": true,
+      "api_adapter_state": "NOT_CONFIGURED",
+      "data_adapter_contract": {
+        "source": "fixture_adapter",
+        "view_model_status": "FRONTEND_CONTRACT_TO_DEFINE_FROM_UI_SOURCE",
+        "api_dto_status": "REQUIRES_OWNER_CONFIRMATION",
+        "missing_fixture_must_not_return_success": true,
+        "backend_required_to_render_static": false
+      }
+    },
+    {
+      "screen_id": "S04",
+      "title": "Danh mục SKU",
+      "prompt_file": "prompts/S04_DANH_MUC_SKU.md",
+      "legacy_prompt": "P17",
+      "legacy_group": "W15",
+      "state_namespace_note": "P01 Default is a screen state label, not the legacy P01 session prompt.",
+      "business_scope": "Danh mục SKU",
+      "sources": {
+        "page_url": "https://chatgpt.com/space/page_f691a06b74f081919ba58a2d6f098c0e",
+        "snapshot": "references/S04_DANH_MUC_SKU.snapshot.md",
+        "snapshot_sequence": 3
+      },
+      "visual": {
+        "current_revision": "P01_REVIEW_2026-10-08",
+        "current_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "approved_reference_revision": "P01_REVIEW_2026-10-08",
+        "approval_scope": "Default visual only; exact five variants; not API/RBAC/full states/runtime",
+        "approval_evidence": "Screen approval log and parent registry; five-screen confirmation 2026-10-08 03:36 UTC+7",
+        "current_png_hashes_verified_in_this_package": false,
+        "variants": [
+          {
+            "device": "desktop-mo-rong",
+            "label": "Desktop mở rộng",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-sku/desktop-mo-rong",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9XYjZ0OFlyellISmVDSjFBRHV0TG53_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "desktop-thu-gon",
+            "label": "Desktop thu gọn",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-sku/desktop-thu-gon",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV94MVMyYllTbXdzQWdFNE41RVlidmxB_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-ngang",
+            "label": "Tablet ngang",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-sku/tablet-ngang",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV8ybWkxWE9aT3YxVGJXYVZ4aWZ4RW5n_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-doc",
+            "label": "Tablet dọc",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-sku/tablet-doc",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV83azlvQ05SZVRlMlhwZ1EtU0RNeTRn_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "drawer-mo",
+            "label": "Tablet dọc Drawer mở",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-sku/drawer-mo",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV8xTHo4NldqbzNHY3d3YTRWZ0tWRXNR_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+            "reference_bytes_in_package": false
+          }
+        ],
+        "implementation_reference_revision": "P01_REVIEW_2026-10-08",
+        "implementation_reference_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "implementation_authorization_evidence": "references/OWNER_STATIC_UI_DECISION_2026-10-08.md"
+      },
+      "fields": [
+        {
+          "label": "Mã SKU",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Tên sản phẩm",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Nhóm hàng",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "ĐVT",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Mã vạch",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Trạng thái",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Cập nhật",
+          "source_status": "SOURCE_FIXTURE",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        }
+      ],
+      "field_registry_status": "UI_LABELS_IDENTIFIED_API_MAPPING_UNCONFIRMED",
+      "query": {
+        "search_ui_fields": [
+          "Mã SKU",
+          "Tên sản phẩm"
+        ],
+        "filters_ui_labels": [
+          "Nhóm hàng",
+          "Trạng thái",
+          "Đơn vị tính"
+        ],
+        "filter_default": "Tất cả",
+        "full_filter_options": null,
+        "search_trigger": null,
+        "search_match_mode": null,
+        "sort_ui_default": null,
+        "sort_api_field": null,
+        "sort_secondary_key": null,
+        "pagination": {
+          "page": 1,
+          "page_size": 7,
+          "total": 1284,
+          "page_count": 184,
+          "page_size_options": null,
+          "visible_row_count_is_page_size": false,
+          "go_to_first_page_on": [
+            "search_change",
+            "filter_change",
+            "page_size_change"
+          ]
+        },
+        "summary_scope_after_filter": null,
+        "date_range": null,
+        "reset_scope_status": "Reset screen search and filters to default"
+      },
+      "entry_points": {
+        "primary_cta": "Thêm SKU",
+        "row_action": "Xem",
+        "form_or_detail_contract": null,
+        "authorization_inferred_from_button": false
+      },
+      "summary_fixture": {
+        "skus_total": 1284,
+        "Đang hoạt động": 1246,
+        "Ngừng sử dụng": 38,
+        "percentages_display": [
+          "97,0%",
+          "3,0%"
+        ]
+      },
+      "api": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "application_route": null,
+        "endpoints": null,
+        "dto_mapping": null,
+        "business_enum_mapping": null
+      },
+      "rbac": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "roles": null,
+        "permission_keys": null
+      },
+      "design_locked": false,
+      "verification": {
+        "visual": "NOT_RUN",
+        "behavior": "NOT_RUN",
+        "integration": "NOT_RUN",
+        "note": "This package records prior approval evidence; it does not run screen QA."
+      },
+      "issues": [
+        {
+          "id": "S04-SKU_PRODUCT_RELATION",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Thiếu ID/mapping SKU tới sản phẩm gốc."
+        },
+        {
+          "id": "S04-CREATE_VIEW_BARCODE",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Form thêm/Xem, semantics/validation barcode chưa khóa."
+        },
+        {
+          "id": "S04-INCOMPLETE_ROWS",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Chỉ có 7/1284 bản ghi chi tiết trong snapshot."
+        },
+        {
+          "id": "S04-API_RBAC",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "API/RBAC, exact query bindings and full option sets need authoritative contract."
+        },
+        {
+          "id": "S04-STATE_COVERAGE",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Remaining state/form scope requires specified task and review, not automatic execution."
+        }
+      ],
+      "work_mode": "STATIC_UI_IMPLEMENTATION",
+      "static_ui_implementation_authorized": true,
+      "production_implementation_authorized": false,
+      "real_business_api_enabled": false,
+      "implementation_status": "NOT_STARTED",
+      "runtime_setup_required": true,
+      "api_adapter_state": "NOT_CONFIGURED",
+      "data_adapter_contract": {
+        "source": "fixture_adapter",
+        "view_model_status": "FRONTEND_CONTRACT_TO_DEFINE_FROM_UI_SOURCE",
+        "api_dto_status": "REQUIRES_OWNER_CONFIRMATION",
+        "missing_fixture_must_not_return_success": true,
+        "backend_required_to_render_static": false
+      }
+    },
+    {
+      "screen_id": "S05",
+      "title": "Danh mục đại lý & nơi nhận",
+      "prompt_file": "prompts/S05_DANH_MUC_DAI_LY_NOI_NHAN.md",
+      "legacy_prompt": "P15",
+      "legacy_group": "W13",
+      "state_namespace_note": "P01 Default is a screen state label, not the legacy P01 session prompt.",
+      "business_scope": "Danh mục đại lý & nơi nhận",
+      "sources": {
+        "page_url": "https://chatgpt.com/space/page_e142a18a43fc81919dc0f49f35712146",
+        "snapshot": "references/S05_DANH_MUC_DAI_LY_NOI_NHAN.snapshot.md",
+        "snapshot_sequence": 4
+      },
+      "visual": {
+        "current_revision": "P01_r03_REVIEW_2026-10-08",
+        "current_approval": "REVIEW_PENDING",
+        "approved_reference_revision": "P01_r02",
+        "approval_scope": "Default visual only; exact five variants; not API/RBAC/full states/runtime",
+        "approval_evidence": "Screen approval log and parent registry; five-screen confirmation 2026-10-08 03:36 UTC+7",
+        "current_png_hashes_verified_in_this_package": false,
+        "variants": [
+          {
+            "device": "desktop-mo-rong",
+            "label": "Desktop mở rộng",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-dai-ly-noi-nhan/desktop-mo-rong",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9qS3dla1JTaFRsMGlJUDlKdjEweHp3_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_r02",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "desktop-thu-gon",
+            "label": "Desktop thu gọn",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-dai-ly-noi-nhan/desktop-thu-gon",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9ZMWhmQmlITmVqeWNfcnF0SjVINmZ3_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_r02",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-ngang",
+            "label": "Tablet ngang",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-dai-ly-noi-nhan/tablet-ngang",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV8wTkpFSDVPajJ2TVlfbktDVkNrb3ZR_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_r02",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "tablet-doc",
+            "label": "Tablet dọc",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-dai-ly-noi-nhan/tablet-doc",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV9raTRUelY0WkloX2wzbm44bEJvWkJB_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_r02",
+            "reference_bytes_in_package": false
+          },
+          {
+            "device": "drawer-mo",
+            "label": "Tablet dọc Drawer mở",
+            "png_sha256": null,
+            "current_gallery_url": "https://hoa-nam-wms-preview.ducnin1998.chatgpt.site/#danh-muc-dai-ly-noi-nhan/drawer-mo",
+            "implementation_reference_asset": "library-file:fde1_bGliZmlsZV93QXNVT1NVMlFlVF9DUkJrSkFKT3ln_FileDrive_e8cf24a699648191889e56633f866990",
+            "implementation_reference_revision": "P01_r02",
+            "reference_bytes_in_package": false
+          }
+        ],
+        "implementation_reference_revision": "P01_r02",
+        "implementation_reference_approval": "TEMPORARILY_APPROVED_PREVIEW",
+        "implementation_authorization_evidence": "references/OWNER_STATIC_UI_DECISION_2026-10-08.md"
+      },
+      "fields": [
+        {
+          "label": "Mã",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Tên nơi nhận",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Loại nơi nhận",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Thị trường",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Khu vực",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Người liên hệ",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Điện thoại",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Địa chỉ",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        },
+        {
+          "label": "Trạng thái",
+          "source_status": "OBSERVED_PREVIEW",
+          "api_binding": null,
+          "type_constraint": null,
+          "required": null,
+          "editable": null,
+          "business_contract_status": "REQUIRES_OWNER_CONFIRMATION"
+        }
+      ],
+      "field_registry_status": "UI_LABELS_IDENTIFIED_API_MAPPING_UNCONFIRMED",
+      "query": {
+        "search_ui_fields": [
+          "Mã",
+          "Tên nơi nhận",
+          "Thị trường",
+          "Khu vực"
+        ],
+        "filters_ui_labels": [
+          "Loại nơi nhận",
+          "Trạng thái"
+        ],
+        "filter_default": "Tất cả",
+        "full_filter_options": null,
+        "search_trigger": null,
+        "search_match_mode": null,
+        "sort_ui_default": null,
+        "sort_api_field": null,
+        "sort_secondary_key": null,
+        "pagination": {
+          "page": 1,
+          "page_size": 15,
+          "total": 27,
+          "page_count": 2,
+          "page_size_options": null,
+          "visible_row_count_is_page_size": false,
+          "go_to_first_page_on": [
+            "search_change",
+            "filter_change",
+            "page_size_change"
+          ]
+        },
+        "summary_scope_after_filter": null,
+        "date_range": null,
+        "reset_scope_status": "Reset screen search and filters to default"
+      },
+      "entry_points": {
+        "primary_cta": "Thêm nơi nhận",
+        "row_action": "Sửa",
+        "form_or_detail_contract": null,
+        "authorization_inferred_from_button": false
+      },
+      "summary_fixture": {
+        "recipients_total": 27,
+        "audit_snapshot_date": "2026-10-01",
+        "static_labels": [
+          "Khách công trình",
+          "Khách lẻ"
+        ],
+        "status_counts": null
+      },
+      "api": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "application_route": null,
+        "endpoints": null,
+        "dto_mapping": null,
+        "business_enum_mapping": null
+      },
+      "rbac": {
+        "status": "REQUIRES_OWNER_CONFIRMATION",
+        "roles": null,
+        "permission_keys": null
+      },
+      "design_locked": false,
+      "verification": {
+        "visual": "NOT_RUN",
+        "behavior": "NOT_RUN",
+        "integration": "NOT_RUN",
+        "note": "This package records prior approval evidence; it does not run screen QA."
+      },
+      "issues": [
+        {
+          "id": "S05-VISUAL_R03_APPROVAL",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "r02 tạm duyệt; r03 chờ duyệt lại."
+        },
+        {
+          "id": "S05-RECIPIENT_ID",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Chưa mapping mã NR với recipientId Scanner; existing không phải loại khách hàng."
+        },
+        {
+          "id": "S05-GEOGRAPHY_MAPPING",
+          "status": "BLOCKED_BY_SOURCE_CONFLICT",
+          "detail": "Web dùng Tỉnh/Phường; Scanner province/district geographyVersion provinces.open-api.vn/v1-before-2025-07."
+        },
+        {
+          "id": "S05-PROPOSED_ROWS",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Năm dòng hư cấu chưa xác nhận, chưa có toàn bộ 27 bản ghi."
+        },
+        {
+          "id": "S05-CREATE_EDIT_FORM",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Form, validation, uniqueness mã và schema chưa khóa."
+        },
+        {
+          "id": "S05-API_RBAC",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "API/RBAC, exact query bindings and full option sets need authoritative contract."
+        },
+        {
+          "id": "S05-STATE_COVERAGE",
+          "status": "REQUIRES_OWNER_CONFIRMATION",
+          "detail": "Remaining state/form scope requires specified task and review, not automatic execution."
+        }
+      ],
+      "work_mode": "STATIC_UI_IMPLEMENTATION",
+      "static_ui_implementation_authorized": true,
+      "production_implementation_authorized": false,
+      "real_business_api_enabled": false,
+      "implementation_status": "NOT_STARTED",
+      "runtime_setup_required": true,
+      "api_adapter_state": "NOT_CONFIGURED",
+      "data_adapter_contract": {
+        "source": "fixture_adapter",
+        "view_model_status": "FRONTEND_CONTRACT_TO_DEFINE_FROM_UI_SOURCE",
+        "api_dto_status": "REQUIRES_OWNER_CONFIRMATION",
+        "missing_fixture_must_not_return_success": true,
+        "backend_required_to_render_static": false
+      }
+    }
+  ],
+  "target_kind": "static_interactive_ui"
+}

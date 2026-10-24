@@ -1,0 +1,28 @@
+export const DATE_EN_COPY: Readonly<Record<string,string>> = {
+  'Vui lòng chọn đủ ngày.':'Select all required dates.',
+  'Ngày không hợp lệ. Nhập dd/MM/yyyy hoặc yyyy-MM-dd.':'Invalid date. Enter dd/MM/yyyy or yyyy-MM-dd.',
+  'Ngày nằm trước giới hạn cho phép ({min}). Vui lòng chọn lại.':'The date is before the allowed minimum ({min}). Select another date.',
+  'Ngày nằm sau giới hạn cho phép ({max}). Vui lòng chọn lại.':'The date is after the allowed maximum ({max}). Select another date.',
+  'Ngày bắt đầu phải trước hoặc bằng ngày kết thúc.':'The start date must be on or before the end date.',
+  'Không có ngày phù hợp với giới hạn của trường này.':'No dates are available within this field’s limits.',
+  'Chưa xác định quy tắc ngày cho trường nghiệp vụ này.':'The date policy for this business field has not been defined.',
+  'Khoảng ngày nhanh':'Date presets', 'Hôm nay':'Today', '{days} ngày':'{days} days',
+  'Từ ngày':'From date', 'Đến ngày':'To date', 'Nhập ngày':'Enter date',
+  'Chọn từ {min} đến {max}; không chọn ngày tương lai.':'Select from {min} to {max}; future dates are not allowed.',
+  'Ngày theo quy tắc nghiệp vụ của trường này.':'Dates follow this field’s business rule.',
+  'Chọn ngày bắt đầu, sau đó chọn ngày kết thúc bằng hoặc sau ngày bắt đầu.':'Select a start date, then an end date on or after it.',
+};
+export const DATE_ZH_COPY: Readonly<Record<string,string>> = {
+  'Vui lòng chọn đủ ngày.':'请选择所有必填日期。',
+  'Ngày không hợp lệ. Nhập dd/MM/yyyy hoặc yyyy-MM-dd.':'日期无效。请输入 dd/MM/yyyy 或 yyyy-MM-dd 格式。',
+  'Ngày nằm trước giới hạn cho phép ({min}). Vui lòng chọn lại.':'日期早于允许的最早日期（{min}）。请重新选择。',
+  'Ngày nằm sau giới hạn cho phép ({max}). Vui lòng chọn lại.':'日期晚于允许的最晚日期（{max}）。请重新选择。',
+  'Ngày bắt đầu phải trước hoặc bằng ngày kết thúc.':'开始日期不得晚于结束日期。',
+  'Không có ngày phù hợp với giới hạn của trường này.':'此字段的日期范围内没有可选日期。',
+  'Chưa xác định quy tắc ngày cho trường nghiệp vụ này.':'尚未定义此业务字段的日期规则。',
+  'Khoảng ngày nhanh':'快捷日期范围', 'Hôm nay':'今天', '{days} ngày':'{days}天',
+  'Từ ngày':'开始日期', 'Đến ngày':'结束日期', 'Nhập ngày':'输入日期',
+  'Chọn từ {min} đến {max}; không chọn ngày tương lai.':'请选择 {min} 至 {max} 之间的日期，不允许选择未来日期。',
+  'Ngày theo quy tắc nghiệp vụ của trường này.':'日期遵循此字段的业务规则。',
+  'Chọn ngày bắt đầu, sau đó chọn ngày kết thúc bằng hoặc sau ngày bắt đầu.':'先选择开始日期，再选择相同或更晚的结束日期。',
+};

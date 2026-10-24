@@ -1,0 +1,11 @@
+{
+  "screenId": "S22",
+  "source": "S22_BAO_CAO_BAO_HANH_LINH_KIEN.md / P03-W01 / summary table",
+  "provenance": "SOURCE_FIXTURE",
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "summary": { "total": 186, "completed": 148, "processing": 28, "waiting": 10, "incomplete": 38, "overdueWithinIncomplete": 7 },
+  "details": { "availability": "AVAILABLE", "selectedFixture": "DESKTOP", "total": 5 },
+  "dateSemantics": null,
+  "overdueAsOf": null,
+  "backend": { "endpoint": null, "dto": null, "permission": null }
+}

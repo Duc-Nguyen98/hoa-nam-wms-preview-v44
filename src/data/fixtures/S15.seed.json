@@ -1,0 +1,126 @@
+{
+  "screen_id": "S15",
+  "title": "Phiếu xuất kho",
+  "schema_role": "frontend_seed_not_backend_DTO",
+  "source_record": "references/source-records/HN_XuatKho_PhieuXuatKho_P01_r01_HoSo_2026-10-08.json",
+  "source_revision": "P01 r01 REVIEW · 08/10/2026",
+  "approval_at": "2026-10-09T17:06:04+07:00",
+  "approval_scope": "P01 visual only, not validation of full business dataset",
+  "fixture": {
+    "provenance": "Historical screenshot illustration, NOT API data",
+    "totalDocuments": 84,
+    "draftDocuments": 6,
+    "scanningDocuments": 4,
+    "exportedDocuments": 72,
+    "cancelledDocuments": 2,
+    "fields": [
+      "issueCode",
+      "requestCode",
+      "recipient",
+      "createdAt",
+      "note",
+      "reconciliation",
+      "status",
+      "action"
+    ],
+    "visibleRows": [
+      [
+        "PX-260920-060",
+        "TOA-260920-060",
+        "Khách lẻ · Trần Thị Chín",
+        "20/09/2026 09:42",
+        "Giao hàng theo toa",
+        "5/5",
+        "Đã xuất",
+        "Xem"
+      ],
+      [
+        "PX-260920-059",
+        "TOA-260920-059",
+        "Đại lý Hoa Nam Hà Nội",
+        "20/09/2026 09:18",
+        "Giao hàng theo toa",
+        "3/5",
+        "Đang quét xuất hàng",
+        "Mở"
+      ],
+      [
+        "PX-260920-058",
+        "TOA-260920-058",
+        "Dự án nhà máy xử lý nước",
+        "20/09/2026 08:56",
+        "Giao theo yêu cầu dự án",
+        "0/3",
+        "Nháp",
+        "Mở"
+      ],
+      [
+        "PX-260919-057",
+        "TOA-260919-057",
+        "Đại lý Hoa Nam Nghệ An",
+        "19/09/2026 16:20",
+        "Giao hàng theo toa",
+        "3/3",
+        "Đã xuất",
+        "Xem"
+      ],
+      [
+        "PX-260919-056",
+        "TOA-260919-056",
+        "Đại lý Hoa Nam Đà Nẵng",
+        "19/09/2026 14:05",
+        "Yêu cầu đã hủy",
+        "—",
+        "Đã hủy",
+        "Xem"
+      ],
+      [
+        "PX-260919-055",
+        "TOA-260919-055",
+        "Đại lý Hoa Nam Bình Dương",
+        "19/09/2026 11:35",
+        "Giao hàng theo toa",
+        "5/5",
+        "Đã xuất",
+        "Xem"
+      ],
+      [
+        "PX-260918-054",
+        "TOA-260918-054",
+        "Đại lý Hoa Nam Cần Thơ",
+        "18/09/2026 15:48",
+        "Giao hàng theo toa",
+        "3/3",
+        "Đã xuất",
+        "Xem"
+      ]
+    ],
+    "visibleStatusCounts": {
+      "exported": 4,
+      "scanning": 1,
+      "draft": 1,
+      "cancelled": 1
+    },
+    "hiddenRows": 77,
+    "hiddenRowDetails": "UNKNOWN: not invented",
+    "quantityField": "NOT_IN_SOURCE: reconciliation counts must not be relabeled as quantities shipped",
+    "waitingOnWebCount": "UNKNOWN: do not relabel4scanning or add a zero metric; the source default does not show an explicitly submitted record.",
+    "dates": "Full source dates/times preserved. Timezone is not supplied by the screenshot; do not invent one for fixture records.",
+    "reconciliation": "5/5 and3/3 full;3/5 partial;0/3 empty;cancelled — remains unavailable, not0/0. No invented percentages or actual-shipped quantities.",
+    "publicLabel": "Dữ liệu minh họa"
+  },
+  "completeness": {
+    "total_in_design": 84,
+    "provided_detail_records": 7,
+    "missing_detail_records": 77,
+    "page_size": 7,
+    "full_dataset": false,
+    "api_verified": false
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  },
+  "runtime_execution_status": "NOT_RUN_IN_PROMPT_PACKAGE"
+}

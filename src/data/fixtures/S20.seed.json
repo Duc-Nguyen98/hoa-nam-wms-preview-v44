@@ -1,0 +1,33 @@
+{
+  "screen": "S20",
+  "provenance": {
+    "source": "S20_BAO_CAO_LICH_SU_NHAP_XUAT_TON_KHO.md and page_73c0fe9764f88191ba14f803d2842e19 sequence 3",
+    "module": "P04/W02",
+    "status": "SOURCE_FIXTURE",
+    "note": "Source JSON not present in the supplied local package. Values transcribed from the supplied MD and cross-checked with the dossier. Frontend keys are not backend bindings. Minute precision timestamps preserve the supplied +07:00 context."
+  },
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "typeOptions": ["Nhập kho", "Xuất kho"],
+  "summary": {
+    "transactions": 684, "inbound": 356, "outbound": 328,
+    "products": 12460, "inboundProducts": 6480, "outboundProducts": 5980,
+    "inboundPercent": 52.0, "outboundPercent": 48.0,
+    "daily": [
+      {"date":"2026-09-04","inbound":44,"outbound":38},
+      {"date":"2026-09-05","inbound":48,"outbound":44},
+      {"date":"2026-09-06","inbound":51,"outbound":46},
+      {"date":"2026-09-07","inbound":50,"outbound":49},
+      {"date":"2026-09-08","inbound":55,"outbound":50},
+      {"date":"2026-09-09","inbound":58,"outbound":55},
+      {"date":"2026-09-10","inbound":50,"outbound":46}
+    ],
+    "peak": {"date":"2026-09-09","total":113,"inbound":58,"outbound":55}
+  },
+  "rows": [
+    {"renderKey":"s20-1","occurredAt":"2026-09-10T16:42+07:00","type":"Nhập kho","code":"PN-260910-024","subject":"SKU HN-A01 · Lô LOT-260905","quantity":120,"performer":"Nguyễn Văn B"},
+    {"renderKey":"s20-2","occurredAt":"2026-09-10T15:30+07:00","type":"Xuất kho","code":"PX-260910-019","subject":"SKU HN-B12 · Đại lý Minh Phát","quantity":84,"performer":"Trần Thị C"},
+    {"renderKey":"s20-3","occurredAt":"2026-09-10T14:55+07:00","type":"Nhập kho","code":"PN-260910-023","subject":"PAL-HN-0250 · Kệ A-05","quantity":96,"performer":"Lê Minh D"},
+    {"renderKey":"s20-4","occurredAt":"2026-09-10T14:20+07:00","type":"Xuất kho","code":"PX-260910-018","subject":"SKU HN-C03 · Đại lý Hoàng Gia","quantity":72,"performer":"Phạm Thị E"},
+    {"renderKey":"s20-5","occurredAt":"2026-09-10T13:48+07:00","type":"Nhập kho","code":"PN-260910-022","subject":"SKU HN-D08 · Lô LOT-260904","quantity":150,"performer":"Nguyễn Văn B"}
+  ]
+}

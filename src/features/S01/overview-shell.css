@@ -1,0 +1,202 @@
+@import './fonts.css';
+
+/* S01 presentation refinement authorized by Owner. Public Sans is sourced in
+   fonts.css; shell styling remains an implementation choice. Geometry,
+   responsive modes and interaction behavior remain in GlobalShell. */
+.hn-shell[data-variant='wms']:has(.ov-screen) {
+  --hn-font-family: 'HN S01 Public Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--hn-font-family);
+  font-synthesis: none;
+  background: #f5f7fa;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-sidebar,
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-header,
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-drawer {
+  background: var(--hn-brand);
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-header {
+  box-shadow: inset 0 -1px 0 #ffffff0b;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-wms-brand-name {
+  letter-spacing: .025em;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-wms-brand-name > span {
+  color: #b9cede;
+  letter-spacing: .005em;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation {
+  gap: 4px;
+  padding-inline: 12px;
+  padding-top: 10px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__link {
+  min-height: 44px;
+  gap: 11px;
+  padding-block: 11px;
+  padding-inline: 10px;
+  border-radius: 8px;
+  color: #d2dfeb;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__link > svg:first-child {
+  width: 20px;
+  height: 20px;
+  color: #bbcfdf;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__link:hover {
+  background: #ffffff0c;
+  color: #fff;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__link[aria-current='page'] {
+  color: #fff;
+  background: #174b77;
+  border-inline-start-color: #64d4e6;
+  font-weight: 600;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__link[aria-current='page'] > svg:first-child {
+  color: #fff;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__chevron {
+  width: 14px;
+  height: 14px;
+  color: #a9c0d3;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__children {
+  border-inline-start-color: #ffffff20;
+  margin-block: 3px 7px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__children .hn-navigation__link {
+  padding-block: 10px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation--rail {
+  padding-inline: 8px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation--rail .hn-navigation__link {
+  padding-inline: 0;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation--rail .hn-navigation__children {
+  margin: 0;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-navigation__tooltip,
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-control-tooltip {
+  border: 1px solid #ffffff14;
+  border-radius: 8px;
+  background: #173b5a;
+  font-weight: 500;
+  box-shadow: 0 4px 12px #09263f26;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-menu-toggle,
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-drawer__header > .hn-icon-button {
+  border-color: #ffffff20;
+  background: #ffffff06;
+  color: #e1ebf3;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-menu-toggle:hover,
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-drawer__header > .hn-icon-button:hover {
+  border-color: #ffffff45;
+  background: #ffffff12;
+  color: #fff;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-global-search {
+  max-width: 520px;
+  gap: 10px;
+  padding-block: 7px;
+  border-color: #ffffff2b;
+  border-radius: 8px;
+  background: #ffffff0d;
+  color: #bfd1e1;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-global-search > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-global-search input::placeholder {
+  color: #c4d5e4;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-global-search:focus-within {
+  border-color: #a1c7dc;
+  background: #ffffff12;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-notifications {
+  color: #d2e1ec;
+  border-radius: 8px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-profile {
+  border-inline-start-color: #ffffff26;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-profile__avatar {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d0deea;
+  background: #eaf2f8;
+  color: #244a6b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-sidebar__warehouse {
+  margin-inline: 20px;
+  padding: 20px 8px;
+  border-block-start: 1px solid #ffffff1a;
+  color: #b9cede;
+  font-size: 12px;
+}
+
+.hn-shell[data-variant='wms']:has(.ov-screen) .hn-drawer__warehouse {
+  border-block-start-color: #ffffff1a;
+  color: #c3d4e2;
+  font-size: 14px;
+}
+
+@media (max-width: 38rem) {
+  .hn-shell[data-variant='wms']:has(.ov-screen) .hn-global-search {
+    max-width: none;
+  }
+}
+
+/* Compact-window reflow: keep the written brand and every control while
+   removing only duplicate decorative glyphs, avoiding a third header row. */
+@media (max-width: 22.5rem) {
+  .hn-shell[data-variant='wms']:has(.ov-screen) .hn-header__brand > svg,
+  .hn-shell[data-variant='wms']:has(.ov-screen) .hn-profile > svg {
+    display: none;
+  }
+
+  .hn-shell[data-variant='wms']:has(.ov-screen) .hn-header__account {
+    gap: 8px;
+  }
+
+  .hn-shell[data-variant='wms']:has(.ov-screen) .hn-profile {
+    min-width: 44px;
+    padding-inline-start: 8px;
+  }
+}
