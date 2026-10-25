@@ -326,3 +326,90 @@
   .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer']:has(.ov-screen) .hn-overview-header-brand { gap: 6px; font-size: 12px; }
   .hn-overview-header-brand > svg { width: 24px; flex-basis: 24px; }
 }
+
+/* S00#1 approved detail treatment: the document identity reads as one
+   visual block, while the shared modal continues to own focus and close
+   mechanics. */
+.ov-detail-modal .hn-global-modal__heading h2 {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px 12px;
+}
+.ov-detail-title__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  color: var(--hn-control);
+  background: #eaf4fb;
+  border-radius: 10px;
+  grid-row: 1 / span 2;
+}
+.ov-detail-title__stack {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.ov-detail-title__eyebrow {
+  flex-basis: auto;
+  min-width: 0;
+}
+.ov-detail-modal .hn-global-modal__heading .ov-copy-button {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.ov-detail-modal .hn-global-modal__heading .hn-status-badge {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  margin-inline-start: 0;
+  width: fit-content;
+}
+.ov-detail-modal .hn-global-modal__close {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #eef4f8;
+}
+.ov-detail-modal .hn-global-modal__close:hover,
+.ov-detail-modal .hn-global-modal__close:focus-visible {
+  background: #e3eef5;
+}
+
+@media (max-width: 50rem), (orientation: portrait) and (pointer: coarse) {
+  .ov-detail-modal .hn-global-modal__heading h2 {
+    grid-template-columns: 64px minmax(0, 1fr) auto;
+  }
+  .ov-detail-modal .hn-global-modal__heading .ov-detail-title__stack {
+    grid-row: 1;
+  }
+  .ov-detail-modal .hn-global-modal__heading .hn-status-badge {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    justify-self: start;
+    width: fit-content;
+    max-width: 100%;
+  }
+  .ov-detail-modal .hn-global-modal__heading .ov-copy-button {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .ov-detail-modal .hn-global-modal__close {
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+  }
+  .ov-detail-fields .ov-detail-field {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--ov-line);
+  }
+  .ov-detail-fields .ov-detail-field:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}

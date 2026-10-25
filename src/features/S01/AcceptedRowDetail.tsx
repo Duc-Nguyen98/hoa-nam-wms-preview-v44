@@ -75,8 +75,11 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
     size="large"
     className="ov-detail-modal"
     title={<>
-      <span className="ov-detail-title__eyebrow"><Icon name={isInbound ? 'download' : 'upload'} size={18} />{tx(title)}</span>
-      <span className="ov-detail-title__number">{row.number}</span>
+      <span className="ov-detail-title__icon" aria-hidden="true"><Icon name={isInbound ? 'download' : 'upload'} size={26} /></span>
+      <span className="ov-detail-title__stack">
+        <span className="ov-detail-title__eyebrow">{tx(title)}</span>
+        <span className="ov-detail-title__number">{row.number}</span>
+      </span>
       <button type="button" className="ov-copy-button" aria-label={tx('Sao chép mã phiếu')} disabled={!row.number} onClick={event => void copy(row.number, event.currentTarget)}><Icon name="copy" size={18} /></button>
       <StatusBadge tone={row.status === 'posted' ? 'success' : 'warning'}>{tx(row.statusLabel)}</StatusBadge>
     </>}
