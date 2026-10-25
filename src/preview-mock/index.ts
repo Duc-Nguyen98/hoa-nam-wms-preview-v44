@@ -15,12 +15,15 @@ import { BUSINESS_STORAGE_NAMESPACE, createIndexedDbBusinessPersistence, type Bu
 import { COMMAND_RECOVERY_NAMESPACE, registerPreviewCommandRecovery } from './command-recovery-context';
 import { createBrowserSessionToken, createIndexedDbPersistence, PREVIEW_STORAGE_NAMESPACE, type PreviewPersistence, type PreviewSessionToken } from './storage';
 import { createNotificationRepository, NOTIFICATION_STORAGE_NAMESPACE, type NotificationRepository } from './notifications';
+import { createNotificationDesignSeed } from './notification-design-seed';
 
 export { PREVIEW_MOCK_CREDENTIALS } from './account';
 export { PreviewHttpError } from './errors';
 export { createMemoryPersistence, createMemorySessionToken } from './storage';
 export const PREVIEW_MOCK_MODE = 'MOCK' as const;
 export interface PreviewMockOptions {
+  /** User-approved presentation data, enabled explicitly by the browser Preview. */
+  approvedNotificationDesignData?: boolean;
   notificationPersistence?: PreviewPersistence;
   credentialProfile?: import('./account').PreviewCredentialProfile;
   /** Explicit injected policy for isolated tests. Never read from request data. */
@@ -67,10 +70,13 @@ export function installPreviewMock(client: AxiosInstance, options: PreviewMockOp
     persistence: options.persistence ?? createIndexedDbPersistence(namespace),
     sessionToken: options.sessionToken ?? createBrowserSessionToken(namespace),
   });
+  // Preserve existing empty v3 and older records on disk; isolate the approved dataset.
+  const notificationNamespace = `${NOTIFICATION_STORAGE_NAMESPACE}${options.approvedNotificationDesignData ? ':design-v1' : ''}:${namespace}`;
   const notifications = createNotificationRepository({
-    persistence: options.notificationPersistence ?? createIndexedDbPersistence(`${NOTIFICATION_STORAGE_NAMESPACE}:${namespace}`),
-    namespace: `${NOTIFICATION_STORAGE_NAMESPACE}:${namespace}`, actor: account.recoveryActor,
+    persistence: options.notificationPersistence ?? createIndexedDbPersistence(notificationNamespace),
+    namespace: notificationNamespace, actor: account.recoveryActor,
     captureFence: account.captureRecoveryReadFence, now: options.now,
+    ...(options.approvedNotificationDesignData ? { seed: () => createNotificationDesignSeed((options.now ?? Date.now)()) } : {}),
   });
   const commandBinding = options.businessCommands ?? (options.approvedPreviewCommands ? createApprovedPreviewBinding(account, APPROVED_DEFECTS_HANDLERS) : undefined);
   const businessPersistence = options.businessPersistence ?? createIndexedDbBusinessPersistence(

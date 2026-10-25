@@ -1,4 +1,4 @@
-import { createNotificationHarnessState, type NotificationRecord } from '../notifications/notification-model';
+import type { NotificationRecord } from '../notifications/notification-model';
 import type { PreviewPersistence } from './storage';
 import { PreviewHttpError } from './errors';
 
@@ -16,7 +16,7 @@ export interface NotificationRepositoryOptions {
   actor: () => Promise<{key:string;confirmed:boolean;expiresAt:number} | null>;
   captureFence: () => () => void;
   now?: () => number;
-  /** Isolated tests/QA supply their own seed, never overwrite Main storage. */
+  /** Explicit Preview/test seed, used only when the actor has no stored records. */
   seed?: () => DemoNotification[];
 }
 const queues = new Map<string, Promise<unknown>>();
@@ -51,7 +51,7 @@ function validItem(value: unknown): value is DemoNotification {
       && ['outboundReadyTitle','inventoryVarianceTitle','putawayCompletedTitle','warrantyReviewTitle','warehouseConfigTitle'].includes(String(value.titleKey))
       && ['outboundReadyBody','inventoryVarianceBody','putawayCompletedBody','warrantyReviewBody','warehouseConfigBody'].includes(String(value.bodyKey))
       && record(value.target) && typeof value.target.href === 'string' && value.target.href.startsWith('#/preview/')
-      && typeof value.target.reference === 'string' && ['openDocument','openInventory','openPutaway','openWarranty','openSettings'].includes(String(value.target.labelKey));
+      && typeof value.target.reference === 'string' && ['openDocument','openLabels','openReceipt','openInventory','openPutaway','openWarranty','openSettings'].includes(String(value.target.labelKey));
   }
   return false;
 }

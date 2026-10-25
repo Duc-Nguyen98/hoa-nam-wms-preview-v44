@@ -11,7 +11,7 @@ export function initializeBrowserPreview(){
   if(IS_BROWSER_PREVIEW&&!runtime){
     const dataset=parseQaDataset(window.location.search);
     const isolated=dataset===QA_DATASET_P05;
-    runtime=installPreviewMock(apiClient,{approvedPreviewCommands:true,approvedOperationalQa:true,approvedInactiveMasterQa:isolated,credentialProfile:PUBLIC_DEMO_LOGIN,approvedAppEventFixture:new URLSearchParams(window.location.search).get('app-preview')==='1',...(isolated?{businessPersistence:createIndexedDbBusinessPersistence(`${BUSINESS_STORAGE_NAMESPACE}:qa-${dataset}`),recoveryPersistence:createIndexedDbBusinessPersistence(`${COMMAND_RECOVERY_NAMESPACE}:qa-${dataset}`)}:{})});
+    runtime=installPreviewMock(apiClient,{approvedPreviewCommands:true,approvedNotificationDesignData:true,approvedOperationalQa:true,approvedInactiveMasterQa:isolated,credentialProfile:PUBLIC_DEMO_LOGIN,approvedAppEventFixture:new URLSearchParams(window.location.search).get('app-preview')==='1',...(isolated?{businessPersistence:createIndexedDbBusinessPersistence(`${BUSINESS_STORAGE_NAMESPACE}:qa-${dataset}`),recoveryPersistence:createIndexedDbBusinessPersistence(`${COMMAND_RECOVERY_NAMESPACE}:qa-${dataset}`)}:{})});
   }
   return runtime;
 }

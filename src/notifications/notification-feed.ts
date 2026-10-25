@@ -14,7 +14,7 @@ export type BusinessNotificationBodyKey =
 
 export type BusinessNotificationTarget = {
   href: string;
-  labelKey: 'openDocument' | 'openInventory' | 'openPutaway' | 'openWarranty' | 'openSettings';
+  labelKey: 'openDocument' | 'openLabels' | 'openReceipt' | 'openInventory' | 'openPutaway' | 'openWarranty' | 'openSettings';
   reference: string;
 };
 
