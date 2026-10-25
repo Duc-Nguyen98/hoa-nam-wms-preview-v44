@@ -105,9 +105,9 @@
 .s20-list [data-column='performer'] { min-width: 146px; }
 .s20-list [data-column='action'] { min-width: 64px; }
 .s20-list [data-column='action'] .hn-button { min-width: 64px; white-space: nowrap; flex-shrink: 0; }
-/* Keep long document identifiers readable while preserving the table's own scroll. */
+/* Keep long document identifiers on one line; the table's horizontal scroll preserves readability. */
 .s20-list [data-column='code'] .s20-code,
-.s20-list [data-column='occurredAt'] .s20-code { white-space: normal; overflow-wrap: anywhere; word-break: normal; }
+.s20-list [data-column='occurredAt'] .s20-code { white-space: nowrap; overflow-wrap: normal; word-break: normal; }
 .s20-operational .hn-table th[data-column='detail'] { width: 112px; }
 .s20-operational .hn-table :is(th,td)[data-column='detail'] { width: 112px; min-width: 112px; }
 .s20-operational [data-column='detail'] .hn-button { min-width: 88px; white-space: nowrap; flex-shrink: 0; }

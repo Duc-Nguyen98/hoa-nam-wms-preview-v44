@@ -6,6 +6,14 @@ import { ROLE_STATUS_LABELS, SCOPE_LABELS, USER_STATUS_LABELS, scopeLabel } from
 const userSearch = [(row: UserRow) => row.displayName, (row: UserRow) => row.username, (row: UserRow) => row.email, (row: UserRow) => row.phone];
 const roleSearch = [(row: RoleRow) => row.code, (row: RoleRow) => row.name];
 const options = (values: readonly S29Option[]) => values.map(value => ({ ...value }));
+const uniqueOptions = (values: readonly (S29Option | null)[]) => {
+  const seen = new Set<string>();
+  return values.flatMap(value => {
+    if (!value || !value.value || seen.has(value.value)) return [];
+    seen.add(value.value);
+    return [{ ...value }];
+  });
+};
 
 export const S29_SAMPLE_USER: UserRow = {
   id: 'user-1', displayName: 'Nguyễn Văn Kho', username: 'nvkho01', email: 'nvkho01@gmail.com', phone: '0901234567',
@@ -16,11 +24,22 @@ export const S29_SAMPLE_ROLE: RoleRow = {
   id: 'role-warehouse', code: 'WAREHOUSE_STAFF', name: 'Nhân viên kho', status: 'ACTIVE', scope: 'WAREHOUSE', scopeRef: null, effectiveFrom: null, effectiveTo: null,
 };
 
-export function createS29Summary(): S29Summary {
+export function createS29Summary(users: readonly UserRow[] = [S29_SAMPLE_USER]): S29Summary {
+  // Filter options describe the complete source cohort, not the current page
+  // or a hardcoded sample. This keeps the catalogue aligned with the rows
+  // returned by the selected fixture (including multiple roles/departments).
+  const roleOptions = uniqueOptions(users.map(row => row.roleId ? {
+    value: row.roleId,
+    label: [row.roleName, row.roleCode].filter(Boolean).join(' · ') || row.roleId,
+  } : null));
+  const departmentOptions = uniqueOptions(users.map(row => row.departmentId ? {
+    value: row.departmentId,
+    label: row.departmentName || row.departmentId,
+  } : null));
   return {
     userOptions: {
-      roles: options([{ value: 'role-warehouse', label: 'Nhân viên kho · WAREHOUSE_STAFF' }]),
-      departments: options([{ value: 'dept-1', label: 'Phòng Kho vận' }]),
+      roles: roleOptions,
+      departments: departmentOptions,
       statuses: options(Object.entries(USER_STATUS_LABELS).map(([value, label]) => ({ value, label }))),
     },
     roleOptions: {
@@ -33,7 +52,7 @@ export function createS29Summary(): S29Summary {
 
 function validateUserQuery(query: UserQuery, rows: readonly UserRow[]) {
   const roleIds = new Set(rows.map(row => row.roleId).filter((value): value is string => Boolean(value)));
-  const departmentIds = new Set(['dept-1']);
+  const departmentIds = new Set(rows.map(row => row.departmentId).filter((value): value is string => Boolean(value)));
   if (!Number.isSafeInteger(query.page) || query.page < 1 || !PAGE_SIZE_OPTIONS.includes(query.pageSize as typeof PAGE_SIZE_OPTIONS[number])
     || !['', 'ACTIVE', 'INACTIVE', 'LOCKED'].includes(query.status) || (query.roleId !== '' && !roleIds.has(query.roleId))
     || (query.departmentId !== '' && !departmentIds.has(query.departmentId))
@@ -55,7 +74,7 @@ function validateRoleQuery(query: RoleQuery, rows: readonly RoleRow[]) {
 }
 
 export function createS29FixtureAdapters(users: readonly UserRow[] = [S29_SAMPLE_USER], roles: readonly RoleRow[] = [S29_SAMPLE_ROLE]): { users: UserAdapter; roles: RoleAdapter } {
-  const summary = createS29Summary();
+  const summary = createS29Summary(users);
   const userAdapter: UserAdapter = createListFixtureAdapter<UserRow, UserQuery, S29Summary>({
     sourceId: 'S29_DEV_SOURCE_SAMPLE_USER_1', source: { rows: users, completeness: 'complete', scope: 'detail', total: users.length }, summary,
     search: query => ({ value: query.search, fields: userSearch }),
