@@ -1,9 +1,10 @@
-import { createNotificationHarnessState, type MockNotification } from '../notifications/notification-model';
+import { createNotificationHarnessState, type NotificationRecord } from '../notifications/notification-model';
+import { createBusinessNotificationSeed } from '../notifications/notification-feed';
 import type { PreviewPersistence } from './storage';
 import { PreviewHttpError } from './errors';
 
-export const NOTIFICATION_STORAGE_NAMESPACE = 'hoa-nam-wms-preview-notifications-v1';
-export type DemoNotification = Omit<MockNotification, 'id'> & { readonly id: string };
+export const NOTIFICATION_STORAGE_NAMESPACE = 'hoa-nam-wms-preview-notifications-v2';
+export type DemoNotification = NotificationRecord;
 export interface NotificationReceipt { commandId: string; action: 'read-one' | 'read-all'; notificationId: string | null; revision: number; committedAt: string; changed: number }
 interface ActorNotifications { revision: number; items: DemoNotification[]; receipts: NotificationReceipt[] }
 interface RepositoryState { version: 1; actors: Record<string, ActorNotifications> }
@@ -20,8 +21,7 @@ export interface NotificationRepositoryOptions {
 const queues = new Map<string, Promise<unknown>>();
 function serialized<T>(namespace: string, task: () => Promise<T>) {
   const execute = () => {
-    if (typeof window === 'undefined') return task();
-    if (!navigator.locks) throw new PreviewHttpError(503,'NOTIFICATION_LOCK_UNAVAILABLE','Không thể đồng bộ thông báo. Vui lòng thử lại.');
+    if (typeof window === 'undefined' || !navigator.locks) return task();
     return navigator.locks.request(`${namespace}:notifications`, task);
   };
   const next = (queues.get(namespace) ?? Promise.resolve()).then(execute,execute);
@@ -30,10 +30,20 @@ function serialized<T>(namespace: string, task: () => Promise<T>) {
 }
 const record = (value: unknown): value is Record<string,unknown> => Boolean(value && typeof value === 'object' && !Array.isArray(value));
 function validItem(value: unknown): value is DemoNotification {
-  return record(value) && typeof value.id === 'string' && Boolean(value.id) && value.kind === 'mock-preview'
-    && ['itemA','itemB','itemC'].includes(String(value.titleKey)) && ['bodyA','bodyB','bodyC'].includes(String(value.bodyKey))
-    && typeof value.createdAt === 'string' && Number.isFinite(Date.parse(value.createdAt))
-    && (value.readAt === null || typeof value.readAt === 'string' && Number.isFinite(Date.parse(value.readAt))) && value.target === null;
+  if (!record(value) || typeof value.id !== 'string' || !value.id || typeof value.createdAt !== 'string' || !Number.isFinite(Date.parse(value.createdAt))
+    || !(value.readAt === null || typeof value.readAt === 'string' && Number.isFinite(Date.parse(value.readAt)))) return false;
+  if (value.kind === 'mock-preview') {
+    return ['itemA','itemB','itemC'].includes(String(value.titleKey)) && ['bodyA','bodyB','bodyC'].includes(String(value.bodyKey)) && value.target === null;
+  }
+  if (value.kind === 'business') {
+    return ['outbound','inventory','putaway','warranty','system'].includes(String(value.category))
+      && ['info','warning','success'].includes(String(value.severity))
+      && ['outboundReadyTitle','inventoryVarianceTitle','putawayCompletedTitle','warrantyReviewTitle','warehouseConfigTitle'].includes(String(value.titleKey))
+      && ['outboundReadyBody','inventoryVarianceBody','putawayCompletedBody','warrantyReviewBody','warehouseConfigBody'].includes(String(value.bodyKey))
+      && record(value.target) && typeof value.target.href === 'string' && value.target.href.startsWith('#/preview/')
+      && typeof value.target.reference === 'string' && ['openDocument','openInventory','openPutaway','openWarranty','openSettings'].includes(String(value.target.labelKey));
+  }
+  return false;
 }
 function validState(value: unknown): value is RepositoryState {
   return record(value) && value.version === 1 && record(value.actors) && Object.values(value.actors).every(actor => record(actor)
@@ -44,7 +54,7 @@ function validState(value: unknown): value is RepositoryState {
 }
 export function createNotificationRepository(options: NotificationRepositoryOptions) {
   const now = options.now ?? Date.now;
-  const seed = options.seed ?? (() => createNotificationHarnessState().items.map(item => ({...item})));
+  const seed = options.seed ?? (() => createBusinessNotificationSeed(now()).map(item => ({ ...item })));
   async function execute(limit: number, command?: {commandId:string; action:'read-one'|'read-all'; notificationId?:string}): Promise<NotificationPage> {
     if (!Number.isSafeInteger(limit) || limit < 1 || limit > 10000) throw new PreviewHttpError(400,'INVALID_NOTIFICATION_PAGE','Trang thông báo không hợp lệ.');
     const fence = options.captureFence();

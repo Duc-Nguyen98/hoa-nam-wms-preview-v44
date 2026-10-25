@@ -15,6 +15,8 @@ export interface MockNotification {
   readonly target: null;
 }
 
+export type NotificationRecord = (Omit<MockNotification, 'id'> & { readonly id: string }) | import('./notification-feed').BusinessNotification;
+
 export const MOCK_READ_AT = '2026-10-18T02:00:00.000Z';
 const FIXTURES: readonly MockNotification[] = Object.freeze([
   Object.freeze({ id: 'MOCK-N01', kind: 'mock-preview', titleKey: 'itemA', bodyKey: 'bodyA', createdAt: '2026-10-17T03:30:00.000Z', readAt: null, target: null }),
