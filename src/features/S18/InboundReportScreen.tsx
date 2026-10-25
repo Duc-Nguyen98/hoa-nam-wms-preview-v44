@@ -1,3 +1,4 @@
+import { PageState } from '../../shared/PageState';
 import { formatBusinessDate } from '../../i18n/format-business-date';
 import { useShellPreferences } from '../../shared/shell-preferences';
 import { formatDeclaredPercentage } from '../../i18n/format-declared-percentage';
@@ -176,8 +177,7 @@ export function InboundReportScreen({ adapter, operationalAdapter }: { adapter?:
           <div className="s18-list-footer"><Pagination preserveBoundaryFocus variant="products" unit={tx("phiếu")} page={model.pagination.page} pageSize={model.pagination.pageSize} filteredTotal={model.pagination.total} displayedCount={model.rows.length} canGoPrevious={model.pagination.page > 1} canGoNext={model.pagination.page < model.pagination.pageCount} pageSizeOptions={model.pagination.pageSizeOptions} onPageChange={page => update({ page })} onPageSizeChange={pageSize => update({ pageSize })} /><NoticeSlot name="pagination" /></div>
         </section>
       </> : <section className="hn-report-read-state" aria-busy={state.loading}>
-        <p role={state.error && !state.loading ? 'alert' : 'status'}>{tx(state.loading ? 'Đang đọc báo cáo nhập kho…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')}</p>
-        {(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}
+        <PageState kind={state.loading?'loading':state.error?'error':'stale'} description={tx(state.loading ? 'Đang đọc báo cáo nhập kho…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')} action={(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}/>
       </section>}
       {cohort === 'legacy' && notice && <Notice feedback={{ ...notice, message: tx(notice.message) }} onClose={() => setNotice(null)} resolveFocusFallback={() => screen.current?.querySelector<HTMLElement>('#s18-search') ?? null} resolveInlineSlot={inlineSlot} revealInlineOnOpen protectedContentSelector=".s18-list,.s18-charts,.s18-screen .hn-catalogue-summary" />}
       </div>

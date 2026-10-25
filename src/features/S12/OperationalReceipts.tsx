@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
@@ -86,7 +87,7 @@ export function OperationalReceipts({ adapter: supplied, notify }: { adapter?: R
   const editorContext = editor && snapshot && snapshot.token.epoch === editor.fence.epoch && snapshot.token.scenarioId === editor.fence.scenarioId && snapshot.token.generation === editor.fence.generation ? editor.context : null;
   return <><section className="s12-list hn-premium-panel" aria-label={tx('Phiếu nhập phiên hiện tại')} data-operational-receipts>
     <div className="s12-operational-heading"><div><h2>{tx('Phiếu nhập phiên hiện tại')}</h2></div><div className="s12-action-row"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()} leadingIcon={<Icon name="refresh" size={17} />}>{tx('Đọc lại dữ liệu')}</Button><Button disabled={locked || !snapshot?.scenario} onClick={create} leadingIcon={<Icon name="plus" size={17} />}>{tx('Tạo phiếu nhập')}</Button></div></div>
-    {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{archivedInfo}{state.error && <p role="alert">{tx(message(state.error))}</p>}{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}
+    <ReadState loading={state.busy} error={state.error} hasData={!!snapshot} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(message(state.error))}/>{archivedInfo}{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}
     {snapshot && !snapshot.scenario && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử trước khi tạo phiếu.')}</p>}
     {snapshot?.scenario && <>
       <div className="s12-operational-filters" aria-label={tx('Tìm kiếm và lọc phiếu nhập')}><FilterInput id="s12-operational-search" label={tx('Tìm phiếu nhập')} placeholder={tx('Tìm mã phiếu, nguồn hoặc tham chiếu')} value={search} onChange={event => setSearch(event.target.value)} /><FilterSelect id="s12-operational-status" label={tx('Lọc trạng thái')} value={statusFilter} onChange={event => setStatusFilter(event.target.value as StatusKey | '')}><option value="">{tx('Tất cả trạng thái')}</option>{(Object.keys(STATUS) as StatusKey[]).map(key => <option key={key} value={key}>{tx(STATUS[key])}</option>)}</FilterSelect></div>

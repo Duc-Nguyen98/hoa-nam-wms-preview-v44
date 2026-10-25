@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { formatBusinessPeriod } from '../../i18n/format-business-date';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Button, CatalogueNavTabs, DataTable, DateRangePicker, type TableColumn } from '../../shared';
@@ -59,7 +60,7 @@ export function OperationalStockReport({ adapter }: { adapter: StockReportReader
       <Button variant="secondary" disabled={state.busy} onClick={() => { setExportError(''); void controller.load(); }}>{tx('Đọc lại dữ liệu')}</Button>
       <Button variant="secondary" disabled={!model || state.busy || exporting} onClick={() => void download()}>{tx(exporting ? 'Đang xuất…' : 'Xuất Excel')}</Button>
     </div>
-    {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{(state.error || exportError) && <p role="alert">{tx(errorMessage(state.error || exportError))}</p>}
+    <ReadState loading={state.busy} error={state.error || exportError} hasData={!!model} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(errorMessage(state.error || exportError))}/>
     <p>{tx('Tồn đầu + Nhập − Xuất SP − Xuất linh kiện + Hoàn trả = Tồn cuối. Mỗi dòng có đơn vị tính riêng.')}</p><p>{tx('Chưa có dữ liệu kiểm đếm thực tế; chưa thể tính chênh lệch.')}</p>
     {model && <><p>{tx('Kỳ đã áp dụng')}: {formatBusinessPeriod(model.report.query, language)} · Asia/Ho_Chi_Minh</p><p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time></p>
       {!model.hasScenario ? <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p> : <><p className="s21-operational-table-note">{tx('Ghim SKU')}</p><DataTable caption={tx('Nhập – xuất – tồn theo kỳ')} captionVisibility="sr-only" columns={columns} rows={model.rows} rowKey={row => row.key} appearance="refined" stickyHeader stickyColumnIds={['sku']} emptyContent={<p>{tx('Chưa có biến động tồn kho trong kỳ.')}</p>} /></>}

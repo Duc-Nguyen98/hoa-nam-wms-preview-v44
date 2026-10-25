@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { localeForLanguage, useShellPreferences } from '../../shared/shell-preferences';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, GlobalModal, type TableColumn } from '../../shared';
@@ -35,7 +36,7 @@ export function OperationalTrays({ adapter }: { adapter: TrayReader }) {
   }, [controller]);
   const model = state.model, selected = resolveTraySelection(model, selection);
   const time = (value: string) => new Date(value).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' });
-  const feedback = <>{state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{state.error && <p role="alert">{tx(errorMessage(state.error))}</p>}</>;
+  const feedback = <><ReadState loading={state.busy} error={state.error} hasData={!!model} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(errorMessage(state.error))}/></>;
   const columns: TableColumn<OperationalTrayRow>[] = [
     { id: 'code', heading: tx('Mã khay'), render: row => <strong data-tray-id={row.id}>{row.code}</strong> },
     { id: 'location', heading: tx('Vị trí'), render: row => <span data-location-id={row.locationId}>{row.locationCode}</span> },

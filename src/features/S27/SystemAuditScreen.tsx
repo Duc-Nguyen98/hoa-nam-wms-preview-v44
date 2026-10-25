@@ -1,3 +1,4 @@
+import { PageState } from '../../shared/PageState';
 import { useShellPreferences } from '../../shared/shell-preferences';
 import { formatAuditTime } from './audit-time';
 import { useAuditCopy as useUiCopy } from './audit-ui-copy';
@@ -96,8 +97,7 @@ function LegacySystemAuditScreen({ adapter, cohortControls }: { adapter?: System
       <div className="s27-notice-slot" />
       {cohortControls}
       {model && <div className="s27-scope"><Icon name="info" size={15} />{model.source.detailTotal}{' '}{tx("sự kiện được cung cấp · Mốc dữ liệu")}{' '}{formatAuditTime(model.summary.snapshotAt, language)}{' '}{tx("· Không đại diện toàn bộ lịch sử hệ thống.")}</div>}
-      {!model && <p className="s27-source-pending" role="status">{state.loading ? tx("Đang kiểm tra nguồn nhật ký…") : state.blocker?.reason === 'FIXTURE_NOT_SELECTED' ? tx("Chưa có nguồn nhật ký được chọn. Chưa hiển thị số kết quả hoặc phân trang; cần xác nhận tập dữ liệu và phạm vi trước khi sử dụng.") : tx("Chưa thể đọc nguồn nhật ký.")}</p>}
-      {!model && state.error && !state.loading && <div><Button onClick={() => run(() => controller.load(query))}>{tx('Thử lại')}</Button></div>}
+      {!model && <PageState kind={state.loading?'loading':state.error?'error':'stale'} description={state.loading ? tx("Đang kiểm tra nguồn nhật ký…") : state.blocker?.reason === 'FIXTURE_NOT_SELECTED' ? tx("Chưa có nguồn nhật ký được chọn. Chưa hiển thị số kết quả hoặc phân trang; cần xác nhận tập dữ liệu và phạm vi trước khi sử dụng.") : tx("Chưa thể đọc nguồn nhật ký.")} onRetry={state.error&&!state.loading?()=>run(()=>controller.load(query)):undefined}/>}
       <section className="s27-list" aria-labelledby="s27-list-title">
         <div className="s27-list-heading"><div><h2 id="s27-list-title">{tx("Danh sách sự kiện")}</h2><p>{tx("Nhật ký chỉ đọc · Phân hệ và nhãn hành động chưa có mapping xác nhận.")}</p></div>{model && <strong role="status" aria-live="polite">{model.pagination.total}{' '}{tx("kết quả")}</strong>}</div>
         <CatalogueToolbar id="s27-query" label={tx("Tìm và lọc nhật ký hệ thống")} layout="worklist" filterSizing="compact" searchLabel={tx("Tìm mã sự kiện, chứng từ, biến động hoặc người thao tác")} searchHint={tx("Tìm chuỗi con, không phân biệt hoa thường hoặc dấu.")} searchPlaceholder={tx("Tìm trong nhật ký…")} searchValue={query.search} onSearchChange={search => update({ search })} onReset={reset} applyMode="immediate" searchHintMode="sr-only" queryContext={null} busy={state.loading || state.debouncing}

@@ -131,8 +131,8 @@ export function App() {
       previousHash.current = hash;
     }
   }, [hash, selected?.label, unknown, accountPanel, authStatus, language, tx]);
-  if (authStatus === 'loading') return <main id="main-content" className="setup-container" tabIndex={-1}><p role="status">{tx("Đang kiểm tra phiên làm việc…")}</p></main>;
-  if (authStatus === 'error') return <main id="main-content" className="setup-container" tabIndex={-1}><Feedback title={tx("Chưa thể kết nối hệ thống")} tone="warning"><p>{tx(accountCenter?.authError)}</p><Button onClick={() => void accountCenter?.refreshSession()}>{tx("Thử lại")}</Button></Feedback></main>;
+  if (authStatus === 'loading') return <main id="main-content" className="setup-container" tabIndex={-1}><PageState kind="loading" title={tx("Đang kiểm tra phiên làm việc…")}/></main>;
+  if (authStatus === 'error') return <main id="main-content" className="setup-container" tabIndex={-1}><PageState kind="error" title={tx("Chưa thể kết nối hệ thống")} description={tx(accountCenter?.authError)} onRetry={()=>void accountCenter?.refreshSession()}/></main>;
   if (authStatus === 'signed-out') return <AccountSignedOutView><LoginScreen /></AccountSignedOutView>;
   if (authStatus === 'confirmation-required') return <SessionScreen />;
   if (notificationHarness) return <NotificationHarnessScreen />;

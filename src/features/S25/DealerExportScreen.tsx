@@ -1,3 +1,4 @@
+import { PageState } from '../../shared/PageState';
 import { formatBusinessPeriod } from '../../i18n/format-business-date';
 import { useShellPreferences } from '../../shared/shell-preferences';
 import { formatBusinessDate } from '../../i18n/format-business-date';
@@ -148,8 +149,7 @@ export function DealerExportScreen({ adapter, operationalAdapter }: { adapter?: 
         </section>
       </> : <section className="hn-report-read-state" aria-busy={state.loading}>
         <div className="s25-period"><DateRangePicker id="s25-period" label={tx("Kỳ báo cáo · Giờ Việt Nam")} value={query.period} clearable={false} onChange={period => { if (period) update({ period }); }} /></div>
-        <p role={state.error && !state.loading ? 'alert' : 'status'}>{tx(state.loading ? 'Đang đọc báo cáo…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')}</p>
-        {(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}
+        <PageState kind={state.loading?'loading':state.error?'error':'stale'} description={tx(state.loading ? 'Đang đọc báo cáo…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')} action={(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}/>
       </section>}
       {cohort === 'legacy' && notice && <Notice feedback={{ ...notice, message: tx(notice.message) }} onClose={() => setNotice(null)} protectedContentSelector=".s25-overview,.hn-catalogue-toolbar" resolveInlineSlot={origin => root.current?.querySelector<HTMLElement>(origin?.closest('.s25-period') ? '[data-s25-notice="period"]' : origin?.closest('.hn-page-heading') ? '[data-feedback-slot="heading"]' : origin?.closest('.hn-table') ? '[data-s25-notice="table"]' : '[data-feedback-slot="query"]') ?? null} resolveFocusFallback={() => root.current?.querySelector<HTMLElement>('#s25-period') ?? null} revealInlineOnOpen />}
     </div>

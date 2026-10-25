@@ -1,3 +1,4 @@
+import { PageState } from '../../shared/PageState';
 import { useShellPreferences } from '../../shared/shell-preferences';
 import { formatBusinessDate } from '../../i18n/format-business-date';
 import { useReportCopy } from '../../i18n/reports-copy';
@@ -196,8 +197,7 @@ export function OutboundReportScreen({ adapter, operationalAdapter }: { adapter?
           <p className="s19-availability" id="s19-flow-limit"><Icon name="eye" size={16} />{tx("Xem chi tiết hiện chưa khả dụng.")}</p>
         </section>
       </> : <section className="hn-report-read-state" aria-busy={state.loading}>
-        <p role={state.error && !state.loading ? 'alert' : 'status'}>{tx(state.loading ? 'Đang đọc báo cáo xuất kho…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')}</p>
-        {(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}
+        <PageState kind={state.loading?'loading':state.error?'error':'stale'} description={tx(state.loading ? 'Đang đọc báo cáo xuất kho…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')} action={(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}/>
       </section>}
       {cohort === 'legacy' && notice && <Notice feedback={{ ...notice, message: tx(notice.message) }} onClose={() => setNotice(null)} resolveFocusFallback={() => screen.current?.querySelector<HTMLElement>('#s19-search') ?? null} resolveInlineSlot={inlineSlot} revealInlineOnOpen protectedContentSelector=".s19-list,.s19-charts,.s19-overview" />}
     </div>

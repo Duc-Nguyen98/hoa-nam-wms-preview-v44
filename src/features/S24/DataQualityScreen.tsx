@@ -1,3 +1,4 @@
+import { PageState } from '../../shared/PageState';
 import { formatBusinessPeriod } from '../../i18n/format-business-date';
 import { formatBusinessTimestamp } from '../../i18n/format-business-timestamp';
 import { useShellPreferences } from '../../shared/shell-preferences';
@@ -197,8 +198,7 @@ export function DataQualityScreen({ adapter }: { adapter?: DataQualityAdapter } 
         <p className="s24-action-limit" id="s24-action-limit"><Icon name="info" size={15} />{detailTx('Chỉ hiển thị thông tin trong dòng đã đọc.')}</p>
       </section> : <section className="hn-report-read-state" aria-busy={state.loading}>
         <div className="s24-period"><DateRangePicker id="s24-period" label={tx("Kỳ báo cáo · Giờ Việt Nam")} value={query.period} clearable={false} onChange={period => { if (period) update({ period }); }} /></div>
-        <p role={state.error && !state.loading ? 'alert' : 'status'}>{tx(state.loading ? 'Đang đọc báo cáo…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Báo cáo hiện chưa khả dụng.')}</p>
-        {(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}
+        <PageState kind={state.loading?'loading':state.error?'error':'stale'} description={tx(state.loading ? 'Đang đọc báo cáo…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Báo cáo hiện chưa khả dụng.')} action={(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}/>
       </section>}
       <AcceptedRowDetail row={detailRow} onClose={() => setSelection(null)} resolveReturnFocus={() => screen.current?.querySelector<HTMLElement>('#s24-list-title') ?? null} />
       {notice && <Notice feedback={{ ...notice, message: tx(notice.message) }} onClose={() => setNotice(null)} protectedContentSelector=".s24-overview,.s24-filter-card" resolveInlineSlot={origin => screen.current?.querySelector<HTMLElement>(origin?.closest('.s24-period-block') ? '[data-s24-notice="period"]' : origin?.closest('.hn-page-heading') ? '[data-feedback-slot="heading"]' : origin?.closest('.hn-table') ? '[data-s24-notice="table"]' : '[data-feedback-slot="query"]') ?? null} resolveFocusFallback={() => screen.current?.querySelector<HTMLElement>('#s24-period') ?? null} revealInlineOnOpen />}

@@ -19,6 +19,24 @@ export interface OutboundBindingState {
 }
 const fail = (code: string): never => { throw Object.assign(new Error(code), { code }); };
 const errorCode = (e: unknown) => (e as { code?: string })?.code ?? 'READ_FAILED';
+/** Validate the S15 projection before rendering nested data from an adapter. */
+export function assertOutboundReadShape(snapshot: OperationalSnapshot) {
+  const strings=(value:unknown):value is string[]=>Array.isArray(value)&&value.every(item=>typeof item==='string')&&new Set(value).size===value.length;
+  if (!snapshot || !snapshot.token || !Array.isArray(snapshot.outbounds) || !Array.isArray(snapshot.physical)) return fail('INVALID_RESPONSE');
+  const ids=new Set<string>();
+  for (const row of snapshot.outbounds) {
+    const data=row?.data;
+    if (!row || typeof row.id!=='string' || !Number.isSafeInteger(row.version) || row.version<1 || ids.has(row.id) || !data || typeof data.code!=='string' || typeof data.appRequestId!=='string'
+      || typeof data.recipientId!=='string' || !['DRAFT','SCANNING','SUBMITTED','READY','POSTED'].includes(data.status)
+      || !strings(data.allocatedPhysicalIds) || !strings(data.postedEventIds) || !Array.isArray(data.requestedLines)
+      || data.requestedLines.some(line=>!line || typeof line.id!=='string' || typeof line.skuId!=='string' || !Number.isSafeInteger(line.quantity) || line.quantity<=0)
+      || new Set(data.requestedLines.map(line=>line.id)).size!==data.requestedLines.length
+      || data.scenarioId!==snapshot.token.scenarioId || data.generation!==snapshot.token.generation) return fail('INVALID_RESPONSE');
+    ids.add(row.id);
+  }
+  if(new Set(snapshot.physical.map(row=>row?.id)).size!==snapshot.physical.length) return fail('INVALID_RESPONSE');
+  for(const row of snapshot.physical) if(!row?.data || typeof row.id!=='string' || typeof row.data.physicalCode!=='string' || typeof row.data.skuId!=='string') return fail('INVALID_RESPONSE');
+}
 const durableCommandFeedback = new Set(['STALE_VERSION', 'SUBMISSION_CHANGED', 'OUTBOUND_NOT_RECEIVABLE', 'OUTBOUND_NOT_POSTABLE', 'APP_SUBMISSION_REQUIRED', 'PHYSICAL_UNAVAILABLE', 'INSUFFICIENT_STOCK']);
 export function assertOutboundFence(snapshot: OperationalSnapshot, fence: OutboundFence) {
   if (!snapshot.scenario || snapshot.token.epoch !== fence.epoch || snapshot.token.scenarioId !== fence.scenarioId || snapshot.token.generation !== fence.generation) fail('STALE_SCENARIO');
@@ -63,10 +81,14 @@ export function createOutboundBinding(adapter: OutboundAdapter, readCatalog: () 
   const publish = (patch: Partial<OutboundBindingState>) => { if (active) { state = { ...state, ...patch }; listeners.forEach(fn => fn()); } };
   const current = (token: number) => active && token === serial;
   async function read(mark: (stage: OutboundFailureStage) => void) {
-    mark('catalog-read'); const catalog = await readCatalog();
-    mark('operational-read'); const snapshot = await adapter.read();
-    if (catalog.epoch !== snapshot.epoch || catalog.actorKey !== snapshot.actorKey) fail('STALE_DEMO_EPOCH');
-    return { snapshot, catalog };
+    for (let attempt=0; attempt<3; attempt++) {
+      mark('catalog-read'); const catalog = await readCatalog();
+      mark('operational-read'); const snapshot = await adapter.read();
+      if (catalog.epoch !== snapshot.epoch || catalog.actorKey !== snapshot.actorKey) fail('STALE_DEMO_EPOCH');
+      assertOutboundReadShape(snapshot);
+      if (catalog.snapshotRevision === snapshot.snapshotRevision) return { snapshot, catalog };
+    }
+    return fail('STALE_SNAPSHOT');
   }
   async function accept(request: OperationalCommand, outcome: OperationalOutcome, token: number, mark: (stage: OutboundFailureStage) => void, explicitRecovery = false) {
     const next = await read(mark);

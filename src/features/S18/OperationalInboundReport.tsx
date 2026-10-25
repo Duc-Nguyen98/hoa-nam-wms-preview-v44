@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Button, CatalogueNavTabs, DataTable, DateRangePicker, GlobalModal, type TableColumn } from '../../shared';
 import { useUiCopy } from '../../i18n/use-ui-copy';
@@ -81,7 +82,7 @@ export function OperationalInboundReport({ adapter: supplied }: { adapter?: Inbo
   ];
   return <section className="s18-operational hn-premium-panel" data-operational-inbound ref={detailReturn} tabIndex={-1} aria-label={tx('Nhập kho phiên hiện tại')}>
     <div className="s18-operational-controls"><h2>{tx('Nhập kho phiên hiện tại')}</h2><DateRangePicker id="s18-operational-period" label={tx('Kỳ báo cáo')} value={period} clearable={false} onChange={value => { if (value) void controller.load(value); }} /><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button><Button variant="ghost" disabled={state.busy} onClick={() => void controller.resetPeriod()}>{tx('Kỳ hiện tại')}</Button></div>
-    {state.busy && <p role="status">{tx('Đang đọc báo cáo…')}</p>}{state.error && <p role="alert">{tx(errorMessage(state.error))}</p>}
+    <ReadState loading={state.busy} error={state.error} hasData={!!model} loadingText={tx('Đang đọc báo cáo…')} errorText={tx(errorMessage(state.error))}/>
     <p>{tx('Báo cáo gồm các lần nhập đã ghi sổ trong kỳ theo giờ Việt Nam.')}</p>
     {model && <p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time></p>}
     {model && !model.hasScenario && <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}

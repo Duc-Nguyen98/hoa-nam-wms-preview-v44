@@ -2,6 +2,8 @@ import { useUiCopy } from '../i18n/use-ui-copy';
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import type { CSSProperties, Key, ReactNode } from 'react';
 import { revealControl } from './focus';
+import { Icon } from './Icon';
+import './page-state.css';
 
 export interface TableColumn<Row> {
   id: string;
@@ -33,6 +35,8 @@ export interface DataTableProps<Row> {
   sort?: TableSort | null;
   onSort?: (key: string) => void;
   emptyContent?: ReactNode;
+  /** Owner-supplied empty reason; never inferred from row count. */
+  emptyStateKind?: 'empty' | 'no-results';
   busy?: boolean;
   /** Accepted query identity: query changes reveal the first row, refresh keeps position. */
   scrollResetKey?: string;
@@ -52,7 +56,7 @@ export interface DataTableProps<Row> {
 }
 
 /** Controlled presentation only. Query semantics, sort direction and row completeness belong to the controller. */
-export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, emptyContent, busy = false, scrollResetKey, appearance = 'default', density = 'default', rowActionAppearance, sortIndicatorAppearance, isRowSelected, stickyHeader = false, stickyColumnIds = [], stickyEndColumnIds = [], captionVisibility = 'visible', scrollFocusIndicatorId }: DataTableProps<Row>) {
+export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, emptyContent, emptyStateKind = 'empty', busy = false, scrollResetKey, appearance = 'default', density = 'default', rowActionAppearance, sortIndicatorAppearance, isRowSelected, stickyHeader = false, stickyColumnIds = [], stickyEndColumnIds = [], captionVisibility = 'visible', scrollFocusIndicatorId }: DataTableProps<Row>) {
   const tx = useUiCopy();
   const captionId = useId();
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -175,6 +179,6 @@ export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, e
       })}</tr></thead>
       <tbody>{rows.map((row, index) => <tr key={rowKey(row)} data-selected={isRowSelected?.(row) || undefined}>{columns.map((column) => <td key={column.id} data-column={column.id} {...stickyCellProps(column.id)} className={column.align === 'end' ? 'hn-align-end' : undefined}>{column.render(row, index)}</td>)}</tr>)}</tbody>
     </table>
-    {rows.length === 0 && emptyContent && <div className="hn-table-empty">{emptyContent}</div>}
+    {rows.length === 0 && emptyContent && <div className="hn-table-empty hn-state-empty-frame"><Icon className="hn-state-empty-frame__icon" name={emptyStateKind==='no-results'?'search':'documents'} size={64}/><div>{emptyContent}</div></div>}
   </div>;
 }

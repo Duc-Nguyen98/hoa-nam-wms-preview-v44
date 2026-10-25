@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Button, DataTable, GlobalModal, StatusBadge, type TableColumn } from '../../shared';
 import { useUiCopy } from '../../i18n/use-ui-copy';
@@ -73,10 +74,10 @@ export function OperationalPutawayOrders({ adapter: supplied, notify }: { adapte
     try { setEditor(refreshPutawayEditor(editor, next.snapshot)); setEditorMessage('Đã đọc lại lệnh. Nội dung nhập được giữ nguyên.'); } catch { setEditorMessage('Lệnh hoặc phiên đã thay đổi. Đọc lại dữ liệu trước khi tiếp tục.'); }
   }
   async function save() { if (!editor) return; const before = controller.getSnapshot().acceptedSequence; await controller.save(editor); if (controller.getSnapshot().acceptedSequence > before) notify(tx('Đã lưu lệnh xếp khay.')); }
-  const feedback = <>{state.archivedReconciled && <p role="status">{tx('Đã đối chiếu thao tác phiên cũ. Danh sách hiện tại không thay đổi.')}</p>}{state.error && <p role="alert">{tx(message(state.error))}</p>}{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}</>;
+  const feedback = <>{state.archivedReconciled && <p role="status">{tx('Đã đối chiếu thao tác phiên cũ. Danh sách hiện tại không thay đổi.')}</p>}<ReadState loading={false} error={state.error} hasData={!!snapshot} loadingText={null} errorText={tx(message(state.error))}/>{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}</>;
   return <section className="s14-list hn-premium-panel" data-operational-putaways aria-label={tx('Lệnh xếp khay phiên hiện tại')}>
     <h2>{tx('Lệnh xếp khay phiên hiện tại')}</h2><Button disabled={state.busy} variant="secondary" onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>
-    {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{!editor && feedback}
+    <ReadState loading={state.busy} hasData={!!snapshot} loadingText={tx('Đang đọc dữ liệu…')} errorText={null}/>{!editor && feedback}
     {snapshot && !snapshot.scenario && <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
     {snapshot?.scenario && <DataTable caption={tx('Lệnh xếp khay phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.putaways} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có lệnh. Tạo lệnh từ Hàng chờ.')}</p>} />}
     <GlobalModal open={!!selected && !editor} title={tx('Chi tiết lệnh xếp khay')} onClose={() => { if (!state.busy) setSelected(null); }} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy || state.recovery} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>

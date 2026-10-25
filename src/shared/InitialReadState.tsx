@@ -1,5 +1,5 @@
 import { useUiCopy } from '../i18n/use-ui-copy';
-import { Button, Feedback } from './primitives';
+import { PageState } from './PageState';
 
 /** Initial reads have no accepted data to preserve; never render a false empty table. */
 export function InitialReadState({ label, loading, error, blocked, onRetry }: {
@@ -11,7 +11,7 @@ export function InitialReadState({ label, loading, error, blocked, onRetry }: {
 }) {
   const tx = useUiCopy();
   const pending = loading || (!error && !blocked);
-  return <Feedback live tone={pending ? 'neutral' : error ? 'error' : 'warning'}
+  return <PageState kind={pending ? 'loading' : error ? 'error' : 'stale'}
     title={pending ? tx('Đang tải {label}…', { label: tx(label) }) : error ? tx('Chưa thể tải {label}', { label: tx(label) }) : tx('{label} hiện chưa khả dụng', { label: tx(label) })}
-    action={!pending && onRetry ? <Button variant="secondary" onClick={onRetry}>{tx("Thử lại")}</Button> : undefined} />;
+    onRetry={!pending ? onRetry : undefined} />;
 }

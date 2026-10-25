@@ -1,5 +1,5 @@
 import { useUiCopy } from '../i18n/use-ui-copy';
-import { Icon } from './Icon';
+import { PageState } from './PageState';
 import type { ReportEmptyReason } from './report-state';
 import './report-status.css';
 
@@ -35,11 +35,7 @@ export function ReportEmptyState({ reason, itemLabel = 'bản ghi', className = 
   const tx = useUiCopy();
   const copy = reasonCopy[reason];
   const title = reason === 'no-records' ? tx('Chưa có {item} trong kỳ', { item: tx(itemLabel) }) : reason === 'no-matches' ? tx('Không có {item} phù hợp', { item: tx(itemLabel) }) : copy.title;
-  return <div className={`hn-report-empty hn-report-empty--${reason} ${className}`.trim()} data-report-empty-reason={reason} role="status">
-    <Icon name={copy.icon} size={24} aria-hidden="true" />
-    <strong>{tx(title)}</strong>
-    <span>{tx(copy.detail)}</span>
-  </div>;
+  return <div className={`hn-report-empty hn-report-empty--${reason} ${className}`.trim()} data-report-empty-reason={reason}><PageState kind={reason==='no-records'?'empty':reason==='no-matches'?'no-results':'stale'} title={tx(title)} description={tx(copy.detail)}/></div>;
 }
 
 /**

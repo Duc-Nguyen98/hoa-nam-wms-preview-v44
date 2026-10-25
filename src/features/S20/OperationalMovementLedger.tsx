@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { formatBusinessPeriod } from '../../i18n/format-business-date';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { Button, CatalogueNavTabs, DataTable, DateRangePicker, GlobalModal, type TableColumn } from '../../shared';
@@ -75,7 +76,7 @@ export function OperationalMovementLedger({ adapter }: { adapter: MovementLedger
       <Button variant="secondary" data-s20-refresh disabled={state.busy} onClick={refreshData}>{tx('Đọc lại dữ liệu')}</Button>
       <Button variant="secondary" disabled={!model || state.busy || exporting} onClick={() => void download()}>{tx(exporting ? 'Đang xuất…' : 'Xuất Excel')}</Button>
     </div>
-    {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{(state.error || exportError) && <p role="alert">{tx(errorMessage(state.error || exportError))}</p>}
+    <ReadState loading={state.busy} error={state.error || exportError} hasData={!!model} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(errorMessage(state.error || exportError))}/>
     <p>{tx('Bút toán hoàn trả được ghi riêng với số lượng dương; bút toán gốc được giữ nguyên.')}</p><p>{tx('Mỗi dòng giữ nguyên đơn vị tính. Phiếu nháp chưa tạo biến động tồn kho.')}</p>
     {model && <><p>{tx('Kỳ đã áp dụng')}: {formatBusinessPeriod(model.report.query, language)} · Asia/Ho_Chi_Minh</p><p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time> · {tx('Số bút toán')}: {model.rows.length}</p>
       {!model.hasScenario ? <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p> : <DataTable caption={tx('Sổ biến động đã ghi sổ')} captionVisibility="sr-only" columns={columns} rows={model.rows} rowKey={row => row.event.id} appearance="refined" emptyContent={<p>{tx('Chưa có biến động tồn kho trong kỳ.')}</p>} />}</>}

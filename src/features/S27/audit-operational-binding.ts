@@ -69,5 +69,5 @@ export function createOperationalAuditReader(adapter: AuditReadAdapter, clock: (
     finally { if (current(token)) publish({ loading: false }); }
   }
   return { getSnapshot: () => state, subscribe: (fn: () => void) => { listeners.add(fn); return () => listeners.delete(fn); }, load,
-    resume() { active = true; return load(); }, suspend() { ++sequence; publish({ model: null, loading: false }); active = false; } };
+    resume(next?: AuditPeriod) { active = true; return load(next); }, suspend() { ++sequence; publish({ model: null, loading: false }); active = false; } };
 }

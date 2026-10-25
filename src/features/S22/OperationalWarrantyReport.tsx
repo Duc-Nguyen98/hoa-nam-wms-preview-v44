@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { formatBusinessDate } from '../../i18n/format-business-date';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
@@ -77,7 +78,7 @@ export function OperationalWarrantyReport({ adapter }: { adapter: WarrantyReport
       <Button data-s22-operational-load disabled={state.loading} onClick={() => void controller.load(period)}>{tx('Đọc báo cáo')}</Button><Button disabled={!model || state.loading || state.exporting} onClick={() => void download()}>{tx(state.exporting ? 'Đang xuất…' : 'Xuất Excel')}</Button></div>
       <p>{tx('Theo ngày tiếp nhận; gồm trọn ngày bắt đầu và kết thúc, giờ Việt Nam.')}</p>
       {model && <><p>{tx('Thời điểm chốt')}: <time dateTime={model.report.query.asOf}>{timestamp(model.report.query.asOf)}</time> · {date(model.report.query.from)} – {date(model.report.query.to)}</p><p>{tx('Dữ liệu giữ nguyên đến lần đọc tiếp theo; Excel sử dụng đúng lượt đọc này.')}</p></>}
-      {state.loading && <p role="status">{tx('Đang đọc báo cáo…')}</p>}{state.error && <p role="alert">{tx(errorText)}</p>}
+      <ReadState loading={state.loading} error={state.error} hasData={!!model} loadingText={tx('Đang đọc báo cáo…')} errorText={tx(errorText)}/>
     </section>
     {model && <><section className="s22-kpis" aria-label={tx('Báo cáo phiên hiện tại')} data-report-sha={model.report.sha256}>
       {([['total', 'Tổng ca'], ['complete', 'Hoàn tất'], ['processing', 'Đang xử lý'], ['waiting', 'Chờ tiếp nhận'], ['incomplete', 'Chưa hoàn tất'], ['overdue', 'Quá hạn']] as const).map(([key, label]) => <Card key={key} className="s22-kpi hn-premium-panel" data-metric={key}><h3>{tx(label)}</h3><p className="s22-kpi-value"><strong>{model.report.summary[key]}</strong></p></Card>)}

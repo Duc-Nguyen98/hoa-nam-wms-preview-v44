@@ -1,3 +1,5 @@
+import { PageState } from '../../shared/PageState';
+import { ReadState } from '../../shared/ReadState';
 import { localeForLanguage, useShellPreferences } from '../../shared/shell-preferences';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, GlobalModal, Icon, type TableColumn } from '../../shared';
@@ -57,7 +59,7 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
     window.addEventListener('focus', refresh); document.addEventListener('visibilitychange', refresh);
     return () => { controller.suspend(); window.removeEventListener('focus', refresh); document.removeEventListener('visibilitychange', refresh); };
   }, [controller]);
-  const feedback = <>{state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{state.error && <p role="alert">{tx(errorMessage(state.error))}</p>}</>;
+  const feedback = <><ReadState loading={state.busy} error={state.error} hasData={!!model} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(errorMessage(state.error))}/></>;
   const rows = model?.rows.filter(row => `${row.skuCode} ${row.productName}`.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())) ?? [];
   const columns: TableColumn<OperationalInventoryRow>[] = [
     { id: 'sku', heading: tx('SKU'), render: row => <strong>{row.skuCode}</strong> },
@@ -75,7 +77,7 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
     {feedback}<p>{tx('Số liệu theo sổ cái từ các giao dịch đã ghi sổ, không bao gồm phiếu nháp.')}</p><p>{tx('Chưa có dữ liệu kiểm đếm thực tế; chưa thể tính chênh lệch.')}</p>
     {model && <p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time></p>}
     {model && !model.hasScenario && <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
-    {model?.hasScenario && (model.rows.length ? <><FormField label={tx('Tìm SKU hoặc tên hàng')} className="hn-operational-search"><FilterInput id="s16-operational-search" label={tx('Tìm SKU hoặc tên hàng')} aria-label={tx('Tìm SKU hoặc tên hàng')} data-s16-operational-search value={search} onChange={event => setSearch(event.target.value)} /></FormField><DataTable caption={tx('Tồn kho phiên hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.key} appearance="refined" emptyContent={<p>{tx('Không có dòng phù hợp.')}</p>} /></> : <div className="s16-operational-empty" role="status"><div className="s16-operational-empty__icon" aria-hidden="true"><span><Icon name="box" size={25} /></span></div><div><h3>{tx('Chưa có biến động tồn kho trong phiên hiện tại.')}</h3><p>{tx('Số liệu sẽ xuất hiện sau khi có giao dịch đã ghi sổ trong phiên này.')}</p></div><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div>)}
+    {model?.hasScenario && (model.rows.length ? <><FormField label={tx('Tìm SKU hoặc tên hàng')} className="hn-operational-search"><FilterInput id="s16-operational-search" label={tx('Tìm SKU hoặc tên hàng')} aria-label={tx('Tìm SKU hoặc tên hàng')} data-s16-operational-search value={search} onChange={event => setSearch(event.target.value)} /></FormField><DataTable caption={tx('Tồn kho phiên hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.key} appearance="refined" emptyContent={<p>{tx('Không có dòng phù hợp.')}</p>} /></> : <PageState kind="empty" title={tx('Chưa có biến động tồn kho trong phiên hiện tại.')} description={tx('Số liệu sẽ xuất hiện sau khi có giao dịch đã ghi sổ trong phiên này.')} action={<Button disabled={state.busy} onClick={()=>void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>}/>)}
     <CatalogueNavTabs label={tx('Chứng từ liên quan')} items={[
       { key: 'receipts', label: tx('Phiếu nhập'), href: route('S12') }, { key: 'outbounds', label: tx('Phiếu xuất kho'), href: route('S15') },
       { key: 'parts', label: tx('Phiếu xuất linh kiện'), href: route('S10') }, { key: 'reversals', label: tx('Phiếu đảo tồn'), href: route('S17') },

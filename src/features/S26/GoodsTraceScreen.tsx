@@ -1,3 +1,4 @@
+import { PageState } from '../../shared/PageState';
 import { formatBusinessPeriod } from '../../i18n/format-business-date';
 import { formatBusinessTimestamp } from '../../i18n/format-business-timestamp';
 import { useShellPreferences } from '../../shared/shell-preferences';
@@ -161,8 +162,7 @@ export function GoodsTraceScreen({ adapter, operationalAdapter }: { adapter?: Tr
         </section>
       </>}
       {!model && <section className="hn-report-read-state" aria-busy={state.loading}>
-        <p role={state.error && !state.loading ? 'alert' : 'status'}>{tx(state.loading ? 'Đang đọc báo cáo…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')}</p>
-        {(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}
+        <PageState kind={state.loading?'loading':state.error?'error':'stale'} description={tx(state.loading ? 'Đang đọc báo cáo…' : state.error ? reportReadErrorMessage(false) : state.blocker ? 'Chưa có dữ liệu cho kỳ báo cáo đã chọn.' : 'Chưa thể tải báo cáo.')} action={(initialReadFailed || Boolean(state.blocker)) && <Button variant="secondary" loading={state.loading} onClick={retryRead}>{tx("Thử lại")}</Button>}/>
       </section>}
       {notice && <Notice feedback={{ ...notice, message: tx(notice.message) }} onClose={() => setNotice(null)} protectedContentSelector=".s26-overview,.s26-filters" resolveInlineSlot={origin => screen.current?.querySelector<HTMLElement>(origin?.closest('.s26-period') ? '[data-s26-notice="period"]' : origin?.closest('.s26-list-footer') ? '[data-s26-notice="export"]' : origin?.closest('.hn-table') ? '[data-s26-notice="table"]' : '[data-feedback-slot="query"]') ?? null} resolveFocusFallback={() => screen.current?.querySelector<HTMLElement>('#s26-period') ?? null} revealInlineOnOpen />}
     </div>

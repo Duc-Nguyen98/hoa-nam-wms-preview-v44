@@ -1,3 +1,4 @@
+import { PageState } from '../../shared/PageState';
 import { roleWindowDisplay } from '../report-date-display';
 import { formatBusinessTimestamp } from '../../i18n/format-business-timestamp';
 import { useShellPreferences } from '../../shared/shell-preferences';
@@ -274,9 +275,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
 
 function SourcePending({ loading, error, onRetry }: { loading: boolean; error: boolean; onRetry: () => void }) {
   const tx = useUiCopy(ADMIN_EN_COPY);
-  return <div className="s29-source-pending"><Feedback title={loading ? tx("Đang tải dữ liệu…") : tx("Dữ liệu chưa sẵn sàng")} tone="warning">
-    {loading ? tx("Vui lòng chờ trong giây lát.") : tx("Chưa thể hiển thị danh sách. Vui lòng quay lại sau.")}
-  </Feedback>{error && !loading && <Button onClick={onRetry}>{tx('Thử lại')}</Button>}</div>;
+  return <div className="s29-source-pending"><PageState kind={loading?'loading':error?'error':'stale'} title={loading?tx('Đang tải dữ liệu…'):tx('Dữ liệu chưa sẵn sàng')} description={loading?tx('Vui lòng chờ trong giây lát.'):tx('Chưa thể hiển thị danh sách. Vui lòng quay lại sau.')} onRetry={error&&!loading?onRetry:undefined}/></div>;
 }
 
 function DevSourceStrip({ note }: { note: string }) {

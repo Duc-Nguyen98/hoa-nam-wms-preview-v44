@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
@@ -109,11 +110,11 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
     { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: r => <Button variant="ghost" disabled={state.busy} onClick={() => setSelected(r.id)}>{tx('Xem')}</Button> },
   ];
   const controls = <><Button variant="secondary" disabled={state.busy || state.recovery} onClick={() => void refreshForReview()}>{tx('Đọc lại dữ liệu')}</Button>{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}</>;
-  const feedback = <>{state.error && <p role="alert">{tx(message(state.error))}</p>}{state.archivedReconciled && <p role="status">{tx('Đã đối chiếu thao tác của phiên đã lưu trữ. Danh sách hiện tại không thay đổi.')}</p>}</>;
+  const feedback = <><ReadState loading={false} error={state.error} hasData={!!snapshot} loadingText={null} errorText={tx(message(state.error))}/>{state.archivedReconciled && <p role="status">{tx('Đã đối chiếu thao tác của phiên đã lưu trữ. Danh sách hiện tại không thay đổi.')}</p>}</>;
   const title = editor?.kind === 'create' ? 'Tạo phiếu hoàn' : editor?.kind === 'attach' ? 'Đính kèm bằng chứng' : editor?.kind === 'confirm' ? 'Xác nhận nhận lại hàng' : editor?.kind === 'cancel' ? 'Hủy phiếu hoàn' : 'Ghi sổ hoàn kho';
   return <section className="s17-list hn-premium-panel" data-operational-reversals aria-label={tx('Phiếu hoàn phiên hiện tại')}>
     <div className="hn-card__body"><h2>{tx('Phiếu hoàn phiên hiện tại')}</h2><div className="s17-action-row"><Button disabled={locked || !snapshot?.scenario} onClick={() => { if (!snapshot) return; setLocalError(''); setEditor({ kind: 'create', draft: { originalIssueId: '', observedIssueVersion: 0, returnedUnused: false, reasonText: '', fence: snapshot.token } }); }}>{tx('Tạo phiếu hoàn')}</Button>{controls}</div>
-    {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{feedback}
+    <ReadState loading={state.busy} hasData={!!snapshot} loadingText={tx('Đang đọc dữ liệu…')} errorText={null}/>{feedback}
     {snapshot && !snapshot.scenario && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
     </div>
     {snapshot?.scenario && <DataTable caption={tx('Phiếu hoàn phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.reversals} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có phiếu hoàn trong phiên hiện tại.')}</p>} />}

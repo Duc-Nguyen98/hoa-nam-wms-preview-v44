@@ -1,3 +1,4 @@
+import { OUTBOUND_DESIGN_EN } from './outbound-design-copy';
 import { OPERATIONS_EN_COPY, renderOperationsText, uiText, uiList, type OperationsNotice, type OperationsText } from '../../i18n/operations-copy';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
@@ -24,7 +25,7 @@ const shortValue = (value: string) => {
 const statusTone = (status: string): 'success' | 'warning' | 'neutral' => status === 'Đã xuất' ? 'success' : status === 'Đang quét xuất hàng' ? 'warning' : 'neutral';
 
 export function OutboundSlipsScreen({ adapter }: { adapter?: OutboundSlipsAdapter } = {}) {
-  const tx = useUiCopy({ ...OUTBOUND_DETAIL_COPY, ...OUTBOUND_OPERATIONAL_COPY });
+  const tx = useUiCopy({ ...OUTBOUND_DETAIL_COPY, ...OUTBOUND_OPERATIONAL_COPY, ...OUTBOUND_DESIGN_EN });
   const operational = useMemo(() => createOperationalWebAdapter(undefined, { scope: 'S15' }), []);
   const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => operational.available ? 'scenario' : 'legacy');
   const controller = useMemo(() => createOutboundSlipsController(adapter), [adapter]);
@@ -139,7 +140,7 @@ export function OutboundSlipsScreen({ adapter }: { adapter?: OutboundSlipsAdapte
   ];
   return <GlobalShell title={tx("Phiếu xuất kho")} variant="wms" activeKey="S15" navigation={S00_SHELL_NAVIGATION} profile={{ displayName: 'Đức Quang', initials: 'DQ' }}>
     <div className="hn-catalogue-screen s15-screen" data-screen="S15" data-visual-variant="premium" onFocusCapture={revealFocus}>
-      <CataloguePageHeader title={tx("Phiếu xuất kho")} parentLabel={tx("Xuất kho")} breadcrumb={tx("Phiếu xuất kho")} description={tx("Theo dõi tình trạng xử lý phiếu xuất kho từ App quét.")} />
+      <CataloguePageHeader title={tx("Phiếu xuất kho")} parentLabel={tx("Xuất kho")} breadcrumb={tx("Phiếu xuất kho")} description={tx("Theo dõi phiếu xuất được gửi từ App quét.")} actions={cohort==='scenario'?<span className="s15-session"><Icon name="documents"/>{tx("Phiên hiện tại")}<Icon name="info"/></span>:undefined} />
       {operational.available && <div className="s15-action-row"><Button variant={cohort === 'scenario' ? 'primary' : 'secondary'} aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{tx('Phiếu xuất phiên hiện tại')}</Button><Button variant={cohort === 'legacy' ? 'primary' : 'secondary'} aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{tx('Danh sách tham chiếu')}</Button></div>}
       {cohort === 'scenario' ? <OperationalOutbounds adapter={operational} notify={message => notify(message, document.activeElement instanceof HTMLElement ? document.activeElement : null, 'success')} /> : <>
       {model ? <>
@@ -163,7 +164,7 @@ export function OutboundSlipsScreen({ adapter }: { adapter?: OutboundSlipsAdapte
           <p className="s15-source-limit"><Icon name="info" size={16} /><span id="s15-flow-limit">{tx("Mở/Xem phiếu ở chế độ chỉ đọc.")} {tx('Đang hiển thị {detail} phiếu chi tiết trên tổng số {aggregate} phiếu. Bộ lọc, sắp xếp và phân trang áp dụng cho tập dữ liệu chi tiết này.', { detail: model.source.detailTotal, aggregate: model.source.aggregateTotal ?? model.summary.totalDocuments })}</span></p>
           <NoticeSlot name="table" />
           <div className="s15-scroll-tools" hidden={!scroll.overflow}><span>{tx("Cuộn để xem đủ thông tin phiếu")}</span><div><Button variant="ghost" iconOnly aria-label={tx("Cuộn bảng sang trái")} aria-controls="s15-table-scroll" aria-disabled={scroll.start} onClick={() => { if (!scroll.start) scrollTable(-1); }}><Icon name="chevron-left" /></Button><Button variant="ghost" iconOnly aria-label={tx("Cuộn bảng sang phải")} aria-controls="s15-table-scroll" aria-disabled={scroll.end} onClick={() => { if (!scroll.end) scrollTable(1); }}><Icon name="chevron-right" /></Button></div></div>
-          <div ref={table} className="s15-table"><DataTable appearance="refined" density="compact" rowActionAppearance="quiet" caption={tx("Danh sách phiếu xuất")} captionVisibility="sr-only" columns={columns} rows={model.rows} rowKey={row => row.issueCode} stickyHeader stickyColumnIds={['issue']} scrollResetKey={JSON.stringify(model.query)} busy={state.loading} emptyContent={<p role="status">{tx("Không tìm thấy kết quả phù hợp. Hãy thử đổi từ khóa hoặc điều chỉnh bộ lọc.")}</p>} /></div>
+          <div ref={table} className="s15-table"><DataTable appearance="refined" density="compact" rowActionAppearance="quiet" caption={tx("Danh sách phiếu xuất")} captionVisibility="sr-only" columns={columns} rows={model.rows} rowKey={row => row.issueCode} stickyHeader stickyColumnIds={['issue']} scrollResetKey={JSON.stringify(model.query)} busy={state.loading} emptyStateKind="no-results" emptyContent={<p role="status">{tx("Không tìm thấy kết quả phù hợp. Hãy thử đổi từ khóa hoặc điều chỉnh bộ lọc.")}</p>} /></div>
           <Pagination variant="products" unit={tx("phiếu")} page={model.pagination.page} pageSize={model.pagination.pageSize} filteredTotal={model.pagination.total} displayedCount={model.rows.length} canGoPrevious={model.pagination.page > 1} canGoNext={model.pagination.page < model.pagination.pageCount} onPageChange={page => update({ page }, 'page')} pageSizeOptions={model.pagination.pageSizeOptions} onPageSizeChange={pageSize => update({ pageSize }, 'pageSize', document.querySelector<HTMLElement>('.s15-list .hn-page-size select'))} />
           <NoticeSlot name="pagination" />
         </section>

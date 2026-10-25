@@ -1,6 +1,8 @@
 import { useUiCopy } from '../i18n/use-ui-copy';
 import type { ReactNode } from 'react';
 import { Button } from './primitives';
+import { Icon, type IconName } from './Icon';
+import './page-state.css';
 
 export type PageStateKind =
   | 'loading' | 'empty' | 'no-results' | 'error' | 'unauthorized' | 'forbidden'
@@ -35,13 +37,15 @@ const defaults: Record<PageStateKind, { title: string; description: string; tone
 export function PageState({ kind, title, description, children, action, onRetry, retryLabel = 'Thử lại', className = '' }: PageStateProps) {
   const tx = useUiCopy();
   const fallback = defaults[kind];
-  const retry = onRetry && kind !== 'loading' ? <Button variant="secondary" onClick={onRetry}>{tx(retryLabel)}</Button> : undefined;
+  const retry = onRetry && kind !== 'loading' ? <Button onClick={onRetry}>{tx(retryLabel)}</Button> : undefined;
   const content = action ?? retry;
   const live = kind === 'loading' ? 'polite' : kind === 'error' || kind === 'offline' ? 'assertive' : 'polite';
   return <section className={`hn-page-state hn-page-state--${kind} hn-page-state--${fallback.tone} ${className}`} data-state={kind} aria-busy={kind === 'loading' || undefined} aria-live={live} role={kind === 'error' || kind === 'offline' ? 'alert' : 'status'}>
     <div className="hn-page-state__content">
+      {kind !== 'loading' && <Icon className="hn-page-state__icon" name={(({empty:'documents','no-results':'search',forbidden:'lock',unauthorized:'lock',error:'alert-triangle',offline:'alert-triangle',stale:'refresh'} as Partial<Record<PageStateKind,IconName>>)[kind] ?? 'search')} size={64} />}
       <h2>{tx(title ?? fallback.title)}</h2>
-      {(description || children) && <div className="hn-page-state__description">{tx(description ?? fallback.description)}{children}</div>}
+      <div className="hn-page-state__description">{tx(description ?? fallback.description)}{children}</div>
+      {kind === 'loading' && <div className="hn-page-state__skeleton" aria-hidden="true">{Array.from({length:5},(_,row)=><div key={row}>{Array.from({length:4},(_,col)=><span key={col}/>)}</div>)}</div>}
       {content && <div className="hn-page-state__actions">{content}</div>}
     </div>
   </section>;

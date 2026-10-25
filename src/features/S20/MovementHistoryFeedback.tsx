@@ -1,5 +1,6 @@
+import { PageState } from '../../shared/PageState';
 import { useReportCopy } from '../../i18n/reports-copy';
-import { Button, Feedback } from '../../shared/primitives';
+import { Button } from '../../shared/primitives';
 import { FilterSelect } from '../../shared/controls';
 import type { MovementQuery } from '../../contracts/movement-history';
 import { movementSortOptions, movementSortPatch } from './movement-history-presentation';
@@ -10,9 +11,9 @@ export function MovementInitialFeedback({ failed, blocked, pending, onRetry }: {
   const tx = useReportCopy();
   const unavailable = failed || blocked;
   return <section className="s20-initial-feedback" aria-label={tx("Trạng thái tải lịch sử giao dịch")}>
-    <Feedback live tone={failed ? 'error' : 'neutral'} title={tx(failed ? 'Chưa thể tải lịch sử giao dịch' : blocked ? 'Chưa có dữ liệu cho kỳ báo cáo' : 'Đang đọc lịch sử giao dịch…')}>
+    <PageState kind={failed?'error':blocked?'stale':'loading'} title={tx(failed ? 'Chưa thể tải lịch sử giao dịch' : blocked ? 'Chưa có dữ liệu cho kỳ báo cáo' : 'Đang đọc lịch sử giao dịch…')}>
       {unavailable && <p>{tx("Chưa có dữ liệu để hiển thị. Vui lòng thử tải lại.")}</p>}
-    </Feedback>
+    </PageState>
     <Button data-s20-retry loading={pending} onClick={onRetry}>{tx(pending ? 'Đang tải…' : 'Thử tải lại')}</Button>
   </section>;
 }

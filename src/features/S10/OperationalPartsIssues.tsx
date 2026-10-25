@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
@@ -60,7 +61,7 @@ export function OperationalPartsIssues({ adapter: supplied }: { adapter?: PartsR
   const error = state.error && <p role="alert">{tx(errorMessage(state.error))}</p>;
   return <section className="s10-list s10-operational" aria-label={tx('Phiếu xuất linh kiện phiên hiện tại')} data-operational-parts-issues>
     <div className="s10-operational__heading"><h2>{tx('Phiếu xuất linh kiện phiên hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div>
-    <p>{tx('Xuất linh kiện thực hiện trên App Scanner. Web dùng để tra cứu và đối chiếu.')}</p>{state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{error}
+    <p>{tx('Xuất linh kiện thực hiện trên App Scanner. Web dùng để tra cứu và đối chiếu.')}</p><ReadState loading={state.busy} error={state.error} hasData={!!model} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(errorMessage(state.error))}/>
     {model && !model.active && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử để tra cứu.')}</p>}
     {model?.active && <DataTable caption={tx('Phiếu xuất linh kiện phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={model.issues} rowKey={issue => issue.record.id} busy={state.busy} appearance="refined" emptyContent={<p>{tx('Chưa có phiếu xuất linh kiện trong phiên hiện tại.')}</p>} />}
     <GlobalModal open={!!selected} title={tx('Chi tiết phiếu xuất linh kiện')} onClose={() => setSelected(null)} size="large" footer={<><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button><Button onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>

@@ -1,3 +1,4 @@
+import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
 import { businessHttpAdapters } from '../../data/http/business-adapters';
@@ -97,7 +98,7 @@ export function OperationalWarranty({ adapter, notify }: { adapter: WarrantyOper
   const next = row ? nextWarrantyState(row.data.state) : null;
   return <section className="s09-list" data-operational-warranty aria-label={tx('Hồ sơ phiên hiện tại')}>
     <h2>{tx('Hồ sơ phiên hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>{retry}
-    {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{state.error && <p role="alert">{tx(message(state.error))}</p>}{localMessage && !editor && <p role="status">{tx(localMessage)}</p>}
+    <ReadState loading={state.busy} error={state.error} hasData={!!snapshot} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(message(state.error))}/>{localMessage && !editor && <p role="status">{tx(localMessage)}</p>}
     {snapshot && !snapshot.scenario && <p>{tx('Chưa có phiên nghiệp vụ. Thiết lập phiên trong khu vực kiểm thử trước.')}</p>}
     {snapshot?.scenario && <DataTable caption={tx('Hồ sơ phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.warrantyCases} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có hồ sơ. Hồ sơ phải được tiếp nhận từ App.')}</p>} />}
     <GlobalModal open={!!selected && !editor && !transition} title={tx('Chi tiết hồ sơ bảo hành')} onClose={() => { if (!state.busy) setSelected(null); }} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>{retry}</div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
