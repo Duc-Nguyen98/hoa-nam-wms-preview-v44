@@ -1,0 +1,39 @@
+/*
+ * The public candidate uses browser-local preview data, but the application
+ * surface should read like the operational product. Keep the selected default
+ * source and the underlying records intact while removing source-picking and
+ * preview-only chrome that adds noise or breaks narrow layouts.
+ */
+
+/* Source/catalogue scope selectors. The wrapper owns the label and the select. */
+.hn-shell :is(.hn-source-select, .pr-catalog-scope, .sku-catalog-scope, .recipient-cohort-switch, .pv-demo-mode) {
+  display: none !important;
+}
+
+/* Operational source/cohort toggles. Defaults remain selected in the view model. */
+.hn-shell :is(
+  .s09-screen > .s09-action-row,
+  .s10-screen > .s10-cohort,
+  .s12-screen > .s12-action-row,
+  .s13-screen > .s13-cohort,
+  .s15-screen > .s15-action-row,
+  .s17-screen > .s17-action-row,
+  .s22-screen > .s22-cohorts,
+  .s27-screen .s27-cohorts
+) {
+  display: none !important;
+}
+
+/* Preview-only provenance strips and scope notes. */
+.hn-shell :is(.s28-preview-note, .s29-source-strip, .pv-source-scope, .ov-source-scope, .s27-scope) {
+  display: none !important;
+}
+
+/* The notification center remains available from the bell, without mock-data
+   labels or the synthetic unread badge in the shared header. */
+.hn-shell :is(.hn-notification-eyebrow, .hn-notification-mock-label, .hn-notification-source, .hn-notification-scenarios) {
+  display: none !important;
+}
+.hn-shell .hn-notifications__count {
+  display: none !important;
+}

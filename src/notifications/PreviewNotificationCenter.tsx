@@ -46,7 +46,6 @@ export function NotificationCenterView({open,onClose,state,dispatch}:{open:boole
       <p className="hn-notification-no-target">{copy.centerNoTarget}</p>
     </div> : <section className="hn-notification-panel" data-preview-notification-center="MOCK" aria-label={copy.centerList} aria-busy={state.pending||state.scenario==='loading'}>
       <div className="hn-notification-panel-header">
-        <p className="hn-notification-source">{copy.demoSource}</p>
         <Button variant="secondary" disabled={state.totalUnread===null||state.totalUnread===0||state.pending} onClick={async event=>{
           const origin=event.currentTarget;
           if(await dispatch({type:'read-all'})) {

@@ -48,7 +48,7 @@ export function NotificationHarnessScreen() {
           title={copy[`${state.scenario}Title`]} description={copy[`${state.scenario}Description`]}
           onRetry={state.scenario === 'error' ? () => dispatch({ type: 'retry' }) : undefined} retryLabel={copy.retry} /></div>}
       </section>
-      <GlobalModal open={Boolean(selected)} title={selected ? copy[selected.titleKey] : copy.detail} description={copy.mockLabel} closeLabel={copy.close}
+      <GlobalModal open={Boolean(selected)} title={selected ? copy[selected.titleKey] : copy.detail} closeLabel={copy.close}
         className="hn-notification-detail" lang={localeForLanguage(language)} onClose={() => dispatch({ type: 'back' })}
         footer={<Button variant="secondary" onClick={() => dispatch({ type: 'back' })}>{copy.back}</Button>}>
         {selected && <>

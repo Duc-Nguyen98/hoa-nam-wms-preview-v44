@@ -22,6 +22,7 @@ import './shared/header-controls.css';
 import './shared/dark-theme.css';
 import './shared/premium-dark.css';
 import './shared/table-presentation.css';
+import './shared/preview-ui.css';
 
 function reportShellAction({ key, screenKey }: ShellAction) {
   // Preserve existing review-harness keys at the app boundary; this is not RBAC.
