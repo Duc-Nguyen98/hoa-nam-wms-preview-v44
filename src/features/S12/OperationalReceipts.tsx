@@ -33,7 +33,7 @@ const COPY = {
 const STATUS = { DRAFT: 'Mới tạo', SCANNING: 'Đang ghi nhận', SUBMITTED: 'Đã gửi từ App', POSTED: 'Đã nhập kho' } as const;
 type StatusKey = keyof typeof STATUS;
 const REFERENCE_RECEIPT_CODES = new Set(['PN-0012', 'PN-0011', 'PN-0010']);
-const LIVE_DEMO_RECEIPT_CODES = new Set(['PN-0009']);
+const LIVE_DEMO_RECEIPT_CODES = new Set<string>();
 const isReferenceReceipt = (record: ReceiptRecord) => REFERENCE_RECEIPT_CODES.has(record.data.code);
 const isVisibleDemoReceipt = (record: ReceiptRecord) => isReferenceReceipt(record) || LIVE_DEMO_RECEIPT_CODES.has(record.data.code) || record.data.code.startsWith('PV-PN-');
 function message(code: string) {
