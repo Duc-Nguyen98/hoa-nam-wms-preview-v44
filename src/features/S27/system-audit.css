@@ -126,8 +126,9 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
 .s27-list { border-radius: 8px; box-shadow: none; overflow: visible; }
 .s27-list-heading { padding: 24px; gap: 16px; align-items: center; }
 .s27-list-heading h2 { font-size: 21px; line-height: 28px; }
+.s27-list-heading h2 { display: flex; align-items: center; gap: 10px; }
+.s27-result-count { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; height: 28px; padding: 0 8px; border-radius: 999px; background: #eaf4fb; color: var(--hn-accent-text); font-size: 14px; line-height: 20px; font-weight: 700; }
 .s27-list-heading p { margin-top: 8px; font-size: 14px; line-height: 21px; }
-.s27-list-heading strong { font-size: 14px; }
 .s27-list-tools { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; justify-content: end; min-width: 0; }
 .s27-list-sort { width: 220px; max-width: 100%; }
 .s27-list .hn-catalogue-toolbar { padding: 0 24px 24px; gap: 16px; }
@@ -136,12 +137,13 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
 .s27-list .hn-catalogue-trailing select { width: 100%; min-width: 0; text-overflow: ellipsis; }
 .s27-operational .hn-table { min-width: 0; width: 100%; table-layout: fixed; }
 .s27-operational .hn-table [data-column] { min-width: 0; text-align: start; }
-.s27-operational .hn-table [data-column='at'] { width: 15%; }
-.s27-operational .hn-table [data-column='action'] { width: 23%; }
-.s27-operational .hn-table [data-column='actorId'] { width: 17%; }
-.s27-operational .hn-table [data-column='surface'] { width: 12%; }
+.s27-operational .hn-table [data-column='ordinal'] { width: 6%; }
+.s27-operational .hn-table [data-column='at'] { width: 14%; }
+.s27-operational .hn-table [data-column='action'] { width: 22%; }
+.s27-operational .hn-table [data-column='actorId'] { width: 16%; }
+.s27-operational .hn-table [data-column='surface'] { width: 11%; }
 .s27-operational .hn-table [data-column='entity'] { width: 20%; }
-.s27-operational .hn-table [data-column='detailAction'] { width: 13%; }
+.s27-operational .hn-table [data-column='detailAction'] { width: 11%; }
 .s27-operational .hn-table :is(th,td) { padding: 20px 16px; vertical-align: middle; }
 .s27-operational .hn-table :is(th,td):first-child { padding-inline-start: 24px; }
 .s27-operational .hn-table :is(th,td):last-child { padding-inline-end: 24px; }
@@ -230,11 +232,6 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
   .s27-operational-table-view { display: none; }
   .s27-operational-card-view { display: grid; }
 }
-.hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer']:has(.s27-screen) .hn-header { flex-wrap: nowrap; gap: 8px; }
-.hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer']:has(.s27-screen) .hn-overview-header-brand { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; color: var(--hn-text); font-size: 16px; font-weight: 700; }
-.hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer']:has(.s27-screen) .hn-shell-search { flex: 0 0 44px; justify-content: center; padding: 0; }
-.hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer']:has(.s27-screen) :is(.hn-shell-search > span,.hn-shell-search > kbd,.hn-header__account > .hn-shortcuts,.hn-header__account > .hn-language,.hn-header__account > .hn-theme,.hn-profile__name,.hn-profile > svg) { display: none; }
-.hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer']:has(.s27-screen) .hn-header__account { margin: 0; gap: 8px; }
 @media (max-width: 560px) {
   .s27-detail-info { grid-template-columns: minmax(0,1fr); }
   .s27-operational-card__head { flex-wrap: wrap; }
@@ -246,5 +243,4 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
   .s27-list-heading, .s27-footer, .s27-operational-card { padding: 16px; }
   .s27-list .hn-catalogue-toolbar, .s27-operational-card-view { padding-inline: 16px; }
   .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.s27-screen) .hn-main { padding: 16px; }
-  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer']:has(.s27-screen) .hn-overview-header-brand { font-size: 12px; gap: 6px; }
 }
