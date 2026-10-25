@@ -17,6 +17,7 @@ import { createOperationalWebAdapter } from '../../data/http/operational-preview
 import { OperationalRecipientReport, RECIPIENT_BINDING_COPY } from './OperationalRecipientReport';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import type { RecipientOperationalReader } from './recipient-binding';
+import { IS_BROWSER_PREVIEW } from '../../preview-mode';
 
 type Operation = ReturnType<ReturnType<typeof createDealerExportController>['load']>;
 export function DealerExportScreen({ adapter, operationalAdapter }: { adapter?: DealerExportAdapter; operationalAdapter?: RecipientOperationalReader } = {}) {
@@ -24,7 +25,7 @@ export function DealerExportScreen({ adapter, operationalAdapter }: { adapter?: 
   const { language } = useShellPreferences();
   const bindingTx = useUiCopy(RECIPIENT_BINDING_COPY);
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S25' }), [operationalAdapter]);
-  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => IS_BROWSER_PREVIEW ? 'legacy' : operational.available ? 'scenario' : 'legacy');
   const controller = useMemo(() => createDealerExportController(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
   const model = state.model, query = state.intendedQuery ?? defaults;

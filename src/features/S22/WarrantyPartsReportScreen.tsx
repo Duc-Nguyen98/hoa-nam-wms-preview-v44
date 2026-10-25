@@ -14,11 +14,12 @@ import { createOperationalWebAdapter } from '../../data/http/operational-preview
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { OperationalWarrantyReport, S22_OPERATIONAL_COPY } from './OperationalWarrantyReport';
 import './warranty-parts-report.css';
+import { IS_BROWSER_PREVIEW } from '../../preview-mode';
 
 export function WarrantyPartsReportScreen({ adapter, detailAdapter }: { adapter?: WarrantyReportAdapter; detailAdapter?: WarrantyDetailAdapter } = {}) {
   const tx = useReportCopy(), copy = useUiCopy(S22_OPERATIONAL_COPY);
   const operational = useMemo(() => createOperationalWebAdapter(undefined, { scope: 'S22' }), []);
-  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => IS_BROWSER_PREVIEW ? 'legacy' : operational.available ? 'scenario' : 'legacy');
   const controls = operational.available ? <div className="s22-cohorts"><Button variant="secondary" aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{copy('Báo cáo phiên hiện tại')}</Button><Button variant="secondary" aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{copy('Báo cáo tham chiếu')}</Button></div> : null;
   if (cohort === 'legacy') return <LegacyWarrantyPartsReportScreen adapter={adapter} detailAdapter={detailAdapter} cohortControls={controls} />;
   return <GlobalShell title={tx('Báo cáo bảo hành linh kiện')} variant="wms" activeKey="S22" navigation={S00_SHELL_NAVIGATION}>

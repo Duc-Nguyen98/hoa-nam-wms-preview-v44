@@ -17,6 +17,7 @@ import { createOperationalWebAdapter } from '../../data/http/operational-preview
 import { OperationalOutboundReport, OUTBOUND_BINDING_COPY } from './OperationalOutboundReport';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import type { OutboundOperationalReader } from './outbound-binding';
+import { IS_BROWSER_PREVIEW } from '../../preview-mode';
 
 type Operation = ReturnType<ReturnType<typeof createOutboundReportController>['load']>;
 const statusTone = (status: OutboundReportStatus) => status === 'Đã xuất' ? 'success' : status === 'Chờ xử lý trên Web' ? 'warning' : 'neutral';
@@ -34,7 +35,7 @@ export function OutboundReportScreen({ adapter, operationalAdapter }: { adapter?
   const { language } = useShellPreferences();
   const bindingTx = useUiCopy(OUTBOUND_BINDING_COPY);
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S19' }), [operationalAdapter]);
-  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => IS_BROWSER_PREVIEW ? 'legacy' : operational.available ? 'scenario' : 'legacy');
   const controller = useMemo(() => createOutboundReportController(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
   const model = state.model, query = state.intendedQuery ?? defaults;

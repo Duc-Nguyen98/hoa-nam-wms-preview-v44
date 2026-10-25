@@ -14,6 +14,7 @@ import { createOperationalWebAdapter } from '../../data/http/operational-preview
 import { OperationalStockReport, STOCK_REPORT_COPY } from './OperationalStockReport';
 import type { StockReportReader } from './stock-report-binding';
 import { useUiCopy } from '../../i18n/use-ui-copy';
+import { IS_BROWSER_PREVIEW } from '../../preview-mode';
 
 type Operation = ReturnType<ReturnType<typeof createInventoryReportController>['load']>;
 const amountLabels = { opening: 'Tồn đầu', inbound: 'Nhập', outboundProducts: 'Xuất SP', outboundWarranty: 'Xuất BH', reversals: 'Hoàn tác', closing: 'Tồn cuối', actual: 'Thực tế', difference: 'Chênh lệch' };
@@ -27,7 +28,7 @@ export function InventoryReportScreen({ adapter, operationalAdapter }: { adapter
   const inventorySignedNumber = (value: number) => `${value > 0 ? '+' : ''}${inventoryNumber(value)}`;
   const operationalTx = useUiCopy(STOCK_REPORT_COPY);
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S21' }), [operationalAdapter]);
-  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => IS_BROWSER_PREVIEW ? 'legacy' : operational.available ? 'scenario' : 'legacy');
   const cohortControl = operational.available && <FilterSelect label={operationalTx('Nguồn dữ liệu')} aria-label={operationalTx('Nguồn dữ liệu')} className="hn-source-select" value={cohort} onChange={event => setCohort(event.target.value as 'scenario' | 'legacy')}><option value="scenario">{operationalTx('Phiên hiện tại')}</option><option value="legacy">{operationalTx('Dữ liệu đã duyệt')}</option></FilterSelect>;
   const controller = useMemo(() => createInventoryReportController(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
