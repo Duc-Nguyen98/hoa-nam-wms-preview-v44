@@ -117,7 +117,7 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
     {snapshot && !snapshot.scenario && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
     </div>
     {snapshot?.scenario && <DataTable caption={tx('Phiếu hoàn phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.reversals} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có phiếu hoàn trong phiên hiện tại.')}</p>} />}
-    <GlobalModal open={!!selected && !editor} title={tx('Chi tiết phiếu hoàn')} size="large" onClose={() => { if (!state.busy) setSelected(null); }} footer={<Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button>}>
+    <GlobalModal open={!!selected && !editor} title={tx('Chi tiết phiếu hoàn')} size="large" onClose={() => { if (!state.busy) setSelected(null); }} footer={<><div className="hn-modal-footer-tools">{controls}</div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
       {!row || !snapshot || !original ? <p role="status">{tx('Phiếu không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
         <dl className="s17-operational-fields" data-operational-reversal-id={row.id}><div><dt>{tx('Phiếu hoàn')}</dt><dd>{row.data.code}</dd></div><div><dt>{tx('Phiếu cấp gốc')}</dt><dd>{original.data.code}</dd></div><div><dt>{tx('Ca bảo hành')}</dt><dd>{snapshot.warrantyCases.find(c => c.id === original.data.caseId)?.data.code ?? '—'}</dd></div><div><dt>{tx('Trạng thái')}</dt><dd>{badge(row)}</dd></div><div><dt>{tx('Lý do hoàn')}</dt><dd>{row.data.reasonText}</dd></div><div><dt>{tx('Nhận lại hàng')}</dt><dd>{tx(row.data.physicalReturn === 'CONFIRMED' ? 'Đã xác nhận nhận lại' : 'Chờ nhận lại')}</dd></div><div><dt>{tx('Số bút toán hoàn')}</dt><dd>{row.data.postedCompensationEventIds.length}</dd></div>{row.data.cancelReason && <div><dt>{tx('Lý do hủy')}</dt><dd>{row.data.cancelReason}</dd></div>}</dl>
         <DataTable caption={tx('Số lượng hoàn')} rows={original.data.lines} rowKey={line => line.id} columns={[
@@ -127,7 +127,7 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
         ]} />
         <h3>{tx('Bằng chứng đã lưu')}</h3>{row.data.evidenceRefs.length ? <ul>{state.verifiedEvidence[row.id]?.map(e => <li key={e.attachmentRef}><EvidenceDownload evidence={e} label={tx('Tải bằng chứng')} /></li>)}</ul> : <p>{tx('Chưa có bằng chứng.')}</p>}
         {row.data.status === 'DRAFT' && <div><Button disabled={locked} onClick={() => open('attach')}>{tx('Đính kèm bằng chứng')}</Button>{row.data.physicalReturn === 'PENDING' ? <Button disabled={locked || !row.data.evidenceRefs.length} onClick={() => open('confirm')}>{tx('Xác nhận nhận lại hàng')}</Button> : <Button disabled={locked} onClick={() => open('post')}>{tx('Ghi sổ hoàn kho')}</Button>}<Button variant="secondary" disabled={locked} onClick={() => open('cancel')}>{tx('Hủy phiếu hoàn')}</Button></div>}
-      </>}{feedback}{controls}
+      </>}{feedback}
     </GlobalModal>
     <GlobalModal open={!!editor} title={tx(title)} onClose={() => { if (!state.busy) setEditor(null); }}
       className="s17-editor-modal"

@@ -96,7 +96,7 @@ export function OperationalOutbounds({ adapter: supplied, notify }: { adapter?: 
     {state.error && <p role="alert">{tx(outboundErrorMessage(state))}</p>}
     {snapshot && !snapshot.scenario && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
     {snapshot?.scenario && <DataTable caption={tx('Phiếu xuất phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.outbounds} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có phiếu xuất trong phiên hiện tại.')}</p>} />}
-    <GlobalModal resolveReturnFocus={resolveDetailReturnFocus} open={!!selected && !intent} title={tx('Chi tiết phiếu xuất')} size="large" onClose={() => { if (!state.busy) setSelected(null); }} footer={<Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button>}>
+    <GlobalModal resolveReturnFocus={resolveDetailReturnFocus} open={!!selected && !intent} title={tx('Chi tiết phiếu xuất')} size="large" onClose={() => { if (!state.busy) setSelected(null); }} footer={<><div className="hn-modal-footer-tools">{readControls}</div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
       {!row || !snapshot ? <p role="status">{tx('Phiếu không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
         <dl className="s15-detail__fields" data-operational-outbound-id={row.id}>
           <div><dt>{tx('Phiếu xuất')}</dt><dd>{row.data.code}</dd></div><div><dt>{tx('Mã toa yêu cầu')}</dt><dd>{row.data.appRequestId}</dd></div>
@@ -112,11 +112,11 @@ export function OperationalOutbounds({ adapter: supplied, notify }: { adapter?: 
         {['SUBMITTED', 'READY'].includes(row.data.status) ? <Button disabled={locked} onClick={() => setIntent({ id: row.id, code: row.data.code, version: row.version, fence: snapshot.token, command: row.data.status === 'SUBMITTED' ? 'outbound.receive' : 'outbound.post' })}>{tx(row.data.status === 'SUBMITTED' ? 'Tiếp nhận phiếu' : 'Xác nhận xuất kho')}</Button>
           : row.data.status !== 'POSTED' && <p>{tx('Chờ App quét và gửi đủ mã trước khi tiếp nhận.')}</p>}
       </>}
-      {state.error && <p role="alert">{tx(outboundErrorMessage(state))}</p>}{archiveInfo}{readControls}
+      {state.error && <p role="alert">{tx(outboundErrorMessage(state))}</p>}{archiveInfo}
     </GlobalModal>
-    <GlobalModal open={!!intent} title={tx(intent?.command === 'outbound.receive' ? 'Tiếp nhận phiếu' : 'Xác nhận xuất kho')} onClose={() => { if (!state.busy) setIntent(null); }} footer={<><Button variant="secondary" disabled={state.busy} onClick={() => setIntent(null)}>{tx('Hủy')}</Button><Button disabled={locked} onClick={() => void confirm()}>{tx(intent?.command === 'outbound.receive' ? 'Tiếp nhận phiếu' : 'Xác nhận xuất kho')}</Button></>}>
+    <GlobalModal open={!!intent} title={tx(intent?.command === 'outbound.receive' ? 'Tiếp nhận phiếu' : 'Xác nhận xuất kho')} onClose={() => { if (!state.busy) setIntent(null); }} footer={<><div className="hn-modal-footer-tools">{readControls}</div><Button variant="secondary" disabled={state.busy} onClick={() => setIntent(null)}>{tx('Hủy')}</Button><Button disabled={locked} onClick={() => void confirm()}>{tx(intent?.command === 'outbound.receive' ? 'Tiếp nhận phiếu' : 'Xác nhận xuất kho')}</Button></>}>
       <p><strong>{intent?.code}</strong></p><p>{tx(intent?.command === 'outbound.receive' ? 'Tiếp nhận phiếu App đã gửi. Tồn kho chưa thay đổi.' : 'Xác nhận xuất đúng các mã đã được App gửi. Thao tác này làm giảm tồn kho.')}</p>
-      {state.error && <p role="alert">{tx(outboundErrorMessage(state))}</p>}{archiveInfo}{readControls}
+      {state.error && <p role="alert">{tx(outboundErrorMessage(state))}</p>}{archiveInfo}
     </GlobalModal>
   </section>;
 }

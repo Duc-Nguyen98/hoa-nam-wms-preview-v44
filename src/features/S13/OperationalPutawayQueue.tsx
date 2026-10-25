@@ -87,23 +87,24 @@ export function OperationalPutawayQueue({ adapter: supplied, orderRoute, notify 
     { id: 'unit', heading: tx('Đơn vị tính'), render: box => box.data.unit },
     { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: box => <Button variant="ghost" disabled={locked} onClick={() => select(box)}>{tx('Tạo lệnh')}</Button> },
   ];
-  const feedback = <>{state.archivedReconciled && <p role="status">{tx('Đã đối chiếu thao tác của phiên đã lưu trữ. Danh sách hiện tại không thay đổi.')}</p>}{state.error && <p role="alert">{tx(message(state.error))}</p>}{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}</>;
+  const recoveryAction = state.recovery ? <Button variant="secondary" disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button> : null;
+  const feedbackMessages = <>{state.archivedReconciled && <p role="status">{tx('Đã đối chiếu thao tác của phiên đã lưu trữ. Danh sách hiện tại không thay đổi.')}</p>}{state.error && <p role="alert">{tx(message(state.error))}</p>}</>;
+  const feedback = <>{feedbackMessages}{recoveryAction}</>;
   return <section className="s13-list hn-premium-panel s13-operational" aria-label={tx('BOX chờ xếp khay phiên hiện tại')} data-operational-putaway-queue>
     <div className="s13-operational__heading"><h2>{tx('BOX chờ xếp khay phiên hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div>
     {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{feedback}
     {snapshot && !snapshot.scenario && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử trước khi tạo lệnh.')}</p>}
     {snapshot?.scenario && <DataTable caption={tx('BOX chờ xếp khay phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={boxes} rowKey={box => box.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có BOX đã nhập kho đủ điều kiện trong phiên hiện tại.')}</p>} />}
-    <GlobalModal open={!!confirmation} title={tx('Xác nhận tạo lệnh xếp khay')} onClose={() => { if (!state.busy) setConfirmation(null); }} footer={<><Button variant="secondary" disabled={state.busy} onClick={() => setConfirmation(null)}>{tx('Hủy')}</Button><Button disabled={locked || !!confirmationError} onClick={() => { if (confirmation) void controller.create(confirmation.selection); }}>{tx('Tạo lệnh')}</Button></>}>
+    <GlobalModal open={!!confirmation} title={tx('Xác nhận tạo lệnh xếp khay')} onClose={() => { if (!state.busy) setConfirmation(null); }} footer={<><div className="hn-modal-footer-tools">{recoveryAction}<Button variant="secondary" disabled={state.busy || state.recovery} onClick={() => void refreshSelection()}>{tx('Đọc lại dữ liệu')}</Button></div><Button variant="secondary" disabled={state.busy} onClick={() => setConfirmation(null)}>{tx('Hủy')}</Button><Button disabled={locked || !!confirmationError} onClick={() => { if (confirmation) void controller.create(confirmation.selection); }}>{tx('Tạo lệnh')}</Button></>}>
       {confirmation && <><p>{tx('Tạo lệnh cho toàn bộ BOX. Chọn khay ở bước xác nhận lệnh; tạo lệnh không thay đổi tồn kho.')}</p><dl className="s13-operational__fields" data-putaway-create-box-id={confirmation.selection.boxId}>
         <div><dt>{tx('Mã BOX')}</dt><dd>{confirmation.code}</dd></div><div><dt>{tx('SKU / Linh kiện')}</dt><dd>{confirmation.sku}</dd></div><div><dt>{tx('Phiếu nhập nguồn')}</dt><dd>{confirmation.receipt}</dd></div><div><dt>{tx('Số lượng hiện tại')}</dt><dd>{confirmation.quantity} {confirmation.unit}</dd></div>
-      </dl></>}{feedback}{confirmationError && !state.error && <p role="alert">{tx(message(confirmationError))}</p>}{selectionMessage && !confirmationError && <p role="status">{tx(selectionMessage)}</p>}
-      <Button variant="secondary" disabled={state.busy || state.recovery} onClick={() => void refreshSelection()}>{tx('Đọc lại dữ liệu')}</Button>
+      </dl></>}{feedbackMessages}{confirmationError && !state.error && <p role="alert">{tx(message(confirmationError))}</p>}{selectionMessage && !confirmationError && <p role="status">{tx(selectionMessage)}</p>}
     </GlobalModal>
-    <GlobalModal open={!!selectedTask && !confirmation} title={tx('Lệnh xếp khay đã ghi nhận')} onClose={() => { if (!state.busy) setSelectedTask(null); }} footer={<Button disabled={state.busy} onClick={() => setSelectedTask(null)}>{tx('Đóng')}</Button>}>
+    <GlobalModal open={!!selectedTask && !confirmation} title={tx('Lệnh xếp khay đã ghi nhận')} onClose={() => { if (!state.busy) setSelectedTask(null); }} footer={<><div className="hn-modal-footer-tools">{recoveryAction}</div><Button disabled={state.busy} onClick={() => setSelectedTask(null)}>{tx('Đóng')}</Button></>}>
       {!task || !snapshot ? <p role="status">{tx('Lệnh không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
         <dl className="s13-operational__fields" data-putaway-task-id={task.id}><div><dt>{tx('Mã lệnh')}</dt><dd>{task.id}</dd></div><div><dt>{tx('Mã BOX')}</dt><dd>{snapshot.boxes.find(box => box.id === task.data.boxId)?.data.physicalCode ?? '—'}</dd></div><div><dt>{tx('Phiếu nhập nguồn')}</dt><dd>{snapshot.receipts.find(receipt => receipt.id === task.data.receiptId)?.data.code ?? '—'}</dd></div><div><dt>{tx('Số lượng khi tạo')}</dt><dd>{task.data.quantityAtCreate}</dd></div><div><dt>{tx('Trạng thái')}</dt><dd><StatusBadge tone={task.data.status === 'CONFIRMED' ? 'success' : 'neutral'}>{tx(STATUS[task.data.status])}</StatusBadge></dd></div><div><dt>{tx('Khay')}</dt><dd>{task.data.trayId ?? tx('Chưa chọn khay')}</dd></div></dl>
         {orderRoute && <a href={orderRoute}>{tx('Lệnh xếp khay')}</a>}
-      </>}{feedback}
+      </>}{feedbackMessages}
     </GlobalModal>
   </section>;
 }

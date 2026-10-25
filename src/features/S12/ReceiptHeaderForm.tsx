@@ -1,4 +1,5 @@
 import { useId, useState } from 'react';
+import type { ReactNode } from 'react';
 import { Button } from '../../shared/primitives';
 import { BasicSelect } from '../../shared/controls';
 import { FormField } from '../../shared/FormField';
@@ -37,10 +38,11 @@ export interface ReceiptHeaderFormProps {
   onDraftChange: (draft: ReceiptHeaderDraft) => void;
   onSubmit: (submission: ReceiptHeaderSubmission) => void;
   onCancel: () => void;
+  extraActions?: ReactNode;
 }
 
 /** Controlled component only. Parent owns service context, command identity and recovery. */
-export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange, onSubmit, onCancel }: ReceiptHeaderFormProps) {
+export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange, onSubmit, onCancel, extraActions }: ReceiptHeaderFormProps) {
   const tx = useUiCopy(COPY), id = useId();
   const [attempted, setAttempted] = useState(false);
   const validation = context ? validateReceiptHeaderDraft(draft, context) : null;
@@ -76,7 +78,7 @@ export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange
     {status === 'unknown' && <p role="status">{tx('Chưa xác định kết quả. Cần kiểm tra kết quả trước khi gửi tiếp.')}</p>}
     {errors.form === 'IDENTITY_MISMATCH' && <p role="alert">{tx(ERROR_COPY[errors.form])}</p>}
     {error && <p role="alert">{error}</p>}
-    <div className="s12-action-row"><Button type="button" variant="secondary" disabled={status === 'submitting'} onClick={onCancel}>{tx('Hủy')}</Button>
+    <div className="s12-action-row">{extraActions}<Button type="button" variant="secondary" disabled={status === 'submitting'} onClick={onCancel}>{tx('Hủy')}</Button>
       <Button type="submit" disabled={locked} loading={status === 'submitting'}>{tx(status === 'submitting' ? 'Đang lưu…' : 'Lưu')}</Button></div>
   </form>;
 }

@@ -59,6 +59,8 @@ html[data-hn-theme='dark'] .hn-global-modal__heading h2 { color: var(--hn-text, 
 .hn-global-modal__body { min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 24px; }
 .hn-global-modal__footer { display: flex; flex-wrap: wrap; flex-shrink: 0; justify-content: flex-end; gap: var(--hn-control-gap); padding: 16px 24px 20px; border-top: 1px solid var(--hn-border, #dce4ec); }
 .hn-global-modal__footer > .hn-button { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+.hn-modal-footer-tools { display: flex; flex-wrap: wrap; align-items: center; gap: var(--hn-control-gap); min-width: 0; margin-inline-end: auto; }
+.hn-modal-footer-tools .hn-button { white-space: nowrap; }
 .hn-confirm-dialog__actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; width: 100%; }
 
 .hn-form-field { display: grid; gap: var(--hn-field-gap); min-width: 0; }

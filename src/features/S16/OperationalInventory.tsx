@@ -80,8 +80,8 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
       { key: 'receipts', label: tx('Phiếu nhập'), href: route('S12') }, { key: 'outbounds', label: tx('Phiếu xuất kho'), href: route('S15') },
       { key: 'parts', label: tx('Phiếu xuất linh kiện'), href: route('S10') }, { key: 'reversals', label: tx('Phiếu đảo tồn'), href: route('S17') },
     ]} />
-    <GlobalModal open={!!selection} title={tx('Chi tiết tồn kho')} onClose={() => setSelection(null)} resolveReturnFocus={resolveDetailReturnFocus} size="large" footer={<Button onClick={() => setSelection(null)}>{tx('Đóng')}</Button>}>
-      {feedback}<Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>
+    <GlobalModal open={!!selection} title={tx('Chi tiết tồn kho')} onClose={() => setSelection(null)} resolveReturnFocus={resolveDetailReturnFocus} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div><Button onClick={() => setSelection(null)}>{tx('Đóng')}</Button></>}>
+      {feedback}
       {!selected || !model ? !state.busy && !state.error && <p>{tx('Dòng tồn không còn thuộc phiên hiện tại. Đóng và chọn lại từ danh sách.')}</p> : <>
         <dl className="s16-operational-fields" data-inventory-sku-id={selected.skuId}><div><dt>{tx('SKU')}</dt><dd>{selected.skuCode}</dd></div><div><dt>{tx('Tên hàng')}</dt><dd>{selected.productName}</dd></div><div><dt>{tx('Kho')}</dt><dd>{selected.warehouseId}</dd></div><div><dt>{tx('Tồn theo sổ cái')}</dt><dd>{selected.quantity} {tx(selected.unit)}</dd></div><div><dt>{tx('Kiểm đếm thực tế')}</dt><dd>{tx('Chưa xác định')}</dd></div><div><dt>{tx('Chênh lệch')}</dt><dd>{tx('Chưa xác định')}</dd></div></dl>
         <p>{tx('Chưa có dữ liệu kiểm đếm thực tế; chưa thể tính chênh lệch.')}</p>
