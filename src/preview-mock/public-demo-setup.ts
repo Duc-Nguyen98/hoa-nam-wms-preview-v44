@@ -2,6 +2,7 @@ import type { AxiosInstance } from 'axios';
 import { apiClient } from '../data/http/api-client';
 import { createCatalogCreateAdapter } from '../data/http/catalog-create-adapter';
 import { createOperationalQaAdapter, createOperationalWebAdapter, hasOperationalCommitProof } from '../data/http/operational-preview-adapter';
+import { readBrowserPreviewRuntime } from './browser-runtime';
 import { CATALOG_COMMANDS, type CatalogDomain, type CatalogPayloads } from '../contracts/catalog-create';
 import type { OperationalCommand } from '../contracts/operational-preview';
 
@@ -12,12 +13,17 @@ const fail=()=>{throw new Error('Chưa thể xác minh dữ liệu Demo. Bấm t
 export function createPublicDemoSetup(client:AxiosInstance=apiClient){
  const qa=createOperationalQaAdapter(client,{available:true,scope:'public-demo-initial-setup'});
  const web=createOperationalWebAdapter(client,{available:true,scope:'public-demo-initial-setup'});
+ const app04=readBrowserPreviewRuntime()?.appEventAdapters?.P04;
+ const app05=readBrowserPreviewRuntime()?.appEventAdapters?.P05;
  const catalogReader=createCatalogCreateAdapter('sku',client,{available:true});
  async function ready(){
   const s=await web.read(); if(!s.scenario)return false;
   const c=await catalogReader.readSnapshot();
   const ours=c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario!.data.selectedSkuIds.includes(k.id));
-  return ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id));
+  return ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) &&
+   ['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) &&
+   s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK') &&
+   s.outbounds.some(o=>o.data.status==='POSTED');
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -47,9 +53,18 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   if(!hasOperationalCommitProof(await adapter.read(),r.request,r.outcome))return fail();
   await adapter.recovery.acknowledge(r.request.commandId);
  }
- async function operation(adapter:typeof web,command:OperationalCommand['command'],payload:OperationalCommand['payload']){
+ async function operation(adapter:NonNullable<typeof app04>|NonNullable<typeof app05>|typeof web,command:OperationalCommand['command'],payload:OperationalCommand['payload']){
+  if(!adapter)return fail();
   const s=await adapter.read();
   const request:OperationalCommand={commandId:crypto.randomUUID(),epoch:s.epoch,scenarioId:s.token.scenarioId,generation:s.token.generation,command,payload};
+  const outcome=await adapter.execute(request);
+  if(!hasOperationalCommitProof(await adapter.read(),request,outcome))return fail();
+  await adapter.recovery.acknowledge(request.commandId);
+ }
+ async function updateOperation(adapter:NonNullable<typeof app04>|NonNullable<typeof app05>|typeof web,command:OperationalCommand['command'],entityId:string,expectedVersion:number,payload:OperationalCommand['payload']){
+  if(!adapter)return fail();
+  const s=await adapter.read();
+  const request:OperationalCommand={commandId:crypto.randomUUID(),epoch:s.epoch,scenarioId:s.token.scenarioId,generation:s.token.generation,command,entityId,expectedVersion,payload};
   const outcome=await adapter.execute(request);
   if(!hasOperationalCommitProof(await adapter.read(),request,outcome))return fail();
   await adapter.recovery.acknowledge(request.commandId);
@@ -73,6 +88,54 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   for(const k of c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario?.data.selectedSkuIds.includes(k.id))){
    s=await web.read();if(s.profiles.some(p=>p.data.skuId===k.id))continue;
    await operation(web,'stock-profiles.create',{skuId:k.id,tracking:k.code.endsWith('-A')?'PRODUCT_SERIAL':'COMPONENT_BOX',observedSkuVersion:k.version,observedProductVersion:c.products.find(p=>p.id===k.productId)!.version});
+  }
+  s=await web.read();
+  const demoReceipts=[
+   {previewCode:'PN-0012',mode:'PRODUCT' as const,sourceText:'Nhà cung cấp An Phát',referenceText:'NCC-1025-01'},
+   {previewCode:'PN-0011',mode:'PRODUCT' as const,sourceText:'Kho trung chuyển',referenceText:'DC-1025-02'},
+   {previewCode:'PN-0010',mode:'COMPONENT' as const,sourceText:'Nhà cung cấp Minh Long',referenceText:'NCC-1025-03'},
+  ];
+  for(const receipt of demoReceipts){
+   s=await web.read();
+   if(s.receipts.some(row=>row.data.code===receipt.previewCode))continue;
+   await operation(web,'inbound.create',receipt);
+  }
+  // Complete the demo inbound flow so S11/S13/S15 can render real boxes and stock.
+  const inboundPlans=[
+   {code:'PN-0012',skuCode:'PUBLIC-DEMO-SKU-A',physicalCode:'PUBLIC-DEMO-SERIAL-0012'},
+   {code:'PN-0011',skuCode:'PUBLIC-DEMO-SKU-A',physicalCode:'PUBLIC-DEMO-SERIAL-0011'},
+   {code:'PN-0010',skuCode:'PUBLIC-DEMO-SKU-B',physicalCode:'PUBLIC-DEMO-BOX-0010',quantity:12},
+  ] as const;
+  for(const plan of inboundPlans){
+   s=await web.read();
+   const receipt=s.receipts.find(r=>r.data.code===plan.code); if(!receipt)continue;
+   const sku=c.skus.find(k=>k.code===plan.skuCode); if(!sku)continue;
+   const product=c.products.find(p=>p.id===sku.productId); const profile=s.profiles.find(p=>p.data.skuId===sku.id); if(!product||!profile)continue;
+   if(receipt.data.status==='DRAFT')await updateOperation(app04!,'inbound.scan',receipt.id,receipt.version,{receiptId:receipt.id,clientScanId:crypto.randomUUID(),skuId:sku.id,tracking:profile.data.tracking,physicalCode:plan.physicalCode,...('quantity' in plan?{quantity:plan.quantity}:{})});
+   s=await web.read();
+   const current=s.receipts.find(r=>r.id===receipt.id); if(!current)continue;
+   if(current.data.status==='SCANNING')await updateOperation(app04!,'inbound.submit',current.id,current.version,{receiptId:current.id});
+   s=await web.read();
+   const submitted=s.receipts.find(r=>r.id===receipt.id); if(submitted?.data.status==='SUBMITTED')await updateOperation(web,'inbound.post',submitted.id,submitted.version,{receiptId:submitted.id});
+  }
+  // Seed one valid outbound request against the serial demo unit for S15/S19.
+  s=await web.read();
+  const recipient=c.recipients.find(r=>r.code==='PUBLIC-DEMO-RECIPIENT');
+  const skuA=c.skus.find(k=>k.code==='PUBLIC-DEMO-SKU-A');
+  const productA=skuA&&c.products.find(p=>p.id===skuA.productId);
+  let outbound=s.outbounds.find(o=>o.data.requestedLines.some(line=>line.skuId===skuA?.id));
+  if(!outbound&&recipient&&skuA&&productA) {
+   await operation(app05!,'outbound.create',{recipientId:recipient.id,observedRecipientVersion:recipient.version,requestedLines:[{skuId:skuA.id,quantity:1,observedSkuVersion:skuA.version,observedProductVersion:productA.version}]});
+   s=await web.read(); outbound=s.outbounds.find(o=>o.data.requestedLines.some(line=>line.skuId===skuA.id));
+  }
+  if(outbound){
+   if(outbound.data.status==='DRAFT')await updateOperation(app05!,'outbound.scan',outbound.id,outbound.version,{outboundId:outbound.id,clientScanId:crypto.randomUUID(),physicalCode:'PUBLIC-DEMO-SERIAL-0012'});
+   s=await web.read(); outbound=s.outbounds.find(o=>o.id===outbound!.id);
+   if(outbound?.data.status==='SCANNING')await updateOperation(app05!,'outbound.submit',outbound.id,outbound.version,{outboundId:outbound.id});
+   s=await web.read(); outbound=s.outbounds.find(o=>o.id===outbound!.id);
+   if(outbound?.data.status==='SUBMITTED')await updateOperation(web,'outbound.receive',outbound.id,outbound.version,{outboundId:outbound.id});
+   s=await web.read(); outbound=s.outbounds.find(o=>o.id===outbound!.id);
+   if(outbound?.data.status==='READY')await updateOperation(web,'outbound.post',outbound.id,outbound.version,{outboundId:outbound.id});
   }
   if(!await ready())return fail();return web.read();
  }

@@ -1,6 +1,7 @@
 import { useId, useState } from 'react';
 import type { ReactNode } from 'react';
 import { Button } from '../../shared/primitives';
+import { Icon } from '../../shared/Icon';
 import { BasicSelect } from '../../shared/controls';
 import { FormField } from '../../shared/FormField';
 import { useUiCopy } from '../../i18n/use-ui-copy';
@@ -22,6 +23,7 @@ const COPY = {
   'Nội dung không được vượt quá 200 ký tự.': 'The text must not exceed 200 characters.',
   'Chỉ nhập một dòng, không có ký tự điều khiển.': 'Enter one line without control characters.',
   'Kiểm tra lại thông tin': 'Check the highlighted information',
+  'Có {count} trường cần kiểm tra.': '{count} fields need attention.',
   'Có {count} lỗi cần sửa trước khi lưu.': '{count} errors need to be fixed before saving.',
 };
 const ERROR_COPY: Record<ReceiptHeaderError, keyof typeof COPY> = {
@@ -65,7 +67,7 @@ export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange
     if (checked.ok) onSubmit(checked.submission);
     else requestAnimationFrame(() => form.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus({ preventScroll: true }));
   }}>
-    {errorCount > 0 && <div className="s12-form-errors" role="alert" tabIndex={-1}><strong>{tx('Kiểm tra lại thông tin')}</strong><span>{tx('Có {count} lỗi cần sửa trước khi lưu.', { count: errorCount })}</span></div>}
+    {errorCount > 0 && <div className="s12-form-errors" role="alert" tabIndex={-1}><Icon name="alert-circle" size={20} /><span>{tx('Có {count} trường cần kiểm tra.', { count: errorCount })}</span></div>}
     <FormField htmlFor={`${id}-mode`} label={tx('Loại phiếu nhập')} required error={fieldError('mode')}
       hint={context?.intent === 'update' ? tx('Loại phiếu không thay đổi khi sửa thông tin.') : undefined}>
       <BasicSelect id={`${id}-mode`} value={context?.intent === 'update' ? context.mode : draft.mode}

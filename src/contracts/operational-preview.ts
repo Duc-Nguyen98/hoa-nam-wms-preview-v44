@@ -8,7 +8,7 @@ export interface OperationalPayloads {
   'qa.recipient.set-status': { confirmed: true; status: 'active' | 'inactive' };
   'scenario.reset-own': { confirmed: true; selectedSkuIds: string[] };
   'stock-profiles.create': { skuId: string; tracking: Tracking; observedSkuVersion: number; observedProductVersion: number };
-  'inbound.create': { mode: 'PRODUCT' | 'COMPONENT'; sourceText: string; referenceText: string };
+  'inbound.create': { mode: 'PRODUCT' | 'COMPONENT'; sourceText: string; referenceText: string; previewCode?: string };
   'inbound.update-header': OperationalPayloads['inbound.create'];
   'inbound.scan': { receiptId: string; clientScanId: string; skuId: string; tracking: Tracking; physicalCode: string; quantity?: number };
   'inbound.submit': { receiptId: string };
