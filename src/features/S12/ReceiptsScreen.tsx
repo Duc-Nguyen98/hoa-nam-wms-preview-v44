@@ -139,7 +139,7 @@ export function ReceiptsScreen({ adapter, operationalAdapter }: { adapter?: Rece
   ];
   return <GlobalShell title={tx("Danh sách phiếu nhập")} variant="wms" activeKey="S12" navigation={S00_SHELL_NAVIGATION} profile={{ displayName: 'Đức Quang', initials: 'DQ' }}>
     <div className="hn-catalogue-screen s12-screen" data-screen="S12" data-visual-variant="premium" onFocusCapture={revealFocus}>
-      <CataloguePageHeader appearance="compact" title={tx("Danh sách phiếu nhập")} breadcrumb={tx("Danh sách phiếu nhập")} parentLabel={tx("Nhập kho")} actions={cohort === 'legacy' ? <Button aria-describedby="s12-flow-limit" onClick={event => entryPoint('Tạo phiếu nhập', event.currentTarget)}><Icon name="plus" />{tx("Tạo phiếu nhập")}</Button> : undefined} />
+      <CataloguePageHeader appearance="compact" title={tx("Danh sách phiếu nhập")} description={tx("Theo dõi phiếu nhập trong phiên hiện tại.")} breadcrumb={tx("Danh sách phiếu nhập")} parentLabel={tx("Nhập kho")} actions={cohort === 'legacy' ? <Button aria-describedby="s12-flow-limit" onClick={event => entryPoint('Tạo phiếu nhập', event.currentTarget)}><Icon name="plus" />{tx("Tạo phiếu nhập")}</Button> : undefined} />
       {operational.available && <div className="s12-action-row"><Button variant="secondary" onClick={() => setCohort('scenario')} aria-pressed={cohort === 'scenario'}>{tx('Phiên hiện tại')}</Button><Button variant="secondary" onClick={() => setCohort('legacy')} aria-pressed={cohort === 'legacy'}>{tx('Danh sách trước đây')}</Button></div>}
       {cohort === 'scenario' ? <OperationalReceipts adapter={operational} notify={message => notify(uiText(message), null, 'success')} /> : <>
       {model ? <>

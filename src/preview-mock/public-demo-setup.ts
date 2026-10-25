@@ -15,6 +15,11 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
  const web=createOperationalWebAdapter(client,{available:true,scope:'public-demo-initial-setup'});
  const app04=readBrowserPreviewRuntime()?.appEventAdapters?.P04;
  const app05=readBrowserPreviewRuntime()?.appEventAdapters?.P05;
+ // Keep the operational web preview focused on the receipt worklist. The App
+ // event fixture is only needed when an explicit App preview route is opened;
+ // running it during S12 onboarding would immediately move the reference
+ // receipts out of the draft state shown by the public worklist.
+ const appFlowEnabled=typeof window!=='undefined' && /^#\/app\//.test(window.location.hash);
  const catalogReader=createCatalogCreateAdapter('sku',client,{available:true});
  async function ready(){
   const s=await web.read(); if(!s.scenario)return false;
@@ -22,7 +27,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   const ours=c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario!.data.selectedSkuIds.includes(k.id));
   const receiptsReady=['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code));
   if(!ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) || !receiptsReady)return false;
-  return !app04 || !app05 || (['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK') && s.outbounds.some(o=>o.data.status==='POSTED'));
+  return !appFlowEnabled || !app04 || !app05 || (['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK') && s.outbounds.some(o=>o.data.status==='POSTED'));
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -100,7 +105,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
    await operation(web,'inbound.create',receipt);
   }
   // Optional App-backed flow is isolated to the explicit app-preview fixture.
-  if(app04 && app05){
+  if(appFlowEnabled && app04 && app05){
   // Complete the demo inbound flow so S11/S13/S15 can render real boxes and stock.
   const inboundPlans=[
    {code:'PN-0012',skuCode:'PUBLIC-DEMO-SKU-A',physicalCode:'PUBLIC-DEMO-SERIAL-0012'},

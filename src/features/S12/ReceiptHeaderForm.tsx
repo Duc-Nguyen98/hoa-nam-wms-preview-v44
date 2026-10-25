@@ -9,6 +9,7 @@ import { canEditReceiptHeader, validateReceiptHeaderDraft, type ReceiptHeaderCon
 
 const COPY = {
   'Tạo phiếu nhập': 'Create receipt', 'Sửa thông tin phiếu nhập': 'Edit receipt header',
+  'Thông tin bắt buộc.': 'Required information.',
   'Loại phiếu nhập': 'Receipt type', 'Chọn loại phiếu': 'Select receipt type',
   'Sản phẩm': 'Products', 'Linh kiện': 'Components', 'Nguồn nhập': 'Source', 'Tham chiếu': 'Reference',
   'Tối đa 200 ký tự, một dòng.': 'Up to 200 characters, one line.',
@@ -89,6 +90,7 @@ export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange
     {status === 'unknown' && <p role="status">{tx('Chưa xác định kết quả. Cần kiểm tra kết quả trước khi gửi tiếp.')}</p>}
     {errors.form === 'IDENTITY_MISMATCH' && <p role="alert">{tx(ERROR_COPY[errors.form])}</p>}
     {error && <p role="alert">{error}</p>}
+    {context?.intent === 'create' && <p className="s12-required-note"><strong>*</strong> {tx('Thông tin bắt buộc.')}</p>}
     {actionLayout === 'inline' && <div className="s12-action-row">{extraActions}<Button type="button" variant="secondary" disabled={status === 'submitting'} onClick={onCancel}>{tx('Hủy')}</Button>
       <Button type="submit" disabled={locked} loading={status === 'submitting'}>{tx(status === 'submitting' ? 'Đang lưu…' : 'Lưu')}</Button></div>}
   </form>;
