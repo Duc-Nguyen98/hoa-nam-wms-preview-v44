@@ -37,3 +37,9 @@
 .hn-shell .hn-notifications__count {
   display: none !important;
 }
+
+/* Keep build/release links out of the operational shell; release details remain
+   available from the standalone release page. */
+.hn-shell .hn-preview-build-link {
+  display: none !important;
+}

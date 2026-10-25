@@ -108,7 +108,6 @@ export function LoginScreen() {
         </div>
         {errors.password && <p id="s07-password-error" className="s07-field-error">{tx(errors.password)}</p>}
       </div>
-      <p className="s07-public-demo">Demo công khai · Tài khoản: <strong>demo</strong> · Mật khẩu: <strong>HoaNamDemo@2026</strong><br />Dữ liệu thử nghiệm được lưu riêng trong trình duyệt của bạn.</p>
       <div className="s07-recovery"><Button variant="ghost" onClick={() => { setMessage(''); setRecoverySequence(value => value + 1); setRecovery('Liên hệ quản trị viên để được hỗ trợ đặt lại mật khẩu.'); }}>{copy.forgotPassword}</Button></div>
       <Button type="submit" className="s07-submit" loading={pending || loading} aria-disabled={blocked} trailingIcon={<Icon name="arrow-right" />}
         onClick={event => { if (event.detail > 1) event.preventDefault(); }}>{copy.submit}</Button>
