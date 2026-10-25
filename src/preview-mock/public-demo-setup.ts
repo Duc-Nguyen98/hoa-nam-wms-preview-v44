@@ -27,7 +27,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   const ours=c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario!.data.selectedSkuIds.includes(k.id));
   const receiptsReady=['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code));
   if(!ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) || !receiptsReady)return false;
-  return !appFlowEnabled || !app04 || !app05 || (['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED'));
+  return !appFlowEnabled || !app04 || !app05 || (['PN-0012','PN-0011','PN-0010','PN-0009'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0009'&&b.data.status==='IN_STOCK'&&b.data.trayId===null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED'));
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -98,6 +98,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
    {previewCode:'PN-0012',mode:'PRODUCT' as const,sourceText:'Nhà cung cấp An Phát',referenceText:'NCC-1025-01'},
    {previewCode:'PN-0011',mode:'PRODUCT' as const,sourceText:'Kho trung chuyển',referenceText:'DC-1025-02'},
    {previewCode:'PN-0010',mode:'COMPONENT' as const,sourceText:'Nhà cung cấp Minh Long',referenceText:'NCC-1025-03'},
+   {previewCode:'PN-0009',mode:'COMPONENT' as const,sourceText:'Nhà cung cấp Minh Long',referenceText:'NCC-1025-04'},
   ];
   for(const receipt of demoReceipts){
    s=await web.read();
@@ -111,6 +112,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
    {code:'PN-0012',skuCode:'PUBLIC-DEMO-SKU-A',physicalCode:'PUBLIC-DEMO-SERIAL-0012'},
    {code:'PN-0011',skuCode:'PUBLIC-DEMO-SKU-A',physicalCode:'PUBLIC-DEMO-SERIAL-0011'},
    {code:'PN-0010',skuCode:'PUBLIC-DEMO-SKU-B',physicalCode:'PUBLIC-DEMO-BOX-0010',quantity:12},
+   {code:'PN-0009',skuCode:'PUBLIC-DEMO-SKU-B',physicalCode:'PUBLIC-DEMO-BOX-0009',quantity:6},
   ] as const;
   for(const plan of inboundPlans){
    s=await web.read();
