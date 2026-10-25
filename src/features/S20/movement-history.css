@@ -111,7 +111,9 @@
 .s20-operational .hn-table th[data-column='detail'] { width: 112px; }
 .s20-operational .hn-table :is(th,td)[data-column='detail'] { width: 112px; min-width: 112px; }
 .s20-operational [data-column='detail'] .hn-button { min-width: 88px; white-space: nowrap; flex-shrink: 0; }
-.s20-operational .hn-table td[data-column='document'] > strong { display: block; white-space: normal; overflow-wrap: anywhere; word-break: normal; }
+/* Document IDs are identifiers, so keep each one intact and let the table scroll horizontally. */
+.s20-operational .hn-table :is(th,td)[data-column='document'] { min-width: 360px; max-width: none; }
+.s20-operational .hn-table td[data-column='document'] > strong { display: block; white-space: nowrap; overflow-wrap: normal; word-break: normal; }
 .s20-list-footer { padding: 0 20px; }
 .s20-availability { display: flex; align-items: center; gap: 8px; margin: 0; padding: 10px 20px; font-size: 12px; line-height: 20px; color: var(--hn-muted); border-top: 1px solid var(--hn-border); }
 .s20-availability svg { flex-shrink: 0; }
