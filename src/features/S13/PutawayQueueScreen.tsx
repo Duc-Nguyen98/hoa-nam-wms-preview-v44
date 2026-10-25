@@ -102,7 +102,7 @@ export function PutawayQueueScreen({ adapter, operationalAdapter }: { adapter?: 
   return <GlobalShell title={tx("Hàng chờ xếp khay")} variant="wms" activeKey="S13" navigation={S00_SHELL_NAVIGATION} profile={{ displayName: 'Đức Quang', initials: 'DQ' }}>
     <div className="hn-catalogue-screen s13-screen" data-screen="S13" data-visual-variant="premium" onFocusCapture={revealFocus}>
       <div className="s13-overview" data-has-summary={cohort === 'legacy' && !!model}>
-        <CataloguePageHeader appearance="worklist" title={tx("Hàng chờ xếp khay")} parentLabel={tx("Nhập kho")} breadcrumb={tx("Hàng chờ xếp khay")} description={tx("BOX đã nhập kho, chờ tạo lệnh xếp khay")} />
+        <CataloguePageHeader appearance="worklist" title={tx("Hàng chờ xếp khay")} parentLabel={tx("Xếp khay")} breadcrumb={tx("Hàng chờ xếp khay")} description={tx("BOX đã nhập kho, chờ tạo lệnh xếp khay")} />
         {cohort === 'legacy' && model && <section className="s13-summary" aria-label={tx("Theo bộ lọc đã áp dụng")}>
           <p className="s13-summary-caption">{tx("Theo bộ lọc đã áp dụng")}</p>
           <CatalogueSummary label={tx("Số liệu hàng chờ")} columns={3} density="compact"><SummaryMetric label={tx("BOX chờ xếp khay")} value={model.summary.boxCount} /><SummaryMetric label={tx("SKU linh kiện")} value={model.summary.skuCount} /><SummaryMetric label={tx("Tổng số lượng")} value={model.summary.quantityAggregate} /></CatalogueSummary>

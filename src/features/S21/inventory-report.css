@@ -137,3 +137,4 @@ html[data-hn-theme='dark'] .s21-screen .s21-sku { color: #8ed8ed; }
 html[data-hn-theme='dark'] .s21-screen .s21-reconciliation-heading p, html[data-hn-theme='dark'] .s21-screen .s21-balance-difference dd, html[data-hn-theme='dark'] .s21-screen .s21-difference { color: #f1ca7d; }
 
 .s21-operational > h2 { margin: 0 0 var(--hn-space-4, 16px); font-size: 18px; line-height: 26px; font-weight: 600; }
+.s21-operational-table-note { margin: 12px 0 8px; color: var(--hn-muted); font-size: 12px; line-height: 20px; }

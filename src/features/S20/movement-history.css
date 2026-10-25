@@ -104,6 +104,14 @@
 .s20-list [data-column='type'] { min-width: 124px; }
 .s20-list [data-column='performer'] { min-width: 146px; }
 .s20-list [data-column='action'] { min-width: 64px; }
+.s20-list [data-column='action'] .hn-button { min-width: 64px; white-space: nowrap; flex-shrink: 0; }
+/* Keep long document identifiers readable while preserving the table's own scroll. */
+.s20-list [data-column='code'] .s20-code,
+.s20-list [data-column='occurredAt'] .s20-code { white-space: normal; overflow-wrap: anywhere; word-break: normal; }
+.s20-operational .hn-table th[data-column='detail'] { width: 112px; }
+.s20-operational .hn-table :is(th,td)[data-column='detail'] { width: 112px; min-width: 112px; }
+.s20-operational [data-column='detail'] .hn-button { min-width: 88px; white-space: nowrap; flex-shrink: 0; }
+.s20-operational .hn-table td[data-column='document'] > strong { display: block; white-space: normal; overflow-wrap: anywhere; word-break: normal; }
 .s20-list-footer { padding: 0 20px; }
 .s20-availability { display: flex; align-items: center; gap: 8px; margin: 0; padding: 10px 20px; font-size: 12px; line-height: 20px; color: var(--hn-muted); border-top: 1px solid var(--hn-border); }
 .s20-availability svg { flex-shrink: 0; }

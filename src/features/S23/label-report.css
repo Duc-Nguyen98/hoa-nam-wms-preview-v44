@@ -27,6 +27,7 @@
 .s23-list [data-column="status"] { min-width: 135px; }
 .s23-list [data-column="printCount"] { min-width: 106px; font-variant-numeric: tabular-nums; }
 .s23-list [data-column="actions"] { min-width: 96px; }
+.s23-list [data-column="actions"] .hn-button { min-width: 96px; white-space: nowrap; flex-shrink: 0; }
 .s23-code { color: var(--hn-text); font-weight: 600; font-variant-numeric: tabular-nums; }
 .s23-product { display: grid; gap: 3px; line-height: 1.5; }
 .s23-product strong { font-size: 14px; font-weight: 500; color: var(--hn-text); }

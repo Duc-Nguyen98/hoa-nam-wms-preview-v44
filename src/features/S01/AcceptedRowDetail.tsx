@@ -74,13 +74,13 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
   return <GlobalModal open={!!row} title={row ? tx('Chi tiết {code}', { code: row.number }) : reportTx('Chi tiết')}
     onClose={onClose} resolveReturnFocus={resolveReturnFocus}
     footer={<Button variant="secondary" onClick={onClose}>{tx('Đóng')}</Button>}>
-    {row && <dl data-overview-detail-id={row.id} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: 16, margin: 0 }}>
+    {row && <dl className="ov-detail-fields" data-overview-detail-id={row.id} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: 16, margin: 0 }}>
       {acceptedOverviewFields(row).map(field => <div key={field.key} data-field={field.key} style={{ minWidth: 0 }}>
         <dt>{reportTx(tx(field.label))}</dt>
         <dd style={{ margin: '4px 0 0', overflowWrap: 'anywhere', fontWeight: 600 }}>{acceptedOverviewValue(field.displayLabel ? tx(String(field.value)) : acceptedOverviewDateDisplay(field.key, field.value, language))}</dd>
       </div>)}
     </dl>}
-    {row && source && <p className="ov-source-scope" data-overview-detail-source={source.snapshotId}>
+    {row && source && <p className="ov-source-scope ov-source-scope--detail" data-overview-detail-source={source.snapshotId}>
       {tx(source.provenance === 'QA_SYNTHETIC' ? '60 dòng tổng hợp riêng cho QA; chỉ số tổng quan giữ nguồn tham chiếu.' : 'Tìm kiếm và bộ lọc áp dụng trên 16 phiếu nguồn tháng 09/2026.')}
     </p>}
   </GlobalModal>;

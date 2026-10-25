@@ -20,6 +20,7 @@ export const STOCK_REPORT_COPY = {
   'SKU': 'SKU', 'Tên hàng': 'Product name', 'Kho': 'Warehouse', 'Đơn vị tính': 'Unit', 'Tồn đầu': 'Opening', 'Nhập': 'Inbound', 'Xuất SP': 'Outbound', 'Xuất linh kiện': 'Parts', 'Hoàn trả': 'Returns', 'Tồn cuối': 'Closing',
   'Thực tế': 'Physical count', 'Chênh lệch': 'Difference', 'Chưa xác định': 'Unknown', 'Kỳ đã áp dụng': 'Applied period', 'Dữ liệu đọc lúc': 'Read at',
   'Chứng từ liên quan': 'Related documents', 'Phiếu nhập': 'Receipts', 'Phiếu xuất kho': 'Outbounds', 'Phiếu xuất linh kiện': 'Parts issues', 'Phiếu đảo tồn': 'Reversals', 'Tồn kho': 'Inventory',
+  'Ghim SKU': 'Pin SKU', 'Ghim SKU và tên sản phẩm': 'Pin SKU and product name',
 };
 const errorMessage = (code: string) => code === 'INVALID_PERIOD' ? 'Vui lòng chọn kỳ trong 90 ngày gần đây, không vượt quá ngày hôm nay.' : code === 'SNAPSHOT_CHANGED' ? 'Phiên hoặc dữ liệu đã thay đổi. Đọc lại để kiểm tra.' : ['INCOMPLETE_POPULATION', 'CATALOG_LINK_UNAVAILABLE', 'AS_OF_BEFORE_SNAPSHOT'].includes(code) ? 'Chưa thể xác minh đủ dữ liệu để hiển thị hoặc xuất báo cáo.' : 'Chưa thể đọc hoặc xuất báo cáo. Đọc lại để kiểm tra.';
 
@@ -61,7 +62,8 @@ export function OperationalStockReport({ adapter }: { adapter: StockReportReader
     {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{(state.error || exportError) && <p role="alert">{tx(errorMessage(state.error || exportError))}</p>}
     <p>{tx('Tồn đầu + Nhập − Xuất SP − Xuất linh kiện + Hoàn trả = Tồn cuối. Mỗi dòng có đơn vị tính riêng.')}</p><p>{tx('Chưa có dữ liệu kiểm đếm thực tế; chưa thể tính chênh lệch.')}</p>
     {model && <><p>{tx('Kỳ đã áp dụng')}: {formatBusinessPeriod(model.report.query, language)} · Asia/Ho_Chi_Minh</p><p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time></p>
-      {!model.hasScenario ? <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p> : <DataTable caption={tx('Nhập – xuất – tồn theo kỳ')} captionVisibility="sr-only" columns={columns} rows={model.rows} rowKey={row => row.key} appearance="refined" emptyContent={<p>{tx('Chưa có biến động tồn kho trong kỳ.')}</p>} />}</>}
+      {!model.hasScenario ? <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p> : <><p className="s21-operational-table-note">{tx('Ghim SKU')}</p><DataTable caption={tx('Nhập – xuất – tồn theo kỳ')} captionVisibility="sr-only" columns={columns} rows={model.rows} rowKey={row => row.key} appearance="refined" stickyHeader stickyColumnIds={['sku']} emptyContent={<p>{tx('Chưa có biến động tồn kho trong kỳ.')}</p>} /></>}
+    </>}
     <CatalogueNavTabs label={tx('Chứng từ liên quan')} items={([['S12', 'Phiếu nhập'], ['S15', 'Phiếu xuất kho'], ['S10', 'Phiếu xuất linh kiện'], ['S17', 'Phiếu đảo tồn'], ['S16', 'Tồn kho']] as const).map(([key, label]) => ({ key, label: tx(label), href: screenRegistry.find(screen => screen.key === key)?.href }))} />
   </section>;
 }

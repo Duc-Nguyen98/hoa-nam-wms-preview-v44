@@ -43,6 +43,9 @@
 .s26-list [data-column="updatedAt"] { min-width: 150px; }
 .s26-list [data-column="completeness"] { min-width: 132px; }
 .s26-list [data-column="actions"] { min-width: 68px; }
+.s26-list [data-column="actions"] .hn-button { min-width: 68px; white-space: nowrap; flex-shrink: 0; }
+.s26-operational .hn-table th[data-column='actions'] { width: 128px; }
+.s26-operational [data-column='actions'] .hn-button { min-width: 112px; white-space: nowrap; flex-shrink: 0; }
 .s26-code, .s26-list time, .s26-completeness { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .s26-code { font-size: 13px; }
 .s26-name { font-weight: 600; color: var(--hn-text); line-height: 21px; }

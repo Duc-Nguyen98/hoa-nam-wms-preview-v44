@@ -6,6 +6,7 @@ import { revealControl } from '../../shared/focus';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { OPERATIONS_EN_COPY } from '../../i18n/operations-copy';
 export const PUTAWAY_DETAIL_COPY = {
+  'Chi tiết {detail} lệnh trong tổng hợp {aggregate} lệnh.': 'Detail set: {detail} orders; aggregate: {aggregate} orders.',
   ...OPERATIONS_EN_COPY,
   'Phiên bản': 'Version',
   'Chi tiết lệnh xếp khay': 'Putaway order details',

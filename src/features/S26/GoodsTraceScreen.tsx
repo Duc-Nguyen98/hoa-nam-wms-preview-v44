@@ -112,8 +112,8 @@ export function GoodsTraceScreen({ adapter, operationalAdapter }: { adapter?: Tr
   ];
   const activeFilters: { key: FilterKey; label: string }[] = [];
   if (model?.query.search.trim()) activeFilters.push({ key: 'search', label: tx(`Tìm: ${model.query.search.trim()}`) });
-  if (model?.query.status) activeFilters.push({ key: 'status', label: tx(model.query.status) });
-  if (model?.query.needsReview) activeFilters.push({ key: 'needsReview', label: tx('Cần kiểm tra') });
+  if (model?.query.status) activeFilters.push({ key: 'status', label: `${tx('Trạng thái')}: ${tx(model.query.status)}` });
+  if (model?.query.needsReview) activeFilters.push({ key: 'needsReview', label: tx('Cần kiểm tra trong danh sách') });
   function focusSearch() {
     const target = screen.current?.querySelector<HTMLInputElement>('#s26-query-search');
     target?.focus({ preventScroll: true }); if (target) revealControl(target);

@@ -29,6 +29,9 @@
 .s16-table-view th[data-column='suggestedLocation'] { width: 220px; }
 .s16-table-view th[data-column='reconciliation'] { width: 144px; }
 .s16-table-view th[data-column='action'] { width: 100px; }
+.s16-table-view [data-column='action'] .hn-button,
+.s16-operational [data-column='actions'] .hn-button { min-width: 84px; white-space: nowrap; flex-shrink: 0; }
+.s16-operational .hn-table th[data-column='actions'] { width: 104px; }
 .s16-code { color: var(--hn-brand); font-size: 13px; font-weight: 650; letter-spacing: .015em; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .s16-name { display: flex; flex-direction: column; gap: 3px; overflow-wrap: anywhere; }
 .s16-name strong { color: var(--hn-text); font-size: 14px; font-weight: 600; }
@@ -58,6 +61,7 @@
 .s16-card-location { display: flex; align-items: flex-start; gap: 7px; margin: 0; color: var(--hn-muted); font-size: 12px; line-height: 20px; overflow-wrap: anywhere; }
 .s16-card-location svg { flex: 0 0 auto; margin-top: 2px; color: var(--hn-control); }
 .s16-card-actions { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.s16-card-actions .hn-button { white-space: nowrap; flex-shrink: 0; }
 .s16-card-empty { margin: 0; padding: 24px 20px; color: var(--hn-muted); }
 .s16-feedback-host { min-width: 0; }
 .s16-feedback-host:not(:empty) { padding-block: 8px 6px; }

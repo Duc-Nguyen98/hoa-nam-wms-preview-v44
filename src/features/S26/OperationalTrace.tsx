@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, type TableColumn } from '../../shared';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
 import { useUiCopy } from '../../i18n/use-ui-copy';
@@ -37,12 +37,22 @@ export function OperationalTrace({ adapter }: { adapter: TraceReader }) {
   const controller = useMemo(() => { const catalog = createCatalogCreateAdapter('sku'); return createTraceBinding(adapter, () => catalog.readSnapshot()); }, [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
   const [selection, setSelection] = useState<TraceSelection | null>(null), [lookup, setLookup] = useState(''), [notFound, setNotFound] = useState(false);
+  const historyOpener = useRef<{ selection: TraceSelection; element: HTMLElement | null } | null>(null);
+  const root = useRef<HTMLElement>(null);
   const [exporting, setExporting] = useState(false), [exportError, setExportError] = useState('');
   useEffect(() => { void controller.resume(); const refresh = () => { if (document.visibilityState === 'visible') void controller.load(); };
     window.addEventListener('focus', refresh); document.addEventListener('visibilitychange', refresh);
     return () => { controller.suspend(); window.removeEventListener('focus', refresh); document.removeEventListener('visibilitychange', refresh); };
   }, [controller]);
   const model = state.model, selected = resolveTraceSelection(model, selection);
+  function closeHistory() {
+    const opener = historyOpener.current;
+    setSelection(null);
+    historyOpener.current = null;
+    const retained = opener && resolveTraceSelection(model, opener.selection);
+    const next = retained && opener?.element?.isConnected ? opener.element : retained ? root.current?.querySelector<HTMLElement>(`[data-s26-operational-action="${CSS.escape(opener.selection.id)}"]`) : null;
+    (next ?? root.current?.querySelector<HTMLElement>('#s26-operational-search') ?? root.current?.querySelector<HTMLElement>('h2'))?.focus({ preventScroll: true });
+  }
   async function download() {
     setExporting(true); setExportError('');
     try {
@@ -62,16 +72,16 @@ export function OperationalTrace({ adapter }: { adapter: TraceReader }) {
     { id: 'quantity', heading: tx('Tồn BOX'), align: 'end', render: row => row.boxQuantity === null ? tx('Không áp dụng') : `${row.boxQuantity} ${tx(row.trace.unit)}` },
     { id: 'location', heading: tx('Khay / Vị trí hiện tại'), render: row => <span data-tray-id={row.trayId ?? undefined} data-location-id={row.locationId ?? undefined}>{location(row)}</span> },
     { id: 'unknown', heading: tx('Lô / Pallet'), render: () => tx('Chưa có dữ liệu') },
-    { id: 'actions', heading: tx('Lịch sử'), kind: 'actions', render: row => <Button variant="ghost" onClick={() => { if (model) { setSelection({ id: row.trace.id, ...model.report.token }); setNotFound(false); } }}>{tx('Xem lịch sử')}</Button> },
+    { id: 'actions', heading: tx('Lịch sử'), kind: 'actions', render: row => <Button variant="ghost" data-s26-operational-action={row.trace.id} onClick={event => { if (model) { const next = { id: row.trace.id, ...model.report.token }; historyOpener.current = { selection: next, element: event.currentTarget }; setSelection(next); setNotFound(false); } }}>{tx('Xem lịch sử')}</Button> },
   ];
-  return <section className="s26-operational hn-premium-panel" data-operational-trace aria-label={tx('Truy vết phiên hiện tại')}>
+  return <section ref={root} className="s26-operational hn-premium-panel" data-operational-trace aria-label={tx('Truy vết phiên hiện tại')}>
     <div className="s26-operational-controls"><h2>{tx('Truy vết phiên hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => { setExportError(''); void controller.load(); }}>{tx('Đọc lại dữ liệu')}</Button><Button variant="secondary" disabled={!model || state.busy || exporting} onClick={() => void download()}>{tx(exporting ? 'Đang xuất…' : 'Xuất toàn bộ truy vết')}</Button></div>
     {state.busy && <p role="status">{tx('Đang đọc dữ liệu…')}</p>}{(state.error || exportError) && <p role="alert">{tx(errorMessage(state.error || exportError))}</p>}
     <p>{tx('Vị trí và trạng thái là dữ liệu tại thời điểm đọc; không phải vị trí lịch sử theo kỳ.')}</p><p>{tx('Chỉ có lịch sử trong phiên hiện tại. Lô, pallet và lịch sử trước phiên chưa có dữ liệu.')}</p><p>{tx('XLSX xuất toàn bộ danh sách đã đọc, gồm các chuỗi sự kiện. Chọn mã để xem lịch sử không giới hạn tệp xuất.')}</p>
     {model && <><p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time> · {tx('Tổng số mã')}: {model.rows.length}</p>
       {!model.hasScenario ? <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p> : <><form className="s26-operational-controls" onSubmit={event => { event.preventDefault(); const next = findTraceSelection(model, lookup); setSelection(next); setNotFound(!next); }}><FormField label={tx('Tìm đúng mã SERIAL hoặc BOX')} className="hn-operational-search"><FilterInput id="s26-operational-search" label={tx('Tìm đúng mã SERIAL hoặc BOX')} aria-label={tx('Tìm đúng mã SERIAL hoặc BOX')} value={lookup} onChange={event => { setLookup(event.target.value); setNotFound(false); }} /></FormField><Button type="submit">{tx('Chọn mã')}</Button></form>{notFound && <p role="status">{tx('Không tìm thấy mã chính xác trong phiên hiện tại.')}</p>}<DataTable caption={tx('Truy vết phiên hiện tại')} rows={model.rows} columns={columns} rowKey={row => row.trace.id} appearance="refined" emptyContent={<p>{tx('Chưa có mã vật lý trong phiên hiện tại.')}</p>} /></>}
     </>}
-    {selection && <section className="s26-trace-history" aria-label={tx('Lịch sử biến động tồn')}><div className="s26-operational-controls"><h3>{tx('Lịch sử biến động tồn')}{selected ? ` · ${selected.trace.physicalCode}` : ''}</h3><Button variant="ghost" onClick={() => setSelection(null)}>{tx('Đóng lịch sử')}</Button></div>
+    {selection && <section className="s26-trace-history" aria-label={tx('Lịch sử biến động tồn')}><div className="s26-operational-controls"><h3>{tx('Lịch sử biến động tồn')}{selected ? ` · ${selected.trace.physicalCode}` : ''}</h3><Button variant="ghost" onClick={closeHistory}>{tx('Đóng lịch sử')}</Button></div>
       {!selected ? !state.busy && <p>{tx('Mã đã chọn không còn thuộc phiên hiện tại. Chọn lại từ danh sách.')}</p> : <><p>{tx('Chứng từ xuất hiện tại')}: <span data-issued-document-id={selected.trace.issuedDocumentId ?? undefined}>{selected.issuedDocumentCode ?? tx('Không áp dụng')}</span></p><p>{tx('Số lượng dưới đây thuộc toàn bút toán, có thể gồm nhiều mã vật lý.')}</p><DataTable caption={tx('Lịch sử biến động tồn')} rows={selected.events} rowKey={row => row.event.id} emptyContent={<p>{tx('Chưa có bút toán ghi sổ.')}</p>} columns={[
         { id: 'time', heading: tx('Thời điểm ghi sổ'), render: row => <time dateTime={row.event.data.committedAt}>{new Date(row.event.data.committedAt).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time> },
         { id: 'document', heading: tx('Chứng từ'), render: row => <span data-document-id={row.event.data.documentId} data-source-line-id={row.event.data.sourceLineId}>{row.documentCode}</span> },

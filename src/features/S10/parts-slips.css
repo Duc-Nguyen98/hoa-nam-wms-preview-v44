@@ -15,7 +15,8 @@
 .s10-table th[data-column='component'] { width: auto; }
 .s10-table th[data-column='status'] { width: 150px; }
 .s10-table th[data-column='updated'] { width: 130px; }
-.s10-table th[data-column='action'] { width: 116px; }
+.s10-table th[data-column='action'] { width: 132px; }
+.s10-table td[data-column='action'] .hn-button { min-width: 108px; padding-inline: 8px; white-space: nowrap; }
 .s10-table [data-sticky-column='left'] { position: sticky; left: 56px; z-index: 1; background: var(--hn-surface); box-shadow: 1px 0 0 var(--hn-border); }
 .s10-table thead [data-sticky-column='left'] { z-index: 3; background: var(--hn-fill, #f7f9fb); }
 .s10-stack { display: flex; flex-direction: column; gap: 3px; min-width: 0; }

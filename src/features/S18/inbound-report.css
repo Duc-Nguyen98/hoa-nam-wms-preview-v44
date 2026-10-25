@@ -68,7 +68,10 @@
 .hn-shell .s18-screen .s18-list th[data-column="status"] { width: 152px; }
 .hn-shell .s18-screen .s18-list th[data-column="creator"] { width: 168px; }
 .hn-shell .s18-screen .s18-list th[data-column="action"] { width: 104px; }
-.hn-shell .s18-screen .s18-list .s18-view { min-height: 44px; min-width: 72px; white-space: nowrap; }
+.hn-shell .s18-screen .s18-list .s18-view { min-height: 44px; min-width: 72px; white-space: nowrap; flex-shrink: 0; }
+.hn-shell .s18-screen .s18-list [data-column='action'] .hn-button { min-width: 84px; white-space: nowrap; flex-shrink: 0; }
+.s18-operational .hn-table th[data-column='detail'] { width: 128px; }
+.s18-operational [data-column='detail'] .hn-button { min-width: 112px; white-space: nowrap; flex-shrink: 0; }
 .s18-list-footer { padding: 0 20px; }
 .s18-scroll-hint { margin: 0; padding: 0 20px 10px; font-size: 12px; color: var(--hn-muted); }
 @media (max-width: 1100px) {

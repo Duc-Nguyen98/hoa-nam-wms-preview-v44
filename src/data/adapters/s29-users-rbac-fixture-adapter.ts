@@ -16,11 +16,36 @@ export const S29_SAMPLE_ROLE: RoleRow = {
   id: 'role-warehouse', code: 'WAREHOUSE_STAFF', name: 'Nhân viên kho', status: 'ACTIVE', scope: 'WAREHOUSE', scopeRef: null, effectiveFrom: null, effectiveTo: null,
 };
 
-export function createS29Summary(): S29Summary {
+function uniqueOptions(values: Iterable<S29Option>) {
+  const seen = new Set<string>();
+  const result: S29Option[] = [];
+  for (const value of values) {
+    if (seen.has(value.value)) continue;
+    seen.add(value.value);
+    result.push({ ...value });
+  }
+  return result;
+}
+
+/** Build filter catalogues from the complete source cohort and role catalogue.
+ * No option is fabricated when a source does not provide a relationship. */
+export function createS29Summary(
+  users: readonly UserRow[] = [S29_SAMPLE_USER],
+  roles: readonly RoleRow[] = [S29_SAMPLE_ROLE],
+): S29Summary {
+  const roleOptions = uniqueOptions([
+    ...roles.map(role => ({ value: role.id, label: `${role.name} · ${role.code}` })),
+    ...users.flatMap(user => user.roleId && user.roleName && user.roleCode
+      ? [{ value: user.roleId, label: `${user.roleName} · ${user.roleCode}` }]
+      : []),
+  ]);
+  const departmentOptions = uniqueOptions(users.flatMap(user => user.departmentId
+    ? [{ value: user.departmentId, label: user.departmentName ?? user.departmentId }]
+    : []));
   return {
     userOptions: {
-      roles: options([{ value: 'role-warehouse', label: 'Nhân viên kho · WAREHOUSE_STAFF' }]),
-      departments: options([{ value: 'dept-1', label: 'Phòng Kho vận' }]),
+      roles: options(roleOptions),
+      departments: options(departmentOptions),
       statuses: options(Object.entries(USER_STATUS_LABELS).map(([value, label]) => ({ value, label }))),
     },
     roleOptions: {
@@ -31,9 +56,9 @@ export function createS29Summary(): S29Summary {
   };
 }
 
-function validateUserQuery(query: UserQuery, rows: readonly UserRow[]) {
-  const roleIds = new Set(rows.map(row => row.roleId).filter((value): value is string => Boolean(value)));
-  const departmentIds = new Set(['dept-1']);
+function validateUserQuery(query: UserQuery, rows: readonly UserRow[], summary: S29Summary) {
+  const roleIds = new Set(summary.userOptions.roles.map(option => option.value));
+  const departmentIds = new Set(summary.userOptions.departments.map(option => option.value));
   if (!Number.isSafeInteger(query.page) || query.page < 1 || !PAGE_SIZE_OPTIONS.includes(query.pageSize as typeof PAGE_SIZE_OPTIONS[number])
     || !['', 'ACTIVE', 'INACTIVE', 'LOCKED'].includes(query.status) || (query.roleId !== '' && !roleIds.has(query.roleId))
     || (query.departmentId !== '' && !departmentIds.has(query.departmentId))
@@ -55,7 +80,7 @@ function validateRoleQuery(query: RoleQuery, rows: readonly RoleRow[]) {
 }
 
 export function createS29FixtureAdapters(users: readonly UserRow[] = [S29_SAMPLE_USER], roles: readonly RoleRow[] = [S29_SAMPLE_ROLE]): { users: UserAdapter; roles: RoleAdapter } {
-  const summary = createS29Summary();
+  const summary = createS29Summary(users, roles);
   const userAdapter: UserAdapter = createListFixtureAdapter<UserRow, UserQuery, S29Summary>({
     sourceId: 'S29_DEV_SOURCE_SAMPLE_USER_1', source: { rows: users, completeness: 'complete', scope: 'detail', total: users.length }, summary,
     search: query => ({ value: query.search, fields: userSearch }),
@@ -75,7 +100,7 @@ export function createS29FixtureAdapters(users: readonly UserRow[] = [S29_SAMPLE
     stableId: row => row.id,
     filterOptions: { roleId: row => row.roleId, departmentId: row => row.departmentId, status: row => row.status },
     optionCatalogue: { roleId: summary.userOptions.roles.map(item => item.value), departmentId: summary.userOptions.departments.map(item => item.value) },
-    validate: query => validateUserQuery(query, users),
+    validate: query => validateUserQuery(query, users, summary),
   });
   const roleAdapter: RoleAdapter = createListFixtureAdapter<RoleRow, RoleQuery, S29Summary>({
     sourceId: 'S29_DEV_SOURCE_SAMPLE_ROLE_1', source: { rows: roles, completeness: 'complete', scope: 'detail', total: roles.length }, summary,

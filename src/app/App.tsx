@@ -15,6 +15,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react
 import { createPreviewController } from '../controllers/preview-controller';
 import { Button, Card, Feedback, GlobalShell, PageState } from '../shared';
 import { resolvePreviewRoute, screenRegistry } from './registry';
+import { blockNavigation, consumeApprovedNavigation, getNavigationGuard } from './navigation-blocker';
 import { resolveCanonicalPreviewSelection } from './canonical-preview-route';
 import { OverviewScreen } from '../features/S01/OverviewScreen';
 import { DefectsScreen } from '../features/S02/DefectsScreen';
@@ -89,7 +90,16 @@ export function App() {
   const [failed, setFailed] = useState(false);
   const previousHash = useRef(hash);
   useEffect(() => {
-    const onHashChange = () => setHash(window.location.hash);
+    const onHashChange = () => {
+      const nextHash = window.location.hash;
+      const fromHash = previousHash.current;
+      if (nextHash !== fromHash && !consumeApprovedNavigation(nextHash) && getNavigationGuard()?.isDirty()) {
+        window.history.replaceState(window.history.state, document.title, `${window.location.pathname}${window.location.search}${fromHash}`);
+        blockNavigation({ from: fromHash, to: nextHash });
+        return;
+      }
+      setHash(nextHash);
+    };
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);

@@ -26,6 +26,7 @@
 .s07-field input[aria-invalid='true'] { border-color:#ac2d32; }
 .s07-login-card .s07-field-error { margin:8px 0 0; color:#ac2d32; font-size:13px; line-height:1.6; }
 .s07-login-card .s07-feedback { margin:16px 0 0; font-size:14px; line-height:1.6; }
+.s07-public-demo { margin: 8px 0 0; font-size: 13px; line-height: 1.5; }
 html[data-hn-theme='dark'] .s07-login-card .s07-field-error { color:#ffb0b5; }
 .s07-field-icon { position:absolute; width:20px; height:20px; left:16px; top:17px; pointer-events:none; color:var(--hn-muted); }
 .s07-input-wrap--password input { padding-right:60px; }

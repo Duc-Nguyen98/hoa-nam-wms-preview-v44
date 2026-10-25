@@ -37,6 +37,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
   const [tab, setTab] = useState<Tab>('users');
   const [notice, setNotice] = useState<LocalizedNotice | null>(null);
   const [detailSelection, setDetailSelection] = useState<AcceptedUserSelection | null>(null);
+  const [selectedRoleId, setSelectedRoleId] = useState<string | null>(null);
   const detailReturnTarget = useRef<{ userId: string; sourceId: string } | null>(null);
   const screen = useRef<HTMLDivElement>(null);
   const noticeSlot = useRef<HTMLDivElement>(null);
@@ -46,6 +47,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
   const userModel = users.model, roleModel = roles.model;
   const userQuery = users.intendedQuery ?? DEFAULT_USER_QUERY, roleQuery = roles.intendedQuery ?? DEFAULT_ROLE_QUERY;
   const detailRow = resolveAcceptedUser(users, detailSelection, tab);
+  const selectedRole = roleModel?.rows.find(row => row.id === selectedRoleId) ?? roleModel?.rows[0] ?? null;
 
   useLayoutEffect(() => {
     if (detailSelection && !detailRow) setDetailSelection(null);
@@ -116,9 +118,6 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
   const updateRoles = (patch: Partial<RoleQuery>) => { setNotice(null); void controller.roles.update(patch).then(announceResult); };
   const resetUsers = () => { setDetailSelection(null); setNotice(null); void controller.users.reset(structuredClone(DEFAULT_USER_QUERY)).then(announceResult); };
   const resetRoles = () => { setNotice(null); void controller.roles.reset(structuredClone(DEFAULT_ROLE_QUERY)).then(announceResult); };
-  const blockedAction = (event: MouseEvent<HTMLElement>, message: string, values?: LocalizedNotice['values']) => {
-    event.preventDefault(); showNotice(message, event.currentTarget, values);
-  };
   const switchTab = (next: Tab) => { setDetailSelection(null); setNotice(null); setTab(next); };
   const onTabKey = (event: KeyboardEvent<HTMLButtonElement>) => {
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
@@ -171,7 +170,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
     { id: 'permissions', heading: tx("Quyền hiệu lực"), render: () => <span className="s29-permissions-missing">{tx("Chưa có nguồn")}</span> },
     { id: 'actions', heading: tx("Thao tác"), kind: 'actions', render: row =>
       <Button variant="ghost" aria-label={tx("Xem quyền {v0}", { v0: row.code })} leadingIcon={<Icon name="shield" size={17} />}
-        onClick={event => blockedAction(event, "Ma trận quyền của {v0} đang chờ RBAC-DATA-01; chưa thể xem hoặc chỉnh quyền.", { v0: row.code })}>{tx("Xem quyền")}</Button> },
+        onClick={event => { event.preventDefault(); setSelectedRoleId(row.id); }}>{tx("Xem quyền")}</Button> },
   ];
   const usersBusy = users.loading || users.debouncing;
   const rolesBusy = roles.loading || roles.debouncing;
@@ -248,6 +247,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
           </div>
           {!roleModel ? <SourcePending loading={roles.loading || roles.debouncing} error={Boolean(roles.error)} onRetry={() => void controller.roles.load(roleQuery)} /> : <>
             <div className="s29-permission-note" role="note"><Icon name="shield" size={18} /><div><strong>{tx("Catalogue quyền chưa có nguồn")}</strong><p>{tx("Danh sách vai trò vẫn tra cứu được. Ma trận quyền chờ catalogue và mapping RBAC-DATA-01.")}</p></div></div>
+            <PermissionWorkspace roles={roleModel.rows} selectedRole={selectedRole} onSelectRole={setSelectedRoleId} tx={tx} />
             <div className="s29-table-wrap s29-table-wrap--roles">
               <DataTable caption={tx("Danh sách vai trò")} captionVisibility="sr-only" columns={roleColumns} rows={roleModel.rows}
                 rowKey={row => row.id} sort={{ key: roleQuery.sortKey, direction: roleQuery.sortDirection }}
@@ -265,7 +265,9 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
         </section>
         </>
       </div>
-      <p className="s29-footer-note"><Icon name="info" size={15} />{tab === 'users' ? tx("Phòng ban “—”: chưa có quan hệ nguồn. Tổng chỉ tính trên nguồn đang xem.") : tx("Quyền hiệu lực chưa xác định, không phải 0 quyền. Chưa mở cấp hoặc thu hồi quyền.")}</p>
+      {tab === 'roles' || userModel?.summary.userOptions.departments.length === 0
+        ? <p className="s29-footer-note"><Icon name="info" size={15} />{tab === 'users' ? tx("Phòng ban “—”: chưa có quan hệ nguồn. Tổng chỉ tính trên nguồn đang xem.") : tx("Quyền hiệu lực chưa xác định, không phải 0 quyền. Chưa mở cấp hoặc thu hồi quyền.")}</p>
+        : null}
       {notice && <Notice feedback={{ ...notice, message: tx(notice.message, notice.values) }} onClose={() => setNotice(null)} resolveInlineSlot={() => noticeSlot.current} revealInlineOnOpen />}
       <AcceptedRowDetail row={detailRow} onClose={() => setDetailSelection(null)} resolveReturnFocus={resolveDetailReturnFocus} />
     </div>
@@ -277,6 +279,69 @@ function SourcePending({ loading, error, onRetry }: { loading: boolean; error: b
   return <div className="s29-source-pending"><Feedback title={loading ? tx("Đang tải dữ liệu…") : tx("Dữ liệu chưa sẵn sàng")} tone="warning">
     {loading ? tx("Vui lòng chờ trong giây lát.") : tx("Chưa thể hiển thị danh sách. Vui lòng quay lại sau.")}
   </Feedback>{error && !loading && <Button onClick={onRetry}>{tx('Thử lại')}</Button>}</div>;
+}
+
+type S29Tx = (value: string, values?: Readonly<Record<string, string | number>>) => string;
+
+/**
+ * The approved S29 composition has three work areas. The runtime currently
+ * supplies role and scope rows but no RBAC capability catalogue, so the
+ * centre remains an explicit unavailable state and never invents permissions.
+ */
+function PermissionWorkspace({ roles, selectedRole, onSelectRole, tx }: {
+  roles: readonly RoleRow[];
+  selectedRole: RoleRow | null;
+  onSelectRole: (roleId: string) => void;
+  tx: S29Tx;
+}) {
+  const states = [
+    { key: 'checked', label: tx('Đã bật'), checked: 'true' },
+    { key: 'unchecked', label: tx('Đã tắt'), checked: 'false' },
+    { key: 'mixed', label: tx('Một phần'), checked: 'mixed' },
+    { key: 'inherited', label: tx('Kế thừa'), checked: 'mixed' },
+  ] as const;
+  return <section className="s29-permission-workspace" aria-labelledby="s29-permission-workspace-title">
+    <div className="s29-permission-columns">
+      <aside className="s29-permission-roles" aria-label={tx('Danh sách vai trò')}>
+        <div className="s29-permission-heading"><div><span>{tx('Vai trò')}</span><h3 id="s29-permission-workspace-title">{tx('Chọn vai trò')}</h3></div><strong>{roles.length}</strong></div>
+        <div className="s29-role-list" role="listbox" aria-label={tx('Vai trò trong nguồn đang xem')}>
+          {roles.map(role => <button key={role.id} type="button" role="option" aria-selected={role.id === selectedRole?.id}
+            className="s29-role-option" onClick={() => onSelectRole(role.id)}>
+            <span className="s29-role-option__icon" aria-hidden="true"><Icon name="shield" size={17} /></span>
+            <span><strong>{role.name}</strong><small>{role.code}</small></span>
+            <StatusBadge tone={role.status === 'ACTIVE' ? 'success' : 'neutral'}>{tx(role.status === 'ACTIVE' ? 'Đang hoạt động' : 'Ngừng hoạt động')}</StatusBadge>
+          </button>)}
+        </div>
+      </aside>
+      <section className="s29-capability-panel" aria-labelledby="s29-capability-title">
+        <div className="s29-permission-heading"><div><span>{tx('Ma trận capability')}</span><h3 id="s29-capability-title">{selectedRole?.name ?? tx('Chưa chọn vai trò')}</h3></div><span className="s29-permission-unavailable">{tx('Chưa có nguồn')}</span></div>
+        <div className="s29-capability-empty" role="status">
+          <Icon name="shield" size={28} aria-hidden="true" />
+          <strong>{tx('Catalogue quyền chưa có nguồn')}</strong>
+          <p>{tx('RBAC-DATA-01 chưa cung cấp capability hoặc trạng thái quyền. Không có checkbox nào được suy ra từ ảnh mẫu.')}</p>
+        </div>
+        <div className="s29-state-legend" aria-label={tx('Các trạng thái checkbox chờ nguồn quyền')}>
+          <span className="s29-state-legend__title">{tx('Trạng thái UI chờ catalogue')}</span>
+          {states.map(state => <span key={state.key} className="s29-state-chip"><span role="checkbox" aria-checked={state.checked} aria-disabled="true" tabIndex={-1} className={`s29-state-box s29-state-box--${state.key}`} />{state.label}</span>)}
+        </div>
+      </section>
+      <aside className="s29-permission-inspector" aria-label={tx('Inspector phạm vi và người dùng')}>
+        <div className="s29-permission-heading"><div><span>{tx('Inspector')}</span><h3>{tx('Phạm vi & người dùng')}</h3></div><Icon name="info" size={17} /></div>
+        {selectedRole ? <dl className="s29-inspector-list">
+          <div><dt>{tx('Mã vai trò')}</dt><dd>{selectedRole.code}</dd></div>
+          <div><dt>{tx('Trạng thái')}</dt><dd>{tx(selectedRole.status === 'ACTIVE' ? 'Đang hoạt động' : 'Ngừng hoạt động')}</dd></div>
+          <div><dt>{tx('Phạm vi')}</dt><dd>{tx(scopeLabel(selectedRole.scope, selectedRole.scopeRef))}</dd></div>
+          <div><dt>{tx('Tham chiếu phạm vi')}</dt><dd>{selectedRole.scopeRef ?? '—'}</dd></div>
+          <div><dt>{tx('Người dùng hiệu lực')}</dt><dd>{tx('Chưa có nguồn')}</dd></div>
+        </dl> : <p className="s29-inspector-empty">{tx('Chọn một vai trò để xem thông tin từ nguồn.')}</p>}
+        <p className="s29-inspector-note">{tx('Inspector chỉ phản ánh trường role đã có; không xác nhận quyền hiệu lực.')}</p>
+      </aside>
+    </div>
+    <div className="s29-permission-actions" aria-label={tx('Thao tác ma trận quyền')}>
+      <span>{tx('Chưa có catalogue quyền để tạo bản thay đổi.')}</span>
+      <div><Button variant="ghost" disabled>{tx('Bỏ thay đổi')}</Button><Button variant="secondary" disabled>{tx('Lưu bản nháp')}</Button><Button disabled>{tx('Xuất bản')}</Button></div>
+    </div>
+  </section>;
 }
 
 function DevSourceStrip({ note }: { note: string }) {

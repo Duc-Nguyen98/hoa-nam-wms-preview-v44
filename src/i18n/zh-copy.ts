@@ -1,5 +1,7 @@
 // Central UI dictionary adopted from reviewed UIUX proposals. Regenerate with scripts/adopt-uiux-zh.ts.
 export const ZH_COPY: Readonly<Record<string,string>> = {
+  "Vui lòng nhập mã sản phẩm.": "请输入产品编码。",
+  "Ghim SKU": "固定 SKU",
   " · Không bắt buộc": " · 选填",
   "; thống kê phía trên thuộc toàn danh mục.": "；上方统计涵盖完整目录。",
   ". Số phiếu ở tất cả trạng thái.": "。单据数量包含所有状态。",
@@ -963,7 +965,7 @@ export const ZH_COPY: Readonly<Record<string,string>> = {
   "Ghi chú": "备注",
   "Ghi sổ hoàn kho": "退回入库过账",
   "Ghi sổ hoàn kho theo đúng hàng và số lượng gốc. Phiếu cấp và bút toán gốc được giữ nguyên.": "将原物品及原数量准确过账回库存。原领用单和库存事件保持不变。",
-  "Ghim SKU và tên sản phẩm": "固定 SKU 和产品名称列",
+  "Ghim SKU và tên sản phẩm": "固定 SKU 和产品名称",
   "Giá trị": "值",
   "Giá trị đối soát": "核对值",
   "Giá trị hệ thống": "系统值",

@@ -27,6 +27,9 @@
 .s12-table th[data-column='status'] { width: 148px; }
 .s12-table th[data-column='updated'] { width: 122px; }
 .s12-table th[data-column='action'] { width: 142px; }
+.s12-table [data-column='action'] .hn-button,
+.s12-list[data-operational-receipts] [data-column='action'] .hn-button { min-width: 88px; white-space: nowrap; flex-shrink: 0; }
+.s12-list[data-operational-receipts] .hn-table th[data-column='action'] { width: 112px; }
 .s12-code { color: #303642; font-weight: 600; font-size: 13px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .s12-primary { color: #303642; }
 .s12-stack { display: flex; flex-direction: column; gap: 2px; overflow-wrap: anywhere; }
@@ -36,6 +39,7 @@
 .s12-scroll-tools { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 8px; font-size: 12px; color: var(--hn-muted); }
 .s12-scroll-tools > div { display: flex; flex-shrink: 0; gap: 4px; }
 .s12-row-actions { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 4px; max-width: 100%; }
+.s12-row-actions .hn-button { white-space: nowrap; flex-shrink: 0; }
 @container (max-width: 850px) {
   .s12-summary { padding: 12px 16px; }
   .s12-summary-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }

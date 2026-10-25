@@ -43,6 +43,8 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
 .s27-list [data-column="module"] { min-width: 120px; }
 .s27-list [data-column="id"] { min-width: 250px; }
 .s27-list [data-column="detail"] { min-width: 245px; }
+.s27-list [data-column="detailAction"], .s27-list [data-column="pvDetail"] { min-width: 108px; }
+.s27-list [data-column="detailAction"] .hn-button, .s27-list [data-column="pvDetail"] .hn-button { min-width: 92px; white-space: nowrap; flex-shrink: 0; }
 .s27-time, .s27-code { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .s27-code { font-size: 12px; color: var(--hn-text); }
 .s27-muted { color: var(--hn-muted); }

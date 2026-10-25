@@ -16,6 +16,7 @@ export const PRODUCT_CATALOG_COPY = {
   'Hồ sơ sản phẩm được chọn không tồn tại trong dữ liệu hiện tại.': 'The selected product is unavailable in the current data.',
   'Chưa thể đọc hồ sơ sản phẩm được chọn. Vui lòng thử lại.': 'Unable to load the selected product. Please try again.',
   'Kiểm tra lại trường được đánh dấu.': 'Check the marked field.',
+  'Vui lòng nhập mã sản phẩm.': 'Enter a product code.',
   'Mã đã tồn tại. Hãy nhập mã khác.': 'This code already exists. Enter another code.',
   'Mã gồm 1–40 chữ cái ASCII, chữ số hoặc dấu gạch nối; bắt đầu bằng chữ hoặc số.': 'Use 1–40 ASCII letters, digits or hyphens; start with a letter or digit.',
   'Tên cần 1–200 ký tự, không chứa ký tự điều khiển hoặc xuống dòng.': 'Name requires 1–200 characters without control characters or line breaks.',

@@ -5,7 +5,7 @@ export const PV_DEMO_COPY: Readonly<Record<string, string>> = {
   'Thêm sản phẩm': 'Add product', 'Chỉnh sửa': 'Edit', 'Chi tiết': 'Details',
   'Tìm kiếm': 'Search', 'Trạng thái hiển thị': 'Visibility', 'Tất cả': 'All',
   'Đang hiển thị': 'Visible', 'Đang ẩn': 'Hidden', 'Chọn trạng thái': 'Select visibility',
-  'Sắp xếp': 'Sort', 'Tên A–Z': 'Name A–Z', 'Tên Z–A': 'Name Z–A', 'Cập nhật mới nhất': 'Latest update',
+  'Sắp xếp': 'Sort', 'Tên A–Z': 'Name A–Z', 'Tên Z–A': 'Name Z–A', 'Cập nhật mới nhất': 'Most recently updated',
   'Tên hiển thị PV': 'PV display name', 'Mã sản phẩm': 'Product code', 'Tên sản phẩm': 'Product name',
   'Nhóm sản phẩm': 'Product group', 'Đơn vị tính': 'Unit', 'Ảnh sản phẩm': 'Product image',
   'Không có ảnh': 'No image', 'Chưa có ảnh': 'Missing image', 'Chọn SKU': 'Select SKU',

@@ -108,6 +108,10 @@ export function ProductCreateDialog({ adapter, origin, onClose, onSaved }: {
     if (busy.current || !context || unresolved || committed.current) return;
     const token = generation.current;
     setFieldError(null); setMessage('');
+    if (!draft.code.trim()) {
+      setFieldError({ field: 'code', message: tx('Vui lòng nhập mã sản phẩm.') });
+      focusField('code'); return;
+    }
     let payload;
     try { payload = normalizeCatalogPayload('product', draft); }
     catch (error) {

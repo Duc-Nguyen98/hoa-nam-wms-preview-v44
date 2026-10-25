@@ -2,6 +2,7 @@ import { translateUiCopy } from '../../i18n/ui-copy';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { ADMIN_EN_COPY } from '../../i18n/admin-copy';
 import { useEffect, useMemo, useReducer, useState } from 'react';
+import { useSyncExternalStore } from 'react';
 import type { EditableField, WarehouseConfigAdapter, WarehouseRead } from '../../contracts/warehouse-config';
 import { createWarehouseConfigController } from '../../controllers/warehouse-config-controller';
 import { GlobalShell } from '../../shared/GlobalShell';
@@ -12,6 +13,8 @@ import { Icon } from '../../shared/Icon';
 import { S00_SHELL_NAVIGATION } from '../../shared/s00-navigation';
 import { revealControl, useKeyboardFocusReveal } from '../../shared/focus';
 import { useGlobalToast } from '../../toast/GlobalToastProvider';
+import { cancelNavigation, discardAndContinueNavigation, getNavigationAttempt, registerNavigationGuard, subscribeNavigationBlocker } from '../../app/navigation-blocker';
+import { GlobalModal } from '../../shared/GlobalModal';
 import './warehouse-config.css';
 
 const commandCopy = { ...ADMIN_EN_COPY,
@@ -81,6 +84,7 @@ export function WarehouseConfigForm({ controller, developmentNote, pending, read
 }) {
   const tx = useUiCopy(commandCopy);
   const [, rerender] = useReducer(count => count + 1, 0);
+  const navigationAttempt = useSyncExternalStore(subscribeNavigationBlocker, getNavigationAttempt, getNavigationAttempt);
   const [toastEvent, setToastEvent] = useState<{ message: string; tone: 'success' | 'warning'; sequence: number; origin: HTMLElement | null } | null>(null);
   const vm = controller.view();
   const committedAwaitingRead = vm.commandState === 'saved-refresh-error' && Boolean(vm.receipt);
@@ -99,6 +103,10 @@ export function WarehouseConfigForm({ controller, developmentNote, pending, read
     void controller.initializeRecovery().then(() => { if (active) rerender(); });
     return () => { active = false; };
   }, [controller, pending, readFailed]);
+  useEffect(() => registerNavigationGuard({
+    isDirty: () => controller.view().dirty && controller.view().commandState === 'idle',
+    discard: () => { controller.reset(); rerender(); },
+  }), [controller]);
   const revealFocus = useKeyboardFocusReveal();
   function update(field: EditableField, value: string) { setVm(controller.update(field, value)); }
   async function submit() {
@@ -116,6 +124,12 @@ export function WarehouseConfigForm({ controller, developmentNote, pending, read
     });
   }
   return <div className="s28-screen" data-screen="S28" data-visual-variant="premium" onFocusCapture={revealFocus}>
+    <GlobalModal open={Boolean(navigationAttempt)} title={tx('Bỏ thay đổi chưa lưu?')}
+      description={tx('Bạn có thay đổi chưa lưu. Nếu rời đi, bản nháp cục bộ sẽ bị xóa.')}
+      onClose={cancelNavigation} closeLabel={tx('Ở lại')}
+      footer={<><Button type="button" variant="secondary" onClick={cancelNavigation}>{tx('Tiếp tục chỉnh sửa')}</Button><Button type="button" tone="danger" onClick={discardAndContinueNavigation}>{tx('Bỏ thay đổi')}</Button></>}>
+      <p>{tx('Các thay đổi hiện tại sẽ không được lưu.')}</p>
+    </GlobalModal>
     {toastEvent && <WarehouseCommandToast event={toastEvent} />}
     <header className="s28-heading">
       <div className="s28-heading-main">
