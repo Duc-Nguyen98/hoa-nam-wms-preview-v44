@@ -105,6 +105,11 @@ function CalendarPicker(props: CalendarPickerProps) {
   const popupRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const moveFocusRef = useRef(false);
+  // Keep the popup on the same side of its trigger while its contents change
+  // (for example when a future date validation message appears). Recomputing
+  // the preferred side on every ResizeObserver tick makes the whole calendar
+  // jump between above and below during manual entry.
+  const popupPlacementRef = useRef<'below' | 'above' | null>(null);
   const previousValueKeyRef = useRef(controlledValueKey);
   const isSelectable = (value: string) => validateBusinessDate(value, options).valid;
   const focusedIso = toIsoDate(focusedDay);
@@ -128,6 +133,7 @@ function CalendarPicker(props: CalendarPickerProps) {
     setDraftStart(null);
     setHoverDay(null);
     setDraftError(null);
+    popupPlacementRef.current = null;
     if (restore) restoreFocus();
   };
 
@@ -140,6 +146,7 @@ function CalendarPicker(props: CalendarPickerProps) {
     setManualFrom(props.mode === 'range' ? props.value?.from ?? '' : props.value ?? '');
     setManualTo(props.mode === 'range' ? props.value?.to ?? '' : '');
     setDraftError(null);
+    popupPlacementRef.current = null;
     setMonth(initialDay);
     setFocusedDay(initialDay);
     moveFocusRef.current = true;
@@ -191,7 +198,11 @@ function CalendarPicker(props: CalendarPickerProps) {
       const box = popup.getBoundingClientRect();
       const below = anchor.bottom + 6;
       const above = anchor.top - 6 - box.height;
-      const preferredTop = below + box.height <= topEdge + height - 8 ? below : above >= topEdge + 8 ? above : topEdge + 8;
+      const placement = popupPlacementRef.current ?? (
+        below + box.height <= topEdge + height - 8 ? 'below' : above >= topEdge + 8 ? 'above' : 'below'
+      );
+      popupPlacementRef.current = placement;
+      const preferredTop = placement === 'below' ? below : above;
       // A resize can move the invoker below the viewport while the calendar
       // retains focus. Keep the entire popup in view even in that situation.
       const top = Math.max(topEdge + 8, Math.min(preferredTop, topEdge + height - box.height - 8));
@@ -343,7 +354,14 @@ function CalendarPicker(props: CalendarPickerProps) {
       {clearable && acceptedText && <button type="button" className="hn-date-picker__clear" disabled={disabled} aria-label={`${clearLabel} ${tx(label)}`} onClick={clear}><Icon name="close" size={17} /></button>}
     </div>
     {validation && !validation.valid && <p className="hn-date-picker__error" id={`${fieldId}-error`} role="status">{message(validation)}</p>}
-    <div id={popupId} ref={popupRef} popover="manual" role="dialog" aria-label={`${mode === 'range' ? tx("Chọn khoảng ngày") : tx("Chọn ngày")} – ${tx(label)}`} aria-describedby={`${popupId}-help`} className="hn-date-picker__popup" data-open={open} data-mode={mode} data-draft-start={draftStart ?? undefined} onKeyDown={onPopupKey} onToggle={event => { if (event.newState === 'closed') { setOpen(false); setDraftStart(null); setHoverDay(null); } }}>
+    <div id={popupId} ref={popupRef} popover="manual" role="dialog" aria-label={`${mode === 'range' ? tx("Chọn khoảng ngày") : tx("Chọn ngày")} – ${tx(label)}`} aria-describedby={`${popupId}-help`} className="hn-date-picker__popup" data-open={open} data-mode={mode} data-draft-start={draftStart ?? undefined} onKeyDown={onPopupKey} onPointerDownCapture={event => {
+      // A disabled day is still inside the picker. Keep the native popover
+      // open when a pointer lands on it; only a valid day may close it.
+      if (event.target instanceof HTMLButtonElement && event.target.disabled) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    }} onToggle={event => { if (event.newState === 'closed') { setOpen(false); setDraftStart(null); setHoverDay(null); } }}>
       <div className="hn-date-picker__header">
         <button type="button" className="hn-date-picker__nav" disabled={policyWindow.empty || Boolean(minDate && toIsoDate({...month,day:1}).slice(0,7) <= minDate.slice(0,7))} aria-label={tx("Tháng trước")} onClick={() => moveTo(addCalendarMonths(focusedDay, -1), false)}><Icon name="chevron-left" size={18} /></button>
         <h2 id={`${popupId}-month`} aria-live="polite" aria-atomic="true">{monthLabel}</h2>
