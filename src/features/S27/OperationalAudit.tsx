@@ -72,9 +72,9 @@ export function OperationalAudit({ adapter, cohortControls }: { adapter: AuditRe
     { id: 'at', heading: tx('Thời gian'), sortKey: 'at', sortType: 'date', render: row => { const [date, time] = formatAuditTime(row.at, language).split(' · '); return <time dateTime={row.at} className="s27-time"><span>{time ?? date}</span>{time && <span className="s27-muted">{date}</span>}</time>; } },
     { id: 'action', heading: tx('Hoạt động'), render: activity },
     { id: 'actorId', heading: tx('Người thao tác'), sortKey: 'actorId', render: row => <code title={row.actorId}>{shortenAuditId(row.actorId)}</code> },
-    { id: 'surface', heading: tx('Nguồn thực hiện'), render: row => <span className="s27-source-badge">{row.sourceSurface}</span> },
+    { id: 'surface', heading: tx('Nguồn'), render: row => <span className="s27-source-badge">{row.sourceSurface}</span> },
     { id: 'entity', heading: tx('Đối tượng'), render: row => <div className="s27-entity"><code title={row.entityId}>{shortenAuditId(row.entityId)}</code><p>{tx('Phiên bản')}: {row.previousVersion ?? '—'} → {row.newVersion}</p></div> },
-    { id: 'detailAction', heading: tx('Xem chi tiết'), render: row => detailButton(row) },
+    { id: 'detailAction', heading: tx('Chi tiết'), render: row => detailButton(row) },
   ];
   return <section ref={root} className="s27-operational" data-operational-audit aria-label={tx('Nhật ký phiên hiện tại')}>
     <CataloguePageHeader appearance="worklist" title={tx('Nhật ký hệ thống')} parentLabel={tx('Hệ thống')} breadcrumb={tx('Nhật ký hệ thống')} description={tx('Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.')}

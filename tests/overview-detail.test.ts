@@ -7,8 +7,27 @@ import { selectAcceptedOverviewRow, resolveAcceptedOverviewRow } from '../src/fe
 import { overviewCopy, OVERVIEW_COPY } from '../src/features/S01/overview-copy';
 import { readFileSync } from 'node:fs';
 
+test('four-row overview pages cover every result once and preserve period totals', async () => {
+  const adapter = createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true });
+  const first = await adapter.read(DEFAULT_OVERVIEW_QUERY);
+  assert.equal(first.kind, 'ready');
+  if (first.kind !== 'ready') return;
+  assert.equal(first.model.pagination.pageSize, 4);
+  const ids: string[] = [];
+  for (let page = 1; page <= first.model.pagination.pageCount; page++) {
+    const result = await adapter.read({ ...DEFAULT_OVERVIEW_QUERY, page });
+    assert.equal(result.kind, 'ready');
+    if (result.kind !== 'ready') return;
+    assert.ok(result.model.rows.length <= 4);
+    assert.deepEqual(result.model.summary, first.model.summary);
+    ids.push(...result.model.rows.map(row => row.id));
+  }
+  assert.equal(ids.length, first.model.pagination.total);
+  assert.equal(new Set(ids).size, ids.length);
+});
+
 test('overview source rows expose declared units and preserve inbound/outbound identity', async () => {
-  const result = await createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true, pageSizeOptions: [10] }).read(DEFAULT_OVERVIEW_QUERY);
+  const result = await createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true, pageSizeOptions: [10] }).read({ ...DEFAULT_OVERVIEW_QUERY, pageSize: 10 });
   assert.equal(result.kind, 'ready');
   if (result.kind !== 'ready') return;
   assert.equal(result.model.summary.inbound, 8);
@@ -21,7 +40,7 @@ test('overview source rows expose declared units and preserve inbound/outbound i
 });
 
 test('attention uses the accepted period, never the activity search/filter/page', async () => {
-  const adapter = createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true, pageSizeOptions: [10] });
+  const adapter = createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true, pageSizeOptions: [4, 10] });
   const a = await adapter.read(DEFAULT_OVERVIEW_QUERY);
   const b = await adapter.read({ ...DEFAULT_OVERVIEW_QUERY, page: 2 });
   const c = await adapter.read({ ...DEFAULT_OVERVIEW_QUERY, search: 'not-a-document', status: 'posted' });

@@ -30,7 +30,7 @@ export interface BaselineReader { read(query: unknown, signal: AbortSignal, scen
 function reader<Query extends object>(
   _defaults: Query, read: (query: Query, signal: AbortSignal, scenario?: string) => Promise<unknown>,
 ): BaselineReader { return { read: (query, signal, scenario) => read(query as Query, signal, scenario) }; }
-const overview = createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true, pageSizeOptions: [10, 15, 25, 50] });
+const overview = createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true, pageSizeOptions: [4, 10, 15, 25, 50] });
 const defects = createDefectsFixtureAdapter({ searchMatch: 'folded-includes' });
 const products = createProductsFixtureAdapter(); const skus = createSkusFixtureAdapter();
 const recipients = createRecipientsFixtureAdapter(); const pv = createPvFixtureAdapter();

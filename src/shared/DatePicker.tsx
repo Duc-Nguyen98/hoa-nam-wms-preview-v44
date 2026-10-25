@@ -20,6 +20,8 @@ type CalendarFieldProps = {
   /** Presentation capability only; the owning screen decides whether null is valid. */
   clearable?: boolean;
   placeholder?: string;
+  /** Optional compact visible label; the accessible name retains the complete range. */
+  displayValue?: string;
   /** Presentation only. Does not select a day or impose a permitted date range. */
   initialMonth?: string;
   className?: string;
@@ -349,7 +351,7 @@ function CalendarPicker(props: CalendarPickerProps) {
       <button ref={triggerRef} id={fieldId} type="button" disabled={disabled} className="hn-date-picker__trigger" aria-invalid={validation && !validation.valid || undefined} aria-describedby={validation && !validation.valid ? `${fieldId}-error` : undefined} aria-label={acceptedText ? `${tx(label)}: ${acceptedText}` : tx(label)} aria-haspopup="dialog" aria-expanded={open} aria-controls={popupId} onClick={() => open ? close(true) : openCalendar()} onKeyDown={event => {
         if (event.key === 'ArrowDown' && !event.nativeEvent.isComposing) { event.preventDefault(); openCalendar(); }
       }}>
-        <span className={acceptedText ? undefined : 'hn-date-picker__placeholder'}>{acceptedText || tx(placeholder)}</span><Icon name="calendar" size={19} />
+        <span className={acceptedText ? undefined : 'hn-date-picker__placeholder'}>{props.displayValue || acceptedText || tx(placeholder)}</span><Icon name="calendar" size={19} />
       </button>
       {clearable && acceptedText && <button type="button" className="hn-date-picker__clear" disabled={disabled} aria-label={`${clearLabel} ${tx(label)}`} onClick={clear}><Icon name="close" size={17} /></button>}
     </div>

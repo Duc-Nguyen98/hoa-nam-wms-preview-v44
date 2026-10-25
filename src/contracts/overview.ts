@@ -1,5 +1,5 @@
 /** S01 frontend-only view contracts. Backend DTO, dates, enums and permissions remain unbound. */
-import { DEFAULT_PAGE_SIZE, updateTableQuery } from '../shared/table-query';
+import { updateTableQuery } from '../shared/table-query';
 export interface OverviewPeriod { from: string; to: string }
 export type OverviewSortKey = 'number' | 'type' | 'time' | 'actor' | 'quantity' | 'status';
 export interface OverviewQuery {
@@ -14,7 +14,7 @@ export interface OverviewQuery {
 }
 
 export const DEFAULT_OVERVIEW_QUERY: OverviewQuery = Object.freeze({
-  search: '', type: 'all', status: 'all', sort: 'desc', sortKey: 'time', page: 1, pageSize: DEFAULT_PAGE_SIZE,
+  search: '', type: 'all', status: 'all', sort: 'desc', sortKey: 'time', page: 1, pageSize: 4,
   period: Object.freeze({ from: '2026-09-01', to: '2026-09-30' }),
 });
 

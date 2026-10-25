@@ -203,19 +203,18 @@ export function OverviewScreen({ createController = createOverviewRuntimeControl
   return <GlobalShell title={tx("Tổng quan vận hành")} variant="wms" navigation={S01_SHELL_NAVIGATION} activeKey="S01" profile={presentation.profile} onUnresolvedAction={unavailable}>
     <div className="ov-screen" data-screen="S01" data-visual-variant="premium">
       <div className="ov-page-heading">
-        <div className="ov-page-intro"><h1 ref={detailHeadingRef} tabIndex={-1}>{tx("Tổng quan vận hành")}</h1><p>{tx("Theo dõi kho và công việc cần xử lý.")}</p></div>
+        <div className="ov-page-intro"><div className="ov-eyebrow"><Icon name="warehouse" size={16} />{model?.warehouseLabel ?? tx("Kho")}</div><h1 ref={detailHeadingRef} tabIndex={-1}>{tx("Tổng quan vận hành")}</h1><p>{tx("Theo dõi kho và công việc cần xử lý.")}</p></div>
         <div className="ov-period">
           <div className="ov-period__controls">
             <FilterSelect id="ov-warehouse-filter" label={tx("Kho")} value={model?.warehouseLabel ?? ''} disabled={!model?.warehouseLabel} onChange={() => undefined}>
               <option value={model?.warehouseLabel ?? ''}>{model?.warehouseLabel ?? '—'}</option>
             </FilterSelect>
-            <DateRangePicker id="ov-period-picker" label={tx("Kỳ thời gian")} value={query.period} clearable={false} onChange={period => { if (period) patchQuery({ period }); }} />
-            <Button className="ov-refresh" aria-label={tx("Làm mới")} aria-busy={refreshing} disabled={refreshing} onClick={(event) => void refresh(event.currentTarget)}>
+            <DateRangePicker displayValue={query.period.from.endsWith("-01") && query.period.to === new Date(Date.UTC(Number(query.period.from.slice(0,4)), Number(query.period.from.slice(5,7)), 0)).toISOString().slice(0,10) ? new Intl.DateTimeFormat(language === "vi" ? "vi-VN" : language === "zh-CN" ? "zh-CN" : "en-US", {month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(query.period.from+"T00:00:00Z")) : undefined} id="ov-period-picker" label={tx("Kỳ thời gian")} value={query.period} clearable={false} onChange={period => { if (period) patchQuery({ period }); }} />
+            <Button iconOnly title={tx("Làm mới")} variant="ghost" className="ov-refresh" aria-label={tx("Làm mới")} aria-busy={refreshing} disabled={refreshing} onClick={(event) => void refresh(event.currentTarget)}>
               {refreshing ? <svg className="ov-refresh__spinner" width="18" height="18" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
                 <circle className="ov-refresh__track" cx="10" cy="10" r="7" />
                 <circle className="ov-refresh__arc" cx="10" cy="10" r="7" />
               </svg> : <Icon name="refresh" width={18} height={18} />}
-              {tx('Làm mới')}
             </Button>
           </div>
           <p>{formatBusinessPeriod(acceptedQuery.period, language)}</p>
@@ -225,8 +224,8 @@ export function OverviewScreen({ createController = createOverviewRuntimeControl
       {model && <>
         <div className="ov-metrics">
           <Metric title={tx("Tồn kho hiện tại")} value={model.summary.stockDisplay} help={tx(model.summary.stockHelp)} scope={tx("Hiện tại")} icon="box" />
-          <Metric title={tx("Phiếu nhập trong kỳ")} value={model.summary.inbound} unit={tx("phiếu")} help={tx("Tất cả trạng thái")} scope={tx("Trong kỳ")} icon="download" />
-          <Metric title={tx("Phiếu xuất trong kỳ")} value={model.summary.outbound} unit={tx("phiếu")} help={tx("Tất cả trạng thái")} scope={tx("Trong kỳ")} icon="upload" />
+          <Metric title={tx("Phiếu nhập")} value={model.summary.inbound} unit={tx("phiếu")} help={tx("Tất cả trạng thái")} scope={tx("Trong kỳ")} icon="documents" />
+          <Metric title={tx("Phiếu xuất")} value={model.summary.outbound} unit={tx("phiếu")} help={tx("Tất cả trạng thái")} scope={tx("Trong kỳ")} icon="documents" />
           <Metric title={tx("Bảo hành đang mở")} value={model.summary.openWarranties} unit={tx("hồ sơ")} help={tx("Không áp dụng kỳ chứng từ")} scope={tx("Hiện tại")} icon="shield" />
         </div>
         <div className="ov-middle">
@@ -244,7 +243,7 @@ export function OverviewScreen({ createController = createOverviewRuntimeControl
         </div>
         <section ref={activityRef} className="ov-panel ov-activity hn-premium-panel" aria-labelledby="ov-activity-title" aria-busy={busy} data-table-overflow={tableOverflows}>
           <div className="ov-activity__heading"><div><h2 id="ov-activity-title">{tx("Hoạt động nhập – xuất")}</h2><p>{tx("Phiếu nhập và xuất trong kỳ chứng từ")}</p></div><div className="ov-activity-actions"><ReportExcelButton screen="S01" query={model.query} expectedTotal={model.pagination.total} busy={busy} onNotice={(message, origin, tone) => notify(message, tone, origin)} /><button type="button" className="ov-view-all" onClick={resetTable}>{tx("Xem tất cả")}<Icon name="chevron-right" width={16} height={16} /></button></div></div>
-          <p className="ov-scope-description">{tx('Kho và kỳ áp dụng cho chỉ số chứng từ, công việc cần xử lý và biểu đồ. Tìm kiếm và bộ lọc bên dưới chỉ áp dụng cho danh sách.')}</p>
+          <p className="ov-scope-description hn-sr-only">{tx('Kho và kỳ áp dụng cho chỉ số chứng từ, công việc cần xử lý và biểu đồ. Tìm kiếm và bộ lọc bên dưới chỉ áp dụng cho danh sách.')}</p>
           <div className="ov-filters">
             <form role="search" aria-label={tx("Tìm phiếu nhập và xuất")} onSubmit={submitSearch} className="ov-search"><label className="ov-search-label" htmlFor="ov-search-input">{tx("Tìm mã phiếu, người thực hiện")}</label><FilterInput id="ov-search-input" type="search" aria-label={tx("Tìm mã phiếu, người thực hiện")} label={tx("Tìm mã phiếu, người thực hiện")} placeholder={tx("Tìm mã phiếu, người thực hiện")} value={searchDraft}
               onCompositionStart={() => { composingSearch.current = true; }}
@@ -267,7 +266,7 @@ export function OverviewScreen({ createController = createOverviewRuntimeControl
           </div>}
           <p className="ov-scroll-hint">{tx("Cuộn ngang để xem thêm cột")}{' '}<span aria-hidden="true">→</span></p>
           <NoticeSlot name="table" />
-          <div className="ov-table-desktop"><DataTable appearance="refined" caption={tx("Danh sách phiếu nhập và xuất")} columns={columns} rows={model.rows} rowKey={row => row.id} sort={{ key: model.query.sortKey, direction: model.query.sort }} onSort={key => patchQuery({ sortKey:key as OverviewSortKey, sort:model.query.sortKey===key && model.query.sort==='asc'?'desc':'asc' })} scrollResetKey={JSON.stringify(model.query)} emptyContent={model.emptyReason ? <p>{tx(model.emptyReason === 'no-documents' ? 'Không có phiếu trong kỳ đã chọn.' : 'Không có phiếu phù hợp.')}</p> : undefined} busy={busy} /></div>
+          <div className="ov-table-desktop"><DataTable appearance="refined" density="compact" caption={tx("Danh sách phiếu nhập và xuất")} columns={columns} rows={model.rows} rowKey={row => row.id} sort={{ key: model.query.sortKey, direction: model.query.sort }} onSort={key => patchQuery({ sortKey:key as OverviewSortKey, sort:model.query.sortKey===key && model.query.sort==='asc'?'desc':'asc' })} scrollResetKey={JSON.stringify(model.query)} emptyContent={model.emptyReason ? <p>{tx(model.emptyReason === 'no-documents' ? 'Không có phiếu trong kỳ đã chọn.' : 'Không có phiếu phù hợp.')}</p> : undefined} busy={busy} /></div>
           <div className="ov-mobile-list" tabIndex={-1} aria-label={tx("Danh sách phiếu nhập và xuất")}>{model.rows.length ? model.rows.map(row => <article className="ov-mobile-row" key={row.id}>
             <div className="ov-mobile-row__heading"><button type="button" className="ov-document-link" data-overview-detail-opener={row.id} disabled={busy || !!runtime.error || !!runtime.blocker} onClick={event => openDetail(row, event.currentTarget)}>{row.number}</button><StatusBadge tone={row.status === 'posted' ? 'success' : 'warning'}>{tx(row.statusLabel)}</StatusBadge></div>
             <div className="ov-mobile-row__meta"><span className="ov-document-type" data-type={row.type}><Icon name={row.type === 'inbound' ? 'download' : 'upload'} size={16} />{tx(row.typeLabel)}</span><span><Icon name="calendar" size={15} />{acceptedOverviewDateDisplay('timeLabel', acceptedOverviewValue(row.timeLabel), language)}</span><span><Icon name="user" size={15} />{acceptedOverviewValue(row.actor)}</span><span><Icon name="box" size={15} />{acceptedOverviewValue(row.quantity)}{row.quantity != null && row.quantityUnit ? ` ${tx(row.quantityUnit)}` : ''}</span></div>
@@ -275,7 +274,7 @@ export function OverviewScreen({ createController = createOverviewRuntimeControl
           </article>) : <p className="ov-mobile-list__empty">{tx(model.emptyReason === 'no-documents' ? 'Không có phiếu trong kỳ đã chọn.' : 'Không có phiếu phù hợp.')}</p>}</div>
           <Pagination variant="overview" unit={tx("phiếu")} page={model.pagination.page} pageSize={model.pagination.pageSize} filteredTotal={model.pagination.total} displayedCount={model.rows.length} canGoPrevious={model.pagination.page > 1} canGoNext={model.pagination.page < model.pagination.pageCount} onPageChange={changePage} pageSizeOptions={model.pagination.pageSizeOptions} onPageSizeChange={pageSize => patchQuery({ pageSize })} />
         </section>
-        <section className="ov-analysis" aria-labelledby="ov-analysis-title"><div className="ov-analysis__heading"><h2 id="ov-analysis-title">{tx("Phân tích nhập – xuất")}</h2><p>{tx("Biểu đồ theo dõi số phiếu trong kỳ.")}</p></div><DocumentChart points={model.chart} period={model.query.period} /></section>
+        <details className="ov-analysis"><summary className="ov-analysis__heading"><h2 id="ov-analysis-title">{tx("Phân tích nhập – xuất")}</h2><p>{tx("Biểu đồ theo dõi số phiếu trong kỳ.")}</p></summary><DocumentChart points={model.chart} period={model.query.period} /></details>
       </>}
       <AcceptedRowDetail row={detailRow} source={detailRow ? model?.source ?? null : null} onClose={() => setDetailSelection(null)} resolveReturnFocus={resolveDetailReturnFocus} />
       {localizedNotice && <Notice feedback={localizedNotice} onClose={() => setNotice(null)} />}

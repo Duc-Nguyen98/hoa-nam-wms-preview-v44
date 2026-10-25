@@ -21,7 +21,7 @@ function validDay(value: string) {
 
 /** The only S01 data boundary: no URLs, credentials, writes, storage, or synthetic delays. */
 export function createOverviewFixtureAdapter(policy: OverviewPolicy = {}): OverviewDataAdapter {
-  const pageSizeOptions = [...(policy.pageSizeOptions ?? [10])];
+  const pageSizeOptions = [...(policy.pageSizeOptions ?? [4, 10])];
   const searchMatch = policy.searchMatch ?? null;
   const allowPeriodChange = policy.allowPeriodChange ?? false;
   if (!pageSizeOptions.length || pageSizeOptions.some((size) => !Number.isSafeInteger(size) || size < 1)) {

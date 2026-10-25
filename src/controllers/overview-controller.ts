@@ -2,7 +2,6 @@ import { DEFAULT_OVERVIEW_QUERY, type OverviewBlocker, type OverviewDataAdapter,
 import { createOverviewFixtureAdapter } from '../data/adapters/overview-fixture-adapter';
 import { trackListRead } from '../data/read-diagnostics';
 import { createListController, type ListControllerOptions, type ListDataAdapter, type ListLoadOutcome } from '../shared/list-runtime';
-import { PAGE_SIZE_OPTIONS } from '../shared/table-query';
 import { dateRangeBlocker } from '../shared/date-policy';
 
 type ReadyOverview = Extract<OverviewResult, { kind: 'ready' }>;
@@ -20,7 +19,7 @@ export function createOverviewController(
       const { model } = result;
       return { kind: 'ready', model: {
         query: model.query, rows: model.rows,
-        pagination: { ...model.pagination, pageSizeOptions: PAGE_SIZE_OPTIONS },
+        pagination: { ...model.pagination, pageSizeOptions: model.pagination.pageSizeOptions },
         // Retain the original ready result; summary/chart/table commit together.
         summary: result, filterOptions: {},
         source: { id: model.source.snapshotId, scope: 'detail', completeness: 'complete', detailTotal: model.source.fixtureRecordCount },

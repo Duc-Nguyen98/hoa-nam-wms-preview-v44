@@ -8,6 +8,7 @@ export { normalizeSearchText as foldOverviewSearch } from '../../shared/search';
 export function queryOverviewRows(sourceRows: readonly OverviewRow[], query: OverviewQuery) {
   const inPeriod = sourceRows.filter(row => row.day >= query.period.from && row.day <= query.period.to);
   return queryTable({
+    pageSizeOptions: [4, 10, 15, 25, 50],
     source: { rows: inPeriod, scope: 'detail', completeness: 'complete', total: inPeriod.length },
     query,
     filter: row => (query.type === 'all' || row.type === query.type) &&

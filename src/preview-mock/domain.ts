@@ -48,7 +48,7 @@ export function decodeBusinessQuery(screen: BusinessScreenId, params: URLSearchP
     if (!Object.hasOwn(defaults, key)) throw new PreviewHttpError(400, 'INVALID_QUERY', 'Điều kiện chưa được hỗ trợ.');
     query[key] = decodeValue(value, defaults[key as keyof typeof defaults]);
   }
-  if ('page' in query && (Number(query.page) < 1 || ![10, 15, 25, 50].includes(Number(query.pageSize)))) {
+  if ('page' in query && (Number(query.page) < 1 || !(screen === 'S01' ? [4, 10, 15, 25, 50] : [10, 15, 25, 50]).includes(Number(query.pageSize)))) {
     throw new PreviewHttpError(400, 'INVALID_QUERY', 'Trang hoặc số dòng không hợp lệ.');
   }
   const scenario = params.get('_scenario') ?? undefined;

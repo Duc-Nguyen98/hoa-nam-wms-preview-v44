@@ -11,6 +11,8 @@ export const OVERVIEW_COPY: Readonly<Record<string, readonly [string, string]>> 
   'Thời gian': ['Time', '时间'],
   'Theo dõi kho và công việc cần xử lý.': ['Monitor your warehouse and pending work.', '跟踪仓库及待处理工作。'],
   'Tồn kho hiện tại': ['Current inventory', '当前库存'],
+  'Phiếu nhập': ['Inbound receipts', '入库单'],
+  'Phiếu xuất': ['Outbound slips', '出库单'],
   'Phiếu nhập trong kỳ': ['Inbound receipts in period', '本期入库单'],
   'Phiếu xuất trong kỳ': ['Outbound slips in period', '本期出库单'],
   'Bảo hành đang mở': ['Open warranty cases', '未结保修单'],

@@ -287,3 +287,15 @@
   .s12-detail-modal .s12-detail-code code { font-size: 26px; line-height: 34px; }
   .s12-detail-modal .s12-detail__fields > div { gap: 12px; }
 }
+/* Tablet worklist follows the reference cards without an extra panel. */
+@media(max-width:1100px){
+ .hn-shell .s12-screen .s12-list.hn-premium-panel { border:0; background:transparent; box-shadow:none; padding:0; }
+ .hn-shell .s12-screen .s12-empty-state { display:none; }
+ .hn-shell .s12-screen .s12-receipt-card { padding:22px 24px; gap:18px; box-shadow:none; }
+ .hn-shell .s12-screen .s12-receipt-card .s12-code { color:#0062d0; font-size:23px; line-height:30px; font-weight:700; }
+ .hn-shell .s12-screen .s12-card-source dt,.hn-shell .s12-screen .s12-card-bottom dt { font-size:16px; line-height:24px; }
+ .hn-shell .s12-screen .s12-card-source strong,.hn-shell .s12-screen .s12-card-source > span { font-size:18px; line-height:27px; }
+ .hn-shell .s12-screen .s12-card-bottom .hn-button { font-size:18px; color:#0062d0; font-weight:600; }
+}
+html[data-hn-theme='dark'] .hn-shell .s12-screen .s12-receipt-card :is(.s12-code,.s12-card-bottom .hn-button),
+html[data-hn-theme='dark'] .s12-detail-modal .s12-detail-code code { color:#79bdff; }

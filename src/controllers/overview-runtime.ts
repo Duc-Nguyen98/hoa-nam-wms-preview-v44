@@ -7,6 +7,6 @@ import { PAGE_SIZE_OPTIONS } from '../shared/table-query';
 export const OVERVIEW_RUNTIME_POLICY = {
   searchMatch: 'folded-includes',
   allowPeriodChange: true,
-  pageSizeOptions: PAGE_SIZE_OPTIONS,
+  pageSizeOptions: [4, ...PAGE_SIZE_OPTIONS],
 } as const;
 export const createOverviewRuntimeController = () => createOverviewController(createOverviewFixtureAdapter(OVERVIEW_RUNTIME_POLICY));

@@ -6,6 +6,17 @@ import { auditDetailReadMessage, refreshAuditDetail, resolveAuditDetail, selectA
 const period={from:'2026-10-25',to:'2026-10-25'},asOf='2026-10-25T08:00:00.000Z';
 const model=(n=25)=>projectOperationalAudit(auditFixture(n),{...period,asOf});
 
+test('initial resume uses the displayed period even when the clock is on the next day', async () => {
+  const reader=createOperationalAuditReader({available:true,async read(){return auditFixture(3);}},()=> '2026-10-26T08:00:00.000Z');
+  await reader.resume(period);
+  assert.equal(reader.getSnapshot().error, '');
+  assert.deepEqual(reader.getSnapshot().period, period);
+  assert.equal(reader.getSnapshot().model?.rows.length, 3);
+  reader.suspend();
+  await reader.resume(period);
+  assert.equal(reader.getSnapshot().model?.rows.length, 3);
+});
+
 test('immutable proof projection, totals, versions and tied timestamp ordering',()=>{
   const source=auditFixture(25),before=JSON.stringify(source),m=projectOperationalAudit(source,{...period,asOf});
   assert.equal(JSON.stringify(source),before);assert.ok(Object.isFrozen(m.rows));

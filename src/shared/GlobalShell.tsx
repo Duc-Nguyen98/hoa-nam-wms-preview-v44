@@ -260,6 +260,7 @@ export function GlobalShell({ title, children, navigation, activeKey, variant = 
     <div className="hn-shell__workspace">
       <div className="hn-header-wrap"><header lang={language} className="hn-header">
         {mode !== 'desktop' && renderMenuButton()}
+        {mode !== 'desktop' && isWms && <a className="hn-mobile-brand" href="#/preview/S01" aria-label="HOA NAM WMS"><Icon name="brand" size={36} /><span>HOA NAM WMS</span></a>}
         {isWms ? <>
           <ShellHeaderActions destinations={destinations} profile={accountCenter ? accountCenter.profile : profile} layoutMode={mode} activeKey={activeKey}
             accountLinks={accountCenter ? { profileHref: '#/account/profile', settingsHref: '#/account/settings' } : undefined}

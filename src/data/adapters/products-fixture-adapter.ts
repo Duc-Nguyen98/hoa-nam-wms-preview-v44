@@ -1,6 +1,6 @@
 import fixtureSource from '../fixtures/DESIGN_FIXTURE_SNAPSHOT.json';
 import contractSource from '../fixtures/SCREEN_CONTRACTS.seed.json';
-import { queryTable } from '../../shared/table-query';
+import { queryTable, PAGE_SIZE_OPTIONS } from '../../shared/table-query';
 import { SCREEN_FOUNDATION, screenSearch, screenSort } from '../../shared/screen-foundation';
 import { productsUpdatedValue, PRODUCTS_RUNTIME_POLICY } from '../../controllers/products-policy';
 import {
@@ -111,7 +111,7 @@ function readyModel(query: ProductsQuery, allRows: ProductRow[], qa: boolean): P
   return {
     kind: 'ready',
     model: {
-      query, rows: result.rows, summary: sourceSummary(), pagination: result.pagination,
+      query, rows: result.rows, summary: sourceSummary(), pagination: { ...result.pagination, pageSizeOptions: PAGE_SIZE_OPTIONS },
       filterOptions: { groups, units }, detailCompleteness: fixture.detail_completeness,
       interactionScope: { kind: qa ? 'qa60' : 'source-detail', recordCount: allRows.length, completeness: 'COMPLETE_WITHIN_CONFIRMED_SCOPE' },
       source: {

@@ -37,6 +37,7 @@ export interface TableSortDefinition<Row> {
 export type TableStableId<Row> = (row: Row) => string | number | null | undefined;
 
 export interface TableQueryOptions<Row> {
+  pageSizeOptions?: readonly number[];
   source: TableQuerySource<Row>;
   query?: Partial<TablePageQuery>;
   /** Domain field scope and search matching remain the adapter's responsibility. */
@@ -120,7 +121,7 @@ export interface TableQueryPagination extends TablePageQuery {
   unfilteredTotal: number;
   start: number;
   end: number;
-  pageSizeOptions: typeof PAGE_SIZE_OPTIONS;
+  pageSizeOptions: readonly number[];
 }
 
 export type TableQueryResult<Row> =
@@ -131,7 +132,7 @@ export type TableQueryResult<Row> =
  * Pure adapter helper: verify declared source scope -> filter/search -> stable sort -> page.
  * It never imports fixtures, changes records, invents totals, or picks search rules.
  */
-export function queryTable<Row>({ source, query = {}, filter, filters = [], search, compare, sort, stableId, direction = 'asc' }: TableQueryOptions<Row>): TableQueryResult<Row> {
+export function queryTable<Row>({ source, query = {}, filter, filters = [], search, compare, sort, stableId, direction = 'asc', pageSizeOptions = PAGE_SIZE_OPTIONS }: TableQueryOptions<Row>): TableQueryResult<Row> {
   if (source.completeness !== 'complete' || !Number.isSafeInteger(source.total) || source.total < 0 || source.total !== source.rows.length ||
     (source.scope !== undefined && !['catalogue', 'detail'].includes(source.scope)) ||
     (source.aggregateTotal !== undefined && (!Number.isSafeInteger(source.aggregateTotal) || source.aggregateTotal < 0 || (source.scope !== 'detail' && source.aggregateTotal !== source.total)))) {
@@ -140,9 +141,9 @@ export function queryTable<Row>({ source, query = {}, filter, filters = [], sear
   const page = query.page ?? 1;
   const pageSize = query.pageSize ?? DEFAULT_PAGE_SIZE;
   const sortDirection = sort?.direction ?? direction;
-  if (!PAGE_SIZE_OPTIONS.some(size => size === pageSize) || !['asc', 'desc'].includes(direction) || !['asc', 'desc'].includes(sortDirection) ||
+  if (!Number.isSafeInteger(pageSize) || pageSize < 1 || !pageSizeOptions.some(size => size === pageSize) || !['asc', 'desc'].includes(direction) || !['asc', 'desc'].includes(sortDirection) ||
     (sort && !['text', 'code', 'number', 'date'].includes(sort.type))) {
-    return { kind: 'blocked', reason: 'INVALID_QUERY', detail: 'Page size must be 10, 15, 25 or 50 and sort direction must be asc or desc.' };
+    return { kind: 'blocked', reason: 'INVALID_QUERY', detail: 'Page size must be permitted by this table and sort direction must be asc or desc.' };
   }
   if (!Number.isSafeInteger(page) || page < 1) {
     return { kind: 'blocked', reason: 'PAGE_OUT_OF_RANGE', detail: 'Page must be a positive integer in the filtered result.' };
@@ -166,7 +167,7 @@ export function queryTable<Row>({ source, query = {}, filter, filters = [], sear
       page, pageSize, pageCount, total, unfilteredTotal: source.total,
       start: rows.length ? offset + 1 : 0,
       end: rows.length ? offset + rows.length : 0,
-      pageSizeOptions: PAGE_SIZE_OPTIONS,
+      pageSizeOptions,
     },
   };
 }
