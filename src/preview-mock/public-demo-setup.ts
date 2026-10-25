@@ -19,7 +19,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
  // event fixture is only needed when an explicit App preview route is opened;
  // running it during S12 onboarding would immediately move the reference
  // receipts out of the draft state shown by the public worklist.
- const appFlowEnabled=typeof window!=='undefined' && /^#\/app\//.test(window.location.hash);
+ const appFlowEnabled=true;
  const catalogReader=createCatalogCreateAdapter('sku',client,{available:true});
  async function ready(){
   const s=await web.read(); if(!s.scenario)return false;
@@ -27,7 +27,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   const ours=c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario!.data.selectedSkuIds.includes(k.id));
   const receiptsReady=['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code));
   if(!ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) || !receiptsReady)return false;
-  return !appFlowEnabled || !app04 || !app05 || (['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK') && s.outbounds.some(o=>o.data.status==='POSTED'));
+  return !appFlowEnabled || !app04 || !app05 || (['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED'));
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -143,6 +143,15 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
    s=await web.read(); outbound=s.outbounds.find(o=>o.id===outbound!.id);
    if(outbound?.data.status==='READY')await updateOperation(web,'outbound.post',outbound.id,outbound.version,{outboundId:outbound.id});
   }
+  // Put the received BOX into the first demo tray so S11 and S14 share one live record.
+  s=await web.read();
+  const box=s.boxes.find(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010');
+  let putaway=box&&s.putaways.find(p=>p.data.boxId===box.id);
+  if(!putaway&&box){
+   await operation(web,'putaway.create',{boxId:box.id,observedBoxVersion:box.version});
+   s=await web.read(); putaway=s.putaways.find(p=>p.data.boxId===box.id);
+  }
+  if(putaway?.data.status==='DRAFT')await updateOperation(web,'putaway.confirm',putaway.id,putaway.version,{trayId:'operational-setup:tray:1'});
   }
   if(!await ready())return fail();return web.read();
  }
