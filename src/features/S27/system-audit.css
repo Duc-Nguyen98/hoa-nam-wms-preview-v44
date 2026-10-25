@@ -132,6 +132,7 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
 .s27-list-tools { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; justify-content: end; min-width: 0; }
 .s27-list-sort { width: 220px; max-width: 100%; }
 .s27-list .hn-catalogue-toolbar { padding: 0 24px 24px; gap: 16px; }
+.s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-search > label.hn-sr-only { position: static; width: auto; height: auto; padding: 0; margin: 0 0 5px; overflow: visible; clip-path: none; white-space: normal; border: 0; display: block; color: var(--hn-text); font-size: 13px; line-height: 20px; font-weight: 500; }
 .s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-search { flex: 1.5 1 300px; min-width: 0; }
 .s27-list .hn-catalogue-toolbar[data-layout='worklist'] > .hn-catalogue-trailing { gap: 16px; flex: 2 1 560px; }
 .s27-list .hn-catalogue-trailing select { width: 100%; min-width: 0; text-overflow: ellipsis; }
