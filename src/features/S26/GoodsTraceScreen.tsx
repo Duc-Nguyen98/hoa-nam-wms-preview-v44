@@ -17,7 +17,6 @@ import { createOperationalWebAdapter } from '../../data/http/operational-preview
 import { OperationalTrace, OPERATIONAL_TRACE_COPY } from './OperationalTrace';
 import type { TraceReader } from './trace-binding';
 import { useUiCopy } from '../../i18n/use-ui-copy';
-import { IS_BROWSER_PREVIEW } from '../../preview-mode';
 
 type Operation = ReturnType<ReturnType<typeof createTraceController>['load']>;
 type FilterKey = 'search' | 'status' | 'needsReview';
@@ -26,7 +25,7 @@ export function GoodsTraceScreen({ adapter, operationalAdapter }: { adapter?: Tr
   const { language } = useShellPreferences();
   const operationalTx = useUiCopy(OPERATIONAL_TRACE_COPY);
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S26' }), [operationalAdapter]);
-  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => IS_BROWSER_PREVIEW ? 'legacy' : operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => operational.available ? 'scenario' : 'legacy');
   const cohortControl = operational.available && <FilterSelect label={operationalTx('Nguồn dữ liệu')} aria-label={operationalTx('Nguồn dữ liệu')} className="hn-source-select" value={cohort} onChange={event => setCohort(event.target.value as 'scenario' | 'legacy')}><option value="scenario">{operationalTx('Phiên hiện tại')}</option><option value="legacy">{operationalTx('Dữ liệu đã duyệt')}</option></FilterSelect>;
   const controller = useMemo(() => createTraceController(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);

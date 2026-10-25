@@ -26,6 +26,11 @@ const COPY = {
   'Kiểm tra lại thông tin': 'Check the highlighted information',
   'Có {count} trường cần kiểm tra.': '{count} fields need attention.',
   'Có {count} lỗi cần sửa trước khi lưu.': '{count} errors need to be fixed before saving.',
+  'Vui lòng chọn loại phiếu nhập.': 'Please select a receipt type.',
+  'Vui lòng nhập nguồn nhập.': 'Please enter a source.',
+  'Nhập nguồn nhập': 'Enter a source',
+  'Nguồn nhập không được vượt quá 200 ký tự.': 'Source must not exceed 200 characters.',
+  'Tham chiếu không được vượt quá 200 ký tự.': 'Reference must not exceed 200 characters.',
 };
 const ERROR_COPY: Record<ReceiptHeaderError, keyof typeof COPY> = {
   MODE_REQUIRED: 'Chọn loại phiếu nhập.', MODE_IMMUTABLE: 'Loại phiếu không thay đổi khi sửa thông tin.',
@@ -55,10 +60,21 @@ export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange
   const validation = context ? validateReceiptHeaderDraft(draft, context) : null;
   const errors = attempted && validation && !validation.ok ? validation.errors : {};
   const locked = !context || !canEditReceiptHeader(context) || status !== 'idle';
-  const fieldError = (field: 'mode' | 'sourceText' | 'referenceText') => errors[field] ? tx(ERROR_COPY[errors[field]]) : undefined;
+  const fieldError = (field: 'mode' | 'sourceText' | 'referenceText') => {
+    const error = errors[field];
+    if (!error) return undefined;
+    const copy = error === 'MODE_REQUIRED' ? 'Vui lòng chọn loại phiếu nhập.' : error === 'SOURCE_REQUIRED' ? 'Vui lòng nhập nguồn nhập.' : error === 'TOO_LONG' ? (field === 'referenceText' ? 'Tham chiếu không được vượt quá 200 ký tự.' : 'Nguồn nhập không được vượt quá 200 ký tự.') : ERROR_COPY[error];
+    return <><Icon name="alert-circle" size={18} /><span>{tx(copy)}</span></>;
+  };
   const title = tx(context?.intent === 'update' ? 'Sửa thông tin phiếu nhập' : 'Tạo phiếu nhập');
   const errorCount = Object.keys(errors).length;
   const counter = (value: string) => Array.from(value.normalize('NFC')).length;
+  const fieldHint = (field: 'sourceText' | 'referenceText') => {
+    const count = counter(draft[field]);
+    if (count > 200) return <span className="s12-field-counter s12-field-counter--error" aria-live="polite">{count}/200</span>;
+    if (errors[field]) return undefined;
+    return tx(field === 'sourceText' ? 'Tối đa 200 ký tự, một dòng.' : 'Không bắt buộc. Tối đa 200 ký tự, một dòng.');
+  };
   return <form id={formId} className="s12-receipt-header-form" noValidate aria-label={title} aria-busy={status === 'submitting'} onSubmit={event => {
     event.preventDefault();
     if (locked || !context) return;
@@ -77,11 +93,11 @@ export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange
         <option value="">{tx('Chọn loại phiếu')}</option><option value="PRODUCT">{tx('Sản phẩm')}</option><option value="COMPONENT">{tx('Linh kiện')}</option>
       </BasicSelect>
     </FormField>
-    <FormField htmlFor={`${id}-source`} label={tx('Nguồn nhập')} required error={fieldError('sourceText')} hint={<span className="s12-field-hint-row"><span>{tx('Tối đa 200 ký tự, một dòng.')}</span><span className="s12-field-counter" aria-live="polite">{counter(draft.sourceText)} / 200</span></span>}>
-      <input id={`${id}-source`} type="text" autoComplete="off" required disabled={locked} value={draft.sourceText}
+    <FormField htmlFor={`${id}-source`} label={tx('Nguồn nhập')} required error={fieldError('sourceText')} hint={fieldHint('sourceText')}>
+      <input id={`${id}-source`} type="text" autoComplete="off" placeholder={tx('Nhập nguồn nhập')} required disabled={locked} value={draft.sourceText}
         onChange={event => onDraftChange({ ...draft, sourceText: event.target.value })} />
     </FormField>
-    <FormField htmlFor={`${id}-reference`} label={tx('Tham chiếu')} error={fieldError('referenceText')} hint={<span className="s12-field-hint-row"><span>{tx('Không bắt buộc. Tối đa 200 ký tự, một dòng.')}</span><span className="s12-field-counter" aria-live="polite">{counter(draft.referenceText)} / 200</span></span>}>
+    <FormField htmlFor={`${id}-reference`} label={tx('Tham chiếu')} error={fieldError('referenceText')} hint={fieldHint('referenceText')}>
       <input id={`${id}-reference`} type="text" autoComplete="off" disabled={locked} value={draft.referenceText}
         onChange={event => onDraftChange({ ...draft, referenceText: event.target.value })} />
     </FormField>
@@ -90,7 +106,7 @@ export function ReceiptHeaderForm({ context, draft, status, error, onDraftChange
     {status === 'unknown' && <p role="status">{tx('Chưa xác định kết quả. Cần kiểm tra kết quả trước khi gửi tiếp.')}</p>}
     {errors.form === 'IDENTITY_MISMATCH' && <p role="alert">{tx(ERROR_COPY[errors.form])}</p>}
     {error && <p role="alert">{error}</p>}
-    {context?.intent === 'create' && <p className="s12-required-note"><strong>*</strong> {tx('Thông tin bắt buộc.')}</p>}
+    {context?.intent === 'create' && errorCount === 0 && <p className="s12-required-note"><strong>*</strong> {tx('Thông tin bắt buộc.')}</p>}
     {actionLayout === 'inline' && <div className="s12-action-row">{extraActions}<Button type="button" variant="secondary" disabled={status === 'submitting'} onClick={onCancel}>{tx('Hủy')}</Button>
       <Button type="submit" disabled={locked} loading={status === 'submitting'}>{tx(status === 'submitting' ? 'Đang lưu…' : 'Lưu')}</Button></div>}
   </form>;

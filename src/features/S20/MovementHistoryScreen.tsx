@@ -16,7 +16,6 @@ import { createOperationalWebAdapter } from '../../data/http/operational-preview
 import { OperationalMovementLedger, MOVEMENT_LEDGER_COPY } from './OperationalMovementLedger';
 import type { MovementLedgerReader } from './movement-ledger-binding';
 import { useUiCopy } from '../../i18n/use-ui-copy';
-import { IS_BROWSER_PREVIEW } from '../../preview-mode';
 
 type Operation = ReturnType<ReturnType<typeof createMovementController>['load']>;
 
@@ -25,7 +24,7 @@ export function MovementHistoryScreen({ adapter, operationalAdapter }: { adapter
   const { language } = useShellPreferences();
   const operationalTx = useUiCopy(MOVEMENT_LEDGER_COPY);
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S20' }), [operationalAdapter]);
-  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => IS_BROWSER_PREVIEW ? 'legacy' : operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState<'scenario' | 'legacy'>(() => operational.available ? 'scenario' : 'legacy');
   const cohortControl = operational.available && <FilterSelect label={operationalTx('Nguồn dữ liệu')} aria-label={operationalTx('Nguồn dữ liệu')} className="hn-source-select" value={cohort} onChange={event => setCohort(event.target.value as 'scenario' | 'legacy')}><option value="scenario">{operationalTx('Phiên hiện tại')}</option><option value="legacy">{operationalTx('Dữ liệu đã duyệt')}</option></FilterSelect>;
   const controller = useMemo(() => createMovementController(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
