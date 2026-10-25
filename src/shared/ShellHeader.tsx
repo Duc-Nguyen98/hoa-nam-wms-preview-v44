@@ -62,6 +62,7 @@ export function ShellHeaderActions({ destinations, profile, layoutMode, activeKe
   onLogout?: (origin: HTMLElement | null) => void;
 }) {
   const { language, theme, setLanguage, setTheme, t } = useShellUi();
+  const compactOverview = (activeKey === 'S01' || activeKey === 'S27') && layoutMode === 'drawer';
   const [popup, setPopup] = useState<HeaderPopup | null>(null);
   const [notificationOpen, setNotificationOpen] = useState(false);
   const account = useAccountCenter();
@@ -83,10 +84,22 @@ export function ShellHeaderActions({ destinations, profile, layoutMode, activeKe
   const searchOpenerRef = useRef<HTMLElement | null>(null);
   const profileFocusLast = useRef(false);
   const shortcut = /Mac|iPhone|iPad/.test(navigator.platform) ? '⌘ K' : 'Ctrl K';
+  const focusPopupTrigger = (key: HeaderPopup) => (compactOverview && ['shortcuts', 'language', 'theme'].includes(key) ? triggerRefs.current.profile : triggerRefs.current[key])?.focus({ preventScroll: true });
   const closePopup = (restore = false) => {
-    if (restore && popup) triggerRefs.current[popup]?.focus({ preventScroll: true });
+    if (restore && popup) focusPopupTrigger(popup);
     setPopup(null);
   };
+  const previousPopup = useRef<HeaderPopup | null>(null);
+  useLayoutEffect(() => {
+    const closed = previousPopup.current;
+    previousPopup.current = popup;
+    if (!compactOverview || popup || !closed) return;
+    const frame = requestAnimationFrame(() => {
+      const active = document.activeElement;
+      if (active === document.body || (active instanceof HTMLElement && !active.getClientRects().length)) focusPopupTrigger(closed);
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [popup, compactOverview]);
   useLayoutEffect(() => {
     const focusIsInside = accountRef.current?.querySelector('.hn-header-popup')?.contains(document.activeElement);
     closePopup(Boolean(focusIsInside));
@@ -123,7 +136,7 @@ export function ShellHeaderActions({ destinations, profile, layoutMode, activeKe
     const onPointer = (event: PointerEvent) => {
       if (!accountRef.current?.contains(event.target as Node)) {
         const focusWasInside = accountRef.current?.querySelector('.hn-header-popup')?.contains(document.activeElement);
-        const origin = triggerRefs.current[popup];
+        const origin = compactOverview ? triggerRefs.current.profile : triggerRefs.current[popup];
         setPopup(null);
         if (focusWasInside) requestAnimationFrame(() => {
           if (document.activeElement === document.body) origin?.focus({ preventScroll: true });
@@ -203,7 +216,7 @@ export function ShellHeaderActions({ destinations, profile, layoutMode, activeKe
         if (index >= 0 && next) { event.preventDefault(); focusHeaderControl(next); }
         else if (index >= 0) {
           event.preventDefault();
-          const origin = triggerRefs.current[popup];
+          const origin = compactOverview ? triggerRefs.current.profile : triggerRefs.current[popup];
           const pageControls = Array.from(document.querySelectorAll<HTMLElement>('button, a[href], input, select, textarea, [tabindex]')).filter(control => control.tabIndex >= 0 && control.getClientRects().length > 0 && !control.matches(':disabled') && !control.closest('[inert], [hidden], .hn-header-popup'));
           const following = origin ? pageControls[pageControls.indexOf(origin) + 1] : undefined;
           setPopup(null);
@@ -222,6 +235,11 @@ export function ShellHeaderActions({ destinations, profile, layoutMode, activeKe
         </a>)}</div> : <div className="hn-header-empty-state hn-shortcut-empty"><Icon name="section" /><strong>{t('shortcuts.empty')}</strong><p>{t('shortcuts.emptyHint')}</p><Button variant="secondary" onClick={openShortcutSettings}>{t('shortcuts.add')}</Button></div>}
         </> : popup === 'profile' && profile ? <div className="hn-profile-menu-body">
           <div className="hn-profile-summary"><span className="hn-profile__avatar" aria-hidden="true">{profile.avatarUrl ? <img src={profile.avatarUrl} alt="" /> : profile.initials}</span><div><strong>{profile.displayName}</strong><p>{t('shell.warehouse')}</p></div></div>
+          {compactOverview && <div className="hn-profile-menu-actions">
+            <button type="button" className="hn-header-option hn-profile-menu-action" onClick={() => setPopup('shortcuts')}><span><Icon name="section" />{t('header.quickAccess')}</span></button>
+            <button type="button" className="hn-header-option hn-profile-menu-action" onClick={() => setPopup('language')}><span><Icon name="language" />{t('header.language')}: {selectedLanguage.nativeLabel}</span></button>
+            <button type="button" className="hn-header-option hn-profile-menu-action" onClick={() => setPopup('theme')}><span><Icon name={theme === 'dark' ? 'moon' : 'sun'} />{t('header.theme')}: {t(theme === 'dark' ? 'header.themeDark' : 'header.themeLight')}</span></button>
+          </div>}
           {(accountLinks || onLogout) && <div className="hn-profile-menu-actions">
             {accountLinks && <>
               <a className="hn-header-option hn-profile-menu-action" href={accountLinks.profileHref} onClick={navigateAccount}><span><Icon name="user" />{t('header.myAccount')}</span><Icon name="chevron-right" /></a>

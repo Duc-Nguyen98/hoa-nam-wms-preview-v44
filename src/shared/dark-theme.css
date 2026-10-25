@@ -820,6 +820,25 @@ html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][dat
   border-color: #3b5267;
 }
 
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.ov-metric, .ov-panel, .ov-analysis, .ov-mobile-row) {
+  background: #172638;
+  border-color: #3b5267;
+  color: #dce8f0;
+}
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.ov-screen h1, .ov-screen h2, .ov-detail-section h3, .ov-detail-title__number, .ov-detail-field dd) { color: #f0f6fa; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.ov-page-intro > p, .ov-period > p, .ov-attention__title p, .ov-analysis__heading p, .ov-detail-field dt, .ov-detail-field__suffix, .ov-source-scope, .ov-mobile-row__meta) { color: #b7c7d4; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-attention__icon { color: #f0bd72; background: #493820; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-attention__count { color: #f0bd72; background: #493820; border-color: #806338; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.ov-attention__row, .ov-detail-section h3) { border-color: #3b5267; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-attention__row-icon { color: #f0bd72; background: #493820; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-quick > h2::before { color: #9edceb; background: #1d3d50; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-quick__link { background: #172638; border-color: #3b5267; color: #dce8f0; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-quick__link:hover { background: #263e56; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-copy-button { color: #9edceb; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-copy-button:hover { background: #263e56; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-detail-title__eyebrow { color: #b7c7d4; }
+html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] .ov-detail-copy-feedback { color: #9be2b4; }
+
 html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.s09-metric .s09-ratio, .s09-ratio) {
   color: #f0f6fa;
 }

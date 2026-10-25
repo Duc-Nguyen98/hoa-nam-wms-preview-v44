@@ -1,51 +1,22 @@
 import { formatBusinessDate, formatDeclaredDateText } from '../../i18n/format-business-date';
 import { useShellPreferences, type ShellLanguage } from '../../shared/shell-preferences';
 import type { OverviewModel, OverviewRow } from '../../contracts/overview';
-import type { createOverviewRuntimeController } from '../../controllers/overview-runtime';
-import { useUiCopy } from '../../i18n/use-ui-copy';
-import { CATALOGUE_EN_COPY } from '../../i18n/catalogue-copy';
-import { useReportCopy } from '../../i18n/reports-copy';
+import { useOverviewCopy } from './overview-copy';
 import { GlobalModal } from '../../shared/GlobalModal';
-import { Button } from '../../shared/primitives';
+import { Button, Icon, StatusBadge } from '../../shared';
+import { useEffect, useRef, useState } from 'react';
+import { Notice, type NoticeFeedback } from '../../shared/Notice';
 
-type Runtime = ReturnType<ReturnType<typeof createOverviewRuntimeController>['getState']>;
-export interface AcceptedRowSelection {
-  model: OverviewModel;
-  row: OverviewRow;
-  snapshotId: string;
-  requestId: number;
-  queryKey: string;
-}
-
-export function selectAcceptedOverviewRow(state: Runtime, id: string): AcceptedRowSelection | null {
-  if (!state.model || state.loading || state.debouncing || state.error || state.blocker) return null;
-  const matches = state.model.rows.filter(row => row.id === id);
-  if (matches.length !== 1) return null;
-  return { model: state.model, row: matches[0], snapshotId: state.model.source.snapshotId,
-    requestId: state.requestId, queryKey: JSON.stringify(state.intendedQuery) };
-}
-
-export function resolveAcceptedOverviewRow(selection: AcceptedRowSelection | null, state: Runtime): OverviewRow | null {
-  if (!selection || state.model !== selection.model || state.requestId !== selection.requestId
-    || JSON.stringify(state.intendedQuery) !== selection.queryKey) return null;
-  const current = selectAcceptedOverviewRow(state, selection.row.id);
-  return current?.snapshotId === selection.snapshotId && current.row === selection.row ? current.row : null;
-}
+export { selectAcceptedOverviewRow, resolveAcceptedOverviewRow, type AcceptedRowSelection } from './overview-selection';
 
 export function acceptedOverviewFields(row: OverviewRow) {
-  // Only the eleven approved OverviewRow fields; no fixture lines or document joins.
   return [
-    { key: 'id', label: 'ID', value: row.id },
-    { key: 'number', label: 'Mã phiếu', value: row.number },
-    { key: 'typeLabel', label: 'Loại phiếu', value: row.typeLabel, displayLabel: true },
-    { key: 'partner', label: 'Đối tác', value: row.partner },
-    { key: 'warehouse', label: 'Kho', value: row.warehouse },
-    { key: 'quantity', label: 'Số lượng', value: row.quantity },
-    { key: 'actor', label: 'Người thực hiện', value: row.actor },
-    { key: 'day', label: 'Ngày', value: row.day },
-    { key: 'time', label: 'Giờ', value: row.time },
-    { key: 'timeLabel', label: 'Thời gian', value: row.timeLabel },
-    { key: 'statusLabel', label: 'Trạng thái', value: row.statusLabel, displayLabel: true },
+    { key: 'typeLabel', label: 'Loại phiếu', value: row.typeLabel, icon: row.type === 'inbound' ? 'download' as const : 'upload' as const },
+    { key: 'warehouse', label: 'Kho', value: row.warehouse, icon: 'warehouse' as const },
+    { key: 'partner', label: 'Đối tác', value: row.partner, icon: 'users' as const },
+    { key: 'quantity', label: 'Số lượng', value: row.quantity, suffix: row.quantityUnit, icon: 'box' as const },
+    { key: 'actor', label: 'Người thực hiện', value: row.actor, icon: 'user' as const },
+    { key: 'timeLabel', label: 'Thời gian', value: row.timeLabel, icon: 'calendar' as const },
   ];
 }
 
@@ -53,7 +24,7 @@ export function acceptedOverviewValue(value: string | number | null | undefined)
   return value == null || (typeof value === 'string' && !value.trim()) ? '—' : value;
 }
 
-/** Format only declared date fields; the accepted source-field values remain untouched. */
+/** Format only declared date fields; source identifiers remain untouched. */
 export function acceptedOverviewDateDisplay(key: string, value: string | number, language: ShellLanguage): string | number {
   if (typeof value !== 'string') return value;
   if (key === 'day') return formatBusinessDate(value, language);
@@ -68,20 +39,77 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
   row: OverviewRow | null; source: OverviewModel['source'] | null;
   onClose: () => void; resolveReturnFocus: () => HTMLElement | null;
 }) {
-  const tx = useUiCopy(CATALOGUE_EN_COPY);
-  const reportTx = useReportCopy();
+  const tx = useOverviewCopy();
   const { language } = useShellPreferences();
-  return <GlobalModal open={!!row} title={row ? tx('Chi tiết {code}', { code: row.number }) : reportTx('Chi tiết')}
-    onClose={onClose} resolveReturnFocus={resolveReturnFocus}
-    footer={<Button variant="secondary" onClick={onClose}>{tx('Đóng')}</Button>}>
-    {row && <dl className="ov-detail-fields" data-overview-detail-id={row.id} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: 16, margin: 0 }}>
-      {acceptedOverviewFields(row).map(field => <div key={field.key} data-field={field.key} style={{ minWidth: 0 }}>
-        <dt>{reportTx(tx(field.label))}</dt>
-        <dd style={{ margin: '4px 0 0', overflowWrap: 'anywhere', fontWeight: 600 }}>{acceptedOverviewValue(field.displayLabel ? tx(String(field.value)) : acceptedOverviewDateDisplay(field.key, field.value, language))}</dd>
-      </div>)}
-    </dl>}
-    {row && source && <p className="ov-source-scope ov-source-scope--detail" data-overview-detail-source={source.snapshotId}>
-      {tx(source.provenance === 'QA_SYNTHETIC' ? '60 dòng tổng hợp riêng cho QA; chỉ số tổng quan giữ nguồn tham chiếu.' : 'Tìm kiếm và bộ lọc áp dụng trên 16 phiếu nguồn tháng 09/2026.')}
-    </p>}
+  const [copyFeedback, setCopyFeedback] = useState<NoticeFeedback | null>(null);
+  const sequence = useRef(0);
+  const currentRow = useRef(row);
+  currentRow.current = row;
+  useEffect(() => { setCopyFeedback(null); sequence.current += 1; }, [row]);
+  useEffect(() => () => { currentRow.current = null; sequence.current += 1; }, []);
+  async function copy(value: string, origin: HTMLElement) {
+    const selected = row, request = ++sequence.current;
+    let success = false;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable');
+      await navigator.clipboard.writeText(value);
+      success = true;
+    } catch { /* Common feedback reports rejection without exposing browser errors. */ }
+    if (currentRow.current !== selected || request !== sequence.current) return;
+    setCopyFeedback({ message: success ? 'Đã sao chép.' : 'Không thể sao chép. Vui lòng thử lại.', tone: success ? 'success' : 'error', sequence: request, origin, container: document.body });
+  }
+  if (!row) {
+    return <GlobalModal open={false} title={tx('Chi tiết phiếu')} onClose={onClose} resolveReturnFocus={resolveReturnFocus} />;
+  }
+  const isInbound = row.type === 'inbound';
+  const title = isInbound ? 'Chi tiết phiếu nhập' : 'Chi tiết phiếu xuất';
+  // S12/S15 are list routes for different cohorts, not an exact-ID document
+  // consumer. Do not infer access or navigate to a different document.
+  const fields = acceptedOverviewFields(row);
+  const systemId = acceptedOverviewValue(row.id);
+  // Public reference IDs are display fields of the approved static projection.
+  // Any future protected provider must supply its own field permission contract.
+  const canShowSystemId = source?.provenance === 'SOURCE_FIXTURE' || source?.provenance === 'QA_SYNTHETIC';
+  return <GlobalModal
+    open
+    size="large"
+    className="ov-detail-modal"
+    title={<>
+      <span className="ov-detail-title__eyebrow"><Icon name={isInbound ? 'download' : 'upload'} size={18} />{tx(title)}</span>
+      <span className="ov-detail-title__number">{row.number}</span>
+      <button type="button" className="ov-copy-button" aria-label={tx('Sao chép mã phiếu')} disabled={!row.number} onClick={event => void copy(row.number, event.currentTarget)}><Icon name="copy" size={18} /></button>
+      <StatusBadge tone={row.status === 'posted' ? 'success' : 'warning'}>{tx(row.statusLabel)}</StatusBadge>
+    </>}
+    onClose={onClose}
+    resolveReturnFocus={resolveReturnFocus}
+    footer={<>
+      <Button variant="secondary" onClick={onClose}>{tx('Đóng')}</Button>
+      <Button variant="primary" disabled aria-describedby="ov-detail-navigation-reason" trailingIcon={<Icon name="arrow-right" size={17} />}>
+        {tx(isInbound ? 'Mở phiếu nhập kho' : 'Mở phiếu xuất kho')}
+      </Button>
+    </>}
+  >
+    <div className="ov-detail-body" data-overview-detail-id={row.id}>
+      <section className="ov-detail-section" aria-labelledby="ov-detail-document-title">
+        <h3 id="ov-detail-document-title">{tx('Thông tin chứng từ')}</h3>
+        <dl className="ov-detail-fields">
+          {fields.map(field => <div key={field.key} className="ov-detail-field" data-field={field.key}>
+            <dt><Icon name={field.icon} size={20} /><span>{tx(field.label)}</span></dt>
+            <dd>{field.key === 'typeLabel' ? tx(acceptedOverviewValue(field.value)) : acceptedOverviewDateDisplay(field.key, acceptedOverviewValue(field.value), language)}{field.suffix ? <span className="ov-detail-field__suffix"> {tx(field.suffix)}</span> : null}</dd>
+          </div>)}
+        </dl>
+      </section>
+      <section className="ov-detail-section ov-detail-system" aria-labelledby="ov-detail-system-title">
+        <h3 id="ov-detail-system-title">{tx('Thông tin hệ thống')}</h3>
+        <dl className="ov-detail-fields ov-detail-fields--system">
+          <div className="ov-detail-field" data-field="id">
+            <dt><Icon name="barcode" size={20} /><span>{tx('ID')}</span></dt>
+            <dd>{canShowSystemId ? <><span className="ov-detail-id">{systemId}</span>{row.id && <button type="button" className="ov-copy-button" aria-label={tx('Sao chép ID')} onClick={event => void copy(row.id, event.currentTarget)}><Icon name="copy" size={18} /></button>}</> : <span>{tx('Chưa xác minh quyền xem ID.')}</span>}</dd>
+          </div>
+        </dl>
+      </section>
+      <p className="ov-unavailable-reason" id="ov-detail-navigation-reason" data-overview-detail-source={source?.snapshotId}>{tx('Chưa có liên kết được xác minh tới chứng từ nguồn.')}</p>
+      {copyFeedback && <Notice feedback={{ ...copyFeedback, message: tx(copyFeedback.message) }} onClose={() => setCopyFeedback(null)} />}
+    </div>
   </GlobalModal>;
 }

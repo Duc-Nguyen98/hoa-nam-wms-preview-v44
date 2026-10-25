@@ -67,6 +67,9 @@ export function createOverviewFixtureAdapter(policy: OverviewPolicy = {}): Overv
         return {
           id: row.id, number: row.number, type, typeLabel: typeLabels[type], partner: row.partner,
           warehouse: row.warehouse, quantity: row.lines.reduce((sum, line) => sum + line.quantity, 0),
+          quantityUnit: row.lines.length > 0 && row.lines.every(line => typeof line.unit === 'string' && line.unit.trim() && line.unit === row.lines[0].unit)
+            ? row.lines[0]?.unit
+            : undefined,
           actor: row.actor, day: row.day, time: row.time,
           timeLabel: `${row.day.split('-').reverse().join('/')} · ${row.time}`,
           status, statusLabel: statusLabels[status],
@@ -78,6 +81,8 @@ export function createOverviewFixtureAdapter(policy: OverviewPolicy = {}): Overv
         kind: 'ready',
         model: {
           query, rows: table.rows, summary, chart,
+          attention: sourceRows.filter(row => row.status === 'waiting').sort((a, b) => `${b.day} ${b.time}`.localeCompare(`${a.day} ${a.time}`) || a.id.localeCompare(b.id)),
+          warehouseLabel: [...new Set(fixture.stockDocuments.map(row => row.warehouse))].length === 1 ? fixture.stockDocuments[0].warehouse : undefined,
           pagination: { ...table.pagination, pageSizeOptions: [...pageSizeOptions] },
           emptyReason: inPeriod.length === 0 ? 'no-documents' : table.pagination.total === 0 ? 'no-matches' : null,
           source: {

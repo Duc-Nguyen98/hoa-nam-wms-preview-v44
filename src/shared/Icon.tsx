@@ -1,10 +1,11 @@
 import type { ReactNode, SVGProps } from 'react';
 
-export type IconName = 'save' | 'sun' | 'moon' | 'language' | 'check' | 'eye' | 'eye-off' | 'image' | 'more' | 'barcode' | 'building' | 'menu' | 'close' | 'chevron-left' | 'chevron-right' | 'chevron-down' | 'section' | 'warehouse' | 'brand' | 'home' | 'box' | 'download' | 'upload' | 'tray' | 'shield' | 'chart' | 'history' | 'search' | 'tag' | 'refresh' | 'calendar' | 'help' | 'documents' | 'catalog' | 'users' | 'settings' | 'audit' | 'bell' | 'plus' | 'edit' | 'info' | 'pin' | 'unpin' | 'lock' | 'arrow-right' | 'logout' | 'user' | 'filter' | 'circle-check' | 'alert-triangle' | 'alert-circle' | 'arrow-up' | 'arrow-down' | 'arrows-sort' | 'arrows-horizontal';
+export type IconName = 'copy' | 'save' | 'sun' | 'moon' | 'language' | 'check' | 'eye' | 'eye-off' | 'image' | 'more' | 'barcode' | 'building' | 'menu' | 'close' | 'chevron-left' | 'chevron-right' | 'chevron-down' | 'section' | 'warehouse' | 'brand' | 'home' | 'box' | 'download' | 'upload' | 'tray' | 'shield' | 'chart' | 'history' | 'search' | 'tag' | 'refresh' | 'calendar' | 'help' | 'documents' | 'catalog' | 'users' | 'settings' | 'audit' | 'bell' | 'plus' | 'edit' | 'info' | 'pin' | 'unpin' | 'lock' | 'arrow-right' | 'logout' | 'user' | 'filter' | 'circle-check' | 'alert-triangle' | 'alert-circle' | 'arrow-up' | 'arrow-down' | 'arrows-sort' | 'arrows-horizontal';
 
 /* Original SVG paths authored locally. Semantic functions observed in S01/S02 references; no approved glyph/font asset claim. */
 export function Icon({ name, size = 20, ...props }: SVGProps<SVGSVGElement> & { name: IconName; size?: number }) {
   const paths: Record<IconName, ReactNode> = {
+  'copy': <><rect x="8" y="3" width="12" height="15" rx="2" /><path d="M16 21H6a2 2 0 0 1-2-2V9" /></>,
   'check': <>
     <path d="M5 12l5 5l10 -10" />
   </>,

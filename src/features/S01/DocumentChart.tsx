@@ -8,13 +8,12 @@ import { useUiCopy } from '../../i18n/use-ui-copy';
 import { CATALOGUE_EN_COPY } from '../../i18n/catalogue-copy';
 
 const BASELINE = 150;
-const STEP = 30;
 const LEFT = 30;
 const RIGHT = 12;
 
 /** Rounded top corners only; bars still meet the shared zero baseline exactly. */
-function barPath(x: number, width: number, value: number) {
-  const height = value * STEP;
+function barPath(x: number, width: number, value: number, step: number) {
+  const height = value * step;
   const top = BASELINE - height;
   const radius = Math.min(5, width / 2, height);
   return `M ${x} ${BASELINE} V ${top + radius} Q ${x} ${top} ${x + radius} ${top} H ${x + width - radius} Q ${x + width} ${top} ${x + width} ${top + radius} V ${BASELINE} Z`;
@@ -36,6 +35,8 @@ export function DocumentChart({ points, period }: { points: OverviewModel['chart
   const tooltipId = useId();
   const activeIndex = dismissed ? null : pinned ?? hovered ?? focused;
   const activePoint = activeIndex === null ? null : points[activeIndex];
+  const tickSize = Math.max(1, Math.ceil(Math.max(0, ...points.flatMap(point => [point.inbound, point.outbound])) / 4));
+  const step = 120 / (4 * tickSize);
 
   const inspectWithPointer = (index: number) => {
     // Inspecting another bucket replaces the previous pointer pin.
@@ -92,19 +93,19 @@ export function DocumentChart({ points, period }: { points: OverviewModel['chart
     <div className="ov-document-chart__canvas" ref={chartRef} onPointerLeave={() => setHovered(null)}>
       <svg viewBox={`0 0 ${width} 190`} role="img" aria-labelledby={`${titleId} ${descriptionId}`} className="ov-chart__plot ov-document-chart__plot">
         <desc id={descriptionId}>{points.map((point) => tx('{date}: {inbound} phiếu nhập, {outbound} phiếu xuất', { date: bucketDate(point.label), inbound: point.inbound, outbound: point.outbound })).join('; ')}{tx('. Số phiếu ở tất cả trạng thái.')}</desc>
-        {[0, 1, 2, 3, 4].map((value) => <g key={value} className="ov-document-chart__axis">
-          <line x1={LEFT} x2={width - RIGHT} y1={BASELINE - value * STEP} y2={BASELINE - value * STEP} className={value === 0 ? 'ov-document-chart__baseline' : undefined} />
-          <text x="17" y={BASELINE - value * STEP + 4} textAnchor="end">{value}</text>
+        {[0, 1, 2, 3, 4].map(index => index * tickSize).map((value) => <g key={value} className="ov-document-chart__axis">
+          <line x1={LEFT} x2={width - RIGHT} y1={BASELINE - value * step} y2={BASELINE - value * step} className={value === 0 ? 'ov-document-chart__baseline' : undefined} />
+          <text x="25" y={BASELINE - value * step + 4} textAnchor="end">{value}</text>
         </g>)}
         {points.map((point, index) => {
           const center = LEFT + (index + 0.5) * groupWidth;
           const inboundX = center - barWidth - barGap / 2;
           const outboundX = center + barGap / 2;
           return <g key={point.label} className="ov-document-chart__bucket" data-active={index === activeIndex}>
-            {point.inbound > 0 && <path d={barPath(inboundX, barWidth, point.inbound)} className="ov-document-chart__bar--inbound" />}
-            {point.outbound > 0 && <path d={barPath(outboundX, barWidth, point.outbound)} className="ov-document-chart__bar--outbound" />}
-            <text className="ov-document-chart__value" x={inboundX + barWidth / 2} y={BASELINE - point.inbound * STEP - 10} textAnchor="middle">{point.inbound}</text>
-            <text className="ov-document-chart__value" x={outboundX + barWidth / 2} y={BASELINE - point.outbound * STEP - 10} textAnchor="middle">{point.outbound}</text>
+            {point.inbound > 0 && <path d={barPath(inboundX, barWidth, point.inbound, step)} className="ov-document-chart__bar--inbound" />}
+            {point.outbound > 0 && <path d={barPath(outboundX, barWidth, point.outbound, step)} className="ov-document-chart__bar--outbound" />}
+            <text className="ov-document-chart__value" x={inboundX + barWidth / 2} y={BASELINE - point.inbound * step - 10} textAnchor="middle">{point.inbound}</text>
+            <text className="ov-document-chart__value" x={outboundX + barWidth / 2} y={BASELINE - point.outbound * step - 10} textAnchor="middle">{point.outbound}</text>
             <text className="ov-document-chart__date" x={center} y="178" textAnchor="middle">{point.label}</text>
           </g>;
         })}

@@ -37,6 +37,8 @@ export interface OverviewRow {
   day: string;
   time: string;
   timeLabel: string;
+  /** Unit is only present when the source lines declare one consistently. */
+  quantityUnit?: string;
   status: 'waiting' | 'posted';
   statusLabel: string;
 }
@@ -44,6 +46,9 @@ export interface OverviewRow {
 export interface OverviewModel {
   query: OverviewQuery;
   rows: OverviewRow[];
+  /** Same accepted warehouse/period snapshot, independent of activity filters and paging. */
+  attention?: OverviewRow[];
+  warehouseLabel?: string;
   summary: {
     inbound: number; outbound: number; stockTotal: null; stockDisplay: '—';
     stockHelp: string; openWarranties: number; posted: number; waiting: number;

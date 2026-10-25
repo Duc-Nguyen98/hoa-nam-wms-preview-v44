@@ -1,6 +1,6 @@
 import { useShellPreferences } from '../../shared/shell-preferences';
 import { formatAuditTime } from './audit-time';
-import { useUiCopy } from '../../i18n/use-ui-copy';
+import { useAuditCopy as useUiCopy } from './audit-ui-copy';
 import { ADMIN_EN_COPY } from '../../i18n/admin-copy';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { createSystemAuditController } from '../../controllers/system-audit-controller';
@@ -26,7 +26,7 @@ export function SystemAuditScreen({ adapter }: { adapter?: SystemAuditAdapter } 
   const controls = operational.available || pv.available ? <div className="s27-cohorts">{operational.available && <Button variant="secondary" aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{tx('Nhật ký phiên hiện tại')}</Button>}<Button variant="secondary" aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{tx('Nhật ký tham chiếu')}</Button>{pv.available && <Button variant="secondary" aria-pressed={cohort === 'pv'} onClick={() => setCohort('pv')}>{tx('Nhật ký hồ sơ PV')}</Button>}</div> : null;
   if (cohort === 'legacy') return <LegacySystemAuditScreen adapter={adapter} cohortControls={controls} />;
   return <GlobalShell title={tx('Nhật ký hệ thống')} variant="wms" sidebarTone="navy" contentWidth="wide" activeKey="S27" navigation={S00_SHELL_NAVIGATION}>
-    <div className="hn-catalogue-screen s27-screen" data-screen="S27" data-visual-variant="premium" data-presentation="default"><CataloguePageHeader appearance="worklist" title={tx('Nhật ký hệ thống')} parentLabel={tx('Hệ thống')} breadcrumb={tx('Nhật ký hệ thống')} description={tx('Theo dõi các sự kiện đã ghi nhận trong phạm vi snapshot được cấp.')} />{controls}{cohort === 'pv' ? <PvAudit adapter={pv} /> : <OperationalAudit adapter={operational} />}</div>
+    <div className="hn-catalogue-screen s27-screen" data-screen="S27" data-visual-variant="premium" data-presentation="default">{cohort === 'pv' ? <><CataloguePageHeader appearance="worklist" title={tx('Nhật ký hệ thống')} parentLabel={tx('Hệ thống')} breadcrumb={tx('Nhật ký hệ thống')} description={tx('Theo dõi các sự kiện đã ghi nhận trong phạm vi snapshot được cấp.')} />{controls}<PvAudit adapter={pv} /></> : <OperationalAudit adapter={operational} cohortControls={controls} />}</div>
   </GlobalShell>;
 }
 

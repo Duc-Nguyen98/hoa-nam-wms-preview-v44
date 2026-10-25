@@ -42,19 +42,29 @@ export function queryOperationalAudit(model: OperationalAuditModel, query: Audit
 export function createOperationalAuditReader(adapter: AuditReadAdapter, clock: () => string = () => new Date().toISOString()) {
   let state: { model: OperationalAuditModel | null; loading: boolean; error: string; period: AuditPeriod | null } = { model: null, loading: false, period: null, error: '' };
   let active = true, sequence = 0, period: AuditPeriod | null = null;
+  let acceptedToken: OperationalSnapshot['token'] | null = null;
   const listeners = new Set<() => void>(), current = (token: number) => active && sequence === token;
   const publish = (patch: Partial<typeof state>) => { if (active) { state = { ...state, ...patch }; listeners.forEach(fn => fn()); } };
   const validatePeriod = (value: AuditPeriod) => {
     if (!validateBusinessDateRange(value, { now: new Date(clock()) }).valid) fail('INVALID_PERIOD');
   };
   async function load(next?: AuditPeriod) {
-    if (!active) return; const token = ++sequence; publish({ model: null, loading: true, error: '' });
+    if (!active) return;
+    const token = ++sequence;
+    // Keep the last accepted projection visible while a refresh is in flight.
+    // The UI can therefore keep the selected event pinned and show a loading
+    // state without replacing it with a different row or closing its dialog.
+    publish({ loading: true, error: '' });
     try {
       if (!adapter.available) fail('COMMAND_UNAVAILABLE'); const today = vietnamDate(clock()), requested = next ?? period ?? { from: today, to: today };
       period = { ...requested }; publish({ period: { ...requested } }); validatePeriod(requested);
       const snapshot = await adapter.read(); if (!current(token)) return;
       validatePeriod(requested);
-      const model = projectOperationalAudit(snapshot, { ...requested, asOf: clock() }); publish({ model });
+      const previous = acceptedToken, nextToken = snapshot.token;
+      if (previous && previous.epoch === nextToken.epoch && previous.scenarioId === nextToken.scenarioId
+        && previous.generation === nextToken.generation && nextToken.revision < previous.revision) fail('STALE_AUDIT_SNAPSHOT');
+      const model = projectOperationalAudit(snapshot, { ...requested, asOf: clock() });
+      acceptedToken = { ...nextToken }; publish({ model });
     } catch (error) { if (current(token)) publish({ model: null, error: (error as { code?: string }).code ?? 'READ_FAILED' }); }
     finally { if (current(token)) publish({ loading: false }); }
   }
