@@ -496,8 +496,5 @@ html[data-hn-theme='dark'] .hn-shell .ov-screen .ov-document-link { color: #79bd
 html[data-hn-theme='dark'] .hn-global-modal.ov-detail-modal .ov-detail-title__number .ov-copy-button { color: #79bdff; }
 @media(max-width:560px){
  .hn-shell .ov-screen .ov-filters > :is(.ov-search,.ov-select,.ov-reset) { grid-column:1/-1; grid-row:auto; }
- .hn-shell .ov-screen .ov-period__controls { grid-template-columns:minmax(0,1fr) 36px; }
- .hn-shell .ov-screen .ov-period__controls > .hn-field { grid-column:1/-1; }
- .hn-shell .ov-screen .ov-period__controls .ov-refresh { grid-row:2; grid-column:2; }
  .hn-shell .ov-screen .ov-metric__foot { grid-template-rows:auto auto; }
 }
