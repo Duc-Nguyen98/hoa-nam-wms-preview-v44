@@ -151,6 +151,35 @@
 .s12-operational-results { margin-bottom: 18px; }
 .s12-empty-state { margin-top: 24px; }
 
+@media (min-width: 1101px) {
+  /* Match the wide reference canvas while keeping the shared shell unchanged
+     for the other screens. The small inset on the two S12 cards leaves the
+     page heading aligned to the shell's content edge. */
+  .s12-screen { --hn-table-header-height: 50px; --hn-table-row-height: 70px; margin-inline: 22px 6px; }
+  .s12-screen .s12-list[data-operational-receipts] { margin-inline-start: 3px; margin-top: 4px; padding: 19px 18px 0; }
+  .s12-screen .s12-operational-heading { margin-bottom: 0; }
+  .s12-screen .s12-operational-filters { margin-block: 10px 17px; gap: 14px; }
+  .s12-screen .s12-operational-results { margin-block: 18px; }
+  .s12-screen .s12-empty-state { margin-inline-start: 3px; margin-top: -2px; }
+  .hn-shell .s12-screen .s12-operational-table table { table-layout: fixed; }
+  .hn-shell .s12-screen .s12-operational-table :is(th, td) { padding-inline: 22px; }
+  .hn-shell .s12-screen .s12-operational-table td { font-size: 15px; }
+  .hn-shell .s12-screen .s12-operational-table th[data-column='receipt'] { width: 13.7%; }
+  .hn-shell .s12-screen .s12-operational-table th[data-column='source'] { width: 33.7%; }
+  .hn-shell .s12-screen .s12-operational-table th[data-column='status'] { width: 19.8%; }
+  .hn-shell .s12-screen .s12-operational-table th[data-column='codes'] { width: 19.1%; }
+  .hn-shell .s12-screen .s12-operational-table th[data-column='action'] { width: 13.7%; }
+  .hn-shell .s12-screen .s12-operational-table .s12-code { color: #075dcc; font-size: 16px; font-weight: 600; }
+  .hn-shell .s12-screen .s12-operational-table .s12-stack > span:first-child { font-weight: 600; }
+  .hn-shell .s12-screen .s12-operational-table .s12-meta { font-size: 14px; line-height: 22px; }
+  .hn-shell .s12-screen[data-screen='S12'] .s12-operational-table .hn-table[data-ui-contract='s05'] td .hn-button.s12-view-detail { padding: 8px 0; border: 0; background: transparent; color: #075dcc; font-size: 14px; }
+  .hn-shell .s12-screen .s12-operational-results { font-size: 14px; line-height: 22px; }
+  .s12-screen .s12-empty-state h3 { font-size: 22px; line-height: 30px; }
+  .s12-screen .s12-empty-state__body { padding-top: 4px; gap: 16px; }
+  .s12-screen .s12-empty-state__body > svg { width: 68px; height: 68px; }
+  .s12-screen .s12-empty-state__body p { font-size: 16px; line-height: 24px; }
+}
+
 @media (max-width: 1100px) {
   .s12-operational-heading > div:first-child { display: none; }
   .s12-operational-heading { flex-direction: column; }
