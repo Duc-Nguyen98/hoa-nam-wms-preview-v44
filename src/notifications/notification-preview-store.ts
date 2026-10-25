@@ -1,6 +1,6 @@
 import { useLayoutEffect, useSyncExternalStore } from 'react';
 import { readBrowserPreviewRuntime } from '../preview-mock/browser-runtime';
-import { createNotificationStore } from './notification-state';
+import { createNotificationStore, dispatchNotification, type NotificationAction } from './notification-state';
 export type { NotificationStoreState } from './notification-state';
 
 let channel: BroadcastChannel | undefined;
@@ -16,12 +16,7 @@ function listen() {
     channel.onmessage=event=>{if(event.data==='committed')void store.refresh();};
   }
 }
-export async function dispatchPreviewNotification(action:{type:'back'|'read-all'|'retry'|'more'}|{type:'open';id:string}) {
-  if(action.type==='back'){store.back();return true;}
-  if(action.type==='open')return store.mark(action.id);
-  if(action.type==='read-all')return store.mark();
-  return store.refresh(action.type==='more');
-}
+export const dispatchPreviewNotification = (action: NotificationAction) => dispatchNotification(store, action);
 export function usePreviewNotifications(actorBinding?:string|null) {
   useLayoutEffect(()=>{
     if(actorBinding===undefined)return;

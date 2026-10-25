@@ -3,6 +3,7 @@ import test from 'node:test';
 import { createMemoryPersistence } from '../src/preview-mock/storage';
 import { createNotificationRepository } from '../src/preview-mock/notifications';
 import { notificationBadge } from '../src/notifications/notification-badge';
+import { createBusinessNotificationSeed } from './fixtures/business-notification-seed';
 
 function repository() {
   return createNotificationRepository({
@@ -10,6 +11,7 @@ function repository() {
     namespace: `notification-test-${Math.random()}`,
     actor: async () => ({ key: 'preview:ducquang', confirmed: true, expiresAt: Date.now() + 60_000 }),
     captureFence: () => () => undefined,
+    seed: () => createBusinessNotificationSeed(),
   });
 }
 

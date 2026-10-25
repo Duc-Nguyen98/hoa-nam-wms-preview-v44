@@ -1,11 +1,12 @@
 import { createNotificationHarnessState, type NotificationRecord } from '../notifications/notification-model';
-import { createBusinessNotificationSeed } from '../notifications/notification-feed';
 import type { PreviewPersistence } from './storage';
 import { PreviewHttpError } from './errors';
 
-export const NOTIFICATION_STORAGE_NAMESPACE = 'hoa-nam-wms-preview-notifications-v2';
+// Preserve v2 on disk; it contains the obsolete generated five-row business feed.
+// v3 starts empty unless an actual provider or explicit QA seed supplies records.
+export const NOTIFICATION_STORAGE_NAMESPACE = 'hoa-nam-wms-preview-notifications-v3';
 export type DemoNotification = NotificationRecord;
-export interface NotificationReceipt { commandId: string; action: 'read-one' | 'read-all'; notificationId: string | null; revision: number; committedAt: string; changed: number }
+export interface NotificationReceipt { commandId: string; action: 'read-one' | 'unread-one' | 'read-all'; notificationId: string | null; revision: number; committedAt: string; changed: number }
 interface ActorNotifications { revision: number; items: DemoNotification[]; receipts: NotificationReceipt[] }
 interface RepositoryState { version: 1; actors: Record<string, ActorNotifications> }
 export interface NotificationPage { actorKey: string; revision: number; items: readonly DemoNotification[]; total: number; totalUnread: number; limit: number; receipt?: NotificationReceipt }
@@ -29,6 +30,15 @@ function serialized<T>(namespace: string, task: () => Promise<T>) {
   return next;
 }
 const record = (value: unknown): value is Record<string,unknown> => Boolean(value && typeof value === 'object' && !Array.isArray(value));
+const localized = (value:unknown) => record(value) && ['vi','en','zh-CN'].every(key=>typeof value[key]==='string');
+function validPresentation(value:unknown):boolean {
+  if(value===undefined)return true;
+  if(!record(value))return false;
+  return ['title','body','summary','categoryLabel','cardTitle'].every(key=>value[key]===undefined||localized(value[key]))
+    && (value.targetVerified===undefined||typeof value.targetVerified==='boolean')
+    && (value.fields===undefined||Array.isArray(value.fields)&&value.fields.every(field=>record(field)&&localized(field.label)&&localized(field.value)
+      && (field.tone===undefined||['warning','success','info'].includes(String(field.tone)))));
+}
 function validItem(value: unknown): value is DemoNotification {
   if (!record(value) || typeof value.id !== 'string' || !value.id || typeof value.createdAt !== 'string' || !Number.isFinite(Date.parse(value.createdAt))
     || !(value.readAt === null || typeof value.readAt === 'string' && Number.isFinite(Date.parse(value.readAt)))) return false;
@@ -36,7 +46,7 @@ function validItem(value: unknown): value is DemoNotification {
     return ['itemA','itemB','itemC'].includes(String(value.titleKey)) && ['bodyA','bodyB','bodyC'].includes(String(value.bodyKey)) && value.target === null;
   }
   if (value.kind === 'business') {
-    return ['outbound','inventory','putaway','warranty','system'].includes(String(value.category))
+    return validPresentation(value.presentation) && ['outbound','inventory','putaway','warranty','system','inbound','printing'].includes(String(value.category))
       && ['info','warning','success'].includes(String(value.severity))
       && ['outboundReadyTitle','inventoryVarianceTitle','putawayCompletedTitle','warrantyReviewTitle','warehouseConfigTitle'].includes(String(value.titleKey))
       && ['outboundReadyBody','inventoryVarianceBody','putawayCompletedBody','warrantyReviewBody','warehouseConfigBody'].includes(String(value.bodyKey))
@@ -49,13 +59,13 @@ function validState(value: unknown): value is RepositoryState {
   return record(value) && value.version === 1 && record(value.actors) && Object.values(value.actors).every(actor => record(actor)
     && Number.isSafeInteger(actor.revision) && Number(actor.revision) >= 0 && Array.isArray(actor.items) && actor.items.every(validItem)
     && new Set(actor.items.map(item => item.id)).size === actor.items.length && Array.isArray(actor.receipts)
-    && actor.receipts.every(receipt => record(receipt) && typeof receipt.commandId === 'string' && ['read-one','read-all'].includes(String(receipt.action))
+    && actor.receipts.every(receipt => record(receipt) && typeof receipt.commandId === 'string' && ['read-one','unread-one','read-all'].includes(String(receipt.action))
       && Number.isSafeInteger(receipt.revision) && Number.isSafeInteger(receipt.changed) && typeof receipt.committedAt === 'string'));
 }
 export function createNotificationRepository(options: NotificationRepositoryOptions) {
   const now = options.now ?? Date.now;
-  const seed = options.seed ?? (() => createBusinessNotificationSeed(now()).map(item => ({ ...item })));
-  async function execute(limit: number, command?: {commandId:string; action:'read-one'|'read-all'; notificationId?:string}): Promise<NotificationPage> {
+  const seed = options.seed ?? (() => []);
+  async function execute(limit: number, command?: {commandId:string; action:'read-one'|'unread-one'|'read-all'; notificationId?:string}): Promise<NotificationPage> {
     if (!Number.isSafeInteger(limit) || limit < 1 || limit > 10000) throw new PreviewHttpError(400,'INVALID_NOTIFICATION_PAGE','Trang thông báo không hợp lệ.');
     const fence = options.captureFence();
     return serialized(options.namespace, async () => {
@@ -76,10 +86,15 @@ export function createNotificationRepository(options: NotificationRepositoryOpti
         receipt = state.receipts.find(item => item.commandId === command.commandId);
         if (receipt && (receipt.action !== command.action || receipt.notificationId !== (command.notificationId ?? null))) throw new PreviewHttpError(409,'NOTIFICATION_COMMAND_CONFLICT','Lệnh thông báo bị trùng. Vui lòng thử lại.');
         if (!receipt) {
-          if (command.action === 'read-one' && !state.items.some(item => item.id === command.notificationId)) throw new PreviewHttpError(404,'NOTIFICATION_NOT_FOUND','Không tìm thấy thông báo.');
+          if (command.action !== 'read-all' && !state.items.some(item => item.id === command.notificationId)) throw new PreviewHttpError(404,'NOTIFICATION_NOT_FOUND','Không tìm thấy thông báo.');
           const committedAt = new Date(now()).toISOString();
           let affected = 0;
-          state.items = state.items.map(item => item.readAt === null && (command.action === 'read-all' || item.id === command.notificationId) ? (affected++, {...item,readAt:committedAt}) : item);
+          state.items = state.items.map(item => {
+            const nextReadAt = command.action === 'unread-one' ? null : committedAt;
+            const needsChange = command.action === 'unread-one' ? item.readAt !== null : item.readAt === null;
+            return needsChange && (command.action === 'read-all' || item.id === command.notificationId)
+              ? (affected++, {...item,readAt:nextReadAt}) : item;
+          });
           state.revision++;
           receipt = {commandId:command.commandId,action:command.action,notificationId:command.notificationId ?? null,revision:state.revision,committedAt,changed:affected};
           state.receipts.push(receipt); changed = true;
@@ -102,6 +117,7 @@ export function createNotificationRepository(options: NotificationRepositoryOpti
   return {
     read: (limit = 50) => execute(limit),
     markRead: (id:string,commandId:string,limit=50) => execute(limit,{action:'read-one',notificationId:id,commandId}),
+    markUnread: (id:string,commandId:string,limit=50) => execute(limit,{action:'unread-one',notificationId:id,commandId}),
     markAllRead: (commandId:string,limit=50) => execute(limit,{action:'read-all',commandId}),
   };
 }

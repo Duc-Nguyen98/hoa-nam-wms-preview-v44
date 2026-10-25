@@ -5,7 +5,7 @@ import { Button } from '../shared/primitives';
 import { createIndexedDbPersistence } from '../preview-mock/storage';
 import { createNotificationRepository } from '../preview-mock/notifications';
 import { createNotificationHarnessState } from './notification-model';
-import { createNotificationStore } from './notification-state';
+import { createNotificationStore, dispatchNotification, type NotificationAction } from './notification-state';
 import { NotificationCenterView } from './PreviewNotificationCenter';
 import { NotificationBell } from './NotificationBell';
 const COUNTS=[0,1,9,10,98,99,100,101,999,10000];
@@ -35,12 +35,7 @@ export function NotificationRepositoryQaScreen() {
     if(channel)channel.onmessage=()=>void setup.store.refresh();
     return()=>{channel?.close();channelRef.current=undefined;releases.current.splice(0).forEach(resolve=>resolve());};
   },[setup,count]);
-  const dispatch=async(action:Parameters<typeof NotificationCenterView>[0]['dispatch'] extends (action:infer A)=>unknown?A:never)=>{
-    if(action.type==='back'){setup.store.back();return true;}
-    if(action.type==='open')return setup.store.mark(action.id);
-    if(action.type==='read-all')return setup.store.mark();
-    return setup.store.refresh(action.type==='more');
-  };
+  const dispatch=(action:NotificationAction)=>dispatchNotification(setup.store,action);
   return <GlobalShell title="QA · Notification repository" variant="wms" navigation={S00_SHELL_NAVIGATION}>
     <section className="hn-notification-harness">
       <h1>QA · Notification repository</h1>
