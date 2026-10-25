@@ -43,6 +43,8 @@ export interface PreviewMockOptions {
   namespace?: string;
   crypto?: Crypto;
   now?: () => number;
+  /** Dedicated deterministic clock for business/demo records; account time remains real by default. */
+  businessNow?: () => number;
   /** Tests can supply an origin without a DOM. Browser installation uses its actual origin. */
   origin?: string;
 }
@@ -85,7 +87,7 @@ export function installPreviewMock(client: AxiosInstance, options: PreviewMockOp
   const inactiveMasterQaEnabled = options.approvedPreviewCommands === true && options.approvedOperationalQa === true && options.approvedInactiveMasterQa === true;
   const business = createPreviewBusinessReads(businessPersistence, commandBinding ? {
     ...commandBinding, inactiveMasterQaEnabled,
-  } : undefined);
+  } : undefined, { now: options.businessNow });
   const unregisterRecovery = registerPreviewCommandRecovery(client, {
     persistence: options.recoveryPersistence ?? createIndexedDbBusinessPersistence(
       namespace === PREVIEW_STORAGE_NAMESPACE ? COMMAND_RECOVERY_NAMESPACE : `${COMMAND_RECOVERY_NAMESPACE}:${namespace}`),

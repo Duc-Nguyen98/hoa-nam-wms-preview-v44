@@ -12,7 +12,7 @@ import { queryOperationalAudit } from './audit-operational-binding';
 
 export const S27_DETAIL_COPY = {
   'Chi tiết sự kiện': 'Event details', 'Xem chi tiết sự kiện {v0}': 'View event details {v0}',
-  'Thông tin chỉ đọc của sự kiện đã chọn.': 'Read-only information for the selected event.',
+  'Chỉ đọc. Thông tin chi tiết của sự kiện đã chọn.': 'Read-only. Detailed information for the selected event.',
   'Phiên bản trước': 'Previous version', 'Phiên bản mới': 'New version',
   'Không có mã liên quan': 'No related IDs',
   'Đọc lại dữ liệu': 'Refresh data',
@@ -29,7 +29,7 @@ export const S27_DETAIL_COPY = {
   'Chưa xác minh được tính đầy đủ của sự kiện và các mã liên quan. Đọc lại dữ liệu để thử lại.': 'The event and its relationships could not be verified as complete. Refresh data to retry.',
 };
 const DETAIL_ZH_COPY: Readonly<Record<string, string>> = {
-  'Chi tiết sự kiện': '事件详情', 'Thông tin chỉ đọc của sự kiện đã chọn.': '所选事件的只读信息。',
+  'Chi tiết sự kiện': '事件详情', 'Chỉ đọc. Thông tin chi tiết của sự kiện đã chọn.': '只读。所选事件的详细信息。',
   'Nhận diện sự kiện': '事件标识', 'Chỉ đọc': '只读', 'Thông tin sự kiện': '事件信息',
   'Biến động và liên quan': '库存变动与关联', 'Biến động kho': '库存变动', 'Mã truy vết': '追踪标识',
   'Mã hành động': '操作代码', 'Nguồn thực hiện': '执行来源', 'Thời gian': '时间', 'Giờ Việt Nam': '越南时间',
@@ -145,27 +145,28 @@ export function AuditDetail({ row, tx, onClose, onRefresh, resolveReturnFocus, l
     : <p className="s27-detail-empty">{copy(empty)}</p>;
   const fields: [string, ReactNode][] = eligibleRow ? [
     ['Thời gian', <><time dateTime={eligibleRow.at}>{formatAuditTime(eligibleRow.at, language)}</time><span className="s27-detail-timezone">{copy('Giờ Việt Nam')} · Asia/Ho_Chi_Minh</span></>],
-    ['Người thao tác', <code>{eligibleRow.actorId || '—'}</code>],
     ['Phiên bản trước', eligibleRow.previousVersion === null ? <span title={copy('Không có phiên bản trước')} aria-label={copy('Không có phiên bản trước')}>—</span> : eligibleRow.previousVersion],
+    ['Người thao tác', <code>{eligibleRow.actorId || '—'}</code>],
     ['Phiên bản mới', eligibleRow.newVersion],
+    ['Nguồn thực hiện', <span className="s27-source-badge">{eligibleRow.sourceSurface}</span>],
   ] : [];
   const traceFields = eligibleRow ? [
     ['Mã sự kiện', eligibleRow.id], ['Mã đối tượng', eligibleRow.entityId],
     ['Mã lệnh', eligibleRow.commandId], ['Mã commit', eligibleRow.commitSnapshotId],
   ] : [];
-  return <GlobalModal open={open} title={copy('Chi tiết sự kiện')} description={copy('Thông tin chỉ đọc của sự kiện đã chọn.')} onClose={onClose} resolveReturnFocus={resolveReturnFocus} size="large" className="s27-detail-modal"
+  const identityIcon: 'refresh' | 'documents' = eligibleRow?.action === 'scenario.reset-own' ? 'refresh' : 'documents';
+  return <GlobalModal open={open} title={copy('Chi tiết sự kiện')} description={copy('Chỉ đọc. Thông tin chi tiết của sự kiện đã chọn.')} onClose={onClose} resolveReturnFocus={resolveReturnFocus} size="large" className="s27-detail-modal"
     data-audit-detail-state={loading ? 'loading' : error ? 'error' : eligibleRow ? 'ready' : 'unavailable'}
-    footer={<><Button variant="secondary" loading={loading} onClick={onRefresh} leadingIcon={<Icon name="refresh" size={18} />}>{copy('Đọc lại dữ liệu')}</Button><Button onClick={onClose}>{copy('Đóng')}</Button></>}>
+    footer={<><Button variant="secondary" loading={loading} onClick={onRefresh}>{copy('Đọc lại dữ liệu')}</Button><Button onClick={onClose}>{copy('Đóng')}</Button></>}>
     {loading ? <div className="s27-detail-read-state" role="status"><Icon name="refresh" size={24} /><p>{copy('Đang đọc lại sự kiện đã chọn…')}</p></div>
       : error ? <div className="s27-detail-read-state" role="alert"><Icon name="info" size={24} /><p>{copy(auditDetailReadMessage(error))}</p></div>
       : !eligibleRow ? <div className="s27-detail-read-state" role="status"><Icon name="info" size={24} /><p>{copy('Sự kiện không còn khả dụng trong phạm vi hiện tại.')}</p></div>
       : <div data-audit-detail-id={eligibleRow.id} className="s27-detail-content">
         <section className="s27-detail-identity" aria-label={copy('Nhận diện sự kiện')}>
-          <span className="s27-detail-identity__icon"><Icon name="audit" size={28} /></span>
+          <span className="s27-detail-identity__icon"><Icon name={identityIcon} size={28} /></span>
           <div className="s27-detail-identity__content"><h3>{auditActionLabel(eligibleRow.action, language)}</h3>
             <div className="s27-detail-identity__meta"><code aria-label={copy('Mã hành động')}>{eligibleRow.action}</code><span className="s27-source-badge" aria-label={copy('Nguồn thực hiện')}>{eligibleRow.sourceSurface}</span></div>
           </div>
-          <span className="s27-detail-readonly"><Icon name="lock" size={15} />{copy('Chỉ đọc')}</span>
         </section>
         <section className="s27-detail-section" aria-labelledby="s27-detail-information-title"><h3 id="s27-detail-information-title">{copy('Thông tin sự kiện')}</h3>
           <dl className="s27-detail-info">{fields.map(([label, value]) => <div key={label}><dt>{copy(label)}</dt><dd>{value}</dd></div>)}</dl>

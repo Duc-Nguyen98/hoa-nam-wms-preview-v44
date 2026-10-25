@@ -53,7 +53,8 @@ export type PreviewBusinessCommandBinding = Required<Pick<BusinessRepositoryOpti
 };
 
 /** One seeded repository for reads and commands; no inferred role grants or independent UI fixture writes. */
-export function createPreviewBusinessReads(persistence: BusinessPersistence, binding?: PreviewBusinessCommandBinding) {
+export function createPreviewBusinessReads(persistence: BusinessPersistence, binding?: PreviewBusinessCommandBinding, options: { now?: () => number } = {}) {
+  const businessNow = options.now ?? Date.now;
   let ready: Promise<{ repository: BusinessRepository; source: Extract<DefectsResult, { kind: 'ready' }>['model']['source']; operationalRepository: (surface: OperationalSurface) => BusinessRepository }> | undefined;
   function prepare() {
     return ready ??= (async () => {
@@ -74,7 +75,7 @@ export function createPreviewBusinessReads(persistence: BusinessPersistence, bin
           } },
         ],
       };
-      const repositoryOptions: BusinessRepositoryOptions = { persistence, handlers, actor: binding?.actor,
+      const repositoryOptions: BusinessRepositoryOptions = { persistence, handlers, actor: binding?.actor, now: businessNow,
         validateCanonicalState: (snapshot, lookup) => { validateInactiveMasterHistory(snapshot, lookup); validatePvDemoHistory(snapshot, lookup); },
         captureAuthorityFence: binding?.captureReadFence,
         authorize: (actor, command) => binding?.authorize(actor, command) === true, previousSeeds: [previousSeed], seed: previousLabelSeed,
@@ -123,23 +124,23 @@ export function createPreviewBusinessReads(persistence: BusinessPersistence, bin
       const deny = () => new PreviewHttpError(403, 'MOCK_COMMAND_FORBIDDEN', 'PV Demo chưa khả dụng.');
       if (!binding?.captureReadFence || !binding.pvHandlers) throw deny();
       const assertCurrent = binding.captureReadFence(), actor = await binding.actor();
-      if (!actor || actor.key !== 'preview:ducquang' || !actor.confirmed || actor.expiresAt <= Date.now()) throw deny();
+      if (!actor || actor.key !== 'preview:ducquang' || !actor.confirmed || actor.expiresAt <= businessNow()) throw deny();
       const snapshot = await readSnapshot(signal), view = projectPvDemoSnapshot(snapshot);
       const after = await binding.actor(), latest = await readSnapshot(signal);
       assertCurrent();
-      if (!after || after.key !== actor.key || !after.confirmed || after.expiresAt <= Date.now() || latest.epoch !== snapshot.epoch) throw deny();
+      if (!after || after.key !== actor.key || !after.confirmed || after.expiresAt <= businessNow() || latest.epoch !== snapshot.epoch) throw deny();
       return view;
     },
     async readCatalogSnapshot(signal?: AbortSignal) {
       const deny = () => new PreviewHttpError(403, 'MOCK_COMMAND_FORBIDDEN', 'Hồ sơ tạo mới chưa khả dụng.');
       if (!binding?.captureReadFence || !binding.catalogHandlers) throw deny();
       const assertCurrent = binding.captureReadFence(), actor = await binding.actor();
-      if (!actor || actor.key !== 'preview:ducquang' || !actor.confirmed || actor.expiresAt <= Date.now()) throw deny();
+      if (!actor || actor.key !== 'preview:ducquang' || !actor.confirmed || actor.expiresAt <= businessNow()) throw deny();
       const snapshot = await readSnapshot(signal);
       const view = projectCatalogSnapshot(snapshot);
       const after = await binding.actor(), latest = await readSnapshot(signal);
       assertCurrent();
-      if (!after || after.key !== actor.key || !after.confirmed || after.expiresAt <= Date.now() || latest.epoch !== snapshot.epoch) throw deny();
+      if (!after || after.key !== actor.key || !after.confirmed || after.expiresAt <= businessNow() || latest.epoch !== snapshot.epoch) throw deny();
       return view;
     },
     async readRecipientContext(rowKey: string, signal?: AbortSignal) {
@@ -148,13 +149,13 @@ export function createPreviewBusinessReads(persistence: BusinessPersistence, bin
       const assertCurrent = binding.captureReadFence();
       const actor = await binding.actor();
       const command: BusinessCommand = { command: 'recipients.update-contact', commandId: '', epoch: '', entityId: `s05:${rowKey}`, payload: {} };
-      if (!actor || actor.expiresAt <= Date.now() || !authorizeRecipientContact(actor, command) || !binding.authorize(actor, command)) throw deny();
+      if (!actor || actor.expiresAt <= businessNow() || !authorizeRecipientContact(actor, command) || !binding.authorize(actor, command)) throw deny();
       const snapshot = await readSnapshot(signal);
       const record = snapshot.records.find(r => r.id === command.entityId);
       const after = await binding.actor();
       const latest = await readSnapshot(signal);
       assertCurrent();
-      if (!after || after.key !== actor.key || after.expiresAt <= Date.now() || !authorizeRecipientContact(after, command)
+      if (!after || after.key !== actor.key || after.expiresAt <= businessNow() || !authorizeRecipientContact(after, command)
         || !binding.authorize(after, command) || latest.epoch !== snapshot.epoch) throw deny();
       if (!isRecipientContactRecord(record)) throw deny();
       return { actorKey: 'preview:ducquang' as const, provenance: 'accepted-source-detail' as const,
