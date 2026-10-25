@@ -20,10 +20,9 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   const s=await web.read(); if(!s.scenario)return false;
   const c=await catalogReader.readSnapshot();
   const ours=c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario!.data.selectedSkuIds.includes(k.id));
-  return ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) &&
-   ['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) &&
-   s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK') &&
-   s.outbounds.some(o=>o.data.status==='POSTED');
+  const receiptsReady=['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code));
+  if(!ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) || !receiptsReady)return false;
+  return !app04 || !app05 || (['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK') && s.outbounds.some(o=>o.data.status==='POSTED'));
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -100,6 +99,8 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
    if(s.receipts.some(row=>row.data.code===receipt.previewCode))continue;
    await operation(web,'inbound.create',receipt);
   }
+  // Optional App-backed flow is isolated to the explicit app-preview fixture.
+  if(app04 && app05){
   // Complete the demo inbound flow so S11/S13/S15 can render real boxes and stock.
   const inboundPlans=[
    {code:'PN-0012',skuCode:'PUBLIC-DEMO-SKU-A',physicalCode:'PUBLIC-DEMO-SERIAL-0012'},
@@ -136,6 +137,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
    if(outbound?.data.status==='SUBMITTED')await updateOperation(web,'outbound.receive',outbound.id,outbound.version,{outboundId:outbound.id});
    s=await web.read(); outbound=s.outbounds.find(o=>o.id===outbound!.id);
    if(outbound?.data.status==='READY')await updateOperation(web,'outbound.post',outbound.id,outbound.version,{outboundId:outbound.id});
+  }
   }
   if(!await ready())return fail();return web.read();
  }
