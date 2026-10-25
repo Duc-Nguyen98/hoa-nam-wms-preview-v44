@@ -53,7 +53,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   const row=[...c.products,...c.skus,...c.recipients].find(r=>r.id===outcome.receipt.entityId&&r.code===payload.code);
   if(!row)return fail();await adapter.recovery.acknowledge(request.commandId);return row.id;
  }
- async function recover(adapter:typeof web){
+ async function recover(adapter:NonNullable<typeof app04>|NonNullable<typeof app05>|typeof web){
   let r=await adapter.recovery.restore();if(r.kind==='empty')return;
   if(r.kind==='pending')r=await adapter.recovery.retry();
   if(r.kind!=='committed')return fail();
@@ -80,6 +80,8 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   await recover(qa);await recover(web);
   app04=readBrowserPreviewRuntime()?.appEventAdapters?.P04;
   app05=readBrowserPreviewRuntime()?.appEventAdapters?.P05;
+  if(app04)await recover(app04);
+  if(app05)await recover(app05);
   let s=await web.read();
   if(!s.scenario){
    for(const suffix of ['A','B']){
