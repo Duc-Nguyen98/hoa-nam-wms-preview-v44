@@ -47,6 +47,7 @@
 .s29-user-cell span, .s29-role-cell span, .s29-muted { color: #718092; font-size: .82rem; }
 .s29-role-cell span { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .01em; }
 .s29-permissions-missing { color: #9a5b0a; font-size: .86rem; }
+.s29-permissions-count { color: #35566d; font-size: .86rem; font-weight: 600; }
 .s29-muted { display: block; margin-top: 3px; }
 .s29-table-footer { display: grid; gap: 10px; margin-top: 12px; }
 .s29-footer-note { display: flex; align-items: flex-start; gap: 6px; margin: 0; color: #667789; font-size: .82rem; }

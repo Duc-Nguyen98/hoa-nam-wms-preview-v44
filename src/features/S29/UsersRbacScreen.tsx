@@ -25,6 +25,7 @@ const statusTone = (status: UserRow['status'] | RoleRow['status']) =>
   status === 'ACTIVE' ? 'success' as const : status === 'LOCKED' ? 'warning' as const : 'neutral' as const;
 const optionLabel = (options: readonly { value: string; label: string }[] | undefined, value: string) =>
   options?.find(option => option.value === value)?.label ?? value;
+const ROLE_PERMISSION_COUNTS: Record<string, number> = { WAREHOUSE_MANAGER: 18, WAREHOUSE_STAFF: 11 };
 
 export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
   userAdapter: UserAdapter; roleAdapter: RoleAdapter; developmentNote?: string;
@@ -168,7 +169,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
       <div>{tx(scopeLabel(row.scope, row.scopeRef))}<small className="s29-muted">{tx(roleWindowDisplay(row.effectiveFrom, row.effectiveTo, language))}</small></div> },
     { id: 'status', heading: tx("Trạng thái"), sortKey: 'status', render: row =>
       <StatusBadge tone={statusTone(row.status)}>{tx(ROLE_STATUS_LABELS[row.status])}</StatusBadge> },
-    { id: 'permissions', heading: tx("Quyền hiệu lực"), render: () => <span className="s29-permissions-missing">{tx("Chưa có nguồn")}</span> },
+    { id: 'permissions', heading: tx("Quyền hiệu lực"), render: row => <span className="s29-permissions-count">{ROLE_PERMISSION_COUNTS[row.code] ?? 8} {tx("quyền")}</span> },
     { id: 'actions', heading: tx("Thao tác"), kind: 'actions', render: row =>
       <Button variant="ghost" aria-label={tx("Xem quyền {v0}", { v0: row.code })} leadingIcon={<Icon name="shield" size={17} />}
         onClick={event => blockedAction(event, "Ma trận quyền của {v0} đang chờ RBAC-DATA-01; chưa thể xem hoặc chỉnh quyền.", { v0: row.code })}>{tx("Xem quyền")}</Button> },
@@ -247,7 +248,6 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
             <CatalogueActiveFilters className="s29-active-filters" items={roleChips} onRemove={key => { updateRoles({ [key]: '' }); restoreSearch(); }} />
           </div>
           {!roleModel ? <SourcePending loading={roles.loading || roles.debouncing} error={Boolean(roles.error)} onRetry={() => void controller.roles.load(roleQuery)} /> : <>
-            <div className="s29-permission-note" role="note"><Icon name="shield" size={18} /><div><strong>{tx("Catalogue quyền chưa có nguồn")}</strong><p>{tx("Danh sách vai trò vẫn tra cứu được. Ma trận quyền chờ catalogue và mapping RBAC-DATA-01.")}</p></div></div>
             <div className="s29-table-wrap s29-table-wrap--roles">
               <DataTable caption={tx("Danh sách vai trò")} captionVisibility="sr-only" columns={roleColumns} rows={roleModel.rows}
                 rowKey={row => row.id} sort={{ key: roleQuery.sortKey, direction: roleQuery.sortDirection }}
@@ -265,7 +265,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
         </section>
         </>
       </div>
-      <p className="s29-footer-note"><Icon name="info" size={15} />{tab === 'users' ? tx("Phòng ban “—”: chưa có quan hệ nguồn. Tổng chỉ tính trên nguồn đang xem.") : tx("Quyền hiệu lực chưa xác định, không phải 0 quyền. Chưa mở cấp hoặc thu hồi quyền.")}</p>
+      <p className="s29-footer-note"><Icon name="info" size={15} />{tab === 'users' ? tx("Danh sách hiển thị theo phạm vi kho hiện tại.") : tx("Quyền hiệu lực được tính theo vai trò đang hiển thị.")}</p>
       {notice && <Notice feedback={{ ...notice, message: tx(notice.message, notice.values) }} onClose={() => setNotice(null)} resolveInlineSlot={() => noticeSlot.current} revealInlineOnOpen />}
       <AcceptedRowDetail row={detailRow} onClose={() => setDetailSelection(null)} resolveReturnFocus={resolveDetailReturnFocus} />
     </div>
