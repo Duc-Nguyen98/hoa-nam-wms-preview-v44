@@ -127,6 +127,7 @@
 .s15-operational-footer { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:20px 8px; margin-top:24px; background:var(--hn-bg,#f4f7fa); border-radius:8px; color:var(--hn-muted); font-size:15px; }
 .s15-operational-footer>span:last-child { display:flex; align-items:center; gap:12px; }
 .s15-operational-footer svg { flex-shrink:0; }
+.s15-operational-footer--tablet { display:none; }
 .s15-refreshing { margin:0 0 16px; color:var(--hn-muted); }
 .s15-operational-detail.hn-global-modal { width:min(920px,calc(100vw - 48px)); max-width:none; border-radius:8px; --s15-soft:var(--hn-bg,#f4f7fa); }
 .s15-operational-detail .hn-global-modal__surface { max-height:calc(100dvh - 48px); }
@@ -178,6 +179,8 @@
  .s15-outbound-card .s15-view-button { justify-content:center; position:relative; min-height:52px; font-size:18px; }
  .s15-outbound-card .s15-view-button>svg { position:absolute; right:16px; }
  .s15-operational-footer { flex-wrap:wrap; font-size:14px; }
+ .s15-operational-footer--desktop { display:none; }
+ .s15-operational-footer--tablet { display:flex; margin-top:0; padding:20px 24px; background:var(--hn-surface); }
  .s15-operational-detail.hn-global-modal { width:min(640px,calc(100vw - 48px)); }
  .s15-recipient-grid { grid-template-columns:1fr; }
  .s15-recipient-grid>div+div { border-left:0; border-top:1px solid var(--hn-border); padding:16px 0 0; }
@@ -204,6 +207,38 @@ html[data-hn-theme='dark'] .s15-screen { --s15-soft:#183e5c; }
 .s15-selected-lines td .s15-copy-value { margin-top:-8px; }
 .s15-selected-lines .s15-copy-value code { font-family:inherit; }
 .s15-operational-detail .s15-copy-value--full code { font-size:15px; }
+/* S15 approved visual hierarchy must win over the generic table/control layer. */
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-operational-table .hn-table[data-ui-contract='s05'] > thead > tr > th {
+  height:56px; padding:12px 24px; font-size:16px; line-height:24px; font-weight:500;
+}
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-operational-table .hn-table[data-ui-contract='s05'] > tbody > tr > td {
+  padding:20px 24px; font-size:16px; line-height:24px;
+}
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-view-button.hn-button[data-hn-control='button'] {
+  min-height:50px; padding:12px 16px; font-size:16px; line-height:24px; font-weight:600;
+  background:var(--s15-soft); color:var(--hn-accent-text,#064374); border:1px solid transparent;
+}
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-copy-value > .hn-button[data-hn-control='button'] {
+  border:1px solid var(--hn-border); background:var(--hn-surface); border-radius:8px; color:var(--hn-control);
+}
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-copy-value > .hn-button[data-hn-control='button']:hover {
+  border-color:var(--hn-control); background:var(--s15-soft);
+}
+.s15-detail-sections > section + section { position:relative; }
+.s15-detail-sections > section + section::before { content:''; position:absolute; top:-12px; left:0; right:0; border-top:1px solid var(--hn-border); }
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-operational-detail .s15-selected-lines .s15-copy-value code {
+  font-weight:400; font-size:16px;
+}
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-operational-detail .s15-copy-value > .hn-button[data-hn-control='button'] { border-color:transparent; background:transparent; }
+@media(max-width:1100px){
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-outbound-card .s15-view-button.hn-button[data-hn-control='button'] { min-height:56px; font-size:18px; }
+ .s15-selected-lines :is(th,td) { padding:12px; }
+ .s15-selected-lines :is(th,td):nth-child(1) { width:30%; }
+ .s15-selected-lines :is(th,td):nth-child(2) { width:30%; }
+ .s15-selected-lines :is(th,td):nth-child(3) { width:40%; }
+ .s15-selected-lines th { padding-bottom:4px; background:transparent; }
+ .s15-selected-lines tbody tr:first-child td { border-top:0; padding-top:4px; }
+}
 @media(max-width:1100px){
  .s15-operational-detail.hn-global-modal { width:min(560px,calc(100vw - 48px)); }
  .hn-shell[data-shell-version] .s15-screen .s15-outbound-card .s15-copy-value code { font-size:18px; }

@@ -140,7 +140,7 @@ export function OutboundSlipsScreen({ adapter }: { adapter?: OutboundSlipsAdapte
   ];
   return <GlobalShell title={tx("Phiếu xuất kho")} variant="wms" activeKey="S15" navigation={S00_SHELL_NAVIGATION} profile={{ displayName: 'Đức Quang', initials: 'DQ' }}>
     <div className="hn-catalogue-screen s15-screen" data-screen="S15" data-visual-variant="premium" onFocusCapture={revealFocus}>
-      <CataloguePageHeader title={tx("Phiếu xuất kho")} parentLabel={tx("Xuất kho")} breadcrumb={tx("Phiếu xuất kho")} description={tx("Theo dõi phiếu xuất được gửi từ App quét.")} actions={cohort==='scenario'?<span className="s15-session"><Icon name="documents"/>{tx("Phiên hiện tại")}<Icon name="info"/></span>:undefined} />
+      <CataloguePageHeader title={tx("Phiếu xuất kho")} parentLabel={tx("Xuất kho")} breadcrumb={tx("Phiếu xuất kho")} description={tx("Theo dõi phiếu xuất được gửi từ App quét.")} actions={cohort==='scenario'?<span className="s15-session"><Icon name="layers"/>{tx("Phiên hiện tại")}<Icon name="info"/></span>:undefined} />
       {operational.available && <div className="s15-action-row"><Button variant={cohort === 'scenario' ? 'primary' : 'secondary'} aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{tx('Phiếu xuất phiên hiện tại')}</Button><Button variant={cohort === 'legacy' ? 'primary' : 'secondary'} aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{tx('Danh sách tham chiếu')}</Button></div>}
       {cohort === 'scenario' ? <OperationalOutbounds adapter={operational} notify={message => notify(message, document.activeElement instanceof HTMLElement ? document.activeElement : null, 'success')} /> : <>
       {model ? <>
