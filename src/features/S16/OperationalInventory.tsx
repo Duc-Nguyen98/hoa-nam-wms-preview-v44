@@ -1,6 +1,6 @@
 import { localeForLanguage, useShellPreferences } from '../../shared/shell-preferences';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, GlobalModal, type TableColumn } from '../../shared';
+import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, GlobalModal, Icon, type TableColumn } from '../../shared';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
@@ -12,6 +12,7 @@ export const INVENTORY_BINDING_COPY = {
   'Tồn kho phiên hiện tại': 'Current session inventory', 'Đọc lại dữ liệu': 'Refresh data', 'Đang đọc dữ liệu…': 'Loading data…',
   'Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.': 'No active session. Set it up in the testing area.',
   'Chưa có biến động tồn kho trong phiên hiện tại.': 'No stock movements in the current session.',
+  'Số liệu sẽ xuất hiện sau khi có giao dịch đã ghi sổ trong phiên này.': 'Figures will appear after a posted transaction is recorded in this session.',
   'Tồn theo sổ cái': 'Ledger stock', 'Kiểm đếm thực tế': 'Physical count', 'Chênh lệch': 'Difference', 'Chưa xác định': 'Unknown',
   'SKU': 'SKU', 'Tên hàng': 'Product name', 'Kho': 'Warehouse', 'Đơn vị tính': 'Unit', 'Thao tác': 'Actions', 'Xem': 'View', 'Đóng': 'Close',
   'Chưa có dữ liệu kiểm đếm thực tế; chưa thể tính chênh lệch.': 'No physical count data is available; the difference cannot be calculated.',
@@ -74,7 +75,7 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
     {feedback}<p>{tx('Số liệu theo sổ cái từ các giao dịch đã ghi sổ, không bao gồm phiếu nháp.')}</p><p>{tx('Chưa có dữ liệu kiểm đếm thực tế; chưa thể tính chênh lệch.')}</p>
     {model && <p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time></p>}
     {model && !model.hasScenario && <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
-    {model?.hasScenario && <><FormField label={tx('Tìm SKU hoặc tên hàng')} className="hn-operational-search"><FilterInput id="s16-operational-search" label={tx('Tìm SKU hoặc tên hàng')} aria-label={tx('Tìm SKU hoặc tên hàng')} data-s16-operational-search value={search} onChange={event => setSearch(event.target.value)} /></FormField><DataTable caption={tx('Tồn kho phiên hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.key} appearance="refined" emptyContent={<p>{tx(model.rows.length ? 'Không có dòng phù hợp.' : 'Chưa có biến động tồn kho trong phiên hiện tại.')}</p>} /></>}
+    {model?.hasScenario && (model.rows.length ? <><FormField label={tx('Tìm SKU hoặc tên hàng')} className="hn-operational-search"><FilterInput id="s16-operational-search" label={tx('Tìm SKU hoặc tên hàng')} aria-label={tx('Tìm SKU hoặc tên hàng')} data-s16-operational-search value={search} onChange={event => setSearch(event.target.value)} /></FormField><DataTable caption={tx('Tồn kho phiên hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.key} appearance="refined" emptyContent={<p>{tx('Không có dòng phù hợp.')}</p>} /></> : <div className="s16-operational-empty" role="status"><div className="s16-operational-empty__icon" aria-hidden="true"><span><Icon name="box" size={25} /></span></div><div><h3>{tx('Chưa có biến động tồn kho trong phiên hiện tại.')}</h3><p>{tx('Số liệu sẽ xuất hiện sau khi có giao dịch đã ghi sổ trong phiên này.')}</p></div><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div>)}
     <CatalogueNavTabs label={tx('Chứng từ liên quan')} items={[
       { key: 'receipts', label: tx('Phiếu nhập'), href: route('S12') }, { key: 'outbounds', label: tx('Phiếu xuất kho'), href: route('S15') },
       { key: 'parts', label: tx('Phiếu xuất linh kiện'), href: route('S10') }, { key: 'reversals', label: tx('Phiếu đảo tồn'), href: route('S17') },

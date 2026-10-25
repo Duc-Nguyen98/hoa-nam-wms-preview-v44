@@ -97,3 +97,12 @@
 
 .s16-operational-controls > h2 { margin: 0; font-size: 18px; line-height: 26px; font-weight: 600; }
 .s16-operational[data-operational-inventory] > .hn-table-scroll { margin-block-start: var(--hn-space-5, 20px); }
+.s16-operational-empty { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 16px; margin: 20px 0 8px; padding: 20px; border: 1px dashed var(--hn-border); border-radius: var(--hn-radius); background: var(--hn-fill); }
+.s16-operational-empty__icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: var(--hn-surface); color: var(--hn-control); }
+.s16-operational-empty__icon span { display: inline-flex; }
+.s16-operational-empty h3 { margin: 0; color: var(--hn-text); font-size: 15px; line-height: 22px; }
+.s16-operational-empty p { margin: 4px 0 0; color: var(--hn-muted); font-size: 13px; line-height: 20px; }
+@media (max-width: 620px) {
+  .s16-operational-empty { grid-template-columns: auto minmax(0, 1fr); }
+  .s16-operational-empty .hn-button { grid-column: 1 / -1; justify-self: start; }
+}

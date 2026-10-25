@@ -74,3 +74,24 @@
 .s17-action-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--hn-control-gap, 8px); }
 
 [data-operational-reversals] > .hn-card__body > h2 { margin: 0 0 var(--hn-space-4, 16px); font-size: 18px; line-height: 26px; font-weight: 600; }
+
+/* Keep the long confirmation label attached to its checkbox. The editor
+   actions are rendered in the modal footer so recovery never drops beneath
+   the form content. */
+.s17-editor-form { display: grid; gap: 16px; }
+.s17-editor-form > p { margin: 0; color: var(--hn-muted); line-height: 21px; }
+.s17-checkbox-field { display: flex; align-items: flex-start; gap: 10px; min-width: 0; padding: 12px 14px; border: 1px solid var(--hn-border); border-radius: var(--hn-radius); background: var(--hn-fill); color: var(--hn-text); font-size: 13px; line-height: 21px; font-weight: 600; cursor: pointer; }
+.s17-checkbox-field:hover { border-color: var(--hn-control-border); background: var(--hn-hover); }
+.s17-checkbox-field input { flex: 0 0 auto; width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--hn-control); }
+.s17-checkbox-field > span { min-width: 0; overflow-wrap: anywhere; }
+.s17-required { color: var(--hn-danger); }
+.s17-editor-modal .hn-global-modal__footer { align-items: center; }
+.s17-editor-footer-tools { display: flex; flex-wrap: wrap; gap: var(--hn-control-gap, 8px); margin-inline-end: auto; }
+.s17-editor-footer-tools .hn-button { color: var(--hn-control); }
+.s17-editor-modal .hn-global-modal__footer .hn-button { white-space: nowrap; }
+@media (max-width: 560px) {
+  .s17-editor-modal .hn-global-modal__footer { justify-content: stretch; }
+  .s17-editor-footer-tools { width: 100%; margin-inline-end: 0; }
+  .s17-editor-footer-tools .hn-button { flex: 1 1 auto; }
+  .s17-editor-modal .hn-global-modal__footer .hn-button { flex: 1 1 auto; }
+}

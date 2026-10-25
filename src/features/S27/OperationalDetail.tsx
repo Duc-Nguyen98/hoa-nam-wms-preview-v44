@@ -69,7 +69,7 @@ export function AuditDetail({ row, tx, onClose, onRefresh, resolveReturnFocus, l
     ['Mã lệnh', <code>{row.commandId}</code>], ['Mã commit', <code>{row.commitSnapshotId}</code>],
     ['Biến động', codes(row.eventIds, 'Không có bút toán kho trong lệnh này')], ['Mã liên quan', codes(row.relatedIds, 'Không có mã liên quan')],
   ] : [];
-  return <GlobalModal open={!!row} title={tx('Chi tiết sự kiện')} description={tx('Thông tin chỉ đọc của sự kiện đã chọn.')} onClose={onClose} resolveReturnFocus={resolveReturnFocus} size="large" footer={<><Button variant="secondary" disabled={!row} onClick={onRefresh}>{tx('Đọc lại dữ liệu')}</Button><Button variant="secondary" onClick={onClose}>{tx('Đóng')}</Button></>}>
-    {row && <dl data-audit-detail-id={row.id} style={{ display: 'grid', gap: 16, margin: 0, overflowWrap: 'anywhere' }}>{fields.map(([label, value]) => <div key={label}><dt className="s27-muted">{tx(label)}</dt><dd style={{ margin: '4px 0 0' }}>{value}</dd></div>)}</dl>}
+  return <GlobalModal open={!!row} title={tx('Chi tiết sự kiện')} description={tx('Thông tin chỉ đọc của sự kiện đã chọn.')} onClose={onClose} resolveReturnFocus={resolveReturnFocus} size="large" className="s27-detail-modal" footer={<><Button variant="secondary" disabled={!row} onClick={onRefresh}>{tx('Đọc lại dữ liệu')}</Button><Button variant="secondary" onClick={onClose}>{tx('Đóng')}</Button></>}>
+    {row && <dl data-audit-detail-id={row.id} className="s27-detail-grid">{fields.map(([label, value]) => <div key={label}><dt className="s27-muted">{tx(label)}</dt><dd>{value}</dd></div>)}</dl>}
   </GlobalModal>;
 }

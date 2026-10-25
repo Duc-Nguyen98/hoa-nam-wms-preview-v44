@@ -129,14 +129,23 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
         {row.data.status === 'DRAFT' && <div><Button disabled={locked} onClick={() => open('attach')}>{tx('Đính kèm bằng chứng')}</Button>{row.data.physicalReturn === 'PENDING' ? <Button disabled={locked || !row.data.evidenceRefs.length} onClick={() => open('confirm')}>{tx('Xác nhận nhận lại hàng')}</Button> : <Button disabled={locked} onClick={() => open('post')}>{tx('Ghi sổ hoàn kho')}</Button>}<Button variant="secondary" disabled={locked} onClick={() => open('cancel')}>{tx('Hủy phiếu hoàn')}</Button></div>}
       </>}{feedback}{controls}
     </GlobalModal>
-    <GlobalModal open={!!editor} title={tx(title)} onClose={() => { if (!state.busy) setEditor(null); }}>
-      <form noValidate aria-label={tx(title)} aria-busy={state.busy} onSubmit={event => { event.preventDefault(); void submit(); }}>
+    <GlobalModal open={!!editor} title={tx(title)} onClose={() => { if (!state.busy) setEditor(null); }}
+      className="s17-editor-modal"
+      footer={<>
+        <div className="s17-editor-footer-tools">{controls}</div>
+        <Button type="button" variant="secondary" disabled={state.busy} onClick={() => setEditor(null)}>{tx('Hủy thao tác')}</Button>
+        <Button type="submit" form="s17-editor-form" disabled={locked}>{tx(editor?.kind === 'confirm' || editor?.kind === 'post' || editor?.kind === 'cancel' ? title : 'Lưu')}</Button>
+      </>}>
+      <form id="s17-editor-form" className="s17-editor-form" noValidate aria-label={tx(title)} aria-busy={state.busy} onSubmit={event => { event.preventDefault(); void submit(); }}>
         {editor?.kind === 'create' && <>
           <p>{tx('Chỉ hoàn toàn bộ phiếu cấp bảo hành đã ghi sổ. Số lượng và mã hàng giữ đúng phiếu gốc.')}</p>
           <FormField label={tx('Phiếu cấp gốc')} required><BasicSelect value={editor.draft.originalIssueId} disabled={locked} onChange={event => { const issue = options.find(i => i.id === event.target.value); setEditor(previous => previous?.kind === 'create' ? { ...previous, draft: { ...previous.draft, originalIssueId: issue?.id ?? '', observedIssueVersion: issue?.version ?? 0 } } : previous); }}><option value="">{tx('Chọn phiếu cấp gốc')}</option>{options.map(issue => <option key={issue.id} value={issue.id}>{issue.data.code}</option>)}</BasicSelect></FormField>
           {!options.length && <p>{tx('Chưa có phiếu cấp bảo hành đã ghi sổ phù hợp.')}</p>}
           <FormField label={tx('Lý do hoàn')} required hint={tx('Tối đa 500 ký tự, một dòng.')}><input type="text" value={editor.draft.reasonText} disabled={state.busy} onChange={event => setEditor(previous => previous?.kind === 'create' ? { ...previous, draft: { ...previous.draft, reasonText: event.target.value } } : previous)} /></FormField>
-          <FormField label={tx('Tôi xác nhận trả toàn bộ hàng của phiếu gốc và hàng chưa sử dụng.')} required><input type="checkbox" checked={editor.draft.returnedUnused} disabled={state.busy} onChange={event => setEditor(previous => previous?.kind === 'create' ? { ...previous, draft: { ...previous.draft, returnedUnused: event.target.checked } } : previous)} /></FormField>
+          <label className="s17-checkbox-field">
+            <input type="checkbox" checked={editor.draft.returnedUnused} disabled={state.busy} aria-required="true" onChange={event => setEditor(previous => previous?.kind === 'create' ? { ...previous, draft: { ...previous.draft, returnedUnused: event.target.checked } } : previous)} />
+            <span>{tx('Tôi xác nhận trả toàn bộ hàng của phiếu gốc và hàng chưa sử dụng.')} <span className="s17-required" aria-hidden="true">*</span></span>
+          </label>
         </>}
         {editor && editor.kind !== 'create' && <p><strong>{editor.code}</strong></p>}
         {editor?.kind === 'attach' && <>
@@ -148,8 +157,7 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
         {editor?.kind === 'post' && <p>{tx('Ghi sổ hoàn kho theo đúng hàng và số lượng gốc. Phiếu cấp và bút toán gốc được giữ nguyên.')}</p>}
         {editor?.kind === 'cancel' && <><p>{tx('Hủy phiếu nháp không làm thay đổi tồn kho.')}</p><FormField label={tx('Lý do hủy')} required hint={tx('Tối đa 500 ký tự, một dòng.')}><input type="text" disabled={state.busy} value={editor.reason} onChange={event => setEditor(previous => previous?.kind === 'cancel' ? { ...previous, reason: event.target.value } : previous)} /></FormField></>}
         {localError && <p role="alert">{tx(localError)}</p>}{feedback}
-        <div><Button type="button" variant="secondary" disabled={state.busy} onClick={() => setEditor(null)}>{tx('Hủy thao tác')}</Button><Button type="submit" disabled={locked}>{tx(editor?.kind === 'confirm' || editor?.kind === 'post' || editor?.kind === 'cancel' ? title : 'Lưu')}</Button></div>
-      </form>{controls}
+      </form>
       {reviewed && editor && editor.kind !== 'create' && <section aria-label={tx('Dữ liệu vừa đọc lại')}>
         <h3>{tx('Dữ liệu vừa đọc lại')}</h3><p>{reviewed.record.data.code} · {tx('Phiên bản')}: {reviewed.record.version}</p>
         <p>{tx('Trạng thái')}: {badge(reviewed.record)} · {tx('Nhận lại hàng')}: {tx(reviewed.record.data.physicalReturn === 'CONFIRMED' ? 'Đã xác nhận nhận lại' : 'Chờ nhận lại')}</p>
