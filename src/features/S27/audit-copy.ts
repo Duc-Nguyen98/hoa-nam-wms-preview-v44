@@ -8,6 +8,7 @@ export const AUDIT_ACTION_LABELS = {
   'qa.sku.set-status': { vi: 'Cập nhật trạng thái SKU', en: 'Update SKU status', 'zh-CN': '更新 SKU 状态' },
   'qa.recipient.set-status': { vi: 'Cập nhật trạng thái bên nhận', en: 'Update recipient status', 'zh-CN': '更新收货方状态' },
   'scenario.reset-own': { vi: 'Đặt lại kịch bản', en: 'Reset scenario', 'zh-CN': '重置场景' },
+  'scenario.seed-approved': { vi: 'Nạp dữ liệu xếp khay đã duyệt', en: 'Seed approved putaway data', 'zh-CN': '载入已批准的上架数据' },
   'stock-profiles.create': { vi: 'Tạo hồ sơ kho', en: 'Create stock profile', 'zh-CN': '创建库存档案' },
   'inbound.create': { vi: 'Tạo phiếu nhập kho', en: 'Create inbound receipt', 'zh-CN': '创建入库单' },
   'inbound.update-header': { vi: 'Cập nhật thông tin phiếu nhập', en: 'Update inbound receipt information', 'zh-CN': '更新入库单信息' },

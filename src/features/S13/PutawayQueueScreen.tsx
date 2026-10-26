@@ -112,7 +112,7 @@ export function PutawayQueueScreen({ adapter, operationalAdapter }: { adapter?: 
         { key: 'queue', label: tx('Hàng chờ'), icon: 'box', current: true, onClick: cancelPending },
         { key: 'orders', label: tx('Lệnh xếp khay'), icon: 'documents', href: orderRoute, unavailable: !orderRoute, onClick: event => orderRoute ? cancelPending() : blockedAction('Lệnh xếp khay', event.currentTarget) },
         ...(trayRoute ? [{ key: 'trays', label: tx('Danh sách khay'), icon: 'tray' as const, href: trayRoute, onClick: cancelPending }] : []),
-        { key: 'history', label: tx('Lịch sử'), icon: 'audit', unavailable: true, onClick: event => blockedAction('Lịch sử', event.currentTarget) },
+        { key: 'history', label: tx('Lịch sử'), icon: 'audit', href: '#/preview/S14/history', onClick: cancelPending },
       ]} />
       {operational.available && <div className="s13-cohort"><Button variant="secondary" onClick={() => setCohort('scenario')} aria-pressed={cohort === 'scenario'}>{tx('Phiên hiện tại')}</Button><Button variant="secondary" onClick={() => setCohort('legacy')} aria-pressed={cohort === 'legacy'}>{tx('Danh sách trước đây')}</Button></div>}
       {cohort === 'scenario' ? <OperationalPutawayQueue adapter={operational} orderRoute={orderRoute} notify={message => notify(uiText(message), null, 'success')} /> : <>{model ? <>

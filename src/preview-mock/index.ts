@@ -121,7 +121,7 @@ export function installPreviewMock(client: AxiosInstance, options: PreviewMockOp
         const result = await account.route(method, url.pathname, config.data, config.headers.get('Content-Type'), signal);
         if (result.handled) data = result.data;
         else {
-          const command = await routeBusinessCommand(method, url.pathname, config.data, business, signal);
+          const command = await routeBusinessCommand(method, url.pathname, config.data, business, signal, url.searchParams);
           if (command.handled) { data = command.data; status = command.status; }
           else data = await readPreviewDomain(method, url, signal, business);
         }

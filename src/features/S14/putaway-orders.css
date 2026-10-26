@@ -1,3 +1,4 @@
+@import '../putaway/tray-ui.css';
 /* Owner-approved Worklist composition. Shared controls/focus/token APIs remain S00-owned. */
 .hn-shell .hn-catalogue-screen.s14-screen { gap: 12px; }
 .s14-overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(660px, .95fr); align-items: center; gap: 24px; min-width: 0; }
@@ -73,3 +74,4 @@
 
 .s14-list[data-operational-putaways] > h2 { margin: 0 0 var(--hn-space-4, 16px); font-size: 18px; line-height: 26px; font-weight: 600; }
 .s14-list[data-operational-putaways] > .hn-table-scroll { margin-block-start: var(--hn-space-5, 20px); }
+

@@ -40,6 +40,7 @@ export function createApprovedPreviewBinding(account: {
     captureReadFence: () => account.captureRecoveryReadFence(),
     defectsHandlers,
     operationalEnabled: true,
+    putawayHistoryRead: true,
     labelHandlers: labels.handlers,
     recipientHandlers: RECIPIENT_CONTACT_HANDLERS,
     catalogHandlers: CATALOG_CREATE_HANDLERS,

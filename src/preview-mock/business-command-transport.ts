@@ -1,5 +1,6 @@
 import type { OperationalCommand } from '../contracts/operational-preview';
 import type { PreviewBusinessReads } from './business-reads';
+import type { PutawayHistoryQuery } from '../contracts/putaway-history';
 import type { BusinessCommand } from './business-repository';
 import { PreviewHttpError } from './errors';
 
@@ -8,7 +9,12 @@ const object = (value: unknown): value is Record<string, unknown> => !!value && 
 
 /** The same versioned API envelope/error path is used by Real and Preview adapters.
  * This transport supplies no actor, capability or domain policy from the request body. */
-export async function routeBusinessCommand(method: string, path: string, raw: unknown, business: PreviewBusinessReads, signal: AbortSignal) {
+export async function routeBusinessCommand(method: string, path: string, raw: unknown, business: PreviewBusinessReads, signal: AbortSignal, search?: URLSearchParams) {
+  if (method === 'GET' && path === '/api/v1/putaway-history') {
+    const q: PutawayHistoryQuery = { from: search?.get('from') ?? '', to: search?.get('to') ?? '', search: search?.get('search') ?? '',
+      action: (search?.get('action') ?? '') as PutawayHistoryQuery['action'], page: Number(search?.get('page') ?? 1), pageSize: Number(search?.get('pageSize') ?? 9) };
+    return { handled: true as const, data: await business.readPutawayHistory(q, signal), status: 200 };
+  }
   if (method === 'GET' && path === '/api/v1/operations/snapshot') return { handled: true as const, data: await business.operational('WEB').read(signal), status: 200 };
   if (method === 'POST' && ['/api/v1/operations/commands', '/api/v1/operations/scenario/commands'].includes(path)) {
     let body: unknown = raw;

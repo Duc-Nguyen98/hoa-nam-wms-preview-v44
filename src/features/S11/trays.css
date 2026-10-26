@@ -1,3 +1,4 @@
+@import '../putaway/tray-ui.css';
 /* S11 composition and cell content; shared controls/skins remain S00-owned. */
 .s11-operational { min-width: 0; padding: 20px; }
 .s11-operational-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
@@ -117,3 +118,4 @@
  .s11-lookup-dialog .hn-global-modal__body { padding:16px; }
  .s11-lookup-dialog dl:not(.s11-lookup-card dl) { grid-template-columns:1fr; }
 }
+

@@ -42,6 +42,9 @@ import { PutawayOrdersScreen } from '../features/S14/PutawayOrdersScreen';
 import { OutboundSlipsScreen } from '../features/S15/OutboundSlipsScreen';
 import { InventoryScreen } from '../features/S16/InventoryScreen';
 import { ReversalSlipsScreen } from '../features/S17/ReversalSlipsScreen';
+import { PutawayHistoryScreen } from '../features/putaway/PutawayHistoryScreen';
+import { createPutawayHistoryAdapter } from '../data/http/putaway-history-adapter';
+import { apiClient } from '../data/http/api-client';
 
 import { InboundReportScreen } from '../features/S18/InboundReportScreen';
 import { OutboundReportScreen } from '../features/S19/OutboundReportScreen';
@@ -122,8 +125,9 @@ export function App() {
   const datePolicyQa = IS_BROWSER_PREVIEW && hash === '#/harness/date-policy';
   const toastQa = IS_BROWSER_PREVIEW && hash === '#/qa/toasts';
   const operationalQa=IS_BROWSER_PREVIEW&&hash==='#/qa/operations';
+  const putawayHistory = IS_BROWSER_PREVIEW && hash === '#/preview/S14/history';
   const appPage=IS_BROWSER_PREVIEW?/^#\/app\/(P04|P05|P09|P19)$/.exec(hash)?.[1]:undefined;
-  const unknown = !notificationHarness && !notificationRepositoryQa && !datePolicyQa && !toastQa && !operationalQa && !appPage && hash !== '' && hash !== '#/' && hash !== '#/setup' && !selected && !accountPanel;
+  const unknown = !notificationHarness && !notificationRepositoryQa && !datePolicyQa && !toastQa && !operationalQa && !putawayHistory && !appPage && hash !== '' && hash !== '#/' && hash !== '#/setup' && !selected && !accountPanel;
   const authStatus = accountCenter?.authStatus;
   useEffect(() => {
     document.title = `${authStatus === 'signed-out' ? tx("Đăng nhập") : authStatus === 'confirmation-required' ? tx("Xác nhận phiên") : accountPanel ? tx(ACCOUNT_PANELS[accountPanel]) : (selected ? navLabel(selected.key, selected.label) : undefined) ?? (unknown ? tx("Không tìm thấy trang") : hash === '#/setup' ? tx("Tổng quan hệ thống") : tx("Tổng quan vận hành"))} · Hoa Nam WMS`;
@@ -146,6 +150,7 @@ export function App() {
   if (datePolicyQa) return <DatePolicyQaScreen />;
   if (toastQa) return <ToastQaScreen />;
   if(operationalQa)return <OperationalScenarioQa/>;
+  if(putawayHistory)return <PutawayHistoryScreen reader={createPutawayHistoryAdapter(apiClient)} />;
   if(appPage)return <OperationalAppPreview page={appPage as 'P04'|'P05'|'P09'|'P19'}/>;
   if (unknown) return <GlobalShell title={tx('Không tìm thấy trang')} variant="wms" navigation={S00_SHELL_NAVIGATION}><PageState kind="route-not-found" action={<a href="#/preview/S01">{tx('Tổng quan vận hành')}</a>} /></GlobalShell>;
   if (accountPanel) return <GlobalShell title={tx(ACCOUNT_PANELS[accountPanel])} variant="wms" navigation={S00_SHELL_NAVIGATION}><AccountCenterScreen panel={accountPanel} /></GlobalShell>;
