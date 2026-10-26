@@ -257,7 +257,7 @@ export function RecipientsScreen({ adapter, updateAdapter, catalogCreateAdapter 
                 <Button variant="secondary" aria-label={tx("Cuộn bảng sang phải")} aria-controls="recipient-table-region" aria-disabled={tableScroll.atEnd} onClick={()=>scrollTable(1)}><Icon name="chevron-right" width={18} height={18}/></Button>
               </div>
             </div>
-            <DataTable caption={tx("Danh sách nơi nhận")} columns={columns} rows={model.rows} rowKey={row=>row.key} sort={model.query.sort} onSort={sortBy} emptyStateKind="no-results" emptyContent={<p>{tx("Không tìm thấy nơi nhận phù hợp. Hãy đổi điều kiện hoặc đặt lại bộ lọc.")}</p>} scrollResetKey={JSON.stringify(model.query)} busy={runtime.loading || runtime.debouncing} appearance="refined"/>
+            <DataTable caption={tx("Danh sách nơi nhận")} columns={columns} rows={model.rows} rowKey={row=>row.key} sort={model.query.sort} onSort={sortBy} emptyStateKind="no-results" onResetFilters={()=>read(()=>controller.reset(resetRecipientsQuery()),"reset")} emptyContent={<p>{tx("Không tìm thấy nơi nhận phù hợp. Hãy đổi điều kiện hoặc đặt lại bộ lọc.")}</p>} scrollResetKey={JSON.stringify(model.query)} busy={runtime.loading || runtime.debouncing} appearance="refined"/>
           </div>
           <Pagination variant="products" unit={tx("nơi nhận")} page={model.pagination.page} pageSize={model.pagination.pageSize} filteredTotal={model.pagination.total} displayedCount={model.rows.length} canGoPrevious={model.pagination.page>1} canGoNext={model.pagination.page<model.pagination.pageCount} onPageChange={page=>changeQuery({page},'page')} pageSizeOptions={model.pagination.pageSizeOptions} onPageSizeChange={pageSize=>changeQuery({pageSize})}/>
           <NoticeSlot name="pagination" />

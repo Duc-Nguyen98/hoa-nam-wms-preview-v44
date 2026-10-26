@@ -91,7 +91,7 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
 .s27-loading { padding: 28px 20px; color: var(--hn-muted); }
 .s27-source-pending { margin: 0; padding: 16px; border: 1px solid var(--hn-border); border-radius: var(--hn-card-radius); background: var(--hn-surface); color: var(--hn-muted); line-height: 1.6; }
 .s27-scroll-hint { margin: 0; padding: 0 20px 10px; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .s27-operational-table-view { display: none; }
   .s27-operational-card-view { display: grid; }
   .s27-screen .hn-page-actions { width: 100%; align-items: stretch; }
@@ -226,7 +226,7 @@ body:has(.hn-shell[data-layout='drawer']) .s27-dev-banner { margin-inline-start:
   .hn-shell[data-shell-version='s00'][data-variant][data-layout]:has(.s27-screen) .hn-main { padding: 24px; }
   .s27-screen .hn-button, .s27-screen .hn-icon-button, .s27-screen select, .s27-screen input { min-height: 44px; }
 }
-@media (max-width: 900px), (orientation: portrait) and (pointer: coarse) {
+@media (max-width: 1100px), (orientation: portrait) and (pointer: coarse) {
   .s27-detail-modal { width: min(800px, calc(100vw - 48px)); }
   .s27-detail-identity { flex-wrap: wrap; }
   .s27-detail-related { grid-template-columns: minmax(0,1fr); }
@@ -338,7 +338,7 @@ html[data-hn-theme='dark'] .hn-shell .s27-screen {
   .hn-shell .s27-screen .s27-list .hn-catalogue-toolbar, .hn-shell .s27-screen .s27-operational-card-view { padding-inline: 16px; }
   .hn-shell .s27-screen .s27-operational-card-view { gap: 12px; padding-bottom: 0; }
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .hn-shell .s27-screen .hn-page-heading h1 { font-size: 32px; line-height: 40px; }
   .hn-shell .s27-screen .s27-operational { gap: 14px; }
   .hn-shell .s27-screen .hn-breadcrumb { font-size: 14px; margin-bottom: 8px; }
@@ -360,13 +360,13 @@ html[data-hn-theme='dark'] .hn-shell .s27-screen .hn-catalogue-actions .hn-butto
 .hn-shell .s27-screen .s27-operational-table-view .s27-entity code { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .hn-shell .s27-screen .s27-operational-card { gap:12px; }
 .hn-shell .s27-screen .s27-footer .hn-pagination { min-height:56px; }
-@media(max-width:900px){
+@media(max-width:1100px){
  .hn-shell[data-shell-version] .s27-screen .hn-filter-select.hn-basic-field>select { height:44px; }
  .hn-shell .s27-screen .s27-operational-period { padding:12px 16px; gap:8px; }
  .hn-shell .s27-screen .hn-catalogue-toolbar[data-layout='worklist'] { gap:12px; padding-bottom:16px; }
  .hn-shell .s27-screen .s27-list-heading { padding-bottom:14px; }
 }
-@media(max-width:900px){
+@media(max-width:1100px){
  .hn-shell .s27-screen .s27-list-heading { padding:12px 16px; }
  .hn-shell .s27-screen .s27-list-heading p { margin:4px 0 0; line-height:20px; }
  .hn-shell[data-shell-version] .s27-screen .hn-filter-select.hn-basic-field { gap:4px; }
@@ -390,7 +390,7 @@ html[data-hn-theme='dark'] .hn-shell .s27-screen .hn-catalogue-actions .hn-butto
 .hn-global-modal.s27-detail-modal .s27-detail-info code { font-family:inherit; font-size:14px; }
 .hn-global-modal.s27-detail-modal .s27-detail-trace dl { gap:10px; }
 .hn-global-modal.s27-detail-modal .s27-detail-trace__value { min-height:36px; }
-@media(min-width:561px) and (max-width:900px){
+@media(min-width:561px) and (max-width:1100px){
  .hn-global-modal.s27-detail-modal { width:min(654px,calc(100vw - 48px)); }
  .hn-global-modal.s27-detail-modal .s27-detail-section { padding:18px; border:1px solid var(--hn-border); border-radius:6px; }
  .hn-global-modal.s27-detail-modal .s27-detail-info > div { grid-template-columns:1fr; gap:6px; }
@@ -400,3 +400,20 @@ html[data-hn-theme='dark'] .hn-shell .s27-screen .hn-catalogue-actions .hn-butto
  .hn-global-modal.s27-detail-modal { width:calc(100vw - 24px); }
  .hn-global-modal.s27-detail-modal .s27-detail-info > div { grid-template-columns:1fr; }
 }
+
+
+@media(min-width:561px) and (max-width:1100px){
+ .hn-global-modal.s27-detail-modal { width:min(776px,calc(100vw - 48px)); }
+ .hn-global-modal.s27-detail-modal .s27-detail-related { grid-template-columns:1fr; }
+ .hn-global-modal.s27-detail-modal .s27-detail-content { gap:24px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-section h3 { font-size:22px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info { gap:24px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info :is(dt,dd,code) { font-size:18px; line-height:26px; }
+ .hn-shell .s27-screen .s27-operational-card { padding:20px 24px; gap:16px; }
+ .hn-shell .s27-screen .s27-operational-card h3 { font-size:22px; line-height:30px; }
+ .hn-shell .s27-screen .s27-operational-card dt { font-size:15px; }
+ .hn-shell .s27-screen .s27-operational-card dd,.hn-shell .s27-screen .s27-operational-card dd code { font-size:17px; line-height:26px; }
+ .hn-shell .s27-screen .s27-card-footer .hn-button { font-size:18px; }
+ .hn-shell .s27-screen .hn-page-heading h1 { font-size:36px; line-height:46px; }
+}
+

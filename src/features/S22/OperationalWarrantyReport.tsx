@@ -1,3 +1,5 @@
+import { PageState } from '../../shared/PageState';
+import { readFailureKind } from '../../shared/read-failure-kind';
 import { ReadState } from '../../shared/ReadState';
 import { formatBusinessDate } from '../../i18n/format-business-date';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
@@ -87,7 +89,7 @@ export function OperationalWarrantyReport({ adapter }: { adapter: WarrantyReport
       <DataTable caption={tx('Ca bảo hành trong kỳ')} columns={columns} rows={model.rows} rowKey={item => item.id} appearance="refined" emptyContent={<p>{tx('Chưa có ca trong kỳ đã chọn.')}</p>} />
     </section></>}
     <GlobalModal open={!!selected} title={tx('Chi tiết ca bảo hành')} size="large" onClose={() => setSelected(null)} resolveReturnFocus={resolveDetailReturnFocus} footer={<><Button variant="secondary" disabled={state.loading} onClick={() => void controller.load()}>{tx('Đọc báo cáo')}</Button><Button onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
-      {state.loading ? <p role="status">{tx('Đang đọc báo cáo…')}</p> : state.error ? <p role="alert">{tx(errorText)}</p> : !row ? <p role="status">{tx('Ca không còn thuộc phiên hoặc kỳ báo cáo đang đọc. Đóng chi tiết để chọn lại.')}</p> : null}
+      {state.loading ? <PageState kind="loading" description={tx('Đang đọc báo cáo…')}/> : state.error ? <PageState kind={readFailureKind(state.error)} description={tx(errorText)} onRetry={()=>void controller.load()}/> : !row ? <PageState kind="record-not-found" description={tx('Ca không còn thuộc phiên hoặc kỳ báo cáo đang đọc. Đóng chi tiết để chọn lại.')} action={<Button onClick={()=>setSelected(null)}>{tx('Đóng')}</Button>}/> : null}
       {row && <><dl className="s22-operational-fields" data-case-id={row.id}>
         {[[tx('Mã ca'), row.code], [tx('SKU'), row.skuCode], [tx('Sản phẩm'), row.productName], [tx('Mã vật lý'), row.physicalCode ?? '—'], [tx('Định danh tạm'), row.temporaryIdentity ?? '—'], [tx('Ngày tiếp nhận'), timestamp(row.receivedAt)], [tx('Ngày dự kiến hoàn tất'), row.expectedFinishDate ? date(row.expectedFinishDate) : tx('Chưa có ngày dự kiến')], [tx('Khách báo lỗi'), row.customerReportedIssue], [tx('Chẩn đoán kỹ thuật'), row.technicianDiagnosis || tx('Chưa chẩn đoán')], [tx('Số lỗi được ghi nhận'), row.defectIds.length], [tx('Số phiếu cấp linh kiện'), row.partIssueIds.length]].map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
       </dl><DataTable caption={tx('Lịch sử trạng thái')} rows={row.timeline} rowKey={item => item.id} columns={[

@@ -65,7 +65,7 @@
 .s12-detail__fields dt { margin-bottom: 4px; color: var(--hn-muted); font-size: 13px; line-height: 20px; }
 .s12-detail__fields dd { margin: 0; font-size: 15px; line-height: 24px; font-weight: 600; overflow-wrap: anywhere; }
 .s12-detail__footer { justify-content: flex-end; border-top: 1px solid var(--hn-border); }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .s12-detail__header, .s12-detail__body, .s12-detail__footer { padding: 16px; }
   .s12-detail__fields { grid-template-columns: 1fr; gap: 16px; }
 }
@@ -202,7 +202,7 @@
   .s12-detail__fields { grid-template-columns: 1fr; gap: 12px; }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .hn-global-modal.s12-detail-modal { width: min(560px, calc(100vw - 32px)); }
   .s12-detail-modal .hn-global-modal__header { padding: 20px 24px 16px; }
   .s12-detail-modal .hn-global-modal__header h2 { font-size: 22px; line-height: 30px; }
@@ -219,7 +219,7 @@
   .s12-recorded-codes h3 { font-size: 20px; line-height: 28px; }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .s12-editor-modal .hn-global-modal__footer { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
   .s12-editor-modal .hn-modal-footer-tools { grid-column: 1 / -1; width: 100%; margin-inline-end: 0; }
   .s12-editor-modal .hn-modal-footer-tools .hn-button { width: 100%; }
@@ -267,11 +267,11 @@
 .s12-detail-modal .s12-recorded-codes > [role='status'] { min-height: 132px; }
 .s12-detail-modal .hn-status-badge--neutral { padding: 5px 13px; border: 0; border-radius: 999px; background: var(--hn-action-fill); color: var(--hn-control); font-size: 14px; }
 
-@media (min-width: 561px) and (max-width: 900px) {
+@media (min-width: 561px) and (max-width: 1100px) {
   .hn-global-modal.s12-editor-modal { width: min(560px, calc(100vw - 32px)); }
   .hn-global-modal.s12-detail-modal { width: min(620px, calc(100vw - 32px)); }
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .s12-detail-modal .s12-detail__fields > div { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 16px; }
   .s12-detail-modal .s12-detail__fields dd { text-align: left; justify-content: space-between; font-weight: 500; }
   .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s12-detail-modal .s12-detail__fields dd .hn-button { border: 0; }
@@ -315,3 +315,22 @@ html[data-hn-theme='dark'] .s12-detail-modal .s12-detail-code code { color:#79bd
   .s12-detail-modal .hn-global-modal__footer { flex-wrap: wrap; }
   .s12-detail-modal .hn-global-modal__footer .hn-modal-footer-tools { width: 100%; }
 }
+
+
+@media(min-width:561px) and (max-width:1100px){
+ .hn-global-modal.s12-editor-modal { width:min(672px,calc(100vw - 48px)); }
+ .hn-global-modal.s12-detail-modal { width:min(736px,calc(100vw - 48px)); }
+ .s12-editor-modal :is(.hn-global-modal__header,.hn-global-modal__body,.hn-global-modal__footer) { padding:24px 32px; }
+ .s12-editor-modal .hn-global-modal__heading h2,.s12-detail-modal .hn-global-modal__heading h2 { font-size:28px; line-height:38px; }
+ .s12-editor-modal .s12-receipt-header-form { gap:28px; }
+ .s12-editor-modal .hn-form-field__label { font-size:18px; line-height:26px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s12-editor-modal .hn-form-field :is(input,select) { height:56px; font-size:18px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s12-editor-modal .hn-global-modal__footer .hn-button { min-height:56px; font-size:18px; }
+ .s12-detail-modal .s12-detail__fields dt,.s12-detail-modal .s12-detail__fields dd { font-size:18px; line-height:28px; }
+ .s12-detail-modal .s12-detail__fields>div { padding-block:18px; }
+ .s12-detail-modal .s12-recorded-codes h3 { font-size:22px; }
+}
+.hn-shell[data-shell-version][data-variant][data-layout] .s12-detail-modal .s12-detail-code .hn-button,
+.hn-shell[data-shell-version][data-variant][data-layout] .s12-detail-modal .s12-detail__fields dd .hn-button { width:44px; min-width:44px; height:44px; min-height:44px; flex-basis:44px; }
+.s12-list>.hn-page-state { margin-top:24px; }
+

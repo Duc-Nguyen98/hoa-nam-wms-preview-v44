@@ -20,12 +20,12 @@ export interface PageStateProps {
 }
 
 const defaults: Record<PageStateKind, { title: string; description: string; tone: 'neutral' | 'warning' | 'error' }> = {
-  loading: { title: 'Đang tải dữ liệu…', description: 'Vui lòng chờ trong giây lát.', tone: 'neutral' },
+  loading: { title: 'Đang tải', description: 'Vui lòng chờ trong giây lát.', tone: 'neutral' },
   empty: { title: 'Chưa có dữ liệu', description: 'Danh sách hiện chưa có bản ghi nào.', tone: 'neutral' },
-  'no-results': { title: 'Không tìm thấy kết quả', description: 'Hãy đổi điều kiện lọc hoặc đặt lại bộ lọc.', tone: 'neutral' },
-  error: { title: 'Chưa thể tải dữ liệu', description: 'Đã xảy ra lỗi khi đọc dữ liệu.', tone: 'error' },
+  'no-results': { title: 'Không có kết quả', description: 'Hãy đổi điều kiện lọc hoặc đặt lại bộ lọc.', tone: 'neutral' },
+  error: { title: 'Lỗi tải dữ liệu', description: 'Đã xảy ra lỗi khi đọc dữ liệu.', tone: 'error' },
   unauthorized: { title: 'Phiên đăng nhập đã hết hạn', description: 'Vui lòng đăng nhập lại để tiếp tục.', tone: 'warning' },
-  forbidden: { title: 'Bạn không có quyền truy cập', description: 'Hãy liên hệ quản trị viên nếu bạn cần quyền này.', tone: 'warning' },
+  forbidden: { title: 'Không có quyền', description: 'Hãy liên hệ quản trị viên nếu bạn cần quyền này.', tone: 'warning' },
   'not-found': { title: 'Không tìm thấy nội dung', description: 'Nội dung yêu cầu không tồn tại hoặc đã được thay đổi.', tone: 'warning' },
   'route-not-found': { title: 'Không tìm thấy trang', description: 'Đường dẫn này không được đăng ký trong hệ thống.', tone: 'warning' },
   'record-not-found': { title: 'Không tìm thấy bản ghi', description: 'Bản ghi yêu cầu không tồn tại hoặc đã được thay đổi.', tone: 'warning' },
@@ -42,10 +42,10 @@ export function PageState({ kind, title, description, children, action, onRetry,
   const live = kind === 'loading' ? 'polite' : kind === 'error' || kind === 'offline' ? 'assertive' : 'polite';
   return <section className={`hn-page-state hn-page-state--${kind} hn-page-state--${fallback.tone} ${className}`} data-state={kind} aria-busy={kind === 'loading' || undefined} aria-live={live} role={kind === 'error' || kind === 'offline' ? 'alert' : 'status'}>
     <div className="hn-page-state__content">
-      {kind !== 'loading' && <Icon className="hn-page-state__icon" name={(({empty:'documents','no-results':'search',forbidden:'lock',unauthorized:'lock',error:'alert-triangle',offline:'alert-triangle',stale:'refresh'} as Partial<Record<PageStateKind,IconName>>)[kind] ?? 'search')} size={64} />}
+      {kind !== 'loading' && <Icon className="hn-page-state__icon" name={(({empty:'documents','no-results':'search',forbidden:'lock',unauthorized:'lock',error:'alert-triangle',offline:'alert-triangle',stale:'refresh','record-not-found':'file-search','not-found':'file-search','route-not-found':'file-search'} as Partial<Record<PageStateKind,IconName>>)[kind] ?? 'search')} size={64} />}
       <h2>{tx(title ?? fallback.title)}</h2>
       <div className="hn-page-state__description">{tx(description ?? fallback.description)}{children}</div>
-      {kind === 'loading' && <div className="hn-page-state__skeleton" aria-hidden="true">{Array.from({length:5},(_,row)=><div key={row}>{Array.from({length:4},(_,col)=><span key={col}/>)}</div>)}</div>}
+      {kind === 'loading' && <div className="hn-page-state__skeleton" aria-hidden="true">{Array.from({length:6},(_,row)=><div key={row}>{Array.from({length:4},(_,col)=><span key={col}/>)}</div>)}</div>}
       {content && <div className="hn-page-state__actions">{content}</div>}
     </div>
   </section>;

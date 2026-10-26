@@ -2,6 +2,7 @@ import { OUTBOUND_DESIGN_ZH } from '../features/S15/outbound-design-copy';
 // Central UI dictionary adopted from reviewed UIUX proposals. Regenerate with scripts/adopt-uiux-zh.ts.
 export const ZH_COPY: Readonly<Record<string,string>> = {
   ...OUTBOUND_DESIGN_ZH,
+  'Đang tải': '加载中',
   "Vui lòng nhập mã sản phẩm.": "请输入产品编码。",
   "Ghim SKU": "固定 SKU",
   " · Không bắt buộc": " · 选填",

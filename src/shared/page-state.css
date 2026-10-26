@@ -21,3 +21,12 @@ html .hn-state-empty-frame:has(.hn-page-state) { display:block; min-height:0; pa
 html .hn-report-empty:has(>.hn-page-state) { display:block; padding:0; border:0; background:transparent; }
 .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-page-state .hn-button.hn-button--primary[data-hn-control='button'] { background:#0069d6; border-color:#0069d6; color:#fff; }
 html[data-hn-theme='dark'] .hn-page-state__skeleton>div:first-child { background:#122638; }
+
+html .hn-page-state .hn-page-state__description { font-size:18px; line-height:1.5; }
+html .hn-page-state .hn-page-state__description>p { margin:0; }
+html .hn-page-state--neutral .hn-page-state__icon,html .hn-page-state--forbidden .hn-page-state__icon,html .hn-page-state--record-not-found .hn-page-state__icon { color:#99a5b3; }
+html .hn-page-state .hn-page-state__actions .hn-button { min-height:48px; font-size:16px; padding-inline:24px; }
+html[data-hn-theme='dark'] .hn-page-state .hn-page-state__icon { color:#a6b8cc; }
+html[data-hn-theme='dark'] .hn-page-state--error .hn-page-state__icon { color:#ff9f90; }
+
+html .hn-table[hidden] { display:none; }

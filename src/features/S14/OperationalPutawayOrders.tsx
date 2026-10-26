@@ -1,3 +1,5 @@
+import { PageState } from '../../shared/PageState';
+import { readFailureKind } from '../../shared/read-failure-kind';
 import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Button, DataTable, GlobalModal, StatusBadge, type TableColumn } from '../../shared';
@@ -82,7 +84,7 @@ export function OperationalPutawayOrders({ adapter: supplied, notify }: { adapte
     {snapshot?.scenario && <DataTable caption={tx('Lệnh xếp khay phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.putaways} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có lệnh. Tạo lệnh từ Hàng chờ.')}</p>} />}
     <GlobalModal open={!!selected && !editor} title={tx('Chi tiết lệnh xếp khay')} onClose={() => { if (!state.busy) setSelected(null); }} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy || state.recovery} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
       {feedback}
-      {!row || !snapshot ? <p>{tx(state.error || !snapshot ? 'Chưa thể đọc chi tiết. Đọc lại dữ liệu để kiểm tra.' : 'Lệnh không còn trong phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
+      {!row || !snapshot ? <PageState kind={state.busy ? 'loading' : state.error ? readFailureKind(state.error) : !snapshot ? 'error' : 'record-not-found'} description={tx(state.error || !snapshot ? 'Chưa thể đọc chi tiết. Đọc lại dữ liệu để kiểm tra.' : 'Lệnh không còn trong phiên hiện tại. Đóng và đọc lại dữ liệu.')} action={<Button onClick={()=>setSelected(null)}>{tx('Đóng')}</Button>}/> : <>
         <dl className="s14-operational-fields" data-putaway-id={row.id}>
           <div><dt>{tx('BOX')}</dt><dd>{box?.data.physicalCode ?? '—'}</dd></div><div><dt>{tx('Phiếu nhập nguồn')}</dt><dd>{snapshot.receipts.find(r => r.id === row.data.receiptId)?.data.code ?? '—'}</dd></div>
           <div><dt>{tx('Trạng thái')}</dt><dd>{badge(row)}</dd></div><div><dt>{tx('Khay đích')}</dt><dd>{trayLabel(row.data.trayId)}</dd></div>

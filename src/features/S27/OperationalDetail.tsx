@@ -1,3 +1,5 @@
+import { PageState } from '../../shared/PageState';
+import { readFailureKind } from '../../shared/read-failure-kind';
 import type { ShellLanguage } from '../../shared/shell-preferences';
 import { formatAuditTime } from './audit-time';
 import { useEffect, useRef } from 'react';
@@ -158,9 +160,9 @@ export function AuditDetail({ row, tx, onClose, onRefresh, resolveReturnFocus, l
   return <GlobalModal open={open} title={copy('Chi tiết sự kiện')} description={copy('Chỉ đọc. Thông tin chi tiết của sự kiện đã chọn.')} onClose={onClose} resolveReturnFocus={resolveReturnFocus} size="large" className="s27-detail-modal"
     data-audit-detail-state={loading ? 'loading' : error ? 'error' : eligibleRow ? 'ready' : 'unavailable'}
     footer={<><Button variant="secondary" loading={loading} onClick={onRefresh}>{copy('Đọc lại dữ liệu')}</Button><Button onClick={onClose}>{copy('Đóng')}</Button></>}>
-    {loading ? <div className="s27-detail-read-state" role="status"><Icon name="refresh" size={24} /><p>{copy('Đang đọc lại sự kiện đã chọn…')}</p></div>
-      : error ? <div className="s27-detail-read-state" role="alert"><Icon name="info" size={24} /><p>{copy(auditDetailReadMessage(error))}</p></div>
-      : !eligibleRow ? <div className="s27-detail-read-state" role="status"><Icon name="info" size={24} /><p>{copy('Sự kiện không còn khả dụng trong phạm vi hiện tại.')}</p></div>
+    {loading ? <PageState kind="loading" description={copy('Đang đọc lại sự kiện đã chọn…')}/>
+      : error ? <PageState kind={readFailureKind(error)} description={copy(auditDetailReadMessage(error))} onRetry={onRefresh}/>
+      : !eligibleRow ? <PageState kind="record-not-found" description={copy('Sự kiện không còn khả dụng trong phạm vi hiện tại.')} action={<Button onClick={onClose}>{copy('Đóng')}</Button>}/>
       : <div data-audit-detail-id={eligibleRow.id} className="s27-detail-content">
         <section className="s27-detail-identity" aria-label={copy('Nhận diện sự kiện')}>
           <span className="s27-detail-identity__icon"><Icon name={identityIcon} size={28} /></span>

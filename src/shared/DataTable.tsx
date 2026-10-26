@@ -1,8 +1,9 @@
 import { useUiCopy } from '../i18n/use-ui-copy';
-import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
+import { isValidElement, useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import type { CSSProperties, Key, ReactNode } from 'react';
 import { revealControl } from './focus';
-import { Icon } from './Icon';
+import { PageState } from './PageState';
+import { Button } from './primitives';
 import './page-state.css';
 
 export interface TableColumn<Row> {
@@ -37,6 +38,7 @@ export interface DataTableProps<Row> {
   emptyContent?: ReactNode;
   /** Owner-supplied empty reason; never inferred from row count. */
   emptyStateKind?: 'empty' | 'no-results';
+  onResetFilters?: () => void;
   busy?: boolean;
   /** Accepted query identity: query changes reveal the first row, refresh keeps position. */
   scrollResetKey?: string;
@@ -56,7 +58,7 @@ export interface DataTableProps<Row> {
 }
 
 /** Controlled presentation only. Query semantics, sort direction and row completeness belong to the controller. */
-export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, emptyContent, emptyStateKind = 'empty', busy = false, scrollResetKey, appearance = 'default', density = 'default', rowActionAppearance, sortIndicatorAppearance, isRowSelected, stickyHeader = false, stickyColumnIds = [], stickyEndColumnIds = [], captionVisibility = 'visible', scrollFocusIndicatorId }: DataTableProps<Row>) {
+export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, emptyContent, emptyStateKind = 'empty', onResetFilters, busy = false, scrollResetKey, appearance = 'default', density = 'default', rowActionAppearance, sortIndicatorAppearance, isRowSelected, stickyHeader = false, stickyColumnIds = [], stickyEndColumnIds = [], captionVisibility = 'visible', scrollFocusIndicatorId }: DataTableProps<Row>) {
   const tx = useUiCopy();
   const captionId = useId();
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -163,7 +165,7 @@ export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, e
     });
   };
   return <div ref={scrollRef} className="hn-table-scroll" role="region" aria-labelledby={captionId} aria-describedby={scrollFocusIndicatorId} data-focus-indicator={scrollFocusIndicatorId} tabIndex={0} onFocusCapture={revealFocusedControl}>
-    <table className="hn-table" data-ui-contract="s05" aria-busy={busy} data-appearance={appearance === 'refined' ? 'refined' : undefined} data-density={density === 'compact' ? density : undefined} data-row-action-appearance={rowActionAppearance === 'quiet' ? rowActionAppearance : undefined} data-sort-indicator-appearance={sortIndicatorAppearance === 'quiet' ? sortIndicatorAppearance : undefined} data-sticky-columns={stickyColumnIds.length || stickyEndColumnIds.length ? pinnedIds.length || pinnedEndIds.length ? 'active' : 'suspended' : undefined} data-sticky-header={stickyHeader ? 'true' : undefined}>
+    <table hidden={rows.length === 0} className="hn-table" data-ui-contract="s05" aria-busy={busy} data-appearance={appearance === 'refined' ? 'refined' : undefined} data-density={density === 'compact' ? density : undefined} data-row-action-appearance={rowActionAppearance === 'quiet' ? rowActionAppearance : undefined} data-sort-indicator-appearance={sortIndicatorAppearance === 'quiet' ? sortIndicatorAppearance : undefined} data-sticky-columns={stickyColumnIds.length || stickyEndColumnIds.length ? pinnedIds.length || pinnedEndIds.length ? 'active' : 'suspended' : undefined} data-sticky-header={stickyHeader ? 'true' : undefined}>
       <caption id={captionId} data-caption-visibility={captionVisibility === 'sr-only' ? 'sr-only' : undefined}>{tx(caption)}</caption>
       <thead><tr>{columns.map((column) => {
         const direction = column.sortKey && sort?.key === column.sortKey ? sort.direction : null;
@@ -179,6 +181,6 @@ export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, e
       })}</tr></thead>
       <tbody>{rows.map((row, index) => <tr key={rowKey(row)} data-selected={isRowSelected?.(row) || undefined}>{columns.map((column) => <td key={column.id} data-column={column.id} {...stickyCellProps(column.id)} className={column.align === 'end' ? 'hn-align-end' : undefined}>{column.render(row, index)}</td>)}</tr>)}</tbody>
     </table>
-    {rows.length === 0 && emptyContent && <div className="hn-table-empty hn-state-empty-frame"><Icon className="hn-state-empty-frame__icon" name={emptyStateKind==='no-results'?'search':'documents'} size={64}/><div>{emptyContent}</div></div>}
+    {rows.length === 0 && <div className="hn-table-empty">{busy ? <PageState kind="loading"/> : isValidElement(emptyContent) && typeof emptyContent.type !== 'string' ? emptyContent : <PageState kind={emptyStateKind} description={emptyContent ?? undefined} action={onResetFilters ? <Button onClick={onResetFilters}>{tx("Đặt lại bộ lọc")}</Button> : undefined}/>}</div>}
   </div>;
 }

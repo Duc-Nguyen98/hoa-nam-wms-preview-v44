@@ -123,7 +123,7 @@ export function PvDemoCatalogue({ adapter: supplied, onBlockedChange, onFeedback
         </FilterSelect>
       </div>
       <DataTable caption={tx('Catalog PV Demo')} columns={columns} rows={rows} rowKey={row => row.id} busy={state.busy}
-        emptyContent={<p role="status">{tx('Chưa có hồ sơ phù hợp.')}</p>} />
+        emptyStateKind="no-results" emptyContent={<p role="status">{tx('Chưa có hồ sơ phù hợp.')}</p>} />
       <Pagination page={currentPage} pageSize={pageSize} filteredTotal={filtered.length} displayedCount={rows.length}
         canGoPrevious={currentPage > 1} canGoNext={currentPage * pageSize < filtered.length} onPageChange={setPage}
         pageSizeOptions={[10, 15, 25, 50]} onPageSizeChange={value => { setPageSize(value); setPage(1); }} />

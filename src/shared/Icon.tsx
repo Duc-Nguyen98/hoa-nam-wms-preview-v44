@@ -1,6 +1,6 @@
 import type { ReactNode, SVGProps } from 'react';
 
-export type IconName = 'map-pin' | 'layers' | 'copy' | 'save' | 'sun' | 'moon' | 'language' | 'check' | 'eye' | 'eye-off' | 'image' | 'more' | 'barcode' | 'building' | 'menu' | 'close' | 'chevron-left' | 'chevron-right' | 'chevron-down' | 'section' | 'warehouse' | 'brand' | 'home' | 'box' | 'download' | 'upload' | 'tray' | 'shield' | 'chart' | 'history' | 'search' | 'tag' | 'refresh' | 'calendar' | 'help' | 'documents' | 'catalog' | 'users' | 'settings' | 'audit' | 'bell' | 'plus' | 'edit' | 'info' | 'pin' | 'unpin' | 'lock' | 'arrow-right' | 'logout' | 'user' | 'filter' | 'circle-check' | 'alert-triangle' | 'alert-circle' | 'arrow-up' | 'arrow-down' | 'arrows-sort' | 'arrows-horizontal';
+export type IconName = 'bolt' | 'file-search' | 'map-pin' | 'layers' | 'copy' | 'save' | 'sun' | 'moon' | 'language' | 'check' | 'eye' | 'eye-off' | 'image' | 'more' | 'barcode' | 'building' | 'menu' | 'close' | 'chevron-left' | 'chevron-right' | 'chevron-down' | 'section' | 'warehouse' | 'brand' | 'home' | 'box' | 'download' | 'upload' | 'tray' | 'shield' | 'chart' | 'history' | 'search' | 'tag' | 'refresh' | 'calendar' | 'help' | 'documents' | 'catalog' | 'users' | 'settings' | 'audit' | 'bell' | 'plus' | 'edit' | 'info' | 'pin' | 'unpin' | 'lock' | 'arrow-right' | 'logout' | 'user' | 'filter' | 'circle-check' | 'alert-triangle' | 'alert-circle' | 'arrow-up' | 'arrow-down' | 'arrows-sort' | 'arrows-horizontal';
 
 /* Original SVG paths authored locally. Semantic functions observed in S01/S02 references; no approved glyph/font asset claim. */
 export function Icon({ name, size = 20, ...props }: SVGProps<SVGSVGElement> & { name: IconName; size?: number }) {
@@ -33,6 +33,8 @@ export function Icon({ name, size = 20, ...props }: SVGProps<SVGSVGElement> & { 
   </>,
     eye: <><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></>,
     'eye-off': <><path d="m3 3 18 18M9 5.5A12 12 0 0 1 12 5c6 0 10 7 10 7a23 23 0 0 1-3 3.8M6 6.5A24 24 0 0 0 2 12s4 7 10 7a12 12 0 0 0 5-1.2" /><path d="M9 10a3 3 0 0 0 4 4" /></>,
+    bolt: <path d="m13 2-8 12h6l-1 8 9-13h-6l1-7Z" />,
+    'file-search': <><path d="M13 21H5V3h10l4 4v5M14 3v5h5M8 11h3M8 15h2"/><circle cx="16" cy="17" r="4"/><path d="m19 20 3 3"/></>,
     image: <><rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8" cy="8" r="1.5" /><path d="m3 17 5-5 4 4 4-6 5 7" /></>,
     more: <><circle cx="12" cy="5" r="1" /><circle cx="12" cy="12" r="1" /><circle cx="12" cy="19" r="1" /></>,
     barcode: <path d="M3 3v18M7 5v14M10 3v18M14 3v18M17 5v14M21 3v18" />,

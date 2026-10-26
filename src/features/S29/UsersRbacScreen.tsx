@@ -224,7 +224,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
                 onSort={key => updateUsers({ sortKey: key as UserQuery['sortKey'], sortDirection: userQuery.sortKey === key && userQuery.sortDirection === 'asc' ? 'desc' : 'asc' })}
                 appearance="refined" density="compact" rowActionAppearance="quiet" sortIndicatorAppearance="quiet"
                 stickyColumnIds={['ordinal', 'user']} stickyEndColumnIds={['actions']} stickyHeader
-                scrollResetKey={JSON.stringify(userModel.query)} busy={usersBusy} emptyContent={<NoResults />} />
+                scrollResetKey={JSON.stringify(userModel.query)} busy={usersBusy} emptyStateKind="no-results" emptyContent={<NoResults onReset={resetUsers} />} />
             </div>
             <p className="s29-table-hint" role="note" hidden={!tableOverflow.users}><Icon name="arrows-horizontal" size={15} />{tx("Cuộn ngang để xem các cột còn lại")}</p>
             <div className="s29-table-footer"><Pagination variant="products" unit={tx("người dùng")}
@@ -255,7 +255,7 @@ export function UsersRbacScreen({ userAdapter, roleAdapter, developmentNote }: {
                 onSort={key => updateRoles({ sortKey: key as RoleSortKey, sortDirection: roleQuery.sortKey === key && roleQuery.sortDirection === 'asc' ? 'desc' : 'asc' })}
                 appearance="refined" density="compact" rowActionAppearance="quiet" sortIndicatorAppearance="quiet"
                 stickyColumnIds={['ordinal', 'role']} stickyEndColumnIds={['actions']} stickyHeader
-                scrollResetKey={JSON.stringify(roleModel.query)} busy={rolesBusy} emptyContent={<NoResults />} />
+                scrollResetKey={JSON.stringify(roleModel.query)} busy={rolesBusy} emptyStateKind="no-results" emptyContent={<NoResults onReset={resetRoles} />} />
             </div>
             <p className="s29-table-hint" role="note" hidden={!tableOverflow.roles}><Icon name="arrows-horizontal" size={15} />{tx("Cuộn ngang để xem các cột còn lại")}</p>
             <div className="s29-table-footer"><Pagination variant="products" unit={tx("vai trò")}
@@ -290,7 +290,7 @@ function DevSourceStrip({ note }: { note: string }) {
   </details>;
 }
 
-function NoResults() {
+function NoResults({onReset}: {onReset:()=>void}) {
   const tx = useUiCopy(ADMIN_EN_COPY);
-  return <div className="s29-no-results"><Icon name="search" size={26} /><strong>{tx("Không tìm thấy bản ghi phù hợp")}</strong><span>{tx("Thử từ khóa khác hoặc bỏ bớt điều kiện lọc.")}</span></div>;
+  return <PageState kind="no-results" description={tx("Thử từ khóa khác hoặc bỏ bớt điều kiện lọc.")} action={<Button onClick={onReset}>{tx("Đặt lại")}</Button>}/>;
 }

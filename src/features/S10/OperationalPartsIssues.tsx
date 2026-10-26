@@ -1,3 +1,5 @@
+import { readFailureKind } from '../../shared/read-failure-kind';
+import { PageState } from '../../shared/PageState';
 import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
@@ -76,7 +78,7 @@ export function OperationalPartsIssues({ adapter: supplied }: { adapter?: PartsR
     {model && !model.active && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử để tra cứu.')}</p>}
     {model?.active && <DataTable caption={tx('Phiếu xuất linh kiện phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={model.issues} rowKey={issue => issue.record.id} busy={state.busy} appearance="refined" emptyContent={<p>{tx('Chưa có phiếu xuất linh kiện trong phiên hiện tại.')}</p>} />}
     <GlobalModal resolveReturnFocus={resolveDetailReturnFocus} open={!!selected} title={tx('Chi tiết phiếu xuất linh kiện')} onClose={() => setSelected(null)} size="large" footer={<><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button><Button onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
-      {error}{!detail ? <p role="status">{tx('Phiếu không còn thuộc phiên hiện tại hoặc chưa thể đọc đầy đủ.')}</p> : <div className="s10-operational__detail" data-operational-parts-id={detail.record.id}>
+      {error}{!detail ? <PageState kind={state.busy ? 'loading' : state.error ? readFailureKind(state.error) : 'record-not-found'} description={state.busy || state.error ? undefined : tx('Phiếu không còn thuộc phiên hiện tại hoặc chưa thể đọc đầy đủ.')} action={!state.busy && <Button onClick={()=>setSelected(null)}>{tx('Đóng')}</Button>}/> : <div className="s10-operational__detail" data-operational-parts-id={detail.record.id}>
         <dl className="s10-detail__fields"><div><dt>{tx('Mã phiếu')}</dt><dd>{detail.record.data.code}</dd></div><div><dt>{tx('ID phiếu')}</dt><dd>{detail.record.id}</dd></div><div><dt>{tx('Hồ sơ bảo hành')}</dt><dd>{detail.warrantyCase.data.code}</dd></div><div><dt>{tx('ID hồ sơ')}</dt><dd>{detail.warrantyCase.id}</dd></div><div><dt>{tx('Trạng thái')}</dt><dd>{badge(detail)}</dd></div><div><dt>{tx('Mục đích')}</dt><dd>{tx('Bảo hành')}</dd></div></dl>
         <h3>{tx('Dòng linh kiện')}</h3>
         <DataTable caption={tx('Dòng linh kiện')} captionVisibility="sr-only" rows={detail.lines} rowKey={row => row.line.id} emptyContent={<p>{tx('Chưa có dòng linh kiện. Phiếu nháp chưa làm thay đổi tồn kho.')}</p>} columns={[

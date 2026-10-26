@@ -1,4 +1,5 @@
 export const SHARED_EN_COPY: Readonly<Record<string, string>> = {
+  'Đang tải': 'Loading', 'Không có kết quả': 'No results', 'Lỗi tải dữ liệu': 'Data loading error', 'Không có quyền': 'Access denied',
   'Thông tin bản dựng': 'Build information',
   'Trình duyệt chưa hỗ trợ lưu mật khẩu MOCK.': 'This browser cannot store MOCK passwords.',
   'Dữ liệu MOCK đã lưu chưa hợp lệ. Hãy đặt lại bản xem thử.': 'The saved MOCK data is invalid. Reset the preview.',

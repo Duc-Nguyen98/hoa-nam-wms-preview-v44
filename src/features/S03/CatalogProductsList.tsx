@@ -41,7 +41,7 @@ export function CatalogProductsList({ snapshot, busy, error, resetToken, onRefre
         <div className="pr-table" aria-busy={busy}><DataTable appearance="refined" stickyHeader stickyEndColumnIds={['action']} caption={tx('Hồ sơ tạo mới')} rows={model.rows} columns={columns} rowKey={row => row.id}
           sort={query.sortKey && query.sort ? { key: query.sortKey, direction: query.sort } : null}
           onSort={key => change({ sortKey: key as ProductSortKey, sort: query.sortKey === key && query.sort === 'asc' ? 'desc' : 'asc' })}
-          busy={busy} scrollResetKey={JSON.stringify(query)} emptyContent={<p role="status">{tx(snapshot.products.length ? 'Không tìm thấy sản phẩm phù hợp. Hãy đổi điều kiện hoặc đặt lại bộ lọc.' : 'Chưa có hồ sơ tạo mới.')}</p>} /></div>
+          busy={busy} scrollResetKey={JSON.stringify(query)} emptyStateKind={snapshot.products.length ? "no-results" : "empty"} onResetFilters={snapshot.products.length ? ()=>{setQuery({...NEW_PRODUCTS_QUERY});onReset();} : undefined} emptyContent={<p role="status">{tx(snapshot.products.length ? 'Không tìm thấy sản phẩm phù hợp. Hãy đổi điều kiện hoặc đặt lại bộ lọc.' : 'Chưa có hồ sơ tạo mới.')}</p>} /></div>
         <Pagination variant="products" unit={tx('sản phẩm')} page={model.page} pageSize={query.pageSize} filteredTotal={model.total} displayedCount={model.rows.length} canGoPrevious={model.page > 1} canGoNext={model.page < model.pageCount} onPageChange={page => change({ page })} pageSizeOptions={PAGE_SIZE_OPTIONS} onPageSizeChange={pageSize => change({ pageSize })} />
       </>}
   </section>;

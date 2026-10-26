@@ -1,3 +1,5 @@
+import { readFailureKind } from '../../shared/read-failure-kind';
+import { PageState } from '../../shared/PageState';
 import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
@@ -102,10 +104,11 @@ export function OperationalPutawayQueue({ adapter: supplied, orderRoute, notify 
       </dl></>}{feedbackMessages}{confirmationError && !state.error && <p role="alert">{tx(message(confirmationError))}</p>}{selectionMessage && !confirmationError && <p role="status">{tx(selectionMessage)}</p>}
     </GlobalModal>
     <GlobalModal open={!!selectedTask && !confirmation} title={tx('Lệnh xếp khay đã ghi nhận')} onClose={() => { if (!state.busy) setSelectedTask(null); }} footer={<><div className="hn-modal-footer-tools">{recoveryAction}</div><Button disabled={state.busy} onClick={() => setSelectedTask(null)}>{tx('Đóng')}</Button></>}>
-      {!task || !snapshot ? <p role="status">{tx('Lệnh không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
+      {!task || !snapshot ? <PageState kind={state.busy ? 'loading' : state.error ? readFailureKind(state.error) : 'record-not-found'} description={state.busy || state.error ? undefined : tx('Lệnh không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')} action={!state.busy && <Button onClick={()=>setSelectedTask(null)}>{tx('Đóng')}</Button>}/> : <>
         <dl className="s13-operational__fields" data-putaway-task-id={task.id}><div><dt>{tx('Mã lệnh')}</dt><dd>{task.id}</dd></div><div><dt>{tx('Mã BOX')}</dt><dd>{snapshot.boxes.find(box => box.id === task.data.boxId)?.data.physicalCode ?? '—'}</dd></div><div><dt>{tx('Phiếu nhập nguồn')}</dt><dd>{snapshot.receipts.find(receipt => receipt.id === task.data.receiptId)?.data.code ?? '—'}</dd></div><div><dt>{tx('Số lượng khi tạo')}</dt><dd>{task.data.quantityAtCreate}</dd></div><div><dt>{tx('Trạng thái')}</dt><dd><StatusBadge tone={task.data.status === 'CONFIRMED' ? 'success' : 'neutral'}>{tx(STATUS[task.data.status])}</StatusBadge></dd></div><div><dt>{tx('Khay')}</dt><dd>{task.data.trayId ?? tx('Chưa chọn khay')}</dd></div></dl>
         {orderRoute && <a href={orderRoute}>{tx('Lệnh xếp khay')}</a>}
       </>}{feedbackMessages}
     </GlobalModal>
   </section>;
 }
+

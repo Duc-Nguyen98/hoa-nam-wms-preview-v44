@@ -242,3 +242,33 @@ html[data-hn-theme='dark'] .hn-notification-primary { color:#102336; }
  .hn-notification-center .hn-notification-item { min-height:68px; padding-block:10px; }
  .hn-notification-center .hn-notification-detail-pane { padding:24px 28px 16px; }
 }
+
+
+/* Keep the desktop reading footer visible at the reference viewport. */
+@media(min-width:1001px) and (orientation:landscape){
+ .hn-notification-center .hn-notification-detail-title { font-size:24px; line-height:32px; }
+ .hn-notification-center .hn-notification-detail-body { margin:20px 0 18px; font-size:15px; line-height:24px; }
+ .hn-notification-center .hn-notification-business-card h4 { min-height:48px; padding:12px 20px; }
+ .hn-notification-center .hn-notification-business-card dl { padding:16px 20px; gap:10px; }
+ .hn-notification-center .hn-notification-business-card dl>div { font-size:15px; }
+ .hn-notification-center .hn-notification-detail-actions { margin-top:18px; }
+ .hn-notification-center .hn-notification-detail-footer { margin-top:16px; padding:14px 0 0; }
+ .hn-notification-center .hn-notification-heading-icon { width:48px; height:48px; }
+ .hn-notification-center .hn-global-modal__heading { padding-inline-start:68px; }
+}
+@media(min-width:801px) and (max-width:1100px) and (orientation:portrait){
+ .hn-global-modal.hn-notification-center { width:min(880px,calc(100vw - 48px)); height:min(1262px,calc(100dvh - 48px)); }
+ .hn-notification-center .hn-global-modal__header { min-height:140px; padding:30px 32px; }
+ .hn-notification-center .hn-global-modal__heading h2 { font-size:30px; line-height:40px; }
+ .hn-notification-center .hn-notification-item { grid-template-columns:70px minmax(0,1fr) auto 20px; min-height:112px; gap:28px; padding:18px; }
+ .hn-notification-center .hn-notification-item-icon { width:70px; height:70px; }
+ .hn-notification-center .hn-notification-item-copy strong { font-size:23px; line-height:32px; }
+ .hn-notification-center .hn-notification-item-copy>span { font-size:20px; line-height:30px; }
+ .hn-notification-center .hn-notification-item>time { font-size:20px; }
+ .hn-notification-center .hn-notification-list-footer { font-size:20px; }
+ .hn-notification-center .hn-notification-search { min-height:56px; }
+ .hn-notification-center .hn-notification-search input { font-size:22px; }
+ .hn-notification-center .hn-notification-tabs button { font-size:22px; min-height:76px; }
+ .hn-notification-center .hn-notification-mark-all { font-size:19px; }
+}
+

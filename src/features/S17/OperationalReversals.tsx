@@ -1,3 +1,5 @@
+import { readFailureKind } from '../../shared/read-failure-kind';
+import { PageState } from '../../shared/PageState';
 import { ReadState } from '../../shared/ReadState';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
@@ -129,7 +131,7 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
     </div>
     {snapshot?.scenario && <div className="s17-operational-table"><DataTable caption={tx('Phiếu hoàn phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.reversals} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có phiếu hoàn trong phiên hiện tại.')}</p>} /></div>}
     <GlobalModal className="s17-detail-modal" initialFocusRef={detailFocus} resolveReturnFocus={resolveDetailReturnFocus} open={!!selected && !editor} title={tx('Chi tiết phiếu hoàn')} size="large" onClose={() => setSelected(null)} footer={<><div className="hn-modal-footer-tools">{controls}</div><Button onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
-      {!row || !snapshot || !original ? <p role="status">{tx('Phiếu không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
+      {!row || !snapshot || !original ? <PageState kind={state.busy ? 'loading' : state.error ? readFailureKind(state.error) : 'record-not-found'} description={state.busy || state.error ? undefined : tx('Phiếu không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')} action={!state.busy && <Button onClick={()=>setSelected(null)}>{tx('Đóng')}</Button>}/> : <>
         <dl className="s17-operational-fields" data-operational-reversal-id={row.id}><div><dt>{tx('Phiếu hoàn')}</dt><dd>{row.data.code}</dd></div><div><dt>{tx('Phiếu cấp gốc')}</dt><dd>{original.data.code}</dd></div><div><dt>{tx('Ca bảo hành')}</dt><dd>{snapshot.warrantyCases.find(c => c.id === original.data.caseId)?.data.code ?? '—'}</dd></div><div><dt>{tx('Trạng thái')}</dt><dd>{badge(row)}</dd></div><div><dt>{tx('Lý do hoàn')}</dt><dd>{row.data.reasonText}</dd></div><div><dt>{tx('Nhận lại hàng')}</dt><dd>{tx(row.data.physicalReturn === 'CONFIRMED' ? 'Đã xác nhận nhận lại' : 'Chờ nhận lại')}</dd></div><div><dt>{tx('Số bút toán hoàn')}</dt><dd>{row.data.postedCompensationEventIds.length}</dd></div>{row.data.cancelReason && <div><dt>{tx('Lý do hủy')}</dt><dd>{row.data.cancelReason}</dd></div>}</dl>
         <DataTable caption={tx('Số lượng hoàn')} rows={original.data.lines} rowKey={line => line.id} columns={[
           { id: 'sku', heading: tx('SKU'), render: line => state.catalog?.skus.find(s => s.id === line.skuId)?.code ?? tx('Hồ sơ SKU không khả dụng') },

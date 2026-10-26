@@ -262,3 +262,17 @@ html[data-hn-theme='dark'] .s15-selected-lines th { color:#b0c1d4; }
  .s15-trace-grid { padding:0 16px; }
  .s15-trace-grid>div { padding:4px 0; }
 }
+
+
+.s15-operational-detail.hn-global-modal { width:min(827px,calc(100vw - 48px)); }
+@media(min-width:651px) and (max-width:1100px){
+ .s15-operational-detail.hn-global-modal { width:min(652px,calc(100vw - 48px)); }
+ .s15-operational-detail .hn-global-modal__heading h2 { font-size:28px; }
+ .s15-detail-sections { gap:28px; font-size:18px; }
+ .s15-detail-sections h3 { font-size:22px; }
+ .s15-detail-sections dt,.s15-field-label,.s15-recipient-grid dd { font-size:18px; line-height:28px; }
+ .s15-recipient-grid { padding:20px; gap:20px; }
+ .s15-recipient-grid>div+div { padding-top:20px; }
+ .s15-operational-detail .hn-global-modal__footer .hn-button { min-height:54px; font-size:18px; }
+}
+
