@@ -290,3 +290,33 @@ html[data-hn-theme='dark'] .hn-notification-primary { color:#102336; }
  .hn-notification-center .hn-notification-mark-all svg { width:28px; height:28px; }
 }
 
+/* Desktop content measured from the replacement 1.png reference. */
+@media(min-width:1001px) and (orientation:landscape){
+ .hn-global-modal.hn-notification-center { translate:clamp(0px,calc((100vw - 1136px)/2),48px) clamp(0px,calc((100dvh - 776px)/2),34px); }
+ .hn-notification-center .hn-global-modal__header { min-height:96px; padding-block:18px; }
+ .hn-notification-center .hn-global-modal__heading { padding-inline-start:80px; }
+ .hn-notification-center .hn-notification-heading-icon { width:58px; height:58px; border-radius:12px; }
+ .hn-notification-center .hn-global-modal__heading h2 { font-size:22px; line-height:30px; }
+ .hn-notification-center .hn-global-modal__heading p { font-size:14px; line-height:24px; }
+ .hn-notification-center .hn-notification-heading-badge { font-size:13px; line-height:20px; }
+ .hn-notification-center .hn-notification-search { min-height:38px; }
+ .hn-notification-center .hn-notification-search input { height:36px; }
+ .hn-notification-center .hn-notification-filter-row { min-height:50px; }
+ .hn-notification-center .hn-notification-tabs { gap:28px; }
+ .hn-notification-center .hn-notification-tabs button { min-height:46px; }
+ .hn-notification-center .hn-notification-tabs button span { min-width:22px; height:22px; }
+ .hn-notification-center .hn-notification-group h3 { padding-top:12px; padding-bottom:8px; }
+ .hn-notification-center .hn-notification-item { grid-template-columns:44px minmax(0,1fr) auto; min-height:70px; gap:16px; padding-block:10px; }
+ .hn-notification-center .hn-notification-item[data-selected='true'] { min-height:66px; }
+ .hn-notification-center .hn-notification-item-icon { width:44px; height:44px; }
+ .hn-notification-center .hn-notification-item-copy { gap:2px; }
+ .hn-notification-center .hn-notification-item-copy strong { font-size:14px; }
+ .hn-notification-center .hn-notification-item:not([data-selected='true']):not([data-unread='true']) .hn-notification-item-copy { padding-inline-start:15px; }
+ .hn-notification-center .hn-notification-group+.hn-notification-group { margin-top:0; }
+ .hn-notification-center .hn-notification-detail-body { margin-top:24px; margin-bottom:22px; }
+ .hn-notification-center .hn-notification-business-card h4 { min-height:56px; padding-block:15px; }
+ .hn-notification-center .hn-notification-business-card dl { padding-block:14px 16px; }
+ .hn-notification-center .hn-notification-detail-actions { margin-top:20px; }
+ .hn-notification-center .hn-notification-primary { min-height:48px; padding:11px 28px; font-size:14px; }
+}
+
