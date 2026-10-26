@@ -15,7 +15,7 @@ When sources disagree, resolve them in this order and record the decision:
 4. Confirmed shared tokens in `src/shared/tokens.css` and the accepted shared UI contract.
 5. Implementation proposal, which must be marked `PROVISIONAL` and may not be described as approved.
 
-Missing or contradictory information is a `DESIGN_GAP`. It must be listed in `GAP_REGISTER.md`; agents must not infer a final design value from a screenshot or convenience.
+Missing or contradictory information is a `DESIGN_GAP`. It must be listed in `DEFECT_REGISTER.md`; agents must not infer a final design value from a screenshot or convenience.
 
 ## Status vocabulary
 

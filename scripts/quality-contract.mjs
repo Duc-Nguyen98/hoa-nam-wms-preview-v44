@@ -3,8 +3,8 @@ import path from 'node:path';
 
 const root = process.cwd();
 const manifestPath = path.join(root, 'output', 'tray-approved', 'reference', 'reference-manifest.json');
-const contractPath = path.join(root, 'DESIGN_CONTRACT.md');
-const gapsPath = path.join(root, 'GAP_REGISTER.md');
+const contractPath = path.join(root, 'docs', 'quality', 'DESIGN_CONTRACT.md');
+const gapsPath = path.join(root, 'docs', 'quality', 'DEFECT_REGISTER.md');
 
 const fail = (message) => { console.error(`QUALITY_CONTRACT_FAIL: ${message}`); process.exitCode = 1; };
 for (const file of [manifestPath, contractPath, gapsPath]) {

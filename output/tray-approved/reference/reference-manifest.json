@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "status": "active-for-audit",
+  "profiles": {
+    "desktop": { "cssWidth": 1920, "cssHeight": 1080, "dpr": 1 },
+    "tablet": { "cssWidth": 800, "cssHeight": 1280, "dpr": 2, "renderedWidth": 1600, "renderedHeight": 2560 }
+  },
+  "states": [
+    { "id": "01", "name": "Hang-cho", "route": "#/preview/S13", "owner": "S00#1 UI / S00#2 contracts", "desktop": "Desktop/01_Hang-cho_Desktop.png", "tablet": "Tablet/01_Hang-cho_Tablet.png" },
+    { "id": "02", "name": "Lenh-xep-khay", "route": "#/preview/S14", "owner": "S00#1 UI / S00#2 contracts", "desktop": "Desktop/02_Lenh-xep-khay_Desktop.png", "tablet": "Tablet/02_Lenh-xep-khay_Tablet.png" },
+    { "id": "03", "name": "Danh-sach-khay", "route": "#/preview/S11", "owner": "S00#1 UI / S00#2 projection", "desktop": "Desktop/03_Danh-sach-khay_Desktop.png", "tablet": "Tablet/03_Danh-sach-khay_Tablet.png" },
+    { "id": "04", "name": "Lich-su", "route": "#/preview/S14/history", "owner": "S00#1 UI / S00#2 history API", "desktop": "Desktop/04_Lich-su_Desktop.png", "tablet": "Tablet/04_Lich-su_Tablet.png" },
+    { "id": "05", "name": "Xac-nhan-tao-lenh", "route": "#/preview/S13", "owner": "S00#1 UI / S00#2 create", "desktop": "Desktop/05_Xac-nhan-tao-lenh_Desktop.png", "tablet": "Tablet/05_Xac-nhan-tao-lenh_Tablet.png" },
+    { "id": "06", "name": "Tao-lenh-thanh-cong", "route": "#/preview/S13", "owner": "S00#1 UI / S00#2 recovery", "desktop": "Desktop/06_Tao-lenh-thanh-cong_Desktop.png", "tablet": "Tablet/06_Tao-lenh-thanh-cong_Tablet.png" },
+    { "id": "07", "name": "Chi-tiet-lenh-da-xac-nhan", "route": "#/preview/S14", "owner": "S00#1 UI / S00#2 read", "desktop": "Desktop/07_Chi-tiet-lenh-da-xac-nhan_Desktop.png", "tablet": "Tablet/07_Chi-tiet-lenh-da-xac-nhan_Tablet.png" },
+    { "id": "08", "name": "Lenh-nhap-validation", "route": "#/preview/S14", "owner": "S00#1 UI / S00#2 confirm", "desktop": "Desktop/08_Lenh-nhap-validation_Desktop.png", "tablet": "Tablet/08_Lenh-nhap-validation_Tablet.png" },
+    { "id": "09", "name": "Chi-tiet-khay", "route": "#/preview/S11", "owner": "S00#1 UI / S00#2 projection", "desktop": "Desktop/09_Chi-tiet-khay_Desktop.png", "tablet": "Tablet/09_Chi-tiet-khay_Tablet.png" },
+    { "id": "10", "name": "Dang-xac-nhan", "route": "#/preview/S14", "owner": "S00#1 UI / S00#2 journal", "desktop": "Desktop/10_Dang-xac-nhan_Desktop.png", "tablet": "Tablet/10_Dang-xac-nhan_Tablet.png" },
+    { "id": "11", "name": "Du-lieu-thay-doi", "route": "#/preview/S14", "owner": "S00#1 UI / S00#2 validation", "desktop": "Desktop/11_Du-lieu-thay-doi_Desktop.png", "tablet": "Tablet/11_Du-lieu-thay-doi_Tablet.png" },
+    { "id": "12", "name": "Khong-co-khay", "route": "#/preview/S14", "owner": "S00#1 UI / S00#2 scope", "desktop": "Desktop/12_Khong-co-khay_Desktop.png", "tablet": "Tablet/12_Khong-co-khay_Tablet.png" },
+    { "id": "13", "name": "Khong-co-quyen", "route": "#/preview/S14/history", "owner": "S00#1 route/UI / S00#2 API", "desktop": "Desktop/13_Khong-co-quyen_Desktop.png", "tablet": "Tablet/13_Khong-co-quyen_Tablet.png" }
+  ],
+  "approval": { "baselineChangesRequire": "Design Guardian approval with old/new checksums and diff", "sourceImagesImmutable": true }
+}

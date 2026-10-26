@@ -3,7 +3,7 @@ name: Hoa Nam quality gates
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, DEV]
 
 jobs:
   critical:

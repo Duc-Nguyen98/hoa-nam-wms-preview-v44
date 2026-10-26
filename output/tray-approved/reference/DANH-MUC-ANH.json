@@ -1,0 +1,158 @@
+[
+  {
+    "file": "Desktop/01_Hang-cho_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "3dd066fd62394e3a27383a9954ac4c1dd13f4253ea28e6301bea79aa6f24b976"
+  },
+  {
+    "file": "Tablet/01_Hang-cho_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "5dff396968c6e020f2ce0b4ec4beaa09cac3924f81726a0e645eca4484cfc517"
+  },
+  {
+    "file": "Desktop/02_Lenh-xep-khay_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "dce71e6237419a1d0f92d4abb9cddac1d2a0d18b1161a9d362cecd3afebcb967"
+  },
+  {
+    "file": "Tablet/02_Lenh-xep-khay_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "7dfb08dd75ca9d1777226394ac039089ed6e57bbce8f1a779ba17a38fca08524"
+  },
+  {
+    "file": "Desktop/03_Danh-sach-khay_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "f255d4757a48a0e73d36f912abaa401763b05223a15d934b8d97ca584e962844"
+  },
+  {
+    "file": "Tablet/03_Danh-sach-khay_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "72eb2476726545096964e47b9118416c28dc1b167ecab01c3c90e86adb5fd46c"
+  },
+  {
+    "file": "Desktop/04_Lich-su_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "fd33efee3c1c4afae0d3e84571228a01fd7a710808f51a94e8808842bbe17843"
+  },
+  {
+    "file": "Tablet/04_Lich-su_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "e743ca7a0f40d3ad279d3fd0e0d860318cf6a8c409e172868bc158fb78bb0aa2"
+  },
+  {
+    "file": "Desktop/05_Xac-nhan-tao-lenh_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "5efd197813eba1445cc0713f30d80d7344fa6c9cad71589dbc2351e59fc3418d"
+  },
+  {
+    "file": "Tablet/05_Xac-nhan-tao-lenh_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "ed8e5f29e24a8b41a2b85ae2bab7f34b8a670d288b0536a6c1fc6d70200787c7"
+  },
+  {
+    "file": "Desktop/06_Tao-lenh-thanh-cong_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "93d3aa0d4a643e8e99079c0126dd996d8cfd8916113b442f84f9dfd26a8babe9"
+  },
+  {
+    "file": "Tablet/06_Tao-lenh-thanh-cong_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "25a7c6895aff82a3033d752c898b3e38137324d86e6b672fc6fc944aadab628a"
+  },
+  {
+    "file": "Desktop/07_Chi-tiet-lenh-da-xac-nhan_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "8a072534c6d3d459163b3c1ec52fb7b0d92dc40c398b2fd03127e456de3b3146"
+  },
+  {
+    "file": "Tablet/07_Chi-tiet-lenh-da-xac-nhan_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "bcb7221afa91c986e7e56401569664218b44a031ec23890509d1e6145cd20095"
+  },
+  {
+    "file": "Desktop/08_Lenh-nhap-validation_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "fe3d32efc449fdf48511cc59aab242cce80c9f2c359489ad870ae0a69b8ea0d6"
+  },
+  {
+    "file": "Tablet/08_Lenh-nhap-validation_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "c4e6f2d32882efa1d3e50349e15ce2dc9c4fe2d57a0a9565124788d4b1264510"
+  },
+  {
+    "file": "Desktop/09_Chi-tiet-khay_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "ae6925aba1c83c560ec68729b81cb77fd2c18da00a91ec24eb23056fbff16dd7"
+  },
+  {
+    "file": "Tablet/09_Chi-tiet-khay_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "dc41f6b4c25e78edc61e0a1d9dd43a11bcb5b1169742a58af509e1ea6607bde0"
+  },
+  {
+    "file": "Desktop/10_Dang-xac-nhan_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "919ac04b501e5fa88d0607544ea963d3474251cdb5ca19d207c57ec60f9613d2"
+  },
+  {
+    "file": "Tablet/10_Dang-xac-nhan_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "2fe6bbb98d92a5f087d090dfb000633cb5b863cc8742175704544fcd64d951da"
+  },
+  {
+    "file": "Desktop/11_Du-lieu-thay-doi_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "cda417763b0c0e1b9cfa4a9d4d7d773445f0e8cdbb6ed93c1bf67a2355909729"
+  },
+  {
+    "file": "Tablet/11_Du-lieu-thay-doi_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "f8284647777304bde9ebe956795078ba2bda836c648141f6aa9a6e8f12fceba9"
+  },
+  {
+    "file": "Desktop/12_Khong-co-khay_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "7e3acb6993d898a1e1be9eb0fafa6ab785e8c9634798c881d5406f509a8d6d85"
+  },
+  {
+    "file": "Tablet/12_Khong-co-khay_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "c6bfc4f25d00b02dcbe916336ee5d2b7953467c18651eff215793a79a2c60673"
+  },
+  {
+    "file": "Desktop/13_Khong-co-quyen_Desktop.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "65e5d60289319cc7d28fe033c384d65419eac0859039090d6a90b85c020ad422"
+  },
+  {
+    "file": "Tablet/13_Khong-co-quyen_Tablet.png",
+    "width": 992,
+    "height": 1586,
+    "sha256": "70eb28c97c57db12e147f5d3bd392cd2a58aa6679596298e6847a0468fd8be1e"
+  }
+]

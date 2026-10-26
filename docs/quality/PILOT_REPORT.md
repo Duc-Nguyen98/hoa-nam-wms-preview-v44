@@ -17,7 +17,7 @@ The main suite covered Desktop 1920×1080 DPR1, portrait Tablet 800×1280 DPR2, 
 1. The unverified-document test expected a verified `#/preview/S15` primary link after reopening the fixture; the link was absent. This is a functional/fixture contract failure, not a visual baseline approval.
 2. The actual local S01 shell test timed out waiting for the notification button after the setup flow. This is an integration/setup failure and blocks the shell acceptance claim.
 
-No snapshot was updated and no source reference was overwritten. These failures remain open in `GAP_REGISTER.md` until reproduced, diagnosed, and rerun successfully.
+No snapshot was updated and no source reference was overwritten. These failures remain open in `DEFECT_REGISTER.md` until reproduced, diagnosed, and rerun successfully.
 
 ## Acceptance status
 

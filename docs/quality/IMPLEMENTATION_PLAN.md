@@ -6,7 +6,7 @@ This plan preserves existing business logic and proceeds in verified phases. Eac
 
 **Scope:** repository instructions, design references, tokens, fixtures, CSS/component inventory, tests, scripts and CI discovery.  
 **Allowed changes:** audit documents only.  
-**Outputs:** `DESIGN_AUDIT.md`, `GAP_REGISTER.md`, this plan.  
+**Outputs:** `DESIGN_AUDIT.md`, `DEFECT_REGISTER.md`, this plan.
 **Exit:** the source hierarchy, open gaps, baseline inventory, and current test limitations are recorded.  
 **Stop rule:** do not modify business code or snapshots if the source authority is ambiguous.
 
