@@ -27,7 +27,7 @@ function TestPage(){
    const persistence=createIndexedDbPersistence(`notification-visual-only-${params.get('run')??'default'}`);
    let fail=false,hold=false; let releases:Array<()=>void>=[];
    const repo=createNotificationRepository({persistence:{...persistence,async read(){if(fail)throw Error('isolated storage fault');if(hold)await new Promise<void>(r=>releases.push(r));return persistence.read();},async write(v){if(fail)throw Error('isolated write fault');return persistence.write(v);}},namespace:'notification-visual-only',now:()=>Date.parse(FIXED_NOW),actor:async()=>({key:'QA-VISUAL',confirmed:true,expiresAt:Date.parse(FIXED_NOW)+3600000}),captureFence:()=>()=>{},seed:()=>{
-     const base=designFixture();
+     const base=designFixture(params.has('source-identity'));
      if(params.get('state')==='unverified')base[0]={...base[0],presentation:{...base[0].presentation,fields:undefined,targetVerified:false}};
      if(params.get('state')==='empty')return [];
      if(params.get('state')==='long'){base[0]={...base[0],presentation:{...base[0].presentation,title:Object.fromEntries(Object.entries(base[0].presentation!.title!).map(([k,v])=>[k,v.repeat(8)])) as NotificationLocalizedText,body:{vi:'Nội dung dài cần kiểm tra. '.repeat(160),en:'Long detail content. '.repeat(160),'zh-CN':'很长的通知内容。'.repeat(160)}}};}
