@@ -133,7 +133,7 @@ export function PutawayOrdersScreen({ adapter, operationalAdapter }: { adapter?:
         { key: 'queue', label: tx('Hàng chờ'), count: cohort === 'legacy' ? model?.summary.relatedQueueBadge : undefined, icon: 'box', href: route('S13'), onClick: cancelPending },
         { key: 'orders', label: tx('Lệnh xếp khay'), count: cohort === 'legacy' ? model?.summary.totalOrders : undefined, icon: 'documents', current: true, onClick: cancelPending },
         { key: 'trays', label: tx('Danh sách khay'), icon: 'tray', href: route('S11'), onClick: cancelPending },
-        { key: 'history', label: tx('Lịch sử'), icon: 'audit', unavailable: true, onClick: event => blockedAction('Lịch sử', event.currentTarget) },
+        { key: 'history', label: tx('Lịch sử'), icon: 'audit', href: '#/preview/S14/history', onClick: cancelPending },
       ]} />
       {operational.available && <FilterSelect label={tx('Nguồn dữ liệu')} aria-label={tx('Nguồn dữ liệu')} className="hn-source-select" value={cohort} onChange={event => { setDetail(null); setCohort(event.target.value as 'scenario' | 'legacy'); }}><option value="scenario">{tx('Phiên hiện tại')}</option><option value="legacy">{tx('Dữ liệu đã duyệt')}</option></FilterSelect>}
       {cohort === 'scenario' ? <OperationalPutawayOrders adapter={operational} notify={message => notify(message, document.activeElement instanceof HTMLElement ? document.activeElement : null, 'success')} /> : model ? <>

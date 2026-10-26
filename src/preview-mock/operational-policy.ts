@@ -1,14 +1,15 @@
 import type { BusinessApplyContext, BusinessHandler, BusinessRecord, BusinessSnapshot } from './business-repository';
 import { canonicalBusinessJson } from './business-repository';
 import type { DependentRecordWrite } from './business-atomic';
-import type { OperationalCommand, OperationalCommandName, OperationalMeta, OperationalScope, OperationalSnapshot, OperationalSurface, ScenarioData, StockProfileData, TypedOperationalRecord } from '../contracts/operational-preview';
+import type { OperationalCommand, OperationalCommandName, OperationalMeta, OperationalScope, OperationalSnapshot, OperationalSurface, ScenarioData, StockProfileData, TypedOperationalRecord, ReceiptData, BoxData, StockEventData, PutawayData } from '../contracts/operational-preview';
 import { projectCatalogSnapshot } from './catalog-policy';
 import { PreviewHttpError } from './errors';
 import { assertInactiveMasterSetupRequest } from './inactive-master-scope';
+import { createApprovedTraySeed } from './putaway-approved-seed';
 export const OPERATIONAL_ACTOR = 'preview:ducquang';
 export const OPERATIONAL_SURFACES: Readonly<Record<OperationalCommandName, OperationalSurface>> = {
   'qa.product.set-status':'QA', 'qa.sku.set-status':'QA', 'qa.recipient.set-status':'QA',
-  'scenario.reset-own':'QA', 'stock-profiles.create':'WEB', 'inbound.create':'WEB', 'inbound.update-header':'WEB',
+  'scenario.reset-own':'QA', 'scenario.seed-approved':'QA', 'stock-profiles.create':'WEB', 'inbound.create':'WEB', 'inbound.update-header':'WEB',
   'outbound.create':'APP_P05', 'warranty.intake':'APP_P09', 'warranty.diagnose':'WEB', 'warranty.transition':'WEB',
   'parts.create':'APP_P19','parts.save':'APP_P19','parts.post':'APP_P19',
   'reversal.create':'WEB','reversal.attach-evidence':'WEB','reversal.confirm-return':'WEB','reversal.post':'WEB','reversal.cancel':'WEB',
@@ -80,7 +81,7 @@ const reset:OperationPlanner=(raw,_current,c)=>{
   for(const id of p.selectedSkuIds)if(!catalog.skus.some(s=>s.id===id&&s.status==='active'&&catalog.products.some(p=>p.id===s.productId&&p.status==='active')))return opFail('SKU_UNAVAILABLE');
   const data:ScenarioData={...opMeta({scenarioId:c.entityId,generation},c.committedAt,c.actorKey),ownerActor:c.actorKey,status:'ACTIVE',selectedSkuIds:p.selectedSkuIds as string[],setupManifestId:'HN-SIX-FLOWS-v0.1',startedAt:c.committedAt};
   const writes:DependentRecordWrite[]=old?[{id:old.id,kind:old.kind,expectedVersion:old.version,data:{...old.data,status:'ARCHIVED',updatedAt:c.committedAt,updatedBy:c.actorKey}}]:[];
-  for(const n of [1,2])for(const kind of ['location','tray']){
+  for(const n of Array.from({ length: 9 }, (_, index) => index + 1))for(const kind of ['location','tray']){
     const id=`operational-setup:${kind}:${n}`;
     const setup={warehouseId:'warehouse-hn-01',active:true,setupManifestId:'HN-SIX-FLOWS-v0.1',code:`PREVIEW-${kind.toUpperCase()}-${n}`,...(kind==='tray'?{locationId:`operational-setup:location:${n}`}:{})};
     const existing=c.records.find(r=>r.id===id);
@@ -88,6 +89,27 @@ const reset:OperationPlanner=(raw,_current,c)=>{
     else writes.push({id,kind:'operational-setup-'+kind,expectedVersion:null,data:setup});
   }
   return {data,writes};
+};
+const seedApproved:OperationPlanner=(raw,current,c)=>{
+  const {scope,input}=unpackOperational(raw),scenario=assertScope(c.records,scope),p=opFields(input,['confirmed']);
+  if(p.confirmed!==true)return opFail('VALIDATION_FAILED',422);
+  const manifest=createApprovedTraySeed(c.committedAt),catalog=projectCatalogSnapshot({epoch:'',snapshotRevision:1,records:[...c.records]}),writes:DependentRecordWrite[]=[];
+  if(c.records.some(record=>record.kind==='box'&&opObject(record.data)&&String(record.data.physicalCode).startsWith('BOX-')&&scoped(record,scope)))return opFail('APPROVED_SEED_EXISTS',409);
+  for(const row of manifest.boxes){
+    const sku=catalog.skus.find(item=>item.code===row.skuCode),product=sku&&catalog.products.find(item=>item.id===sku.productId);
+    if(!sku||!product||!scenario.data.selectedSkuIds.includes(sku.id))return opFail('SKU_UNAVAILABLE');
+    const receiptId=`receipt:approved:${row.receiptCode}`,boxId=`box:approved:${row.code}`,eventId=`stock-event:approved:${row.code}`;
+    const meta=opMeta({scenarioId:scenario.id,generation:scenario.data.generation},c.committedAt,c.actorKey),receipt:ReceiptData={...meta,code:row.receiptCode,mode:'COMPONENT',sourceText:'Kho Hoa Nam · dữ liệu duyệt HN_Astra',referenceText:row.receiptCode,status:'POSTED',appSubmissionId:null,submittedVersion:null,submittedHash:null,postedEventIds:[eventId]};
+    const box:BoxData={...meta,physicalCode:row.code,skuId:sku.id,sourceReceiptId:receiptId,sourceLineId:`inbound-line:approved:${row.code}`,unit:product.unit,status:'IN_STOCK',issuedDocumentId:null,posted:true,trayId:row.trayCode?`operational-setup:tray:${Number(row.trayCode.slice(-3))}`:null,contentRevision:2};
+    const event:StockEventData={...meta,eventType:'RECEIPT_POST',documentId:receiptId,sourceLineId:box.sourceLineId,skuId:sku.id,unit:product.unit,signedQuantity:row.quantity,physicalIds:[],boxId,originalEventId:null,commandId:c.commandId,actor:c.actorKey,committedAt:c.committedAt,commitSnapshotId:c.commitSnapshotId};
+    writes.push({id:receiptId,kind:'receipt',expectedVersion:null,data:receipt},{id:boxId,kind:'box',expectedVersion:null,data:box},{id:eventId,kind:'stock-event',expectedVersion:null,data:event});
+    if(row.status!=='QUEUE'){
+      const putawayId=`putaway:approved:${row.code}`,putaway:PutawayData={...meta,boxId,receiptId,capturedBoxVersion:1,capturedContentRevision:2,quantityAtCreate:row.quantity,status:row.status==='CONFIRMED'?'CONFIRMED':'DRAFT',trayId:box.trayId,cancellationReason:null};
+      writes.push({id:putawayId,kind:'putaway',expectedVersion:null,data:putaway});
+      writes.push({id:`audit:approved:${row.code}`,kind:'audit-event',expectedVersion:null,data:{...meta,entityId:putawayId,action:row.status==='CONFIRMED'?'putaway.confirm':'putaway.create',previousVersion:null,newVersion:1,commandId:c.commandId,sourceSurface:'WEB',actor:c.actorKey,timestamp:c.committedAt,FK:[boxId,receiptId,eventId],eventIds:[eventId],commitSnapshotId:c.commitSnapshotId}});
+    }
+  }
+  return {data:{...scenario.data,updatedAt:c.committedAt,updatedBy:c.actorKey},writes};
 };
 const profile:OperationPlanner=(raw,_current,c)=>{
   const {scope,input}=unpackOperational(raw),scenario=assertScope(c.records,scope),p=opFields(input,['skuId','tracking','observedSkuVersion','observedProductVersion']);
@@ -98,7 +120,7 @@ const profile:OperationPlanner=(raw,_current,c)=>{
   return {data:{...opMeta({scenarioId:scenario.id,generation:scenario.data.generation},c.committedAt,c.actorKey),skuId:sku.id,productId:product.id,tracking:p.tracking,unit:product.unit,skuVersion:sku.version,productVersion:product.version},writes:[]};
 };
 export function foundationHandlers(surface:OperationalSurface):Record<string,BusinessHandler> {
-  return surface==='QA'?{'scenario.reset-own':operationalHandler('create','operational-scenario','scenario:',reset,surface)}
+  return surface==='QA'?{'scenario.reset-own':operationalHandler('create','operational-scenario','scenario:',reset,surface),'scenario.seed-approved':operationalHandler('update','operational-scenario','scenario:',seedApproved,surface)}
     :surface==='WEB'?{'stock-profiles.create':operationalHandler('create','sku-operational-profile','profile:',profile,surface)}:{};
 }
 /** Scope is carried inside the old journal envelope to keep retained pinned readers compatible. */
@@ -123,3 +145,4 @@ export function projectOperational(snapshot:BusinessSnapshot):OperationalSnapsho
   return {mode:'MOCK',complete:true,actorKey:OPERATIONAL_ACTOR,epoch:snapshot.epoch,snapshotRevision:snapshot.snapshotRevision,token:{epoch:snapshot.epoch,revision:snapshot.snapshotRevision,...scope},scenario,
     profiles:byKind('sku-operational-profile') as OperationalSnapshot['profiles'],receipts:byKind('receipt') as OperationalSnapshot['receipts'],lines:byKind('inbound-line') as OperationalSnapshot['lines'],physical:byKind('physical') as OperationalSnapshot['physical'],boxes:byKind('box') as OperationalSnapshot['boxes'],stockEvents:events,outbounds:byKind('outbound') as OperationalSnapshot['outbounds'],warrantyCases:byKind('warranty-case') as OperationalSnapshot['warrantyCases'],caseEvents:byKind('case-event'),appSubmissions:byKind('app-submission'),scanObservations:byKind('scan-observation'),physicalRegistry:byKind('physical-registry'),partsIssues:byKind('parts-issue') as OperationalSnapshot['partsIssues'],reversals:byKind('reversal') as OperationalSnapshot['reversals'],evidence:byKind('evidence-attachment'),putaways:byKind('putaway') as OperationalSnapshot['putaways'],setupMasters:snapshot.records.filter(r=>['operational-setup-location','operational-setup-tray'].includes(r.kind)),auditEvents,commitSnapshots:snapshot.records.filter(r=>r.kind==='commit-snapshot'&&snapshotIds.has(r.id)),archivedCommitSnapshots:snapshot.records.filter(r=>r.kind==='commit-snapshot'&&archivedProofIds.has(r.id)),stock:[...stock.values()]};
 }
+

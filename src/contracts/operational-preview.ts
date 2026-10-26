@@ -7,6 +7,7 @@ export interface OperationalPayloads {
   'qa.sku.set-status': { confirmed: true; status: 'active' | 'inactive' };
   'qa.recipient.set-status': { confirmed: true; status: 'active' | 'inactive' };
   'scenario.reset-own': { confirmed: true; selectedSkuIds: string[] };
+  'scenario.seed-approved': { confirmed: true };
   'stock-profiles.create': { skuId: string; tracking: Tracking; observedSkuVersion: number; observedProductVersion: number };
   'inbound.create': { mode: 'PRODUCT' | 'COMPONENT'; sourceText: string; referenceText: string; previewCode?: string };
   'inbound.update-header': OperationalPayloads['inbound.create'];

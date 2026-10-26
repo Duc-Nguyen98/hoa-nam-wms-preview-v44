@@ -8,6 +8,7 @@ import { createBusinessHttpAdapters } from '../data/http/business-adapters';
 import { DEFAULT_DEFECTS_QUERY } from '../contracts/defects';
 import { CATALOG_COMMANDS, type CatalogDomain, type CatalogPayloads } from '../contracts/catalog-create';
 import type { OperationalCommand, OperationalSnapshot } from '../contracts/operational-preview';
+import { createApprovedTraySeed } from './putaway-approved-seed';
 
 const codes=['PUBLIC-DEMO-PRODUCT-A','PUBLIC-DEMO-PRODUCT-B','PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B','PUBLIC-DEMO-RECIPIENT'];
 const fail=()=>{throw new Error('Chưa thể xác minh dữ liệu Demo. Bấm thử lại để tiếp tục từ dữ liệu đã lưu.');};
@@ -17,6 +18,7 @@ const returnCaseMarker='Demo hoàn trả: kiểm tra với linh kiện dự phò
 const returnMarker='Demo hoàn trả: nhận lại đủ 2 linh kiện chưa sử dụng · PUBLIC-DEMO-RETURN-0010';
 const demoReturnCase=(s:OperationalSnapshot)=>s.warrantyCases.find(row=>row.data.customerReportedIssue===returnCaseMarker);
 const demoReturn=(s:OperationalSnapshot)=>{const cas=demoReturnCase(s),issue=cas&&s.partsIssues.find(row=>row.data.caseId===cas.id);return issue&&s.reversals.find(row=>row.data.originalIssueId===issue.id&&row.data.reasonText===returnMarker&&row.data.status!=='CANCELLED');};
+const approvedTraySeed=createApprovedTraySeed();
 /** Dedicated public Candidate only. All writes use the existing validated commands.
  * No existing scenario is archived, reset or replaced by this onboarding. */
 export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:()=>PreviewMockRuntime|undefined=readBrowserPreviewRuntime){
@@ -41,7 +43,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:
   if(!app04 || !app05 || !app09 || !app19)return false;
   const warranty=demoCase(s);
   const returned=demoReturn(s);
-  return ['PN-0012','PN-0011','PN-0010','PN-0009'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0009'&&b.data.status==='IN_STOCK'&&b.data.trayId===null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED') && warranty?.data.state==='RETURNED' && s.partsIssues.some(issue=>issue.data.caseId===warranty.id&&issue.data.status==='POSTED') && returned?.data.status==='POSTED' && returned.data.physicalReturn==='CONFIRMED' && returned.data.evidenceRefs.length>0;
+  return ['PN-0012','PN-0011','PN-0010','PN-0009'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0009'&&b.data.status==='IN_STOCK'&&b.data.trayId===null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED') && warranty?.data.state==='RETURNED' && s.partsIssues.some(issue=>issue.data.caseId===warranty.id&&issue.data.status==='POSTED') && returned?.data.status==='POSTED' && returned.data.physicalReturn==='CONFIRMED' && returned.data.evidenceRefs.length>0 && approvedTraySeed.boxes.every(row=>s.boxes.some(box=>box.data.physicalCode===row.code)) && s.putaways.filter(row=>row.data.status==='CONFIRMED').length>=9;
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -103,10 +105,16 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:
     await ensureCatalog('sku',{code:`PUBLIC-DEMO-SKU-${suffix}`,productId,observedProductVersion:product.version,barcode:null,status:'active'});
    }
    await ensureCatalog('recipient',{code:'PUBLIC-DEMO-RECIPIENT',name:'Nơi nhận Demo',type:'Khách lẻ',market:'Miền Nam',area:'Khu vực Demo',address:'Địa chỉ thử nghiệm',contact:'Liên hệ Demo',phone:'',status:'active'});
+   for(const row of approvedTraySeed.trays.map((_,i)=>i+1)){
+    const suffix=String(row).padStart(3,'0');
+    const productId=await ensureCatalog('product',{code:`HN-ASTRA-PRODUCT-${suffix}`,name:`Hàng Hoa Nam ${suffix}`,group:'Linh kiện điện',unit:'Cái',status:'active'});
+    const catalog=await catalogReader.readSnapshot(),product=catalog.products.find(item=>item.id===productId)!;
+    await ensureCatalog('sku',{code:`SKU-HN-${suffix}`,productId,observedProductVersion:product.version,barcode:null,status:'active'});
+   }
    const c=await catalogReader.readSnapshot();
    // Re-read immediately before the first-only scenario command. Existing runs survive.
    s=await web.read();
-   if(!s.scenario)await operation(qa,'scenario.reset-own',{confirmed:true,selectedSkuIds:c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)).map(k=>k.id)});
+   if(!s.scenario)await operation(qa,'scenario.reset-own',{confirmed:true,selectedSkuIds:c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B',...approvedTraySeed.trays.map((_,i)=>`SKU-HN-${String(i+1).padStart(3,'0')}`)].includes(k.code)).map(k=>k.id)});
   }
   s=await web.read();const c=await catalogReader.readSnapshot();
   for(const k of c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario?.data.selectedSkuIds.includes(k.id))){
@@ -173,6 +181,14 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:
    s=await web.read(); putaway=s.putaways.find(p=>p.data.boxId===box.id);
   }
   if(putaway?.data.status==='DRAFT')await updateOperation(web,'putaway.confirm',putaway.id,putaway.version,{trayId:'operational-setup:tray:1'});
+  }
+  // Seed the approved 26-tray workspace through one canonical QA command. The
+  // manifest is validated inside the operational transaction and persisted as
+  // normal receipt, BOX, stock-event, putaway and audit records.
+  s=await web.read();
+  if(!approvedTraySeed.boxes.every(row=>s.boxes.some(box=>box.data.physicalCode===row.code))){
+   if(!s.scenario)return fail();
+   await updateOperation(qa,'scenario.seed-approved',s.scenario.id,s.scenario.version,{confirmed:true});
   }
   // Add this release's warranty example to fresh and existing public sessions.
   // Resume only its marked case; every step is a normal journaled command.

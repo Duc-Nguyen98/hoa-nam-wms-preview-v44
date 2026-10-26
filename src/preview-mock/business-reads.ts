@@ -13,7 +13,7 @@ import { queryDefectsRows } from '../data/adapters/defects-query';
 import { DEFAULT_DEFECTS_QUERY, DEFECTS_PAGE_SIZE_OPTIONS, type DefectRow, type DefectsQuery, type DefectsResult } from '../contracts/defects';
 import type { WarehouseRead, WarehouseSnapshot } from '../contracts/warehouse-config';
 import { localWarehouseRead } from './admin-data';
-import { createBusinessRepository, type BusinessCommand, type BusinessRepository, type BusinessRepositoryOptions, type BusinessSnapshot, type BusinessSeed } from './business-repository';
+import { createBusinessRepository, type BusinessCommand, type BusinessRepository, type BusinessRepositoryOptions, type BusinessSnapshot, type BusinessSeed, type BusinessRecord } from './business-repository';
 import type { BusinessPersistence } from './business-persistence';
 import { PreviewHttpError } from './errors';
 import { createWarehouseCommandSeam } from '../features/S28/warehouse-command';
@@ -26,6 +26,7 @@ import type { RecipientsQuery } from '../contracts/recipients';
 import { isRecipientContactRecord, RECIPIENT_SOURCE_ROWS, authorizeRecipientContact } from './recipient-contact-policy';
 import { projectCatalogSnapshot } from './catalog-policy';
 import { projectPvDemoSnapshot, validatePvDemoHistory, normalizePvPayload } from './pv-demo-policy';
+import type { PutawayHistoryAction, PutawayHistoryQuery, PutawayHistoryResult, PutawayHistoryRow } from '../contracts/putaway-history';
 
 export const LABEL_REPORT_ENTITY_ID = 'seed:label-report:S23:2026-09-04:2026-09-10';
 
@@ -43,6 +44,8 @@ function warehouse(value: unknown): value is WarehouseSnapshot {
 export type PreviewBusinessCommandBinding = Required<Pick<BusinessRepositoryOptions, 'actor' | 'authorize'>> & {
   captureReadFence?: () => () => void;
   operationalEnabled?: boolean;
+  /** Explicit capability for the S14 History subroute. Never inferred from a role label or request. */
+  putawayHistoryRead?: boolean;
   /** Host opt-in for the exact approved isolated QA dataset only. */
   inactiveMasterQaEnabled?: boolean;
   defectsHandlers?: Partial<Pick<NonNullable<BusinessRepositoryOptions['handlers']>, 'defects.create' | 'defects.update'>>;
@@ -100,11 +103,64 @@ export function createPreviewBusinessReads(persistence: BusinessPersistence, bin
   async function readSnapshot(signal?: AbortSignal): Promise<BusinessSnapshot> {
     return (await prepare()).repository.read(signal);
   }
+  async function readPutawayHistory(query: PutawayHistoryQuery, signal?: AbortSignal): Promise<PutawayHistoryResult> {
+    const deny = () => new PreviewHttpError(403, 'PUTAWAY_HISTORY_FORBIDDEN', 'Tài khoản chưa được cấp quyền xem lịch sử xếp khay.');
+    if (!binding?.putawayHistoryRead) throw deny();
+    const service = createOperationalService('WEB', async () => (await prepare()).operationalRepository('WEB'),
+      { actor: binding.actor, captureAuthorityFence: binding.captureReadFence }, binding.operationalEnabled === true);
+    const snapshot = await service.read(signal);
+    const scenarioStart = snapshot.scenario?.data.startedAt.slice(0, 10) ?? new Date(businessNow()).toISOString().slice(0, 10);
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Ho_Chi_Minh' }).format(new Date(businessNow()));
+    const from = query.from || scenarioStart, to = query.to || today;
+    if (!['', 'putaway.create', 'putaway.confirm', 'putaway.cancel'].includes(query.action) || !Number.isSafeInteger(query.page) || query.page < 1 || ![9, 18, 25, 50].includes(query.pageSize)) {
+      throw new PreviewHttpError(400, 'INVALID_QUERY', 'Điều kiện lịch sử xếp khay không hợp lệ.');
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(from) || !/^\d{4}-\d{2}-\d{2}$/.test(to) || from > to || to > today
+      || Date.parse(to + 'T00:00:00+07:00') - Date.parse(from + 'T00:00:00+07:00') > 90 * 86400000) {
+      throw new PreviewHttpError(422, 'INVALID_PERIOD', 'Vui lòng chọn kỳ trong 90 ngày gần đây, không vượt quá ngày hôm nay.');
+    }
+    const records = new Map(snapshot.putaways.map(row => [row.id, row]));
+    const boxes = new Map(snapshot.boxes.map(row => [row.id, row]));
+    const trays = new Map(snapshot.setupMasters.filter(row => row.kind === 'operational-setup-tray').map(row => [row.id, row]));
+    const rows = snapshot.auditEvents.flatMap((audit): PutawayHistoryRow[] => {
+      const data = audit.data as Record<string, unknown>, action = data.action as PutawayHistoryAction;
+      if (!['putaway.create', 'putaway.confirm', 'putaway.cancel'].includes(action)) return [];
+      const putaway = records.get(String(data.entityId)); if (!putaway) return [];
+      const box = boxes.get(putaway.data.boxId); if (!box) return [];
+      const timestamp = String(data.timestamp ?? data.committedAt ?? putaway.data.updatedAt);
+      if (timestamp.slice(0, 10) < from || timestamp.slice(0, 10) > to) return [];
+      const boxCode = box.data.physicalCode, tray = putaway.data.trayId ? trays.get(putaway.data.trayId) : undefined;
+      const trayData = tray?.data as { code?: string } | undefined;
+      return [{ id: audit.id, timestamp, action: action as Exclude<PutawayHistoryAction, ''>, orderId: putaway.id,
+        orderCode: `XK-${boxCode.slice(-4)}`, boxId: box.id, boxCode, trayId: putaway.data.trayId,
+        trayCode: trayData?.code ?? null, actor: String(data.actor ?? putaway.data.updatedBy), result: 'SUCCESS' }];
+    }).sort((a, b) => b.timestamp.localeCompare(a.timestamp));
+    const search = query.search.trim().toLocaleLowerCase('vi-VN'), action = query.action;
+    const filtered = rows.filter(row => (!action || row.action === action) && (!search || [row.orderCode, row.boxCode, row.trayCode ?? '', row.actor].join(' ').toLocaleLowerCase('vi-VN').includes(search)));
+    const page = query.page, pageSize = query.pageSize;
+    return { rows: filtered.slice((page - 1) * pageSize, page * pageSize), total: filtered.length, scopeTotal: rows.length, page, pageSize,
+      query: { ...query, from, to, search: query.search.trim(), action, page, pageSize } };
+  }
   return {
     readSnapshot,
+    readPutawayHistory,
     operational(surface: OperationalSurface) {
-      return createOperationalService(surface, async () => (await prepare()).operationalRepository(surface),
+      const service = createOperationalService(surface, async () => (await prepare()).operationalRepository(surface),
         { actor: binding?.actor, captureAuthorityFence: binding?.captureReadFence }, binding?.operationalEnabled === true);
+      if (binding?.putawayHistoryRead !== false) return service;
+      // A broad operational snapshot remains usable for S11/S13/S14, but it
+      // cannot become a history side channel when the explicit history grant is absent.
+      return { ...service, async read(signal?: AbortSignal) {
+        const snapshot = await service.read(signal);
+        const putawayAuditIds = new Set(snapshot.auditEvents.filter(record => String((record.data as Record<string, unknown>).action ?? '').startsWith('putaway.')).map(record => record.id));
+        const isPutawayProof = (record: BusinessRecord) => {
+          if (record.kind !== 'commit-snapshot') return false;
+          const changes = ((record.data as { changes?: { canonicalRecord?: string }[] }).changes ?? []);
+          return changes.some(change => { try { const value = JSON.parse(change.canonicalRecord ?? '{}') as BusinessRecord; return value.kind === 'putaway' || (value.kind === 'audit-event' && putawayAuditIds.has(value.id)); } catch { return false; } });
+        };
+        return { ...snapshot, auditEvents: snapshot.auditEvents.filter(record => !putawayAuditIds.has(record.id)),
+          commitSnapshots: snapshot.commitSnapshots.filter(record => !isPutawayProof(record)), archivedCommitSnapshots: snapshot.archivedCommitSnapshots.filter(record => !isPutawayProof(record)) };
+      } };
     },
     async executeCommand(command: BusinessCommand, signal?: AbortSignal) {
       // Absence of a business-policy binding is not a session-expiry event.

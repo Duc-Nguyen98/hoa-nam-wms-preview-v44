@@ -1,3 +1,4 @@
+@import '../putaway/tray-ui.css';
 /* S13 Premium composition only. Shared controls/selection/heading/tab skins belong to S00. */
 .hn-shell .hn-catalogue-screen.s13-screen { gap: var(--hn-page-gap, 20px); }
 .s13-overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(340px, .9fr); align-items: center; gap: var(--hn-space-6, 24px); min-width: 0; }
@@ -55,3 +56,4 @@
 .s13-operational__fields { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
 .s13-operational__fields dt { font-weight: 600; }
 .s13-operational__fields dd { margin: 4px 0 0; overflow-wrap: anywhere; }
+
