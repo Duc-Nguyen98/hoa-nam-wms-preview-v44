@@ -1,3 +1,4 @@
+import { resolveNotificationDocumentSelection } from './notification-document-route';
 import { resolveCanonicalPreviewSelection } from './canonical-preview-route';
 import { resolveOverviewDocumentSelection } from './overview-document-route';
 /** Local preview hashes only. These do not define business routes or API endpoints. */
@@ -32,7 +33,7 @@ export const screenRegistry = [
 ] as const;
 
 export function resolvePreviewRoute(hash: string) {
-  const canonical = resolveCanonicalPreviewSelection(hash) ?? resolveOverviewDocumentSelection(hash);
+  const canonical = resolveCanonicalPreviewSelection(hash) ?? resolveNotificationDocumentSelection(hash) ?? resolveOverviewDocumentSelection(hash);
   const target = canonical ? `#/preview/${canonical.screen}` : hash;
   return [...screenRegistry, ...authScreenRegistry].find(screen => screen.href === target) ?? null;
 }

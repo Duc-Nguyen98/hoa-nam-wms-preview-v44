@@ -13,7 +13,7 @@ export { selectAcceptedOverviewRow, resolveAcceptedOverviewRow, type AcceptedRow
 
 export function acceptedOverviewFields(row: OverviewRow) {
   return [
-    { key: 'typeLabel', label: 'Loại phiếu', value: row.typeLabel, icon: row.type === 'inbound' ? 'download' as const : 'upload' as const },
+    { key: 'typeLabel', label: 'Loại phiếu', value: row.typeLabel, icon: 'documents' as const },
     { key: 'warehouse', label: 'Kho', value: row.warehouse, icon: 'warehouse' as const },
     { key: 'partner', label: 'Đối tác', value: row.partner, icon: 'users' as const },
     { key: 'quantity', label: 'Số lượng', value: row.quantity, suffix: row.quantityUnit, icon: 'box' as const },
@@ -80,7 +80,10 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
         <span className="ov-detail-title__eyebrow">{tx(title)}</span>
         <span className="ov-detail-title__number">{row.number}<button type="button" className="ov-copy-button" aria-label={tx("Sao chép mã phiếu")} disabled={!row.number} onClick={event => void copy(row.number, event.currentTarget)}><Icon name="copy" size={20} /></button></span>
       </span>
-      <StatusBadge tone={row.status === 'posted' ? 'success' : 'warning'}>{tx(row.statusLabel)}</StatusBadge>
+      <StatusBadge tone={row.status === 'posted' ? 'success' : 'warning'}>
+        {row.status === 'posted' ? <Icon name="circle-check" size={20} /> : <svg className="ov-detail-status-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 6v6l4 3" /></svg>}
+        {tx(row.statusLabel)}
+      </StatusBadge>
     </>}
     onClose={onClose}
     resolveReturnFocus={resolveReturnFocus}

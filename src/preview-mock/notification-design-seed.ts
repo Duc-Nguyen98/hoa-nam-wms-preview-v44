@@ -1,3 +1,4 @@
+import { NOTIFICATION_DOCUMENT_BINDINGS, notificationDocumentHref, notificationDocumentTarget } from '../app/notification-document-route';
 import type { BusinessNotification, NotificationLocalizedText } from '../notifications/notification-feed';
 
 const l = (vi: string, en: string, zh: string): NotificationLocalizedText => ({ vi, en, 'zh-CN': zh });
@@ -46,8 +47,6 @@ export function createNotificationDesignSeed(now = Date.now()): BusinessNotifica
   ];
   const categories: BusinessNotification['category'][] = ['outbound','printing','inventory','inbound','warranty','putaway'];
   const references = ['PX-0021','LBH0012343','Kho A','PN-0042','BH-0018','TRAY-0012'];
-  // Supported screen routes, not fabricated document-selection query parameters.
-  const screens = ['S15','S23','S16','S12','S09','S11'];
   const labels: BusinessNotification['target']['labelKey'][] = ['openDocument','openLabels','openInventory','openReceipt','openWarranty','openPutaway'];
   const minutes = [630,585,555,520,-460,-595];
   return titles.map((title, i) => ({
@@ -55,7 +54,7 @@ export function createNotificationDesignSeed(now = Date.now()): BusinessNotifica
     severity: i === 1 || i === 2 ? 'warning' : i === 3 || i === 5 ? 'success' : 'info',
     titleKey: 'outboundReadyTitle', bodyKey: 'outboundReadyBody',
     createdAt: at(minutes[i]), readAt: i === 1 || i === 2 ? null : at(660),
-    target: { href: `#/preview/${screens[i]}`, labelKey: labels[i], reference: references[i] },
+    target: { href: notificationDocumentHref(notificationDocumentTarget(NOTIFICATION_DOCUMENT_BINDINGS[i])), labelKey: labels[i], reference: references[i] },
     presentation: {
       title, summary: summaries[i], categoryLabel: categoryLabels[i], cardTitle: cardTitles[i],
       body: i === 0 ? l('Phiếu PX-0021 đang chờ kiểm tra thông tin trước khi tiếp tục xử lý. Vui lòng đối chiếu người nhận và danh sách hàng hóa.', 'Slip PX-0021 is awaiting review before processing continues. Please verify the recipient and item list.', '出库单 PX-0021 正等待检查。请核对收货人和货物清单。') : summaries[i],

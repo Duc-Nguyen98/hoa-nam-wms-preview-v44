@@ -1,3 +1,4 @@
+import { OPEN_NOTIFICATION_EVENT } from '../notifications/open-notification';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { KeyboardEvent, MouseEvent, RefObject } from 'react';
 import { Icon } from './Icon';
@@ -67,6 +68,17 @@ export function ShellHeaderActions({ destinations, profile, layoutMode, activeKe
   const account = useAccountCenter();
   const notificationActor = IS_BROWSER_PREVIEW && account?.authStatus === 'active' ? account.sessionContext?.username ?? null : null;
   const previewNotifications = usePreviewNotifications(notificationActor);
+  useEffect(() => {
+    if (!IS_BROWSER_PREVIEW || !notificationActor) return;
+    const openRelated = (event: Event) => {
+      const id = (event as CustomEvent<{id?:string}>).detail?.id;
+      setPopup(null);
+      void dispatchPreviewNotification(id ? {type:'open',id} : {type:'back'});
+      setNotificationOpen(true);
+    };
+    window.addEventListener(OPEN_NOTIFICATION_EVENT, openRelated);
+    return () => window.removeEventListener(OPEN_NOTIFICATION_EVENT, openRelated);
+  }, [notificationActor]);
   const unread = previewNotifications.actorBinding === notificationActor ? previewNotifications.totalUnread : null;
   const [searchOpen, setSearchOpen] = useState(false);
   const [shortcutSettingsOpen, setShortcutSettingsOpen] = useState(false);

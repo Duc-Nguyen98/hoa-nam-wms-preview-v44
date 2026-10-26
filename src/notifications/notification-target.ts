@@ -1,3 +1,5 @@
+import { resolveNotificationSourceTarget } from '../data/adapters/notification-document-fixture-adapter';
+import { resolveNotificationDocumentSelection } from '../app/notification-document-route';
 import type { BusinessNotification } from './notification-feed';
 import { resolveOverviewDocumentSelection } from '../app/overview-document-route';
 
@@ -14,6 +16,9 @@ const lists = {
 /** A screen link is not a document identity. Validate its destination and label it as a list. */
 export function notificationTarget(item: BusinessNotification) {
   if (item.presentation?.targetVerified !== true) return null;
+  const related = resolveNotificationSourceTarget(item);
+  if (related) return related;
+  if (item.id.startsWith('PREVIEW-DESIGN-') || resolveNotificationDocumentSelection(item.target.href)) return null;
   const selection = resolveOverviewDocumentSelection(item.target.href);
   if (selection) {
     const screen = item.category === 'inbound' ? 'S12' : item.category === 'outbound' ? 'S15' : null;

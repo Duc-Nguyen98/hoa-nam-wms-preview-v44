@@ -1,3 +1,5 @@
+import { resolveNotificationDocumentSelection } from './notification-document-route';
+import { NotificationSourceDocumentScreen } from '../features/documents/NotificationSourceDocumentScreen';
 import { SystemAuditScreen } from '../features/S27/SystemAuditScreen';
 import { WarehouseConfigScreen } from '../features/S28/WarehouseConfigScreen';
 import { UsersRbacScreen } from '../features/S29/UsersRbacScreen';
@@ -112,6 +114,7 @@ export function App() {
     return () => { active = false; };
   }, []);
   const selected = resolvePreviewRoute(hash);
+  const notificationDocument = resolveNotificationDocumentSelection(hash);
   const overviewDocument = resolveOverviewDocumentSelection(hash);
   const accountPanel = resolveAccountPanel(hash);
   const notificationHarness = IS_BROWSER_PREVIEW && hash === '#/harness/notifications';
@@ -146,6 +149,7 @@ export function App() {
   if(appPage)return <OperationalAppPreview page={appPage as 'P04'|'P05'|'P09'|'P19'}/>;
   if (unknown) return <GlobalShell title={tx('Không tìm thấy trang')} variant="wms" navigation={S00_SHELL_NAVIGATION}><PageState kind="route-not-found" action={<a href="#/preview/S01">{tx('Tổng quan vận hành')}</a>} /></GlobalShell>;
   if (accountPanel) return <GlobalShell title={tx(ACCOUNT_PANELS[accountPanel])} variant="wms" navigation={S00_SHELL_NAVIGATION}><AccountCenterScreen panel={accountPanel} /></GlobalShell>;
+  if (notificationDocument) return <NotificationSourceDocumentScreen key={hash} selection={notificationDocument} />;
   if (overviewDocument) return <OverviewSourceDocumentScreen selection={overviewDocument} />;
   if (hash === '' || hash === '#/' || selected?.key === 'S01') return <OverviewScreen createController={createHttpOverview} />;
   if (selected?.key === 'S02') return <DefectsScreen createController={createHttpDefects} createCommandService={createHttpDefectsCommands} />;
