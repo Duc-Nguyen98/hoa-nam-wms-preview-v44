@@ -381,7 +381,40 @@ html:has(.hn-shell[data-shell-version='s00']) { scroll-padding-block-start: 96px
 @media (max-width: 600px) {
   html:has(.hn-shell[data-shell-version='s00']) { scroll-padding-block-start: 88px; }
   .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header-wrap { --hn-header-inset: 8px; padding-inline: 16px; }
-  .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header { gap: 4px; padding-inline: 6px; }
+  /* Keep the compact header deterministic on narrow phones.  The previous
+     flex wrap let the account controls fall onto a third line when the
+     localized brand or language label grew, which made the search row jump
+     and left the header taller than the content offset. */
+  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: 'menu brand account' 'search search search';
+    align-items: center;
+    gap: 4px 6px;
+    min-height: 112px;
+    padding: 6px;
+  }
+  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header > .hn-menu-toggle { grid-area: menu; }
+  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-mobile-brand {
+    grid-area: brand;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header__account {
+    grid-area: account;
+    min-width: 0;
+    margin-inline-start: 0;
+    gap: 1px;
+  }
+  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-shell-search {
+    grid-area: search;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    padding-inline: 6px;
+  }
   .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-header__account { gap: 2px; }
   .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-main { padding: 20px 16px; scroll-margin-block-start: 88px; }
   .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-footer-wrap { padding-inline: 16px; }
@@ -406,6 +439,11 @@ html:has(.hn-shell[data-shell-version='s00']) { scroll-padding-block-start: 96px
   .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shell-dialog { --hn-s00-dialog-top: 16px; --hn-s00-dialog-bottom: 16px; }
 }
 
+@media (max-width: 380px) {
+  /* Preserve one stable control row on very narrow foldable/zoomed views. */
+  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header__account { gap: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-sidebar, .hn-shell__workspace, .hn-navigation, .hn-drawer, .hn-shell-dialog) { transition: none; animation: none; scroll-behavior: auto; }
 }
@@ -427,5 +465,31 @@ html:has(.hn-shell[data-shell-version='s00']) { scroll-padding-block-start: 96px
 @media(max-width:600px){
  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header { flex-wrap:wrap; }
  .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header__account { margin-left:auto; }
+}
+/* The narrow drawer header is a two-row grid. Override the tablet-only
+   search icon sizing above so the second row can use the full content width. */
+@media(max-width:600px){
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-shell-search {
+   width:100%;
+   min-width:0;
+   margin-left:0;
+   padding:6px;
+ }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-shell-search > span { display:inline; }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-shell-search > kbd { display:none; }
+}
+@media(max-width:420px){
+ /* Keep the WMS wordmark visible beside all five compact actions. The
+    controls retain their 44px height while their narrow horizontal footprint
+    matches the foldable viewport shown in the product references. */
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header__account > .hn-icon-button,
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-header__account > .hn-profile {
+   width:36px;
+   min-width:36px;
+ }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-language { width:36px; min-width:36px; }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-profile__avatar { width:34px; height:34px; }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-mobile-brand { font-size:13.5px; gap:2px; }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout='drawer'] .hn-mobile-brand > svg { width:24px; height:24px; }
 }
 html[data-hn-theme='dark'] .hn-shell[data-shell-version='s00'][data-layout='drawer'] .hn-mobile-brand { color:#dce9f7; }
