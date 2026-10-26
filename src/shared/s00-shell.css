@@ -262,12 +262,13 @@ html:has(.hn-shell[data-shell-version='s00']) { scroll-padding-block-start: 96px
 
 .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shell-search {
   display: flex;
-  flex: 1;
+  flex: 0 1 220px;
   align-items: center;
   gap: 10px;
   min-width: 44px;
   min-height: 44px;
-  max-width: 520px;
+  width: 220px;
+  max-width: 220px;
   padding: 7px 8px;
   border: 0;
   border-radius: 6px;
