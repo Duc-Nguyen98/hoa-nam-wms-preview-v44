@@ -45,7 +45,7 @@ export function SessionScreen() {
     window.addEventListener('resize', resize);
     return () => { alive.current = false; window.removeEventListener('resize', resize); if (frame !== null) cancelAnimationFrame(frame); };
   }, []);
-  return <AuthLayout copy={copy.layout} variant="split-landscape" heroImageSrc="/assets/S07/bg_warehouse_main_4k_enhanced.jpg" headingId="s08-hero-heading">
+  return <AuthLayout copy={copy.layout} variant="split-landscape" heroImageSrc={`${import.meta.env.BASE_URL}assets/S07/bg_warehouse_main_4k_enhanced.jpg`} headingId="s08-hero-heading">
     <form className="s08-session-card" aria-labelledby="s08-title" aria-busy={loading || pending || logoutPending} ref={formRef} onFocusCapture={revealFocus}
       onKeyDown={event => { if (event.key === 'Enter' && (event.repeat || event.nativeEvent.isComposing || event.keyCode === 229)) event.preventDefault(); }}
       onSubmit={async event => {

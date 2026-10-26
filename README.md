@@ -2,6 +2,13 @@
 
 Bản bàn giao mã nguồn Preview v44 cho DEV và Test, kèm báo cáo đối chiếu Desktop/Tablet và ảnh toàn bộ luồng S01 → S12/S15.
 
+## Xem trực tiếp trên web
+
+- [Giao diện Preview](https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/)
+- [Báo cáo giao diện Desktop/Tablet](https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/DOCUMENT_FLOW_VISUAL_COMPARISON.html)
+
+GitHub Actions tự build và triển khai GitHub Pages khi có commit mới trên `main`. Có thể chạy lại bằng workflow **Deploy Preview to GitHub Pages** trong tab Actions.
+
 ## Chạy trên máy
 
 Yêu cầu Node.js >=22.12.0 và npm.
