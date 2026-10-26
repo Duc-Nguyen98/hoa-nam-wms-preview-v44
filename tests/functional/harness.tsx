@@ -1,0 +1,41 @@
+import {createRoot} from 'react-dom/client';
+import {DefectsScreen} from '../../src/features/S02/DefectsScreen';
+import {OverviewScreen} from '../../src/features/S01/OverviewScreen';
+import {createDefectsController} from '../../src/controllers/defects-controller';
+import {createOverviewController} from '../../src/controllers/overview-controller';
+import {createOverviewFixtureAdapter} from '../../src/data/adapters/overview-fixture-adapter';
+import {OVERVIEW_RUNTIME_POLICY} from '../../src/controllers/overview-runtime';
+import {createApiClient} from '../../src/data/http/api-client';
+import {createBusinessHttpAdapters} from '../../src/data/http/business-adapters';
+import {installPreviewMock,createMemoryPersistence,createMemorySessionToken} from '../../src/preview-mock';
+import {createMemoryBusinessPersistence} from '../../src/preview-mock/business-persistence';
+import {PUBLIC_DEMO_LOGIN} from '../../src/preview-mock/public-demo-login';
+import {createDefectsCommandHttpAdapter} from '../../src/features/S02/defects-command-http';
+import {createDefectsCommandService} from '../../src/features/S02/defects-command-service';
+import {createApprovedDefectsCommandPolicy} from '../../src/features/S02/defects-approved-policy';
+import {GlobalToastProvider} from '../../src/toast/GlobalToastProvider';
+import {ShellPreferencesRuntime} from '../../src/shared/ShellPreferencesRuntime';
+import '../../src/shared/styles.css';
+import '../../src/shared/unified.css';
+import '../../src/shared/components.css';
+import '../../src/shared/premium.css';
+import '../../src/shared/header-controls.css';
+import '../../src/shared/dark-theme.css';
+import '../../src/shared/premium-dark.css';
+import '../../src/shared/table-presentation.css';
+import '../../src/shared/preview-ui.css';
+
+// Test entry only. Memory persistence is reset per navigation; no application setup is claimed.
+const params=new URLSearchParams(location.search),screen=params.get('screen')??'S02',state=params.get('state')??'default';
+const client=createApiClient({baseURL:location.origin+'/api/v1'});
+installPreviewMock(client,{origin:location.origin,approvedPreviewCommands:true,credentialProfile:PUBLIC_DEMO_LOGIN,
+ persistence:createMemoryPersistence(),sessionToken:createMemorySessionToken(),businessPersistence:createMemoryBusinessPersistence(),recoveryPersistence:createMemoryBusinessPersistence(),notificationPersistence:createMemoryPersistence()});
+await client.post('auth/login',{username:'demo',password:'HoaNamDemo@2026'});await client.post('auth/confirm',{});
+const adapters=createBusinessHttpAdapters(client);
+(window as any).__qa={read:()=>adapters.S02.read()};
+let reads=0;
+const overview=createOverviewFixtureAdapter(OVERVIEW_RUNTIME_POLICY);
+const overviewFactory=()=>createOverviewController({async read(query){reads++;if(state==='loading')return new Promise(()=>{});if(state==='error'&&reads===1)throw Error('QA first read failure');return overview.read(query);}});
+const defectsFactory=()=>createDefectsController(adapters.S02);
+const commandFactory=()=>createDefectsCommandService({adapter:createDefectsCommandHttpAdapter(client,{durableRecovery:true}),policy:createApprovedDefectsCommandPolicy(()=>true)});
+createRoot(document.getElementById('root')!).render(<ShellPreferencesRuntime><GlobalToastProvider>{screen==='S01'?<OverviewScreen createController={overviewFactory}/>:<DefectsScreen createController={defectsFactory} createCommandService={commandFactory}/>}</GlobalToastProvider></ShellPreferencesRuntime>);
