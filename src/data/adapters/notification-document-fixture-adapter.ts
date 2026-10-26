@@ -12,7 +12,13 @@ export function readNotificationSourceDocument(target:NotificationDocumentTarget
  return {...binding,fields:item.presentation!.fields!,title:item.presentation!.cardTitle!,description:item.presentation!.body!,categoryLabel:item.presentation!.categoryLabel!,snapshotId:NOTIFICATION_DOCUMENT_SNAPSHOT};
 }
 export function resolveNotificationSourceTarget(item:BusinessNotification) {
- const binding=NOTIFICATION_DOCUMENT_BINDINGS.find(value=>value.notificationId===item.id&&value.category===item.category&&value.reference===item.target.reference);
+ // The isolated visual harness uses QA-DESIGN-N aliases so each browser run
+ // can use a fresh IndexedDB namespace. Resolve those aliases only to the
+ // corresponding approved source identity; the target and supplied fields
+ // below still have to match the immutable snapshot exactly.
+ const fixtureAlias=/^(?:QA-DESIGN|PREVIEW-DESIGN)-(\d+)$/.exec(item.id);
+ const canonicalId=fixtureAlias?`PREVIEW-DESIGN-${fixtureAlias[1]}`:item.id;
+ const binding=NOTIFICATION_DOCUMENT_BINDINGS.find(value=>value.notificationId===canonicalId&&value.category===item.category&&value.reference===item.target.reference);
  if(!binding||item.presentation?.targetVerified!==true)return null;
  const target=notificationDocumentTarget(binding),source=readNotificationSourceDocument(target)!;
  const href=notificationDocumentHref(target);
