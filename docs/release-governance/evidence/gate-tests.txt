@@ -1,0 +1,26 @@
+▶ synthetic evidence validation and fail-closed controls
+  ✔ complete fixture is structural evidence only (19.9992ms)
+  ✔ missing receipt (0.5259ms)
+  ✔ missing gate (17.4382ms)
+  ✔ not run (16.2047ms)
+  ✔ stale gate (17.4521ms)
+  ✔ stale receipt (17.5652ms)
+  ✔ open P1 (16.1721ms)
+  ✔ missing defect count (16.2505ms)
+  ✔ missing orchestrator approval (18.1979ms)
+  ✔ design requires guardian (16.1404ms)
+  ✔ tampered artifact (15.541ms)
+  ✔ path traversal (0.3693ms)
+  ✔ absolute path (0.2711ms)
+  ✔ empty artifact list (15.2374ms)
+  ✔ abbreviated candidate rejected (16.7508ms)
+  ✔ CLI cannot treat self-supplied approvals as authenticated (117.9242ms)
+✔ synthetic evidence validation and fail-closed controls (337.3436ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 449.6386

@@ -1,0 +1,42 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+  },
+  {
+    "path": "browser.txt",
+    "sha256": "b8632336ba589b2b9b4cdadde9fa259ddd4e270cdde6b88894383f31667ed46d"
+  },
+  {
+    "path": "gate-tests.txt",
+    "sha256": "2a48d4329ed8735c9a813dbe53c9c9d3fa6e3f6ec3efe603188e0774e713db73"
+  },
+  {
+    "path": "github-audit.json",
+    "sha256": "c241d34255e531f670c543d90cf9994c570ccd6272c48459c9b0da914b8e29ef"
+  },
+  {
+    "path": "hosted-build-verification.json",
+    "sha256": "2b07bb41ed9cc3961b23e8ae845b8bb3776aae58be9fd0288b8f847404849e75"
+  },
+  {
+    "path": "hosting-smoke.json",
+    "sha256": "101670397f1e8687d9687ba595e33242bef09a097bd120ddb0a67d519dc35925"
+  },
+  {
+    "path": "peer-status.json",
+    "sha256": "eb3f307ed5d3b435f5b96d1b12eb86e39a266a73015083b1e5cb7879c724ca8b"
+  },
+  {
+    "path": "quality-pr.txt",
+    "sha256": "daf5cc4054dfd97dae997a6f2d86a3f6f0f09051529d1a48e183174c67a8728e"
+  },
+  {
+    "path": "README.md",
+    "sha256": "f4e6cd1c175845289c257a5f3a6d150d82ccbaf08a6556502435511d5d538e8c"
+  },
+  {
+    "path": "unit.txt",
+    "sha256": "f6789caa04b65cd73db8bd637e63092cb50bacb6ed5066eda228c7d0a3836993"
+  }
+]

@@ -1,0 +1,284 @@
+[
+  {
+    "name": "pages-s01",
+    "profile": "desktop",
+    "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/#/preview/S01",
+    "checkedAt": "2026-10-26T22:27:40.000Z",
+    "errors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "httpStatus": 200,
+    "finalURL": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/#/preview/S07",
+    "title": "Đăng nhập · Hoa Nam WMS",
+    "visibleText": "HOA NAM WMS\n\nHệ thống quản lý kho\n\nQuản lý kho\nHoa Nam\n\nĐăng nhập để bắt đầu phiên làm việc\n\nCHÍNH XÁC\nHIỆU QUẢ\nVẬN HÀNH\nBỀN VỮNG\nTên đăng nhập\nMật khẩu\nQuên mật khẩu?\nĐăng nhập\nQuyền truy cập theo tài khoản được cấp.\n\nChỉ dành cho nhân viên được ủy quyền.\n\nHOA NAM WMS\n\nKẾT NỐI CON NGƯỜI - VẬN HÀNH HIỆU QUẢ",
+    "links": [],
+    "screenshot": "output/s00-5/hosting/pages-s01-desktop.png",
+    "status": "REACHABLE"
+  },
+  {
+    "name": "pages-report",
+    "profile": "desktop",
+    "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/DOCUMENT_FLOW_VISUAL_COMPARISON.html",
+    "checkedAt": "2026-10-26T22:27:49.419Z",
+    "errors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "httpStatus": 200,
+    "finalURL": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/DOCUMENT_FLOW_VISUAL_COMPARISON.html",
+    "title": "Đối chiếu luồng mở chứng từ — v44",
+    "visibleText": "HOA NAM WMS · PREVIEW v44\n\nĐối chiếu luồng Mở chứng từ\n\nS01 → đúng phiếu nhập PN-0005 tại S12 / phiếu xuất PX-0004 tại S15.\n\nMở Preview · Kết quả chụp và xác minh trên domain\n\nSource: af8148d248048fa3a2319428774a38425fd76288\nBuild: 4e35396cfaf3fe9287cb468c4e15ed2cc46754b7c19b717c93071ff62110f7ea\n\nCơ sở đối chiếu và phạm vi\n\nDialog S01 đối chiếu trực tiếp mẫu Desktop/Tablet đã duyệt (5.png, 6.png). Trang chứng từ nguồn mở từ S01 chưa có mẫu riêng; phần này được chỉnh theo chuẩn chung S12/S15 về chữ, khoảng cách, bo góc và vùng chạm, giữ nguyên bố cục nhóm và toàn bộ dữ liệu.\n\nThành phần\tTrước v43\tSau sửa\nNút đóng Dialog\tNền/nét đóng ít nổi bật\tNền nhẹ, icon 24 px, vùng chạm 48/52 px\nNút sao chép mã và ID\tKích thước chưa đồng nhất\t44×44 CSS px\nFooter Dialog\tNút nhỏ, tỷ lệ nút Tablet lệch mẫu\tChữ 16 px, cao 50/56 px; bố cục hai nút Tablet theo mẫu\nHeader / nhóm thông tin\tThiếu icon trạng thái, có hàng grid trống trên Tablet\tIcon theo trạng thái, bỏ hàng trống, phân cách nhóm hệ thống\nTrang chứng từ\tNhãn–giá trị 6 px, mã 13 px, thẻ bo 6 px\tNhãn–giá trị 8 px, mã 15 px, thẻ bo 8 px / padding 24 px\nSerial / tệp đính kèm\tVùng chạm thấp\tVùng chạm ≥44 px\nKiểm thử\n32 trường hợp giao diện: Desktop/Tablet VI–EN–ZH, Light/Dark; bổ sung phone 390×844 và màn thấp 960×540. Đo vùng chạm, bounds Dialog/footer, focus và kích thước chữ.\n32 kiểm tra điều hướng gồm đủ 16 chứng từ: ID/loại/fields/lines/serials đúng, reload/back, malformed links và danh sách hiện hữu.\n15 kiểm thử đơn vị nguồn chứng từ/notification state/route PASS; typecheck và build PASS.\nPhần liên kết thông báo do chat phụ trách ",
+    "links": [
+      {
+        "text": "Mở Preview",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/#/preview/S01"
+      },
+      {
+        "text": "Kết quả chụp và xác minh trên domain",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/results.json"
+      },
+      {
+        "text": "Đo giao diện",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/s01-document-visual-local/results.json"
+      },
+      {
+        "text": "Hồi quy điều hướng",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/s01-document-links-visual-regression/results.json"
+      },
+      {
+        "text": "QA thông báo",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/notification-links-local/results.json"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/approved-S01-desktop-dialog.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PX-0004-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PX-0004-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/approved-S01-tablet-dialog.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PX-0004-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PX-0004-3-document.png"
+      }
+    ],
+    "screenshot": "output/s00-5/hosting/pages-report-desktop.png",
+    "status": "REACHABLE"
+  },
+  {
+    "name": "site-s01",
+    "profile": "desktop",
+    "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S01",
+    "checkedAt": "2026-10-26T22:27:52.061Z",
+    "errors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "httpStatus": 200,
+    "finalURL": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S07",
+    "title": "Đăng nhập · Hoa Nam WMS",
+    "visibleText": "HOA NAM WMS\n\nHệ thống quản lý kho\n\nQuản lý kho\nHoa Nam\n\nĐăng nhập để bắt đầu phiên làm việc\n\nCHÍNH XÁC\nHIỆU QUẢ\nVẬN HÀNH\nBỀN VỮNG\nTên đăng nhập\nMật khẩu\nQuên mật khẩu?\nĐăng nhập\nQuyền truy cập theo tài khoản được cấp.\n\nChỉ dành cho nhân viên được ủy quyền.\n\nHOA NAM WMS\n\nKẾT NỐI CON NGƯỜI - VẬN HÀNH HIỆU QUẢ",
+    "links": [],
+    "screenshot": "output/s00-5/hosting/site-s01-desktop.png",
+    "status": "REACHABLE"
+  },
+  {
+    "name": "pages-s01",
+    "profile": "tablet",
+    "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/#/preview/S01",
+    "checkedAt": "2026-10-26T22:27:56.817Z",
+    "errors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "httpStatus": 200,
+    "finalURL": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/#/preview/S07",
+    "title": "Đăng nhập · Hoa Nam WMS",
+    "visibleText": "HOA NAM WMS\n\nHệ thống quản lý kho\n\nQuản lý khoHoa Nam\n\nĐăng nhập để bắt đầu phiên làm việc\n\nCHÍNH XÁC\nHIỆU QUẢ\nVẬN HÀNH\nBỀN VỮNG\nTên đăng nhập\nMật khẩu\nQuên mật khẩu?\nĐăng nhập\nQuyền truy cập theo tài khoản được cấp.\n\nChỉ dành cho nhân viên được ủy quyền.\n\nHOA NAM WMS\n\nKẾT NỐI CON NGƯỜI - VẬN HÀNH HIỆU QUẢ",
+    "links": [],
+    "screenshot": "output/s00-5/hosting/pages-s01-tablet.png",
+    "status": "REACHABLE"
+  },
+  {
+    "name": "pages-report",
+    "profile": "tablet",
+    "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/DOCUMENT_FLOW_VISUAL_COMPARISON.html",
+    "checkedAt": "2026-10-26T22:27:59.615Z",
+    "errors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "httpStatus": 200,
+    "finalURL": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/DOCUMENT_FLOW_VISUAL_COMPARISON.html",
+    "title": "Đối chiếu luồng mở chứng từ — v44",
+    "visibleText": "HOA NAM WMS · PREVIEW v44\n\nĐối chiếu luồng Mở chứng từ\n\nS01 → đúng phiếu nhập PN-0005 tại S12 / phiếu xuất PX-0004 tại S15.\n\nMở Preview · Kết quả chụp và xác minh trên domain\n\nSource: af8148d248048fa3a2319428774a38425fd76288\nBuild: 4e35396cfaf3fe9287cb468c4e15ed2cc46754b7c19b717c93071ff62110f7ea\n\nCơ sở đối chiếu và phạm vi\n\nDialog S01 đối chiếu trực tiếp mẫu Desktop/Tablet đã duyệt (5.png, 6.png). Trang chứng từ nguồn mở từ S01 chưa có mẫu riêng; phần này được chỉnh theo chuẩn chung S12/S15 về chữ, khoảng cách, bo góc và vùng chạm, giữ nguyên bố cục nhóm và toàn bộ dữ liệu.\n\nThành phần\tTrước v43\tSau sửa\nNút đóng Dialog\tNền/nét đóng ít nổi bật\tNền nhẹ, icon 24 px, vùng chạm 48/52 px\nNút sao chép mã và ID\tKích thước chưa đồng nhất\t44×44 CSS px\nFooter Dialog\tNút nhỏ, tỷ lệ nút Tablet lệch mẫu\tChữ 16 px, cao 50/56 px; bố cục hai nút Tablet theo mẫu\nHeader / nhóm thông tin\tThiếu icon trạng thái, có hàng grid trống trên Tablet\tIcon theo trạng thái, bỏ hàng trống, phân cách nhóm hệ thống\nTrang chứng từ\tNhãn–giá trị 6 px, mã 13 px, thẻ bo 6 px\tNhãn–giá trị 8 px, mã 15 px, thẻ bo 8 px / padding 24 px\nSerial / tệp đính kèm\tVùng chạm thấp\tVùng chạm ≥44 px\nKiểm thử\n32 trường hợp giao diện: Desktop/Tablet VI–EN–ZH, Light/Dark; bổ sung phone 390×844 và màn thấp 960×540. Đo vùng chạm, bounds Dialog/footer, focus và kích thước chữ.\n32 kiểm tra điều hướng gồm đủ 16 chứng từ: ID/loại/fields/lines/serials đúng, reload/back, malformed links và danh sách hiện hữu.\n15 kiểm thử đơn vị nguồn chứng từ/notification state/route PASS; typecheck và build PASS.\nPhần liên kết thông báo do chat phụ trách ",
+    "links": [
+      {
+        "text": "Mở Preview",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/#/preview/S01"
+      },
+      {
+        "text": "Kết quả chụp và xác minh trên domain",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/results.json"
+      },
+      {
+        "text": "Đo giao diện",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/s01-document-visual-local/results.json"
+      },
+      {
+        "text": "Hồi quy điều hướng",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/s01-document-links-visual-regression/results.json"
+      },
+      {
+        "text": "QA thông báo",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/notification-links-local/results.json"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/approved-S01-desktop-dialog.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/desktop-PX-0004-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/desktop-PX-0004-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/approved-S01-tablet-dialog.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PN-0005-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PN-0005-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PX-0004-2-open.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v43-document-flow-final/tablet-PX-0004-3-document.png"
+      },
+      {
+        "text": "",
+        "url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/v44-document-flow-final/tablet-PX-0004-3-document.png"
+      }
+    ],
+    "screenshot": "output/s00-5/hosting/pages-report-tablet.png",
+    "status": "REACHABLE"
+  },
+  {
+    "name": "site-s01",
+    "profile": "tablet",
+    "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S01",
+    "checkedAt": "2026-10-26T22:28:01.579Z",
+    "errors": [],
+    "failedRequests": [],
+    "httpErrors": [],
+    "httpStatus": 200,
+    "finalURL": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S07",
+    "title": "Đăng nhập · Hoa Nam WMS",
+    "visibleText": "HOA NAM WMS\n\nHệ thống quản lý kho\n\nQuản lý khoHoa Nam\n\nĐăng nhập để bắt đầu phiên làm việc\n\nCHÍNH XÁC\nHIỆU QUẢ\nVẬN HÀNH\nBỀN VỮNG\nTên đăng nhập\nMật khẩu\nQuên mật khẩu?\nĐăng nhập\nQuyền truy cập theo tài khoản được cấp.\n\nChỉ dành cho nhân viên được ủy quyền.\n\nHOA NAM WMS\n\nKẾT NỐI CON NGƯỜI - VẬN HÀNH HIỆU QUẢ",
+    "links": [],
+    "screenshot": "output/s00-5/hosting/site-s01-tablet.png",
+    "status": "REACHABLE"
+  }
+]

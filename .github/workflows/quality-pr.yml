@@ -2,37 +2,100 @@ name: Hoa Nam quality gates
 
 on:
   pull_request:
+    branches: [main, DEV]
   push:
     branches: [main, DEV]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   critical:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '24'
           cache: npm
-      - run: npm ci
-      - run: npm run quality:pr
+      - name: Record checked-out commit
+        run: |
+          mkdir -p output/ci
+          git rev-parse HEAD > output/ci/source-sha.txt
+      - run: npm ci --include=dev
+      - name: Typecheck, contract, build and putaway tests
+        run: npm run quality:pr > output/ci/critical.log 2>&1
+      - name: S01 and Notification unit tests
+        run: npx tsx --test tests/overview-detail.test.ts tests/s01/document-navigation.test.ts tests/notification-state.test.ts tests/actions/notification-target.test.ts > output/ci/unit.log 2>&1
+      - name: Fail-closed gate negative controls
+        run: node --test scripts/ci/release-readiness.test.mjs > output/ci/gate-tests.log 2>&1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: critical-${{ github.event.pull_request.head.sha || github.sha }}
+          path: |
+            output/ci/
+            dist/
+          if-no-files-found: error
 
   visual-and-functional:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     needs: critical
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '24'
           cache: npm
-      - run: npm ci
-      - name: Verify visual test configuration is portable
-        run: npm run quality:contract
-      - name: Block until runtime capture harness is wired
-        run: |
-          echo "Visual, accessibility, console and overflow gates are required by DESIGN_CONTRACT.md."
-          echo "This job remains intentionally BLOCKED until the preview server/capture harness is available in CI."
-          exit 1
+      - run: npm ci --include=dev
+      - run: npx playwright install --with-deps chromium
+      - name: Isolated Notification interaction, focus and geometry harness
+        run: npx playwright test --config=.github/playwright.ci.config.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-${{ github.event.pull_request.head.sha || github.sha }}
+          path: |
+            output/ci/
+            output/notification-p0-20261025/
+          if-no-files-found: error
+
+  release-readiness:
+    if: always()
+    needs: [critical, visual-and-functional]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Require successful automated jobs
+        env:
+          CRITICAL_RESULT: ${{ needs.critical.result }}
+          BROWSER_RESULT: ${{ needs.visual-and-functional.result }}
+        run: test "$CRITICAL_RESULT" = success && test "$BROWSER_RESULT" = success
+      - name: Require current-commit QA evidence and approvals
+        if: always()
+        env:
+          CANDIDATE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: node scripts/ci/release-readiness.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: readiness-${{ github.event.pull_request.head.sha || github.sha }}
+          path: output/ci/
+          if-no-files-found: warn
