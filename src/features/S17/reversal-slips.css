@@ -95,3 +95,41 @@
   .s17-editor-footer-tools .hn-button { flex: 1 1 auto; }
   .s17-editor-modal .hn-global-modal__footer .hn-button { flex: 1 1 auto; }
 }
+
+/* Current-session return documents use the same reading and control sizes as
+   the receipt/outbound worklists. Long IDs remain readable within each cell. */
+.hn-shell .s17-screen .hn-page-heading h1 { font-size:32px; line-height:40px; }
+.s17-operational > .hn-card__body { padding:24px; }
+.s17-operational > .hn-card__body > h2 { font-size:22px; line-height:30px; margin:0 0 16px; }
+.s17-operational .s17-action-row { gap:12px; }
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s17-operational .hn-button[data-hn-control] { min-height:48px; font-size:16px; }
+.s17-operational-table .hn-table { width:100%; min-width:0; table-layout:fixed; }
+.s17-operational-table .hn-table :is(th,td) { white-space:normal; overflow-wrap:anywhere; font-size:15px; line-height:24px; }
+.s17-operational-table [data-column='code'], .s17-operational-table [data-column='original'] { width:26%; }
+.s17-operational-table [data-column='status'] { width:15%; }
+.s17-operational-table [data-column='return'] { width:20%; }
+.s17-operational-table [data-column='action'] { width:13%; }
+.s17-operational-table [data-column='action'] .hn-button { white-space:nowrap; }
+.s17-detail-modal .s17-operational-fields { gap:24px; margin-bottom:24px; }
+.s17-detail-modal .s17-operational-fields dt { font-size:14px; line-height:22px; margin-bottom:8px; }
+.s17-detail-modal .s17-operational-fields dd { font-size:16px; line-height:24px; }
+.s17-detail-modal .hn-global-modal__body > h3 { margin:24px 0 12px; font-size:18px; line-height:26px; }
+.s17-detail-modal .hn-table { width:100%; min-width:0; table-layout:fixed; }
+.s17-detail-modal .hn-table :is(th,td) { white-space:normal; overflow-wrap:anywhere; font-size:15px; line-height:24px; }
+.s17-detail-modal .s17-evidence-download { display:inline-block; padding-block:10px; min-height:44px; overflow-wrap:anywhere; }
+.s17-detail-modal .s17-detail-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+.s17-editor-modal .s17-editor-form { gap:24px; }
+.s17-editor-modal .s17-editor-form > p, .s17-editor-modal .s17-checkbox-field { font-size:15px; line-height:24px; }
+.s17-editor-modal .hn-form-field > label { font-size:14px; line-height:22px; }
+.s17-editor-modal .hn-form-field :is(input,select) { min-height:48px; font-size:16px; }
+.s17-editor-modal .s17-checkbox-field { gap:12px; padding:16px; }
+@media(max-width:1100px) {
+ .hn-shell .s17-screen .hn-page-heading h1 { font-size:28px; line-height:36px; }
+ .s17-operational-table .hn-table :is(th,td) { padding-inline:10px; }
+}
+@media(max-width:600px) {
+ .s17-operational > .hn-card__body { padding:16px; }
+ .s17-operational .s17-action-row > .hn-button { flex:1 1 auto; }
+ .s17-operational-table .hn-table { min-width:600px; }
+ .s17-detail-modal .s17-operational-fields { grid-template-columns:1fr; }
+}

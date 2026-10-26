@@ -14,6 +14,11 @@ export type ReversalRecord = TypedOperationalRecord<ReversalData>;
 export type IssueRecord = TypedOperationalRecord<PartsIssueData>;
 export type ReversalFence = Pick<OperationalSnapshot['token'], 'epoch' | 'scenarioId' | 'generation'>;
 export interface ReversalTarget { id: string; version: number; fence: ReversalFence }
+export interface ReversalSelection { id: string; fence: ReversalFence }
+export function findSelectedReversal(snapshot: OperationalSnapshot | null, selection: ReversalSelection | null) {
+  if(!snapshot?.scenario||!selection||snapshot.epoch!==selection.fence.epoch||snapshot.token.scenarioId!==selection.fence.scenarioId||snapshot.token.generation!==selection.fence.generation)return null;
+  return snapshot.reversals.find(row=>row.id===selection.id)??null;
+}
 export interface ReversalCreateDraft { originalIssueId: string; observedIssueVersion: number; returnedUnused: boolean; reasonText: string; fence: ReversalFence }
 export interface EvidenceData { reversalId: string; label: string; mediaType: string; bytes: number[]; byteLength: number; sha256: string; attachmentRef: string }
 export interface ReversalActionDraft { kind: 'attach' | 'confirm' | 'post' | 'cancel'; target: ReversalTarget }

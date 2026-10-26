@@ -1,10 +1,10 @@
 import { ReadState } from '../../shared/ReadState';
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
 import { BasicSelect, Button, DataTable, FormField, GlobalModal, StatusBadge, type TableColumn } from '../../shared';
 import { useUiCopy } from '../../i18n/use-ui-copy';
-import { adoptReviewedReversal, createReversalBinding, EVIDENCE_MAX_BYTES, EVIDENCE_MEDIA_TYPES, reversalIssueOptions, type EvidenceData, type ReversalCreateDraft, type ReversalRecord, type ReversalTarget, type ReversalWebAdapter } from './reversal-binding';
+import { adoptReviewedReversal, createReversalBinding, EVIDENCE_MAX_BYTES, EVIDENCE_MEDIA_TYPES, findSelectedReversal, reversalIssueOptions, type EvidenceData, type ReversalCreateDraft, type ReversalRecord, type ReversalSelection, type ReversalTarget, type ReversalWebAdapter } from './reversal-binding';
 
 export const REVERSAL_OPERATIONAL_COPY = {
   'Phiếu hoàn phiên hiện tại': 'Current session returns', 'Danh sách tham chiếu': 'Reference list', 'Tạo phiếu hoàn': 'Create return',
@@ -60,26 +60,36 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
   const tx = useUiCopy(REVERSAL_OPERATIONAL_COPY), adapter = useMemo(() => supplied ?? createOperationalWebAdapter(undefined, { scope: 'S17' }), [supplied]);
   const controller = useMemo(() => { const catalog = createCatalogCreateAdapter('sku'); return createReversalBinding(adapter, () => catalog.readSnapshot()); }, [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
-  const [selected, setSelected] = useState<string | null>(null), [editor, setEditor] = useState<Editor | null>(null), [localError, setLocalError] = useState('');
+  const [selected, setSelected] = useState<ReversalSelection | null>(null), [editor, setEditor] = useState<Editor | null>(null), [localError, setLocalError] = useState('');
+  const panel=useRef<HTMLElement>(null),returnSelection=useRef<ReversalSelection|null>(null);
+  const detailFocus=useRef<HTMLElement|null>(null);
   const [reviewed, setReviewed] = useState<{ record: ReversalRecord; target: ReversalTarget } | null>(null);
   useEffect(() => { setReviewed(null); }, [editor?.kind, editor && editor.kind !== 'create' ? editor.target.id : null]);
-  const snapshot = state.snapshot, row = snapshot?.reversals.find(r => r.id === selected), locked = state.busy || state.recovery || !snapshot;
+  const snapshot = state.snapshot, row = findSelectedReversal(snapshot,selected), locked = state.busy || state.recovery || !snapshot;
+  function selectRow(id:string){if(!snapshot)return;detailFocus.current=null;returnSelection.current={id,fence:{...snapshot.token}};setSelected(returnSelection.current);}
+  function resolveDetailReturnFocus(){
+    const root=panel.current;if(!root)return null;
+    const current=findSelectedReversal(snapshot,returnSelection.current);
+    const action=current?[...root.querySelectorAll<HTMLElement>('[data-s17-operational-action]')].find(element=>element.dataset.s17OperationalAction===current.id&&!element.matches(':disabled')&&element.getClientRects().length>0):null;
+    return action??root.querySelector<HTMLElement>('[data-s17-operational-refresh]:not(:disabled)')??root;
+  }
   const original = row && snapshot?.partsIssues.find(r => r.id === row.data.originalIssueId), options = snapshot ? reversalIssueOptions(snapshot) : [];
   useEffect(() => {
     void controller.resume(); const refresh = () => { if (document.visibilityState === 'visible') void controller.load(); };
     window.addEventListener('focus', refresh); document.addEventListener('visibilitychange', refresh);
     return () => { controller.suspend(); window.removeEventListener('focus', refresh); document.removeEventListener('visibilitychange', refresh); };
   }, [controller]);
-  useEffect(() => { if (!state.acceptedSequence) return; if (state.acceptedLocal) { setSelected(state.acceptedId); setEditor(null); setLocalError(''); } else if (!editor) setSelected(previous => previous ?? state.acceptedId); }, [state.acceptedSequence, state.acceptedId, state.acceptedLocal]);
+  useEffect(() => { if (!state.acceptedSequence || !state.acceptedId || !state.snapshot) return; const selection={id:state.acceptedId,fence:{...state.snapshot.token}}; if(!findSelectedReversal(state.snapshot,selection))return; if (state.acceptedLocal) { returnSelection.current=selection;setSelected(selection); setEditor(null); setLocalError(''); } else if (!editor) {returnSelection.current=selected??selection;setSelected(previous => previous ?? selection);} }, [state.acceptedSequence, state.acceptedId, state.acceptedLocal]);
   function open(kind: 'attach' | 'confirm' | 'post' | 'cancel') {
     if (!row || !snapshot || locked) return; setLocalError(''); const target = { id: row.id, version: row.version, fence: snapshot.token }, base = { target, code: row.data.code };
+    detailFocus.current=panel.current?.querySelector<HTMLElement>(`[data-s17-detail-action="${kind}"]`)??null;
     setEditor(kind === 'attach' ? { ...base, kind, file: null, label: '' } : kind === 'cancel' ? { ...base, kind, reason: '' } : { ...base, kind });
   }
   async function refreshForReview() {
     setReviewed(null); await controller.load();
     const next = controller.getSnapshot();
     if (!editor || editor.kind === 'create' || !next.snapshot || next.error || next.recovery) return;
-    const record = next.snapshot.reversals.find(r => r.id === editor.target.id);
+    const record = findSelectedReversal(next.snapshot,editor.target);
     if (record) setReviewed({ record, target: { id: record.id, version: record.version, fence: next.snapshot.token } });
   }
   function useReviewedState() {
@@ -107,18 +117,18 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
     { id: 'original', heading: tx('Phiếu cấp gốc'), render: r => snapshot?.partsIssues.find(i => i.id === r.data.originalIssueId)?.data.code ?? '—' },
     { id: 'status', heading: tx('Trạng thái'), render: badge },
     { id: 'return', heading: tx('Nhận lại hàng'), render: r => tx(r.data.physicalReturn === 'CONFIRMED' ? 'Đã xác nhận nhận lại' : 'Chờ nhận lại') },
-    { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: r => <Button variant="ghost" disabled={state.busy} onClick={() => setSelected(r.id)}>{tx('Xem')}</Button> },
+    { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: r => <Button variant="secondary" data-s17-operational-action={r.id} disabled={state.busy} onClick={() => selectRow(r.id)}>{tx('Xem')}</Button> },
   ];
-  const controls = <><Button variant="secondary" disabled={state.busy || state.recovery} onClick={() => void refreshForReview()}>{tx('Đọc lại dữ liệu')}</Button>{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}</>;
+  const controls = <><Button data-s17-operational-refresh variant="secondary" disabled={state.busy || state.recovery} onClick={() => void refreshForReview()}>{tx('Đọc lại dữ liệu')}</Button>{state.recovery && <Button disabled={state.busy} onClick={() => void controller.retry()}>{tx('Kiểm tra lại thao tác')}</Button>}</>;
   const feedback = <><ReadState loading={false} error={state.error} hasData={!!snapshot} loadingText={null} errorText={tx(message(state.error))}/>{state.archivedReconciled && <p role="status">{tx('Đã đối chiếu thao tác của phiên đã lưu trữ. Danh sách hiện tại không thay đổi.')}</p>}</>;
   const title = editor?.kind === 'create' ? 'Tạo phiếu hoàn' : editor?.kind === 'attach' ? 'Đính kèm bằng chứng' : editor?.kind === 'confirm' ? 'Xác nhận nhận lại hàng' : editor?.kind === 'cancel' ? 'Hủy phiếu hoàn' : 'Ghi sổ hoàn kho';
-  return <section className="s17-list hn-premium-panel" data-operational-reversals aria-label={tx('Phiếu hoàn phiên hiện tại')}>
+  return <section ref={panel} tabIndex={-1} className="s17-list s17-operational hn-premium-panel" data-operational-reversals aria-label={tx('Phiếu hoàn phiên hiện tại')}>
     <div className="hn-card__body"><h2>{tx('Phiếu hoàn phiên hiện tại')}</h2><div className="s17-action-row"><Button disabled={locked || !snapshot?.scenario} onClick={() => { if (!snapshot) return; setLocalError(''); setEditor({ kind: 'create', draft: { originalIssueId: '', observedIssueVersion: 0, returnedUnused: false, reasonText: '', fence: snapshot.token } }); }}>{tx('Tạo phiếu hoàn')}</Button>{controls}</div>
     <ReadState loading={state.busy} hasData={!!snapshot} loadingText={tx('Đang đọc dữ liệu…')} errorText={null}/>{feedback}
     {snapshot && !snapshot.scenario && <p role="status">{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
     </div>
-    {snapshot?.scenario && <DataTable caption={tx('Phiếu hoàn phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.reversals} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có phiếu hoàn trong phiên hiện tại.')}</p>} />}
-    <GlobalModal open={!!selected && !editor} title={tx('Chi tiết phiếu hoàn')} size="large" onClose={() => { if (!state.busy) setSelected(null); }} footer={<><div className="hn-modal-footer-tools">{controls}</div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
+    {snapshot?.scenario && <div className="s17-operational-table"><DataTable caption={tx('Phiếu hoàn phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.reversals} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có phiếu hoàn trong phiên hiện tại.')}</p>} /></div>}
+    <GlobalModal className="s17-detail-modal" initialFocusRef={detailFocus} resolveReturnFocus={resolveDetailReturnFocus} open={!!selected && !editor} title={tx('Chi tiết phiếu hoàn')} size="large" onClose={() => setSelected(null)} footer={<><div className="hn-modal-footer-tools">{controls}</div><Button onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
       {!row || !snapshot || !original ? <p role="status">{tx('Phiếu không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
         <dl className="s17-operational-fields" data-operational-reversal-id={row.id}><div><dt>{tx('Phiếu hoàn')}</dt><dd>{row.data.code}</dd></div><div><dt>{tx('Phiếu cấp gốc')}</dt><dd>{original.data.code}</dd></div><div><dt>{tx('Ca bảo hành')}</dt><dd>{snapshot.warrantyCases.find(c => c.id === original.data.caseId)?.data.code ?? '—'}</dd></div><div><dt>{tx('Trạng thái')}</dt><dd>{badge(row)}</dd></div><div><dt>{tx('Lý do hoàn')}</dt><dd>{row.data.reasonText}</dd></div><div><dt>{tx('Nhận lại hàng')}</dt><dd>{tx(row.data.physicalReturn === 'CONFIRMED' ? 'Đã xác nhận nhận lại' : 'Chờ nhận lại')}</dd></div><div><dt>{tx('Số bút toán hoàn')}</dt><dd>{row.data.postedCompensationEventIds.length}</dd></div>{row.data.cancelReason && <div><dt>{tx('Lý do hủy')}</dt><dd>{row.data.cancelReason}</dd></div>}</dl>
         <DataTable caption={tx('Số lượng hoàn')} rows={original.data.lines} rowKey={line => line.id} columns={[
@@ -127,7 +137,7 @@ export function OperationalReversals({ adapter: supplied, notify }: { adapter?: 
           { id: 'quantity', heading: tx('Số lượng hoàn'), render: line => line.quantity }, { id: 'unit', heading: tx('Đơn vị'), render: line => line.unit },
         ]} />
         <h3>{tx('Bằng chứng đã lưu')}</h3>{row.data.evidenceRefs.length ? <ul>{state.verifiedEvidence[row.id]?.map(e => <li key={e.attachmentRef}><EvidenceDownload evidence={e} label={tx('Tải bằng chứng')} /></li>)}</ul> : <p>{tx('Chưa có bằng chứng.')}</p>}
-        {row.data.status === 'DRAFT' && <div><Button disabled={locked} onClick={() => open('attach')}>{tx('Đính kèm bằng chứng')}</Button>{row.data.physicalReturn === 'PENDING' ? <Button disabled={locked || !row.data.evidenceRefs.length} onClick={() => open('confirm')}>{tx('Xác nhận nhận lại hàng')}</Button> : <Button disabled={locked} onClick={() => open('post')}>{tx('Ghi sổ hoàn kho')}</Button>}<Button variant="secondary" disabled={locked} onClick={() => open('cancel')}>{tx('Hủy phiếu hoàn')}</Button></div>}
+        {row.data.status === 'DRAFT' && <div className="s17-detail-actions"><Button data-s17-detail-action="attach" disabled={locked} onClick={() => open('attach')}>{tx('Đính kèm bằng chứng')}</Button>{row.data.physicalReturn === 'PENDING' ? <Button data-s17-detail-action="confirm" disabled={locked || !row.data.evidenceRefs.length} onClick={() => open('confirm')}>{tx('Xác nhận nhận lại hàng')}</Button> : <Button data-s17-detail-action="post" disabled={locked} onClick={() => open('post')}>{tx('Ghi sổ hoàn kho')}</Button>}<Button data-s17-detail-action="cancel" variant="secondary" disabled={locked} onClick={() => open('cancel')}>{tx('Hủy phiếu hoàn')}</Button></div>}
       </>}{feedback}
     </GlobalModal>
     <GlobalModal open={!!editor} title={tx(title)} onClose={() => { if (!state.busy) setEditor(null); }}

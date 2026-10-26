@@ -47,29 +47,31 @@ async function verifyScreens(f: Fixture) {
   const readers = [warranty, parts, report, inventory, stock];
   try {
     for (const reader of readers) { await reader.load(); assert.equal(reader.getSnapshot().error, ''); }
-    assert.equal(before.warrantyCases.length, 1);
-    const cas = before.warrantyCases[0], issue = before.partsIssues[0];
+    assert.equal(before.warrantyCases.length, 2);
+    const cas = before.warrantyCases.find(row => row.data.identityMode === 'SERIAL')!;
+    const issue = before.partsIssues.find(row => row.data.caseId === cas.id)!;
     assert.equal(cas.data.state, 'RETURNED');
     assert.equal(cas.data.identityMode, 'SERIAL');
     assert.equal(before.physical.find(row => row.id === cas.data.physicalId)?.data.physicalCode, 'PUBLIC-DEMO-SERIAL-0012');
     assert.equal(cas.data.defectIds.length, 1);
     assert.ok(cas.data.expectedFinishDate);
-    assert.equal(before.partsIssues.length, 1); assert.equal(issue.data.status, 'POSTED');
+    assert.equal(before.partsIssues.length, 2); assert.equal(issue.data.status, 'POSTED');
     assert.equal(issue.data.caseId, cas.id); assert.equal(issue.data.lines.length, 1);
     assert.equal(issue.data.lines[0].quantity, 2);
     const event = before.stockEvents.find(row => row.id === issue.data.postedEventIds[0])!;
     assert.equal(event.data.eventType, 'PARTS_ISSUE_POST'); assert.equal(event.data.signedQuantity, -2);
     assert.equal(event.data.documentId, issue.id); assert.equal(issue.data.postedEventIds.length, 1);
-    assert.deepEqual(warranty.getSnapshot().snapshot!.warrantyCases[0], cas);
-    assert.equal(parts.getSnapshot().model!.issues[0].warrantyCase.id, cas.id);
+    assert.deepEqual(warranty.getSnapshot().snapshot!.warrantyCases.find(row => row.id === cas.id), cas);
+    assert.equal(parts.getSnapshot().model!.issues.find(row => row.record.id === issue.id)!.warrantyCase.id, cas.id);
     const model = report.getSnapshot().model!;
-    assert.equal(model.rows[0].id, cas.id); assert.equal(model.rows[0].state, 'RETURNED');
-    assert.deepEqual(model.rows[0].partIssueIds, [issue.id]);
-    assert.deepEqual(model.rows[0].timeline.map(row => row.state), ['RECEIVED', 'CHECKING', 'REPAIRING', 'REPAIRED', 'RETURNED']);
-    assert.equal(model.report.summary.total, 1); assert.equal(model.report.summary.complete, 1);
-    assert.equal(model.report.summary.processing, 0); assert.equal(model.report.summary.waiting, 0);
+    const caseReport = model.rows.find(row => row.id === cas.id)!;
+    assert.equal(caseReport.state, 'RETURNED');
+    assert.deepEqual(caseReport.partIssueIds, [issue.id]);
+    assert.deepEqual(caseReport.timeline.map(row => row.state), ['RECEIVED', 'CHECKING', 'REPAIRING', 'REPAIRED', 'RETURNED']);
+    assert.equal(model.report.summary.total, 2); assert.equal(model.report.summary.complete, 1);
+    assert.equal(model.report.summary.processing, 1); assert.equal(model.report.summary.waiting, 0);
     const balance = stock.getSnapshot().model!.rows.find(row => row.skuCode === 'PUBLIC-DEMO-SKU-B')!;
-    assert.equal(balance.closing, 16); assert.equal(balance.parts, 2); assert.equal(balance.reversals, 0);
+    assert.equal(balance.closing, 16); assert.equal(balance.parts, 4); assert.equal(balance.reversals, 2);
     assert.equal(inventory.getSnapshot().model!.rows.find(row => row.skuCode === 'PUBLIC-DEMO-SKU-B')!.quantity, 16);
     assert.deepEqual(await quantities(f, before), { 'PUBLIC-DEMO-SKU-A': 1, 'PUBLIC-DEMO-SKU-B': 16 });
     const box = before.boxes.find(row => row.data.physicalCode === 'PUBLIC-DEMO-BOX-0010')!;
@@ -84,7 +86,7 @@ test('public demo full warranty flow uses one issued serial and two parts; all f
   const app = f.runtime.appEventAdapters!.P19, execute = app.execute;
   app.execute = async request => {
     const before = await f.web.read(), result = await execute(request), after = await f.web.read();
-    checkpoints.push({ command: request.command, before, after }); return result;
+    if (before.warrantyCases.length === 1) checkpoints.push({ command: request.command, before, after }); return result;
   };
   try {
     assert.equal(await f.setup.ready(), false);
@@ -138,8 +140,8 @@ test('v45 session upgrades additively and a lost parts-post response resumes wit
     assert.equal(final.scenario!.id, v45.scenario!.id); assert.equal(final.token.generation, v45.token.generation);
     assert.deepEqual(final.receipts, v45.receipts); assert.deepEqual(final.outbounds, v45.outbounds);
     assert.deepEqual(final.putaways, v45.putaways); assert.deepEqual(final.physical, v45.physical);
-    assert.deepEqual(final.stockEvents.filter(row => row.data.eventType !== 'PARTS_ISSUE_POST'), v45.stockEvents);
-    assert.deepEqual(final.partsIssues, committed.partsIssues);
+    assert.deepEqual(final.stockEvents.filter(row => !['PARTS_ISSUE_POST', 'REVERSAL_POST'].includes(row.data.eventType)), v45.stockEvents);
+    assert.deepEqual(final.partsIssues.filter(row => row.id === committed.partsIssues[0].id), committed.partsIssues);
     await verifyScreens(f);
     await f.setup.initialize(); assert.deepEqual(await f.web.read(), final);
   } finally { f.runtime.uninstall(); }

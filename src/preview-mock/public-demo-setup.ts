@@ -13,6 +13,10 @@ const codes=['PUBLIC-DEMO-PRODUCT-A','PUBLIC-DEMO-PRODUCT-B','PUBLIC-DEMO-SKU-A'
 const fail=()=>{throw new Error('Chưa thể xác minh dữ liệu Demo. Bấm thử lại để tiếp tục từ dữ liệu đã lưu.');};
 const warrantyMarker='Demo bảo hành: thiết bị không lên nguồn · PUBLIC-DEMO-WARRANTY-0012';
 const demoCase=(s:OperationalSnapshot)=>s.warrantyCases.find(row=>row.data.customerReportedIssue===warrantyMarker);
+const returnCaseMarker='Demo hoàn trả: kiểm tra với linh kiện dự phòng · PUBLIC-DEMO-RETURN-CASE-0010';
+const returnMarker='Demo hoàn trả: nhận lại đủ 2 linh kiện chưa sử dụng · PUBLIC-DEMO-RETURN-0010';
+const demoReturnCase=(s:OperationalSnapshot)=>s.warrantyCases.find(row=>row.data.customerReportedIssue===returnCaseMarker);
+const demoReturn=(s:OperationalSnapshot)=>{const cas=demoReturnCase(s),issue=cas&&s.partsIssues.find(row=>row.data.caseId===cas.id);return issue&&s.reversals.find(row=>row.data.originalIssueId===issue.id&&row.data.reasonText===returnMarker&&row.data.status!=='CANCELLED');};
 /** Dedicated public Candidate only. All writes use the existing validated commands.
  * No existing scenario is archived, reset or replaced by this onboarding. */
 export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:()=>PreviewMockRuntime|undefined=readBrowserPreviewRuntime){
@@ -27,13 +31,17 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:
  async function ready(){
   refreshAppAdapters();
   const s=await web.read(); if(!s.scenario)return false;
+  // A final post may have committed before its response was lost. Keep the
+  // setup gate open until its own journal has verified and acknowledged it.
+  if((await web.recovery.restore()).kind!=='empty')return false;
   const c=await catalogReader.readSnapshot();
   const ours=c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario!.data.selectedSkuIds.includes(k.id));
   const receiptsReady=['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code));
   if(ours.length!==2 || !ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) || !receiptsReady)return false;
   if(!app04 || !app05 || !app09 || !app19)return false;
   const warranty=demoCase(s);
-  return ['PN-0012','PN-0011','PN-0010','PN-0009'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0009'&&b.data.status==='IN_STOCK'&&b.data.trayId===null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED') && warranty?.data.state==='RETURNED' && s.partsIssues.some(issue=>issue.data.caseId===warranty.id&&issue.data.status==='POSTED');
+  const returned=demoReturn(s);
+  return ['PN-0012','PN-0011','PN-0010','PN-0009'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0009'&&b.data.status==='IN_STOCK'&&b.data.trayId===null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED') && warranty?.data.state==='RETURNED' && s.partsIssues.some(issue=>issue.data.caseId===warranty.id&&issue.data.status==='POSTED') && returned?.data.status==='POSTED' && returned.data.physicalReturn==='CONFIRMED' && returned.data.evidenceRefs.length>0;
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -214,6 +222,53 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:
    s=await web.read();warranty=demoCase(s)!;
   }
   if(warranty.data.state==='REPAIRED')await updateOperation(web,'warranty.transition',warranty.id,warranty.version,{state:'RETURNED'});
+  // The completed repair used its parts. Use a separate case for unused spares
+  // so its return never rewrites the v46 case, issue, or original stock events.
+  s=await web.read();let returnCase=demoReturnCase(s);
+  if(!returnCase){
+   const sku=c.skus.find(row=>row.code==='PUBLIC-DEMO-SKU-A');if(!sku)return fail();
+   await operation(app09,'warranty.intake',{identityMode:'TEMP_ONLY',skuId:sku.id,physicalId:null,customerReportedIssue:returnCaseMarker});
+   s=await web.read();returnCase=demoReturnCase(s);
+  }
+  if(!returnCase)return fail();
+  if(returnCase.data.state==='RECEIVED'){
+   await updateOperation(web,'warranty.diagnose',returnCase.id,returnCase.version,{defectIds:[],technicianDiagnosis:'Demo: cấp 2 linh kiện dự phòng để kiểm tra, chưa sử dụng và hoàn lại đầy đủ.',expectedFinishDate:null});
+   s=await web.read();returnCase=demoReturnCase(s)!;
+  }
+  let returnIssue=s.partsIssues.find(row=>row.data.caseId===returnCase!.id);
+  if(!returnIssue){
+   await operation(app19,'parts.create',{caseId:returnCase.id,observedCaseVersion:returnCase.version});
+   s=await web.read();returnIssue=s.partsIssues.find(row=>row.data.caseId===returnCase!.id);
+  }
+  if(!returnIssue)return fail();
+  if(returnIssue.data.status==='DRAFT'){
+   const box=s.boxes.find(row=>row.data.physicalCode==='PUBLIC-DEMO-BOX-0010');if(!box)return fail();
+   await updateOperation(app19,'parts.save',returnIssue.id,returnIssue.version,{lines:[{physicalCode:box.data.physicalCode,observedVersion:box.version,quantity:2}]});
+   s=await web.read();returnIssue=s.partsIssues.find(row=>row.id===returnIssue!.id)!;
+  }
+  if(returnIssue.data.status==='SCANNING'){
+   await updateOperation(app19,'parts.post',returnIssue.id,returnIssue.version,{issueId:returnIssue.id});
+   s=await web.read();returnIssue=s.partsIssues.find(row=>row.id===returnIssue!.id)!;
+  }
+  if(returnIssue.data.status!=='POSTED')return fail();
+  let returned=demoReturn(s);
+  if(!returned){
+   await operation(web,'reversal.create',{originalIssueId:returnIssue.id,observedIssueVersion:returnIssue.version,returnedUnused:true,reasonText:returnMarker});
+   s=await web.read();returned=demoReturn(s);
+  }
+  if(!returned)return fail();
+  if(returned.data.status==='DRAFT'){
+   if(!returned.data.evidenceRefs.length){
+    const evidence=`BIEN BAN HOAN TRA DEMO\nPhieu cap: ${returnIssue.data.code}\nBOX: PUBLIC-DEMO-BOX-0010\nSo luong: 2 Cai\nXac nhan: nhan lai du 2 linh kien du phong chua su dung.\nDu lieu mo phong trong trinh duyet.`;
+    await updateOperation(web,'reversal.attach-evidence',returned.id,returned.version,{label:'bien-ban-hoan-linh-kien-demo.txt',mediaType:'text/plain',bytes:[...new TextEncoder().encode(evidence)]});
+    s=await web.read();returned=demoReturn(s)!;
+   }
+   if(returned.data.physicalReturn==='PENDING'){
+    await updateOperation(web,'reversal.confirm-return',returned.id,returned.version,{confirmed:true});
+    s=await web.read();returned=demoReturn(s)!;
+   }
+   await updateOperation(web,'reversal.post',returned.id,returned.version,{reversalId:returned.id});
+  }
   if(!await ready())return fail();return web.read();
  }
  return {ready,initialize:()=>typeof navigator!=='undefined'&&navigator.locks?navigator.locks.request('hoa-nam-public-demo-initial-setup',initialize):initialize()};
