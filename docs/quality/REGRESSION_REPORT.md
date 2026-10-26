@@ -2,7 +2,7 @@
 
 Date: 2026-10-27 UTC+07. Tested source: DEV @ `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`.
 
-Source is the current local checkout with QA tests added but not committed. Runtime src/ has no working-tree diff. Existing dirty design/visual files are preserved. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration. All rows inherit this commit/environment unless explicitly overridden.
+Runtime candidate is `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`; QA harness and reports are integrated at `d9d21ed`. Runtime `src/` has no business-code working-tree diff. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration.
 
 Raw existing-suite discovery: 148 reported test entries, 144 PASS, 4 FAIL, 0 skipped. One failed entry is the whole S27 file failing before test discovery because its CSS loader was omitted. Correct supported S27 runner then executes 9 cases: 9 PASS. The remaining three assertion failures remain OPEN; do not combine reruns into an inflated all-PASS total. New S02 suite is separate: 12/12 PASS. Final browser case consolidation: 8/8 PASS. Overall regression gate: **FAIL / BLOCK RELEASE pending resolution of the three assertions and required missing coverage**.
 

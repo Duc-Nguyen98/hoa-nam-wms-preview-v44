@@ -2,7 +2,7 @@
 
 Date: 2026-10-27 UTC+07. Tested source: DEV @ `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`.
 
-Source is the current local checkout with QA tests added but not committed. Runtime src/ has no working-tree diff. Existing dirty design/visual files are preserved. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration. All rows inherit this commit/environment unless explicitly overridden.
+Runtime candidate is `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`; QA harness and reports are integrated at `d9d21ed`. Runtime `src/` has no business-code working-tree diff. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration.
 
 **Production integration: NOT_RUN.** No API INTEGRATED claim. Local integration uses installPreviewMock on an Axios instance with version 1 envelopes, approved defect policy, atomic memory repository and explicit test actor. These requests never reach a real backend. The injected deny binding is a negative authorization fixture, not proof of any production role.
 

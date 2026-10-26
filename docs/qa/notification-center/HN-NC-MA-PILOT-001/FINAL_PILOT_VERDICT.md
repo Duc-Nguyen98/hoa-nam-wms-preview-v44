@@ -2,6 +2,7 @@
 
 Date: 2026-10-27 UTC+07
 Candidate runtime: `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`
+Evidence integration commit: `d9d21ed`
 Preview URL: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S01
 
 ## Go / no-go

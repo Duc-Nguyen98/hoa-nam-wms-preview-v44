@@ -1,7 +1,7 @@
 # Release readiness
 
 Candidate runtime: `DEV` at `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`.
-Evidence integration branch: `chore/s00-1-notification-pilot` (pending commit).
+Evidence integration branch: `chore/s00-1-notification-pilot` at `d9d21ed`.
 Preview URL: `https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S01`
 Reviewer: S00#1
 Status: `BLOCKED`

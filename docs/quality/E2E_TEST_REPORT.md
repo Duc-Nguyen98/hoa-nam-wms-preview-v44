@@ -2,7 +2,7 @@
 
 Date: 2026-10-27 UTC+07. Tested source: DEV @ `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`.
 
-Source is the current local checkout with QA tests added but not committed. Runtime src/ has no working-tree diff. Existing dirty design/visual files are preserved. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration. All rows inherit this commit/environment unless explicitly overridden.
+Runtime candidate is `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`; QA harness and reports are integrated at `d9d21ed`. Runtime `src/` has no business-code working-tree diff. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration.
 
 Final case results: 8/8 PASS. Full required E2E gate: **BLOCKED**, because the packet includes scenarios listed NOT_RUN in FUNCTIONAL_TEST_MATRIX.
 

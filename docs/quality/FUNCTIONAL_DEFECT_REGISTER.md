@@ -2,7 +2,7 @@
 
 Date: 2026-10-27 UTC+07. Tested source: DEV @ `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`.
 
-Source is the current local checkout with QA tests added but not committed. Runtime src/ has no working-tree diff. Existing dirty design/visual files are preserved. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration. All rows inherit this commit/environment unless explicitly overridden.
+Runtime candidate is `b287d1294f0aa37b1c38c14275ef8c0a279d4fcc`; QA harness and reports are integrated at `d9d21ed`. Runtime `src/` has no business-code working-tree diff. Local: http://127.0.0.1:5204; public: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/. API success below means Axios Preview MOCK or fixture behavior, never production integration.
 
 Scope distinguishes product failures, outdated test expectations and environment gaps. No production authorization bypass or severe data-integrity issue was confirmed. Handoff owner S00#2; integration/CI/provenance owner S00#1/S00#5 as indicated. All retests below use the same SHA; no fix commit has been supplied. Defect handoff was delivered to S00#2 chat 01a1506b-f663-7e40-bc1b-97b2804bb9a6 on 2026-10-27 via send_message_to_thread, including report/evidence paths and the request for contract reconciliation and a fix commit.
 
