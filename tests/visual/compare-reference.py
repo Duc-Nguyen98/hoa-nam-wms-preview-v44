@@ -2,7 +2,7 @@
 from pathlib import Path
 from PIL import Image, ImageChops, ImageEnhance
 import json, hashlib
-root=Path(r'W:/WMS_HoaNam/Scanner_CMS/output/notification-p0-20261025')
+root=Path.cwd()/'output'/'notification-p0-20261025'
 report={'method':'Manual modal bounds from approved artwork; normalize modal crop to actual modal raster. No page/background comparison, no similarity PASS. Original SHA256 locked. All nonzero pixel changes shown; font antialiasing is not separated by algorithm.','profiles':{},'classification':{'structural':'DOM metrics and independent QA required','typography':'locked Public Sans; exact artwork font unavailable; inspect overlay','spacing':'compare normalized boundaries and DOM metrics','semantic':'semantic icon/color inspected independently','rendering':'artwork raster scaling and browser font rasterization cause nonzero differences; not a design waiver'}}
 for name,original,bounds in [('desktop','desktop-reference-original.png',(390,114,1476,842)),('tablet','tablet-reference-original.png',(61,262,942,1524))]:
     folder=root/name;folder.mkdir(exist_ok=True)

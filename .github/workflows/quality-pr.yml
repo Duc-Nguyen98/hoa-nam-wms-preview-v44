@@ -1,0 +1,38 @@
+name: Hoa Nam quality gates
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  critical:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run quality:pr
+
+  visual-and-functional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: critical
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Verify visual test configuration is portable
+        run: npm run quality:contract
+      - name: Block until runtime capture harness is wired
+        run: |
+          echo "Visual, accessibility, console and overflow gates are required by DESIGN_CONTRACT.md."
+          echo "This job remains intentionally BLOCKED until the preview server/capture harness is available in CI."
+          exit 1

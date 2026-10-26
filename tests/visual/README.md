@@ -1,8 +1,8 @@
 # Notification P0 regression
 
-The approved raster originals are `C:/Users/Admin/Desktop/1.png` (Desktop) and `2.png` (Tablet). `f1.png` is the user-provided Actual before. Never regenerate or overwrite those originals with application output.
+The approved raster originals are external approved inputs (`1.png` Desktop and `2.png` Tablet); `f1.png` is the user-provided Actual before. Never regenerate or overwrite those originals with application output.
 
-Run Vite on localhost5197, then `node node_modules/@playwright/test/cli.js test -c playwright.notification.config.ts` and `node node_modules/@playwright/test/cli.js test -c playwright.notification-independent.config.ts`. Use a temporary directory on W: if the host C: temp disk is full. Run `compare-reference.py` with the bundled Python/Pillow runtime after screenshots; outputs are under `W:/WMS_HoaNam/Scanner_CMS/output/notification-p0-20261025`.
+Run Vite on localhost:5197, then the two Playwright configs. Use a temporary directory outside the repository only when the host temp disk is full. Run `compare-reference.py` with the bundled Python/Pillow runtime after screenshots; outputs are under the repository `output/notification-p0-20261025` directory.
 
 `notification.html` is a Vite test entry, not the production build entry. Its six artwork records are isolated fixtures, never installed in Main notification storage. Date is fixed at2026-10-25 12:00 GMT+7; locale/theme/timezone, viewport and DPR are recorded. CSS animation/transition is disabled at capture. The 800×1280 CSS DPR2 tablet profile generates1600×2560 output; DPR2 is an explicit test assumption, not inferred from PNG dimensions or certified on a physical tablet.
 

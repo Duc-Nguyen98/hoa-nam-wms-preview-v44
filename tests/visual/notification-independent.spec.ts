@@ -1,6 +1,7 @@
 import {test,expect,type Page} from '@playwright/test';
 import fs from 'node:fs/promises';
-const evidence='W:/WMS_HoaNam/Scanner_CMS/output/notification-p0-20261025';
+import path from 'node:path';
+const evidence=path.resolve('output','notification-p0-20261025');
 async function open(page:Page,state='ready',width=1920,height=1080){
  await page.setViewportSize({width,height});
  await page.clock.setFixedTime(new Date('2026-10-25T05:00:00Z'));

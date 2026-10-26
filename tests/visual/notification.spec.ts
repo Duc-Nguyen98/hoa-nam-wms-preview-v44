@@ -1,7 +1,7 @@
 import {test,expect,type Page} from '@playwright/test';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-const evidence='W:/WMS_HoaNam/Scanner_CMS/output/notification-design-data-20261025';
+const evidence=path.resolve('output','notification-design-data-20261025');
 async function open(page:Page,options:{state?:string;before?:boolean;language?:string;theme?:string;run?:string}={}){
  await page.clock.setFixedTime(new Date('2026-10-25T05:00:00Z'));
  await page.addInitScript(({language,theme})=>{localStorage.setItem('hn-wms.s00.language.v1',language);localStorage.setItem('hn-wms.s00.theme.v1',theme);},{language:options.language??'vi',theme:options.theme??'light'});

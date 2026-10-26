@@ -2,7 +2,7 @@
 
 Source: output/tray-approved/reference/PROMPT_S00-1.md and all 26 individually reviewed PNGs extracted from the user-approved ZIP. Visual review covers every Desktop/Tablet pair listed below. The supplied HN_Astra files are the accessible replacements for the earlier missing attachment paths.
 
-Candidate: W:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026. Baseline at opening: v49, d0df01de0453e0872b0ff4f190f2737ad3c89fa9. S00#3 has concurrent notification-only work in the previous checkout; its subsequent published commit must be integrated before this release. Publication is serialized.
+Candidate: E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026. Baseline at opening: v49, d0df01de0453e0872b0ff4f190f2737ad3c89fa9. S00#3 has concurrent notification-only work in the previous checkout; its subsequent published commit must be integrated before this release. Publication is serialized.
 
 | Image pair (Desktop + Tablet) | S / route | Component and state | Owner | Required evidence |
 |---|---|---|---|---|
