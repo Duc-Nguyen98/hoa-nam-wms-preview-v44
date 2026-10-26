@@ -10,7 +10,9 @@ import { CATALOG_COMMANDS, type CatalogDomain, type CatalogPayloads } from '../c
 import type { OperationalCommand, OperationalSnapshot } from '../contracts/operational-preview';
 import { createApprovedTraySeed } from './putaway-approved-seed';
 
-const codes=['PUBLIC-DEMO-PRODUCT-A','PUBLIC-DEMO-PRODUCT-B','PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B','PUBLIC-DEMO-RECIPIENT'];
+const approvedTraySeed=createApprovedTraySeed();
+const codes=['PUBLIC-DEMO-PRODUCT-A','PUBLIC-DEMO-PRODUCT-B','PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B','PUBLIC-DEMO-RECIPIENT',
+  ...approvedTraySeed.trays.flatMap((_,i)=>[`HN-ASTRA-PRODUCT-${String(i+1).padStart(3,'0')}`,`SKU-HN-${String(i+1).padStart(3,'0')}`])];
 const fail=()=>{throw new Error('Chưa thể xác minh dữ liệu Demo. Bấm thử lại để tiếp tục từ dữ liệu đã lưu.');};
 const warrantyMarker='Demo bảo hành: thiết bị không lên nguồn · PUBLIC-DEMO-WARRANTY-0012';
 const demoCase=(s:OperationalSnapshot)=>s.warrantyCases.find(row=>row.data.customerReportedIssue===warrantyMarker);
@@ -18,7 +20,6 @@ const returnCaseMarker='Demo hoàn trả: kiểm tra với linh kiện dự phò
 const returnMarker='Demo hoàn trả: nhận lại đủ 2 linh kiện chưa sử dụng · PUBLIC-DEMO-RETURN-0010';
 const demoReturnCase=(s:OperationalSnapshot)=>s.warrantyCases.find(row=>row.data.customerReportedIssue===returnCaseMarker);
 const demoReturn=(s:OperationalSnapshot)=>{const cas=demoReturnCase(s),issue=cas&&s.partsIssues.find(row=>row.data.caseId===cas.id);return issue&&s.reversals.find(row=>row.data.originalIssueId===issue.id&&row.data.reasonText===returnMarker&&row.data.status!=='CANCELLED');};
-const approvedTraySeed=createApprovedTraySeed();
 /** Dedicated public Candidate only. All writes use the existing validated commands.
  * No existing scenario is archived, reset or replaced by this onboarding. */
 export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:()=>PreviewMockRuntime|undefined=readBrowserPreviewRuntime){
@@ -98,6 +99,14 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:
   if(app19)await recover(app19);
   if(!app04||!app05||!app09||!app19)return fail();
   let s=await web.read();
+  // Catalog setup is additive and must also repair sessions created by the
+  // earlier public Demo release, where the scenario already exists.
+  for(const row of approvedTraySeed.trays.map((_,i)=>i+1)){
+   const suffix=String(row).padStart(3,'0');
+   const productId=await ensureCatalog('product',{code:`HN-ASTRA-PRODUCT-${suffix}`,name:`Hàng Hoa Nam ${suffix}`,group:'Linh kiện điện',unit:'Cái',status:'active'});
+   const catalog=await catalogReader.readSnapshot(),product=catalog.products.find(item=>item.id===productId)!;
+   await ensureCatalog('sku',{code:`SKU-HN-${suffix}`,productId,observedProductVersion:product.version,barcode:null,status:'active'});
+  }
   if(!s.scenario){
    for(const suffix of ['A','B']){
     const productId=await ensureCatalog('product',{code:`PUBLIC-DEMO-PRODUCT-${suffix}`,name:suffix==='A'?'Thiết bị Demo':'Linh kiện Demo',group:suffix==='A'?'Phụ kiện':'Linh kiện điện',unit:'Cái',status:'active'});
@@ -105,12 +114,6 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:
     await ensureCatalog('sku',{code:`PUBLIC-DEMO-SKU-${suffix}`,productId,observedProductVersion:product.version,barcode:null,status:'active'});
    }
    await ensureCatalog('recipient',{code:'PUBLIC-DEMO-RECIPIENT',name:'Nơi nhận Demo',type:'Khách lẻ',market:'Miền Nam',area:'Khu vực Demo',address:'Địa chỉ thử nghiệm',contact:'Liên hệ Demo',phone:'',status:'active'});
-   for(const row of approvedTraySeed.trays.map((_,i)=>i+1)){
-    const suffix=String(row).padStart(3,'0');
-    const productId=await ensureCatalog('product',{code:`HN-ASTRA-PRODUCT-${suffix}`,name:`Hàng Hoa Nam ${suffix}`,group:'Linh kiện điện',unit:'Cái',status:'active'});
-    const catalog=await catalogReader.readSnapshot(),product=catalog.products.find(item=>item.id===productId)!;
-    await ensureCatalog('sku',{code:`SKU-HN-${suffix}`,productId,observedProductVersion:product.version,barcode:null,status:'active'});
-   }
    const c=await catalogReader.readSnapshot();
    // Re-read immediately before the first-only scenario command. Existing runs survive.
    s=await web.read();

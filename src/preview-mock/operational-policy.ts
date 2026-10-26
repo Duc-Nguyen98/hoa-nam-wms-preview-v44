@@ -94,10 +94,19 @@ const seedApproved:OperationPlanner=(raw,current,c)=>{
   const {scope,input}=unpackOperational(raw),scenario=assertScope(c.records,scope),p=opFields(input,['confirmed']);
   if(p.confirmed!==true)return opFail('VALIDATION_FAILED',422);
   const manifest=createApprovedTraySeed(c.committedAt),catalog=projectCatalogSnapshot({epoch:'',snapshotRevision:1,records:[...c.records]}),writes:DependentRecordWrite[]=[];
-  if(c.records.some(record=>record.kind==='box'&&opObject(record.data)&&String(record.data.physicalCode).startsWith('BOX-')&&scoped(record,scope)))return opFail('APPROVED_SEED_EXISTS',409);
+  if(c.records.some(record=>record.id.startsWith('box:approved:')&&scoped(record,scope)))return opFail('APPROVED_SEED_EXISTS',409);
+  const approvedSkuIds=[...new Set(manifest.boxes.map(row=>catalog.skus.find(item=>item.code===row.skuCode)?.id).filter((id): id is string=>!!id))];
+  if(approvedSkuIds.length!==9)return opFail('SKU_UNAVAILABLE');
+  const selectedSkuIds=[...new Set([...scenario.data.selectedSkuIds,...approvedSkuIds])];
+  for(const n of Array.from({ length: 9 }, (_, index) => index + 1))for(const kind of ['location','tray']){
+    const id=`operational-setup:${kind}:${n}`,setup={warehouseId:'warehouse-hn-01',active:true,setupManifestId:'HN-SIX-FLOWS-v0.1',code:`PREVIEW-${kind.toUpperCase()}-${n}`,...(kind==='tray'?{locationId:`operational-setup:location:${n}`}:{})};
+    const existing=c.records.find(record=>record.id===id);
+    if(existing){if(existing.kind!=='operational-setup-'+kind||canonicalBusinessJson(existing.data)!==canonicalBusinessJson(setup))return opFail('MOCK_STATE_INVALID',503);}
+    else writes.push({id,kind:'operational-setup-'+kind,expectedVersion:null,data:setup});
+  }
   for(const row of manifest.boxes){
     const sku=catalog.skus.find(item=>item.code===row.skuCode),product=sku&&catalog.products.find(item=>item.id===sku.productId);
-    if(!sku||!product||!scenario.data.selectedSkuIds.includes(sku.id))return opFail('SKU_UNAVAILABLE');
+    if(!sku||!product||!selectedSkuIds.includes(sku.id))return opFail('SKU_UNAVAILABLE');
     const receiptId=`receipt:approved:${row.receiptCode}`,boxId=`box:approved:${row.code}`,eventId=`stock-event:approved:${row.code}`;
     const meta=opMeta({scenarioId:scenario.id,generation:scenario.data.generation},c.committedAt,c.actorKey),receipt:ReceiptData={...meta,code:row.receiptCode,mode:'COMPONENT',sourceText:'Kho Hoa Nam · dữ liệu duyệt HN_Astra',referenceText:row.receiptCode,status:'POSTED',appSubmissionId:null,submittedVersion:null,submittedHash:null,postedEventIds:[eventId]};
     const box:BoxData={...meta,physicalCode:row.code,skuId:sku.id,sourceReceiptId:receiptId,sourceLineId:`inbound-line:approved:${row.code}`,unit:product.unit,status:'IN_STOCK',issuedDocumentId:null,posted:true,trayId:row.trayCode?`operational-setup:tray:${Number(row.trayCode.slice(-3))}`:null,contentRevision:2};
@@ -109,7 +118,7 @@ const seedApproved:OperationPlanner=(raw,current,c)=>{
       writes.push({id:`audit:approved:${row.code}`,kind:'audit-event',expectedVersion:null,data:{...meta,entityId:putawayId,action:row.status==='CONFIRMED'?'putaway.confirm':'putaway.create',previousVersion:null,newVersion:1,commandId:c.commandId,sourceSurface:'WEB',actor:c.actorKey,timestamp:c.committedAt,FK:[boxId,receiptId,eventId],eventIds:[eventId],commitSnapshotId:c.commitSnapshotId}});
     }
   }
-  return {data:{...scenario.data,updatedAt:c.committedAt,updatedBy:c.actorKey},writes};
+  return {data:{...scenario.data,selectedSkuIds,updatedAt:c.committedAt,updatedBy:c.actorKey},writes};
 };
 const profile:OperationPlanner=(raw,_current,c)=>{
   const {scope,input}=unpackOperational(raw),scenario=assertScope(c.records,scope),p=opFields(input,['skuId','tracking','observedSkuVersion','observedProductVersion']);
