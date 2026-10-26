@@ -9,6 +9,7 @@ export const OUTBOUND_DESIGN_EN:Record<string,string>={
  '{count} phiếu trong phiên hiện tại.':'{count} slips in the current session.','Thông tin phiếu được đồng bộ từ App quét.':'Slip information is synced from the Scanner App.','Sao chép {label}':'Copy {label}','Không có mã đã chọn.':'No allocated codes.',
 };
 export const OUTBOUND_DESIGN_ZH:Record<string,string>={
+ 'Mở rộng thông tin phiếu {code}':'展开单据 {code} 的信息','Thu gọn thông tin phiếu {code}':'收起单据 {code} 的信息','Mã yêu cầu':'请求 ID','Số dòng hạch toán':'过账行数','Số serial':'序列号',
  'Theo dõi phiếu xuất được gửi từ App quét.':'跟踪从扫描 App 提交的出库单。','Phiên hiện tại':'当前会话','Tìm mã phiếu hoặc người nhận':'搜索单据编号或收货人','Tất cả trạng thái':'所有状态','Mã phiếu xuất':'出库单编号','Tên đơn vị':'单位名称','Địa chỉ nhận hàng':'收货地址',
  'Thông tin được gửi từ App quét':'来自扫描 App 的信息','Trạng thái xuất kho':'出库状态','Thông tin tại thời điểm App gửi':'App 提交时的信息','Thông tin truy vết':'追溯信息','Mã phiếu':'单据编号','Mã tạo yêu cầu':'请求 ID',
  'Chưa có phiếu':'暂无出库单','Phiếu sẽ xuất hiện sau khi được gửi từ App quét.':'扫描 App 提交后，单据将显示在此处。','Không có kết quả':'无搜索结果','Không tìm thấy phiếu phù hợp.':'未找到匹配的出库单。','Xóa bộ lọc':'清除筛选',

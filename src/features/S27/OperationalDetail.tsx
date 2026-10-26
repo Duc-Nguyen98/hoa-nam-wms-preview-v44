@@ -146,7 +146,7 @@ export function AuditDetail({ row, tx, onClose, onRefresh, resolveReturnFocus, l
     ? <ul className="s27-operational-codes">{values.map((value, index) => <li key={`${index}:${value}`}><code>{value}</code></li>)}</ul>
     : <p className="s27-detail-empty">{copy(empty)}</p>;
   const fields: [string, ReactNode][] = eligibleRow ? [
-    ['Thời gian', <><time dateTime={eligibleRow.at}>{formatAuditTime(eligibleRow.at, language)}</time><span className="s27-detail-timezone">{copy('Giờ Việt Nam')} · Asia/Ho_Chi_Minh</span></>],
+    ['Thời gian', <><time dateTime={eligibleRow.at}>{formatAuditTime(eligibleRow.at, language)}</time><span className="s27-detail-timezone" title="Asia/Ho_Chi_Minh"> ({copy('Giờ Việt Nam')})</span></>],
     ['Phiên bản trước', eligibleRow.previousVersion === null ? <span title={copy('Không có phiên bản trước')} aria-label={copy('Không có phiên bản trước')}>—</span> : eligibleRow.previousVersion],
     ['Người thao tác', <code>{eligibleRow.actorId || '—'}</code>],
     ['Phiên bản mới', eligibleRow.newVersion],
@@ -167,7 +167,7 @@ export function AuditDetail({ row, tx, onClose, onRefresh, resolveReturnFocus, l
         <section className="s27-detail-identity" aria-label={copy('Nhận diện sự kiện')}>
           <span className="s27-detail-identity__icon"><Icon name={identityIcon} size={28} /></span>
           <div className="s27-detail-identity__content"><h3>{auditActionLabel(eligibleRow.action, language)}</h3>
-            <div className="s27-detail-identity__meta"><code aria-label={copy('Mã hành động')}>{eligibleRow.action}</code><span className="s27-source-badge" aria-label={copy('Nguồn thực hiện')}>{eligibleRow.sourceSurface}</span></div>
+            <div className="s27-detail-identity__meta"><code aria-label={copy('Mã hành động')}>{eligibleRow.action}</code><span className="s27-source-badge" aria-label={copy('Nguồn thực hiện')}>{eligibleRow.sourceSurface}</span><span className="s27-detail-source-label">{copy('Nguồn thực hiện')}</span></div>
           </div>
         </section>
         <section className="s27-detail-section" aria-labelledby="s27-detail-information-title"><h3 id="s27-detail-information-title">{copy('Thông tin sự kiện')}</h3>

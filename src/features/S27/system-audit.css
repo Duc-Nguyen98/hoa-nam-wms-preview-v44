@@ -417,3 +417,76 @@ html[data-hn-theme='dark'] .hn-shell .s27-screen .hn-catalogue-actions .hn-butto
  .hn-shell .s27-screen .hn-page-heading h1 { font-size:36px; line-height:46px; }
 }
 
+
+/* Match reference content rhythm, preserving shell and footer styles. */
+.s27-detail-source-label { display:none; }
+@media(min-width:1101px){
+ .hn-global-modal.s27-detail-modal .hn-global-modal__header { padding:14px 24px; }
+ .hn-global-modal.s27-detail-modal .hn-global-modal__heading h2 { font-size:20px; line-height:28px; }
+ .hn-global-modal.s27-detail-modal .hn-global-modal__heading p { margin-top:4px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-timezone { display:inline; font-size:13px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info { grid-template-columns:1.2fr 1fr; gap:10px 20px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info>div { grid-template-columns:112px minmax(0,1fr); }
+ .hn-global-modal.s27-detail-modal .s27-detail-info :is(dd,code,time) { font-size:14px; line-height:22px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info>div:nth-child(even) { border-left:1px solid var(--hn-border); padding-left:20px; }
+ .hn-global-modal.s27-detail-modal .s27-source-badge { min-height:26px; padding:3px 10px; line-height:20px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-trace__value { align-items:center; }
+ .hn-global-modal.s27-detail-modal .s27-detail-trace__value>code { padding:7px 12px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-trace__value>.hn-button { height:36px; min-height:36px; }
+}
+@media(min-width:651px) and (max-width:1100px){
+ .hn-shell .s27-screen .s27-operational { margin-top:-12px; }
+ .hn-shell .s27-screen .s27-operational { gap:18px; }
+ .hn-shell .s27-screen .hn-breadcrumb { font-size:18px; line-height:26px; margin-bottom:8px; }
+ .hn-shell .s27-screen .hn-page-heading h1 { font-size:38px; line-height:48px; }
+ .hn-shell .s27-screen .hn-page-description { font-size:20px; line-height:28px; }
+ .hn-shell .s27-screen .s27-operational-period { padding:16px 18px 18px; gap:12px; }
+ .hn-shell .s27-screen .s27-operational-period .hn-date-picker__label { font-size:18px; line-height:26px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s27-screen .s27-operational-period .hn-date-picker__trigger { height:54px; font-size:21px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s27-screen .s27-operational-period>.hn-button { min-height:52px; font-size:22px; }
+ .hn-shell .s27-screen .s27-list-heading { padding:16px 20px 18px; }
+ .hn-shell .s27-screen .s27-list-heading h2 { font-size:24px; line-height:32px; }
+ .hn-shell .s27-screen .s27-list-heading p { font-size:18px; line-height:26px; }
+ .hn-shell .s27-screen .s27-tablet-count { font-size:18px; line-height:28px; }
+ .hn-shell .s27-screen .s27-list .hn-catalogue-toolbar,.hn-shell .s27-screen .s27-operational-card-view { padding-inline:18px; }
+ .hn-shell .s27-screen .hn-catalogue-toolbar[data-layout='worklist'] { gap:18px; padding-bottom:26px; }
+ .hn-shell .s27-screen .hn-catalogue-toolbar[data-layout='worklist']>.hn-catalogue-trailing { gap:18px 28px; }
+ .hn-shell .s27-screen .hn-catalogue-search input { min-height:52px; font-size:20px; }
+ .hn-shell[data-shell-version] .s27-screen .hn-filter-select.hn-basic-field { gap:6px; }
+ .hn-shell[data-shell-version] .s27-screen .hn-filter-select.hn-basic-field>span { font-size:18px; line-height:26px; }
+ .hn-shell[data-shell-version] .s27-screen .hn-filter-select.hn-basic-field>select { height:50px; font-size:20px; }
+ .hn-shell .s27-screen .s27-operational-card-view { gap:14px; }
+ .hn-shell .s27-screen .s27-operational-card { padding:16px 18px; gap:18px; }
+ .hn-shell .s27-screen .s27-card-icon { width:58px; height:58px; flex-basis:58px; }
+ .hn-shell .s27-screen .s27-card-icon svg { width:30px; height:30px; }
+ .hn-shell .s27-screen .s27-operational-card h3 { font-size:22px; line-height:30px; }
+ .hn-shell .s27-screen .s27-operational-card__head time { font-size:18px; line-height:28px; }
+ .hn-shell .s27-screen .s27-operational-card dt { font-size:16px; line-height:24px; }
+ .hn-shell .s27-screen .s27-operational-card dd { font-size:18px; line-height:26px; }
+ .hn-global-modal.s27-detail-modal .hn-global-modal__header { padding:18px 24px; }
+ .hn-global-modal.s27-detail-modal .hn-global-modal__heading h2 { font-size:26px; line-height:36px; }
+ .hn-global-modal.s27-detail-modal .hn-global-modal__heading p { font-size:18px; line-height:26px; }
+ .hn-global-modal.s27-detail-modal .hn-global-modal__body { padding:24px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-identity { border-bottom:0; padding-bottom:0; }
+ .hn-global-modal.s27-detail-modal .s27-detail-identity__icon { width:78px; height:78px; flex-basis:78px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-identity__icon svg { width:36px; height:36px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-identity h3 { font-size:28px; line-height:38px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-identity__meta { display:grid; grid-template-columns:max-content 1fr; gap:6px 14px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-identity__meta>code { grid-column:1/-1; justify-self:start; font-size:16px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-source-label { display:block; color:var(--hn-muted); font-size:14px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info>div:nth-child(2) { grid-column:1; grid-row:2; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info>div:nth-child(3) { grid-column:2; grid-row:1; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info>div:nth-child(4) { grid-column:2; grid-row:2; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info>div:nth-child(5) { display:none; }
+ .hn-global-modal.s27-detail-modal .s27-detail-timezone { display:inline; font-size:16px; line-height:24px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info time { font-size:16px; line-height:24px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-info>div:nth-child(3) code { font-family:ui-monospace,monospace; font-size:16px; background:var(--hn-fill); padding:4px 8px; border-radius:4px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-related__card { padding:18px 22px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-related__card>svg { display:none; }
+ .hn-global-modal.s27-detail-modal .s27-detail-related__card h3 { font-size:22px; line-height:30px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-related__card p { font-size:18px; line-height:28px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-trace { padding:18px 22px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-trace dl { gap:16px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-trace dt { font-size:17px; }
+ .hn-global-modal.s27-detail-modal .s27-detail-trace__value { font-size:15px; min-height:44px; }
+}

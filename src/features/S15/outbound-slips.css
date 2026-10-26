@@ -276,3 +276,105 @@ html[data-hn-theme='dark'] .s15-selected-lines th { color:#b0c1d4; }
  .s15-operational-detail .hn-global-modal__footer .hn-button { min-height:54px; font-size:18px; }
 }
 
+
+/* Content typography and spacing from x2/x3/x6, without shell or footer changes. */
+@media(min-width:1101px){
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen { padding-left:76px; }
+ .hn-shell .s15-screen .s15-operational-table .s15-copy-value code { font-size:17px; }
+}
+@media(min-width:651px) and (max-width:1100px){
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen { padding:32px 42px 0; gap:16px; }
+ .hn-shell .s15-screen .hn-breadcrumb { font-size:20px; line-height:28px; margin-bottom:16px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .hn-page-heading h1 { font-size:40px; line-height:52px; }
+ .hn-shell .s15-screen .hn-page-description { font-size:24px; line-height:34px; margin-top:8px; }
+ .hn-shell .s15-screen .s15-session { font-size:20px; line-height:28px; padding:16px 18px; gap:10px; }
+ .hn-shell .s15-screen .s15-list[data-operational-outbounds] { padding:24px; }
+ .hn-shell .s15-screen .s15-operational-heading { gap:16px; margin-bottom:12px; }
+ .hn-shell .s15-screen .s15-operational-heading h2 { font-size:28px; line-height:38px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .s15-operational-heading .hn-button { min-height:60px; font-size:22px; padding-inline:20px; }
+ .hn-shell .s15-screen .s15-operational-heading .hn-button svg { width:28px; height:28px; }
+ .hn-shell .s15-screen .s15-operational-filters { grid-template-columns:minmax(0,1fr) 212px; gap:18px 24px; margin-bottom:26px; }
+ .hn-shell .s15-screen .s15-search>div { min-height:64px; padding-inline:24px; }
+ .hn-shell .s15-screen .s15-search svg { width:28px; height:28px; }
+ .hn-shell .s15-screen .s15-search input { font-size:23px; line-height:32px; height:62px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .s15-operational-filters select { height:64px; min-height:64px; font-size:23px; padding-inline:24px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .s15-operational-filters>.hn-button { min-height:64px; font-size:23px; padding-inline:22px; justify-self:start; }
+ .hn-shell .s15-screen .s15-outbound-card { padding:24px; gap:18px; }
+ .hn-shell .s15-screen .s15-field-label { font-size:22px; line-height:30px; }
+ .hn-shell[data-shell-version] .s15-screen .s15-outbound-card .s15-copy-value code { font-size:24px; line-height:32px; }
+ .hn-shell .s15-screen .s15-outbound-card .s15-copy-value { gap:18px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .s15-outbound-card .s15-copy-value .hn-button { width:52px; height:52px; min-height:52px; flex-basis:52px; }
+ .hn-shell .s15-screen .s15-outbound-card .s15-copy-value .hn-button svg { width:28px; height:28px; }
+ .hn-shell .s15-screen .s15-outbound-card .hn-status-badge { padding:8px 14px; font-size:22px; line-height:30px; margin-top:8px; }
+ .hn-shell .s15-screen .s15-outbound-card .hn-status-badge::before { width:18px; height:18px; margin-right:10px; }
+ .hn-shell .s15-screen .s15-card-recipient { padding-top:18px; gap:28px; }
+ .hn-shell .s15-screen .s15-card-recipient>svg { width:48px; height:48px; }
+ .hn-shell .s15-screen .s15-card-recipient strong { font-size:26px; line-height:36px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .s15-outbound-card>.s15-view-button { font-size:26px; line-height:34px; min-height:72px; }
+ .s15-operational-detail .hn-global-modal__header { padding:24px 28px 20px; }
+ .s15-operational-detail .hn-global-modal__heading h2 { font-size:32px; line-height:42px; }
+ .s15-operational-detail .hn-global-modal__heading p { font-size:20px; line-height:28px; }
+ .s15-operational-detail .hn-global-modal__body { padding:0 28px 18px; }
+ .s15-detail-sections { gap:16px; }
+ .s15-detail-sections>section+section { padding-top:14px; border-top:1px solid var(--hn-border); }
+ .s15-detail-sections h3 { font-size:27px; line-height:36px; }
+ .s15-status-panel { padding:16px 22px; }
+ .s15-status-panel h3 { font-size:22px; line-height:30px; }
+ .s15-status-panel .hn-status-badge { font-size:20px; line-height:28px; padding:8px 18px; }
+ .s15-status-panel dl { margin-top:14px; }
+ .s15-status-panel :is(dt,dd) { font-size:20px; line-height:30px; }
+ .s15-section-heading { gap:12px; }
+ .s15-section-heading>span { font-size:18px; line-height:26px; }
+ .s15-recipient-grid { padding:16px; gap:0; }
+ .s15-recipient-grid>div { padding:12px 8px; gap:28px; }
+ .s15-recipient-grid>div+div { padding-top:16px; }
+ .s15-recipient-grid>div>svg { width:40px; height:40px; }
+ .s15-recipient-grid dt { font-size:18px; line-height:26px; }
+ .s15-recipient-grid dd { font-size:21px; line-height:30px; }
+ .s15-recipient-code { display:none; }
+ .s15-operational-detail .s15-trace-grid { padding:12px 16px; }
+ .s15-operational-detail .s15-trace-grid dt { font-size:18px; line-height:26px; }
+ .s15-operational-detail .s15-trace-grid code { font-family:inherit; font-size:21px; line-height:30px; }
+ .s15-operational-detail .s15-trace-grid .s15-copy-value { padding:8px 12px; }
+}
+@media(min-width:651px) and (max-width:850px){
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen { padding-inline:0; }
+ .hn-shell .s15-screen .s15-operational-heading h2 { font-size:22px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .s15-operational-heading .hn-button { font-size:18px; }
+ .hn-shell[data-shell-version] .s15-screen .s15-outbound-card .s15-copy-value code { font-size:19px; }
+}
+
+/* Both supplied tablet card states share the same record and actions. */
+.s15-card-recipient[type='button'] { width:100%; appearance:none; background:transparent; border:0; border-top:1px solid var(--hn-border); border-radius:0; padding-inline:0; padding-bottom:0; color:inherit; font:inherit; text-align:left; cursor:pointer; }
+.s15-card-recipient[type='button']:focus-visible { outline:3px solid var(--hn-control); outline-offset:4px; border-radius:4px; }
+.s15-card-recipient[type='button']>span { display:grid; gap:2px; }
+.s15-card-expanded[hidden] { display:none; }
+.s15-card-expanded { display:grid; gap:0; margin-top:-8px; }
+.s15-card-expanded__contact { display:grid; gap:20px; padding-bottom:20px; }
+.s15-card-expanded__contact>div,.s15-card-expanded__line { display:grid; grid-template-columns:52px minmax(0,1fr); gap:28px; align-items:start; }
+.s15-card-expanded__contact>div>div,.s15-card-expanded__line>div { min-width:0; display:grid; gap:3px; }
+.s15-card-expanded__line { padding-block:20px; border-top:1px solid var(--hn-border); }
+.s15-card-expanded__line:last-child { padding-bottom:0; }
+.s15-card-expanded__line span,.s15-card-expanded__contact span { overflow-wrap:anywhere; }
+.s15-card-expanded__line>div.s15-card-expanded__product { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.s15-card-expanded__product>div { display:grid; gap:3px; }
+.s15-card-expanded__product>div+div { border-left:1px solid var(--hn-border); padding-left:24px; }
+.hn-shell .s15-screen .s15-card-expanded .s15-copy-value { margin:0; }
+@media(min-width:651px) and (max-width:1100px){ .s15-card-expanded { font-size:24px; line-height:32px; } .hn-shell .s15-screen .s15-card-expanded .s15-copy-value code { font-weight:400; } }
+@media(max-width:650px){ .s15-card-expanded { font-size:16px; line-height:24px; } .s15-card-expanded__contact>div,.s15-card-expanded__line { grid-template-columns:32px minmax(0,1fr); gap:14px; } .s15-card-expanded__line>svg,.s15-card-expanded__contact>div>svg { width:26px; height:26px; } }
+
+@media(min-width:651px) and (max-width:1100px){
+ .hn-shell[data-shell-version] .s15-screen .s15-operational-detail .s15-trace-grid code { font-family:inherit; font-size:21px; line-height:30px; }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s15-screen .s15-outbound-card>.s15-view-button.hn-button[data-hn-control='button'] { font-size:26px; line-height:34px; min-height:72px; }
+ .hn-shell[data-shell-version] .s15-screen .s15-operational-detail .s15-status-panel .hn-status-badge { font-size:20px; line-height:28px; padding:8px 18px; }
+ .hn-shell[data-shell-version] .s15-screen .s15-operational-detail .s15-status-panel .hn-status-badge::before { width:16px; height:16px; }
+ .hn-shell[data-shell-version] .s15-screen .s15-operational-detail .s15-selected-lines :is(th,td,code) { font-family:inherit; font-size:20px; line-height:30px; }
+ .s15-operational-detail .s15-selected-lines :is(th,td) { padding-inline:16px; }
+ .hn-shell[data-shell-version] .s15-screen .s15-operational-detail .s15-selected-lines th { font-size:18px; font-weight:400; }
+ .s15-operational-detail .s15-detail-sections>section+section { border-top:0; padding-top:0; }
+ .s15-operational-detail .s15-detail-sections { gap:24px; }
+ .s15-operational-detail .s15-status-panel dl { margin-top:10px; }
+ .s15-operational-detail .s15-trace-grid>div { padding-block:4px; }
+ .s15-operational-detail .s15-recipient-grid>div { padding:0 8px 12px; }
+ .s15-operational-detail .s15-section-heading>span { font-style:italic; }
+}

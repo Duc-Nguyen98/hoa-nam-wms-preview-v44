@@ -7,6 +7,7 @@ import { Button, PageState, DataTable, FilterInput, FilterSelect, GlobalModal, I
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { copyText } from '../../shared/copy-text';
 import { ReceiptHeaderForm } from './ReceiptHeaderForm';
+import type { CatalogSnapshot } from '../../contracts/catalog-create';
 import { createReceiptBinding, receiptCodeCount, receiptLines, refreshReceiptEditor, type ReceiptEditor, type ReceiptAdapter, type ReceiptFence, type ReceiptRecord } from './receipt-binding';
 
 const COPY = {
@@ -51,10 +52,10 @@ function message(code: string) {
   return 'Không thể lưu. Nội dung nhập được giữ lại. Đọc lại dữ liệu trước khi thử lại.';
 }
 
-export function OperationalReceipts({ adapter: supplied, notify, createRequest = 0, onCreateHandled }: { adapter?: ReceiptAdapter; notify: (message: string) => void; createRequest?: number; onCreateHandled?: () => void }) {
+export function OperationalReceipts({ adapter: supplied, notify, createRequest = 0, onCreateHandled, readCatalog }: { adapter?: ReceiptAdapter; notify: (message: string) => void; createRequest?: number; onCreateHandled?: () => void; readCatalog?: () => Promise<CatalogSnapshot> }) {
   const tx = useUiCopy(COPY);
   const adapter = useMemo(() => supplied ?? createOperationalWebAdapter(undefined, { scope: 'S12' }), [supplied]);
-  const controller = useMemo(() => { const catalog = createCatalogCreateAdapter('sku'); return createReceiptBinding(adapter, () => catalog.readSnapshot()); }, [adapter]);
+  const controller = useMemo(() => { const catalog = createCatalogCreateAdapter('sku'); return createReceiptBinding(adapter, readCatalog ?? (() => catalog.readSnapshot())); }, [adapter, readCatalog]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
   const [selected, setSelected] = useState<string | null>(null), [editor, setEditor] = useState<ReceiptEditor | null>(null);
   const [post, setPost] = useState<{ id: string; version: number; fence: ReceiptFence } | null>(null), [editorMessage, setEditorMessage] = useState('');

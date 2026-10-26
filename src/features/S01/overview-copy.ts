@@ -5,6 +5,9 @@ import { translateUiCopy } from '../../i18n/ui-copy';
 
 /** S01-local copy: do not translate source names, identifiers or business data. */
 export const OVERVIEW_COPY: Readonly<Record<string, readonly [string, string]>> = {
+  'Danh sách phiếu nhập và xuất trong kỳ.': ['Inbound and outbound documents in this period.', '本期入库和出库单据。'],
+  'Chờ xử lý': ['Pending', '待处理'],
+  'Xem phiếu': ['View document', '查看单据'],
   'Phiếu nhập kho': ['Inbound receipt', '入库单'],
   'Phiếu xuất kho': ['Outbound slip', '出库单'],
   'Danh sách phiếu nhập': ['Inbound receipts', '入库单列表'],
