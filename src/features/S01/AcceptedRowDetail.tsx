@@ -6,6 +6,7 @@ import { GlobalModal } from '../../shared/GlobalModal';
 import { Button, Icon, StatusBadge } from '../../shared';
 import { useEffect, useRef, useState } from 'react';
 import { Notice, type NoticeFeedback } from '../../shared/Notice';
+import { copyText } from '../../shared/copy-text';
 import { acceptedOverviewDocumentHref } from './overview-document-link';
 
 export { selectAcceptedOverviewRow, resolveAcceptedOverviewRow, type AcceptedRowSelection } from './overview-selection';
@@ -52,8 +53,7 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
     const selected = row, request = ++sequence.current;
     let success = false;
     try {
-      if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable');
-      await navigator.clipboard.writeText(value);
+      await copyText(value);
       success = true;
     } catch { /* Common feedback reports rejection without exposing browser errors. */ }
     if (currentRow.current !== selected || request !== sequence.current) return;

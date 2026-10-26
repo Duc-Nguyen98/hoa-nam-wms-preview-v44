@@ -8,6 +8,7 @@ import { useGlobalToast } from '../../toast/GlobalToastProvider';
 import { outboundRecipient, queryOutbounds } from './outbound-presentation';
 import { OUTBOUND_DESIGN_EN } from './outbound-design-copy';
 import type { CatalogSnapshot } from '../../contracts/catalog-create';
+import { copyText } from '../../shared/copy-text';
 import { outboundErrorMessage, outboundReadControls } from './outbound-feedback';
 
 export const OUTBOUND_OPERATIONAL_COPY = {
@@ -54,7 +55,7 @@ export function OperationalOutbounds({ adapter: supplied, notify, readCatalog }:
   const reset=()=>{setSearch('');setStatus('');setPage(1);};
   const forbidden=['FORBIDDEN','MOCK_COMMAND_FORBIDDEN'].includes(state.error);
   const expired=state.error==='SESSION_EXPIRED';
-  const copyValue=async(value:string,origin:HTMLButtonElement)=>{let success=false;try{await navigator.clipboard.writeText(value);success=true;}catch{}toast.notify({origin,tone:success?'success':'error',dedupeKey:'s15-copy',message:language=>success?({vi:'Đã sao chép.',en:'Copied.','zh-CN':'已复制。'}[language]):({vi:'Không thể sao chép. Vui lòng thử lại.',en:'Unable to copy. Please try again.','zh-CN':'无法复制，请重试。'}[language])});};
+  const copyValue=async(value:string,origin:HTMLButtonElement)=>{let success=false;try{await copyText(value);success=true;}catch{}toast.notify({origin,tone:success?'success':'error',dedupeKey:'s15-copy',message:language=>success?({vi:'Đã sao chép.',en:'Copied.','zh-CN':'已复制。'}[language]):({vi:'Không thể sao chép. Vui lòng thử lại.',en:'Unable to copy. Please try again.','zh-CN':'无法复制，请重试。'}[language])});};
   const codeValue=(label:string,value:string,full=false)=><div className={`s15-copy-value${full?' s15-copy-value--full':''}`}><code title={value}>{value}</code><Button variant="ghost" iconOnly aria-label={tx('Sao chép {label}',{label:tx(label)})} data-s15-copy={label} onClick={event=>void copyValue(value,event.currentTarget)}><Icon name="copy" size={20}/></Button></div>;
   const openRow=(r:OutboundRecord)=>{if(snapshot)returnSelection.current={id:r.id,fence:snapshot.token};setSelected(r.id);};
   const viewButton=(r:OutboundRecord)=><Button variant="ghost" className="s15-view-button" aria-haspopup="dialog" data-s15-operational-action={r.id} onClick={()=>openRow(r)}>{tx('Xem chi tiết')}<Icon name="chevron-right" size={20}/></Button>;

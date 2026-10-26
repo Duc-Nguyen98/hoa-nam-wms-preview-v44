@@ -8,6 +8,7 @@ import { localeForLanguage, useShellPreferences, type ShellLanguage } from '../s
 import { notificationCopy } from './notification-copy';
 import { notificationBadge } from './notification-badge';
 import { NotificationIcon } from './NotificationIcon';
+import { notificationTarget } from './notification-target';
 import type { BusinessNotification } from './notification-feed';
 import { dispatchPreviewNotification, usePreviewNotifications, type NotificationStoreState } from './notification-preview-store';
 import type { NotificationAction } from './notification-state';
@@ -59,12 +60,12 @@ function NotificationRow({ item, selected, language, copy, onOpen }: { item: Dem
   </button>;
 }
 
-function NotificationDetail({ item, language, copy, titleRef, pending, offline, onBack, onRead, onPrevious, onNext, position, total }: {
+function NotificationDetail({ item, language, copy, titleRef, pending, offline, onBack, onRead, onNavigate, onPrevious, onNext, position, total }: {
   item: DemoNotification; language: ShellLanguage; copy: Copy; titleRef: RefObject<HTMLHeadingElement | null>; pending: boolean; offline: boolean;
-  onBack: () => void; onRead: () => void; onPrevious?: () => void; onNext?: () => void; position: number; total: number;
+  onBack: () => void; onRead: () => void; onNavigate: () => void; onPrevious?: () => void; onNext?: () => void; position: number; total: number;
 }) {
   const text = itemText(item, copy, language), business = isBusiness(item) ? item : null;
-  const fields = business?.presentation?.fields, target = business?.presentation?.targetVerified === true ? business.target : null;
+  const fields = business?.presentation?.fields, target = business ? notificationTarget(business) : null;
   return <article className="hn-notification-detail-pane" data-notification-detail={item.id}>
     <Button variant="ghost" className="hn-notification-detail-back" onClick={onBack}><Icon name="chevron-left" size={18} />{copy.back}</Button>
     <div className="hn-notification-detail-content">
@@ -78,7 +79,15 @@ function NotificationDetail({ item, language, copy, titleRef, pending, offline, 
         {!fields?.length && <p className="hn-notification-missing-data">{copy.missingBusinessInformation}</p>}
       </section>
       <div className="hn-notification-detail-actions">
-        {target && <a className="hn-notification-primary" href={target.href}>{copyValue(copy, target.labelKey)}<Icon name="arrow-right" size={20} /></a>}
+        {target && <a className="hn-notification-primary" href={target.href} onClick={event => {
+          if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+          // Clearing selection can immediately render the first notification's link.
+          // Capture the clicked destination before that update changes the anchor.
+          const href = target.href;
+          event.preventDefault();
+          onNavigate();
+          window.location.hash = href;
+        }}>{copyValue(copy, target.labelKey)}<Icon name="arrow-right" size={20} /></a>}
         <Button variant="ghost" className="hn-notification-toggle-read" disabled={pending || offline} onClick={onRead}>{item.readAt === null ? copy.markRead : copy.markUnread}</Button>
       </div>
       {!target && <p className="hn-notification-no-target">{copy.centerNoTarget}</p>}
@@ -169,7 +178,7 @@ export function NotificationCenterView({ open, onClose, state, dispatch }: { ope
         </div>
         <footer className="hn-notification-list-footer">{visibleItems.length.toLocaleString(localeForLanguage(language))} {copy.allCount}</footer>
       </section>
-      <section className="hn-notification-detail-pane-wrap" aria-label={copy.centerDetail}>{detailItem ? <NotificationDetail item={detailItem} language={language} copy={copy} titleRef={titleRef} pending={state.pending} offline={offline} onBack={back} onRead={() => void toggleRead()} position={position + 1} total={visibleItems.length} onPrevious={position > 0 ? () => openItem(visibleItems[position - 1].id) : undefined} onNext={position >= 0 && position + 1 < visibleItems.length ? () => openItem(visibleItems[position + 1].id) : undefined} /> : <p className="hn-notification-detail-placeholder">{state.scenario === 'loading' ? copy.mainLoading : query.trim() ? copy.noSearchResults : copy.mainEmpty}</p>}</section>
+      <section className="hn-notification-detail-pane-wrap" aria-label={copy.centerDetail}>{detailItem ? <NotificationDetail item={detailItem} language={language} copy={copy} titleRef={titleRef} pending={state.pending} offline={offline} onBack={back} onNavigate={() => { void dispatch({ type: 'back' }); onClose(); }} onRead={() => void toggleRead()} position={position + 1} total={visibleItems.length} onPrevious={position > 0 ? () => openItem(visibleItems[position - 1].id) : undefined} onNext={position >= 0 && position + 1 < visibleItems.length ? () => openItem(visibleItems[position + 1].id) : undefined} /> : <p className="hn-notification-detail-placeholder">{state.scenario === 'loading' ? copy.mainLoading : query.trim() ? copy.noSearchResults : copy.mainEmpty}</p>}</section>
     </div>
   </GlobalModal>;
 }

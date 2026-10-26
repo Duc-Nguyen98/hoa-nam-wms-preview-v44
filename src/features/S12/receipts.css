@@ -299,3 +299,19 @@
 }
 html[data-hn-theme='dark'] .hn-shell .s12-screen .s12-receipt-card :is(.s12-code,.s12-card-bottom .hn-button),
 html[data-hn-theme='dark'] .s12-detail-modal .s12-detail-code code { color:#79bdff; }
+
+/* Generated receipt IDs and user-entered sources must not push actions off screen. */
+.s12-receipt-card, .s12-receipt-card__top, .s12-card-source, .s12-detail-code { min-width: 0; }
+.s12-receipt-card__top { flex-wrap: wrap; }
+.s12-receipt-card .s12-code,
+.s12-operational-table .s12-code { white-space: normal; overflow-wrap: anywhere; }
+.s12-card-source :is(strong, span), .s12-detail-code code { min-width: 0; overflow-wrap: anywhere; }
+.s12-detail-code .hn-button { flex-shrink: 0; }
+.s12-operational-filters > .hn-button { justify-self: start; }
+@media (min-width: 901px) {
+  .s12-operational-filters:has(> .hn-button) { grid-template-columns: minmax(240px, 455px) minmax(190px, 265px) auto; }
+}
+@media (max-width: 560px) {
+  .s12-detail-modal .hn-global-modal__footer { flex-wrap: wrap; }
+  .s12-detail-modal .hn-global-modal__footer .hn-modal-footer-tools { width: 100%; }
+}

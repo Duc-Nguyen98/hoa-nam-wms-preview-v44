@@ -74,7 +74,11 @@ test('independent: desktop anatomical order, visible controls and tablet touch g
  });
  expect(checks.search.right).toBeLessThanOrEqual(checks.right.x);expect(checks.back).toBe('none');
  for(let i=1;i<checks.order.length;i++)expect(checks.order[i].y).toBeGreaterThanOrEqual(checks.order[i-1].bottom-1);
- for(const c of checks.buttons){expect(c.x).toBeGreaterThanOrEqual(checks.modal.x);expect(c.right).toBeLessThanOrEqual(checks.modal.right+1);expect(c.bottom).toBeLessThanOrEqual(checks.modal.bottom+1);}
+ for(const c of checks.buttons){expect(c.x).toBeGreaterThanOrEqual(checks.modal.x);expect(c.right).toBeLessThanOrEqual(checks.modal.right+1);}
+ // The compact dialog deliberately scrolls long details. Every enabled control
+ // must become reachable inside that pane, including actions below the fold.
+ const controls=page.locator('dialog[open] .hn-notification-detail-pane button:visible:not(:disabled), dialog[open] .hn-notification-detail-pane a:visible');
+ for(let i=0;i<await controls.count();i++){await controls.nth(i).scrollIntoViewIfNeeded();const r=await controls.nth(i).boundingBox();expect(r!.y).toBeGreaterThanOrEqual(checks.modal.y);expect(r!.y+r!.height).toBeLessThanOrEqual(checks.modal.bottom+1);}
  await page.setViewportSize({width:800,height:1280});
  const targets=await page.locator('dialog[open]').evaluate(d=>Array.from(d.querySelectorAll<HTMLElement>('button,input')).filter(e=>e.getClientRects().length&&!e.closest('[style*="display: none"]')).map(e=>{const r=e.getBoundingClientRect();return {label:e.getAttribute('aria-label')??e.textContent,width:r.width,height:r.height}}));
  for(const c of targets){expect(c.height,`${c.label} height`).toBeGreaterThanOrEqual(44);expect(c.width,`${c.label} width`).toBeGreaterThanOrEqual(44);}

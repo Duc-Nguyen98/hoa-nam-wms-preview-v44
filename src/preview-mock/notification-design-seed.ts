@@ -47,7 +47,7 @@ export function createNotificationDesignSeed(now = Date.now()): BusinessNotifica
   const categories: BusinessNotification['category'][] = ['outbound','printing','inventory','inbound','warranty','putaway'];
   const references = ['PX-0021','LBH0012343','Kho A','PN-0042','BH-0018','TRAY-0012'];
   // Supported screen routes, not fabricated document-selection query parameters.
-  const screens = ['S15','S23','S16','S12','S09','S14'];
+  const screens = ['S15','S23','S16','S12','S09','S11'];
   const labels: BusinessNotification['target']['labelKey'][] = ['openDocument','openLabels','openInventory','openReceipt','openWarranty','openPutaway'];
   const minutes = [630,585,555,520,-460,-595];
   return titles.map((title, i) => ({

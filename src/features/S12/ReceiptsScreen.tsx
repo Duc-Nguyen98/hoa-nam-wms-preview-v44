@@ -31,6 +31,7 @@ function feedbackValue(value: string) {
 
 export function ReceiptsScreen({ adapter, operationalAdapter }: { adapter?: ReceiptsAdapter; operationalAdapter?: ReceiptAdapter } = {}) {
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S12' }), [operationalAdapter]);
+  const [createRequest, setCreateRequest] = useState(0);
   const [cohort, setCohort] = useState(operational.available ? 'scenario' : 'legacy');
   const tx = useUiCopy(RECEIPTS_COPY);
   const { language } = useShellPreferences();
@@ -104,14 +105,6 @@ export function ReceiptsScreen({ adapter, operationalAdapter }: { adapter?: Rece
     const region = table.current?.querySelector<HTMLElement>('.hn-table-scroll');
     region?.scrollBy({ left: direction * Math.max(44, region.clientWidth - 32), behavior: 'instant' });
   }
-  function entryPoint(action: string, origin: HTMLElement, receipt?: string) {
-    ++feedbackIntent.current;
-    // The new action supersedes pending query intent as well as its feedback.
-    // Restore accepted controls now, not later when an obsolete timer resolves.
-    controller.cancel();
-    recordReviewDiagnostic({ kind: 'blocked-action', key: 'S12:FLOW_NOT_SUPPLIED', detail: `${action}: no assigned form/detail/write flow; no mutation.` });
-    notify(uiText('{action}{code} chưa khả dụng.', { action: uiText(action), code: receipt ? ` ${receipt}` : '' }), origin);
-  }
   function openDetail(row: ReceiptRow, origin: HTMLElement) {
     ++feedbackIntent.current;
     controller.cancel();
@@ -126,22 +119,13 @@ export function ReceiptsScreen({ adapter, operationalAdapter }: { adapter?: Rece
     { id: 'creator', heading: tx('Người tạo'), render: row => <span className="s12-primary">{row.creator}</span> },
     { id: 'status', heading: tx('Trạng thái'), render: row => <StatusBadge tone={row.status === 'Đã nhập kho' ? 'success' : row.status === 'Đang ghi nhận' ? 'warning' : 'neutral'}>{tx(row.status)}</StatusBadge> },
     { id: 'updated', heading: tx('Cập nhật'), sortKey: 'updatedAt', sortType: 'date', render: row => <span className="s12-stack s12-meta"><span>{row.updatedAt.split(' ')[0]}</span><span>{row.updatedAt.split(' ')[1]}</span></span> },
-    { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: row => ['Chi tiết', 'Xem'].includes(row.action)
-      ? <Button variant="ghost" className="s12-view" aria-label={`${tx(row.action)} ${row.receipt}`} onClick={event => openDetail(row, event.currentTarget)}><Icon name="eye" size={18} />{tx(row.action)}</Button>
-      : <span className="s12-row-actions"><Button variant="ghost"
-        className={row.action === 'Theo dõi' ? 's12-track' : 's12-guarded-action'}
-        aria-describedby={row.action === 'Theo dõi' ? undefined : 's12-flow-limit'}
-        aria-haspopup={row.action === 'Theo dõi' ? 'dialog' : undefined}
-        title={row.action === 'Theo dõi' ? tx('Theo dõi phiếu nhập · Chỉ xem') : undefined}
-        aria-label={`${tx(row.action)} ${row.receipt}`}
-        onClick={event => row.action === 'Theo dõi' ? openDetail(row, event.currentTarget) : entryPoint(row.action, event.currentTarget, row.receipt)}
-      ><Icon name={row.action === 'Chỉnh sửa' ? 'edit' : 'eye'} size={18} />{tx(row.action)}</Button><Button variant="ghost" iconOnly className="s12-view" aria-label={`${tx('Xem')} ${row.receipt}`} onClick={event => openDetail(row, event.currentTarget)}><Icon name="eye" size={18} /></Button></span> },
+    { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: row => <Button variant="ghost" className="s12-view" aria-haspopup="dialog" aria-label={`${tx('Xem')} ${row.receipt}`} onClick={event => openDetail(row, event.currentTarget)}><Icon name="eye" size={18} />{tx('Xem')}</Button> },
   ];
   return <GlobalShell title={tx("Danh sách phiếu nhập")} variant="wms" activeKey="S12" navigation={S00_SHELL_NAVIGATION} profile={{ displayName: 'Đức Quang', initials: 'DQ' }}>
     <div className="hn-catalogue-screen s12-screen" data-screen="S12" data-visual-variant="premium" onFocusCapture={revealFocus}>
-      <CataloguePageHeader appearance="compact" title={tx("Danh sách phiếu nhập")} description={tx("Theo dõi phiếu nhập trong phiên hiện tại.")} breadcrumb={tx("Danh sách phiếu nhập")} parentLabel={tx("Nhập kho")} actions={cohort === 'legacy' ? <Button aria-describedby="s12-flow-limit" onClick={event => entryPoint('Tạo phiếu nhập', event.currentTarget)}><Icon name="plus" />{tx("Tạo phiếu nhập")}</Button> : undefined} />
+      <CataloguePageHeader appearance="compact" title={tx("Danh sách phiếu nhập")} description={tx("Theo dõi phiếu nhập trong phiên hiện tại.")} breadcrumb={tx("Danh sách phiếu nhập")} parentLabel={tx("Nhập kho")} actions={cohort === 'legacy' && operational.available ? <Button onClick={() => { setCreateRequest(value => value + 1); setCohort('scenario'); }}><Icon name="plus" />{tx("Tạo phiếu nhập")}</Button> : undefined} />
       {operational.available && <div className="s12-action-row"><Button variant="secondary" onClick={() => setCohort('scenario')} aria-pressed={cohort === 'scenario'}>{tx('Phiên hiện tại')}</Button><Button variant="secondary" onClick={() => setCohort('legacy')} aria-pressed={cohort === 'legacy'}>{tx('Danh sách trước đây')}</Button></div>}
-      {cohort === 'scenario' ? <OperationalReceipts adapter={operational} notify={message => notify(uiText(message), null, 'success')} /> : <>
+      {cohort === 'scenario' ? <OperationalReceipts createRequest={createRequest} onCreateHandled={() => setCreateRequest(0)} adapter={operational} notify={message => notify(uiText(message), null, 'success')} /> : <>
       {model ? <>
         <section className="s12-summary" aria-labelledby="s12-summary-title">
           <h2 id="s12-summary-title" className="hn-sr-only">{tx("Theo dõi nhập kho")}</h2>

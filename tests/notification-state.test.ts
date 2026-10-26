@@ -44,7 +44,7 @@ test('approved Preview seed has six localized records, two unread and supported 
  assert.equal(items.length,6);assert.equal(items.filter(i=>!i.readAt).length,2);
  assert.equal(items[0].createdAt,'2026-10-25T03:30:00.000Z');
  assert.equal(items[4].createdAt,'2026-10-24T09:20:00.000Z');
- assert.deepEqual(items.map(i=>i.target.href),['#/preview/S15','#/preview/S23','#/preview/S16','#/preview/S12','#/preview/S09','#/preview/S14']);
+ assert.deepEqual(items.map(i=>i.target.href),['#/preview/S15','#/preview/S23','#/preview/S16','#/preview/S12','#/preview/S09','#/preview/S11']);
  for(const item of items){
   for(const locale of ['vi','en','zh-CN'] as const){assert.ok(item.presentation?.title?.[locale]);assert.ok(item.presentation?.cardTitle?.[locale]);}
   assert.ok(item.presentation?.fields?.length);assert.equal(item.presentation?.targetVerified,true);
