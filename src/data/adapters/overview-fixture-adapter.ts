@@ -1,5 +1,6 @@
 import fixture from '../fixtures/S01_SCANNER_PINNED.json';
 import { queryOverviewRows } from './overview-table-query';
+import { OVERVIEW_DOCUMENT_SNAPSHOT } from './overview-document-fixture-adapter';
 import {
   DEFAULT_OVERVIEW_QUERY,
   type OverviewBlocker, type OverviewDataAdapter, type OverviewModel, type OverviewPolicy,
@@ -65,6 +66,7 @@ export function createOverviewFixtureAdapter(policy: OverviewPolicy = {}): Overv
         const type = row.type as OverviewRow['type'];
         const status = row.status as OverviewRow['status'];
         return {
+          documentTarget: { screen: type === 'inbound' ? 'S12' : 'S15', source: 'overview', documentId: row.id, snapshotId: OVERVIEW_DOCUMENT_SNAPSHOT },
           id: row.id, number: row.number, type, typeLabel: typeLabels[type], partner: row.partner,
           warehouse: row.warehouse, quantity: row.lines.reduce((sum, line) => sum + line.quantity, 0),
           quantityUnit: row.lines.length > 0 && row.lines.every(line => typeof line.unit === 'string' && line.unit.trim() && line.unit === row.lines[0].unit)
@@ -88,7 +90,7 @@ export function createOverviewFixtureAdapter(policy: OverviewPolicy = {}): Overv
           source: {
             commit: fixture.source.commit, documentVersion: fixture.source.documentVersion,
             provenance: 'SOURCE_FIXTURE', evidence: 'INTERACTIVE_FIXTURE_VERIFIED',
-            snapshotId: `scanner:${fixture.source.commit}:${fixture.source.documentVersion}`,
+            snapshotId: OVERVIEW_DOCUMENT_SNAPSHOT,
             fixtureRecordCount: fixture.stockDocuments.length,
             backendMapping: null, endpoint: null, permissionKeys: null, businessDateField: null, timezone: null,
             sourceDayComparison: 'LEXICAL_INCLUSIVE', searchMatch,

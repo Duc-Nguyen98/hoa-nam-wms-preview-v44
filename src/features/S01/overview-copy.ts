@@ -5,6 +5,19 @@ import { translateUiCopy } from '../../i18n/ui-copy';
 
 /** S01-local copy: do not translate source names, identifiers or business data. */
 export const OVERVIEW_COPY: Readonly<Record<string, readonly [string, string]>> = {
+  'Phiếu nhập kho': ['Inbound receipt', '入库单'],
+  'Phiếu xuất kho': ['Outbound slip', '出库单'],
+  'Danh sách phiếu nhập': ['Inbound receipts', '入库单列表'],
+  'Danh sách phiếu xuất': ['Outbound slips', '出库单列表'],
+  'Về Tổng quan': ['Back to overview', '返回概览'],
+  'Không tìm thấy chứng từ': ['Document not found', '未找到单据'],
+  'Liên kết không hợp lệ hoặc chứng từ không còn trong nguồn dữ liệu đã chọn. Vui lòng mở lại từ Tổng quan.': ['The link is invalid or the document is no longer in the selected source. Open it again from the overview.', '链接无效或所选数据源中已无此单据。请从概览重新打开。'],
+  'Hàng hóa': ['Items', '货物'],
+  'Serial đã ghi nhận': ['Recorded serial numbers', '已记录序列号'],
+  'Chưa có serial ghi nhận.': ['No serial numbers recorded.', '尚无已记录序列号。'],
+  'Ghi chú': ['Notes', '备注'],
+  'Tệp đính kèm': ['Attachments', '附件'],
+  'Lịch sử chứng từ': ['Document history', '单据历史'],
   'Kho': ['Warehouse', '仓库'],
   'Kỳ thời gian': ['Period', '期间'],
   'Đối tác': ['Partner', '合作伙伴'],

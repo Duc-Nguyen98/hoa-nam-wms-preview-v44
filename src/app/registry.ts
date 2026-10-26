@@ -1,4 +1,5 @@
 import { resolveCanonicalPreviewSelection } from './canonical-preview-route';
+import { resolveOverviewDocumentSelection } from './overview-document-route';
 /** Local preview hashes only. These do not define business routes or API endpoints. */
 export const screenRegistry = [
   { key: 'S01', label: 'Tổng quan vận hành', href: '#/preview/S01', revision: 'DEFAULT_2026-10-08' },
@@ -31,7 +32,7 @@ export const screenRegistry = [
 ] as const;
 
 export function resolvePreviewRoute(hash: string) {
-  const canonical = resolveCanonicalPreviewSelection(hash);
+  const canonical = resolveCanonicalPreviewSelection(hash) ?? resolveOverviewDocumentSelection(hash);
   const target = canonical ? `#/preview/${canonical.screen}` : hash;
   return [...screenRegistry, ...authScreenRegistry].find(screen => screen.href === target) ?? null;
 }

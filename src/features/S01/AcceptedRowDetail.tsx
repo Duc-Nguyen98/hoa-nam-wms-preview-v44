@@ -6,6 +6,7 @@ import { GlobalModal } from '../../shared/GlobalModal';
 import { Button, Icon, StatusBadge } from '../../shared';
 import { useEffect, useRef, useState } from 'react';
 import { Notice, type NoticeFeedback } from '../../shared/Notice';
+import { acceptedOverviewDocumentHref } from './overview-document-link';
 
 export { selectAcceptedOverviewRow, resolveAcceptedOverviewRow, type AcceptedRowSelection } from './overview-selection';
 
@@ -63,8 +64,7 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
   }
   const isInbound = row.type === 'inbound';
   const title = isInbound ? 'Chi tiết phiếu nhập' : 'Chi tiết phiếu xuất';
-  // S12/S15 are list routes for different cohorts, not an exact-ID document
-  // consumer. Do not infer access or navigate to a different document.
+  const documentHref = acceptedOverviewDocumentHref(row, source);
   const fields = acceptedOverviewFields(row);
   const systemId = acceptedOverviewValue(row.id);
   // Public reference IDs are display fields of the approved static projection.
@@ -86,7 +86,7 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
     resolveReturnFocus={resolveReturnFocus}
     footer={<>
       <Button variant="secondary" onClick={onClose}>{tx('Đóng')}</Button>
-      <Button variant="primary" disabled aria-describedby="ov-detail-navigation-reason" trailingIcon={<Icon name="arrow-right" size={17} />}>
+      <Button variant="primary" disabled={!documentHref} aria-describedby={!documentHref ? 'ov-detail-navigation-reason' : undefined} onClick={() => { if (documentHref) { onClose(); window.location.hash = documentHref; } }} trailingIcon={<Icon name="arrow-right" size={17} />}>
         {tx(isInbound ? 'Mở phiếu nhập kho' : 'Mở phiếu xuất kho')}
       </Button>
     </>}
@@ -110,7 +110,7 @@ export function AcceptedRowDetail({ row, source, onClose, resolveReturnFocus }: 
           </div>
         </dl>
       </section>
-      <p className="ov-unavailable-reason" id="ov-detail-navigation-reason" data-overview-detail-source={source?.snapshotId}>{tx('Chưa có liên kết được xác minh tới chứng từ nguồn.')}</p>
+      {!documentHref && <p className="ov-unavailable-reason" id="ov-detail-navigation-reason" data-overview-detail-source={source?.snapshotId}>{tx('Chưa có liên kết được xác minh tới chứng từ nguồn.')}</p>}
       {copyFeedback && <Notice feedback={{ ...copyFeedback, message: tx(copyFeedback.message) }} onClose={() => setCopyFeedback(null)} />}
     </div>
   </GlobalModal>;

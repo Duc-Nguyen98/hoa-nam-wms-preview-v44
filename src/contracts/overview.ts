@@ -1,5 +1,6 @@
 /** S01 frontend-only view contracts. Backend DTO, dates, enums and permissions remain unbound. */
 import { updateTableQuery } from '../shared/table-query';
+import type { OverviewDocumentTarget } from './overview-document';
 export interface OverviewPeriod { from: string; to: string }
 export type OverviewSortKey = 'number' | 'type' | 'time' | 'actor' | 'quantity' | 'status';
 export interface OverviewQuery {
@@ -26,6 +27,8 @@ export interface OverviewPolicy {
 }
 
 export interface OverviewRow {
+  /** Exact destination in the same source snapshot; absent providers remain unavailable. */
+  documentTarget?: OverviewDocumentTarget;
   id: string;
   number: string;
   type: 'inbound' | 'outbound';

@@ -17,6 +17,8 @@ import { Button, Card, Feedback, GlobalShell, PageState } from '../shared';
 import { resolvePreviewRoute, screenRegistry } from './registry';
 import { blockNavigation, consumeApprovedNavigation, getNavigationGuard } from './navigation-blocker';
 import { resolveCanonicalPreviewSelection } from './canonical-preview-route';
+import { resolveOverviewDocumentSelection } from './overview-document-route';
+import { OverviewSourceDocumentScreen } from '../features/documents/OverviewSourceDocumentScreen';
 import { OverviewScreen } from '../features/S01/OverviewScreen';
 import { DefectsScreen } from '../features/S02/DefectsScreen';
 import { createDefectsCommandService } from '../features/S02/defects-command-service';
@@ -110,6 +112,7 @@ export function App() {
     return () => { active = false; };
   }, []);
   const selected = resolvePreviewRoute(hash);
+  const overviewDocument = resolveOverviewDocumentSelection(hash);
   const accountPanel = resolveAccountPanel(hash);
   const notificationHarness = IS_BROWSER_PREVIEW && hash === '#/harness/notifications';
   const notificationRepositoryQa = IS_BROWSER_PREVIEW && hash === '#/harness/notifications-repository';
@@ -143,6 +146,7 @@ export function App() {
   if(appPage)return <OperationalAppPreview page={appPage as 'P04'|'P05'|'P09'|'P19'}/>;
   if (unknown) return <GlobalShell title={tx('Không tìm thấy trang')} variant="wms" navigation={S00_SHELL_NAVIGATION}><PageState kind="route-not-found" action={<a href="#/preview/S01">{tx('Tổng quan vận hành')}</a>} /></GlobalShell>;
   if (accountPanel) return <GlobalShell title={tx(ACCOUNT_PANELS[accountPanel])} variant="wms" navigation={S00_SHELL_NAVIGATION}><AccountCenterScreen panel={accountPanel} /></GlobalShell>;
+  if (overviewDocument) return <OverviewSourceDocumentScreen selection={overviewDocument} />;
   if (hash === '' || hash === '#/' || selected?.key === 'S01') return <OverviewScreen createController={createHttpOverview} />;
   if (selected?.key === 'S02') return <DefectsScreen createController={createHttpDefects} createCommandService={createHttpDefectsCommands} />;
   if (selected?.key === 'S03') return <ProductsScreen createController={createHttpProducts} selectedEntityId={resolveCanonicalPreviewSelection(hash)?.entityId} />;
