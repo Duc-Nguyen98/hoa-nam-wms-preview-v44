@@ -1,0 +1,30 @@
+/* Shortcut configuration uses the existing shell dialog and control palette. */
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shell-dialog.hn-shortcut-settings {
+  --hn-s00-dialog-top: min(8dvh, 64px);
+  --hn-s00-dialog-bottom: 16px;
+  width: min(560px, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+}
+.hn-shortcut-settings__body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; scroll-padding-block: 8px; }
+.hn-shortcut-settings__intro { padding: 16px 20px 8px; font-size: 14px; line-height: 1.5; }
+.hn-shortcut-settings__intro p { margin: 0 0 8px; }
+.hn-shortcut-settings__intro p + p { color: var(--hn-s00-muted); font-size: 13px; }
+.hn-shortcut-options { display: grid; gap: 6px; padding: 4px 12px 12px; }
+.hn-shortcut-choice { display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 10px 12px; border: 1px solid var(--hn-s00-border); border-radius: 8px; cursor: pointer; }
+.hn-shortcut-choice input { flex: 0 0 18px; width: 18px; height: 18px; margin: 0; accent-color: var(--hn-focus, var(--hn-control)); cursor: inherit; }
+.hn-shortcut-choice > svg { flex: 0 0 22px; width: 22px; height: 22px; }
+.hn-shortcut-choice > span { display: grid; min-width: 0; gap: 2px; overflow-wrap: anywhere; }
+.hn-shortcut-choice strong { font-size: 14px; font-weight: 550; line-height: 1.5; }
+.hn-shortcut-choice small { color: var(--hn-s00-muted); font-size: 12px; line-height: 1.5; }
+.hn-shortcut-choice[data-selected='true'] { background: #e8f1f6; border-color: var(--hn-control); }
+.hn-shortcut-choice[data-unavailable='true'] { color: var(--hn-s00-muted); cursor: default; }
+.hn-shortcut-choice:not([data-unavailable='true']):hover { background: #f1f5f8; }
+.hn-shortcut-settings__scope { margin: 0; padding: 0 20px 16px; color: var(--hn-s00-muted); font-size: 12px; line-height: 1.5; }
+.hn-shortcut-settings__actions { display: flex; flex-shrink: 0; align-items: center; gap: 8px; padding: 12px 16px; border-top: 1px solid var(--hn-s00-border); }
+.hn-shortcut-settings__actions > span { margin-inline-end: auto; color: var(--hn-s00-muted); font-size: 13px; }
+html[data-hn-theme='dark'] .hn-shortcut-choice[data-selected='true'] { background: #203e55; border-color: #638097; }
+html[data-hn-theme='dark'] .hn-shortcut-choice:not([data-unavailable='true']):hover { background: #263e56; }
+@media (max-height: 400px) {
+  .hn-shell[data-shell-version='s00'][data-variant][data-layout] .hn-shell-dialog.hn-shortcut-settings { --hn-s00-dialog-top: 12px; --hn-s00-dialog-bottom: 12px; }
+  .hn-shortcut-settings__actions { padding-block: 8px; }
+}

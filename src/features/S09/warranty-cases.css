@@ -1,0 +1,103 @@
+/* S09 composition and cell content only. Shared controls, focus, table
+   appearance and sticky cells are supplied by S00's opt-in extension. */
+.s09-summary {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr 1.15fr;
+  padding: 16px 0;
+  border: 1px solid var(--hn-border);
+  border-radius: var(--hn-card-radius);
+  background: var(--hn-surface);
+  box-shadow: var(--hn-component-shadow);
+}
+.s09-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+  padding: 0 24px;
+  border-left: 1px solid var(--hn-border);
+  color: var(--hn-s00-text, var(--hn-text));
+}
+.s09-metric:first-child { border-left: 0; }
+.s09-metric > span { font-size: 13px; line-height: 20px; }
+.s09-metric strong { font-size: 28px; line-height: 34px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -.025em; color: var(--hn-text); }
+.s09-metric small { font-size: 12px; line-height: 18px; color: var(--hn-muted); }
+.s09-completion { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; width: 100%; }
+.s09-completion > span { font-size: 13px; font-weight: 600; color: var(--hn-control); }
+.s09-progress progress { width: 100%; height: 5px; margin: 7px 0 6px; border: 0; border-radius: 6px; overflow: hidden; appearance: none; background: var(--hn-border); }
+.s09-progress progress::-webkit-progress-bar { background: var(--hn-border); border-radius: 6px; }
+.s09-progress progress::-webkit-progress-value { background: var(--hn-control); border-radius: 6px; }
+.s09-progress progress::-moz-progress-bar { background: var(--hn-control); border-radius: 6px; }
+.s09-overdue, .s09-metric strong.s09-overdue { color: #b42318; }
+.s09-overdue { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; line-height: 18px; }
+.s09-overdue svg { flex-shrink: 0; }
+.s09-list { min-width: 0; padding: 0 20px; border: 1px solid var(--hn-border); border-radius: var(--hn-card-radius); background: var(--hn-surface); box-shadow: var(--hn-component-shadow); }
+.s09-list-heading .hn-catalogue-list-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 12px; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+.s09-list-heading .hn-catalogue-snapshot { display: inline-flex; align-items: center; gap: 6px; }
+.s09-preview-note { display: flex; align-items: center; gap: 8px; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+.s09-preview-note > svg { flex-shrink: 0; }
+.s09-table { margin: 0 -20px; min-width: 0; }
+/* Column widths and viewport are S09 content layout, not a control skin. */
+.s09-table .hn-table-scroll { max-height: 620px; scrollbar-gutter: stable; }
+.s09-table table { min-width: var(--s09-wide-min); table-layout: fixed; }
+.s09-table :is(th, td) { white-space: normal; padding: 12px; line-height: 21px; }
+.s09-table th[data-column='ordinal'] { width: 56px; }
+.s09-table th[data-column='case'] { width: 204px; }
+.s09-table th[data-column='product'] { width: auto; }
+.s09-table th[data-column='customer'] { width: 168px; }
+.s09-table th[data-column='status'] { width: 178px; }
+.s09-table th[data-column='received'] { width: 158px; }
+.s09-table th[data-column='age'] { width: 100px; }
+.s09-table th[data-column='action'] { width: 128px; }
+.s09-table :is(th,td):is([data-column='status'],[data-column='action']) { text-align: center; }
+.s09-status { align-items: center; }
+.hn-shell .s09-screen .s09-table .s09-view { min-height: 44px; min-width: 72px; white-space: nowrap; }
+.s09-stack { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.s09-code { font-size: 13px; font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--hn-text); }
+.s09-product-name { font-weight: 500; }
+.s09-secondary { font-size: 12px; line-height: 19px; color: var(--hn-muted); }
+.s09-customer { font-size: 13px; color: var(--hn-s00-text, var(--hn-text)); }
+.s09-muted { color: var(--hn-muted); }
+.s09-dates { font-size: 13px; font-variant-numeric: tabular-nums; }
+.s09-scroll-tools { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 8px; }
+.s09-scroll-tools p { margin: 0; font-size: 12px; color: var(--hn-muted); }
+.s09-scroll-tools > div { display: flex; flex-shrink: 0; gap: 4px; }
+.s09-scroll-tools [aria-disabled='true'] { opacity: .45; cursor: default; }
+@container (max-width: 1000px) {
+  .s09-metric { padding: 0 16px; }
+  .s09-table .hn-table-scroll { max-height: 600px; }
+}
+@container (max-width: 650px) {
+  .s09-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; }
+  .s09-metric { padding: 14px 16px; }
+  .s09-metric:nth-child(3) { border-left: 0; }
+  .s09-metric:nth-child(n+3) { border-top: 1px solid var(--hn-border); }
+}
+
+/* S09 read-only accepted-row projection; native modal and shared theme remain
+   owned by the existing shell. No table or global-shell geometry changes. */
+.s09-detail-dialog__header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-shrink: 0; padding: 20px 24px 16px; border-bottom: 1px solid var(--hn-border); }
+.s09-detail-dialog__header p { margin: 0 0 4px; color: var(--hn-muted); font-size: 12px; line-height: 18px; }
+.s09-detail-dialog__header h2 { margin: 0 0 6px; font-size: 21px; line-height: 28px; color: var(--hn-text); overflow-wrap: anywhere; }
+.s09-detail-dialog__close { width: 44px; height: 44px; padding: 10px; flex-shrink: 0; }
+.s09-detail-dialog__body { min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 16px 24px 20px; }
+.s09-detail-dialog__body section + section { margin-top: 20px; }
+.s09-detail-dialog__body h3 { margin: 0 0 8px; font-size: 14px; line-height: 21px; color: var(--hn-text); }
+.s09-detail-dialog__body p { margin: 0; color: var(--hn-muted); font-size: 13px; line-height: 20px; }
+.s09-detail-dialog__fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; margin: 0; }
+.s09-detail-dialog__fields > div { min-width: 0; padding: 10px 0; border-bottom: 1px solid var(--hn-border); }
+.s09-detail-dialog__fields dt { margin: 0 0 3px; color: var(--hn-muted); font-size: 12px; line-height: 18px; }
+.s09-detail-dialog__fields dd { margin: 0; color: var(--hn-text); font-size: 14px; line-height: 22px; overflow-wrap: anywhere; }
+.s09-detail-dialog__wide { grid-column: 1 / -1; }
+.s09-detail-dialog__due { display: block; margin-top: 4px; font-size: 12px; }
+.s09-detail-dialog__footer { display: flex; justify-content: flex-end; flex-shrink: 0; padding: 14px 24px; border-top: 1px solid var(--hn-border); }
+.s09-detail-dialog__footer .hn-button { min-width: 88px; min-height: 44px; }
+
+/* Operational cards retain their existing horizontal inset. */
+.s09-list[data-operational-warranty] { padding-block: var(--hn-space-5); }
+
+.s09-action-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--hn-control-gap, 8px); }
+
+.s09-list[data-operational-warranty] > h2 { margin: 0 0 var(--hn-space-4, 16px); font-size: 18px; line-height: 26px; font-weight: 600; }
+.s09-list[data-operational-warranty] > .hn-table-scroll { margin-block-start: var(--hn-space-5, 20px); }

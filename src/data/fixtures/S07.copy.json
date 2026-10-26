@@ -1,0 +1,22 @@
+{
+  "provenance": "OBSERVED_PREVIEW",
+  "source": "HN_DangNhap_XacNhanPhien_P01_r01_HoSo_2026-10-08.json / prompts dang-nhap and three S07 frames",
+  "content": {
+    "brand": "HOA NAM WMS",
+    "subtitle": "Hệ thống quản lý kho",
+    "heading": ["Quản lý kho", "Hoa Nam"],
+    "introduction": "Đăng nhập để bắt đầu phiên làm việc",
+    "pillars": ["CHÍNH XÁC", "HIỆU QUẢ", "VẬN HÀNH", "BỀN VỮNG"],
+    "username": "Tên đăng nhập",
+    "usernamePlaceholder": "Nhập tên đăng nhập",
+    "password": "Mật khẩu",
+    "passwordPlaceholder": "Nhập mật khẩu",
+    "showPassword": "Hiện mật khẩu",
+    "hidePassword": "Ẩn mật khẩu",
+    "forgotPassword": "Quên mật khẩu?",
+    "submit": "Đăng nhập",
+    "accessTitle": "Quyền truy cập theo tài khoản được cấp.",
+    "accessDescription": "Chỉ dành cho nhân viên được ủy quyền.",
+    "footer": "KẾT NỐI CON NGƯỜI - VẬN HÀNH HIỆU QUẢ"
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "note": "All row values are preserved as source strings. Design metadata keys are not API fields. No records were invented to fill totals.",
+  "screens": [
+    {
+      "screen_id": "S01",
+      "source_snapshot": "references/S01_TONG_QUAN_VAN_HANH.snapshot.md",
+      "provenance": "SOURCE_FIXTURE",
+      "summary": {
+        "inbound_documents": 8,
+        "outbound_documents": 8,
+        "stock_total": null,
+        "stock_display": "—",
+        "stock_help": "Chưa có số liệu xác nhận",
+        "open_warranty_cases": 4,
+        "posted_documents": 11,
+        "waiting_on_web_documents": 5
+      },
+      "period": {
+        "from": "2026-09-01",
+        "to": "2026-09-30"
+      },
+      "chart_rows_as_source": [
+        {
+          "Khoảng ngày tháng 09/2026": "01–07",
+          "Nhập kho": "1",
+          "Xuất kho": "1"
+        },
+        {
+          "Khoảng ngày tháng 09/2026": "08–14",
+          "Nhập kho": "1",
+          "Xuất kho": "1"
+        },
+        {
+          "Khoảng ngày tháng 09/2026": "15–21",
+          "Nhập kho": "3",
+          "Xuất kho": "3"
+        },
+        {
+          "Khoảng ngày tháng 09/2026": "22–30",
+          "Nhập kho": "3",
+          "Xuất kho": "3"
+        },
+        {
+          "Khoảng ngày tháng 09/2026": "Tổng",
+          "Nhập kho": "8",
+          "Xuất kho": "8"
+        }
+      ],
+      "record_rows": [],
+      "record_rows_included": 0,
+      "aggregate_document_count": 16,
+      "detail_completeness": "AGGREGATES_ONLY_NEEDS_PINNED_SCANNER_RECORDS",
+      "production_match_99_percent_verified": false
+    },
+    {
+      "screen_id": "S02",
+      "source_snapshot": "references/S02_DANH_MUC_BENH_LOI.snapshot.md",
+      "provenance": "SOURCE_FIXTURE",
+      "summary": {
+        "total": 10,
+        "Đang sử dụng": 8,
+        "Ngừng sử dụng": 2,
+        "percentages_display": [
+          "80%",
+          "20%"
+        ]
+      },
+      "record_rows": [
+        {
+          "STT": "01",
+          "Mã lỗi": "DF-POWER-01",
+          "Tên lỗi / bệnh": "Công suất yếu",
+          "Mô tả": "Công suất giảm, máy hoạt động yếu.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "02",
+          "Mã lỗi": "DF-MOTOR-01",
+          "Tên lỗi / bệnh": "Không chạy motor",
+          "Mô tả": "Motor không hoạt động.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "03",
+          "Mã lỗi": "DF-ELEC-01",
+          "Tên lỗi / bệnh": "Chập điện / cháy mô-tơ",
+          "Mô tả": "Chập điện hoặc cháy mô-tơ khi vận hành.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "04",
+          "Mã lỗi": "DF-BAT-01",
+          "Tên lỗi / bệnh": "Chai pin / không sạc được",
+          "Mô tả": "Pin nhanh hết hoặc không nhận sạc.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "05",
+          "Mã lỗi": "DF-VIB-01",
+          "Tên lỗi / bệnh": "Rung lắc bất thường",
+          "Mô tả": "Máy rung mạnh khi đang hoạt động.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "06",
+          "Mã lỗi": "DF-HEAT-01",
+          "Tên lỗi / bệnh": "Quá nhiệt",
+          "Mô tả": "Máy nóng bất thường trong quá trình sử dụng.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "07",
+          "Mã lỗi": "DF-BLADE-01",
+          "Tên lỗi / bệnh": "Lỗi lưỡi cắt",
+          "Mô tả": "Lưỡi cắt hỏng hoặc hoạt động không ổn định.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "08",
+          "Mã lỗi": "DF-LEAK-01",
+          "Tên lỗi / bệnh": "Rò rỉ",
+          "Mô tả": "Rò rỉ dầu hoặc nước tại thiết bị.",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "STT": "09",
+          "Mã lỗi": "DF-SHIP-01",
+          "Tên lỗi / bệnh": "Hư hỏng vận chuyển",
+          "Mô tả": "Biến dạng hoặc hư hỏng trong vận chuyển.",
+          "Trạng thái": "Ngừng sử dụng"
+        },
+        {
+          "STT": "10",
+          "Mã lỗi": "DF-SPEC-01",
+          "Tên lỗi / bệnh": "Sai lệch thông số",
+          "Mô tả": "Thông số thực tế không khớp thông tin sản phẩm.",
+          "Trạng thái": "Ngừng sử dụng"
+        }
+      ],
+      "record_rows_included": 10,
+      "aggregate_total": 10,
+      "detail_completeness": "FULL_DESIGN_FIXTURE_10_ROWS",
+      "is_live_data": false,
+      "production_match_99_percent_verified": false
+    },
+    {
+      "screen_id": "S03",
+      "source_snapshot": "references/S03_DANH_MUC_SAN_PHAM.snapshot.md",
+      "provenance": "SOURCE_FIXTURE",
+      "summary": {
+        "products_total": 326,
+        "linked_skus": 1284,
+        "Đang hoạt động": 312,
+        "Ngừng sử dụng": 14,
+        "percentages_display": [
+          "95,7%",
+          "4,3%"
+        ]
+      },
+      "record_rows": [
+        {
+          "Mã sản phẩm": "SP-HN-001",
+          "Tên sản phẩm": "Bộ nguồn điều khiển",
+          "Nhóm hàng": "Linh kiện điện",
+          "Số SKU": "12",
+          "ĐVT": "Bộ",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "10/09/2026 · 16:42"
+        },
+        {
+          "Mã sản phẩm": "SP-HN-002",
+          "Tên sản phẩm": "Bo mạch điều khiển",
+          "Nhóm hàng": "Linh kiện điện",
+          "Số SKU": "18",
+          "ĐVT": "Cái",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "10/09/2026 · 15:30"
+        },
+        {
+          "Mã sản phẩm": "SP-HN-003",
+          "Tên sản phẩm": "Khay đóng gói",
+          "Nhóm hàng": "Vật tư đóng gói",
+          "Số SKU": "8",
+          "ĐVT": "Cái",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "10/09/2026 · 14:55"
+        },
+        {
+          "Mã sản phẩm": "SP-HN-004",
+          "Tên sản phẩm": "Vỏ bảo vệ",
+          "Nhóm hàng": "Phụ kiện",
+          "Số SKU": "16",
+          "ĐVT": "Cái",
+          "Trạng thái": "Ngừng sử dụng",
+          "Cập nhật": "09/09/2026 · 10:20"
+        },
+        {
+          "Mã sản phẩm": "SP-HN-005",
+          "Tên sản phẩm": "Cáp kết nối",
+          "Nhóm hàng": "Phụ kiện",
+          "Số SKU": "24",
+          "ĐVT": "Sợi",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "09/09/2026 · 09:18"
+        },
+        {
+          "Mã sản phẩm": "SP-HN-006",
+          "Tên sản phẩm": "Bộ phụ kiện lắp đặt",
+          "Nhóm hàng": "Bộ phụ kiện",
+          "Số SKU": "10",
+          "ĐVT": "Bộ",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "08/09/2026 · 16:25"
+        },
+        {
+          "Mã sản phẩm": "SP-HN-007",
+          "Tên sản phẩm": "Tem nhãn tiêu chuẩn",
+          "Nhóm hàng": "Vật tư đóng gói",
+          "Số SKU": "6",
+          "ĐVT": "Cuộn",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "08/09/2026 · 11:03"
+        }
+      ],
+      "record_rows_included": 7,
+      "aggregate_total": 326,
+      "detail_completeness": "PARTIAL_ROWS_ONLY",
+      "is_live_data": false,
+      "production_match_99_percent_verified": false
+    },
+    {
+      "screen_id": "S04",
+      "source_snapshot": "references/S04_DANH_MUC_SKU.snapshot.md",
+      "provenance": "SOURCE_FIXTURE",
+      "summary": {
+        "skus_total": 1284,
+        "Đang hoạt động": 1246,
+        "Ngừng sử dụng": 38,
+        "percentages_display": [
+          "97,0%",
+          "3,0%"
+        ]
+      },
+      "record_rows": [
+        {
+          "Mã SKU": "HN-A01",
+          "Tên sản phẩm": "Bộ nguồn điều khiển A01",
+          "Nhóm hàng": "Linh kiện điện",
+          "ĐVT": "Bộ",
+          "Mã vạch": "8938500123451",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "10/09/2026 · 16:42"
+        },
+        {
+          "Mã SKU": "HN-B12",
+          "Tên sản phẩm": "Bo mạch điều khiển B12",
+          "Nhóm hàng": "Linh kiện điện",
+          "ĐVT": "Cái",
+          "Mã vạch": "8938500123452",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "10/09/2026 · 15:30"
+        },
+        {
+          "Mã SKU": "HN-C03",
+          "Tên sản phẩm": "Khay đóng gói C03",
+          "Nhóm hàng": "Vật tư đóng gói",
+          "ĐVT": "Cái",
+          "Mã vạch": "8938500123453",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "10/09/2026 · 14:55"
+        },
+        {
+          "Mã SKU": "HN-D08",
+          "Tên sản phẩm": "Vỏ bảo vệ D08",
+          "Nhóm hàng": "Phụ kiện",
+          "ĐVT": "Cái",
+          "Mã vạch": "8938500123454",
+          "Trạng thái": "Ngừng sử dụng",
+          "Cập nhật": "09/09/2026 · 10:20"
+        },
+        {
+          "Mã SKU": "HN-E11",
+          "Tên sản phẩm": "Cáp kết nối E11",
+          "Nhóm hàng": "Phụ kiện",
+          "ĐVT": "Sợi",
+          "Mã vạch": "8938500123455",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "09/09/2026 · 09:18"
+        },
+        {
+          "Mã SKU": "HN-F06",
+          "Tên sản phẩm": "Bộ phụ kiện lắp đặt F06",
+          "Nhóm hàng": "Bộ phụ kiện",
+          "ĐVT": "Bộ",
+          "Mã vạch": "8938500123456",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "08/09/2026 · 16:25"
+        },
+        {
+          "Mã SKU": "HN-G15",
+          "Tên sản phẩm": "Tem nhãn tiêu chuẩn G15",
+          "Nhóm hàng": "Vật tư đóng gói",
+          "ĐVT": "Cuộn",
+          "Mã vạch": "8938500123457",
+          "Trạng thái": "Đang hoạt động",
+          "Cập nhật": "08/09/2026 · 11:03"
+        }
+      ],
+      "record_rows_included": 7,
+      "aggregate_total": 1284,
+      "detail_completeness": "PARTIAL_ROWS_ONLY",
+      "is_live_data": false,
+      "production_match_99_percent_verified": false
+    },
+    {
+      "screen_id": "S05",
+      "source_snapshot": "references/S05_DANH_MUC_DAI_LY_NOI_NHAN.snapshot.md",
+      "provenance": "PROPOSED_FIXTURE",
+      "summary": {
+        "recipients_total": 27,
+        "audit_snapshot_date": "2026-10-01",
+        "static_labels": [
+          "Khách công trình",
+          "Khách lẻ"
+        ],
+        "status_counts": null
+      },
+      "record_rows": [
+        {
+          "Mã": "NR-001",
+          "Tên nơi nhận": "Công ty An Phát",
+          "Loại nơi nhận": "Khách công trình",
+          "Thị trường": "Miền Bắc",
+          "Khu vực": "Hà Nội",
+          "Người liên hệ": "Nguyễn Minh Anh",
+          "Điện thoại": "0901 000 101",
+          "Địa chỉ": "18 Đường Số 1, Hà Nội",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "Mã": "NR-002",
+          "Tên nơi nhận": "Công trình Bình Minh",
+          "Loại nơi nhận": "Khách công trình",
+          "Thị trường": "Miền Trung",
+          "Khu vực": "Đà Nẵng",
+          "Người liên hệ": "Trần Quốc Bình",
+          "Điện thoại": "0901 000 102",
+          "Địa chỉ": "25 Đường Số 2, Đà Nẵng",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "Mã": "NR-003",
+          "Tên nơi nhận": "Nguyễn Văn Nam",
+          "Loại nơi nhận": "Khách lẻ",
+          "Thị trường": "Miền Nam",
+          "Khu vực": "TP. Hồ Chí Minh",
+          "Người liên hệ": "Nguyễn Văn Nam",
+          "Điện thoại": "0901 000 103",
+          "Địa chỉ": "36 Đường Số 3, TP. Hồ Chí Minh",
+          "Trạng thái": "Đang sử dụng"
+        },
+        {
+          "Mã": "NR-004",
+          "Tên nơi nhận": "Công ty Thành Đạt",
+          "Loại nơi nhận": "Khách công trình",
+          "Thị trường": "Miền Nam",
+          "Khu vực": "Đồng Nai",
+          "Người liên hệ": "Lê Hoàng Phúc",
+          "Điện thoại": "0901 000 104",
+          "Địa chỉ": "12 Đường Số 4, Đồng Nai",
+          "Trạng thái": "Ngừng sử dụng"
+        },
+        {
+          "Mã": "NR-005",
+          "Tên nơi nhận": "Trần Thị Lan",
+          "Loại nơi nhận": "Khách lẻ",
+          "Thị trường": "Miền Bắc",
+          "Khu vực": "Hải Phòng",
+          "Người liên hệ": "Trần Thị Lan",
+          "Điện thoại": "0901 000 105",
+          "Địa chỉ": "42 Đường Số 5, Hải Phòng",
+          "Trạng thái": "Đang sử dụng"
+        }
+      ],
+      "record_rows_included": 5,
+      "aggregate_total": 27,
+      "detail_completeness": "PARTIAL_ROWS_ONLY",
+      "is_live_data": false,
+      "production_match_99_percent_verified": false
+    }
+  ]
+}

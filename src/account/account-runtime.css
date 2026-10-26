@@ -1,0 +1,39 @@
+.account-logout-dialog { width: min(480px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid var(--hn-border); border-radius: 16px; background: var(--hn-surface); color: var(--hn-text); box-shadow: 0 20px 70px #071e3b38; overflow: hidden; }
+.account-logout-dialog[open] { display: flex; flex-direction: column; }
+.account-logout-dialog::backdrop { background: #0b1f36a3; }
+.account-logout-heading { display: flex; flex-shrink: 0; align-items: center; gap: 12px; padding: 24px 24px 16px; }
+.account-logout-heading h2 { flex: 1; min-width: 0; margin: 0; font-size: 20px; line-height: 1.4; color: var(--hn-text); }
+.account-logout-heading > button { flex-shrink: 0; }
+.account-logout-symbol { display: grid; flex-shrink: 0; place-items: center; width: 48px; height: 48px; border-radius: 12px; color: #ac2d32; background: #fff0f0; }
+.account-logout-body { min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 8px 24px 24px; }
+.account-logout-body p { margin: 0; font-size: 14px; line-height: 1.65; color: var(--hn-muted); }
+.account-logout-body .account-logout-scope { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--hn-border); font-size: 12px; }
+.account-logout-body .account-logout-warning { display: flex; align-items: flex-start; gap: 8px; margin-top: 16px; color: #805312; }
+.account-logout-warning svg { flex-shrink: 0; }
+.account-logout-actions { display: flex; flex-shrink: 0; justify-content: flex-end; flex-wrap: wrap; gap: 12px; padding: 16px 24px; border-top: 1px solid var(--hn-border); background: var(--hn-page); }
+.account-logout-dialog :focus-visible { outline: 2px solid var(--hn-focus); outline-offset: 3px; }
+.account-logout-body:focus-visible { outline-offset: -3px; }
+.account-signedout-banner { position: relative; display: flex; align-items: center; gap: 16px; padding: 18px 32px; background: #eef6fa; color: #163c56; border-bottom: 1px solid #c9dce8; }
+.account-signedout-banner > svg { flex-shrink: 0; }
+.account-signedout-banner > div { flex: 1; min-width: 0; }
+.account-signedout-banner strong { font-size: 15px; }
+.account-signedout-banner p { margin: 4px 0 0; font-size: 13px; line-height: 1.5; }
+.account-signedout-banner .hn-button { flex-shrink: 0; }
+html[data-hn-theme='dark'] .account-logout-symbol { background: #43252d; color: #ffb0b5; }
+html[data-hn-theme='dark'] .account-logout-body .account-logout-warning { color: #edc47b; }
+@media (max-width: 600px) {
+  .account-signedout-banner { flex-wrap: wrap; padding: 16px; gap: 12px; }
+  .account-signedout-banner .hn-button { width: 100%; }
+  .account-logout-heading { padding: 18px 18px 12px; }
+  .account-logout-heading h2 { font-size: 18px; }
+  .account-logout-symbol { display: none; }
+  .account-logout-body { padding: 8px 18px 20px; }
+  .account-logout-actions { padding: 14px 18px; }
+}
+@media (max-height: 440px) {
+  .account-logout-heading { padding-block: 10px; }
+  .account-logout-symbol { display: none; }
+  .account-logout-body { padding-top: 4px; padding-bottom: 12px; }
+  .account-logout-heading h2 { font-size: 18px; }
+  .account-logout-actions { padding-block: 10px; }
+}

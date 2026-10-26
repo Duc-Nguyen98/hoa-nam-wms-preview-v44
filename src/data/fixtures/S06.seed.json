@@ -1,0 +1,164 @@
+{
+  "screen_id": "S06",
+  "title": "Quản lý sản phẩm PV",
+  "schema_role": "frontend_seed_not_backend_DTO",
+  "source_record": "references/source-records/HN_QuanLySanPhamPV_P01_r02_HoSo_2026-10-08.json",
+  "source_revision": "P01 r02 REVIEW · 08/10/2026",
+  "approval_at": "2026-10-09T17:06:04+07:00",
+  "approval_scope": "P01 visual only, not validation of full business dataset",
+  "fixture": {
+    "provenance": "Dữ liệu thiết kế PV có nguồn; không phải API live",
+    "fields": [
+      "productName",
+      "productCode",
+      "sku",
+      "productGroup",
+      "visibilityLabel",
+      "updatedAtLabel"
+    ],
+    "rows": [
+      [
+        "Lò vi sóng MKS",
+        "SP-MKS-001",
+        "SKU-MKS-001",
+        "Điện gia dụng",
+        "Đang hiển thị",
+        "20/09/2026 09:42"
+      ],
+      [
+        "Nồi chiên không dầu MKS",
+        "SP-MKS-002",
+        "SKU-MKS-002",
+        "Điện gia dụng",
+        "Đang hiển thị",
+        "20/09/2026 09:18"
+      ],
+      [
+        "Máy xay đa năng MKS",
+        "SP-MKS-003",
+        "SKU-MKS-003",
+        "Thiết bị nhà bếp",
+        "Đang hiển thị",
+        "20/09/2026 08:56"
+      ],
+      [
+        "Bếp điện từ MKS",
+        "SP-MKS-004",
+        "SKU-MKS-004",
+        "Thiết bị nhà bếp",
+        "Đang ẩn",
+        "19/09/2026 16:20"
+      ],
+      [
+        "Ấm siêu tốc MKS",
+        "SP-MKS-005",
+        "SKU-MKS-005",
+        "Điện gia dụng",
+        "Đang hiển thị",
+        "19/09/2026 14:05"
+      ],
+      [
+        "Máy hút bụi cầm tay MKS",
+        "SP-MKS-006",
+        "SKU-MKS-006",
+        "Thiết bị vệ sinh",
+        "—",
+        "19/09/2026 11:35"
+      ],
+      [
+        "Quạt tuần hoàn MKS",
+        "SP-MKS-007",
+        "SKU-MKS-007",
+        "Điện gia dụng",
+        "Đang hiển thị",
+        "18/09/2026 15:48"
+      ]
+    ],
+    "aggregate": {
+      "total": 128,
+      "visible": 116,
+      "hidden": 12,
+      "missingImage": 7
+    },
+    "missingImageProduct": "SP-MKS-006",
+    "unknownVisibilityProduct": "SP-MKS-006",
+    "sourceRecords": {
+      "baseline": "HN_APP_PV_SAN_PHAM_BASELINE_STATE_PROMPTS_P00-P20_v1.0.md",
+      "librarySourceId": "libfile_1fe48ccc25a0819181272952e4b06bd0",
+      "fixtureRows": [
+        [
+          "Lò vi sóng MKS",
+          "SP-MKS-001",
+          "SKU-MKS-001",
+          "Điện gia dụng",
+          "Đang hiển thị",
+          "20/09/2026 09:42"
+        ],
+        [
+          "Nồi chiên không dầu MKS",
+          "SP-MKS-002",
+          "SKU-MKS-002",
+          "Điện gia dụng",
+          "Đang hiển thị",
+          "20/09/2026 09:18"
+        ],
+        [
+          "Máy xay đa năng MKS",
+          "SP-MKS-003",
+          "SKU-MKS-003",
+          "Thiết bị nhà bếp",
+          "Đang hiển thị",
+          "20/09/2026 08:56"
+        ],
+        [
+          "Bếp điện từ MKS",
+          "SP-MKS-004",
+          "SKU-MKS-004",
+          "Thiết bị nhà bếp",
+          "Đang ẩn",
+          "19/09/2026 16:20"
+        ],
+        [
+          "Ấm siêu tốc MKS",
+          "SP-MKS-005",
+          "SKU-MKS-005",
+          "Điện gia dụng",
+          "Đang hiển thị",
+          "19/09/2026 14:05"
+        ],
+        [
+          "Máy hút bụi cầm tay MKS",
+          "SP-MKS-006",
+          "SKU-MKS-006",
+          "Thiết bị vệ sinh",
+          "—",
+          "19/09/2026 11:35"
+        ],
+        [
+          "Quạt tuần hoàn MKS",
+          "SP-MKS-007",
+          "SKU-MKS-007",
+          "Điện gia dụng",
+          "Đang hiển thị",
+          "18/09/2026 15:48"
+        ]
+      ],
+      "fixtureKind": "Dữ liệu thiết kế PV có nguồn; không phải API live",
+      "aggregate": "128 = 116 + 12; 7 thiếu ảnh là chỉ số độc lập"
+    }
+  },
+  "completeness": {
+    "total_in_design": 128,
+    "provided_detail_records": 7,
+    "missing_detail_records": 121,
+    "page_size": 7,
+    "full_dataset": false,
+    "api_verified": false
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  },
+  "runtime_execution_status": "NOT_RUN_IN_PROMPT_PACKAGE"
+}

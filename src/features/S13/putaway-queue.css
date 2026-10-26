@@ -1,0 +1,57 @@
+/* S13 Premium composition only. Shared controls/selection/heading/tab skins belong to S00. */
+.hn-shell .hn-catalogue-screen.s13-screen { gap: var(--hn-page-gap, 20px); }
+.s13-overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(340px, .9fr); align-items: center; gap: var(--hn-space-6, 24px); min-width: 0; }
+.s13-overview[data-has-summary='false'] { grid-template-columns: minmax(0, 1fr); }
+.s13-summary { min-width: 0; }
+.s13-summary-caption { margin: 0; font-size: 12px; line-height: 20px; color: var(--hn-muted); }
+.s13-tabs { min-width: 0; }
+.s13-list { min-width: 0; padding: 0 var(--hn-panel-padding, 20px); background: var(--hn-surface); border: 1px solid var(--hn-border); border-radius: var(--hn-card-radius); box-shadow: var(--hn-component-shadow); }
+.s13-filters { min-width: 0; padding-top: var(--hn-panel-padding, 20px); }
+.s13-list-context { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; padding-bottom: 12px; min-width: 0; }
+.s13-source-limit { display: flex; align-items: flex-start; gap: 8px; flex: 1 1 420px; margin: 0; font-size: 12px; line-height: 20px; color: var(--hn-muted); overflow-wrap: anywhere; }
+.s13-source-limit svg { flex: 0 0 auto; margin-top: 2px; color: var(--hn-control); }
+.s13-source-limit strong { font-weight: 600; color: var(--hn-text); }
+.s13-selection { display: flex; flex-direction: column; align-items: flex-end; flex: 0 1 auto; max-width: 100%; font-size: 12px; line-height: 20px; color: var(--hn-muted); }
+.s13-selection-count { white-space: nowrap; }
+.s13-selection-hint { color: var(--hn-muted); font-size: 12px; font-weight: 400; overflow-wrap: anywhere; }
+.s13-selection[data-active='true'] { color: var(--hn-control); }
+.s13-selection strong { font-variant-numeric: tabular-nums; }
+.s13-table { min-width: 0; margin-inline: calc(-1 * var(--hn-panel-padding, 20px)); }
+.s13-table .hn-table-scroll { max-height: 568px; }
+.s13-table table { min-width: 1192px; table-layout: fixed; }
+.s13-screen .s13-table :is(th, td) { padding-inline: 12px; white-space: normal; line-height: 20px; }
+.s13-table th[data-column='selection'] { width: 64px; }
+.s13-table th[data-column='box'] { width: 160px; }
+.s13-table th[data-column='sku'] { width: 88px; }
+.s13-table th[data-column='name'] { width: 200px; }
+.s13-table th[data-column='receipt'] { width: 160px; }
+.s13-table th[data-column='quantity'] { width: 84px; }
+.s13-table th[data-column='status'] { width: 144px; }
+.s13-table th[data-column='updated'] { width: 92px; }
+.s13-table th[data-column='action'] { width: 144px; }
+.s13-check { display: inline-flex; align-items: center; justify-content: center; min-width: var(--hn-touch-target); min-height: var(--hn-touch-target); cursor: pointer; }
+.s13-check input { width: 18px; height: 18px; margin: 0; accent-color: var(--hn-control); cursor: pointer; }
+.s13-stack { display: flex; flex-direction: column; gap: 2px; overflow-wrap: anywhere; }
+.s13-code { color: var(--hn-text); font-size: 13px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.s13-number { font-variant-numeric: tabular-nums; font-weight: 600; }
+.s13-meta { color: var(--hn-muted); font-size: 12px; font-weight: 400; }
+.s13-compact { display: none; }
+.s13-scroll-tools { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; font-size: 12px; color: var(--hn-muted); }
+.s13-scroll-tools > div { display: flex; gap: 4px; flex-shrink: 0; }
+.s13-footnotes { display: flex; flex-wrap: wrap; gap: 4px 24px; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+.s13-footnotes p { margin: 0; }
+@container (max-width: 950px) {
+  .s13-overview { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+}
+@container (max-width: 570px) {
+  .s13-list { padding-inline: var(--hn-panel-padding-compact, 16px); }
+  .s13-table { margin-inline: calc(-1 * var(--hn-panel-padding-compact, 16px)); }
+  .s13-selection { align-items: flex-start; }
+}
+.s13-cohort { display: flex; flex-wrap: wrap; gap: 8px; }
+.s13-operational { padding: var(--hn-panel-padding, 20px); }
+.s13-operational__heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.s13-operational__heading h2 { margin: 0; font-size: 18px; }
+.s13-operational__fields { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.s13-operational__fields dt { font-weight: 600; }
+.s13-operational__fields dd { margin: 4px 0 0; overflow-wrap: anywhere; }

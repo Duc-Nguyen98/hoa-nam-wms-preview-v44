@@ -1,0 +1,15 @@
+{
+  "screenId": "S03",
+  "revision": "P01_REVIEW_2026-10-08",
+  "provenance": "OBSERVED_PREVIEW",
+  "profile": { "initials": "DQ", "displayName": "Đức Quang" },
+  "profileSource": {
+    "pageId": "page_6fbc322c04a08191adc159e11a742412",
+    "pageSequence": 3,
+    "referenceRevision": "P01_REVIEW_2026-10-08",
+    "evidence": "output/S03/P01_REVIEW_2026-10-08/source-evidence/REFERENCE_IMAGE_MANIFEST.json",
+    "verifiedVariants": ["desktop-mo-rong", "desktop-thu-gon", "tablet-ngang", "tablet-doc", "drawer-mo"],
+    "scope": "OBSERVED_IN_FIVE_VERIFIED_S03_REFERENCES"
+  },
+  "profileDoesNotConfirmRoleOrPermission": true
+}

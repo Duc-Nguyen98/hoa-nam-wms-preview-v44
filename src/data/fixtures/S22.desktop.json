@@ -1,0 +1,12 @@
+{
+  "sourceId": "S22_DESKTOP_COMMON_2026_10_13",
+  "selectedFixture": "DESKTOP",
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "rows": [
+    { "ticketCode": "BH-20260910-0012", "serial": "SN1234567890", "sku": "SP-LT-001", "productName": "Laptop Dell Latitude 5440", "component": "Pin laptop", "receivedDate": "2026-09-10", "dueDate": "2026-09-17", "status": "Hoàn tất" },
+    { "ticketCode": "BH-20260909-0011", "serial": "SN9876543210", "sku": "SP-MN-002", "productName": "Màn hình Dell P2422H", "component": "Tấm nền màn hình", "receivedDate": "2026-09-09", "dueDate": "2026-09-16", "status": "Đang xử lý" },
+    { "ticketCode": "BH-20260908-0010", "serial": "SN4567891230", "sku": "SP-MT-003", "productName": "Chuột Logitech M331", "component": "Công tắc chuột", "receivedDate": "2026-09-08", "dueDate": "2026-09-15", "status": "Chờ tiếp nhận" },
+    { "ticketCode": "BH-20260908-0009", "serial": "SN3216549870", "sku": "SP-KB-004", "productName": "Bàn phím Logitech K120", "component": "Phím bấm", "receivedDate": "2026-09-08", "dueDate": "2026-09-15", "status": "Hoàn tất" },
+    { "ticketCode": "BH-20260907-0008", "serial": "SN7891234560", "sku": "SP-CS-005", "productName": "Sạc Dell 65W", "component": "Cáp sạc", "receivedDate": "2026-09-07", "dueDate": "2026-09-14", "status": "Đang xử lý" }
+  ]
+}

@@ -1,0 +1,31 @@
+/* S08 composition only. Shared control, badge and focus rules remain owned by S00. */
+.s08-session-card { width:100%; max-width:640px; margin:0; padding:40px; border:1px solid var(--hn-border); border-radius:16px; background:var(--hn-surface); box-shadow:var(--hn-component-shadow); }
+.s08-session-card h2 { margin:0 0 28px; color:var(--hn-text); font-size:28px; line-height:1.35; font-weight:700; letter-spacing:-.025em; }
+.s08-account,.s08-warehouse { display:flex; align-items:center; gap:18px; min-width:0; padding:20px; border:1px solid var(--hn-border); border-radius:10px; background:var(--hn-page); }
+.s08-account strong,.s08-warehouse strong { font-size:18px; line-height:1.5; }
+.s08-account p { margin:4px 0 0; color:var(--hn-muted); font-size:16px; line-height:1.5; }
+.s08-avatar { display:grid; place-items:center; width:56px; height:56px; flex-shrink:0; border-radius:50%; background:#dce6ee; color:var(--hn-brand); font-size:20px; font-weight:600; }
+.s08-warehouse { margin-top:20px; flex-wrap:wrap; gap:12px; }
+.s08-warehouse > svg { flex-shrink:0; color:var(--hn-brand); }
+.s08-warehouse > .hn-status-badge { margin-left:auto; }
+.s08-status-dot { margin-right:6px; vertical-align:1px; }
+.s08-instruction { display:flex; align-items:center; gap:16px; padding:20px; margin-top:24px; background:#edf7fc; border-radius:10px; color:var(--hn-control); }
+.s08-instruction > svg { flex-shrink:0; }
+.s08-instruction p { margin:0; color:var(--hn-text); font-size:16px; line-height:1.6; }
+.s08-session-card > .s08-confirm { position:relative; width:100%; min-height:56px; margin-top:24px; padding:14px 48px; border-radius:8px; font-size:18px; line-height:1.5; white-space:normal; }
+.s08-confirm > svg { position:absolute; right:18px; }
+.s08-secondary { display:flex; justify-content:center; margin-top:16px; }
+.s08-secondary > button { font-size:16px; gap:12px; }
+.s08-feedback { margin:16px 0 0; font-size:14px; line-height:1.6; color:#ac2d32; }
+html[data-hn-theme='dark'] .s08-feedback { color:#ffb0b5; }
+@media (max-width:1400px) {
+  .s08-session-card { padding:32px; }
+  .s08-session-card h2 { font-size:24px; margin-bottom:24px; }
+}
+@media (max-width:600px) {
+  .s08-session-card { padding:24px; }
+  .s08-session-card h2 { font-size:22px; }
+  .s08-account,.s08-warehouse { padding:16px; gap:12px; }
+  .s08-instruction { padding:16px; gap:12px; }
+  .s08-warehouse > .hn-status-badge { margin-left:0; }
+}

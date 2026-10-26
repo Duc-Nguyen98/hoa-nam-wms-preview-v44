@@ -1,0 +1,127 @@
+{
+  "screen_id": "S12",
+  "title": "Danh sách phiếu nhập",
+  "schema_role": "frontend_seed_not_backend_DTO",
+  "source_record": "references/source-records/HN_NhapKho_DanhSachPhieuNhap_P01_r01_HoSo_2026-10-08.json",
+  "source_revision": "P01 r01 REVIEW · 08/10/2026",
+  "approval_at": "2026-10-09T17:06:04+07:00",
+  "approval_scope": "P01 visual only, not validation of full business dataset",
+  "fixture": {
+    "provenance": "Historical source illustration, NOT API data",
+    "totalReceipts": 84,
+    "received": 64,
+    "draft": 12,
+    "recording": 8,
+    "percentage": "76,2%",
+    "scannedCodeAggregate": 1284,
+    "visiblePageCodeSum": 320,
+    "pageSize": 7,
+    "fields": [
+      "receipt",
+      "source",
+      "reference",
+      "skuCount",
+      "codeCount",
+      "creator",
+      "status",
+      "updatedAt",
+      "action"
+    ],
+    "rows": [
+      [
+        "PN-260910-084",
+        "Nhập bổ sung tháng 09",
+        "REF-SEP-090",
+        0,
+        0,
+        "Nguyễn Văn A",
+        "Nháp",
+        "10/09/2026 16:42",
+        "Chỉnh sửa"
+      ],
+      [
+        "PN-260910-083",
+        "NCC Minh họa A",
+        "PO-0909-18",
+        5,
+        38,
+        "Trần Minh K",
+        "Đang ghi nhận",
+        "10/09/2026 15:30",
+        "Theo dõi"
+      ],
+      [
+        "PN-260910-082",
+        "NCC Minh họa B",
+        "PO-0909-17",
+        3,
+        42,
+        "Lê Thu H",
+        "Đã nhập kho",
+        "10/09/2026 14:55",
+        "Chi tiết"
+      ],
+      [
+        "PN-260909-081",
+        "Hàng bổ sung kiểm tra",
+        "REF-0909-08",
+        0,
+        0,
+        "Nguyễn Văn A",
+        "Nháp",
+        "09/09/2026 16:10",
+        "Chỉnh sửa"
+      ],
+      [
+        "PN-260909-080",
+        "NCC Minh họa C",
+        "PO-0909-16",
+        7,
+        84,
+        "Phạm Anh D",
+        "Đã nhập kho",
+        "09/09/2026 14:20",
+        "Chi tiết"
+      ],
+      [
+        "PN-260908-079",
+        "NCC Minh họa A",
+        "PO-0908-15",
+        4,
+        36,
+        "Trần Minh K",
+        "Đã nhập kho",
+        "08/09/2026 11:03",
+        "Chi tiết"
+      ],
+      [
+        "PN-260907-078",
+        "NCC Minh họa B",
+        "PO-0907-14",
+        6,
+        120,
+        "Lê Thu H",
+        "Đã nhập kho",
+        "07/09/2026 09:18",
+        "Chi tiết"
+      ]
+    ],
+    "remainingRows": "UNKNOWN: remaining77 receipt details are not invented",
+    "aggregateCaution": "64+12+8=84 and64/84≈76.2%; 1,284 is source aggregate, not current seven-row sum320; full-source aggregate not recomputed.",
+    "publicLabel": "Dữ liệu minh họa"
+  },
+  "completeness": {
+    "total_in_design": 84,
+    "provided_detail_records": 7,
+    "missing_detail_records": 77,
+    "page_size": 7,
+    "full_dataset": false,
+    "api_verified": false
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  },
+  "runtime_execution_status": "NOT_RUN_IN_PROMPT_PACKAGE"
+}

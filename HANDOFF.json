@@ -1,0 +1,8 @@
+{
+  "version": 44,
+  "sourceCommit": "af8148d248048fa3a2319428774a38425fd76288",
+  "verifiedPreviewBuildId": "4e35396cfaf3fe9287cb468c4e15ed2cc46754b7c19b717c93071ff62110f7ea",
+  "scope": "Published v44 source snapshot plus review evidence; excludes later uncommitted work.",
+  "report": "public/review/DOCUMENT_FLOW_VISUAL_COMPARISON.html",
+  "capturedFlow": "public/review/v44-document-flow-review-20261026/results.json"
+}

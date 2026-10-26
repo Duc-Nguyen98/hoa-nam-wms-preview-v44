@@ -1,0 +1,27 @@
+{
+  "provenance": {
+    "source": "S25_BAO_CAO_XUAT_THEO_NGUOI_NHAN_DAI_LY.md / P11-W09 / P01 r01 REVIEW",
+    "selection": "OWNER_APPROVED_VISUAL_AND_SELECTED5_REPORTED_IN_OWNER_SPEC",
+    "periodTimeZone": "Asia/Ho_Chi_Minh",
+    "identity": "rowKey is a frontend-only stable source ordinal; no dealer ID or document relationship inferred",
+    "missingReferences": ["S25_REFERENCE.json", "S25_SOURCE.md", "five approved PNGs"]
+  },
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "summary": {
+    "documents": 342, "completed": 298, "incomplete": 44, "dealers": 48,
+    "top": [
+      { "dealer": "Đại lý Minh Phát", "documents": 42, "completed": 38, "incomplete": 4 },
+      { "dealer": "Đại lý Hoàng Gia", "documents": 36, "completed": 32, "incomplete": 4 },
+      { "dealer": "Đại lý Thành Công", "documents": 31, "completed": 27, "incomplete": 4 },
+      { "dealer": "Đại lý An Phú", "documents": 28, "completed": 25, "incomplete": 3 },
+      { "dealer": "Đại lý Bắc Nam", "documents": 24, "completed": 22, "incomplete": 2 }
+    ]
+  },
+  "rows": [
+    { "rowKey": "S25-source-01", "dealer": "Đại lý Minh Phát", "recipient": "Nguyễn Văn Minh", "documents": 42, "products": 1860, "completed": 38, "incomplete": 4, "lastExport": "2026-09-10" },
+    { "rowKey": "S25-source-02", "dealer": "Đại lý Hoàng Gia", "recipient": "Trần Thị Lan", "documents": 36, "products": 1420, "completed": 32, "incomplete": 4, "lastExport": "2026-09-10" },
+    { "rowKey": "S25-source-03", "dealer": "Đại lý Thành Công", "recipient": "Lê Minh Tuấn", "documents": 31, "products": 1175, "completed": 27, "incomplete": 4, "lastExport": "2026-09-09" },
+    { "rowKey": "S25-source-04", "dealer": "Đại lý An Phú", "recipient": "Phạm Thu Hà", "documents": 28, "products": 980, "completed": 25, "incomplete": 3, "lastExport": "2026-09-09" },
+    { "rowKey": "S25-source-05", "dealer": "Đại lý Bắc Nam", "recipient": "Nguyễn Đức Anh", "documents": 24, "products": 845, "completed": 22, "incomplete": 2, "lastExport": "2026-09-08" }
+  ]
+}

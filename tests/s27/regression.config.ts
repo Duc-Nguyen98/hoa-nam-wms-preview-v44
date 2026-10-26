@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'../visual',testMatch:'notification.spec.ts',workers:1,timeout:30000,expect:{timeout:5000},use:{baseURL:process.env.S27_BASE_URL??'http://127.0.0.1:5182',headless:true,locale:'vi-VN',timezoneId:'Asia/Bangkok',colorScheme:'light',reducedMotion:'reduce'},reporter:[['list'],['json',{outputFile:'output/s27-qa/notification-regression.json'}]],outputDir:'../../output/s27-qa/notification-artifacts'});

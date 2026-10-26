@@ -1,0 +1,83 @@
+/* S05-approved table rhythm. Column widths, visibility, sticky offsets and
+   business actions remain owned by each screen. S05 keeps its approved CSS. */
+:root {
+  --hn-table-heading: var(--hn-fill);
+  --hn-table-rule: var(--hn-border-subtle);
+  --hn-table-hover: var(--hn-hover);
+  --hn-table-active: var(--hn-action-fill);
+  --hn-table-action: var(--hn-action-fill);
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] > thead > tr > th {
+  height: var(--hn-table-header-height);
+  padding-block: 0;
+  background: var(--hn-table-heading);
+  color: var(--hn-muted);
+  font-size: var(--hn-font-label);
+  line-height: var(--hn-line-label);
+  font-weight: 600;
+  white-space: normal;
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] > tbody > tr > td {
+  height: var(--hn-table-row-height);
+  padding-block: var(--hn-space-3);
+  background: var(--hn-surface, #fff);
+  color: var(--hn-text);
+  line-height: 22px;
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] > :is(thead,tbody) > tr > :is(th,td) {
+  border-block-end: 1px solid var(--hn-table-rule);
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] .hn-table-sort {
+  min-height: 44px;
+  margin-block: 0;
+  padding-block: 0;
+  gap: 8px;
+  font-size: var(--hn-font-label);
+  line-height: var(--hn-line-label);
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] > tbody > tr:hover > td {
+  background: var(--hn-table-hover);
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] > tbody > tr:is(:focus-within,[data-selected='true']) > td {
+  background: var(--hn-table-active);
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] td .hn-button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--hn-table-action);
+  border-color: transparent;
+  color: var(--hn-control);
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'] td .hn-button:hover:not(:disabled) {
+  border-color: var(--hn-control);
+}
+/* Respect the public density/action APIs after the historical S05 layer. A
+   44px action remains reachable inside 8px top/bottom cell padding. */
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'][data-density='compact'] > tbody > tr > td {
+  height: var(--hn-table-row-compact-height);
+  padding-block: var(--hn-space-2);
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'][data-row-action-appearance='quiet'] td .hn-button--ghost {
+  background: transparent;
+  border-color: transparent;
+}
+.hn-shell [data-screen]:not([data-screen='S05']) .hn-table[data-ui-contract='s05'][data-row-action-appearance='quiet'] td .hn-button--ghost:hover:not(:disabled) {
+  background: var(--hn-table-action);
+  border-color: var(--hn-control-border);
+}
+/* Sticky boundaries use the same semantic divider as ordinary cells. The
+   previous light literal produced a bright white rail in Dark Mode. */
+.hn-shell .hn-table[data-ui-contract='s05'] :is(th,td)[data-sticky-edge='end'] {
+  box-shadow: 1px 0 0 var(--hn-table-rule);
+}
+.hn-shell .hn-table[data-ui-contract='s05'] :is(th,td)[data-sticky-edge='start'] {
+  box-shadow: -1px 0 0 var(--hn-table-rule);
+}

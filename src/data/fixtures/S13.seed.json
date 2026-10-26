@@ -1,0 +1,118 @@
+{
+  "screen_id": "S13",
+  "title": "Hàng chờ xếp khay",
+  "schema_role": "frontend_seed_not_backend_DTO",
+  "source_record": "references/source-records/HN_NhapKho_HangChoXepKhay_P01_r01_HoSo_2026-10-08.json",
+  "source_revision": "P01 r01 REVIEW · 08/10/2026",
+  "approval_at": "2026-10-09T17:06:04+07:00",
+  "approval_scope": "P01 visual only, not validation of full business dataset",
+  "fixture": {
+    "provenance": "Historical indexed screenshot illustration, NOT API data",
+    "boxCount": 24,
+    "skuCount": 8,
+    "quantityAggregate": 642,
+    "visibleRows": [
+      [
+        "BOX-260920-024",
+        "HN-A01",
+        "Bộ nguồn điều khiển A01",
+        "PN-260920-084",
+        40,
+        "Chờ xếp khay",
+        "—",
+        "Tạo lệnh"
+      ],
+      [
+        "BOX-260920-023",
+        "HN-B12",
+        "Bo mạch điều khiển B12",
+        "PN-260920-083",
+        24,
+        "Chờ xếp khay",
+        "—",
+        "Tạo lệnh"
+      ],
+      [
+        "BOX-260920-022",
+        "HN-C03",
+        "Khay đóng gói C03",
+        "PN-260920-082",
+        120,
+        "Chờ xếp khay",
+        "—",
+        "Tạo lệnh"
+      ],
+      [
+        "BOX-260919-021",
+        "HN-D08",
+        "Vỏ bảo vệ D08",
+        "PN-260919-081",
+        36,
+        "Chờ xếp khay",
+        "—",
+        "Tạo lệnh"
+      ],
+      [
+        "BOX-260919-020",
+        "HN-E11",
+        "Cáp kết nối E11",
+        "PN-260919-080",
+        84,
+        "Chờ xếp khay",
+        "—",
+        "Tạo lệnh"
+      ],
+      [
+        "BOX-260918-019",
+        "HN-F06",
+        "Bộ phụ kiện lắp đặt F06",
+        "PN-260918-079",
+        150,
+        "Chờ xếp khay",
+        "—",
+        "Tạo lệnh"
+      ],
+      [
+        "BOX-260918-018",
+        "HN-G15",
+        "Tem nhãn tiêu chuẩn G15",
+        "PN-260918-078",
+        72,
+        "Chờ xếp khay",
+        "—",
+        "Tạo lệnh"
+      ]
+    ],
+    "fields": [
+      "boxCode",
+      "sku",
+      "componentName",
+      "receiptCode",
+      "quantity",
+      "status",
+      "updatedAt",
+      "action"
+    ],
+    "visibleQuantitySum": 526,
+    "visibleDistinctSKU": 7,
+    "hiddenRows": 17,
+    "hiddenRowDetails": "UNKNOWN: not invented",
+    "aggregateCaution": "642 and8SKU copied from whole source demo; seven visible rows sum526 and7distinctSKU. Full aggregate not recomputed without17remainingrecords. Quantity units/conversion not verified for actual runtime.",
+    "updatedAtDecision": "Source09:42/09:18/08:56/Hôm qua/Hôm qua/18/09/18/09 lack full date context; proposed — instead of fabricated timestamps.",
+    "publicLabel": "Dữ liệu minh họa"
+  },
+  "completeness": {
+    "total_in_design": 24,
+    "provided_detail_records": 7,
+    "missing_detail_records": 17,
+    "page_size": 7,
+    "full_dataset": false,
+    "api_verified": false
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  },
+  "runtime_execution_status": "NOT_RUN_IN_PROMPT_PACKAGE"
+}

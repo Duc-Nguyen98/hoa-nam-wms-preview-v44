@@ -1,0 +1,27 @@
+{
+  "screen_id": "S11",
+  "source_revision": "P01 r01 REVIEW · 08/10/2026",
+  "fixture": {
+    "provenance": "Historical image demo; NOT API data",
+    "trayCount": 12,
+    "boxCount": 76,
+    "visibleRows": [
+      ["TRAY-A-011", 9, 4, "PTW-260920-003"],
+      ["TRAY-B-007", 7, 4, "PTW-260919-011"],
+      ["TRAY-B-004", 8, 5, "PTW-260919-009"],
+      ["TRAY-A-009", 8, 3, null],
+      ["TRAY-A-008", 6, 3, null],
+      ["TRAY-C-003", 5, 2, null],
+      ["TRAY-C-002", 7, 4, null]
+    ],
+    "visibleBoxSum": 50,
+    "hiddenPageRows": 5,
+    "rowUpdatedAt": "UNKNOWN: rendered —",
+    "aggregateCaution": "12/76 is a source aggregate; the visible seven rows sum to 50 BOX."
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  }
+}

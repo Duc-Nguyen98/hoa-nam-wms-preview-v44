@@ -1,0 +1,8 @@
+{
+  "screenId": "S05",
+  "revision": "P01_r02",
+  "provenance": "OBSERVED_PREVIEW",
+  "profile": { "initials": "DQ", "displayName": "Đức Quang" },
+  "source": { "pageId": "page_e142a18a43fc81919dc0f49f35712146", "sequence": 4, "verifiedVariants": 5, "manifest": "output/S05/P01_r02_2026-10-09/source-evidence/REFERENCE_IMAGE_MANIFEST.json" },
+  "profileDoesNotConfirmRoleOrPermission": true
+}

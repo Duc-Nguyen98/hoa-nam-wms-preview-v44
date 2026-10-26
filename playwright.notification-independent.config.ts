@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/visual',testMatch:'notification-independent.spec.ts',workers:1,fullyParallel:false,timeout:25000,expect:{timeout:4000},use:{baseURL:'http://127.0.0.1:5197',headless:true,locale:'vi-VN',timezoneId:'Asia/Bangkok',reducedMotion:'reduce'},reporter:[['list'],['json',{outputFile:'W:/WMS_HoaNam/Scanner_CMS/output/notification-p0-20261025/independent-results.json'}]],outputDir:'W:/WMS_HoaNam/Scanner_CMS/output/notification-p0-20261025/independent-test-results'});

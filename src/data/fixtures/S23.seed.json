@@ -1,0 +1,15 @@
+{
+  "screen": "S23",
+  "provenance": "CONFIRMED_DECISION: S23_BAO_CAO_NHAN_DONG_GOI_IN_LAI.md, R04 selected 2026-10-11T21:29:03+07:00",
+  "timeZone": "Asia/Ho_Chi_Minh",
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "summary": { "uniqueLabels": 1284, "successful": 1268, "errors": 16, "reprints": 82, "successRate": "98,8%" },
+  "statusOptions": ["In thành công", "Lỗi in"],
+  "rows": [
+    { "labelCode": "LBH0012345", "documentCode": "PN-0042", "sku": "SP00123", "productName": "Bàn phím cơ Logitech K120", "printedAt": "2026-09-10T14:32:00+07:00", "status": "In thành công", "printCount": 1 },
+    { "labelCode": "LBH0012344", "documentCode": "PN-0041", "sku": "SP00987", "productName": "Chuột không dây Logitech B175", "printedAt": "2026-09-10T11:20:00+07:00", "status": "In thành công", "printCount": 1 },
+    { "labelCode": "LBH0012343", "documentCode": "XK-0021", "sku": "SP00567", "productName": "Tai nghe Sony WH-CH520", "printedAt": "2026-09-09T16:45:00+07:00", "status": "Lỗi in", "printCount": 1 },
+    { "labelCode": "LBH0012342", "documentCode": "PN-0040", "sku": "SP00321", "productName": "Cáp sạc USB-C Anker 1.8m", "printedAt": "2026-09-09T09:12:00+07:00", "status": "In thành công", "printCount": 2 },
+    { "labelCode": "LBH0012341", "documentCode": "PN-0038", "sku": "SP00765", "productName": "Sạc dự phòng Xiaomi 20000mAh", "printedAt": "2026-09-08T15:30:00+07:00", "status": "In thành công", "printCount": 1 }
+  ]
+}

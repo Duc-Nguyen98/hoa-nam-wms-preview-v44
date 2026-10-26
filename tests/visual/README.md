@@ -1,0 +1,13 @@
+# Notification P0 regression
+
+The approved raster originals are `C:/Users/Admin/Desktop/1.png` (Desktop) and `2.png` (Tablet). `f1.png` is the user-provided Actual before. Never regenerate or overwrite those originals with application output.
+
+Run Vite on localhost5197, then `node node_modules/@playwright/test/cli.js test -c playwright.notification.config.ts` and `node node_modules/@playwright/test/cli.js test -c playwright.notification-independent.config.ts`. Use a temporary directory on W: if the host C: temp disk is full. Run `compare-reference.py` with the bundled Python/Pillow runtime after screenshots; outputs are under `W:/WMS_HoaNam/Scanner_CMS/output/notification-p0-20261025`.
+
+`notification.html` is a Vite test entry, not the production build entry. Its six artwork records are isolated fixtures, never installed in Main notification storage. Date is fixed at2026-10-25 12:00 GMT+7; locale/theme/timezone, viewport and DPR are recorded. CSS animation/transition is disabled at capture. The 800×1280 CSS DPR2 tablet profile generates1600×2560 output; DPR2 is an explicit test assumption, not inferred from PNG dimensions or certified on a physical tablet.
+
+`BeforeNotificationCenter.tsx` / `before.css` preserve the old implementation for a controlled before composition with current test data/shared shell. They do not replace `f1.png` as original Actual evidence. Approved images are cropped to modal bounds and resized only into derived `desktop/baseline.png` and `tablet/baseline.png`. Full actuals and modal-only actuals are both retained. `diff.png` displays absolute channel difference enhanced for inspection with no threshold/mask; `overlay.png` is a50% blend. There is no invented pixel-similarity PASS. Structural, type, spacing, color and rendering variation are reviewed separately.
+
+The stable-rendering assertion compares two captures of the same state only to detect nondeterminism; it is not a design approval baseline. No `--update-snapshots` step blesses the implementation. Functional assertions use the real component, store and Preview persistence. Backend, actual-document RBAC and public deployment need separate verification; local tests cannot certify those gates.
+
+Preview notifications now start empty without an explicitly supplied feed. The previous v2 synthetic namespace remains untouched on disk; v3 does not pretend old invented identifiers are real documents. New presentation data is an internal view-model, not an alteration to any HTTP API. Targets must be explicitly verified by a supplying adapter; missing/unverified records show no fabricated card fields or document CTA.

@@ -1,0 +1,31 @@
+{
+  "provenance": {
+    "screen": "S26", "candidate": "P01_FULL", "selected": true,
+    "decision": "Owner confirmed CMS + full P01 in this chat, 2026-10-13 UTC+7",
+    "source": "S26_BAO_CAO_TRUY_VET_HANG_HOA.md: P01 đầy đủ + Dữ liệu và snapshot nguồn",
+    "referenceJsonAvailable": false, "referenceImageVerified": false,
+    "backendDto": null, "endpoint": null, "permission": null,
+    "notes": "Keep literal identifiers; dates inside identifiers are not timestamps. Completeness is a snapshot, never derived. C03 subtype is unknown."
+  },
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "summary": {
+    "total": 128, "events": 342, "needsReview": 7, "qualityRate": "94,5%",
+    "complete": 121, "missingEvents": 5, "statusMismatch": 2,
+    "daily": [
+      { "date": "2026-09-04", "events": 38 },
+      { "date": "2026-09-05", "events": 44 },
+      { "date": "2026-09-06", "events": 41 },
+      { "date": "2026-09-07", "events": 52 },
+      { "date": "2026-09-08", "events": 60 },
+      { "date": "2026-09-09", "events": 58 },
+      { "date": "2026-09-10", "events": 49 }
+    ]
+  },
+  "rows": [
+    { "sku": "HN-A01", "name": "Thiết bị gia dụng", "serial": "SN-260918-00184", "lot": "LOT-260918", "pallet": "PAL-HN-0184", "status": "Đang tồn kho", "location": "Khu A · Kệ A-03 · Ô 02", "lastEvent": "Kiểm kê", "updatedAt": "2026-09-10T15:42:00+07:00", "completeness": 100 },
+    { "sku": "HN-B02", "name": "Máy in công nghiệp", "serial": "SN-260905-00321", "lot": "LOT-260905", "pallet": "PAL-HN-0210", "status": "Đang tồn kho", "location": "Khu B · Kệ B-01 · Ô 05", "lastEvent": "Nhập kho", "updatedAt": "2026-09-09T11:20:00+07:00", "completeness": 100 },
+    { "sku": "HN-C03", "name": "Thiết bị mạng", "serial": "SN-260901-01736", "lot": "LOT-260901", "pallet": "PAL-HN-0112", "status": "Cần kiểm tra", "location": "Khu A · Kệ A-05 · Ô 01", "lastEvent": "Chuyển kho", "updatedAt": "2026-09-08T14:30:00+07:00", "completeness": 85 },
+    { "sku": "HN-D04", "name": "Pin lưu điện", "serial": "SN-260828-00912", "lot": "LOT-260828", "pallet": "PAL-HN-0076", "status": "Đã xuất kho", "location": null, "lastEvent": "Xuất kho", "updatedAt": "2026-09-07T16:10:00+07:00", "completeness": 100 },
+    { "sku": "HN-E05", "name": "Camera giám sát", "serial": "SN-260910-00455", "lot": "LOT-260910", "pallet": "PAL-HN-0250", "status": "Đang tồn kho", "location": "Khu C · Kệ C-02 · Ô 03", "lastEvent": "Kiểm kê", "updatedAt": "2026-09-10T09:18:00+07:00", "completeness": 100 }
+  ]
+}

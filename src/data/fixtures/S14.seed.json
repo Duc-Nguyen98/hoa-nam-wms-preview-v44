@@ -1,0 +1,141 @@
+{
+  "screen_id": "S14",
+  "title": "Lệnh xếp khay",
+  "schema_role": "frontend_seed_not_backend_DTO",
+  "source_record": "references/source-records/HN_NhapKho_LenhXepKhay_P01_r01_HoSo_2026-10-08.json",
+  "source_revision": "P01 r01 REVIEW · 08/10/2026",
+  "approval_at": "2026-10-09T17:06:04+07:00",
+  "approval_scope": "P01 visual only, not validation of full business dataset",
+  "fixture": {
+    "provenance": "Historical screenshot illustration, NOT API data",
+    "totalOrders": 82,
+    "confirmedOrders": 76,
+    "draftOrders": 4,
+    "cancelledOrders": 2,
+    "relatedQueueBadge": 24,
+    "fields": [
+      "orderCode",
+      "boxCode",
+      "sku",
+      "sourceReceipt",
+      "destinationTray",
+      "quantity",
+      "status",
+      "updatedAt",
+      "version",
+      "action"
+    ],
+    "visibleRows": [
+      [
+        "PTW-260920-004",
+        "BOX-260920-024",
+        "HN-A01",
+        "PN-260920-084",
+        "TRAY-A-012",
+        40,
+        "Nháp",
+        "—",
+        "v3",
+        "Tiếp tục"
+      ],
+      [
+        "PTW-260920-003",
+        "BOX-260920-023",
+        "HN-B12",
+        "PN-260920-083",
+        "TRAY-A-011",
+        24,
+        "Đã xác nhận",
+        "—",
+        "v2",
+        "Chi tiết"
+      ],
+      [
+        "PTW-260920-002",
+        "BOX-260920-022",
+        "HN-C03",
+        "PN-260920-082",
+        "Chưa chọn khay",
+        120,
+        "Nháp",
+        "—",
+        "v1",
+        "Tiếp tục"
+      ],
+      [
+        "PTW-260919-011",
+        "BOX-260919-021",
+        "HN-D08",
+        "PN-260919-081",
+        "TRAY-B-007",
+        36,
+        "Đã xác nhận",
+        "—",
+        "v2",
+        "Chi tiết"
+      ],
+      [
+        "PTW-260919-010",
+        "BOX-260919-020",
+        "HN-E11",
+        "PN-260919-080",
+        "—",
+        84,
+        "Đã hủy",
+        "—",
+        "v1",
+        "Chi tiết"
+      ],
+      [
+        "PTW-260919-009",
+        "BOX-260919-019",
+        "HN-F06",
+        "PN-260919-079",
+        "TRAY-B-004",
+        18,
+        "Đã xác nhận",
+        "—",
+        "v2",
+        "Chi tiết"
+      ],
+      [
+        "PTW-260918-008",
+        "BOX-260918-018",
+        "HN-G15",
+        "PN-260918-078",
+        "Chưa chọn khay",
+        72,
+        "Nháp",
+        "—",
+        "v1",
+        "Tiếp tục"
+      ]
+    ],
+    "visibleStatusCounts": {
+      "draft": 3,
+      "confirmed": 3,
+      "cancelled": 1
+    },
+    "visibleQuantitySum": 394,
+    "quantitySumUI": "NOT_DISPLAYED; units and aggregate semantics not verified",
+    "hiddenRows": 75,
+    "hiddenRowDetails": "UNKNOWN: do not invent records",
+    "aggregateCaution": "82=76+4+2 follows the source summary. Seven visible rows do not verify remaining75 records or real server aggregates.",
+    "updatedAtDecision": "Incomplete source times 09:42/09:18/08:56/Hôm qua/Hôm qua/Hôm qua/18/09 replaced by proposed —; source v1/v2/v3 preserved.",
+    "publicLabel": "Dữ liệu minh họa"
+  },
+  "completeness": {
+    "total_in_design": 82,
+    "provided_detail_records": 7,
+    "missing_detail_records": 75,
+    "page_size": 7,
+    "full_dataset": false,
+    "api_verified": false
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  },
+  "runtime_execution_status": "NOT_RUN_IN_PROMPT_PACKAGE"
+}

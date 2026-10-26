@@ -1,0 +1,125 @@
+/*
+ * Opt-in Premium semantic variant.
+ *
+ * This layer is deliberately scoped to data-visual-variant="premium". It
+ * consumes canonical tokens.css roles and shared composition rules.
+ * Business and focus behavior remain unchanged. A screen can opt in by
+ * setting the data attribute on its own root element and then compose the
+ * aliases from feature CSS.
+ */
+[data-visual-variant='premium'] {
+  --hn-premium-canvas: var(--hn-page);
+  --hn-premium-surface: var(--hn-surface);
+  --hn-premium-text: var(--hn-text);
+  --hn-premium-muted: var(--hn-muted);
+  --hn-premium-border: var(--hn-border);
+  --hn-premium-border-subtle: var(--hn-border-subtle);
+  --hn-premium-control-border: var(--hn-control-border);
+  --hn-premium-fill: var(--hn-fill);
+  --hn-premium-hover: var(--hn-hover);
+  --hn-premium-action-hover: var(--hn-action-fill);
+  --hn-premium-ocean: var(--hn-accent-text);
+  --hn-premium-radius-panel: var(--hn-card-radius);
+  --hn-premium-radius-control: var(--hn-radius);
+  --hn-premium-table-header-height: var(--hn-table-header-height);
+  --hn-premium-table-row-height: var(--hn-table-row-height);
+  --hn-premium-modal-shadow: var(--hn-modal-shadow);
+}
+
+/* Ancestors consume canonical roles; descendant aliases cannot inherit upward. */
+.hn-shell:has([data-visual-variant='premium']) .hn-main {
+  background: var(--hn-page);
+}
+
+/* Shared business surfaces. Feature panels may add hn-premium-panel when the
+   existing component does not expose a variant prop. */
+[data-visual-variant='premium'] :is(.hn-premium-panel, .hn-catalogue-summary) {
+  border-color: var(--hn-premium-border, #dce4ec);
+  border-radius: var(--hn-premium-radius-panel, 8px);
+  box-shadow: none;
+  background: var(--hn-premium-surface, #fff);
+}
+[data-visual-variant='premium'] .hn-catalogue-summary { padding-block: var(--hn-panel-padding); }
+[data-visual-variant='premium'] .hn-list-heading { padding-block: var(--hn-panel-padding) var(--hn-panel-padding-compact); }
+[data-visual-variant='premium'] .hn-list-heading h2 { color: var(--hn-premium-text, #172b4d); font-size: 18px; font-weight: 600; }
+[data-visual-variant='premium'] .hn-count {
+  border: 1px solid var(--hn-premium-border-subtle, #e0e7ee);
+  border-radius: 6px;
+  background: var(--hn-premium-fill, #f7f9fb);
+  color: var(--hn-premium-muted, #52677d);
+}
+
+/* Shared catalogue composition; the feature remains responsible for fields,
+   query semantics, table columns and action capability. */
+[data-visual-variant='premium'] .hn-catalogue-toolbar {
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--hn-premium-border, #dce4ec);
+}
+[data-visual-variant='premium'] .hn-catalogue-toolbar :is(.hn-filter-input, .hn-filter-select) {
+  border-color: var(--hn-premium-control-border, #cbd7e1);
+  border-radius: var(--hn-premium-radius-control, 8px);
+}
+[data-visual-variant='premium'] .hn-catalogue-toolbar .hn-button {
+  min-height: var(--hn-touch-target, 44px);
+  border-radius: var(--hn-premium-radius-control, 8px);
+  box-shadow: none;
+}
+
+/* Shared table rhythm. Width, columns and responsive visibility stay local to
+   the screen so a canary cannot change a feature's data or overflow policy. */
+[data-visual-variant='premium'] .hn-table[data-appearance='refined'] :is(th, td) {
+  border-bottom-color: var(--hn-premium-border, #dce4ec);
+}
+[data-visual-variant='premium'] .hn-table[data-appearance='refined'] th {
+  height: var(--hn-premium-table-header-height, 48px);
+  color: var(--hn-premium-muted, #52677d);
+  background: var(--hn-premium-fill, #f7f9fb);
+  font-size: 13px;
+  font-weight: 600;
+}
+[data-visual-variant='premium'] .hn-table[data-appearance='refined'] td {
+  height: var(--hn-premium-table-row-height, 52px);
+  line-height: 1.5;
+}
+[data-visual-variant='premium'] .hn-table[data-appearance='refined'] tbody tr:hover td { background: var(--hn-premium-hover, #f8fafc); }
+
+/* Modal and state slots share the same restrained surface language while the
+   feature keeps its own labels and blocked/error semantics. */
+[data-visual-variant='premium'] .hn-global-modal {
+  border-radius: var(--hn-modal-radius);
+  box-shadow: var(--hn-premium-modal-shadow, 0 18px 42px #10233624);
+}
+/* Validation retains its semantic color when a Premium form styles helper text. */
+.hn-shell [data-visual-variant='premium'] .hn-global-modal .hn-form-field .hn-form-field__error {
+  color: var(--hn-danger);
+}
+[data-visual-variant='premium'] .hn-page-state {
+  border-color: var(--hn-premium-border, #dce4ec);
+  color: var(--hn-premium-text, #172b4d);
+  box-shadow: none;
+}
+[data-visual-variant='premium'] .hn-page-state h2 { color: var(--hn-premium-text, #172b4d); }
+[data-visual-variant='premium'] .hn-page-state__description { color: var(--hn-premium-muted, #52677d); }
+
+/* Existing canonical worklist option, used only by newly restored admin screens. */
+.hn-shell[data-shell-version='s00'][data-variant][data-layout][data-content-width='wide'] :is(.hn-header-wrap, .hn-main, .hn-footer-wrap) { max-width: var(--hn-content-width-wide); }
+
+/* Compact chart labels retain the canonical readable minimum while wrapping.
+   Their 16px line box is distinct from the 20px prose-helper role. */
+.hn-shell :is(.s19-donut > div, .s24-ring-label, .s26-ring-label) { gap: 2px; }
+.hn-shell :is(.s19-donut > div > span, .s26-ring-label > span) {
+  max-width: 64px;
+  font-size: var(--hn-font-helper);
+  line-height: var(--hn-line-chart-label);
+  text-align: center;
+  white-space: normal;
+}
+.hn-shell .s19-donut strong { font-size: 24px; line-height: 28px; }
+.hn-shell .s24-ring-label strong { font-size: 20px; line-height: 24px; }
+.hn-shell .s24-ring-label span { font-size: var(--hn-font-helper); line-height: var(--hn-line-chart-label); }
+.hn-shell .s26-ring-label strong { font-size: 21px; line-height: 26px; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-visual-variant='premium'] .hn-button { transition: none !important; }
+}

@@ -1,0 +1,55 @@
+/* Screen-owned composition only; shared controls, focus and tokens are unchanged. */
+.s23-screen { min-width: 0; }
+.s23-read-state .hn-page-state { border-style: dashed; }
+.s23-report-controls { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 12px; max-width: 100%; }
+.s23-period-field { width: 292px; max-width: 100%; }
+.s23-export { display: flex; padding-bottom: 1px; }
+.s23-overview { min-width: 0; display: grid; gap: 10px; }
+.s23-summary-note { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin: 0; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+.s23-summary-note > span { display: inline-flex; align-items: center; gap: 6px; }
+.s23-error-value { color: #8b4a00; }
+.s23-list { min-width: 0; padding: 0; overflow: hidden; }
+.s23-list-heading { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 0 16px; padding: 8px 24px 0; }
+.s23-result-count { margin: 0; color: var(--hn-muted); font-size: 13px; line-height: 22px; font-variant-numeric: tabular-nums; }
+.s23-result-count b { color: var(--hn-text); font-weight: 600; }
+.s23-toolbar, .s23-filter-context { padding: 0 24px; }
+.s23-pagination { padding-inline: 24px; }
+.s23-filter-context:empty { display: none; }
+.s23-table-context { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; min-height: 40px; padding: 4px 24px; }
+.s23-action-limit { margin: 0; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+.s23-list .hn-table-scroll { max-height: 560px; overflow: auto; }
+.s23-list .hn-table { min-width: 1130px; }
+.s23-list [data-column="ordinal"] { width: 52px; }
+.s23-list [data-column="labelCode"] { min-width: 146px; }
+.s23-list [data-column="documentCode"] { min-width: 106px; }
+.s23-list [data-column="product"] { min-width: 270px; max-width: 330px; white-space: normal; }
+.s23-list [data-column="printedAt"] { min-width: 171px; white-space: nowrap; }
+.s23-list [data-column="status"] { min-width: 135px; }
+.s23-list [data-column="printCount"] { min-width: 106px; font-variant-numeric: tabular-nums; }
+.s23-list [data-column="actions"] { min-width: 96px; }
+.s23-list [data-column="actions"] .hn-button { min-width: 96px; white-space: nowrap; flex-shrink: 0; }
+.s23-code { color: var(--hn-text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.s23-product { display: grid; gap: 3px; line-height: 1.5; }
+.s23-product strong { font-size: 14px; font-weight: 500; color: var(--hn-text); }
+.s23-product span { font-size: 12px; color: var(--hn-muted); }
+.s23-time { font-size: 13px; font-variant-numeric: tabular-nums; }
+.s23-scroll-tools, .s23-scroll-tools > div, .s23-scroll-tools > span { display: flex; align-items: center; gap: 4px; }
+.s23-scroll-tools > span { font-size: 12px; color: var(--hn-muted); margin-right: 4px; }
+.s23-no-result { display: grid; justify-items: center; gap: 8px; padding: 20px; color: var(--hn-muted); }
+.s23-no-result p { margin: 0; color: var(--hn-text); font-weight: 600; }
+.s23-no-result > span { font-size: 13px; }
+.s23-print-details { margin: 0; display: grid; gap: 14px; }
+.s23-print-details > div { display: grid; grid-template-columns: minmax(100px, 1fr) minmax(0, 2fr); gap: 8px 16px; }
+.s23-print-details dt { color: var(--hn-muted); }
+.s23-print-details dd { margin: 0; overflow-wrap: anywhere; color: var(--hn-text); font-weight: 500; }
+.s23-print-details dd span { display: block; color: var(--hn-muted); font-size: 12px; font-weight: 400; margin-top: 4px; }
+.s23-print-confirm, .s23-print-outcome { margin: 20px 0 0; line-height: 1.6; color: var(--hn-text); }
+.s23-print-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.s23-print-dialog[aria-busy='true'] .hn-global-modal__close { pointer-events: none; opacity: .55; }
+@media (max-width: 900px) {
+  .s23-list-heading, .s23-toolbar, .s23-filter-context, .s23-table-context, .s23-pagination { padding-inline: 16px; }
+}
+
+/* Preview dark palette; screen geometry and business states remain unchanged. */
+html[data-hn-theme='dark'] .s23-screen :is(h1, h2) { color: #e7eef5; }
+html[data-hn-theme='dark'] .s23-screen .s23-error-value { color: #f1ca7d; }

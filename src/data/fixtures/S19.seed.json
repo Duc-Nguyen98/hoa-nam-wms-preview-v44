@@ -1,0 +1,29 @@
+{
+  "provenance": {
+    "screen": "S19", "source": "S19_BAO_CAO_XUAT_KHO.md", "selection": "P10/R07",
+    "status": "CONFIRMED_DECISION", "rowsScope": "five supplied detail records, not all 42 receipts",
+    "notes": "Transcribed from the supplied MD. Linked S19_REFERENCE.json and PNGs were not supplied. Render keys are local UI identities, not backend IDs."
+  },
+  "period": { "from": "2026-09-04", "to": "2026-09-10" },
+  "statusOptions": ["Đã xuất", "Đang đóng hàng", "Chờ xử lý trên Web", "Đã hủy"],
+  "summary": {
+    "products": 1186, "receipts": 42, "shipped": 38, "packing": 2, "waiting": 2, "comparison": null,
+    "daily": [
+      { "date": "2026-09-04", "quantity": 98 }, { "date": "2026-09-05", "quantity": 132 },
+      { "date": "2026-09-06", "quantity": 148 }, { "date": "2026-09-07", "quantity": 176 },
+      { "date": "2026-09-08", "quantity": 212 }, { "date": "2026-09-09", "quantity": 248 },
+      { "date": "2026-09-10", "quantity": 172 }
+    ],
+    "progress": [
+      { "status": "Đã xuất", "count": 38 }, { "status": "Đang đóng hàng", "count": 2 },
+      { "status": "Chờ xử lý trên Web", "count": 2 }, { "status": "Đã hủy", "count": 0 }
+    ]
+  },
+  "rows": [
+    { "renderKey": "s19-px0042", "code": "PX-0042", "shippedDate": "2026-09-10", "customer": "Công ty Hoàng Phát", "shippedQuantity": 172, "status": "Đã xuất", "creator": "Nguyễn Văn B" },
+    { "renderKey": "s19-px0041", "code": "PX-0041", "shippedDate": "2026-09-10", "customer": "Đại lý Minh Phát", "shippedQuantity": null, "status": "Đang đóng hàng", "creator": "Trần Thị C" },
+    { "renderKey": "s19-px0040", "code": "PX-0040", "shippedDate": "2026-09-10", "customer": "Công ty ABC", "shippedQuantity": null, "status": "Chờ xử lý trên Web", "creator": "Lê Minh D" },
+    { "renderKey": "s19-px0039", "code": "PX-0039", "shippedDate": "2026-09-09", "customer": "Công ty Hoàng Phát", "shippedQuantity": 120, "status": "Đã xuất", "creator": "Nguyễn Văn B" },
+    { "renderKey": "s19-px0038", "code": "PX-0038", "shippedDate": "2026-09-09", "customer": "Công ty Bắc Nam", "shippedQuantity": 64, "status": "Đã xuất", "creator": "Phạm Thị E" }
+  ]
+}

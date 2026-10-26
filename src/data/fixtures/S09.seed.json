@@ -1,0 +1,122 @@
+{
+  "screen_id": "S09",
+  "title": "Quản lý hồ sơ bảo hành",
+  "schema_role": "frontend_seed_not_backend_DTO",
+  "source_record": "references/source-records/HN_QuanLyHoSoBaoHanh_P01_r02_HoSo_2026-10-08.json",
+  "source_revision": "P01 r02 REVIEW · 08/10/2026",
+  "approval_at": "2026-10-09T17:06:04+07:00",
+  "approval_scope": "P01 visual only, not validation of full business dataset",
+  "fixture": {
+    "snapshot": "2026-09-10",
+    "notProduction": true,
+    "total": 186,
+    "completedLabel": "Đã hoàn tất",
+    "completed": 148,
+    "incomplete": 38,
+    "overdueWithinIncomplete": 7,
+    "progressPercent": 79.6,
+    "visibleRecords": [
+      {
+        "caseCode": "BH-20260910-001",
+        "identity": "HN1234567890",
+        "product": "SP-HN-001 · Bộ nguồn điều khiển",
+        "maskedCustomer": "CÔNG TY T*********",
+        "receiptAndDueDate": "10/09/2026 · 17/09/2026",
+        "statusLabel": "Đã tiếp nhận",
+        "ageAtSnapshot": "Hôm nay",
+        "historicalAction": "Cập nhật",
+        "reviewAction": "Chi tiết"
+      },
+      {
+        "caseCode": "TEMP-20260910-006",
+        "identity": "TEMP_ONLY",
+        "product": "Thiết bị chưa xác định mã",
+        "maskedCustomer": "CÔNG TY N*********",
+        "receiptAndDueDate": "10/09/2026 · 17/09/2026",
+        "statusLabel": "Đã tiếp nhận",
+        "ageAtSnapshot": "Hôm nay",
+        "historicalAction": "Cập nhật",
+        "reviewAction": "Chi tiết"
+      },
+      {
+        "caseCode": "BH-20260909-003",
+        "identity": "HN9876543210",
+        "product": "SP-HN-002 · Bo mạch điều khiển",
+        "maskedCustomer": "CÔNG TY P*********",
+        "receiptAndDueDate": "09/09/2026 · 16/09/2026",
+        "statusLabel": "Đang kiểm tra",
+        "ageAtSnapshot": "1 ngày",
+        "historicalAction": "Cập nhật",
+        "reviewAction": "Chi tiết"
+      },
+      {
+        "caseCode": "BH-20260908-005",
+        "identity": "HN4567891230",
+        "product": "SP-HN-003 · Khay đóng gói",
+        "maskedCustomer": "KH LÊ V*********",
+        "receiptAndDueDate": "08/09/2026 · 15/09/2026",
+        "statusLabel": "Đang sửa chữa",
+        "ageAtSnapshot": "2 ngày",
+        "historicalAction": "Cập nhật",
+        "reviewAction": "Chi tiết"
+      },
+      {
+        "caseCode": "BH-20260901-002",
+        "identity": "HN2233445566",
+        "product": "SP-HN-004 · Vỏ bảo vệ",
+        "maskedCustomer": "CÔNG TY H*********",
+        "receiptAndDueDate": "01/09/2026 · 08/09/2026",
+        "statusLabel": "Đang sửa chữa · Quá hạn 2 ngày",
+        "ageAtSnapshot": "9 ngày",
+        "historicalAction": "Cập nhật",
+        "reviewAction": "Chi tiết"
+      },
+      {
+        "caseCode": "BH-20250828-007",
+        "identity": "HN1122334455",
+        "product": "SP-HN-005 · Cáp kết nối",
+        "maskedCustomer": "CÔNG TY M*********",
+        "receiptAndDueDate": "28/08/2026 · 04/09/2026",
+        "statusLabel": "Hoàn tất sửa chữa",
+        "ageAtSnapshot": "13 ngày",
+        "historicalAction": "Trả máy",
+        "reviewAction": "Chi tiết"
+      },
+      {
+        "caseCode": "BH-20250826-004",
+        "identity": "HN6677889900",
+        "product": "SP-HN-006 · Bộ phụ kiện lắp đặt",
+        "maskedCustomer": "KH TRẦN V*********",
+        "receiptAndDueDate": "26/08/2026 · 02/09/2026",
+        "statusLabel": "Đã trả khách",
+        "ageAtSnapshot": "15 ngày",
+        "historicalAction": "Chi tiết",
+        "reviewAction": "Chi tiết"
+      }
+    ],
+    "unprovidedRecords": 179,
+    "page": 1,
+    "pageSize": 7,
+    "lastPage": 27,
+    "warning": "Do not invent the other 179 records or imply API coverage. Dates/age are historical snapshot, case codes are opaque.",
+    "sort": {
+      "fieldLabel": "Tiếp nhận",
+      "direction": "descending",
+      "ariaSortRequired": "descending"
+    }
+  },
+  "completeness": {
+    "total_in_design": 186,
+    "provided_detail_records": 7,
+    "missing_detail_records": 179,
+    "page_size": 7,
+    "full_dataset": false,
+    "api_verified": false
+  },
+  "backend_binding": {
+    "endpoint": null,
+    "dto": null,
+    "permission_keys": null
+  },
+  "runtime_execution_status": "NOT_RUN_IN_PROMPT_PACKAGE"
+}
