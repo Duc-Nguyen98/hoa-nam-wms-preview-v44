@@ -2,7 +2,14 @@
 .s10-operational { padding-block: 20px; }
 .s10-operational__heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 .s10-operational__heading h2 { margin: 0; font-size: 18px; line-height: 26px; font-weight: 600; }
-.s10-operational__detail { display: grid; gap: 16px; min-width: 0; }
+.s10-operational__detail { display: grid; gap: 24px; min-width: 0; }
 .s10-operational__detail :is(h3, h4, p) { margin: 0; }
 .s10-operational__detail :is(td, small) { overflow-wrap: anywhere; }
 .s10-operational__detail section { display: grid; gap: 12px; }
+.s10-operational__detail h3 { font-size: 18px; line-height: 26px; }
+.s10-operational__detail .s10-detail__fields { gap: 24px; }
+.s10-operational__detail .s10-detail__fields dt { margin-bottom: 8px; font-size: 14px; line-height: 22px; }
+.s10-operational__detail .s10-detail__fields dd { font-size: 16px; line-height: 24px; }
+.s10-operational__detail .hn-table { min-width: 720px; table-layout: fixed; }
+.s10-operational__detail .hn-table :is(th, td) { white-space: normal; overflow-wrap: anywhere; }
+.s10-operational__links a { display: inline-flex; align-items: center; min-height: 44px; }

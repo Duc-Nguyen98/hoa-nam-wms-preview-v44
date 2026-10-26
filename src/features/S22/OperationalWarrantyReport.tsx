@@ -6,7 +6,7 @@ import { Button, Card, DataTable, DateRangePicker, GlobalModal, StatusBadge, typ
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { localeForLanguage, useShellPreferences } from '../../shared/shell-preferences';
 import { vietnamDate } from '../../operations/operational-reports';
-import { createWarrantyReportReader, findPinnedWarrantyCase, type WarrantyCaseSelection, type OperationalWarrantyReport as WarrantyModel, type WarrantyReportReadAdapter, type WarrantyReportPeriod } from './warranty-operational-binding';
+import { createWarrantyReportReader, findPinnedWarrantyCase, type WarrantyCaseSelection, type OperationalWarrantyReport as WarrantyModel, type WarrantyReportReadAdapter } from './warranty-operational-binding';
 
 export const S22_OPERATIONAL_COPY = {
   'Vui lòng chọn kỳ trong 90 ngày gần đây, không vượt quá ngày hôm nay.': 'Select a period within the last 90 days, ending no later than today.',
@@ -39,7 +39,8 @@ export function OperationalWarrantyReport({ adapter }: { adapter: WarrantyReport
   const timestamp = (value: string) => new Intl.DateTimeFormat(locale, { timeZone: 'Asia/Ho_Chi_Minh', dateStyle: 'short', timeStyle: 'medium' }).format(new Date(value));
   const controller = useMemo(() => { const catalog = createCatalogCreateAdapter('sku'); return createWarrantyReportReader(adapter, () => catalog.readSnapshot()); }, [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot), model = state.model;
-  const [period, setPeriod] = useState<WarrantyReportPeriod>(() => { const today = vietnamDate(new Date().toISOString()); return { from: today, to: today }; });
+  const today = vietnamDate(new Date().toISOString());
+  const period = state.period ?? { from: today, to: today };
   const [selected, setSelected] = useState<WarrantyCaseSelection | null>(null);
   const panel = useRef<HTMLElement>(null), returnSelection = useRef<WarrantyCaseSelection | null>(null);
   function resolveDetailReturnFocus() {
@@ -74,8 +75,8 @@ export function OperationalWarrantyReport({ adapter }: { adapter: WarrantyReport
   }
   const errorText = state.error === 'INVALID_PERIOD' ? 'Vui lòng chọn kỳ trong 90 ngày gần đây, không vượt quá ngày hôm nay.' : state.error === 'AS_OF_BEFORE_SNAPSHOT' ? 'Thời điểm chốt phải bao quát dữ liệu đã đọc.' : state.error === 'EXPORT_FAILED' ? 'Chưa xuất được báo cáo. Đọc lại trước khi thử lại.' : 'Chưa đọc được báo cáo đầy đủ. Kiểm tra phiên làm việc và đọc lại.';
   return <section ref={panel} tabIndex={-1} className="s22-operational" data-operational-warranty-report aria-label={tx('Báo cáo phiên hiện tại')}>
-    <section className="s22-period-panel hn-premium-panel"><div className="s22-period-row"><DateRangePicker id="s22-operational-period" label={tx('Kỳ báo cáo')} value={period} clearable={false} onChange={next => { if (next) { setPeriod(next); void controller.load(next); } }} />
-      <Button data-s22-operational-load disabled={state.loading} onClick={() => void controller.load(period)}>{tx('Đọc báo cáo')}</Button><Button disabled={!model || state.loading || state.exporting} onClick={() => void download()}>{tx(state.exporting ? 'Đang xuất…' : 'Xuất Excel')}</Button></div>
+    <section className="s22-period-panel hn-premium-panel"><div className="s22-period-row"><DateRangePicker id="s22-operational-period" label={tx('Kỳ báo cáo')} value={period} clearable={false} onChange={next => { if (next) void controller.load(next); }} />
+      <Button data-s22-operational-load disabled={state.loading} onClick={() => void controller.load()}>{tx('Đọc báo cáo')}</Button><Button disabled={!model || state.loading || state.exporting} onClick={() => void download()}>{tx(state.exporting ? 'Đang xuất…' : 'Xuất Excel')}</Button></div>
       <p>{tx('Theo ngày tiếp nhận; gồm trọn ngày bắt đầu và kết thúc, giờ Việt Nam.')}</p>
       {model && <><p>{tx('Thời điểm chốt')}: <time dateTime={model.report.query.asOf}>{timestamp(model.report.query.asOf)}</time> · {date(model.report.query.from)} – {date(model.report.query.to)}</p><p>{tx('Dữ liệu giữ nguyên đến lần đọc tiếp theo; Excel sử dụng đúng lượt đọc này.')}</p></>}
       <ReadState loading={state.loading} error={state.error} hasData={!!model} loadingText={tx('Đang đọc báo cáo…')} errorText={tx(errorText)}/>
@@ -85,7 +86,7 @@ export function OperationalWarrantyReport({ adapter }: { adapter: WarrantyReport
     </section><section className="s22-list hn-premium-panel"><div className="s22-list-intro"><p>{tx('Ca được đếm một lần; lỗi và phiếu cấp không làm tăng tổng ca.')}</p>{!model.active && <p>{tx('Chưa có phiên làm việc.')}</p>}</div>
       <DataTable caption={tx('Ca bảo hành trong kỳ')} columns={columns} rows={model.rows} rowKey={item => item.id} appearance="refined" emptyContent={<p>{tx('Chưa có ca trong kỳ đã chọn.')}</p>} />
     </section></>}
-    <GlobalModal open={!!selected} title={tx('Chi tiết ca bảo hành')} size="large" onClose={() => setSelected(null)} resolveReturnFocus={resolveDetailReturnFocus} footer={<><Button variant="secondary" disabled={state.loading} onClick={() => void controller.load(period)}>{tx('Đọc báo cáo')}</Button><Button onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
+    <GlobalModal open={!!selected} title={tx('Chi tiết ca bảo hành')} size="large" onClose={() => setSelected(null)} resolveReturnFocus={resolveDetailReturnFocus} footer={<><Button variant="secondary" disabled={state.loading} onClick={() => void controller.load()}>{tx('Đọc báo cáo')}</Button><Button onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
       {state.loading ? <p role="status">{tx('Đang đọc báo cáo…')}</p> : state.error ? <p role="alert">{tx(errorText)}</p> : !row ? <p role="status">{tx('Ca không còn thuộc phiên hoặc kỳ báo cáo đang đọc. Đóng chi tiết để chọn lại.')}</p> : null}
       {row && <><dl className="s22-operational-fields" data-case-id={row.id}>
         {[[tx('Mã ca'), row.code], [tx('SKU'), row.skuCode], [tx('Sản phẩm'), row.productName], [tx('Mã vật lý'), row.physicalCode ?? '—'], [tx('Định danh tạm'), row.temporaryIdentity ?? '—'], [tx('Ngày tiếp nhận'), timestamp(row.receivedAt)], [tx('Ngày dự kiến hoàn tất'), row.expectedFinishDate ? date(row.expectedFinishDate) : tx('Chưa có ngày dự kiến')], [tx('Khách báo lỗi'), row.customerReportedIssue], [tx('Chẩn đoán kỹ thuật'), row.technicianDiagnosis || tx('Chưa chẩn đoán')], [tx('Số lỗi được ghi nhận'), row.defectIds.length], [tx('Số phiếu cấp linh kiện'), row.partIssueIds.length]].map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}

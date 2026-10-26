@@ -23,6 +23,11 @@ export function warrantyLocalDate(value: string) {
 export function sameWarrantyScope(snapshot: OperationalSnapshot, fence: WarrantyFence) {
   return !!snapshot.scenario && snapshot.epoch === fence.epoch && snapshot.token.scenarioId === fence.scenarioId && snapshot.token.generation === fence.generation;
 }
+export interface WarrantySelection { id: string; fence: WarrantyFence }
+export function findSelectedWarrantyCase(snapshot: OperationalSnapshot | null, selection: WarrantySelection | null) {
+  if (!snapshot || !selection || !sameWarrantyScope(snapshot, selection.fence)) return null;
+  return snapshot.warrantyCases.find(row => row.id === selection.id) ?? null;
+}
 /** Read every page from the existing canonical S02 reader. Render keys are never persisted IDs. */
 export async function readWarrantyDefects(adapter: DefectsDataAdapter) {
   const rows: CanonicalDefect[] = []; let epoch = '', revision = 0, total = 0, pages = 1;

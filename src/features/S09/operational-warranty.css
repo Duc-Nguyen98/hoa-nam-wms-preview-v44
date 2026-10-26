@@ -1,0 +1,18 @@
+.s09-operational { display: grid; gap: 20px; min-width: 0; }
+.s09-operational__heading, .s09-operational__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.s09-operational__heading { justify-content: space-between; }
+.s09-operational__heading h2 { margin: 0; font-size: 18px; line-height: 26px; font-weight: 600; }
+.s09-operational__detail { display: grid; gap: 24px; min-width: 0; }
+.s09-operational__detail :is(h3, p, ul, ol, dl) { margin: 0; }
+.s09-operational__detail h3 { font-size: 18px; line-height: 26px; overflow-wrap: anywhere; }
+.s09-operational__detail header p { margin-top: 12px; }
+.s09-operational__detail section { display: grid; gap: 12px; }
+.s09-operational__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.s09-operational__fields > div { min-width: 0; }
+.s09-operational__fields dt { color: var(--hn-muted); font-size: 14px; line-height: 22px; margin-bottom: 8px; }
+.s09-operational__fields dd { margin: 0; font-size: 16px; line-height: 24px; overflow-wrap: anywhere; white-space: pre-wrap; }
+.s09-operational__timeline { display: grid; gap: 12px; padding-left: 22px; }
+.s09-operational__timeline li { line-height: 24px; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .s09-operational__fields { grid-template-columns: minmax(0, 1fr); }
+}

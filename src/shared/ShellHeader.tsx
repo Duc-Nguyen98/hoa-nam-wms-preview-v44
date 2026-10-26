@@ -70,14 +70,23 @@ export function ShellHeaderActions({ destinations, profile, layoutMode, activeKe
   const previewNotifications = usePreviewNotifications(notificationActor);
   useEffect(() => {
     if (!IS_BROWSER_PREVIEW || !notificationActor) return;
-    const openRelated = (event: Event) => {
+    let active = true, request = 0;
+    const openRelated = async (event: Event) => {
       const id = (event as CustomEvent<{id?:string}>).detail?.id;
+      const sequence = ++request;
       setPopup(null);
-      void dispatchPreviewNotification(id ? {type:'open',id} : {type:'back'});
-      setNotificationOpen(true);
+      const selected = await dispatchPreviewNotification(id ? {type:'open',id} : {type:'back'});
+      // A direct document load can render before the actor's notification read
+      // finishes. Resolve the requested record before opening the center.
+      if (id && !selected) {
+        await dispatchPreviewNotification({type:'retry'});
+        if (!active || sequence !== request) return;
+        await dispatchPreviewNotification({type:'open',id});
+      }
+      if (active && sequence === request) setNotificationOpen(true);
     };
     window.addEventListener(OPEN_NOTIFICATION_EVENT, openRelated);
-    return () => window.removeEventListener(OPEN_NOTIFICATION_EVENT, openRelated);
+    return () => { active = false; window.removeEventListener(OPEN_NOTIFICATION_EVENT, openRelated); };
   }, [notificationActor]);
   const unread = previewNotifications.actorBinding === notificationActor ? previewNotifications.totalUnread : null;
   const [searchOpen, setSearchOpen] = useState(false);

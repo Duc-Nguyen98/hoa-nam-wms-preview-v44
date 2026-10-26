@@ -1,12 +1,15 @@
 import { ReadState } from '../../shared/ReadState';
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
 import { businessHttpAdapters } from '../../data/http/business-adapters';
+import { formatBusinessDate } from '../../i18n/format-business-date';
+import { localeForLanguage, useShellPreferences } from '../../shared/shell-preferences';
+import './operational-warranty.css';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { Button, DataTable, GlobalModal, StatusBadge, type TableColumn } from '../../shared';
 import { WarrantyDiagnosisForm } from './WarrantyDiagnosisForm';
 import { canEditWarrantyDiagnosis } from './warranty-diagnosis-form';
-import { caseTimeline, createWarrantyBinding, nextWarrantyState, refreshWarrantyEditor, sameWarrantyScope, warrantyLocalDate, type WarrantyCaseRecord, type WarrantyEditor, type WarrantyFence, type WarrantyOperationalAdapter } from './warranty-binding';
+import { caseTimeline, createWarrantyBinding, findSelectedWarrantyCase, type WarrantySelection, nextWarrantyState, refreshWarrantyEditor, sameWarrantyScope, warrantyLocalDate, type WarrantyCaseRecord, type WarrantyEditor, type WarrantyFence, type WarrantyOperationalAdapter } from './warranty-binding';
 
 const COPY = {
   'Hồ sơ phiên hiện tại': 'Current session cases', 'Đọc lại dữ liệu': 'Reload data', 'Kiểm tra lại thao tác': 'Check pending operation',
@@ -17,7 +20,7 @@ const COPY = {
   'Đã tiếp nhận': 'Received', 'Đang kiểm tra': 'Checking', 'Đang sửa chữa': 'Repairing', 'Hoàn tất sửa chữa': 'Repaired', 'Đã trả khách': 'Returned',
   'Chi tiết hồ sơ bảo hành': 'Warranty case details', 'Chẩn đoán': 'Diagnose', 'Chuyển trạng thái': 'Change status',
   'Khách hàng phản ánh': 'Customer reported issue', 'Kỹ thuật viên chẩn đoán': 'Technician diagnosis', 'Các bệnh lỗi đã liên kết': 'Linked defects',
-  'Chưa có chẩn đoán.': 'No diagnosis yet.', 'Lịch sử xử lý': 'Processing history', 'Người thực hiện': 'Actor', 'Thời gian': 'Time',
+  'Chưa có chẩn đoán.': 'No diagnosis yet.', 'Chưa có bệnh lỗi liên kết.': 'No linked defects yet.', 'Lịch sử xử lý': 'Processing history', 'Người thực hiện': 'Actor', 'Thời gian': 'Time',
   'Chỉ bắt đầu sửa chữa khi có bệnh lỗi và ngày dự kiến sửa xong.': 'Repair requires defects and an expected finish date.',
   'Hồ sơ không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.': 'This case is no longer in the current scenario. Close and reload.',
   'Chưa xác định kết quả. Kiểm tra lại cùng thao tác trước khi gửi tiếp.': 'The outcome is unknown. Check the same operation before sending another.',
@@ -53,13 +56,23 @@ export function frozenDefects(row: WarrantyCaseRecord) {
 }
 export function OperationalWarranty({ adapter, notify }: { adapter: WarrantyOperationalAdapter; notify: (message: string) => void }) {
   const tx = useUiCopy(COPY);
+  const { language } = useShellPreferences(), locale = localeForLanguage(language);
+  const timestamp = (value: string) => Number.isNaN(Date.parse(value)) ? value : new Date(value).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' });
   const controller = useMemo(() => createWarrantyBinding(adapter, businessHttpAdapters.S02), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
-  const [selected, setSelected] = useState<string | null>(null), [editor, setEditor] = useState<WarrantyEditor | null>(null);
+  const [selected, setSelected] = useState<WarrantySelection | null>(null), [editor, setEditor] = useState<WarrantyEditor | null>(null);
   const [transition, setTransition] = useState<{ id: string; version: number; fence: WarrantyFence; next: 'REPAIRING' | 'REPAIRED' | 'RETURNED' } | null>(null);
   const [localMessage, setLocalMessage] = useState('');
-  const snapshot = state.snapshot, row = snapshot?.warrantyCases.find(r => r.id === selected);
-  const editRow = snapshot?.warrantyCases.find(r => r.id === editor?.caseId);
+  const panel = useRef<HTMLElement>(null), returnSelection = useRef<WarrantySelection | null>(null);
+  const snapshot = state.snapshot, row = findSelectedWarrantyCase(snapshot, selected);
+  function resolveDetailReturnFocus() {
+    const root = panel.current;
+    if (!root) return null;
+    const current = findSelectedWarrantyCase(snapshot, returnSelection.current);
+    const action = current ? [...root.querySelectorAll<HTMLElement>('[data-s09-operational-action]')].find(element => element.dataset.s09OperationalAction === current.id && !element.matches(':disabled') && element.getClientRects().length > 0) : null;
+    return action ?? root.querySelector<HTMLElement>('[data-s09-operational-refresh]:not(:disabled)') ?? root;
+  }
+  const editRow = editor ? findSelectedWarrantyCase(snapshot, { id: editor.caseId, fence: editor.fence }) : null;
   const unresolved = state.recovery.kind !== 'empty', locked = state.busy || unresolved || !snapshot;
   useEffect(() => {
     void controller.resume();
@@ -72,9 +85,9 @@ export function OperationalWarranty({ adapter, notify }: { adapter: WarrantyOper
     { id: 'case', heading: tx('Hồ sơ'), render: r => <strong>{r.data.code}</strong> },
     { id: 'product', heading: tx('Sản phẩm / SKU'), render: r => `${text(record(r.data.productSnapshot).productName)} · ${text(record(r.data.productSnapshot).skuCode)}` },
     { id: 'state', heading: tx('Trạng thái'), render: badge },
-    { id: 'received', heading: tx('Tiếp nhận'), render: r => warrantyLocalDate(r.data.receivedAt) },
-    { id: 'due', heading: tx('Ngày dự kiến sửa xong'), render: r => r.data.expectedFinishDate ?? '—' },
-    { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: r => <Button variant="ghost" disabled={state.busy} onClick={() => { setSelected(r.id); setLocalMessage(''); }}>{tx('Xem')}</Button> },
+    { id: 'received', heading: tx('Tiếp nhận'), render: r => formatBusinessDate(warrantyLocalDate(r.data.receivedAt), language) },
+    { id: 'due', heading: tx('Ngày dự kiến sửa xong'), render: r => r.data.expectedFinishDate ? formatBusinessDate(r.data.expectedFinishDate, language) : '—' },
+    { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: r => <Button variant="ghost" disabled={state.busy} data-s09-operational-action={r.id} onClick={() => { if (snapshot) { returnSelection.current = { id: r.id, fence: { ...snapshot.token } }; setSelected(returnSelection.current); setLocalMessage(''); } }}>{tx('Xem')}</Button> },
   ];
   function openEditor() {
     if (!row || !snapshot || locked) return;
@@ -91,33 +104,33 @@ export function OperationalWarranty({ adapter, notify }: { adapter: WarrantyOper
     if (result) {
       if (result.archived) { setLocalMessage('Đã đối chiếu thao tác trong phiên lưu trữ. Dữ liệu phiên hiện tại được giữ nguyên.'); return; }
       if (editor) setLocalMessage('Đã kiểm tra thao tác. Nội dung đang nhập vẫn được giữ; hãy đọc lại hồ sơ trước khi lưu.');
-      else { setSelected(result.caseId); setTransition(null); notify(tx('Đã lưu thay đổi hồ sơ.')); }
+      else { setSelected(result.caseId && controller.getSnapshot().snapshot ? { id: result.caseId, fence: { ...controller.getSnapshot().snapshot!.token } } : null); setTransition(null); notify(tx('Đã lưu thay đổi hồ sơ.')); }
     }
   }
   const retry = unresolved && <Button disabled={state.busy} onClick={() => void reconcile()}>{tx('Kiểm tra lại thao tác')}</Button>;
   const next = row ? nextWarrantyState(row.data.state) : null;
-  return <section className="s09-list" data-operational-warranty aria-label={tx('Hồ sơ phiên hiện tại')}>
-    <h2>{tx('Hồ sơ phiên hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>{retry}
+  return <section ref={panel} tabIndex={-1} className="s09-list s09-operational" data-operational-warranty aria-label={tx('Hồ sơ phiên hiện tại')}>
+    <div className="s09-operational__heading"><h2>{tx('Hồ sơ phiên hiện tại')}</h2><div className="s09-operational__actions"><Button data-s09-operational-refresh variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>{retry}</div></div>
     <ReadState loading={state.busy} error={state.error} hasData={!!snapshot} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(message(state.error))}/>{localMessage && !editor && <p role="status">{tx(localMessage)}</p>}
     {snapshot && !snapshot.scenario && <p>{tx('Chưa có phiên nghiệp vụ. Thiết lập phiên trong khu vực kiểm thử trước.')}</p>}
     {snapshot?.scenario && <DataTable caption={tx('Hồ sơ phiên hiện tại')} captionVisibility="sr-only" columns={columns} rows={snapshot.warrantyCases} rowKey={r => r.id} appearance="refined" busy={state.busy} emptyContent={<p>{tx('Chưa có hồ sơ. Hồ sơ phải được tiếp nhận từ App.')}</p>} />}
-    <GlobalModal open={!!selected && !editor && !transition} title={tx('Chi tiết hồ sơ bảo hành')} onClose={() => { if (!state.busy) setSelected(null); }} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>{retry}</div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
-      {!row || !snapshot ? <p role="status">{tx('Hồ sơ không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <>
-        <h3>{row.data.code}</h3><p>{badge(row)} · {tx(row.data.identityMode === 'TEMP_ONLY' ? 'Nhận dạng tạm' : 'Serial')}{row.data.physicalId && ` · ${snapshot.physical.find(p => p.id === row.data.physicalId)?.data.physicalCode ?? tx('Không có dữ liệu')}`}</p>
-        <dl><dt>{tx('Sản phẩm / SKU')}</dt><dd>{text(record(row.data.productSnapshot).productName)} · {text(record(row.data.productSnapshot).skuCode)}</dd><dt>{tx('Khách hàng phản ánh')}</dt><dd>{row.data.customerReportedIssue}</dd><dt>{tx('Kỹ thuật viên chẩn đoán')}</dt><dd>{row.data.technicianDiagnosis || tx('Chưa có chẩn đoán.')}</dd><dt>{tx('Ngày dự kiến sửa xong')}</dt><dd>{row.data.expectedFinishDate ?? '—'}</dd></dl>
-        <h3>{tx('Các bệnh lỗi đã liên kết')}</h3><ul>{frozenDefects(row).map(d => <li key={d.id}>{d.label}</li>)}</ul>
-        <h3>{tx('Lịch sử xử lý')}</h3><ol>{caseTimeline(snapshot, row.id).map(event => { const data = record(event.data); return <li key={event.id}><strong>{tx(STATES[data.state as keyof typeof STATES] ?? String(data.state))}</strong> · <time dateTime={text(data.timestamp)}>{text(data.timestamp)}</time> · {tx('Người thực hiện')}: {text(data.actor)}</li>; })}</ol>
-        {canEditWarrantyDiagnosis(row.data.state) && <Button disabled={locked} onClick={openEditor}>{tx('Chẩn đoán')}</Button>}
-        {next && <Button disabled={locked || next === 'REPAIRING' && (!row.data.defectIds.length || !row.data.expectedFinishDate)} onClick={() => setTransition({ id: row.id, version: row.version, fence: snapshot.token, next })}>{tx(STATES[next])}</Button>}
+    <GlobalModal resolveReturnFocus={resolveDetailReturnFocus} className="s09-operational-modal" open={!!selected && !editor && !transition} title={tx('Chi tiết hồ sơ bảo hành')} onClose={() => { if (!state.busy) setSelected(null); }} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>{retry}</div><Button disabled={state.busy} onClick={() => setSelected(null)}>{tx('Đóng')}</Button></>}>
+      {!row || !snapshot ? <p role="status">{tx('Hồ sơ không còn thuộc phiên hiện tại. Đóng và đọc lại dữ liệu.')}</p> : <div className="s09-operational__detail" data-warranty-case-id={row.id}>
+        <header><h3>{row.data.code}</h3><p>{badge(row)} · {tx(row.data.identityMode === 'TEMP_ONLY' ? 'Nhận dạng tạm' : 'Serial')}{row.data.physicalId && ` · ${snapshot.physical.find(p => p.id === row.data.physicalId)?.data.physicalCode ?? tx('Không có dữ liệu')}`}</p></header>
+        <dl className="s09-operational__fields"><div><dt>{tx('Sản phẩm / SKU')}</dt><dd>{text(record(row.data.productSnapshot).productName)} · {text(record(row.data.productSnapshot).skuCode)}</dd></div><div><dt>{tx('Khách hàng phản ánh')}</dt><dd>{row.data.customerReportedIssue}</dd></div><div><dt>{tx('Kỹ thuật viên chẩn đoán')}</dt><dd>{row.data.technicianDiagnosis || tx('Chưa có chẩn đoán.')}</dd></div><div><dt>{tx('Ngày dự kiến sửa xong')}</dt><dd>{row.data.expectedFinishDate ? formatBusinessDate(row.data.expectedFinishDate, language) : '—'}</dd></div></dl>
+        <section><h3>{tx('Các bệnh lỗi đã liên kết')}</h3>{row.data.defectSnapshot.length ? <ul>{frozenDefects(row).map(d => <li key={d.id}>{d.label}</li>)}</ul> : <p>{tx('Chưa có bệnh lỗi liên kết.')}</p>}</section>
+        <section><h3>{tx('Lịch sử xử lý')}</h3><ol className="s09-operational__timeline">{caseTimeline(snapshot, row.id).map(event => { const data = record(event.data); return <li key={event.id}><strong>{tx(STATES[data.state as keyof typeof STATES] ?? String(data.state))}</strong> · <time dateTime={text(data.timestamp)}>{timestamp(text(data.timestamp))}</time> · {tx('Người thực hiện')}: {text(data.actor)}</li>; })}</ol></section>
+        <div className="s09-operational__actions">{canEditWarrantyDiagnosis(row.data.state) && <Button disabled={locked} onClick={openEditor}>{tx('Chẩn đoán')}</Button>}
+        {next && <Button disabled={locked || next === 'REPAIRING' && (!row.data.defectIds.length || !row.data.expectedFinishDate)} onClick={() => setTransition({ id: row.id, version: row.version, fence: snapshot.token, next })}>{tx(STATES[next])}</Button>}</div>
         {next === 'REPAIRING' && (!row.data.defectIds.length || !row.data.expectedFinishDate) && <p>{tx('Chỉ bắt đầu sửa chữa khi có bệnh lỗi và ngày dự kiến sửa xong.')}</p>}
-      </>}
+      </div>}
       {localMessage && <p role="status">{tx(localMessage)}</p>}{state.error && <p role="alert">{tx(message(state.error))}</p>}
     </GlobalModal>
     <GlobalModal open={!!editor} title={tx('Chẩn đoán')} onClose={() => { if (!state.busy) setEditor(null); }} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void reloadEditor()}>{tx('Đọc lại dữ liệu')}</Button>{retry}</div><Button disabled={state.busy} onClick={() => setEditor(null)}>{tx('Hủy')}</Button></>}>
-      {editor && <WarrantyDiagnosisForm context={{ caseId: editor.caseId, state: editRow?.data.state ?? 'RECEIVED', intakeDate: editRow ? warrantyLocalDate(editRow.data.receivedAt) : '' }} customerReportedIssue={editRow?.data.customerReportedIssue ?? ''} historicalDefects={editRow ? frozenDefects(editRow) : []} activeDefects={state.defects.filter(d => d.row.status === 'active').map(d => ({ id: d.id, label: `${d.row.code} · ${d.row.name}` }))} draft={editor.draft} pending={locked || !snapshot || !sameWarrantyScope(snapshot, editor.fence) || editRow?.version !== editor.version} error={state.error ? tx(message(state.error)) : null} onDraftChange={draft => setEditor(previous => previous && { ...previous, draft })} onSubmit={async submission => { const captured = editor; const accepted = await controller.diagnose(submission, captured.version, captured.fence); if (accepted && !accepted.archived) { setEditor(previous => previous === captured ? null : previous); setSelected(accepted.caseId); notify(tx('Đã lưu thay đổi hồ sơ.')); } }} />}
+      {editor && <WarrantyDiagnosisForm context={{ caseId: editor.caseId, state: editRow?.data.state ?? 'RECEIVED', intakeDate: editRow ? warrantyLocalDate(editRow.data.receivedAt) : '' }} customerReportedIssue={editRow?.data.customerReportedIssue ?? ''} historicalDefects={editRow ? frozenDefects(editRow) : []} activeDefects={state.defects.filter(d => d.row.status === 'active').map(d => ({ id: d.id, label: `${d.row.code} · ${d.row.name}` }))} draft={editor.draft} pending={locked || !snapshot || !sameWarrantyScope(snapshot, editor.fence) || editRow?.version !== editor.version} error={state.error ? tx(message(state.error)) : null} onDraftChange={draft => setEditor(previous => previous && { ...previous, draft })} onSubmit={async submission => { const captured = editor; const accepted = await controller.diagnose(submission, captured.version, captured.fence); if (accepted && !accepted.archived) { setEditor(previous => previous === captured ? null : previous); setSelected(accepted.caseId ? { id: accepted.caseId, fence: captured.fence } : null); notify(tx('Đã lưu thay đổi hồ sơ.')); } }} />}
       {localMessage && <p role="status">{tx(localMessage)}</p>}
     </GlobalModal>
-    <GlobalModal open={!!transition} title={tx('Chuyển trạng thái')} onClose={() => { if (!state.busy) setTransition(null); }} footer={<><div className="hn-modal-footer-tools">{retry}</div><Button disabled={state.busy} variant="secondary" onClick={() => setTransition(null)}>{tx('Hủy')}</Button><Button disabled={locked} onClick={async () => { if (!transition) return; const accepted = await controller.transition(transition.id, transition.version, transition.fence, transition.next); if (accepted && !accepted.archived) { setTransition(null); setSelected(accepted.caseId); notify(tx('Đã lưu thay đổi hồ sơ.')); } }}>{tx('Chuyển trạng thái')}</Button></>}>
+    <GlobalModal open={!!transition} title={tx('Chuyển trạng thái')} onClose={() => { if (!state.busy) setTransition(null); }} footer={<><div className="hn-modal-footer-tools">{retry}</div><Button disabled={state.busy} variant="secondary" onClick={() => setTransition(null)}>{tx('Hủy')}</Button><Button disabled={locked} onClick={async () => { if (!transition) return; const accepted = await controller.transition(transition.id, transition.version, transition.fence, transition.next); if (accepted && !accepted.archived) { setTransition(null); setSelected(accepted.caseId ? { id: accepted.caseId, fence: transition.fence } : null); notify(tx('Đã lưu thay đổi hồ sơ.')); } }}>{tx('Chuyển trạng thái')}</Button></>}>
       <p>{transition && tx(STATES[transition.next])}</p>{localMessage && <p role="status">{tx(localMessage)}</p>}{state.error && <p role="alert">{tx(message(state.error))}</p>}
     </GlobalModal>
   </section>;

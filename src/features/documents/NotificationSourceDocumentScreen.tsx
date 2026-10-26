@@ -26,12 +26,12 @@ export function NotificationSourceDocumentScreen({selection}:{selection:Notifica
    <CataloguePageHeader appearance="worklist" title={record?`${title} · ${record.reference}`:title} parentLabel={record?.categoryLabel[language]??tx.title} breadcrumb={record?.reference??tx.title} actions={<Button variant="secondary" leadingIcon={<Icon name="chevron-left" size={18}/>} onClick={back}>{tx.back}</Button>}/>
    {!record?<PageState kind="record-not-found" title={tx.missing} description={tx.reason} action={<Button onClick={back}>{tx.back}</Button>}/>:<>
     <section className="nsd-panel" aria-labelledby="nsd-info">
-     <header className="nsd-identity"><div><p>{record.categoryLabel[language]}</p><div className="nsd-code"><h2 data-record-reference>{record.reference}</h2><Button iconOnly variant="ghost" aria-label={tx.copy} onClick={async()=>{try{await copyText(record.reference);setFeedback(tx.copied);}catch{setFeedback(tx.failed);}}}><Icon name="copy" size={20}/></Button></div></div>{status&&<StatusBadge tone={status.tone==='success'?'success':status.tone==='warning'?'warning':'neutral'}>{status.value[language]}</StatusBadge>}</header>
+     <header className="nsd-identity"><div><p>{record.categoryLabel[language]}</p><div className="nsd-code"><h2 data-record-reference>{record.reference}</h2><Button iconOnly variant="secondary" aria-label={tx.copy} title={tx.copy} onClick={async()=>{try{await copyText(record.reference);setFeedback(tx.copied);}catch{setFeedback(tx.failed);}}}><Icon name="copy" size={20}/></Button></div></div>{status&&<StatusBadge tone={status.tone??'neutral'}><Icon name={status.tone==='success'?'circle-check':status.tone==='warning'?'alert-circle':'info'} size={16}/>{status.value[language]}</StatusBadge>}</header>
      {feedback&&<p role="status" className="nsd-feedback">{feedback}</p>}
      <h3 id="nsd-info">{tx.info}</h3><dl className="nsd-fields">{record.fields.map((field,index)=><div key={index} data-record-field={index}><dt>{field.label[language]}</dt><dd>{field.value[language]}</dd></div>)}</dl>
     </section>
-    <section className="nsd-panel"><h3>{tx.note}</h3><p className="nsd-description" data-record-description>{record.description[language]}</p></section>
-    <div className="nsd-footer"><Button variant="secondary" onClick={()=>{window.location.hash=`#/preview/${selection.screen}`;}}>{tx.list}</Button></div>
+    <section className="nsd-panel" aria-labelledby="nsd-note"><h3 id="nsd-note">{tx.note}</h3><p className="nsd-description" data-record-description>{record.description[language]}</p></section>
+    <div className="nsd-footer"><Button variant="secondary" trailingIcon={<Icon name="chevron-right" size={18}/>} onClick={()=>{window.location.hash=`#/preview/${selection.screen}`;}}>{tx.list}</Button></div>
    </>}
   </section>
  </GlobalShell>;

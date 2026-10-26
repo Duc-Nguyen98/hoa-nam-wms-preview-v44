@@ -115,7 +115,7 @@ export function GlobalModal({
       if (!closingFromProp.current && open) onClose();
       const opener = openerRef.current;
       const available = (element: HTMLElement | null | undefined) => element?.isConnected
-        && element.getClientRects().length && !element.matches(':disabled');
+        && element.getClientRects().length && !element.matches(':disabled, body, html');
       const target = available(opener) ? opener : resolveReturnFocus?.();
       // Native close has released modal inertness. A caller's pre-close frame
       // can run too early and silently lose focus when its opener disappeared.

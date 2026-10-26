@@ -1,4 +1,4 @@
-import { validateBusinessDateRange } from '../../shared/date-policy';
+import { getBusinessDateWindow, validateBusinessDateRange } from '../../shared/date-policy';
 import type { CatalogSnapshot } from '../../contracts/catalog-create';
 import type { OperationalSnapshot, WarrantyCaseData } from '../../contracts/operational-preview';
 import type { createOperationalWebAdapter } from '../../data/http/operational-preview-adapter';
@@ -6,6 +6,12 @@ import { exportOperationalReport, pinOperationalReports, vietnamDate, type Opera
 
 export type WarrantyReportReadAdapter = Pick<ReturnType<typeof createOperationalWebAdapter>, 'available' | 'read'>;
 export type WarrantyReportPeriod = Pick<OperationalReportQuery, 'from' | 'to'>;
+/** Derive the initial period from the same session as the case list, within the shared date policy. */
+export function defaultWarrantyReportPeriod(snapshot: OperationalSnapshot, now: string): WarrantyReportPeriod {
+  const window = getBusinessDateWindow({ now: new Date(now) });
+  const start = snapshot.scenario ? vietnamDate(snapshot.scenario.data.startedAt) : window.today;
+  return { from: window.minDate && start < window.minDate ? window.minDate : start, to: window.today };
+}
 const fail = (code: string): never => { throw Object.assign(new Error(code), { code }); };
 function frozen<T>(value: T): T { if (value && typeof value === 'object') { Object.freeze(value); Object.values(value).forEach(frozen); } return value; }
 export function projectWarrantyReport(snapshot: OperationalSnapshot, catalog: CatalogSnapshot, query: OperationalReportQuery) {
@@ -51,16 +57,19 @@ export function createWarrantyReportReader(adapter: WarrantyReportReadAdapter, r
     if (!active) return; const token = ++sequence; publish({ model: null, loading: true, exporting: false, error: '' });
     try {
       if (!adapter.available) fail('COMMAND_UNAVAILABLE');
-      const today = vietnamDate(clock()), requested = next ?? period ?? { from: today, to: today }; period = { ...requested }; publish({ period: { ...requested } }); validatePeriod(requested);
+      if (next) period = { ...next };
+      const requested = period;
+      if (requested) { publish({ period: { ...requested } }); validatePeriod(requested); }
       for (let attempt = 0; attempt < 3; attempt++) {
-        validatePeriod(requested);
+        if (requested) validatePeriod(requested);
         const catalog = await readCatalog(); if (!current(token)) return;
-        validatePeriod(requested);
+        if (requested) validatePeriod(requested);
         const snapshot = await adapter.read(); if (!current(token)) return;
         if (catalog.epoch !== snapshot.epoch || catalog.actorKey !== snapshot.actorKey) fail('STALE_DEMO_EPOCH');
         if (catalog.snapshotRevision !== snapshot.snapshotRevision) continue;
-        validatePeriod(requested);
-        const model = projectWarrantyReport(snapshot, catalog, { ...requested, asOf: qaAsOf ?? clock() });
+        const effective = requested ?? defaultWarrantyReportPeriod(snapshot, clock());
+        publish({ period: { ...effective } }); validatePeriod(effective);
+        const model = projectWarrantyReport(snapshot, catalog, { ...effective, asOf: qaAsOf ?? clock() });
         publish({ model, error: '' }); return;
       }
       fail('STALE_SNAPSHOT');
