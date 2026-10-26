@@ -56,7 +56,7 @@ test('desktop dark selected-row contrast and stable screenshot rendering',async(
 test('unverified document has no fabricated fields or link; verified fixture link closes modal',async({page})=>{
  await page.setViewportSize({width:1920,height:1080});await open(page,{state:'unverified'});
  const d=page.locator('dialog[open]');await expect(d.locator('.hn-notification-primary')).toHaveCount(0);await expect(d.locator('.hn-notification-missing-data')).toBeVisible();await shot(page,'state-unverified');
- await open(page);const link=page.locator('dialog[open] .hn-notification-primary');await expect(link).toHaveAttribute('href','#/preview/S15');await link.click();await expect(page.locator('dialog[open]')).toHaveCount(0);expect(new URL(page.url()).hash).toBe('#/preview/S15');
+ await open(page);const link=page.locator('dialog[open] .hn-notification-primary');await expect(link).toHaveAttribute('href',/^#\/preview\/S15\?source=notification&/);const href=await link.getAttribute('href');await link.click();await expect(page.locator('dialog[open]')).toHaveCount(0);expect(new URL(page.url()).hash).toBe(href);
 });
 
 test('actual local S01 shell opens approved data and persists read state without extra labels',async({page})=>{
