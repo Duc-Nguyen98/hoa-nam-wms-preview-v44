@@ -1,7 +1,8 @@
+import { formatBusinessTimestamp } from '../../i18n/format-business-timestamp';
 import { ReadState } from '../../shared/ReadState';
-import { localeForLanguage, useShellPreferences } from '../../shared/shell-preferences';
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, GlobalModal, type TableColumn } from '../../shared';
+import { useShellPreferences } from '../../shared/shell-preferences';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, GlobalModal, Icon, StatusBadge, type TableColumn } from '../../shared';
 import { createCatalogCreateAdapter } from '../../data/http/catalog-create-adapter';
 import { useUiCopy } from '../../i18n/use-ui-copy';
 import { screenRegistry } from '../../app/registry';
@@ -26,7 +27,7 @@ const errorMessage = (code: string) => code === 'SNAPSHOT_CHANGED' ? 'Phiên ho�
 export function OperationalTrays({ adapter }: { adapter: TrayReader }) {
   const tx = useUiCopy(OPERATIONAL_TRAYS_COPY);
   const { language } = useShellPreferences();
-  const locale = localeForLanguage(language);
+
   const controller = useMemo(() => { const catalog = createCatalogCreateAdapter('sku'); return createTrayBinding(adapter, () => catalog.readSnapshot()); }, [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
   const [selection, setSelection] = useState<TraySelection | null>(null), [search, setSearch] = useState('');
@@ -35,15 +36,22 @@ export function OperationalTrays({ adapter }: { adapter: TrayReader }) {
     return () => { controller.suspend(); window.removeEventListener('focus', refresh); document.removeEventListener('visibilitychange', refresh); };
   }, [controller]);
   const model = state.model, selected = resolveTraySelection(model, selection);
-  const time = (value: string) => new Date(value).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' });
+  const time = (value: string) => formatBusinessTimestamp(value, language);
+  const panel = useRef<HTMLElement>(null), returnSelection = useRef<TraySelection | null>(null);
+  const openDetail = (row: OperationalTrayRow) => { if (model) { returnSelection.current = { id: row.id, ...model.report.token }; setSelection(returnSelection.current); } };
+  const detailAction = (row: OperationalTrayRow) => <Button variant="secondary" data-s11-operational-action={row.id} onClick={() => openDetail(row)}>{tx('Chi tiết')}<Icon name="chevron-right" size={18}/></Button>;
+  function resolveDetailReturnFocus() {
+    const row = resolveTraySelection(model, returnSelection.current);
+    return (row && [...(panel.current?.querySelectorAll<HTMLElement>('[data-s11-operational-action]') ?? [])].find(element => element.getAttribute('data-s11-operational-action') === row.id && element.getClientRects().length > 0)) || panel.current?.querySelector<HTMLElement>('#s11-operational-search') || panel.current?.querySelector<HTMLElement>('h2') || null;
+  }
   const feedback = <><ReadState loading={state.busy} error={state.error} hasData={!!model} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(errorMessage(state.error))}/></>;
   const columns: TableColumn<OperationalTrayRow>[] = [
     { id: 'code', heading: tx('Mã khay'), render: row => <strong data-tray-id={row.id}>{row.code}</strong> },
     { id: 'location', heading: tx('Vị trí'), render: row => <span data-location-id={row.locationId}>{row.locationCode}</span> },
-    { id: 'active', heading: tx('Trạng thái khay'), render: row => tx(row.active ? 'Hoạt động' : 'Ngừng hoạt động') },
+    { id: 'active', heading: tx('Trạng thái khay'), render: row => <StatusBadge tone={row.active ? 'success' : 'neutral'}>{tx(row.active ? 'Hoạt động' : 'Ngừng hoạt động')}</StatusBadge> },
     { id: 'boxes', heading: tx('Số BOX'), align: 'end', render: row => row.boxCount }, { id: 'skus', heading: tx('Số SKU'), align: 'end', render: row => row.skuCount },
     { id: 'confirmed', heading: tx('Xác nhận xếp khay gần nhất'), render: row => row.lastConfirmedAt ? <time dateTime={row.lastConfirmedAt}>{time(row.lastConfirmedAt)}</time> : tx('Chưa có xác nhận') },
-    { id: 'actions', heading: tx('Chi tiết'), kind: 'actions', render: row => <Button variant="ghost" onClick={() => { if (model) setSelection({ id: row.id, ...model.report.token }); }}>{tx('Chi tiết')}</Button> },
+    { id: 'actions', heading: tx('Chi tiết'), kind: 'actions', render: detailAction },
   ];
   const boxColumns: TableColumn<TrayBoxRow>[] = [
     { id: 'box', heading: tx('BOX'), render: row => <strong data-box-id={row.id}>{row.code}</strong> },
@@ -53,17 +61,20 @@ export function OperationalTrays({ adapter }: { adapter: TrayReader }) {
     { id: 'confirmed', heading: tx('Xác nhận xếp khay gần nhất'), render: row => <time dateTime={row.confirmedAt} data-putaway-id={row.putawayId}>{time(row.confirmedAt)}</time> },
   ];
   const rows = model?.rows.filter(row => row.code.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())) ?? [];
-  return <section className="s11-operational hn-premium-panel" data-operational-trays aria-label={tx('Khay và BOX hiện tại')}>
-    <div className="s11-operational-controls"><h2>{tx('Khay và BOX hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div>{feedback}
+  return <section ref={panel} className="s11-operational hn-premium-panel" data-operational-trays aria-label={tx('Khay và BOX hiện tại')}>
+    <div className="s11-operational-controls"><h2 tabIndex={-1}>{tx('Khay và BOX hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div>{feedback}
     <p>{tx('Danh sách gồm khay đã thiết lập và BOX đang thuộc khay. Chỉ xác nhận xếp khay mới thay đổi vị trí BOX.')}</p>
     {model && <><p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{time(model.report.query.asOf)}</time> · {tx('Khay đã thiết lập')}: {model.rows.length} · {tx('BOX đang thuộc khay')}: {model.rows.reduce((count, row) => count + row.boxCount, 0)}</p>
       {!model.hasScenario && <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
-      <FormField label={tx('Tìm mã khay')} className="hn-operational-search hn-operational-search--spaced"><FilterInput id="s11-operational-search" label={tx('Tìm mã khay')} aria-label={tx('Tìm mã khay')} value={search} onChange={event => setSearch(event.target.value)} /></FormField><DataTable caption={tx('Khay và BOX hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.id} appearance="refined" emptyContent={<p>{tx(model.rows.length ? 'Không có khay phù hợp.' : 'Chưa có khay được thiết lập.')}</p>} />
+      <FormField label={tx('Tìm mã khay')} className="hn-operational-search hn-operational-search--spaced"><FilterInput id="s11-operational-search" label={tx('Tìm mã khay')} aria-label={tx('Tìm mã khay')} value={search} onChange={event => setSearch(event.target.value)} /></FormField><div className="s11-lookup-cards">{rows.length ? rows.map(row => <article className="s11-lookup-card" key={row.id}>
+        <header><h3>{row.code}</h3><StatusBadge tone={row.active ? 'success' : 'neutral'}>{tx(row.active ? 'Hoạt động' : 'Ngừng hoạt động')}</StatusBadge></header>
+        <dl><div className="s11-lookup-wide"><dt>{tx('Vị trí')}</dt><dd>{row.locationCode}</dd></div><div><dt>{tx('Số BOX')}</dt><dd>{row.boxCount}</dd></div><div><dt>{tx('Số SKU')}</dt><dd>{row.skuCount}</dd></div><div className="s11-lookup-wide"><dt>{tx('Xác nhận xếp khay gần nhất')}</dt><dd>{row.lastConfirmedAt ? <time dateTime={row.lastConfirmedAt}>{time(row.lastConfirmedAt)}</time> : tx('Chưa có xác nhận')}</dd></div></dl>{detailAction(row)}
+      </article>) : <p>{tx(model.rows.length ? 'Không có khay phù hợp.' : 'Chưa có khay được thiết lập.')}</p>}</div><div className="s11-lookup-table"><DataTable stickyEndColumnIds={['actions']} caption={tx('Khay và BOX hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.id} appearance="refined" emptyContent={<p>{tx(model.rows.length ? 'Không có khay phù hợp.' : 'Chưa có khay được thiết lập.')}</p>} /></div>
     </>}
     <CatalogueNavTabs label={tx('Chứng từ liên quan')} items={([['S12', 'Phiếu nhập'], ['S14', 'Lệnh xếp khay'], ['S26', 'Truy vết']] as const).map(([key, label]) => ({ key, label: tx(label), href: screenRegistry.find(screen => screen.key === key)?.href }))} />
-    <GlobalModal open={!!selection} title={tx('Chi tiết khay')} onClose={() => setSelection(null)} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div><Button onClick={() => setSelection(null)}>{tx('Đóng')}</Button></>}>
+    <GlobalModal className="s11-lookup-dialog" resolveReturnFocus={resolveDetailReturnFocus} open={!!selection} title={tx('Chi tiết khay')} onClose={() => setSelection(null)} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div><Button onClick={() => setSelection(null)}>{tx('Đóng')}</Button></>}>
       {feedback}
-      {!selected ? !state.busy && !state.error && <p>{tx('Khay không còn thuộc phiên đã chọn. Đóng và chọn lại từ danh sách.')}</p> : <><dl className="s11-detail__fields" data-tray-id={selected.id}><div><dt>{tx('Mã khay')}</dt><dd>{selected.code}</dd></div><div><dt>{tx('Vị trí')}</dt><dd data-location-id={selected.locationId}>{selected.locationCode}</dd></div><div><dt>{tx('Trạng thái khay')}</dt><dd>{tx(selected.active ? 'Hoạt động' : 'Ngừng hoạt động')}</dd></div><div><dt>{tx('Trạng thái vị trí')}</dt><dd>{tx(selected.locationActive ? 'Hoạt động' : 'Ngừng hoạt động')}</dd></div><div><dt>{tx('Số BOX')}</dt><dd>{selected.boxCount}</dd></div><div><dt>{tx('Số SKU')}</dt><dd>{selected.skuCount}</dd></div></dl><p>{tx('Tồn BOX theo bút toán hiện tại, không phải số lượng lúc tạo lệnh. Mỗi BOX giữ đơn vị tính riêng.')}</p><DataTable caption={tx('BOX trong khay')} rows={selected.boxes} columns={boxColumns} rowKey={row => row.id} emptyContent={<p>{tx('Khay hiện chưa có BOX.')}</p>} /></>}
+      {!selected ? !state.busy && !state.error && <p>{tx('Khay không còn thuộc phiên đã chọn. Đóng và chọn lại từ danh sách.')}</p> : <><dl className="s11-detail__fields" data-tray-id={selected.id}><div><dt>{tx('Mã khay')}</dt><dd>{selected.code}</dd></div><div><dt>{tx('Vị trí')}</dt><dd data-location-id={selected.locationId}>{selected.locationCode}</dd></div><div><dt>{tx('Trạng thái khay')}</dt><dd>{tx(selected.active ? 'Hoạt động' : 'Ngừng hoạt động')}</dd></div><div><dt>{tx('Trạng thái vị trí')}</dt><dd>{tx(selected.locationActive ? 'Hoạt động' : 'Ngừng hoạt động')}</dd></div><div><dt>{tx('Số BOX')}</dt><dd>{selected.boxCount}</dd></div><div><dt>{tx('Số SKU')}</dt><dd>{selected.skuCount}</dd></div></dl><p>{tx('Tồn BOX theo bút toán hiện tại, không phải số lượng lúc tạo lệnh. Mỗi BOX giữ đơn vị tính riêng.')}</p><div className="s11-lookup-cards"><h3>{tx('BOX trong khay')}</h3>{selected.boxes.length ? selected.boxes.map(row => <article className="s11-lookup-card" key={row.id}><header><h3>{row.code}</h3></header><dl><div className="s11-lookup-wide"><dt>{tx('SKU / Sản phẩm')}</dt><dd>{row.skuCode}<span>{row.productName}</span></dd></div><div><dt>{tx('Phiếu nhập nguồn')}</dt><dd>{row.receiptCode}</dd></div><div><dt>{tx('Tồn hiện tại')}</dt><dd>{row.quantity} {tx(row.unit)}</dd></div><div className="s11-lookup-wide"><dt>{tx('Xác nhận xếp khay gần nhất')}</dt><dd>{time(row.confirmedAt)}</dd></div></dl></article>) : <p>{tx('Khay hiện chưa có BOX.')}</p>}</div><div className="s11-lookup-table"><DataTable caption={tx('BOX trong khay')} rows={selected.boxes} columns={boxColumns} rowKey={row => row.id} emptyContent={<p>{tx('Khay hiện chưa có BOX.')}</p>} /></div></>}
     </GlobalModal>
   </section>;
 }

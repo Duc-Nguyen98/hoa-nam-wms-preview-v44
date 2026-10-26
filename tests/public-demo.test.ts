@@ -25,14 +25,14 @@ test('public Demo confirms the approved synthetic actor and persists across acco
 });
 test('public onboarding requires login, creates valid Demo setup and does not reset an existing scenario',async()=>{
  const client=createApiClient({baseURL:'https://public-demo.test/api/v1'});
- const runtime=installPreviewMock(client,{origin:'https://public-demo.test',approvedPreviewCommands:true,credentialProfile:PUBLIC_DEMO_LOGIN,persistence:createMemoryPersistence(),sessionToken:createMemorySessionToken(),businessPersistence:createMemoryBusinessPersistence(),recoveryPersistence:createMemoryBusinessPersistence(),notificationPersistence:createMemoryPersistence()});
- const setup=createPublicDemoSetup(client);
+ const runtime=installPreviewMock(client,{origin:'https://public-demo.test',approvedPreviewCommands:true,approvedAppEventFixture:true,credentialProfile:PUBLIC_DEMO_LOGIN,persistence:createMemoryPersistence(),sessionToken:createMemorySessionToken(),businessPersistence:createMemoryBusinessPersistence(),recoveryPersistence:createMemoryBusinessPersistence(),notificationPersistence:createMemoryPersistence()});
+ const setup=createPublicDemoSetup(client,()=>runtime);
  await assert.rejects(setup.initialize());
  await client.post('auth/login',{username:'demo',password:'HoaNamDemo@2026'});await client.post('auth/confirm',{});
  assert.equal(await setup.ready(),false);
- const first=await setup.initialize();assert.ok(first.scenario);assert.equal(first.profiles.length,2);assert.equal(first.token.generation,1);assert.equal(first.receipts.length,0);
+ const first=await setup.initialize();assert.ok(first.scenario);assert.equal(first.profiles.length,2);assert.equal(first.token.generation,1);assert.equal(first.receipts.length,4);assert.ok(first.receipts.every(row=>row.data.status==='POSTED'));
  const catalog=await createCatalogCreateAdapter('sku',client,{available:true}).readSnapshot();assert.equal(catalog.products.length,2);assert.equal(catalog.skus.length,2);assert.equal(catalog.recipients.length,1);
  assert.equal(await setup.ready(),true);const before=await runtime.business.readSnapshot();
- const second=await createPublicDemoSetup(client).initialize();assert.equal(second.scenario?.id,first.scenario?.id);assert.deepEqual(await runtime.business.readSnapshot(),before);
+ const second=await createPublicDemoSetup(client,()=>runtime).initialize();assert.equal(second.scenario?.id,first.scenario?.id);assert.deepEqual(await runtime.business.readSnapshot(),before);
  runtime.uninstall();
 });

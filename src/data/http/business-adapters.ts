@@ -33,7 +33,6 @@ import { createOutboundReportFixtureAdapter } from '../adapters/outbound-report-
 import { createMovementFixtureAdapter } from '../adapters/movement-history-fixture-adapter';
 import { createInventoryReportFixtureAdapter } from '../adapters/inventory-report-fixture-adapter';
 import { warrantyPartsReportFixtureAdapter } from '../adapters/warranty-parts-report-fixture-adapter';
-import { createLabelReportFixtureAdapter } from '../adapters/label-report-fixture-adapter';
 import { createDataQualityFixtureAdapter } from '../adapters/data-quality-fixture-adapter';
 import { createDealerExportFixtureAdapter } from '../adapters/dealer-export-fixture-adapter';
 import { createTraceFixtureAdapter } from '../adapters/goods-trace-fixture-adapter';
@@ -60,13 +59,12 @@ function listRead<Query extends object, Result>(screen: BusinessScreenId, defaul
  * adapters and the real service boundary.
  */
 export function createBusinessHttpAdapters(client: AxiosInstance = apiClient): BusinessHttpAdapters {
-  const previewReports: Partial<Pick<BusinessHttpAdapters, 'S18' | 'S19' | 'S20' | 'S21' | 'S22' | 'S23' | 'S24' | 'S25' | 'S26'>> = IS_BROWSER_PREVIEW ? {
+  const previewReports: Partial<Pick<BusinessHttpAdapters, 'S18' | 'S19' | 'S20' | 'S21' | 'S22' | 'S24' | 'S25' | 'S26'>> = IS_BROWSER_PREVIEW ? {
     S18: createInboundReportFixtureAdapter(),
     S19: createOutboundReportFixtureAdapter(),
     S20: createMovementFixtureAdapter(),
     S21: createInventoryReportFixtureAdapter(),
     S22: warrantyPartsReportFixtureAdapter,
-    S23: createLabelReportFixtureAdapter(),
     S24: createDataQualityFixtureAdapter(),
     S25: createDealerExportFixtureAdapter(),
     S26: createTraceFixtureAdapter(),
@@ -85,7 +83,8 @@ export function createBusinessHttpAdapters(client: AxiosInstance = apiClient): B
     S20: previewReports.S20 ?? listRead('S20', defaults.S20, client),
     S21: previewReports.S21 ?? listRead('S21', defaults.S21, client),
     S22: previewReports.S22 ?? { readSummary: (period, context) => readBusinessResource('S22', period, context, client) },
-    S23: previewReports.S23 ?? listRead('S23', defaults.S23, client),
+    // Labels are mutable in Preview; reads must share the command repository.
+    S23: listRead('S23', defaults.S23, client),
     S24: previewReports.S24 ?? listRead('S24', defaults.S24, client),
     S25: previewReports.S25 ?? listRead('S25', defaults.S25, client),
     S26: previewReports.S26 ?? listRead('S26', defaults.S26, client),

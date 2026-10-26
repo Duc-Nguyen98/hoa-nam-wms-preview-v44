@@ -3,34 +3,37 @@ import { apiClient } from '../data/http/api-client';
 import { createCatalogCreateAdapter } from '../data/http/catalog-create-adapter';
 import { createOperationalQaAdapter, createOperationalWebAdapter, hasOperationalCommitProof } from '../data/http/operational-preview-adapter';
 import { readBrowserPreviewRuntime } from './browser-runtime';
+import type { PreviewMockRuntime } from './index';
+import { createBusinessHttpAdapters } from '../data/http/business-adapters';
+import { DEFAULT_DEFECTS_QUERY } from '../contracts/defects';
 import { CATALOG_COMMANDS, type CatalogDomain, type CatalogPayloads } from '../contracts/catalog-create';
-import type { OperationalCommand } from '../contracts/operational-preview';
+import type { OperationalCommand, OperationalSnapshot } from '../contracts/operational-preview';
 
 const codes=['PUBLIC-DEMO-PRODUCT-A','PUBLIC-DEMO-PRODUCT-B','PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B','PUBLIC-DEMO-RECIPIENT'];
 const fail=()=>{throw new Error('Chưa thể xác minh dữ liệu Demo. Bấm thử lại để tiếp tục từ dữ liệu đã lưu.');};
+const warrantyMarker='Demo bảo hành: thiết bị không lên nguồn · PUBLIC-DEMO-WARRANTY-0012';
+const demoCase=(s:OperationalSnapshot)=>s.warrantyCases.find(row=>row.data.customerReportedIssue===warrantyMarker);
 /** Dedicated public Candidate only. All writes use the existing validated commands.
  * No existing scenario is archived, reset or replaced by this onboarding. */
-export function createPublicDemoSetup(client:AxiosInstance=apiClient){
+export function createPublicDemoSetup(client:AxiosInstance=apiClient,getRuntime:()=>PreviewMockRuntime|undefined=readBrowserPreviewRuntime){
  const qa=createOperationalQaAdapter(client,{available:true,scope:'public-demo-initial-setup'});
  const web=createOperationalWebAdapter(client,{available:true,scope:'public-demo-initial-setup'});
- let app04=readBrowserPreviewRuntime()?.appEventAdapters?.P04;
- let app05=readBrowserPreviewRuntime()?.appEventAdapters?.P05;
- // Keep the operational web preview focused on the receipt worklist. The App
- // event fixture is only needed when an explicit App preview route is opened;
- // running it during S12 onboarding would immediately move the reference
- // receipts out of the draft state shown by the public worklist.
- const appFlowEnabled=true;
+ let app04=getRuntime()?.appEventAdapters?.P04;
+ let app05=getRuntime()?.appEventAdapters?.P05;
+ let app09=getRuntime()?.appEventAdapters?.P09;
+ let app19=getRuntime()?.appEventAdapters?.P19;
+ const refreshAppAdapters=()=>{const adapters=getRuntime()?.appEventAdapters;app04=adapters?.P04;app05=adapters?.P05;app09=adapters?.P09;app19=adapters?.P19;};
  const catalogReader=createCatalogCreateAdapter('sku',client,{available:true});
  async function ready(){
-  app04=readBrowserPreviewRuntime()?.appEventAdapters?.P04;
-  app05=readBrowserPreviewRuntime()?.appEventAdapters?.P05;
+  refreshAppAdapters();
   const s=await web.read(); if(!s.scenario)return false;
   const c=await catalogReader.readSnapshot();
   const ours=c.skus.filter(k=>['PUBLIC-DEMO-SKU-A','PUBLIC-DEMO-SKU-B'].includes(k.code)&&s.scenario!.data.selectedSkuIds.includes(k.id));
   const receiptsReady=['PN-0012','PN-0011','PN-0010'].every(code=>s.receipts.some(r=>r.data.code===code));
-  if(!ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) || !receiptsReady)return false;
-  if(appFlowEnabled && (!app04 || !app05))return false;
-  return !appFlowEnabled || (['PN-0012','PN-0011','PN-0010','PN-0009'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0009'&&b.data.status==='IN_STOCK'&&b.data.trayId===null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED'));
+  if(ours.length!==2 || !ours.every(k=>s.profiles.some(p=>p.data.skuId===k.id)) || !receiptsReady)return false;
+  if(!app04 || !app05 || !app09 || !app19)return false;
+  const warranty=demoCase(s);
+  return ['PN-0012','PN-0011','PN-0010','PN-0009'].every(code=>s.receipts.some(r=>r.data.code===code&&r.data.status==='POSTED')) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0010'&&b.data.status==='IN_STOCK'&&b.data.trayId!==null) && s.boxes.some(b=>b.data.physicalCode==='PUBLIC-DEMO-BOX-0009'&&b.data.status==='IN_STOCK'&&b.data.trayId===null) && s.outbounds.some(o=>o.data.status==='POSTED') && s.putaways.some(p=>p.data.status==='CONFIRMED') && warranty?.data.state==='RETURNED' && s.partsIssues.some(issue=>issue.data.caseId===warranty.id&&issue.data.status==='POSTED');
  }
  async function ensureCatalog<D extends CatalogDomain>(domain:D,payload:CatalogPayloads[D]){
   const adapter=createCatalogCreateAdapter(domain,client,{available:true});
@@ -78,10 +81,12 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
  }
  async function initialize(){
   await recover(qa);await recover(web);
-  app04=readBrowserPreviewRuntime()?.appEventAdapters?.P04;
-  app05=readBrowserPreviewRuntime()?.appEventAdapters?.P05;
+  refreshAppAdapters();
   if(app04)await recover(app04);
   if(app05)await recover(app05);
+  if(app09)await recover(app09);
+  if(app19)await recover(app19);
+  if(!app04||!app05||!app09||!app19)return fail();
   let s=await web.read();
   if(!s.scenario){
    for(const suffix of ['A','B']){
@@ -112,8 +117,7 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
    if(s.receipts.some(row=>row.data.code===receipt.previewCode))continue;
    await operation(web,'inbound.create',receipt);
   }
-  // Optional App-backed flow is isolated to the explicit app-preview fixture.
-  if(appFlowEnabled && app04 && app05){
+  {
   // Complete the demo inbound flow so S11/S13/S15 can render real boxes and stock.
   const inboundPlans=[
    {code:'PN-0012',skuCode:'PUBLIC-DEMO-SKU-A',physicalCode:'PUBLIC-DEMO-SERIAL-0012'},
@@ -162,6 +166,54 @@ export function createPublicDemoSetup(client:AxiosInstance=apiClient){
   }
   if(putaway?.data.status==='DRAFT')await updateOperation(web,'putaway.confirm',putaway.id,putaway.version,{trayId:'operational-setup:tray:1'});
   }
+  // Add this release's warranty example to fresh and existing public sessions.
+  // Resume only its marked case; every step is a normal journaled command.
+  s=await web.read();
+  let warranty=demoCase(s);
+  if(!warranty){
+   const physical=s.physical.find(row=>row.data.physicalCode==='PUBLIC-DEMO-SERIAL-0012');
+   if(!physical||physical.data.status!=='ISSUED')return fail();
+   await operation(app09,'warranty.intake',{identityMode:'SERIAL',skuId:physical.data.skuId,physicalId:physical.id,customerReportedIssue:warrantyMarker});
+   s=await web.read();warranty=demoCase(s);
+  }
+  if(!warranty)return fail();
+  if(warranty.data.state==='RECEIVED'){
+   const defects=await createBusinessHttpAdapters(client).S02.read({...DEFAULT_DEFECTS_QUERY,search:'DF-POWER-01',status:'active'});
+   if(defects.kind!=='ready')return fail();
+   const row=defects.model.rows.find(item=>item.code==='DF-POWER-01');
+   const target=row&&defects.model.commandContext?.records[row.key];
+   if(!target)return fail();
+   const expectedFinishDate=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Ho_Chi_Minh',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(warranty.data.receivedAt));
+   await updateOperation(web,'warranty.diagnose',warranty.id,warranty.version,{defectIds:[target.entityId],technicianDiagnosis:'Demo: kiểm tra nguồn, thay 2 linh kiện và chạy thử trước khi trả khách.',expectedFinishDate});
+   s=await web.read();warranty=demoCase(s)!;
+  }
+  if(warranty.data.state==='CHECKING'){
+   await updateOperation(web,'warranty.transition',warranty.id,warranty.version,{state:'REPAIRING'});
+   s=await web.read();warranty=demoCase(s)!;
+  }
+  if(warranty.data.state==='REPAIRING'){
+   let issue=s.partsIssues.find(row=>row.data.caseId===warranty!.id);
+   if(!issue){
+    await operation(app19,'parts.create',{caseId:warranty.id,observedCaseVersion:warranty.version});
+    s=await web.read();issue=s.partsIssues.find(row=>row.data.caseId===warranty!.id);
+   }
+   if(!issue)return fail();
+   if(issue.data.status==='DRAFT'){
+    const box=s.boxes.find(row=>row.data.physicalCode==='PUBLIC-DEMO-BOX-0010');
+    if(!box)return fail();
+    await updateOperation(app19,'parts.save',issue.id,issue.version,{lines:[{physicalCode:box.data.physicalCode,observedVersion:box.version,quantity:2}]});
+    s=await web.read();issue=s.partsIssues.find(row=>row.id===issue!.id)!;
+   }
+   if(issue.data.status==='SCANNING'){
+    await updateOperation(app19,'parts.post',issue.id,issue.version,{issueId:issue.id});
+    s=await web.read();issue=s.partsIssues.find(row=>row.id===issue!.id)!;
+   }
+   if(issue.data.status!=='POSTED')return fail();
+   warranty=demoCase(s)!;
+   await updateOperation(web,'warranty.transition',warranty.id,warranty.version,{state:'REPAIRED'});
+   s=await web.read();warranty=demoCase(s)!;
+  }
+  if(warranty.data.state==='REPAIRED')await updateOperation(web,'warranty.transition',warranty.id,warranty.version,{state:'RETURNED'});
   if(!await ready())return fail();return web.read();
  }
  return {ready,initialize:()=>typeof navigator!=='undefined'&&navigator.locks?navigator.locks.request('hoa-nam-public-demo-initial-setup',initialize):initialize()};

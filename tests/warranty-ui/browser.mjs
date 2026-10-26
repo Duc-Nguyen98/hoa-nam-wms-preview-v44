@@ -9,7 +9,7 @@ page.setDefaultTimeout(20000);
 const errors = [], checks = [];
 page.on('pageerror', e => errors.push(e.message));
 const selectors = { S09: '[data-operational-warranty]', S10: '[data-operational-parts-issues]', S16: '[data-operational-inventory]', S22: '[data-operational-warranty-report]' };
-const goto = async screen => { await page.goto(`${base}/#/preview/${screen}`); await page.locator(selectors[screen] + ' tbody tr').first().waitFor(); };
+const goto = async screen => { await page.goto(`${base}/#/preview/${screen}`); await page.locator(selectors[screen] + (screen === 'S16' ? ' [data-inventory-quantity]:visible' : ' tbody tr')).first().waitFor(); };
 const modal = () => page.locator('dialog[open]');
 const refresh = () => modal().locator('.hn-global-modal__footer button').first();
 async function preferences(language, theme) {
@@ -47,7 +47,7 @@ try {
       const root = page.locator(selectors[screen]);
       await expect(root.locator('tbody tr')).toHaveCount(screen === 'S16' ? 2 : 1);
       if (screen === 'S22') await expect(root).toContainText(before.warrantyCases[0].data.code);
-      if (screen === 'S16') expect(await root.locator('[data-inventory-quantity]').evaluateAll(nodes => nodes.map(n => Number(n.dataset.inventoryQuantity)).sort())).toEqual([0, 8]);
+      if (screen === 'S16') expect(await root.locator('[data-inventory-quantity]:visible').evaluateAll(nodes => nodes.map(n => Number(n.dataset.inventoryQuantity)).sort())).toEqual([0, 8]);
       await page.evaluate(() => document.fonts.ready);
       await page.screenshot({ path: `${out}/${name}-${screen}-list.png`, fullPage: true });
       if (screen === 'S09' || screen === 'S10') {

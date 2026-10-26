@@ -1,0 +1,16 @@
+import {chromium,expect} from '@playwright/test';import fs from 'node:fs/promises';
+const base=process.env.LOOKUP_BASE??'http://127.0.0.1:5186',phase=process.env.LOOKUP_PHASE??'before',out=`output/lookup-ui-${phase}`;await fs.mkdir(out,{recursive:true});const browser=await chromium.launch(),page=await browser.newPage({viewport:{width:1920,height:1080}}),checks=[],errors=[];page.setDefaultTimeout(20000);page.on('pageerror',e=>errors.push(e.message));
+try{
+await page.goto(base+'/#/preview/S07');await page.locator('#s07-username').fill('demo');await page.locator('#s07-password').fill('HoaNamDemo@2026');await page.locator('.s07-submit').click();await page.locator('.s08-confirm').click();await page.getByRole('button',{name:'Tiếp tục',exact:true}).click();await page.locator('.ov-result-count').waitFor();
+for(const [layout,width,height] of [['desktop',1920,1080],['tablet',800,1280]])for(const theme of ['light','dark']){
+ await page.setViewportSize({width,height});await page.evaluate(theme=>{localStorage.setItem('hn-wms.s00.theme.v1',theme);window.dispatchEvent(new StorageEvent('storage',{key:null}));},theme);
+ for(const screen of ['S11','S16','S23']){
+  await page.goto(base+'/#/preview/'+screen);const root=page.locator(`[data-screen="${screen}"]`);await root.waitFor();await root.locator('tbody tr').first().waitFor();await page.evaluate(()=>document.fonts.ready);await page.mouse.move(0,0);await page.evaluate(()=>document.activeElement?.blur());
+  const metrics=await root.evaluate(e=>{const visible=el=>el.getClientRects().length>0;const measure=el=>{const s=getComputedStyle(el),b=el.getBoundingClientRect();return {text:(el.getAttribute('aria-label')??el.textContent).trim(),font:s.fontSize,line:s.lineHeight,width:b.width,height:b.height,x:b.x,right:b.right};};return {title:measure(e.querySelector('h1')),buttons:[...e.querySelectorAll('button')].filter(visible).map(measure),tables:[...e.querySelectorAll('.hn-table-scroll')].filter(visible).map(el=>({width:el.clientWidth,scroll:el.scrollWidth})),text:e.innerText.slice(0,3500),overflow:document.documentElement.scrollWidth>innerWidth+1};});
+  await page.screenshot({path:`${out}/${layout}-${theme}-${screen}-list.png`,fullPage:true});
+  const opener=root.locator(screen==='S23'?'tbody [data-column="actions"] button':'tbody button').first();await opener.scrollIntoViewIfNeeded();await opener.click();const modal=page.locator('dialog[open]');if(await modal.count()){await modal.waitFor();await page.screenshot({path:`${out}/${layout}-${theme}-${screen}-detail.png`,fullPage:true});metrics.modal=await modal.evaluate(e=>({text:e.innerText.slice(0,1800),buttons:[...e.querySelectorAll('button')].map(el=>{const r=el.getBoundingClientRect(),s=getComputedStyle(el);return {text:el.getAttribute('aria-label')??el.textContent,width:r.width,height:r.height,font:s.fontSize};})}));await page.keyboard.press('Escape');}
+  checks.push({layout,theme,screen,...metrics});
+ }
+}
+console.log(JSON.stringify({phase,checks:checks.length,errors}));
+}catch(error){await page.screenshot({path:out+'/failure.png',fullPage:true});throw error;}finally{await fs.writeFile(out+'/results.json',JSON.stringify({checks,errors},null,2));await browser.close();}

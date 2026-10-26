@@ -1,6 +1,7 @@
+import { formatBusinessTimestamp } from '../../i18n/format-business-timestamp';
 import { PageState } from '../../shared/PageState';
 import { ReadState } from '../../shared/ReadState';
-import { localeForLanguage, useShellPreferences } from '../../shared/shell-preferences';
+import { useShellPreferences } from '../../shared/shell-preferences';
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { FormField, FilterInput, Button, CatalogueNavTabs, DataTable, GlobalModal, Icon, type TableColumn } from '../../shared';
 import { useUiCopy } from '../../i18n/use-ui-copy';
@@ -37,7 +38,7 @@ const errorMessage = (code: string) => ['COMMAND_UNAVAILABLE', 'SESSION_EXPIRED'
 export function OperationalInventory({ adapter: supplied }: { adapter?: InventoryOperationalReader }) {
   const tx = useUiCopy(INVENTORY_BINDING_COPY);
   const { language } = useShellPreferences();
-  const locale = localeForLanguage(language);
+
   const adapter = useMemo(() => supplied ?? createOperationalWebAdapter(undefined, { scope: 'S16' }), [supplied]);
   const controller = useMemo(() => { const catalog = createCatalogCreateAdapter('sku'); return createOperationalInventoryBinding(adapter, () => catalog.readSnapshot()); }, [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
@@ -51,7 +52,7 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
     // within its original dataset; failed reads or a new session use a stable fallback.
     const row = resolveInventorySelection(model, returnSelection.current);
     const action = row ? [...root.querySelectorAll<HTMLElement>('[data-s16-operational-action]')]
-      .find(element => element.getAttribute('data-s16-operational-action') === row.key) : null;
+      .find(element => element.getAttribute('data-s16-operational-action') === row.key && element.getClientRects().length > 0) : null;
     return action ?? root.querySelector<HTMLElement>('[data-s16-operational-search]')
       ?? root.querySelector<HTMLElement>('[data-s16-operational-heading]');
   }
@@ -61,6 +62,7 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
   }, [controller]);
   const feedback = <><ReadState loading={state.busy} error={state.error} hasData={!!model} loadingText={tx('Đang đọc dữ liệu…')} errorText={tx(errorMessage(state.error))}/></>;
   const rows = model?.rows.filter(row => `${row.skuCode} ${row.productName}`.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())) ?? [];
+  const detailAction = (row: OperationalInventoryRow) => <Button variant="secondary" data-s16-operational-action={row.key} onClick={() => { if (model) { returnSelection.current = { key: row.key, ...model.report.token }; setSelection(returnSelection.current); } }}>{tx('Xem')}<Icon name="chevron-right" size={18}/></Button>;
   const columns: TableColumn<OperationalInventoryRow>[] = [
     { id: 'sku', heading: tx('SKU'), render: row => <strong>{row.skuCode}</strong> },
     { id: 'name', heading: tx('Tên hàng'), render: row => row.productName },
@@ -68,21 +70,21 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
     { id: 'ledger', heading: tx('Tồn theo sổ cái'), render: row => <span data-inventory-quantity={row.quantity}>{row.quantity} {tx(row.unit)}</span> },
     { id: 'actual', heading: tx('Kiểm đếm thực tế'), render: () => tx('Chưa xác định') },
     { id: 'difference', heading: tx('Chênh lệch'), render: () => tx('Chưa xác định') },
-    { id: 'actions', heading: tx('Thao tác'), kind: 'actions', render: row => <Button variant="ghost" data-s16-operational-action={row.key} onClick={() => { if (model) { returnSelection.current = { key: row.key, ...model.report.token }; setSelection(returnSelection.current); } }}>{tx('Xem')}</Button> },
+    { id: 'actions', heading: tx('Thao tác'), kind: 'actions', render: detailAction },
   ];
   const events = model && selected ? model.report.events.filter(event => event.data.skuId === selected.skuId && event.data.warehouseId === selected.warehouseId && event.data.unit === selected.unit) : [];
   const documents = model ? [...model.report.receipts, ...model.report.outbounds, ...model.report.partsIssues, ...model.report.reversals] : [];
   return <section ref={panel} className="s16-operational hn-premium-panel" data-operational-inventory aria-label={tx('Tồn kho phiên hiện tại')}>
     <div className="s16-operational-controls"><h2 tabIndex={-1} data-s16-operational-heading>{tx('Tồn kho phiên hiện tại')}</h2><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div>
     {feedback}<p>{tx('Số liệu theo sổ cái từ các giao dịch đã ghi sổ, không bao gồm phiếu nháp.')}</p><p>{tx('Chưa có dữ liệu kiểm đếm thực tế; chưa thể tính chênh lệch.')}</p>
-    {model && <p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{new Date(model.report.query.asOf).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time></p>}
+    {model && <p>{tx('Dữ liệu đọc lúc')}: <time dateTime={model.report.query.asOf}>{formatBusinessTimestamp(model.report.query.asOf, language)}</time></p>}
     {model && !model.hasScenario && <p>{tx('Chưa có phiên làm việc. Thiết lập phiên trong khu vực kiểm thử.')}</p>}
-    {model?.hasScenario && (model.rows.length ? <><FormField label={tx('Tìm SKU hoặc tên hàng')} className="hn-operational-search"><FilterInput id="s16-operational-search" label={tx('Tìm SKU hoặc tên hàng')} aria-label={tx('Tìm SKU hoặc tên hàng')} data-s16-operational-search value={search} onChange={event => setSearch(event.target.value)} /></FormField><DataTable caption={tx('Tồn kho phiên hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.key} appearance="refined" emptyContent={<p>{tx('Không có dòng phù hợp.')}</p>} /></> : <PageState kind="empty" title={tx('Chưa có biến động tồn kho trong phiên hiện tại.')} description={tx('Số liệu sẽ xuất hiện sau khi có giao dịch đã ghi sổ trong phiên này.')} action={<Button disabled={state.busy} onClick={()=>void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>}/>)}
+    {model?.hasScenario && (model.rows.length ? <><FormField label={tx('Tìm SKU hoặc tên hàng')} className="hn-operational-search"><FilterInput id="s16-operational-search" label={tx('Tìm SKU hoặc tên hàng')} aria-label={tx('Tìm SKU hoặc tên hàng')} data-s16-operational-search value={search} onChange={event => setSearch(event.target.value)} /></FormField><div className="s16-lookup-cards">{rows.length ? rows.map(row => <article className="s16-lookup-card" key={row.key}><header><h3>{row.skuCode}</h3></header><p>{row.productName}</p><dl><div><dt>{tx('Kho')}</dt><dd>{row.warehouseId}</dd></div><div><dt>{tx('Tồn theo sổ cái')}</dt><dd data-inventory-quantity={row.quantity}>{row.quantity} {tx(row.unit)}</dd></div><div><dt>{tx('Kiểm đếm thực tế')}</dt><dd>{tx('Chưa xác định')}</dd></div><div><dt>{tx('Chênh lệch')}</dt><dd>{tx('Chưa xác định')}</dd></div></dl>{detailAction(row)}</article>) : <p>{tx('Không có dòng phù hợp.')}</p>}</div><div className="s16-lookup-table"><DataTable stickyEndColumnIds={['actions']} caption={tx('Tồn kho phiên hiện tại')} captionVisibility="sr-only" rows={rows} columns={columns} rowKey={row => row.key} appearance="refined" emptyContent={<p>{tx('Không có dòng phù hợp.')}</p>} /></div></> : <PageState kind="empty" title={tx('Chưa có biến động tồn kho trong phiên hiện tại.')} description={tx('Số liệu sẽ xuất hiện sau khi có giao dịch đã ghi sổ trong phiên này.')} action={<Button disabled={state.busy} onClick={()=>void controller.load()}>{tx('Đọc lại dữ liệu')}</Button>}/>)}
     <CatalogueNavTabs label={tx('Chứng từ liên quan')} items={[
       { key: 'receipts', label: tx('Phiếu nhập'), href: route('S12') }, { key: 'outbounds', label: tx('Phiếu xuất kho'), href: route('S15') },
       { key: 'parts', label: tx('Phiếu xuất linh kiện'), href: route('S10') }, { key: 'reversals', label: tx('Phiếu đảo tồn'), href: route('S17') },
     ]} />
-    <GlobalModal open={!!selection} title={tx('Chi tiết tồn kho')} onClose={() => setSelection(null)} resolveReturnFocus={resolveDetailReturnFocus} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div><Button onClick={() => setSelection(null)}>{tx('Đóng')}</Button></>}>
+    <GlobalModal className="s16-lookup-dialog" open={!!selection} title={tx('Chi tiết tồn kho')} onClose={() => setSelection(null)} resolveReturnFocus={resolveDetailReturnFocus} size="large" footer={<><div className="hn-modal-footer-tools"><Button variant="secondary" disabled={state.busy} onClick={() => void controller.load()}>{tx('Đọc lại dữ liệu')}</Button></div><Button onClick={() => setSelection(null)}>{tx('Đóng')}</Button></>}>
       {feedback}
       {!selected || !model ? !state.busy && !state.error && <p>{tx('Dòng tồn không còn thuộc phiên hiện tại. Đóng và chọn lại từ danh sách.')}</p> : <>
         <dl className="s16-operational-fields" data-inventory-sku-id={selected.skuId}><div><dt>{tx('SKU')}</dt><dd>{selected.skuCode}</dd></div><div><dt>{tx('Tên hàng')}</dt><dd>{selected.productName}</dd></div><div><dt>{tx('Kho')}</dt><dd>{selected.warehouseId}</dd></div><div><dt>{tx('Tồn theo sổ cái')}</dt><dd>{selected.quantity} {tx(selected.unit)}</dd></div><div><dt>{tx('Kiểm đếm thực tế')}</dt><dd>{tx('Chưa xác định')}</dd></div><div><dt>{tx('Chênh lệch')}</dt><dd>{tx('Chưa xác định')}</dd></div></dl>
@@ -91,7 +93,7 @@ export function OperationalInventory({ adapter: supplied }: { adapter?: Inventor
           { id: 'document', heading: tx('Chứng từ'), render: event => documents.find(d => d.id === event.data.documentId)?.data.code ?? '—' },
           { id: 'kind', heading: tx('Loại biến động'), render: event => tx(EVENT_LABEL[event.data.eventType]) },
           { id: 'quantity', heading: tx('Số lượng tăng / giảm'), render: event => `${event.data.signedQuantity > 0 ? '+' : ''}${event.data.signedQuantity} ${tx(event.data.unit)}` },
-          { id: 'time', heading: tx('Thời điểm ghi sổ'), render: event => <time dateTime={event.data.committedAt}>{new Date(event.data.committedAt).toLocaleString(locale, { timeZone: 'Asia/Ho_Chi_Minh' })}</time> },
+          { id: 'time', heading: tx('Thời điểm ghi sổ'), render: event => <time dateTime={event.data.committedAt}>{formatBusinessTimestamp(event.data.committedAt, language)}</time> },
         ]} />
       </>}
     </GlobalModal>

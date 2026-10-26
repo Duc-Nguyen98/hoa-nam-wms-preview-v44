@@ -69,3 +69,51 @@
   .s11-detail__header, .s11-detail__body, .s11-detail__footer { padding: 16px; }
   .s11-detail__fields { grid-template-columns: 1fr; gap: 16px; }
 }
+
+/* Lookup layouts follow the document screens' typography and touch rhythm. */
+.hn-shell .s11-screen .hn-page-heading h1 { font-size:32px; line-height:40px; }
+.hn-shell .s11-screen :is(.s11-operational,.s11-list) { border:1px solid var(--hn-border); border-radius:8px; background:var(--hn-surface); }
+.hn-shell .s11-operational { padding:24px; }
+.s11-operational-controls { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.hn-shell .s11-operational-controls h2 { margin:0; font-size:22px; line-height:30px; }
+.hn-shell .s11-screen :is(.s11-operational p,.s11-summary-note,.s11-action-limit,.s11-result-count) { font-size:15px; line-height:24px; }
+.hn-shell .s11-screen :is(.hn-filter-input,.hn-filter-select select) { min-height:48px; font-size:16px; }
+.hn-shell .s11-screen .hn-form-field > label { font-size:15px; line-height:22px; }
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s11-screen .hn-button[data-hn-control] { min-height:48px; font-size:16px; }
+.hn-shell .s11-screen[data-screen] .s11-lookup-table .hn-table[data-ui-contract] :is(th,td) { font-size:15px; line-height:22px; padding-block:16px; }
+.s11-lookup-cards { display:none; }
+.s11-lookup-card { min-width:0; padding:20px; border:1px solid var(--hn-border); border-radius:8px; background:var(--hn-surface); }
+.s11-lookup-card header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+.s11-lookup-card h3 { margin:0; color:var(--hn-text); font-size:22px; line-height:30px; overflow-wrap:anywhere; }
+.hn-shell .s11-lookup-card > p { margin:8px 0 0; font-size:18px; line-height:28px; color:var(--hn-text); }
+.s11-lookup-card span:not(.hn-status-badge), .s11-lookup-card dd > span { display:block; }
+.s11-lookup-card p > span, .s11-lookup-card dd > span { color:var(--hn-muted); font-size:15px; line-height:24px; font-weight:400; margin-top:4px; }
+.s11-lookup-card dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 24px; margin:20px 0; }
+.s11-lookup-card dl > div { min-width:0; }
+.s11-lookup-wide { grid-column:1/-1; }
+.s11-lookup-card dt { font-size:15px; line-height:22px; color:var(--hn-muted); }
+.s11-lookup-card dd { margin:6px 0 0; font-size:18px; line-height:28px; font-weight:600; color:var(--hn-text); overflow-wrap:anywhere; }
+.s11-lookup-card > .hn-button { width:100%; justify-content:space-between; }
+.s11-lookup-dialog .hn-global-modal__heading h2 { font-size:24px; line-height:32px; }
+.s11-lookup-dialog .hn-global-modal__heading p, .s11-lookup-dialog .hn-global-modal__body p { font-size:15px; line-height:24px; }
+.s11-lookup-dialog .hn-global-modal__body { padding:24px; }
+.s11-lookup-dialog dl dt { font-size:15px; line-height:22px; color:var(--hn-muted); }
+.s11-lookup-dialog dl dd { margin-top:6px; font-size:18px; line-height:28px; font-weight:600; }
+.s11-lookup-dialog :is(th,td) { font-size:15px; line-height:24px; white-space:normal; }
+.hn-shell[data-shell-version='s00'][data-variant][data-layout] .s11-lookup-dialog .hn-global-modal__footer .hn-button { min-height:48px; font-size:16px; padding-inline:20px; }
+.s11-lookup-dialog .hn-global-modal__close { min-width:44px; min-height:44px; }
+@media (max-width:1100px) {
+ .hn-shell .s11-screen .hn-page-heading h1 { font-size:28px; line-height:36px; }
+ .s11-lookup-table { display:none; }
+ .s11-lookup-cards { display:grid; gap:16px; margin-block:20px; }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s11-lookup-card > .hn-button[data-hn-control] { min-height:52px; font-size:18px; }
+ .hn-shell[data-shell-version='s00'][data-variant][data-layout] .s11-lookup-dialog .hn-global-modal__footer .hn-button { min-height:52px; }
+ .s11-lookup-dialog .hn-global-modal__footer { gap:12px; flex-wrap:wrap; }
+}
+@media (max-width:600px) {
+ .hn-shell .s11-operational { padding:16px; }
+ .s11-lookup-card { padding:16px; }
+ .s11-operational-controls > .hn-button { width:100%; }
+ .s11-lookup-dialog .hn-global-modal__body { padding:16px; }
+ .s11-lookup-dialog dl:not(.s11-lookup-card dl) { grid-template-columns:1fr; }
+}
