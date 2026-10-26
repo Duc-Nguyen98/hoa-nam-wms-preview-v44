@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "document PX-0021 exact fields/copy/reload/return",
+    "document LBH0012343 exact fields/copy/reload/return",
+    "document Kho A exact fields/copy/reload/return",
+    "document PN-0042 exact fields/copy/reload/return",
+    "document BH-0018 exact fields/copy/reload/return",
+    "document TRAY-0012 exact fields/copy/reload/return",
+    "six persisted legacy links upgrade without changing read status",
+    "five bad links fail closed",
+    "desktop light six records bounds",
+    "desktop dark six records bounds",
+    "tablet light six records bounds",
+    "tablet dark six records bounds",
+    "phone light six records bounds",
+    "phone dark six records bounds"
+  ],
+  "errors": [],
+  "links": [
+    "#/preview/S15?source=notification&recordId=notification-document%3Aoutbound%3A0021&notificationId=PREVIEW-DESIGN-1&snapshotId=notification-design-documents%3A2026-10-26%3Av1",
+    "#/preview/S23?source=notification&recordId=notification-document%3Aprinting%3A0012343&notificationId=PREVIEW-DESIGN-2&snapshotId=notification-design-documents%3A2026-10-26%3Av1",
+    "#/preview/S16?source=notification&recordId=notification-document%3Areconciliation%3Awarehouse-a&notificationId=PREVIEW-DESIGN-3&snapshotId=notification-design-documents%3A2026-10-26%3Av1",
+    "#/preview/S12?source=notification&recordId=notification-document%3Ainbound%3A0042&notificationId=PREVIEW-DESIGN-4&snapshotId=notification-design-documents%3A2026-10-26%3Av1",
+    "#/preview/S09?source=notification&recordId=notification-document%3Awarranty%3A0018&notificationId=PREVIEW-DESIGN-5&snapshotId=notification-design-documents%3A2026-10-26%3Av1",
+    "#/preview/S11?source=notification&recordId=notification-document%3Atray%3A0012&notificationId=PREVIEW-DESIGN-6&snapshotId=notification-design-documents%3A2026-10-26%3Av1"
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+  "sourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+  "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+  "buildId": "29feff1f7ea16e52e6fc26d225b8332598baf1c621327bd3c0d7a4db2aa6ac24",
+  "mode": "MOCK",
+  "publicDemo": true,
+  "assets": [
+    {
+      "path": "assets/fonts/s01/AUTHORS.txt",
+      "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+      "bytes": 349
+    },
+    {
+      "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+      "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+      "bytes": 4921
+    },
+    {
+      "path": "assets/fonts/s01/LICENSE.md",
+      "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+      "bytes": 6824
+    },
+    {
+      "path": "assets/fonts/s01/OFL.txt",
+      "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+      "bytes": 4483
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+      "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+      "bytes": 33664
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+      "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+      "bytes": 33676
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+      "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+      "bytes": 33612
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+      "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+      "bytes": 33636
+    },
+    {
+      "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+      "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+      "bytes": 18765
+    },
+    {
+      "path": "assets/index-CMvGl2uB.css",
+      "sha256": "f80504b77de0d2e556a2b36201f038dfb61b1b6c106c02814ba35f5b8ce346b5",
+      "bytes": 517717
+    },
+    {
+      "path": "assets/index-Mbe_SjHN.js",
+      "sha256": "92a22b2a13b4b32ddea9106c1c7770b0235c20296e539c8791e00a8ea9bcdf05",
+      "bytes": 2241624
+    },
+    {
+      "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+      "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+      "bytes": 2651791
+    },
+    {
+      "path": "favicon.svg",
+      "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+      "bytes": 203
+    },
+    {
+      "path": "index.html",
+      "sha256": "255108d8f086e6fa51ac3a5fdad556e222de9e054a5eb94a701523c3af678987",
+      "bytes": 911
+    },
+    {
+      "path": "release.html",
+      "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+      "bytes": 2224
+    },
+    {
+      "path": "review/approved-S01-desktop-dialog.png",
+      "sha256": "eaba73d476bf0b9b92fc12e3271a9177493c75b7cd16bc040e939acdbfd5643b",
+      "bytes": 1386278
+    },
+    {
+      "path": "review/approved-S01-tablet-dialog.png",
+      "sha256": "ba996d6843288f0d5248246c2bde876d759f016e41e3e44a0577725fe13fabea",
+      "bytes": 1239865
+    },
+    {
+      "path": "review/DOCUMENT_FLOW_VISUAL_COMPARISON.html",
+      "sha256": "1e169d46e6be16fb3916372a3e8b3e5057c8c1d07e060b06ec11c19ddf98f726",
+      "bytes": 9688
+    },
+    {
+      "path": "review/notification-links-local/results.json",
+      "sha256": "644d08590572b35d3ed065e8b32c20c1e5b8c3aad17f923a55829a8f6992b509",
+      "bytes": 1825
+    },
+    {
+      "path": "review/s01-document-links-visual-regression/results.json",
+      "sha256": "a75e16379ae5f802d3ffde885d50222bc4233830735d906e9ca165892c608ba4",
+      "bytes": 4836
+    },
+    {
+      "path": "review/s01-document-visual-local/results.json",
+      "sha256": "066a424127171abe60bf35894b4c8759b2393a88ade0356b4f3923f76ebed258",
+      "bytes": 79552
+    },
+    {
+      "path": "review/v43-document-flow-final/desktop-PN-0005-2-open.png",
+      "sha256": "dbc138a6702f5ca8d473e1f581c21c9f048a8c3aa727dba0efe992fcfd6e58a1",
+      "bytes": 199551
+    },
+    {
+      "path": "review/v43-document-flow-final/desktop-PN-0005-3-document.png",
+      "sha256": "318726906bbcc103b5347235719ddda105da4467354533e844d2e5794b076966",
+      "bytes": 151843
+    },
+    {
+      "path": "review/v43-document-flow-final/desktop-PX-0004-2-open.png",
+      "sha256": "fb8326501d8a57e817ac41848d5aedc3afd29d09cd03ce232903181b8df22197",
+      "bytes": 202018
+    },
+    {
+      "path": "review/v43-document-flow-final/desktop-PX-0004-3-document.png",
+      "sha256": "d73234f57018ddafcacf82d0d7f9ebc21e14a1eba08eef5c514722a4c393b685",
+      "bytes": 120916
+    },
+    {
+      "path": "review/v43-document-flow-final/tablet-PN-0005-2-open.png",
+      "sha256": "23722a84c10c4054da3cc5ba6dce6d9cdfea9b70dd2e773284ac3da74ffedb53",
+      "bytes": 160322
+    },
+    {
+      "path": "review/v43-document-flow-final/tablet-PN-0005-3-document.png",
+      "sha256": "88c16b06e23ef82a7162b8edb3005311ce765392e6ce616b8c76e7e6a8ce2308",
+      "bytes": 232080
+    },
+    {
+      "path": "review/v43-document-flow-final/tablet-PX-0004-2-open.png",
+      "sha256": "59cbc7a5a3301f556046299f7e4e61eada2feed8f434ed45433f87dfa94eb9bf",
+      "bytes": 159361
+    },
+    {
+      "path": "review/v43-document-flow-final/tablet-PX-0004-3-document.png",
+      "sha256": "90cf21d2334cf49fede9e28ec2b2e1fcebf12d4e8d597ce234744d1438f8c694",
+      "bytes": 155690
+    },
+    {
+      "path": "review/v44-document-flow-final/desktop-PN-0005-2-open.png",
+      "sha256": "eff15d79cea166463d1b29958933513d5a13b8431fede45e8a3876466f29bf37",
+      "bytes": 199696
+    },
+    {
+      "path": "review/v44-document-flow-final/desktop-PN-0005-3-document.png",
+      "sha256": "28dfba104187701db0763c84c4c8b521ff9387e53443209f83caf17b9056c905",
+      "bytes": 156720
+    },
+    {
+      "path": "review/v44-document-flow-final/desktop-PX-0004-2-open.png",
+      "sha256": "ef7fa7bf57c5eda1a9786fb38719794ecc67a7346b731f0774736ab23d4e13e3",
+      "bytes": 201546
+    },
+    {
+      "path": "review/v44-document-flow-final/desktop-PX-0004-3-document.png",
+      "sha256": "460c4cf74091f669d921713673e12725b660e8f25f5f42c39ef1a3caf7dadd43",
+      "bytes": 126087
+    },
+    {
+      "path": "review/v44-document-flow-final/results.json",
+      "sha256": "8cdd71bed11e7705e997c4a3a4bd67bbc850f5aa9a7b9a5892f85af5a11d6f0a",
+      "bytes": 2187
+    },
+    {
+      "path": "review/v44-document-flow-final/tablet-PN-0005-2-open.png",
+      "sha256": "79298b66759f234120a8e0e3d1bf396dc863efef5be9c831ee3d2d47b5446b6f",
+      "bytes": 163216
+    },
+    {
+      "path": "review/v44-document-flow-final/tablet-PN-0005-3-document.png",
+      "sha256": "140df1c922ab2d9d44b11ddf8e0439c172ea9e0552f98c1d620521c3a35eceee",
+      "bytes": 241053
+    },
+    {
+      "path": "review/v44-document-flow-final/tablet-PX-0004-2-open.png",
+      "sha256": "8c2236eeb2e2b750b413b2124e075be584c7a4475f309f426d9b7f3ea18722e4",
+      "bytes": 162761
+    },
+    {
+      "path": "review/v44-document-flow-final/tablet-PX-0004-3-document.png",
+      "sha256": "d92e79dc6a3d5e7f8a0660d277cf0d11c2f6d60eed9c701c7f58d386d4ef2ecd",
+      "bytes": 163439
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/desktop-PN-0005-1-list.png",
+      "sha256": "3652c8b5fc1f3127d80db7d7d8efb54ba383d4ec9c799d3e31467033825a2581",
+      "bytes": 175067
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/desktop-PN-0005-2-open.png",
+      "sha256": "eff15d79cea166463d1b29958933513d5a13b8431fede45e8a3876466f29bf37",
+      "bytes": 199696
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/desktop-PN-0005-3-document.png",
+      "sha256": "28dfba104187701db0763c84c4c8b521ff9387e53443209f83caf17b9056c905",
+      "bytes": 156720
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/desktop-PX-0004-1-list.png",
+      "sha256": "f3f535b39bdba63e73e02400c4992fe148011558f5bae0dadc3d8d9f17d97da8",
+      "bytes": 177580
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/desktop-PX-0004-2-open.png",
+      "sha256": "ef7fa7bf57c5eda1a9786fb38719794ecc67a7346b731f0774736ab23d4e13e3",
+      "bytes": 201546
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/desktop-PX-0004-3-document.png",
+      "sha256": "460c4cf74091f669d921713673e12725b660e8f25f5f42c39ef1a3caf7dadd43",
+      "bytes": 126087
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/results.json",
+      "sha256": "f5732ac51d28a7cccb2c6b81dde724f1f69561b5cc61f2dd295ad746a6f07192",
+      "bytes": 2231
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/tablet-PN-0005-1-list.png",
+      "sha256": "b43eb32b410a44149d27df94f8eccd9a16c82dfdb15f1c012cdf4bc08b696816",
+      "bytes": 229068
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/tablet-PN-0005-2-open.png",
+      "sha256": "79298b66759f234120a8e0e3d1bf396dc863efef5be9c831ee3d2d47b5446b6f",
+      "bytes": 163216
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/tablet-PN-0005-3-document.png",
+      "sha256": "140df1c922ab2d9d44b11ddf8e0439c172ea9e0552f98c1d620521c3a35eceee",
+      "bytes": 241053
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/tablet-PX-0004-1-list.png",
+      "sha256": "5be307d7152df3e2e148bb91f398a74ee00e4505d1b4b8350a136fdfe4f105a9",
+      "bytes": 228563
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/tablet-PX-0004-2-open.png",
+      "sha256": "8c2236eeb2e2b750b413b2124e075be584c7a4475f309f426d9b7f3ea18722e4",
+      "bytes": 162761
+    },
+    {
+      "path": "review/v44-document-flow-review-20261026/tablet-PX-0004-3-document.png",
+      "sha256": "d92e79dc6a3d5e7f8a0660d277cf0d11c2f6d60eed9c701c7f58d386d4ef2ecd",
+      "bytes": 163439
+    }
+  ]
+}

@@ -1,0 +1,3318 @@
+{
+  "base": "http://127.0.0.1:5187",
+  "results": [
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 216.953125,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 213.390625,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 1502,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "language": "en",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Open inbound receipt",
+          "width": 236.59375,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Inbound receipts",
+          "width": 160.6875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Recorded serial numbers (5)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (4)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (2)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "language": "en",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Open outbound slip",
+          "width": 221.609375,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Outbound slips",
+          "width": 148.1875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Recorded serial numbers (3)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Document history (4)",
+          "width": 1502,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "language": "zh",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 216.953125,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "light",
+      "language": "zh",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 213.390625,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 1502,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 216.953125,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 213.390625,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 1502,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "language": "en",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Open inbound receipt",
+          "width": 236.59375,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Inbound receipts",
+          "width": 160.6875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Recorded serial numbers (5)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (4)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (2)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "language": "en",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Open outbound slip",
+          "width": 221.609375,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Outbound slips",
+          "width": 148.1875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Recorded serial numbers (3)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Document history (4)",
+          "width": 1502,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "language": "zh",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 216.953125,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "theme": "dark",
+      "language": "zh",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 213.390625,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 1452,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 1502,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 560,
+        "y": 178.5,
+        "width": 800,
+        "height": 723
+      },
+      "footer": {
+        "x": 561,
+        "y": 801.5,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "light",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "light",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 702,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "light",
+      "language": "en",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Open inbound receipt",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Inbound receipts",
+          "width": 160.6875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Recorded serial numbers (5)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (4)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (2)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "light",
+      "language": "en",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Open outbound slip",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Outbound slips",
+          "width": 148.1875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Recorded serial numbers (3)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Document history (4)",
+          "width": 702,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "light",
+      "language": "zh",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "light",
+      "language": "zh",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 702,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 702,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "dark",
+      "language": "en",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Open inbound receipt",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Inbound receipts",
+          "width": 160.6875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Recorded serial numbers (5)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (4)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Recorded serial numbers (2)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "dark",
+      "language": "en",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Copy document number",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Copy ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Close",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Open outbound slip",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Back to overview",
+          "width": 186.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Outbound slips",
+          "width": 148.1875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Recorded serial numbers (3)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Document history (4)",
+          "width": 702,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "dark",
+      "language": "zh",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "tablet",
+      "width": 800,
+      "height": 1280,
+      "theme": "dark",
+      "language": "zh",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 257.25,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 428.75,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 652,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 702,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 98,
+        "width": 752,
+        "height": 1084
+      },
+      "footer": {
+        "x": 25,
+        "y": 1076,
+        "width": 750,
+        "height": 105
+      }
+    },
+    {
+      "layout": "phone",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "20px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 16,
+        "width": 342,
+        "height": 812
+      },
+      "footer": {
+        "x": 25,
+        "y": 666,
+        "width": 340,
+        "height": 161
+      }
+    },
+    {
+      "layout": "phone",
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 324,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "20px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 16,
+        "width": 342,
+        "height": 812
+      },
+      "footer": {
+        "x": 25,
+        "y": 666,
+        "width": 340,
+        "height": 161
+      }
+    },
+    {
+      "layout": "phone",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "20px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 16,
+        "width": 342,
+        "height": 812
+      },
+      "footer": {
+        "x": 25,
+        "y": 666,
+        "width": 340,
+        "height": 161
+      }
+    },
+    {
+      "layout": "phone",
+      "width": 390,
+      "height": 844,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "28px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 52,
+          "height": 52,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 308,
+          "height": 56,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 290,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 324,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "20px"
+      },
+      "bounds": {
+        "x": 24,
+        "y": 16,
+        "width": 342,
+        "height": 812
+      },
+      "footer": {
+        "x": 25,
+        "y": 666,
+        "width": 340,
+        "height": 161
+      }
+    },
+    {
+      "layout": "low",
+      "width": 960,
+      "height": 540,
+      "theme": "light",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 216.953125,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 80,
+        "y": 24,
+        "width": 800,
+        "height": 492
+      },
+      "footer": {
+        "x": 81,
+        "y": 416,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "low",
+      "width": 960,
+      "height": 540,
+      "theme": "light",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgb(237, 244, 250)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 213.390625,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 862,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 80,
+        "y": 24,
+        "width": 800,
+        "height": 492
+      },
+      "footer": {
+        "x": 81,
+        "y": 416,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "low",
+      "width": 960,
+      "height": 540,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu nhập kho",
+          "width": 216.953125,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu nhập",
+          "width": 198.453125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (5)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (4)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Serial đã ghi nhận (2)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "BienBanKiemDem_PN-0005.pdf",
+          "width": 270.625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "PhieuNhap_PN-0005.pdf",
+          "width": 218.390625,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 80,
+        "y": 24,
+        "width": 800,
+        "height": 492
+      },
+      "footer": {
+        "x": 81,
+        "y": 416,
+        "width": 798,
+        "height": 99
+      }
+    },
+    {
+      "layout": "low",
+      "width": 960,
+      "height": 540,
+      "theme": "dark",
+      "language": "vi",
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "controls": [
+        {
+          "label": "Sao chép mã phiếu",
+          "width": 44,
+          "height": 44,
+          "font": "32px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 48,
+          "height": 48,
+          "font": "14px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Sao chép ID",
+          "width": 44,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Đóng",
+          "width": 104,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Mở phiếu xuất kho",
+          "width": 213.390625,
+          "height": 50,
+          "font": "16px",
+          "background": "rgb(0, 103, 221)"
+        }
+      ],
+      "targets": [
+        {
+          "label": "Về Tổng quan",
+          "width": 161.046875,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Danh sách phiếu xuất",
+          "width": 194.8125,
+          "height": 48,
+          "font": "16px",
+          "background": "rgb(23, 38, 56)"
+        },
+        {
+          "label": "Serial đã ghi nhận (3)",
+          "width": 812,
+          "height": 44,
+          "font": "16px",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Lịch sử chứng từ (4)",
+          "width": 862,
+          "height": 44,
+          "font": "18px",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "metrics": {
+        "labelValueGap": "8px",
+        "codeFont": "15px",
+        "panelPadding": "24px"
+      },
+      "bounds": {
+        "x": 80,
+        "y": 24,
+        "width": 800,
+        "height": 492
+      },
+      "footer": {
+        "x": 81,
+        "y": 416,
+        "width": 798,
+        "height": 99
+      }
+    }
+  ],
+  "errors": []
+}

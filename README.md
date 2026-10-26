@@ -7,7 +7,7 @@ Bản bàn giao mã nguồn Preview v44 cho DEV và Test, kèm báo cáo đối 
 - [Giao diện Preview](https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/)
 - [Báo cáo giao diện Desktop/Tablet](https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/review/DOCUMENT_FLOW_VISUAL_COMPARISON.html)
 
-GitHub Actions tự build và triển khai GitHub Pages khi có commit mới trên `main`. Có thể chạy lại bằng workflow **Deploy Preview to GitHub Pages** trong tab Actions.
+GitHub Pages xuất bản bản build sẵn từ `main/docs`. Sau khi sửa mã nguồn, chạy `npm run build:pages`, commit cả mã nguồn và `docs/`, rồi push lên `main`. GitHub Actions build không dùng vì tài khoản đang bị hạn chế Actions do billing tại thời điểm thiết lập.
 
 ## Chạy trên máy
 

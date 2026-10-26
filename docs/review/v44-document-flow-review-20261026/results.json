@@ -1,0 +1,69 @@
+{
+  "capturedAt": "2026-10-26T04:18:06.263Z",
+  "version": 44,
+  "source": "af8148d248048fa3a2319428774a38425fd76288",
+  "buildId": "4e35396cfaf3fe9287cb468c4e15ed2cc46754b7c19b717c93071ff62110f7ea",
+  "results": [
+    {
+      "device": "desktop",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "dpr": 1,
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "type": "inbound",
+      "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S12?source=overview&documentId=fixture-inbound-0005&snapshotId=scanner%3Ac3f14f742003c717aae933c44c010ccd5761fb8c%3Ap12-data-r02",
+      "lines": 3,
+      "serials": 11,
+      "matched": true
+    },
+    {
+      "device": "desktop",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "dpr": 1,
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "type": "outbound",
+      "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S15?source=overview&documentId=b12-outbound-0004&snapshotId=scanner%3Ac3f14f742003c717aae933c44c010ccd5761fb8c%3Ap12-data-r02",
+      "lines": 1,
+      "serials": 3,
+      "matched": true
+    },
+    {
+      "device": "tablet",
+      "viewport": {
+        "width": 800,
+        "height": 1280
+      },
+      "dpr": 2,
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "type": "inbound",
+      "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S12?source=overview&documentId=fixture-inbound-0005&snapshotId=scanner%3Ac3f14f742003c717aae933c44c010ccd5761fb8c%3Ap12-data-r02",
+      "lines": 3,
+      "serials": 11,
+      "matched": true
+    },
+    {
+      "device": "tablet",
+      "viewport": {
+        "width": 800,
+        "height": 1280
+      },
+      "dpr": 2,
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "type": "outbound",
+      "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/#/preview/S15?source=overview&documentId=b12-outbound-0004&snapshotId=scanner%3Ac3f14f742003c717aae933c44c010ccd5761fb8c%3Ap12-data-r02",
+      "lines": 1,
+      "serials": 3,
+      "matched": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,254 @@
+{
+  "base": "http://127.0.0.1:5187",
+  "checks": [
+    {
+      "number": "PN-0005",
+      "id": "fixture-inbound-0005",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0004",
+      "id": "b12-outbound-0004",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PN-0004",
+      "id": "b12-inbound-0004",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0003",
+      "id": "b12-outbound-0003",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PN-0006",
+      "id": "p12-stock-PN-0006",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0006",
+      "id": "p12-stock-PX-0006",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PN-0007",
+      "id": "p12-stock-PN-0007",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0007",
+      "id": "p12-stock-PX-0007",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PN-0008",
+      "id": "p12-stock-PN-0008",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0008",
+      "id": "p12-stock-PX-0008",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PN-0009",
+      "id": "p12-stock-PN-0009",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0009",
+      "id": "p12-stock-PX-0009",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PN-0010",
+      "id": "p12-stock-PN-0010",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0010",
+      "id": "p12-stock-PX-0010",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PN-0011",
+      "id": "p12-stock-PN-0011",
+      "screen": "S12",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "number": "PX-0011",
+      "id": "p12-stock-PX-0011",
+      "screen": "S15",
+      "click": true,
+      "fields": true,
+      "lines": true,
+      "serials": true,
+      "reload": true,
+      "back": true
+    },
+    {
+      "attention": true
+    },
+    {
+      "name": "tablet",
+      "theme": "light",
+      "type": "inbound",
+      "bounds": true
+    },
+    {
+      "name": "tablet",
+      "theme": "light",
+      "type": "outbound",
+      "bounds": true
+    },
+    {
+      "name": "tablet",
+      "theme": "dark",
+      "type": "inbound",
+      "bounds": true
+    },
+    {
+      "name": "tablet",
+      "theme": "dark",
+      "type": "outbound",
+      "bounds": true
+    },
+    {
+      "name": "phone",
+      "theme": "light",
+      "type": "inbound",
+      "bounds": true
+    },
+    {
+      "name": "phone",
+      "theme": "light",
+      "type": "outbound",
+      "bounds": true
+    },
+    {
+      "name": "phone",
+      "theme": "dark",
+      "type": "inbound",
+      "bounds": true
+    },
+    {
+      "name": "phone",
+      "theme": "dark",
+      "type": "outbound",
+      "bounds": true
+    },
+    {
+      "invalidLink": true
+    },
+    {
+      "invalidLink": true
+    },
+    {
+      "invalidLink": true
+    },
+    {
+      "invalidLink": true
+    },
+    {
+      "invalidLink": true
+    },
+    {
+      "existingReceiptList": true
+    },
+    {
+      "existingOutboundList": true
+    }
+  ],
+  "errors": []
+}

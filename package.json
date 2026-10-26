@@ -10,7 +10,8 @@
     "dev": "vite",
     "typecheck": "tsc --noEmit",
     "build": "npm run typecheck && vite build && node scripts/write-build-info.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:pages": "npm run build && node scripts/prepare-pages.mjs"
   },
   "dependencies": {
     "axios": "1.20.0",
