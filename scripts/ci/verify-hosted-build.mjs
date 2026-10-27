@@ -1,5 +1,7 @@
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
+import path from 'node:path';
+const outputDirectory=process.argv[2]??'output/s00-5';
 const hosts = [
   ['pages','https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/'],
   ['site','https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/'],
@@ -35,6 +37,6 @@ for (const [name,base] of hosts) {
   }catch(error){record.status='BLOCKED';record.error=error.message;}
   results.push(record);
 }
-await fs.mkdir('output/s00-5',{recursive:true});
-await fs.writeFile('output/s00-5/hosted-build-verification.json',JSON.stringify(results,null,2));
+await fs.mkdir(outputDirectory,{recursive:true});
+await fs.writeFile(path.join(outputDirectory,'hosted-build-verification.json'),JSON.stringify(results,null,2));
 console.log(JSON.stringify(results.map(({assets,...r})=>({...r,assetCount:assets.length,mismatches:assets.filter(a=>a.status!=='MATCH')})),null,2));

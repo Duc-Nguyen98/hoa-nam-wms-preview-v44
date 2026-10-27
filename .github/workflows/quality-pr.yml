@@ -33,10 +33,14 @@ jobs:
       - run: npm ci --include=dev
       - name: Typecheck, contract, build and putaway tests
         run: npm run quality:pr > output/ci/critical.log 2>&1
+      - name: Bind built bytes to the checked-out candidate
+        env:
+          CANDIDATE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: node scripts/ci/build-provenance.mjs > output/ci/build-provenance.log 2>&1
       - name: S01 and Notification unit tests
         run: npx tsx --test tests/overview-detail.test.ts tests/s01/document-navigation.test.ts tests/notification-state.test.ts tests/actions/notification-target.test.ts > output/ci/unit.log 2>&1
       - name: Fail-closed gate negative controls
-        run: node --test scripts/ci/release-readiness.test.mjs > output/ci/gate-tests.log 2>&1
+        run: node --test scripts/ci/release-readiness.test.mjs scripts/ci/build-provenance.test.mjs > output/ci/gate-tests.log 2>&1
       - uses: actions/upload-artifact@v4
         if: always()
         with:

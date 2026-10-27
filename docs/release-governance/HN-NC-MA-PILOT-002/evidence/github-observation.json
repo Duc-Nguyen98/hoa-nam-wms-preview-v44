@@ -1,0 +1,232 @@
+{
+  "checkedAt": "2026-10-27T00:10:57.199Z",
+  "candidate": "70dff89468eaac8ca71e2169d90a0fb33a216398",
+  "rawAuditSha256": "1c17b99355950af848407dd45398b319835a17509b0ef6aa96f915cef63645de",
+  "repository": "Duc-Nguyen98/hoa-nam-wms-preview-v44",
+  "permissions": {
+    "admin": true,
+    "maintain": true,
+    "push": true,
+    "triage": true,
+    "pull": true
+  },
+  "branches": [
+    {
+      "name": "DEV",
+      "sha": "b287d1294f0aa37b1c38c14275ef8c0a279d4fcc",
+      "protected": false,
+      "requiredChecks": {
+        "enforcement_level": "off",
+        "contexts": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "chore/s00-1-notification-pilot",
+      "sha": "fbd5b3cd11a8d5ecb7fb40cf7bce7d7ba0ea3646",
+      "protected": false,
+      "requiredChecks": {
+        "enforcement_level": "off",
+        "contexts": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "chore/s00-5-ci-release-governance",
+      "sha": "70dff89468eaac8ca71e2169d90a0fb33a216398",
+      "protected": false,
+      "requiredChecks": {
+        "enforcement_level": "off",
+        "contexts": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "main",
+      "sha": "7304ef8d27b5d3d091bda681cc1afcb36048c318",
+      "protected": false,
+      "requiredChecks": {
+        "enforcement_level": "off",
+        "contexts": [],
+        "checks": []
+      }
+    }
+  ],
+  "protections": {
+    "main": {
+      "status": 404,
+      "data": {
+        "message": "Branch not protected",
+        "documentation_url": "https://docs.github.com/rest/branches/branch-protection#get-branch-protection",
+        "status": "404"
+      }
+    },
+    "DEV": {
+      "status": 404,
+      "data": {
+        "message": "Branch not protected",
+        "documentation_url": "https://docs.github.com/rest/branches/branch-protection#get-branch-protection",
+        "status": "404"
+      }
+    }
+  },
+  "rulesets": {
+    "status": 200,
+    "data": []
+  },
+  "reviews": {
+    "status": 200,
+    "data": []
+  },
+  "pr": {
+    "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/1",
+    "draft": true,
+    "head": "70dff89468eaac8ca71e2169d90a0fb33a216398",
+    "base": "b287d1294f0aa37b1c38c14275ef8c0a279d4fcc",
+    "mergeable": true
+  },
+  "checks": [
+    {
+      "id": 121890064190,
+      "name": "visual-and-functional",
+      "status": "completed",
+      "conclusion": "skipped",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583/job/121890064190"
+    },
+    {
+      "id": 121890062220,
+      "name": "release-readiness",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583/job/121890062220"
+    },
+    {
+      "id": 121890045871,
+      "name": "critical",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583/job/121890045871"
+    }
+  ],
+  "runs": [
+    {
+      "id": 40413549583,
+      "sha": "70dff89468eaac8ca71e2169d90a0fb33a216398",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583"
+    },
+    {
+      "id": 40402714433,
+      "sha": "b287d1294f0aa37b1c38c14275ef8c0a279d4fcc",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40402714433"
+    },
+    {
+      "id": 40402609974,
+      "sha": "9880c1cdab730527e521502c015eb07e55e2dbff",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40402609974"
+    },
+    {
+      "id": 40286075297,
+      "sha": "7304ef8d27b5d3d091bda681cc1afcb36048c318",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40286075297"
+    },
+    {
+      "id": 40285853966,
+      "sha": "0fac29153d11b78a4830c8cd65ac9450096f0a72",
+      "status": "completed",
+      "conclusion": "failure",
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40285853966"
+    }
+  ],
+  "annotations": {
+    "/check-runs/121852488876/annotations": {
+      "status": 200,
+      "data": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/b287d1294f0aa37b1c38c14275ef8c0a279d4fcc/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/b287d1294f0aa37b1c38c14275ef8c0a279d4fcc/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    },
+    "/check-runs/121890062220/annotations": {
+      "status": 200,
+      "data": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/70dff89468eaac8ca71e2169d90a0fb33a216398/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        }
+      ]
+    },
+    "/check-runs/121890045871/annotations": {
+      "status": 200,
+      "data": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/70dff89468eaac8ca71e2169d90a0fb33a216398/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        }
+      ]
+    }
+  },
+  "pages": {
+    "status": 200,
+    "data": {
+      "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pages",
+      "status": "built",
+      "cname": null,
+      "custom_404": false,
+      "html_url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/",
+      "build_type": "legacy",
+      "source": {
+        "branch": "main",
+        "path": "/docs"
+      },
+      "public": true,
+      "protected_domain_state": null,
+      "pending_domain_unverified_at": null,
+      "https_enforced": true
+    }
+  }
+}

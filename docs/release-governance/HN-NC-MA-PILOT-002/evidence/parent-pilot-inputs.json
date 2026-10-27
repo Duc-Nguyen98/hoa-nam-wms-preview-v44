@@ -1,0 +1,41 @@
+{
+  "commit": "fbd5b3cd11a8d5ecb7fb40cf7bce7d7ba0ea3646",
+  "inputs": [
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/FINAL_PILOT_VERDICT.md",
+      "sha256": "ca9cdb157c04ed77826d3a5e5bc10b60a14cb33a97a201276e145107de463cd7"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/ARCHITECTURE_VALIDATION.md",
+      "sha256": "37d1192a26f7a8c8d1a0c8fe2520091dc6b272b973ebf1ff41068cc73342075e"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/AGENT_HANDOFF_TRACE.md",
+      "sha256": "72e52ea688fc40218a134faa23b1c825ecb483aaff1520de6bc902ccb688d17c"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/DEFECT_REGISTER.md",
+      "sha256": "1b63d2e15038c6c0fd17ec22dd12662864cc546f56cfe1e7e9698289c92d589c"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/DESIGN_AUDIT.md",
+      "sha256": "1ca5af5f3b4f7da614534e60e8a8ccb276662d1e29e744abfd7e796419d7ebdb"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/VISUAL_QA_REPORT.md",
+      "sha256": "9b9137da240de96493d06b38e8c09acf6bb5d5ef7a20ccf197eb76466156d260"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/FUNCTIONAL_QA_REPORT.md",
+      "sha256": "fad0fabe88f9dfba4447b0c2332697cf18dab849b672e38c3da2da43fb3c6872"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/REGRESSION_REPORT.md",
+      "sha256": "04e62dbb4120bf35f3e570218ba99cafd8b5ac7c2c71f60688da8272058746cf"
+    },
+    {
+      "path": "docs/qa/notification-center/HN-NC-MA-PILOT-001/CI_RELEASE_REPORT.md",
+      "sha256": "90fff44b68453cc8dde7e08111c52c9a019ebf922b3bca91f3f02e09b13c51f7"
+    }
+  ]
+}
