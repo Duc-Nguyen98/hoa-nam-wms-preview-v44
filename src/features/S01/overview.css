@@ -683,7 +683,7 @@ html[data-hn-theme='dark'] .hn-shell .ov-screen .ov-quick .ov-icon-tile { color:
  .hn-shell .ov-screen .ov-mobile-row { padding:7px 44px 7px 92px; min-height:62px; grid-template-columns:190px minmax(0,1fr); }
  .hn-shell .ov-screen .ov-mobile-row__icon { display:flex; position:absolute; left:10px; top:6px; align-items:center; justify-content:center; width:48px; height:48px; border-radius:8px; background:#e9f3ff; color:#06f; }
  .hn-shell .ov-screen .ov-mobile-row__icon--inbound { background:#e9f8ed; color:#008e24; }
- .hn-shell .ov-screen .ov-mobile-row .ov-document-link { font-size:20px; line-height:26px; font-weight:700; }
+ .hn-shell .ov-screen .ov-mobile-row .ov-document-link { display:flex; align-items:flex-start; font-size:20px; line-height:26px; font-weight:700; }
  .hn-shell .ov-screen .ov-mobile-row__meta { font-size:17px; line-height:22px; padding-right:150px; }
  .hn-shell .ov-screen .ov-mobile-row__meta>span:first-child { left:92px; bottom:6px; }
  .hn-shell .ov-screen .ov-mobile-row__meta>span:first-child svg { display:none; }

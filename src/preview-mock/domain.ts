@@ -9,6 +9,7 @@ import type { DefectsQuery } from '../contracts/defects';
 import type { LabelReportQuery } from '../contracts/label-report';
 import type { RecipientsQuery } from '../contracts/recipients';
 import { validateBusinessDateRange } from '../shared/date-policy';
+import { PAGE_SIZE_OPTIONS } from '../shared/table-query';
 
 const paths = new Map(Object.entries(BUSINESS_RESOURCES).map(([screen, resource]) => [`/api/v1/${resource}`, screen as BusinessScreenId]));
 
@@ -48,7 +49,8 @@ export function decodeBusinessQuery(screen: BusinessScreenId, params: URLSearchP
     if (!Object.hasOwn(defaults, key)) throw new PreviewHttpError(400, 'INVALID_QUERY', 'Điều kiện chưa được hỗ trợ.');
     query[key] = decodeValue(value, defaults[key as keyof typeof defaults]);
   }
-  if ('page' in query && (Number(query.page) < 1 || !(screen === 'S01' ? [4, 10, 15, 25, 50] : [10, 15, 25, 50]).includes(Number(query.pageSize)))) {
+  const pageSizeOptions: readonly number[] = screen === 'S01' ? PAGE_SIZE_OPTIONS : [10, 15, 25, 50];
+  if ('page' in query && (Number(query.page) < 1 || !pageSizeOptions.includes(Number(query.pageSize)))) {
     throw new PreviewHttpError(400, 'INVALID_QUERY', 'Trang hoặc số dòng không hợp lệ.');
   }
   const scenario = params.get('_scenario') ?? undefined;

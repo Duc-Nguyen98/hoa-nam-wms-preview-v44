@@ -4,7 +4,7 @@ import { createOverviewController } from '../../src/controllers/overview-control
 import { createOverviewFixtureAdapter } from '../../src/data/adapters/overview-fixture-adapter';
 import { queryOverviewRows } from '../../src/data/adapters/overview-table-query';
 import { OVERVIEW_RUNTIME_POLICY } from '../../src/controllers/overview-runtime';
-import { createReferenceOverviewController } from './reference-scenario';
+import { createReferenceOverviewController, createReferencePending3Controller } from './reference-scenario';
 import type { OverviewRow } from '../../src/contracts/overview';
 import { GlobalToastProvider } from '../../src/toast/GlobalToastProvider';
 import { ShellPreferencesRuntime } from '../../src/shared/ShellPreferencesRuntime';
@@ -42,4 +42,6 @@ const controller = () => createOverviewController({ async read(query) {
   model.emptyReason=!sourceRows.length?'no-documents':!table.rows.length?'no-matches':null;
   return {kind:'ready',model};
 }});
-createRoot(document.getElementById('root')!).render(<ShellPreferencesRuntime><GlobalToastProvider><OverviewScreen createController={state === 'reference' ? createReferenceOverviewController : controller}/></GlobalToastProvider></ShellPreferencesRuntime>);
+const selectedController = state === 'reference' ? createReferenceOverviewController
+  : state === 'reference-pending3' ? createReferencePending3Controller : controller;
+createRoot(document.getElementById('root')!).render(<ShellPreferencesRuntime><GlobalToastProvider><OverviewScreen createController={selectedController}/></GlobalToastProvider></ShellPreferencesRuntime>);

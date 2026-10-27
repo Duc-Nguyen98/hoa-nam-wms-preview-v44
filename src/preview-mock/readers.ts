@@ -2,6 +2,7 @@
 import { BUSINESS_DEFAULT_QUERIES as defaults } from '../data/http/resource-defaults';
 import type { BusinessScreenId } from '../data/http/api-contract';
 import { createOverviewFixtureAdapter } from '../data/adapters/overview-fixture-adapter';
+import { OVERVIEW_RUNTIME_POLICY } from '../controllers/overview-runtime';
 import { createDefectsFixtureAdapter } from '../data/adapters/defects-fixture-adapter';
 import { createProductsFixtureAdapter } from '../data/adapters/products-fixture-adapter';
 import { createSkusFixtureAdapter } from '../data/adapters/skus-fixture-adapter';
@@ -30,7 +31,7 @@ export interface BaselineReader { read(query: unknown, signal: AbortSignal, scen
 function reader<Query extends object>(
   _defaults: Query, read: (query: Query, signal: AbortSignal, scenario?: string) => Promise<unknown>,
 ): BaselineReader { return { read: (query, signal, scenario) => read(query as Query, signal, scenario) }; }
-const overview = createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true, pageSizeOptions: [4, 10, 15, 25, 50] });
+const overview = createOverviewFixtureAdapter(OVERVIEW_RUNTIME_POLICY);
 const defects = createDefectsFixtureAdapter({ searchMatch: 'folded-includes' });
 const products = createProductsFixtureAdapter(); const skus = createSkusFixtureAdapter();
 const recipients = createRecipientsFixtureAdapter(); const pv = createPvFixtureAdapter();
