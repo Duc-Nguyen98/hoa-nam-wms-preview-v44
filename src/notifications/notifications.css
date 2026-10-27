@@ -252,7 +252,7 @@ html[data-hn-theme='dark'] .hn-notification-primary { color:#102336; }
  .hn-notification-center .hn-notification-business-card dl { padding:16px 20px; gap:10px; }
  .hn-notification-center .hn-notification-business-card dl>div { font-size:15px; }
  .hn-notification-center .hn-notification-detail-actions { margin-top:18px; }
- .hn-notification-center .hn-notification-detail-footer { margin-top:16px; padding:14px 0 0; }
+ .hn-notification-center .hn-notification-detail-footer { margin-top:16px; padding:19px 0 0; }
  .hn-notification-center .hn-notification-heading-icon { width:48px; height:48px; }
  .hn-notification-center .hn-global-modal__heading { padding-inline-start:68px; }
 }
@@ -292,6 +292,8 @@ html[data-hn-theme='dark'] .hn-notification-primary { color:#102336; }
  .hn-notification-center .hn-notification-groups { padding-inline:36px; }
  .hn-notification-center .hn-notification-search>svg { width:28px; height:28px; }
  .hn-notification-center .hn-notification-item { min-height:116px; }
+ .hn-notification-center .hn-notification-list > li:has(> .hn-notification-item[data-unread='true']) + li:has(> .hn-notification-item[data-unread='true']) { border-top:2px solid var(--hn-surface); }
+ .hn-notification-center .hn-notification-list > li:has(> .hn-notification-item[data-unread='true']) + li:has(> .hn-notification-item[data-unread='true']) > .hn-notification-item { min-height:115px; }
  .hn-notification-center .hn-notification-item-icon svg { width:40px; height:40px; }
  .hn-notification-center .hn-notification-group h3 { font-size:19px; line-height:28px; padding-top:24px; }
  .hn-notification-center .hn-notification-mark-all svg { width:28px; height:28px; }
