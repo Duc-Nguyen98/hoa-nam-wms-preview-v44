@@ -630,6 +630,7 @@ html[data-hn-theme='dark'] .hn-shell .ov-screen .ov-quick .ov-icon-tile { color:
  .hn-shell[data-shell-version][data-variant][data-layout] .ov-screen .ov-filters :is(input,select) { min-height:44px; height:44px; }
  .hn-shell .ov-screen .ov-filters .hn-basic-field { gap:2px; }
  .hn-global-modal.ov-detail-modal .ov-detail-field { column-gap:45px; }
+ .hn-global-modal.ov-detail-modal .hn-global-modal__footer { padding-block:16px; }
 }
 @media(min-width:561px) and (max-width:1100px){
  .hn-shell .ov-screen { transform:none; }
