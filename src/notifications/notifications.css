@@ -257,7 +257,14 @@ html[data-hn-theme='dark'] .hn-notification-primary { color:#102336; }
  .hn-notification-center .hn-global-modal__heading { padding-inline-start:68px; }
 }
 @media(min-width:801px) and (max-width:1100px) and (orientation:portrait){
- .hn-global-modal.hn-notification-center { width:min(880px,calc(100vw - 48px)); height:min(1262px,calc(100dvh - 48px)); }
+ .hn-global-modal.hn-notification-center {
+  width:min(880px,calc(100vw - 48px));
+  height:min(1262px,calc(100dvh - 48px));
+  /* Reference-normalized placement; retain a 24px edge guard on short portraits. */
+  translate:min(0.55vw,max(0px,calc((100vw - 880px)/2 - 24px))) min(6.25dvh,max(0px,calc((100dvh - 1262px)/2 - 24px)));
+ }
+ .hn-notification-center .hn-global-modal__close { padding:4px; }
+ .hn-notification-center .hn-global-modal__close svg { flex-shrink:0; width:36px; height:36px; }
  .hn-notification-center .hn-global-modal__header { min-height:140px; padding:30px 32px; }
  .hn-notification-center .hn-global-modal__heading h2 { font-size:30px; line-height:40px; }
  .hn-notification-center .hn-notification-item { grid-template-columns:70px minmax(0,1fr) auto 20px; min-height:112px; gap:28px; padding:18px; }
