@@ -49,7 +49,9 @@ function restoreToastFocus(entry: ToastRecord) {
       .find(el => !el.closest('.hn-global-toast-viewport') && el.getClientRects().length);
     (target ?? modal).focus({ preventScroll: true });
   } else if (entry.restoreFocus) entry.restoreFocus();
-  else if (entry.origin?.isConnected) entry.origin.focus({ preventScroll: true });
+  else if (entry.origin?.isConnected && entry.origin.getClientRects().length
+    && !entry.origin.matches(':disabled') && !entry.origin.closest('[inert]')
+    && getComputedStyle(entry.origin).visibility === 'visible') entry.origin.focus({ preventScroll: true });
   else document.getElementById('main-content')?.focus({ preventScroll: true });
 }
 
