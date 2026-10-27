@@ -1,0 +1,41 @@
+[WebServer] (node:23460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:11104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 docs\quality\uiux-task-HN-NC-003\functional\focus-repro.spec.ts:6:1 › F-NC-003-TOAST-FOCUS actual mark-all feedback dismiss restores visible focus after owning dialog closes (32.1s)
+
+
+  1) docs\quality\uiux-task-HN-NC-003\functional\focus-repro.spec.ts:6:1 › F-NC-003-TOAST-FOCUS actual mark-all feedback dismiss restores visible focus after owning dialog closes 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "main-content"
+    Received: ""
+
+       9 |  await page.goto('/#/preview/S01');await page.locator('#s07-username').fill('demo');await page.locator('#s07-password').fill('HoaNamDemo@2026');await page.locator('.s07-submit').click();await page.locator('.s08-confirm').click();await page.getByRole('button',{name:'Tiếp tục',exact:true}).click();await expect(page.locator('.ov-result-count')).toBeVisible({timeout:90000});await page.locator('.hn-notifications').click();const d=page.locator('dialog[open]');await expect(d.locator('.hn-notification-item')).toHaveCount(6);await d.getByRole('button',{name:'Đánh dấu tất cả đã đọc',exact:true}).click();await expect(page.locator('.hn-notifications__count')).toHaveCount(0);await page.keyboard.press('Escape');await expect(d).toHaveCount(0);await expect(page.locator('.hn-notifications')).toBeFocused();
+      10 |  const close=page.getByRole('status').getByRole('button',{name:'Đóng thông báo',exact:true});await expect(close).toBeVisible();await close.focus();const before=await page.evaluate(()=>({active:{tag:document.activeElement?.tagName,id:document.activeElement?.id,class:document.activeElement?.className},origin:{connected:document.querySelector('.hn-notification-mark-all')?.isConnected,rects:document.querySelector('.hn-notification-mark-all')?.getClientRects().length},dialogOpen:document.querySelector('#hn-preview-notification-center')?.hasAttribute('open')}));
+    > 11 |  await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:`${evidence}/toast-close-focused.png`});await page.keyboard.press('Enter');await expect(page.locator('.hn-global-toast')).toHaveCount(0);const after=await page.evaluate(()=>({active:{tag:document.activeElement?.tagName,id:document.activeElement?.id,class:document.activeElement?.className,connected:document.activeElement?.isConnected,rects:document.activeElement?.getClientRects().length},main:{exists:!!document.getElementById('main-content'),tabIndex:document.getElementById('main-content')?.tabIndex}}));await page.screenshot({path:`${evidence}/after-toast-dismiss.png`});const end={sha:git('rev-parse','HEAD'),tree:git('rev-parse','HEAD:src'),diff:git('diff','HEAD','--','src')};const record={start,end,before,after,errors,environment:'LOCAL authenticated Preview mock; keyboard-only toast dismiss; fresh browser context',expected:'Visible #main-content fallback when the origin is hidden in closed dialog'};await fs.writeFile(`${evidence}/focus-repro.json`,JSON.stringify(record,null,2));await info.attach('focus-repro',{body:JSON.stringify(record),contentType:'application/json'});expect(start).toEqual(end);expect(end.diff).toBe('');expect(errors).toEqual([]);expect(after.active.id).toBe('main-content');
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+      12 | });
+      13 |
+        at E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\docs\quality\uiux-task-HN-NC-003\functional\focus-repro.spec.ts:11:1264
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\focus-before\test-results\focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\quality\uiux-task-HN-NC-003\functional\focus-before\test-results\focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\focus-before\test-results\focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\quality\uiux-task-HN-NC-003\functional\focus-before\test-results\focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    docs\quality\uiux-task-HN-NC-003\functional\focus-repro.spec.ts:6:1 › F-NC-003-TOAST-FOCUS actual mark-all feedback dismiss restores visible focus after owning dialog closes 

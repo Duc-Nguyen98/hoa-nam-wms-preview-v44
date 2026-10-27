@@ -1,0 +1,46 @@
+{
+  "referenceScope": "Modal only; estimates from immutable user-supplied native raster. Text ink is not CSS line-box provenance.",
+  "measurementUncertaintyPx": 2,
+  "desktop": {
+    "modal": {
+      "x": 390,
+      "y": 113,
+      "width": 1087,
+      "height": 728
+    },
+    "headerIconTop": 135,
+    "titleInkTop": 146,
+    "businessCardTop": 424,
+    "detailFooterDividerY": 765
+  },
+  "tablet": {
+    "modal": {
+      "x": 61,
+      "y": 261,
+      "width": 881,
+      "height": 1262
+    },
+    "headerDividerY": 405,
+    "searchTop": 431,
+    "filterBottomY": 574,
+    "todayHeadingInkTop": 611,
+    "firstIconLeft": 112,
+    "firstIconTop": 661,
+    "firstTitleInkLeft": 217,
+    "firstTitleInkTop": 671,
+    "firstUnreadFill": {
+      "x": 94,
+      "y": 752,
+      "bottomExclusive": 865
+    },
+    "secondUnreadFill": {
+      "x": 94,
+      "y": 867,
+      "bottomExclusive": 980
+    },
+    "unreadFillGapPx": 2,
+    "firstUnreadTitleInkLeft": 247,
+    "firstUnreadTitleInkTop": 782
+  },
+  "method": "Modal/title/icon/line coordinates visually inspected at native size; unread fill vertical runs also programmatically verified using x104 and mask b-r>3,r>220,g>225. All source files unchanged."
+}

@@ -1,0 +1,36 @@
+{
+  "sourceSHA": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "attempts": [
+    {
+      "namespace": "after-830f83d",
+      "result": "ABORTED_ENVIRONMENT",
+      "desktopFailure": "net::ERR_NETWORK_CHANGED; login field timeout30000ms",
+      "abortError": "tracing.stop: ENOSPC: no space left on device, write; capture-after.mjs:39:20; Node.jsv26.5.0",
+      "traceStatus": "Desktop trace exists; Tablet screenshot exists but trace stop aborted, so incomplete namespace cannot certify final capture"
+    },
+    {
+      "namespace": "after-830f83d-recovery",
+      "result": "INTERRUPTED_HARNESS_CONFIGURATION",
+      "reason": "Parent instructed ignored output/ TEMP after child had started ownvisual/.tmp TEMP; interrupted and preserved partial output."
+    },
+    {
+      "namespace": "after-830f83d-recovery-ignored-temp",
+      "result": "SIX_PROFILES_CAPTURED",
+      "processOnlyTEMP": "output/hn-nc-003-visual-temp-830",
+      "allConsoleNetworkErrors": 0,
+      "stabilityGuarantee": false
+    }
+  ],
+  "diskAuditAtFailure": {
+    "CFreeBytes": 1694261248,
+    "EFreeBytes": 234990751744,
+    "originalTEMP": "C:/Users/Admin/AppData/Local/Temp"
+  },
+  "cleanup": "Own exact-path cleanup plus browser stop command rejected by automatic policy review; no deletion performed. Own abortedscratch path excluded byvisual/.gitignore. Final browser scratch is in ignoredoutput. No other user dirs touched.",
+  "liveServer": {
+    "url": "http://127.0.0.1:5233/",
+    "toolSession": 53084,
+    "sourceSHA": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+    "keptRunningForUserReview": true
+  }
+}

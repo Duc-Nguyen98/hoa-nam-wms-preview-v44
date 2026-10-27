@@ -1,0 +1,40 @@
+{
+  "start": {
+    "sha": "e5ba486fb82a05fcf6cb7aa7b56fda17dc4bcb16",
+    "tree": "145bdf19c61a908b5d4d7779b7b4401e8d2d2f8b",
+    "diff": ""
+  },
+  "end": {
+    "sha": "e5ba486fb82a05fcf6cb7aa7b56fda17dc4bcb16",
+    "tree": "145bdf19c61a908b5d4d7779b7b4401e8d2d2f8b",
+    "diff": ""
+  },
+  "before": {
+    "active": {
+      "tag": "BUTTON",
+      "id": "",
+      "class": "hn-global-toast-close"
+    },
+    "origin": {
+      "connected": true,
+      "rects": 0
+    },
+    "dialogOpen": false
+  },
+  "after": {
+    "active": {
+      "tag": "BODY",
+      "id": "",
+      "class": "",
+      "connected": true,
+      "rects": 1
+    },
+    "main": {
+      "exists": true,
+      "tabIndex": -1
+    }
+  },
+  "errors": [],
+  "environment": "LOCAL authenticated Preview mock; keyboard-only toast dismiss; fresh browser context",
+  "expected": "Visible #main-content fallback when the origin is hidden in closed dialog"
+}

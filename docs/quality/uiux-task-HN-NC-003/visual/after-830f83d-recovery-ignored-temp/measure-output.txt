@@ -1,0 +1,961 @@
+[
+  {
+    "profile": {
+      "name": "desktop-native",
+      "width": 1774,
+      "height": 887,
+      "dpr": 1
+    },
+    "modal": {
+      "x": 391,
+      "y": 113.5,
+      "width": 1088,
+      "height": 728
+    },
+    "edges": {
+      "left": 391,
+      "top": 113.5,
+      "right": 295,
+      "bottom": 45.5
+    },
+    "modalFullyInsideViewport": true,
+    "closeHitTargetCSS": {
+      "width": 44,
+      "height": 44
+    },
+    "closePaintRasterBounds": [
+      17,
+      18,
+      27,
+      28
+    ],
+    "closePaintRasterSize": [
+      10,
+      10
+    ],
+    "horizontalOverflow": false,
+    "bodyOverflow": false,
+    "detailHorizontalOverflow": null,
+    "searchCount": 1,
+    "unreadFilterCount": 2,
+    "focusRestored": null,
+    "closeFocus": true,
+    "consoleErrors": 0,
+    "networkErrors": 0,
+    "runtimeSourceClean": true,
+    "geometryChangeFromBefore": {
+      "x": 0,
+      "y": 0.0,
+      "width": 0,
+      "height": 0
+    },
+    "beforeAfterFullRasterIdentical": false
+  },
+  {
+    "profile": {
+      "name": "tablet-native",
+      "width": 992,
+      "height": 1586,
+      "dpr": 1
+    },
+    "modal": {
+      "x": 61.45600128173828,
+      "y": 261.125,
+      "width": 880,
+      "height": 1262
+    },
+    "edges": {
+      "left": 61.45600128173828,
+      "top": 261.125,
+      "right": 50.54399871826172,
+      "bottom": 62.875
+    },
+    "modalFullyInsideViewport": true,
+    "closeHitTargetCSS": {
+      "width": 44,
+      "height": 44
+    },
+    "closePaintRasterBounds": [
+      12,
+      12,
+      33,
+      33
+    ],
+    "closePaintRasterSize": [
+      21,
+      21
+    ],
+    "horizontalOverflow": false,
+    "bodyOverflow": false,
+    "detailHorizontalOverflow": false,
+    "searchCount": 1,
+    "unreadFilterCount": 2,
+    "focusRestored": true,
+    "closeFocus": true,
+    "consoleErrors": 0,
+    "networkErrors": 0,
+    "runtimeSourceClean": true,
+    "rowDensityAcrossReadStates": {
+      "listBeforeDetail": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 94.45600128173828,
+          "y": 643.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 94.45600128173828,
+          "y": 757.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 94.45600128173828,
+          "y": 872.125,
+          "width": 828,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 94.45600128173828,
+          "y": 985.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 94.45600128173828,
+          "y": 1192.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 94.45600128173828,
+          "y": 1306.125,
+          "width": 828,
+          "height": 113
+        }
+      ],
+      "afterReadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 94.45600128173828,
+          "y": 643.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 94.45600128173828,
+          "y": 757.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 94.45600128173828,
+          "y": 871.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 94.45600128173828,
+          "y": 985.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 94.45600128173828,
+          "y": 1192.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 94.45600128173828,
+          "y": 1306.125,
+          "width": 828,
+          "height": 113
+        }
+      ],
+      "afterUnreadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 94.45600128173828,
+          "y": 643.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 94.45600128173828,
+          "y": 757.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 94.45600128173828,
+          "y": 872.125,
+          "width": 828,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 94.45600128173828,
+          "y": 985.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 94.45600128173828,
+          "y": 1192.125,
+          "width": 828,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 94.45600128173828,
+          "y": 1306.125,
+          "width": 828,
+          "height": 113
+        }
+      ]
+    },
+    "rowDensityUnchangedReadUnreadBack": false,
+    "geometryChangeFromBefore": {
+      "x": 5.456001281738281,
+      "y": 99.125,
+      "width": 0,
+      "height": 0
+    },
+    "beforeAfterFullRasterIdentical": false
+  },
+  {
+    "profile": {
+      "name": "tablet-canonical",
+      "width": 800,
+      "height": 1280,
+      "dpr": 2
+    },
+    "modal": {
+      "x": 30,
+      "y": 110,
+      "width": 740,
+      "height": 1060
+    },
+    "edges": {
+      "left": 30,
+      "top": 110,
+      "right": 30,
+      "bottom": 110
+    },
+    "modalFullyInsideViewport": true,
+    "closeHitTargetCSS": {
+      "width": 44,
+      "height": 44
+    },
+    "closePaintRasterBounds": [
+      34,
+      34,
+      54,
+      54
+    ],
+    "closePaintRasterSize": [
+      20,
+      20
+    ],
+    "horizontalOverflow": false,
+    "bodyOverflow": false,
+    "detailHorizontalOverflow": false,
+    "searchCount": 1,
+    "unreadFilterCount": 2,
+    "focusRestored": true,
+    "closeFocus": true,
+    "consoleErrors": 0,
+    "networkErrors": 0,
+    "runtimeSourceClean": true,
+    "rowDensityAcrossReadStates": {
+      "listBeforeDetail": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 418,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 511,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 604,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 697,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 873,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 966,
+          "width": 686,
+          "height": 92
+        }
+      ],
+      "afterReadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 418,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 511,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 604,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 697,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 873,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 966,
+          "width": 686,
+          "height": 92
+        }
+      ],
+      "afterUnreadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 418,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 511,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 604,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 697,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 873,
+          "width": 686,
+          "height": 92
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 966,
+          "width": 686,
+          "height": 92
+        }
+      ]
+    },
+    "rowDensityUnchangedReadUnreadBack": true
+  },
+  {
+    "profile": {
+      "name": "portrait-neighbor",
+      "width": 900,
+      "height": 1440,
+      "dpr": 1
+    },
+    "modal": {
+      "x": 24,
+      "y": 154,
+      "width": 852,
+      "height": 1262
+    },
+    "edges": {
+      "left": 24,
+      "top": 154,
+      "right": 24,
+      "bottom": 24
+    },
+    "modalFullyInsideViewport": true,
+    "closeHitTargetCSS": {
+      "width": 44,
+      "height": 44
+    },
+    "closePaintRasterBounds": [
+      12,
+      12,
+      32,
+      32
+    ],
+    "closePaintRasterSize": [
+      20,
+      20
+    ],
+    "horizontalOverflow": false,
+    "bodyOverflow": false,
+    "detailHorizontalOverflow": false,
+    "searchCount": 1,
+    "unreadFilterCount": 2,
+    "focusRestored": true,
+    "closeFocus": true,
+    "consoleErrors": 0,
+    "networkErrors": 0,
+    "runtimeSourceClean": true,
+    "rowDensityAcrossReadStates": {
+      "listBeforeDetail": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 536,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 650,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 765,
+          "width": 800,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 878,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 1085,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1199,
+          "width": 800,
+          "height": 113
+        }
+      ],
+      "afterReadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 536,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 650,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 764,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 878,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 1085,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1199,
+          "width": 800,
+          "height": 113
+        }
+      ],
+      "afterUnreadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 536,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 650,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 765,
+          "width": 800,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 878,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 1085,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1199,
+          "width": 800,
+          "height": 113
+        }
+      ]
+    },
+    "rowDensityUnchangedReadUnreadBack": false
+  },
+  {
+    "profile": {
+      "name": "portrait-short",
+      "width": 900,
+      "height": 1100,
+      "dpr": 1
+    },
+    "modal": {
+      "x": 24,
+      "y": 24,
+      "width": 852,
+      "height": 1052
+    },
+    "edges": {
+      "left": 24,
+      "top": 24,
+      "right": 24,
+      "bottom": 24
+    },
+    "modalFullyInsideViewport": true,
+    "closeHitTargetCSS": {
+      "width": 44,
+      "height": 44
+    },
+    "closePaintRasterBounds": [
+      12,
+      12,
+      32,
+      32
+    ],
+    "closePaintRasterSize": [
+      20,
+      20
+    ],
+    "horizontalOverflow": false,
+    "bodyOverflow": false,
+    "detailHorizontalOverflow": false,
+    "searchCount": 1,
+    "unreadFilterCount": 2,
+    "focusRestored": true,
+    "closeFocus": true,
+    "consoleErrors": 0,
+    "networkErrors": 0,
+    "runtimeSourceClean": true,
+    "rowDensityAcrossReadStates": {
+      "listBeforeDetail": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 406,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 520,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 635,
+          "width": 800,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 748,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 955,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1069,
+          "width": 800,
+          "height": 113
+        }
+      ],
+      "afterReadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 406,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 520,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 634,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 748,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 955,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1069,
+          "width": 800,
+          "height": 113
+        }
+      ],
+      "afterUnreadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 406,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 520,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 635,
+          "width": 800,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 748,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 955,
+          "width": 800,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1069,
+          "width": 800,
+          "height": 113
+        }
+      ]
+    },
+    "rowDensityUnchangedReadUnreadBack": false
+  },
+  {
+    "profile": {
+      "name": "portrait-801-edge",
+      "width": 801,
+      "height": 1100,
+      "dpr": 1
+    },
+    "modal": {
+      "x": 24,
+      "y": 24,
+      "width": 753,
+      "height": 1052
+    },
+    "edges": {
+      "left": 24,
+      "top": 24,
+      "right": 24,
+      "bottom": 24
+    },
+    "modalFullyInsideViewport": true,
+    "closeHitTargetCSS": {
+      "width": 44,
+      "height": 44
+    },
+    "closePaintRasterBounds": [
+      12,
+      12,
+      32,
+      32
+    ],
+    "closePaintRasterSize": [
+      20,
+      20
+    ],
+    "horizontalOverflow": false,
+    "bodyOverflow": false,
+    "detailHorizontalOverflow": false,
+    "searchCount": 1,
+    "unreadFilterCount": 2,
+    "focusRestored": true,
+    "closeFocus": true,
+    "consoleErrors": 0,
+    "networkErrors": 0,
+    "runtimeSourceClean": true,
+    "rowDensityAcrossReadStates": {
+      "listBeforeDetail": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 406,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 520,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 635,
+          "width": 701,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 748,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 955,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1069,
+          "width": 701,
+          "height": 113
+        }
+      ],
+      "afterReadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 406,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 520,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 634,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 748,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 955,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1069,
+          "width": 701,
+          "height": 113
+        }
+      ],
+      "afterUnreadList": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "x": 57,
+          "y": 406,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "x": 57,
+          "y": 520,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "x": 57,
+          "y": 635,
+          "width": 701,
+          "height": 112
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "x": 57,
+          "y": 748,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "x": 57,
+          "y": 955,
+          "width": 701,
+          "height": 113
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "x": 57,
+          "y": 1069,
+          "width": 701,
+          "height": 113
+        }
+      ]
+    },
+    "rowDensityUnchangedReadUnreadBack": false
+  }
+]

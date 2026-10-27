@@ -1,0 +1,942 @@
+{
+  "sha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "results": [
+    {
+      "profile": {
+        "name": "desktop-native",
+        "width": 1774,
+        "height": 887,
+        "dpr": 1
+      },
+      "sha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+      "environment": "LOCAL_PREVIEW_MOCK",
+      "base": "http://127.0.0.1:5233",
+      "errors": [
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        },
+        {
+          "kind": "console",
+          "message": "Failed to load resource: net::ERR_NETWORK_CHANGED"
+        }
+      ],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:5233/src/i18n/account-copy.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/preview-mode.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/i18n/use-ui-copy.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/i18n/admin-copy.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/controllers/preview-controller.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/index.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/app/registry.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/app/navigation-blocker.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/app/canonical-preview-route.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/app/overview-document-route.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/documents/OverviewSourceDocumentScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S01/OverviewScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S02/DefectsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S02/defects-command-service.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S02/defects-command-http.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S02/defects-approved-policy.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S03/ProductsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S04/SkusScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S05/RecipientsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/data/http/recipient-update-adapter.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S06/PvProductsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S09/WarrantyCasesScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S07/LoginScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S08/SessionScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S10/PartsSlipsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S11/TraysScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S12/ReceiptsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S13/PutawayQueueScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S14/PutawayOrdersScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S15/OutboundSlipsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S16/InventoryScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S17/ReversalSlipsScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/putaway/PutawayHistoryScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/data/http/putaway-history-adapter.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/data/http/api-client.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S18/InboundReportScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S19/OutboundReportScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S20/MovementHistoryScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S21/InventoryReportScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S22/WarrantyPartsReportScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S23/LabelReportScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/data/http/label-print-adapter.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S24/DataQualityScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S25/DealerExportScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S26/GoodsTraceScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/account/AccountCenterScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/account/account-center-model.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/s00-navigation.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/shell-preferences.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/DatePolicyQaScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/notifications/NotificationHarnessScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/notifications/NotificationRepositoryQaScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/toast/ToastQaScreen.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/operations/OperationalPreview.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/preview-mock/public-demo-setup.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/primitives.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/Icon.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/focus.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/account/account-http.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/account/useProfileAvatar.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/account/account-runtime.css",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/preview-mock/index.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/preview-mock/public-demo-login.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/preview-mock/business-persistence.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/preview-mock/command-recovery-context.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/preview-mock/qa-dataset.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/node_modules/.vite/deps/react-dom.js?v=03b6ae94",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/toast/toast-store.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/toast/toast-copy.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/toast/toast-config.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/toast/global-toast.css",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/data/adapters/notification-document-fixture-adapter.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/notifications/open-notification.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/copy-text.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/documents/notification-source-document.css",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/PageState.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S27/audit-time.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S27/audit-ui-copy.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/controllers/system-audit-controller.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/contracts/system-audit.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/data/http/operational-preview-adapter.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S27/OperationalAudit.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/data/http/pv-demo-adapter.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S27/PvAudit.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S27/system-audit.css",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/i18n/ui-copy.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/controllers/warehouse-config-controller.ts",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/GlobalShell.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/InitialReadState.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/controls.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/shared/GlobalModal.tsx",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        },
+        {
+          "url": "http://127.0.0.1:5233/src/features/S28/warehouse-config.css",
+          "failure": {
+            "errorText": "net::ERR_NETWORK_CHANGED"
+          }
+        }
+      ],
+      "result": "FAIL",
+      "failure": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#s07-username')\u001b[22m\n"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "observedAtUtc": "2026-10-27T06:34:59.1861244+00:00",
+  "purpose": "Candidate source storage only; not release approval",
+  "sourceHead": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "sourceTree": "65ac25d235682469452f60d50664b3e6acb3a753",
+  "expectedRemoteBefore": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "branchProtected": false,
+  "fastForwardVerified": true,
+  "remote": "github",
+  "targetRef": "refs/heads/DEV",
+  "pushExit": 0,
+  "pushOutput": [
+    "To https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44.git",
+    "   76059cc..830f83d  830f83d48eac84c3e2467de7f41c388439cc7eb2 -> DEV"
+  ],
+  "remoteAfter": [
+    "830f83d48eac84c3e2467de7f41c388439cc7eb2\trefs/heads/DEV"
+  ],
+  "productionDeploymentAttempted": false
+}

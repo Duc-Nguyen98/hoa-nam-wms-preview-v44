@@ -1,0 +1,134 @@
+{
+  "sha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "endedSha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "srcClean": true,
+  "desktopGeometry": {
+    ".hn-notification-detail-actions": {
+      "before": {
+        "x": 924.984375,
+        "y": 688.5,
+        "width": 525.015625,
+        "height": 48
+      },
+      "after": {
+        "x": 924.984375,
+        "y": 688.5,
+        "width": 525.015625,
+        "height": 48
+      }
+    },
+    ".hn-notification-detail-footer": {
+      "before": {
+        "x": 924.984375,
+        "y": 769.5,
+        "width": 525.015625,
+        "height": 55
+      },
+      "after": {
+        "x": 924.984375,
+        "y": 764.5,
+        "width": 525.015625,
+        "height": 60
+      }
+    }
+  },
+  "tabletUnreadGap": 2.0,
+  "desktopButtons": [
+    {
+      "name": "H\u1ed3 s\u01a1 b\u1ea3o h\u00e0nh \u0111\u01b0\u1ee3c c\u1eadp nh\u1eadtBH-0018 \u00b7 \u0110ang s\u1eeda ch\u1eefa26/10 \u00b7 16:20",
+      "sameBounds": true,
+      "before": {
+        "x": 412,
+        "y": 677.5,
+        "width": 463.984375,
+        "height": 70
+      },
+      "after": {
+        "x": 412,
+        "y": 677.5,
+        "width": 463.984375,
+        "height": 70
+      }
+    },
+    {
+      "name": "X\u1ebfp khay ho\u00e0n t\u1ea5tTRAY-0012 \u00b7 Kho A26/10 \u00b7 14:05",
+      "sameBounds": true,
+      "before": {
+        "x": 412,
+        "y": 748.5,
+        "width": 463.984375,
+        "height": 70
+      },
+      "after": {
+        "x": 412,
+        "y": 748.5,
+        "width": 463.984375,
+        "height": 70
+      }
+    },
+    {
+      "name": "M\u1edf phi\u1ebfu xu\u1ea5t kho",
+      "sameBounds": true,
+      "before": {
+        "x": 924.984375,
+        "y": 688.5,
+        "width": 215.09375,
+        "height": 48
+      },
+      "after": {
+        "x": 924.984375,
+        "y": 688.5,
+        "width": 215.09375,
+        "height": 48
+      }
+    },
+    {
+      "name": "\u0110\u00e1nh d\u1ea5u ch\u01b0a \u0111\u1ecdc",
+      "sameBounds": true,
+      "before": {
+        "x": 1156.078125,
+        "y": 690.5,
+        "width": 159.46875,
+        "height": 44
+      },
+      "after": {
+        "x": 1156.078125,
+        "y": 690.5,
+        "width": 159.46875,
+        "height": 44
+      }
+    },
+    {
+      "name": "Th\u00f4ng b\u00e1o tr\u01b0\u1edbc",
+      "sameBounds": true,
+      "before": {
+        "x": 1360,
+        "y": 784.5,
+        "width": 40,
+        "height": 40
+      },
+      "after": {
+        "x": 1360,
+        "y": 784.5,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "name": "Th\u00f4ng b\u00e1o ti\u1ebfp theo",
+      "sameBounds": true,
+      "before": {
+        "x": 1410,
+        "y": 784.5,
+        "width": 40,
+        "height": 40
+      },
+      "after": {
+        "x": 1410,
+        "y": 784.5,
+        "width": 40,
+        "height": 40
+      }
+    }
+  ]
+}

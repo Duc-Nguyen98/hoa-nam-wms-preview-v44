@@ -1,0 +1,13 @@
+{
+  "task": "HN-NC-UIUX-003",
+  "command": "npm run quality:pr",
+  "exitCode": 0,
+  "candidateSha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "sourceTree": "d3cbc007a42abb996b74d8c537220fb202e8bb18",
+  "workingRuntimeDiffAtEnd": "",
+  "log": "local-quality-pr-final.log",
+  "scope": "typecheck, contract integrity (13 states/26 references), production build, 4 putaway tests",
+  "buildId": "52c8f3c6801cc2cd5a64150adcec7e4489469d1afa33b0b48713a96a291a161a",
+  "environment": "LOCAL_MOCK; not deployment verification",
+  "limitations": "This aggregate does not run Notification browser/visual/axe suites; independent reports are required."
+}

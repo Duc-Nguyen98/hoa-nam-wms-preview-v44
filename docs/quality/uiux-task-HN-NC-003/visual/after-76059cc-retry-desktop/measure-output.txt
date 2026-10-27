@@ -1,0 +1,47 @@
+[
+  {
+    "profile": {
+      "name": "desktop-canonical",
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "modal": {
+      "x": 464,
+      "y": 210,
+      "width": 1088,
+      "height": 728
+    },
+    "edges": {
+      "left": 464,
+      "top": 210,
+      "right": 368,
+      "bottom": 142
+    },
+    "modalFullyInsideViewport": true,
+    "closeHitTargetCSS": {
+      "width": 44,
+      "height": 44
+    },
+    "closePaintRasterBounds": [
+      17,
+      17,
+      27,
+      27
+    ],
+    "closePaintRasterSize": [
+      10,
+      10
+    ],
+    "horizontalOverflow": false,
+    "bodyOverflow": false,
+    "detailHorizontalOverflow": null,
+    "searchCount": 1,
+    "unreadFilterCount": 2,
+    "focusRestored": null,
+    "closeFocus": true,
+    "consoleErrors": 0,
+    "networkErrors": 0,
+    "runtimeSourceClean": true
+  }
+]

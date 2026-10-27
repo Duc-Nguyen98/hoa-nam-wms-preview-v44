@@ -1,0 +1,1129 @@
+{
+  "task": "HN-NC-UIUX-003",
+  "generatedAt": "2026-10-27T06:38:47.615Z",
+  "candidateSha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "sourceTree": "65ac25d235682469452f60d50664b3e6acb3a753",
+  "fullMatrixBaselineSha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "files": [
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-dark.json",
+      "bytes": 332837,
+      "sha256": "6a2848cd4bf4e32175b4d1ee1cf30548e8e0d612a5eaf06b306de7ea8a9439b2"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-dark.png",
+      "bytes": 242953,
+      "sha256": "9e3e86480ee5cb218dee709925d69c6175bb93734f7c29ab0693ba12fa22373d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-light.json",
+      "bytes": 332838,
+      "sha256": "d759367bdabd8cc510835c25493e06dbba6f890d206b17c2d924e1b518f8f44b"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-light.png",
+      "bytes": 236698,
+      "sha256": "f3192519180c64d3810e2fc83d38c4bbfe45ebbda68ccf660742f48e9a959b68"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-dark.json",
+      "bytes": 273927,
+      "sha256": "e491147dd1a63bbeb65f1d38972e570ca1f328652f5bc330dc17aa456c965e96"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-dark.png",
+      "bytes": 263952,
+      "sha256": "c93a4463ae2143324b919f959ce2472861cc327e7fac3463c3d8e04b4dfd0e61"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-light.json",
+      "bytes": 273928,
+      "sha256": "26a28d434eab1e0191e8eaf7d3a1442041a9f53a0db5fef94bfb9faf3f689360"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-light.png",
+      "bytes": 262876,
+      "sha256": "e3ea33de99b1ed84d7692c7cb206afc65701ddc09ca075be38a1265ba02ea765"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/browser-exit.txt",
+      "bytes": 3,
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/browser-results.json",
+      "bytes": 1036060,
+      "sha256": "11c4cdb9b88e9bdc733db97a7220f25bf201a59711716d451c2ac7292b65902d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/browser.log",
+      "bytes": 16122,
+      "sha256": "06df0c98f12d6fae2818d84e5b6a3b3bab6cbe123e3e6c89d480f84873448df8"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/.last-run.json",
+      "bytes": 243,
+      "sha256": "7923d01dc29b88a7c9cb6d7ab90ed7a22ec323e441700d358376c33228026595"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal/error-context.md",
+      "bytes": 4198,
+      "sha256": "f8cafe2981392b92854eb4572904731dfa4044d2d4973981910193e5277db08a"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 242957,
+      "sha256": "3421f1fa0303c63309cac7a38b9f44451cd8dd414a3157804033b2226940aae6"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal/trace.zip",
+      "bytes": 4137135,
+      "sha256": "2a52c8c10d38c06d9274e0a92cad7b6a9b220fb4f14ec828d8359e98bc1a3a4d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal/error-context.md",
+      "bytes": 4199,
+      "sha256": "bbdd49688c343158a9b6a3002d049fd1ca913b22dd5226aed46328c2eded1396"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 236712,
+      "sha256": "2d93be41fde27153750cf91407f4c9dbdbfa55891e9c1c1473c63d877b7f43db"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal/trace.zip",
+      "bytes": 4241117,
+      "sha256": "bf3829920c7d1f602550443ea821747641aa76cd1ff0ecf9cd5cc174b7675527"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal/error-context.md",
+      "bytes": 4197,
+      "sha256": "1926a343a9e57a1fcb01e41f6deae33c52e969361a0086efa8b94d54e6abecaa"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 263952,
+      "sha256": "c93a4463ae2143324b919f959ce2472861cc327e7fac3463c3d8e04b4dfd0e61"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal/trace.zip",
+      "bytes": 4121804,
+      "sha256": "eb30c3e3a858b8eb36012fce4494b81a22c1739694ab6d856fcd61d2931360c3"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal/error-context.md",
+      "bytes": 4198,
+      "sha256": "683cc1ae687e69d94bc4fcf4b08409c73ff9b2237037d01faa93962ec916c400"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 262876,
+      "sha256": "e3ea33de99b1ed84d7692c7cb206afc65701ddc09ca075be38a1265ba02ea765"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal/trace.zip",
+      "bytes": 4235905,
+      "sha256": "9b38c01ca72d82a1b7a6857404475a85a62e5e38ec7098bcae9ab5cf65fbec2f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-dark.json",
+      "bytes": 334561,
+      "sha256": "b262a09433bb7429bd5aa1f06c1f936cde46387cf0ab276929ea0466af94bfb5"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-dark.png",
+      "bytes": 242952,
+      "sha256": "b8098d3e4b968088688fbea799813f63492add87418e6e66000476a56a3b2913"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-light.json",
+      "bytes": 334562,
+      "sha256": "6c58b1920835954487ea47b9d0e5a71046fc82d31350bba961fa25a67f236084"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-light.png",
+      "bytes": 236932,
+      "sha256": "7a690f0dcf07317bf7ceaacf77830d371689dc417c2f70659adac2b10a1b2a69"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-dark.json",
+      "bytes": 275651,
+      "sha256": "46cdeda40eb1b965d8ee7634b743d5a964b16c30aa9f026fa2b35d7975a9b353"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-dark.png",
+      "bytes": 263952,
+      "sha256": "c93a4463ae2143324b919f959ce2472861cc327e7fac3463c3d8e04b4dfd0e61"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-light.json",
+      "bytes": 275652,
+      "sha256": "e7f116fdf7ae5107a83d9348a15edfabcea4d512be1e460c55adfcc26e954e5c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-light.png",
+      "bytes": 262995,
+      "sha256": "aa16298bc934a923371be7bb6d72a763276b1f0aba7b0bbcf2087d5db33cb1a1"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/browser-results.json",
+      "bytes": 1011779,
+      "sha256": "abb809d8514ef0d4bb133a5d01ca8d3950c2173519fc8692f3547fdcc70922a9"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe-final-command.log",
+      "bytes": 988,
+      "sha256": "a2d6786edbf2d9d75bf7429c8f8f5a253f579a8fa4a06a770049d75cf5426b45"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe.config.ts",
+      "bytes": 758,
+      "sha256": "4f5ec93d6972096b94c1dd2418febcf96b512eae1f3fab48c7d637094d7d54ee"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/axe.spec.ts",
+      "bytes": 3526,
+      "sha256": "64c6328b85e12d7c9cb6e3d56187c9794effef16907bd5b5951404e9bf354481"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/AXE_REPORT.before-finalization.md",
+      "bytes": 3861,
+      "sha256": "0555e88d64a90d77bdf7c672df96a9b922a97ca4cd7651caa5cd28972f752741"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/AXE_REPORT.md",
+      "bytes": 5549,
+      "sha256": "116c190c6304ff59753db552083a267b428370bdc62453b365520bd2cf35d70f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/COMMANDS.md",
+      "bytes": 3101,
+      "sha256": "c8e312781ebe4fe555fb113059c28522a5606af773122c846535a0648d6d74e7"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/CONTRAST_REVIEW.md",
+      "bytes": 3454,
+      "sha256": "f7b566b3bd9189f7de3c3a5f463ee704a8481397044511cb286a6763f88b8c58"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/EVIDENCE_MANIFEST.76059cc.json",
+      "bytes": 40308,
+      "sha256": "44e412f47b4d6564ea701d6bee3b0502e25b1ffb3591563ca19a365d4b4e6200"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/EVIDENCE_MANIFEST.before-finalization.json",
+      "bytes": 5434,
+      "sha256": "1b5c373ecf290c43127ac235233c8e49e7f8de209d9c6c55a4d312e44bc2e62b"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/execution-delta-index.json",
+      "bytes": 10283,
+      "sha256": "8cc258d5d02ef24367b60f366c083db3f4fce009f358c4aba9085ef7b989bd78"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/execution-final-index.json",
+      "bytes": 57486,
+      "sha256": "b24b3ebf0aa25cc4ef1fe6f89d881b5dbf9dbe4b2f83775b1170728ab66d6e39"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/execution-index.json",
+      "bytes": 17952,
+      "sha256": "a235355e21c4710ec98d5c911aa4b90e8d38906ba8a3a3ffa9a6cb116cac6a69"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+      "bytes": 6530,
+      "sha256": "b7da866684c04884180559cea6eaba2038bb82f15d9af4a7f390362f60b53342"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/finalize-delta.mjs",
+      "bytes": 9602,
+      "sha256": "05865517d1f15cb6dd0fab6d5e17bcca12a8cabe185cf89c9d5b73bcd934c79f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/finalize-report.mjs",
+      "bytes": 20302,
+      "sha256": "57ed5a26df7557a15512588c209777eeb2ef36ef7303ba9108def7af2081acfb"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/FINAL_SOURCE_DELTA_RETEST.md",
+      "bytes": 4533,
+      "sha256": "c874cf89de8963423aaa238b24d0520a79ecbc6dd99ac14911d89f51a797c7cf"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/after-toast-dismiss.png",
+      "bytes": 193257,
+      "sha256": "e5e6654f3b911ecc62ae04709e81dabe59fe3490a4aebfcfa1338aaf13e80894"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/browser-results.json",
+      "bytes": 17407,
+      "sha256": "9f6b13bb86069db948d1b749ac9ce5f0e90dde1634c1596c746876e6fc3c1d86"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/focus-repro.json",
+      "bytes": 911,
+      "sha256": "01fdff05e9badef97c0583aaa352871436cdf9e94963d0ae1d60827e56d3bb17"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/.last-run.json",
+      "bytes": 96,
+      "sha256": "d80504a657d7947f6418a1e7938adb251425f44c03699b85250856d9e60b3523"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes/error-context.md",
+      "bytes": 20646,
+      "sha256": "dd038af4d5e0fdcb5e14bf03cec58b0e3100507380675949bc1e0463ffeb37c9"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes/test-failed-1.png",
+      "bytes": 193257,
+      "sha256": "e5e6654f3b911ecc62ae04709e81dabe59fe3490a4aebfcfa1338aaf13e80894"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes/trace.zip",
+      "bytes": 6304700,
+      "sha256": "11c77370359ba90262adb09a2e5fb85bc46e25e203d86023d2920dc5f95240b9"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/toast-close-focused.png",
+      "bytes": 195155,
+      "sha256": "5591e6b2cd7d6fa6a2cbd1ec8dec3b862eec11a4b213bbe78b584b32bc008cf5"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-before-command.log",
+      "bytes": 6936,
+      "sha256": "269a9ad4ec97fc0ac5d9fa31deae5354e4ee00e4c957ea2dcdae137645f85c36"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/after-toast-dismiss.png",
+      "bytes": 193617,
+      "sha256": "e7fee793354e7624c4af970c9aa6a1f16bc2317b6af196943648b9fcb39943ef"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/browser-results.json",
+      "bytes": 5997,
+      "sha256": "a43b24c15a1521df9f9d3a50cd0eba5bcea3dfbd9d35f3e6bdf99a7a202dbc61"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/focus-repro.json",
+      "bytes": 930,
+      "sha256": "836e75f1341b656080d1f3be5441f84fe7f03947e76ecdb167f010b9eeae6b0e"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/toast-close-focused.png",
+      "bytes": 195155,
+      "sha256": "5b751480bfb77554fdb96fa9117e0ade99e79e45feb9a2e794f3bad35fa58b88"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-final-command.log",
+      "bytes": 605,
+      "sha256": "36da6420f1505a60b0a4945f1bf99a2583e760d6f20e9c2f81af32f8bf805325"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/focus-repro.spec.ts",
+      "bytes": 3711,
+      "sha256": "0a4d8bcd801675833dffe46e682bb8a4f65028af20581c7085153f93dac5b647"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/FOCUS_DEFECT.md",
+      "bytes": 2527,
+      "sha256": "fe29be25982be655022ceeddde5763c60c5d8358d95bada48a1f842acf5a5e94"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/FUNCTIONAL_QA_REPORT.76059cc.md",
+      "bytes": 16285,
+      "sha256": "2626a38a466a31892fca67dd9a86565c41278fbe9e0ec7dace0578065b3ae9b7"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/FUNCTIONAL_QA_REPORT.before-finalization.md",
+      "bytes": 13774,
+      "sha256": "c0910d63d3e25b30cfc7ed0eedb9df1a2b7a81b34215788645c8a677a5ab243e"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/playwright.config.ts",
+      "bytes": 980,
+      "sha256": "4ddf051a8b7c415cdac0ae0363070be7ba7754a10ddfe06e3111b2d4d684c665"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/report.mjs",
+      "bytes": 8890,
+      "sha256": "227680599732017b7aa737848f548091cfc2964366db1c1672bd5356f7a5f4ce"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/browser-command.log",
+      "bytes": 3961,
+      "sha256": "4121a2390c25b2c382ef5e0e01497fc1e662ebf858b8f6b04ce138a8f28975d1"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/browser-exit-code.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/browser-results.json",
+      "bytes": 4776389,
+      "sha256": "4283cdd186ad086b11e8777f3cfaed1b9df1c013be7c2b57784a617ae397d07d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/independent-geometry.json",
+      "bytes": 4553,
+      "sha256": "1c1ddfceed2d7c117f87160a4b5fbddf95d9f62939ebd9062ef499c7d2e1d587"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/independent-stale-error.png",
+      "bytes": 175176,
+      "sha256": "6c743b3592b2cd08f33aa04eeaccf3296c3d7502fa4c7179af2e57ca04df3ace"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/notification.tap",
+      "bytes": 3797,
+      "sha256": "e350e5c6141bc5101f7227779a64101b3ec6b3f5bec2df55f634fc7e7329313f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/session-concurrency.tap",
+      "bytes": 1030,
+      "sha256": "cb808d0492e9e3b8939a2315bfa182a92b50650d9a17a35225a49648059aa276"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/sha-end.txt",
+      "bytes": 42,
+      "sha256": "4b05a3104c9b86e7869c4c9c768850984027647ac1055b37c3831412ccc6c431"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/sha-start.txt",
+      "bytes": 42,
+      "sha256": "4b05a3104c9b86e7869c4c9c768850984027647ac1055b37c3831412ccc6c431"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/source-tree-end.txt",
+      "bytes": 42,
+      "sha256": "ac6edc5295497f055e7d2a90fc854a626328257c7c3f445de50377624c528a8c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/source-tree-start.txt",
+      "bytes": 42,
+      "sha256": "ac6edc5295497f055e7d2a90fc854a626328257c7c3f445de50377624c528a8c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/typecheck.log",
+      "bytes": 85,
+      "sha256": "4668c44f4d8a34a1b2a3f4277103bbd74d3c180e5a8c7a3fdf6b79ed2a405a7c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/working-source-end.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-after/working-source-start.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/browser-results.json",
+      "bytes": 21077,
+      "sha256": "c3221335c4858e4bc0a67c39c50ead9dba8c98c50b5468501402768ed7b773bc"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/browser.log",
+      "bytes": 3764,
+      "sha256": "c03e2f6a246ff03415fc5b440b0d909706db6e14f423615365ff641c436b1dbd"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/independent-geometry.json",
+      "bytes": 4553,
+      "sha256": "7c1e6257b4d5a5998f577cd7b7e60bbc5fdf74c2f321d89028392721e01c24e8"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/independent-stale-error.png",
+      "bytes": 175387,
+      "sha256": "30b1b9ae9782e6cddba307b1ddddda0305a7a9da69424e5fdd4ac013a0bc944e"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/node-exit.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/notification.tap",
+      "bytes": 3793,
+      "sha256": "8349a96f80f4264c6f27290749e2dfa93019fbc72bc912f99055eb80775b7cc2"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/session-concurrency.tap",
+      "bytes": 1030,
+      "sha256": "83a9a2701ab6b3dde6f204dc46ccf8ef1309fb3e347e760d3249664645a540ea"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/session-exit.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/sha-end.txt",
+      "bytes": 41,
+      "sha256": "116b5731c67f0b1ab0d2d2fbbdee68fa449e5993f176be3487061731dc8ff9f5"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/sha-start.txt",
+      "bytes": 41,
+      "sha256": "116b5731c67f0b1ab0d2d2fbbdee68fa449e5993f176be3487061731dc8ff9f5"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/source-diff.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/source-tree-end.txt",
+      "bytes": 41,
+      "sha256": "ad7cf5cf9a66f0ba1a383bd289fa490b18b0e8a143387cd2df7c6b929e85d54d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/source-tree-start.txt",
+      "bytes": 41,
+      "sha256": "ad7cf5cf9a66f0ba1a383bd289fa490b18b0e8a143387cd2df7c6b929e85d54d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/typecheck-exit.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-before/typecheck.log",
+      "bytes": 85,
+      "sha256": "4668c44f4d8a34a1b2a3f4277103bbd74d3c180e5a8c7a3fdf6b79ed2a405a7c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/browser-command.log",
+      "bytes": 3961,
+      "sha256": "82fb804e51847bf04fd42fa35d56042ccdd3ae10f8719c26edba1923d8908241"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/browser-exit-code.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/browser-results.json",
+      "bytes": 4777409,
+      "sha256": "b6c800f3a197c33e4983d19ea833c29c27cc429a0c764c6ae1cd8fc8e6d741ec"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/independent-geometry.json",
+      "bytes": 4553,
+      "sha256": "1c1ddfceed2d7c117f87160a4b5fbddf95d9f62939ebd9062ef499c7d2e1d587"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/independent-stale-error.png",
+      "bytes": 175219,
+      "sha256": "55426f2ceaa2076c95ee894d4b9193e2ec91e60469ac2356fb6eb3daa4ff05c2"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/node-exit-codes.json",
+      "bytes": 55,
+      "sha256": "d6f0ec3c2c3158dd7599cab7328e86b318d3dcfdc4847cc1bfa06fd055e054a4"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/notification.tap",
+      "bytes": 3798,
+      "sha256": "bf07f09a0bc5060564f54a9cfa22a800f5d27f3299bb259e7ec5c8aa50782e28"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/session-concurrency.tap",
+      "bytes": 1028,
+      "sha256": "67c136b98c58bfde40602003bb9056b87e7f66672be2f3e16b79cb79c6f60a3f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-browser-start.txt",
+      "bytes": 42,
+      "sha256": "85740804064f3b0c221f1f16d08b8aa78d0b68dc20f8eace60bdd5f17c16db74"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-end.txt",
+      "bytes": 42,
+      "sha256": "85740804064f3b0c221f1f16d08b8aa78d0b68dc20f8eace60bdd5f17c16db74"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-nodes-end.txt",
+      "bytes": 42,
+      "sha256": "85740804064f3b0c221f1f16d08b8aa78d0b68dc20f8eace60bdd5f17c16db74"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-start.txt",
+      "bytes": 42,
+      "sha256": "85740804064f3b0c221f1f16d08b8aa78d0b68dc20f8eace60bdd5f17c16db74"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/source-tree-browser-start.txt",
+      "bytes": 42,
+      "sha256": "7bd08a12ad2669f406f5bdaa8613c5d387477bef7615bfc01695a83096311f90"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/source-tree-end.txt",
+      "bytes": 42,
+      "sha256": "7bd08a12ad2669f406f5bdaa8613c5d387477bef7615bfc01695a83096311f90"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/source-tree-start.txt",
+      "bytes": 42,
+      "sha256": "7bd08a12ad2669f406f5bdaa8613c5d387477bef7615bfc01695a83096311f90"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/typecheck.log",
+      "bytes": 85,
+      "sha256": "4668c44f4d8a34a1b2a3f4277103bbd74d3c180e5a8c7a3fdf6b79ed2a405a7c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/working-source-end.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-final/working-source-start.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-session/browser-exit.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-session/browser-results.json",
+      "bytes": 1101059,
+      "sha256": "9d1e2fec6cf90dde115b2593c37dc94fa17fcc34276d1c32317a333a9db5619c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-session/browser.log",
+      "bytes": 608,
+      "sha256": "6ba0d440cd373126d57e71be9adc07e5f2a11b3ce29015c7c76fbce961923bae"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/run-session/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/session-concurrency.test.ts",
+      "bytes": 1927,
+      "sha256": "9b7b34cd6055f5b2b0f9efda49204227c392caa1bb3b3531bb177869c890fbf8"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-after/browser-results.json",
+      "bytes": 6301,
+      "sha256": "efb0244f51c3a84858a912f37d653b68693641f3444543fd31d5ca39471a26b9"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-0.png",
+      "bytes": 242871,
+      "sha256": "60ce5da9cdc35cda2a36313469ce5143af427dacad491552cb3ccc285a852d12"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-1.png",
+      "bytes": 227705,
+      "sha256": "1853de19d7b654c1e97a07fc93d110487f66a9f5fda74bc12360f789f642488d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-2.png",
+      "bytes": 230025,
+      "sha256": "ca3469e8f1f7f54071b1554a2aadec4926554f20018e8278f635ee68297befc8"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-3.png",
+      "bytes": 231159,
+      "sha256": "39ff599e58bda52813bb8011bcfc0a85ecee84a97cbe404cc9f2627214d4d2f3"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-feedback.png",
+      "bytes": 199612,
+      "sha256": "af3d31357e8893257f9bf710d6aac83a3e810d45f4c7effc777681dc703e074d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-modal-queued.png",
+      "bytes": 230434,
+      "sha256": "b049b2306b55fa54f71aa08e8542401608f5f4665e5657836379a04950fe646d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-s01-detail.png",
+      "bytes": 200237,
+      "sha256": "6ef14ae512a724c764baa8fb522fbc32f4ba5e15b38078993c660a3c9a013bad"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark.json",
+      "bytes": 437184,
+      "sha256": "8d5c343af3e7124daa33dd57e5ff53744913e0900d7fa900b4412606ce8f76e3"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-0.png",
+      "bytes": 236917,
+      "sha256": "fcd3101a60ba9c7eeda3f4d4f655631de584df5c27db6b603ac83caac5708760"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-1.png",
+      "bytes": 222149,
+      "sha256": "f42630cab3e5b085ad46063d0a27c80f825fb5ed6ed445fc9e65dd32f54e3b93"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-2.png",
+      "bytes": 224675,
+      "sha256": "168e3d20831d297b5c8ba05c56861f5564a99fafddfb8ab746ad61fd97541079"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-3.png",
+      "bytes": 225878,
+      "sha256": "7e0633bdd17ef5851eed73872f261b141065c3a87db7f5ca14505f5c60b9eb91"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-feedback.png",
+      "bytes": 195992,
+      "sha256": "87414b0118b44221892afdca90be017e0519701352804746886c407184d72b82"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-modal-queued.png",
+      "bytes": 225537,
+      "sha256": "0e2acab7121276b39f0d8deaceaa8d74cac6cabc7f3be483d2d6f6764be31315"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-s01-detail.png",
+      "bytes": 198480,
+      "sha256": "62b7db47612f5fec6b77f8824537fbc48360a8738229f22a7955265cfe2ec233"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light.json",
+      "bytes": 437705,
+      "sha256": "99840bae1f2fd117bf98fd0de7151eeb6c69c4c123dda1e30e1edf5833189d4b"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-0.png",
+      "bytes": 97155,
+      "sha256": "f14dd152b679342be03ccbc4339ff4e7147a824512c570a90cf08000754b0da9"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-1.png",
+      "bytes": 81777,
+      "sha256": "c67eb87866575e1460962a7815906e28c62cadc428bd246b89504002f5302a1d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-2.png",
+      "bytes": 82994,
+      "sha256": "b2ebf5d3c9d55c0cbf3d12de12d6e36b71fbb04cfd5a44c2b8c024f16bd5630a"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-3.png",
+      "bytes": 85279,
+      "sha256": "402761fa61f0ab5272aa56b57522896f9f0b5fd0fdd41429320605c6ec73cf02"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-feedback.png",
+      "bytes": 133502,
+      "sha256": "9b1e3594e34786b66794d3641300910df63601851d50195f73bff1f2863fdaec"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-modal-queued.png",
+      "bytes": 114077,
+      "sha256": "3f91ad8a19fd5942f2c8ff54ee76a7c9c2741391aa2167aa9e8d80cc89a84afd"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-s01-detail.png",
+      "bytes": 75367,
+      "sha256": "8d5aeaa7ea92601350cf2d2bfd5bebd2e049e00f810a2116d16b14f9da649a11"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light.json",
+      "bytes": 166475,
+      "sha256": "294c9f2519dfc805d9767ff120ee390337210cae6a34eda61b1804a161bbf3b5"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/blank-page-trace-summary.json",
+      "bytes": 2243,
+      "sha256": "50c8aa16fa419f6712df9b5f250906d7479b55af042647f025cb1de3f817eefc"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/browser-results.json",
+      "bytes": 820748,
+      "sha256": "0203132ed78c13b0c807335d3e5aabe1695be14864419b177b7aa131a94d3b68"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/contrast-1920-dark.json",
+      "bytes": 434411,
+      "sha256": "14723075101ebbc81376337935a00e8e2fffdaa0171d6ea1eda2686e943f2aca"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/contrast-1920-light.json",
+      "bytes": 434931,
+      "sha256": "3d40aa779f3c472564fe99a221ea5008a2531b8912b5906fa1387b95e67d751c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/contrast-800-light.json",
+      "bytes": 164579,
+      "sha256": "f111a512922184100396a0d0d0d963e725db1f278ca844fee8d860cdc33127e0"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/.last-run.json",
+      "bytes": 96,
+      "sha256": "26a4b229a89d293ffc97e28449fe2cef50eb9f17f5dc34d591b954a19206ea76"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/shared-regression-F-NC-003-5d13e-ck-and-contrast-spot-checks/error-context.md",
+      "bytes": 11825,
+      "sha256": "76d04a0e480d0a990b6b06f5ab135891385f8d8682f8319777edd858f1ad98c5"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/shared-regression-F-NC-003-5d13e-ck-and-contrast-spot-checks/test-failed-1.png",
+      "bytes": 5715,
+      "sha256": "763b07aecae11f22bc4686ed2a732b7e7d6bd8638f4f5896a2d8d633d818b212"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/shared-regression-F-NC-003-5d13e-ck-and-contrast-spot-checks/trace.zip",
+      "bytes": 18732,
+      "sha256": "47b4f26765b531a322531fc9da32c8dcbf1606318d94d91e4e58659181617289"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-command.log",
+      "bytes": 5972,
+      "sha256": "9d093f44af52d9ed7fcb7bd5ec621a6666b99cb381f11452b90906fe905360d9"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-detail-0.png",
+      "bytes": 236788,
+      "sha256": "8a64ccf084754767c2c998f5d4ebf8b3f11c88e237b7be36ecebec7b94005401"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-detail-1.png",
+      "bytes": 222000,
+      "sha256": "4ce7af16bad84d0f1f57bfab727f2f885da97e00e17c010e0df9b02d6b17cb82"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-detail-2.png",
+      "bytes": 224626,
+      "sha256": "1ccf3feacb5622af116ff634c1644ac6783bf531c18a15b5512ad1143f3f9b68"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-feedback.png",
+      "bytes": 195992,
+      "sha256": "5b7a071b14ba4c3c2d3392164e3061222894399db3d36aec16c0c200e8c9c9d2"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-modal-queued.png",
+      "bytes": 224268,
+      "sha256": "755adb1d2b41890b155748a9d0c137b41200db34a99c7d47a58fbf6beab515b7"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-s01-detail.png",
+      "bytes": 198480,
+      "sha256": "62b7db47612f5fec6b77f8824537fbc48360a8738229f22a7955265cfe2ec233"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light.json",
+      "bytes": 351125,
+      "sha256": "3fdc549809652a655c860bd7b0c6a0dbfc007b6db107228a6709d7ae59ee1450"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/browser-results.json",
+      "bytes": 327510,
+      "sha256": "ae508381834278a136abff40a455207736ad687a76a54031d6093d5ea9e840c7"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/contrast-1920-light.json",
+      "bytes": 348351,
+      "sha256": "4c8667da01b192c6101e90fc81e6f6a9cd34d33b27b4b958b56c0f83bc36a55c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/.last-run.json",
+      "bytes": 96,
+      "sha256": "c99531626f0126c5e6f62aac6e295e38f6c4fc8ffbc6434aa5d2a4881da86a78"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks/error-context.md",
+      "bytes": 34104,
+      "sha256": "c70981f340c46c5479d2cf33666daa6bcf6b658952d7f38dbe099bbdcf634bcc"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks/test-failed-1.png",
+      "bytes": 193920,
+      "sha256": "48e14e0dc84e22f27f3fc43136e1cfe3fd95af1a4263f2842645bcf8e458cf03"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks/trace.zip",
+      "bytes": 8313146,
+      "sha256": "e3b7be11622e898252eba9dd96cba52252ab65d6f4f64d318c35ce03be8f109b"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic-command.log",
+      "bytes": 13186,
+      "sha256": "c0660f7ce419605e2dfb0afa1f5b9ba9716806359252010d9f62fa1a0b10f3b7"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-0.png",
+      "bytes": 97601,
+      "sha256": "9b44f959848787c8e26bc34f4e7b8be627c1e63acb1bfaf6b2a0a90452e2100c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-1.png",
+      "bytes": 81812,
+      "sha256": "b4d3fd88ada9f3bbdb1d77a367ab9a4a738117e00ce21224fbf66e9fea6d89f6"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-2.png",
+      "bytes": 82946,
+      "sha256": "1b7147c0eee58f151751074c44a27406967d460222b1a5507503bf07f19e4dc1"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-3.png",
+      "bytes": 85013,
+      "sha256": "8f5e636ab9b6f3d18b1eef011a4e5d1e6217e66dc8723ef0a6199b6219f50cc5"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-feedback.png",
+      "bytes": 135717,
+      "sha256": "9c9fbc4ca4902326ebd642d2f16de49fa3d7dfbae41d7fde68851d8b84a55568"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-modal-queued.png",
+      "bytes": 114598,
+      "sha256": "96594fe876d207475c6f97f66ec26d99654d1b30eef8159acf4fe8430c9867ac"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-s01-detail.png",
+      "bytes": 74089,
+      "sha256": "123e16287c20ad19e9f9cb4ffcad77d23d8f39bf9e4c6d4b4a52c4eea487af94"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark.json",
+      "bytes": 166256,
+      "sha256": "6b4126742d8fe159fdbe7b60d93ff9e285342d1e7c8ae94fbbeb3ed672ba5db3"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/browser-results.json",
+      "bytes": 134505,
+      "sha256": "36cb6825cf02f57dbfc78ed6ba690cca5c32e35bbd8f1cc4b4772188d961aab6"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/contrast-800-dark.json",
+      "bytes": 164361,
+      "sha256": "9bebc7079a4a4dbbb03433b21ce0e812cf1c9353038fab9c71a2f575094b262d"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry-command.log",
+      "bytes": 617,
+      "sha256": "708a7223b09f768fb745c487ff66cdf971214e24c5160c9769042f3c304ffd20"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-regression.config.ts",
+      "bytes": 812,
+      "sha256": "a78240ea50121af46cfe86c27df3bc8737e6df88e85c364764997cfc1848e47e"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/shared-regression.spec.ts",
+      "bytes": 10724,
+      "sha256": "91bae6942813bb58fc4d143204ba7b2156a2a860358b93f6bc1ff54396779976"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta/browser-results.json",
+      "bytes": 6166,
+      "sha256": "c2023bb68d6b7f00ec0a7aa600f6bcce05049fa229df027607ace2b579b6a24a"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-after-filtered-read.png",
+      "bytes": 79211,
+      "sha256": "e362c391b4b0fefd1ca67c380b14557bc15145bc093cb44a0c54c5511aff84a2"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-all-read.png",
+      "bytes": 137712,
+      "sha256": "474b328181ccc151f009bd8d2b50d650a6f01544a3978865e283dc1875c417e0"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-detail.png",
+      "bytes": 87299,
+      "sha256": "23e15620e720c8120fae5c7f5a309db4e250b6521826b8765d871bb903b65315"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-initial.png",
+      "bytes": 141450,
+      "sha256": "6be553121b143a853c54b2a31d310a8bc2f3b964531025300ce8396d990189ad"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light.json",
+      "bytes": 43698,
+      "sha256": "9a8dea6928271cb4929bd2d501ba3bb1ec7e1d13b44ac8782583dcb4f4ff3b78"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-after-filtered-read.png",
+      "bytes": 96469,
+      "sha256": "8de2c8878be23f5afc56518f8a31ec3d79d277afe868f45c323c3f895abd511f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-all-read.png",
+      "bytes": 162451,
+      "sha256": "d0b47b0d08dc3f511f2edbc6f7f7a1a7c14e11d4fe6f7a9c1e5e6527780fa54f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-detail.png",
+      "bytes": 104061,
+      "sha256": "a8454ec5a1ea13b3a490a472f12d42faad6d80477d5d01bdcd47187037d09be0"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-initial.png",
+      "bytes": 159228,
+      "sha256": "8f6cd3b3046de0a42c270ae98b41859cd060372bbc6b1a8f248472c495f19e3e"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark.json",
+      "bytes": 49713,
+      "sha256": "180919a302dbf14598a12afbc61187497b6ca26d95a980354ce12446a617608c"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-after-filtered-read.png",
+      "bytes": 96677,
+      "sha256": "e500311b6a4480213a469ec01ea00f0ec34e64f7e44a893992ea017d458c1ec8"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-all-read.png",
+      "bytes": 162385,
+      "sha256": "a2caefb3bf710ea8dce7fd8d6f1a996503aa2ed385ac6831c6003a944b719f28"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-detail.png",
+      "bytes": 104025,
+      "sha256": "2c4dbdd2645a20f3edd584a077eb26b1b51fafecf6bf57b9daae10fd9d3bcd4e"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-initial.png",
+      "bytes": 159259,
+      "sha256": "515f003f81851818df6ae38b2222727b1cd944f3f3e380915a2ef7e5785b358f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light.json",
+      "bytes": 49714,
+      "sha256": "fb09d45fe32b85deec78097f4da5c91a9f72f231840bf2604fb848a564dfc27f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/browser-results.json",
+      "bytes": 109501,
+      "sha256": "f0b0c8f80f3ca7837a45379b8ec99631273fe6f70ebd9481d881472e5e705e83"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/source-delta.diff",
+      "bytes": 3450,
+      "sha256": "6c524e42ad6ce5f99dc7e958d589f9f17a83d4a33afaf9ec29b635cd515e95bc"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/source-provenance.json",
+      "bytes": 10283,
+      "sha256": "8cc258d5d02ef24367b60f366c083db3f4fce009f358c4aba9085ef7b989bd78"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/.last-run.json",
+      "bytes": 96,
+      "sha256": "a907be16d661aeb1ff527be5cc1ee739b92ada56d57e02a7a8e080a432eb6f63"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback/error-context.md",
+      "bytes": 11077,
+      "sha256": "8cbbc8749e871d9098b3244eeeffad9a3e89bc3b863fd9812762adbbb9573bbb"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback/test-failed-1.png",
+      "bytes": 30041,
+      "sha256": "8b59e122a421cc4e6a19a1bea30d8ff087055fe7be1028e0b424a91f4525e58f"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback/trace.zip",
+      "bytes": 3150367,
+      "sha256": "efbe5a47ecc5f2078649a4dc2a17235676dcce56f2d5f28e29efe4c0b8adf835"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final-command.log",
+      "bytes": 8605,
+      "sha256": "9f849b73b5f8c6108df02eaad617db0714c9190598491f0ab6494721a6bd1590"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-after-filtered-read.png",
+      "bytes": 55709,
+      "sha256": "b88e522f88bfa09c47c7916d25d833af09c079ec6aa3779d0d94723afc1119c2"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-all-read.png",
+      "bytes": 103097,
+      "sha256": "4075fec895c67eb3204b5cf3e031821dd04d9fba6f9fff57917486415582a175"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-detail.png",
+      "bytes": 55426,
+      "sha256": "544ec631a2a962fbf1a16db6b79465cbb89cc753f51fd5e411edd393b87819db"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-initial.png",
+      "bytes": 107148,
+      "sha256": "eae2b03d13fe5b518596d52ad934833d6734e9245b42454f21685d35650103d3"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light.json",
+      "bytes": 43411,
+      "sha256": "ccf78cd99c9e6ac0f90ddf6765e01f53ebe8e18e27dbbdd08399fd13a9be71ed"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/browser-results.json",
+      "bytes": 30555,
+      "sha256": "15ada70230f2cfe609386ad1db208b2727d4cb105717d74f6eca39464e780ba7"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/test-results/.last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest-command.log",
+      "bytes": 596,
+      "sha256": "776ba3ab9171844c222ccfc1846f8e134dee63586500dae953c61839ed2e79cd"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta.config.ts",
+      "bytes": 779,
+      "sha256": "2db4136e6495437418c9203e717dc0c69fdcc8ae7bb307798791c13cad7ec821"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta.spec.ts",
+      "bytes": 9119,
+      "sha256": "f6a1b548e2abfb0e16ac618029dfaa7dda80a980f4a84ea5d48e119ae0c039b7"
+    },
+    {
+      "path": "docs/quality/uiux-task-HN-NC-003/FUNCTIONAL_QA_REPORT.md",
+      "bytes": 20993,
+      "sha256": "9c78ed0394300fd7cefa4af216b7383ababb2c52518d12347d7adfce0c13c579"
+    }
+  ]
+}

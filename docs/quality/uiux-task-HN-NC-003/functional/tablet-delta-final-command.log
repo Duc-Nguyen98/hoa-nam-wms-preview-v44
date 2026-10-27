@@ -1,0 +1,48 @@
+[WebServer] (node:12668) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:19004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:10:25 › F-NC-003-DELTA-992-vi-light actual responsive read/unread/filter/detail and shared feedback (32.8s)
+  ok 2 docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:10:25 › F-NC-003-DELTA-992-vi-dark actual responsive read/unread/filter/detail and shared feedback (33.9s)
+  ok 3 docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:10:25 › F-NC-003-DELTA-900-en-light actual responsive read/unread/filter/detail and shared feedback (28.8s)
+  x  4 docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:10:25 › F-NC-003-DELTA-801-zh-CN-light actual responsive read/unread/filter/detail and shared feedback (2.0m)
+
+
+  1) docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:10:25 › F-NC-003-DELTA-801-zh-CN-light actual responsive read/unread/filter/detail and shared feedback 
+
+    Test timeout of 120000ms exceeded.
+
+    Error: locator.click: Test timeout of 120000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Tiếp tục', exact: true })
+
+
+      10 | for(const p of profiles)test(`F-NC-003-DELTA-${p.width}-${p.language}-${p.theme} actual responsive read/unread/filter/detail and shared feedback`,async({page},info)=>{
+      11 |  const start=await custody();expect(start.diff).toBe('');expect(start.sha).toBe(process.env.QA_EXPECTED_SHA??start.sha);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('requestfailed',r=>errors.push(`${r.method()} ${r.url()} ${r.failure()?.errorText}`));
+    > 12 |  await page.setViewportSize({width:p.width,height:p.height});await page.addInitScript(p=>{localStorage.setItem('hn-wms.s00.language.v1',p.language);localStorage.setItem('hn-wms.s00.theme.v1',p.theme);},p);await page.goto('/#/preview/S01');await page.locator('#s07-username').fill('demo');await page.locator('#s07-password').fill('HoaNamDemo@2026');await page.locator('.s07-submit').click();await page.locator('.s08-confirm').click();await page.getByRole('button',{name:'Tiếp tục',exact:true}).click();await expect(page.locator('.ov-result-count')).toBeVisible({timeout:90000});await page.locator('.hn-notifications').click();const d=page.locator('dialog[open]');await expect(d.locator('.hn-notification-item')).toHaveCount(6);await page.evaluate(()=>document.fonts.ready);await expect(page.locator('html')).toHaveAttribute('data-hn-theme',p.theme);await expect(d).toHaveAttribute('lang',p.language==='zh-CN'?'zh-CN':p.language==='vi'?'vi-VN':'en');
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+      13 |  await fs.mkdir(evidence,{recursive:true});const name=`${p.width}-${p.language}-${p.theme}`,measurements:any[]=[];
+      14 |  async function measure(state:string){const geometry=await d.evaluate(dialog=>{const rect=(el:Element)=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,width:r.width,height:r.height};};const visible=(el:Element)=>el.getClientRects().length>0&&getComputedStyle(el).visibility!=='hidden';return {modal:rect(dialog),viewport:{width:innerWidth,height:innerHeight},overflow:{dialog:dialog.scrollWidth-dialog.clientWidth,page:document.documentElement.scrollWidth-innerWidth},rows:[...dialog.querySelectorAll<HTMLElement>('.hn-notification-item')].filter(visible).map(row=>{const title=row.querySelector('strong')!,time=row.querySelector('time')!;return {id:row.dataset.notificationId,unread:row.dataset.unread,selected:row.dataset.selected,row:rect(row),title:rect(title),time:rect(time),children:[...row.children].filter(visible).map(rect)};}),controls:[...dialog.querySelectorAll<HTMLElement>('.hn-global-modal__close,.hn-notification-mark-all,.hn-notification-tabs button,.hn-notification-search input')].filter(visible).map(el=>({class:el.className,rect:rect(el),disabled:el.matches(':disabled')}))};});measurements.push({state,...geometry});expect(geometry.overflow.dialog).toBeLessThanOrEqual(1);expect(geometry.overflow.page).toBeLessThanOrEqual(1);expect(geometry.modal.x).toBeGreaterThanOrEqual(23);expect(geometry.modal.y).toBeGreaterThanOrEqual(23);expect(geometry.modal.right).toBeLessThanOrEqual(p.width-23);expect(geometry.modal.bottom).toBeLessThanOrEqual(p.height-23);for(const row of geometry.rows){expect(row.row.height).toBeGreaterThanOrEqual(44);expect(row.title.right).toBeLessThanOrEqual(row.time.x+1);for(const c of row.children){expect(c.x).toBeGreaterThanOrEqual(row.row.x-1);expect(c.right).toBeLessThanOrEqual(row.row.right+1);expect(c.y).toBeGreaterThanOrEqual(row.row.y-1);expect(c.bottom).toBeLessThanOrEqual(row.row.bottom+1);}}for(const c of geometry.controls){expect(c.rect.height).toBeGreaterThanOrEqual(44);expect(c.rect.width).toBeGreaterThanOrEqual(44);expect(c.rect.right).toBeLessThanOrEqual(geometry.modal.right+1);expect(c.rect.x).toBeGreaterThanOrEqual(geometry.modal.x-1);}return geometry;}
+      15 |  await measure('initial-list-2-unread');await page.screenshot({path:`${evidence}/${name}-initial.png`});await expect(d.locator('[data-notification-unread-count]')).toHaveAttribute('data-notification-unread-count','2');const firstUnread=d.locator('.hn-notification-item[data-unread="true"]').first();const id=await firstUnread.getAttribute('data-notification-id'),query=await firstUnread.locator('.hn-notification-item-copy>span').innerText();await firstUnread.click();await expect(d.locator('[data-notification-detail]')).toHaveAttribute('data-notification-detail',id!);await expect(d.locator('[data-notification-unread-count]')).toHaveAttribute('data-notification-unread-count','2');
+        at E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:12:494
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\tablet-delta-final\test-results\tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\quality\uiux-task-HN-NC-003\functional\tablet-delta-final\test-results\tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\tablet-delta-final\test-results\tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\quality\uiux-task-HN-NC-003\functional\tablet-delta-final\test-results\tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:10:25 › F-NC-003-DELTA-801-zh-CN-light actual responsive read/unread/filter/detail and shared feedback 
+  3 passed (3.7m)

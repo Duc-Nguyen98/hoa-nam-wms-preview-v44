@@ -1,0 +1,237 @@
+{
+  "sourceSHA": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "scope": "Completed recovery namespace only; incomplete ENOSPC/interrupted namespaces and ignored browser scratch excluded",
+  "files": [
+    {
+      "file": "after-830f83d-recovery-ignored-temp/capture-results.json",
+      "bytes": 1917173,
+      "sha256": "950f2dcaa73e2ee0be6698ef04e273b733410c1c90219250492d00ff5b109973"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/comparison-metrics.json",
+      "bytes": 1351,
+      "sha256": "3042c0dfdeb7c48415176f3767abd67eb698c4ed83d652f1d62a0dc4f467513b"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-actual-modal-crop.png",
+      "bytes": 122823,
+      "sha256": "5866e97cd75158f4cf7c32d728818fc4ebcc86c04fa3fc7ff12c5a1fc44ae054"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-after.png",
+      "bytes": 191012,
+      "sha256": "fdca3b05dcfdb546a92b874914ea146ec09f253dff4c36cdcd9788ad60c55a8b"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-before-after-diff.png",
+      "bytes": 7830,
+      "sha256": "556262587cd0c0aff4a69b18ac13dc9b1e923cc569be55b7e000422499a3d43f"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-close-paint.png",
+      "bytes": 368,
+      "sha256": "c0d25bcfa3780615900677d3a553c4d8fdb2b10c096d8fc66d23ac36dd9fe039"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-diff-x3.png",
+      "bytes": 235841,
+      "sha256": "b28c44a4ec542a1f960d6cec792407d75cc079cf1bc444add6170a4c8deaf35e"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-modal.png",
+      "bytes": 117866,
+      "sha256": "5ae391487abb0a37c4e011b3037b0359e1fa912176626612bb75bc213a44318d"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-overlay.png",
+      "bytes": 496975,
+      "sha256": "166327a7a38b6af3c9c2cecc5f81d23b2f1a58fecc500016c28502f49b77be9f"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-reference-modal-crop.png",
+      "bytes": 613586,
+      "sha256": "54202747a59783db6ac3c4f0aa4d7ab694c744e6aaf3eef3f4e81178e54a3e9e"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native-reference.png",
+      "bytes": 1397125,
+      "sha256": "fa1a5615926a3a15b4cdf72d3482f53f4755931f9b881f8f34874a35233ae22c"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/desktop-native.zip",
+      "bytes": 6693757,
+      "sha256": "402b66cf8f87933fa41e82409474fa9ba0fe0bf82a77f71bc28ef7187cc8008b",
+      "zipCRCError": null
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/final-correction-verification.json",
+      "bytes": 4333,
+      "sha256": "3a6055cc819b77b7b9ca35a75e65c352f24f3412a36ce21d43067c7db5d39986"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/geometry-paint-summary.json",
+      "bytes": 22684,
+      "sha256": "84eeb6557a09886cb92d44469ac5f1aeab910a769d76abbc9a87b0f9362d36cc"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-801-edge-after.png",
+      "bytes": 95624,
+      "sha256": "34147975c8429fc3ad4732b0d6e2a7e3f6ea650e7a9f8f1b83e46b01380cf48e"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-801-edge-close-paint.png",
+      "bytes": 482,
+      "sha256": "df0e0530e6590263de9995439dba4f03b25e96e78893d3e10a06ab26af64e189"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-801-edge-detail.png",
+      "bytes": 64111,
+      "sha256": "08fddac3e4c14f0dd3f8bed3b084ba18c15ea37cda2e175ba9a07999c759fb59"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-801-edge-modal.png",
+      "bytes": 89451,
+      "sha256": "05301c5d8f133b6bc29704ff7544b8a298f7501b117cbfea9aa8dbb28c15a4ee"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-801-edge.zip",
+      "bytes": 8211453,
+      "sha256": "7d8c22aa6a6170a21a4d1212d20a25e749401105af60c653e47fad2b2c115295",
+      "zipCRCError": null
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-neighbor-after.png",
+      "bytes": 131262,
+      "sha256": "45e41120d590f5857650862740823742e9e430800574bee76f3cf9e9103450a3"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-neighbor-close-paint.png",
+      "bytes": 482,
+      "sha256": "df0e0530e6590263de9995439dba4f03b25e96e78893d3e10a06ab26af64e189"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-neighbor-detail.png",
+      "bytes": 76782,
+      "sha256": "a643212090c1f26daec24da00f5414d494972871196ae0e0baf5e1cb2aafe7cc"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-neighbor-modal.png",
+      "bytes": 114365,
+      "sha256": "ed7fbe873480de3cc47d33426dab4b08195c3314a2215d3abd3e321ebefddaa6"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-neighbor.zip",
+      "bytes": 7597592,
+      "sha256": "3a26ba3bf1bb43086ec765baedbd492c5b5e788746ceaad4416445b77a0dc189",
+      "zipCRCError": null
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-short-after.png",
+      "bytes": 94403,
+      "sha256": "51cd9eaa8e5a9b4bcf0e21a7072b3b0551597bd47ec3823463430465a77064a1"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-short-close-paint.png",
+      "bytes": 482,
+      "sha256": "df0e0530e6590263de9995439dba4f03b25e96e78893d3e10a06ab26af64e189"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-short-detail.png",
+      "bytes": 63128,
+      "sha256": "85e61f4f54cebb978788c7bbbc6dc0b60ced93c6590bffbc4456cf1de3d81a46"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-short-modal.png",
+      "bytes": 90146,
+      "sha256": "45319255c8c97bb432856494b87990a372b81de5d2cbc8b0c60768c1d82dd4b8"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/portrait-short.zip",
+      "bytes": 8235866,
+      "sha256": "3404a8e4e7a7b8823b7358563c768153b61a1534bbf54ee543829df35f911ed4",
+      "zipCRCError": null
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-canonical-after.png",
+      "bytes": 244475,
+      "sha256": "12ebd929c6d3fe0e5a7375ff12d87ba14f76016269f20f76c85a6be863539b15"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-canonical-close-paint.png",
+      "bytes": 611,
+      "sha256": "42b3c909d6cf974435742e5f1a4a42dfce4f35f8690e03ba9a141f14d7acf64d"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-canonical-detail.png",
+      "bytes": 164767,
+      "sha256": "72d6550ddd144690f1fc2f41fb621c2677b9e07d3d103ea1ff0564857dec49ed"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-canonical-modal.png",
+      "bytes": 205535,
+      "sha256": "a9e759c3d583cc9a46b0f210e4a7d19aa2e471b8b17fef9a4718c11ca5df2796"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-canonical.zip",
+      "bytes": 7770623,
+      "sha256": "428041cc5d54e25605f3ed898384cb46f969315aed08c5d2d599ee00e80990c6",
+      "zipCRCError": null
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-actual-modal-crop.png",
+      "bytes": 118955,
+      "sha256": "9b74389b7c9eecf1402bc0012fe00cc21c5994a269fe7fd8dcb424cd04426a6c"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-after.png",
+      "bytes": 149429,
+      "sha256": "4356d57ecdffde9698d5374c8d0514d8f196d1586b9b157ae78fe7d39897494c"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-before-after-diff.png",
+      "bytes": 247446,
+      "sha256": "e50077b819a2fd9ceee17f00b02307f712e388d71821a00bbb12533aca97f373"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-close-paint.png",
+      "bytes": 542,
+      "sha256": "328b40623b17070fc5879b95c247293e829280311aaf13a8909d3050600c26d7"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-detail.png",
+      "bytes": 94376,
+      "sha256": "f2ed7dd792a479a20bccc0b43da5d42e5c34bd82ab64ed9279897c1b75ee26e6"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-diff-x3.png",
+      "bytes": 243473,
+      "sha256": "89c428d445cf40c239c942a7f208fdc2975e1597270dba3cdc3331230b6ee1f4"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-modal.png",
+      "bytes": 115133,
+      "sha256": "3cd267c2ba6adc5741401a888d5930d7e46985568ec95f0d76ea289b76e844ef"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-overlay.png",
+      "bytes": 584396,
+      "sha256": "e96a3c4fb3c4ec940f794cdc1c5a7313f0363df823bde8f36ad415162c1d88de"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-reference-modal-crop.png",
+      "bytes": 749198,
+      "sha256": "f9ae3d993783bb3dd59524a34d7c396314e9bf4b7c607c93b79424bcb74796d6"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native-reference.png",
+      "bytes": 1765845,
+      "sha256": "65606c1c19e7124340cdf18f41d201b136be755059275dd2b777847b268569f4"
+    },
+    {
+      "file": "after-830f83d-recovery-ignored-temp/tablet-native.zip",
+      "bytes": 7191627,
+      "sha256": "5558ec13f099b611a689133aa90535bf2d6c79263197ed0ad98bf1940cb429ed",
+      "zipCRCError": null
+    }
+  ]
+}

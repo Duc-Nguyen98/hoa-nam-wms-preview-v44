@@ -1,0 +1,228 @@
+[WebServer] (node:10520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:6308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-1920-light actual authenticated Notification modal (25.4s)
+(node:5816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-1920-dark actual authenticated Notification modal (21.1s)
+(node:3088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-800-light actual authenticated Notification modal (20.5s)
+(node:7668) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  4 docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-800-dark actual authenticated Notification modal (22.5s)
+
+
+  1) docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-1920-light actual authenticated Notification modal 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 20
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "id": "aria-prohibited-attr",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Array [
+    +         ".hn-global-toast-region",
+    +       ],
+    +     ],
+    +   },
+    +   Object {
+    +     "id": "landmark-banner-is-top-level",
+    +     "impact": "moderate",
+    +     "nodes": Array [
+    +       Array [
+    +         "#hn-preview-notification-center > .hn-global-modal__surface > .hn-global-modal__header",
+    +       ],
+    +     ],
+    +   },
+    + ]
+
+      15 |  const record={profile:{width,height:width===1920?1080:1280,dpr:width===1920?1:2,theme,locale:'vi-VN'},candidateSha:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sourceTree:execFileSync('git',['rev-parse','HEAD:src'],{encoding:'utf8'}).trim(),errors,requests,...result};
+      16 |  await fs.writeFile(`${evidence}/${width}-${theme}.json`,JSON.stringify(record,null,2));await info.attach('axe-result',{body:JSON.stringify(record),contentType:'application/json'});await ctx.close();
+    > 17 |  expect(errors).toEqual([]);expect(requests).toEqual([]);expect(result.result.violations.map((v:any)=>({id:v.id,impact:v.impact,nodes:v.nodes.map((n:any)=>n.target)}))).toEqual([]);
+         |                                                                                                                                                                          ^
+      18 | });
+      19 |
+        at E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:17:170
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-1920-dark actual authenticated Notification modal 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 20
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "id": "aria-prohibited-attr",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Array [
+    +         ".hn-global-toast-region",
+    +       ],
+    +     ],
+    +   },
+    +   Object {
+    +     "id": "landmark-banner-is-top-level",
+    +     "impact": "moderate",
+    +     "nodes": Array [
+    +       Array [
+    +         "#hn-preview-notification-center > .hn-global-modal__surface > .hn-global-modal__header",
+    +       ],
+    +     ],
+    +   },
+    + ]
+
+      15 |  const record={profile:{width,height:width===1920?1080:1280,dpr:width===1920?1:2,theme,locale:'vi-VN'},candidateSha:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sourceTree:execFileSync('git',['rev-parse','HEAD:src'],{encoding:'utf8'}).trim(),errors,requests,...result};
+      16 |  await fs.writeFile(`${evidence}/${width}-${theme}.json`,JSON.stringify(record,null,2));await info.attach('axe-result',{body:JSON.stringify(record),contentType:'application/json'});await ctx.close();
+    > 17 |  expect(errors).toEqual([]);expect(requests).toEqual([]);expect(result.result.violations.map((v:any)=>({id:v.id,impact:v.impact,nodes:v.nodes.map((n:any)=>n.target)}))).toEqual([]);
+         |                                                                                                                                                                          ^
+      18 | });
+      19 |
+        at E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:17:170
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-800-light actual authenticated Notification modal 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 20
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "id": "aria-prohibited-attr",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Array [
+    +         ".hn-global-toast-region",
+    +       ],
+    +     ],
+    +   },
+    +   Object {
+    +     "id": "landmark-banner-is-top-level",
+    +     "impact": "moderate",
+    +     "nodes": Array [
+    +       Array [
+    +         "#hn-preview-notification-center > .hn-global-modal__surface > .hn-global-modal__header",
+    +       ],
+    +     ],
+    +   },
+    + ]
+
+      15 |  const record={profile:{width,height:width===1920?1080:1280,dpr:width===1920?1:2,theme,locale:'vi-VN'},candidateSha:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sourceTree:execFileSync('git',['rev-parse','HEAD:src'],{encoding:'utf8'}).trim(),errors,requests,...result};
+      16 |  await fs.writeFile(`${evidence}/${width}-${theme}.json`,JSON.stringify(record,null,2));await info.attach('axe-result',{body:JSON.stringify(record),contentType:'application/json'});await ctx.close();
+    > 17 |  expect(errors).toEqual([]);expect(requests).toEqual([]);expect(result.result.violations.map((v:any)=>({id:v.id,impact:v.impact,nodes:v.nodes.map((n:any)=>n.target)}))).toEqual([]);
+         |                                                                                                                                                                          ^
+      18 | });
+      19 |
+        at E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:17:170
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-800-dark actual authenticated Notification modal 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 20
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "id": "aria-prohibited-attr",
+    +     "impact": "serious",
+    +     "nodes": Array [
+    +       Array [
+    +         ".hn-global-toast-region",
+    +       ],
+    +     ],
+    +   },
+    +   Object {
+    +     "id": "landmark-banner-is-top-level",
+    +     "impact": "moderate",
+    +     "nodes": Array [
+    +       Array [
+    +         "#hn-preview-notification-center > .hn-global-modal__surface > .hn-global-modal__header",
+    +       ],
+    +     ],
+    +   },
+    + ]
+
+      15 |  const record={profile:{width,height:width===1920?1080:1280,dpr:width===1920?1:2,theme,locale:'vi-VN'},candidateSha:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sourceTree:execFileSync('git',['rev-parse','HEAD:src'],{encoding:'utf8'}).trim(),errors,requests,...result};
+      16 |  await fs.writeFile(`${evidence}/${width}-${theme}.json`,JSON.stringify(record,null,2));await info.attach('axe-result',{body:JSON.stringify(record),contentType:'application/json'});await ctx.close();
+    > 17 |  expect(errors).toEqual([]);expect(requests).toEqual([]);expect(result.result.violations.map((v:any)=>({id:v.id,impact:v.impact,nodes:v.nodes.map((n:any)=>n.target)}))).toEqual([]);
+         |                                                                                                                                                                          ^
+      18 | });
+      19 |
+        at E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:17:170
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\quality\uiux-task-HN-NC-003\functional\axe\test-results\axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-1920-light actual authenticated Notification modal 
+    docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-1920-dark actual authenticated Notification modal 
+    docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-800-light actual authenticated Notification modal 
+    docs\quality\uiux-task-HN-NC-003\functional\axe.spec.ts:7:67 › F-NC-003-AXE-800-dark actual authenticated Notification modal 

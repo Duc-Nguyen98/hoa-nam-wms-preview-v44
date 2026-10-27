@@ -1,0 +1,337 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "tests/functional/shared-semantics.config.ts"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\shared-semantics.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/functional/wave-ad",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/output/hn-nc003-semantics-actual-after/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/functional/wave-ad",
+        "testIgnore": [],
+        "testMatch": [
+          "shared-semantics.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad",
+        "testIgnore": [],
+        "testMatch": "shared-semantics.spec.ts",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5262",
+          "headless": true,
+          "locale": "vi-VN",
+          "timezoneId": "Asia/Bangkok",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5262 --strictPort",
+      "url": "http://127.0.0.1:5262",
+      "cwd": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "shared-semantics.spec.ts",
+      "file": "shared-semantics.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "shared semantics: dialog has a heading without a nested page banner at 1920",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32230,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:41:43.897Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d672a96b0173b4cf8c1-de067b37e973154cca29",
+          "file": "shared-semantics.spec.ts",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "shared semantics: named feedback group preserves live status and dismiss at 1920",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 32507,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main-content')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#main-content') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main-content')\u001b[22m\n\u001b[2m    13 × locator resolved to <main tabindex=\"-1\" class=\"hn-main\" id=\"main-content\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main-content')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#main-content') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main-content')\u001b[22m\n\u001b[2m    13 × locator resolved to <main tabindex=\"-1\" class=\"hn-main\" id=\"main-content\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:64:49",
+                    "location": {
+                      "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                      "column": 49,
+                      "line": 64
+                    },
+                    "snippet": "  62 |     await status.getByRole('button', {name: 'Đóng thông báo', exact: true}).click();\n  63 |     await expect(feedback.getByRole('status')).toHaveCount(0);\n> 64 |     await expect(page.locator('#main-content')).toBeFocused();\n     |                                                 ^\n  65 |   });\n  66 | }\n  67 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                        "column": 49,
+                        "line": 64
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main-content')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#main-content') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main-content')\u001b[22m\n\u001b[2m    13 × locator resolved to <main tabindex=\"-1\" class=\"hn-main\" id=\"main-content\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  62 |     await status.getByRole('button', {name: 'Đóng thông báo', exact: true}).click();\n  63 |     await expect(feedback.getByRole('status')).toHaveCount(0);\n> 64 |     await expect(page.locator('#main-content')).toBeFocused();\n     |                                                 ^\n  65 |   });\n  66 | }\n  67 |\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:64:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:42:16.295Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\test-results\\shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\test-results\\shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\test-results\\shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                    "column": 49,
+                    "line": 64
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6d672a96b0173b4cf8c1-f4a123658bd98362067f",
+          "file": "shared-semantics.spec.ts",
+          "line": 48,
+          "column": 3
+        },
+        {
+          "title": "shared semantics: dialog has a heading without a nested page banner at 800",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21444,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:42:50.230Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6d672a96b0173b4cf8c1-d72b23b3f2c97c03d6dd",
+          "file": "shared-semantics.spec.ts",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "shared semantics: named feedback group preserves live status and dismiss at 800",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 29353,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main-content')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#main-content') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main-content')\u001b[22m\n\u001b[2m    13 × locator resolved to <main tabindex=\"-1\" class=\"hn-main\" id=\"main-content\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main-content')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#main-content') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main-content')\u001b[22m\n\u001b[2m    13 × locator resolved to <main tabindex=\"-1\" class=\"hn-main\" id=\"main-content\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:64:49",
+                    "location": {
+                      "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                      "column": 49,
+                      "line": 64
+                    },
+                    "snippet": "  62 |     await status.getByRole('button', {name: 'Đóng thông báo', exact: true}).click();\n  63 |     await expect(feedback.getByRole('status')).toHaveCount(0);\n> 64 |     await expect(page.locator('#main-content')).toBeFocused();\n     |                                                 ^\n  65 |   });\n  66 | }\n  67 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                        "column": 49,
+                        "line": 64
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main-content')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#main-content') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main-content')\u001b[22m\n\u001b[2m    13 × locator resolved to <main tabindex=\"-1\" class=\"hn-main\" id=\"main-content\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  62 |     await status.getByRole('button', {name: 'Đóng thông báo', exact: true}).click();\n  63 |     await expect(feedback.getByRole('status')).toHaveCount(0);\n> 64 |     await expect(page.locator('#main-content')).toBeFocused();\n     |                                                 ^\n  65 |   });\n  66 | }\n  67 |\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:64:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:43:11.844Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\test-results\\shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\test-results\\shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-after\\test-results\\shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                    "column": 49,
+                    "line": 64
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6d672a96b0173b4cf8c1-4f26893529efa009bf32",
+          "file": "shared-semantics.spec.ts",
+          "line": 48,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T05:41:43.125Z",
+    "duration": 118804.477,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

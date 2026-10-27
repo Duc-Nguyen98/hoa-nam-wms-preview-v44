@@ -1,0 +1,36 @@
+{
+  "sha": "78752811af4b0434c958d604dc52ca445cdbeede",
+  "endedSha": "78752811af4b0434c958d604dc52ca445cdbeede",
+  "results": [
+    {
+      "profile": {
+        "name": "desktop-native",
+        "width": 1774,
+        "height": 887,
+        "dpr": 1
+      },
+      "sha": "78752811af4b0434c958d604dc52ca445cdbeede",
+      "environment": "LOCAL_PREVIEW_MOCK",
+      "base": "http://127.0.0.1:5233",
+      "errors": [],
+      "requests": [],
+      "result": "FAIL",
+      "failure": "TimeoutError: locator.waitFor: Timeout 180000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n"
+    },
+    {
+      "profile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "sha": "78752811af4b0434c958d604dc52ca445cdbeede",
+      "environment": "LOCAL_PREVIEW_MOCK",
+      "base": "http://127.0.0.1:5233",
+      "errors": [],
+      "requests": [],
+      "result": "FAIL",
+      "failure": "TimeoutError: locator.waitFor: Timeout 180000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+TAP version 13
+# Subtest: F-NC-003-SESSION-anonymous refuses read and mutation without persistence
+ok 1 - F-NC-003-SESSION-anonymous refuses read and mutation without persistence
+  ---
+  duration_ms: 13.9731
+  type: 'test'
+  ...
+# Subtest: F-NC-003-SESSION-unconfirmed refuses read and mutation without persistence
+ok 2 - F-NC-003-SESSION-unconfirmed refuses read and mutation without persistence
+  ---
+  duration_ms: 0.4059
+  type: 'test'
+  ...
+# Subtest: F-NC-003-SESSION-expired refuses read and mutation without persistence
+ok 3 - F-NC-003-SESSION-expired refuses read and mutation without persistence
+  ---
+  duration_ms: 0.8127
+  type: 'test'
+  ...
+# Subtest: F-NC-003-CONCURRENT duplicate command replay and distinct updates retain exact count
+ok 4 - F-NC-003-CONCURRENT duplicate command replay and distinct updates retain exact count
+  ---
+  duration_ms: 15.4526
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1426.8888

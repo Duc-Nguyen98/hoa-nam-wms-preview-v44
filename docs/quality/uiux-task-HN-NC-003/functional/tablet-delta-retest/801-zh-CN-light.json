@@ -1,0 +1,1846 @@
+{
+  "profile": {
+    "width": 801,
+    "height": 1280,
+    "language": "zh-CN",
+    "theme": "light"
+  },
+  "start": {
+    "sha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+    "tree": "65ac25d235682469452f60d50664b3e6acb3a753",
+    "diff": "",
+    "cssSha256": "75103c69583daa311693790626630189debe75e3cdf84615483f84802b9d519a"
+  },
+  "end": {
+    "sha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+    "tree": "65ac25d235682469452f60d50664b3e6acb3a753",
+    "diff": "",
+    "cssSha256": "75103c69583daa311693790626630189debe75e3cdf84615483f84802b9d519a"
+  },
+  "errors": [],
+  "selectedId": "PREVIEW-DESIGN-2",
+  "measurements": [
+    {
+      "state": "initial-list-2-unread",
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "right": 777,
+        "bottom": 1256,
+        "width": 753,
+        "height": 1232
+      },
+      "viewport": {
+        "width": 801,
+        "height": 1280
+      },
+      "overflow": {
+        "dialog": 0,
+        "page": 0
+      },
+      "rows": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "unread": "false",
+          "selected": "true",
+          "row": {
+            "x": 57,
+            "y": 406,
+            "right": 758,
+            "bottom": 519,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 429.5,
+            "right": 587.484375,
+            "bottom": 461.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 450.5,
+            "right": 684,
+            "bottom": 474.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 427.5,
+              "right": 145,
+              "bottom": 497.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 429.5,
+              "right": 587.484375,
+              "bottom": 495.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 450.5,
+              "right": 684,
+              "bottom": 474.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 452.5,
+              "right": 740,
+              "bottom": 472.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "unread": "true",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 520,
+            "right": 758,
+            "bottom": 633,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 205,
+            "y": 543.5,
+            "right": 587.484375,
+            "bottom": 575.5,
+            "width": 382.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 564.5,
+            "right": 684,
+            "bottom": 588.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 541.5,
+              "right": 145,
+              "bottom": 611.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 543.5,
+              "right": 587.484375,
+              "bottom": 609.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 564.5,
+              "right": 684,
+              "bottom": 588.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 566.5,
+              "right": 740,
+              "bottom": 586.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "unread": "true",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 635,
+            "right": 758,
+            "bottom": 747,
+            "width": 701,
+            "height": 112
+          },
+          "title": {
+            "x": 205,
+            "y": 658,
+            "right": 587.484375,
+            "bottom": 690,
+            "width": 382.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 679,
+            "right": 684,
+            "bottom": 703,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 656,
+              "right": 145,
+              "bottom": 726,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 658,
+              "right": 587.484375,
+              "bottom": 724,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 679,
+              "right": 684,
+              "bottom": 703,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 681,
+              "right": 740,
+              "bottom": 701,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 748,
+            "right": 758,
+            "bottom": 861,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 771.5,
+            "right": 587.484375,
+            "bottom": 803.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 792.5,
+            "right": 684,
+            "bottom": 816.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 769.5,
+              "right": 145,
+              "bottom": 839.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 771.5,
+              "right": 587.484375,
+              "bottom": 837.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 792.5,
+              "right": 684,
+              "bottom": 816.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 794.5,
+              "right": 740,
+              "bottom": 814.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 955,
+            "right": 758,
+            "bottom": 1068,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 978.5,
+            "right": 510.296875,
+            "bottom": 1010.5,
+            "width": 329.296875,
+            "height": 32
+          },
+          "time": {
+            "x": 546.296875,
+            "y": 999.5,
+            "right": 684,
+            "bottom": 1023.5,
+            "width": 137.703125,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 976.5,
+              "right": 145,
+              "bottom": 1046.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 978.5,
+              "right": 510.296875,
+              "bottom": 1044.5,
+              "width": 329.296875,
+              "height": 66
+            },
+            {
+              "x": 546.296875,
+              "y": 999.5,
+              "right": 684,
+              "bottom": 1023.5,
+              "width": 137.703125,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 1001.5,
+              "right": 740,
+              "bottom": 1021.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 1069,
+            "right": 758,
+            "bottom": 1182,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 1092.5,
+            "right": 510.296875,
+            "bottom": 1124.5,
+            "width": 329.296875,
+            "height": 32
+          },
+          "time": {
+            "x": 546.296875,
+            "y": 1113.5,
+            "right": 684,
+            "bottom": 1137.5,
+            "width": 137.703125,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 1090.5,
+              "right": 145,
+              "bottom": 1160.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 1092.5,
+              "right": 510.296875,
+              "bottom": 1158.5,
+              "width": 329.296875,
+              "height": 66
+            },
+            {
+              "x": 546.296875,
+              "y": 1113.5,
+              "right": 684,
+              "bottom": 1137.5,
+              "width": 137.703125,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 1115.5,
+              "right": 740,
+              "bottom": 1135.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "class": "hn-button hn-button--ghost hn-global-modal__close",
+          "rect": {
+            "x": 700,
+            "y": 55,
+            "right": 744,
+            "bottom": 99,
+            "width": 44,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 116,
+            "y": 200,
+            "right": 723,
+            "bottom": 244,
+            "width": 607,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 57,
+            "y": 252,
+            "right": 153,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 181,
+            "y": 252,
+            "right": 277,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "hn-button hn-button--ghost hn-notification-mark-all",
+          "rect": {
+            "x": 590,
+            "y": 252,
+            "right": 744,
+            "bottom": 336,
+            "width": 154,
+            "height": 84
+          },
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "state": "selection-only-back-no-mutation",
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "right": 777,
+        "bottom": 1256,
+        "width": 753,
+        "height": 1232
+      },
+      "viewport": {
+        "width": 801,
+        "height": 1280
+      },
+      "overflow": {
+        "dialog": 0,
+        "page": 0
+      },
+      "rows": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "unread": "false",
+          "selected": "true",
+          "row": {
+            "x": 57,
+            "y": 406,
+            "right": 758,
+            "bottom": 519,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 429.5,
+            "right": 587.484375,
+            "bottom": 461.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 450.5,
+            "right": 684,
+            "bottom": 474.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 427.5,
+              "right": 145,
+              "bottom": 497.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 429.5,
+              "right": 587.484375,
+              "bottom": 495.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 450.5,
+              "right": 684,
+              "bottom": 474.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 452.5,
+              "right": 740,
+              "bottom": 472.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "unread": "true",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 520,
+            "right": 758,
+            "bottom": 633,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 205,
+            "y": 543.5,
+            "right": 587.484375,
+            "bottom": 575.5,
+            "width": 382.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 564.5,
+            "right": 684,
+            "bottom": 588.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 541.5,
+              "right": 145,
+              "bottom": 611.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 543.5,
+              "right": 587.484375,
+              "bottom": 609.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 564.5,
+              "right": 684,
+              "bottom": 588.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 566.5,
+              "right": 740,
+              "bottom": 586.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "unread": "true",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 635,
+            "right": 758,
+            "bottom": 747,
+            "width": 701,
+            "height": 112
+          },
+          "title": {
+            "x": 205,
+            "y": 658,
+            "right": 587.484375,
+            "bottom": 690,
+            "width": 382.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 679,
+            "right": 684,
+            "bottom": 703,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 656,
+              "right": 145,
+              "bottom": 726,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 658,
+              "right": 587.484375,
+              "bottom": 724,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 679,
+              "right": 684,
+              "bottom": 703,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 681,
+              "right": 740,
+              "bottom": 701,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 748,
+            "right": 758,
+            "bottom": 861,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 771.5,
+            "right": 587.484375,
+            "bottom": 803.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 792.5,
+            "right": 684,
+            "bottom": 816.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 769.5,
+              "right": 145,
+              "bottom": 839.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 771.5,
+              "right": 587.484375,
+              "bottom": 837.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 792.5,
+              "right": 684,
+              "bottom": 816.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 794.5,
+              "right": 740,
+              "bottom": 814.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 955,
+            "right": 758,
+            "bottom": 1068,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 978.5,
+            "right": 510.296875,
+            "bottom": 1010.5,
+            "width": 329.296875,
+            "height": 32
+          },
+          "time": {
+            "x": 546.296875,
+            "y": 999.5,
+            "right": 684,
+            "bottom": 1023.5,
+            "width": 137.703125,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 976.5,
+              "right": 145,
+              "bottom": 1046.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 978.5,
+              "right": 510.296875,
+              "bottom": 1044.5,
+              "width": 329.296875,
+              "height": 66
+            },
+            {
+              "x": 546.296875,
+              "y": 999.5,
+              "right": 684,
+              "bottom": 1023.5,
+              "width": 137.703125,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 1001.5,
+              "right": 740,
+              "bottom": 1021.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 1069,
+            "right": 758,
+            "bottom": 1182,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 1092.5,
+            "right": 510.296875,
+            "bottom": 1124.5,
+            "width": 329.296875,
+            "height": 32
+          },
+          "time": {
+            "x": 546.296875,
+            "y": 1113.5,
+            "right": 684,
+            "bottom": 1137.5,
+            "width": 137.703125,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 1090.5,
+              "right": 145,
+              "bottom": 1160.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 1092.5,
+              "right": 510.296875,
+              "bottom": 1158.5,
+              "width": 329.296875,
+              "height": 66
+            },
+            {
+              "x": 546.296875,
+              "y": 1113.5,
+              "right": 684,
+              "bottom": 1137.5,
+              "width": 137.703125,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 1115.5,
+              "right": 740,
+              "bottom": 1135.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "class": "hn-button hn-button--ghost hn-global-modal__close",
+          "rect": {
+            "x": 700,
+            "y": 55,
+            "right": 744,
+            "bottom": 99,
+            "width": 44,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 116,
+            "y": 200,
+            "right": 723,
+            "bottom": 244,
+            "width": 607,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 57,
+            "y": 252,
+            "right": 153,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 181,
+            "y": 252,
+            "right": 277,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "hn-button hn-button--ghost hn-notification-mark-all",
+          "rect": {
+            "x": 590,
+            "y": 252,
+            "right": 744,
+            "bottom": 336,
+            "width": 154,
+            "height": 84
+          },
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "state": "search-no-results",
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "right": 777,
+        "bottom": 1256,
+        "width": 753,
+        "height": 1232
+      },
+      "viewport": {
+        "width": 801,
+        "height": 1280
+      },
+      "overflow": {
+        "dialog": 0,
+        "page": 0
+      },
+      "rows": [],
+      "controls": [
+        {
+          "class": "hn-button hn-button--ghost hn-global-modal__close",
+          "rect": {
+            "x": 700,
+            "y": 55,
+            "right": 744,
+            "bottom": 99,
+            "width": 44,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 116,
+            "y": 200,
+            "right": 723,
+            "bottom": 244,
+            "width": 607,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 57,
+            "y": 252,
+            "right": 153,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 181,
+            "y": 252,
+            "right": 277,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "hn-button hn-button--ghost hn-notification-mark-all",
+          "rect": {
+            "x": 590,
+            "y": 252,
+            "right": 744,
+            "bottom": 336,
+            "width": 154,
+            "height": 84
+          },
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "state": "unread-filter-2",
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "right": 777,
+        "bottom": 1256,
+        "width": 753,
+        "height": 1232
+      },
+      "viewport": {
+        "width": 801,
+        "height": 1280
+      },
+      "overflow": {
+        "dialog": 0,
+        "page": 0
+      },
+      "rows": [
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "unread": "true",
+          "selected": "true",
+          "row": {
+            "x": 57,
+            "y": 406,
+            "right": 758,
+            "bottom": 519,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 205,
+            "y": 429.5,
+            "right": 587.484375,
+            "bottom": 461.5,
+            "width": 382.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 450.5,
+            "right": 684,
+            "bottom": 474.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 427.5,
+              "right": 145,
+              "bottom": 497.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 429.5,
+              "right": 587.484375,
+              "bottom": 495.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 450.5,
+              "right": 684,
+              "bottom": 474.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 452.5,
+              "right": 740,
+              "bottom": 472.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "unread": "true",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 521,
+            "right": 758,
+            "bottom": 633,
+            "width": 701,
+            "height": 112
+          },
+          "title": {
+            "x": 205,
+            "y": 544,
+            "right": 587.484375,
+            "bottom": 576,
+            "width": 382.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 565,
+            "right": 684,
+            "bottom": 589,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 542,
+              "right": 145,
+              "bottom": 612,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 544,
+              "right": 587.484375,
+              "bottom": 610,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 565,
+              "right": 684,
+              "bottom": 589,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 567,
+              "right": 740,
+              "bottom": 587,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "class": "hn-button hn-button--ghost hn-global-modal__close",
+          "rect": {
+            "x": 700,
+            "y": 55,
+            "right": 744,
+            "bottom": 99,
+            "width": 44,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 116,
+            "y": 200,
+            "right": 723,
+            "bottom": 244,
+            "width": 607,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 57,
+            "y": 252,
+            "right": 153,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 181,
+            "y": 252,
+            "right": 277,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "hn-button hn-button--ghost hn-notification-mark-all",
+          "rect": {
+            "x": 590,
+            "y": 252,
+            "right": 744,
+            "bottom": 336,
+            "width": 154,
+            "height": 84
+          },
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "state": "unread-filter-after-read-1",
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "right": 777,
+        "bottom": 1256,
+        "width": 753,
+        "height": 1232
+      },
+      "viewport": {
+        "width": 801,
+        "height": 1280
+      },
+      "overflow": {
+        "dialog": 0,
+        "page": 0
+      },
+      "rows": [
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "unread": "true",
+          "selected": "true",
+          "row": {
+            "x": 57,
+            "y": 406,
+            "right": 758,
+            "bottom": 519,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 205,
+            "y": 429.5,
+            "right": 587.484375,
+            "bottom": 461.5,
+            "width": 382.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 450.5,
+            "right": 684,
+            "bottom": 474.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 427.5,
+              "right": 145,
+              "bottom": 497.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 429.5,
+              "right": 587.484375,
+              "bottom": 495.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 450.5,
+              "right": 684,
+              "bottom": 474.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 452.5,
+              "right": 740,
+              "bottom": 472.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "class": "hn-button hn-button--ghost hn-global-modal__close",
+          "rect": {
+            "x": 700,
+            "y": 55,
+            "right": 744,
+            "bottom": 99,
+            "width": 44,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 116,
+            "y": 200,
+            "right": 723,
+            "bottom": 244,
+            "width": 607,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 57,
+            "y": 252,
+            "right": 153,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 181,
+            "y": 252,
+            "right": 277,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "hn-button hn-button--ghost hn-notification-mark-all",
+          "rect": {
+            "x": 590,
+            "y": 252,
+            "right": 744,
+            "bottom": 336,
+            "width": 154,
+            "height": 84
+          },
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "state": "all-read-0",
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "right": 777,
+        "bottom": 1256,
+        "width": 753,
+        "height": 1232
+      },
+      "viewport": {
+        "width": 801,
+        "height": 1280
+      },
+      "overflow": {
+        "dialog": 0,
+        "page": 0
+      },
+      "rows": [
+        {
+          "id": "PREVIEW-DESIGN-1",
+          "unread": "false",
+          "selected": "true",
+          "row": {
+            "x": 57,
+            "y": 406,
+            "right": 758,
+            "bottom": 519,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 429.5,
+            "right": 587.484375,
+            "bottom": 461.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 450.5,
+            "right": 684,
+            "bottom": 474.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 427.5,
+              "right": 145,
+              "bottom": 497.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 429.5,
+              "right": 587.484375,
+              "bottom": 495.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 450.5,
+              "right": 684,
+              "bottom": 474.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 452.5,
+              "right": 740,
+              "bottom": 472.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-2",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 520,
+            "right": 758,
+            "bottom": 633,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 543.5,
+            "right": 587.484375,
+            "bottom": 575.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 564.5,
+            "right": 684,
+            "bottom": 588.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 541.5,
+              "right": 145,
+              "bottom": 611.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 543.5,
+              "right": 587.484375,
+              "bottom": 609.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 564.5,
+              "right": 684,
+              "bottom": 588.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 566.5,
+              "right": 740,
+              "bottom": 586.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-3",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 634,
+            "right": 758,
+            "bottom": 747,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 657.5,
+            "right": 587.484375,
+            "bottom": 689.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 678.5,
+            "right": 684,
+            "bottom": 702.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 655.5,
+              "right": 145,
+              "bottom": 725.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 657.5,
+              "right": 587.484375,
+              "bottom": 723.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 678.5,
+              "right": 684,
+              "bottom": 702.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 680.5,
+              "right": 740,
+              "bottom": 700.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-4",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 748,
+            "right": 758,
+            "bottom": 861,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 771.5,
+            "right": 587.484375,
+            "bottom": 803.5,
+            "width": 406.484375,
+            "height": 32
+          },
+          "time": {
+            "x": 623.484375,
+            "y": 792.5,
+            "right": 684,
+            "bottom": 816.5,
+            "width": 60.515625,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 769.5,
+              "right": 145,
+              "bottom": 839.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 771.5,
+              "right": 587.484375,
+              "bottom": 837.5,
+              "width": 406.484375,
+              "height": 66
+            },
+            {
+              "x": 623.484375,
+              "y": 792.5,
+              "right": 684,
+              "bottom": 816.5,
+              "width": 60.515625,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 794.5,
+              "right": 740,
+              "bottom": 814.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-5",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 955,
+            "right": 758,
+            "bottom": 1068,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 978.5,
+            "right": 510.296875,
+            "bottom": 1010.5,
+            "width": 329.296875,
+            "height": 32
+          },
+          "time": {
+            "x": 546.296875,
+            "y": 999.5,
+            "right": 684,
+            "bottom": 1023.5,
+            "width": 137.703125,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 976.5,
+              "right": 145,
+              "bottom": 1046.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 978.5,
+              "right": 510.296875,
+              "bottom": 1044.5,
+              "width": 329.296875,
+              "height": 66
+            },
+            {
+              "x": 546.296875,
+              "y": 999.5,
+              "right": 684,
+              "bottom": 1023.5,
+              "width": 137.703125,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 1001.5,
+              "right": 740,
+              "bottom": 1021.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "id": "PREVIEW-DESIGN-6",
+          "unread": "false",
+          "selected": "false",
+          "row": {
+            "x": 57,
+            "y": 1069,
+            "right": 758,
+            "bottom": 1182,
+            "width": 701,
+            "height": 113
+          },
+          "title": {
+            "x": 181,
+            "y": 1092.5,
+            "right": 510.296875,
+            "bottom": 1124.5,
+            "width": 329.296875,
+            "height": 32
+          },
+          "time": {
+            "x": 546.296875,
+            "y": 1113.5,
+            "right": 684,
+            "bottom": 1137.5,
+            "width": 137.703125,
+            "height": 24
+          },
+          "children": [
+            {
+              "x": 75,
+              "y": 1090.5,
+              "right": 145,
+              "bottom": 1160.5,
+              "width": 70,
+              "height": 70
+            },
+            {
+              "x": 181,
+              "y": 1092.5,
+              "right": 510.296875,
+              "bottom": 1158.5,
+              "width": 329.296875,
+              "height": 66
+            },
+            {
+              "x": 546.296875,
+              "y": 1113.5,
+              "right": 684,
+              "bottom": 1137.5,
+              "width": 137.703125,
+              "height": 24
+            },
+            {
+              "x": 720,
+              "y": 1115.5,
+              "right": 740,
+              "bottom": 1135.5,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "class": "hn-button hn-button--ghost hn-global-modal__close",
+          "rect": {
+            "x": 700,
+            "y": 55,
+            "right": 744,
+            "bottom": 99,
+            "width": 44,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 116,
+            "y": 200,
+            "right": 723,
+            "bottom": 244,
+            "width": 607,
+            "height": 44
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 57,
+            "y": 252,
+            "right": 153,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 181,
+            "y": 252,
+            "right": 277,
+            "bottom": 336,
+            "width": 96,
+            "height": 84
+          },
+          "disabled": false
+        },
+        {
+          "class": "hn-button hn-button--ghost hn-notification-mark-all",
+          "rect": {
+            "x": 590,
+            "y": 252,
+            "right": 744,
+            "bottom": 336,
+            "width": 154,
+            "height": 84
+          },
+          "disabled": true
+        }
+      ]
+    }
+  ],
+  "environment": "LOCAL authenticated Preview mock",
+  "scope": "Final CSS delta801..1100portrait: dynamic list/detail/read-unread/filter, safe viewport containment, actual controls reachability, toast focus"
+}

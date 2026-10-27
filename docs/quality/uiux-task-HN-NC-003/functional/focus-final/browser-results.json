@@ -1,0 +1,162 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "docs/quality/uiux-task-HN-NC-003/functional/shared-regression.config.ts"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\shared-regression.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-NC-003/functional",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-NC-003/functional/focus-final/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-NC-003/functional",
+        "testIgnore": [],
+        "testMatch": [
+          "focus-repro.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-final\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional",
+        "testIgnore": [],
+        "testMatch": "focus-repro.spec.ts",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5254",
+          "headless": true,
+          "locale": "vi-VN",
+          "timezoneId": "Asia/Ho_Chi_Minh",
+          "reducedMotion": "reduce",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-final/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5254 --strictPort",
+      "url": "http://127.0.0.1:5254",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "focus-repro.spec.ts",
+      "file": "focus-repro.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F-NC-003-TOAST-FOCUS actual mark-all feedback dismiss restores visible focus after owning dialog closes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31288,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T06:13:33.539Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "focus-repro",
+                      "contentType": "application/json",
+                      "body": "eyJzdGFydCI6eyJzaGEiOiI3NjA1OWNjZTYxNjU0MzM1NmM2MjNlYzI0OGM2MzUwZGRkMDdjZGY1IiwidHJlZSI6ImQzY2JjMDA3YTQyYWJiOTk2Yjc0ZDhjNTM3MjIwZmIyMDJlOGJiMTgiLCJkaWZmIjoiIn0sImVuZCI6eyJzaGEiOiI3NjA1OWNjZTYxNjU0MzM1NmM2MjNlYzI0OGM2MzUwZGRkMDdjZGY1IiwidHJlZSI6ImQzY2JjMDA3YTQyYWJiOTk2Yjc0ZDhjNTM3MjIwZmIyMDJlOGJiMTgiLCJkaWZmIjoiIn0sImJlZm9yZSI6eyJhY3RpdmUiOnsidGFnIjoiQlVUVE9OIiwiaWQiOiIiLCJjbGFzcyI6ImhuLWdsb2JhbC10b2FzdC1jbG9zZSJ9LCJvcmlnaW4iOnsiY29ubmVjdGVkIjp0cnVlLCJyZWN0cyI6MH0sImRpYWxvZ09wZW4iOmZhbHNlfSwiYWZ0ZXIiOnsiYWN0aXZlIjp7InRhZyI6Ik1BSU4iLCJpZCI6Im1haW4tY29udGVudCIsImNsYXNzIjoiaG4tbWFpbiIsImNvbm5lY3RlZCI6dHJ1ZSwicmVjdHMiOjF9LCJtYWluIjp7ImV4aXN0cyI6dHJ1ZSwidGFiSW5kZXgiOi0xfX0sImVycm9ycyI6W10sImVudmlyb25tZW50IjoiTE9DQUwgYXV0aGVudGljYXRlZCBQcmV2aWV3IG1vY2s7IGtleWJvYXJkLW9ubHkgdG9hc3QgZGlzbWlzczsgZnJlc2ggYnJvd3NlciBjb250ZXh0IiwiZXhwZWN0ZWQiOiJWaXNpYmxlICNtYWluLWNvbnRlbnQgZmFsbGJhY2sgd2hlbiB0aGUgb3JpZ2luIGlzIGhpZGRlbiBpbiBjbG9zZWQgZGlhbG9nIn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9dd8c16cf3ec3fe04144-e0dea83f94aae4945ce3",
+          "file": "focus-repro.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T06:13:29.916Z",
+    "duration": 36110.95,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

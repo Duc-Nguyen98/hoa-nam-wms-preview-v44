@@ -1,0 +1,10 @@
+[WebServer] (node:8144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:14436) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 docs\quality\uiux-task-HN-NC-003\functional\tablet-delta.spec.ts:10:25 › F-NC-003-DELTA-801-zh-CN-light actual responsive read/unread/filter/detail and shared feedback (1.1m)
+
+  1 passed (1.5m)

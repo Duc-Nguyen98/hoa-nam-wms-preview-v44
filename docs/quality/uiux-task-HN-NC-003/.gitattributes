@@ -1,0 +1,2 @@
+# QA custody: preserve exact bytes for manifests across GitHub and Windows checkouts.
+* -text

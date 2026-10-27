@@ -1,0 +1,361 @@
+[WebServer] (node:20192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:6240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 docs\quality\uiux-task-HN-NC-003\functional\shared-regression.spec.ts:7:67 › F-NC-003-SHARED-1920-light actual app modal semantics, collision-safe mark-all feedback and contrast spot checks (52.5s)
+
+
+  1) docs\quality\uiux-task-HN-NC-003\functional\shared-regression.spec.ts:7:67 › F-NC-003-SHARED-1920-light actual app modal semantics, collision-safe mark-all feedback and contrast spot checks 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -   1
+    + Received  + 318
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       255,
+    +       255,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       126,
+    +       141,
+    +       155.25,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(83, 103, 122)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "",
+    +         "color": "rgba(0, 0, 0, 0)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "INPUT",
+    +       },
+    +       Object {
+    +         "class": "hn-notification-search",
+    +         "color": "rgb(255, 255, 255)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "LABEL",
+    +       },
+    +     ],
+    +     "opacity": 0.75,
+    +     "pseudo": "::placeholder",
+    +     "ratio": 3.402425246505855,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-search input",
+    +     "status": "FAIL",
+    +     "text": "Tìm thông báo…",
+    +     "uncertainties": Array [],
+    +     "view": "initial-list/default-detail",
+    +   },
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       240,
+    +       216,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       198,
+    +       106,
+    +       0,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(198, 106, 0)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "hn-notification-business-status hn-notification-business-status--warning",
+    +         "color": "rgb(255, 240, 216)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "SPAN",
+    +       },
+    +     ],
+    +     "opacity": 1,
+    +     "pseudo": "",
+    +     "ratio": 3.4245665189326573,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-business-status",
+    +     "status": "FAIL",
+    +     "text": "Chờ kiểm tra",
+    +     "uncertainties": Array [],
+    +     "view": "initial-list/default-detail",
+    +   },
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       255,
+    +       255,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       126,
+    +       141,
+    +       155.25,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(83, 103, 122)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "",
+    +         "color": "rgba(0, 0, 0, 0)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "INPUT",
+    +       },
+    +       Object {
+    +         "class": "hn-notification-search",
+    +         "color": "rgb(255, 255, 255)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "LABEL",
+    +       },
+    +     ],
+    +     "opacity": 0.75,
+    +     "pseudo": "::placeholder",
+    +     "ratio": 3.402425246505855,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-search input",
+    +     "status": "FAIL",
+    +     "text": "Tìm thông báo…",
+    +     "uncertainties": Array [],
+    +     "view": "detail-0",
+    +   },
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       240,
+    +       216,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       198,
+    +       106,
+    +       0,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(198, 106, 0)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "hn-notification-business-status hn-notification-business-status--warning",
+    +         "color": "rgb(255, 240, 216)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "SPAN",
+    +       },
+    +     ],
+    +     "opacity": 1,
+    +     "pseudo": "",
+    +     "ratio": 3.4245665189326573,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-business-status",
+    +     "status": "FAIL",
+    +     "text": "Chờ kiểm tra",
+    +     "uncertainties": Array [],
+    +     "view": "detail-0",
+    +   },
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       255,
+    +       255,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       126,
+    +       141,
+    +       155.25,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(83, 103, 122)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "",
+    +         "color": "rgba(0, 0, 0, 0)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "INPUT",
+    +       },
+    +       Object {
+    +         "class": "hn-notification-search",
+    +         "color": "rgb(255, 255, 255)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "LABEL",
+    +       },
+    +     ],
+    +     "opacity": 0.75,
+    +     "pseudo": "::placeholder",
+    +     "ratio": 3.402425246505855,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-search input",
+    +     "status": "FAIL",
+    +     "text": "Tìm thông báo…",
+    +     "uncertainties": Array [],
+    +     "view": "detail-1",
+    +   },
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       240,
+    +       216,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       198,
+    +       106,
+    +       0,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(198, 106, 0)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "hn-notification-business-status hn-notification-business-status--warning",
+    +         "color": "rgb(255, 240, 216)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "SPAN",
+    +       },
+    +     ],
+    +     "opacity": 1,
+    +     "pseudo": "",
+    +     "ratio": 3.4245665189326573,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-business-status",
+    +     "status": "FAIL",
+    +     "text": "In chưa thành công",
+    +     "uncertainties": Array [],
+    +     "view": "detail-1",
+    +   },
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       255,
+    +       255,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       126,
+    +       141,
+    +       155.25,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(83, 103, 122)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "",
+    +         "color": "rgba(0, 0, 0, 0)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "INPUT",
+    +       },
+    +       Object {
+    +         "class": "hn-notification-search",
+    +         "color": "rgb(255, 255, 255)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "LABEL",
+    +       },
+    +     ],
+    +     "opacity": 0.75,
+    +     "pseudo": "::placeholder",
+    +     "ratio": 3.402425246505855,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-search input",
+    +     "status": "FAIL",
+    +     "text": "Tìm thông báo…",
+    +     "uncertainties": Array [],
+    +     "view": "detail-2",
+    +   },
+    +   Object {
+    +     "background": Array [
+    +       255,
+    +       240,
+    +       216,
+    +       1,
+    +     ],
+    +     "effective": Array [
+    +       198,
+    +       106,
+    +       0,
+    +       1,
+    +     ],
+    +     "fontSize": "14px",
+    +     "fontWeight": "400",
+    +     "foreground": "rgb(198, 106, 0)",
+    +     "index": 0,
+    +     "layers": Array [
+    +       Object {
+    +         "class": "hn-notification-business-status hn-notification-business-status--warning",
+    +         "color": "rgb(255, 240, 216)",
+    +         "image": "none",
+    +         "opacity": "1",
+    +         "tag": "SPAN",
+    +       },
+    +     ],
+    +     "opacity": 1,
+    +     "pseudo": "",
+    +     "ratio": 3.4245665189326573,
+    +     "required": 4.5,
+    +     "selector": ".hn-notification-business-status",
+    +     "status": "FAIL",
+    +     "text": "Có chênh lệch",
+    +     "uncertainties": Array [],
+    +     "view": "detail-2",
+    +   },
+    + ]
+
+      45 |  const sourceEnd={sha:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),tree:execFileSync('git',['rev-parse','HEAD:src'],{encoding:'utf8'}).trim(),diff:execFileSync('git',['diff','HEAD','--','src'],{encoding:'utf8'})};
+      46 |  const record={sha,tree,sourceEnd,profile:{width,theme},errors,beforeClose,afterClose,otherGlobalModalConsumer:{route:'#/preview/S01',component:'AcceptedRowDetail',recordId:otherId,titleFocusEscapeReturn:'PASS'},contrast,contrastScope:'Computed solid-background visible NC text spot checks, WCAG AA normal4.5/large3.0. Not comprehensive WCAG/contrast certification; pseudo/gradient uncertainties remain INCOMPLETE.'};await fs.writeFile(`${evidence}/${width}-${theme}.json`,JSON.stringify(record,null,2));await info.attach('shared-regression',{body:JSON.stringify(record),contentType:'application/json'});
+    > 47 |  expect(sourceEnd).toEqual({sha,tree,diff:''});expect(errors).toEqual([]);expect(contrast.filter(r=>r.status==='FAIL')).toEqual([]);
+         |                                                                                                                         ^
+      48 | });
+      49 |
+        at E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\docs\quality\uiux-task-HN-NC-003\functional\shared-regression.spec.ts:47:121
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\shared-final-diagnostic\test-results\shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: docs\quality\uiux-task-HN-NC-003\functional\shared-final-diagnostic\test-results\shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    docs\quality\uiux-task-HN-NC-003\functional\shared-final-diagnostic\test-results\shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks\trace.zip
+    Usage:
+
+        npx playwright show-trace docs\quality\uiux-task-HN-NC-003\functional\shared-final-diagnostic\test-results\shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    docs\quality\uiux-task-HN-NC-003\functional\shared-regression.spec.ts:7:67 › F-NC-003-SHARED-1920-light actual app modal semantics, collision-safe mark-all feedback and contrast spot checks 

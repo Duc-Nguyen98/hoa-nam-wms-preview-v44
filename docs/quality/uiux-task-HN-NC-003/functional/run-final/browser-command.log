@@ -1,0 +1,36 @@
+[WebServer] (node:21640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 27 tests using 1 worker
+
+(node:2296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:10:1 › F-NC-003-LIFECYCLE search/filter read-unread navigation mark-all persistence and verified deep link (28.0s)
+  ok  2 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:19:68 › F-NC-003-STATE-empty (3.9s)
+  ok  3 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:19:68 › F-NC-003-STATE-loading (4.4s)
+  ok  4 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:19:68 › F-NC-003-STATE-error (5.7s)
+  ok  5 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:19:68 › F-NC-003-STATE-unverified (4.2s)
+  ok  6 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:19:68 › F-NC-003-STATE-many (6.2s)
+  ok  7 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-1920-vi-light (4.0s)
+  ok  8 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-1920-vi-dark (6.4s)
+  ok  9 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-1920-en-light (3.8s)
+  ok 10 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-1920-en-dark (3.7s)
+  ok 11 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-1920-zh-CN-light (3.8s)
+  ok 12 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-1920-zh-CN-dark (3.6s)
+  ok 13 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-800-vi-light (3.1s)
+  ok 14 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-800-vi-dark (3.9s)
+  ok 15 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-800-en-light (4.0s)
+  ok 16 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-800-en-dark (3.4s)
+  ok 17 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-800-zh-CN-light (2.8s)
+  ok 18 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:27:109 › F-NC-003-I18N-800-zh-CN-dark (3.4s)
+  ok 19 docs\quality\uiux-task-HN-NC-003\functional\extended.spec.ts:30:1 › F-NC-003-MAIN-SESSION authenticated notifications close before logout; anonymous route exposes no prior data (40.6s)
+  ok 20 tests\functional\canary-badge\badge.spec.ts:4:31 › F-CANARY-BADGE-1920 actual production CSS counts, accessible labels and negative control (2.3s)
+  ok 21 tests\functional\canary-badge\badge.spec.ts:4:31 › F-CANARY-BADGE-800 actual production CSS counts, accessible labels and negative control (1.6s)
+  ok 22 tests\functional\canary-badge\badge.spec.ts:23:1 › F-CANARY-MAIN actual S01 bell 2 → 1 → 0, dialog focus and reload persistence (34.6s)
+  ok 23 tests\functional\wave-ad\notification.spec.ts:18:1 › independent: opening and selecting unread does not mutate; filtered read returns to list (2.7s)
+  ok 24 tests\functional\wave-ad\notification.spec.ts:32:1 › independent: tablet back retains filter, query and scroll; keyboard tabs operate (3.4s)
+  ok 25 tests\functional\wave-ad\notification.spec.ts:49:1 › independent: offline mutation disabled, stale error preserves data, retry recovers (4.5s)
+  ok 26 tests\functional\wave-ad\notification.spec.ts:66:1 › independent: focus trap in both directions and Escape restores opener (4.5s)
+  ok 27 tests\functional\wave-ad\notification.spec.ts:72:1 › independent: desktop anatomical order, visible controls and tablet touch geometry (3.3s)
+
+  27 passed (3.4m)

@@ -1,0 +1,12 @@
+{
+  "task": "HN-NC-UIUX-003",
+  "command": "npm run quality:pr",
+  "exitCode": 0,
+  "candidateSha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "sourceTree": "65ac25d235682469452f60d50664b3e6acb3a753",
+  "workingRuntimeDiffAtEnd": "",
+  "log": "local-quality-pr-830f83d.log",
+  "scope": "typecheck, contract integrity13states26references, production build,4putaway tests",
+  "buildId": "6b3cbeda39a296aebe50905bbfc865a62342a469f59d0dd183860eeb96de5cbe",
+  "environment": "LOCAL_MOCK; not a hosted deployment attestation"
+}

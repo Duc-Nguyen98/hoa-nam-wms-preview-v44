@@ -1,0 +1,6975 @@
+{
+  "sha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "tree": "d3cbc007a42abb996b74d8c537220fb202e8bb18",
+  "sourceAtSampling": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "workingSourceDiff": "",
+  "hashes": [
+    {
+      "file": "src/notifications/notifications.css",
+      "sha256": "159757ced51869256d443bb0e4b2be53f2f1cde150bad4479ae9597ff2319d31"
+    },
+    {
+      "file": "src/shared/GlobalModal.tsx",
+      "sha256": "d87d43c83d162d459b3b70cbe3725ae4c98b467feaf4cde0d8338b371d7ee0ec"
+    },
+    {
+      "file": "src/toast/GlobalToastProvider.tsx",
+      "sha256": "a154fb582a4fec64a2d4721b6827ec97cbb650fdad7940593c933a972ebd3f2b"
+    }
+  ],
+  "contrast": [
+    {
+      "selector": ".hn-global-modal__heading h2",
+      "index": 0,
+      "pseudo": "",
+      "text": "Trung tâm thông báo2 chưa đọc",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H2",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-global-modal__heading p",
+      "index": 0,
+      "pseudo": "",
+      "text": "Theo dõi cập nhật và xử lý công việc",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-heading-badge",
+      "index": 0,
+      "pseudo": "",
+      "text": "2 chưa đọc",
+      "foreground": "rgb(105, 183, 255)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "650",
+      "background": [
+        25,
+        61,
+        92,
+        1
+      ],
+      "effective": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "ratio": 5.268963367134998,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-heading-badge",
+          "color": "rgb(25, 61, 92)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-search input",
+      "index": 0,
+      "pseudo": "::placeholder",
+      "text": "Tìm thông báo…",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 0.75,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        143,
+        158.75,
+        173,
+        1
+      ],
+      "ratio": 5.627029309094247,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "INPUT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LABEL",
+          "class": "hn-notification-search",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-tabs button",
+      "index": 0,
+      "pseudo": "",
+      "text": "Tất cả6",
+      "foreground": "rgb(105, 183, 255)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "ratio": 7.162370095691769,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-tabs",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-filter-row",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-toolbar",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-tabs button",
+      "index": 1,
+      "pseudo": "",
+      "text": "Chưa đọc2",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-tabs",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-filter-row",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-toolbar",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-tabs button span",
+      "index": 0,
+      "pseudo": "",
+      "text": "6",
+      "foreground": "rgb(105, 183, 255)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "background": [
+        25,
+        61,
+        92,
+        1
+      ],
+      "effective": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "ratio": 5.268963367134998,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgb(25, 61, 92)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-tabs button span",
+      "index": 1,
+      "pseudo": "",
+      "text": "2",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        32,
+        52,
+        72,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 7.370677382768217,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgb(32, 52, 72)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-mark-all",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu tất cả đã đọc",
+      "foreground": "rgb(139, 216, 235)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        139,
+        216,
+        235,
+        1
+      ],
+      "ratio": 9.571014598842616,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "BUTTON",
+          "class": "hn-button hn-button--ghost hn-notification-mark-all",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-filter-row",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-toolbar",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy strong",
+      "index": 0,
+      "pseudo": "",
+      "text": "Phiếu xuất kho cần kiểm tra",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "19px",
+      "fontWeight": "650",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "STRONG",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy strong",
+      "index": 1,
+      "pseudo": "",
+      "text": "In nhãn chưa thành công",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "19px",
+      "fontWeight": "650",
+      "background": [
+        22,
+        50,
+        75,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 11.272999845025605,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "STRONG",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgb(22, 50, 75)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy strong",
+      "index": 2,
+      "pseudo": "",
+      "text": "Đối soát phát hiện chênh lệch",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "19px",
+      "fontWeight": "650",
+      "background": [
+        22,
+        50,
+        75,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 11.272999845025605,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "STRONG",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgb(22, 50, 75)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy strong",
+      "index": 3,
+      "pseudo": "",
+      "text": "Phiếu nhập kho đã hoàn tất",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "19px",
+      "fontWeight": "650",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "STRONG",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy strong",
+      "index": 4,
+      "pseudo": "",
+      "text": "Hồ sơ bảo hành được cập nhật",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "19px",
+      "fontWeight": "650",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "STRONG",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy strong",
+      "index": 5,
+      "pseudo": "",
+      "text": "Xếp khay hoàn tất",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "19px",
+      "fontWeight": "650",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "STRONG",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy>span",
+      "index": 0,
+      "pseudo": "",
+      "text": "PX-0021 · Đại lý Hoàng Minh",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy>span",
+      "index": 1,
+      "pseudo": "",
+      "text": "LBH0012343 · Máy in kho A",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "background": [
+        22,
+        50,
+        75,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 7.621770260244458,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgb(22, 50, 75)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy>span",
+      "index": 2,
+      "pseudo": "",
+      "text": "Kho A · Cần kiểm tra số lượng",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "background": [
+        22,
+        50,
+        75,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 7.621770260244458,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgb(22, 50, 75)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy>span",
+      "index": 3,
+      "pseudo": "",
+      "text": "PN-0042 · 24 sản phẩm",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy>span",
+      "index": 4,
+      "pseudo": "",
+      "text": "BH-0018 · Đang sửa chữa",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item-copy>span",
+      "index": 5,
+      "pseudo": "",
+      "text": "TRAY-0012 · Kho A",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "17px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-item-copy",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item>time",
+      "index": 0,
+      "pseudo": "",
+      "text": "10:30",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "TIME",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item>time",
+      "index": 1,
+      "pseudo": "",
+      "text": "09:45",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        22,
+        50,
+        75,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 7.621770260244458,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "TIME",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgb(22, 50, 75)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item>time",
+      "index": 2,
+      "pseudo": "",
+      "text": "09:15",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        22,
+        50,
+        75,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 7.621770260244458,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "TIME",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgb(22, 50, 75)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item>time",
+      "index": 3,
+      "pseudo": "",
+      "text": "08:40",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "TIME",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item>time",
+      "index": 4,
+      "pseudo": "",
+      "text": "26/10 · 16:20",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "TIME",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-item>time",
+      "index": 5,
+      "pseudo": "",
+      "text": "26/10 · 14:05",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "TIME",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "hn-notification-item",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "LI",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "UL",
+          "class": "hn-notification-list",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-group h3",
+      "index": 0,
+      "pseudo": "",
+      "text": "Hôm nay",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H3",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-group h3",
+      "index": 1,
+      "pseudo": "",
+      "text": "Hôm qua",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H3",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-group",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-groups",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-list-scroll",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-notification-list-footer",
+      "index": 0,
+      "pseudo": "",
+      "text": "6 thông báo",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "FOOTER",
+          "class": "hn-notification-list-footer",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-list-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-center-grid",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "initial-list/default-detail"
+    },
+    {
+      "selector": ".hn-global-modal__heading h2",
+      "index": 0,
+      "pseudo": "",
+      "text": "Trung tâm thông báo2 chưa đọc",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H2",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-global-modal__heading p",
+      "index": 0,
+      "pseudo": "",
+      "text": "Theo dõi cập nhật và xử lý công việc",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-heading-badge",
+      "index": 0,
+      "pseudo": "",
+      "text": "2 chưa đọc",
+      "foreground": "rgb(105, 183, 255)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "650",
+      "background": [
+        25,
+        61,
+        92,
+        1
+      ],
+      "effective": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "ratio": 5.268963367134998,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-heading-badge",
+          "color": "rgb(25, 61, 92)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-detail-title",
+      "index": 0,
+      "pseudo": "",
+      "text": "Phiếu xuất kho cần kiểm tra",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H3",
+          "class": "hn-notification-detail-title",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-category",
+      "index": 0,
+      "pseudo": "",
+      "text": "Xuất kho",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-category",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-detail-body",
+      "index": 0,
+      "pseudo": "",
+      "text": "Phiếu PX-0021 đang chờ kiểm tra thông tin trước khi tiếp tục xử lý. Vui lòng đối chiếu người nhận và danh sách hàng hóa.",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-detail-body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 0,
+      "pseudo": "",
+      "text": "Mã phiếu",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 1,
+      "pseudo": "",
+      "text": "Người nhận",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 2,
+      "pseudo": "",
+      "text": "Kho xuất",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 3,
+      "pseudo": "",
+      "text": "Số lượng",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 4,
+      "pseudo": "",
+      "text": "Trạng thái",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 0,
+      "pseudo": "",
+      "text": "PX-0021",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 1,
+      "pseudo": "",
+      "text": "Đại lý Hoàng Minh",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 2,
+      "pseudo": "",
+      "text": "Kho A",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 3,
+      "pseudo": "",
+      "text": "12 sản phẩm",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 4,
+      "pseudo": "",
+      "text": "Chờ kiểm tra",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-business-status",
+      "index": 0,
+      "pseudo": "",
+      "text": "Chờ kiểm tra",
+      "foreground": "rgb(255, 193, 103)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "background": [
+        74,
+        52,
+        28,
+        1
+      ],
+      "effective": [
+        255,
+        193,
+        103,
+        1
+      ],
+      "ratio": 7.267852895713777,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-business-status hn-notification-business-status--warning",
+          "color": "rgb(74, 52, 28)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-primary",
+      "index": 0,
+      "pseudo": "",
+      "text": "Mở phiếu xuất kho",
+      "foreground": "rgb(16, 35, 54)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "background": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "effective": [
+        16,
+        35,
+        54,
+        1
+      ],
+      "ratio": 7.462149377536634,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "A",
+          "class": "hn-notification-primary",
+          "color": "rgb(105, 183, 255)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-toggle-read",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu chưa đọc",
+      "foreground": "rgb(139, 216, 235)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        139,
+        216,
+        235,
+        1
+      ],
+      "ratio": 9.571014598842616,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "BUTTON",
+          "class": "hn-button hn-button--ghost hn-notification-toggle-read",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-actions",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-notification-reading-notice",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu đã đọc không thay đổi trạng thái phiếu.",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-reading-notice",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "FOOTER",
+          "class": "hn-notification-detail-footer",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-0"
+    },
+    {
+      "selector": ".hn-global-modal__heading h2",
+      "index": 0,
+      "pseudo": "",
+      "text": "Trung tâm thông báo2 chưa đọc",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H2",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-global-modal__heading p",
+      "index": 0,
+      "pseudo": "",
+      "text": "Theo dõi cập nhật và xử lý công việc",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-heading-badge",
+      "index": 0,
+      "pseudo": "",
+      "text": "2 chưa đọc",
+      "foreground": "rgb(105, 183, 255)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "650",
+      "background": [
+        25,
+        61,
+        92,
+        1
+      ],
+      "effective": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "ratio": 5.268963367134998,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-heading-badge",
+          "color": "rgb(25, 61, 92)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-detail-title",
+      "index": 0,
+      "pseudo": "",
+      "text": "In nhãn chưa thành công",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H3",
+          "class": "hn-notification-detail-title",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-category",
+      "index": 0,
+      "pseudo": "",
+      "text": "In nhãn",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-category",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-detail-body",
+      "index": 0,
+      "pseudo": "",
+      "text": "LBH0012343 · Máy in kho A",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-detail-body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 0,
+      "pseudo": "",
+      "text": "Mã nghiệp vụ",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 1,
+      "pseudo": "",
+      "text": "Máy in",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 2,
+      "pseudo": "",
+      "text": "Trạng thái",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 0,
+      "pseudo": "",
+      "text": "LBH0012343",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 1,
+      "pseudo": "",
+      "text": "Máy in kho A",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 2,
+      "pseudo": "",
+      "text": "In chưa thành công",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-business-status",
+      "index": 0,
+      "pseudo": "",
+      "text": "In chưa thành công",
+      "foreground": "rgb(255, 193, 103)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "background": [
+        74,
+        52,
+        28,
+        1
+      ],
+      "effective": [
+        255,
+        193,
+        103,
+        1
+      ],
+      "ratio": 7.267852895713777,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-business-status hn-notification-business-status--warning",
+          "color": "rgb(74, 52, 28)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-primary",
+      "index": 0,
+      "pseudo": "",
+      "text": "Mở hồ sơ in nhãn",
+      "foreground": "rgb(16, 35, 54)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "background": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "effective": [
+        16,
+        35,
+        54,
+        1
+      ],
+      "ratio": 7.462149377536634,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "A",
+          "class": "hn-notification-primary",
+          "color": "rgb(105, 183, 255)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-toggle-read",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu đã đọc",
+      "foreground": "rgb(139, 216, 235)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        139,
+        216,
+        235,
+        1
+      ],
+      "ratio": 9.571014598842616,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "BUTTON",
+          "class": "hn-button hn-button--ghost hn-notification-toggle-read",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-actions",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-notification-reading-notice",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu đã đọc không thay đổi trạng thái phiếu.",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-reading-notice",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "FOOTER",
+          "class": "hn-notification-detail-footer",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-1"
+    },
+    {
+      "selector": ".hn-global-modal__heading h2",
+      "index": 0,
+      "pseudo": "",
+      "text": "Trung tâm thông báo2 chưa đọc",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H2",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-global-modal__heading p",
+      "index": 0,
+      "pseudo": "",
+      "text": "Theo dõi cập nhật và xử lý công việc",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-heading-badge",
+      "index": 0,
+      "pseudo": "",
+      "text": "2 chưa đọc",
+      "foreground": "rgb(105, 183, 255)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "650",
+      "background": [
+        25,
+        61,
+        92,
+        1
+      ],
+      "effective": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "ratio": 5.268963367134998,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-heading-badge",
+          "color": "rgb(25, 61, 92)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-detail-title",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đối soát phát hiện chênh lệch",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H3",
+          "class": "hn-notification-detail-title",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-category",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đối soát",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-category",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-detail-body",
+      "index": 0,
+      "pseudo": "",
+      "text": "Kho A · Cần kiểm tra số lượng",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-detail-body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 0,
+      "pseudo": "",
+      "text": "Kho",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 1,
+      "pseudo": "",
+      "text": "Yêu cầu",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 2,
+      "pseudo": "",
+      "text": "Trạng thái",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 0,
+      "pseudo": "",
+      "text": "Kho A",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 1,
+      "pseudo": "",
+      "text": "Kiểm tra số lượng",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 2,
+      "pseudo": "",
+      "text": "Có chênh lệch",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-business-status",
+      "index": 0,
+      "pseudo": "",
+      "text": "Có chênh lệch",
+      "foreground": "rgb(255, 193, 103)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "background": [
+        74,
+        52,
+        28,
+        1
+      ],
+      "effective": [
+        255,
+        193,
+        103,
+        1
+      ],
+      "ratio": 7.267852895713777,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-business-status hn-notification-business-status--warning",
+          "color": "rgb(74, 52, 28)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-primary",
+      "index": 0,
+      "pseudo": "",
+      "text": "Mở hồ sơ đối soát",
+      "foreground": "rgb(16, 35, 54)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "background": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "effective": [
+        16,
+        35,
+        54,
+        1
+      ],
+      "ratio": 7.462149377536634,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "A",
+          "class": "hn-notification-primary",
+          "color": "rgb(105, 183, 255)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-toggle-read",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu đã đọc",
+      "foreground": "rgb(139, 216, 235)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        139,
+        216,
+        235,
+        1
+      ],
+      "ratio": 9.571014598842616,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "BUTTON",
+          "class": "hn-button hn-button--ghost hn-notification-toggle-read",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-actions",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-notification-reading-notice",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu đã đọc không thay đổi trạng thái phiếu.",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-reading-notice",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "FOOTER",
+          "class": "hn-notification-detail-footer",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-2"
+    },
+    {
+      "selector": ".hn-global-modal__heading h2",
+      "index": 0,
+      "pseudo": "",
+      "text": "Trung tâm thông báo2 chưa đọc",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H2",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-global-modal__heading p",
+      "index": 0,
+      "pseudo": "",
+      "text": "Theo dõi cập nhật và xử lý công việc",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__heading",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__header",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-global-modal__surface",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIALOG",
+          "class": "hn-global-modal hn-global-modal--large hn-notification-center",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-heading-badge",
+      "index": 0,
+      "pseudo": "",
+      "text": "2 chưa đọc",
+      "foreground": "rgb(105, 183, 255)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "650",
+      "background": [
+        25,
+        61,
+        92,
+        1
+      ],
+      "effective": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "ratio": 5.268963367134998,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-heading-badge",
+          "color": "rgb(25, 61, 92)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-detail-title",
+      "index": 0,
+      "pseudo": "",
+      "text": "Phiếu nhập kho đã hoàn tất",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "26px",
+      "fontWeight": "700",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 3,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "H3",
+          "class": "hn-notification-detail-title",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-category",
+      "index": 0,
+      "pseudo": "",
+      "text": "Nhập kho",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "13px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-category",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-detail-body",
+      "index": 0,
+      "pseudo": "",
+      "text": "PN-0042 · 24 sản phẩm",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "P",
+          "class": "hn-notification-detail-body",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 0,
+      "pseudo": "",
+      "text": "Mã nghiệp vụ",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 1,
+      "pseudo": "",
+      "text": "Kho",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 2,
+      "pseudo": "",
+      "text": "Số lượng",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dt",
+      "index": 3,
+      "pseudo": "",
+      "text": "Trạng thái",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DT",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 0,
+      "pseudo": "",
+      "text": "PN-0042",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 1,
+      "pseudo": "",
+      "text": "Kho A",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 2,
+      "pseudo": "",
+      "text": "24 sản phẩm",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-card dd",
+      "index": 3,
+      "pseudo": "",
+      "text": "Đã hoàn tất",
+      "foreground": "rgb(231, 238, 245)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        231,
+        238,
+        245,
+        1
+      ],
+      "ratio": 13.09188270794394,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "DD",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DL",
+          "class": "",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-business-card",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-business-status",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đã hoàn tất",
+      "foreground": "rgb(112, 217, 156)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "background": [
+        24,
+        63,
+        48,
+        1
+      ],
+      "effective": [
+        112,
+        217,
+        156,
+        1
+      ],
+      "ratio": 6.747007094290816,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-business-status hn-notification-business-status--success",
+          "color": "rgb(24, 63, 48)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-primary",
+      "index": 0,
+      "pseudo": "",
+      "text": "Mở phiếu nhập kho",
+      "foreground": "rgb(16, 35, 54)",
+      "opacity": 1,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "background": [
+        105,
+        183,
+        255,
+        1
+      ],
+      "effective": [
+        16,
+        35,
+        54,
+        1
+      ],
+      "ratio": 7.462149377536634,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "A",
+          "class": "hn-notification-primary",
+          "color": "rgb(105, 183, 255)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-toggle-read",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu chưa đọc",
+      "foreground": "rgb(139, 216, 235)",
+      "opacity": 1,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        139,
+        216,
+        235,
+        1
+      ],
+      "ratio": 9.571014598842616,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "BUTTON",
+          "class": "hn-button hn-button--ghost hn-notification-toggle-read",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-actions",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "DIV",
+          "class": "hn-notification-detail-content",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    },
+    {
+      "selector": ".hn-notification-reading-notice",
+      "index": 0,
+      "pseudo": "",
+      "text": "Đánh dấu đã đọc không thay đổi trạng thái phiếu.",
+      "foreground": "rgb(183, 199, 212)",
+      "opacity": 1,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "background": [
+        23,
+        38,
+        56,
+        1
+      ],
+      "effective": [
+        183,
+        199,
+        212,
+        1
+      ],
+      "ratio": 8.851532302472869,
+      "required": 4.5,
+      "uncertainties": [],
+      "layers": [
+        {
+          "tag": "SPAN",
+          "class": "hn-notification-reading-notice",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "FOOTER",
+          "class": "hn-notification-detail-footer",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "ARTICLE",
+          "class": "hn-notification-detail-pane",
+          "color": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "1"
+        },
+        {
+          "tag": "SECTION",
+          "class": "hn-notification-detail-pane-wrap",
+          "color": "rgb(23, 38, 56)",
+          "image": "none",
+          "opacity": "1"
+        }
+      ],
+      "status": "PASS",
+      "view": "detail-3"
+    }
+  ]
+}

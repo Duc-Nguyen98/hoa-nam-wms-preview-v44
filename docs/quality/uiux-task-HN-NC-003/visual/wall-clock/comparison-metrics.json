@@ -1,0 +1,48 @@
+[
+  {
+    "profile": "desktop-native",
+    "status": "DIAGNOSTIC_DIFF",
+    "referenceSize": [
+      1774,
+      887
+    ],
+    "actualSize": [
+      1774,
+      887
+    ],
+    "scopeCrop": [
+      390,
+      113,
+      1477,
+      841
+    ],
+    "transforms": "Native pixels; no resampling; same rectangle in both full images; diff amplified3 for display only",
+    "meanAbsoluteChannelError": 9.538394141890002,
+    "pixelFractionAnyChannelDeltaAbove10": 0.13440434910076124,
+    "approvalTolerance": "UNSPECIFIED; metrics are not an acceptance threshold",
+    "referenceSHA256": "fa1a5615926a3a15b4cdf72d3482f53f4755931f9b881f8f34874a35233ae22c"
+  },
+  {
+    "profile": "tablet-native",
+    "status": "DIAGNOSTIC_DIFF",
+    "referenceSize": [
+      992,
+      1586
+    ],
+    "actualSize": [
+      992,
+      1586
+    ],
+    "scopeCrop": [
+      61,
+      261,
+      942,
+      1523
+    ],
+    "transforms": "Native pixels; no resampling; same rectangle in both full images; diff amplified3 for display only",
+    "meanAbsoluteChannelError": 22.516634557210295,
+    "pixelFractionAnyChannelDeltaAbove10": 0.3494534197020746,
+    "approvalTolerance": "UNSPECIFIED; metrics are not an acceptance threshold",
+    "referenceSHA256": "65606c1c19e7124340cdf18f41d201b136be755059275dd2b777847b268569f4"
+  }
+]

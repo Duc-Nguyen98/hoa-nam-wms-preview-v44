@@ -1,0 +1,216 @@
+{
+  "observedAtUtc": "2026-10-27T05:24:32.3795126+00:00",
+  "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site",
+  "manifest": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "1d53c18c7ec915738ed7e60cd1c8d608c3b659fe664aefe5d116b9b90685424c",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-DDgikdu0.js",
+        "sha256": "74fcc445b26ad2d2d114e50a4da4bb944af93682cf15ac2104262dd67bb1f219",
+        "bytes": 2275545
+      },
+      {
+        "path": "assets/index-DMGgTKpV.css",
+        "sha256": "847d1dbd5dcb7f326556736a057fa95fd998fddffcd73c7c4fca85b007d4c1b9",
+        "bytes": 582441
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "81cd310b4436544ee7c7edb850bedd9dbb7cc726ee2d7a84f3e41f07438228e0",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "assetChecks": [
+    {
+      "path": "assets/fonts/s01/AUTHORS.txt",
+      "expectedSha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+      "actualSha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+      "expectedBytes": 349,
+      "actualBytes": 349,
+      "matches": true
+    },
+    {
+      "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+      "expectedSha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+      "actualSha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+      "expectedBytes": 4921,
+      "actualBytes": 4921,
+      "matches": true
+    },
+    {
+      "path": "assets/fonts/s01/LICENSE.md",
+      "expectedSha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+      "actualSha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+      "expectedBytes": 6824,
+      "actualBytes": 6824,
+      "matches": true
+    },
+    {
+      "path": "assets/fonts/s01/OFL.txt",
+      "expectedSha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+      "actualSha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+      "expectedBytes": 4483,
+      "actualBytes": 4483,
+      "matches": true
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+      "expectedSha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+      "actualSha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+      "expectedBytes": 33664,
+      "actualBytes": 33664,
+      "matches": true
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+      "expectedSha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+      "actualSha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+      "expectedBytes": 33676,
+      "actualBytes": 33676,
+      "matches": true
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+      "expectedSha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+      "actualSha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+      "expectedBytes": 33612,
+      "actualBytes": 33612,
+      "matches": true
+    },
+    {
+      "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+      "expectedSha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+      "actualSha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+      "expectedBytes": 33636,
+      "actualBytes": 33636,
+      "matches": true
+    },
+    {
+      "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+      "expectedSha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+      "actualSha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+      "expectedBytes": 18765,
+      "actualBytes": 18765,
+      "matches": true
+    },
+    {
+      "path": "assets/index-DDgikdu0.js",
+      "expectedSha256": "74fcc445b26ad2d2d114e50a4da4bb944af93682cf15ac2104262dd67bb1f219",
+      "actualSha256": "74fcc445b26ad2d2d114e50a4da4bb944af93682cf15ac2104262dd67bb1f219",
+      "expectedBytes": 2275545,
+      "actualBytes": 2275545,
+      "matches": true
+    },
+    {
+      "path": "assets/index-DMGgTKpV.css",
+      "expectedSha256": "847d1dbd5dcb7f326556736a057fa95fd998fddffcd73c7c4fca85b007d4c1b9",
+      "actualSha256": "847d1dbd5dcb7f326556736a057fa95fd998fddffcd73c7c4fca85b007d4c1b9",
+      "expectedBytes": 582441,
+      "actualBytes": 582441,
+      "matches": true
+    },
+    {
+      "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+      "expectedSha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+      "actualSha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+      "expectedBytes": 2651791,
+      "actualBytes": 2651791,
+      "matches": true
+    },
+    {
+      "path": "favicon.svg",
+      "expectedSha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+      "actualSha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+      "expectedBytes": 203,
+      "actualBytes": 203,
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "expectedSha256": "81cd310b4436544ee7c7edb850bedd9dbb7cc726ee2d7a84f3e41f07438228e0",
+      "actualSha256": "a3686433f7a2eefeb7dd0e8fd22c0f061462c82f7d1a2af2c102571e4459d95c",
+      "expectedBytes": 911,
+      "actualBytes": 1849,
+      "matches": false
+    },
+    {
+      "path": "release.html",
+      "expectedSha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+      "actualSha256": "c5b4265a31af488b2b5ef7931e4bb35d37ce084d724c860cc18d39076b75022f",
+      "expectedBytes": 2224,
+      "actualBytes": 3162,
+      "matches": false
+    }
+  ],
+  "allListedAssetsMatch": false,
+  "candidateSha": "78752811af4b0434c958d604dc52ca445cdbeede",
+  "candidateSrcTree": "e1d3c3ccca8f29f9a088be3e0d55f5828cc17bb1",
+  "provenanceStatus": "UNVERIFIED_CURRENT_CANDIDATE",
+  "reason": "Build writer copies historical SOURCE_PROVENANCE.sourceCommit; manifest is not trusted candidate SHA attestation. HTTP transport or injected bytes may change individual assets."
+}

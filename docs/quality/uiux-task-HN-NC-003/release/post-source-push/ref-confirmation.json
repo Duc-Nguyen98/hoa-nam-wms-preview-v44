@@ -1,0 +1,10 @@
+{
+  "observedAtUtc": "2026-10-27T06:11:11.4803083+00:00",
+  "path": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV?audit=1793081469",
+  "branchSha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "protected": false,
+  "gitRemoteRef": [
+    "76059cce616543356c623ec248c6350ddd07cdf5\trefs/heads/DEV"
+  ],
+  "note": "Earlier branch endpoint within post-push collector returned previous SHA; exact-source run and fresh Git ref establish source upload."
+}

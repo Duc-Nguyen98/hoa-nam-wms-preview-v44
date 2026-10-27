@@ -1,0 +1,11 @@
+{
+  "task": "HN-NC-UIUX-003",
+  "command": "npm run quality:pr",
+  "exitCode": 0,
+  "candidateSha": "e57f6aed038e81d8b6a3b4f0eeccbb4c853012dc",
+  "sourceTree": "83a136cf4d39e9591f3721b37dc444d5151e2098",
+  "workingRuntimeDiffAtEnd": "",
+  "log": "local-quality-pr.log",
+  "scope": "typecheck, contract/reference integrity, production build, 4 putaway tests",
+  "limitations": "Not Notification visual/accessibility approval, hosted CI or deployed-SHA verification. Additional contrast findings remain under review."
+}

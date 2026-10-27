@@ -1,0 +1,4118 @@
+{
+  "observedAtUtc": "2026-10-27T06:52:51.518825+00:00",
+  "head": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "sourceTree": "65ac25d235682469452f60d50664b3e6acb3a753",
+  "method": "For each staged path, compare git index object ID with SHA1(blob + space + raw byte length + NUL + exact workspace bytes); no clean filter/text conversion.",
+  "scopeNote": "Snapshot before this report and its checker were staged; root must stage final leased outputs before committing.",
+  "stagedFileCount": 455,
+  "outsideTaskPaths": [],
+  "scratchPaths": [],
+  "mismatches": [
+    {
+      "file": "docs/agent-handoffs/HN-NC-UIUX-003.md",
+      "bytes": 8397,
+      "indexBlobSha1": "2cfe22f03b873a99ab33adfda9283ea588f01f47",
+      "rawWorkspaceBlobSha1": "ca2aa62fb7d897dc7f8e6e9fe8afd26a5f15588c",
+      "identical": false,
+      "indexStage": "0",
+      "mode": "100644"
+    }
+  ],
+  "files": [
+    {
+      "file": "docs/agent-handoffs/HN-NC-UIUX-003.md",
+      "bytes": 8397,
+      "indexBlobSha1": "2cfe22f03b873a99ab33adfda9283ea588f01f47",
+      "rawWorkspaceBlobSha1": "ca2aa62fb7d897dc7f8e6e9fe8afd26a5f15588c",
+      "identical": false,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/.gitattributes",
+      "bytes": 95,
+      "indexBlobSha1": "5cadffaf071f60c96b072d0ed909b69af4b2aeb6",
+      "rawWorkspaceBlobSha1": "5cadffaf071f60c96b072d0ed909b69af4b2aeb6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/AGENT_TRACE.md",
+      "bytes": 6496,
+      "indexBlobSha1": "d027c7b1f119bcabf74d853831b5d4151474af64",
+      "rawWorkspaceBlobSha1": "d027c7b1f119bcabf74d853831b5d4151474af64",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/CI_RELEASE_REPORT.md",
+      "bytes": 14905,
+      "indexBlobSha1": "e116bda49c584c164aa13d4be8722eb8845a7f71",
+      "rawWorkspaceBlobSha1": "e116bda49c584c164aa13d4be8722eb8845a7f71",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/DEFECT_REGISTER.md",
+      "bytes": 8809,
+      "indexBlobSha1": "ef77a6e460e978f6ae0b5c3d6aa28e17b7643b03",
+      "rawWorkspaceBlobSha1": "ef77a6e460e978f6ae0b5c3d6aa28e17b7643b03",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/DESIGN_GUARDIAN_REPORT.md",
+      "bytes": 43095,
+      "indexBlobSha1": "550b2982bcf6513f8f78ba965795b95a6f70be74",
+      "rawWorkspaceBlobSha1": "550b2982bcf6513f8f78ba965795b95a6f70be74",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/FINAL_REPORT.md",
+      "bytes": 11898,
+      "indexBlobSha1": "1a9fb50c105179e629f9827fe4ef2c52c961bded",
+      "rawWorkspaceBlobSha1": "1a9fb50c105179e629f9827fe4ef2c52c961bded",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/FUNCTIONAL_QA_REPORT.md",
+      "bytes": 20993,
+      "indexBlobSha1": "4726ccada39332c5bd13d64865a380c07709ca52",
+      "rawWorkspaceBlobSha1": "4726ccada39332c5bd13d64865a380c07709ca52",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/IMPLEMENTATION_REPORT.md",
+      "bytes": 19039,
+      "indexBlobSha1": "3096dd6b87691054c7575b0bc4a72aa20f8ca0b6",
+      "rawWorkspaceBlobSha1": "3096dd6b87691054c7575b0bc4a72aa20f8ca0b6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/REGRESSION_REPORT.md",
+      "bytes": 3742,
+      "indexBlobSha1": "1dc3a07f319334eeda4d821f87c13ddc9d86d646",
+      "rawWorkspaceBlobSha1": "1dc3a07f319334eeda4d821f87c13ddc9d86d646",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/RUNBOOK.md",
+      "bytes": 4770,
+      "indexBlobSha1": "6207c065f412a9fb30110dd68568d136c1fd8b07",
+      "rawWorkspaceBlobSha1": "6207c065f412a9fb30110dd68568d136c1fd8b07",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/VISUAL_QA_REPORT.md",
+      "bytes": 21914,
+      "indexBlobSha1": "00e1872857031c16fb81d035fa9fe457e8c61565",
+      "rawWorkspaceBlobSha1": "00e1872857031c16fb81d035fa9fe457e8c61565",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/AXE_REPORT.before-finalization.md",
+      "bytes": 3861,
+      "indexBlobSha1": "acdc45f92c1644ba340a54ea1e446547a10e4643",
+      "rawWorkspaceBlobSha1": "acdc45f92c1644ba340a54ea1e446547a10e4643",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/AXE_REPORT.md",
+      "bytes": 5549,
+      "indexBlobSha1": "0cda5454dd148a54ca67bb45057b4d1e3992a0f3",
+      "rawWorkspaceBlobSha1": "0cda5454dd148a54ca67bb45057b4d1e3992a0f3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/COMMANDS.md",
+      "bytes": 3101,
+      "indexBlobSha1": "c719bb1b62218ed399e6d3ae3296a1713be175f6",
+      "rawWorkspaceBlobSha1": "c719bb1b62218ed399e6d3ae3296a1713be175f6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/CONTRAST_REVIEW.md",
+      "bytes": 3454,
+      "indexBlobSha1": "988046d3f448b3f0a9af81727886795faec50b6f",
+      "rawWorkspaceBlobSha1": "988046d3f448b3f0a9af81727886795faec50b6f",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/EVIDENCE_MANIFEST.76059cc.json",
+      "bytes": 40308,
+      "indexBlobSha1": "6e88187c4f7bac0f95378a0ec57dee6bb9442f34",
+      "rawWorkspaceBlobSha1": "6e88187c4f7bac0f95378a0ec57dee6bb9442f34",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/EVIDENCE_MANIFEST.before-finalization.json",
+      "bytes": 5434,
+      "indexBlobSha1": "ae029bf166c79e2a6439516babd062e0df6d38c1",
+      "rawWorkspaceBlobSha1": "ae029bf166c79e2a6439516babd062e0df6d38c1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/EVIDENCE_MANIFEST.json",
+      "bytes": 49320,
+      "indexBlobSha1": "aee41246ec8d57d1aacd233fc1d3c985d9c87019",
+      "rawWorkspaceBlobSha1": "aee41246ec8d57d1aacd233fc1d3c985d9c87019",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/FINAL_SOURCE_DELTA_RETEST.md",
+      "bytes": 4533,
+      "indexBlobSha1": "01f70406357876fb8ee9a55499ba079d404785a7",
+      "rawWorkspaceBlobSha1": "01f70406357876fb8ee9a55499ba079d404785a7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/FOCUS_DEFECT.md",
+      "bytes": 2527,
+      "indexBlobSha1": "758c11a7b062683becfaaaade6e646843e989414",
+      "rawWorkspaceBlobSha1": "758c11a7b062683becfaaaade6e646843e989414",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/FUNCTIONAL_QA_REPORT.76059cc.md",
+      "bytes": 16285,
+      "indexBlobSha1": "5d4e0f605cc077887b8dd10f237b3b33cc09ddd7",
+      "rawWorkspaceBlobSha1": "5d4e0f605cc077887b8dd10f237b3b33cc09ddd7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/FUNCTIONAL_QA_REPORT.before-finalization.md",
+      "bytes": 13774,
+      "indexBlobSha1": "948afb4fdd97de643434b13f51882d45d82b020c",
+      "rawWorkspaceBlobSha1": "948afb4fdd97de643434b13f51882d45d82b020c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final-command.log",
+      "bytes": 988,
+      "indexBlobSha1": "d03d031151aea40293cc07983091c37351cc1780",
+      "rawWorkspaceBlobSha1": "d03d031151aea40293cc07983091c37351cc1780",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-dark.json",
+      "bytes": 334561,
+      "indexBlobSha1": "6bd156ffff23e9353dd8f75b2205534522eec805",
+      "rawWorkspaceBlobSha1": "6bd156ffff23e9353dd8f75b2205534522eec805",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-dark.png",
+      "bytes": 242952,
+      "indexBlobSha1": "a8188b2a989fdc912309c3ef3bc9ee690c2f374c",
+      "rawWorkspaceBlobSha1": "a8188b2a989fdc912309c3ef3bc9ee690c2f374c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-light.json",
+      "bytes": 334562,
+      "indexBlobSha1": "ffaf526defe1a000ba9911b90a40f95901cb7f3c",
+      "rawWorkspaceBlobSha1": "ffaf526defe1a000ba9911b90a40f95901cb7f3c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/1920-light.png",
+      "bytes": 236932,
+      "indexBlobSha1": "36e7ed8519528717d37929fccf2ad21a135ccf78",
+      "rawWorkspaceBlobSha1": "36e7ed8519528717d37929fccf2ad21a135ccf78",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-dark.json",
+      "bytes": 275651,
+      "indexBlobSha1": "2ced34731d0a6bb660573e419dd77a5d68809038",
+      "rawWorkspaceBlobSha1": "2ced34731d0a6bb660573e419dd77a5d68809038",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-dark.png",
+      "bytes": 263952,
+      "indexBlobSha1": "fc7cc24a6c4774ffae195e9183bdb5923eff9d85",
+      "rawWorkspaceBlobSha1": "fc7cc24a6c4774ffae195e9183bdb5923eff9d85",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-light.json",
+      "bytes": 275652,
+      "indexBlobSha1": "54a31979477a789740565e403ffb650fa9d49a58",
+      "rawWorkspaceBlobSha1": "54a31979477a789740565e403ffb650fa9d49a58",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/800-light.png",
+      "bytes": 262995,
+      "indexBlobSha1": "bc355aef768b2213bd71d4399c19fb76430249c9",
+      "rawWorkspaceBlobSha1": "bc355aef768b2213bd71d4399c19fb76430249c9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/browser-results.json",
+      "bytes": 1011779,
+      "indexBlobSha1": "090a83a519821acc29e411e03210a5140a09b7e6",
+      "rawWorkspaceBlobSha1": "090a83a519821acc29e411e03210a5140a09b7e6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe-final/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe.config.ts",
+      "bytes": 758,
+      "indexBlobSha1": "3202c0c54b6ba70b1cc91125358642f089825c55",
+      "rawWorkspaceBlobSha1": "3202c0c54b6ba70b1cc91125358642f089825c55",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe.spec.ts",
+      "bytes": 3526,
+      "indexBlobSha1": "aad0a36802b1d1122a87272e639600fa28255740",
+      "rawWorkspaceBlobSha1": "aad0a36802b1d1122a87272e639600fa28255740",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-dark.json",
+      "bytes": 332837,
+      "indexBlobSha1": "9fdbe1bf78a2b3c298b8426ab6a4a86c9ff5ab3d",
+      "rawWorkspaceBlobSha1": "9fdbe1bf78a2b3c298b8426ab6a4a86c9ff5ab3d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-dark.png",
+      "bytes": 242953,
+      "indexBlobSha1": "079d2bd6018b177b3ee8cb40983e329ea4190ee5",
+      "rawWorkspaceBlobSha1": "079d2bd6018b177b3ee8cb40983e329ea4190ee5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-light.json",
+      "bytes": 332838,
+      "indexBlobSha1": "6e3457dd4c5eedc1ed7c5938fbcebb9ac643f667",
+      "rawWorkspaceBlobSha1": "6e3457dd4c5eedc1ed7c5938fbcebb9ac643f667",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/1920-light.png",
+      "bytes": 236698,
+      "indexBlobSha1": "cdeae3ce18ce0b8949484e30e33f84bc9712803b",
+      "rawWorkspaceBlobSha1": "cdeae3ce18ce0b8949484e30e33f84bc9712803b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-dark.json",
+      "bytes": 273927,
+      "indexBlobSha1": "f0626967e56944b12327627471c6327104223a14",
+      "rawWorkspaceBlobSha1": "f0626967e56944b12327627471c6327104223a14",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-dark.png",
+      "bytes": 263952,
+      "indexBlobSha1": "fc7cc24a6c4774ffae195e9183bdb5923eff9d85",
+      "rawWorkspaceBlobSha1": "fc7cc24a6c4774ffae195e9183bdb5923eff9d85",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-light.json",
+      "bytes": 273928,
+      "indexBlobSha1": "839df9f2245d2772109c099eb8f48480c3723bff",
+      "rawWorkspaceBlobSha1": "839df9f2245d2772109c099eb8f48480c3723bff",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/800-light.png",
+      "bytes": 262876,
+      "indexBlobSha1": "919918820f48d6ac0cb25efb947ea924155215c5",
+      "rawWorkspaceBlobSha1": "919918820f48d6ac0cb25efb947ea924155215c5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/browser-exit.txt",
+      "bytes": 3,
+      "indexBlobSha1": "f33dfa25aa16a97ca941fe1d9cabdc3689179f3f",
+      "rawWorkspaceBlobSha1": "f33dfa25aa16a97ca941fe1d9cabdc3689179f3f",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/browser-results.json",
+      "bytes": 1036060,
+      "indexBlobSha1": "13bebef258641e06f8bd5ce8a8c9df08b9d4f54c",
+      "rawWorkspaceBlobSha1": "13bebef258641e06f8bd5ce8a8c9df08b9d4f54c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/browser.log",
+      "bytes": 16122,
+      "indexBlobSha1": "59abf5e00b44fbf45fc0856b241fd1dab507a7e3",
+      "rawWorkspaceBlobSha1": "59abf5e00b44fbf45fc0856b241fd1dab507a7e3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/.last-run.json",
+      "bytes": 243,
+      "indexBlobSha1": "7eecc94a4d525f2377b47f27d62280faec8bde21",
+      "rawWorkspaceBlobSha1": "7eecc94a4d525f2377b47f27d62280faec8bde21",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal/error-context.md",
+      "bytes": 4198,
+      "indexBlobSha1": "eae9b1f7e111c83f1db845cfd4ea74bb2a317c1e",
+      "rawWorkspaceBlobSha1": "eae9b1f7e111c83f1db845cfd4ea74bb2a317c1e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 242957,
+      "indexBlobSha1": "23df07aa1ab41932005623de2945fe87ed40d706",
+      "rawWorkspaceBlobSha1": "23df07aa1ab41932005623de2945fe87ed40d706",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-dark-8e283-nticated-Notification-modal/trace.zip",
+      "bytes": 4137135,
+      "indexBlobSha1": "7f18a0381b9bb966176904a7c6927656c8da459e",
+      "rawWorkspaceBlobSha1": "7f18a0381b9bb966176904a7c6927656c8da459e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal/error-context.md",
+      "bytes": 4199,
+      "indexBlobSha1": "0e1d9f24462b68eb81c94eae6ad1f76395af9c32",
+      "rawWorkspaceBlobSha1": "0e1d9f24462b68eb81c94eae6ad1f76395af9c32",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 236712,
+      "indexBlobSha1": "f58cd404595dbe3d16a797c18dbf7ce670f71429",
+      "rawWorkspaceBlobSha1": "f58cd404595dbe3d16a797c18dbf7ce670f71429",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-1920-ligh-b38c8-nticated-Notification-modal/trace.zip",
+      "bytes": 4241117,
+      "indexBlobSha1": "6934d980d30a6ccdc5afe012114b9bb1fbaebb3c",
+      "rawWorkspaceBlobSha1": "6934d980d30a6ccdc5afe012114b9bb1fbaebb3c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal/error-context.md",
+      "bytes": 4197,
+      "indexBlobSha1": "be4c3093429d65f5ce33bc72246f9483ff84f673",
+      "rawWorkspaceBlobSha1": "be4c3093429d65f5ce33bc72246f9483ff84f673",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 263952,
+      "indexBlobSha1": "fc7cc24a6c4774ffae195e9183bdb5923eff9d85",
+      "rawWorkspaceBlobSha1": "fc7cc24a6c4774ffae195e9183bdb5923eff9d85",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-dark--5b221-nticated-Notification-modal/trace.zip",
+      "bytes": 4121804,
+      "indexBlobSha1": "3d89b313bb320874a3f5d375d350bfcc5cff4ddd",
+      "rawWorkspaceBlobSha1": "3d89b313bb320874a3f5d375d350bfcc5cff4ddd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal/error-context.md",
+      "bytes": 4198,
+      "indexBlobSha1": "73ea26910c28df295ad090fb2b86030fbf3578e2",
+      "rawWorkspaceBlobSha1": "73ea26910c28df295ad090fb2b86030fbf3578e2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal/test-failed-1.png",
+      "bytes": 262876,
+      "indexBlobSha1": "919918820f48d6ac0cb25efb947ea924155215c5",
+      "rawWorkspaceBlobSha1": "919918820f48d6ac0cb25efb947ea924155215c5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/axe/test-results/axe-F-NC-003-AXE-800-light-f4cee-nticated-Notification-modal/trace.zip",
+      "bytes": 4235905,
+      "indexBlobSha1": "36bb160aff2ec3ba770de4713fe50ffda20ba75a",
+      "rawWorkspaceBlobSha1": "36bb160aff2ec3ba770de4713fe50ffda20ba75a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/execution-delta-index.json",
+      "bytes": 10283,
+      "indexBlobSha1": "f9e90999a2c32cbb06fa6c0feab5659165bdb661",
+      "rawWorkspaceBlobSha1": "f9e90999a2c32cbb06fa6c0feab5659165bdb661",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/execution-final-index.json",
+      "bytes": 57486,
+      "indexBlobSha1": "1847408dac5622a83cae2e46c911096eba63901e",
+      "rawWorkspaceBlobSha1": "1847408dac5622a83cae2e46c911096eba63901e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/execution-index.json",
+      "bytes": 17952,
+      "indexBlobSha1": "ed21c8e16c872f1747ced619d7a13ee66bb7c3d7",
+      "rawWorkspaceBlobSha1": "ed21c8e16c872f1747ced619d7a13ee66bb7c3d7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+      "bytes": 6530,
+      "indexBlobSha1": "a9e74b0de3df816d6c84446da0562cbd09a22055",
+      "rawWorkspaceBlobSha1": "a9e74b0de3df816d6c84446da0562cbd09a22055",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/finalize-delta.mjs",
+      "bytes": 9602,
+      "indexBlobSha1": "b8a4fd3b1c56d959d8b1a3188891789627734775",
+      "rawWorkspaceBlobSha1": "b8a4fd3b1c56d959d8b1a3188891789627734775",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/finalize-report.mjs",
+      "bytes": 20302,
+      "indexBlobSha1": "bfefe51a50ed002246fcfdc7c1cee4d00caef610",
+      "rawWorkspaceBlobSha1": "bfefe51a50ed002246fcfdc7c1cee4d00caef610",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before-command.log",
+      "bytes": 6936,
+      "indexBlobSha1": "91498a3bb3ecd8504018419479f85993927e910d",
+      "rawWorkspaceBlobSha1": "91498a3bb3ecd8504018419479f85993927e910d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/after-toast-dismiss.png",
+      "bytes": 193257,
+      "indexBlobSha1": "3bed55cca9bedea3873156b8a52869afe35efbcc",
+      "rawWorkspaceBlobSha1": "3bed55cca9bedea3873156b8a52869afe35efbcc",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/browser-results.json",
+      "bytes": 17407,
+      "indexBlobSha1": "d977e1fca1d6ffd4d5570af52b4361570ee2ce53",
+      "rawWorkspaceBlobSha1": "d977e1fca1d6ffd4d5570af52b4361570ee2ce53",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/focus-repro.json",
+      "bytes": 911,
+      "indexBlobSha1": "bb2961e8983f793cf316b09d1ab82573d25aa980",
+      "rawWorkspaceBlobSha1": "bb2961e8983f793cf316b09d1ab82573d25aa980",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/.last-run.json",
+      "bytes": 96,
+      "indexBlobSha1": "752c23c2767102dc7184d3ca37d4e04e8d21bb88",
+      "rawWorkspaceBlobSha1": "752c23c2767102dc7184d3ca37d4e04e8d21bb88",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes/error-context.md",
+      "bytes": 20646,
+      "indexBlobSha1": "af72461a7878608394454ddca497207c13ad2069",
+      "rawWorkspaceBlobSha1": "af72461a7878608394454ddca497207c13ad2069",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes/test-failed-1.png",
+      "bytes": 193257,
+      "indexBlobSha1": "3bed55cca9bedea3873156b8a52869afe35efbcc",
+      "rawWorkspaceBlobSha1": "3bed55cca9bedea3873156b8a52869afe35efbcc",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results/focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes/trace.zip",
+      "bytes": 6304700,
+      "indexBlobSha1": "65e2e164e4d96a3c63bd95765d37162f0380b0bf",
+      "rawWorkspaceBlobSha1": "65e2e164e4d96a3c63bd95765d37162f0380b0bf",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-before/toast-close-focused.png",
+      "bytes": 195155,
+      "indexBlobSha1": "bd72d70cc48518441ed85b881992849ce12cf176",
+      "rawWorkspaceBlobSha1": "bd72d70cc48518441ed85b881992849ce12cf176",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-final-command.log",
+      "bytes": 605,
+      "indexBlobSha1": "2061011a5bcae25650c3ba730a33d003ac34e38e",
+      "rawWorkspaceBlobSha1": "2061011a5bcae25650c3ba730a33d003ac34e38e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/after-toast-dismiss.png",
+      "bytes": 193617,
+      "indexBlobSha1": "5e15e30df46c3551a4cc6172bfa19335ab5fd0f2",
+      "rawWorkspaceBlobSha1": "5e15e30df46c3551a4cc6172bfa19335ab5fd0f2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/browser-results.json",
+      "bytes": 5997,
+      "indexBlobSha1": "82eac8b8d0fe3b7fc748d06e865268ef610e6ae6",
+      "rawWorkspaceBlobSha1": "82eac8b8d0fe3b7fc748d06e865268ef610e6ae6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/focus-repro.json",
+      "bytes": 930,
+      "indexBlobSha1": "c680af99b5bfd5d35432b4351cd7f7cadf6d6a82",
+      "rawWorkspaceBlobSha1": "c680af99b5bfd5d35432b4351cd7f7cadf6d6a82",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-final/toast-close-focused.png",
+      "bytes": 195155,
+      "indexBlobSha1": "9febc485e383e1b4317b84b6810a56192a892329",
+      "rawWorkspaceBlobSha1": "9febc485e383e1b4317b84b6810a56192a892329",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/focus-repro.spec.ts",
+      "bytes": 3711,
+      "indexBlobSha1": "ae85437577b1532f74c8deabdda285f7fbfa1e08",
+      "rawWorkspaceBlobSha1": "ae85437577b1532f74c8deabdda285f7fbfa1e08",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/playwright.config.ts",
+      "bytes": 980,
+      "indexBlobSha1": "cf8d4435f5b0ca56c3d4ab55130e0b67538daf82",
+      "rawWorkspaceBlobSha1": "cf8d4435f5b0ca56c3d4ab55130e0b67538daf82",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/report.mjs",
+      "bytes": 8890,
+      "indexBlobSha1": "566a1e7ead98b8ce113dab3ee1d66b39fb6c65e1",
+      "rawWorkspaceBlobSha1": "566a1e7ead98b8ce113dab3ee1d66b39fb6c65e1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/browser-command.log",
+      "bytes": 3961,
+      "indexBlobSha1": "68b136119bd2ffe83862c2c0a466bd234a9b5b35",
+      "rawWorkspaceBlobSha1": "68b136119bd2ffe83862c2c0a466bd234a9b5b35",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/browser-exit-code.txt",
+      "bytes": 3,
+      "indexBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "rawWorkspaceBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/browser-results.json",
+      "bytes": 4776389,
+      "indexBlobSha1": "42e4f607bb4fb98a30184b4a27d1cca8a776c580",
+      "rawWorkspaceBlobSha1": "42e4f607bb4fb98a30184b4a27d1cca8a776c580",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/independent-geometry.json",
+      "bytes": 4553,
+      "indexBlobSha1": "3b9840926107e3be2b4cea1edf7e1fb19b0da445",
+      "rawWorkspaceBlobSha1": "3b9840926107e3be2b4cea1edf7e1fb19b0da445",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/independent-stale-error.png",
+      "bytes": 175176,
+      "indexBlobSha1": "9e6e6b511ccdf6c1faf608cbb2598d020adacce1",
+      "rawWorkspaceBlobSha1": "9e6e6b511ccdf6c1faf608cbb2598d020adacce1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/notification.tap",
+      "bytes": 3797,
+      "indexBlobSha1": "7aa8fa13615c85d9637260764f0adc690a34fc08",
+      "rawWorkspaceBlobSha1": "7aa8fa13615c85d9637260764f0adc690a34fc08",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/session-concurrency.tap",
+      "bytes": 1030,
+      "indexBlobSha1": "fb451fd59eff0ed77468ecc20eba5d5c3815ccbd",
+      "rawWorkspaceBlobSha1": "fb451fd59eff0ed77468ecc20eba5d5c3815ccbd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/sha-end.txt",
+      "bytes": 42,
+      "indexBlobSha1": "fb99c5185dd46561690c7a7c611806adceeb35c0",
+      "rawWorkspaceBlobSha1": "fb99c5185dd46561690c7a7c611806adceeb35c0",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/sha-start.txt",
+      "bytes": 42,
+      "indexBlobSha1": "fb99c5185dd46561690c7a7c611806adceeb35c0",
+      "rawWorkspaceBlobSha1": "fb99c5185dd46561690c7a7c611806adceeb35c0",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/source-tree-end.txt",
+      "bytes": 42,
+      "indexBlobSha1": "5ccaf102641855cdbf2b0146750ccb9e9b1e871c",
+      "rawWorkspaceBlobSha1": "5ccaf102641855cdbf2b0146750ccb9e9b1e871c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/source-tree-start.txt",
+      "bytes": 42,
+      "indexBlobSha1": "5ccaf102641855cdbf2b0146750ccb9e9b1e871c",
+      "rawWorkspaceBlobSha1": "5ccaf102641855cdbf2b0146750ccb9e9b1e871c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/typecheck.log",
+      "bytes": 85,
+      "indexBlobSha1": "4704c4d01d98330cdfdadde1c2a55979400b7b2e",
+      "rawWorkspaceBlobSha1": "4704c4d01d98330cdfdadde1c2a55979400b7b2e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/working-source-end.diff",
+      "bytes": 0,
+      "indexBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "rawWorkspaceBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-after/working-source-start.diff",
+      "bytes": 0,
+      "indexBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "rawWorkspaceBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/browser-results.json",
+      "bytes": 21077,
+      "indexBlobSha1": "876dfebfb81fd28f6637b61b02581ea0a535a643",
+      "rawWorkspaceBlobSha1": "876dfebfb81fd28f6637b61b02581ea0a535a643",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/browser.log",
+      "bytes": 3764,
+      "indexBlobSha1": "0bf73d246fe616331b0cfdd6f12f43d04db3c675",
+      "rawWorkspaceBlobSha1": "0bf73d246fe616331b0cfdd6f12f43d04db3c675",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/independent-geometry.json",
+      "bytes": 4553,
+      "indexBlobSha1": "85844f3135bb6db69b92c7a8adffaaeb6f5b0b66",
+      "rawWorkspaceBlobSha1": "85844f3135bb6db69b92c7a8adffaaeb6f5b0b66",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/independent-stale-error.png",
+      "bytes": 175387,
+      "indexBlobSha1": "365dad9ddee89f3024823874d6ece358e1afd6d7",
+      "rawWorkspaceBlobSha1": "365dad9ddee89f3024823874d6ece358e1afd6d7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/node-exit.txt",
+      "bytes": 3,
+      "indexBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "rawWorkspaceBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/notification.tap",
+      "bytes": 3793,
+      "indexBlobSha1": "962af84a838fa1dcd716e661df818b66426be22a",
+      "rawWorkspaceBlobSha1": "962af84a838fa1dcd716e661df818b66426be22a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/session-concurrency.tap",
+      "bytes": 1030,
+      "indexBlobSha1": "2ccea3c0501a128db27ef4eb816aa90df4793fb9",
+      "rawWorkspaceBlobSha1": "2ccea3c0501a128db27ef4eb816aa90df4793fb9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/session-exit.txt",
+      "bytes": 3,
+      "indexBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "rawWorkspaceBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/sha-end.txt",
+      "bytes": 41,
+      "indexBlobSha1": "37f16ad5d39914f85cce6fa1d546704cd5c80fe3",
+      "rawWorkspaceBlobSha1": "37f16ad5d39914f85cce6fa1d546704cd5c80fe3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/sha-start.txt",
+      "bytes": 41,
+      "indexBlobSha1": "37f16ad5d39914f85cce6fa1d546704cd5c80fe3",
+      "rawWorkspaceBlobSha1": "37f16ad5d39914f85cce6fa1d546704cd5c80fe3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/source-diff.txt",
+      "bytes": 0,
+      "indexBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "rawWorkspaceBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/source-tree-end.txt",
+      "bytes": 41,
+      "indexBlobSha1": "440cdde861560b1118583cadfa337911ef537c2a",
+      "rawWorkspaceBlobSha1": "440cdde861560b1118583cadfa337911ef537c2a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/source-tree-start.txt",
+      "bytes": 41,
+      "indexBlobSha1": "440cdde861560b1118583cadfa337911ef537c2a",
+      "rawWorkspaceBlobSha1": "440cdde861560b1118583cadfa337911ef537c2a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/typecheck-exit.txt",
+      "bytes": 3,
+      "indexBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "rawWorkspaceBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-before/typecheck.log",
+      "bytes": 85,
+      "indexBlobSha1": "4704c4d01d98330cdfdadde1c2a55979400b7b2e",
+      "rawWorkspaceBlobSha1": "4704c4d01d98330cdfdadde1c2a55979400b7b2e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/browser-command.log",
+      "bytes": 3961,
+      "indexBlobSha1": "e111c18182be08470b96067d57d578048a85b570",
+      "rawWorkspaceBlobSha1": "e111c18182be08470b96067d57d578048a85b570",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/browser-exit-code.txt",
+      "bytes": 3,
+      "indexBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "rawWorkspaceBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/browser-results.json",
+      "bytes": 4777409,
+      "indexBlobSha1": "5211eb0d244dcbbfd98d059880ef4d36e97e83df",
+      "rawWorkspaceBlobSha1": "5211eb0d244dcbbfd98d059880ef4d36e97e83df",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/independent-geometry.json",
+      "bytes": 4553,
+      "indexBlobSha1": "3b9840926107e3be2b4cea1edf7e1fb19b0da445",
+      "rawWorkspaceBlobSha1": "3b9840926107e3be2b4cea1edf7e1fb19b0da445",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/independent-stale-error.png",
+      "bytes": 175219,
+      "indexBlobSha1": "85e71d4b1e8b4e684bee139fcde260cedd7d9634",
+      "rawWorkspaceBlobSha1": "85e71d4b1e8b4e684bee139fcde260cedd7d9634",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/node-exit-codes.json",
+      "bytes": 55,
+      "indexBlobSha1": "170c4dd3322beb6cb1ffc9be5f52fb1a333293c4",
+      "rawWorkspaceBlobSha1": "170c4dd3322beb6cb1ffc9be5f52fb1a333293c4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/notification.tap",
+      "bytes": 3798,
+      "indexBlobSha1": "c5ccb4d9ed39c511504a5261aabba68ad103170d",
+      "rawWorkspaceBlobSha1": "c5ccb4d9ed39c511504a5261aabba68ad103170d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/session-concurrency.tap",
+      "bytes": 1028,
+      "indexBlobSha1": "8db0678b87db4f3ebb4c559ebe8df31a6d360922",
+      "rawWorkspaceBlobSha1": "8db0678b87db4f3ebb4c559ebe8df31a6d360922",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-browser-start.txt",
+      "bytes": 42,
+      "indexBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "rawWorkspaceBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-end.txt",
+      "bytes": 42,
+      "indexBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "rawWorkspaceBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-nodes-end.txt",
+      "bytes": 42,
+      "indexBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "rawWorkspaceBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/sha-start.txt",
+      "bytes": 42,
+      "indexBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "rawWorkspaceBlobSha1": "bbfd1114f9a1739c2f709d321ab600626775fbdd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/source-tree-browser-start.txt",
+      "bytes": 42,
+      "indexBlobSha1": "0139bce803d10d9e80f118773033e79a71b5a60e",
+      "rawWorkspaceBlobSha1": "0139bce803d10d9e80f118773033e79a71b5a60e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/source-tree-end.txt",
+      "bytes": 42,
+      "indexBlobSha1": "0139bce803d10d9e80f118773033e79a71b5a60e",
+      "rawWorkspaceBlobSha1": "0139bce803d10d9e80f118773033e79a71b5a60e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/source-tree-start.txt",
+      "bytes": 42,
+      "indexBlobSha1": "0139bce803d10d9e80f118773033e79a71b5a60e",
+      "rawWorkspaceBlobSha1": "0139bce803d10d9e80f118773033e79a71b5a60e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/typecheck.log",
+      "bytes": 85,
+      "indexBlobSha1": "4704c4d01d98330cdfdadde1c2a55979400b7b2e",
+      "rawWorkspaceBlobSha1": "4704c4d01d98330cdfdadde1c2a55979400b7b2e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/working-source-end.diff",
+      "bytes": 0,
+      "indexBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "rawWorkspaceBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-final/working-source-start.diff",
+      "bytes": 0,
+      "indexBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "rawWorkspaceBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-session/browser-exit.txt",
+      "bytes": 3,
+      "indexBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "rawWorkspaceBlobSha1": "18748286e5b8b4de5db905f87cdfed1a7d48fe60",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-session/browser-results.json",
+      "bytes": 1101059,
+      "indexBlobSha1": "868f6f22363070bb92cc682cbfa096bd64a1d71a",
+      "rawWorkspaceBlobSha1": "868f6f22363070bb92cc682cbfa096bd64a1d71a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-session/browser.log",
+      "bytes": 608,
+      "indexBlobSha1": "65dd6e1ad7f7d7aff7189f13d8905df0f59b9713",
+      "rawWorkspaceBlobSha1": "65dd6e1ad7f7d7aff7189f13d8905df0f59b9713",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/run-session/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/session-concurrency.test.ts",
+      "bytes": 1927,
+      "indexBlobSha1": "8283e017dd2e5de9834e065232a829b88e1dde59",
+      "rawWorkspaceBlobSha1": "8283e017dd2e5de9834e065232a829b88e1dde59",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-after/browser-results.json",
+      "bytes": 6301,
+      "indexBlobSha1": "f322ba6419eac7ecdeebaff82f770b383292f406",
+      "rawWorkspaceBlobSha1": "f322ba6419eac7ecdeebaff82f770b383292f406",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-command.log",
+      "bytes": 5972,
+      "indexBlobSha1": "c673ae6b3851a11342474180601a23f9ec820cb7",
+      "rawWorkspaceBlobSha1": "c673ae6b3851a11342474180601a23f9ec820cb7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic-command.log",
+      "bytes": 13186,
+      "indexBlobSha1": "4d2098ae7c88264796af8fe81d8e9ee9534ee957",
+      "rawWorkspaceBlobSha1": "4d2098ae7c88264796af8fe81d8e9ee9534ee957",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-detail-0.png",
+      "bytes": 236788,
+      "indexBlobSha1": "fe1cbf6ada2fab673567df04d0b0b89f04bf2ce1",
+      "rawWorkspaceBlobSha1": "fe1cbf6ada2fab673567df04d0b0b89f04bf2ce1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-detail-1.png",
+      "bytes": 222000,
+      "indexBlobSha1": "bba8465555c6ad534108723a58b035113a433c1b",
+      "rawWorkspaceBlobSha1": "bba8465555c6ad534108723a58b035113a433c1b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-detail-2.png",
+      "bytes": 224626,
+      "indexBlobSha1": "b28871f775e47cf28f811f5045a1683b01eae127",
+      "rawWorkspaceBlobSha1": "b28871f775e47cf28f811f5045a1683b01eae127",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-feedback.png",
+      "bytes": 195992,
+      "indexBlobSha1": "96b6114e546570322f0cf1fb147d2a841e932393",
+      "rawWorkspaceBlobSha1": "96b6114e546570322f0cf1fb147d2a841e932393",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-modal-queued.png",
+      "bytes": 224268,
+      "indexBlobSha1": "26275762c96b09254daaf3f69f1a4b4c08491468",
+      "rawWorkspaceBlobSha1": "26275762c96b09254daaf3f69f1a4b4c08491468",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light-s01-detail.png",
+      "bytes": 198480,
+      "indexBlobSha1": "8279cacf81589db45f27b15320596afde8b2a746",
+      "rawWorkspaceBlobSha1": "8279cacf81589db45f27b15320596afde8b2a746",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/1920-light.json",
+      "bytes": 351125,
+      "indexBlobSha1": "c8182686d4781b80551db91c934e030ac72f41d2",
+      "rawWorkspaceBlobSha1": "c8182686d4781b80551db91c934e030ac72f41d2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/browser-results.json",
+      "bytes": 327510,
+      "indexBlobSha1": "1cd075b0b503324d60f1989c8e1cfc0594704958",
+      "rawWorkspaceBlobSha1": "1cd075b0b503324d60f1989c8e1cfc0594704958",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/contrast-1920-light.json",
+      "bytes": 348351,
+      "indexBlobSha1": "e3bc25f7a4fd4d02af232773c30e0a6e59d8d1c8",
+      "rawWorkspaceBlobSha1": "e3bc25f7a4fd4d02af232773c30e0a6e59d8d1c8",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/.last-run.json",
+      "bytes": 96,
+      "indexBlobSha1": "0f5e4a127eee73bb9c943497478682af181acf6c",
+      "rawWorkspaceBlobSha1": "0f5e4a127eee73bb9c943497478682af181acf6c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks/error-context.md",
+      "bytes": 34104,
+      "indexBlobSha1": "214120ebb63ecd5c6596b5586f17a6ed2ea8175c",
+      "rawWorkspaceBlobSha1": "214120ebb63ecd5c6596b5586f17a6ed2ea8175c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks/test-failed-1.png",
+      "bytes": 193920,
+      "indexBlobSha1": "a12b2d4c8d9eefdfef6e2286a92c404efc6ce7e7",
+      "rawWorkspaceBlobSha1": "a12b2d4c8d9eefdfef6e2286a92c404efc6ce7e7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-diagnostic/test-results/shared-regression-F-NC-003-3ec19-ck-and-contrast-spot-checks/trace.zip",
+      "bytes": 8313146,
+      "indexBlobSha1": "abc6b87653150fe05cf6ed95a9f8672d01b30b56",
+      "rawWorkspaceBlobSha1": "abc6b87653150fe05cf6ed95a9f8672d01b30b56",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry-command.log",
+      "bytes": 617,
+      "indexBlobSha1": "c7aab1c80012ec9f73d97279f63fa11f74d9032d",
+      "rawWorkspaceBlobSha1": "c7aab1c80012ec9f73d97279f63fa11f74d9032d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-0.png",
+      "bytes": 97601,
+      "indexBlobSha1": "8b68842a3f1b95aa430d6a40db064019e9a88680",
+      "rawWorkspaceBlobSha1": "8b68842a3f1b95aa430d6a40db064019e9a88680",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-1.png",
+      "bytes": 81812,
+      "indexBlobSha1": "5d140e0a2cc18beaa844603b393edacf29a2fd93",
+      "rawWorkspaceBlobSha1": "5d140e0a2cc18beaa844603b393edacf29a2fd93",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-2.png",
+      "bytes": 82946,
+      "indexBlobSha1": "a19dd18f71dd4c8c21cfc6835b68e9c866c5cf6d",
+      "rawWorkspaceBlobSha1": "a19dd18f71dd4c8c21cfc6835b68e9c866c5cf6d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-detail-3.png",
+      "bytes": 85013,
+      "indexBlobSha1": "f36d7bc3cd02394b88ba72f0ae55f172a4c2636b",
+      "rawWorkspaceBlobSha1": "f36d7bc3cd02394b88ba72f0ae55f172a4c2636b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-feedback.png",
+      "bytes": 135717,
+      "indexBlobSha1": "7c44c5de01a36d07281808c631ff8b9fff14ecd4",
+      "rawWorkspaceBlobSha1": "7c44c5de01a36d07281808c631ff8b9fff14ecd4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-modal-queued.png",
+      "bytes": 114598,
+      "indexBlobSha1": "0374bf6af7c43f559a92f0c4b5260658d13408dd",
+      "rawWorkspaceBlobSha1": "0374bf6af7c43f559a92f0c4b5260658d13408dd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark-s01-detail.png",
+      "bytes": 74089,
+      "indexBlobSha1": "bb411dff323df9df0316330e3c34a3423d5ffce1",
+      "rawWorkspaceBlobSha1": "bb411dff323df9df0316330e3c34a3423d5ffce1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/800-dark.json",
+      "bytes": 166256,
+      "indexBlobSha1": "1f7b66aa165fafec18cc67f9baf1783fe184c968",
+      "rawWorkspaceBlobSha1": "1f7b66aa165fafec18cc67f9baf1783fe184c968",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/browser-results.json",
+      "bytes": 134505,
+      "indexBlobSha1": "31e689927a799c4aa0e29ddf990bc30d0990747b",
+      "rawWorkspaceBlobSha1": "31e689927a799c4aa0e29ddf990bc30d0990747b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/contrast-800-dark.json",
+      "bytes": 164361,
+      "indexBlobSha1": "e86d5a97f8159941bd7cdf284f0df22608ad42a9",
+      "rawWorkspaceBlobSha1": "e86d5a97f8159941bd7cdf284f0df22608ad42a9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final-retry/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-0.png",
+      "bytes": 242871,
+      "indexBlobSha1": "91eb0ec4554371b62782f49629cb8cc16280b0d8",
+      "rawWorkspaceBlobSha1": "91eb0ec4554371b62782f49629cb8cc16280b0d8",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-1.png",
+      "bytes": 227705,
+      "indexBlobSha1": "dbc4eb000cedb3fe47cacf51469a05b8235b72a2",
+      "rawWorkspaceBlobSha1": "dbc4eb000cedb3fe47cacf51469a05b8235b72a2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-2.png",
+      "bytes": 230025,
+      "indexBlobSha1": "912275efff5e43d210b5a1e85887a14b26b9c484",
+      "rawWorkspaceBlobSha1": "912275efff5e43d210b5a1e85887a14b26b9c484",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-detail-3.png",
+      "bytes": 231159,
+      "indexBlobSha1": "e553bcb53ee81628229e8ba64ac514340b859194",
+      "rawWorkspaceBlobSha1": "e553bcb53ee81628229e8ba64ac514340b859194",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-feedback.png",
+      "bytes": 199612,
+      "indexBlobSha1": "e25d3631c288e95a05fb41daf1a5ac112bd4bf06",
+      "rawWorkspaceBlobSha1": "e25d3631c288e95a05fb41daf1a5ac112bd4bf06",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-modal-queued.png",
+      "bytes": 230434,
+      "indexBlobSha1": "39334cec2346910f681e4b01cfb525d08c22c196",
+      "rawWorkspaceBlobSha1": "39334cec2346910f681e4b01cfb525d08c22c196",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark-s01-detail.png",
+      "bytes": 200237,
+      "indexBlobSha1": "4ef176a5ce2d5a854830712ff7efd4a5de32e632",
+      "rawWorkspaceBlobSha1": "4ef176a5ce2d5a854830712ff7efd4a5de32e632",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-dark.json",
+      "bytes": 437184,
+      "indexBlobSha1": "6335c1236968a681a753e4009bb102815c9eb939",
+      "rawWorkspaceBlobSha1": "6335c1236968a681a753e4009bb102815c9eb939",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-0.png",
+      "bytes": 236917,
+      "indexBlobSha1": "d3253d1c966f6676f126466d7f10c12ccd71bc59",
+      "rawWorkspaceBlobSha1": "d3253d1c966f6676f126466d7f10c12ccd71bc59",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-1.png",
+      "bytes": 222149,
+      "indexBlobSha1": "dc7b73a447bf0155bd869750706228420811bf3c",
+      "rawWorkspaceBlobSha1": "dc7b73a447bf0155bd869750706228420811bf3c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-2.png",
+      "bytes": 224675,
+      "indexBlobSha1": "e4e902a2971b1a6825f2f7a3af3aa816f9cfbb59",
+      "rawWorkspaceBlobSha1": "e4e902a2971b1a6825f2f7a3af3aa816f9cfbb59",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-detail-3.png",
+      "bytes": 225878,
+      "indexBlobSha1": "d8b0fe60fbe85baaab7322ecf05be1c6e6495f94",
+      "rawWorkspaceBlobSha1": "d8b0fe60fbe85baaab7322ecf05be1c6e6495f94",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-feedback.png",
+      "bytes": 195992,
+      "indexBlobSha1": "b5402fe2d42a7f587a9a45dad0267202511ea2f4",
+      "rawWorkspaceBlobSha1": "b5402fe2d42a7f587a9a45dad0267202511ea2f4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-modal-queued.png",
+      "bytes": 225537,
+      "indexBlobSha1": "7504df5e7fe66bcc162ae0fe8c43f25f33597819",
+      "rawWorkspaceBlobSha1": "7504df5e7fe66bcc162ae0fe8c43f25f33597819",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light-s01-detail.png",
+      "bytes": 198480,
+      "indexBlobSha1": "8279cacf81589db45f27b15320596afde8b2a746",
+      "rawWorkspaceBlobSha1": "8279cacf81589db45f27b15320596afde8b2a746",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/1920-light.json",
+      "bytes": 437705,
+      "indexBlobSha1": "f05c15efda2e65302fb295e1ef17752f650be4cf",
+      "rawWorkspaceBlobSha1": "f05c15efda2e65302fb295e1ef17752f650be4cf",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-0.png",
+      "bytes": 97155,
+      "indexBlobSha1": "f9f669c925876b00d60e56c0d8c9c1893000cc43",
+      "rawWorkspaceBlobSha1": "f9f669c925876b00d60e56c0d8c9c1893000cc43",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-1.png",
+      "bytes": 81777,
+      "indexBlobSha1": "76e5404d02b5732f04ea2b9c638bc410eb65b26b",
+      "rawWorkspaceBlobSha1": "76e5404d02b5732f04ea2b9c638bc410eb65b26b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-2.png",
+      "bytes": 82994,
+      "indexBlobSha1": "9cc68afb370130ad264a7f42d2f82829fdc5eb4a",
+      "rawWorkspaceBlobSha1": "9cc68afb370130ad264a7f42d2f82829fdc5eb4a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-detail-3.png",
+      "bytes": 85279,
+      "indexBlobSha1": "5b6414ccd364d4f40843bfb2f76d83d91fc2596b",
+      "rawWorkspaceBlobSha1": "5b6414ccd364d4f40843bfb2f76d83d91fc2596b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-feedback.png",
+      "bytes": 133502,
+      "indexBlobSha1": "ccde63a0d1d284732dd36fff94f54fc2f2fca68c",
+      "rawWorkspaceBlobSha1": "ccde63a0d1d284732dd36fff94f54fc2f2fca68c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-modal-queued.png",
+      "bytes": 114077,
+      "indexBlobSha1": "fd9afc3665d14999e8faae2824af5d93ea54af20",
+      "rawWorkspaceBlobSha1": "fd9afc3665d14999e8faae2824af5d93ea54af20",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light-s01-detail.png",
+      "bytes": 75367,
+      "indexBlobSha1": "910092bae7a77a9619a19a0af51e56fd48d7e457",
+      "rawWorkspaceBlobSha1": "910092bae7a77a9619a19a0af51e56fd48d7e457",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/800-light.json",
+      "bytes": 166475,
+      "indexBlobSha1": "cdd74311d4a31b34b42b02eefa11494b9dd289f5",
+      "rawWorkspaceBlobSha1": "cdd74311d4a31b34b42b02eefa11494b9dd289f5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/blank-page-trace-summary.json",
+      "bytes": 2243,
+      "indexBlobSha1": "dc02474db23980b9afb31a78b489dde26579814c",
+      "rawWorkspaceBlobSha1": "dc02474db23980b9afb31a78b489dde26579814c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/browser-results.json",
+      "bytes": 820748,
+      "indexBlobSha1": "733d31ed8c044a998cb1e9ca58d962dfe99422cb",
+      "rawWorkspaceBlobSha1": "733d31ed8c044a998cb1e9ca58d962dfe99422cb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/contrast-1920-dark.json",
+      "bytes": 434411,
+      "indexBlobSha1": "7d702b64224c8b266a2d2bf0bc9d3527801e3b3c",
+      "rawWorkspaceBlobSha1": "7d702b64224c8b266a2d2bf0bc9d3527801e3b3c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/contrast-1920-light.json",
+      "bytes": 434931,
+      "indexBlobSha1": "3863886d9b6614191b6603e578802b41ef4dbc88",
+      "rawWorkspaceBlobSha1": "3863886d9b6614191b6603e578802b41ef4dbc88",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/contrast-800-light.json",
+      "bytes": 164579,
+      "indexBlobSha1": "509e56df064a95cf8c5a6bcdf35155983466d493",
+      "rawWorkspaceBlobSha1": "509e56df064a95cf8c5a6bcdf35155983466d493",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/.last-run.json",
+      "bytes": 96,
+      "indexBlobSha1": "e8128c59bfbae100d160a87b3adffa4ae08bf604",
+      "rawWorkspaceBlobSha1": "e8128c59bfbae100d160a87b3adffa4ae08bf604",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/shared-regression-F-NC-003-5d13e-ck-and-contrast-spot-checks/error-context.md",
+      "bytes": 11825,
+      "indexBlobSha1": "09f2cc321bfe66a98ddafeb63a3bfeb5da0d04d3",
+      "rawWorkspaceBlobSha1": "09f2cc321bfe66a98ddafeb63a3bfeb5da0d04d3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/shared-regression-F-NC-003-5d13e-ck-and-contrast-spot-checks/test-failed-1.png",
+      "bytes": 5715,
+      "indexBlobSha1": "89c0b901debe46a3bd3e62ee78faff7d0bb70053",
+      "rawWorkspaceBlobSha1": "89c0b901debe46a3bd3e62ee78faff7d0bb70053",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-final/test-results/shared-regression-F-NC-003-5d13e-ck-and-contrast-spot-checks/trace.zip",
+      "bytes": 18732,
+      "indexBlobSha1": "4a8dfbc6be23e930342e459c314fa1927c887bb3",
+      "rawWorkspaceBlobSha1": "4a8dfbc6be23e930342e459c314fa1927c887bb3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-regression.config.ts",
+      "bytes": 812,
+      "indexBlobSha1": "f5eedf7d4e20664ff7450dc3a32d4d7a620ef78d",
+      "rawWorkspaceBlobSha1": "f5eedf7d4e20664ff7450dc3a32d4d7a620ef78d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/shared-regression.spec.ts",
+      "bytes": 10724,
+      "indexBlobSha1": "612cd1cbc7d5e17658eb35c941eda438e3eab838",
+      "rawWorkspaceBlobSha1": "612cd1cbc7d5e17658eb35c941eda438e3eab838",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final-command.log",
+      "bytes": 8605,
+      "indexBlobSha1": "da90d9cc7c643963388e47f876876edfcf0d0bc0",
+      "rawWorkspaceBlobSha1": "da90d9cc7c643963388e47f876876edfcf0d0bc0",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-after-filtered-read.png",
+      "bytes": 79211,
+      "indexBlobSha1": "46a29b2ac70e7e597bcd12b14733e30aee9148a7",
+      "rawWorkspaceBlobSha1": "46a29b2ac70e7e597bcd12b14733e30aee9148a7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-all-read.png",
+      "bytes": 137712,
+      "indexBlobSha1": "7fd867ee594f1088a18439090e44d5a44da788b0",
+      "rawWorkspaceBlobSha1": "7fd867ee594f1088a18439090e44d5a44da788b0",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-detail.png",
+      "bytes": 87299,
+      "indexBlobSha1": "6ae8f80abc895b1e9355b01b2bf6c69b8d21efb4",
+      "rawWorkspaceBlobSha1": "6ae8f80abc895b1e9355b01b2bf6c69b8d21efb4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light-initial.png",
+      "bytes": 141450,
+      "indexBlobSha1": "bcb1f4e557cd28db2fede0e8123ceb57f1a8ca42",
+      "rawWorkspaceBlobSha1": "bcb1f4e557cd28db2fede0e8123ceb57f1a8ca42",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/900-en-light.json",
+      "bytes": 43698,
+      "indexBlobSha1": "d2a9c3d96b6c5060da9d6b64e537dee386e531fb",
+      "rawWorkspaceBlobSha1": "d2a9c3d96b6c5060da9d6b64e537dee386e531fb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-after-filtered-read.png",
+      "bytes": 96469,
+      "indexBlobSha1": "b367cbdf1e80b7597838f39ebb8b1546865fe812",
+      "rawWorkspaceBlobSha1": "b367cbdf1e80b7597838f39ebb8b1546865fe812",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-all-read.png",
+      "bytes": 162451,
+      "indexBlobSha1": "4aa39534c8f1a965e9d261def5b1814a91bac9b1",
+      "rawWorkspaceBlobSha1": "4aa39534c8f1a965e9d261def5b1814a91bac9b1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-detail.png",
+      "bytes": 104061,
+      "indexBlobSha1": "e9246ead69b6cb50e240ab4f0331e6d3c440177e",
+      "rawWorkspaceBlobSha1": "e9246ead69b6cb50e240ab4f0331e6d3c440177e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark-initial.png",
+      "bytes": 159228,
+      "indexBlobSha1": "da66f6724b9de0599c369a40507dad4e4b31d422",
+      "rawWorkspaceBlobSha1": "da66f6724b9de0599c369a40507dad4e4b31d422",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-dark.json",
+      "bytes": 49713,
+      "indexBlobSha1": "a54a0755c5d5009942ae53b4f1ea803cf16a276b",
+      "rawWorkspaceBlobSha1": "a54a0755c5d5009942ae53b4f1ea803cf16a276b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-after-filtered-read.png",
+      "bytes": 96677,
+      "indexBlobSha1": "0d89ede0b6ffa3f7627b7e5ca3098c20aa94f6a4",
+      "rawWorkspaceBlobSha1": "0d89ede0b6ffa3f7627b7e5ca3098c20aa94f6a4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-all-read.png",
+      "bytes": 162385,
+      "indexBlobSha1": "29e018d4c4fea3008010118d83840647dab60867",
+      "rawWorkspaceBlobSha1": "29e018d4c4fea3008010118d83840647dab60867",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-detail.png",
+      "bytes": 104025,
+      "indexBlobSha1": "511825dc76f16f2b17a507fffb26bb8e69c0050b",
+      "rawWorkspaceBlobSha1": "511825dc76f16f2b17a507fffb26bb8e69c0050b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light-initial.png",
+      "bytes": 159259,
+      "indexBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "rawWorkspaceBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/992-vi-light.json",
+      "bytes": 49714,
+      "indexBlobSha1": "450355995948e4ed71a3310436bbb3c79fa68a36",
+      "rawWorkspaceBlobSha1": "450355995948e4ed71a3310436bbb3c79fa68a36",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/browser-results.json",
+      "bytes": 109501,
+      "indexBlobSha1": "5a056478822ab1df089fd9f3d2e79687e6923fdc",
+      "rawWorkspaceBlobSha1": "5a056478822ab1df089fd9f3d2e79687e6923fdc",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/source-delta.diff",
+      "bytes": 3450,
+      "indexBlobSha1": "f85f50fac5ccaa2702ba7be499af32d5ada422c4",
+      "rawWorkspaceBlobSha1": "f85f50fac5ccaa2702ba7be499af32d5ada422c4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/source-provenance.json",
+      "bytes": 10283,
+      "indexBlobSha1": "f9e90999a2c32cbb06fa6c0feab5659165bdb661",
+      "rawWorkspaceBlobSha1": "f9e90999a2c32cbb06fa6c0feab5659165bdb661",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/.last-run.json",
+      "bytes": 96,
+      "indexBlobSha1": "03a9d7b3137ca0e1b2f3ca3b5d9ecbd78bc93c3e",
+      "rawWorkspaceBlobSha1": "03a9d7b3137ca0e1b2f3ca3b5d9ecbd78bc93c3e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback/error-context.md",
+      "bytes": 11077,
+      "indexBlobSha1": "cb6a0f8b643f46beb46d1d672dd2c355b94443e1",
+      "rawWorkspaceBlobSha1": "cb6a0f8b643f46beb46d1d672dd2c355b94443e1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback/test-failed-1.png",
+      "bytes": 30041,
+      "indexBlobSha1": "ddf9a156bb46c43ad28334389c6a9df3d4e81c73",
+      "rawWorkspaceBlobSha1": "ddf9a156bb46c43ad28334389c6a9df3d4e81c73",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/test-results/tablet-delta-F-NC-003-DELT-6b66c--detail-and-shared-feedback/trace.zip",
+      "bytes": 3150367,
+      "indexBlobSha1": "57fde85544ae7a7ebf6fff8e5077fd8a2edfb4c6",
+      "rawWorkspaceBlobSha1": "57fde85544ae7a7ebf6fff8e5077fd8a2edfb4c6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest-command.log",
+      "bytes": 596,
+      "indexBlobSha1": "f84230386b72eec61c4a5ab7ee9a3dc7a2415068",
+      "rawWorkspaceBlobSha1": "f84230386b72eec61c4a5ab7ee9a3dc7a2415068",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-after-filtered-read.png",
+      "bytes": 55709,
+      "indexBlobSha1": "89f46cb753be4d3c6283f6b82c289e740ca128fd",
+      "rawWorkspaceBlobSha1": "89f46cb753be4d3c6283f6b82c289e740ca128fd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-all-read.png",
+      "bytes": 103097,
+      "indexBlobSha1": "41ec3f3fb91e60cce96897d4efc16484ea1e58ce",
+      "rawWorkspaceBlobSha1": "41ec3f3fb91e60cce96897d4efc16484ea1e58ce",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-detail.png",
+      "bytes": 55426,
+      "indexBlobSha1": "252c228c3a85d438b2b648e422e76c5bfd634352",
+      "rawWorkspaceBlobSha1": "252c228c3a85d438b2b648e422e76c5bfd634352",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light-initial.png",
+      "bytes": 107148,
+      "indexBlobSha1": "e15eb52977b2026b9a9da76cd97802ad81000e19",
+      "rawWorkspaceBlobSha1": "e15eb52977b2026b9a9da76cd97802ad81000e19",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/801-zh-CN-light.json",
+      "bytes": 43411,
+      "indexBlobSha1": "37d2c16c4c2d5fd9a4c4ec1a590623c5364eb36e",
+      "rawWorkspaceBlobSha1": "37d2c16c4c2d5fd9a4c4ec1a590623c5364eb36e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/browser-results.json",
+      "bytes": 30555,
+      "indexBlobSha1": "330b099a26f31024c8d315cd683020bea6420d54",
+      "rawWorkspaceBlobSha1": "330b099a26f31024c8d315cd683020bea6420d54",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta.config.ts",
+      "bytes": 779,
+      "indexBlobSha1": "63fd28e06a3dd6e4557f3b1e5bb5653803e68727",
+      "rawWorkspaceBlobSha1": "63fd28e06a3dd6e4557f3b1e5bb5653803e68727",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta.spec.ts",
+      "bytes": 9119,
+      "indexBlobSha1": "c7383ca0a4f0d0eb691fa3fb9f48a6e2b16609ee",
+      "rawWorkspaceBlobSha1": "c7383ca0a4f0d0eb691fa3fb9f48a6e2b16609ee",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta/browser-results.json",
+      "bytes": 6166,
+      "indexBlobSha1": "0de8a6d4502d21fd48d310e02dde518a481075a5",
+      "rawWorkspaceBlobSha1": "0de8a6d4502d21fd48d310e02dde518a481075a5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-113/actual-before.png",
+      "bytes": 159248,
+      "indexBlobSha1": "3986d2d882284507e40d408606cf95294d566194",
+      "rawWorkspaceBlobSha1": "3986d2d882284507e40d408606cf95294d566194",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-113/actual-injected-stable.png",
+      "bytes": 159259,
+      "indexBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "rawWorkspaceBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-113/candidate-results.json",
+      "bytes": 60733,
+      "indexBlobSha1": "21bdb27080bc1bb2a32c411e6a84639915c53265",
+      "rawWorkspaceBlobSha1": "21bdb27080bc1bb2a32c411e6a84639915c53265",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-113/geometry-improvement.json",
+      "bytes": 1412,
+      "indexBlobSha1": "93d5443fc8bb1d5f09279ef0fac03f57528d8ce9",
+      "rawWorkspaceBlobSha1": "93d5443fc8bb1d5f09279ef0fac03f57528d8ce9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-probe.mjs",
+      "bytes": 6867,
+      "indexBlobSha1": "e5bbb9494b86bd4c7b98d534cfe8a614ab0ef881",
+      "rawWorkspaceBlobSha1": "e5bbb9494b86bd4c7b98d534cfe8a614ab0ef881",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-source/actual-before.png",
+      "bytes": 159259,
+      "indexBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "rawWorkspaceBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-source/actual-source.png",
+      "bytes": 159259,
+      "indexBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "rawWorkspaceBlobSha1": "5d2a5280c99572343fb45c81fba211053cd26061",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-source/candidate-results.json",
+      "bytes": 68507,
+      "indexBlobSha1": "36818113a1afc67f566cd3d99904c2b44bc23049",
+      "rawWorkspaceBlobSha1": "36818113a1afc67f566cd3d99904c2b44bc23049",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-source/postcommit-custody.json",
+      "bytes": 2372,
+      "indexBlobSha1": "625cb80a7c09ee7c2ca38e61fd1c5970f0ad8224",
+      "rawWorkspaceBlobSha1": "625cb80a7c09ee7c2ca38e61fd1c5970f0ad8224",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet/actual-before.png",
+      "bytes": 159248,
+      "indexBlobSha1": "3986d2d882284507e40d408606cf95294d566194",
+      "rawWorkspaceBlobSha1": "3986d2d882284507e40d408606cf95294d566194",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet/actual-injected-stable.png",
+      "bytes": 159231,
+      "indexBlobSha1": "4f8dbdba422f5921b4a1c76ce615e4eb3621a56a",
+      "rawWorkspaceBlobSha1": "4f8dbdba422f5921b4a1c76ce615e4eb3621a56a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet/candidate-results.json",
+      "bytes": 48258,
+      "indexBlobSha1": "5e6033ca19a10149db2b42838bd535b8618a53ee",
+      "rawWorkspaceBlobSha1": "5e6033ca19a10149db2b42838bd535b8618a53ee",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/contrast-source-receipt.json",
+      "bytes": 1036,
+      "indexBlobSha1": "8800f941c97160eb937240a11f7ee19f74879b23",
+      "rawWorkspaceBlobSha1": "8800f941c97160eb937240a11f7ee19f74879b23",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-focus-fixed/browser-results.json",
+      "bytes": 7875,
+      "indexBlobSha1": "6da3e9a47a1c56023d68bb90d4615558659929ce",
+      "rawWorkspaceBlobSha1": "6da3e9a47a1c56023d68bb90d4615558659929ce",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-focus-fixed/test-results/.last-run.json",
+      "bytes": 45,
+      "indexBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "rawWorkspaceBlobSha1": "cbcc1fbac11a74b608b2b3edc3a2ffd6ab639cb2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/browser-results.json",
+      "bytes": 17796,
+      "indexBlobSha1": "7ea7ece0d803be6ff07c841289412b5794a25dd6",
+      "rawWorkspaceBlobSha1": "7ea7ece0d803be6ff07c841289412b5794a25dd6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/test-results/.last-run.json",
+      "bytes": 145,
+      "indexBlobSha1": "ed2b201324da8b39ca763eace9e98ca05314664a",
+      "rawWorkspaceBlobSha1": "ed2b201324da8b39ca763eace9e98ca05314664a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/test-results/shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800/error-context.md",
+      "bytes": 5553,
+      "indexBlobSha1": "ef805a7e2a2dfe52ff37f250112482937a885cf1",
+      "rawWorkspaceBlobSha1": "ef805a7e2a2dfe52ff37f250112482937a885cf1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/test-results/shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800/test-failed-1.png",
+      "bytes": 125588,
+      "indexBlobSha1": "24eaa3564e490a021a7e74de238cf3a87cf48f46",
+      "rawWorkspaceBlobSha1": "24eaa3564e490a021a7e74de238cf3a87cf48f46",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/test-results/shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800/trace.zip",
+      "bytes": 5465826,
+      "indexBlobSha1": "e35c17606ae8814d3a620d69fa5a1c40f70838b7",
+      "rawWorkspaceBlobSha1": "e35c17606ae8814d3a620d69fa5a1c40f70838b7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/test-results/shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920/error-context.md",
+      "bytes": 5576,
+      "indexBlobSha1": "ff08b1526ff31b3c518a39a80f462dcda9e10001",
+      "rawWorkspaceBlobSha1": "ff08b1526ff31b3c518a39a80f462dcda9e10001",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/test-results/shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920/test-failed-1.png",
+      "bytes": 193280,
+      "indexBlobSha1": "20f3a35239d1337865d3f3249e622aa7e18cd158",
+      "rawWorkspaceBlobSha1": "20f3a35239d1337865d3f3249e622aa7e18cd158",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-after/test-results/shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920/trace.zip",
+      "bytes": 6701330,
+      "indexBlobSha1": "9322191f1219917a0d2bad2aa6fab39558061d06",
+      "rawWorkspaceBlobSha1": "9322191f1219917a0d2bad2aa6fab39558061d06",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/browser-results.json",
+      "bytes": 16758,
+      "indexBlobSha1": "abdb1358a9c71d47bb5e52c9142dcf0d9e0c5827",
+      "rawWorkspaceBlobSha1": "abdb1358a9c71d47bb5e52c9142dcf0d9e0c5827",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/test-results/.last-run.json",
+      "bytes": 145,
+      "indexBlobSha1": "a5cba31fa58f112e962e8f53458fd75a15d9ecea",
+      "rawWorkspaceBlobSha1": "a5cba31fa58f112e962e8f53458fd75a15d9ecea",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/test-results/shared-semantics-shared-se-0f546-a-nested-page-banner-at-800/error-context.md",
+      "bytes": 18899,
+      "indexBlobSha1": "9eb4b4439296456fec6f4e0fc40d13c67f9558d5",
+      "rawWorkspaceBlobSha1": "9eb4b4439296456fec6f4e0fc40d13c67f9558d5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/test-results/shared-semantics-shared-se-0f546-a-nested-page-banner-at-800/test-failed-1.png",
+      "bytes": 117722,
+      "indexBlobSha1": "e21667819ac96e6b444d2fac8aecb3f3b9b1add9",
+      "rawWorkspaceBlobSha1": "e21667819ac96e6b444d2fac8aecb3f3b9b1add9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/test-results/shared-semantics-shared-se-0f546-a-nested-page-banner-at-800/trace.zip",
+      "bytes": 4274775,
+      "indexBlobSha1": "60b5c7c1885aaf38031559ea79c7ccbc6b628253",
+      "rawWorkspaceBlobSha1": "60b5c7c1885aaf38031559ea79c7ccbc6b628253",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/test-results/shared-semantics-shared-se-d4822--nested-page-banner-at-1920/error-context.md",
+      "bytes": 26957,
+      "indexBlobSha1": "5076f2879b860e9e7c7ca41633a3a7e70334881c",
+      "rawWorkspaceBlobSha1": "5076f2879b860e9e7c7ca41633a3a7e70334881c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/test-results/shared-semantics-shared-se-d4822--nested-page-banner-at-1920/test-failed-1.png",
+      "bytes": 236698,
+      "indexBlobSha1": "cdeae3ce18ce0b8949484e30e33f84bc9712803b",
+      "rawWorkspaceBlobSha1": "cdeae3ce18ce0b8949484e30e33f84bc9712803b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-actual-before/test-results/shared-semantics-shared-se-d4822--nested-page-banner-at-1920/trace.zip",
+      "bytes": 5094578,
+      "indexBlobSha1": "ef953ce6e0ef717f74d005e6c676f1cfdbfb4199",
+      "rawWorkspaceBlobSha1": "ef953ce6e0ef717f74d005e6c676f1cfdbfb4199",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/browser-results.json",
+      "bytes": 19667,
+      "indexBlobSha1": "98fdad4113df7f8f4f3801e351358b46f342d0ef",
+      "rawWorkspaceBlobSha1": "98fdad4113df7f8f4f3801e351358b46f342d0ef",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/test-results/.last-run.json",
+      "bytes": 145,
+      "indexBlobSha1": "ed2b201324da8b39ca763eace9e98ca05314664a",
+      "rawWorkspaceBlobSha1": "ed2b201324da8b39ca763eace9e98ca05314664a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/test-results/shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800/error-context.md",
+      "bytes": 9524,
+      "indexBlobSha1": "c637677fab12a2575b7e8e3f81dba1a39eee10c2",
+      "rawWorkspaceBlobSha1": "c637677fab12a2575b7e8e3f81dba1a39eee10c2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/test-results/shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800/test-failed-1.png",
+      "bytes": 111430,
+      "indexBlobSha1": "9020c9694ef9e339a5499b249080722173dfbb82",
+      "rawWorkspaceBlobSha1": "9020c9694ef9e339a5499b249080722173dfbb82",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/test-results/shared-semantics-shared-se-7ca6e-e-status-and-dismiss-at-800/trace.zip",
+      "bytes": 362173,
+      "indexBlobSha1": "faac5ca0191108b63f5556d9993bce7265224ccb",
+      "rawWorkspaceBlobSha1": "faac5ca0191108b63f5556d9993bce7265224ccb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/test-results/shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920/error-context.md",
+      "bytes": 14381,
+      "indexBlobSha1": "c65cb348ec453e9565e719c312829d67ea06c5c4",
+      "rawWorkspaceBlobSha1": "c65cb348ec453e9565e719c312829d67ea06c5c4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/test-results/shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920/test-failed-1.png",
+      "bytes": 195164,
+      "indexBlobSha1": "564f98832b968419556eca9bcb791ff26bf6c2af",
+      "rawWorkspaceBlobSha1": "564f98832b968419556eca9bcb791ff26bf6c2af",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/hn-nc003-semantics-reproduced/test-results/shared-semantics-shared-se-9dfdc--status-and-dismiss-at-1920/trace.zip",
+      "bytes": 501017,
+      "indexBlobSha1": "e01874fce5d4b0d4e6d4ce9f75ce10c104a69cad",
+      "rawWorkspaceBlobSha1": "e01874fce5d4b0d4e6d4ce9f75ce10c104a69cad",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/implementation/residual-geometry.json",
+      "bytes": 63441,
+      "indexBlobSha1": "2e7d17bf7c94b4731801ff0a4719b3eba265114b",
+      "rawWorkspaceBlobSha1": "2e7d17bf7c94b4731801ff0a4719b3eba265114b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/local-quality-pr-830f83d.json",
+      "bytes": 526,
+      "indexBlobSha1": "176d1aafe1d447eb1d9279b56aa8355b11c73966",
+      "rawWorkspaceBlobSha1": "176d1aafe1d447eb1d9279b56aa8355b11c73966",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/local-quality-pr-830f83d.log",
+      "bytes": 1825,
+      "indexBlobSha1": "0746f6e30a4348f95b3e18265992cf4f93a9140c",
+      "rawWorkspaceBlobSha1": "0746f6e30a4348f95b3e18265992cf4f93a9140c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/local-quality-pr-e57.json",
+      "bytes": 519,
+      "indexBlobSha1": "697565b4925389678b64bb74ef6d5fc7bf66ec68",
+      "rawWorkspaceBlobSha1": "697565b4925389678b64bb74ef6d5fc7bf66ec68",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/local-quality-pr-final.json",
+      "bytes": 646,
+      "indexBlobSha1": "87c9bd8541a569b5ca9cc3b5877f06074655ed24",
+      "rawWorkspaceBlobSha1": "87c9bd8541a569b5ca9cc3b5877f06074655ed24",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/local-quality-pr-final.log",
+      "bytes": 1825,
+      "indexBlobSha1": "b8e11178f76f8167a341dab71a3919af8719e820",
+      "rawWorkspaceBlobSha1": "b8e11178f76f8167a341dab71a3919af8719e820",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/local-quality-pr.log",
+      "bytes": 1826,
+      "indexBlobSha1": "4e99eabd012ea653cc37ac57993a536f053205f3",
+      "rawWorkspaceBlobSha1": "4e99eabd012ea653cc37ac57993a536f053205f3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/audit-artifact-integrity.py",
+      "bytes": 5736,
+      "indexBlobSha1": "7e8604c40b8d0f1a784523d7cc29bf42f15ed0d4",
+      "rawWorkspaceBlobSha1": "7e8604c40b8d0f1a784523d7cc29bf42f15ed0d4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/collect.ps1",
+      "bytes": 4330,
+      "indexBlobSha1": "9c557e966da85155bebe163ed6caff82ea64ab77",
+      "rawWorkspaceBlobSha1": "9c557e966da85155bebe163ed6caff82ea64ab77",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final-artifact-integrity.json",
+      "bytes": 110763,
+      "indexBlobSha1": "39c8a1aaa087a721234a5bc496db4bf4d10db54a",
+      "rawWorkspaceBlobSha1": "39c8a1aaa087a721234a5bc496db4bf4d10db54a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final/collect.ps1",
+      "bytes": 4338,
+      "indexBlobSha1": "23a666bddf68600fbdd71fedef7192c1d83d9715",
+      "rawWorkspaceBlobSha1": "23a666bddf68600fbdd71fedef7192c1d83d9715",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final/github-observation.json",
+      "bytes": 109392,
+      "indexBlobSha1": "8b8b7cc617a2e3975c5b8b6fbcf3f08edcdd5d83",
+      "rawWorkspaceBlobSha1": "8b8b7cc617a2e3975c5b8b6fbcf3f08edcdd5d83",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final/github-supplement.json",
+      "bytes": 9650,
+      "indexBlobSha1": "3e9164103dc3466e27b6c1fa1146aa7fd48444df",
+      "rawWorkspaceBlobSha1": "3e9164103dc3466e27b6c1fa1146aa7fd48444df",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final/local-source-custody.json",
+      "bytes": 1105,
+      "indexBlobSha1": "2c58bf55b18feb89fe6ac6fc1ccd0d2ab2686379",
+      "rawWorkspaceBlobSha1": "2c58bf55b18feb89fe6ac6fc1ccd0d2ab2686379",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final/preview-observation.json",
+      "bytes": 8599,
+      "indexBlobSha1": "298f83c583023a8e69aeb94ae84522b5c13f530f",
+      "rawWorkspaceBlobSha1": "298f83c583023a8e69aeb94ae84522b5c13f530f",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final/reference-integrity.json",
+      "bytes": 681,
+      "indexBlobSha1": "85b5001294194a6aea6c0b453cf92da79c7f4604",
+      "rawWorkspaceBlobSha1": "85b5001294194a6aea6c0b453cf92da79c7f4604",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/final/source-push-receipt.json",
+      "bytes": 704,
+      "indexBlobSha1": "395681314cb03c988c4bafccde5a7beb8c731598",
+      "rawWorkspaceBlobSha1": "395681314cb03c988c4bafccde5a7beb8c731598",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/github-observation.json",
+      "bytes": 128246,
+      "indexBlobSha1": "b1f11b29911578e44155d21393977ecd45a0e4a9",
+      "rawWorkspaceBlobSha1": "b1f11b29911578e44155d21393977ecd45a0e4a9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/post-source-push/collect.ps1",
+      "bytes": 4349,
+      "indexBlobSha1": "cc6f71d2cb2dd4b57c5a83ca5e530b7dc0473d81",
+      "rawWorkspaceBlobSha1": "cc6f71d2cb2dd4b57c5a83ca5e530b7dc0473d81",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/post-source-push/github-observation.json",
+      "bytes": 128230,
+      "indexBlobSha1": "e988e5afa67813dc6e8a6d37786192e8f32a2325",
+      "rawWorkspaceBlobSha1": "e988e5afa67813dc6e8a6d37786192e8f32a2325",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/post-source-push/preview-observation.json",
+      "bytes": 8599,
+      "indexBlobSha1": "c5711a83bb54dc020761c6c5c0dcc0b2094aa077",
+      "rawWorkspaceBlobSha1": "c5711a83bb54dc020761c6c5c0dcc0b2094aa077",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/post-source-push/ref-confirmation.json",
+      "bytes": 494,
+      "indexBlobSha1": "cfcdd094630363d4e960204b9bac3e7728dc06b1",
+      "rawWorkspaceBlobSha1": "cfcdd094630363d4e960204b9bac3e7728dc06b1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/post-source-push/reference-integrity.json",
+      "bytes": 681,
+      "indexBlobSha1": "7f41f51fa0b17376c95a5818f7b89b9acb5f3026",
+      "rawWorkspaceBlobSha1": "7f41f51fa0b17376c95a5818f7b89b9acb5f3026",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/preview-observation.json",
+      "bytes": 8599,
+      "indexBlobSha1": "1a4023a3dd5f8cc60039eb44c240cf7130c24b71",
+      "rawWorkspaceBlobSha1": "1a4023a3dd5f8cc60039eb44c240cf7130c24b71",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/reference-integrity.json",
+      "bytes": 681,
+      "indexBlobSha1": "726f73efb8921cf77c9bd8cd318d1b7a73b59ac6",
+      "rawWorkspaceBlobSha1": "726f73efb8921cf77c9bd8cd318d1b7a73b59ac6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/source-830f83d/collect.ps1",
+      "bytes": 4347,
+      "indexBlobSha1": "cf5bef74218a3a310644aa18306e22e78cb4fc89",
+      "rawWorkspaceBlobSha1": "cf5bef74218a3a310644aa18306e22e78cb4fc89",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/source-830f83d/github-observation.json",
+      "bytes": 128243,
+      "indexBlobSha1": "449cad2327d645331adcc13e94cfaa623eab1a45",
+      "rawWorkspaceBlobSha1": "449cad2327d645331adcc13e94cfaa623eab1a45",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/source-830f83d/preview-observation.json",
+      "bytes": 8599,
+      "indexBlobSha1": "eb3ce376a4c12ef889897a29f0138cd086b23b7e",
+      "rawWorkspaceBlobSha1": "eb3ce376a4c12ef889897a29f0138cd086b23b7e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/source-830f83d/reference-integrity.json",
+      "bytes": 681,
+      "indexBlobSha1": "8e17dfec1a9d4b7e7346f9fb77675ccd70c89015",
+      "rawWorkspaceBlobSha1": "8e17dfec1a9d4b7e7346f9fb77675ccd70c89015",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/release/source-830f83d/source-push-receipt.json",
+      "bytes": 765,
+      "indexBlobSha1": "2a933dd73a40cdce3fe00905564bc6ab1dd64928",
+      "rawWorkspaceBlobSha1": "2a933dd73a40cdce3fe00905564bc6ab1dd64928",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/.gitignore",
+      "bytes": 86,
+      "indexBlobSha1": "4dbf6dfa8acac3248feba5ef07683ab0240060eb",
+      "rawWorkspaceBlobSha1": "4dbf6dfa8acac3248feba5ef07683ab0240060eb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc-retry-desktop/capture-results.json",
+      "bytes": 120976,
+      "indexBlobSha1": "94290d70d4a19cf0b47b4cd8123ef2592922694b",
+      "rawWorkspaceBlobSha1": "94290d70d4a19cf0b47b4cd8123ef2592922694b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc-retry-desktop/desktop-canonical-after.png",
+      "bytes": 211711,
+      "indexBlobSha1": "61ba64af58c0abbad6f3102db0672d6ec93e9dc2",
+      "rawWorkspaceBlobSha1": "61ba64af58c0abbad6f3102db0672d6ec93e9dc2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc-retry-desktop/desktop-canonical-close-paint.png",
+      "bytes": 367,
+      "indexBlobSha1": "732b5686f490e0f49271aada2fab22cc372f1202",
+      "rawWorkspaceBlobSha1": "732b5686f490e0f49271aada2fab22cc372f1202",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc-retry-desktop/desktop-canonical-modal.png",
+      "bytes": 117349,
+      "indexBlobSha1": "85587157b1280772a5fa62bc0a477a0b18f036b0",
+      "rawWorkspaceBlobSha1": "85587157b1280772a5fa62bc0a477a0b18f036b0",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc-retry-desktop/desktop-canonical.zip",
+      "bytes": 6818566,
+      "indexBlobSha1": "8fdc9d65edcee55b8ec58276e528e8cf599051f2",
+      "rawWorkspaceBlobSha1": "8fdc9d65edcee55b8ec58276e528e8cf599051f2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc-retry-desktop/geometry-paint-summary.json",
+      "bytes": 1111,
+      "indexBlobSha1": "01a3d79065b549d7f2fbfb9a4093ea6a0be87a5d",
+      "rawWorkspaceBlobSha1": "01a3d79065b549d7f2fbfb9a4093ea6a0be87a5d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc-retry-desktop/measure-output.txt",
+      "bytes": 892,
+      "indexBlobSha1": "9c079e419c2d6fae8f3cf25f933a16d1ead57845",
+      "rawWorkspaceBlobSha1": "9c079e419c2d6fae8f3cf25f933a16d1ead57845",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/capture-results.json",
+      "bytes": 1027132,
+      "indexBlobSha1": "5cd11dd6da4206abb8849db39fbd39586c9fe66a",
+      "rawWorkspaceBlobSha1": "5cd11dd6da4206abb8849db39fbd39586c9fe66a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/comparison-metrics.json",
+      "bytes": 1351,
+      "indexBlobSha1": "fbb096c0f5ddae09494f9edcbf0726ef39b335c2",
+      "rawWorkspaceBlobSha1": "fbb096c0f5ddae09494f9edcbf0726ef39b335c2",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/correction-verification.json",
+      "bytes": 2986,
+      "indexBlobSha1": "50076b80b5bdf51ebea7a77c2fe2677afdcaf098",
+      "rawWorkspaceBlobSha1": "50076b80b5bdf51ebea7a77c2fe2677afdcaf098",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-canonical-failure.png",
+      "bytes": 8512,
+      "indexBlobSha1": "26ab2fb5ca7915d71bd59620c17b58a7bcbd848f",
+      "rawWorkspaceBlobSha1": "26ab2fb5ca7915d71bd59620c17b58a7bcbd848f",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-canonical.zip",
+      "bytes": 57653,
+      "indexBlobSha1": "9d44638397b629e306cb9cb079942c12e9bd1f01",
+      "rawWorkspaceBlobSha1": "9d44638397b629e306cb9cb079942c12e9bd1f01",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-actual-modal-crop.png",
+      "bytes": 122823,
+      "indexBlobSha1": "424a9792be7dce3d6bf8da0f5c308f281b13b107",
+      "rawWorkspaceBlobSha1": "424a9792be7dce3d6bf8da0f5c308f281b13b107",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-after.png",
+      "bytes": 191012,
+      "indexBlobSha1": "c38fc27e65bb95bd2a7cb1c44238120659db12cb",
+      "rawWorkspaceBlobSha1": "c38fc27e65bb95bd2a7cb1c44238120659db12cb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-before-after-diff.png",
+      "bytes": 7830,
+      "indexBlobSha1": "c063026bd41c86ac43000ec3a3602bde85bbc948",
+      "rawWorkspaceBlobSha1": "c063026bd41c86ac43000ec3a3602bde85bbc948",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-close-paint.png",
+      "bytes": 368,
+      "indexBlobSha1": "99322e55afc27e849046b30ea5d3bad7994cfb94",
+      "rawWorkspaceBlobSha1": "99322e55afc27e849046b30ea5d3bad7994cfb94",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-diff-x3.png",
+      "bytes": 235841,
+      "indexBlobSha1": "2ed2981a921c8467997a35ffc6041f65244bfc0e",
+      "rawWorkspaceBlobSha1": "2ed2981a921c8467997a35ffc6041f65244bfc0e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-modal.png",
+      "bytes": 117866,
+      "indexBlobSha1": "002e0ad9fd3ed38b057b992f74c902b5e2b6c73a",
+      "rawWorkspaceBlobSha1": "002e0ad9fd3ed38b057b992f74c902b5e2b6c73a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-overlay.png",
+      "bytes": 496975,
+      "indexBlobSha1": "adfdbb6d162393de2b00ce4bbdc18f1657fdf3ad",
+      "rawWorkspaceBlobSha1": "adfdbb6d162393de2b00ce4bbdc18f1657fdf3ad",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-reference-modal-crop.png",
+      "bytes": 613586,
+      "indexBlobSha1": "7b5d19be636d038bbaafdf5102e0211885ea09c5",
+      "rawWorkspaceBlobSha1": "7b5d19be636d038bbaafdf5102e0211885ea09c5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native-reference.png",
+      "bytes": 1397125,
+      "indexBlobSha1": "1066857eba919d2134b85a86eab9ac1459de30d3",
+      "rawWorkspaceBlobSha1": "1066857eba919d2134b85a86eab9ac1459de30d3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/desktop-native.zip",
+      "bytes": 7013671,
+      "indexBlobSha1": "cde0cb6b14f8e0b7017e730bb0a272c2958cd800",
+      "rawWorkspaceBlobSha1": "cde0cb6b14f8e0b7017e730bb0a272c2958cd800",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/geometry-paint-summary.json",
+      "bytes": 6711,
+      "indexBlobSha1": "c16c33f61bc76a5961551f97b493c731b7ea1973",
+      "rawWorkspaceBlobSha1": "c16c33f61bc76a5961551f97b493c731b7ea1973",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/measure-output.txt",
+      "bytes": 5994,
+      "indexBlobSha1": "4fc589e6b34412b0927fe7d70c30a17e33d20c65",
+      "rawWorkspaceBlobSha1": "4fc589e6b34412b0927fe7d70c30a17e33d20c65",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-801-edge-after.png",
+      "bytes": 102517,
+      "indexBlobSha1": "8f0d5c5183d94642deb284bf9c1ec779cc79f731",
+      "rawWorkspaceBlobSha1": "8f0d5c5183d94642deb284bf9c1ec779cc79f731",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-801-edge-close-paint.png",
+      "bytes": 482,
+      "indexBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "rawWorkspaceBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-801-edge-detail.png",
+      "bytes": 64111,
+      "indexBlobSha1": "6035b5e7e96f19ad197b1e9733ecdd76010e3330",
+      "rawWorkspaceBlobSha1": "6035b5e7e96f19ad197b1e9733ecdd76010e3330",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-801-edge-modal.png",
+      "bytes": 96365,
+      "indexBlobSha1": "1391d174b7a4fa9191fab9fd2ddbac4c6faa8e8e",
+      "rawWorkspaceBlobSha1": "1391d174b7a4fa9191fab9fd2ddbac4c6faa8e8e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-801-edge.zip",
+      "bytes": 9450586,
+      "indexBlobSha1": "4571e702f182b8a5643aff34618b98afeb0698ba",
+      "rawWorkspaceBlobSha1": "4571e702f182b8a5643aff34618b98afeb0698ba",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-neighbor-after.png",
+      "bytes": 131203,
+      "indexBlobSha1": "b19cf6e94f0318c9a5f317d886176e1a67d5ed9b",
+      "rawWorkspaceBlobSha1": "b19cf6e94f0318c9a5f317d886176e1a67d5ed9b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-neighbor-close-paint.png",
+      "bytes": 482,
+      "indexBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "rawWorkspaceBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-neighbor-detail.png",
+      "bytes": 76782,
+      "indexBlobSha1": "8351a92b621a56647066edc0474463a779913a89",
+      "rawWorkspaceBlobSha1": "8351a92b621a56647066edc0474463a779913a89",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-neighbor-modal.png",
+      "bytes": 114308,
+      "indexBlobSha1": "92a2c91271e9b50cc03b11d853a109ecd01bc9c0",
+      "rawWorkspaceBlobSha1": "92a2c91271e9b50cc03b11d853a109ecd01bc9c0",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-neighbor.zip",
+      "bytes": 7575834,
+      "indexBlobSha1": "2b9f3e26c3cc58a33e66f0abf8f357eaaa07bb91",
+      "rawWorkspaceBlobSha1": "2b9f3e26c3cc58a33e66f0abf8f357eaaa07bb91",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-short-after.png",
+      "bytes": 101510,
+      "indexBlobSha1": "1cb3aab364a314fcd91801877f666e6434f92b2c",
+      "rawWorkspaceBlobSha1": "1cb3aab364a314fcd91801877f666e6434f92b2c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-short-close-paint.png",
+      "bytes": 482,
+      "indexBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "rawWorkspaceBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-short-detail.png",
+      "bytes": 63128,
+      "indexBlobSha1": "52f5ded3187ed88510f3a29b6ab7b83fe5e6d651",
+      "rawWorkspaceBlobSha1": "52f5ded3187ed88510f3a29b6ab7b83fe5e6d651",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-short-modal.png",
+      "bytes": 97054,
+      "indexBlobSha1": "ea281c80b1638a9a09bdf78b7a7b8b5cc7f39d11",
+      "rawWorkspaceBlobSha1": "ea281c80b1638a9a09bdf78b7a7b8b5cc7f39d11",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/portrait-short.zip",
+      "bytes": 9301951,
+      "indexBlobSha1": "c7b9bf65adc94dbb79bdc22ae3858f3a609a6142",
+      "rawWorkspaceBlobSha1": "c7b9bf65adc94dbb79bdc22ae3858f3a609a6142",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-canonical-after.png",
+      "bytes": 244475,
+      "indexBlobSha1": "1bcdbacaa32e17ff3ef12007b2bcd9324fcc1023",
+      "rawWorkspaceBlobSha1": "1bcdbacaa32e17ff3ef12007b2bcd9324fcc1023",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-canonical-close-paint.png",
+      "bytes": 611,
+      "indexBlobSha1": "a5dcd54b715d5299535908010020c22efe4073b5",
+      "rawWorkspaceBlobSha1": "a5dcd54b715d5299535908010020c22efe4073b5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-canonical-detail.png",
+      "bytes": 164767,
+      "indexBlobSha1": "99a6b34cfcd4b513408453065ff84bfec53272ab",
+      "rawWorkspaceBlobSha1": "99a6b34cfcd4b513408453065ff84bfec53272ab",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-canonical-modal.png",
+      "bytes": 205535,
+      "indexBlobSha1": "f9f237c114f6c377c85b91bbe3f0f3312a97c20d",
+      "rawWorkspaceBlobSha1": "f9f237c114f6c377c85b91bbe3f0f3312a97c20d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-canonical.zip",
+      "bytes": 7944293,
+      "indexBlobSha1": "03d15b77edb3597bf11bf734fbd10741ae3849cb",
+      "rawWorkspaceBlobSha1": "03d15b77edb3597bf11bf734fbd10741ae3849cb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-actual-modal-crop.png",
+      "bytes": 119033,
+      "indexBlobSha1": "4f3b6e465462ed7e0a535d77d7ae4d9d00bd743f",
+      "rawWorkspaceBlobSha1": "4f3b6e465462ed7e0a535d77d7ae4d9d00bd743f",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-after.png",
+      "bytes": 149505,
+      "indexBlobSha1": "f87928059b48b64712dd1d1cc013c0aff654f9ac",
+      "rawWorkspaceBlobSha1": "f87928059b48b64712dd1d1cc013c0aff654f9ac",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-before-after-diff.png",
+      "bytes": 256298,
+      "indexBlobSha1": "e8cc691d7cc9af6d855a4d9e08f32e1d15ab082a",
+      "rawWorkspaceBlobSha1": "e8cc691d7cc9af6d855a4d9e08f32e1d15ab082a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-close-paint.png",
+      "bytes": 542,
+      "indexBlobSha1": "ed7ce1212b6ab93b54aa2ccb815dcd427502dcb4",
+      "rawWorkspaceBlobSha1": "ed7ce1212b6ab93b54aa2ccb815dcd427502dcb4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-detail.png",
+      "bytes": 94376,
+      "indexBlobSha1": "b2d605272b4062e02f0f463958300d37d5147efd",
+      "rawWorkspaceBlobSha1": "b2d605272b4062e02f0f463958300d37d5147efd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-diff-x3.png",
+      "bytes": 278521,
+      "indexBlobSha1": "8b361b23d290af232e7a04f7406752c241983c4c",
+      "rawWorkspaceBlobSha1": "8b361b23d290af232e7a04f7406752c241983c4c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-modal.png",
+      "bytes": 115135,
+      "indexBlobSha1": "0f71ea0dafa44be363e2388e8db1d24904ef1881",
+      "rawWorkspaceBlobSha1": "0f71ea0dafa44be363e2388e8db1d24904ef1881",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-overlay.png",
+      "bytes": 606537,
+      "indexBlobSha1": "9385436544e1852637eb0891887bc864612a8100",
+      "rawWorkspaceBlobSha1": "9385436544e1852637eb0891887bc864612a8100",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-reference-modal-crop.png",
+      "bytes": 749198,
+      "indexBlobSha1": "889607f45269b61a587f39c2f9331a93f5a6365e",
+      "rawWorkspaceBlobSha1": "889607f45269b61a587f39c2f9331a93f5a6365e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native-reference.png",
+      "bytes": 1765845,
+      "indexBlobSha1": "f7757a34786147e9677505e6427a3d991b2c7740",
+      "rawWorkspaceBlobSha1": "f7757a34786147e9677505e6427a3d991b2c7740",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-76059cc/tablet-native.zip",
+      "bytes": 6984814,
+      "indexBlobSha1": "1b7d3f8fbd717d9d43c7ee9fd82577ec37aa0c19",
+      "rawWorkspaceBlobSha1": "1b7d3f8fbd717d9d43c7ee9fd82577ec37aa0c19",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/capture-results.json",
+      "bytes": 1917173,
+      "indexBlobSha1": "ec2603207f794da87a3b30b70a02888b5d9b336c",
+      "rawWorkspaceBlobSha1": "ec2603207f794da87a3b30b70a02888b5d9b336c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/comparison-metrics.json",
+      "bytes": 1351,
+      "indexBlobSha1": "5fe394108600d13866a5e4eb2e32200573f347bf",
+      "rawWorkspaceBlobSha1": "5fe394108600d13866a5e4eb2e32200573f347bf",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-actual-modal-crop.png",
+      "bytes": 122823,
+      "indexBlobSha1": "424a9792be7dce3d6bf8da0f5c308f281b13b107",
+      "rawWorkspaceBlobSha1": "424a9792be7dce3d6bf8da0f5c308f281b13b107",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-after.png",
+      "bytes": 191012,
+      "indexBlobSha1": "c38fc27e65bb95bd2a7cb1c44238120659db12cb",
+      "rawWorkspaceBlobSha1": "c38fc27e65bb95bd2a7cb1c44238120659db12cb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-before-after-diff.png",
+      "bytes": 7830,
+      "indexBlobSha1": "c063026bd41c86ac43000ec3a3602bde85bbc948",
+      "rawWorkspaceBlobSha1": "c063026bd41c86ac43000ec3a3602bde85bbc948",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-close-paint.png",
+      "bytes": 368,
+      "indexBlobSha1": "99322e55afc27e849046b30ea5d3bad7994cfb94",
+      "rawWorkspaceBlobSha1": "99322e55afc27e849046b30ea5d3bad7994cfb94",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-diff-x3.png",
+      "bytes": 235841,
+      "indexBlobSha1": "2ed2981a921c8467997a35ffc6041f65244bfc0e",
+      "rawWorkspaceBlobSha1": "2ed2981a921c8467997a35ffc6041f65244bfc0e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-modal.png",
+      "bytes": 117866,
+      "indexBlobSha1": "002e0ad9fd3ed38b057b992f74c902b5e2b6c73a",
+      "rawWorkspaceBlobSha1": "002e0ad9fd3ed38b057b992f74c902b5e2b6c73a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-overlay.png",
+      "bytes": 496975,
+      "indexBlobSha1": "adfdbb6d162393de2b00ce4bbdc18f1657fdf3ad",
+      "rawWorkspaceBlobSha1": "adfdbb6d162393de2b00ce4bbdc18f1657fdf3ad",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-reference-modal-crop.png",
+      "bytes": 613586,
+      "indexBlobSha1": "7b5d19be636d038bbaafdf5102e0211885ea09c5",
+      "rawWorkspaceBlobSha1": "7b5d19be636d038bbaafdf5102e0211885ea09c5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native-reference.png",
+      "bytes": 1397125,
+      "indexBlobSha1": "1066857eba919d2134b85a86eab9ac1459de30d3",
+      "rawWorkspaceBlobSha1": "1066857eba919d2134b85a86eab9ac1459de30d3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/desktop-native.zip",
+      "bytes": 6693757,
+      "indexBlobSha1": "c5fd4c0adabbb77d0bd1a5f97cc8a350f9be27fb",
+      "rawWorkspaceBlobSha1": "c5fd4c0adabbb77d0bd1a5f97cc8a350f9be27fb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/final-correction-verification.json",
+      "bytes": 4333,
+      "indexBlobSha1": "1bf1e645fd298ee614089c1770e18dc2e94850bd",
+      "rawWorkspaceBlobSha1": "1bf1e645fd298ee614089c1770e18dc2e94850bd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/geometry-paint-summary.json",
+      "bytes": 22684,
+      "indexBlobSha1": "2063ac71e93f2e5660deeaa6116d001535871bc6",
+      "rawWorkspaceBlobSha1": "2063ac71e93f2e5660deeaa6116d001535871bc6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/measure-output.txt",
+      "bytes": 20637,
+      "indexBlobSha1": "af871875d82a1d90768e94b6304493e4af5f7ad4",
+      "rawWorkspaceBlobSha1": "af871875d82a1d90768e94b6304493e4af5f7ad4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-801-edge-after.png",
+      "bytes": 95624,
+      "indexBlobSha1": "93d26223c493cdd2a80bc0b34b21c49a92731f48",
+      "rawWorkspaceBlobSha1": "93d26223c493cdd2a80bc0b34b21c49a92731f48",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-801-edge-close-paint.png",
+      "bytes": 482,
+      "indexBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "rawWorkspaceBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-801-edge-detail.png",
+      "bytes": 64111,
+      "indexBlobSha1": "6035b5e7e96f19ad197b1e9733ecdd76010e3330",
+      "rawWorkspaceBlobSha1": "6035b5e7e96f19ad197b1e9733ecdd76010e3330",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-801-edge-modal.png",
+      "bytes": 89451,
+      "indexBlobSha1": "892da078e860ff1570c3a928a79385e0c641eca6",
+      "rawWorkspaceBlobSha1": "892da078e860ff1570c3a928a79385e0c641eca6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-801-edge.zip",
+      "bytes": 8211453,
+      "indexBlobSha1": "4a855844cbc180cbf8d10d825b4e5069f705c999",
+      "rawWorkspaceBlobSha1": "4a855844cbc180cbf8d10d825b4e5069f705c999",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-neighbor-after.png",
+      "bytes": 131262,
+      "indexBlobSha1": "afc19c2bd31d0991c8a9cc438f01aa13b12eac11",
+      "rawWorkspaceBlobSha1": "afc19c2bd31d0991c8a9cc438f01aa13b12eac11",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-neighbor-close-paint.png",
+      "bytes": 482,
+      "indexBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "rawWorkspaceBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-neighbor-detail.png",
+      "bytes": 76782,
+      "indexBlobSha1": "58cc2076900661df42514179f3214197783be1ce",
+      "rawWorkspaceBlobSha1": "58cc2076900661df42514179f3214197783be1ce",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-neighbor-modal.png",
+      "bytes": 114365,
+      "indexBlobSha1": "9cfe77435a1432ed4b538d7404a522237af3bb37",
+      "rawWorkspaceBlobSha1": "9cfe77435a1432ed4b538d7404a522237af3bb37",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-neighbor.zip",
+      "bytes": 7597592,
+      "indexBlobSha1": "fbe13e099b78a052b164745256363fe6e36bce14",
+      "rawWorkspaceBlobSha1": "fbe13e099b78a052b164745256363fe6e36bce14",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-short-after.png",
+      "bytes": 94403,
+      "indexBlobSha1": "901653d84e1c63da9b2f5587655c05ff9c465553",
+      "rawWorkspaceBlobSha1": "901653d84e1c63da9b2f5587655c05ff9c465553",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-short-close-paint.png",
+      "bytes": 482,
+      "indexBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "rawWorkspaceBlobSha1": "693b175670d197e42ec1359b7593d953bb501df3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-short-detail.png",
+      "bytes": 63128,
+      "indexBlobSha1": "52f5ded3187ed88510f3a29b6ab7b83fe5e6d651",
+      "rawWorkspaceBlobSha1": "52f5ded3187ed88510f3a29b6ab7b83fe5e6d651",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-short-modal.png",
+      "bytes": 90146,
+      "indexBlobSha1": "5d39a250bcfcbf1370fe2589743f67c50a38b9f7",
+      "rawWorkspaceBlobSha1": "5d39a250bcfcbf1370fe2589743f67c50a38b9f7",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/portrait-short.zip",
+      "bytes": 8235866,
+      "indexBlobSha1": "36596178d6dbec003dd48cd86f64e833b12da676",
+      "rawWorkspaceBlobSha1": "36596178d6dbec003dd48cd86f64e833b12da676",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-canonical-after.png",
+      "bytes": 244475,
+      "indexBlobSha1": "1bcdbacaa32e17ff3ef12007b2bcd9324fcc1023",
+      "rawWorkspaceBlobSha1": "1bcdbacaa32e17ff3ef12007b2bcd9324fcc1023",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-canonical-close-paint.png",
+      "bytes": 611,
+      "indexBlobSha1": "a5dcd54b715d5299535908010020c22efe4073b5",
+      "rawWorkspaceBlobSha1": "a5dcd54b715d5299535908010020c22efe4073b5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-canonical-detail.png",
+      "bytes": 164767,
+      "indexBlobSha1": "99a6b34cfcd4b513408453065ff84bfec53272ab",
+      "rawWorkspaceBlobSha1": "99a6b34cfcd4b513408453065ff84bfec53272ab",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-canonical-modal.png",
+      "bytes": 205535,
+      "indexBlobSha1": "f9f237c114f6c377c85b91bbe3f0f3312a97c20d",
+      "rawWorkspaceBlobSha1": "f9f237c114f6c377c85b91bbe3f0f3312a97c20d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-canonical.zip",
+      "bytes": 7770623,
+      "indexBlobSha1": "12323003f2c1eb814f8183aa7de961015a7e357b",
+      "rawWorkspaceBlobSha1": "12323003f2c1eb814f8183aa7de961015a7e357b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-actual-modal-crop.png",
+      "bytes": 118955,
+      "indexBlobSha1": "87574b6faa0aaceefbc542999e4c1bc8ae6427ef",
+      "rawWorkspaceBlobSha1": "87574b6faa0aaceefbc542999e4c1bc8ae6427ef",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-after.png",
+      "bytes": 149429,
+      "indexBlobSha1": "67d7fa6345c61991277035be58627ff67161aaed",
+      "rawWorkspaceBlobSha1": "67d7fa6345c61991277035be58627ff67161aaed",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-before-after-diff.png",
+      "bytes": 247446,
+      "indexBlobSha1": "cef5ddd1dadd04f7253620a5dc04b9923ad56087",
+      "rawWorkspaceBlobSha1": "cef5ddd1dadd04f7253620a5dc04b9923ad56087",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-close-paint.png",
+      "bytes": 542,
+      "indexBlobSha1": "ed7ce1212b6ab93b54aa2ccb815dcd427502dcb4",
+      "rawWorkspaceBlobSha1": "ed7ce1212b6ab93b54aa2ccb815dcd427502dcb4",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-detail.png",
+      "bytes": 94376,
+      "indexBlobSha1": "b2d605272b4062e02f0f463958300d37d5147efd",
+      "rawWorkspaceBlobSha1": "b2d605272b4062e02f0f463958300d37d5147efd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-diff-x3.png",
+      "bytes": 243473,
+      "indexBlobSha1": "c58eccdc09fa9b3cb22c46cbbcb004a79a81c7cd",
+      "rawWorkspaceBlobSha1": "c58eccdc09fa9b3cb22c46cbbcb004a79a81c7cd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-modal.png",
+      "bytes": 115133,
+      "indexBlobSha1": "e2735ea39a0751cc5f4f32baa85bf0ba09f1b14d",
+      "rawWorkspaceBlobSha1": "e2735ea39a0751cc5f4f32baa85bf0ba09f1b14d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-overlay.png",
+      "bytes": 584396,
+      "indexBlobSha1": "a7f24263c46bdfe6e747a824d38efa8b21e88066",
+      "rawWorkspaceBlobSha1": "a7f24263c46bdfe6e747a824d38efa8b21e88066",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-reference-modal-crop.png",
+      "bytes": 749198,
+      "indexBlobSha1": "889607f45269b61a587f39c2f9331a93f5a6365e",
+      "rawWorkspaceBlobSha1": "889607f45269b61a587f39c2f9331a93f5a6365e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native-reference.png",
+      "bytes": 1765845,
+      "indexBlobSha1": "f7757a34786147e9677505e6427a3d991b2c7740",
+      "rawWorkspaceBlobSha1": "f7757a34786147e9677505e6427a3d991b2c7740",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery-ignored-temp/tablet-native.zip",
+      "bytes": 7191627,
+      "indexBlobSha1": "c6337fdfbf8d2a25214f8469f6e8e29b528bb210",
+      "rawWorkspaceBlobSha1": "c6337fdfbf8d2a25214f8469f6e8e29b528bb210",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery/capture-results.json",
+      "bytes": 121064,
+      "indexBlobSha1": "df8571ef092aab156a1cb907accee5012d82cafc",
+      "rawWorkspaceBlobSha1": "df8571ef092aab156a1cb907accee5012d82cafc",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery/desktop-native-after.png",
+      "bytes": 191012,
+      "indexBlobSha1": "c38fc27e65bb95bd2a7cb1c44238120659db12cb",
+      "rawWorkspaceBlobSha1": "c38fc27e65bb95bd2a7cb1c44238120659db12cb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery/desktop-native-modal.png",
+      "bytes": 117866,
+      "indexBlobSha1": "002e0ad9fd3ed38b057b992f74c902b5e2b6c73a",
+      "rawWorkspaceBlobSha1": "002e0ad9fd3ed38b057b992f74c902b5e2b6c73a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery/desktop-native.zip",
+      "bytes": 6627395,
+      "indexBlobSha1": "80627cbe50c876f3ade7104379fd0a193145a352",
+      "rawWorkspaceBlobSha1": "80627cbe50c876f3ade7104379fd0a193145a352",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery/tablet-native-after.png",
+      "bytes": 149429,
+      "indexBlobSha1": "67d7fa6345c61991277035be58627ff67161aaed",
+      "rawWorkspaceBlobSha1": "67d7fa6345c61991277035be58627ff67161aaed",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d-recovery/tablet-native-modal.png",
+      "bytes": 115133,
+      "indexBlobSha1": "e2735ea39a0751cc5f4f32baa85bf0ba09f1b14d",
+      "rawWorkspaceBlobSha1": "e2735ea39a0751cc5f4f32baa85bf0ba09f1b14d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d/capture-results.json",
+      "bytes": 28940,
+      "indexBlobSha1": "0f0abf01596b6d63080a8084a7d4707b5bfa5b77",
+      "rawWorkspaceBlobSha1": "0f0abf01596b6d63080a8084a7d4707b5bfa5b77",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d/desktop-native-failure.png",
+      "bytes": 6657,
+      "indexBlobSha1": "858eca94554650b89af505ffb59df8606df6e0c1",
+      "rawWorkspaceBlobSha1": "858eca94554650b89af505ffb59df8606df6e0c1",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d/desktop-native.zip",
+      "bytes": 15575,
+      "indexBlobSha1": "bb1854397ac9dc5ebd9272127cb723b6104819dc",
+      "rawWorkspaceBlobSha1": "bb1854397ac9dc5ebd9272127cb723b6104819dc",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d/tablet-native-after.png",
+      "bytes": 149429,
+      "indexBlobSha1": "67d7fa6345c61991277035be58627ff67161aaed",
+      "rawWorkspaceBlobSha1": "67d7fa6345c61991277035be58627ff67161aaed",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d/tablet-native-detail.png",
+      "bytes": 94374,
+      "indexBlobSha1": "f5d9825593fe25e48a1452be00860febff258780",
+      "rawWorkspaceBlobSha1": "f5d9825593fe25e48a1452be00860febff258780",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/after-830f83d/tablet-native-modal.png",
+      "bytes": 115133,
+      "indexBlobSha1": "e2735ea39a0751cc5f4f32baa85bf0ba09f1b14d",
+      "rawWorkspaceBlobSha1": "e2735ea39a0751cc5f4f32baa85bf0ba09f1b14d",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/artifact-integrity.json",
+      "bytes": 12772,
+      "indexBlobSha1": "2dd56bda5803069b1c4507c94c5c0c0883e2ad3f",
+      "rawWorkspaceBlobSha1": "2dd56bda5803069b1c4507c94c5c0c0883e2ad3f",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/capture-after.mjs",
+      "bytes": 7861,
+      "indexBlobSha1": "20042c475f45c929c5a824446b07cae3fa7c634e",
+      "rawWorkspaceBlobSha1": "20042c475f45c929c5a824446b07cae3fa7c634e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/capture-results.json",
+      "bytes": 1153,
+      "indexBlobSha1": "692bdda9dd53e35aeae14ecf6b349c4620689d03",
+      "rawWorkspaceBlobSha1": "692bdda9dd53e35aeae14ecf6b349c4620689d03",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/capture.mjs",
+      "bytes": 6180,
+      "indexBlobSha1": "116ce76dd51cd8124877b30df27212ab3165b9c9",
+      "rawWorkspaceBlobSha1": "116ce76dd51cd8124877b30df27212ab3165b9c9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/compare-after.py",
+      "bytes": 1730,
+      "indexBlobSha1": "a22a3b3a34108cda7d3327ccdf70da848ea4423c",
+      "rawWorkspaceBlobSha1": "a22a3b3a34108cda7d3327ccdf70da848ea4423c",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/compare.py",
+      "bytes": 1729,
+      "indexBlobSha1": "e1f09b19ec0b7182837f7b7c94e473f36e8699eb",
+      "rawWorkspaceBlobSha1": "e1f09b19ec0b7182837f7b7c94e473f36e8699eb",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/desktop-native-failure.png",
+      "bytes": 36672,
+      "indexBlobSha1": "ce150a7eda1af1d42f49314d8c9159574aa5d6bd",
+      "rawWorkspaceBlobSha1": "ce150a7eda1af1d42f49314d8c9159574aa5d6bd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/desktop-native.zip",
+      "bytes": 4102804,
+      "indexBlobSha1": "2c5af5227c6323f7b73a21cde19bd4338106222b",
+      "rawWorkspaceBlobSha1": "2c5af5227c6323f7b73a21cde19bd4338106222b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/environment-events-830f83d.json",
+      "bytes": 1629,
+      "indexBlobSha1": "64bebbba6c401783d63dd30e5540fb53520c939a",
+      "rawWorkspaceBlobSha1": "64bebbba6c401783d63dd30e5540fb53520c939a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/final-artifact-integrity-830f83d.json",
+      "bytes": 9580,
+      "indexBlobSha1": "41e464bff6306fc36e4c6aebee69c49392840cbe",
+      "rawWorkspaceBlobSha1": "41e464bff6306fc36e4c6aebee69c49392840cbe",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/measure-after.py",
+      "bytes": 3440,
+      "indexBlobSha1": "2d3ba77e6861607c204fdbd9e0da09a313881b07",
+      "rawWorkspaceBlobSha1": "2d3ba77e6861607c204fdbd9e0da09a313881b07",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/reference-landmarks.json",
+      "bytes": 1253,
+      "indexBlobSha1": "681cfd2a7cb627690ca533d4aa4426df10cd5ec0",
+      "rawWorkspaceBlobSha1": "681cfd2a7cb627690ca533d4aa4426df10cd5ec0",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/residual-geometry-76059cc.json",
+      "bytes": 8258,
+      "indexBlobSha1": "3e31e848a7c1d68391a393b039b40dc716174308",
+      "rawWorkspaceBlobSha1": "3e31e848a7c1d68391a393b039b40dc716174308",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/tablet-native-failure.png",
+      "bytes": 38178,
+      "indexBlobSha1": "91a5972f703c432c6eb29ff52ed981676cf5c73a",
+      "rawWorkspaceBlobSha1": "91a5972f703c432c6eb29ff52ed981676cf5c73a",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/tablet-native.zip",
+      "bytes": 3518235,
+      "indexBlobSha1": "8d115166e964a27648aba42a15654c94494abece",
+      "rawWorkspaceBlobSha1": "8d115166e964a27648aba42a15654c94494abece",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/capture-results.json",
+      "bytes": 146675,
+      "indexBlobSha1": "e329a02fdcfd3a360e2ab7b7a1cc9e062bc90584",
+      "rawWorkspaceBlobSha1": "e329a02fdcfd3a360e2ab7b7a1cc9e062bc90584",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/comparison-metrics.json",
+      "bytes": 1351,
+      "indexBlobSha1": "60953275711de84932de76eac44955c18d5021e9",
+      "rawWorkspaceBlobSha1": "60953275711de84932de76eac44955c18d5021e9",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-actual-modal-crop.png",
+      "bytes": 122735,
+      "indexBlobSha1": "0c8b667ea2d11ded90fe90f30037965daf9c379b",
+      "rawWorkspaceBlobSha1": "0c8b667ea2d11ded90fe90f30037965daf9c379b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-before.png",
+      "bytes": 190807,
+      "indexBlobSha1": "470803c36deeeb5081c1bf42a575fc90c7e844bd",
+      "rawWorkspaceBlobSha1": "470803c36deeeb5081c1bf42a575fc90c7e844bd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-canonical.png",
+      "bytes": 212447,
+      "indexBlobSha1": "bfc65b77d7133fa1101d806a293b77a231f6c72b",
+      "rawWorkspaceBlobSha1": "bfc65b77d7133fa1101d806a293b77a231f6c72b",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-diff-x3.png",
+      "bytes": 236578,
+      "indexBlobSha1": "7f9eb26856e20339b95f4abbfac5dcf6c46ed1c3",
+      "rawWorkspaceBlobSha1": "7f9eb26856e20339b95f4abbfac5dcf6c46ed1c3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-modal.png",
+      "bytes": 117812,
+      "indexBlobSha1": "35eee237dd4dcafd1b2418ef5c61d439d3f74f36",
+      "rawWorkspaceBlobSha1": "35eee237dd4dcafd1b2418ef5c61d439d3f74f36",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-overlay.png",
+      "bytes": 496889,
+      "indexBlobSha1": "2f35d50b6d7345f7eea657e8a143474d3a9bd72e",
+      "rawWorkspaceBlobSha1": "2f35d50b6d7345f7eea657e8a143474d3a9bd72e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-reference-modal-crop.png",
+      "bytes": 613586,
+      "indexBlobSha1": "7b5d19be636d038bbaafdf5102e0211885ea09c5",
+      "rawWorkspaceBlobSha1": "7b5d19be636d038bbaafdf5102e0211885ea09c5",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native-reference.png",
+      "bytes": 1397125,
+      "indexBlobSha1": "1066857eba919d2134b85a86eab9ac1459de30d3",
+      "rawWorkspaceBlobSha1": "1066857eba919d2134b85a86eab9ac1459de30d3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/desktop-native.zip",
+      "bytes": 6453183,
+      "indexBlobSha1": "087fe4eceb42befa5aacf7ef8aadaba0d65b8962",
+      "rawWorkspaceBlobSha1": "087fe4eceb42befa5aacf7ef8aadaba0d65b8962",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-actual-modal-crop.png",
+      "bytes": 105303,
+      "indexBlobSha1": "961bf2d52984c6790454b6b6749f93038d07a6ff",
+      "rawWorkspaceBlobSha1": "961bf2d52984c6790454b6b6749f93038d07a6ff",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-before.png",
+      "bytes": 136249,
+      "indexBlobSha1": "c0585bb8c4e9f934c0c9cb16da2e52284818f5f6",
+      "rawWorkspaceBlobSha1": "c0585bb8c4e9f934c0c9cb16da2e52284818f5f6",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-canonical.png",
+      "bytes": 110333,
+      "indexBlobSha1": "07a4b54a47c6a4a73ba6f42435a4837b49f1d8db",
+      "rawWorkspaceBlobSha1": "07a4b54a47c6a4a73ba6f42435a4837b49f1d8db",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-detail.png",
+      "bytes": 80778,
+      "indexBlobSha1": "d215242d1050670c02d56286c0a9886e768a6073",
+      "rawWorkspaceBlobSha1": "d215242d1050670c02d56286c0a9886e768a6073",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-diff-x3.png",
+      "bytes": 238893,
+      "indexBlobSha1": "39b8b3886061daf1c8fcf682ba2e57cae9f066a3",
+      "rawWorkspaceBlobSha1": "39b8b3886061daf1c8fcf682ba2e57cae9f066a3",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-modal.png",
+      "bytes": 114440,
+      "indexBlobSha1": "5a61119407831d7ed88271441fc1280dc165bbff",
+      "rawWorkspaceBlobSha1": "5a61119407831d7ed88271441fc1280dc165bbff",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-overlay.png",
+      "bytes": 610077,
+      "indexBlobSha1": "bdbc2123ac008b35ab88c6a80ca206e9d144052e",
+      "rawWorkspaceBlobSha1": "bdbc2123ac008b35ab88c6a80ca206e9d144052e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-reference-modal-crop.png",
+      "bytes": 749198,
+      "indexBlobSha1": "889607f45269b61a587f39c2f9331a93f5a6365e",
+      "rawWorkspaceBlobSha1": "889607f45269b61a587f39c2f9331a93f5a6365e",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native-reference.png",
+      "bytes": 1765845,
+      "indexBlobSha1": "f7757a34786147e9677505e6427a3d991b2c7740",
+      "rawWorkspaceBlobSha1": "f7757a34786147e9677505e6427a3d991b2c7740",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-NC-003/visual/wall-clock/tablet-native.zip",
+      "bytes": 6328729,
+      "indexBlobSha1": "cc4abe5b5bebb5da7117f039b48d46bb067523cd",
+      "rawWorkspaceBlobSha1": "cc4abe5b5bebb5da7117f039b48d46bb067523cd",
+      "identical": true,
+      "indexStage": "0",
+      "mode": "100644"
+    }
+  ]
+}

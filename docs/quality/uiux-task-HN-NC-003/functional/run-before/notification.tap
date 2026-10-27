@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: all six notification links resolve only their exact source record
+ok 1 - all six notification links resolve only their exact source record
+  ---
+  duration_ms: 29.8625
+  type: 'test'
+  ...
+# Subtest: known persisted legacy links resolve exact records without mutating read state
+ok 2 - known persisted legacy links resolve exact records without mutating read state
+  ---
+  duration_ms: 2.039
+  type: 'test'
+  ...
+# Subtest: notification refuses mismatched, malformed or unverified target identity
+ok 3 - notification refuses mismatched, malformed or unverified target identity
+  ---
+  duration_ms: 7.8504
+  type: 'test'
+  ...
+# Subtest: malformed notification queries fail closed and source lookup checks every identity dimension
+ok 4 - malformed notification queries fail closed and source lookup checks every identity dimension
+  ---
+  duration_ms: 1.1098
+  type: 'test'
+  ...
+# Subtest: other notifications retain supported list and overview document routes
+ok 5 - other notifications retain supported list and overview document routes
+  ---
+  duration_ms: 1.5263
+  type: 'test'
+  ...
+# Subtest: contract badge 0 → hidden
+ok 6 - contract badge 0 → hidden
+  ---
+  duration_ms: 10.516
+  type: 'test'
+  ...
+# Subtest: contract badge 1 → 1
+ok 7 - contract badge 1 → 1
+  ---
+  duration_ms: 0.297
+  type: 'test'
+  ...
+# Subtest: contract badge 9 → 9
+ok 8 - contract badge 9 → 9
+  ---
+  duration_ms: 0.2137
+  type: 'test'
+  ...
+# Subtest: contract badge 10 → 10
+ok 9 - contract badge 10 → 10
+  ---
+  duration_ms: 0.3233
+  type: 'test'
+  ...
+# Subtest: contract badge 99 → 99
+ok 10 - contract badge 99 → 99
+  ---
+  duration_ms: 0.3555
+  type: 'test'
+  ...
+# Subtest: contract badge 100 → 99+
+ok 11 - contract badge 100 → 99+
+  ---
+  duration_ms: 0.2938
+  type: 'test'
+  ...
+# Subtest: contract badge 999 → 99+
+ok 12 - contract badge 999 → 99+
+  ---
+  duration_ms: 0.2115
+  type: 'test'
+  ...
+# Subtest: business notification feed is persisted per actor and read commands are idempotent
+ok 13 - business notification feed is persisted per actor and read commands are idempotent
+  ---
+  duration_ms: 604.7344
+  type: 'test'
+  ...
+# Subtest: notification badge hides zero and caps high counts
+ok 14 - notification badge hides zero and caps high counts
+  ---
+  duration_ms: 0.3704
+  type: 'test'
+  ...
+# Subtest: selection and refreshing never mark a notification read
+ok 15 - selection and refreshing never mark a notification read
+  ---
+  duration_ms: 19.2987
+  type: 'test'
+  ...
+# Subtest: read/unread commands commit, replay safely, persist and stay actor-scoped
+ok 16 - read/unread commands commit, replay safely, persist and stay actor-scoped
+  ---
+  duration_ms: 14.1984
+  type: 'test'
+  ...
+# Subtest: failed mutation preserves confirmed state and reports failure
+ok 17 - failed mutation preserves confirmed state and reports failure
+  ---
+  duration_ms: 4.016
+  type: 'test'
+  ...
+# Subtest: generic repository stays empty without an explicit Preview seed
+ok 18 - generic repository stays empty without an explicit Preview seed
+  ---
+  duration_ms: 1.0532
+  type: 'test'
+  ...
+# Subtest: approved Preview seed has six localized records, two unread and supported screen targets
+ok 19 - approved Preview seed has six localized records, two unread and supported screen targets
+  ---
+  duration_ms: 5.7556
+  type: 'test'
+  ...
+# Subtest: old in-flight response cannot populate another account
+ok 20 - old in-flight response cannot populate another account
+  ---
+  duration_ms: 14.2415
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1561.6521

@@ -1,0 +1,684 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "docs/quality/uiux-task-HN-NC-003/functional/playwright.config.ts",
+      "--list"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\playwright.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-NC-003/functional/run-before/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/functional/canary-badge/badge.spec.ts",
+          "tests/functional/wave-ad/notification.spec.ts",
+          "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\run-before\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/functional/canary-badge/badge.spec.ts",
+          "tests/functional/wave-ad/notification.spec.ts",
+          "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts"
+        ],
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5254",
+          "headless": true,
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "locale": "vi-VN",
+          "timezoneId": "Asia/Ho_Chi_Minh",
+          "reducedMotion": "reduce",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\run-before/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5254 --strictPort",
+      "url": "http://127.0.0.1:5254",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "docs\\quality\\uiux-task-HN-NC-003\\functional\\extended.spec.ts",
+      "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F-NC-003-LIFECYCLE search/filter read-unread navigation mark-all persistence and verified deep link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-cb9fe9104cdebaee672c",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 10,
+          "column": 1
+        },
+        {
+          "title": "F-NC-003-STATE-empty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-eecb7a2c5b2bb2c14acb",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 19,
+          "column": 68
+        },
+        {
+          "title": "F-NC-003-STATE-loading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-2b506d6ffc56c2bd94c3",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 19,
+          "column": 68
+        },
+        {
+          "title": "F-NC-003-STATE-error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-c56c20b8c7db8b862b65",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 19,
+          "column": 68
+        },
+        {
+          "title": "F-NC-003-STATE-unverified",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-a48f2c3aa99e476afa7d",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 19,
+          "column": 68
+        },
+        {
+          "title": "F-NC-003-STATE-many",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-48b12359fc796c70f147",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 19,
+          "column": 68
+        },
+        {
+          "title": "F-NC-003-I18N-1920-vi-light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-3978deb0f4a16ccb2c8d",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-1920-vi-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-990dffc8254f9a5e09df",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-1920-en-light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-358b7f5771eb49efac77",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-1920-en-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-bf01b8dfda80eb945ef7",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-1920-zh-CN-light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-dfc53327fa1603192243",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-1920-zh-CN-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-c0930d132ce76cc171c9",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-800-vi-light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-40e8c48ceca153c90016",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-800-vi-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-fc64a8727c84cfce7e22",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-800-en-light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-b12141312782d8d97452",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-800-en-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-450b4bb2a306d74d9396",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-800-zh-CN-light",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-00ab2bdd768697f615f8",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-I18N-800-zh-CN-dark",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-2639257e555532ae7d00",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 27,
+          "column": 109
+        },
+        {
+          "title": "F-NC-003-MAIN-SESSION authenticated notifications close before logout; anonymous route exposes no prior data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "7c1b7179af2cd9c30acc-d82cc18acfc7c1910ab0",
+          "file": "docs/quality/uiux-task-HN-NC-003/functional/extended.spec.ts",
+          "line": 30,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\functional\\canary-badge\\badge.spec.ts",
+      "file": "tests/functional/canary-badge/badge.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F-CANARY-BADGE-1920 actual production CSS counts, accessible labels and negative control",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d3f130c773e91f7921ef-013fb222bf1ed13f3cb9",
+          "file": "tests/functional/canary-badge/badge.spec.ts",
+          "line": 4,
+          "column": 31
+        },
+        {
+          "title": "F-CANARY-BADGE-800 actual production CSS counts, accessible labels and negative control",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d3f130c773e91f7921ef-f5c58bb03b4ed87ddeba",
+          "file": "tests/functional/canary-badge/badge.spec.ts",
+          "line": 4,
+          "column": 31
+        },
+        {
+          "title": "F-CANARY-MAIN actual S01 bell 2 → 1 → 0, dialog focus and reload persistence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "d3f130c773e91f7921ef-e55d013c5329f0bc80d1",
+          "file": "tests/functional/canary-badge/badge.spec.ts",
+          "line": 23,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tests\\functional\\wave-ad\\notification.spec.ts",
+      "file": "tests/functional/wave-ad/notification.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "independent: opening and selecting unread does not mutate; filtered read returns to list",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "65a7d764abc931ab81a9-db335f76152ddddd7695",
+          "file": "tests/functional/wave-ad/notification.spec.ts",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "independent: tablet back retains filter, query and scroll; keyboard tabs operate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "65a7d764abc931ab81a9-df0dd381397d359937df",
+          "file": "tests/functional/wave-ad/notification.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "independent: offline mutation disabled, stale error preserves data, retry recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "65a7d764abc931ab81a9-c2433a67e8f6da543542",
+          "file": "tests/functional/wave-ad/notification.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "independent: focus trap in both directions and Escape restores opener",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "65a7d764abc931ab81a9-8222ccac419ad412622e",
+          "file": "tests/functional/wave-ad/notification.spec.ts",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "independent: desktop anatomical order, visible controls and tablet touch geometry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "65a7d764abc931ab81a9-5501c6e2b7917a5866b0",
+          "file": "tests/functional/wave-ad/notification.spec.ts",
+          "line": 72,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T05:38:18.718Z",
+    "duration": 315.15700000000015,
+    "expected": 0,
+    "skipped": 27,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

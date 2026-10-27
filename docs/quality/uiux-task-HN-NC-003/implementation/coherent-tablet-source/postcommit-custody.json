@@ -1,0 +1,119 @@
+{
+  "candidateSha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "cssSha256": "75103c69583daa311693790626630189debe75e3cdf84615483f84802b9d519a",
+  "workingSourceDiff": "",
+  "testedBaseSha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "testedPatchMatchesCommittedPatch": true,
+  "ownerSourceProbe": "docs/quality/uiux-task-HN-NC-003/implementation/coherent-tablet-source/candidate-results.json",
+  "selectionOccupiedSlotsStable": true,
+  "readOccupiedSlotsStable": true,
+  "neighborProfiles": [
+    {
+      "viewport": [
+        801,
+        1280
+      ],
+      "overflow": false,
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "w": 753,
+        "h": 1232,
+        "right": 777,
+        "bottom": 1256
+      }
+    },
+    {
+      "viewport": [
+        801,
+        802
+      ],
+      "overflow": false,
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "w": 753,
+        "h": 754,
+        "right": 777,
+        "bottom": 778
+      }
+    },
+    {
+      "viewport": [
+        900,
+        1000
+      ],
+      "overflow": false,
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "w": 852,
+        "h": 952,
+        "right": 876,
+        "bottom": 976
+      }
+    },
+    {
+      "viewport": [
+        1024,
+        1366
+      ],
+      "overflow": false,
+      "modal": {
+        "x": 77.63200378417969,
+        "y": 80,
+        "w": 880,
+        "h": 1262,
+        "right": 957.6320037841797,
+        "bottom": 1342
+      }
+    },
+    {
+      "viewport": [
+        1100,
+        1600
+      ],
+      "overflow": false,
+      "modal": {
+        "x": 116.05000305175781,
+        "y": 269,
+        "w": 880,
+        "h": 1262,
+        "right": 996.0500030517578,
+        "bottom": 1531
+      }
+    },
+    {
+      "viewport": [
+        800,
+        1280
+      ],
+      "overflow": false,
+      "modal": {
+        "x": 30,
+        "y": 110,
+        "w": 740,
+        "h": 1060,
+        "right": 770,
+        "bottom": 1170
+      }
+    },
+    {
+      "viewport": [
+        1774,
+        887
+      ],
+      "overflow": false,
+      "modal": {
+        "x": 391,
+        "y": 113.5,
+        "w": 1088,
+        "h": 728,
+        "right": 1479,
+        "bottom": 841.5
+      }
+    }
+  ],
+  "independentAcceptance": "PENDING; no all-pixel approval or new tolerance",
+  "openResidual": "max icon-Y residual5.625 CSSpx, P3OPEN; typography/glyph DESIGN_GAP"
+}

@@ -1,0 +1,201 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "docs/quality/uiux-task-HN-NC-003/functional/shared-regression.config.ts"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\shared-regression.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-NC-003/functional",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-NC-003/functional/focus-before/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-NC-003/functional",
+        "testIgnore": [],
+        "testMatch": [
+          "focus-repro.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-before\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional",
+        "testIgnore": [],
+        "testMatch": "focus-repro.spec.ts",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5254",
+          "headless": true,
+          "locale": "vi-VN",
+          "timezoneId": "Asia/Ho_Chi_Minh",
+          "reducedMotion": "reduce",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-before/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5254 --strictPort",
+      "url": "http://127.0.0.1:5254",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "focus-repro.spec.ts",
+      "file": "focus-repro.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F-NC-003-TOAST-FOCUS actual mark-all feedback dismiss restores visible focus after owning dialog closes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 32124,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"main-content\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"main-content\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-repro.spec.ts:11:1264",
+                    "location": {
+                      "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-repro.spec.ts",
+                      "column": 1264,
+                      "line": 11
+                    },
+                    "snippet": "   9 |  await page.goto('/#/preview/S01');await page.locator('#s07-username').fill('demo');await page.locator('#s07-password').fill('HoaNamDemo@2026');await page.locator('.s07-submit').click();await page.locator('.s08-confirm').click();await page.getByRole('button',{name:'Tiếp tục',exact:true}).click();await expect(page.locator('.ov-result-count')).toBeVisible({timeout:90000});await page.locator('.hn-notifications').click();const d=page.locator('dialog[open]');await expect(d.locator('.hn-notification-item')).toHaveCount(6);await d.getByRole('button',{name:'Đánh dấu tất cả đã đọc',exact:true}).click();await expect(page.locator('.hn-notifications__count')).toHaveCount(0);await page.keyboard.press('Escape');await expect(d).toHaveCount(0);await expect(page.locator('.hn-notifications')).toBeFocused();\n  10 |  const close=page.getByRole('status').getByRole('button',{name:'Đóng thông báo',exact:true});await expect(close).toBeVisible();await close.focus();const before=await page.evaluate(()=>({active:{tag:document.activeElement?.tagName,id:document.activeElement?.id,class:document.activeElement?.className},origin:{connected:document.querySelector('.hn-notification-mark-all')?.isConnected,rects:document.querySelector('.hn-notification-mark-all')?.getClientRects().length},dialogOpen:document.querySelector('#hn-preview-notification-center')?.hasAttribute('open')}));\n> 11 |  await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:`${evidence}/toast-close-focused.png`});await page.keyboard.press('Enter');await expect(page.locator('.hn-global-toast')).toHaveCount(0);const after=await page.evaluate(()=>({active:{tag:document.activeElement?.tagName,id:document.activeElement?.id,class:document.activeElement?.className,connected:document.activeElement?.isConnected,rects:document.activeElement?.getClientRects().length},main:{exists:!!document.getElementById('main-content'),tabIndex:document.getElementById('main-content')?.tabIndex}}));await page.screenshot({path:`${evidence}/after-toast-dismiss.png`});const end={sha:git('rev-parse','HEAD'),tree:git('rev-parse','HEAD:src'),diff:git('diff','HEAD','--','src')};const record={start,end,before,after,errors,environment:'LOCAL authenticated Preview mock; keyboard-only toast dismiss; fresh browser context',expected:'Visible #main-content fallback when the origin is hidden in closed dialog'};await fs.writeFile(`${evidence}/focus-repro.json`,JSON.stringify(record,null,2));await info.attach('focus-repro',{body:JSON.stringify(record),contentType:'application/json'});expect(start).toEqual(end);expect(end.diff).toBe('');expect(errors).toEqual([]);expect(after.active.id).toBe('main-content');\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^\n  12 | });\n  13 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-repro.spec.ts",
+                        "column": 1264,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"main-content\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\n\n   9 |  await page.goto('/#/preview/S01');await page.locator('#s07-username').fill('demo');await page.locator('#s07-password').fill('HoaNamDemo@2026');await page.locator('.s07-submit').click();await page.locator('.s08-confirm').click();await page.getByRole('button',{name:'Tiếp tục',exact:true}).click();await expect(page.locator('.ov-result-count')).toBeVisible({timeout:90000});await page.locator('.hn-notifications').click();const d=page.locator('dialog[open]');await expect(d.locator('.hn-notification-item')).toHaveCount(6);await d.getByRole('button',{name:'Đánh dấu tất cả đã đọc',exact:true}).click();await expect(page.locator('.hn-notifications__count')).toHaveCount(0);await page.keyboard.press('Escape');await expect(d).toHaveCount(0);await expect(page.locator('.hn-notifications')).toBeFocused();\n  10 |  const close=page.getByRole('status').getByRole('button',{name:'Đóng thông báo',exact:true});await expect(close).toBeVisible();await close.focus();const before=await page.evaluate(()=>({active:{tag:document.activeElement?.tagName,id:document.activeElement?.id,class:document.activeElement?.className},origin:{connected:document.querySelector('.hn-notification-mark-all')?.isConnected,rects:document.querySelector('.hn-notification-mark-all')?.getClientRects().length},dialogOpen:document.querySelector('#hn-preview-notification-center')?.hasAttribute('open')}));\n> 11 |  await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:`${evidence}/toast-close-focused.png`});await page.keyboard.press('Enter');await expect(page.locator('.hn-global-toast')).toHaveCount(0);const after=await page.evaluate(()=>({active:{tag:document.activeElement?.tagName,id:document.activeElement?.id,class:document.activeElement?.className,connected:document.activeElement?.isConnected,rects:document.activeElement?.getClientRects().length},main:{exists:!!document.getElementById('main-content'),tabIndex:document.getElementById('main-content')?.tabIndex}}));await page.screenshot({path:`${evidence}/after-toast-dismiss.png`});const end={sha:git('rev-parse','HEAD'),tree:git('rev-parse','HEAD:src'),diff:git('diff','HEAD','--','src')};const record={start,end,before,after,errors,environment:'LOCAL authenticated Preview mock; keyboard-only toast dismiss; fresh browser context',expected:'Visible #main-content fallback when the origin is hidden in closed dialog'};await fs.writeFile(`${evidence}/focus-repro.json`,JSON.stringify(record,null,2));await info.attach('focus-repro',{body:JSON.stringify(record),contentType:'application/json'});expect(start).toEqual(end);expect(end.diff).toBe('');expect(errors).toEqual([]);expect(after.active.id).toBe('main-content');\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^\n  12 | });\n  13 |\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-repro.spec.ts:11:1264"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:45:23.789Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "focus-repro",
+                      "contentType": "application/json",
+                      "body": "eyJzdGFydCI6eyJzaGEiOiJlNWJhNDg2ZmI4MmEwNWZjZjZjYjdhYTdiNTZmZGExN2RjNGJjYjE2IiwidHJlZSI6IjE0NWJkZjE5YzYxYTkwOGI1ZDRkNzc3OWI3YjQ0MDFlOGQyZDJmOGIiLCJkaWZmIjoiIn0sImVuZCI6eyJzaGEiOiJlNWJhNDg2ZmI4MmEwNWZjZjZjYjdhYTdiNTZmZGExN2RjNGJjYjE2IiwidHJlZSI6IjE0NWJkZjE5YzYxYTkwOGI1ZDRkNzc3OWI3YjQ0MDFlOGQyZDJmOGIiLCJkaWZmIjoiIn0sImJlZm9yZSI6eyJhY3RpdmUiOnsidGFnIjoiQlVUVE9OIiwiaWQiOiIiLCJjbGFzcyI6ImhuLWdsb2JhbC10b2FzdC1jbG9zZSJ9LCJvcmlnaW4iOnsiY29ubmVjdGVkIjp0cnVlLCJyZWN0cyI6MH0sImRpYWxvZ09wZW4iOmZhbHNlfSwiYWZ0ZXIiOnsiYWN0aXZlIjp7InRhZyI6IkJPRFkiLCJpZCI6IiIsImNsYXNzIjoiIiwiY29ubmVjdGVkIjp0cnVlLCJyZWN0cyI6MX0sIm1haW4iOnsiZXhpc3RzIjp0cnVlLCJ0YWJJbmRleCI6LTF9fSwiZXJyb3JzIjpbXSwiZW52aXJvbm1lbnQiOiJMT0NBTCBhdXRoZW50aWNhdGVkIFByZXZpZXcgbW9jazsga2V5Ym9hcmQtb25seSB0b2FzdCBkaXNtaXNzOyBmcmVzaCBicm93c2VyIGNvbnRleHQiLCJleHBlY3RlZCI6IlZpc2libGUgI21haW4tY29udGVudCBmYWxsYmFjayB3aGVuIHRoZSBvcmlnaW4gaXMgaGlkZGVuIGluIGNsb3NlZCBkaWFsb2cifQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-before\\test-results\\focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-before\\test-results\\focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-before\\test-results\\focus-repro-F-NC-003-TOAST-1a818--after-owning-dialog-closes\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\focus-repro.spec.ts",
+                    "column": 1264,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "9dd8c16cf3ec3fe04144-e0dea83f94aae4945ce3",
+          "file": "focus-repro.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T05:45:18.512Z",
+    "duration": 40342.025,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

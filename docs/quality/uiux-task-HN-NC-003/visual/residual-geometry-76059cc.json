@@ -1,0 +1,268 @@
+{
+  "sha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "profile": {
+    "width": 992,
+    "height": 1586,
+    "dpr": 1
+  },
+  "status": "OPEN_REQUIRES_DG_DISPOSITION",
+  "items": [
+    {
+      "id": "header-divider",
+      "selector": ".hn-global-modal__header",
+      "actualBBoxCSS": {
+        "x": 62.45600128173828,
+        "y": 262.125,
+        "width": 878,
+        "height": 140
+      },
+      "referenceRaster": {
+        "bottom": 405
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "search",
+      "selector": ".hn-notification-search",
+      "actualBBoxCSS": {
+        "x": 98.45600128173828,
+        "y": 422.125,
+        "width": 806,
+        "height": 56
+      },
+      "referenceRaster": {
+        "x": 94,
+        "y": 431,
+        "right": 909,
+        "height": 57
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "filter",
+      "selector": ".hn-notification-filter-row",
+      "actualBBoxCSS": {
+        "x": 98.45600128173828,
+        "y": 480.125,
+        "width": 806,
+        "height": 77
+      },
+      "referenceRaster": {
+        "x": 94,
+        "bottom": 574,
+        "right": 909
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "today",
+      "selector": ".hn-notification-group:nth-child(1)>h3",
+      "actualBBoxCSS": {
+        "x": 98.45600128173828,
+        "y": 557.125,
+        "width": 806,
+        "height": 65
+      },
+      "referenceRaster": {
+        "inkY": 611,
+        "bottomBorderY": 643
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "yesterday",
+      "selector": ".hn-notification-group:nth-child(2)>h3",
+      "actualBBoxCSS": {
+        "x": 98.45600128173828,
+        "y": 1118.125,
+        "width": 806,
+        "height": 65
+      },
+      "referenceRaster": {
+        "inkY": 1161,
+        "bottomBorderY": 1191
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "row1",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-1\"]",
+      "actualBBoxCSS": {
+        "x": 98.45600128173828,
+        "y": 622.125,
+        "width": 806,
+        "height": 116
+      },
+      "referenceRaster": {
+        "icon": {
+          "x": 112,
+          "y": 661,
+          "width": 70,
+          "height": 71
+        },
+        "titleInk": {
+          "x": 217,
+          "y": 671
+        }
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "row1-icon",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-1\"] .hn-notification-item-icon",
+      "actualBBoxCSS": {
+        "x": 116.45600128173828,
+        "y": 645.125,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceRaster": {
+        "x": 112,
+        "y": 661,
+        "width": 70,
+        "height": 71
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "row1-title",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-1\"] strong",
+      "actualBBoxCSS": {
+        "x": 214.45599365234375,
+        "y": 647.125,
+        "width": 535.484375,
+        "height": 32
+      },
+      "referenceRaster": {
+        "x": 217,
+        "y": 671
+      },
+      "referenceMethod": "reference is painted ink; actual is CSS line-box; do not equate y directly"
+    },
+    {
+      "id": "row2",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-2\"]",
+      "actualBBoxCSS": {
+        "x": 98.45600128173828,
+        "y": 739.125,
+        "width": 806,
+        "height": 116
+      },
+      "referenceRaster": {
+        "fill": {
+          "x": 94,
+          "y": 752,
+          "right": 922,
+          "bottom": 865
+        },
+        "titleInk": {
+          "x": 247,
+          "y": 782
+        }
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "row2-icon",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-2\"] .hn-notification-item-icon",
+      "actualBBoxCSS": {
+        "x": 116.45600128173828,
+        "y": 762.125,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceRaster": {},
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "row2-title",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-2\"] strong",
+      "actualBBoxCSS": {
+        "x": 238.45599365234375,
+        "y": 764.125,
+        "width": 511.484375,
+        "height": 32
+      },
+      "referenceRaster": {
+        "x": 247,
+        "y": 782
+      },
+      "referenceMethod": "reference is painted ink; actual is CSS line-box; do not equate y directly"
+    },
+    {
+      "id": "row3",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-3\"]",
+      "actualBBoxCSS": {
+        "x": 98.45600128173828,
+        "y": 857.125,
+        "width": 806,
+        "height": 115
+      },
+      "referenceRaster": {
+        "fill": {
+          "x": 94,
+          "y": 867,
+          "right": 922,
+          "bottom": 980
+        },
+        "titleInk": {
+          "x": 247,
+          "y": 896
+        }
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "row3-icon",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-3\"] .hn-notification-item-icon",
+      "actualBBoxCSS": {
+        "x": 116.45600128173828,
+        "y": 879.625,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceRaster": {},
+      "referenceMethod": "source raster estimate +/-2px"
+    },
+    {
+      "id": "row3-title",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-3\"] strong",
+      "actualBBoxCSS": {
+        "x": 238.45599365234375,
+        "y": 881.625,
+        "width": 511.484375,
+        "height": 32
+      },
+      "referenceRaster": {
+        "x": 247,
+        "y": 896
+      },
+      "referenceMethod": "reference is painted ink; actual is CSS line-box; do not equate y directly"
+    },
+    {
+      "id": "footer",
+      "selector": ".hn-notification-list-footer",
+      "actualBBoxCSS": {
+        "x": 88.45600128173828,
+        "y": 1453.125,
+        "width": 826,
+        "height": 69
+      },
+      "referenceRaster": {
+        "x": 94,
+        "dividerY": 1439,
+        "right": 909,
+        "textInkY": 1465
+      },
+      "referenceMethod": "source raster estimate +/-2px"
+    }
+  ],
+  "coherentCorrectionProposal": [
+    "Treat header/toolbar/list/footer as one composition. Keep modal placement and44px close target locked to measured fix; leave global fonts and shared shell untouched.",
+    "Match header divider~405 first, then toolbar horizontal inset~32px inside modal inner box (current36), search top431 and filter bottom574. Candidate increases header height~3px and toolbar top padding~6px; remaining~8px belongs to search-to-filter separation, subject to DG review.",
+    "Match first group divider~643 and first icon661. After toolbar shift~17px, group region needs~5px additional space, while first row height is~8px less in source. Preserve auto height for long text; do not hardcode sample-ID heights.",
+    "Keep verified2px unread separation. Match unread fills752..865 and867..980 plus content inset: current fillx98.456..904.456 vs reference94..922. Group h3/search right remains~909 while unread fill extends~13px farther; require DG layout mapping before any row-width expansion. Title/body inset can be scoped to portrait row grid rather than global typography.",
+    "Footer boundary must rise~14px from1453.125 toward1439 while content label shifts~10px and right/left margins match94..909. Candidate total footer height83px vs current69, coordinated with new list available height. Maintain scroll containment and not fixed sampled item count.",
+    "Validate the coordinated candidate by fresh same-SHA real-app captures at992@1,800@2,801/900short anddesktop, long-text state, detail/footer/navigation/focus; never approve from isolated CSS geometry only."
+  ]
+}

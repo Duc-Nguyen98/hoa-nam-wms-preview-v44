@@ -1,0 +1,271 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "tests/functional/shared-semantics.config.ts",
+      "--grep",
+      "dialog has a heading"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\shared-semantics.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/functional/wave-ad",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/output/hn-nc003-semantics-actual-before/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/functional/wave-ad",
+        "testIgnore": [],
+        "testMatch": [
+          "shared-semantics.spec.ts"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad",
+        "testIgnore": [],
+        "testMatch": "shared-semantics.spec.ts",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5262",
+          "headless": true,
+          "locale": "vi-VN",
+          "timezoneId": "Asia/Bangkok",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5262 --strictPort",
+      "url": "http://127.0.0.1:5262",
+      "cwd": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "shared-semantics.spec.ts",
+      "file": "shared-semantics.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "shared semantics: dialog has a heading without a nested page banner at 1920",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 33943,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('dialog[open]').getByRole('banner')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('dialog[open]').getByRole('banner') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('dialog[open]').getByRole('banner')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('dialog[open]').getByRole('banner')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('dialog[open]').getByRole('banner') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('dialog[open]').getByRole('banner')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:41:46",
+                    "location": {
+                      "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                      "column": 46,
+                      "line": 41
+                    },
+                    "snippet": "  39 |     await expect(dialog).toHaveAccessibleName(/Trung tâm thông báo/);\n  40 |     await expect(dialog.getByRole('heading', {name: /Trung tâm thông báo/})).toBeVisible();\n> 41 |     await expect(dialog.getByRole('banner')).toHaveCount(0);\n     |                                              ^\n  42 |     await page.addScriptTag({path: scanner});\n  43 |     const violations = await page.evaluate(async () => {\n  44 |       const {violations} = await (window as any).axe.run({include: [['dialog[open]']]}, {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                        "column": 46,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('dialog[open]').getByRole('banner')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('dialog[open]').getByRole('banner') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('dialog[open]').getByRole('banner')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  39 |     await expect(dialog).toHaveAccessibleName(/Trung tâm thông báo/);\n  40 |     await expect(dialog.getByRole('heading', {name: /Trung tâm thông báo/})).toBeVisible();\n> 41 |     await expect(dialog.getByRole('banner')).toHaveCount(0);\n     |                                              ^\n  42 |     await page.addScriptTag({path: scanner});\n  43 |     const violations = await page.evaluate(async () => {\n  44 |       const {violations} = await (window as any).axe.run({include: [['dialog[open]']]}, {\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:41:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:38:47.874Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\test-results\\shared-semantics-shared-se-d4822--nested-page-banner-at-1920\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\test-results\\shared-semantics-shared-se-d4822--nested-page-banner-at-1920\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\test-results\\shared-semantics-shared-se-d4822--nested-page-banner-at-1920\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                    "column": 46,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6d672a96b0173b4cf8c1-de067b37e973154cca29",
+          "file": "shared-semantics.spec.ts",
+          "line": 37,
+          "column": 3
+        },
+        {
+          "title": "shared semantics: dialog has a heading without a nested page banner at 800",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 28399,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('dialog[open]').getByRole('banner')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('dialog[open]').getByRole('banner') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('dialog[open]').getByRole('banner')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('dialog[open]').getByRole('banner')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('dialog[open]').getByRole('banner') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('dialog[open]').getByRole('banner')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:41:46",
+                    "location": {
+                      "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                      "column": 46,
+                      "line": 41
+                    },
+                    "snippet": "  39 |     await expect(dialog).toHaveAccessibleName(/Trung tâm thông báo/);\n  40 |     await expect(dialog.getByRole('heading', {name: /Trung tâm thông báo/})).toBeVisible();\n> 41 |     await expect(dialog.getByRole('banner')).toHaveCount(0);\n     |                                              ^\n  42 |     await page.addScriptTag({path: scanner});\n  43 |     const violations = await page.evaluate(async () => {\n  44 |       const {violations} = await (window as any).axe.run({include: [['dialog[open]']]}, {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                        "column": 46,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('dialog[open]').getByRole('banner')\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('dialog[open]').getByRole('banner') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('dialog[open]').getByRole('banner')\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  39 |     await expect(dialog).toHaveAccessibleName(/Trung tâm thông báo/);\n  40 |     await expect(dialog.getByRole('heading', {name: /Trung tâm thông báo/})).toBeVisible();\n> 41 |     await expect(dialog.getByRole('banner')).toHaveCount(0);\n     |                                              ^\n  42 |     await page.addScriptTag({path: scanner});\n  43 |     const violations = await page.evaluate(async () => {\n  44 |       const {violations} = await (window as any).axe.run({include: [['dialog[open]']]}, {\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts:41:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T05:39:23.289Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\test-results\\shared-semantics-shared-se-0f546-a-nested-page-banner-at-800\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\test-results\\shared-semantics-shared-se-0f546-a-nested-page-banner-at-800\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-nc003-semantics-actual-before\\test-results\\shared-semantics-shared-se-0f546-a-nested-page-banner-at-800\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\functional\\wave-ad\\shared-semantics.spec.ts",
+                    "column": 46,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6d672a96b0173b4cf8c1-d72b23b3f2c97c03d6dd",
+          "file": "shared-semantics.spec.ts",
+          "line": 37,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T05:38:47.230Z",
+    "duration": 65186.992999999995,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

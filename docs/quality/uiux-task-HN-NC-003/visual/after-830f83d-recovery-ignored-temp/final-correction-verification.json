@@ -1,0 +1,156 @@
+{
+  "sourceSHA": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "endedSHA": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "allSuccessfulRuntimeSourceClean": true,
+  "referenceLandmarkUncertaintyPx": 2,
+  "tabletLandmarks": {
+    ".hn-notification-search": {
+      "x": 94.45600128173828,
+      "y": 431.125,
+      "width": 814,
+      "height": 56
+    },
+    ".hn-notification-filter-row": {
+      "x": 94.45600128173828,
+      "y": 489.125,
+      "width": 814,
+      "height": 85
+    },
+    ".hn-notification-list-footer": {
+      "x": 94.45600128173828,
+      "y": 1439.125,
+      "width": 814,
+      "height": 83
+    }
+  },
+  "rows": [
+    {
+      "id": "PREVIEW-DESIGN-1",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-1\"]",
+      "rowBBox": {
+        "x": 94.45600128173828,
+        "y": 643.125,
+        "width": 828,
+        "height": 113
+      },
+      "iconBBox": {
+        "x": 112.45600128173828,
+        "y": 664.625,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceIconYEstimate": 661,
+      "deltaY": 3.625
+    },
+    {
+      "id": "PREVIEW-DESIGN-2",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-2\"]",
+      "rowBBox": {
+        "x": 94.45600128173828,
+        "y": 757.125,
+        "width": 828,
+        "height": 113
+      },
+      "iconBBox": {
+        "x": 112.45600128173828,
+        "y": 778.625,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceIconYEstimate": 773,
+      "deltaY": 5.625
+    },
+    {
+      "id": "PREVIEW-DESIGN-3",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-3\"]",
+      "rowBBox": {
+        "x": 94.45600128173828,
+        "y": 872.125,
+        "width": 828,
+        "height": 112
+      },
+      "iconBBox": {
+        "x": 112.45600128173828,
+        "y": 893.125,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceIconYEstimate": 889,
+      "deltaY": 4.125
+    },
+    {
+      "id": "PREVIEW-DESIGN-4",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-4\"]",
+      "rowBBox": {
+        "x": 94.45600128173828,
+        "y": 985.125,
+        "width": 828,
+        "height": 113
+      },
+      "iconBBox": {
+        "x": 112.45600128173828,
+        "y": 1006.625,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceIconYEstimate": 1006,
+      "deltaY": 0.625
+    },
+    {
+      "id": "PREVIEW-DESIGN-5",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-5\"]",
+      "rowBBox": {
+        "x": 94.45600128173828,
+        "y": 1192.125,
+        "width": 828,
+        "height": 113
+      },
+      "iconBBox": {
+        "x": 112.45600128173828,
+        "y": 1213.625,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceIconYEstimate": 1212,
+      "deltaY": 1.625
+    },
+    {
+      "id": "PREVIEW-DESIGN-6",
+      "selector": "[data-notification-id=\"PREVIEW-DESIGN-6\"]",
+      "rowBBox": {
+        "x": 94.45600128173828,
+        "y": 1306.125,
+        "width": 828,
+        "height": 113
+      },
+      "iconBBox": {
+        "x": 112.45600128173828,
+        "y": 1327.625,
+        "width": 69.99999237060547,
+        "height": 70
+      },
+      "referenceIconYEstimate": 1328,
+      "deltaY": -0.375
+    }
+  ],
+  "maxAbsoluteIconYDifference": 5.625,
+  "strictRowDensityReadUnreadInvariant": {
+    "desktop-native": null,
+    "tablet-native": false,
+    "tablet-canonical": true,
+    "portrait-neighbor": false,
+    "portrait-short": false,
+    "portrait-801-edge": false
+  },
+  "densityDisposition": "EXPECTED_STATE_BOUNDARY_COMPENSATION confirmed by Design Guardian: adjacent li slot2+112=1+113=114; only button interior shifts1px, downstream row anchors/footer unchanged. Raw strictbuttoninvariancefalse remainsfalse. Max5.625px iconY residual remainsVQ06P3OPEN.",
+  "canonicalVisualDefects": {
+    "VQ01": "CLOSED_VERIFIED",
+    "VQ02": "CLOSED_VERIFIED",
+    "VQ03": "CLOSED_VERIFIED",
+    "VQ04": "CLOSED_VERIFIED",
+    "VQ05": "CLOSED_VERIFIED",
+    "VQ06": "PARTIALLY_CORRECTED_P3_OPEN"
+  },
+  "visualAcceptance": "BLOCKED_MISSING_TOLERANCE_FONT_ICON_AUTHORITY",
+  "desktopFullRasterPixelsIdenticalTo76059cc": true
+}

@@ -1,0 +1,202 @@
+{
+  "observedAtUtc": "2026-10-27T06:06:26.7763282+00:00",
+  "localCandidate": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "observations": [
+    {
+      "path": "/branches/DEV",
+      "ok": true,
+      "value": {
+        "name": "DEV",
+        "commit": {
+          "sha": "78752811af4b0434c958d604dc52ca445cdbeede",
+          "node_id": "C_kwDOVXescNoAKDc4NzUyODExYWY0YjA0MzRjOTU4ZDYwNGRjNTJjYTQ0NWNkYmVlZGU",
+          "commit": {
+            "author": {
+              "name": "Wuangg",
+              "email": "52225998+Duc-Nguyen98@users.noreply.github.com",
+              "date": "2026-10-27T04:46:27Z"
+            },
+            "committer": {
+              "name": "Wuangg",
+              "email": "52225998+Duc-Nguyen98@users.noreply.github.com",
+              "date": "2026-10-27T04:46:27Z"
+            },
+            "message": "docs(governance): record adaptive model routing policy",
+            "tree": {
+              "sha": "2b6481a1e67c1d370381494ea6c80859db3b0391",
+              "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/trees/2b6481a1e67c1d370381494ea6c80859db3b0391"
+            },
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/commits/78752811af4b0434c958d604dc52ca445cdbeede",
+            "comment_count": 0,
+            "verification": {
+              "verified": false,
+              "reason": "unsigned",
+              "signature": null,
+              "payload": null,
+              "verified_at": null
+            }
+          },
+          "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/78752811af4b0434c958d604dc52ca445cdbeede",
+          "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/commit/78752811af4b0434c958d604dc52ca445cdbeede",
+          "comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/78752811af4b0434c958d604dc52ca445cdbeede/comments",
+          "author": {
+            "login": "Duc-Nguyen98",
+            "id": 52225998,
+            "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Duc-Nguyen98",
+            "html_url": "https://github.com/Duc-Nguyen98",
+            "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+            "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+            "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+            "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+            "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "committer": {
+            "login": "Duc-Nguyen98",
+            "id": 52225998,
+            "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Duc-Nguyen98",
+            "html_url": "https://github.com/Duc-Nguyen98",
+            "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+            "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+            "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+            "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+            "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "parents": [
+            {
+              "sha": "d72dbadebe59eefcf98fbfabd489eb20b13e2532",
+              "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/d72dbadebe59eefcf98fbfabd489eb20b13e2532",
+              "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/commit/d72dbadebe59eefcf98fbfabd489eb20b13e2532"
+            }
+          ]
+        },
+        "_links": {
+          "self": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV",
+          "html": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/tree/DEV"
+        },
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        },
+        "protection_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV/protection"
+      }
+    },
+    {
+      "path": "/actions/runs/40451587889/jobs",
+      "ok": true,
+      "value": {
+        "total_count": 2,
+        "jobs": [
+          {
+            "id": 122015310649,
+            "run_id": 40451587889,
+            "workflow_name": "Hoa Nam quality gates",
+            "head_branch": "DEV",
+            "run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40451587889",
+            "run_attempt": 1,
+            "node_id": "CR_kwDOVXescM8AAAAcaK3jOQ",
+            "head_sha": "78752811af4b0434c958d604dc52ca445cdbeede",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/jobs/122015310649",
+            "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40451587889/job/122015310649",
+            "status": "completed",
+            "conclusion": "failure",
+            "created_at": "2026-10-27T04:46:33Z",
+            "started_at": "2026-10-27T04:46:33Z",
+            "completed_at": "2026-10-27T04:46:35Z",
+            "name": "critical",
+            "steps": [],
+            "check_run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/check-runs/122015310649",
+            "labels": [
+              "ubuntu-latest"
+            ],
+            "runner_id": 0,
+            "runner_name": "",
+            "runner_group_id": 0,
+            "runner_group_name": ""
+          },
+          {
+            "id": 122015324102,
+            "run_id": 40451587889,
+            "workflow_name": "Hoa Nam quality gates",
+            "head_branch": "DEV",
+            "run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40451587889",
+            "run_attempt": 1,
+            "node_id": "CR_kwDOVXescM8AAAAcaK4Xxg",
+            "head_sha": "78752811af4b0434c958d604dc52ca445cdbeede",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/jobs/122015324102",
+            "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40451587889/job/122015324102",
+            "status": "completed",
+            "conclusion": "skipped",
+            "created_at": "2026-10-27T04:46:36Z",
+            "started_at": "2026-10-27T04:46:36Z",
+            "completed_at": "2026-10-27T04:46:35Z",
+            "name": "visual-and-functional",
+            "steps": [],
+            "check_run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/check-runs/122015324102",
+            "labels": [
+              "ubuntu-latest"
+            ],
+            "runner_id": null,
+            "runner_name": null,
+            "runner_group_id": null,
+            "runner_group_name": null
+          }
+        ]
+      }
+    },
+    {
+      "path": "/check-runs/122015310649/annotations",
+      "ok": true,
+      "value": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/78752811af4b0434c958d604dc52ca445cdbeede/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/78752811af4b0434c958d604dc52ca445cdbeede/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    }
+  ]
+}

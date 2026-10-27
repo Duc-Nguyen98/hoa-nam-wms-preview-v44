@@ -1,0 +1,49 @@
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 quality:pr
+> npm run typecheck && npm run quality:contract && npm run build && npm run test:putaway
+
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 typecheck
+> tsc --noEmit
+
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 quality:contract
+> node scripts/quality-contract.mjs
+
+QUALITY_CONTRACT_PASS: 13 states, 26 references, immutable source policy
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 build
+> npm run typecheck && vite build && node scripts/write-build-info.mjs
+
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 typecheck
+> tsc --noEmit
+
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 618 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                           0.91 kB │ gzip:   0.48 kB
+dist/assets/index-wUuQJzCR.css          583.69 kB │ gzip:  88.67 kB
+dist/assets/hoa-nam-xlsx-4YPyl83_.js     18.76 kB │ gzip:   7.66 kB
+dist/assets/index-Ctcwm9g-.js         2,275.70 kB │ gzip: 618.70 kB
+
+✓ built in 2.29s
+{"release":"HN-B17-PUBLIC-CANDIDATE-20261024.2","buildId":"6b3cbeda39a296aebe50905bbfc865a62342a469f59d0dd183860eeb96de5cbe","assets":15}
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 test:putaway
+> tsx --test tests/putaway-approved/*.test.ts
+
+✔ putaway history adapter accepts the scoped result envelope (3.677ms)
+✔ history route forwards only typed query fields to the business reader (1.8075ms)
+✔ history route is a distinct API surface for forbidden readers (1.2396ms)
+✔ approved tray seed keeps 27 boxes, 18 orders and nine linked confirmation rows (27.7055ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1165.6477

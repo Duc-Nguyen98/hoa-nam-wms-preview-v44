@@ -1,0 +1,372 @@
+[
+  {
+    "file": "wall-clock/capture-results.json",
+    "bytes": 146675,
+    "sha256": "22d3eda93818f46c2f1db828f4bdeceee1bd66026a70e06556453e2d5d7e7ab1"
+  },
+  {
+    "file": "wall-clock/comparison-metrics.json",
+    "bytes": 1351,
+    "sha256": "f19eac8e696d7ef72080a40347e7624df1c19a6e9c1ad2b750c759f0991ba5a2"
+  },
+  {
+    "file": "wall-clock/desktop-native-actual-modal-crop.png",
+    "bytes": 122735,
+    "sha256": "963874fd2de0e54b401e8047bb3434de0a443d7c0c185f40d393e989fddf3351"
+  },
+  {
+    "file": "wall-clock/desktop-native-before.png",
+    "bytes": 190807,
+    "sha256": "124d2ff237ed5d6a1342bffa221bbbb011e879c6a66c077f5a2ac3d319d82a0c"
+  },
+  {
+    "file": "wall-clock/desktop-native-canonical.png",
+    "bytes": 212447,
+    "sha256": "55f247f99ee6647687fbe71ecd163ea0a0a94a88a8104146f76c4bcd2de3b44b"
+  },
+  {
+    "file": "wall-clock/desktop-native-diff-x3.png",
+    "bytes": 236578,
+    "sha256": "2ec14f0a3d10b69420ff6c1bf3c303fa9090974ddca40c0b0ab09186f81400a4"
+  },
+  {
+    "file": "wall-clock/desktop-native-modal.png",
+    "bytes": 117812,
+    "sha256": "3ad2dda33a9a2c9d860706a7fcb46ab5ac2f77e27280fde14722366943081a97"
+  },
+  {
+    "file": "wall-clock/desktop-native-overlay.png",
+    "bytes": 496889,
+    "sha256": "96d8257ef80bc0f03fe7abbdd481d87145bd769cfa85557de4f9eefdbc20a18e"
+  },
+  {
+    "file": "wall-clock/desktop-native-reference-modal-crop.png",
+    "bytes": 613586,
+    "sha256": "54202747a59783db6ac3c4f0aa4d7ab694c744e6aaf3eef3f4e81178e54a3e9e"
+  },
+  {
+    "file": "wall-clock/desktop-native-reference.png",
+    "bytes": 1397125,
+    "sha256": "fa1a5615926a3a15b4cdf72d3482f53f4755931f9b881f8f34874a35233ae22c"
+  },
+  {
+    "file": "wall-clock/desktop-native.zip",
+    "bytes": 6453183,
+    "sha256": "06ebf5ac366e7c8f9d2228ca72a2a19a5b93658cdcbd64d3ba1b97eec2bfc23e"
+  },
+  {
+    "file": "wall-clock/tablet-native-actual-modal-crop.png",
+    "bytes": 105303,
+    "sha256": "b84679bbaa4af125d5a12b44519e9e6135dca95cd66fc448e56175b646def5ae"
+  },
+  {
+    "file": "wall-clock/tablet-native-before.png",
+    "bytes": 136249,
+    "sha256": "5be2aa6233f411dbaae95e91e535a49b0370ab3ee4661a11dedeab5661a5224b"
+  },
+  {
+    "file": "wall-clock/tablet-native-canonical.png",
+    "bytes": 110333,
+    "sha256": "5774d5244fcef7eab6087fe65495d3871531a36395b11b82d0a8971d3fc03796"
+  },
+  {
+    "file": "wall-clock/tablet-native-detail.png",
+    "bytes": 80778,
+    "sha256": "c1a3209b24279e28beab8e95b55f5e80b9be8aebee90e9720530aca1c05bbfb0"
+  },
+  {
+    "file": "wall-clock/tablet-native-diff-x3.png",
+    "bytes": 238893,
+    "sha256": "6b3e30727875000365bcd1d3ac508a434038dc6de2baf7c92f543b3c141675c3"
+  },
+  {
+    "file": "wall-clock/tablet-native-modal.png",
+    "bytes": 114440,
+    "sha256": "0f7beb40ebf51f0ffba7821061fb53311809fec3d1b058708305231c392c187e"
+  },
+  {
+    "file": "wall-clock/tablet-native-overlay.png",
+    "bytes": 610077,
+    "sha256": "9cd6acbdc8ec44a678e596ae6aabefa64e3cd0a27d1257ab07e1df871eadf746"
+  },
+  {
+    "file": "wall-clock/tablet-native-reference-modal-crop.png",
+    "bytes": 749198,
+    "sha256": "f9ae3d993783bb3dd59524a34d7c396314e9bf4b7c607c93b79424bcb74796d6"
+  },
+  {
+    "file": "wall-clock/tablet-native-reference.png",
+    "bytes": 1765845,
+    "sha256": "65606c1c19e7124340cdf18f41d201b136be755059275dd2b777847b268569f4"
+  },
+  {
+    "file": "wall-clock/tablet-native.zip",
+    "bytes": 6328729,
+    "sha256": "e2f968f8bad204607697fbc76bd8422881ca8d0fe5d26fb3112cfc3053dc7c33"
+  },
+  {
+    "file": "after-76059cc/capture-results.json",
+    "bytes": 1027132,
+    "sha256": "31bf6a174b1f4d68b56aba90041ab4625b9a44a7c9a2773f3b052f5c1145e77f"
+  },
+  {
+    "file": "after-76059cc/comparison-metrics.json",
+    "bytes": 1351,
+    "sha256": "2e707ff33c91a894f88b2e53e01b13ba838fb77cf110425a68ac97a1ad819a81"
+  },
+  {
+    "file": "after-76059cc/correction-verification.json",
+    "bytes": 2986,
+    "sha256": "5dc6f880d02d99cb749c699d5e93021cd37ac024e848732e390928f71d0f43e8"
+  },
+  {
+    "file": "after-76059cc/desktop-canonical-failure.png",
+    "bytes": 8512,
+    "sha256": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3"
+  },
+  {
+    "file": "after-76059cc/desktop-canonical.zip",
+    "bytes": 57653,
+    "sha256": "087aa208ed2dba9de6fafc6d729477f32e0d045cf19e5ed3d2b6386b7ea597a4"
+  },
+  {
+    "file": "after-76059cc/desktop-native-actual-modal-crop.png",
+    "bytes": 122823,
+    "sha256": "5866e97cd75158f4cf7c32d728818fc4ebcc86c04fa3fc7ff12c5a1fc44ae054"
+  },
+  {
+    "file": "after-76059cc/desktop-native-after.png",
+    "bytes": 191012,
+    "sha256": "fdca3b05dcfdb546a92b874914ea146ec09f253dff4c36cdcd9788ad60c55a8b"
+  },
+  {
+    "file": "after-76059cc/desktop-native-before-after-diff.png",
+    "bytes": 7830,
+    "sha256": "556262587cd0c0aff4a69b18ac13dc9b1e923cc569be55b7e000422499a3d43f"
+  },
+  {
+    "file": "after-76059cc/desktop-native-close-paint.png",
+    "bytes": 368,
+    "sha256": "c0d25bcfa3780615900677d3a553c4d8fdb2b10c096d8fc66d23ac36dd9fe039"
+  },
+  {
+    "file": "after-76059cc/desktop-native-diff-x3.png",
+    "bytes": 235841,
+    "sha256": "b28c44a4ec542a1f960d6cec792407d75cc079cf1bc444add6170a4c8deaf35e"
+  },
+  {
+    "file": "after-76059cc/desktop-native-modal.png",
+    "bytes": 117866,
+    "sha256": "5ae391487abb0a37c4e011b3037b0359e1fa912176626612bb75bc213a44318d"
+  },
+  {
+    "file": "after-76059cc/desktop-native-overlay.png",
+    "bytes": 496975,
+    "sha256": "166327a7a38b6af3c9c2cecc5f81d23b2f1a58fecc500016c28502f49b77be9f"
+  },
+  {
+    "file": "after-76059cc/desktop-native-reference-modal-crop.png",
+    "bytes": 613586,
+    "sha256": "54202747a59783db6ac3c4f0aa4d7ab694c744e6aaf3eef3f4e81178e54a3e9e"
+  },
+  {
+    "file": "after-76059cc/desktop-native-reference.png",
+    "bytes": 1397125,
+    "sha256": "fa1a5615926a3a15b4cdf72d3482f53f4755931f9b881f8f34874a35233ae22c"
+  },
+  {
+    "file": "after-76059cc/desktop-native.zip",
+    "bytes": 7013671,
+    "sha256": "9dd942b57d57bf4e00e4d2a7b1ed373e2dca79704ae7ec229145f9311ba414af"
+  },
+  {
+    "file": "after-76059cc/geometry-paint-summary.json",
+    "bytes": 6711,
+    "sha256": "5f4556dbac2dcdfaa66ceaea9066a2676492ff2566c5b25dca375630be48d348"
+  },
+  {
+    "file": "after-76059cc/portrait-801-edge-after.png",
+    "bytes": 102517,
+    "sha256": "a9332bacea5d97f3716af0e372df4c749d6413ef88de50746aa384df1987caca"
+  },
+  {
+    "file": "after-76059cc/portrait-801-edge-close-paint.png",
+    "bytes": 482,
+    "sha256": "df0e0530e6590263de9995439dba4f03b25e96e78893d3e10a06ab26af64e189"
+  },
+  {
+    "file": "after-76059cc/portrait-801-edge-detail.png",
+    "bytes": 64111,
+    "sha256": "08fddac3e4c14f0dd3f8bed3b084ba18c15ea37cda2e175ba9a07999c759fb59"
+  },
+  {
+    "file": "after-76059cc/portrait-801-edge-modal.png",
+    "bytes": 96365,
+    "sha256": "c3cf35c1df88380498bea8837219097f14c0a3d2efbc78304847f2f87e67a65d"
+  },
+  {
+    "file": "after-76059cc/portrait-801-edge.zip",
+    "bytes": 9450586,
+    "sha256": "ea5c133ad901b0b32710f4b3384f8ef0ae7ef1e022f7033c9c4beaf26d8afa7c"
+  },
+  {
+    "file": "after-76059cc/portrait-neighbor-after.png",
+    "bytes": 131203,
+    "sha256": "56380b6d570753cb6066e58bcd8841eabbce4f2a2ee77320a31894477f19944c"
+  },
+  {
+    "file": "after-76059cc/portrait-neighbor-close-paint.png",
+    "bytes": 482,
+    "sha256": "df0e0530e6590263de9995439dba4f03b25e96e78893d3e10a06ab26af64e189"
+  },
+  {
+    "file": "after-76059cc/portrait-neighbor-detail.png",
+    "bytes": 76782,
+    "sha256": "8e3b367b6250332f3d3048a2eb8a739180db2e3a8519d8c9c5076b9ce492bfbf"
+  },
+  {
+    "file": "after-76059cc/portrait-neighbor-modal.png",
+    "bytes": 114308,
+    "sha256": "fafdb0620bbb82885f69d4d5fe1f7d2190c4a0baf538bd061fca9c420b3471ca"
+  },
+  {
+    "file": "after-76059cc/portrait-neighbor.zip",
+    "bytes": 7575834,
+    "sha256": "04bf88bf0b181f4c99775dc563ce585a7a6b37c4c441d6b9dcc4cfa64291bdb8"
+  },
+  {
+    "file": "after-76059cc/portrait-short-after.png",
+    "bytes": 101510,
+    "sha256": "d6a70005e13d034b85da4a2cd3344b6dee9675d5b2ea887c333901257d2e3876"
+  },
+  {
+    "file": "after-76059cc/portrait-short-close-paint.png",
+    "bytes": 482,
+    "sha256": "df0e0530e6590263de9995439dba4f03b25e96e78893d3e10a06ab26af64e189"
+  },
+  {
+    "file": "after-76059cc/portrait-short-detail.png",
+    "bytes": 63128,
+    "sha256": "85e61f4f54cebb978788c7bbbc6dc0b60ced93c6590bffbc4456cf1de3d81a46"
+  },
+  {
+    "file": "after-76059cc/portrait-short-modal.png",
+    "bytes": 97054,
+    "sha256": "f7426a1565cbf898ab6e83020d90bb31befb6d18e4e3a136358f7bd22d47a788"
+  },
+  {
+    "file": "after-76059cc/portrait-short.zip",
+    "bytes": 9301951,
+    "sha256": "0be9e04f5cf7bfa17bba241a8e5c8da92310411fd8a453c7783bc60aed03504f"
+  },
+  {
+    "file": "after-76059cc/tablet-canonical-after.png",
+    "bytes": 244475,
+    "sha256": "12ebd929c6d3fe0e5a7375ff12d87ba14f76016269f20f76c85a6be863539b15"
+  },
+  {
+    "file": "after-76059cc/tablet-canonical-close-paint.png",
+    "bytes": 611,
+    "sha256": "42b3c909d6cf974435742e5f1a4a42dfce4f35f8690e03ba9a141f14d7acf64d"
+  },
+  {
+    "file": "after-76059cc/tablet-canonical-detail.png",
+    "bytes": 164767,
+    "sha256": "72d6550ddd144690f1fc2f41fb621c2677b9e07d3d103ea1ff0564857dec49ed"
+  },
+  {
+    "file": "after-76059cc/tablet-canonical-modal.png",
+    "bytes": 205535,
+    "sha256": "a9e759c3d583cc9a46b0f210e4a7d19aa2e471b8b17fef9a4718c11ca5df2796"
+  },
+  {
+    "file": "after-76059cc/tablet-canonical.zip",
+    "bytes": 7944293,
+    "sha256": "60bd16d0abd113b091e80acba3fd698ccee29e18cfcf8d245a757980894fcc0b"
+  },
+  {
+    "file": "after-76059cc/tablet-native-actual-modal-crop.png",
+    "bytes": 119033,
+    "sha256": "606e919c4f2474a0c3358b05343bf5fcaee422e6d0b269c0545ac2542f12d25f"
+  },
+  {
+    "file": "after-76059cc/tablet-native-after.png",
+    "bytes": 149505,
+    "sha256": "84853012decf60060c83c3fb40f3fb39eda319ebc215e9f87fbce5ea72bfe7e4"
+  },
+  {
+    "file": "after-76059cc/tablet-native-before-after-diff.png",
+    "bytes": 256298,
+    "sha256": "32479999e4da2d4faa27f901f37edd41b92cb07c1ecd1ffc1a1c715bcedda7bb"
+  },
+  {
+    "file": "after-76059cc/tablet-native-close-paint.png",
+    "bytes": 542,
+    "sha256": "328b40623b17070fc5879b95c247293e829280311aaf13a8909d3050600c26d7"
+  },
+  {
+    "file": "after-76059cc/tablet-native-detail.png",
+    "bytes": 94376,
+    "sha256": "f2ed7dd792a479a20bccc0b43da5d42e5c34bd82ab64ed9279897c1b75ee26e6"
+  },
+  {
+    "file": "after-76059cc/tablet-native-diff-x3.png",
+    "bytes": 278521,
+    "sha256": "04388e3df5638108b354087d66917a615be4a23df654ef5153b0222baefc21fc"
+  },
+  {
+    "file": "after-76059cc/tablet-native-modal.png",
+    "bytes": 115135,
+    "sha256": "9781f9690dd6754243c398f22f1d2b15311dd3afe2b382d4c41cc27cb906645d"
+  },
+  {
+    "file": "after-76059cc/tablet-native-overlay.png",
+    "bytes": 606537,
+    "sha256": "eff3ec36f61cf577cd92f4d208b31104fabd876b0cedb322def102f731620b07"
+  },
+  {
+    "file": "after-76059cc/tablet-native-reference-modal-crop.png",
+    "bytes": 749198,
+    "sha256": "f9ae3d993783bb3dd59524a34d7c396314e9bf4b7c607c93b79424bcb74796d6"
+  },
+  {
+    "file": "after-76059cc/tablet-native-reference.png",
+    "bytes": 1765845,
+    "sha256": "65606c1c19e7124340cdf18f41d201b136be755059275dd2b777847b268569f4"
+  },
+  {
+    "file": "after-76059cc/tablet-native.zip",
+    "bytes": 6984814,
+    "sha256": "f49c57d5ecb33636aa00452b5ab9ab9946997984c0bfa4f20e091f2c289c2700"
+  },
+  {
+    "file": "after-76059cc-retry-desktop/capture-results.json",
+    "bytes": 120976,
+    "sha256": "844b356274ad6145ef6b252de842caec24fca5dfe7d5e9f828d83b05c4912f0d"
+  },
+  {
+    "file": "after-76059cc-retry-desktop/desktop-canonical-after.png",
+    "bytes": 211711,
+    "sha256": "b7ff12c53c17c02e5695b11abf42e8af9ae3f00a027e5f780e32bdc583b6cf1f"
+  },
+  {
+    "file": "after-76059cc-retry-desktop/desktop-canonical-close-paint.png",
+    "bytes": 367,
+    "sha256": "3df00c3a84fadf0715bb6ffa454550c93f5f911fe521dea96da148894fcd54d1"
+  },
+  {
+    "file": "after-76059cc-retry-desktop/desktop-canonical-modal.png",
+    "bytes": 117349,
+    "sha256": "62455544905e3cc3d8f3e6ceaf55d71e153ae212077eeb03d231d57bca4a2020"
+  },
+  {
+    "file": "after-76059cc-retry-desktop/desktop-canonical.zip",
+    "bytes": 6818566,
+    "sha256": "7f45708bc7b73868821f607af1e8f5e145f242a5c15ab5efabfa566697255d37"
+  },
+  {
+    "file": "after-76059cc-retry-desktop/geometry-paint-summary.json",
+    "bytes": 1111,
+    "sha256": "2515d9ac848a3f8191979c4536d7506e336e57d92ae21cb8a5dd183c8ce73e94"
+  }
+]

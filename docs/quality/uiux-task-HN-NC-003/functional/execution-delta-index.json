@@ -1,0 +1,175 @@
+{
+  "task": "HN-NC-UIUX-003",
+  "generatedAt": "2026-10-27T06:38:47.615Z",
+  "baselineSha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "candidateSha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+  "sourceTree": "65ac25d235682469452f60d50664b3e6acb3a753",
+  "branch": "DEV",
+  "workingSourceDiff": "",
+  "changedSourceFiles": [
+    "src/notifications/notifications.css"
+  ],
+  "profiles": [
+    {
+      "name": "992-vi-light",
+      "profile": {
+        "width": 992,
+        "height": 1586,
+        "language": "vi",
+        "theme": "light"
+      },
+      "modal": {
+        "x": 61.45600128173828,
+        "y": 261.125,
+        "right": 941.4560012817383,
+        "bottom": 1523.125,
+        "width": 880,
+        "height": 1262
+      },
+      "maxSlotDelta": 0,
+      "states": [
+        "initial-list-2-unread",
+        "selection-only-back-no-mutation",
+        "search-no-results",
+        "unread-filter-2",
+        "unread-filter-after-read-1",
+        "all-read-0"
+      ],
+      "errors": [],
+      "evidence": "tablet-delta-final/992-vi-light.json"
+    },
+    {
+      "name": "992-vi-dark",
+      "profile": {
+        "width": 992,
+        "height": 1586,
+        "language": "vi",
+        "theme": "dark"
+      },
+      "modal": {
+        "x": 61.45600128173828,
+        "y": 261.125,
+        "right": 941.4560012817383,
+        "bottom": 1523.125,
+        "width": 880,
+        "height": 1262
+      },
+      "maxSlotDelta": 0,
+      "states": [
+        "initial-list-2-unread",
+        "selection-only-back-no-mutation",
+        "search-no-results",
+        "unread-filter-2",
+        "unread-filter-after-read-1",
+        "all-read-0"
+      ],
+      "errors": [],
+      "evidence": "tablet-delta-final/992-vi-dark.json"
+    },
+    {
+      "name": "900-en-light",
+      "profile": {
+        "width": 900,
+        "height": 1440,
+        "language": "en",
+        "theme": "light"
+      },
+      "modal": {
+        "x": 24,
+        "y": 154,
+        "right": 876,
+        "bottom": 1416,
+        "width": 852,
+        "height": 1262
+      },
+      "maxSlotDelta": 0,
+      "states": [
+        "initial-list-2-unread",
+        "selection-only-back-no-mutation",
+        "search-no-results",
+        "unread-filter-2",
+        "unread-filter-after-read-1",
+        "all-read-0"
+      ],
+      "errors": [],
+      "evidence": "tablet-delta-final/900-en-light.json"
+    },
+    {
+      "name": "801-zh-CN-light",
+      "profile": {
+        "width": 801,
+        "height": 1280,
+        "language": "zh-CN",
+        "theme": "light"
+      },
+      "modal": {
+        "x": 24,
+        "y": 24,
+        "right": 777,
+        "bottom": 1256,
+        "width": 753,
+        "height": 1232
+      },
+      "maxSlotDelta": 0,
+      "states": [
+        "initial-list-2-unread",
+        "selection-only-back-no-mutation",
+        "search-no-results",
+        "unread-filter-2",
+        "unread-filter-after-read-1",
+        "all-read-0"
+      ],
+      "errors": [],
+      "evidence": "tablet-delta-retest/801-zh-CN-light.json"
+    }
+  ],
+  "cases": [
+    {
+      "title": "F-NC-003-DELTA-992-vi-light actual responsive read/unread/filter/detail and shared feedback",
+      "status": "passed",
+      "durationMs": 32831,
+      "evidence": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/browser-results.json",
+      "errors": []
+    },
+    {
+      "title": "F-NC-003-DELTA-992-vi-dark actual responsive read/unread/filter/detail and shared feedback",
+      "status": "passed",
+      "durationMs": 33853,
+      "evidence": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/browser-results.json",
+      "errors": []
+    },
+    {
+      "title": "F-NC-003-DELTA-900-en-light actual responsive read/unread/filter/detail and shared feedback",
+      "status": "passed",
+      "durationMs": 28779,
+      "evidence": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/browser-results.json",
+      "errors": []
+    },
+    {
+      "title": "F-NC-003-DELTA-801-zh-CN-light actual responsive read/unread/filter/detail and shared feedback",
+      "status": "timedOut",
+      "durationMs": 120727,
+      "evidence": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-final/browser-results.json",
+      "errors": [
+        {
+          "message": "\u001b[31mTest timeout of 120000ms exceeded.\u001b[39m"
+        },
+        {
+          "location": {
+            "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\tablet-delta.spec.ts",
+            "column": 494,
+            "line": 12
+          },
+          "message": "Error: locator.click: Test timeout of 120000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Tiếp tục', exact: true })\u001b[22m\n\n\n  10 | for(const p of profiles)test(`F-NC-003-DELTA-${p.width}-${p.language}-${p.theme} actual responsive read/unread/filter/detail and shared feedback`,async({page},info)=>{\n  11 |  const start=await custody();expect(start.diff).toBe('');expect(start.sha).toBe(process.env.QA_EXPECTED_SHA??start.sha);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});page.on('requestfailed',r=>errors.push(`${r.method()} ${r.url()} ${r.failure()?.errorText}`));\n> 12 |  await page.setViewportSize({width:p.width,height:p.height});await page.addInitScript(p=>{localStorage.setItem('hn-wms.s00.language.v1',p.language);localStorage.setItem('hn-wms.s00.theme.v1',p.theme);},p);await page.goto('/#/preview/S01');await page.locator('#s07-username').fill('demo');await page.locator('#s07-password').fill('HoaNamDemo@2026');await page.locator('.s07-submit').click();await page.locator('.s08-confirm').click();await page.getByRole('button',{name:'Tiếp tục',exact:true}).click();await expect(page.locator('.ov-result-count')).toBeVisible({timeout:90000});await page.locator('.hn-notifications').click();const d=page.locator('dialog[open]');await expect(d.locator('.hn-notification-item')).toHaveCount(6);await page.evaluate(()=>document.fonts.ready);await expect(page.locator('html')).toHaveAttribute('data-hn-theme',p.theme);await expect(d).toHaveAttribute('lang',p.language==='zh-CN'?'zh-CN':p.language==='vi'?'vi-VN':'en');\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^\n  13 |  await fs.mkdir(evidence,{recursive:true});const name=`${p.width}-${p.language}-${p.theme}`,measurements:any[]=[];\n  14 |  async function measure(state:string){const geometry=await d.evaluate(dialog=>{const rect=(el:Element)=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,width:r.width,height:r.height};};const visible=(el:Element)=>el.getClientRects().length>0&&getComputedStyle(el).visibility!=='hidden';return {modal:rect(dialog),viewport:{width:innerWidth,height:innerHeight},overflow:{dialog:dialog.scrollWidth-dialog.clientWidth,page:document.documentElement.scrollWidth-innerWidth},rows:[...dialog.querySelectorAll<HTMLElement>('.hn-notification-item')].filter(visible).map(row=>{const title=row.querySelector('strong')!,time=row.querySelector('time')!;return {id:row.dataset.notificationId,unread:row.dataset.unread,selected:row.dataset.selected,row:rect(row),title:rect(title),time:rect(time),children:[...row.children].filter(visible).map(rect)};}),controls:[...dialog.querySelectorAll<HTMLElement>('.hn-global-modal__close,.hn-notification-mark-all,.hn-notification-tabs button,.hn-notification-search input')].filter(visible).map(el=>({class:el.className,rect:rect(el),disabled:el.matches(':disabled')}))};});measurements.push({state,...geometry});expect(geometry.overflow.dialog).toBeLessThanOrEqual(1);expect(geometry.overflow.page).toBeLessThanOrEqual(1);expect(geometry.modal.x).toBeGreaterThanOrEqual(23);expect(geometry.modal.y).toBeGreaterThanOrEqual(23);expect(geometry.modal.right).toBeLessThanOrEqual(p.width-23);expect(geometry.modal.bottom).toBeLessThanOrEqual(p.height-23);for(const row of geometry.rows){expect(row.row.height).toBeGreaterThanOrEqual(44);expect(row.title.right).toBeLessThanOrEqual(row.time.x+1);for(const c of row.children){expect(c.x).toBeGreaterThanOrEqual(row.row.x-1);expect(c.right).toBeLessThanOrEqual(row.row.right+1);expect(c.y).toBeGreaterThanOrEqual(row.row.y-1);expect(c.bottom).toBeLessThanOrEqual(row.row.bottom+1);}}for(const c of geometry.controls){expect(c.rect.height).toBeGreaterThanOrEqual(44);expect(c.rect.width).toBeGreaterThanOrEqual(44);expect(c.rect.right).toBeLessThanOrEqual(geometry.modal.right+1);expect(c.rect.x).toBeGreaterThanOrEqual(geometry.modal.x-1);}return geometry;}\n  15 |  await measure('initial-list-2-unread');await page.screenshot({path:`${evidence}/${name}-initial.png`});await expect(d.locator('[data-notification-unread-count]')).toHaveAttribute('data-notification-unread-count','2');const firstUnread=d.locator('.hn-notification-item[data-unread=\"true\"]').first();const id=await firstUnread.getAttribute('data-notification-id'),query=await firstUnread.locator('.hn-notification-item-copy>span').innerText();await firstUnread.click();await expect(d.locator('[data-notification-detail]')).toHaveAttribute('data-notification-detail',id!);await expect(d.locator('[data-notification-unread-count]')).toHaveAttribute('data-notification-unread-count','2');\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-NC-003\\functional\\tablet-delta.spec.ts:12:494"
+        }
+      ]
+    },
+    {
+      "title": "F-NC-003-DELTA-801-zh-CN-light actual responsive read/unread/filter/detail and shared feedback",
+      "status": "passed",
+      "durationMs": 65627,
+      "evidence": "docs/quality/uiux-task-HN-NC-003/functional/tablet-delta-retest/browser-results.json",
+      "errors": []
+    }
+  ]
+}

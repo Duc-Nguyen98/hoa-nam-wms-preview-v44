@@ -1,0 +1,32 @@
+{
+  "candidateSha": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "cssSha256": "159757ced51869256d443bb0e4b2be53f2f1cde150bad4479ae9597ff2319d31",
+  "workingSourceDiff": "",
+  "scope": "LIGHT-only Notification Center; three declarations and provenance comment",
+  "sourceChangeFiles": [
+    "src/notifications/notifications.css"
+  ],
+  "measurements": "CALCULATED_SRGB_ONLY; not browser evidence or visual approval",
+  "candidates": [
+    {
+      "property": "placeholder opacity1",
+      "foreground": "#53677a",
+      "background": "#ffffff",
+      "ratio": 5.851330629955228
+    },
+    {
+      "property": "warning text",
+      "foreground": "#835811",
+      "background": "#fff0d8",
+      "ratio": 5.552796945127492
+    },
+    {
+      "property": "success text",
+      "foreground": "#286645",
+      "background": "#def7e6",
+      "ratio": 6.030104736616443
+    }
+  ],
+  "browserRetest": "NOT_RUN_BY_IMPLEMENTATION; assigned independent S00#4",
+  "build": "NOT_RUN_BY_IMPLEMENTATION on this SHA; root final quality gate requested"
+}

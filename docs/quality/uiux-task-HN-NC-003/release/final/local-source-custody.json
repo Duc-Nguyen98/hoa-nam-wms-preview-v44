@@ -1,0 +1,26 @@
+{
+  "observedAtUtc": "2026-10-27T06:06:58.8738562+00:00",
+  "branch": "DEV",
+  "candidate": "76059cce616543356c623ec248c6350ddd07cdf5",
+  "sourceTree": "d3cbc007a42abb996b74d8c537220fb202e8bb18",
+  "base": "78752811af4b0434c958d604dc52ca445cdbeede",
+  "changedTrackedFiles": [
+    "M\tsrc/notifications/notifications.css",
+    "M\tsrc/shared/GlobalModal.tsx",
+    "M\tsrc/toast/GlobalToastProvider.tsx",
+    "A\ttests/functional/shared-semantics.config.ts",
+    "A\ttests/functional/wave-ad/shared-semantics.spec.ts"
+  ],
+  "trackedWorkingEdits": [],
+  "stat": [
+    " src/notifications/notifications.css               | 17 +++++-",
+    " src/shared/GlobalModal.tsx                        |  4 +-",
+    " src/toast/GlobalToastProvider.tsx                 |  6 ++-",
+    " tests/functional/shared-semantics.config.ts       | 11 ++++",
+    " tests/functional/wave-ad/shared-semantics.spec.ts | 66 +++++++++++++++++++++++",
+    " 5 files changed, 98 insertions(+), 6 deletions(-)"
+  ],
+  "credentialHelper": "manager",
+  "pushAttempted": false,
+  "finalEvidenceFreeze": "PENDING"
+}
