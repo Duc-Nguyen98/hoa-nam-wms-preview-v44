@@ -29,15 +29,11 @@
   display: none !important;
 }
 
-/* The notification center remains available from the bell, without mock-data
-   labels or the synthetic unread badge in the shared header. */
+/* Keep preview-only notification labels out of the operational surface.
+   The unread badge follows the shared NotificationBell display contract. */
 .hn-shell :is(.hn-notification-eyebrow, .hn-notification-mock-label, .hn-notification-source, .hn-notification-scenarios) {
   display: none !important;
 }
-.hn-shell .hn-notifications__count {
-  display: none !important;
-}
-
 /* Keep build/release links out of the operational shell; release details remain
    available from the standalone release page. */
 .hn-shell .hn-preview-build-link {
