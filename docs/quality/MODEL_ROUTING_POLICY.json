@@ -1,0 +1,26 @@
+{
+  "version": "2.0",
+  "project": "S00_Hoa_Nam_Web",
+  "mode": "CONTROLLED_AUTOMATION",
+  "effectiveDate": "2026-10-27T00:00:00+07:00",
+  "globalConfig": {
+    "path": "C:\\Users\\Admin\\.codex\\config.toml",
+    "model": "gpt-6.1-sol",
+    "reasoning": "high",
+    "roleLevelConfig": "NOT_FOUND"
+  },
+  "roles": {
+    "S00#1": { "targetModel": "gpt-6.1-sol", "targetReasoning": "high", "runtime": "APPLIED" },
+    "S00#2": { "targetModel": "gpt-6.1-terra", "targetReasoning": "high", "runtime": "UNAVAILABLE" },
+    "S00#3": { "targetModel": "gpt-6.1-terra", "targetReasoning": "high", "runtime": "UNAVAILABLE" },
+    "S00#4": { "targetModel": "gpt-6.1-sol", "targetReasoning": "high", "runtime": "AVAILABLE" },
+    "S00#5": { "targetModel": "gpt-6.1-terra", "targetReasoning": "medium", "runtime": "UNAVAILABLE" },
+    "S00#6": { "targetModel": "gpt-6.1-sol", "targetReasoning": "high", "runtime": "AVAILABLE" }
+  },
+  "safety": {
+    "designLock": true,
+    "independentQa": true,
+    "failClosedGates": true,
+    "productionMergeDeploy": "REQUIRES_APPROVAL"
+  }
+}
