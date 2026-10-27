@@ -2,11 +2,13 @@ import { useUiCopy } from '../../i18n/use-ui-copy';
 import { useShellPreferences } from '../../shared/shell-preferences';
 
 const EN: Record<string, string> = {
+  'Theo dõi thao tác và truy vết sự kiện.': 'Track operations and trace events.',
   'Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.': 'Track operations and trace events within your authorized scope. Vietnam time.',
   'Đang đọc lại nhật ký…': 'Refreshing audit…',
 };
 const ZH: Record<string, string> = {
   'Nhật ký hệ thống': '系统日志', 'Hệ thống': '系统', 'Danh sách sự kiện': '事件列表',
+  'Theo dõi thao tác và truy vết sự kiện.': '跟踪操作并追溯事件。',
   'Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.': '跟踪操作并追溯事件。仅显示授权范围内的数据。越南时间。',
   'Theo dõi các sự kiện đã ghi nhận trong phạm vi snapshot được cấp.': '查看授权快照范围内记录的事件。',
   'Nhật ký phiên hiện tại': '当前会话日志', 'Nhật ký tham chiếu': '参考日志', 'Nhật ký hồ sơ PV': 'PV 档案日志',
