@@ -1,0 +1,82 @@
+{
+  "actor": {
+    "role": "S00#1",
+    "sessionId": "root-native-1704278"
+  },
+  "spec": {
+    "intakeKey": "HN-AUTO-NC-BADGE-001",
+    "originalRequest": "Canary kiểm tra Notification badge với các giá trị 0, 1, 9, 10, 99, 100 và 999; xác minh 99+ và negative control.",
+    "target": "NotificationBell / Notification Center",
+    "repository": "S00_Hoa_Nam_Web",
+    "baseBranch": "DEV",
+    "baseSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+    "designAuthority": "DESIGN_CONTRACT 1.2.0-recovery",
+    "priority": "P1",
+    "references": [
+      "docs/quality/DESIGN_CONTRACT.md",
+      "docs/quality/canary/HN-AUTO-NC-BADGE-001/REPORT.md",
+      "docs/quality/FUNCTIONAL_CANARY_NC_BADGE_001.md"
+    ],
+    "constraints": [
+      "No baseline refresh",
+      "No production deploy",
+      "Local preview/mock only"
+    ],
+    "dependencies": [
+      "S00#2 scoped CSS fix",
+      "S00#3 visual retest",
+      "S00#4 functional retest",
+      "S00#5 CI provenance"
+    ],
+    "acceptanceCriteria": [
+      "0 absent; 1/9/10/99 exact; 100/999 display 99+",
+      "Desktop and tablet visible without overflow",
+      "Negative control fails then restored fixture passes",
+      "Independent visual and functional retest"
+    ],
+    "leases": [
+      {
+        "owner": "S00#2",
+        "path": "src/shared/preview-ui.css"
+      },
+      {
+        "owner": "S00#3",
+        "path": "docs/quality/canary/"
+      },
+      {
+        "owner": "S00#4",
+        "path": "docs/quality/FUNCTIONAL_CANARY_NC_BADGE_001.md"
+      },
+      {
+        "owner": "S00#5",
+        "path": "docs/quality/CI_RELEASE_READINESS.md"
+      }
+    ],
+    "gates": [
+      {
+        "reviewerRole": "S00#6",
+        "stage": "design",
+        "id": "design",
+        "required": true
+      },
+      {
+        "reviewerRole": "S00#3",
+        "stage": "qa",
+        "id": "visual",
+        "required": true
+      },
+      {
+        "reviewerRole": "S00#4",
+        "stage": "qa",
+        "id": "functional",
+        "required": true
+      },
+      {
+        "reviewerRole": "S00#5",
+        "stage": "ci",
+        "id": "ci",
+        "required": true
+      }
+    ]
+  }
+}

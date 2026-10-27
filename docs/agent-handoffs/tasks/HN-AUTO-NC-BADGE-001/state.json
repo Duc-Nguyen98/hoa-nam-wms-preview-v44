@@ -1,0 +1,494 @@
+{
+  "schemaVersion": 1,
+  "taskId": "HN-TASK-20261027-34abe9c2-a0ac-4eb0-9c04-459fd7b1e56f",
+  "intakeKey": "HN-AUTO-NC-BADGE-001",
+  "intakeHash": "63e1778302a05289608a45d4f5272aaf0b64e887cc71d9be82901af9cd5ebb7b",
+  "intake": {
+    "intakeKey": "HN-AUTO-NC-BADGE-001",
+    "originalRequest": "Canary kiểm tra Notification badge với các giá trị 0, 1, 9, 10, 99, 100 và 999; xác minh 99+ và negative control.",
+    "target": "NotificationBell / Notification Center",
+    "repository": "S00_Hoa_Nam_Web",
+    "baseBranch": "DEV",
+    "baseSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+    "designAuthority": "DESIGN_CONTRACT 1.2.0-recovery",
+    "priority": "P1",
+    "references": [
+      "docs/quality/DESIGN_CONTRACT.md",
+      "docs/quality/canary/HN-AUTO-NC-BADGE-001/REPORT.md",
+      "docs/quality/FUNCTIONAL_CANARY_NC_BADGE_001.md"
+    ],
+    "constraints": [
+      "No baseline refresh",
+      "No production deploy",
+      "Local preview/mock only"
+    ],
+    "dependencies": [
+      "S00#2 scoped CSS fix",
+      "S00#3 visual retest",
+      "S00#4 functional retest",
+      "S00#5 CI provenance"
+    ],
+    "acceptanceCriteria": [
+      "0 absent; 1/9/10/99 exact; 100/999 display 99+",
+      "Desktop and tablet visible without overflow",
+      "Negative control fails then restored fixture passes",
+      "Independent visual and functional retest"
+    ],
+    "leases": [
+      {
+        "owner": "S00#2",
+        "path": "src/shared/preview-ui.css"
+      },
+      {
+        "owner": "S00#3",
+        "path": "docs/quality/canary/"
+      },
+      {
+        "owner": "S00#4",
+        "path": "docs/quality/FUNCTIONAL_CANARY_NC_BADGE_001.md"
+      },
+      {
+        "owner": "S00#5",
+        "path": "docs/quality/CI_RELEASE_READINESS.md"
+      }
+    ],
+    "gates": [
+      {
+        "reviewerRole": "S00#6",
+        "stage": "design",
+        "id": "design",
+        "required": true
+      },
+      {
+        "reviewerRole": "S00#3",
+        "stage": "qa",
+        "id": "visual",
+        "required": true
+      },
+      {
+        "reviewerRole": "S00#4",
+        "stage": "qa",
+        "id": "functional",
+        "required": true
+      },
+      {
+        "reviewerRole": "S00#5",
+        "stage": "ci",
+        "id": "ci",
+        "required": true
+      }
+    ]
+  },
+  "state": "BLOCKED_ENVIRONMENT",
+  "mode": "CONTROLLED_AUTOMATION",
+  "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+  "implementationSessions": [
+    "native-fix-c39aa2"
+  ],
+  "changedFiles": [
+    "src/shared/preview-ui.css"
+  ],
+  "gates": [
+    {
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\DESIGN_CONTRACT.md",
+          "sha256": "34c9e66e97a03c65dfb8bc3bdc4afbc47a9be3df07e9fc5ddf907e350dab44b0",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "id": "design",
+      "status": "PASS",
+      "reviewer": {
+        "sessionId": "native-design-01a173",
+        "role": "S00#6"
+      },
+      "timestamp": "2026-10-27T00:43:59.462Z"
+    },
+    {
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\REPORT.md",
+          "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "id": "visual",
+      "status": "PASS",
+      "reviewer": {
+        "sessionId": "native-visual-d0d563",
+        "role": "S00#3"
+      },
+      "timestamp": "2026-10-27T00:43:59.930Z"
+    },
+    {
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\FUNCTIONAL_CANARY_NC_BADGE_001.md",
+          "sha256": "d1547f3e355fd79e9232aae7d8bb92691f75ca4337f777d9517294b1057046ca",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "id": "functional",
+      "reviewer": {
+        "role": "S00#4",
+        "sessionId": "native-functional-fc8a1b8"
+      },
+      "timestamp": "2026-10-27T00:44:14.616Z"
+    },
+    {
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "status": "BLOCKED",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\CI_RELEASE_READINESS.md",
+          "sha256": "00ba497640c10e255b6c9be0f40d3804b67294198807339556f736753f7e0bd1",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "id": "ci",
+      "reviewer": {
+        "role": "S00#5",
+        "sessionId": "native-ci-07fe672"
+      },
+      "timestamp": "2026-10-27T00:44:15.029Z"
+    }
+  ],
+  "defects": [
+    {
+      "status": "CLOSED",
+      "fixSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\REPORT.md",
+          "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "id": "CANARY-NC-001",
+      "owner": "S00#2",
+      "severity": "P1"
+    }
+  ],
+  "history": [
+    {
+      "sequence": 1,
+      "timestamp": "2026-10-27T00:43:13.368Z",
+      "kind": "RECEIVED",
+      "actor": {
+        "role": "S00#1",
+        "sessionId": "root-native-1704278"
+      },
+      "state": "RECEIVED",
+      "previousHash": null,
+      "hash": "81b484759ce4764c45ee1acfb85f386d5dc81913c3bd8522524cfde05e61e2b6"
+    },
+    {
+      "sequence": 2,
+      "timestamp": "2026-10-27T00:43:59.352Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "sessionId": "root-native-1704278",
+        "role": "S00#1"
+      },
+      "from": "RECEIVED",
+      "to": "TRIAGED",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\DESIGN_CONTRACT.md",
+          "sha256": "34c9e66e97a03c65dfb8bc3bdc4afbc47a9be3df07e9fc5ddf907e350dab44b0",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        },
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\REPORT.md",
+          "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        },
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\FUNCTIONAL_CANARY_NC_BADGE_001.md",
+          "sha256": "d1547f3e355fd79e9232aae7d8bb92691f75ca4337f777d9517294b1057046ca",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        },
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\CI_RELEASE_READINESS.md",
+          "sha256": "00ba497640c10e255b6c9be0f40d3804b67294198807339556f736753f7e0bd1",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "81b484759ce4764c45ee1acfb85f386d5dc81913c3bd8522524cfde05e61e2b6",
+      "hash": "70729471e46dbdd30ce5d64e7e89a70c93016046e0bf1e7387d061e25f064a24"
+    },
+    {
+      "sequence": 3,
+      "timestamp": "2026-10-27T00:43:59.462Z",
+      "kind": "GATE_RECORDED",
+      "actor": {
+        "sessionId": "native-design-01a173",
+        "role": "S00#6"
+      },
+      "gate": {
+        "evidence": [
+          {
+            "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\DESIGN_CONTRACT.md",
+            "sha256": "34c9e66e97a03c65dfb8bc3bdc4afbc47a9be3df07e9fc5ddf907e350dab44b0",
+            "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+          }
+        ],
+        "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+        "id": "design",
+        "status": "PASS"
+      },
+      "previousHash": "70729471e46dbdd30ce5d64e7e89a70c93016046e0bf1e7387d061e25f064a24",
+      "hash": "2514542328d1fca5b676c64495bc2cc0e8abb5f70d62812663927feef2e2e3a7"
+    },
+    {
+      "sequence": 4,
+      "timestamp": "2026-10-27T00:43:59.551Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "sessionId": "root-native-1704278",
+        "role": "S00#1"
+      },
+      "from": "TRIAGED",
+      "to": "DESIGN_READY",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\DESIGN_CONTRACT.md",
+          "sha256": "34c9e66e97a03c65dfb8bc3bdc4afbc47a9be3df07e9fc5ddf907e350dab44b0",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "2514542328d1fca5b676c64495bc2cc0e8abb5f70d62812663927feef2e2e3a7",
+      "hash": "d4c260bd0c907f4cb148c0372a5846e40fb047833a6277871077a5e122fa7dbc"
+    },
+    {
+      "sequence": 5,
+      "timestamp": "2026-10-27T00:43:59.643Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "sessionId": "native-fix-c39aa2",
+        "role": "S00#2"
+      },
+      "from": "DESIGN_READY",
+      "to": "IMPLEMENTING",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\DESIGN_CONTRACT.md",
+          "sha256": "34c9e66e97a03c65dfb8bc3bdc4afbc47a9be3df07e9fc5ddf907e350dab44b0",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "d4c260bd0c907f4cb148c0372a5846e40fb047833a6277871077a5e122fa7dbc",
+      "hash": "fde4c2509cc3de66b585d244ee40341fe91043f0dd67359b9631301e3c1ae5d1"
+    },
+    {
+      "sequence": 6,
+      "timestamp": "2026-10-27T00:43:59.732Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "sessionId": "native-fix-c39aa2",
+        "role": "S00#2"
+      },
+      "from": "IMPLEMENTING",
+      "to": "READY_FOR_QA",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\DESIGN_CONTRACT.md",
+          "sha256": "34c9e66e97a03c65dfb8bc3bdc4afbc47a9be3df07e9fc5ddf907e350dab44b0",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "fde4c2509cc3de66b585d244ee40341fe91043f0dd67359b9631301e3c1ae5d1",
+      "hash": "7a3877d946c2131e88f87d01e4ff698c7d4fec075cc3e2bc2a5174eb23b5e57a"
+    },
+    {
+      "sequence": 7,
+      "timestamp": "2026-10-27T00:43:59.827Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "sessionId": "root-native-1704278",
+        "role": "S00#1"
+      },
+      "from": "READY_FOR_QA",
+      "to": "QA_RUNNING",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\REPORT.md",
+          "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "7a3877d946c2131e88f87d01e4ff698c7d4fec075cc3e2bc2a5174eb23b5e57a",
+      "hash": "f6e6d2e09f854047629308c7de36437e37ac82472a72c8239edb7d37d7344d95"
+    },
+    {
+      "sequence": 8,
+      "timestamp": "2026-10-27T00:43:59.930Z",
+      "kind": "GATE_RECORDED",
+      "actor": {
+        "sessionId": "native-visual-d0d563",
+        "role": "S00#3"
+      },
+      "gate": {
+        "evidence": [
+          {
+            "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\REPORT.md",
+            "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d",
+            "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+          }
+        ],
+        "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+        "id": "visual",
+        "status": "PASS"
+      },
+      "previousHash": "f6e6d2e09f854047629308c7de36437e37ac82472a72c8239edb7d37d7344d95",
+      "hash": "575a62373e9ff76c28b48ac32008e841b31b41cc852a8a335cb3601172776ec8"
+    },
+    {
+      "sequence": 9,
+      "timestamp": "2026-10-27T00:44:14.616Z",
+      "kind": "GATE_RECORDED",
+      "actor": {
+        "role": "S00#4",
+        "sessionId": "native-functional-fc8a1b8"
+      },
+      "gate": {
+        "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+        "status": "PASS",
+        "evidence": [
+          {
+            "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\FUNCTIONAL_CANARY_NC_BADGE_001.md",
+            "sha256": "d1547f3e355fd79e9232aae7d8bb92691f75ca4337f777d9517294b1057046ca",
+            "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+          }
+        ],
+        "id": "functional"
+      },
+      "previousHash": "575a62373e9ff76c28b48ac32008e841b31b41cc852a8a335cb3601172776ec8",
+      "hash": "daf12ddbd76c72252db364cfcc123e60423abc271b219f1c71f943c125db259e"
+    },
+    {
+      "sequence": 10,
+      "timestamp": "2026-10-27T00:44:14.719Z",
+      "kind": "DEFECT_RECORDED",
+      "actor": {
+        "role": "S00#3",
+        "sessionId": "native-visual-d0d563"
+      },
+      "defect": {
+        "status": "CLOSED",
+        "fixSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+        "evidence": [
+          {
+            "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\REPORT.md",
+            "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d",
+            "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+          }
+        ],
+        "id": "CANARY-NC-001",
+        "owner": "S00#2",
+        "severity": "P1"
+      },
+      "previousHash": "daf12ddbd76c72252db364cfcc123e60423abc271b219f1c71f943c125db259e",
+      "hash": "84ab0e6fbf16cc6d440d83ea630d0bd4f5e1182b6322bbcb211c0a97cfb126e3"
+    },
+    {
+      "sequence": 11,
+      "timestamp": "2026-10-27T00:44:14.812Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "role": "S00#1",
+        "sessionId": "root-native-1704278"
+      },
+      "from": "QA_RUNNING",
+      "to": "QA_PASS",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\FUNCTIONAL_CANARY_NC_BADGE_001.md",
+          "sha256": "d1547f3e355fd79e9232aae7d8bb92691f75ca4337f777d9517294b1057046ca",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "84ab0e6fbf16cc6d440d83ea630d0bd4f5e1182b6322bbcb211c0a97cfb126e3",
+      "hash": "25b13ed697e4beb59a9d1a9b95463e1c139bfab7982cd760fb89b4bf874cef96"
+    },
+    {
+      "sequence": 12,
+      "timestamp": "2026-10-27T00:44:14.924Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "role": "S00#1",
+        "sessionId": "root-native-1704278"
+      },
+      "from": "QA_PASS",
+      "to": "CI_VALIDATING",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\CI_RELEASE_READINESS.md",
+          "sha256": "00ba497640c10e255b6c9be0f40d3804b67294198807339556f736753f7e0bd1",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "25b13ed697e4beb59a9d1a9b95463e1c139bfab7982cd760fb89b4bf874cef96",
+      "hash": "d29a44c34b09a33b49a00252592863066a7ff4a934501fcd65407e7761e0f10f"
+    },
+    {
+      "sequence": 13,
+      "timestamp": "2026-10-27T00:44:15.029Z",
+      "kind": "GATE_RECORDED",
+      "actor": {
+        "role": "S00#5",
+        "sessionId": "native-ci-07fe672"
+      },
+      "gate": {
+        "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+        "status": "BLOCKED",
+        "evidence": [
+          {
+            "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\CI_RELEASE_READINESS.md",
+            "sha256": "00ba497640c10e255b6c9be0f40d3804b67294198807339556f736753f7e0bd1",
+            "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+          }
+        ],
+        "id": "ci"
+      },
+      "previousHash": "d29a44c34b09a33b49a00252592863066a7ff4a934501fcd65407e7761e0f10f",
+      "hash": "7a86c660a81ced64505bd7eba91f3b651c589869ff5e2b8f059baeb668da43f0"
+    },
+    {
+      "sequence": 14,
+      "timestamp": "2026-10-27T00:44:15.127Z",
+      "kind": "STATE_CHANGED",
+      "actor": {
+        "role": "S00#1",
+        "sessionId": "root-native-1704278"
+      },
+      "from": "CI_VALIDATING",
+      "to": "BLOCKED_ENVIRONMENT",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+      "evidence": [
+        {
+          "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\CI_RELEASE_READINESS.md",
+          "sha256": "00ba497640c10e255b6c9be0f40d3804b67294198807339556f736753f7e0bd1",
+          "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+        }
+      ],
+      "previousHash": "7a86c660a81ced64505bd7eba91f3b651c589869ff5e2b8f059baeb668da43f0",
+      "hash": "04e679b19ee4f529752bf1e9f696e828faf1d599f2881e3ae55dca19a1ebbebf"
+    }
+  ],
+  "attempts": 0,
+  "maxFixAttempts": 3,
+  "resumeState": "CI_VALIDATING"
+}

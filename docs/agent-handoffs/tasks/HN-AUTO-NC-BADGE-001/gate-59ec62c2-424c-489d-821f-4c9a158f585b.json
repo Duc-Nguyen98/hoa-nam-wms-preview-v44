@@ -1,0 +1,18 @@
+{
+  "actor": {
+    "role": "S00#5",
+    "sessionId": "native-ci-07fe672"
+  },
+  "gate": {
+    "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+    "status": "BLOCKED",
+    "evidence": [
+      {
+        "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\CI_RELEASE_READINESS.md",
+        "sha256": "00ba497640c10e255b6c9be0f40d3804b67294198807339556f736753f7e0bd1",
+        "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+      }
+    ],
+    "id": "ci"
+  }
+}

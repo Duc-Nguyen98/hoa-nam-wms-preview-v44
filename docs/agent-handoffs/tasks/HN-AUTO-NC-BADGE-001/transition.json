@@ -1,0 +1,14 @@
+{
+  "to": "QA_RUNNING",
+  "evidence": [
+    {
+      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\REPORT.md",
+      "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d",
+      "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+    }
+  ],
+  "actor": {
+    "sessionId": "root-native-1704278",
+    "role": "S00#1"
+  }
+}

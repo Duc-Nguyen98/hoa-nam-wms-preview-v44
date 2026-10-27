@@ -1,0 +1,18 @@
+{
+  "actor": {
+    "role": "S00#4",
+    "sessionId": "native-functional-fc8a1b8"
+  },
+  "gate": {
+    "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+    "status": "PASS",
+    "evidence": [
+      {
+        "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\FUNCTIONAL_CANARY_NC_BADGE_001.md",
+        "sha256": "d1547f3e355fd79e9232aae7d8bb92691f75ca4337f777d9517294b1057046ca",
+        "candidateSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7"
+      }
+    ],
+    "id": "functional"
+  }
+}
