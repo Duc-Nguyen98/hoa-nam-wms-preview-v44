@@ -1,0 +1,324 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "tests/canary/playwright.config.ts"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\playwright.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/canary",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/canary/output/canary-badge",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/canary",
+        "testIgnore": [],
+        "testMatch": [
+          "badge.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\output\\canary-badge",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary",
+        "testIgnore": [],
+        "testMatch": "badge.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5231",
+          "headless": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/quality/canary/HN-AUTO-NC-BADGE-001/before/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5231 --strictPort",
+      "url": "http://127.0.0.1:5231/tests/canary/badge.html",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "badge.spec.ts",
+      "file": "badge.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual NotificationBell visible cap desktop",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4904,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"1\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"1\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"1\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"1\" class=\"hn-notifications__count\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"1\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"1\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"1\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"1\" class=\"hn-notifications__count\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151",
+                    "location": {
+                      "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                      "column": 151,
+                      "line": 14
+                    },
+                    "snippet": "  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"1\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"1\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"1\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"1\" class=\"hn-notifications__count\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"9\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"9\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"9\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"9\" class=\"hn-notifications__count\">9</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"10\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"10\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"10\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"10\" class=\"hn-notifications__count\">10</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"99\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"99\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"99\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"99\" class=\"hn-notifications__count\">99</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"100\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"100\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"100\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"100\" class=\"hn-notifications__count\">99+</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"999\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"999\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"999\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"999\" class=\"hn-notifications__count\">99+</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T00:33:55.279Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\output\\canary-badge\\badge-actual-NotificationBell-visible-cap-desktop\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                    "column": 151,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "556dc9409904593b1296-549b3de666538d3ec5f7",
+          "file": "badge.spec.ts",
+          "line": 6,
+          "column": 2
+        },
+        {
+          "title": "actual NotificationBell visible cap tablet",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4195,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"1\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"1\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"1\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"1\" class=\"hn-notifications__count\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"1\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"1\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"1\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"1\" class=\"hn-notifications__count\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151",
+                    "location": {
+                      "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                      "column": 151,
+                      "line": 14
+                    },
+                    "snippet": "  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"1\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"1\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"1\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"1\" class=\"hn-notifications__count\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"9\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"9\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"9\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"9\" class=\"hn-notifications__count\">9</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"10\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"10\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"10\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"10\" class=\"hn-notifications__count\">10</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"99\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"99\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"99\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"99\" class=\"hn-notifications__count\">99</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"100\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"100\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"100\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"100\" class=\"hn-notifications__count\">99+</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                        "column": 151,
+                        "line": 14
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-case=\"999\"]').locator('.hn-notifications__count')\nExpected: visible\nReceived: hidden\nTimeout:  500ms\n\nCall log:\n\u001b[2m  - Expect \"soft toBeVisible\" locator('[data-case=\"999\"]').locator('.hn-notifications__count') with timeout 500ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-case=\"999\"]').locator('.hn-notifications__count')\u001b[22m\n\u001b[2m    6 × locator resolved to <span aria-hidden=\"true\" data-preview-bell-unread=\"999\" class=\"hn-notifications__count\">99+</span>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  12 |    await expect(bell).toBeVisible();\n  13 |    rows.push(await root.evaluate(e=>{const b=e.querySelector('.hn-notifications__count');const r=b?.getBoundingClientRect();return{count:Number(e.getAttribute('data-case')),text:b?.textContent??'',display:b?getComputedStyle(b).display:null,rect:r?{width:r.width,height:r.height,x:r.x,y:r.y}:null};}));\n> 14 |    if(count===0)await expect(badge).toHaveCount(0);else {await expect.soft(badge).toHaveText(count>=100?'99+':String(count));await expect.soft(badge).toBeVisible();}\n     |                                                                                                                                                       ^\n  15 |   }\n  16 |   await fs.mkdir(evidence,{recursive:true});await page.screenshot({path:path.join(evidence,`${profile.name}.png`)});await fs.writeFile(path.join(evidence,`${profile.name}.json`),JSON.stringify({profile,rows,errors},null,2));\n  17 |   expect(errors).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts:14:151"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T00:34:01.583Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\output\\canary-badge\\badge-actual-NotificationBell-visible-cap-tablet\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\badge.spec.ts",
+                    "column": 151,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "556dc9409904593b1296-ff014381941b789dee6f",
+          "file": "badge.spec.ts",
+          "line": 6,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T00:33:52.371Z",
+    "duration": 14227.182,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "tests/canary/playwright.config.ts"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary\\playwright.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/canary",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/output/canary-badge",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/tests/canary",
+        "testIgnore": [],
+        "testMatch": [
+          "badge.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\canary-badge",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\canary",
+        "testIgnore": [],
+        "testMatch": "badge.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5231",
+          "headless": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\canary\\HN-AUTO-NC-BADGE-001\\after\\results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 5231 --strictPort",
+      "url": "http://127.0.0.1:5231/tests/canary/badge.html",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "badge.spec.ts",
+      "file": "badge.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual NotificationBell visible cap desktop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T00:36:59.839Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "556dc9409904593b1296-549b3de666538d3ec5f7",
+          "file": "badge.spec.ts",
+          "line": 8,
+          "column": 2
+        },
+        {
+          "title": "actual NotificationBell visible cap tablet",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T00:37:00.804Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "556dc9409904593b1296-ff014381941b789dee6f",
+          "file": "badge.spec.ts",
+          "line": 8,
+          "column": 2
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T00:36:56.913Z",
+    "duration": 4840.149,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

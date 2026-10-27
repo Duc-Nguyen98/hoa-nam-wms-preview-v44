@@ -1,0 +1,20 @@
+{
+  "taskId": "HN-AUTO-NC-BADGE-001",
+  "runtimeSha": "613ae50ab30c7372f9533aabab740c46d5fc079a",
+  "runs": [
+    {
+      "phase": "negative",
+      "expected": "100",
+      "exitCode": 1,
+      "signal": null
+    },
+    {
+      "phase": "restored",
+      "expected": "99+",
+      "exitCode": 0,
+      "signal": null
+    }
+  ],
+  "fixtureRemoved": true,
+  "pass": true
+}

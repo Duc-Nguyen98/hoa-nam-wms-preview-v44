@@ -1,0 +1,30 @@
+✖ negative control 100 cap (2.7085ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 333.1728
+
+✖ failing tests:
+
+test at tests\canary\.negative-fixture.test.ts:1:142
+✖ negative control 100 cap (2.7085ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '99+' !== '100'
+  
+      at TestContext.<anonymous> (E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\tests\canary\.negative-fixture.test.ts:1:190)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '99+',
+    expected: '100',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

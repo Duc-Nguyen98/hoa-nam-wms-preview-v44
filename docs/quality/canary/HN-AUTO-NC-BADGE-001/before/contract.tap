@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: contract badge 0 → hidden
+ok 1 - contract badge 0 → hidden
+  ---
+  duration_ms: 0.9442
+  type: 'test'
+  ...
+# Subtest: contract badge 1 → 1
+ok 2 - contract badge 1 → 1
+  ---
+  duration_ms: 0.1477
+  type: 'test'
+  ...
+# Subtest: contract badge 9 → 9
+ok 3 - contract badge 9 → 9
+  ---
+  duration_ms: 0.1437
+  type: 'test'
+  ...
+# Subtest: contract badge 10 → 10
+ok 4 - contract badge 10 → 10
+  ---
+  duration_ms: 0.1237
+  type: 'test'
+  ...
+# Subtest: contract badge 99 → 99
+ok 5 - contract badge 99 → 99
+  ---
+  duration_ms: 0.1347
+  type: 'test'
+  ...
+# Subtest: contract badge 100 → 99+
+ok 6 - contract badge 100 → 99+
+  ---
+  duration_ms: 0.1007
+  type: 'test'
+  ...
+# Subtest: contract badge 999 → 99+
+ok 7 - contract badge 999 → 99+
+  ---
+  duration_ms: 0.1093
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 180.4407

@@ -1,0 +1,74 @@
+{
+  "taskId": "HN-AUTO-NC-BADGE-001",
+  "runtimeSha": "c39aa2aed11d52a1a3da4174691bf49dca1b02a7",
+  "files": [
+    {
+      "path": "PACKET.md",
+      "sha256": "f97accd170b14e61891ae814e6070075accb559b8382689f439a5d0d399ddb4e"
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "eca795b6bcd4addd5ee4525fdcee4095c5be338f3d6e2d76e426afd043c2e63d"
+    },
+    {
+      "path": "after/contract.tap",
+      "sha256": "47ab47e4a8a771097c89302cdf21f14cc8c9f48ca563790629c380365f8e08cf"
+    },
+    {
+      "path": "after/desktop.json",
+      "sha256": "1175bedc064b9f586a53d89196303ed61d26bd0c8310060b93ad3e4958a3dcea"
+    },
+    {
+      "path": "after/desktop.png",
+      "sha256": "96f49295b3c6fc4c7103f9ee5082321db0cb34661274ea6f437667f54e590c0a"
+    },
+    {
+      "path": "after/results.json",
+      "sha256": "915352a47374cf4ddb5b013f27c3ad493bba525aa48de9256b758452f7aa9644"
+    },
+    {
+      "path": "after/tablet.json",
+      "sha256": "51587a604f12a5db13cff0c7b41434e3544af69d0883449e1931bc4945a538d2"
+    },
+    {
+      "path": "after/tablet.png",
+      "sha256": "31ea120eaf9bff1bd32995d3f920f42e14833b2c556dae54844131e67278a801"
+    },
+    {
+      "path": "before/contract.tap",
+      "sha256": "925ffafe3300202ff1f0ef1f5d91112c3e8ce4e60f7c15046bbe10f9987893bd"
+    },
+    {
+      "path": "before/desktop.json",
+      "sha256": "62567ec5f45a5013de51d9711bfb59e9b11f2b4c10c81b0d05415a8fd180df2f"
+    },
+    {
+      "path": "before/desktop.png",
+      "sha256": "0eab424c7bf40854e7be3cdf503108b968c240eeb67c7cc06b3397d2e4945aff"
+    },
+    {
+      "path": "before/results.json",
+      "sha256": "327dce454f28aae38adcc76d6f6beaf4e3f0c7718067ad80d13f9cde28f9edec"
+    },
+    {
+      "path": "before/tablet.json",
+      "sha256": "eb23974a67da9ab0d118c5d939658b6679d7ffaccb18dcff08bf1156d3a9af93"
+    },
+    {
+      "path": "before/tablet.png",
+      "sha256": "54069ddad08d1c0fcdce6f93db386a589c8cbf88a5bae54f5c7f91a353249d8f"
+    },
+    {
+      "path": "negative-control/negative.tap",
+      "sha256": "e8a4d62a158f4aee58184ab4b9db1057a0c302828a6c7e7f6a79e22bf5ace32c"
+    },
+    {
+      "path": "negative-control/restored.tap",
+      "sha256": "e435c1938a9b60b0916d57010fc7499fe88cf442ba24aaf0572256f48e0a8c20"
+    },
+    {
+      "path": "negative-control/result.json",
+      "sha256": "c29a9e131eade387ab0677a89ed214f31863dd7e4a4e3bc1aad2095bf0fa2195"
+    }
+  ]
+}

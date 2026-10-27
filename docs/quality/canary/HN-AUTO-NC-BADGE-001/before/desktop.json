@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "name": "desktop",
+    "width": 1920,
+    "height": 1080
+  },
+  "rows": [
+    {
+      "count": 0,
+      "text": "",
+      "display": null,
+      "rect": null
+    },
+    {
+      "count": 1,
+      "text": "1",
+      "display": "none",
+      "rect": {
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "count": 9,
+      "text": "9",
+      "display": "none",
+      "rect": {
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "count": 10,
+      "text": "10",
+      "display": "none",
+      "rect": {
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "count": 99,
+      "text": "99",
+      "display": "none",
+      "rect": {
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "count": 100,
+      "text": "99+",
+      "display": "none",
+      "rect": {
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "count": 999,
+      "text": "99+",
+      "display": "none",
+      "rect": {
+        "width": 0,
+        "height": 0,
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "errors": []
+}
