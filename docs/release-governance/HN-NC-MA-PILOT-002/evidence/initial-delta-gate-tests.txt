@@ -1,0 +1,37 @@
+▶ artifact provenance binds actual checkout and bytes without claiming approval
+  ✔ local provenance is explicitly unattested (2.7537ms)
+  ✔ workflow metadata is not an authenticated attestation (7.7961ms)
+  ✔ stale candidate fails (1.6229ms)
+  ✔ short candidate fails (0.431ms)
+  ✔ dirty source fails (0.3937ms)
+  ✔ unknown cleanliness fails (0.609ms)
+  ✔ missing tree identity fails (0.3939ms)
+  ✔ changed artifact changes inventory digest (11.5933ms)
+  ✔ missing built entry fails (4.6447ms)
+✔ artifact provenance binds actual checkout and bytes without claiming approval (515.2112ms)
+▶ synthetic evidence validation and fail-closed controls
+  ✔ complete fixture is structural evidence only (908.1924ms)
+  ✔ missing receipt (5.3779ms)
+  ✔ missing gate (56.3614ms)
+  ✔ not run (24.572ms)
+  ✔ stale gate (301.122ms)
+  ✔ stale receipt (503.009ms)
+  ✔ open P1 (202.4032ms)
+  ✔ missing defect count (326.0192ms)
+  ✔ missing orchestrator approval (384.2732ms)
+  ✔ design requires guardian (455.2219ms)
+  ✔ tampered artifact (453.2528ms)
+  ✔ path traversal (1.2417ms)
+  ✔ absolute path (0.7946ms)
+  ✔ empty artifact list (416.9566ms)
+  ✔ abbreviated candidate rejected (393.0466ms)
+  ✔ CLI cannot treat self-supplied approvals as authenticated (545.9215ms)
+✔ synthetic evidence validation and fail-closed controls (5334.3276ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5889.4867

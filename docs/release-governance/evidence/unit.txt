@@ -1,0 +1,29 @@
+✔ all six notification links resolve only their exact source record (62.1376ms)
+✔ known persisted legacy links resolve exact records without mutating read state (14.0796ms)
+✔ notification refuses mismatched, malformed or unverified target identity (2.379ms)
+✔ malformed notification queries fail closed and source lookup checks every identity dimension (1.1048ms)
+✔ other notifications retain supported list and overview document routes (1.0589ms)
+✔ selection and refreshing never mark a notification read (13.3488ms)
+✔ read/unread commands commit, replay safely, persist and stay actor-scoped (24.9486ms)
+✔ failed mutation preserves confirmed state and reports failure (2.792ms)
+✔ generic repository stays empty without an explicit Preview seed (2.2096ms)
+✔ approved Preview seed has six localized records, two unread and supported screen targets (10.119ms)
+✔ old in-flight response cannot populate another account (25.4135ms)
+✔ four-row overview pages cover every result once and preserve period totals (22.958ms)
+✔ overview source rows expose declared units and preserve inbound/outbound identity (0.8618ms)
+✔ attention uses the accepted period, never the activity search/filter/page (4.8441ms)
+✔ exact snapshot selection rejects stale, missing, ambiguous and pending rows (8.4283ms)
+✔ attention items remain selectable even when absent from the current table page (1.5073ms)
+✔ all S01 literal UI copy has EN and ZH translations without touching source data (4.1601ms)
+✔ all 16 S01 documents link to their exact source, type, lines and quantities (72.18ms)
+✔ source reader rejects wrong source/version/type and never falls back to a matching number (1.2609ms)
+✔ links require the accepted row identity and snapshot, not just a present target (0.9623ms)
+✔ route parsing decodes once, rejects incomplete/duplicate/foreign params and keeps list routes intact (1.7056ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5038.0514

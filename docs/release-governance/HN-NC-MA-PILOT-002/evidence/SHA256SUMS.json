@@ -1,0 +1,26 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+  },
+  {
+    "path": "github-observation.json",
+    "sha256": "4b5b9caad484031ff5e2999f2f3520ba62c73f7d50f7faf44759793744a987da"
+  },
+  {
+    "path": "hosted-build-verification.json",
+    "sha256": "390194b7cf25f27ac213173503ca8f9e66f4de34e0bdf6fc6d645bc05ad7498b"
+  },
+  {
+    "path": "initial-delta-gate-tests.txt",
+    "sha256": "b92a3d91b60626d543f009c9d7e5f66d559fdfbd966029b06e4b5854153bc7b8"
+  },
+  {
+    "path": "parent-pilot-inputs.json",
+    "sha256": "72ac933ad00348f36a683f10009b5eca70873c44a52e798512a513181d7d48ec"
+  },
+  {
+    "path": "README.md",
+    "sha256": "1bb5e65f2edf1ff454530247c2fdbe2d02cc15fe0e3eaebf44690331ab6251e5"
+  }
+]

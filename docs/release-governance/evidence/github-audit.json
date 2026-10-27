@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-10-26T22:27:10.345Z",
+  "repository": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+  "resources": {
+    "repo": {
+      "status": 200,
+      "data": {
+        "full_name": "Duc-Nguyen98/hoa-nam-wms-preview-v44",
+        "private": false,
+        "default_branch": "main",
+        "permissions": {
+          "admin": true,
+          "maintain": true,
+          "push": true,
+          "triage": true,
+          "pull": true
+        }
+      }
+    },
+    "/branches?per_page=100": {
+      "status": 200,
+      "data": [
+        {
+          "name": "DEV",
+          "commit": {
+            "sha": "b287d1294f0aa37b1c38c14275ef8c0a279d4fcc",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/b287d1294f0aa37b1c38c14275ef8c0a279d4fcc"
+          },
+          "protected": false,
+          "protection": {
+            "enabled": false,
+            "required_status_checks": {
+              "enforcement_level": "off",
+              "contexts": [],
+              "checks": []
+            }
+          },
+          "protection_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV/protection"
+        },
+        {
+          "name": "main",
+          "commit": {
+            "sha": "7304ef8d27b5d3d091bda681cc1afcb36048c318",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/7304ef8d27b5d3d091bda681cc1afcb36048c318"
+          },
+          "protected": false,
+          "protection": {
+            "enabled": false,
+            "required_status_checks": {
+              "enforcement_level": "off",
+              "contexts": [],
+              "checks": []
+            }
+          },
+          "protection_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/main/protection"
+        }
+      ]
+    },
+    "/branches/main/protection": {
+      "status": 404,
+      "data": {
+        "message": "Branch not protected",
+        "documentation_url": "https://docs.github.com/rest/branches/branch-protection#get-branch-protection",
+        "status": "404"
+      }
+    },
+    "/branches/DEV/protection": {
+      "status": 404,
+      "data": {
+        "message": "Branch not protected",
+        "documentation_url": "https://docs.github.com/rest/branches/branch-protection#get-branch-protection",
+        "status": "404"
+      }
+    },
+    "/rulesets": {
+      "status": 200,
+      "data": []
+    },
+    "/pulls?state=open&per_page=100": {
+      "status": 200,
+      "data": []
+    },
+    "/actions/permissions": {
+      "status": 200,
+      "data": {
+        "enabled": true,
+        "allowed_actions": "all",
+        "sha_pinning_required": false
+      }
+    },
+    "/actions/secrets": {
+      "status": 200,
+      "data": {
+        "total_count": 0,
+        "secrets": []
+      }
+    },
+    "/pages": {
+      "status": 200,
+      "data": {
+        "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pages",
+        "status": "built",
+        "cname": null,
+        "custom_404": false,
+        "html_url": "https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/",
+        "build_type": "legacy",
+        "source": {
+          "branch": "main",
+          "path": "/docs"
+        },
+        "public": true,
+        "protected_domain_state": null,
+        "pending_domain_unverified_at": null,
+        "https_enforced": true
+      }
+    },
+    "/check-runs/121852488876/annotations": {
+      "status": 200,
+      "data": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/b287d1294f0aa37b1c38c14275ef8c0a279d4fcc/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because your account is locked due to a billing issue.",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/b287d1294f0aa37b1c38c14275ef8c0a279d4fcc/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    }
+  }
+}

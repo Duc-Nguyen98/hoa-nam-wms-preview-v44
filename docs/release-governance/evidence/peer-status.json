@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-26T22:32:05.421Z",
+  "visual": {
+    "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/VISUAL_QA_REPORT.md",
+    "sha256": "4fcf27448617b5837295f175b2b198eb047a9997f9d13c23785e7c8bf7763ab3",
+    "chat": "01a17324-3530-7be0-a829-2d69195dba92",
+    "candidate": "b287d1294f0aa37b1c38c14275ef8c0a279d4fcc",
+    "verdict": "BLOCKED",
+    "p1": "VQ-001",
+    "gap": "VQ-002 / DG-04"
+  },
+  "functional": {
+    "chat": "01a179e5-d8a5-78b2-a2fe-2ae028159cb4",
+    "status": "IN_PROGRESS / current-head approval MISSING"
+  }
+}
