@@ -133,13 +133,13 @@ export function GlobalModal({
     }}
   >
     <div className="hn-global-modal__surface">
-      <header className="hn-global-modal__header">
+      <div className="hn-global-modal__header">
         <div className="hn-global-modal__heading">
           <h2 id={titleId}>{tx(title)}</h2>
           {description && <p id={descriptionId}>{tx(description)}</p>}
         </div>
         <Button variant="ghost" iconOnly aria-label={tx(closeLabel)} className="hn-global-modal__close" onClick={requestClose}><Icon name="close" size={18} /></Button>
-      </header>
+      </div>
       <div className="hn-global-modal__body">{children}</div>
       {footer && <footer className="hn-global-modal__footer">{footer}</footer>}
     </div>

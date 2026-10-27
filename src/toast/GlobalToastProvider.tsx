@@ -150,7 +150,7 @@ function GlobalToastRegion({ store }: { store: ToastStore }) {
     document.addEventListener('keydown',escape);return()=>document.removeEventListener('keydown',escape);
   },[store,suspended]);
   const style = { '--hn-toast-top': `${geometry.top}px`, '--hn-toast-right': `${geometry.right}px`, '--hn-toast-width': `${geometry.width}px`, '--hn-toast-available': `${geometry.availableHeight}px`, '--hn-toast-gap': `${TOAST_CONFIG.stackGap}px`, '--hn-toast-enter': `${TOAST_CONFIG.entrance}ms`, '--hn-toast-lifetime': `${TOAST_CONFIG.lifetime}ms`, '--hn-toast-exit': `${TOAST_CONFIG.exit}ms` } as CSSProperties;
-  return createPortal(<><div ref={region} className="hn-global-toast-region" style={style} lang={locale} aria-label={copy.region} data-provider-count="1" data-placement="header-top-right" data-suspended={suspended ? 'true' : undefined} data-suspension-reason={suspended ? 'foreground-priority' : undefined} data-queued-count={pending.length} aria-hidden={suspended || undefined} inert={suspended || undefined}>
+  return createPortal(<><div ref={region} className="hn-global-toast-region" role="group" style={style} lang={locale} aria-label={copy.region} data-provider-count="1" data-placement="header-top-right" data-suspended={suspended ? 'true' : undefined} data-suspension-reason={suspended ? 'foreground-priority' : undefined} data-queued-count={pending.length} aria-hidden={suspended || undefined} inert={suspended || undefined}>
     {active.map(entry=><ToastCard key={entry.id} entry={entry} locale={locale} dismiss={dismiss}/>)}
   </div>{pending[0]&&<div ref={measure} className="hn-toast-measure" style={style} lang={locale} aria-hidden="true" inert><ToastCard entry={pending[0]} locale={locale} dismiss={dismiss} measuring/></div>}</>,viewport);
 }
