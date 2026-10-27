@@ -6,16 +6,17 @@ import { createOverviewRuntimeController } from '../src/controllers/overview-run
 import { selectAcceptedOverviewRow, resolveAcceptedOverviewRow } from '../src/features/S01/overview-selection';
 import { overviewCopy, OVERVIEW_COPY } from '../src/features/S01/overview-copy';
 import { readFileSync } from 'node:fs';
+import { REFERENCE_OVERVIEW_POLICY, REFERENCE_OVERVIEW_QUERY } from './s01/reference-scenario';
 
-test('four-row overview pages cover every result once and preserve period totals', async () => {
-  const adapter = createOverviewFixtureAdapter({ searchMatch: 'folded-includes', allowPeriodChange: true });
-  const first = await adapter.read(DEFAULT_OVERVIEW_QUERY);
+test('isolated four-row overview pages cover every result once and preserve period totals', async () => {
+  const adapter = createOverviewFixtureAdapter(REFERENCE_OVERVIEW_POLICY);
+  const first = await adapter.read(REFERENCE_OVERVIEW_QUERY);
   assert.equal(first.kind, 'ready');
   if (first.kind !== 'ready') return;
   assert.equal(first.model.pagination.pageSize, 4);
   const ids: string[] = [];
   for (let page = 1; page <= first.model.pagination.pageCount; page++) {
-    const result = await adapter.read({ ...DEFAULT_OVERVIEW_QUERY, page });
+    const result = await adapter.read({ ...REFERENCE_OVERVIEW_QUERY, page });
     assert.equal(result.kind, 'ready');
     if (result.kind !== 'ready') return;
     assert.ok(result.model.rows.length <= 4);

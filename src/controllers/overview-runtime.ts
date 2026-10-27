@@ -2,11 +2,11 @@ import { createOverviewController } from './overview-controller';
 import { createOverviewFixtureAdapter } from '../data/adapters/overview-fixture-adapter';
 import { PAGE_SIZE_OPTIONS } from '../shared/table-query';
 
-// Owner's 2026-10-10 request enables real fixture search and these page sizes.
-// Range behavior was confirmed by the Owner; the UI consumes S00's range picker.
+// Runtime paging follows the shared Foundation lock. Artwork page-size 4 is
+// supplied only by the isolated reference harness, never by the application.
 export const OVERVIEW_RUNTIME_POLICY = {
   searchMatch: 'folded-includes',
   allowPeriodChange: true,
-  pageSizeOptions: [4, ...PAGE_SIZE_OPTIONS],
+  pageSizeOptions: PAGE_SIZE_OPTIONS,
 } as const;
 export const createOverviewRuntimeController = () => createOverviewController(createOverviewFixtureAdapter(OVERVIEW_RUNTIME_POLICY));

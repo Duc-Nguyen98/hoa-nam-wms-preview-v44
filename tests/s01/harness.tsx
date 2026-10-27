@@ -4,6 +4,7 @@ import { createOverviewController } from '../../src/controllers/overview-control
 import { createOverviewFixtureAdapter } from '../../src/data/adapters/overview-fixture-adapter';
 import { queryOverviewRows } from '../../src/data/adapters/overview-table-query';
 import { OVERVIEW_RUNTIME_POLICY } from '../../src/controllers/overview-runtime';
+import { createReferenceOverviewController } from './reference-scenario';
 import type { OverviewRow } from '../../src/contracts/overview';
 import { GlobalToastProvider } from '../../src/toast/GlobalToastProvider';
 import { ShellPreferencesRuntime } from '../../src/shared/ShellPreferencesRuntime';
@@ -19,11 +20,11 @@ import '../../src/shared/preview-ui.css';
 
 // Imported only by this unbundled test entry, never Main or the public build.
 const state = new URLSearchParams(location.search).get('state');
-const fixture = createOverviewFixtureAdapter({...OVERVIEW_RUNTIME_POLICY,pageSizeOptions:[...OVERVIEW_RUNTIME_POLICY.pageSizeOptions,100]});
+const fixture = createOverviewFixtureAdapter(OVERVIEW_RUNTIME_POLICY);
 const controller = () => createOverviewController({ async read(query) {
   if (state === 'loading') return new Promise(() => undefined);
   if (state === 'error') throw new Error('isolated read rejection');
-  const result = await fixture.read({...query!,page:1,pageSize:100});
+  const result = await fixture.read({...query!,page:1,pageSize:25});
   if (result.kind !== 'ready') return result;
   const model = result.model;
   const sourceRows: OverviewRow[] = state === 'empty' ? [] : state === 'long' ? Array.from({length:60},(_,i)=>({
@@ -41,4 +42,4 @@ const controller = () => createOverviewController({ async read(query) {
   model.emptyReason=!sourceRows.length?'no-documents':!table.rows.length?'no-matches':null;
   return {kind:'ready',model};
 }});
-createRoot(document.getElementById('root')!).render(<ShellPreferencesRuntime><GlobalToastProvider><OverviewScreen createController={controller}/></GlobalToastProvider></ShellPreferencesRuntime>);
+createRoot(document.getElementById('root')!).render(<ShellPreferencesRuntime><GlobalToastProvider><OverviewScreen createController={state === 'reference' ? createReferenceOverviewController : controller}/></GlobalToastProvider></ShellPreferencesRuntime>);
