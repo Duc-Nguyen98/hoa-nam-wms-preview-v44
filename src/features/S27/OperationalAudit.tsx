@@ -4,14 +4,12 @@ import { formatAuditTime } from './audit-time';
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { ADMIN_EN_COPY } from '../../i18n/admin-copy';
 import { Button, CataloguePageHeader, CatalogueToolbar, DataTable, DateRangePicker, FilterSelect, Icon, Pagination, PageState, ordinalColumn, type TableColumn } from '../../shared';
-import { vietnamDate } from '../../operations/operational-reports';
-import { createOperationalAuditReader, DEFAULT_AUDIT_FILTER, queryOperationalAudit, type AuditFilter, type AuditPeriod, type AuditReadAdapter, type AuditRow } from './audit-operational-binding';
+import { createOperationalAuditReader, currentAuditPeriod, DEFAULT_AUDIT_FILTER, queryOperationalAudit, type AuditFilter, type AuditPeriod, type AuditReadAdapter, type AuditRow } from './audit-operational-binding';
 
 import { AuditDetail, auditDetailReadMessage, refreshAuditDetail, resolveAuditDetail, selectAuditDetail, settleAuditDetailQuery, S27_DETAIL_COPY, type AuditDetailSelection } from './OperationalDetail';
 import { auditActionLabel, shortenAuditId } from './audit-copy';
 import { useAuditCopy } from './audit-ui-copy';
 import type { ReactNode } from 'react';
-import { IS_BROWSER_PREVIEW } from '../../preview-mode';
 
 export const S27_OPERATIONAL_COPY = {
   'Vui lòng chọn kỳ trong 90 ngày gần đây, không vượt quá ngày hôm nay.': 'Select a period within the last 90 days, ending no later than today.',
@@ -25,6 +23,7 @@ export const S27_OPERATIONAL_COPY = {
   'Tìm mã sự kiện, đối tượng, lệnh, commit, biến động hoặc người thao tác': 'Search audit, entity, command, commit, stock event or actor',
   'Mốc dữ liệu': 'As of', 'Không có sự kiện phù hợp trong kỳ đã chọn.': 'No matching events in the selected period.',
   'Mã commit, bút toán và mã liên quan nằm trong chi tiết sự kiện.': 'Commit, stock-event and related IDs are available in event details.',
+  'Mã sự kiện, mã lệnh và mã commit nằm trong chi tiết.': 'Event, command and commit IDs are available in the details.',
   'Chưa thể áp dụng bộ lọc. Đặt lại bộ lọc để tiếp tục.': 'The filters could not be applied. Reset filters to continue.',
   'Hoạt động': 'Activity', 'Đối tượng': 'Object', 'Xem chi tiết': 'View details',
   'Sắp xếp nhật ký': 'Sort audit', 'Thời gian · Mới nhất': 'Time · Newest first', 'Thời gian · Cũ nhất': 'Time · Oldest first',
@@ -37,7 +36,7 @@ export function OperationalAudit({ adapter, cohortControls }: { adapter: AuditRe
   const { language } = useShellPreferences();
   const controller = useMemo(() => createOperationalAuditReader(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot), model = state.model;
-  const [period, setPeriod] = useState<AuditPeriod>(() => { const today = vietnamDate(IS_BROWSER_PREVIEW ? '2026-10-25T14:24:00+07:00' : new Date().toISOString()); return { from: today, to: today }; });
+  const [period, setPeriod] = useState<AuditPeriod>(() => currentAuditPeriod());
   const [query, setQuery] = useState<AuditFilter>({ ...DEFAULT_AUDIT_FILTER });
   const [selection, setSelection] = useState<AuditDetailSelection | null>(null);
   const root = useRef<HTMLElement>(null), heading = useRef<HTMLHeadingElement>(null);
@@ -94,6 +93,7 @@ export function OperationalAudit({ adapter, cohortControls }: { adapter: AuditRe
             <div className="s27-card-footer">{detailButton(row, true)}</div>
           </article>) : <PageState kind={model?.rows.length?'no-results':'empty'} title={tx(emptyMessage)} description={tx('Thử từ khóa khác hoặc bỏ bớt điều kiện lọc.')} action={model?.rows.length?<Button onClick={()=>setQuery({...DEFAULT_AUDIT_FILTER})}>{tx('Đặt lại')}</Button>:undefined}/>}
         </div>
+        <p className="s27-list-note"><Icon name="info" size={16} />{tx('Mã sự kiện, mã lệnh và mã commit nằm trong chi tiết.')}</p>
         <div className="s27-footer"><Pagination variant="products" unit={tx('sự kiện')} page={table.pagination.page} pageSize={table.pagination.pageSize} filteredTotal={table.pagination.total} displayedCount={table.rows.length} canGoPrevious={table.pagination.page > 1} canGoNext={table.pagination.page < table.pagination.pageCount} onPageChange={page => update({ page })} onPageSizeChange={pageSize => update({ pageSize })} preserveBoundaryFocus /></div></>}
     </section>
     <p className="s27-scope"><Icon name="info" size={16} />{tx('Nhật ký các giao dịch đã ghi nhận trong phiên hiện tại; không bao gồm lịch sử phiên đã lưu trữ.')}</p>

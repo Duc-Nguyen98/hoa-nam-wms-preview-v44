@@ -16,6 +16,7 @@ const ZH: Record<string, string> = {
   'Vui lòng chọn kỳ trong 90 ngày gần đây, không vượt quá ngày hôm nay.': '请选择最近 90 天内且不晚于今天的日期范围。',
   'Chưa có phiên làm việc.': '没有活动会话。',
   'Mã commit, bút toán và mã liên quan nằm trong chi tiết sự kiện.': '提交 ID、库存分录和关联 ID 可在事件详情中查看。',
+  'Mã sự kiện, mã lệnh và mã commit nằm trong chi tiết.': '事件 ID、命令 ID 和提交 ID 可在详情中查看。',
   'Thời gian': '时间', 'Hoạt động': '活动', 'Hành động': '操作', 'Người thao tác': '操作人',
   'Nguồn thực hiện': '执行来源', 'Đối tượng': '对象', 'Phiên bản': '版本', 'Xem chi tiết': '查看详情',
   'Xem chi tiết sự kiện {v0}': '查看事件详情 {v0}', 'kết quả': '条结果', 'sự kiện': '个事件',
