@@ -65,11 +65,33 @@ try {
       const body = element.querySelector('.hn-global-modal__body'), footer = element.querySelector('.hn-global-modal__footer');
       return { modal: read(element), header: read(element.querySelector('.hn-global-modal__header')), identity: read(element.querySelector('.s27-detail-identity')), information: read(element.querySelector('.s27-detail-section')), trace: read(element.querySelector('.s27-detail-trace')), footer: read(footer), expectedBorder, copies: [...element.querySelectorAll('[data-audit-copy]')].map(read), rawIds: [...element.querySelectorAll('[data-audit-raw-value]')].map(node => node.textContent), horizontalOverflow: body.scrollWidth > body.clientWidth, footerReachable: footer.getBoundingClientRect().bottom <= innerHeight, pageDescription: document.querySelector('.s27-operational .hn-page-description').innerText, reloadLeadingIcons: document.querySelectorAll('.s27-operational-period > .hn-button .hn-button__icon').length };
     });
+    row.cardMetadata = await page.locator('.s27-operational-card:visible').evaluateAll(cards => cards.map(card => {
+      const rect = value => ({ left: value.left, right: value.right, top: value.top, bottom: value.bottom });
+      const dl = card.querySelector('dl');
+      const fields = [...dl.querySelectorAll(':scope > div')].map(field => {
+        const dt = field.querySelector('dt'), range = document.createRange(); range.selectNodeContents(dt);
+        return { label: dt.textContent, column: rect(field.getBoundingClientRect()), fontSize: getComputedStyle(dt).fontSize, fragments: [...range.getClientRects()].map(rect) };
+      });
+      const overlaps = fields.slice(0, -1).flatMap((field, index) => field.fragments.flatMap(left => fields[index + 1].fragments.filter(right => Math.min(left.right, right.right) - Math.max(left.left, right.left) > 0.1 && Math.min(left.bottom, right.bottom) - Math.max(left.top, right.top) > 0.1).map(() => [field.label, fields[index + 1].label])));
+      return { columns: getComputedStyle(dl).gridTemplateColumns, values: dl.querySelectorAll('dd').length, fields, overlaps };
+    }));
     const failures = [];
     try {
       expect(row.rawIds).toEqual(original); expect(row.copies).toHaveLength(4); expect(row.horizontalOverflow).toBe(false); expect(row.footerReachable).toBe(true);
       expect(row.reloadLeadingIcons).toBe(0);
       expect(row.pageDescription).toBe(profile.width <= 1100 ? 'Theo dõi thao tác và truy vết sự kiện.' : 'Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.');
+      if (profile.width <= 1100) {
+        expect(row.cardMetadata.length).toBeGreaterThan(0);
+        for (const card of row.cardMetadata) {
+          expect(card.columns.split(' ')).toHaveLength(5); expect(card.values).toBe(5);
+          expect(card.fields.map(field => field.label)).toEqual(['Người thao tác', 'Nguồn thực hiện', 'Đối tượng', 'Mã lệnh', 'Phiên bản']);
+          expect(card.overlaps).toEqual([]);
+          for (const field of card.fields) {
+            expect(field.fontSize).toBe('16px');
+            for (const fragment of field.fragments) { expect(fragment.left).toBeGreaterThanOrEqual(field.column.left - 0.1); expect(fragment.right).toBeLessThanOrEqual(field.column.right + 0.1); }
+          }
+        }
+      }
       for (const copy of row.copies) { expect(copy.width).toBeGreaterThanOrEqual(44); expect(copy.height).toBeGreaterThanOrEqual(44); if (profile.width <= 1100) { expect(copy.borderWidth).toBe('1px'); expect(copy.border).toBe(row.expectedBorder); } }
     } catch (error) { failures.push(String(error)); }
     await page.screenshot({ path: path.join(out, `${profile.name}-modal.png`) });
