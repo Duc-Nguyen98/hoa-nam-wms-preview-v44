@@ -1,0 +1,2 @@
+import {chromium} from '@playwright/test';
+const b=await chromium.launch();const p=await b.newPage({viewport:{width:1672,height:941}});await p.goto('http://127.0.0.1:5287/#/preview/S12');console.log(JSON.stringify({url:p.url(),title:await p.locator('h1').first().textContent().catch(()=>null),login:await p.locator('#s07-username').count(),body:(await p.locator('body').innerText()).slice(0,300)}));await b.close();

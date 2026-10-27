@@ -1,0 +1,114 @@
+{
+  "initial": {
+    "head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+    "sourceTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+    "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+    "sourceStatus": "M src/features/S12/OperationalReceipts.tsx",
+    "testStatus": "?? tests/s12/",
+    "sourceDiffSHA256": "c522fe5b3d7f69cd37320846095c950030e4737238d2d2b94d2abae5f0e79778",
+    "operationalReceiptsSHA256": "ac13b0f446e9bb2a7590f4dc2051cf9126244e17b9a55094fdbcd7278f196656",
+    "utc": "2026-10-27T17:56:15.130Z"
+  },
+  "end": {
+    "head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+    "sourceTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+    "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+    "sourceStatus": "M src/features/S12/OperationalReceipts.tsx",
+    "testStatus": "?? tests/s12/",
+    "sourceDiffSHA256": "c522fe5b3d7f69cd37320846095c950030e4737238d2d2b94d2abae5f0e79778",
+    "operationalReceiptsSHA256": "ac13b0f446e9bb2a7590f4dc2051cf9126244e17b9a55094fdbcd7278f196656",
+    "utc": "2026-10-27T17:56:24.779Z"
+  },
+  "phase": "after-normal-v01-workingtree",
+  "base": "http://127.0.0.1:5290",
+  "results": [
+    {
+      "profile": {
+        "name": "desktop",
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "touch": false
+      },
+      "scenario": "NORMAL_LOCAL_PREVIEW_MOCK_SOURCE_DATA",
+      "browser": "156.0.8078.4",
+      "sourceStart": {
+        "head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+        "sourceTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+        "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+        "sourceStatus": "M src/features/S12/OperationalReceipts.tsx",
+        "testStatus": "?? tests/s12/",
+        "sourceDiffSHA256": "c522fe5b3d7f69cd37320846095c950030e4737238d2d2b94d2abae5f0e79778",
+        "operationalReceiptsSHA256": "ac13b0f446e9bb2a7590f4dc2051cf9126244e17b9a55094fdbcd7278f196656",
+        "utc": "2026-10-27T17:56:17.096Z"
+      },
+      "console": [],
+      "network": [
+        {
+          "url": "http://127.0.0.1:5290/",
+          "failure": {
+            "errorText": "net::ERR_CONNECTION_REFUSED"
+          }
+        }
+      ],
+      "states": [],
+      "result": "FAIL",
+      "failure": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5290/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5290/#/preview/S07\", waiting until \"load\"\u001b[22m\n",
+      "sourceEnd": {
+        "head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+        "sourceTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+        "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+        "sourceStatus": "M src/features/S12/OperationalReceipts.tsx",
+        "testStatus": "?? tests/s12/",
+        "sourceDiffSHA256": "c522fe5b3d7f69cd37320846095c950030e4737238d2d2b94d2abae5f0e79778",
+        "operationalReceiptsSHA256": "ac13b0f446e9bb2a7590f4dc2051cf9126244e17b9a55094fdbcd7278f196656",
+        "utc": "2026-10-27T17:56:20.170Z"
+      },
+      "stable": true
+    },
+    {
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "touch": true
+      },
+      "scenario": "NORMAL_LOCAL_PREVIEW_MOCK_SOURCE_DATA",
+      "browser": "156.0.8078.4",
+      "sourceStart": {
+        "head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+        "sourceTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+        "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+        "sourceStatus": "M src/features/S12/OperationalReceipts.tsx",
+        "testStatus": "?? tests/s12/",
+        "sourceDiffSHA256": "c522fe5b3d7f69cd37320846095c950030e4737238d2d2b94d2abae5f0e79778",
+        "operationalReceiptsSHA256": "ac13b0f446e9bb2a7590f4dc2051cf9126244e17b9a55094fdbcd7278f196656",
+        "utc": "2026-10-27T17:56:21.165Z"
+      },
+      "console": [],
+      "network": [
+        {
+          "url": "http://127.0.0.1:5290/",
+          "failure": {
+            "errorText": "net::ERR_CONNECTION_REFUSED"
+          }
+        }
+      ],
+      "states": [],
+      "result": "FAIL",
+      "failure": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5290/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5290/#/preview/S07\", waiting until \"load\"\u001b[22m\n",
+      "sourceEnd": {
+        "head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+        "sourceTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+        "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+        "sourceStatus": "M src/features/S12/OperationalReceipts.tsx",
+        "testStatus": "?? tests/s12/",
+        "sourceDiffSHA256": "c522fe5b3d7f69cd37320846095c950030e4737238d2d2b94d2abae5f0e79778",
+        "operationalReceiptsSHA256": "ac13b0f446e9bb2a7590f4dc2051cf9126244e17b9a55094fdbcd7278f196656",
+        "utc": "2026-10-27T17:56:22.506Z"
+      },
+      "stable": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "base": "http://127.0.0.1:5287",
+  "mode": "MOCK",
+  "checks": [],
+  "errors": [],
+  "status": "PROBE_FAILED",
+  "error": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('.s12-operational-results')\nExpected substring: \"3\"\nReceived string:    \"4 phiếu trong phiên hiện tại.\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('.s12-operational-results') with timeout 5000ms\n  - waiting for locator('.s12-operational-results')\n    14 × locator resolved to <p aria-live=\"polite\" class=\"s12-operational-results\">4 phiếu trong phiên hiện tại.</p>\n       - unexpected value \"4 phiếu trong phiên hiện tại.\"\n"
+}

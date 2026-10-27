@@ -37,10 +37,6 @@ const COPY = {
 };
 const STATUS = { DRAFT: 'Mới tạo', SCANNING: 'Đang ghi nhận', SUBMITTED: 'Đã gửi từ App', POSTED: 'Đã nhập kho' } as const;
 type StatusKey = keyof typeof STATUS;
-const REFERENCE_RECEIPT_CODES = new Set(['PN-0012', 'PN-0011', 'PN-0010']);
-const LIVE_DEMO_RECEIPT_CODES = new Set(['PN-0009']);
-const isReferenceReceipt = (record: ReceiptRecord) => REFERENCE_RECEIPT_CODES.has(record.data.code);
-const isVisibleDemoReceipt = (record: ReceiptRecord) => isReferenceReceipt(record) || LIVE_DEMO_RECEIPT_CODES.has(record.data.code) || record.data.code.startsWith('PV-PN-');
 function message(code: string) {
   if (!code) return '';
   if (code === 'ARCHIVED_PROOF_UNAVAILABLE') return 'Chưa xác minh được bằng chứng của thao tác phiên cũ. Thao tác gốc được giữ lại để kiểm tra tiếp.';
@@ -67,8 +63,8 @@ export function OperationalReceipts({ adapter: supplied, notify, createRequest =
   const locked = state.busy || state.recovery || !snapshot;
   useEffect(() => { void controller.resume(); const refresh = () => { if (document.visibilityState === 'visible') void controller.load(); }; window.addEventListener('focus', refresh); document.addEventListener('visibilitychange', refresh); return () => { controller.suspend(); window.removeEventListener('focus', refresh); document.removeEventListener('visibilitychange', refresh); }; }, [controller]);
   useEffect(() => { if (!state.acceptedSequence) return; if (state.acceptedLocal) { setSelected(state.acceptedId); setEditor(null); setPost(null); } else if (!editor && !post) setSelected(state.acceptedId); }, [state.acceptedId, state.acceptedSequence, state.acceptedLocal]);
-  const receipts = useMemo(() => { const term = search.trim().toLocaleLowerCase(); return (snapshot?.receipts ?? []).filter(isVisibleDemoReceipt).filter(item => { const haystack = `${item.data.code} ${item.data.sourceText} ${item.data.referenceText}`.toLocaleLowerCase(); return (!statusFilter || item.data.status === statusFilter) && (!term || haystack.includes(term)); }); }, [snapshot, search, statusFilter]);
-  const receiptPoolCount = snapshot?.receipts.filter(isVisibleDemoReceipt).length ?? 0;
+  const receipts = useMemo(() => { const term = search.trim().toLocaleLowerCase(); return (snapshot?.receipts ?? []).filter(item => { const haystack = `${item.data.code} ${item.data.sourceText} ${item.data.referenceText}`.toLocaleLowerCase(); return (!statusFilter || item.data.status === statusFilter) && (!term || haystack.includes(term)); }); }, [snapshot, search, statusFilter]);
+  const receiptPoolCount = snapshot?.receipts.length ?? 0;
   function create() { if (locked || !snapshot?.scenario) return; setEditorMessage(''); setEditor({ context: { intent: 'create' }, draft: { mode: '', sourceText: 'Nhà cung cấp An Phát', referenceText: 'NCC-1025-01' }, fence: snapshot.token }); }
   useEffect(() => { if (createRequest > consumedCreateRequest.current && !locked && snapshot?.scenario) { consumedCreateRequest.current = createRequest; create(); onCreateHandled?.(); } }, [createRequest, locked, snapshot]);
   useEffect(() => { setCopyFeedback(''); }, [selected]);

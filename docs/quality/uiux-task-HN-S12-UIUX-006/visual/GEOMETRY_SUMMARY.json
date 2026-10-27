@@ -1,0 +1,240 @@
+{
+  "candidate": {
+    "head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+    "sourceTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+    "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+    "sourceStatus": "",
+    "utc": "2026-10-27T17:44:26.824Z"
+  },
+  "method": "Derived from immutable raw canonical receipt. referenceLength scalar discarded due selector caveat; derive NFC character count from invalid reference control.",
+  "profiles": [
+    {
+      "profile": {
+        "name": "desktop",
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "touch": false
+      },
+      "browser": "156.0.8078.4",
+      "stable": true,
+      "errors": [],
+      "network": [],
+      "sourceCount": 31,
+      "selectedId": "receipt:afeb0fd1-d6bf-470a-ba04-ed1e43669d0a",
+      "states": [
+        {
+          "ref": "REF-02",
+          "state": "list",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\desktop-list.png",
+          "sha256": "9c98c4248d607a0b7bb7941b8afb8fd574060afb2c1779d0cb8a709281445de5",
+          "documentWidth": 1920,
+          "horizontalOverflow": false,
+          "dialog": [],
+          "modal": {
+            "bodyOverflow": null,
+            "footerReachable": null
+          },
+          "cardCount": 0,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 0,
+          "referenceNFC": null,
+          "focusImmediatelyAfterSubmit": null
+        },
+        {
+          "ref": "REF-03",
+          "state": "detail",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\desktop-detail.png",
+          "sha256": "fbde4aa054cad4ecc36f07d11f05840ddce8b517490aeeccb8c22e5de2f918d1",
+          "documentWidth": 1920,
+          "horizontalOverflow": false,
+          "dialog": [
+            {
+              "x": 640,
+              "y": 179.5,
+              "w": 640,
+              "h": 721
+            }
+          ],
+          "modal": {
+            "bodyOverflow": false,
+            "footerReachable": true,
+            "replacementCharacters": false
+          },
+          "cardCount": 0,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 0,
+          "referenceNFC": null,
+          "focusImmediatelyAfterSubmit": null
+        },
+        {
+          "ref": "REF-01",
+          "state": "create",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\desktop-create.png",
+          "sha256": "395df4f6994fcea7e3e9cbccdedc4ba973ba5c3cc7f486795402816f5a46d1c3",
+          "documentWidth": 1920,
+          "horizontalOverflow": false,
+          "dialog": [
+            {
+              "x": 640,
+              "y": 235,
+              "w": 640,
+              "h": 610
+            }
+          ],
+          "modal": {
+            "bodyOverflow": false,
+            "footerReachable": true,
+            "replacementCharacters": false
+          },
+          "cardCount": 0,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 0,
+          "referenceNFC": null,
+          "focusImmediatelyAfterSubmit": null
+        },
+        {
+          "ref": "REF-08",
+          "state": "validation",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\desktop-validation.png",
+          "sha256": "71e1f147ba405e642c70aad4bebf2dd1bff70f05aadca9dc7209bffe1f092888",
+          "documentWidth": 1920,
+          "horizontalOverflow": false,
+          "dialog": [
+            {
+              "x": 640,
+              "y": 199.5,
+              "w": 640,
+              "h": 681
+            }
+          ],
+          "modal": {
+            "bodyOverflow": false,
+            "footerReachable": true,
+            "replacementCharacters": false
+          },
+          "cardCount": 0,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 3,
+          "referenceNFC": 201,
+          "summary": "Có 3 trường cần kiểm tra.",
+          "focusImmediatelyAfterSubmit": "_r_r_-mode"
+        }
+      ]
+    },
+    {
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "touch": true
+      },
+      "browser": "156.0.8078.4",
+      "stable": true,
+      "errors": [],
+      "network": [],
+      "sourceCount": 31,
+      "selectedId": "receipt:8107c989-6521-4a58-8347-be2fcaa2f9b5",
+      "states": [
+        {
+          "ref": "REF-04",
+          "state": "list",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\tablet-list.png",
+          "sha256": "178d237f68a82e42af3fb3afafb3e7d8f15c7eeb716d208a50eb7ac6949f0bf7",
+          "documentWidth": 800,
+          "horizontalOverflow": false,
+          "dialog": [],
+          "modal": {
+            "bodyOverflow": null,
+            "footerReachable": null
+          },
+          "cardCount": 4,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 0,
+          "referenceNFC": null,
+          "focusImmediatelyAfterSubmit": null
+        },
+        {
+          "ref": "REF-05",
+          "state": "detail",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\tablet-detail.png",
+          "sha256": "4743b0fe61afd73f3988a1357a1d8af31a12fedba8e766e2d6482f228fd89c06",
+          "documentWidth": 800,
+          "horizontalOverflow": false,
+          "dialog": [
+            {
+              "x": 32,
+              "y": 213,
+              "w": 736,
+              "h": 854
+            }
+          ],
+          "modal": {
+            "bodyOverflow": false,
+            "footerReachable": true,
+            "replacementCharacters": false
+          },
+          "cardCount": 4,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 0,
+          "referenceNFC": null,
+          "focusImmediatelyAfterSubmit": null
+        },
+        {
+          "ref": "REF-06",
+          "state": "create",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\tablet-create.png",
+          "sha256": "2d8f77ace0e7cbc8d113ed351e1a73e599ae363e1113aa8898b098f2ba4c4de1",
+          "documentWidth": 800,
+          "horizontalOverflow": false,
+          "dialog": [
+            {
+              "x": 64,
+              "y": 244,
+              "w": 672,
+              "h": 792
+            }
+          ],
+          "modal": {
+            "bodyOverflow": false,
+            "footerReachable": true,
+            "replacementCharacters": false
+          },
+          "cardCount": 4,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 0,
+          "referenceNFC": null,
+          "focusImmediatelyAfterSubmit": null
+        },
+        {
+          "ref": "REF-07",
+          "state": "validation",
+          "screenshot": "docs\\quality\\uiux-task-HN-S12-UIUX-006\\visual\\before-normal-bfec706\\tablet-validation.png",
+          "sha256": "24b57bb4de7c043e75d9267c75c6464413f06206bb3ed9c6eb8219da9a1d305f",
+          "documentWidth": 800,
+          "horizontalOverflow": false,
+          "dialog": [
+            {
+              "x": 64,
+              "y": 206.5,
+              "w": 672,
+              "h": 867
+            }
+          ],
+          "modal": {
+            "bodyOverflow": false,
+            "footerReachable": true,
+            "replacementCharacters": false
+          },
+          "cardCount": 4,
+          "visibleCountText": "4 phiếu trong phiên hiện tại.",
+          "invalidCount": 3,
+          "referenceNFC": 201,
+          "summary": "Có 3 trường cần kiểm tra.",
+          "focusImmediatelyAfterSubmit": "_r_r_-mode"
+        }
+      ]
+    }
+  ]
+}

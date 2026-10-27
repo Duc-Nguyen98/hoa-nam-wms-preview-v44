@@ -1,0 +1,17 @@
+{
+  "base": "http://127.0.0.1:5287",
+  "checks": [
+    "desktop ready list/no overflow",
+    "desktop search/status filter/reset",
+    "desktop exact detail/copy/ESC focus",
+    "desktop create validation/focus/length/no-write/ESC",
+    "desktop loading/error retry/forbidden states",
+    "tablet ready list/no overflow",
+    "tablet search/status filter/reset",
+    "tablet exact detail/copy/ESC focus",
+    "tablet create validation/focus/length/no-write/ESC",
+    "tablet loading/error retry/forbidden states"
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

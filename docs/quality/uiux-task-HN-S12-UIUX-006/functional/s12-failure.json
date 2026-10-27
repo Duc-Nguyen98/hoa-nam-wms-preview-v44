@@ -1,0 +1,12 @@
+{
+  "error": "Error: expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('.s12-receipt-card:visible')\nExpected: 3\nReceived: 0\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveCount\" locator('.s12-receipt-card:visible') with timeout 5000ms\n  - waiting for locator('.s12-receipt-card:visible')\n    14 × locator resolved to 0 elements\n       - unexpected value \"0\"\n",
+  "stack": "Error: expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('.s12-receipt-card:visible')\nExpected: 3\nReceived: 0\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveCount\" locator('.s12-receipt-card:visible') with timeout 5000ms\n  - waiting for locator('.s12-receipt-card:visible')\n    14 × locator resolved to 0 elements\n       - unexpected value \"0\"\n\n    at captureRawStack (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toHaveCount (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at run (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S12-UIUX-006\\functional\\s12-functional.mjs:8:501)\n    at async file:///E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S12-UIUX-006/functional/s12-functional.mjs:11:13",
+  "checks": [
+    "desktop ready list/no overflow",
+    "desktop search/status filter/reset",
+    "desktop exact detail/copy/ESC focus",
+    "desktop create validation/focus/length/no-write/ESC"
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

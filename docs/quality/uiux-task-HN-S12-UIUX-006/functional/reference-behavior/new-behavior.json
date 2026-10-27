@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "S15 keyboard expand/collapse, all lines and serials, snapshot recipient, clipboard, zero writes",
+    "S15 detail and Escape retain existing behavior",
+    "S12 adapter ready",
+    "S12 adapter empty",
+    "S12 adapter loading",
+    "S12 adapter error",
+    "S12 adapter forbidden",
+    "S12 selected record removed"
+  ],
+  "errors": []
+}

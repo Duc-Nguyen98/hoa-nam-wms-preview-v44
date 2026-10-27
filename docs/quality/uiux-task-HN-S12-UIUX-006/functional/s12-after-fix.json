@@ -1,0 +1,17 @@
+{
+  "suite": "tests/s12/receipt-visibility.spec.ts",
+  "command": "npx playwright test --config=tests/s12/receipt-visibility.config.ts",
+  "status": "PASS",
+  "tests": 2,
+  "passed": 2,
+  "duration": "26.6s",
+  "baseline_head": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+  "working_tree_source_diff_hash": "ea80a673eac344167451974841f42364abe7d7a2",
+  "operational_receipts_source_blob": "d8896efb843ec248dd684afbe9a5ab2487b1008f",
+  "checks": [
+    "arbitrary receipt codes remain visible through list, search, and status filtering",
+    "refresh replaces the visible adapter pool and preserves empty state"
+  ],
+  "actual_authenticated_route": "BLOCKED_NOT_RUN",
+  "real_api": "NOT_CONNECTED"
+}
