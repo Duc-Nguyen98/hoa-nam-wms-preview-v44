@@ -1,0 +1,7 @@
+PASS fresh unauthenticated deep link is gated
+PASS normal configured MOCK auth and warehouse confirmation
+PASS real app zh-CN/light desktop tablet modal viewport keyboard
+PASS real app zh-CN/dark desktop tablet modal viewport keyboard
+PASS independent isolated harness empty
+PASS independent isolated harness long
+{"pass":6,"fail":0,"errors":[]}

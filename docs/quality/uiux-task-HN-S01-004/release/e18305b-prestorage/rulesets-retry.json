@@ -1,0 +1,7 @@
+{
+  "observedAtUtc": "2026-10-27T10:59:48.1199020+00:00",
+  "reason": "Single retry of e183 prestorage rulesets after retained SSL transport failure",
+  "path": "/rulesets",
+  "value": [],
+  "ok": true
+}

@@ -1,0 +1,174 @@
+{
+  "dialog": {
+    "top": 186.5,
+    "bottom": 893.5,
+    "left": 560,
+    "right": 1360,
+    "width": 800,
+    "height": 707
+  },
+  "body": {
+    "top": 300.5,
+    "bottom": 809.5,
+    "left": 561,
+    "right": 1359,
+    "width": 798,
+    "height": 509
+  },
+  "footer": {
+    "top": 809.5,
+    "bottom": 892.5,
+    "left": 561,
+    "right": 1359,
+    "width": 798,
+    "height": 83
+  },
+  "padding": {
+    "top": "16px",
+    "bottom": "16px",
+    "left": "24px",
+    "right": "24px"
+  },
+  "controls": [
+    {
+      "name": "复制单据编号",
+      "top": 231.5,
+      "bottom": 275.5,
+      "left": 811.0625,
+      "right": 855.0625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "关闭",
+      "top": 211.5,
+      "bottom": 259.5,
+      "left": 1287,
+      "right": 1335,
+      "width": 48,
+      "height": 48
+    },
+    {
+      "name": "复制 ID",
+      "top": 741.5,
+      "bottom": 785.5,
+      "left": 827.90625,
+      "right": 871.90625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "关闭",
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1068,
+      "right": 1172,
+      "width": 104,
+      "height": 50
+    },
+    {
+      "name": "打开出库单",
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1180,
+      "right": 1335,
+      "width": 155,
+      "height": 50
+    }
+  ],
+  "allButtons": [
+    {
+      "name": "复制单据编号",
+      "className": "ov-copy-button",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 231.5,
+      "bottom": 275.5,
+      "left": 811.0625,
+      "right": 855.0625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "关闭",
+      "className": "hn-button hn-button--ghost hn-global-modal__close",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 211.5,
+      "bottom": 259.5,
+      "left": 1287,
+      "right": 1335,
+      "width": 48,
+      "height": 48
+    },
+    {
+      "name": "复制 ID",
+      "className": "ov-copy-button",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 741.5,
+      "bottom": 785.5,
+      "left": 827.90625,
+      "right": 871.90625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "关闭",
+      "className": "hn-button hn-button--secondary ",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1068,
+      "right": 1172,
+      "width": 104,
+      "height": 50
+    },
+    {
+      "name": "打开出库单",
+      "className": "hn-button hn-button--primary ",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1180,
+      "right": 1335,
+      "width": 155,
+      "height": 50
+    }
+  ],
+  "footerButtons": [
+    {
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1068,
+      "right": 1172,
+      "width": 104,
+      "height": 50
+    },
+    {
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1180,
+      "right": 1335,
+      "width": 155,
+      "height": 50
+    }
+  ]
+}

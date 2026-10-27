@@ -1,0 +1,238 @@
+{
+  "head": "e18305b1e3b09c4402317d507d7008967284341b",
+  "srcTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+  "testsTree": "3a61cae4bffcbda3f9e614eaaa02a38e637f3e64",
+  "status": "",
+  "previous": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "sourceDiff": "Only desktop (>1100px) modal footer padding-block:16px inserted; all other source/tests unchanged",
+  "localRuntime": "Vite local build and preview, normal actual app MOCK, role-specific ignored output directory; asset hashes in matrix/local-build-custody.json",
+  "nodeTests": {
+    "pass": 34,
+    "fail": 0,
+    "artifact": "final-footer-node-tests.log"
+  },
+  "modalMatrix": {
+    "pass": 12,
+    "fail": 0,
+    "errors": [],
+    "artifact": "final-footer-matrix-corrected/results.json",
+    "cases": [
+      {
+        "name": "vi-light-1920",
+        "footerHeight": 83,
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          50,
+          50
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "vi-light-800",
+        "footerHeight": 105,
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          56,
+          56
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "vi-dark-1920",
+        "footerHeight": 83,
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          50,
+          50
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "vi-dark-800",
+        "footerHeight": 105,
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          56,
+          56
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "en-light-1920",
+        "footerHeight": 83,
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          50,
+          50
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "en-light-800",
+        "footerHeight": 105,
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          56,
+          56
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "en-dark-1920",
+        "footerHeight": 83,
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          50,
+          50
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "en-dark-800",
+        "footerHeight": 105,
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          56,
+          56
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "zh-CN-light-1920",
+        "footerHeight": 83,
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          50,
+          50
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "zh-CN-light-800",
+        "footerHeight": 105,
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          56,
+          56
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "zh-CN-dark-1920",
+        "footerHeight": 83,
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          50,
+          50
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      },
+      {
+        "name": "zh-CN-dark-800",
+        "footerHeight": 105,
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "buttonHeights": [
+          56,
+          56
+        ],
+        "minimumControlWidth": 44,
+        "minimumControlHeight": 44,
+        "smallActiveDescendants": []
+      }
+    ]
+  },
+  "transferredEvidence": {
+    "candidate": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+    "browserUniquePass": 29,
+    "a11yGroupsPass": 21,
+    "basis": "Hash-verified only one footer CSS declaration differs; unaffected business/query/data/notifications/shell and tablet style gates transfer; affected modal matrix rerun on final SHA"
+  },
+  "visualResidual": "Desktop actual footer83 CSS px versus reference82:1px delta; no pixel-level visual PASS inferred",
+  "custody": {
+    "scriptSha256": "d2366b365a66fad62db2bdbd9053b37bf832068e88bd6ad11b04f46b2a7f7826",
+    "fixtureSha256": "53b86f60ac41bd1212e5da90c7d57308be1a8f22c3da83d77f08278075b8ce0b"
+  },
+  "at": "2026-10-27T11:11:02.276Z"
+}

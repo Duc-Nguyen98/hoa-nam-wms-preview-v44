@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-27T10:52:08.242Z",
+  "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "srcTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+  "testsTree": "3a61cae4bffcbda3f9e614eaaa02a38e637f3e64",
+  "status": "",
+  "hashes": [
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs",
+      "sha256": "f41afdfbfdad896cc48ba62d2a9da2e2bc920aeccf551b8a2b2fd6b6e7df233d"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/shared-accessibility-browser.mjs",
+      "sha256": "9a7f964d7c674dcdda1b3a2f3629f4a276a44225f5c2714aa5608919c6915f3f"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/independent-data.test.ts",
+      "sha256": "50144a8023a6132279a4f6b5205c6a80662fd874ce055360b97693597b0c93e1"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/isolated-harness.tsx",
+      "sha256": "dc47edaba0a3d9bf0da3a242562bcd3cdbb08d249ebf84a82f40e03146eaf1f4"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/isolated-harness.html",
+      "sha256": "8a77d1a5e0ce6b6b26f9d2d376f2b02eb8c807c8cfc260142c80ad7ff130b969"
+    }
+  ],
+  "originalFixtureHash": "53b86f60ac41bd1212e5da90c7d57308be1a8f22c3da83d77f08278075b8ce0b",
+  "finalFixtureHash": "53b86f60ac41bd1212e5da90c7d57308be1a8f22c3da83d77f08278075b8ce0b",
+  "fixtureUnchanged": true
+}

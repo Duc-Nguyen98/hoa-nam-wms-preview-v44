@@ -1,0 +1,23 @@
+{
+  "temp": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-s01-004-implementation-temp",
+  "results": [
+    {
+      "state": "empty",
+      "count": "0 phiếu trong kỳ",
+      "pageRows": 0,
+      "errors": []
+    },
+    {
+      "state": "long",
+      "count": "60 phiếu trong kỳ",
+      "pageRows": 10,
+      "errors": []
+    },
+    {
+      "state": "missing",
+      "count": "16 phiếu trong kỳ",
+      "pageRows": 10,
+      "errors": []
+    }
+  ]
+}

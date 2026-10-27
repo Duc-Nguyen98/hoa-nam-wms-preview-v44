@@ -1,0 +1,1 @@
+Stopped the identified QA runner after the first failed geometry assertion left a dialog open and caused repeated outside-header click timeouts. Raw stdout, screenshots, executed script and local build custody are preserved. No completed-result PASS is inferred. The next bounded rerun scopes measurements to intended modal controls and guarantees modal cleanup after each case.

@@ -1,0 +1,601 @@
+{
+  "purpose": "Implementation smoke; independent AFTER QA remains required",
+  "results": [
+    {
+      "width": 1920,
+      "errors": [],
+      "dashboard": {
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "boxes": {
+          ".ov-page-heading": {
+            "x": 334,
+            "y": 82,
+            "width": 1524,
+            "height": 91,
+            "padding": "0px",
+            "gap": "24px"
+          },
+          ".ov-metrics": {
+            "x": 334,
+            "y": 189,
+            "width": 1524,
+            "height": 151,
+            "padding": "0px",
+            "gap": "16px"
+          },
+          ".ov-metric": {
+            "x": 334,
+            "y": 189,
+            "width": 369,
+            "height": 151,
+            "padding": "12px 16px",
+            "gap": "normal 16px"
+          },
+          ".ov-attention": {
+            "x": 334,
+            "y": 356,
+            "width": 989.296875,
+            "height": 225,
+            "padding": "10px 24px",
+            "gap": "normal"
+          },
+          ".ov-quick": {
+            "x": 1337.296875,
+            "y": 356,
+            "width": 520.6875,
+            "height": 225,
+            "padding": "10px 24px",
+            "gap": "normal"
+          },
+          ".ov-activity": {
+            "x": 334,
+            "y": 597,
+            "width": 1524,
+            "height": 418,
+            "padding": "12px 22px 4px",
+            "gap": "normal"
+          },
+          ".ov-filters": {
+            "x": 357,
+            "y": 659,
+            "width": 1478,
+            "height": 66,
+            "padding": "0px",
+            "gap": "16px"
+          },
+          ".ov-search .hn-filter-input": {
+            "x": 357,
+            "y": 681,
+            "width": 1090,
+            "height": 44,
+            "padding": "0px 12px",
+            "gap": "10px"
+          },
+          "#ov-search-input": {
+            "x": 400,
+            "y": 681,
+            "width": 1034,
+            "height": 44,
+            "padding": "1px 2px",
+            "gap": "normal"
+          },
+          "#ov-type-filter": {
+            "x": 1463,
+            "y": 681,
+            "width": 172,
+            "height": 44,
+            "padding": "10px 12px",
+            "gap": "12px"
+          }
+        },
+        "stock": "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "pending": "5",
+        "pager": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+        "smallTargets": []
+      },
+      "contrast": [
+        {
+          "theme": "light",
+          "color": "rgb(164, 94, 9)",
+          "background": "rgb(255, 247, 232)",
+          "ratio": 4.714093336955889
+        },
+        {
+          "theme": "dark",
+          "color": "rgb(240, 189, 114)",
+          "background": "rgb(73, 56, 32)",
+          "ratio": 6.53917171100108
+        }
+      ],
+      "detail": {
+        "id": "p12-stock-PX-0007",
+        "modal": {
+          "width": 800,
+          "height": 723
+        },
+        "labelOffset": 98,
+        "iconToLabel": 73,
+        "fields": [
+          {
+            "y": 373.5,
+            "height": 56
+          },
+          {
+            "y": 457.5,
+            "height": 56
+          },
+          {
+            "y": 373.5,
+            "height": 56
+          },
+          {
+            "y": 457.5,
+            "height": 56
+          },
+          {
+            "y": 541.5,
+            "height": 56
+          },
+          {
+            "y": 541.5,
+            "height": 56
+          },
+          {
+            "y": 703.5,
+            "height": 74
+          }
+        ],
+        "idReachable": true,
+        "ctaDisabled": null
+      }
+    },
+    {
+      "width": 800,
+      "errors": [],
+      "dashboard": {
+        "viewport": 800,
+        "scrollWidth": 800,
+        "boxes": {
+          ".ov-page-heading": {
+            "x": 46,
+            "y": 86,
+            "width": 708,
+            "height": 186.5,
+            "padding": "0px 14px",
+            "gap": "2px"
+          },
+          ".ov-metrics": {
+            "x": 46,
+            "y": 288.5,
+            "width": 708,
+            "height": 358,
+            "padding": "0px",
+            "gap": "14px 12px"
+          },
+          ".ov-metric": {
+            "x": 46,
+            "y": 288.5,
+            "width": 348,
+            "height": 172,
+            "padding": "13px 24px",
+            "gap": "0px 16px"
+          },
+          ".ov-attention": {
+            "x": 46,
+            "y": 662.5,
+            "width": 708,
+            "height": 255,
+            "padding": "12px 20px 10px",
+            "gap": "normal"
+          },
+          ".ov-quick": {
+            "x": 46,
+            "y": 931.5,
+            "width": 708,
+            "height": 128,
+            "padding": "8px 20px",
+            "gap": "normal"
+          },
+          ".ov-activity": {
+            "x": 46,
+            "y": 1075.5,
+            "width": 708,
+            "height": 562.5,
+            "padding": "12px 20px 4px",
+            "gap": "normal"
+          },
+          ".ov-filters": {
+            "x": 67,
+            "y": 1184,
+            "width": 666,
+            "height": 123,
+            "padding": "0px",
+            "gap": "10px 32px"
+          },
+          ".ov-search .hn-filter-input": {
+            "x": 67,
+            "y": 1184,
+            "width": 666,
+            "height": 44,
+            "padding": "0px 12px",
+            "gap": "10px"
+          },
+          "#ov-search-input": {
+            "x": 110,
+            "y": 1184,
+            "width": 610,
+            "height": 44,
+            "padding": "1px 2px",
+            "gap": "normal"
+          },
+          "#ov-type-filter": {
+            "x": 67,
+            "y": 1263,
+            "width": 317,
+            "height": 44,
+            "padding": "10px 12px",
+            "gap": "12px"
+          }
+        },
+        "stock": "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "pending": "5",
+        "pager": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+        "smallTargets": []
+      },
+      "contrast": [
+        {
+          "theme": "light",
+          "color": "rgb(164, 94, 9)",
+          "background": "rgb(255, 247, 232)",
+          "ratio": 4.714093336955889
+        },
+        {
+          "theme": "dark",
+          "color": "rgb(240, 189, 114)",
+          "background": "rgb(73, 56, 32)",
+          "ratio": 6.53917171100108
+        }
+      ],
+      "detail": {
+        "id": "p12-stock-PX-0007",
+        "modal": {
+          "width": 710,
+          "height": 1248
+        },
+        "labelOffset": 139,
+        "iconToLabel": 102,
+        "fields": [
+          {
+            "y": 265,
+            "height": 89
+          },
+          {
+            "y": 376,
+            "height": 89
+          },
+          {
+            "y": 487,
+            "height": 89
+          },
+          {
+            "y": 598,
+            "height": 89
+          },
+          {
+            "y": 709,
+            "height": 89
+          },
+          {
+            "y": 820,
+            "height": 88
+          },
+          {
+            "y": 1034,
+            "height": 96
+          }
+        ],
+        "idReachable": true,
+        "ctaDisabled": null
+      }
+    },
+    {
+      "width": 1672,
+      "errors": [],
+      "dashboard": {
+        "viewport": 1672,
+        "scrollWidth": 1672,
+        "boxes": {
+          ".ov-page-heading": {
+            "x": 304,
+            "y": 82,
+            "width": 1336,
+            "height": 91,
+            "padding": "0px",
+            "gap": "24px"
+          },
+          ".ov-metrics": {
+            "x": 304,
+            "y": 189,
+            "width": 1336,
+            "height": 151,
+            "padding": "0px",
+            "gap": "16px"
+          },
+          ".ov-metric": {
+            "x": 304,
+            "y": 189,
+            "width": 322,
+            "height": 151,
+            "padding": "12px 16px",
+            "gap": "normal 16px"
+          },
+          ".ov-attention": {
+            "x": 304,
+            "y": 356,
+            "width": 866.125,
+            "height": 225,
+            "padding": "10px 24px",
+            "gap": "normal"
+          },
+          ".ov-quick": {
+            "x": 1184.125,
+            "y": 356,
+            "width": 455.859375,
+            "height": 225,
+            "padding": "10px 24px",
+            "gap": "normal"
+          },
+          ".ov-activity": {
+            "x": 304,
+            "y": 597,
+            "width": 1336,
+            "height": 418,
+            "padding": "12px 22px 4px",
+            "gap": "normal"
+          },
+          ".ov-filters": {
+            "x": 327,
+            "y": 659,
+            "width": 1290,
+            "height": 66,
+            "padding": "0px",
+            "gap": "16px"
+          },
+          ".ov-search .hn-filter-input": {
+            "x": 327,
+            "y": 681,
+            "width": 902,
+            "height": 44,
+            "padding": "0px 12px",
+            "gap": "10px"
+          },
+          "#ov-search-input": {
+            "x": 370,
+            "y": 681,
+            "width": 846,
+            "height": 44,
+            "padding": "1px 2px",
+            "gap": "normal"
+          },
+          "#ov-type-filter": {
+            "x": 1245,
+            "y": 681,
+            "width": 172,
+            "height": 44,
+            "padding": "10px 12px",
+            "gap": "12px"
+          }
+        },
+        "stock": "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "pending": "5",
+        "pager": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+        "smallTargets": []
+      },
+      "contrast": [
+        {
+          "theme": "light",
+          "color": "rgb(164, 94, 9)",
+          "background": "rgb(255, 247, 232)",
+          "ratio": 4.714093336955889
+        },
+        {
+          "theme": "dark",
+          "color": "rgb(240, 189, 114)",
+          "background": "rgb(73, 56, 32)",
+          "ratio": 6.53917171100108
+        }
+      ],
+      "detail": {
+        "id": "p12-stock-PX-0007",
+        "modal": {
+          "width": 800,
+          "height": 723
+        },
+        "labelOffset": 98,
+        "iconToLabel": 73,
+        "fields": [
+          {
+            "y": 373.5,
+            "height": 56
+          },
+          {
+            "y": 457.5,
+            "height": 56
+          },
+          {
+            "y": 373.5,
+            "height": 56
+          },
+          {
+            "y": 457.5,
+            "height": 56
+          },
+          {
+            "y": 541.5,
+            "height": 56
+          },
+          {
+            "y": 541.5,
+            "height": 56
+          },
+          {
+            "y": 703.5,
+            "height": 74
+          }
+        ],
+        "idReachable": true,
+        "ctaDisabled": null
+      }
+    },
+    {
+      "width": 992,
+      "errors": [],
+      "dashboard": {
+        "viewport": 992,
+        "scrollWidth": 992,
+        "boxes": {
+          ".ov-page-heading": {
+            "x": 46,
+            "y": 86,
+            "width": 900,
+            "height": 186.5,
+            "padding": "0px 14px",
+            "gap": "2px"
+          },
+          ".ov-metrics": {
+            "x": 46,
+            "y": 288.5,
+            "width": 900,
+            "height": 310,
+            "padding": "0px",
+            "gap": "14px 12px"
+          },
+          ".ov-metric": {
+            "x": 46,
+            "y": 288.5,
+            "width": 444,
+            "height": 148,
+            "padding": "13px 24px",
+            "gap": "0px 16px"
+          },
+          ".ov-attention": {
+            "x": 46,
+            "y": 614.5,
+            "width": 900,
+            "height": 255,
+            "padding": "12px 20px 10px",
+            "gap": "normal"
+          },
+          ".ov-quick": {
+            "x": 46,
+            "y": 883.5,
+            "width": 900,
+            "height": 126,
+            "padding": "8px 20px",
+            "gap": "normal"
+          },
+          ".ov-activity": {
+            "x": 46,
+            "y": 1025.5,
+            "width": 900,
+            "height": 533,
+            "padding": "12px 20px 4px",
+            "gap": "normal"
+          },
+          ".ov-filters": {
+            "x": 67,
+            "y": 1104.5,
+            "width": 858,
+            "height": 123,
+            "padding": "0px",
+            "gap": "10px 32px"
+          },
+          ".ov-search .hn-filter-input": {
+            "x": 67,
+            "y": 1104.5,
+            "width": 858,
+            "height": 44,
+            "padding": "0px 12px",
+            "gap": "10px"
+          },
+          "#ov-search-input": {
+            "x": 110,
+            "y": 1104.5,
+            "width": 802,
+            "height": 44,
+            "padding": "1px 2px",
+            "gap": "normal"
+          },
+          "#ov-type-filter": {
+            "x": 67,
+            "y": 1183.5,
+            "width": 413,
+            "height": 44,
+            "padding": "10px 12px",
+            "gap": "12px"
+          }
+        },
+        "stock": "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "pending": "5",
+        "pager": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+        "smallTargets": []
+      },
+      "contrast": [
+        {
+          "theme": "light",
+          "color": "rgb(164, 94, 9)",
+          "background": "rgb(255, 247, 232)",
+          "ratio": 4.714093336955889
+        },
+        {
+          "theme": "dark",
+          "color": "rgb(240, 189, 114)",
+          "background": "rgb(73, 56, 32)",
+          "ratio": 6.53917171100108
+        }
+      ],
+      "detail": {
+        "id": "p12-stock-PX-0007",
+        "modal": {
+          "width": 710,
+          "height": 1232
+        },
+        "labelOffset": 139,
+        "iconToLabel": 102,
+        "fields": [
+          {
+            "y": 257,
+            "height": 89
+          },
+          {
+            "y": 368,
+            "height": 89
+          },
+          {
+            "y": 479,
+            "height": 89
+          },
+          {
+            "y": 590,
+            "height": 89
+          },
+          {
+            "y": 701,
+            "height": 89
+          },
+          {
+            "y": 812,
+            "height": 88
+          },
+          {
+            "y": 1026,
+            "height": 96
+          }
+        ],
+        "idReachable": true,
+        "ctaDisabled": null
+      }
+    }
+  ]
+}

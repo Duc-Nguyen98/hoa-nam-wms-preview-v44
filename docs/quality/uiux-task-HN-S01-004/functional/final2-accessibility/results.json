@@ -1,0 +1,27 @@
+{
+  "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "srcTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+  "sourceStatus": "",
+  "custody": [
+    {
+      "file": "src/features/S01/overview.css",
+      "sha256": "bea70fec690fc21478c5f7df852896e61fefce1290a370caab2617f516c968ed"
+    },
+    {
+      "file": "src/shared/tokens.css",
+      "sha256": "83bf75869da63c9ac072fec01afd6631a6a8c1b51bbce420bc68c19e69a864ef"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/shared-accessibility-browser.mjs",
+      "sha256": "05efc9cc652400861cec6e183e03eb92ec3604c7ff106ffcf6c91ff3453959d1"
+    }
+  ],
+  "checks": [
+    {
+      "failure": "TimeoutError: locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n",
+      "stack": "locator.waitFor: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\shared-accessibility-browser.mjs:9:176"
+    }
+  ],
+  "errors": [],
+  "classification": "MOCK, measured samples not full WCAG certification"
+}

@@ -1,0 +1,348 @@
+{
+  "base": "http://127.0.0.1:5272",
+  "classification": "MOCK, no REAL_API verified",
+  "time": "2026-10-27T10:18:35.304Z",
+  "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+  "srcTree": "c8046fc38e251eeda1964da55531462b137c0554",
+  "sourceStatus": "",
+  "root": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026",
+  "custody": [
+    {
+      "file": "src/features/S01/OverviewScreen.tsx",
+      "sha256": "b68290c9a8951631e23cd7ce0257a88a4164b8d13a60d9ef97a209892273bca3"
+    },
+    {
+      "file": "src/features/S01/AcceptedRowDetail.tsx",
+      "sha256": "8d80f80e61c730df1bc9f79a4eb3735133db42bfdbd2d168c10efe324699f7e1"
+    },
+    {
+      "file": "src/features/S01/overview.css",
+      "sha256": "8102fca834c13f554d8f42a8936c131608b192240f4c617b5183354a3d943350"
+    },
+    {
+      "file": "src/contracts/overview.ts",
+      "sha256": "ca27b357f657352ac76be917c327ed0a6ed746dc993a90b21fa1a0870bb7b7cd"
+    },
+    {
+      "file": "src/controllers/overview-controller.ts",
+      "sha256": "aed56e3ae4b09285e18a223931ccf1d00f0419e6f0b56af241f7334fc305f5af"
+    },
+    {
+      "file": "src/data/fixtures/S01_SCANNER_PINNED.json",
+      "sha256": "53b86f60ac41bd1212e5da90c7d57308be1a8f22c3da83d77f08278075b8ce0b"
+    },
+    {
+      "file": "tests/s01/document-navigation-browser.mjs",
+      "sha256": "db71d8958fb19744adda1dba8d4c4c77aba502577695ddd6d2b2aa5058905c74"
+    },
+    {
+      "file": "tests/s01/document-navigation.test.ts",
+      "sha256": "d6ff84eadc1c91d5a3ca9cc35220eeabf89cbe958b626a90113cbb241cf0a5a4"
+    },
+    {
+      "file": "tests/s01/document-visual-browser.mjs",
+      "sha256": "09d2c46a7f091b4ba19fda5aa90fff1f42286c313b0bc35fd6a3e077db419bd4"
+    },
+    {
+      "file": "tests/s01/fidelity-policy.test.ts",
+      "sha256": "fa07da84c3b27f673bdbbc7111ee3ac1a0a0f78a10afe472322839ba2b6b7ec9"
+    },
+    {
+      "file": "tests/s01/flow-browser.mjs",
+      "sha256": "264e61775a01d7c10c5fee7a98748491cae8a01213d838fa634ca32a5c6d9a1f"
+    },
+    {
+      "file": "tests/s01/harness.html",
+      "sha256": "e6c0b30f2f06eba1a08ab66fe13fe6e848de4a1055b781944e1c2ea0d70afeb6"
+    },
+    {
+      "file": "tests/s01/harness.tsx",
+      "sha256": "76ae5806f09f722177c054eec0878a0a79003758dcb6a3802bbbf330db977644"
+    },
+    {
+      "file": "tests/s01/overview-browser.mjs",
+      "sha256": "c2e5c34e646c3a967965dad4b67e5706e931a52d818cf8efb16605194308fd82"
+    },
+    {
+      "file": "tests/s01/reference-scenario.tsx",
+      "sha256": "2248709fd1005c04703e3f8f15b2824a8dbcfe07191f322f6da7d98959e4588f"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs",
+      "sha256": "0a1f22b5d07627417dc30d8e9502e32a5f90f6ddd03ac996cb660c4651e98489"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/isolated-harness.tsx",
+      "sha256": "dc47edaba0a3d9bf0da3a242562bcd3cdbb08d249ebf84a82f40e03146eaf1f4"
+    }
+  ],
+  "results": [
+    {
+      "name": "fresh unauthenticated deep link is gated",
+      "status": "PASS"
+    },
+    {
+      "name": "normal configured MOCK auth and warehouse confirmation",
+      "status": "PASS"
+    },
+    {
+      "name": "actual September warehouse KPI consistency and pending distinction",
+      "status": "PASS",
+      "data": {
+        "metrics": [
+          "Tồn kho hiện tại—Chưa có số liệu xác nhậnHiện tại",
+          "Phiếu nhập8phiếuTất cả trạng tháiTrong kỳ",
+          "Phiếu xuất8phiếuTất cả trạng tháiTrong kỳ",
+          "Bảo hành đang mở4hồ sơKhông áp dụng kỳ chứng từHiện tại"
+        ],
+        "period": "tháng 9 năm 2026",
+        "pendingTotal": 5,
+        "pendingVisible": 3,
+        "rows": [
+          "PX-0011",
+          "PN-0011",
+          "PX-0010",
+          "PN-0010",
+          "PX-0009",
+          "PN-0009",
+          "PX-0008",
+          "PN-0008",
+          "PX-0007",
+          "PN-0007"
+        ]
+      }
+    },
+    {
+      "name": "normal production locked default10 and options",
+      "status": "FAIL",
+      "error": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n  Array [\n+   4,\n    10,\n    15,\n    25,\n    50,\n  ]",
+      "stack": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 0\n+ Received  + 1\n\n  Array [\n+   4,\n    10,\n    15,\n    25,\n    50,\n  ]\n    at captureRawStack (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toEqual (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:27:288\n    at async step (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:18:190)\n    at async file:///E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs:27:1"
+    },
+    {
+      "name": "normal period selection reapplies full September",
+      "status": "PASS"
+    },
+    {
+      "name": "type status filters and independent KPI attention scope",
+      "status": "PASS"
+    },
+    {
+      "name": "folded actor search, exact identity search, no result, reset",
+      "status": "PASS"
+    },
+    {
+      "name": "sort pagination full dataset identity no duplicates",
+      "status": "PASS",
+      "data": {
+        "first": [
+          "PX-0011",
+          "PN-0011",
+          "PX-0010",
+          "PN-0010",
+          "PX-0009",
+          "PN-0009",
+          "PX-0008",
+          "PN-0008",
+          "PX-0007",
+          "PN-0007"
+        ],
+        "second": [
+          "PX-0006",
+          "PN-0006",
+          "PN-0005",
+          "PX-0004",
+          "PN-0004",
+          "PX-0003"
+        ]
+      }
+    },
+    {
+      "name": "PX0007 exact fields copy ID and code keyboard focus restoration",
+      "status": "FAIL",
+      "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n",
+      "stack": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n\n    at overview (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:19:186)\n    at async file:///E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs:32:88\n    at async step (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:18:190)\n    at async file:///E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs:32:1"
+    },
+    {
+      "name": "PX0007 CTA deep link exact snapshot identity and invalid target reject",
+      "status": "PASS",
+      "data": {
+        "url": "http://127.0.0.1:5272/#/preview/S15?source=overview&documentId=p12-stock-PX-0007&snapshotId=scanner%3Ac3f14f742003c717aae933c44c010ccd5761fb8c%3Ap12-data-r02"
+      }
+    },
+    {
+      "name": "empty day preserves current warranty and unknown stock",
+      "status": "PASS"
+    },
+    {
+      "name": "DatePicker future and beyond90 rejected with accepted model preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "real app vi/light desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "vi",
+        "theme": "light"
+      }
+    },
+    {
+      "name": "real app vi/dark desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "vi",
+        "theme": "dark"
+      }
+    },
+    {
+      "name": "real app en/light desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "en",
+        "theme": "light"
+      }
+    },
+    {
+      "name": "real app en/dark desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "en",
+        "theme": "dark"
+      }
+    },
+    {
+      "name": "real app zh-CN/light desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "zh-CN",
+        "theme": "light"
+      }
+    },
+    {
+      "name": "real app zh-CN/dark desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "zh-CN",
+        "theme": "dark"
+      }
+    },
+    {
+      "name": "browser offline loaded MOCK filtering has local data no real API claim",
+      "status": "PASS",
+      "data": {
+        "classification": "MOCK browser-local adapter, offline retained model"
+      }
+    },
+    {
+      "name": "independent isolated harness loading",
+      "status": "PASS"
+    },
+    {
+      "name": "independent isolated harness error",
+      "status": "PASS"
+    },
+    {
+      "name": "independent isolated harness empty",
+      "status": "PASS"
+    },
+    {
+      "name": "independent isolated harness long",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC independent isolated harness",
+        "scroll": [
+          {
+            "fraction": 0,
+            "top": 0,
+            "height": 900,
+            "total": 1682
+          },
+          {
+            "fraction": 0.5,
+            "top": 391,
+            "height": 900,
+            "total": 1682
+          },
+          {
+            "fraction": 1,
+            "top": 782,
+            "height": 900,
+            "total": 1682
+          }
+        ]
+      }
+    },
+    {
+      "name": "independent isolated harness missing",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC independent isolated harness",
+        "scroll": [
+          {
+            "fraction": 0,
+            "top": 0,
+            "height": 900,
+            "total": 1042
+          },
+          {
+            "fraction": 0.5,
+            "top": 71,
+            "height": 900,
+            "total": 1042
+          },
+          {
+            "fraction": 1,
+            "top": 142,
+            "height": 900,
+            "total": 1042
+          }
+        ]
+      }
+    },
+    {
+      "name": "independent isolated harness session",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+      }
+    },
+    {
+      "name": "independent isolated harness forbidden",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+      }
+    },
+    {
+      "name": "independent isolated harness offline",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+      }
+    },
+    {
+      "name": "isolated reference4 preserves actual component source counts and PXidentity",
+      "status": "PASS",
+      "data": {
+        "classification": "MOCK same source reference-only paging4"
+      }
+    }
+  ],
+  "errors": [
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED",
+    "Failed to load resource: net::ERR_NETWORK_CHANGED"
+  ]
+}

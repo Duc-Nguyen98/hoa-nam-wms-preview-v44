@@ -1,0 +1,122 @@
+{
+  "base": "http://127.0.0.1:5272",
+  "classification": "MOCK, no REAL_API verified",
+  "time": "2026-10-27T10:06:42.018Z",
+  "root": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026",
+  "custody": [
+    {
+      "file": "src/features/S01/OverviewScreen.tsx",
+      "sha256": "b68290c9a8951631e23cd7ce0257a88a4164b8d13a60d9ef97a209892273bca3"
+    },
+    {
+      "file": "src/features/S01/AcceptedRowDetail.tsx",
+      "sha256": "8d80f80e61c730df1bc9f79a4eb3735133db42bfdbd2d168c10efe324699f7e1"
+    },
+    {
+      "file": "src/features/S01/overview.css",
+      "sha256": "8bc28e12aa50e0623abfa09d23146f0c1664f46b95952623d398afb0e8faf6f7"
+    },
+    {
+      "file": "src/contracts/overview.ts",
+      "sha256": "75beeb48e82be093692ef8dc776fb7e87d0ced7642e4ac1b837de15d00ad79f4"
+    },
+    {
+      "file": "src/controllers/overview-controller.ts",
+      "sha256": "aed56e3ae4b09285e18a223931ccf1d00f0419e6f0b56af241f7334fc305f5af"
+    },
+    {
+      "file": "src/data/fixtures/S01_SCANNER_PINNED.json",
+      "sha256": "53b86f60ac41bd1212e5da90c7d57308be1a8f22c3da83d77f08278075b8ce0b"
+    }
+  ],
+  "results": [
+    {
+      "name": "independent isolated harness loading",
+      "status": "PASS"
+    },
+    {
+      "name": "independent isolated harness error",
+      "status": "PASS"
+    },
+    {
+      "name": "independent isolated harness empty",
+      "status": "PASS"
+    },
+    {
+      "name": "independent isolated harness long",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC independent isolated harness",
+        "scroll": [
+          {
+            "fraction": 0,
+            "top": 0,
+            "height": 900,
+            "total": 1738
+          },
+          {
+            "fraction": 0.5,
+            "top": 419,
+            "height": 900,
+            "total": 1738
+          },
+          {
+            "fraction": 1,
+            "top": 838,
+            "height": 900,
+            "total": 1738
+          }
+        ]
+      }
+    },
+    {
+      "name": "independent isolated harness missing",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC independent isolated harness",
+        "scroll": [
+          {
+            "fraction": 0,
+            "top": 0,
+            "height": 900,
+            "total": 1098
+          },
+          {
+            "fraction": 0.5,
+            "top": 99,
+            "height": 900,
+            "total": 1098
+          },
+          {
+            "fraction": 1,
+            "top": 198,
+            "height": 900,
+            "total": 1098
+          }
+        ]
+      }
+    },
+    {
+      "name": "independent isolated harness session",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+      }
+    },
+    {
+      "name": "independent isolated harness forbidden",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+      }
+    },
+    {
+      "name": "independent isolated harness offline",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+      }
+    }
+  ],
+  "errors": []
+}

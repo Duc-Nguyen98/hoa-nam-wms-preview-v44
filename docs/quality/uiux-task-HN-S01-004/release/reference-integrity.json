@@ -1,0 +1,30 @@
+[
+  {
+    "original": "C:/Users/Admin/Desktop/HN_Astra/3.png",
+    "matches": true,
+    "custody": "docs/quality/references/hn-astra-20261027/3.png",
+    "originalSha256": "f17af2135653f38503c72139603ad429e437d86248e22f36abe270449c39257e",
+    "custodySha256": "f17af2135653f38503c72139603ad429e437d86248e22f36abe270449c39257e"
+  },
+  {
+    "original": "C:/Users/Admin/Desktop/HN_Astra/4.png",
+    "matches": true,
+    "custody": "docs/quality/references/hn-astra-20261027/4.png",
+    "originalSha256": "111daa7bf29165c614ab6d7d1fc047e381addd292385c9037b43bd51860a47f7",
+    "custodySha256": "111daa7bf29165c614ab6d7d1fc047e381addd292385c9037b43bd51860a47f7"
+  },
+  {
+    "original": "C:/Users/Admin/Desktop/HN_Astra/5.png",
+    "matches": true,
+    "custody": "docs/quality/references/hn-astra-20261027/5.png",
+    "originalSha256": "eaba73d476bf0b9b92fc12e3271a9177493c75b7cd16bc040e939acdbfd5643b",
+    "custodySha256": "eaba73d476bf0b9b92fc12e3271a9177493c75b7cd16bc040e939acdbfd5643b"
+  },
+  {
+    "original": "C:/Users/Admin/Desktop/HN_Astra/6.png",
+    "matches": true,
+    "custody": "docs/quality/references/hn-astra-20261027/6.png",
+    "originalSha256": "ba996d6843288f0d5248246c2bde876d759f016e41e3e44a0577725fe13fabea",
+    "custodySha256": "ba996d6843288f0d5248246c2bde876d759f016e41e3e44a0577725fe13fabea"
+  }
+]

@@ -1,0 +1,42 @@
+✔ independent source arithmetic reconciles16 identities,16 chart total,5 pending with3 visible (56.688ms)
+✔ unknown stock and current warranty survive period with no documents (0.6399ms)
+✔ date policy includes exactly90day lower boundary, rejects91days/future/reversed with Vietnam day (4.3508ms)
+✔ existing MOCK account rejects S01 without session or confirmation; expiry invalidates read (408.2323ms)
+✔ actual HTTP Preview chain exposes only locked normal page sizes and rejects artwork four (2692.1553ms)
+✔ independent synthetic3 provenance cannot authorize original source CTA, source remains byte-equivalent (78.7669ms)
+✔ all six notification links resolve only their exact source record (21.3535ms)
+✔ known persisted legacy links resolve exact records without mutating read state (1.7177ms)
+✔ notification refuses mismatched, malformed or unverified target identity (1.3615ms)
+✔ malformed notification queries fail closed and source lookup checks every identity dimension (0.809ms)
+✔ other notifications retain supported list and overview document routes (0.9722ms)
+✔ business notification feed is persisted per actor and read commands are idempotent (276.2799ms)
+✔ notification badge hides zero and caps high counts (0.4885ms)
+✔ selection and refreshing never mark a notification read (15.9555ms)
+✔ read/unread commands commit, replay safely, persist and stay actor-scoped (51.7238ms)
+✔ failed mutation preserves confirmed state and reports failure (6.3299ms)
+✔ generic repository stays empty without an explicit Preview seed (2.0054ms)
+✔ approved Preview seed has six localized records, two unread and supported screen targets (11.0757ms)
+✔ old in-flight response cannot populate another account (9.6868ms)
+✔ isolated four-row overview pages cover every result once and preserve period totals (68.1945ms)
+✔ overview source rows expose declared units and preserve inbound/outbound identity (6.5003ms)
+✔ attention uses the accepted period, never the activity search/filter/page (14.422ms)
+✔ exact snapshot selection rejects stale, missing, ambiguous and pending rows (5.7916ms)
+✔ attention items remain selectable even when absent from the current table page (1.4719ms)
+✔ all S01 literal UI copy has EN and ZH translations without touching source data (2.0732ms)
+✔ all 16 S01 documents link to their exact source, type, lines and quantities (16.8432ms)
+✔ source reader rejects wrong source/version/type and never falls back to a matching number (0.6482ms)
+✔ links require the accepted row identity and snapshot, not just a present target (0.936ms)
+✔ route parsing decodes once, rejects incomplete/duplicate/foreign params and keeps list routes intact (0.9096ms)
+✔ normal S01 uses locked paging and rejects the isolated four-row size (15.4185ms)
+✔ actual browser mock S01 reader returns only locked options and rejects four rows (2.8183ms)
+✔ actual HTTP mock domain accepts locked S01 sizes and rejects page four before the reader (20.9991ms)
+✔ isolated page four changes only paging and retains source counts, unknown and PX-0007 CTA (3.1537ms)
+✔ explicit synthetic pending3 derives consistent counts and disables unverified CTA without mutating source5 (6.3246ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7748.8976

@@ -1,0 +1,174 @@
+{
+  "dialog": {
+    "top": 16,
+    "bottom": 1264,
+    "left": 45,
+    "right": 755,
+    "width": 710,
+    "height": 1248
+  },
+  "body": {
+    "top": 258,
+    "bottom": 1158,
+    "left": 46,
+    "right": 754,
+    "width": 708,
+    "height": 900
+  },
+  "footer": {
+    "top": 1158,
+    "bottom": 1263,
+    "left": 46,
+    "right": 754,
+    "width": 708,
+    "height": 105
+  },
+  "padding": {
+    "top": "24px",
+    "bottom": "24px",
+    "left": "24px",
+    "right": "24px"
+  },
+  "controls": [
+    {
+      "name": "Copy document number",
+      "top": 90,
+      "bottom": 134,
+      "left": 378.703125,
+      "right": 422.703125,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Close",
+      "top": 53,
+      "bottom": 105,
+      "left": 666,
+      "right": 718,
+      "width": 52,
+      "height": 52
+    },
+    {
+      "name": "Copy ID",
+      "top": 1170,
+      "bottom": 1214,
+      "left": 425.859375,
+      "right": 469.859375,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Close",
+      "top": 1183,
+      "bottom": 1239,
+      "left": 70,
+      "right": 311.5,
+      "width": 241.5,
+      "height": 56
+    },
+    {
+      "name": "Open outbound slip",
+      "top": 1183,
+      "bottom": 1239,
+      "left": 327.5,
+      "right": 730,
+      "width": 402.5,
+      "height": 56
+    }
+  ],
+  "allButtons": [
+    {
+      "name": "Copy document number",
+      "className": "ov-copy-button",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 90,
+      "bottom": 134,
+      "left": 378.703125,
+      "right": 422.703125,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Close",
+      "className": "hn-button hn-button--ghost hn-global-modal__close",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 53,
+      "bottom": 105,
+      "left": 666,
+      "right": 718,
+      "width": 52,
+      "height": 52
+    },
+    {
+      "name": "Copy ID",
+      "className": "ov-copy-button",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": false,
+      "top": 1170,
+      "bottom": 1214,
+      "left": 425.859375,
+      "right": 469.859375,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Close",
+      "className": "hn-button hn-button--secondary ",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 1183,
+      "bottom": 1239,
+      "left": 70,
+      "right": 311.5,
+      "width": 241.5,
+      "height": 56
+    },
+    {
+      "name": "Open outbound slip",
+      "className": "hn-button hn-button--primary ",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 1183,
+      "bottom": 1239,
+      "left": 327.5,
+      "right": 730,
+      "width": 402.5,
+      "height": 56
+    }
+  ],
+  "footerButtons": [
+    {
+      "top": 1183,
+      "bottom": 1239,
+      "left": 70,
+      "right": 311.5,
+      "width": 241.5,
+      "height": 56
+    },
+    {
+      "top": 1183,
+      "bottom": 1239,
+      "left": 327.5,
+      "right": 730,
+      "width": 402.5,
+      "height": 56
+    }
+  ]
+}

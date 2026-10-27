@@ -1,0 +1,66 @@
+{
+  "observedAtUtc": "2026-10-27T10:49:37.3987731+00:00",
+  "runId": 40490897720,
+  "candidateSha": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "reason": "Single targeted retry after preserved DNS failure in initial postpush collector",
+  "jobs": {
+    "total_count": 2,
+    "jobs": [
+      {
+        "id": 122144264947,
+        "run_id": 40490897720,
+        "workflow_name": "Hoa Nam quality gates",
+        "head_branch": "DEV",
+        "run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40490897720",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOVXescM8AAAAccF2S8w",
+        "head_sha": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/jobs/122144264947",
+        "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40490897720/job/122144264947",
+        "status": "completed",
+        "conclusion": "failure",
+        "created_at": "2026-10-27T10:45:09Z",
+        "started_at": "2026-10-27T10:45:09Z",
+        "completed_at": "2026-10-27T10:45:12Z",
+        "name": "critical",
+        "steps": [],
+        "check_run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/check-runs/122144264947",
+        "labels": [
+          "ubuntu-latest"
+        ],
+        "runner_id": 0,
+        "runner_name": "",
+        "runner_group_id": 0,
+        "runner_group_name": ""
+      },
+      {
+        "id": 122144290388,
+        "run_id": 40490897720,
+        "workflow_name": "Hoa Nam quality gates",
+        "head_branch": "DEV",
+        "run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40490897720",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOVXescM8AAAAccF32VA",
+        "head_sha": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/jobs/122144290388",
+        "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40490897720/job/122144290388",
+        "status": "completed",
+        "conclusion": "skipped",
+        "created_at": "2026-10-27T10:45:13Z",
+        "started_at": "2026-10-27T10:45:13Z",
+        "completed_at": "2026-10-27T10:45:12Z",
+        "name": "visual-and-functional",
+        "steps": [],
+        "check_run_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/check-runs/122144290388",
+        "labels": [
+          "ubuntu-latest"
+        ],
+        "runner_id": null,
+        "runner_name": null,
+        "runner_group_id": null,
+        "runner_group_name": null
+      }
+    ]
+  },
+  "ok": true
+}

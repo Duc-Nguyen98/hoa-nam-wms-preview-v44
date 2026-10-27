@@ -1,0 +1,43 @@
+PASS fresh unauthenticated deep link is gated
+PASS normal configured MOCK auth and warehouse confirmation
+PASS actual September warehouse KPI consistency and pending distinction
+FAIL normal production locked default10 and options expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+  Array [
++   4,
+    10,
+    15,
+    25,
+    50,
+  ]
+PASS normal period selection reapplies full September
+PASS type status filters and independent KPI attention scope
+PASS folded actor search, exact identity search, no result, reset
+PASS sort pagination full dataset identity no duplicates
+FAIL PX0007 exact fields copy ID and code keyboard focus restoration locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.ov-result-count') to be visible[22m
+
+PASS PX0007 CTA deep link exact snapshot identity and invalid target reject
+PASS empty day preserves current warranty and unknown stock
+PASS DatePicker future and beyond90 rejected with accepted model preserved
+PASS real app vi/light desktop tablet modal viewport keyboard
+PASS real app vi/dark desktop tablet modal viewport keyboard
+PASS real app en/light desktop tablet modal viewport keyboard
+PASS real app en/dark desktop tablet modal viewport keyboard
+PASS real app zh-CN/light desktop tablet modal viewport keyboard
+PASS real app zh-CN/dark desktop tablet modal viewport keyboard
+PASS browser offline loaded MOCK filtering has local data no real API claim
+PASS independent isolated harness loading
+PASS independent isolated harness error
+PASS independent isolated harness empty
+PASS independent isolated harness long
+PASS independent isolated harness missing
+PASS independent isolated harness session
+PASS independent isolated harness forbidden
+PASS independent isolated harness offline
+PASS isolated reference4 preserves actual component source counts and PXidentity
+{"pass":26,"fail":2,"errors":["Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED","Failed to load resource: net::ERR_NETWORK_CHANGED"]}

@@ -1,0 +1,137 @@
+{
+  "base": "http://127.0.0.1:5272",
+  "classification": "MOCK, no REAL_API verified",
+  "time": "2026-10-27T10:50:56.790Z",
+  "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "srcTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+  "sourceStatus": "",
+  "root": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026",
+  "custody": [
+    {
+      "file": "src/features/S01/OverviewScreen.tsx",
+      "sha256": "b68290c9a8951631e23cd7ce0257a88a4164b8d13a60d9ef97a209892273bca3"
+    },
+    {
+      "file": "src/features/S01/AcceptedRowDetail.tsx",
+      "sha256": "8d80f80e61c730df1bc9f79a4eb3735133db42bfdbd2d168c10efe324699f7e1"
+    },
+    {
+      "file": "src/features/S01/overview.css",
+      "sha256": "bea70fec690fc21478c5f7df852896e61fefce1290a370caab2617f516c968ed"
+    },
+    {
+      "file": "src/contracts/overview.ts",
+      "sha256": "ca27b357f657352ac76be917c327ed0a6ed746dc993a90b21fa1a0870bb7b7cd"
+    },
+    {
+      "file": "src/controllers/overview-controller.ts",
+      "sha256": "aed56e3ae4b09285e18a223931ccf1d00f0419e6f0b56af241f7334fc305f5af"
+    },
+    {
+      "file": "src/data/fixtures/S01_SCANNER_PINNED.json",
+      "sha256": "53b86f60ac41bd1212e5da90c7d57308be1a8f22c3da83d77f08278075b8ce0b"
+    },
+    {
+      "file": "tests/s01/document-navigation-browser.mjs",
+      "sha256": "db71d8958fb19744adda1dba8d4c4c77aba502577695ddd6d2b2aa5058905c74"
+    },
+    {
+      "file": "tests/s01/document-navigation.test.ts",
+      "sha256": "d6ff84eadc1c91d5a3ca9cc35220eeabf89cbe958b626a90113cbb241cf0a5a4"
+    },
+    {
+      "file": "tests/s01/document-visual-browser.mjs",
+      "sha256": "09d2c46a7f091b4ba19fda5aa90fff1f42286c313b0bc35fd6a3e077db419bd4"
+    },
+    {
+      "file": "tests/s01/fidelity-policy.test.ts",
+      "sha256": "0a902183a47bcffdc1b84ae11de2c0be0b523e6a39924274e1958d5985e6cc49"
+    },
+    {
+      "file": "tests/s01/flow-browser.mjs",
+      "sha256": "264e61775a01d7c10c5fee7a98748491cae8a01213d838fa634ca32a5c6d9a1f"
+    },
+    {
+      "file": "tests/s01/harness.html",
+      "sha256": "e6c0b30f2f06eba1a08ab66fe13fe6e848de4a1055b781944e1c2ea0d70afeb6"
+    },
+    {
+      "file": "tests/s01/harness.tsx",
+      "sha256": "b90e48777a8dd5daac3af6796e65f64833f8a6e16dd93c5d11c458f952744166"
+    },
+    {
+      "file": "tests/s01/overview-browser.mjs",
+      "sha256": "c2e5c34e646c3a967965dad4b67e5706e931a52d818cf8efb16605194308fd82"
+    },
+    {
+      "file": "tests/s01/reference-scenario.tsx",
+      "sha256": "1970a0098586dd6cf4062ab136be937c42432476c56a178eeddc19af5d07e8e9"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs",
+      "sha256": "f41afdfbfdad896cc48ba62d2a9da2e2bc920aeccf551b8a2b2fd6b6e7df233d"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/isolated-harness.tsx",
+      "sha256": "dc47edaba0a3d9bf0da3a242562bcd3cdbb08d249ebf84a82f40e03146eaf1f4"
+    }
+  ],
+  "results": [
+    {
+      "name": "fresh unauthenticated deep link is gated",
+      "status": "PASS"
+    },
+    {
+      "name": "normal configured MOCK auth and warehouse confirmation",
+      "status": "PASS"
+    },
+    {
+      "name": "real app zh-CN/light desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "zh-CN",
+        "theme": "light"
+      }
+    },
+    {
+      "name": "real app zh-CN/dark desktop tablet modal viewport keyboard",
+      "status": "PASS",
+      "data": {
+        "language": "zh-CN",
+        "theme": "dark"
+      }
+    },
+    {
+      "name": "independent isolated harness empty",
+      "status": "PASS"
+    },
+    {
+      "name": "independent isolated harness long",
+      "status": "PASS",
+      "data": {
+        "classification": "QA_SYNTHETIC independent isolated harness",
+        "scroll": [
+          {
+            "fraction": 0,
+            "top": 0,
+            "height": 900,
+            "total": 1682
+          },
+          {
+            "fraction": 0.5,
+            "top": 391,
+            "height": 900,
+            "total": 1682
+          },
+          {
+            "fraction": 1,
+            "top": 782,
+            "height": 900,
+            "total": 1682
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

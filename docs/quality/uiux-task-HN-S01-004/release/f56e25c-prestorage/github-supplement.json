@@ -1,0 +1,1161 @@
+{
+  "observedAtUtc": "2026-10-27T10:43:02.5836905+00:00",
+  "authentication": {
+    "login": "Duc-Nguyen98",
+    "repositoryPermissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "credentialAvailable": true,
+    "userReadOk": true,
+    "error": null
+  },
+  "protection": {
+    "ok": false,
+    "error": "Response status code does not indicate success: 404 (Not Found).",
+    "path": "/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV/protection"
+  },
+  "rulesets": {
+    "ok": true,
+    "value": [],
+    "path": "/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/rulesets"
+  },
+  "branch": {
+    "ok": true,
+    "value": {
+      "name": "DEV",
+      "commit": {
+        "sha": "06954a99885f7c9e808bf9a5556c7dd6c0d6b9a2",
+        "node_id": "C_kwDOVXescNoAKDA2OTU0YTk5ODg1ZjdjOWU4MDhiZjlhNTU1NmM3ZGQ2YzBkNmI5YTI",
+        "commit": {
+          "author": {
+            "name": "Wuangg",
+            "email": "52225998+Duc-Nguyen98@users.noreply.github.com",
+            "date": "2026-10-27T06:55:18Z"
+          },
+          "committer": {
+            "name": "Wuangg",
+            "email": "52225998+Duc-Nguyen98@users.noreply.github.com",
+            "date": "2026-10-27T06:55:18Z"
+          },
+          "message": "docs(qa): preserve Notification Center fidelity evidence and partial verdict",
+          "tree": {
+            "sha": "20aa5d1ddeea454f1cb5faf375a775de77295580",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/trees/20aa5d1ddeea454f1cb5faf375a775de77295580"
+          },
+          "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/commits/06954a99885f7c9e808bf9a5556c7dd6c0d6b9a2",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null,
+            "verified_at": null
+          }
+        },
+        "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/06954a99885f7c9e808bf9a5556c7dd6c0d6b9a2",
+        "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/commit/06954a99885f7c9e808bf9a5556c7dd6c0d6b9a2",
+        "comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/06954a99885f7c9e808bf9a5556c7dd6c0d6b9a2/comments",
+        "author": {
+          "login": "Duc-Nguyen98",
+          "id": 52225998,
+          "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Duc-Nguyen98",
+          "html_url": "https://github.com/Duc-Nguyen98",
+          "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+          "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+          "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+          "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+          "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "Duc-Nguyen98",
+          "id": 52225998,
+          "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Duc-Nguyen98",
+          "html_url": "https://github.com/Duc-Nguyen98",
+          "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+          "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+          "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+          "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+          "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "830f83d48eac84c3e2467de7f41c388439cc7eb2",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/830f83d48eac84c3e2467de7f41c388439cc7eb2",
+            "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/commit/830f83d48eac84c3e2467de7f41c388439cc7eb2"
+          }
+        ]
+      },
+      "_links": {
+        "self": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV",
+        "html": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/tree/DEV"
+      },
+      "protected": false,
+      "protection": {
+        "enabled": false,
+        "required_status_checks": {
+          "enforcement_level": "off",
+          "contexts": [],
+          "checks": []
+        }
+      },
+      "protection_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV/protection"
+    },
+    "path": "/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV"
+  },
+  "openPullRequests": {
+    "ok": true,
+    "value": [
+      {
+        "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/1",
+        "id": 5025676430,
+        "node_id": "PR_kwDOVXescM8AAAABK428jg",
+        "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/1",
+        "diff_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/1.diff",
+        "patch_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/1.patch",
+        "issue_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/1",
+        "number": 1,
+        "state": "open",
+        "locked": false,
+        "title": "S00-5: CI quality gates and release governance (BLOCKED)",
+        "user": {
+          "login": "Duc-Nguyen98",
+          "id": 52225998,
+          "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Duc-Nguyen98",
+          "html_url": "https://github.com/Duc-Nguyen98",
+          "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+          "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+          "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+          "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+          "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "<!-- HN-NC-MA-PILOT-002-WAVE-E -->\n## Current Wave E handoff — HN-NC-MA-PILOT-002\n**BLOCKED / NO-GO. This section supersedes prior head validation; earlier evidence is archived below.**\n\nHead: 07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f\nBase DEV: b287d1294f0aa37b1c38c14275ef8c0a279d4fcc\nBranch: chore/s00-5-ci-release-governance\n\nReport: https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f/docs/release-governance/HN-NC-MA-PILOT-002/CI_RELEASE_READINESS.md\nHandoff/file lease: https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f/docs/agent-handoffs/HN-NC-MA-PILOT-002-S00-5-WAVE-E.md\n\nBounded delta from70dff89: workflow builds SHA-bound provenance sidecar; build-provenance script/tests; audit and hosted verifier accept a new evidence directory and inspect current-head checks/reviews; new report, packet and immutable observations. No runtime/baseline/package changes. Old evidence checksums and new snapshot checksums verified.\n\n### Local exact-head validation\nquality:pr PASS (typecheck/contract/build/putaway4); gate+provenance controls27/27 PASS including parents; build sidecar source SHA/tree and16 built files verified with clean worktree. Readiness remains BLOCKED (expected exit1). Scoped unit21 and isolated browser5 results on70dff89 are historical; not claimed as current-head acceptance.\n\n### Actual GitHub checks\nChecked 2026-10-27T00:18:24.712Z. Run: https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630\n- visual-and-functional: completed / skipped (https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121930005156)\n- release-readiness: completed / failure (https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121930004207)\n- critical: completed / failure (https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121929990825)\n\nFresh annotations confirm billing lock; no runner steps executed and no CI artifact was uploaded.\nGitHub reviews: 0. Conflict metadata: true, unstable; draft remains open. main/DEV protections and required checks remain MISSING at the fresh audit.\n\n### Hosted identity / approval / rollback\nPages44/51 and Site13/15 advertised assets match; JS/CSS match, text/HTML differ. Both advertise stale sourceCommit; no trusted deployed DEV SHA. The local sidecar is explicitly UNATTESTED_LOCAL; workflow metadata is also UNATTESTED until independently associated with a real run/artifact and approved evidence. Current Visual/Functional/#1 approvals and trusted artifact retrieval remain MISSING.\nOwner billing action follows https://docs.github.com/en/billing/how-tos/troubleshooting/locked-account ; no billing/protection/secrets changes by this task. No merge/deploy. Rollback: proposal base70dff89468eaac8ca71e2169d90a0fb33a216398, DEVb287d1294f0aa37b1c38c14275ef8c0a279d4fcc, main7304ef8d27b5d3d091bda681cc1afcb36048c318; reviewed revert if later integrated.\n\n### Verifiable local receipt (not QA approval)\n```json\n{\n  \"task\": \"HN-NC-MA-PILOT-002/Wave-E\",\n  \"head\": \"07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f\",\n  \"headAfter\": \"07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f\",\n  \"checkedAt\": \"2026-10-27T00:16:54.4308232Z\",\n  \"workingTree\": null,\n  \"quality\": 0,\n  \"gateTests\": 0,\n  \"provenance\": {\n    \"sourceCommit\": \"07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f\",\n    \"sourceTree\": \"17b59e95f906ce0ad4387ab1596f392e84a03ee6\",\n    \"trust\": \"UNATTESTED_LOCAL\",\n    \"inventorySha256\": \"05b89dd19f9adfd039932ce66dad125192ff8e7aa85b8ba1d3f6c3ea7f5e7f4f\",\n    \"assets\": 16\n  },\n  \"readinessExpectedBlocked\": 1,\n  \"logs\": [\n    {\n      \"path\": \"output/HN-NC-MA-PILOT-002/wave-e/final-quality.log\",\n      \"sha256\": \"d80147e9935b3bc7f4529edc3fc6a47d0ed5a4bd3154c6b21b6500944a12b0fe\"\n    },\n    {\n      \"path\": \"output/HN-NC-MA-PILOT-002/wave-e/final-gate-tests.log\",\n      \"sha256\": \"ed6bf419fb6a31429c631769c31bbd69268864c3dfff479db7c30bf8d9a66650\"\n    },\n    {\n      \"path\": \"output/HN-NC-MA-PILOT-002/wave-e/final-provenance.log\",\n      \"sha256\": \"0dab3fe7372c57e906b77b05a33f2e6d9a5af0a3517176a68a79cb038b35926e\"\n    },\n    {\n      \"path\": \"output/HN-NC-MA-PILOT-002/wave-e/final-readiness.log\",\n      \"sha256\": \"b8f198a4311665c6d464e2d508fcad7523d72c6344721d5861e0a9896512a14e\"\n    },\n    {\n      \"path\": \"output/HN-NC-MA-PILOT-002/wave-e/final-build-provenance.json\",\n      \"sha256\": \"4facaa3c07df66fdb8919f39b8ae9d0a1f14b8ab91f3c2007269df1df6408776\"\n    }\n  ],\n  \"status\": \"BLOCKED\"\n}\n```\n### Actual server snapshot\n```json\n{\n  \"checkedAt\": \"2026-10-27T00:18:24.712Z\",\n  \"pr\": {\n    \"number\": 1,\n    \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/1\",\n    \"draft\": true,\n    \"head\": \"07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f\",\n    \"base\": \"b287d1294f0aa37b1c38c14275ef8c0a279d4fcc\",\n    \"mergeable\": true,\n    \"mergeableState\": \"unstable\"\n  },\n  \"reviews\": [],\n  \"checks\": [\n    {\n      \"id\": 121930005156,\n      \"name\": \"visual-and-functional\",\n      \"status\": \"completed\",\n      \"conclusion\": \"skipped\",\n      \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121930005156\"\n    },\n    {\n      \"id\": 121930004207,\n      \"name\": \"release-readiness\",\n      \"status\": \"completed\",\n      \"conclusion\": \"failure\",\n      \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121930004207\"\n    },\n    {\n      \"id\": 121929990825,\n      \"name\": \"critical\",\n      \"status\": \"completed\",\n      \"conclusion\": \"failure\",\n      \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121929990825\"\n    }\n  ],\n  \"runs\": [\n    {\n      \"id\": 40425469630,\n      \"sha\": \"07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f\",\n      \"status\": \"completed\",\n      \"conclusion\": \"failure\",\n      \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630\"\n    }\n  ],\n  \"jobs\": [\n    {\n      \"id\": 121929990825,\n      \"name\": \"critical\",\n      \"conclusion\": \"failure\",\n      \"stepCount\": 0,\n      \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121929990825\"\n    },\n    {\n      \"id\": 121930004207,\n      \"name\": \"release-readiness\",\n      \"conclusion\": \"failure\",\n      \"stepCount\": 0,\n      \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121930004207\"\n    },\n    {\n      \"id\": 121930005156,\n      \"name\": \"visual-and-functional\",\n      \"conclusion\": \"skipped\",\n      \"stepCount\": 0,\n      \"url\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40425469630/job/121930005156\"\n    }\n  ],\n  \"annotations\": [\n    {\n      \"path\": \".github\",\n      \"blob_href\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f/.github\",\n      \"start_line\": 1,\n      \"start_column\": null,\n      \"end_line\": 1,\n      \"end_column\": null,\n      \"annotation_level\": \"failure\",\n      \"title\": \"\",\n      \"message\": \"The job was not started because your account is locked due to a billing issue.\",\n      \"raw_details\": \"\"\n    },\n    {\n      \"path\": \".github\",\n      \"blob_href\": \"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/blob/07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f/.github\",\n      \"start_line\": 1,\n      \"start_column\": null,\n      \"end_line\": 1,\n      \"end_column\": null,\n      \"annotation_level\": \"failure\",\n      \"title\": \"\",\n      \"message\": \"The job was not started because your account is locked due to a billing issue.\",\n      \"raw_details\": \"\"\n    }\n  ]\n}\n```\n<!-- /HN-NC-MA-PILOT-002-WAVE-E -->\n\n<details>\n<summary>Previous S00#5 report and historical head70dff89 evidence</summary>\n\n## Task / scope\nS00-5-CI-RELEASE-20261027. Draft governance proposal; **BLOCKED, not READY_TO_MERGE**.\n\nBase DEV: b287d1294f0aa37b1c38c14275ef8c0a279d4fcc\nTested head: 70dff89468eaac8ca71e2169d90a0fb33a216398\n\nChanged scope: .github workflow/template/browser config; scripts/ci read-only audit, hosted integrity smoke and fail-closed evaluator; six docs/release-governance reports with immutable observation evidence; own handoff packet. No app/business/baseline/package changes.\n\n## Design / QA\nAuthority: docs/quality/DESIGN_CONTRACT.md and QUALITY_GATES.md. Tray reference manifest SHA256: 0073a3dcf4c026acc0b23872ee74b102d57882ed8ca8f27c71fab6d64eb8526c. No design change in this packet.\nVisual #3 completed before work: BLOCKED, P1 VQ-001 initialization stall; VQ-002/DG-04 scenario gap. Functional #4 is independently finishing its audit; no current-head approval supplied. Full S01/CRUD E2E, approved visual regression and full product a11y are NOT_RUN on this head. Isolated browser results do not substitute.\n\n## Exact committed-head local validation\n- npm ci --include=dev previously PASS; lockfile/package unchanged.\n- npm run quality:pr PASS: typecheck/contract/build + putaway 4/4.\n- Scoped S01/Notification unit tests 21/21 PASS.\n- Gate controls 17/17 PASS including parent; rejects stale/missing evidence, defects, traversal, tampering and self-asserted approvals.\n- Notification isolated Playwright harness 5/5 PASS at current head.\n- Readiness CLI BLOCKED (expected exit1), trusted external QA approvals integration MISSING.\n- Lint MISSING/NOT_RUN. Linux CI NOT_RUN until actual runner executes.\n\nArtifacts: initial normalized transcripts, REST observations and SHA256SUMS committed in docs/release-governance/evidence. Exact-head receipts/log hashes below; raw logs/screenshots retained locally in output/s00-5. Workflow uploads available dist/logs and browser artifacts when runner is allowed.\n\n## GitHub / merge blockers\nExisting DEV run https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40402714433 failed before runner: account locked due billing. Do not infer CI PASS from local checks.\nmain and DEV are unprotected, rulesets empty; protection is proposed, not applied. No actual #1 readiness approval or independent current-head approvals. P0 count unverified; at least one P1 remains. Conflict/current-base status must be read from GitHub after PR creation. New pushes invalidate this receipt.\n\nThe readiness job intentionally remains fail-closed until trusted reviewer mapping/evidence retrieval is integrated. It never treats a receipt supplied by this PR as authenticated approval. This PR must not be merged to remove that blocker.\n\n## Deployment / rollback\nNo deployment. Existing Pages https://duc-nguyen98.github.io/hoa-nam-wms-preview-v44/ from main7304ef8d27b5d3d091bda681cc1afcb36048c318, historical Pages run40286075297. Canonical Site: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site/.\nInitial Desktop/Tablet login/report reachability 6/6 HTTP200 without observed initial console/network errors; authenticated navigation NOT_RUN here. Pages asset manifest 44/51 match; Site13/15 match, including JS/CSS on both. Exact-byte integrity BLOCKED; sourceCommit metadata inherited/stale. See DEPLOYMENT_VERIFICATION.md.\nRollback: keep main/Pages unchanged; if later merged, reviewed revert PR only. No force push/reset, no production deployment, no protection/secrets mutation. Historical deployment is not certified healthy.\n\n## Evidence receipt (local, not QA approval)\n```json\n{\n  \"task\": \"S00-5-CI-RELEASE-20261027\",\n  \"candidate\": \"70dff89468eaac8ca71e2169d90a0fb33a216398\",\n  \"base\": \"b287d1294f0aa37b1c38c14275ef8c0a279d4fcc\",\n  \"node\": \"v26.5.0\",\n  \"critical\": {\n    \"head\": \"70dff89468eaac8ca71e2169d90a0fb33a216398\",\n    \"headAfter\": \"70dff89468eaac8ca71e2169d90a0fb33a216398\",\n    \"checkedAt\": \"2026-10-26T22:34:02.9191070Z\",\n    \"workingTree\": null,\n    \"quality\": 0,\n    \"unit\": 0,\n    \"gateTests\": 0,\n    \"readinessExpectedBlocked\": 1\n  },\n  \"browser\": {\n    \"head\": \"70dff89468eaac8ca71e2169d90a0fb33a216398\",\n    \"headAfter\": \"70dff89468eaac8ca71e2169d90a0fb33a216398\",\n    \"checkedAt\": \"2026-10-26T22:34:06.3364960Z\",\n    \"browser\": 0\n  },\n  \"baselineManifestSha256\": \"0073a3dcf4c026acc0b23872ee74b102d57882ed8ca8f27c71fab6d64eb8526c\",\n  \"logs\": [\n    {\n      \"path\": \"output/s00-5/committed-quality.log\",\n      \"sha256\": \"48b395b567e4facdfdd419f4dd49577be6e51ea5dc057699333ae8ef40b8c0c2\"\n    },\n    {\n      \"path\": \"output/s00-5/committed-unit.log\",\n      \"sha256\": \"fd50ca4fbdd6a3599d1d4aa4567220652efaa0327cb7906d4bee8090d90a3293\"\n    },\n    {\n      \"path\": \"output/s00-5/committed-gate-tests.log\",\n      \"sha256\": \"614eb30b7a45b5494b11de4a787967073ea573cf032271ecea3390caa7501156\"\n    },\n    {\n      \"path\": \"output/s00-5/committed-browser.log\",\n      \"sha256\": \"731c11fafde16b052e884927c56eab96bc37caacef6ef1869825dd8a0da2eeb7\"\n    },\n    {\n      \"path\": \"output/s00-5/committed-readiness.log\",\n      \"sha256\": \"c10fea0d8281daaeb6b3ce8bcf8768e58571766080a6087429cc139fd2e1cb43\"\n    }\n  ],\n  \"status\": \"BLOCKED\"\n}\n```\n\nS00#1 review and Owner policy approval remain required. The separately requested future Notification pilot remains waiting for Owner's oke.\n\n<!-- S00-5-final-verification -->\n## Final GitHub verification\nObserved 2026-10-26T22:35:13.523Z. Draft PR #1, exact head 70dff89468eaac8ca71e2169d90a0fb33a216398, base b287d1294f0aa37b1c38c14275ef8c0a279d4fcc. GitHub reports mergeable=true (no current conflict), mergeable_state=unstable; this does not authorize merge.\n\nWorkflow: https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583\n\n- visual-and-functional: skipped (https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583/job/121890064190)\n- release-readiness: failure (https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583/job/121890062220)\n- critical: failure (https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40413549583/job/121890045871)\n\ncritical and release-readiness failed before execution with billing-lock annotations. Browser job skipped. CI artifact upload did not execute; local evidence is not CI evidence. **BLOCKED; no READY_TO_MERGE, merge or deployment.**\n\nSix reports: https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/tree/70dff89468eaac8ca71e2169d90a0fb33a216398/docs/release-governance\n<!-- /S00-5-final-verification -->\n\n</details>\n",
+        "created_at": "2026-10-26T22:35:01Z",
+        "updated_at": "2026-10-27T00:18:25Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "44d547a0e21207b1b57303c81202ae1866074f8d",
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": true,
+        "commits_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/1/commits",
+        "review_comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/1/comments",
+        "review_comment_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/comments{/number}",
+        "comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/1/comments",
+        "statuses_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/statuses/07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f",
+        "head": {
+          "label": "Duc-Nguyen98:chore/s00-5-ci-release-governance",
+          "ref": "chore/s00-5-ci-release-governance",
+          "sha": "07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f",
+          "user": {
+            "login": "Duc-Nguyen98",
+            "id": 52225998,
+            "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Duc-Nguyen98",
+            "html_url": "https://github.com/Duc-Nguyen98",
+            "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+            "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+            "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+            "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+            "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 1433906288,
+            "node_id": "R_kgDOVXescA",
+            "name": "hoa-nam-wms-preview-v44",
+            "full_name": "Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "private": false,
+            "owner": {
+              "login": "Duc-Nguyen98",
+              "id": 52225998,
+              "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+              "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/Duc-Nguyen98",
+              "html_url": "https://github.com/Duc-Nguyen98",
+              "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+              "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+              "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+              "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+              "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+              "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "description": "Hoa Nam WMS Preview v44 source and Desktop/Tablet visual review for DEV and Test",
+            "fork": false,
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "forks_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/forks",
+            "keys_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/teams",
+            "hooks_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/hooks",
+            "issue_events_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/events",
+            "assignees_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/tags",
+            "blobs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/languages",
+            "stargazers_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/stargazers",
+            "contributors_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/contributors",
+            "subscribers_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/subscribers",
+            "subscription_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/subscription",
+            "commits_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/merges",
+            "archive_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/downloads",
+            "issues_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/labels{/name}",
+            "releases_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/deployments",
+            "created_at": "2026-10-26T04:36:31Z",
+            "updated_at": "2026-10-26T07:28:48Z",
+            "pushed_at": "2026-10-27T06:57:26Z",
+            "git_url": "git://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44.git",
+            "ssh_url": "git@github.com:Duc-Nguyen98/hoa-nam-wms-preview-v44.git",
+            "clone_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44.git",
+            "svn_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "homepage": null,
+            "size": 186007,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": true,
+            "has_pages": true,
+            "has_discussions": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "has_pull_requests": true,
+            "pull_request_creation_policy": "all",
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 1,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "Duc-Nguyen98:DEV",
+          "ref": "DEV",
+          "sha": "b287d1294f0aa37b1c38c14275ef8c0a279d4fcc",
+          "user": {
+            "login": "Duc-Nguyen98",
+            "id": 52225998,
+            "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+            "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Duc-Nguyen98",
+            "html_url": "https://github.com/Duc-Nguyen98",
+            "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+            "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+            "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+            "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+            "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 1433906288,
+            "node_id": "R_kgDOVXescA",
+            "name": "hoa-nam-wms-preview-v44",
+            "full_name": "Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "private": false,
+            "owner": {
+              "login": "Duc-Nguyen98",
+              "id": 52225998,
+              "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+              "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/Duc-Nguyen98",
+              "html_url": "https://github.com/Duc-Nguyen98",
+              "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+              "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+              "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+              "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+              "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+              "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "description": "Hoa Nam WMS Preview v44 source and Desktop/Tablet visual review for DEV and Test",
+            "fork": false,
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "forks_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/forks",
+            "keys_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/teams",
+            "hooks_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/hooks",
+            "issue_events_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/events",
+            "assignees_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/tags",
+            "blobs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/languages",
+            "stargazers_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/stargazers",
+            "contributors_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/contributors",
+            "subscribers_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/subscribers",
+            "subscription_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/subscription",
+            "commits_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/merges",
+            "archive_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/downloads",
+            "issues_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/labels{/name}",
+            "releases_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/deployments",
+            "created_at": "2026-10-26T04:36:31Z",
+            "updated_at": "2026-10-26T07:28:48Z",
+            "pushed_at": "2026-10-27T06:57:26Z",
+            "git_url": "git://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44.git",
+            "ssh_url": "git@github.com:Duc-Nguyen98/hoa-nam-wms-preview-v44.git",
+            "clone_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44.git",
+            "svn_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+            "homepage": null,
+            "size": 186007,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": true,
+            "has_pages": true,
+            "has_discussions": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "has_pull_requests": true,
+            "pull_request_creation_policy": "all",
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 1,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/statuses/07fe672f86f4c0c3fe35f5e39a9dde23fa6e239f"
+          }
+        },
+        "author_association": "OWNER",
+        "auto_merge": null,
+        "assignee": null,
+        "active_lock_reason": null
+      }
+    ],
+    "path": "/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls?state=open&per_page=100"
+  },
+  "combinedStatus": {
+    "ok": true,
+    "value": {
+      "state": "pending",
+      "statuses": [],
+      "sha": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+      "total_count": 0,
+      "repository": {
+        "id": 1433906288,
+        "node_id": "R_kgDOVXescA",
+        "name": "hoa-nam-wms-preview-v44",
+        "full_name": "Duc-Nguyen98/hoa-nam-wms-preview-v44",
+        "private": false,
+        "owner": {
+          "login": "Duc-Nguyen98",
+          "id": 52225998,
+          "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Duc-Nguyen98",
+          "html_url": "https://github.com/Duc-Nguyen98",
+          "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+          "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+          "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+          "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+          "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+        "description": "Hoa Nam WMS Preview v44 source and Desktop/Tablet visual review for DEV and Test",
+        "fork": false,
+        "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44",
+        "forks_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/forks",
+        "keys_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/teams",
+        "hooks_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/hooks",
+        "issue_events_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/events",
+        "assignees_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/tags",
+        "blobs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/languages",
+        "stargazers_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/stargazers",
+        "contributors_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/contributors",
+        "subscribers_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/subscribers",
+        "subscription_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/subscription",
+        "commits_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/merges",
+        "archive_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/downloads",
+        "issues_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/labels{/name}",
+        "releases_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/deployments"
+      },
+      "commit_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+      "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09/status"
+    },
+    "path": "/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09/status"
+  },
+  "sha": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "protectedBytes": [
+    {
+      "actualSha256": "9b54ea5aaae841c737cb28a2530ea244f8df9189d96eafe849866ba229ed3514",
+      "matches": true,
+      "path": "src/notifications/NotificationBell.tsx",
+      "expectedSha256": "9b54ea5aaae841c737cb28a2530ea244f8df9189d96eafe849866ba229ed3514"
+    },
+    {
+      "actualSha256": "f737d1bd82360984130d5fa09821537d3fbddbe2965ec7939788a9c15fa3a0ce",
+      "matches": true,
+      "path": "src/notifications/NotificationHarnessScreen.tsx",
+      "expectedSha256": "f737d1bd82360984130d5fa09821537d3fbddbe2965ec7939788a9c15fa3a0ce"
+    },
+    {
+      "actualSha256": "0dc2829140bb334fa716ae5339bced8efbc70a8f879e8f85ed8887df5b4e4050",
+      "matches": true,
+      "path": "src/notifications/NotificationIcon.tsx",
+      "expectedSha256": "0dc2829140bb334fa716ae5339bced8efbc70a8f879e8f85ed8887df5b4e4050"
+    },
+    {
+      "actualSha256": "583838d849b65dc97b47926cfa29ffa7461581c40c037b2294e043f327d74b64",
+      "matches": true,
+      "path": "src/notifications/NotificationRepositoryQaScreen.tsx",
+      "expectedSha256": "583838d849b65dc97b47926cfa29ffa7461581c40c037b2294e043f327d74b64"
+    },
+    {
+      "actualSha256": "554b4924b230348734a6327ae9cf7595cc1536771f07015d6a63a267a4ba66fa",
+      "matches": true,
+      "path": "src/notifications/PreviewNotificationCenter.tsx",
+      "expectedSha256": "554b4924b230348734a6327ae9cf7595cc1536771f07015d6a63a267a4ba66fa"
+    },
+    {
+      "actualSha256": "4e2a4a37027463e7316ace7900534e509cd5a44c51414e278c65ae716a425a07",
+      "matches": true,
+      "path": "src/notifications/notification-badge.ts",
+      "expectedSha256": "4e2a4a37027463e7316ace7900534e509cd5a44c51414e278c65ae716a425a07"
+    },
+    {
+      "actualSha256": "2996c6dc4e93fed27b6f06b44cdc12dbeebc4364bfe9c118486a10ed245e6c55",
+      "matches": true,
+      "path": "src/notifications/notification-copy.ts",
+      "expectedSha256": "2996c6dc4e93fed27b6f06b44cdc12dbeebc4364bfe9c118486a10ed245e6c55"
+    },
+    {
+      "actualSha256": "28f6509b47be971bdc6db3d021df240ed7673d4c8fb0f1a52498d0574bca3f47",
+      "matches": true,
+      "path": "src/notifications/notification-feed.ts",
+      "expectedSha256": "28f6509b47be971bdc6db3d021df240ed7673d4c8fb0f1a52498d0574bca3f47"
+    },
+    {
+      "actualSha256": "f93122dc3e37eaf6c2404b96852dda55ad8cb346a85903fb75a04a138d43a418",
+      "matches": true,
+      "path": "src/notifications/notification-model.ts",
+      "expectedSha256": "f93122dc3e37eaf6c2404b96852dda55ad8cb346a85903fb75a04a138d43a418"
+    },
+    {
+      "actualSha256": "2a64d7bf1f632658828d192f21658922ee5bfc862245eb6cdcd84d400993385d",
+      "matches": true,
+      "path": "src/notifications/notification-preview-store.ts",
+      "expectedSha256": "2a64d7bf1f632658828d192f21658922ee5bfc862245eb6cdcd84d400993385d"
+    },
+    {
+      "actualSha256": "44f61a23f4a0f9728e983ce0231ed5af8b75e58f5dd462e602ef6be5bd8e1d28",
+      "matches": true,
+      "path": "src/notifications/notification-state.ts",
+      "expectedSha256": "44f61a23f4a0f9728e983ce0231ed5af8b75e58f5dd462e602ef6be5bd8e1d28"
+    },
+    {
+      "actualSha256": "120a72e6ce8a20d04665b3e2f74eb860114dbc5d1df31263ed496423892c7358",
+      "matches": true,
+      "path": "src/notifications/notification-target.ts",
+      "expectedSha256": "120a72e6ce8a20d04665b3e2f74eb860114dbc5d1df31263ed496423892c7358"
+    },
+    {
+      "actualSha256": "75103c69583daa311693790626630189debe75e3cdf84615483f84802b9d519a",
+      "matches": true,
+      "path": "src/notifications/notifications.css",
+      "expectedSha256": "75103c69583daa311693790626630189debe75e3cdf84615483f84802b9d519a"
+    },
+    {
+      "actualSha256": "1b2654a15eb75b6d39a0aefb39c014ee7d3af0ee51b59822cf7b3e5dfe3cf1c3",
+      "matches": true,
+      "path": "src/notifications/open-notification.ts",
+      "expectedSha256": "1b2654a15eb75b6d39a0aefb39c014ee7d3af0ee51b59822cf7b3e5dfe3cf1c3"
+    },
+    {
+      "actualSha256": "88a8219eb786365d1f3667b59c4c864ace7aee48f64737688c0794fb194ad380",
+      "matches": true,
+      "path": "src/shared/AuthLayout.tsx",
+      "expectedSha256": "88a8219eb786365d1f3667b59c4c864ace7aee48f64737688c0794fb194ad380"
+    },
+    {
+      "actualSha256": "ee1aa68dabb7845bbabe6544034795d9dc5c81c2ecf23b21436f3838fbbf5f30",
+      "matches": true,
+      "path": "src/shared/Catalogue.tsx",
+      "expectedSha256": "ee1aa68dabb7845bbabe6544034795d9dc5c81c2ecf23b21436f3838fbbf5f30"
+    },
+    {
+      "actualSha256": "75e94a2e1be66e998dae159b77d02be4ab51dd53bdd200763ef7ebd4419c73c2",
+      "matches": true,
+      "path": "src/shared/CatalogueNavTabs.tsx",
+      "expectedSha256": "75e94a2e1be66e998dae159b77d02be4ab51dd53bdd200763ef7ebd4419c73c2"
+    },
+    {
+      "actualSha256": "1e1df4589ed47d91f064d0ddef5c0c2856cdcfd6333da212e43fd4e693de7b8f",
+      "matches": true,
+      "path": "src/shared/ConfirmDialog.tsx",
+      "expectedSha256": "1e1df4589ed47d91f064d0ddef5c0c2856cdcfd6333da212e43fd4e693de7b8f"
+    },
+    {
+      "actualSha256": "8bcbdb27e5c8130ca74b388067e661b0f591a6663d588ad56e9bbac791ea8d60",
+      "matches": true,
+      "path": "src/shared/DataTable.tsx",
+      "expectedSha256": "8bcbdb27e5c8130ca74b388067e661b0f591a6663d588ad56e9bbac791ea8d60"
+    },
+    {
+      "actualSha256": "d0d24a517cb032ecd25c0204c09ebe5213de21d7471fee2a94ea2efd22b374cf",
+      "matches": true,
+      "path": "src/shared/DatePicker.tsx",
+      "expectedSha256": "d0d24a517cb032ecd25c0204c09ebe5213de21d7471fee2a94ea2efd22b374cf"
+    },
+    {
+      "actualSha256": "c5dd37cd748f37bcffd80f5c9fb20809688c786e20fb13884b612fe9fdd04a56",
+      "matches": true,
+      "path": "src/shared/DatePolicyQaScreen.tsx",
+      "expectedSha256": "c5dd37cd748f37bcffd80f5c9fb20809688c786e20fb13884b612fe9fdd04a56"
+    },
+    {
+      "actualSha256": "c3c169373116bcfb83cf0b439516f4fda1de6c2aa3af3ae354090f3d034749fb",
+      "matches": true,
+      "path": "src/shared/FormField.tsx",
+      "expectedSha256": "c3c169373116bcfb83cf0b439516f4fda1de6c2aa3af3ae354090f3d034749fb"
+    },
+    {
+      "actualSha256": "d87d43c83d162d459b3b70cbe3725ae4c98b467feaf4cde0d8338b371d7ee0ec",
+      "matches": true,
+      "path": "src/shared/GlobalModal.tsx",
+      "expectedSha256": "d87d43c83d162d459b3b70cbe3725ae4c98b467feaf4cde0d8338b371d7ee0ec"
+    },
+    {
+      "actualSha256": "9a462545e28036a9165073e7d37300aa0bb13bdc1763fe2989ddb3a16c61004d",
+      "matches": true,
+      "path": "src/shared/GlobalShell.tsx",
+      "expectedSha256": "9a462545e28036a9165073e7d37300aa0bb13bdc1763fe2989ddb3a16c61004d"
+    },
+    {
+      "actualSha256": "934b773e41bdb99dfffd9e74e217ce383229c47de77ec90a39a1046573f5f919",
+      "matches": true,
+      "path": "src/shared/Icon.tsx",
+      "expectedSha256": "934b773e41bdb99dfffd9e74e217ce383229c47de77ec90a39a1046573f5f919"
+    },
+    {
+      "actualSha256": "2b5606aa0baff21208f88a74802d2fba21bf98fa99a8d545d270951cf6fa8f15",
+      "matches": true,
+      "path": "src/shared/InitialReadState.tsx",
+      "expectedSha256": "2b5606aa0baff21208f88a74802d2fba21bf98fa99a8d545d270951cf6fa8f15"
+    },
+    {
+      "actualSha256": "f8cbf3430b51002abfdd562cb1e66e06925fdc1e772875f74a38cb84b2a74772",
+      "matches": true,
+      "path": "src/shared/Notice.tsx",
+      "expectedSha256": "f8cbf3430b51002abfdd562cb1e66e06925fdc1e772875f74a38cb84b2a74772"
+    },
+    {
+      "actualSha256": "e966e1a4f52ed96046f5de32fb3fac2c4568f019e6e0ebc9d358bf4d0bfc267e",
+      "matches": true,
+      "path": "src/shared/PageState.tsx",
+      "expectedSha256": "e966e1a4f52ed96046f5de32fb3fac2c4568f019e6e0ebc9d358bf4d0bfc267e"
+    },
+    {
+      "actualSha256": "bcba99982b1307a86e8f66f4da0fef8eaa05536185bd332514e0102a520e1547",
+      "matches": true,
+      "path": "src/shared/Pagination.tsx",
+      "expectedSha256": "bcba99982b1307a86e8f66f4da0fef8eaa05536185bd332514e0102a520e1547"
+    },
+    {
+      "actualSha256": "d1e2d104859ff74e87e19bec38906ba010a306e6f44bd3a28e935ee057da5ca2",
+      "matches": true,
+      "path": "src/shared/PreviewModeNotice.tsx",
+      "expectedSha256": "d1e2d104859ff74e87e19bec38906ba010a306e6f44bd3a28e935ee057da5ca2"
+    },
+    {
+      "actualSha256": "0f305c0e00591ed9a1dd174b511219a21829f9de25cce5bfa98473d5c71680bb",
+      "matches": true,
+      "path": "src/shared/README.md",
+      "expectedSha256": "0f305c0e00591ed9a1dd174b511219a21829f9de25cce5bfa98473d5c71680bb"
+    },
+    {
+      "actualSha256": "cc21cc62f30714b83e535017f8de8dfb950d4650d868fd9699f70c3fb9decb27",
+      "matches": true,
+      "path": "src/shared/ReadState.tsx",
+      "expectedSha256": "cc21cc62f30714b83e535017f8de8dfb950d4650d868fd9699f70c3fb9decb27"
+    },
+    {
+      "actualSha256": "460fc0bf6a49fe7eaaa5fb654d76af22a403d30ac45f02be9266d24df3f29a83",
+      "matches": true,
+      "path": "src/shared/RefreshButton.tsx",
+      "expectedSha256": "460fc0bf6a49fe7eaaa5fb654d76af22a403d30ac45f02be9266d24df3f29a83"
+    },
+    {
+      "actualSha256": "79c187913c3b38cd9f3d1887db80a8fb7da57ca750df4579093c46e6c35c7c96",
+      "matches": true,
+      "path": "src/shared/ShellActionContext.tsx",
+      "expectedSha256": "79c187913c3b38cd9f3d1887db80a8fb7da57ca750df4579093c46e6c35c7c96"
+    },
+    {
+      "actualSha256": "dc1bfd8ac0ab2bb208fe8f93ff646bb517d0a0abea0a72ed4ba5dd07403f19c4",
+      "matches": true,
+      "path": "src/shared/ShellHeader.tsx",
+      "expectedSha256": "dc1bfd8ac0ab2bb208fe8f93ff646bb517d0a0abea0a72ed4ba5dd07403f19c4"
+    },
+    {
+      "actualSha256": "91609c6f4f767cdd8b38f910aeacc1ff29a99f12de5b199422bbe1d1aac88192",
+      "matches": true,
+      "path": "src/shared/ShellPreferencesRuntime.tsx",
+      "expectedSha256": "91609c6f4f767cdd8b38f910aeacc1ff29a99f12de5b199422bbe1d1aac88192"
+    },
+    {
+      "actualSha256": "a8ff3eddd94d4160df88237852770af1473a5864fa115afc6020e4622210838a",
+      "matches": true,
+      "path": "src/shared/ShortcutSettings.tsx",
+      "expectedSha256": "a8ff3eddd94d4160df88237852770af1473a5864fa115afc6020e4622210838a"
+    },
+    {
+      "actualSha256": "db0f9be40e39f70294260531a53fa546b3607f7adf89c9a61649151d3f969dbc",
+      "matches": true,
+      "path": "src/shared/auth-layout.css",
+      "expectedSha256": "db0f9be40e39f70294260531a53fa546b3607f7adf89c9a61649151d3f969dbc"
+    },
+    {
+      "actualSha256": "e141e27d579c18366abf0879512e2dd2ee2bec162e491bd31ec17c487aa7c53f",
+      "matches": true,
+      "path": "src/shared/basic-select.css",
+      "expectedSha256": "e141e27d579c18366abf0879512e2dd2ee2bec162e491bd31ec17c487aa7c53f"
+    },
+    {
+      "actualSha256": "8a06701a7f7308cb06ff7205cf6c307f6fa6ba8ab569d5349829a077d04bb153",
+      "matches": true,
+      "path": "src/shared/body-scroll-lock.ts",
+      "expectedSha256": "8a06701a7f7308cb06ff7205cf6c307f6fa6ba8ab569d5349829a077d04bb153"
+    },
+    {
+      "actualSha256": "7b6c7397986031dc8c00a4d412159e746b1c9a6c1bcc7a499fd8f9d777d11af4",
+      "matches": true,
+      "path": "src/shared/components.css",
+      "expectedSha256": "7b6c7397986031dc8c00a4d412159e746b1c9a6c1bcc7a499fd8f9d777d11af4"
+    },
+    {
+      "actualSha256": "ea3183189a8b913247f9a018b2da5680c4ee27323269c017493936492f43b38b",
+      "matches": true,
+      "path": "src/shared/controls.tsx",
+      "expectedSha256": "ea3183189a8b913247f9a018b2da5680c4ee27323269c017493936492f43b38b"
+    },
+    {
+      "actualSha256": "40d9f796d2be2ac92f03891a3332a3a359d9c1ae5167db3067c2d49ed6bb8e06",
+      "matches": true,
+      "path": "src/shared/copy-text.ts",
+      "expectedSha256": "40d9f796d2be2ac92f03891a3332a3a359d9c1ae5167db3067c2d49ed6bb8e06"
+    },
+    {
+      "actualSha256": "6989d242e1baa560cafab855cc0195e41feebbd922e4ff7401c28f2a03251815",
+      "matches": true,
+      "path": "src/shared/dark-theme.css",
+      "expectedSha256": "6989d242e1baa560cafab855cc0195e41feebbd922e4ff7401c28f2a03251815"
+    },
+    {
+      "actualSha256": "f517316d602528e8feb56e0821fe676d619e058b3c7fea64f46f7c1e93026a79",
+      "matches": true,
+      "path": "src/shared/date-picker-calendar.ts",
+      "expectedSha256": "f517316d602528e8feb56e0821fe676d619e058b3c7fea64f46f7c1e93026a79"
+    },
+    {
+      "actualSha256": "d305700fffba6ab26dd294f3893688d23b4f1fa9afc792da7473f21b2b05551b",
+      "matches": true,
+      "path": "src/shared/date-picker-keyboard.ts",
+      "expectedSha256": "d305700fffba6ab26dd294f3893688d23b4f1fa9afc792da7473f21b2b05551b"
+    },
+    {
+      "actualSha256": "c898ecf97afb6ae87447678b61ed27af4a33d8d5bb8788d9ce1a45ae3c38bdbd",
+      "matches": true,
+      "path": "src/shared/date-picker.css",
+      "expectedSha256": "c898ecf97afb6ae87447678b61ed27af4a33d8d5bb8788d9ce1a45ae3c38bdbd"
+    },
+    {
+      "actualSha256": "bd164d65d82ffed02a798e75f4adc4df480331dc54c5276ddc1e7e109aae4d50",
+      "matches": true,
+      "path": "src/shared/date-policy.ts",
+      "expectedSha256": "bd164d65d82ffed02a798e75f4adc4df480331dc54c5276ddc1e7e109aae4d50"
+    },
+    {
+      "actualSha256": "105761e734dd18ef8bc8cee387ca1be0ebad7c35fc129ea56fa3509d1a87870e",
+      "matches": true,
+      "path": "src/shared/focus.ts",
+      "expectedSha256": "105761e734dd18ef8bc8cee387ca1be0ebad7c35fc129ea56fa3509d1a87870e"
+    },
+    {
+      "actualSha256": "9c4308558444d1e8a41de153b625e39dd7a7b5f1c959503e438aaec62e74fc9c",
+      "matches": true,
+      "path": "src/shared/foundation.ts",
+      "expectedSha256": "9c4308558444d1e8a41de153b625e39dd7a7b5f1c959503e438aaec62e74fc9c"
+    },
+    {
+      "actualSha256": "dc17e81d66de38dd6ed0d605a164b4e7022c2bd80b4a75d5121a432baf8e8e8d",
+      "matches": true,
+      "path": "src/shared/header-controls.css",
+      "expectedSha256": "dc17e81d66de38dd6ed0d605a164b4e7022c2bd80b4a75d5121a432baf8e8e8d"
+    },
+    {
+      "actualSha256": "70770eb855bc05febf4b118f33ef1ea089562e51392d3373683c228b85b5fae1",
+      "matches": true,
+      "path": "src/shared/index.ts",
+      "expectedSha256": "70770eb855bc05febf4b118f33ef1ea089562e51392d3373683c228b85b5fae1"
+    },
+    {
+      "actualSha256": "5b5b8e79b7d303d1985ed4297d08a59541e2f21463e5bb88dcca98f87ab8bdf5",
+      "matches": true,
+      "path": "src/shared/list-runtime.ts",
+      "expectedSha256": "5b5b8e79b7d303d1985ed4297d08a59541e2f21463e5bb88dcca98f87ab8bdf5"
+    },
+    {
+      "actualSha256": "abc49c0d797877665f8478e8f336e8f8157001376aace047bf838001b2d2b76b",
+      "matches": true,
+      "path": "src/shared/modal-focus.ts",
+      "expectedSha256": "abc49c0d797877665f8478e8f336e8f8157001376aace047bf838001b2d2b76b"
+    },
+    {
+      "actualSha256": "f3198a10920f0f489e714bc5391f0daf03b7170768d7473095332f9375cbcfc3",
+      "matches": true,
+      "path": "src/shared/page-state.css",
+      "expectedSha256": "f3198a10920f0f489e714bc5391f0daf03b7170768d7473095332f9375cbcfc3"
+    },
+    {
+      "actualSha256": "7a2dc1903340a0dc783e7373002f7898e6ff09c5853051f88db3c7935de53d78",
+      "matches": true,
+      "path": "src/shared/premium-dark.css",
+      "expectedSha256": "7a2dc1903340a0dc783e7373002f7898e6ff09c5853051f88db3c7935de53d78"
+    },
+    {
+      "actualSha256": "f4112a9b8cbf743b13e09e89f61fc48cbb6743c083dd920f855a3f22d4f4c60b",
+      "matches": true,
+      "path": "src/shared/premium.css",
+      "expectedSha256": "f4112a9b8cbf743b13e09e89f61fc48cbb6743c083dd920f855a3f22d4f4c60b"
+    },
+    {
+      "actualSha256": "59fff348d100505dca208d1881592fd6425599843eedd45da05f7879b2af1b07",
+      "matches": true,
+      "path": "src/shared/preview-mode.css",
+      "expectedSha256": "59fff348d100505dca208d1881592fd6425599843eedd45da05f7879b2af1b07"
+    },
+    {
+      "actualSha256": "fb21ca9ebf9a5def456d488423f2ca3b68d042f6122acaa9ac671ad7f4358ded",
+      "matches": true,
+      "path": "src/shared/preview-ui.css",
+      "expectedSha256": "fb21ca9ebf9a5def456d488423f2ca3b68d042f6122acaa9ac671ad7f4358ded"
+    },
+    {
+      "actualSha256": "389bb145b853514ffe2282683fc047355e5c9526d47b0e10548adc5e8b541f0d",
+      "matches": true,
+      "path": "src/shared/primitives.tsx",
+      "expectedSha256": "389bb145b853514ffe2282683fc047355e5c9526d47b0e10548adc5e8b541f0d"
+    },
+    {
+      "actualSha256": "733720b8ccf144034410cb5e0ebd252506a316170db107be53cea203b5736aeb",
+      "matches": true,
+      "path": "src/shared/read-failure-kind.ts",
+      "expectedSha256": "733720b8ccf144034410cb5e0ebd252506a316170db107be53cea203b5736aeb"
+    },
+    {
+      "actualSha256": "6adf63c20d823a3af6fbcbd29fd49401ce8e849ce74cc766c3be49319a8e4bdc",
+      "matches": true,
+      "path": "src/shared/report-chart-scale.ts",
+      "expectedSha256": "6adf63c20d823a3af6fbcbd29fd49401ce8e849ce74cc766c3be49319a8e4bdc"
+    },
+    {
+      "actualSha256": "77e1279ffcef72e5d96f959a035ccb8c807baae80fdb700ed66274834a6dce56",
+      "matches": true,
+      "path": "src/shared/report-compact-sort.tsx",
+      "expectedSha256": "77e1279ffcef72e5d96f959a035ccb8c807baae80fdb700ed66274834a6dce56"
+    },
+    {
+      "actualSha256": "259d2544b53550edfa14469af7cc1b1a893ecb65b6bd20bc0d6789c0a378dfc9",
+      "matches": true,
+      "path": "src/shared/report-state.ts",
+      "expectedSha256": "259d2544b53550edfa14469af7cc1b1a893ecb65b6bd20bc0d6789c0a378dfc9"
+    },
+    {
+      "actualSha256": "0284f98c9d4281cad472623fd91412f1c444d5596cffcc128dfdbaf30aeea24d",
+      "matches": true,
+      "path": "src/shared/report-status.css",
+      "expectedSha256": "0284f98c9d4281cad472623fd91412f1c444d5596cffcc128dfdbaf30aeea24d"
+    },
+    {
+      "actualSha256": "c1002d89cd99f003217105254d2403f45bfb09f112b9ab19ccba551ad10d5bef",
+      "matches": true,
+      "path": "src/shared/report-status.tsx",
+      "expectedSha256": "c1002d89cd99f003217105254d2403f45bfb09f112b9ab19ccba551ad10d5bef"
+    },
+    {
+      "actualSha256": "cf054f164ae9d2252a6bfaff46391edf5c30a3d0799b06f4fb94711187493bfb",
+      "matches": true,
+      "path": "src/shared/s00-fonts.css",
+      "expectedSha256": "cf054f164ae9d2252a6bfaff46391edf5c30a3d0799b06f4fb94711187493bfb"
+    },
+    {
+      "actualSha256": "0e3382ac4c340c1202befb7255b17983733d5a4d3ddd46dc3d63cb98c9d7c701",
+      "matches": true,
+      "path": "src/shared/s00-navigation.ts",
+      "expectedSha256": "0e3382ac4c340c1202befb7255b17983733d5a4d3ddd46dc3d63cb98c9d7c701"
+    },
+    {
+      "actualSha256": "e35a23e13331dcdc56b06a7ede972c6b5590780fe4ec96110138c980b4ba7b57",
+      "matches": true,
+      "path": "src/shared/s00-shell-state.ts",
+      "expectedSha256": "e35a23e13331dcdc56b06a7ede972c6b5590780fe4ec96110138c980b4ba7b57"
+    },
+    {
+      "actualSha256": "e87cb6e21a93222f5bd0b5b87e6dd9923ebb60100fae793a7cedf09e5f6db4b4",
+      "matches": true,
+      "path": "src/shared/s00-shell.css",
+      "expectedSha256": "e87cb6e21a93222f5bd0b5b87e6dd9923ebb60100fae793a7cedf09e5f6db4b4"
+    },
+    {
+      "actualSha256": "f3608f080f08db47ff6aec06ec5785a3a8498c8e6c04660d26d864378e71cd4a",
+      "matches": true,
+      "path": "src/shared/s00-sidebar-tone.css",
+      "expectedSha256": "f3608f080f08db47ff6aec06ec5785a3a8498c8e6c04660d26d864378e71cd4a"
+    },
+    {
+      "actualSha256": "07c6c7764a110593b677f077394483027c8560576a41fcce66e36d1b38e78866",
+      "matches": true,
+      "path": "src/shared/s01-shell-navigation.ts",
+      "expectedSha256": "07c6c7764a110593b677f077394483027c8560576a41fcce66e36d1b38e78866"
+    },
+    {
+      "actualSha256": "83a4142d794cbe658b6d27f6de1be2547be02725e6d6261fd94f629f13b7254e",
+      "matches": true,
+      "path": "src/shared/s02-shell-navigation.ts",
+      "expectedSha256": "83a4142d794cbe658b6d27f6de1be2547be02725e6d6261fd94f629f13b7254e"
+    },
+    {
+      "actualSha256": "c7b4492249d36c05ff8dc0e7948892625ead4659f7f01d4c510b5c14b73c5655",
+      "matches": true,
+      "path": "src/shared/s03-shell-navigation.ts",
+      "expectedSha256": "c7b4492249d36c05ff8dc0e7948892625ead4659f7f01d4c510b5c14b73c5655"
+    },
+    {
+      "actualSha256": "b73cab0f2c292e26e4ad8b8fe7c5bbb132545e8feb1b0f9f52c93da81854f38a",
+      "matches": true,
+      "path": "src/shared/screen-foundation.ts",
+      "expectedSha256": "b73cab0f2c292e26e4ad8b8fe7c5bbb132545e8feb1b0f9f52c93da81854f38a"
+    },
+    {
+      "actualSha256": "456b73ec16b329fb474517db1f8069046cbb2acb093180d5bbd1ff6e10455709",
+      "matches": true,
+      "path": "src/shared/search.ts",
+      "expectedSha256": "456b73ec16b329fb474517db1f8069046cbb2acb093180d5bbd1ff6e10455709"
+    },
+    {
+      "actualSha256": "c8739099e1048d2ca04afd18134f049d2ba71bf6480eb1a44b02506f38d27787",
+      "matches": true,
+      "path": "src/shared/shell-locale.ts",
+      "expectedSha256": "c8739099e1048d2ca04afd18134f049d2ba71bf6480eb1a44b02506f38d27787"
+    },
+    {
+      "actualSha256": "6eb605aee8040a01ec268ee5909ebb3b7b396e9c209017776d1d34c23348ead8",
+      "matches": true,
+      "path": "src/shared/shell-preferences.ts",
+      "expectedSha256": "6eb605aee8040a01ec268ee5909ebb3b7b396e9c209017776d1d34c23348ead8"
+    },
+    {
+      "actualSha256": "18ed9f7120c7886865772ee0588328b8a03d83e0a44ad4904268988ce9915ae5",
+      "matches": true,
+      "path": "src/shared/shortcut-model.ts",
+      "expectedSha256": "18ed9f7120c7886865772ee0588328b8a03d83e0a44ad4904268988ce9915ae5"
+    },
+    {
+      "actualSha256": "9f5b925c38fb0a71c79e54cda994aa172c06134ea4c7912fa623a4ca3ace35aa",
+      "matches": true,
+      "path": "src/shared/shortcut-preferences.ts",
+      "expectedSha256": "9f5b925c38fb0a71c79e54cda994aa172c06134ea4c7912fa623a4ca3ace35aa"
+    },
+    {
+      "actualSha256": "b68989811c90ff4cd93c98517b5f0a37aec5b48eb9fbae49827c390f05b8dd48",
+      "matches": true,
+      "path": "src/shared/shortcut-settings.css",
+      "expectedSha256": "b68989811c90ff4cd93c98517b5f0a37aec5b48eb9fbae49827c390f05b8dd48"
+    },
+    {
+      "actualSha256": "05b07875e572b65ed05aa70b54c74bcd5611e39f8b84fd5a81a68a1c67a297d4",
+      "matches": true,
+      "path": "src/shared/sidebar-position.ts",
+      "expectedSha256": "05b07875e572b65ed05aa70b54c74bcd5611e39f8b84fd5a81a68a1c67a297d4"
+    },
+    {
+      "actualSha256": "7dc6f880d1daa2aeec3777416af1ddc37d2700a1cc376336af98b83b164f97bf",
+      "matches": true,
+      "path": "src/shared/styles.css",
+      "expectedSha256": "7dc6f880d1daa2aeec3777416af1ddc37d2700a1cc376336af98b83b164f97bf"
+    },
+    {
+      "actualSha256": "f2193dc04e52cc9c69c63a400dea90ebf44fa024f05c82b6cf22324385b36d27",
+      "matches": true,
+      "path": "src/shared/table-presentation.css",
+      "expectedSha256": "f2193dc04e52cc9c69c63a400dea90ebf44fa024f05c82b6cf22324385b36d27"
+    },
+    {
+      "actualSha256": "a4c2184304ed5f309848b9ea406ab0440c49ad3a9bbac21d539a274809c7d235",
+      "matches": true,
+      "path": "src/shared/table-query.ts",
+      "expectedSha256": "a4c2184304ed5f309848b9ea406ab0440c49ad3a9bbac21d539a274809c7d235"
+    },
+    {
+      "actualSha256": "83bf75869da63c9ac072fec01afd6631a6a8c1b51bbce420bc68c19e69a864ef",
+      "matches": true,
+      "path": "src/shared/tokens.css",
+      "expectedSha256": "83bf75869da63c9ac072fec01afd6631a6a8c1b51bbce420bc68c19e69a864ef"
+    },
+    {
+      "actualSha256": "65a61fd8836d45f1b5e53c51597e11f7bd25bd85bf531ff2f09f32f7e01f5eeb",
+      "matches": true,
+      "path": "src/shared/unified.css",
+      "expectedSha256": "65a61fd8836d45f1b5e53c51597e11f7bd25bd85bf531ff2f09f32f7e01f5eeb"
+    },
+    {
+      "actualSha256": "0a1eb963648729752b61c2efdef0dd67a0eac5ae3b30ec0028e8a6afe39f87f1",
+      "matches": true,
+      "path": "src/shared/use-date-policy.ts",
+      "expectedSha256": "0a1eb963648729752b61c2efdef0dd67a0eac5ae3b30ec0028e8a6afe39f87f1"
+    },
+    {
+      "actualSha256": "ef35bd18773b8fd3446ea1afe4fd92ca8e455eb96ed245004897bbd158ae12d9",
+      "matches": true,
+      "path": "src/shared/wave4-catalogue.css",
+      "expectedSha256": "ef35bd18773b8fd3446ea1afe4fd92ca8e455eb96ed245004897bbd158ae12d9"
+    },
+    {
+      "actualSha256": "6c4faf3b4533a9f5a090955e9221d4a4c9becdd1a55371f88ed7b4c725d28260",
+      "matches": true,
+      "path": "src/shared/wave4-presentation.css",
+      "expectedSha256": "6c4faf3b4533a9f5a090955e9221d4a4c9becdd1a55371f88ed7b4c725d28260"
+    },
+    {
+      "actualSha256": "a154fb582a4fec64a2d4721b6827ec97cbb650fdad7940593c933a972ebd3f2b",
+      "matches": true,
+      "path": "src/toast/GlobalToastProvider.tsx",
+      "expectedSha256": "a154fb582a4fec64a2d4721b6827ec97cbb650fdad7940593c933a972ebd3f2b"
+    },
+    {
+      "actualSha256": "ef1fe711c8c04780e1166717bd9e9573ebb51889adcd01721d848af1a562b84e",
+      "matches": true,
+      "path": "src/toast/OperationResultToast.tsx",
+      "expectedSha256": "ef1fe711c8c04780e1166717bd9e9573ebb51889adcd01721d848af1a562b84e"
+    },
+    {
+      "actualSha256": "cfec6095c558a8c2f6456bdfa117b4b57762b18837954856598f7ef0a30838b4",
+      "matches": true,
+      "path": "src/toast/ToastQaScreen.tsx",
+      "expectedSha256": "cfec6095c558a8c2f6456bdfa117b4b57762b18837954856598f7ef0a30838b4"
+    },
+    {
+      "actualSha256": "6d7fc698c180647c3a8cae6513926a93a87426c8fe447dfaaf4fd3d9f4603d06",
+      "matches": true,
+      "path": "src/toast/global-toast.css",
+      "expectedSha256": "6d7fc698c180647c3a8cae6513926a93a87426c8fe447dfaaf4fd3d9f4603d06"
+    },
+    {
+      "actualSha256": "a7ec7e94cfb835708e4ed71912b39d935d0daebe202c7a6b648c63276e808eaf",
+      "matches": true,
+      "path": "src/toast/toast-config.ts",
+      "expectedSha256": "a7ec7e94cfb835708e4ed71912b39d935d0daebe202c7a6b648c63276e808eaf"
+    },
+    {
+      "actualSha256": "6a3f646d14863037383939397766962027c78c77b47c94b89dc6d49cebcf6d2c",
+      "matches": true,
+      "path": "src/toast/toast-copy.ts",
+      "expectedSha256": "6a3f646d14863037383939397766962027c78c77b47c94b89dc6d49cebcf6d2c"
+    },
+    {
+      "actualSha256": "981d2429733ae46664d272601b57fa4d53c83fa1a9a85d257bd43b9a96c56c50",
+      "matches": true,
+      "path": "src/toast/toast-obstacles.ts",
+      "expectedSha256": "981d2429733ae46664d272601b57fa4d53c83fa1a9a85d257bd43b9a96c56c50"
+    },
+    {
+      "actualSha256": "a05fb565bce78258473313fcb35b5bf730791ed1e8d423e44bff0098de06e7db",
+      "matches": true,
+      "path": "src/toast/toast-placement-proposal.ts",
+      "expectedSha256": "a05fb565bce78258473313fcb35b5bf730791ed1e8d423e44bff0098de06e7db"
+    },
+    {
+      "actualSha256": "4f84cb5e9eb4425836318ee1cf7f32fc41528ce966f7eafa7f05b478a8633e99",
+      "matches": true,
+      "path": "src/toast/toast-placement.ts",
+      "expectedSha256": "4f84cb5e9eb4425836318ee1cf7f32fc41528ce966f7eafa7f05b478a8633e99"
+    },
+    {
+      "actualSha256": "4bf7b82a2d19aea371fdf290105a423595cb4bda462d95cec34bd57843f05806",
+      "matches": true,
+      "path": "src/toast/toast-store.ts",
+      "expectedSha256": "4bf7b82a2d19aea371fdf290105a423595cb4bda462d95cec34bd57843f05806"
+    }
+  ],
+  "workingStatus": [
+    "?? docs/agent-handoffs/HN-S01-UIUX-004.md",
+    "?? docs/quality/uiux-task-HN-S01-004/"
+  ]
+}

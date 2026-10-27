@@ -1,0 +1,1146 @@
+{
+  "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "srcTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+  "sourceStatus": "",
+  "custody": [
+    {
+      "file": "src/features/S01/overview.css",
+      "sha256": "bea70fec690fc21478c5f7df852896e61fefce1290a370caab2617f516c968ed"
+    },
+    {
+      "file": "src/shared/tokens.css",
+      "sha256": "83bf75869da63c9ac072fec01afd6631a6a8c1b51bbce420bc68c19e69a864ef"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/shared-accessibility-browser.mjs",
+      "sha256": "9a7f964d7c674dcdda1b3a2f3629f4a276a44225f5c2714aa5608919c6915f3f"
+    }
+  ],
+  "checks": [
+    {
+      "width": 1920,
+      "theme": "light",
+      "targets": [
+        {
+          "name": "Kho Hoa Nam",
+          "className": "hn-basic-select ",
+          "width": 225,
+          "height": 44
+        },
+        {
+          "name": "Kỳ thời gian: 01/09/2026 – 30/09/2026",
+          "className": "hn-date-picker__trigger",
+          "width": 223,
+          "height": 44
+        },
+        {
+          "name": "Tìm mã phiếu, người thực hiện",
+          "className": "",
+          "width": 1034,
+          "height": 44
+        },
+        {
+          "name": "Loại phiếu",
+          "className": "hn-basic-select ",
+          "width": 172,
+          "height": 44
+        },
+        {
+          "name": "Trạng thái",
+          "className": "hn-basic-select ",
+          "width": 184,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Mã phiếu",
+          "className": "hn-table-sort",
+          "width": 70.375,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Loại phiếu",
+          "className": "hn-table-sort",
+          "width": 76.703125,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Thời gian",
+          "className": "hn-table-sort",
+          "width": 70.859375,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Người thực hiện",
+          "className": "hn-table-sort",
+          "width": 112.78125,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Số lượng",
+          "className": "hn-table-sort",
+          "width": 70.015625,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Trạng thái",
+          "className": "hn-table-sort",
+          "width": 76.640625,
+          "height": 44
+        },
+        {
+          "name": "PX-0011",
+          "className": "ov-document-link",
+          "width": 68.171875,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0011",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0011",
+          "className": "ov-document-link",
+          "width": 70.390625,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0011",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0010",
+          "className": "ov-document-link",
+          "width": 71.328125,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0010",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0010",
+          "className": "ov-document-link",
+          "width": 73.546875,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0010",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0009",
+          "className": "ov-document-link",
+          "width": 74.5625,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0009",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0009",
+          "className": "ov-document-link",
+          "width": 76.78125,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0009",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0008",
+          "className": "ov-document-link",
+          "width": 74.828125,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0008",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0008",
+          "className": "ov-document-link",
+          "width": 77.046875,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0008",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0007",
+          "className": "ov-document-link",
+          "width": 73.9375,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0007",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0007",
+          "className": "ov-document-link",
+          "width": 76.15625,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0007",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "selector": ".hn-shell-search",
+      "width": 1920,
+      "escFocus": true
+    },
+    {
+      "selector": ".hn-notifications",
+      "width": 1920,
+      "escFocus": true
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "geometry": {
+        "role": null,
+        "labelledby": "_r_6_",
+        "title": "Chi tiết phiếu xuấtPX-0007Chờ xử lý trên Web",
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Sao chép ID",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "width": 213.390625,
+            "height": 50
+          }
+        ]
+      },
+      "contrast": [
+        {
+          "selector": ".ov-page-intro h1",
+          "text": "Tổng quan vận hành",
+          "color": "rgb(10, 55, 101)",
+          "background": "rgb(247, 248, 250)",
+          "fontSize": "30px",
+          "fontWeight": "700",
+          "ratio": 11.31015622744967
+        },
+        {
+          "selector": ".ov-metric h2",
+          "text": "Tồn kho hiện tại",
+          "color": "rgb(10, 55, 101)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "ratio": 12.01855409972549
+        },
+        {
+          "selector": ".ov-metric__foot",
+          "text": "Chưa có số liệu xác nhậnHiện tại",
+          "color": "rgb(83, 103, 122)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "ratio": 5.851330629955228
+        },
+        {
+          "selector": ".ov-attention__count",
+          "text": "5",
+          "color": "rgb(164, 94, 9)",
+          "background": "rgb(255, 247, 232)",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "ratio": 4.714093336955889
+        },
+        {
+          "selector": ".ov-document-link",
+          "text": "PX-0010",
+          "color": "rgb(0, 105, 217)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "ratio": 5.220528887895786
+        },
+        {
+          "selector": ".ov-result-count",
+          "text": "16 phiếu trong kỳ",
+          "color": "rgb(83, 103, 122)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "ratio": 5.851330629955228
+        }
+      ]
+    },
+    {
+      "width": 800,
+      "theme": "light",
+      "targets": [
+        {
+          "name": "Kho Hoa Nam",
+          "className": "hn-basic-select ",
+          "width": 319,
+          "height": 48
+        },
+        {
+          "name": "Kỳ thời gian: 01/09/2026 – 30/09/2026",
+          "className": "hn-date-picker__trigger",
+          "width": 317,
+          "height": 44
+        },
+        {
+          "name": "Tìm mã phiếu, người thực hiện",
+          "className": "",
+          "width": 610,
+          "height": 44
+        },
+        {
+          "name": "Loại phiếu",
+          "className": "hn-basic-select ",
+          "width": 317,
+          "height": 44
+        },
+        {
+          "name": "Trạng thái",
+          "className": "hn-basic-select ",
+          "width": 317,
+          "height": 44
+        },
+        {
+          "name": "PX-0011",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0011",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0011",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0011",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0010",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0010",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0010",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0010",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0009",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0009",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0009",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0009",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0008",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0008",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0008",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0008",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0007",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0007",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0007",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0007",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "selector": ".hn-shell-search",
+      "width": 800,
+      "escFocus": true
+    },
+    {
+      "selector": ".hn-notifications",
+      "width": 800,
+      "escFocus": true
+    },
+    {
+      "selector": ".hn-menu-toggle",
+      "width": 800,
+      "escFocus": true
+    },
+    {
+      "width": 800,
+      "theme": "light",
+      "geometry": {
+        "role": null,
+        "labelledby": "_r_6_",
+        "title": "Chi tiết phiếu xuấtPX-0007Chờ xử lý trên Web",
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Sao chép ID",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "contrast": [
+        {
+          "selector": ".ov-page-intro h1",
+          "text": "Tổng quan vận hành",
+          "color": "rgb(10, 55, 101)",
+          "background": "rgb(247, 248, 250)",
+          "fontSize": "36px",
+          "fontWeight": "700",
+          "ratio": 11.31015622744967
+        },
+        {
+          "selector": ".ov-metric h2",
+          "text": "Tồn kho hiện tại",
+          "color": "rgb(10, 55, 101)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "ratio": 12.01855409972549
+        },
+        {
+          "selector": ".ov-metric__foot",
+          "text": "Chưa có số liệu xác nhậnHiện tại",
+          "color": "rgb(83, 103, 122)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "ratio": 5.851330629955228
+        },
+        {
+          "selector": ".ov-attention__count",
+          "text": "5",
+          "color": "rgb(164, 94, 9)",
+          "background": "rgb(255, 247, 232)",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "ratio": 4.714093336955889
+        },
+        {
+          "selector": ".ov-document-link",
+          "text": "PX-0010",
+          "color": "rgb(0, 105, 217)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "ratio": 5.220528887895786
+        },
+        {
+          "selector": ".ov-result-count",
+          "text": "16 phiếu trong kỳ",
+          "color": "rgb(83, 103, 122)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "17px",
+          "fontWeight": "400",
+          "ratio": 5.851330629955228
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "targets": [
+        {
+          "name": "Kho Hoa Nam",
+          "className": "hn-basic-select ",
+          "width": 225,
+          "height": 44
+        },
+        {
+          "name": "Kỳ thời gian: 01/09/2026 – 30/09/2026",
+          "className": "hn-date-picker__trigger",
+          "width": 223,
+          "height": 44
+        },
+        {
+          "name": "Tìm mã phiếu, người thực hiện",
+          "className": "",
+          "width": 1034,
+          "height": 44
+        },
+        {
+          "name": "Loại phiếu",
+          "className": "hn-basic-select ",
+          "width": 172,
+          "height": 44
+        },
+        {
+          "name": "Trạng thái",
+          "className": "hn-basic-select ",
+          "width": 184,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Mã phiếu",
+          "className": "hn-table-sort",
+          "width": 70.375,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Loại phiếu",
+          "className": "hn-table-sort",
+          "width": 76.703125,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Thời gian",
+          "className": "hn-table-sort",
+          "width": 70.859375,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Người thực hiện",
+          "className": "hn-table-sort",
+          "width": 112.78125,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Số lượng",
+          "className": "hn-table-sort",
+          "width": 70.015625,
+          "height": 44
+        },
+        {
+          "name": "Sắp xếp theo Trạng thái",
+          "className": "hn-table-sort",
+          "width": 76.640625,
+          "height": 44
+        },
+        {
+          "name": "PX-0011",
+          "className": "ov-document-link",
+          "width": 68.171875,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0011",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0011",
+          "className": "ov-document-link",
+          "width": 70.390625,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0011",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0010",
+          "className": "ov-document-link",
+          "width": 71.328125,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0010",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0010",
+          "className": "ov-document-link",
+          "width": 73.546875,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0010",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0009",
+          "className": "ov-document-link",
+          "width": 74.5625,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0009",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0009",
+          "className": "ov-document-link",
+          "width": 76.78125,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0009",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0008",
+          "className": "ov-document-link",
+          "width": 74.828125,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0008",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0008",
+          "className": "ov-document-link",
+          "width": 77.046875,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0008",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0007",
+          "className": "ov-document-link",
+          "width": 73.9375,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0007",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0007",
+          "className": "ov-document-link",
+          "width": 76.15625,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0007",
+          "className": "ov-row-action",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "selector": ".hn-shell-search",
+      "width": 1920,
+      "escFocus": true
+    },
+    {
+      "selector": ".hn-notifications",
+      "width": 1920,
+      "escFocus": true
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "geometry": {
+        "role": null,
+        "labelledby": "_r_6_",
+        "title": "Chi tiết phiếu xuấtPX-0007Chờ xử lý trên Web",
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Sao chép ID",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "width": 213.390625,
+            "height": 50
+          }
+        ]
+      },
+      "contrast": [
+        {
+          "selector": ".ov-page-intro h1",
+          "text": "Tổng quan vận hành",
+          "color": "rgb(231, 238, 245)",
+          "background": "rgb(16, 27, 40)",
+          "fontSize": "30px",
+          "fontWeight": "700",
+          "ratio": 14.838301808967932
+        },
+        {
+          "selector": ".ov-metric h2",
+          "text": "Tồn kho hiện tại",
+          "color": "rgb(231, 238, 245)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "ratio": 13.09188270794394
+        },
+        {
+          "selector": ".ov-metric__foot",
+          "text": "Chưa có số liệu xác nhậnHiện tại",
+          "color": "rgb(231, 238, 245)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "ratio": 13.09188270794394
+        },
+        {
+          "selector": ".ov-attention__count",
+          "text": "5",
+          "color": "rgb(240, 189, 114)",
+          "background": "rgb(73, 56, 32)",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "ratio": 6.53917171100108
+        },
+        {
+          "selector": ".ov-document-link",
+          "text": "PX-0010",
+          "color": "rgb(121, 189, 255)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "ratio": 7.6861456323809065
+        },
+        {
+          "selector": ".ov-result-count",
+          "text": "16 phiếu trong kỳ",
+          "color": "rgb(183, 199, 212)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "ratio": 8.851532302472869
+        }
+      ]
+    },
+    {
+      "width": 800,
+      "theme": "dark",
+      "targets": [
+        {
+          "name": "Kho Hoa Nam",
+          "className": "hn-basic-select ",
+          "width": 319,
+          "height": 48
+        },
+        {
+          "name": "Kỳ thời gian: 01/09/2026 – 30/09/2026",
+          "className": "hn-date-picker__trigger",
+          "width": 317,
+          "height": 44
+        },
+        {
+          "name": "Tìm mã phiếu, người thực hiện",
+          "className": "",
+          "width": 610,
+          "height": 44
+        },
+        {
+          "name": "Loại phiếu",
+          "className": "hn-basic-select ",
+          "width": 317,
+          "height": 44
+        },
+        {
+          "name": "Trạng thái",
+          "className": "hn-basic-select ",
+          "width": 317,
+          "height": 44
+        },
+        {
+          "name": "PX-0011",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0011",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0011",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0011",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0010",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0010",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0010",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0010",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0009",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0009",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0009",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0009",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0008",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0008",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0008",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0008",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PX-0007",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PX-0007",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "PN-0007",
+          "className": "ov-document-link",
+          "width": 145,
+          "height": 44
+        },
+        {
+          "name": "Xem phiếu PN-0007",
+          "className": "ov-mobile-row__action",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "selector": ".hn-shell-search",
+      "width": 800,
+      "escFocus": true
+    },
+    {
+      "selector": ".hn-notifications",
+      "width": 800,
+      "escFocus": true
+    },
+    {
+      "selector": ".hn-menu-toggle",
+      "width": 800,
+      "escFocus": true
+    },
+    {
+      "width": 800,
+      "theme": "dark",
+      "geometry": {
+        "role": null,
+        "labelledby": "_r_6_",
+        "title": "Chi tiết phiếu xuấtPX-0007Chờ xử lý trên Web",
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Sao chép ID",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "contrast": [
+        {
+          "selector": ".ov-page-intro h1",
+          "text": "Tổng quan vận hành",
+          "color": "rgb(231, 238, 245)",
+          "background": "rgb(16, 27, 40)",
+          "fontSize": "36px",
+          "fontWeight": "700",
+          "ratio": 14.838301808967932
+        },
+        {
+          "selector": ".ov-metric h2",
+          "text": "Tồn kho hiện tại",
+          "color": "rgb(231, 238, 245)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "ratio": 13.09188270794394
+        },
+        {
+          "selector": ".ov-metric__foot",
+          "text": "Chưa có số liệu xác nhậnHiện tại",
+          "color": "rgb(231, 238, 245)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "ratio": 13.09188270794394
+        },
+        {
+          "selector": ".ov-attention__count",
+          "text": "5",
+          "color": "rgb(240, 189, 114)",
+          "background": "rgb(73, 56, 32)",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "ratio": 6.53917171100108
+        },
+        {
+          "selector": ".ov-document-link",
+          "text": "PX-0010",
+          "color": "rgb(121, 189, 255)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "ratio": 7.6861456323809065
+        },
+        {
+          "selector": ".ov-result-count",
+          "text": "16 phiếu trong kỳ",
+          "color": "rgb(183, 199, 212)",
+          "background": "rgb(23, 38, 56)",
+          "fontSize": "17px",
+          "fontWeight": "400",
+          "ratio": 8.851532302472869
+        }
+      ]
+    },
+    {
+      "quickAccess": "S21"
+    },
+    {
+      "quickAccess": "S26"
+    },
+    {
+      "quickAccess": "S20"
+    }
+  ],
+  "errors": [],
+  "classification": "MOCK, measured samples not full WCAG certification"
+}

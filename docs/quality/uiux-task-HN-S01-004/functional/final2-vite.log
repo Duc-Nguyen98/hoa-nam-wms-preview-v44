@@ -1,0 +1,15 @@
+
+  VITE v8.3.3  ready in 1927 ms
+
+  ➜  Local:   http://127.0.0.1:5272/
+5:42:35 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-B7f23z/resources/7caecdd30a74b0978448c49ddcd9190a1b717c85.html
+5:42:50 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-PrQ2tA/resources/7caecdd30a74b0978448c49ddcd9190a1b717c85.html
+5:43:25 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-PrQ2tA/resources/3fc65536928a6ead4a773a39d263c69e81d8aab5.html
+file watcher error: EBUSY: resource busy or locked, watch 'E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\output\hn-s01-004-visual-temp\playwright-artifacts-PrQ2tA\854ed64175f866a8ac985beff8ee58ae-pwnetcopy-1.network'
+5:46:24 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-PrQ2tA/resources/7caecdd30a74b0978448c49ddcd9190a1b717c85.html
+5:46:24 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-PrQ2tA/resources/3fc65536928a6ead4a773a39d263c69e81d8aab5.html
+5:46:40 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-MXTsB3/resources/7caecdd30a74b0978448c49ddcd9190a1b717c85.html
+5:47:05 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-MXTsB3/resources/3fc65536928a6ead4a773a39d263c69e81d8aab5.html
+file watcher error: EBUSY: resource busy or locked, watch 'E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\output\hn-s01-004-visual-temp\playwright-artifacts-MXTsB3\1436c05f07bc545f23786915d2cad910-pwnetcopy-1.network'
+5:49:07 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-MXTsB3/resources/7caecdd30a74b0978448c49ddcd9190a1b717c85.html
+5:49:07 PM [vite] (client) page reload output/hn-s01-004-visual-temp/playwright-artifacts-MXTsB3/resources/3fc65536928a6ead4a773a39d263c69e81d8aab5.html

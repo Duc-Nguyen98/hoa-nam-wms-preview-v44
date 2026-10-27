@@ -1,0 +1,2528 @@
+{
+  "head": "e18305b1e3b09c4402317d507d7008967284341b",
+  "srcTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+  "testsTree": "3a61cae4bffcbda3f9e614eaaa02a38e637f3e64",
+  "status": "",
+  "custody": [
+    {
+      "file": "src/features/S01/overview.css",
+      "sha256": "113113cdb93000546b2f4825f9413f8de1a9e376763afc88817daf64f004e7ed"
+    },
+    {
+      "file": "src/features/S01/AcceptedRowDetail.tsx",
+      "sha256": "8d80f80e61c730df1bc9f79a4eb3735133db42bfdbd2d168c10efe324699f7e1"
+    },
+    {
+      "file": "src/shared/GlobalModal.tsx",
+      "sha256": "d87d43c83d162d459b3b70cbe3725ae4c98b467feaf4cde0d8338b371d7ee0ec"
+    },
+    {
+      "file": "src/data/fixtures/S01_SCANNER_PINNED.json",
+      "sha256": "53b86f60ac41bd1212e5da90c7d57308be1a8f22c3da83d77f08278075b8ce0b"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/footer-regression-browser.mjs",
+      "sha256": "d2366b365a66fad62db2bdbd9053b37bf832068e88bd6ad11b04f46b2a7f7826"
+    }
+  ],
+  "previous": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "ownServer": true,
+  "watchIgnored": [
+    "**/output/**",
+    "**/docs/quality/**"
+  ],
+  "localBuild": {
+    "outDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\output\\hn-s01-004-functional-temp\\footer-static-dist",
+    "sourceCommit": "e18305b1e3b09c4402317d507d7008967284341b",
+    "manifest": "local-build-custody.json"
+  },
+  "impact": "Only one desktop footer padding declaration differs; all other source/tests unchanged",
+  "checks": [
+    {
+      "name": "vi-light-1920",
+      "status": "PASS",
+      "language": "vi",
+      "theme": "light",
+      "width": 1920,
+      "height": 1080,
+      "geometry": {
+        "dialog": {
+          "top": 186.5,
+          "bottom": 893.5,
+          "left": 560,
+          "right": 1360,
+          "width": 800,
+          "height": 707
+        },
+        "body": {
+          "top": 300.5,
+          "bottom": 809.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 509
+        },
+        "footer": {
+          "top": 809.5,
+          "bottom": 892.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 83
+        },
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Sao chép ID",
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1009.609375,
+            "right": 1113.609375,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1121.609375,
+            "right": 1335,
+            "width": 213.390625,
+            "height": 50
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Sao chép mã phiếu",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Sao chép ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1009.609375,
+            "right": 1113.609375,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1121.609375,
+            "right": 1335,
+            "width": 213.390625,
+            "height": 50
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1009.609375,
+            "right": 1113.609375,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1121.609375,
+            "right": 1335,
+            "width": 213.390625,
+            "height": 50
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "vi-light-800",
+      "status": "PASS",
+      "language": "vi",
+      "theme": "light",
+      "width": 800,
+      "height": 1280,
+      "geometry": {
+        "dialog": {
+          "top": 16,
+          "bottom": 1264,
+          "left": 45,
+          "right": 755,
+          "width": 710,
+          "height": 1248
+        },
+        "body": {
+          "top": 258,
+          "bottom": 1158,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 900
+        },
+        "footer": {
+          "top": 1158,
+          "bottom": 1263,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 105
+        },
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Sao chép ID",
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Sao chép mã phiếu",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Sao chép ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": false,
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 49,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 98,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "vi-dark-1920",
+      "status": "PASS",
+      "language": "vi",
+      "theme": "dark",
+      "width": 1920,
+      "height": 1080,
+      "geometry": {
+        "dialog": {
+          "top": 186.5,
+          "bottom": 893.5,
+          "left": 560,
+          "right": 1360,
+          "width": 800,
+          "height": 707
+        },
+        "body": {
+          "top": 300.5,
+          "bottom": 809.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 509
+        },
+        "footer": {
+          "top": 809.5,
+          "bottom": 892.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 83
+        },
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Sao chép ID",
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1009.609375,
+            "right": 1113.609375,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1121.609375,
+            "right": 1335,
+            "width": 213.390625,
+            "height": 50
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Sao chép mã phiếu",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Sao chép ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1009.609375,
+            "right": 1113.609375,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1121.609375,
+            "right": 1335,
+            "width": 213.390625,
+            "height": 50
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1009.609375,
+            "right": 1113.609375,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1121.609375,
+            "right": 1335,
+            "width": 213.390625,
+            "height": 50
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "vi-dark-800",
+      "status": "PASS",
+      "language": "vi",
+      "theme": "dark",
+      "width": 800,
+      "height": 1280,
+      "geometry": {
+        "dialog": {
+          "top": 16,
+          "bottom": 1264,
+          "left": 45,
+          "right": 755,
+          "width": 710,
+          "height": 1248
+        },
+        "body": {
+          "top": 258,
+          "bottom": 1158,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 900
+        },
+        "footer": {
+          "top": 1158,
+          "bottom": 1263,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 105
+        },
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Sao chép mã phiếu",
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Sao chép ID",
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Sao chép mã phiếu",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Sao chép ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": false,
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Đóng",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Mở phiếu xuất kho",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 49,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 98,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "en-light-1920",
+      "status": "PASS",
+      "language": "en",
+      "theme": "light",
+      "width": 1920,
+      "height": 1080,
+      "geometry": {
+        "dialog": {
+          "top": 186.5,
+          "bottom": 893.5,
+          "left": 560,
+          "right": 1360,
+          "width": 800,
+          "height": 707
+        },
+        "body": {
+          "top": 300.5,
+          "bottom": 809.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 509
+        },
+        "footer": {
+          "top": 809.5,
+          "bottom": 892.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 83
+        },
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Copy document number",
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Copy ID",
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1001.390625,
+            "right": 1105.390625,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Open outbound slip",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1113.390625,
+            "right": 1335,
+            "width": 221.609375,
+            "height": 50
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Copy document number",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Copy ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1001.390625,
+            "right": 1105.390625,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Open outbound slip",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1113.390625,
+            "right": 1335,
+            "width": 221.609375,
+            "height": 50
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1001.390625,
+            "right": 1105.390625,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1113.390625,
+            "right": 1335,
+            "width": 221.609375,
+            "height": 50
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "en-light-800",
+      "status": "PASS",
+      "language": "en",
+      "theme": "light",
+      "width": 800,
+      "height": 1280,
+      "geometry": {
+        "dialog": {
+          "top": 16,
+          "bottom": 1264,
+          "left": 45,
+          "right": 755,
+          "width": 710,
+          "height": 1248
+        },
+        "body": {
+          "top": 258,
+          "bottom": 1158,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 900
+        },
+        "footer": {
+          "top": 1158,
+          "bottom": 1263,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 105
+        },
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Copy document number",
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Copy ID",
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Open outbound slip",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Copy document number",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Copy ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": false,
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Open outbound slip",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 49,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 98,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "en-dark-1920",
+      "status": "PASS",
+      "language": "en",
+      "theme": "dark",
+      "width": 1920,
+      "height": 1080,
+      "geometry": {
+        "dialog": {
+          "top": 186.5,
+          "bottom": 893.5,
+          "left": 560,
+          "right": 1360,
+          "width": 800,
+          "height": 707
+        },
+        "body": {
+          "top": 300.5,
+          "bottom": 809.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 509
+        },
+        "footer": {
+          "top": 809.5,
+          "bottom": 892.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 83
+        },
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Copy document number",
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Copy ID",
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1001.390625,
+            "right": 1105.390625,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Open outbound slip",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1113.390625,
+            "right": 1335,
+            "width": 221.609375,
+            "height": 50
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Copy document number",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "Copy ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1001.390625,
+            "right": 1105.390625,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "Open outbound slip",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1113.390625,
+            "right": 1335,
+            "width": 221.609375,
+            "height": 50
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1001.390625,
+            "right": 1105.390625,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1113.390625,
+            "right": 1335,
+            "width": 221.609375,
+            "height": 50
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "en-dark-800",
+      "status": "PASS",
+      "language": "en",
+      "theme": "dark",
+      "width": 800,
+      "height": 1280,
+      "geometry": {
+        "dialog": {
+          "top": 16,
+          "bottom": 1264,
+          "left": 45,
+          "right": 755,
+          "width": 710,
+          "height": 1248
+        },
+        "body": {
+          "top": 258,
+          "bottom": 1158,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 900
+        },
+        "footer": {
+          "top": 1158,
+          "bottom": 1263,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 105
+        },
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "Copy document number",
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Copy ID",
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Open outbound slip",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "Copy document number",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "Copy ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": false,
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "Close",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "Open outbound slip",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 49,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 98,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "zh-CN-light-1920",
+      "status": "PASS",
+      "language": "zh-CN",
+      "theme": "light",
+      "width": 1920,
+      "height": 1080,
+      "geometry": {
+        "dialog": {
+          "top": 186.5,
+          "bottom": 893.5,
+          "left": 560,
+          "right": 1360,
+          "width": 800,
+          "height": 707
+        },
+        "body": {
+          "top": 300.5,
+          "bottom": 809.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 509
+        },
+        "footer": {
+          "top": 809.5,
+          "bottom": 892.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 83
+        },
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "复制单据编号",
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "复制 ID",
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1068,
+            "right": 1172,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "打开出库单",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1180,
+            "right": 1335,
+            "width": 155,
+            "height": 50
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "复制单据编号",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "复制 ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1068,
+            "right": 1172,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "打开出库单",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1180,
+            "right": 1335,
+            "width": 155,
+            "height": 50
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1068,
+            "right": 1172,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1180,
+            "right": 1335,
+            "width": 155,
+            "height": 50
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "zh-CN-light-800",
+      "status": "PASS",
+      "language": "zh-CN",
+      "theme": "light",
+      "width": 800,
+      "height": 1280,
+      "geometry": {
+        "dialog": {
+          "top": 16,
+          "bottom": 1264,
+          "left": 45,
+          "right": 755,
+          "width": 710,
+          "height": 1248
+        },
+        "body": {
+          "top": 258,
+          "bottom": 1158,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 900
+        },
+        "footer": {
+          "top": 1158,
+          "bottom": 1263,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 105
+        },
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "复制单据编号",
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "复制 ID",
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "打开出库单",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "复制单据编号",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "复制 ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": false,
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "打开出库单",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 49,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 98,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "zh-CN-dark-1920",
+      "status": "PASS",
+      "language": "zh-CN",
+      "theme": "dark",
+      "width": 1920,
+      "height": 1080,
+      "geometry": {
+        "dialog": {
+          "top": 186.5,
+          "bottom": 893.5,
+          "left": 560,
+          "right": 1360,
+          "width": 800,
+          "height": 707
+        },
+        "body": {
+          "top": 300.5,
+          "bottom": 809.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 509
+        },
+        "footer": {
+          "top": 809.5,
+          "bottom": 892.5,
+          "left": 561,
+          "right": 1359,
+          "width": 798,
+          "height": 83
+        },
+        "padding": {
+          "top": "16px",
+          "bottom": "16px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "复制单据编号",
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "复制 ID",
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1068,
+            "right": 1172,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "打开出库单",
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1180,
+            "right": 1335,
+            "width": 155,
+            "height": 50
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "复制单据编号",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 231.5,
+            "bottom": 275.5,
+            "left": 811.0625,
+            "right": 855.0625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 211.5,
+            "bottom": 259.5,
+            "left": 1287,
+            "right": 1335,
+            "width": 48,
+            "height": 48
+          },
+          {
+            "name": "复制 ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 741.5,
+            "bottom": 785.5,
+            "left": 827.90625,
+            "right": 871.90625,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1068,
+            "right": 1172,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "name": "打开出库单",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1180,
+            "right": 1335,
+            "width": 155,
+            "height": 50
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1068,
+            "right": 1172,
+            "width": 104,
+            "height": 50
+          },
+          {
+            "top": 826.5,
+            "bottom": 876.5,
+            "left": 1180,
+            "right": 1335,
+            "width": 155,
+            "height": 50
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "footerTop": 809.5,
+          "footerBottom": 892.5
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    },
+    {
+      "name": "zh-CN-dark-800",
+      "status": "PASS",
+      "language": "zh-CN",
+      "theme": "dark",
+      "width": 800,
+      "height": 1280,
+      "geometry": {
+        "dialog": {
+          "top": 16,
+          "bottom": 1264,
+          "left": 45,
+          "right": 755,
+          "width": 710,
+          "height": 1248
+        },
+        "body": {
+          "top": 258,
+          "bottom": 1158,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 900
+        },
+        "footer": {
+          "top": 1158,
+          "bottom": 1263,
+          "left": 46,
+          "right": 754,
+          "width": 708,
+          "height": 105
+        },
+        "padding": {
+          "top": "24px",
+          "bottom": "24px",
+          "left": "24px",
+          "right": "24px"
+        },
+        "controls": [
+          {
+            "name": "复制单据编号",
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "复制 ID",
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "打开出库单",
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "allButtons": [
+          {
+            "name": "复制单据编号",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 90,
+            "bottom": 134,
+            "left": 378.703125,
+            "right": 422.703125,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--ghost hn-global-modal__close",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 53,
+            "bottom": 105,
+            "left": 666,
+            "right": 718,
+            "width": 52,
+            "height": 52
+          },
+          {
+            "name": "复制 ID",
+            "className": "ov-copy-button",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": false,
+            "top": 1170,
+            "bottom": 1214,
+            "left": 425.859375,
+            "right": 469.859375,
+            "width": 44,
+            "height": 44
+          },
+          {
+            "name": "关闭",
+            "className": "hn-button hn-button--secondary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "name": "打开出库单",
+            "className": "hn-button hn-button--primary ",
+            "inactive": false,
+            "display": "flex",
+            "visibility": "visible",
+            "withinViewport": true,
+            "hitTest": true,
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ],
+        "footerButtons": [
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 70,
+            "right": 311.5,
+            "width": 241.5,
+            "height": 56
+          },
+          {
+            "top": 1183,
+            "bottom": 1239,
+            "left": 327.5,
+            "right": 730,
+            "width": 402.5,
+            "height": 56
+          }
+        ]
+      },
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 49,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 98,
+          "footerTop": 1158,
+          "footerBottom": 1263
+        }
+      ],
+      "copyCode": true,
+      "copyID": true,
+      "escFocus": true,
+      "closeFocus": true,
+      "exactCTA": true
+    }
+  ],
+  "errors": [],
+  "classification": "Actual normal app MOCK; scoped modal regression, not visual acceptance"
+}

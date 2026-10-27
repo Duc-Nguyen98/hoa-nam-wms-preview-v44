@@ -1,0 +1,27 @@
+{
+  "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+  "srcTree": "c8046fc38e251eeda1964da55531462b137c0554",
+  "sourceStatus": "",
+  "custody": [
+    {
+      "file": "src/features/S01/overview.css",
+      "sha256": "8102fca834c13f554d8f42a8936c131608b192240f4c617b5183354a3d943350"
+    },
+    {
+      "file": "src/shared/tokens.css",
+      "sha256": "83bf75869da63c9ac072fec01afd6631a6a8c1b51bbce420bc68c19e69a864ef"
+    },
+    {
+      "file": "docs/quality/uiux-task-HN-S01-004/functional/shared-accessibility-browser.mjs",
+      "sha256": "9e3972256e96c677a4e1c171024dee69d08b592ee90eb8e158d06f8ee462a297"
+    }
+  ],
+  "checks": [
+    {
+      "failure": "TimeoutError: locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#s07-username')\u001b[22m\n",
+      "stack": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#s07-username')\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\shared-accessibility-browser.mjs:7:77"
+    }
+  ],
+  "errors": [],
+  "classification": "MOCK, measured samples not full WCAG certification"
+}

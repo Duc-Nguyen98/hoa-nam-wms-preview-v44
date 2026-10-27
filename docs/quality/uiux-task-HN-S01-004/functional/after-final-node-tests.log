@@ -1,0 +1,37 @@
+✔ independent source arithmetic reconciles16 identities,16 chart total,5 pending with3 visible (12.498ms)
+✔ unknown stock and current warranty survive period with no documents (0.6512ms)
+✔ date policy includes exactly90day lower boundary, rejects91days/future/reversed with Vietnam day (2.0413ms)
+✔ existing MOCK account rejects S01 without session or confirmation; expiry invalidates read (338.0409ms)
+✔ all six notification links resolve only their exact source record (13.1356ms)
+✔ known persisted legacy links resolve exact records without mutating read state (1.4391ms)
+✔ notification refuses mismatched, malformed or unverified target identity (0.9347ms)
+✔ malformed notification queries fail closed and source lookup checks every identity dimension (0.9377ms)
+✔ other notifications retain supported list and overview document routes (1.0888ms)
+✔ business notification feed is persisted per actor and read commands are idempotent (169.8859ms)
+✔ notification badge hides zero and caps high counts (0.4074ms)
+✔ selection and refreshing never mark a notification read (11.696ms)
+✔ read/unread commands commit, replay safely, persist and stay actor-scoped (34.77ms)
+✔ failed mutation preserves confirmed state and reports failure (5.4146ms)
+✔ generic repository stays empty without an explicit Preview seed (0.725ms)
+✔ approved Preview seed has six localized records, two unread and supported screen targets (15.2752ms)
+✔ old in-flight response cannot populate another account (8.2093ms)
+✔ isolated four-row overview pages cover every result once and preserve period totals (15.8749ms)
+✔ overview source rows expose declared units and preserve inbound/outbound identity (0.8593ms)
+✔ attention uses the accepted period, never the activity search/filter/page (6.9289ms)
+✔ exact snapshot selection rejects stale, missing, ambiguous and pending rows (5.5229ms)
+✔ attention items remain selectable even when absent from the current table page (1.4598ms)
+✔ all S01 literal UI copy has EN and ZH translations without touching source data (2.4253ms)
+✔ all 16 S01 documents link to their exact source, type, lines and quantities (32.3655ms)
+✔ source reader rejects wrong source/version/type and never falls back to a matching number (0.9314ms)
+✔ links require the accepted row identity and snapshot, not just a present target (1.0125ms)
+✔ route parsing decodes once, rejects incomplete/duplicate/foreign params and keeps list routes intact (3.6343ms)
+✔ normal S01 uses locked paging and rejects the isolated four-row size (9.8639ms)
+✔ isolated page four changes only paging and retains source counts, unknown and PX-0007 CTA (6.4263ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2620.7609

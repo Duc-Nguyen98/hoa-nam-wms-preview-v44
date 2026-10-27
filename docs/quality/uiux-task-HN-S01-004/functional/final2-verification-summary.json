@@ -1,0 +1,611 @@
+{
+  "candidate": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "srcTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+  "classification": "MOCK; syntheticstates explicitly QA_SYNTHETIC; REAL_API NOT_RUN",
+  "nodeTests": {
+    "total": 34,
+    "pass": 34,
+    "fail": 0,
+    "artifact": "final2-node-tests.log"
+  },
+  "browser": {
+    "uniqueSteps": 29,
+    "pass": 29,
+    "initialPass": 25,
+    "initialFail": 4,
+    "recoverySteps": 6,
+    "recoveryErrors": [],
+    "initialRawErrors": [
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED",
+      "Failed to load resource: net::ERR_NETWORK_CHANGED"
+    ],
+    "steps": [
+      {
+        "name": "fresh unauthenticated deep link is gated",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "fresh unauthenticated deep link is gated",
+            "status": "PASS"
+          },
+          {
+            "artifact": "final2-targeted-recovery/results.json",
+            "name": "fresh unauthenticated deep link is gated",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "normal configured MOCK auth and warehouse confirmation",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "normal configured MOCK auth and warehouse confirmation",
+            "status": "PASS"
+          },
+          {
+            "artifact": "final2-targeted-recovery/results.json",
+            "name": "normal configured MOCK auth and warehouse confirmation",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "actual September warehouse KPI consistency and pending distinction",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "actual September warehouse KPI consistency and pending distinction",
+            "status": "PASS",
+            "data": {
+              "metrics": [
+                "Tồn kho hiện tại—Chưa có số liệu xác nhậnHiện tại",
+                "Phiếu nhập8phiếuTất cả trạng tháiTrong kỳ",
+                "Phiếu xuất8phiếuTất cả trạng tháiTrong kỳ",
+                "Bảo hành đang mở4hồ sơKhông áp dụng kỳ chứng từHiện tại"
+              ],
+              "period": "tháng 9 năm 2026",
+              "pendingTotal": 5,
+              "pendingVisible": 3,
+              "rows": [
+                "PX-0011",
+                "PN-0011",
+                "PX-0010",
+                "PN-0010",
+                "PX-0009",
+                "PN-0009",
+                "PX-0008",
+                "PN-0008",
+                "PX-0007",
+                "PN-0007"
+              ]
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "normal production locked default10 and options",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "normal production locked default10 and options",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "normal period selection reapplies full September",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "normal period selection reapplies full September",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "type status filters and independent KPI attention scope",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "type status filters and independent KPI attention scope",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "folded actor search, exact identity search, no result, reset",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "folded actor search, exact identity search, no result, reset",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "sort pagination full dataset identity no duplicates",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "sort pagination full dataset identity no duplicates",
+            "status": "PASS",
+            "data": {
+              "first": [
+                "PX-0011",
+                "PN-0011",
+                "PX-0010",
+                "PN-0010",
+                "PX-0009",
+                "PN-0009",
+                "PX-0008",
+                "PN-0008",
+                "PX-0007",
+                "PN-0007"
+              ],
+              "second": [
+                "PX-0006",
+                "PN-0006",
+                "PN-0005",
+                "PX-0004",
+                "PN-0004",
+                "PX-0003"
+              ]
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "PX0007 exact fields copy ID and code keyboard focus restoration",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "PX0007 exact fields copy ID and code keyboard focus restoration",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "PX0007 CTA deep link exact snapshot identity and invalid target reject",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "PX0007 CTA deep link exact snapshot identity and invalid target reject",
+            "status": "PASS",
+            "data": {
+              "url": "http://127.0.0.1:5272/#/preview/S15?source=overview&documentId=p12-stock-PX-0007&snapshotId=scanner%3Ac3f14f742003c717aae933c44c010ccd5761fb8c%3Ap12-data-r02"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "empty day preserves current warranty and unknown stock",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "empty day preserves current warranty and unknown stock",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "DatePicker future and beyond90 rejected with accepted model preserved",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "DatePicker future and beyond90 rejected with accepted model preserved",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "real app vi/light desktop tablet modal viewport keyboard",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "real app vi/light desktop tablet modal viewport keyboard",
+            "status": "PASS",
+            "data": {
+              "language": "vi",
+              "theme": "light"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "real app vi/dark desktop tablet modal viewport keyboard",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "real app vi/dark desktop tablet modal viewport keyboard",
+            "status": "PASS",
+            "data": {
+              "language": "vi",
+              "theme": "dark"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "real app en/light desktop tablet modal viewport keyboard",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "real app en/light desktop tablet modal viewport keyboard",
+            "status": "PASS",
+            "data": {
+              "language": "en",
+              "theme": "light"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "real app en/dark desktop tablet modal viewport keyboard",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "real app en/dark desktop tablet modal viewport keyboard",
+            "status": "PASS",
+            "data": {
+              "language": "en",
+              "theme": "dark"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "real app zh-CN/light desktop tablet modal viewport keyboard",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "real app zh-CN/light desktop tablet modal viewport keyboard",
+            "status": "FAIL",
+            "error": "Error: page.reload: net::ERR_NETWORK_CHANGED\nCall log:\n\u001b[2m  - waiting for navigation until \"domcontentloaded\"\u001b[22m\n",
+            "stack": "page.reload: net::ERR_NETWORK_CHANGED\nCall log:\n\u001b[2m  - waiting for navigation until \"domcontentloaded\"\u001b[22m\n\n    at overview (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:19:76)\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:36:343\n    at async step (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:18:349)\n    at async file:///E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs:36:79"
+          },
+          {
+            "artifact": "final2-targeted-recovery/results.json",
+            "name": "real app zh-CN/light desktop tablet modal viewport keyboard",
+            "status": "PASS",
+            "data": {
+              "language": "zh-CN",
+              "theme": "light"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "real app zh-CN/dark desktop tablet modal viewport keyboard",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "real app zh-CN/dark desktop tablet modal viewport keyboard",
+            "status": "FAIL",
+            "error": "Error: page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+            "stack": "page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:36:182\n    at step (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:18:355)\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:36:85"
+          },
+          {
+            "artifact": "final2-targeted-recovery/results.json",
+            "name": "real app zh-CN/dark desktop tablet modal viewport keyboard",
+            "status": "PASS",
+            "data": {
+              "language": "zh-CN",
+              "theme": "dark"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "browser offline loaded MOCK filtering has local data no real API claim",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "browser offline loaded MOCK filtering has local data no real API claim",
+            "status": "PASS",
+            "data": {
+              "classification": "MOCK browser-local adapter, offline retained model"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness loading",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness loading",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness error",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness error",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness empty",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness empty",
+            "status": "FAIL",
+            "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n",
+            "stack": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:39:902\n    at async step (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:18:349)\n    at async file:///E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs:39:97"
+          },
+          {
+            "artifact": "final2-targeted-recovery/results.json",
+            "name": "independent isolated harness empty",
+            "status": "PASS"
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness long",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness long",
+            "status": "FAIL",
+            "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n",
+            "stack": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.ov-result-count') to be visible\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:39:902\n    at async step (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\functional\\functional-browser.mjs:18:349)\n    at async file:///E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S01-004/functional/functional-browser.mjs:39:97"
+          },
+          {
+            "artifact": "final2-targeted-recovery/results.json",
+            "name": "independent isolated harness long",
+            "status": "PASS",
+            "data": {
+              "classification": "QA_SYNTHETIC independent isolated harness",
+              "scroll": [
+                {
+                  "fraction": 0,
+                  "top": 0,
+                  "height": 900,
+                  "total": 1682
+                },
+                {
+                  "fraction": 0.5,
+                  "top": 391,
+                  "height": 900,
+                  "total": 1682
+                },
+                {
+                  "fraction": 1,
+                  "top": 782,
+                  "height": 900,
+                  "total": 1682
+                }
+              ]
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness missing",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness missing",
+            "status": "PASS",
+            "data": {
+              "classification": "QA_SYNTHETIC independent isolated harness",
+              "scroll": [
+                {
+                  "fraction": 0,
+                  "top": 0,
+                  "height": 900,
+                  "total": 1042
+                },
+                {
+                  "fraction": 0.5,
+                  "top": 71,
+                  "height": 900,
+                  "total": 1042
+                },
+                {
+                  "fraction": 1,
+                  "top": 142,
+                  "height": 900,
+                  "total": 1042
+                }
+              ]
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness session",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness session",
+            "status": "PASS",
+            "data": {
+              "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness forbidden",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness forbidden",
+            "status": "PASS",
+            "data": {
+              "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "independent isolated harness offline",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "independent isolated harness offline",
+            "status": "PASS",
+            "data": {
+              "classification": "QA_SYNTHETIC read failure rendering; not real auth/API"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "isolated QA3 explicit scenario counts and disabled guard without original source mutation",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "isolated QA3 explicit scenario counts and disabled guard without original source mutation",
+            "status": "PASS",
+            "data": {
+              "classification": "QA_SYNTHETIC explicit URLstate and snapshot; no original source claim",
+              "scenario": "reference-pending3",
+              "pending": 3,
+              "posted": 13,
+              "documents": 16,
+              "ctaDisabled": true
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      },
+      {
+        "name": "isolated reference4 preserves actual component source counts and PXidentity",
+        "attempts": [
+          {
+            "artifact": "final2-browser/results.json",
+            "name": "isolated reference4 preserves actual component source counts and PXidentity",
+            "status": "PASS",
+            "data": {
+              "classification": "MOCK same source reference-only paging4"
+            }
+          }
+        ],
+        "finalStatus": "PASS"
+      }
+    ]
+  },
+  "accessibility": {
+    "groups": 21,
+    "errors": [],
+    "targetMeasurements": 112,
+    "minTargetWidth": 44,
+    "minTargetHeight": 44,
+    "modalMeasurements": 20,
+    "minModalWidth": 44,
+    "minModalHeight": 44,
+    "contrast": [
+      {
+        "width": 1920,
+        "theme": "light",
+        "selector": ".ov-attention__count",
+        "text": "5",
+        "color": "rgb(164, 94, 9)",
+        "background": "rgb(255, 247, 232)",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "ratio": 4.714093336955889
+      },
+      {
+        "width": 800,
+        "theme": "light",
+        "selector": ".ov-attention__count",
+        "text": "5",
+        "color": "rgb(164, 94, 9)",
+        "background": "rgb(255, 247, 232)",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "ratio": 4.714093336955889
+      },
+      {
+        "width": 1920,
+        "theme": "dark",
+        "selector": ".ov-attention__count",
+        "text": "5",
+        "color": "rgb(240, 189, 114)",
+        "background": "rgb(73, 56, 32)",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "ratio": 6.53917171100108
+      },
+      {
+        "width": 800,
+        "theme": "dark",
+        "selector": ".ov-attention__count",
+        "text": "5",
+        "color": "rgb(240, 189, 114)",
+        "background": "rgb(73, 56, 32)",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "ratio": 6.53917171100108
+      }
+    ]
+  },
+  "at": "2026-10-27T10:52:08.009Z"
+}

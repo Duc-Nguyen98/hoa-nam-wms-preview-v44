@@ -1,0 +1,716 @@
+{
+  "candidate": "e18305b1e3b09c4402317d507d7008967284341b",
+  "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+  "testTreePath": "tests/s01",
+  "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+  "profiles": [
+    {
+      "phase": "e18305b-normal",
+      "scenario": "normal",
+      "environment": "LOCAL_REAL_APP_SOURCE_FIXTURE_MOCK",
+      "profile": {
+        "name": "desktop",
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "touch": false
+      },
+      "result": "CAPTURED",
+      "sourceStart": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:57:27.375Z"
+      },
+      "sourceEnd": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:58:01.353Z"
+      },
+      "sourceCustodyStable": true,
+      "consoleCount": 0,
+      "networkCount": 0,
+      "pageOverflow": false,
+      "pending": "5",
+      "metrics": [
+        "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "Phiếu nhập\n8\nphiếu\nTất cả trạng thái\nTrong kỳ",
+        "Phiếu xuất\n8\nphiếu\nTất cả trạng thái\nTrong kỳ",
+        "Bảo hành đang mở\n4\nhồ sơ\nKhông áp dụng kỳ chứng từ\nHiện tại"
+      ],
+      "pagination": "Hiển thị 1–10 trên 16 phiếu\nSố dòng mỗi trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2",
+      "pageSizeOptions": [
+        {
+          "value": "10",
+          "text": "10 / trang"
+        },
+        {
+          "value": "15",
+          "text": "15 / trang"
+        },
+        {
+          "value": "25",
+          "text": "25 / trang"
+        },
+        {
+          "value": "50",
+          "text": "50 / trang"
+        }
+      ],
+      "mobileTextOverlaps": [],
+      "dashboardSmallButtons": [],
+      "metricsBox": {
+        "x": 334,
+        "y": 189,
+        "width": 1524,
+        "height": 151,
+        "right": 1858,
+        "bottom": 340
+      },
+      "attentionBox": {
+        "x": 334,
+        "y": 356,
+        "width": 989.296875,
+        "height": 225,
+        "right": 1323.296875,
+        "bottom": 581
+      },
+      "quickBox": {
+        "x": 1337.296875,
+        "y": 356,
+        "width": 520.6875,
+        "height": 225,
+        "right": 1857.984375,
+        "bottom": 581
+      },
+      "activityBox": {
+        "x": 334,
+        "y": 597,
+        "width": 1524,
+        "height": 688,
+        "right": 1858,
+        "bottom": 1285
+      },
+      "idReachable": true,
+      "modalDiagnostics": {
+        "footerReachable": true,
+        "ctaDisabled": false,
+        "detailId": "p12-stock-PX-0007"
+      },
+      "modal": {
+        "x": 560,
+        "y": 186.5,
+        "width": 800,
+        "height": 707,
+        "right": 1360,
+        "bottom": 893.5
+      },
+      "modalBody": {
+        "x": 561,
+        "y": 300.5,
+        "width": 798,
+        "height": 509,
+        "right": 1359,
+        "bottom": 809.5
+      },
+      "modalFooter": {
+        "x": 561,
+        "y": 809.5,
+        "width": 798,
+        "height": 83,
+        "right": 1359,
+        "bottom": 892.5
+      },
+      "fieldPitch": 84,
+      "firstValueLocalX": 98,
+      "modalSmallButtons": []
+    },
+    {
+      "phase": "e18305b-normal",
+      "scenario": "normal",
+      "environment": "LOCAL_REAL_APP_SOURCE_FIXTURE_MOCK",
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "touch": true
+      },
+      "result": "CAPTURED",
+      "sourceStart": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:58:03.654Z"
+      },
+      "sourceEnd": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:58:39.881Z"
+      },
+      "sourceCustodyStable": true,
+      "consoleCount": 0,
+      "networkCount": 0,
+      "pageOverflow": false,
+      "pending": "5",
+      "metrics": [
+        "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "Phiếu nhập\n8\nphiếu\nTrong kỳ",
+        "Phiếu xuất\n8\nphiếu\nTrong kỳ",
+        "Bảo hành đang mở\n4\nhồ sơ\nHiện tại"
+      ],
+      "pagination": "Hiển thị 1–10 trên 16 phiếu\nSố dòng mỗi trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2",
+      "pageSizeOptions": [
+        {
+          "value": "10",
+          "text": "10 / trang"
+        },
+        {
+          "value": "15",
+          "text": "15 / trang"
+        },
+        {
+          "value": "25",
+          "text": "25 / trang"
+        },
+        {
+          "value": "50",
+          "text": "50 / trang"
+        }
+      ],
+      "mobileTextOverlaps": [],
+      "dashboardSmallButtons": [],
+      "metricsBox": {
+        "x": 46,
+        "y": 288.5,
+        "width": 708,
+        "height": 358,
+        "right": 754,
+        "bottom": 646.5
+      },
+      "attentionBox": {
+        "x": 46,
+        "y": 662.5,
+        "width": 708,
+        "height": 255,
+        "right": 754,
+        "bottom": 917.5
+      },
+      "quickBox": {
+        "x": 46,
+        "y": 931.5,
+        "width": 708,
+        "height": 128,
+        "right": 754,
+        "bottom": 1059.5
+      },
+      "activityBox": {
+        "x": 46,
+        "y": 1075.5,
+        "width": 708,
+        "height": 970.5,
+        "right": 754,
+        "bottom": 2046
+      },
+      "idReachable": true,
+      "modalDiagnostics": {
+        "footerReachable": true,
+        "ctaDisabled": false,
+        "detailId": "p12-stock-PX-0007"
+      },
+      "modal": {
+        "x": 45,
+        "y": 16,
+        "width": 710,
+        "height": 1248,
+        "right": 755,
+        "bottom": 1264
+      },
+      "modalBody": {
+        "x": 46,
+        "y": 258,
+        "width": 708,
+        "height": 900,
+        "right": 754,
+        "bottom": 1158
+      },
+      "modalFooter": {
+        "x": 46,
+        "y": 1158,
+        "width": 708,
+        "height": 105,
+        "right": 754,
+        "bottom": 1263
+      },
+      "fieldPitch": 111,
+      "firstValueLocalX": 139,
+      "modalSmallButtons": []
+    },
+    {
+      "phase": "e18305b-reference",
+      "scenario": "reference",
+      "environment": "ISOLATED_QA_REFERENCE_PAGE4_REAL_COMPONENT_SOURCE_FIXTURE",
+      "profile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "touch": false
+      },
+      "result": "CAPTURED",
+      "sourceStart": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:59:33.424Z"
+      },
+      "sourceEnd": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T11:00:03.863Z"
+      },
+      "sourceCustodyStable": true,
+      "consoleCount": 0,
+      "networkCount": 0,
+      "pageOverflow": false,
+      "pending": "5",
+      "metrics": [
+        "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "Phiếu nhập\n8\nphiếu\nTất cả trạng thái\nTrong kỳ",
+        "Phiếu xuất\n8\nphiếu\nTất cả trạng thái\nTrong kỳ",
+        "Bảo hành đang mở\n4\nhồ sơ\nKhông áp dụng kỳ chứng từ\nHiện tại"
+      ],
+      "pagination": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+      "pageSizeOptions": [
+        {
+          "value": "4",
+          "text": "4 / trang"
+        },
+        {
+          "value": "10",
+          "text": "10 / trang"
+        },
+        {
+          "value": "15",
+          "text": "15 / trang"
+        },
+        {
+          "value": "25",
+          "text": "25 / trang"
+        },
+        {
+          "value": "50",
+          "text": "50 / trang"
+        }
+      ],
+      "mobileTextOverlaps": [],
+      "dashboardSmallButtons": [],
+      "metricsBox": {
+        "x": 304,
+        "y": 189,
+        "width": 1336,
+        "height": 151,
+        "right": 1640,
+        "bottom": 340
+      },
+      "attentionBox": {
+        "x": 304,
+        "y": 356,
+        "width": 866.125,
+        "height": 225,
+        "right": 1170.125,
+        "bottom": 581
+      },
+      "quickBox": {
+        "x": 1184.125,
+        "y": 356,
+        "width": 455.859375,
+        "height": 225,
+        "right": 1639.984375,
+        "bottom": 581
+      },
+      "activityBox": {
+        "x": 304,
+        "y": 597,
+        "width": 1336,
+        "height": 418,
+        "right": 1640,
+        "bottom": 1015
+      },
+      "idReachable": true,
+      "modalDiagnostics": {
+        "footerReachable": true,
+        "ctaDisabled": false,
+        "detailId": "p12-stock-PX-0007"
+      },
+      "modal": {
+        "x": 436,
+        "y": 117,
+        "width": 800,
+        "height": 707,
+        "right": 1236,
+        "bottom": 824
+      },
+      "modalBody": {
+        "x": 437,
+        "y": 231,
+        "width": 798,
+        "height": 509,
+        "right": 1235,
+        "bottom": 740
+      },
+      "modalFooter": {
+        "x": 437,
+        "y": 740,
+        "width": 798,
+        "height": 83,
+        "right": 1235,
+        "bottom": 823
+      },
+      "fieldPitch": 84,
+      "firstValueLocalX": 98,
+      "modalSmallButtons": []
+    },
+    {
+      "phase": "e18305b-reference",
+      "scenario": "reference",
+      "environment": "ISOLATED_QA_REFERENCE_PAGE4_REAL_COMPONENT_SOURCE_FIXTURE",
+      "profile": {
+        "name": "tablet-modal-native",
+        "width": 793,
+        "height": 1983,
+        "dpr": 1,
+        "touch": true
+      },
+      "result": "CAPTURED",
+      "sourceStart": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T11:00:05.186Z"
+      },
+      "sourceEnd": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T11:00:36.262Z"
+      },
+      "sourceCustodyStable": true,
+      "consoleCount": 0,
+      "networkCount": 0,
+      "pageOverflow": false,
+      "pending": "5",
+      "metrics": [
+        "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "Phiếu nhập\n8\nphiếu\nTrong kỳ",
+        "Phiếu xuất\n8\nphiếu\nTrong kỳ",
+        "Bảo hành đang mở\n4\nhồ sơ\nHiện tại"
+      ],
+      "pagination": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+      "pageSizeOptions": [
+        {
+          "value": "4",
+          "text": "4 / trang"
+        },
+        {
+          "value": "10",
+          "text": "10 / trang"
+        },
+        {
+          "value": "15",
+          "text": "15 / trang"
+        },
+        {
+          "value": "25",
+          "text": "25 / trang"
+        },
+        {
+          "value": "50",
+          "text": "50 / trang"
+        }
+      ],
+      "mobileTextOverlaps": [],
+      "dashboardSmallButtons": [],
+      "metricsBox": {
+        "x": 46,
+        "y": 288.5,
+        "width": 701,
+        "height": 358,
+        "right": 747,
+        "bottom": 646.5
+      },
+      "attentionBox": {
+        "x": 46,
+        "y": 662.5,
+        "width": 701,
+        "height": 281,
+        "right": 747,
+        "bottom": 943.5
+      },
+      "quickBox": {
+        "x": 46,
+        "y": 957.5,
+        "width": 701,
+        "height": 128,
+        "right": 747,
+        "bottom": 1085.5
+      },
+      "activityBox": {
+        "x": 46,
+        "y": 1101.5,
+        "width": 701,
+        "height": 562.5,
+        "right": 747,
+        "bottom": 1664
+      },
+      "idReachable": true,
+      "modalDiagnostics": {
+        "footerReachable": true,
+        "ctaDisabled": false,
+        "detailId": "p12-stock-PX-0007"
+      },
+      "modal": {
+        "x": 41.5,
+        "y": 318.5,
+        "width": 710,
+        "height": 1346,
+        "right": 751.5,
+        "bottom": 1664.5
+      },
+      "modalBody": {
+        "x": 42.5,
+        "y": 560.5,
+        "width": 708,
+        "height": 998,
+        "right": 750.5,
+        "bottom": 1558.5
+      },
+      "modalFooter": {
+        "x": 42.5,
+        "y": 1558.5,
+        "width": 708,
+        "height": 105,
+        "right": 750.5,
+        "bottom": 1663.5
+      },
+      "fieldPitch": 111,
+      "firstValueLocalX": 139,
+      "modalSmallButtons": []
+    },
+    {
+      "phase": "e18305b-pending3",
+      "scenario": "reference-pending3",
+      "environment": "ISOLATED_QA_SYNTHETIC_PENDING3_PAGE4_REAL_COMPONENT",
+      "profile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "touch": false
+      },
+      "result": "CAPTURED",
+      "sourceStart": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T11:01:08.106Z"
+      },
+      "sourceEnd": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T11:01:36.886Z"
+      },
+      "sourceCustodyStable": true,
+      "consoleCount": 0,
+      "networkCount": 0,
+      "pageOverflow": false,
+      "pending": "3",
+      "metrics": [
+        "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "Phiếu nhập\n8\nphiếu\nTất cả trạng thái\nTrong kỳ",
+        "Phiếu xuất\n8\nphiếu\nTất cả trạng thái\nTrong kỳ",
+        "Bảo hành đang mở\n4\nhồ sơ\nKhông áp dụng kỳ chứng từ\nHiện tại"
+      ],
+      "pagination": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+      "pageSizeOptions": [
+        {
+          "value": "4",
+          "text": "4 / trang"
+        },
+        {
+          "value": "10",
+          "text": "10 / trang"
+        },
+        {
+          "value": "15",
+          "text": "15 / trang"
+        },
+        {
+          "value": "25",
+          "text": "25 / trang"
+        },
+        {
+          "value": "50",
+          "text": "50 / trang"
+        }
+      ],
+      "mobileTextOverlaps": [],
+      "dashboardSmallButtons": [],
+      "metricsBox": {
+        "x": 304,
+        "y": 189,
+        "width": 1336,
+        "height": 151,
+        "right": 1640,
+        "bottom": 340
+      },
+      "attentionBox": {
+        "x": 304,
+        "y": 356,
+        "width": 866.125,
+        "height": 225,
+        "right": 1170.125,
+        "bottom": 581
+      },
+      "quickBox": {
+        "x": 1184.125,
+        "y": 356,
+        "width": 455.859375,
+        "height": 225,
+        "right": 1639.984375,
+        "bottom": 581
+      },
+      "activityBox": {
+        "x": 304,
+        "y": 597,
+        "width": 1336,
+        "height": 418,
+        "right": 1640,
+        "bottom": 1015
+      },
+      "fieldPitch": null,
+      "firstValueLocalX": null
+    },
+    {
+      "phase": "e18305b-pending3",
+      "scenario": "reference-pending3",
+      "environment": "ISOLATED_QA_SYNTHETIC_PENDING3_PAGE4_REAL_COMPONENT",
+      "profile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1,
+        "touch": true
+      },
+      "result": "CAPTURED",
+      "sourceStart": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T11:01:37.880Z"
+      },
+      "sourceEnd": {
+        "head": "e18305b1e3b09c4402317d507d7008967284341b",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T11:02:04.871Z"
+      },
+      "sourceCustodyStable": true,
+      "consoleCount": 0,
+      "networkCount": 0,
+      "pageOverflow": false,
+      "pending": "3",
+      "metrics": [
+        "Tồn kho hiện tại\n—\nChưa có số liệu xác nhận\nHiện tại",
+        "Phiếu nhập\n8\nphiếu\nTrong kỳ",
+        "Phiếu xuất\n8\nphiếu\nTrong kỳ",
+        "Bảo hành đang mở\n4\nhồ sơ\nHiện tại"
+      ],
+      "pagination": "Hiển thị 1–4 trên 16 phiếu\nSố dòng mỗi trang\n4 / trang\n10 / trang\n15 / trang\n25 / trang\n50 / trang\n1\n2\n3\n4",
+      "pageSizeOptions": [
+        {
+          "value": "4",
+          "text": "4 / trang"
+        },
+        {
+          "value": "10",
+          "text": "10 / trang"
+        },
+        {
+          "value": "15",
+          "text": "15 / trang"
+        },
+        {
+          "value": "25",
+          "text": "25 / trang"
+        },
+        {
+          "value": "50",
+          "text": "50 / trang"
+        }
+      ],
+      "mobileTextOverlaps": [],
+      "dashboardSmallButtons": [],
+      "metricsBox": {
+        "x": 46,
+        "y": 288.5,
+        "width": 900,
+        "height": 310,
+        "right": 946,
+        "bottom": 598.5
+      },
+      "attentionBox": {
+        "x": 46,
+        "y": 614.5,
+        "width": 900,
+        "height": 255,
+        "right": 946,
+        "bottom": 869.5
+      },
+      "quickBox": {
+        "x": 46,
+        "y": 883.5,
+        "width": 900,
+        "height": 126,
+        "right": 946,
+        "bottom": 1009.5
+      },
+      "activityBox": {
+        "x": 46,
+        "y": 1025.5,
+        "width": 900,
+        "height": 533,
+        "right": 946,
+        "bottom": 1558.5
+      },
+      "fieldPitch": null,
+      "firstValueLocalX": null
+    }
+  ],
+  "coverage": {
+    "captures": 6,
+    "allCaptured": true,
+    "allSourceStable": true,
+    "consoleCount": 0,
+    "networkCount": 0,
+    "pageOverflowProfiles": [],
+    "textOverlapPairs": 0,
+    "allSourceIdsAndFootersReachable": true
+  }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "width": 1672,
+    "modalHeight": 723,
+    "footerHeight": 99,
+    "paddingBlock": "24px",
+    "paddingInline": "24px",
+    "buttons": [
+      {
+        "label": "Đóng",
+        "height": 50
+      },
+      {
+        "label": "Mở phiếu xuất kho",
+        "height": 50
+      }
+    ]
+  },
+  {
+    "width": 800,
+    "modalHeight": 1248,
+    "footerHeight": 105,
+    "paddingBlock": "24px",
+    "paddingInline": "24px",
+    "buttons": [
+      {
+        "label": "Đóng",
+        "height": 56
+      },
+      {
+        "label": "Mở phiếu xuất kho",
+        "height": 56
+      }
+    ]
+  }
+]

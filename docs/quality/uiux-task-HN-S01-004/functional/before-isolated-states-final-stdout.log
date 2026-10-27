@@ -1,0 +1,9 @@
+PASS independent isolated harness loading
+PASS independent isolated harness error
+PASS independent isolated harness empty
+PASS independent isolated harness long
+PASS independent isolated harness missing
+PASS independent isolated harness session
+PASS independent isolated harness forbidden
+PASS independent isolated harness offline
+{"pass":8,"fail":0,"errors":[]}

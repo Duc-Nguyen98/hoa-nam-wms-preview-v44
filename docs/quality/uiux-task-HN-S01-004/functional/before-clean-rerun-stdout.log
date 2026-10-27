@@ -1,0 +1,38 @@
+PASS fresh unauthenticated deep link is gated
+PASS normal configured MOCK auth and warehouse confirmation
+PASS actual September warehouse KPI consistency and pending distinction
+PASS normal period selection reapplies full September
+PASS type status filters and independent KPI attention scope
+PASS folded actor search, exact identity search, no result, reset
+PASS sort pagination full dataset identity no duplicates
+PASS PX0007 exact fields copy ID and code keyboard focus restoration
+PASS PX0007 CTA deep link exact snapshot identity and invalid target reject
+PASS empty day preserves current warranty and unknown stock
+PASS DatePicker future and beyond90 rejected with accepted model preserved
+PASS browser offline loaded MOCK refresh has local data no real API claim
+FAIL existing isolated harness loading expect(locator).toBeVisible() failed
+
+Locator: locator('[data-state="loading"]')
+Expected: visible
+Error: strict mode violation: locator('[data-state="loading"]') resolved to 2 elements:
+    1) <section role="status" aria-busy="true" aria-live="polite" data-state="loading" class="hn-page-state hn-page-state--loading hn-page-state--neutral ">…</section> aka getByLabel('Tất cả').locator('section')
+    2) <section role="status" aria-busy="true" aria-live="polite" data-state="loading" class="hn-page-state hn-page-state--loading hn-page-state--neutral ">…</section> aka getByRole('status')
+
+Call log:
+  - Expect "toBeVisible" locator('[data-state="loading"]') with timeout 5000ms
+  - waiting for locator('[data-state="loading"]')
+
+PASS existing isolated harness error
+FAIL existing isolated harness empty locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.ov-result-count') to be visible[22m
+
+FAIL existing isolated harness long locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.ov-result-count') to be visible[22m
+
+FAIL existing isolated harness missing locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('.ov-result-count') to be visible[22m
+
+{"pass":13,"fail":4,"errors":[]}

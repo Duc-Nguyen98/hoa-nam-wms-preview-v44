@@ -1,0 +1,225 @@
+{
+  "purpose": "Diagnostic only; source DPR/viewport and exact visual tolerance unknown. Isotropic width alignment; no full-frame PASS. Shell/header/sidebar excluded by crop.",
+  "cases": [
+    {
+      "name": "dashboard-desktop",
+      "reference": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\references\\3.png",
+      "actual": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\final-pending3\\desktop-native-dashboard-full.png",
+      "source": {
+        "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "sourceTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:47:46.918Z"
+      },
+      "scenario": "reference-pending3",
+      "environment": "ISOLATED_QA_SYNTHETIC_PENDING3_PAGE4_REAL_COMPONENT",
+      "referenceCropRaster": [
+        304,
+        80,
+        1640,
+        933
+      ],
+      "actualCropRaster": [
+        304,
+        82,
+        1640,
+        1015
+      ],
+      "actualProfile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "touch": false
+      },
+      "transform": {
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "translation": "top-left crop aligned",
+        "interpolation": "Lanczos",
+        "padding": "#f5def5 indicates unmatched vertical extent"
+      },
+      "referenceSize": [
+        1336,
+        853
+      ],
+      "actualCropSize": [
+        1336,
+        933
+      ],
+      "alignedActualSize": [
+        1336,
+        933
+      ],
+      "maeRGB0to255DiagnosticOnly": 11.679228092582253,
+      "verdict": "BLOCKED_EXACT_ACCEPTANCE",
+      "manualReferenceAnchorUncertaintyRasterPx": 2
+    },
+    {
+      "name": "dashboard-tablet",
+      "reference": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\references\\4.png",
+      "actual": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\final-pending3\\tablet-native-dashboard-full.png",
+      "source": {
+        "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "sourceTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:48:25.691Z"
+      },
+      "scenario": "reference-pending3",
+      "environment": "ISOLATED_QA_SYNTHETIC_PENDING3_PAGE4_REAL_COMPONENT",
+      "referenceCropRaster": [
+        46,
+        289,
+        947,
+        1536
+      ],
+      "actualCropRaster": [
+        46,
+        288.5,
+        946,
+        1558.5
+      ],
+      "actualProfile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1,
+        "touch": true
+      },
+      "transform": {
+        "scaleX": 1.001111111111111,
+        "scaleY": 1.001111111111111,
+        "translation": "top-left crop aligned",
+        "interpolation": "Lanczos",
+        "padding": "#f5def5 indicates unmatched vertical extent"
+      },
+      "referenceSize": [
+        901,
+        1247
+      ],
+      "actualCropSize": [
+        900,
+        1270
+      ],
+      "alignedActualSize": [
+        901,
+        1271
+      ],
+      "maeRGB0to255DiagnosticOnly": 12.233282191043958,
+      "verdict": "BLOCKED_EXACT_ACCEPTANCE",
+      "manualReferenceAnchorUncertaintyRasterPx": 2
+    },
+    {
+      "name": "px0007-desktop",
+      "reference": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\references\\5.png",
+      "actual": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\final-reference\\desktop-native-px0007.png",
+      "source": {
+        "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "sourceTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:44:18.911Z"
+      },
+      "scenario": "reference",
+      "environment": "ISOLATED_QA_REFERENCE_PAGE4_REAL_COMPONENT_SOURCE_FIXTURE",
+      "referenceCropRaster": [
+        484,
+        166,
+        1279,
+        864
+      ],
+      "actualCropRaster": [
+        436,
+        109,
+        1236,
+        832
+      ],
+      "actualProfile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "touch": false
+      },
+      "transform": {
+        "scaleX": 0.99375,
+        "scaleY": 0.99375,
+        "translation": "top-left crop aligned",
+        "interpolation": "Lanczos",
+        "padding": "#f5def5 indicates unmatched vertical extent"
+      },
+      "referenceSize": [
+        795,
+        698
+      ],
+      "actualCropSize": [
+        800,
+        723
+      ],
+      "alignedActualSize": [
+        795,
+        718
+      ],
+      "maeRGB0to255DiagnosticOnly": 9.972220178343056,
+      "verdict": "BLOCKED_EXACT_ACCEPTANCE",
+      "manualReferenceAnchorUncertaintyRasterPx": 2
+    },
+    {
+      "name": "px0007-tablet",
+      "reference": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\references\\6.png",
+      "actual": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\final-reference\\tablet-modal-native-px0007.png",
+      "source": {
+        "head": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "sourceTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+        "testTree": "6155c0a2cea64a5df6c52e08fc46681e92f3328e",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:45:46.412Z"
+      },
+      "scenario": "reference",
+      "environment": "ISOLATED_QA_REFERENCE_PAGE4_REAL_COMPONENT_SOURCE_FIXTURE",
+      "referenceCropRaster": [
+        43,
+        524,
+        751,
+        1855
+      ],
+      "actualCropRaster": [
+        41.5,
+        318.5,
+        751.5,
+        1664.5
+      ],
+      "actualProfile": {
+        "name": "tablet-modal-native",
+        "width": 793,
+        "height": 1983,
+        "dpr": 1,
+        "touch": true
+      },
+      "transform": {
+        "scaleX": 0.9971830985915493,
+        "scaleY": 0.9971830985915493,
+        "translation": "top-left crop aligned",
+        "interpolation": "Lanczos",
+        "padding": "#f5def5 indicates unmatched vertical extent"
+      },
+      "referenceSize": [
+        708,
+        1331
+      ],
+      "actualCropSize": [
+        710,
+        1346
+      ],
+      "alignedActualSize": [
+        708,
+        1342
+      ],
+      "maeRGB0to255DiagnosticOnly": 13.26711333956402,
+      "verdict": "BLOCKED_EXACT_ACCEPTANCE",
+      "manualReferenceAnchorUncertaintyRasterPx": 2
+    }
+  ]
+}

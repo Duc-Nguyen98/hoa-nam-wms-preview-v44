@@ -1,0 +1,174 @@
+{
+  "dialog": {
+    "top": 186.5,
+    "bottom": 893.5,
+    "left": 560,
+    "right": 1360,
+    "width": 800,
+    "height": 707
+  },
+  "body": {
+    "top": 300.5,
+    "bottom": 809.5,
+    "left": 561,
+    "right": 1359,
+    "width": 798,
+    "height": 509
+  },
+  "footer": {
+    "top": 809.5,
+    "bottom": 892.5,
+    "left": 561,
+    "right": 1359,
+    "width": 798,
+    "height": 83
+  },
+  "padding": {
+    "top": "16px",
+    "bottom": "16px",
+    "left": "24px",
+    "right": "24px"
+  },
+  "controls": [
+    {
+      "name": "Sao chép mã phiếu",
+      "top": 231.5,
+      "bottom": 275.5,
+      "left": 811.0625,
+      "right": 855.0625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Đóng",
+      "top": 211.5,
+      "bottom": 259.5,
+      "left": 1287,
+      "right": 1335,
+      "width": 48,
+      "height": 48
+    },
+    {
+      "name": "Sao chép ID",
+      "top": 741.5,
+      "bottom": 785.5,
+      "left": 827.90625,
+      "right": 871.90625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Đóng",
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1009.609375,
+      "right": 1113.609375,
+      "width": 104,
+      "height": 50
+    },
+    {
+      "name": "Mở phiếu xuất kho",
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1121.609375,
+      "right": 1335,
+      "width": 213.390625,
+      "height": 50
+    }
+  ],
+  "allButtons": [
+    {
+      "name": "Sao chép mã phiếu",
+      "className": "ov-copy-button",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 231.5,
+      "bottom": 275.5,
+      "left": 811.0625,
+      "right": 855.0625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Đóng",
+      "className": "hn-button hn-button--ghost hn-global-modal__close",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 211.5,
+      "bottom": 259.5,
+      "left": 1287,
+      "right": 1335,
+      "width": 48,
+      "height": 48
+    },
+    {
+      "name": "Sao chép ID",
+      "className": "ov-copy-button",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 741.5,
+      "bottom": 785.5,
+      "left": 827.90625,
+      "right": 871.90625,
+      "width": 44,
+      "height": 44
+    },
+    {
+      "name": "Đóng",
+      "className": "hn-button hn-button--secondary ",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1009.609375,
+      "right": 1113.609375,
+      "width": 104,
+      "height": 50
+    },
+    {
+      "name": "Mở phiếu xuất kho",
+      "className": "hn-button hn-button--primary ",
+      "inactive": false,
+      "display": "flex",
+      "visibility": "visible",
+      "withinViewport": true,
+      "hitTest": true,
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1121.609375,
+      "right": 1335,
+      "width": 213.390625,
+      "height": 50
+    }
+  ],
+  "footerButtons": [
+    {
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1009.609375,
+      "right": 1113.609375,
+      "width": 104,
+      "height": 50
+    },
+    {
+      "top": 826.5,
+      "bottom": 876.5,
+      "left": 1121.609375,
+      "right": 1335,
+      "width": 213.390625,
+      "height": 50
+    }
+  ]
+}

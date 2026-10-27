@@ -1,0 +1,175 @@
+{
+  "phase": "before",
+  "results": [
+    {
+      "width": 800,
+      "rows": [
+        {
+          "number": "PX-0011",
+          "type": "Xuất kho",
+          "numberText": {
+            "top": 1333,
+            "bottom": 1357
+          },
+          "typeText": {
+            "top": 1350,
+            "bottom": 1367
+          },
+          "textGap": -7,
+          "button": {
+            "width": 145,
+            "height": 44
+          },
+          "meta": "Xuất kho\n27/09/2026 · 09:20\nLan Nguyễn\n7",
+          "status": "Đã ghi sổ",
+          "action": "Xem phiếu PX-0011"
+        },
+        {
+          "number": "PN-0011",
+          "type": "Nhập kho",
+          "numberText": {
+            "top": 1401,
+            "bottom": 1425
+          },
+          "typeText": {
+            "top": 1418,
+            "bottom": 1435
+          },
+          "textGap": -7,
+          "button": {
+            "width": 145,
+            "height": 44
+          },
+          "meta": "Nhập kho\n26/09/2026 · 09:20\nLan Nguyễn\n2",
+          "status": "Đã ghi sổ",
+          "action": "Xem phiếu PN-0011"
+        },
+        {
+          "number": "PX-0010",
+          "type": "Xuất kho",
+          "numberText": {
+            "top": 1469,
+            "bottom": 1493
+          },
+          "typeText": {
+            "top": 1486,
+            "bottom": 1503
+          },
+          "textGap": -7,
+          "button": {
+            "width": 145,
+            "height": 44
+          },
+          "meta": "Xuất kho\n25/09/2026 · 14:35\nLan Nguyễn\n8",
+          "status": "Chờ xử lý",
+          "action": "Xem phiếu PX-0010"
+        },
+        {
+          "number": "PN-0010",
+          "type": "Nhập kho",
+          "numberText": {
+            "top": 1537,
+            "bottom": 1561
+          },
+          "typeText": {
+            "top": 1554,
+            "bottom": 1571
+          },
+          "textGap": -7,
+          "button": {
+            "width": 145,
+            "height": 44
+          },
+          "meta": "Nhập kho\n24/09/2026 · 09:20\nMinh Anh\n15",
+          "status": "Đã ghi sổ",
+          "action": "Xem phiếu PN-0010"
+        }
+      ]
+    },
+    {
+      "width": 992,
+      "rows": [
+        {
+          "number": "PX-0011",
+          "type": "Xuất kho",
+          "numberText": {
+            "top": 1253.5,
+            "bottom": 1277.5
+          },
+          "typeText": {
+            "top": 1269.5,
+            "bottom": 1289.5
+          },
+          "textGap": -8,
+          "button": {
+            "width": 190,
+            "height": 44
+          },
+          "meta": "Xuất kho\n27/09/2026 · 09:20\nLan Nguyễn\n7",
+          "status": "Đã ghi sổ",
+          "action": "Xem phiếu PX-0011"
+        },
+        {
+          "number": "PN-0011",
+          "type": "Nhập kho",
+          "numberText": {
+            "top": 1321.5,
+            "bottom": 1345.5
+          },
+          "typeText": {
+            "top": 1337.5,
+            "bottom": 1357.5
+          },
+          "textGap": -8,
+          "button": {
+            "width": 190,
+            "height": 44
+          },
+          "meta": "Nhập kho\n26/09/2026 · 09:20\nLan Nguyễn\n2",
+          "status": "Đã ghi sổ",
+          "action": "Xem phiếu PN-0011"
+        },
+        {
+          "number": "PX-0010",
+          "type": "Xuất kho",
+          "numberText": {
+            "top": 1389.5,
+            "bottom": 1413.5
+          },
+          "typeText": {
+            "top": 1405.5,
+            "bottom": 1425.5
+          },
+          "textGap": -8,
+          "button": {
+            "width": 190,
+            "height": 44
+          },
+          "meta": "Xuất kho\n25/09/2026 · 14:35\nLan Nguyễn\n8",
+          "status": "Chờ xử lý",
+          "action": "Xem phiếu PX-0010"
+        },
+        {
+          "number": "PN-0010",
+          "type": "Nhập kho",
+          "numberText": {
+            "top": 1457.5,
+            "bottom": 1481.5
+          },
+          "typeText": {
+            "top": 1473.5,
+            "bottom": 1493.5
+          },
+          "textGap": -8,
+          "button": {
+            "width": 190,
+            "height": 44
+          },
+          "meta": "Nhập kho\n24/09/2026 · 09:20\nMinh Anh\n15",
+          "status": "Đã ghi sổ",
+          "action": "Xem phiếu PN-0010"
+        }
+      ]
+    }
+  ]
+}

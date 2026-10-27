@@ -1,0 +1,220 @@
+{
+  "phase": "after-normal",
+  "scenario": "normal",
+  "initial": {
+    "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+    "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+    "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+    "sourceStatus": "",
+    "utc": "2026-10-27T10:15:53.750Z"
+  },
+  "end": {
+    "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+    "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+    "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+    "sourceStatus": "",
+    "utc": "2026-10-27T10:16:05.777Z"
+  },
+  "results": [
+    {
+      "profile": {
+        "name": "desktop",
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "touch": false
+      },
+      "sourceStart": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:15:54.577Z"
+      },
+      "environment": "LOCAL_REAL_APP_SOURCE_FIXTURE_MOCK",
+      "scenario": "normal",
+      "base": "http://127.0.0.1:5271",
+      "errors": [],
+      "network": [
+        {
+          "url": "http://127.0.0.1:5271/",
+          "failure": {
+            "errorText": "net::ERR_CONNECTION_REFUSED"
+          }
+        }
+      ],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n",
+      "stack": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\capture-real-app.mjs:28:10",
+      "sourceEnd": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:15:55.487Z"
+      },
+      "sourceCustodyStable": true
+    },
+    {
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "touch": true
+      },
+      "sourceStart": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:15:56.433Z"
+      },
+      "environment": "LOCAL_REAL_APP_SOURCE_FIXTURE_MOCK",
+      "scenario": "normal",
+      "base": "http://127.0.0.1:5271",
+      "errors": [],
+      "network": [
+        {
+          "url": "http://127.0.0.1:5271/",
+          "failure": {
+            "errorText": "net::ERR_CONNECTION_REFUSED"
+          }
+        }
+      ],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n",
+      "stack": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\capture-real-app.mjs:28:10",
+      "sourceEnd": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:15:57.605Z"
+      },
+      "sourceCustodyStable": true
+    },
+    {
+      "profile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "touch": false
+      },
+      "sourceStart": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:15:58.392Z"
+      },
+      "environment": "LOCAL_REAL_APP_SOURCE_FIXTURE_MOCK",
+      "scenario": "normal",
+      "base": "http://127.0.0.1:5271",
+      "errors": [],
+      "network": [
+        {
+          "url": "http://127.0.0.1:5271/",
+          "failure": {
+            "errorText": "net::ERR_CONNECTION_REFUSED"
+          }
+        }
+      ],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n",
+      "stack": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\capture-real-app.mjs:28:10",
+      "sourceEnd": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:15:59.870Z"
+      },
+      "sourceCustodyStable": true
+    },
+    {
+      "profile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1,
+        "touch": true
+      },
+      "sourceStart": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:16:00.540Z"
+      },
+      "environment": "LOCAL_REAL_APP_SOURCE_FIXTURE_MOCK",
+      "scenario": "normal",
+      "base": "http://127.0.0.1:5271",
+      "errors": [],
+      "network": [
+        {
+          "url": "http://127.0.0.1:5271/",
+          "failure": {
+            "errorText": "net::ERR_CONNECTION_REFUSED"
+          }
+        }
+      ],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n",
+      "stack": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\capture-real-app.mjs:28:10",
+      "sourceEnd": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:16:01.230Z"
+      },
+      "sourceCustodyStable": true
+    },
+    {
+      "profile": {
+        "name": "tablet-modal-native",
+        "width": 793,
+        "height": 1983,
+        "dpr": 1,
+        "touch": true
+      },
+      "sourceStart": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:16:01.856Z"
+      },
+      "environment": "LOCAL_REAL_APP_SOURCE_FIXTURE_MOCK",
+      "scenario": "normal",
+      "base": "http://127.0.0.1:5271",
+      "errors": [],
+      "network": [
+        {
+          "url": "http://127.0.0.1:5271/",
+          "failure": {
+            "errorText": "net::ERR_CONNECTION_REFUSED"
+          }
+        }
+      ],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n",
+      "stack": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5271/#/preview/S07\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5271/#/preview/S07\", waiting until \"load\"\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S01-004\\visual\\capture-real-app.mjs:28:10",
+      "sourceEnd": {
+        "head": "60b76b91764644996d9c69c9c08833ed76036a89",
+        "sourceTree": "c8046fc38e251eeda1964da55531462b137c0554",
+        "testTree": "c15efb1db9d378e4b4fa9d70b9cac54dc152e340",
+        "sourceStatus": "",
+        "utc": "2026-10-27T10:16:02.690Z"
+      },
+      "sourceCustodyStable": true
+    }
+  ]
+}

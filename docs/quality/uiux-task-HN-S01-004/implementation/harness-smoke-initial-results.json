@@ -1,0 +1,20 @@
+[
+  {
+    "state": "empty",
+    "count": "0 phiếu trong kỳ",
+    "pageRows": 0,
+    "errors": []
+  },
+  {
+    "state": "long",
+    "count": "60 phiếu trong kỳ",
+    "pageRows": 10,
+    "errors": []
+  },
+  {
+    "state": "missing",
+    "count": "16 phiếu trong kỳ",
+    "pageRows": 10,
+    "errors": []
+  }
+]

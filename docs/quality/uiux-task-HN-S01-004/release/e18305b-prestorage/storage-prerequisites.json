@@ -1,0 +1,139 @@
+{
+  "observedAtUtc": "2026-10-27T10:58:54.5282599+00:00",
+  "head": "e18305b1e3b09c4402317d507d7008967284341b",
+  "srcTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+  "testsTree": "3a61cae4bffcbda3f9e614eaaa02a38e637f3e64",
+  "remoteRefs": [
+    "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09\trefs/heads/DEV",
+    "7304ef8d27b5d3d091bda681cc1afcb36048c318\trefs/heads/main"
+  ],
+  "branch": {
+    "ok": true,
+    "value": {
+      "name": "DEV",
+      "commit": {
+        "sha": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "node_id": "C_kwDOVXescNoAKGY1NmUyNWNmYzExOWY1YTc1OGYwY2Q0OGViZGM2YTk2ZTc4ZjhhMDk",
+        "commit": {
+          "author": {
+            "name": "Wuangg",
+            "email": "52225998+Duc-Nguyen98@users.noreply.github.com",
+            "date": "2026-10-27T10:38:34Z"
+          },
+          "committer": {
+            "name": "Wuangg",
+            "email": "52225998+Duc-Nguyen98@users.noreply.github.com",
+            "date": "2026-10-27T10:38:34Z"
+          },
+          "message": "fix(s01): enforce HTTP paging and isolate reference scenarios",
+          "tree": {
+            "sha": "28bc6d4c1ac5a917bde6014ae33cd82300d0c631",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/trees/28bc6d4c1ac5a917bde6014ae33cd82300d0c631"
+          },
+          "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/git/commits/f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null,
+            "verified_at": null
+          }
+        },
+        "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/commit/f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+        "comments_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09/comments",
+        "author": {
+          "login": "Duc-Nguyen98",
+          "id": 52225998,
+          "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Duc-Nguyen98",
+          "html_url": "https://github.com/Duc-Nguyen98",
+          "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+          "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+          "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+          "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+          "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "Duc-Nguyen98",
+          "id": 52225998,
+          "node_id": "MDQ6VXNlcjUyMjI1OTk4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Duc-Nguyen98",
+          "html_url": "https://github.com/Duc-Nguyen98",
+          "followers_url": "https://api.github.com/users/Duc-Nguyen98/followers",
+          "following_url": "https://api.github.com/users/Duc-Nguyen98/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Duc-Nguyen98/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Duc-Nguyen98/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Duc-Nguyen98/subscriptions",
+          "organizations_url": "https://api.github.com/users/Duc-Nguyen98/orgs",
+          "repos_url": "https://api.github.com/users/Duc-Nguyen98/repos",
+          "events_url": "https://api.github.com/users/Duc-Nguyen98/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Duc-Nguyen98/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "60b76b91764644996d9c69c9c08833ed76036a89",
+            "url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/commits/60b76b91764644996d9c69c9c08833ed76036a89",
+            "html_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/commit/60b76b91764644996d9c69c9c08833ed76036a89"
+          }
+        ]
+      },
+      "_links": {
+        "self": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV",
+        "html": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/tree/DEV"
+      },
+      "protected": false,
+      "protection": {
+        "enabled": false,
+        "required_status_checks": {
+          "enforcement_level": "off",
+          "contexts": [],
+          "checks": []
+        }
+      },
+      "protection_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/branches/DEV/protection"
+    },
+    "path": "/branches/DEV"
+  },
+  "rulesets": {
+    "ok": false,
+    "error": "The SSL connection could not be established, see inner exception.",
+    "path": "/rulesets"
+  },
+  "protection": {
+    "ok": false,
+    "error": "Response status code does not indicate success: 404 (Not Found).",
+    "path": "/branches/DEV/protection"
+  },
+  "sourceStatus": [],
+  "delta": [
+    "diff --git a/src/features/S01/overview.css b/src/features/S01/overview.css",
+    "index 9538f04..635ccb5 100644",
+    "--- a/src/features/S01/overview.css",
+    "+++ b/src/features/S01/overview.css",
+    "@@ -630,6 +630,7 @@ html[data-hn-theme='dark'] .hn-shell .ov-screen .ov-quick .ov-icon-tile { color:",
+    "  .hn-shell[data-shell-version][data-variant][data-layout] .ov-screen .ov-filters :is(input,select) { min-height:44px; height:44px; }",
+    "  .hn-shell .ov-screen .ov-filters .hn-basic-field { gap:2px; }",
+    "  .hn-global-modal.ov-detail-modal .ov-detail-field { column-gap:45px; }",
+    "+ .hn-global-modal.ov-detail-modal .hn-global-modal__footer { padding-block:16px; }",
+    " }",
+    " @media(min-width:561px) and (max-width:1100px){",
+    "  .hn-shell .ov-screen { transform:none; }"
+  ],
+  "ancestryExit": 0
+}

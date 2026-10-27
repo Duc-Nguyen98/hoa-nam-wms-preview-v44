@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const root=path.dirname(new URL(import.meta.url).pathname.replace(/^\/(\w:)/,'$1'));
+const phases=process.env.VQ_SUMMARY_PHASES?.split(',')??['final-normal','final-reference','final-pending3'];
+const summary={candidate:process.env.VQ_FINAL_CANDIDATE??'f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09',sourceTree:process.env.VQ_FINAL_SOURCE??'72189a9c0bdb2aff13a0294fd2b66929b157273e',testTreePath:'tests/s01',testTree:'6155c0a2cea64a5df6c52e08fc46681e92f3328e',profiles:[]};
+const pick=(m,s)=>m?.elements[s]?.[0];
+const rect=b=>b&&Object.fromEntries(['x','y','width','height','right','bottom'].map(k=>[k,b[k]]));
+for(const phase of phases){const doc=JSON.parse(await fs.readFile(path.join(root,phase,'capture-results.json'),'utf8'));for(const r of doc.results){
+ const modal=pick(r.modal,'dialog.ov-detail-modal');const fields=r.modal?.elements['.ov-detail-field'];
+ const row={phase,scenario:r.scenario,environment:r.environment,profile:r.profile,result:r.result,sourceStart:r.sourceStart,sourceEnd:r.sourceEnd,sourceCustodyStable:r.sourceCustodyStable,consoleCount:r.errors.length,networkCount:r.network.length,pageOverflow:r.dashboard.bodyWidth>r.profile.width,pending:r.dashboard.pending,metrics:r.dashboard.metrics,pagination:r.dashboard.pagination,pageSizeOptions:r.layoutDiagnostics.pageSizeOptions,mobileTextOverlaps:r.layoutDiagnostics.mobileTextOverlaps,dashboardSmallButtons:r.layoutDiagnostics.smallButtons,metricsBox:rect(pick(r.dashboard,'.ov-metrics')),attentionBox:rect(pick(r.dashboard,'.ov-attention')),quickBox:rect(pick(r.dashboard,'.ov-quick')),activityBox:rect(pick(r.dashboard,'.ov-activity')),idReachable:r.idReachable,modalDiagnostics:r.modalDiagnostics,modal:rect(modal),modalBody:rect(pick(r.modal,'.ov-detail-modal .hn-global-modal__body')),modalFooter:rect(pick(r.modal,'.ov-detail-modal .hn-global-modal__footer')),fieldPitch:fields?.length>1?fields[1].y-fields[0].y:null,firstValueLocalX:modal?r.modal.elements['.ov-detail-field dd'][0].x-modal.x:null,modalSmallButtons:r.modal?.buttons.filter(b=>b.box.width<44||b.box.height<44)};
+ summary.profiles.push(row);
+}}
+summary.coverage={captures:summary.profiles.length,allCaptured:summary.profiles.every(r=>r.result==='CAPTURED'),allSourceStable:summary.profiles.every(r=>r.sourceCustodyStable),consoleCount:summary.profiles.reduce((s,r)=>s+r.consoleCount,0),networkCount:summary.profiles.reduce((s,r)=>s+r.networkCount,0),pageOverflowProfiles:summary.profiles.filter(r=>r.pageOverflow).map(r=>r.phase+'/'+r.profile.name),textOverlapPairs:summary.profiles.reduce((s,r)=>s+r.mobileTextOverlaps.length,0),allSourceIdsAndFootersReachable:summary.profiles.filter(r=>r.modal).every(r=>r.idReachable&&r.modalDiagnostics.footerReachable)};
+await fs.writeFile(path.join(root,process.env.VQ_SUMMARY_NAME??'final-measurements.json'),JSON.stringify(summary,null,2));console.log(JSON.stringify(summary.coverage));

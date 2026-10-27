@@ -1,0 +1,542 @@
+{
+  "candidate": "f56e25cfc119f5a758f0cd48ebdc6a96e78f8a09",
+  "sourceTree": "72189a9c0bdb2aff13a0294fd2b66929b157273e",
+  "status": "EXECUTED_PREVIOUS_CANDIDATE_DO_NOT_OVERWRITE",
+  "files": [
+    {
+      "path": "final-normal/capture-results.json",
+      "bytes": 1964655,
+      "sha256": "4735aa36203eeffc6b996810a416941fe7f7a85d4c63f884626041d1698bcaa1"
+    },
+    {
+      "path": "final-normal/desktop-dashboard-full.png",
+      "bytes": 240213,
+      "sha256": "b388c5afc6e4b24e2a99c107733db214281572c82de1afe22b1c9c789bef7bef"
+    },
+    {
+      "path": "final-normal/desktop-dashboard.png",
+      "bytes": 211178,
+      "sha256": "55ef8919753741e405e42a254941eed0c3d418922a2b0d1c1cc3f9ef8e41248d"
+    },
+    {
+      "path": "final-normal/desktop-native-dashboard-full.png",
+      "bytes": 235695,
+      "sha256": "61732ac98efb51840483270b48a261acacc611374d6688f5b8aecbd9f721908b"
+    },
+    {
+      "path": "final-normal/desktop-native-dashboard.png",
+      "bytes": 183183,
+      "sha256": "d8ca63dbb3f2252a8fc219d6a071e63b34a8095606f85cb349f5cba31ceb49b5"
+    },
+    {
+      "path": "final-normal/desktop-native-px0007-modal.png",
+      "bytes": 50688,
+      "sha256": "a93782d2e4e48c3d420943246eeda985978f20082476cafe6d7a6f905b5d78fb"
+    },
+    {
+      "path": "final-normal/desktop-native-px0007-scrolled.png",
+      "bytes": 187361,
+      "sha256": "38210232dc44033531bb0d288b3bc00ee24a0436e050fbdf89582bf254e74da6"
+    },
+    {
+      "path": "final-normal/desktop-native-px0007.png",
+      "bytes": 187361,
+      "sha256": "38210232dc44033531bb0d288b3bc00ee24a0436e050fbdf89582bf254e74da6"
+    },
+    {
+      "path": "final-normal/desktop-native-trace.zip",
+      "bytes": 6245355,
+      "sha256": "29a002a2a6b98038bb6269aade55328aa6b9665f07a2f538fa18b048d50e717c"
+    },
+    {
+      "path": "final-normal/desktop-px0007-modal.png",
+      "bytes": 50749,
+      "sha256": "bf9e412bd7878d4568edeeff949bcfe37dbafac05165e3e35686ac8607720518"
+    },
+    {
+      "path": "final-normal/desktop-px0007-scrolled.png",
+      "bytes": 220671,
+      "sha256": "729aae168e3388d72685b6b3eb36a006b04e5e5821fbcfd84d7baae349213120"
+    },
+    {
+      "path": "final-normal/desktop-px0007.png",
+      "bytes": 220671,
+      "sha256": "729aae168e3388d72685b6b3eb36a006b04e5e5821fbcfd84d7baae349213120"
+    },
+    {
+      "path": "final-normal/desktop-trace.zip",
+      "bytes": 5859851,
+      "sha256": "f060d0a8fd52f38836b9364ee90a08217b5889a38028ef8177807d47db6f9f7e"
+    },
+    {
+      "path": "final-normal/tablet-dashboard-full.png",
+      "bytes": 532544,
+      "sha256": "b6c91a8d872d2fda34b9132ec092c2bff295935413b0de635bc87580da9e00fc"
+    },
+    {
+      "path": "final-normal/tablet-dashboard.png",
+      "bytes": 274351,
+      "sha256": "4c718b616f9a41aad3d817fb1c748057737a69b4c490f915b9f99755b409e7fc"
+    },
+    {
+      "path": "final-normal/tablet-modal-native-dashboard-full.png",
+      "bytes": 239355,
+      "sha256": "0fb1aa9f94283544f3a27476a098364e8dc32ecf6f0aef78b4f55856fcdbfa77"
+    },
+    {
+      "path": "final-normal/tablet-modal-native-dashboard.png",
+      "bytes": 230353,
+      "sha256": "4acc20b23ef10ee03854509d0d226e438575309480a21956aa9181e5a8b8b170"
+    },
+    {
+      "path": "final-normal/tablet-modal-native-px0007-modal.png",
+      "bytes": 74283,
+      "sha256": "36d4c81bf5e8b819150b9fcb0c2af851458bc711a369b7766ab5e723e76fd642"
+    },
+    {
+      "path": "final-normal/tablet-modal-native-px0007-scrolled.png",
+      "bytes": 160125,
+      "sha256": "89887f723503b8bf3ce039b97a73c387a37e47988eb546a0efdda3775f5e203c"
+    },
+    {
+      "path": "final-normal/tablet-modal-native-px0007.png",
+      "bytes": 160125,
+      "sha256": "89887f723503b8bf3ce039b97a73c387a37e47988eb546a0efdda3775f5e203c"
+    },
+    {
+      "path": "final-normal/tablet-modal-native-trace.zip",
+      "bytes": 5018608,
+      "sha256": "9456c94935fb94a62ff092a10fe64a341b3a022147635baf2389dcb63c77a5a5"
+    },
+    {
+      "path": "final-normal/tablet-native-activity-crop-2x.png",
+      "bytes": 196198,
+      "sha256": "0962a6be2aba0e000ef2d7790c21d6b0c7c22804cf0ac0d3410744b036822a39"
+    },
+    {
+      "path": "final-normal/tablet-native-dashboard-full.png",
+      "bytes": 245689,
+      "sha256": "a3690fca61a395b4f2992a28fc3240ccb72ba9b346bba393670d4c8ed1019152"
+    },
+    {
+      "path": "final-normal/tablet-native-dashboard.png",
+      "bytes": 184634,
+      "sha256": "9c8ab14b6cb1156d3813c0cb795bcd2175b45b54ac622a9de79c362f315c3075"
+    },
+    {
+      "path": "final-normal/tablet-native-px0007-modal.png",
+      "bytes": 73199,
+      "sha256": "24e24e6e802696b46dbe29859ffa5db975bd6df5227753b0bc465fdbe022b067"
+    },
+    {
+      "path": "final-normal/tablet-native-px0007-scrolled.png",
+      "bytes": 142366,
+      "sha256": "f6dc4be4c8afce66439260c27c04e450daaa07375829723605ad2514a227439a"
+    },
+    {
+      "path": "final-normal/tablet-native-px0007.png",
+      "bytes": 142366,
+      "sha256": "f6dc4be4c8afce66439260c27c04e450daaa07375829723605ad2514a227439a"
+    },
+    {
+      "path": "final-normal/tablet-native-trace.zip",
+      "bytes": 6066414,
+      "sha256": "310954df0656ac341c6537893534fedca92ea7c3aa28108aa6ebc4e91bea73ab"
+    },
+    {
+      "path": "final-normal/tablet-px0007-modal.png",
+      "bytes": 153889,
+      "sha256": "48901384246aefcef85c71b6c6935ffad6be5c4fc37da7403baa9c6773baa1a1"
+    },
+    {
+      "path": "final-normal/tablet-px0007-scrolled.png",
+      "bytes": 169124,
+      "sha256": "f6f49dc5c9d243792b520d11192c4821913335bf8b3fd2d6fe8af9c5938e4bef"
+    },
+    {
+      "path": "final-normal/tablet-px0007.png",
+      "bytes": 168031,
+      "sha256": "efe3edef20e44b77a087f586fd8880e1b23e16ff71c6cf3b927b17496e75f0cc"
+    },
+    {
+      "path": "final-normal/tablet-trace.zip",
+      "bytes": 6392654,
+      "sha256": "9753eab656e5fe839e0bded69f4720b04ecb072ae6ceb7432073088a8c74b6f9"
+    },
+    {
+      "path": "final-reference/capture-results.json",
+      "bytes": 1725182,
+      "sha256": "5834ff0ee801b80fd644e7b97c32a9f2840853c6c830f026578313a35d41f8c5"
+    },
+    {
+      "path": "final-reference/desktop-dashboard-full.png",
+      "bytes": 193092,
+      "sha256": "e3833f789fa4162e6497932ceef631cf245ed206e14931ec0f477671b4da0ded"
+    },
+    {
+      "path": "final-reference/desktop-dashboard.png",
+      "bytes": 193092,
+      "sha256": "e3833f789fa4162e6497932ceef631cf245ed206e14931ec0f477671b4da0ded"
+    },
+    {
+      "path": "final-reference/desktop-native-dashboard-full.png",
+      "bytes": 188162,
+      "sha256": "da2d417edaee51f57ae5b49aeac3e0008edd6bfb502e5ca90d584cfd9a430831"
+    },
+    {
+      "path": "final-reference/desktop-native-dashboard.png",
+      "bytes": 181718,
+      "sha256": "9263a1d03cb9daf3763d9da9d343f82d67b001f71ca9ce21368f919852be6b19"
+    },
+    {
+      "path": "final-reference/desktop-native-px0007-modal.png",
+      "bytes": 50688,
+      "sha256": "a93782d2e4e48c3d420943246eeda985978f20082476cafe6d7a6f905b5d78fb"
+    },
+    {
+      "path": "final-reference/desktop-native-px0007-scrolled.png",
+      "bytes": 186413,
+      "sha256": "b998b51730c3eaa582b684e294e96fce6f85d3594c953540fbb207b7b01233af"
+    },
+    {
+      "path": "final-reference/desktop-native-px0007.png",
+      "bytes": 186413,
+      "sha256": "b998b51730c3eaa582b684e294e96fce6f85d3594c953540fbb207b7b01233af"
+    },
+    {
+      "path": "final-reference/desktop-native-trace.zip",
+      "bytes": 6106398,
+      "sha256": "8dd9dce15851dc820e9d4ae34aa3f83696a9c52d590ca7b97f0cf86ef765f967"
+    },
+    {
+      "path": "final-reference/desktop-px0007-modal.png",
+      "bytes": 50736,
+      "sha256": "52e9b05c2135a0aacac8bff8316279c03e13e34875268f0212cdc65464a03798"
+    },
+    {
+      "path": "final-reference/desktop-px0007-scrolled.png",
+      "bytes": 200248,
+      "sha256": "38bc29c20ce4d438b5fc2ac6da7a070a8ad8078c4fe748b1b4dd3ddf6ab739de"
+    },
+    {
+      "path": "final-reference/desktop-px0007.png",
+      "bytes": 200248,
+      "sha256": "38bc29c20ce4d438b5fc2ac6da7a070a8ad8078c4fe748b1b4dd3ddf6ab739de"
+    },
+    {
+      "path": "final-reference/desktop-trace.zip",
+      "bytes": 5983080,
+      "sha256": "2470c4eb12d8fb34ffd88a66705dd7e35fa02e9ef4db2485d34fe563ea02a961"
+    },
+    {
+      "path": "final-reference/tablet-dashboard-full.png",
+      "bytes": 383433,
+      "sha256": "4572ce97b43a59ff1c5f963d7d980d6e960bca450c45150b4206e627fa6a971b"
+    },
+    {
+      "path": "final-reference/tablet-dashboard.png",
+      "bytes": 273283,
+      "sha256": "694d9215977e7e6539debd6d3823ff5edc5c77ee31de1d8289e4c38b6b440c42"
+    },
+    {
+      "path": "final-reference/tablet-modal-native-dashboard-full.png",
+      "bytes": 177283,
+      "sha256": "a60b2cf35b46bb00e2268df974fe35920283be65128f9a68c62613c59e28c364"
+    },
+    {
+      "path": "final-reference/tablet-modal-native-dashboard.png",
+      "bytes": 177283,
+      "sha256": "a60b2cf35b46bb00e2268df974fe35920283be65128f9a68c62613c59e28c364"
+    },
+    {
+      "path": "final-reference/tablet-modal-native-px0007-modal.png",
+      "bytes": 74369,
+      "sha256": "d8d89c8d2b8c8f5384452b2c00e7d5d09f6c264aaf73885a387f8c9d73109e8d"
+    },
+    {
+      "path": "final-reference/tablet-modal-native-px0007-scrolled.png",
+      "bytes": 113171,
+      "sha256": "d204335bf035ac1eda9a10610f39b99e28863cd92370dc8d3416a7e14b2dd18e"
+    },
+    {
+      "path": "final-reference/tablet-modal-native-px0007.png",
+      "bytes": 113171,
+      "sha256": "d204335bf035ac1eda9a10610f39b99e28863cd92370dc8d3416a7e14b2dd18e"
+    },
+    {
+      "path": "final-reference/tablet-modal-native-trace.zip",
+      "bytes": 5128205,
+      "sha256": "e78efea1f70054ba36608c8d22a72103dcefebff797822ca93c7709ec1dda684"
+    },
+    {
+      "path": "final-reference/tablet-native-dashboard-full.png",
+      "bytes": 177146,
+      "sha256": "a1632375a753704c4217a577db37db8bc57585fc4fca971f0386da8df74fa742"
+    },
+    {
+      "path": "final-reference/tablet-native-dashboard.png",
+      "bytes": 177146,
+      "sha256": "a1632375a753704c4217a577db37db8bc57585fc4fca971f0386da8df74fa742"
+    },
+    {
+      "path": "final-reference/tablet-native-px0007-modal.png",
+      "bytes": 73323,
+      "sha256": "3364f63eb3000783bf997b52b22f8f32160be249dda9f7c16b68f2dbe2c7a999"
+    },
+    {
+      "path": "final-reference/tablet-native-px0007-scrolled.png",
+      "bytes": 132403,
+      "sha256": "82da43c494eff8389a48f4f4eeab820316f0ede846b65457a0b31047204f7c83"
+    },
+    {
+      "path": "final-reference/tablet-native-px0007.png",
+      "bytes": 132403,
+      "sha256": "82da43c494eff8389a48f4f4eeab820316f0ede846b65457a0b31047204f7c83"
+    },
+    {
+      "path": "final-reference/tablet-native-trace.zip",
+      "bytes": 6184153,
+      "sha256": "80d7b9365579705ab7d8d2278878c981d4632188ec5faee5d6f6d6460d3e5acf"
+    },
+    {
+      "path": "final-reference/tablet-px0007-modal.png",
+      "bytes": 153889,
+      "sha256": "48901384246aefcef85c71b6c6935ffad6be5c4fc37da7403baa9c6773baa1a1"
+    },
+    {
+      "path": "final-reference/tablet-px0007-scrolled.png",
+      "bytes": 169124,
+      "sha256": "f6f49dc5c9d243792b520d11192c4821913335bf8b3fd2d6fe8af9c5938e4bef"
+    },
+    {
+      "path": "final-reference/tablet-px0007.png",
+      "bytes": 168031,
+      "sha256": "efe3edef20e44b77a087f586fd8880e1b23e16ff71c6cf3b927b17496e75f0cc"
+    },
+    {
+      "path": "final-reference/tablet-trace.zip",
+      "bytes": 7240561,
+      "sha256": "8c341e4e1958f5b95a58da7484c80645b234ebf75a887da5beeb22cd1ab6215d"
+    },
+    {
+      "path": "final-pending3/capture-results.json",
+      "bytes": 350610,
+      "sha256": "99775ecb77f9cd28b60e0b6fead26e8026ece3b4c9e092343a39bfa9729b9c0f"
+    },
+    {
+      "path": "final-pending3/desktop-dashboard-full.png",
+      "bytes": 193128,
+      "sha256": "a85e353adf4af6a059f5c083083e782397b6260b4e0cd538c7bb53ece25b3e52"
+    },
+    {
+      "path": "final-pending3/desktop-dashboard.png",
+      "bytes": 193128,
+      "sha256": "a85e353adf4af6a059f5c083083e782397b6260b4e0cd538c7bb53ece25b3e52"
+    },
+    {
+      "path": "final-pending3/desktop-native-dashboard-full.png",
+      "bytes": 188172,
+      "sha256": "223d04d19d269139c7527a709d9b6739d3df2ea50473d37c90c308688cf8af96"
+    },
+    {
+      "path": "final-pending3/desktop-native-dashboard.png",
+      "bytes": 181729,
+      "sha256": "8abce3696dfb3bfc3102192c7fbf6391c71a2100b8946e925ffafb78fbdca54d"
+    },
+    {
+      "path": "final-pending3/desktop-native-trace.zip",
+      "bytes": 5723219,
+      "sha256": "4923bc6326a59de9b35598a31ae6714843a8f613b49a44b06fee9d8c3fe5c1bc"
+    },
+    {
+      "path": "final-pending3/desktop-trace.zip",
+      "bytes": 5168928,
+      "sha256": "8edfb45deae86f3fdffe6e14572a669b6af37d0ca13a12e37718a4367f638961"
+    },
+    {
+      "path": "final-pending3/tablet-dashboard-full.png",
+      "bytes": 383496,
+      "sha256": "8ce28f5fa7ff16acf4f7668fe3c3efcca8b62e51187bd5785cb22a3dee06c0da"
+    },
+    {
+      "path": "final-pending3/tablet-dashboard.png",
+      "bytes": 273347,
+      "sha256": "d51f1c18b9738fc88e1008c276e520056ca17c38a81efc37712b93892b77be83"
+    },
+    {
+      "path": "final-pending3/tablet-native-dashboard-full.png",
+      "bytes": 177161,
+      "sha256": "803fbfddfbba8b78acfe3765590b091c0066052ad92b4f8f6aa2c0ff3c002d9e"
+    },
+    {
+      "path": "final-pending3/tablet-native-dashboard.png",
+      "bytes": 177161,
+      "sha256": "803fbfddfbba8b78acfe3765590b091c0066052ad92b4f8f6aa2c0ff3c002d9e"
+    },
+    {
+      "path": "final-pending3/tablet-native-trace.zip",
+      "bytes": 5658241,
+      "sha256": "7833026b22f298e157f4ed12491bba1428c16f180d6414bd71b222c1ad087c23"
+    },
+    {
+      "path": "final-pending3/tablet-trace.zip",
+      "bytes": 6884266,
+      "sha256": "936c63407966937d60a81fcd6456b6e17eb5171ec239563e4748f843aee3fe81"
+    },
+    {
+      "path": "comparison-final/comparison-metadata.json",
+      "bytes": 7236,
+      "sha256": "9509525a9be274dad6b68177407502463125cd7bae54faa5f6f5156863b8b6ff"
+    },
+    {
+      "path": "comparison-final/dashboard-desktop-actual-aligned.png",
+      "bytes": 136785,
+      "sha256": "005bc0575f6e267184190ef99edefaf614bc3f3a6f675c0bd36f20f4d7a3a8c3"
+    },
+    {
+      "path": "comparison-final/dashboard-desktop-actual-crop.png",
+      "bytes": 136785,
+      "sha256": "005bc0575f6e267184190ef99edefaf614bc3f3a6f675c0bd36f20f4d7a3a8c3"
+    },
+    {
+      "path": "comparison-final/dashboard-desktop-diff-3x.png",
+      "bytes": 350698,
+      "sha256": "e56e20fa2c48af6f2d641c8fda3f648c68617872fffe16087ece1bcab540073b"
+    },
+    {
+      "path": "comparison-final/dashboard-desktop-overlay.png",
+      "bytes": 745142,
+      "sha256": "67422510da6c76f9344412cd4ca68ad1034c0033c9bf947b78a1729cf0161483"
+    },
+    {
+      "path": "comparison-final/dashboard-desktop-reference-crop.png",
+      "bytes": 866131,
+      "sha256": "b9761e97fce0c3a570b65dcffb4610b276c75cf74fd0ef9e00230d2f33adc010"
+    },
+    {
+      "path": "comparison-final/dashboard-desktop-side-by-side.png",
+      "bytes": 1054490,
+      "sha256": "7962b39a8a28f426d5735362a7ee71b77d56d70bb75c24e61e8970d00686ad03"
+    },
+    {
+      "path": "comparison-final/dashboard-tablet-actual-aligned.png",
+      "bytes": 288078,
+      "sha256": "36a26d4202b5bf083ebcb9200b10af8dbaff2ca607c82a625ab0b82d78c20028"
+    },
+    {
+      "path": "comparison-final/dashboard-tablet-actual-crop.png",
+      "bytes": 144144,
+      "sha256": "01cb83f1c00dff38d79273c9f5232c381c8e8229b13ea0d3c203946b82376ca5"
+    },
+    {
+      "path": "comparison-final/dashboard-tablet-diff-3x.png",
+      "bytes": 387777,
+      "sha256": "908a961c241bae39a776209c69e56a16af23e07623037cbf4ebb337cac04687e"
+    },
+    {
+      "path": "comparison-final/dashboard-tablet-overlay.png",
+      "bytes": 759090,
+      "sha256": "0a0908ecf082c0db8bcf04b16c33140f6228d0ab3ce83fb7af9cd28767a77567"
+    },
+    {
+      "path": "comparison-final/dashboard-tablet-reference-crop.png",
+      "bytes": 822059,
+      "sha256": "b03c119330fc5c439f99f6dd5afc47addde8ec857f579f71ebf98552a8245e2c"
+    },
+    {
+      "path": "comparison-final/dashboard-tablet-side-by-side.png",
+      "bytes": 1144944,
+      "sha256": "92aa38c3d7cb1a212b7d5b54f6948a5cc38cf5000b01537d370c6a704b91e4cc"
+    },
+    {
+      "path": "comparison-final/px0007-desktop-actual-aligned.png",
+      "bytes": 91639,
+      "sha256": "417b1074661e9dec1457e504ea9a2f37db8f9b74a26cf839869a022ae4d43b07"
+    },
+    {
+      "path": "comparison-final/px0007-desktop-actual-crop.png",
+      "bytes": 52444,
+      "sha256": "3c962425106df7de582ef877fdc01e332fa327772b5a87543f6f45ebf309b7e3"
+    },
+    {
+      "path": "comparison-final/px0007-desktop-diff-3x.png",
+      "bytes": 120861,
+      "sha256": "d5b57e1019ed48f97972987048a2caf394b774aad46fef80d9d2b13d54d19859"
+    },
+    {
+      "path": "comparison-final/px0007-desktop-overlay.png",
+      "bytes": 281376,
+      "sha256": "270c45405834cedf16846a662fb02d010f035916db0501b767231988550bface"
+    },
+    {
+      "path": "comparison-final/px0007-desktop-reference-crop.png",
+      "bytes": 371632,
+      "sha256": "4eafc9c9ccfd21883b142c899c759259e9fd9c849426a519c8905e0bb97dde99"
+    },
+    {
+      "path": "comparison-final/px0007-desktop-side-by-side.png",
+      "bytes": 482485,
+      "sha256": "4033f1ce0789d435b383f6d65ed59fba8e54449ecc69263ec37a9594187f37fd"
+    },
+    {
+      "path": "comparison-final/px0007-tablet-actual-aligned.png",
+      "bytes": 140924,
+      "sha256": "5399e95e70c6185e3f3110c65d616cc945a4d6be8ff5c5e2663c96bb2fe9e268"
+    },
+    {
+      "path": "comparison-final/px0007-tablet-actual-crop.png",
+      "bytes": 76379,
+      "sha256": "54ab45e4c6c3efb52cea607ae9a277cfa177002bde3a02133f37febdec0beab1"
+    },
+    {
+      "path": "comparison-final/px0007-tablet-diff-3x.png",
+      "bytes": 189623,
+      "sha256": "b77b8b656781a752f2572be688080bedb806282f8cd6432d68e2cc9a9179311c"
+    },
+    {
+      "path": "comparison-final/px0007-tablet-overlay.png",
+      "bytes": 498792,
+      "sha256": "1d9d70af16414e77d7ca1231b41a3bc1891392f656f486b4861408a34b440caa"
+    },
+    {
+      "path": "comparison-final/px0007-tablet-reference-crop.png",
+      "bytes": 602188,
+      "sha256": "ed8448dc10b8de3641ffbc5a0ee73e411c9dfedb9a5847c110c8e0766768201a"
+    },
+    {
+      "path": "comparison-final/px0007-tablet-side-by-side.png",
+      "bytes": 771727,
+      "sha256": "acb63a80cb0a2f5c12db9357722c0ed6b5203dbc6a579e42f5418db7dc198f4c"
+    },
+    {
+      "path": "references/3.png",
+      "bytes": 1401766,
+      "sha256": "f17af2135653f38503c72139603ad429e437d86248e22f36abe270449c39257e"
+    },
+    {
+      "path": "references/4.png",
+      "bytes": 1302701,
+      "sha256": "111daa7bf29165c614ab6d7d1fc047e381addd292385c9037b43bd51860a47f7"
+    },
+    {
+      "path": "references/5.png",
+      "bytes": 1386278,
+      "sha256": "eaba73d476bf0b9b92fc12e3271a9177493c75b7cd16bc040e939acdbfd5643b"
+    },
+    {
+      "path": "references/6.png",
+      "bytes": 1239865,
+      "sha256": "ba996d6843288f0d5248246c2bde876d759f016e41e3e44a0577725fe13fabea"
+    },
+    {
+      "path": "final-measurements.json",
+      "bytes": 44524,
+      "sha256": "d28ba04688e7dc707365c4773ff6548b8f7de82841aabcd39fcd5f3922826a03"
+    },
+    {
+      "path": "f56e25c-VISUAL_QA_REPORT.md",
+      "bytes": 20712,
+      "sha256": "f75123579e5fa6e533fac94768a83529a7b1d32cb20005e470cb06a9fc29cfd8"
+    }
+  ]
+}

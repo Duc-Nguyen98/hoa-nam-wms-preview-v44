@@ -1,0 +1,6 @@
+PASS independent isolated harness loading
+PASS independent isolated harness error
+PASS independent isolated harness empty
+PASS independent isolated harness long
+PASS independent isolated harness missing
+{"pass":5,"fail":0,"errors":[]}
