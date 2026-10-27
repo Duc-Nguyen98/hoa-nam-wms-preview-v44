@@ -42,3 +42,11 @@ Reference receipt rows are illustrative (`PN-0012`, `PN-0011`, `PN-0010`, status
 `DESIGN_READY -> BEFORE_CAPTURE -> QA_FINDINGS -> IMPLEMENTATION (only confirmed defects) -> RETEST -> RELEASE_AUDIT -> FINAL_VERDICT`.
 
 Any unavailable environment, missing baseline, missing credential, or unverified deployment is explicitly `BLOCKED` or `NOT_RUN`, never PASS.
+
+## Final handoff update (2026-10-28)
+
+- V01 fix committed on DEV as `d7b82de954358f5d8391888b2e7453df02d2828f`.
+- Independent functional retest: 2 focused tests PASS; authenticated/REAL_API gates BLOCKED/NOT_RUN.
+- Independent visual retest: 8/8 AFTER states and 8 diff sets; V01 verified, overall visual PARTIAL with V02/design gaps open.
+- Local typecheck/build PASS; hosted CI and exact public preview SHA BLOCKED.
+- Final verdict: PARTIAL; no merge/deploy.
