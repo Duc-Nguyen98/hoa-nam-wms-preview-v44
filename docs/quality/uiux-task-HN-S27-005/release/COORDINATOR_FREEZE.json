@@ -1,0 +1,18 @@
+{
+  "task": "HN-S27-UIUX-005",
+  "frozenAtUtc": "2026-10-27T13:41:48.2726354+00:00",
+  "functionalManifest": "functional/FINAL_EVIDENCE_MANIFEST.json",
+  "ownerCustody": "All S00#2/#3/#4/#6 contexts closed and artifacts frozen; S00#5 CI report complete; root final reports and packet complete",
+  "scope": "Entire docs/quality/uiux-task-HN-S27-005 except release/** audit controls; include final root/owner reports, original-custody references, all failed attempts",
+  "verdict": "PARTIAL",
+  "srcTree": "4360e98244c6308d14de19d50301fb0945c231f6",
+  "visualManifest": "visual/FINAL_CAPTURE_MANIFEST.json",
+  "packetSha256": "01a8ada4efecfb29173aee90f5e41fa5ffdbea15d5f741517dde4192efdc9c9b",
+  "testsTree": "85450783eeadd34277b48bcc0ebd15bd36e3f8be",
+  "productionDeployment": "NOT_PERFORMED",
+  "candidateSha": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+  "packetPath": "docs/agent-handoffs/HN-S27-UIUX-005.md",
+  "securityRedaction": "S00#4 post-execution archive redaction receipt SECURITY_REDACTION_RECEIPT.json; six script copies now env-only; no test rerun; zero password literal scan",
+  "functionalManifestSha256": "b86fb7beda8bb5653e68f2ba4c9d5617ca5cf058fbd0f4dd53f1a6cb91382e45",
+  "visualManifestSha256": "0241a4d0e5c8de79755b600040956a97e627df54b3215d3ad4b31e7ec0abee85"
+}

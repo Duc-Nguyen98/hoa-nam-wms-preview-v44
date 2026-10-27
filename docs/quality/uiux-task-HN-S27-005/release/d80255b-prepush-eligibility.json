@@ -1,0 +1,16 @@
+{
+  "observedAtUtc": "2026-10-27T13:10:34.1473519+00:00",
+  "candidateSha": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "localHead": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "permissions": {
+    "admin": true,
+    "maintain": true,
+    "push": true,
+    "triage": true,
+    "pull": true
+  },
+  "DEV": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+  "DEVProtected": false,
+  "rulesets": [],
+  "pushPerformed": false
+}

@@ -1,0 +1,2 @@
+import{defineConfig}from'@playwright/test';
+export default defineConfig({testDir:'.',testMatch:'notification-regression.spec.ts',workers:1,timeout:180000,expect:{timeout:10000},use:{baseURL:'http://127.0.0.1:5287',headless:true,locale:'vi-VN',timezoneId:'Asia/Bangkok',colorScheme:'light',reducedMotion:'reduce'},reporter:[['list'],['json',{outputFile:'notification-regression.json'}]],outputDir:'./notification-artifacts'});

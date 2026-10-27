@@ -1,0 +1,22 @@
+[
+  {
+    "Path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\src\\features\\S27\\OperationalAudit.tsx",
+    "Hash": "3FBD0A1C00947EEFF4B57E32248A7AD75F078D0AC23849574667E5F566D04E2B"
+  },
+  {
+    "Path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\src\\features\\S27\\audit-operational-binding.ts",
+    "Hash": "805080E8A9A8428222D1C9A2C1BAFF21578E4A0C5A135BFA85A4A38BF0159040"
+  },
+  {
+    "Path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\src\\features\\S27\\audit-ui-copy.ts",
+    "Hash": "E2800346E74DCA2B841E15F8A1AE03AAE23EC44C6B2F95E9E6B2CAFE0E8BDD32"
+  },
+  {
+    "Path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\src\\features\\S27\\system-audit.css",
+    "Hash": "97A9A198759CBDFA27D6460B022C96A863FCE5DE90C30FB3D8085FCF69F2711B"
+  },
+  {
+    "Path": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\tests\\s27-audit-integrity.test.ts",
+    "Hash": "C57D8D7855D1316E3B5364D6843F4B9511CE25DF1BB8266B47E7279731445C7C"
+  }
+]

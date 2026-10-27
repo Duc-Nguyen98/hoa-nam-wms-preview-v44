@@ -1,0 +1,52 @@
+[
+  {
+    "width": 1672,
+    "targets": [
+      {
+        "label": "Sao chép Mã sự kiện",
+        "width": 44,
+        "height": 36
+      },
+      {
+        "label": "Sao chép Mã đối tượng",
+        "width": 44,
+        "height": 36
+      },
+      {
+        "label": "Sao chép Mã lệnh",
+        "width": 44,
+        "height": 36
+      },
+      {
+        "label": "Sao chép Mã commit",
+        "width": 44,
+        "height": 36
+      }
+    ]
+  },
+  {
+    "width": 800,
+    "targets": [
+      {
+        "label": "Sao chép Mã sự kiện",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Sao chép Mã đối tượng",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Sao chép Mã lệnh",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Sao chép Mã commit",
+        "width": 44,
+        "height": 44
+      }
+    ]
+  }
+]

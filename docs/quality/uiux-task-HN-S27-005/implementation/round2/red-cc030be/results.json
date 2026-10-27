@@ -1,0 +1,393 @@
+{
+  "base": "http://127.0.0.1:5287",
+  "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_ACTUAL_APP_CASCADE",
+  "started": "2026-10-27T13:00:52.938Z",
+  "sourceStart": {
+    "head": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "status": "?? tests/s27/copy-border-cascade.mjs",
+    "cssSha256": "97a9a198759cbdfa27d6460b022c96a863fce5de90c30fb3d8085fcf69f2711b"
+  },
+  "results": [
+    {
+      "profile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 820,
+        "height": 827,
+        "top": 57,
+        "bottom": 884,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 818,
+        "height": 82,
+        "top": 58,
+        "bottom": 140,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "14px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 770,
+        "height": 87,
+        "top": 160,
+        "bottom": 247,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px 0px 18px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 770,
+        "height": 137,
+        "top": 267,
+        "bottom": 404,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 770,
+        "height": 248,
+        "top": 530,
+        "bottom": 778,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 818,
+        "height": 85,
+        "top": 798,
+        "bottom": 883,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "20px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 572,
+          "bottom": 616,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 626,
+          "bottom": 670,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 680,
+          "bottom": 724,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 734,
+          "bottom": 778,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:0d0f183c-b643-44be-9774-8aee4f3321d4",
+        "profile:b4564f2e-463a-4944-a819-0146828cec76",
+        "0d0f183c-b643-44be-9774-8aee4f3321d4",
+        "commit-snapshot:2d5b945c-4936-4856-bc08-5e93f8bbd782"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "failures": []
+    },
+    {
+      "profile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 776,
+        "height": 1196,
+        "top": 195,
+        "bottom": 1391,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 774,
+        "height": 107,
+        "top": 196,
+        "bottom": 303,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "18px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 726,
+        "height": 117,
+        "top": 327,
+        "bottom": 444,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 726,
+        "height": 221,
+        "top": 468,
+        "bottom": 689,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 726,
+        "height": 320,
+        "top": 961,
+        "bottom": 1281,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px 22px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 774,
+        "height": 85,
+        "top": 1305,
+        "bottom": 1390,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "20px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1022,
+          "bottom": 1066,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1086,
+          "bottom": 1130,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1150,
+          "bottom": 1194,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1214,
+          "bottom": 1258,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:0d0f183c-b643-44be-9774-8aee4f3321d4",
+        "profile:b4564f2e-463a-4944-a819-0146828cec76",
+        "0d0f183c-b643-44be-9774-8aee4f3321d4",
+        "commit-snapshot:2d5b945c-4936-4856-bc08-5e93f8bbd782"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "failures": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"rgb(216, 227, 239)\"\nReceived: \"rgba(0, 0, 0, 0)\""
+      ]
+    },
+    {
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 752,
+        "height": 1220,
+        "top": 30,
+        "bottom": 1250,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 750,
+        "height": 107,
+        "top": 31,
+        "bottom": 138,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "18px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 702,
+        "height": 117,
+        "top": 162,
+        "bottom": 279,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 702,
+        "height": 221,
+        "top": 303,
+        "bottom": 524,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 702,
+        "height": 344,
+        "top": 796,
+        "bottom": 1140,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px 22px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 750,
+        "height": 85,
+        "top": 1164,
+        "bottom": 1249,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "20px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 857,
+          "bottom": 901,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 921,
+          "bottom": 965,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 985,
+          "bottom": 1029,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1049,
+          "bottom": 1093,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:0d0f183c-b643-44be-9774-8aee4f3321d4",
+        "profile:b4564f2e-463a-4944-a819-0146828cec76",
+        "0d0f183c-b643-44be-9774-8aee4f3321d4",
+        "commit-snapshot:2d5b945c-4936-4856-bc08-5e93f8bbd782"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "failures": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"rgb(216, 227, 239)\"\nReceived: \"rgba(0, 0, 0, 0)\""
+      ]
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "sourceScenario": {
+    "date": "2026-10-26",
+    "count": 62
+  },
+  "status": "FAIL",
+  "sourceEnd": {
+    "head": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "status": "?? tests/s27/copy-border-cascade.mjs",
+    "cssSha256": "97a9a198759cbdfa27d6460b022c96a863fce5de90c30fb3d8085fcf69f2711b"
+  },
+  "finished": "2026-10-27T13:01:13.796Z",
+  "sourceStable": true
+}

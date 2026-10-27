@@ -1,0 +1,134 @@
+[
+  {
+    "name": "tablet-native-list",
+    "phase": "final-synthetic-tablet-native-retry-d80255b",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\10.png",
+    "referenceSHA256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+    "referenceROI": [
+      27,
+      416,
+      967,
+      1547
+    ],
+    "referenceScopedRasterSize": [
+      940,
+      1131
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-tablet-native-retry-d80255b\\tablet-native-list-full.png",
+    "actualSHA256": "35e10e09a80d3f7ac7eb058b84905156d938f7877e9b6996151a7f8f6fb56e10",
+    "actualROI": [
+      24,
+      429,
+      968,
+      1585
+    ],
+    "actualCSSBounds": {
+      "x": 24,
+      "y": 429,
+      "width": 944,
+      "height": 1156,
+      "right": 968,
+      "bottom": 1585,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(38, 60, 81)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "8px",
+      "display": "block",
+      "overflow": "visible",
+      "clientWidth": 942,
+      "scrollWidth": 942,
+      "clientHeight": 1154,
+      "scrollHeight": 1154
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      944,
+      1156
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.004255319148936,
+    "referenceProjectedHeightRaster": 1135.8127659574468,
+    "heightResidualActualMinusReferenceRaster": 20.1872340425532,
+    "heightResidualActualMinusReferenceCSS": 20.1872340425532,
+    "canvasSize": [
+      944,
+      1156
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "tablet-native-modal",
+    "phase": "final-synthetic-tablet-native-retry-d80255b",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\12.png",
+    "referenceSHA256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+    "referenceROI": [
+      108,
+      314,
+      884,
+      1470
+    ],
+    "referenceScopedRasterSize": [
+      776,
+      1156
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-tablet-native-retry-d80255b\\tablet-native-modal.png",
+    "actualSHA256": "b17dd5f3ba632a6186616b51da3405e6de586f7e1ae14809b8e42586736c4be3",
+    "actualROI": [
+      108,
+      214,
+      884,
+      1372
+    ],
+    "actualCSSBounds": {
+      "x": 108,
+      "y": 214.5,
+      "width": 776,
+      "height": 1157,
+      "right": 884,
+      "bottom": 1371.5,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(23, 56, 88)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "10px",
+      "display": "block",
+      "overflow": "hidden",
+      "clientWidth": 774,
+      "scrollWidth": 774,
+      "clientHeight": 1155,
+      "scrollHeight": 1155
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      776,
+      1158
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.0,
+    "referenceProjectedHeightRaster": 1156.0,
+    "heightResidualActualMinusReferenceRaster": 2.0,
+    "heightResidualActualMinusReferenceCSS": 2.0,
+    "canvasSize": [
+      776,
+      1158
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  }
+]

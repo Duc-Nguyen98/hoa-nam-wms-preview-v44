@@ -1,0 +1,1746 @@
+{
+  "sha": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "mode": "MOCK",
+  "production": "NOT_CONNECTED",
+  "start": "2026-10-27T13:11:38.219Z",
+  "profiles": [
+    {
+      "kind": "actual",
+      "width": 1672,
+      "language": "vi",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.",
+      "rawIds": [
+        "audit:02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "profile:9d3f66f5-2a24-4bf9-9011-284e3ff5aa7e",
+        "02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "commit-snapshot:5a928c10-db30-464c-aa93-1db9894a17fb"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 1672,
+      "language": "vi",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.",
+      "rawIds": [
+        "audit:02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "profile:9d3f66f5-2a24-4bf9-9011-284e3ff5aa7e",
+        "02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "commit-snapshot:5a928c10-db30-464c-aa93-1db9894a17fb"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 1672,
+      "language": "en",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Track operations and trace events within your authorized scope. Vietnam time.",
+      "rawIds": [
+        "audit:02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "profile:9d3f66f5-2a24-4bf9-9011-284e3ff5aa7e",
+        "02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "commit-snapshot:5a928c10-db30-464c-aa93-1db9894a17fb"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 1672,
+      "language": "en",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Track operations and trace events within your authorized scope. Vietnam time.",
+      "rawIds": [
+        "audit:02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "profile:9d3f66f5-2a24-4bf9-9011-284e3ff5aa7e",
+        "02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "commit-snapshot:5a928c10-db30-464c-aa93-1db9894a17fb"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 1672,
+      "language": "zh-CN",
+      "theme": "light",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。仅显示授权范围内的数据。越南时间。",
+      "rawIds": [
+        "audit:02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "profile:9d3f66f5-2a24-4bf9-9011-284e3ff5aa7e",
+        "02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "commit-snapshot:5a928c10-db30-464c-aa93-1db9894a17fb"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 1672,
+      "language": "zh-CN",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。仅显示授权范围内的数据。越南时间。",
+      "rawIds": [
+        "audit:02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "profile:9d3f66f5-2a24-4bf9-9011-284e3ff5aa7e",
+        "02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "commit-snapshot:5a928c10-db30-464c-aa93-1db9894a17fb"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 628,
+          "clientHeight": 628,
+          "horizontal": false,
+          "footerBottom": 864,
+          "dialogBottom": 865,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    }
+  ],
+  "focused": [
+    "Actual62 source projects; page2; raw actionsearch/action+actor filters2"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "source": {
+    "token": {
+      "epoch": "d1956bcb-d90d-4f9e-8537-2b2b47076b25",
+      "revision": 69,
+      "scenarioId": "scenario:57b4bf51-3c6d-4e8d-8524-159244fe3f9b",
+      "generation": 1
+    },
+    "rows": [
+      {
+        "id": "audit:a60122b9-fc97-47d3-8d1f-6e9f8b92c2c6",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "scenario.reset-own",
+        "sourceSurface": "QA",
+        "entityId": "scenario:57b4bf51-3c6d-4e8d-8524-159244fe3f9b",
+        "commandId": "a60122b9-fc97-47d3-8d1f-6e9f8b92c2c6",
+        "commitSnapshotId": "commit-snapshot:388d8352-db6d-4f8a-a028-c00231c53619",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "operational-setup:location:1",
+          "operational-setup:tray:1",
+          "operational-setup:location:2",
+          "operational-setup:tray:2",
+          "operational-setup:location:3",
+          "operational-setup:tray:3",
+          "operational-setup:location:4",
+          "operational-setup:tray:4",
+          "operational-setup:location:5",
+          "operational-setup:tray:5",
+          "operational-setup:location:6",
+          "operational-setup:tray:6",
+          "operational-setup:location:7",
+          "operational-setup:tray:7",
+          "operational-setup:location:8",
+          "operational-setup:tray:8",
+          "operational-setup:location:9",
+          "operational-setup:tray:9"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "stock-profiles.create",
+        "sourceSurface": "WEB",
+        "entityId": "profile:9d3f66f5-2a24-4bf9-9011-284e3ff5aa7e",
+        "commandId": "02b62a6a-20f9-4841-b63d-17807646ccf9",
+        "commitSnapshotId": "commit-snapshot:5a928c10-db30-464c-aa93-1db9894a17fb",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:ec69c66a-fcb6-43ef-b88b-6e1aa59b258f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "stock-profiles.create",
+        "sourceSurface": "WEB",
+        "entityId": "profile:8566b24f-16dd-4f61-a1f3-363bf1fd6fdc",
+        "commandId": "ec69c66a-fcb6-43ef-b88b-6e1aa59b258f",
+        "commitSnapshotId": "commit-snapshot:daa83882-d332-4d71-9302-d84b4b05e004",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:2f124bd3-1a67-4f2b-85fa-77eeab6bd65f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:651aa3a3-20b1-4295-a86e-54ddde302dbb",
+        "commandId": "2f124bd3-1a67-4f2b-85fa-77eeab6bd65f",
+        "commitSnapshotId": "commit-snapshot:7ffcf30a-bdc0-475f-a663-5abad4552fc6",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:eef28eed-b218-4efe-a7b6-ec18a9291e04",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:f9cf9aed-8551-4546-8dd5-a6e5af5098ed",
+        "commandId": "eef28eed-b218-4efe-a7b6-ec18a9291e04",
+        "commitSnapshotId": "commit-snapshot:50ab5984-9909-412a-88ba-959526f4f4a5",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:3119e959-80ce-4c96-a173-3fa275802892",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:eeb1d265-09be-4427-ae14-c032559e2b70",
+        "commandId": "3119e959-80ce-4c96-a173-3fa275802892",
+        "commitSnapshotId": "commit-snapshot:51ce89fc-1446-41c3-aa09-7f8907a198a4",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:684d1402-9e2e-454c-b2f3-efc1580a8c65",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:231165c9-479b-4853-a812-9127508dbc62",
+        "commandId": "684d1402-9e2e-454c-b2f3-efc1580a8c65",
+        "commitSnapshotId": "commit-snapshot:0190c4d6-ff4f-4ef7-b0c5-1aac41e2384f",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:bdfb3dea-fbb0-4580-affc-5a56dde78ac1",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:651aa3a3-20b1-4295-a86e-54ddde302dbb",
+        "commandId": "bdfb3dea-fbb0-4580-affc-5a56dde78ac1",
+        "commitSnapshotId": "commit-snapshot:0a4d94a7-5d00-44ca-be47-08ce55b2b273",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "physical:bdfb3dea-fbb0-4580-affc-5a56dde78ac1",
+          "inbound-line:bdfb3dea-fbb0-4580-affc-5a56dde78ac1",
+          "physical-registry:bdfb3dea-fbb0-4580-affc-5a56dde78ac1",
+          "scan-observation:bdfb3dea-fbb0-4580-affc-5a56dde78ac1"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:0157c43a-a09c-4ab7-a34a-056b7218b4ff",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:651aa3a3-20b1-4295-a86e-54ddde302dbb",
+        "commandId": "0157c43a-a09c-4ab7-a34a-056b7218b4ff",
+        "commitSnapshotId": "commit-snapshot:3b1e7011-b24c-4cff-b658-f5b60460c2ed",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:0157c43a-a09c-4ab7-a34a-056b7218b4ff"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:c27ce4da-63dc-4ec0-9cb7-a9fdc4ccf785",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:651aa3a3-20b1-4295-a86e-54ddde302dbb",
+        "commandId": "c27ce4da-63dc-4ec0-9cb7-a9fdc4ccf785",
+        "commitSnapshotId": "commit-snapshot:d6e25c46-72f4-47a1-aa09-a9a148beef65",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "physical:bdfb3dea-fbb0-4580-affc-5a56dde78ac1",
+          "stock-event:bdfb3dea-fbb0-4580-affc-5a56dde78ac1"
+        ],
+        "eventIds": [
+          "stock-event:bdfb3dea-fbb0-4580-affc-5a56dde78ac1"
+        ]
+      },
+      {
+        "id": "audit:79b80111-bbe3-49e4-bac4-5df102ebc774",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:f9cf9aed-8551-4546-8dd5-a6e5af5098ed",
+        "commandId": "79b80111-bbe3-49e4-bac4-5df102ebc774",
+        "commitSnapshotId": "commit-snapshot:609bb1cf-492b-4ffe-a8c1-855097c45383",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "physical:79b80111-bbe3-49e4-bac4-5df102ebc774",
+          "inbound-line:79b80111-bbe3-49e4-bac4-5df102ebc774",
+          "physical-registry:79b80111-bbe3-49e4-bac4-5df102ebc774",
+          "scan-observation:79b80111-bbe3-49e4-bac4-5df102ebc774"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:5387ccaa-4d3c-4452-83ba-00622339a75e",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:f9cf9aed-8551-4546-8dd5-a6e5af5098ed",
+        "commandId": "5387ccaa-4d3c-4452-83ba-00622339a75e",
+        "commitSnapshotId": "commit-snapshot:819f25b7-1b0c-48ad-832c-4bf64be0a403",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:5387ccaa-4d3c-4452-83ba-00622339a75e"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:f5e29033-543f-422f-9e2d-9ced521c8d11",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:f9cf9aed-8551-4546-8dd5-a6e5af5098ed",
+        "commandId": "f5e29033-543f-422f-9e2d-9ced521c8d11",
+        "commitSnapshotId": "commit-snapshot:5d457ad8-bf60-44b2-8521-4ac6c5701f7f",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "physical:79b80111-bbe3-49e4-bac4-5df102ebc774",
+          "stock-event:79b80111-bbe3-49e4-bac4-5df102ebc774"
+        ],
+        "eventIds": [
+          "stock-event:79b80111-bbe3-49e4-bac4-5df102ebc774"
+        ]
+      },
+      {
+        "id": "audit:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:eeb1d265-09be-4427-ae14-c032559e2b70",
+        "commandId": "544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+        "commitSnapshotId": "commit-snapshot:34cff058-5492-4a25-98b0-d7342669b525",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "box:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+          "inbound-line:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+          "physical-registry:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+          "scan-observation:544a2c61-5d28-4e9d-9fb3-801f31c285f1"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:637dee56-1530-4af3-9fb6-97dcd51172c2",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:eeb1d265-09be-4427-ae14-c032559e2b70",
+        "commandId": "637dee56-1530-4af3-9fb6-97dcd51172c2",
+        "commitSnapshotId": "commit-snapshot:ed61ec6d-5672-46ab-9b6c-1fd263af78b5",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:637dee56-1530-4af3-9fb6-97dcd51172c2"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:130d84a7-350b-413f-b7e9-942b9b903e2c",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:eeb1d265-09be-4427-ae14-c032559e2b70",
+        "commandId": "130d84a7-350b-413f-b7e9-942b9b903e2c",
+        "commitSnapshotId": "commit-snapshot:9a010bdc-a158-4a99-82be-1ddb293a161d",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "box:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+          "stock-event:544a2c61-5d28-4e9d-9fb3-801f31c285f1"
+        ],
+        "eventIds": [
+          "stock-event:544a2c61-5d28-4e9d-9fb3-801f31c285f1"
+        ]
+      },
+      {
+        "id": "audit:b11ace31-bef3-4528-b2b1-9d7293bd467f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:231165c9-479b-4853-a812-9127508dbc62",
+        "commandId": "b11ace31-bef3-4528-b2b1-9d7293bd467f",
+        "commitSnapshotId": "commit-snapshot:5aa5e90d-6e44-4364-b63d-57bac90ee368",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "box:b11ace31-bef3-4528-b2b1-9d7293bd467f",
+          "inbound-line:b11ace31-bef3-4528-b2b1-9d7293bd467f",
+          "physical-registry:b11ace31-bef3-4528-b2b1-9d7293bd467f",
+          "scan-observation:b11ace31-bef3-4528-b2b1-9d7293bd467f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:e8620843-c381-4ba1-b242-a99aa4b26240",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:231165c9-479b-4853-a812-9127508dbc62",
+        "commandId": "e8620843-c381-4ba1-b242-a99aa4b26240",
+        "commitSnapshotId": "commit-snapshot:d0969d84-ca5b-4ea8-9db5-d52c637dfc1c",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:e8620843-c381-4ba1-b242-a99aa4b26240"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:5ab8bd10-9cfa-4005-9e4e-2d67d13480f3",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:231165c9-479b-4853-a812-9127508dbc62",
+        "commandId": "5ab8bd10-9cfa-4005-9e4e-2d67d13480f3",
+        "commitSnapshotId": "commit-snapshot:1b168966-1cb4-4068-9af4-0ad40f90dc20",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "box:b11ace31-bef3-4528-b2b1-9d7293bd467f",
+          "stock-event:b11ace31-bef3-4528-b2b1-9d7293bd467f"
+        ],
+        "eventIds": [
+          "stock-event:b11ace31-bef3-4528-b2b1-9d7293bd467f"
+        ]
+      },
+      {
+        "id": "audit:63539fd0-ec2b-4243-946d-43655a849c4b",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.create",
+        "sourceSurface": "APP_P05",
+        "entityId": "outbound:709456f1-e26b-4b5b-8d34-aaaf645a3fe6",
+        "commandId": "63539fd0-ec2b-4243-946d-43655a849c4b",
+        "commitSnapshotId": "commit-snapshot:7befb4bc-1cbe-46b8-b0ff-73c507ce2abc",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:96905155-7933-40ef-b59c-ff44cf4adb9e",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.scan",
+        "sourceSurface": "APP_P05",
+        "entityId": "outbound:709456f1-e26b-4b5b-8d34-aaaf645a3fe6",
+        "commandId": "96905155-7933-40ef-b59c-ff44cf4adb9e",
+        "commitSnapshotId": "commit-snapshot:a252b74b-61ec-4774-bbb6-0976c12c0661",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "scan-observation:96905155-7933-40ef-b59c-ff44cf4adb9e"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:73963468-44ff-4937-a606-9b90ba86227a",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.submit",
+        "sourceSurface": "APP_P05",
+        "entityId": "outbound:709456f1-e26b-4b5b-8d34-aaaf645a3fe6",
+        "commandId": "73963468-44ff-4937-a606-9b90ba86227a",
+        "commitSnapshotId": "commit-snapshot:3347f24f-0e7e-4efe-805d-9d6847db0ffc",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:73963468-44ff-4937-a606-9b90ba86227a"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:bf25b483-e169-4a0d-9081-8ad8576b0e4b",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.receive",
+        "sourceSurface": "WEB",
+        "entityId": "outbound:709456f1-e26b-4b5b-8d34-aaaf645a3fe6",
+        "commandId": "bf25b483-e169-4a0d-9081-8ad8576b0e4b",
+        "commitSnapshotId": "commit-snapshot:c9ca36b2-134c-4b9f-85b8-d35cb0f823b5",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:733d2662-96d3-4599-b258-d29e5d809eb9",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "outbound:709456f1-e26b-4b5b-8d34-aaaf645a3fe6",
+        "commandId": "733d2662-96d3-4599-b258-d29e5d809eb9",
+        "commitSnapshotId": "commit-snapshot:17f90e0c-0808-4d8c-a2c7-141c20a338ae",
+        "previousVersion": 4,
+        "newVersion": 5,
+        "relatedIds": [
+          "stock-event:0a576292-5410-4813-94ea-9c443a2fb381",
+          "physical:bdfb3dea-fbb0-4580-affc-5a56dde78ac1"
+        ],
+        "eventIds": [
+          "stock-event:0a576292-5410-4813-94ea-9c443a2fb381"
+        ]
+      },
+      {
+        "id": "audit:e2842c47-309e-406f-884c-47b7baee0537",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:f341b999-fe8b-4780-9fcc-89d5c38f6476",
+        "commandId": "e2842c47-309e-406f-884c-47b7baee0537",
+        "commitSnapshotId": "commit-snapshot:de8f528d-1b19-40e8-8f9a-ad1123e285e0",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:743663bd-b6fc-4c48-8acc-479b4391c14b",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:f341b999-fe8b-4780-9fcc-89d5c38f6476",
+        "commandId": "743663bd-b6fc-4c48-8acc-479b4391c14b",
+        "commitSnapshotId": "commit-snapshot:b9c0a9b7-2ef1-4962-aa18-e9474c412fad",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "box:544a2c61-5d28-4e9d-9fb3-801f31c285f1"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:approved:BOX-0001",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0001",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0001",
+          "receipt:approved:HN-PN-0001",
+          "stock-event:approved:BOX-0001"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0001"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0002",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0002",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0002",
+          "receipt:approved:HN-PN-0002",
+          "stock-event:approved:BOX-0002"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0002"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0003",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0003",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0003",
+          "receipt:approved:HN-PN-0003",
+          "stock-event:approved:BOX-0003"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0003"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0004",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0004",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0004",
+          "receipt:approved:HN-PN-0004",
+          "stock-event:approved:BOX-0004"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0004"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0005",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0005",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0005",
+          "receipt:approved:HN-PN-0005",
+          "stock-event:approved:BOX-0005"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0005"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0006",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0006",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0006",
+          "receipt:approved:HN-PN-0006",
+          "stock-event:approved:BOX-0006"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0006"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0007",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0007",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0007",
+          "receipt:approved:HN-PN-0007",
+          "stock-event:approved:BOX-0007"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0007"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0008",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0008",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0008",
+          "receipt:approved:HN-PN-0008",
+          "stock-event:approved:BOX-0008"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0008"
+        ]
+      },
+      {
+        "id": "audit:approved:HN-BOX-0009",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:HN-BOX-0009",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:HN-BOX-0009",
+          "receipt:approved:HN-PN-0009",
+          "stock-event:approved:HN-BOX-0009"
+        ],
+        "eventIds": [
+          "stock-event:approved:HN-BOX-0009"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0011",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0011",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0011",
+          "receipt:approved:HN-PN-0011",
+          "stock-event:approved:BOX-0011"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0011"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0012",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0012",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0012",
+          "receipt:approved:HN-PN-0012",
+          "stock-event:approved:BOX-0012"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0012"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0013",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0013",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0013",
+          "receipt:approved:HN-PN-0013",
+          "stock-event:approved:BOX-0013"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0013"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0014",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0014",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0014",
+          "receipt:approved:HN-PN-0014",
+          "stock-event:approved:BOX-0014"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0014"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0015",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0015",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0015",
+          "receipt:approved:HN-PN-0015",
+          "stock-event:approved:BOX-0015"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0015"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0016",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0016",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0016",
+          "receipt:approved:HN-PN-0016",
+          "stock-event:approved:BOX-0016"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0016"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0017",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0017",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0017",
+          "receipt:approved:HN-PN-0017",
+          "stock-event:approved:BOX-0017"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0017"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0018",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0018",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0018",
+          "receipt:approved:HN-PN-0018",
+          "stock-event:approved:BOX-0018"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0018"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0019",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0019",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0019",
+          "receipt:approved:HN-PN-0019",
+          "stock-event:approved:BOX-0019"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0019"
+        ]
+      },
+      {
+        "id": "audit:c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "scenario.seed-approved",
+        "sourceSurface": "QA",
+        "entityId": "scenario:57b4bf51-3c6d-4e8d-8524-159244fe3f9b",
+        "commandId": "c4e9edff-16b6-4afe-ba17-b8324f4c0f8e",
+        "commitSnapshotId": "commit-snapshot:28eb2d82-6149-4a7d-beea-d5184cb00845",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "receipt:approved:HN-PN-0001",
+          "box:approved:BOX-0001",
+          "stock-event:approved:BOX-0001",
+          "putaway:approved:BOX-0001",
+          "audit:approved:BOX-0001",
+          "receipt:approved:HN-PN-0002",
+          "box:approved:BOX-0002",
+          "stock-event:approved:BOX-0002",
+          "putaway:approved:BOX-0002",
+          "audit:approved:BOX-0002",
+          "receipt:approved:HN-PN-0003",
+          "box:approved:BOX-0003",
+          "stock-event:approved:BOX-0003",
+          "putaway:approved:BOX-0003",
+          "audit:approved:BOX-0003",
+          "receipt:approved:HN-PN-0004",
+          "box:approved:BOX-0004",
+          "stock-event:approved:BOX-0004",
+          "putaway:approved:BOX-0004",
+          "audit:approved:BOX-0004",
+          "receipt:approved:HN-PN-0005",
+          "box:approved:BOX-0005",
+          "stock-event:approved:BOX-0005",
+          "putaway:approved:BOX-0005",
+          "audit:approved:BOX-0005",
+          "receipt:approved:HN-PN-0006",
+          "box:approved:BOX-0006",
+          "stock-event:approved:BOX-0006",
+          "putaway:approved:BOX-0006",
+          "audit:approved:BOX-0006",
+          "receipt:approved:HN-PN-0007",
+          "box:approved:BOX-0007",
+          "stock-event:approved:BOX-0007",
+          "putaway:approved:BOX-0007",
+          "audit:approved:BOX-0007",
+          "receipt:approved:HN-PN-0008",
+          "box:approved:BOX-0008",
+          "stock-event:approved:BOX-0008",
+          "putaway:approved:BOX-0008",
+          "audit:approved:BOX-0008",
+          "receipt:approved:HN-PN-0009",
+          "box:approved:HN-BOX-0009",
+          "stock-event:approved:HN-BOX-0009",
+          "putaway:approved:HN-BOX-0009",
+          "audit:approved:HN-BOX-0009",
+          "receipt:approved:HN-PN-0011",
+          "box:approved:BOX-0011",
+          "stock-event:approved:BOX-0011",
+          "putaway:approved:BOX-0011",
+          "audit:approved:BOX-0011",
+          "receipt:approved:HN-PN-0012",
+          "box:approved:BOX-0012",
+          "stock-event:approved:BOX-0012",
+          "putaway:approved:BOX-0012",
+          "audit:approved:BOX-0012",
+          "receipt:approved:HN-PN-0013",
+          "box:approved:BOX-0013",
+          "stock-event:approved:BOX-0013",
+          "putaway:approved:BOX-0013",
+          "audit:approved:BOX-0013",
+          "receipt:approved:HN-PN-0014",
+          "box:approved:BOX-0014",
+          "stock-event:approved:BOX-0014",
+          "putaway:approved:BOX-0014",
+          "audit:approved:BOX-0014",
+          "receipt:approved:HN-PN-0015",
+          "box:approved:BOX-0015",
+          "stock-event:approved:BOX-0015",
+          "putaway:approved:BOX-0015",
+          "audit:approved:BOX-0015",
+          "receipt:approved:HN-PN-0016",
+          "box:approved:BOX-0016",
+          "stock-event:approved:BOX-0016",
+          "putaway:approved:BOX-0016",
+          "audit:approved:BOX-0016",
+          "receipt:approved:HN-PN-0017",
+          "box:approved:BOX-0017",
+          "stock-event:approved:BOX-0017",
+          "putaway:approved:BOX-0017",
+          "audit:approved:BOX-0017",
+          "receipt:approved:HN-PN-0018",
+          "box:approved:BOX-0018",
+          "stock-event:approved:BOX-0018",
+          "putaway:approved:BOX-0018",
+          "audit:approved:BOX-0018",
+          "receipt:approved:HN-PN-0019",
+          "box:approved:BOX-0019",
+          "stock-event:approved:BOX-0019",
+          "putaway:approved:BOX-0019",
+          "audit:approved:BOX-0019",
+          "receipt:approved:HN-PN-0021",
+          "box:approved:BOX-0021",
+          "stock-event:approved:BOX-0021",
+          "receipt:approved:HN-PN-0022",
+          "box:approved:BOX-0022",
+          "stock-event:approved:BOX-0022",
+          "receipt:approved:HN-PN-0023",
+          "box:approved:BOX-0023",
+          "stock-event:approved:BOX-0023",
+          "receipt:approved:HN-PN-0024",
+          "box:approved:BOX-0024",
+          "stock-event:approved:BOX-0024",
+          "receipt:approved:HN-PN-0025",
+          "box:approved:BOX-0025",
+          "stock-event:approved:BOX-0025",
+          "receipt:approved:HN-PN-0026",
+          "box:approved:BOX-0026",
+          "stock-event:approved:BOX-0026",
+          "receipt:approved:HN-PN-0027",
+          "box:approved:BOX-0027",
+          "stock-event:approved:BOX-0027",
+          "receipt:approved:HN-PN-0028",
+          "box:approved:BOX-0028",
+          "stock-event:approved:BOX-0028",
+          "receipt:approved:HN-PN-0029",
+          "box:approved:BOX-0029",
+          "stock-event:approved:BOX-0029"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0001",
+          "stock-event:approved:BOX-0002",
+          "stock-event:approved:BOX-0003",
+          "stock-event:approved:BOX-0004",
+          "stock-event:approved:BOX-0005",
+          "stock-event:approved:BOX-0006",
+          "stock-event:approved:BOX-0007",
+          "stock-event:approved:BOX-0008",
+          "stock-event:approved:HN-BOX-0009",
+          "stock-event:approved:BOX-0011",
+          "stock-event:approved:BOX-0012",
+          "stock-event:approved:BOX-0013",
+          "stock-event:approved:BOX-0014",
+          "stock-event:approved:BOX-0015",
+          "stock-event:approved:BOX-0016",
+          "stock-event:approved:BOX-0017",
+          "stock-event:approved:BOX-0018",
+          "stock-event:approved:BOX-0019",
+          "stock-event:approved:BOX-0021",
+          "stock-event:approved:BOX-0022",
+          "stock-event:approved:BOX-0023",
+          "stock-event:approved:BOX-0024",
+          "stock-event:approved:BOX-0025",
+          "stock-event:approved:BOX-0026",
+          "stock-event:approved:BOX-0027",
+          "stock-event:approved:BOX-0028",
+          "stock-event:approved:BOX-0029"
+        ]
+      },
+      {
+        "id": "audit:d40b7026-17f1-43b8-af9c-90f2557809eb",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.intake",
+        "sourceSurface": "APP_P09",
+        "entityId": "warranty-case:efd51b83-3527-4fcf-a898-bc507fbeab62",
+        "commandId": "d40b7026-17f1-43b8-af9c-90f2557809eb",
+        "commitSnapshotId": "commit-snapshot:00d98c03-07e8-42eb-b9f4-4cf32dabeb45",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "case-event:d40b7026-17f1-43b8-af9c-90f2557809eb"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:97e4cb42-f614-40fe-ad9a-b5c5eb96912b",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.diagnose",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:efd51b83-3527-4fcf-a898-bc507fbeab62",
+        "commandId": "97e4cb42-f614-40fe-ad9a-b5c5eb96912b",
+        "commitSnapshotId": "commit-snapshot:eeefed53-57e4-4eee-a651-1da42ba309a9",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "case-event:97e4cb42-f614-40fe-ad9a-b5c5eb96912b"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:9e1931c6-9f05-445c-84a5-9ff7ae7cdc7f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.transition",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:efd51b83-3527-4fcf-a898-bc507fbeab62",
+        "commandId": "9e1931c6-9f05-445c-84a5-9ff7ae7cdc7f",
+        "commitSnapshotId": "commit-snapshot:3de84022-ad0b-4787-9825-49ffba74dcb4",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "case-event:9e1931c6-9f05-445c-84a5-9ff7ae7cdc7f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:c0756cfa-f30c-4180-b8c4-c80a58b5ea58",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.create",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:dba51827-2440-4363-a656-1951322a22a9",
+        "commandId": "c0756cfa-f30c-4180-b8c4-c80a58b5ea58",
+        "commitSnapshotId": "commit-snapshot:f9ece48a-45dc-4bde-bd7c-ac20334dd30c",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:faf32b6d-5344-4a47-a016-dc7d182532c5",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.save",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:dba51827-2440-4363-a656-1951322a22a9",
+        "commandId": "faf32b6d-5344-4a47-a016-dc7d182532c5",
+        "commitSnapshotId": "commit-snapshot:d3ebf114-3576-43fd-8dc2-1e92bab7c756",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:4af57005-1b60-4cbe-83c1-c447e914b182",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.post",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:dba51827-2440-4363-a656-1951322a22a9",
+        "commandId": "4af57005-1b60-4cbe-83c1-c447e914b182",
+        "commitSnapshotId": "commit-snapshot:e0c1149a-6ecb-4a72-972c-6ef810c67d68",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "box:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+          "stock-event:4e14c978-064c-42ed-9cf0-afc98916c991"
+        ],
+        "eventIds": [
+          "stock-event:4e14c978-064c-42ed-9cf0-afc98916c991"
+        ]
+      },
+      {
+        "id": "audit:8a6a26cc-61cb-4cd0-9a28-5322b0c3360f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.transition",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:efd51b83-3527-4fcf-a898-bc507fbeab62",
+        "commandId": "8a6a26cc-61cb-4cd0-9a28-5322b0c3360f",
+        "commitSnapshotId": "commit-snapshot:74925735-691f-45fa-a0ac-d447bb258ba0",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "case-event:8a6a26cc-61cb-4cd0-9a28-5322b0c3360f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:0dfe88d9-367f-47b4-b9e2-df03ceb1e9e6",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.transition",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:efd51b83-3527-4fcf-a898-bc507fbeab62",
+        "commandId": "0dfe88d9-367f-47b4-b9e2-df03ceb1e9e6",
+        "commitSnapshotId": "commit-snapshot:d9228a79-fcc8-41af-bac3-3ed6685a44eb",
+        "previousVersion": 4,
+        "newVersion": 5,
+        "relatedIds": [
+          "case-event:0dfe88d9-367f-47b4-b9e2-df03ceb1e9e6"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:20995923-bacc-40e8-a041-7a97ed70bbe6",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.intake",
+        "sourceSurface": "APP_P09",
+        "entityId": "warranty-case:fdc4fa52-f71b-47dc-b1e8-c7949b0004d7",
+        "commandId": "20995923-bacc-40e8-a041-7a97ed70bbe6",
+        "commitSnapshotId": "commit-snapshot:98097698-4015-46e6-a6ec-65b5d4f94ba2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "case-event:20995923-bacc-40e8-a041-7a97ed70bbe6"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:e9c02714-e129-40d9-a8ae-bb37464b420d",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.diagnose",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:fdc4fa52-f71b-47dc-b1e8-c7949b0004d7",
+        "commandId": "e9c02714-e129-40d9-a8ae-bb37464b420d",
+        "commitSnapshotId": "commit-snapshot:dd68831d-594b-4e8a-aaac-ae3ee313b986",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "case-event:e9c02714-e129-40d9-a8ae-bb37464b420d"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:13c48d6a-42a1-4732-9085-c7fa75ed641e",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.create",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:5f73bafa-c425-4f3c-8031-b61e1e6dc8c3",
+        "commandId": "13c48d6a-42a1-4732-9085-c7fa75ed641e",
+        "commitSnapshotId": "commit-snapshot:0ee91818-eeba-4a61-a2ce-01767d89221b",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:e94d12f7-47be-41c2-882c-719a9a4edf66",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.save",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:5f73bafa-c425-4f3c-8031-b61e1e6dc8c3",
+        "commandId": "e94d12f7-47be-41c2-882c-719a9a4edf66",
+        "commitSnapshotId": "commit-snapshot:dac2e1ce-f2d5-4f90-a115-c7df1ccdadfd",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:40513f96-aed4-4040-9d90-ac4c8de5675f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.post",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:5f73bafa-c425-4f3c-8031-b61e1e6dc8c3",
+        "commandId": "40513f96-aed4-4040-9d90-ac4c8de5675f",
+        "commitSnapshotId": "commit-snapshot:cd930707-10f0-47bb-b885-b0f1fd2d9214",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "box:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+          "stock-event:fda652d3-a7b5-4ecc-922f-d8afa68fbb01"
+        ],
+        "eventIds": [
+          "stock-event:fda652d3-a7b5-4ecc-922f-d8afa68fbb01"
+        ]
+      },
+      {
+        "id": "audit:5dfc241e-cf3e-4cc1-b95d-ca003ffb6384",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.create",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:930bf3ef-557a-4d4d-b781-df78bea76b10",
+        "commandId": "5dfc241e-cf3e-4cc1-b95d-ca003ffb6384",
+        "commitSnapshotId": "commit-snapshot:e0b07413-6e2b-4213-bd2c-6d09f2adc55c",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:b3c1facc-45f8-4d5e-982d-9aac734de994",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.attach-evidence",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:930bf3ef-557a-4d4d-b781-df78bea76b10",
+        "commandId": "b3c1facc-45f8-4d5e-982d-9aac734de994",
+        "commitSnapshotId": "commit-snapshot:9b498840-ce52-4c00-bbd0-e82e91003979",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "evidence:b3c1facc-45f8-4d5e-982d-9aac734de994"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:810dce70-4b86-4372-af32-2f235802b581",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.confirm-return",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:930bf3ef-557a-4d4d-b781-df78bea76b10",
+        "commandId": "810dce70-4b86-4372-af32-2f235802b581",
+        "commitSnapshotId": "commit-snapshot:3e2c18b6-16fb-4aa1-a9e1-d86b3ca8ec31",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:3883c9fd-7413-46ca-a6db-5ba5ff31aaf9",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.post",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:930bf3ef-557a-4d4d-b781-df78bea76b10",
+        "commandId": "3883c9fd-7413-46ca-a6db-5ba5ff31aaf9",
+        "commitSnapshotId": "commit-snapshot:e47c717c-56b9-4082-9296-19273e9a0293",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "box:544a2c61-5d28-4e9d-9fb3-801f31c285f1",
+          "stock-event:e870339a-abfd-4e3f-8793-19d71ea7b77d"
+        ],
+        "eventIds": [
+          "stock-event:e870339a-abfd-4e3f-8793-19d71ea7b77d"
+        ]
+      }
+    ]
+  },
+  "status": "FAIL",
+  "failure": "TimeoutError: locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.s27-result-count') to be visible\u001b[22m\n\u001b[2m    35 × locator resolved to hidden <span role=\"status\" aria-live=\"polite\" class=\"s27-result-count\">0</span>\u001b[22m\n",
+  "stack": "locator.waitFor: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.s27-result-count') to be visible\u001b[22m\n\u001b[2m    35 × locator resolved to hidden <span role=\"status\" aria-live=\"polite\" class=\"s27-result-count\">0</span>\u001b[22m\n\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S27-005\\functional\\d80255b\\final-browser.mjs:28:399",
+  "end": "2026-10-27T13:13:02.955Z",
+  "endSHA": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "sourceStatus": ""
+}

@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "combined action/actor/search filters and filtered totals",
+    "reset and default stable timestamp tie-break (other sort modes tested independently at binding)",
+    "page 2 and exact event retained through explicit/automatic refresh, close and scroll",
+    "error hides protected stale data, retry preserves exact event",
+    "forbidden hides protected stale data, retry preserves exact event",
+    "unavailable hides protected stale data, retry preserves exact event",
+    "integrity hides protected stale data, retry preserves exact event",
+    "missing event is explicit, never a substitute row",
+    "five sequential events, footer close and focus return",
+    "all four copy buttons use complete original values",
+    "copy success/failure feedback delivered through shared Toast",
+    "source snapshot unchanged by all reads, filters and clipboard actions",
+    "page size updates visible rows without corrupting filtered total",
+    "shared date picker changes period, distinguishes empty period",
+    "long actor/identifiers wrap, scroll inside body, footer and full copy retained",
+    "unknown action remains unchanged in list and details",
+    "stock-event and related IDs match supplied proof",
+    "resize while open returns focus to visible desktop/tablet opener",
+    "initial loading state",
+    "initial empty state",
+    "initial error state",
+    "initial forbidden state",
+    "initial unavailable state"
+  ],
+  "errors": []
+}

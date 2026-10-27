@@ -1,0 +1,800 @@
+{
+  "base": "http://127.0.0.1:5287",
+  "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_ACTUAL_APP_CASCADE",
+  "started": "2026-10-27T13:21:14.559Z",
+  "sourceStart": {
+    "head": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+    "status": "M src/features/S27/system-audit.css\n M tests/s27/copy-border-cascade.mjs",
+    "cssSha256": "0e7f242186f064b416205d78414bb4b6b2302fb54f1943a0ed27b6e995a65994"
+  },
+  "results": [
+    {
+      "profile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 820,
+        "height": 789,
+        "top": 76,
+        "bottom": 865,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 818,
+        "height": 82,
+        "top": 77,
+        "bottom": 159,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "14px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 770,
+        "height": 87,
+        "top": 179,
+        "bottom": 266,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px 0px 18px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 770,
+        "height": 137,
+        "top": 282,
+        "bottom": 419,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 770,
+        "height": 230,
+        "top": 537,
+        "bottom": 767,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 818,
+        "height": 77,
+        "top": 787,
+        "bottom": 864,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "16px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 579,
+          "bottom": 623,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 627,
+          "bottom": 671,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 675,
+          "bottom": 719,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 723,
+          "bottom": 767,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:0e4684ad-7ce0-448a-9eed-d4b728d0da7e",
+        "profile:58da183a-3b78-41e2-9fca-b7e044e4a69f",
+        "0e4684ad-7ce0-448a-9eed-d4b728d0da7e",
+        "commit-snapshot:b40f9729-da9f-4c1a-b468-082d60074ed0"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "pageDescription": "Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.",
+      "reloadLeadingIcons": 0,
+      "cardMetadata": [],
+      "failures": []
+    },
+    {
+      "profile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 776,
+        "height": 1156,
+        "top": 215,
+        "bottom": 1371,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 774,
+        "height": 97,
+        "top": 216,
+        "bottom": 313,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "13px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 726,
+        "height": 105,
+        "top": 337,
+        "bottom": 442,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 726,
+        "height": 215,
+        "top": 464,
+        "bottom": 679,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 726,
+        "height": 314,
+        "top": 947,
+        "bottom": 1261,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px 22px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 774,
+        "height": 85,
+        "top": 1285,
+        "bottom": 1370,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "20px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1008,
+          "bottom": 1052,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1070,
+          "bottom": 1114,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1132,
+          "bottom": 1176,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1194,
+          "bottom": 1238,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:0e4684ad-7ce0-448a-9eed-d4b728d0da7e",
+        "profile:58da183a-3b78-41e2-9fca-b7e044e4a69f",
+        "0e4684ad-7ce0-448a-9eed-d4b728d0da7e",
+        "commit-snapshot:b40f9729-da9f-4c1a-b468-082d60074ed0"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "pageDescription": "Theo dõi thao tác và truy vết sự kiện.",
+      "reloadLeadingIcons": 0,
+      "cardMetadata": [
+        {
+          "columns": "191.062px 143.297px 175.141px 175.156px 135.344px",
+          "values": 5,
+          "fields": [
+            {
+              "label": "Người thao tác",
+              "column": {
+                "left": 62,
+                "right": 253.0625,
+                "top": 900,
+                "bottom": 955
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 62,
+                  "right": 172.0625,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            },
+            {
+              "label": "Nguồn thực hiện",
+              "column": {
+                "left": 265.0625,
+                "right": 408.359375,
+                "top": 900,
+                "bottom": 955
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 265.0625,
+                  "right": 387.703125,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            },
+            {
+              "label": "Đối tượng",
+              "column": {
+                "left": 420.359375,
+                "right": 595.5,
+                "top": 900,
+                "bottom": 955
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 420.359375,
+                  "right": 493.625,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            },
+            {
+              "label": "Mã lệnh",
+              "column": {
+                "left": 607.5,
+                "right": 782.65625,
+                "top": 900,
+                "bottom": 955
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 607.5,
+                  "right": 666.328125,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            },
+            {
+              "label": "Phiên bản",
+              "column": {
+                "left": 794.65625,
+                "right": 930,
+                "top": 900,
+                "bottom": 955
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 794.65625,
+                  "right": 867.734375,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            }
+          ],
+          "overlaps": []
+        },
+        {
+          "columns": "191.062px 143.297px 175.141px 175.156px 135.344px",
+          "values": 5,
+          "fields": [
+            {
+              "label": "Người thao tác",
+              "column": {
+                "left": 62,
+                "right": 253.0625,
+                "top": 1142,
+                "bottom": 1197
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 62,
+                  "right": 172.0625,
+                  "top": 1144,
+                  "bottom": 1163
+                }
+              ]
+            },
+            {
+              "label": "Nguồn thực hiện",
+              "column": {
+                "left": 265.0625,
+                "right": 408.359375,
+                "top": 1142,
+                "bottom": 1197
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 265.0625,
+                  "right": 387.703125,
+                  "top": 1144,
+                  "bottom": 1163
+                }
+              ]
+            },
+            {
+              "label": "Đối tượng",
+              "column": {
+                "left": 420.359375,
+                "right": 595.5,
+                "top": 1142,
+                "bottom": 1197
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 420.359375,
+                  "right": 493.625,
+                  "top": 1144,
+                  "bottom": 1163
+                }
+              ]
+            },
+            {
+              "label": "Mã lệnh",
+              "column": {
+                "left": 607.5,
+                "right": 782.65625,
+                "top": 1142,
+                "bottom": 1197
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 607.5,
+                  "right": 666.328125,
+                  "top": 1144,
+                  "bottom": 1163
+                }
+              ]
+            },
+            {
+              "label": "Phiên bản",
+              "column": {
+                "left": 794.65625,
+                "right": 930,
+                "top": 1142,
+                "bottom": 1197
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 794.65625,
+                  "right": 867.734375,
+                  "top": 1144,
+                  "bottom": 1163
+                }
+              ]
+            }
+          ],
+          "overlaps": []
+        }
+      ],
+      "failures": []
+    },
+    {
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 752,
+        "height": 1180,
+        "top": 50,
+        "bottom": 1230,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 750,
+        "height": 97,
+        "top": 51,
+        "bottom": 148,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "13px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 702,
+        "height": 105,
+        "top": 172,
+        "bottom": 277,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 702,
+        "height": 215,
+        "top": 299,
+        "bottom": 514,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 702,
+        "height": 338,
+        "top": 782,
+        "bottom": 1120,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px 22px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 750,
+        "height": 85,
+        "top": 1144,
+        "bottom": 1229,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "20px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 843,
+          "bottom": 887,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 905,
+          "bottom": 949,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 967,
+          "bottom": 1011,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1029,
+          "bottom": 1073,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:0e4684ad-7ce0-448a-9eed-d4b728d0da7e",
+        "profile:58da183a-3b78-41e2-9fca-b7e044e4a69f",
+        "0e4684ad-7ce0-448a-9eed-d4b728d0da7e",
+        "commit-snapshot:b40f9729-da9f-4c1a-b468-082d60074ed0"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "pageDescription": "Theo dõi thao tác và truy vết sự kiện.",
+      "reloadLeadingIcons": 0,
+      "cardMetadata": [
+        {
+          "columns": "146.328px 109.734px 134.141px 134.141px 103.656px",
+          "values": 5,
+          "fields": [
+            {
+              "label": "Người thao tác",
+              "column": {
+                "left": 62,
+                "right": 208.328125,
+                "top": 900,
+                "bottom": 979
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 62,
+                  "right": 172.0625,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            },
+            {
+              "label": "Nguồn thực hiện",
+              "column": {
+                "left": 220.328125,
+                "right": 330.0625,
+                "top": 900,
+                "bottom": 979
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 220.328125,
+                  "right": 307.59375,
+                  "top": 902,
+                  "bottom": 921
+                },
+                {
+                  "left": 220.328125,
+                  "right": 251.8125,
+                  "top": 926,
+                  "bottom": 945
+                }
+              ]
+            },
+            {
+              "label": "Đối tượng",
+              "column": {
+                "left": 342.0625,
+                "right": 476.203125,
+                "top": 900,
+                "bottom": 979
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 342.0625,
+                  "right": 415.328125,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            },
+            {
+              "label": "Mã lệnh",
+              "column": {
+                "left": 488.203125,
+                "right": 622.34375,
+                "top": 900,
+                "bottom": 979
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 488.203125,
+                  "right": 547.03125,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            },
+            {
+              "label": "Phiên bản",
+              "column": {
+                "left": 634.34375,
+                "right": 738,
+                "top": 900,
+                "bottom": 979
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 634.34375,
+                  "right": 707.421875,
+                  "top": 902,
+                  "bottom": 921
+                }
+              ]
+            }
+          ],
+          "overlaps": []
+        },
+        {
+          "columns": "146.328px 109.734px 134.141px 134.141px 103.656px",
+          "values": 5,
+          "fields": [
+            {
+              "label": "Người thao tác",
+              "column": {
+                "left": 62,
+                "right": 208.328125,
+                "top": 1166,
+                "bottom": 1245
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 62,
+                  "right": 172.0625,
+                  "top": 1168,
+                  "bottom": 1187
+                }
+              ]
+            },
+            {
+              "label": "Nguồn thực hiện",
+              "column": {
+                "left": 220.328125,
+                "right": 330.0625,
+                "top": 1166,
+                "bottom": 1245
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 220.328125,
+                  "right": 307.59375,
+                  "top": 1168,
+                  "bottom": 1187
+                },
+                {
+                  "left": 220.328125,
+                  "right": 251.8125,
+                  "top": 1192,
+                  "bottom": 1211
+                }
+              ]
+            },
+            {
+              "label": "Đối tượng",
+              "column": {
+                "left": 342.0625,
+                "right": 476.203125,
+                "top": 1166,
+                "bottom": 1245
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 342.0625,
+                  "right": 415.328125,
+                  "top": 1168,
+                  "bottom": 1187
+                }
+              ]
+            },
+            {
+              "label": "Mã lệnh",
+              "column": {
+                "left": 488.203125,
+                "right": 622.34375,
+                "top": 1166,
+                "bottom": 1245
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 488.203125,
+                  "right": 547.03125,
+                  "top": 1168,
+                  "bottom": 1187
+                }
+              ]
+            },
+            {
+              "label": "Phiên bản",
+              "column": {
+                "left": 634.34375,
+                "right": 738,
+                "top": 1166,
+                "bottom": 1245
+              },
+              "fontSize": "16px",
+              "fragments": [
+                {
+                  "left": 634.34375,
+                  "right": 707.421875,
+                  "top": 1168,
+                  "bottom": 1187
+                }
+              ]
+            }
+          ],
+          "overlaps": []
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "sourceScenario": {
+    "date": "2026-10-26",
+    "count": 62
+  },
+  "status": "PASS",
+  "sourceEnd": {
+    "head": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+    "status": "M src/features/S27/system-audit.css\n M tests/s27/copy-border-cascade.mjs",
+    "cssSha256": "0e7f242186f064b416205d78414bb4b6b2302fb54f1943a0ed27b6e995a65994"
+  },
+  "finished": "2026-10-27T13:21:35.754Z",
+  "sourceStable": true
+}

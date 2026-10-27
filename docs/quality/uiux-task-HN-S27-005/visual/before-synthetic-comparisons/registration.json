@@ -1,0 +1,234 @@
+[
+  {
+    "name": "desktop-list",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\9.png",
+    "referenceSHA256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+    "referenceROI": [
+      292,
+      230,
+      1647,
+      915
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\desktop-list-full.png",
+    "actualROI": [
+      322,
+      238,
+      1858,
+      859
+    ],
+    "actualScopedRasterSize": [
+      1536,
+      621
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 1.133579335793358,
+    "scaleY": 0.9065693430656935,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  },
+  {
+    "name": "desktop-modal",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\11.png",
+    "referenceSHA256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+    "referenceROI": [
+      484,
+      115,
+      1305,
+      875
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\desktop-modal.png",
+    "actualROI": [
+      550,
+      142,
+      1370,
+      938
+    ],
+    "actualScopedRasterSize": [
+      820,
+      796
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 0.9987819732034104,
+    "scaleY": 1.0473684210526315,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  },
+  {
+    "name": "tablet-list",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\10.png",
+    "referenceSHA256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+    "referenceROI": [
+      27,
+      416,
+      967,
+      1547
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\tablet-list-full.png",
+    "actualROI": [
+      48,
+      914,
+      1552,
+      3282
+    ],
+    "actualScopedRasterSize": [
+      1504,
+      2368
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 1.6,
+    "scaleY": 2.0937223695844387,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  },
+  {
+    "name": "tablet-modal",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\12.png",
+    "referenceSHA256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+    "referenceROI": [
+      108,
+      314,
+      884,
+      1470
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\tablet-modal.png",
+    "actualROI": [
+      48,
+      95,
+      1552,
+      2465
+    ],
+    "actualScopedRasterSize": [
+      1504,
+      2370
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 1.9381443298969072,
+    "scaleY": 2.050173010380623,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  },
+  {
+    "name": "desktop-native-list",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\9.png",
+    "referenceSHA256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+    "referenceROI": [
+      292,
+      230,
+      1647,
+      915
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\desktop-native-list-full.png",
+    "actualROI": [
+      292,
+      238,
+      1640,
+      859
+    ],
+    "actualScopedRasterSize": [
+      1348,
+      621
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 0.9948339483394834,
+    "scaleY": 0.9065693430656935,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  },
+  {
+    "name": "desktop-native-modal",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\11.png",
+    "referenceSHA256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+    "referenceROI": [
+      484,
+      115,
+      1305,
+      875
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\desktop-native-modal.png",
+    "actualROI": [
+      426,
+      73,
+      1246,
+      868
+    ],
+    "actualScopedRasterSize": [
+      820,
+      795
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 0.9987819732034104,
+    "scaleY": 1.0460526315789473,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  },
+  {
+    "name": "tablet-native-list",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\10.png",
+    "referenceSHA256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+    "referenceROI": [
+      27,
+      416,
+      967,
+      1547
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\tablet-native-list-full.png",
+    "actualROI": [
+      24,
+      429,
+      968,
+      1613
+    ],
+    "actualScopedRasterSize": [
+      944,
+      1184
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 1.004255319148936,
+    "scaleY": 1.0468611847922193,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  },
+  {
+    "name": "tablet-native-modal",
+    "phase": "before-synthetic",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\12.png",
+    "referenceSHA256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+    "referenceROI": [
+      108,
+      314,
+      884,
+      1470
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\tablet-native-modal.png",
+    "actualROI": [
+      108,
+      200,
+      884,
+      1386
+    ],
+    "actualScopedRasterSize": [
+      776,
+      1186
+    ],
+    "registration": "Component ROI edges, independent x/y scale, Lanczos; no source CSS viewport/DPR inference",
+    "scaleX": 1.0,
+    "scaleY": 1.0259515570934257,
+    "assessment": "DIAGNOSTIC_ONLY_NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded"
+  }
+]

@@ -1,0 +1,2717 @@
+{
+  "sha": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "mode": "MOCK",
+  "production": "NOT_CONNECTED",
+  "start": "2026-10-27T13:13:47.499Z",
+  "profiles": [
+    {
+      "kind": "actual",
+      "width": 800,
+      "language": "vi",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện.",
+      "rawIds": [
+        "audit:53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "profile:7b58baab-ef96-44bd-9665-7fb8b52d8924",
+        "53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "commit-snapshot:fba59ba0-9253-4bd5-a355-15671b6f4f56"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 800,
+      "language": "vi",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện.",
+      "rawIds": [
+        "audit:53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "profile:7b58baab-ef96-44bd-9665-7fb8b52d8924",
+        "53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "commit-snapshot:fba59ba0-9253-4bd5-a355-15671b6f4f56"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 800,
+      "language": "en",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Track operations and trace events.",
+      "rawIds": [
+        "audit:53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "profile:7b58baab-ef96-44bd-9665-7fb8b52d8924",
+        "53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "commit-snapshot:fba59ba0-9253-4bd5-a355-15671b6f4f56"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 800,
+      "language": "en",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Track operations and trace events.",
+      "rawIds": [
+        "audit:53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "profile:7b58baab-ef96-44bd-9665-7fb8b52d8924",
+        "53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "commit-snapshot:fba59ba0-9253-4bd5-a355-15671b6f4f56"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 996,
+          "clientHeight": 996,
+          "horizontal": false,
+          "footerBottom": 1229,
+          "dialogBottom": 1230,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 800,
+      "language": "zh-CN",
+      "theme": "light",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。",
+      "rawIds": [
+        "audit:53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "profile:7b58baab-ef96-44bd-9665-7fb8b52d8924",
+        "53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "commit-snapshot:fba59ba0-9253-4bd5-a355-15671b6f4f56"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 995,
+          "clientHeight": 995,
+          "horizontal": false,
+          "footerBottom": 1228.5,
+          "dialogBottom": 1229.5,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 995,
+          "clientHeight": 995,
+          "horizontal": false,
+          "footerBottom": 1228.5,
+          "dialogBottom": 1229.5,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 995,
+          "clientHeight": 995,
+          "horizontal": false,
+          "footerBottom": 1228.5,
+          "dialogBottom": 1229.5,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "actual",
+      "width": 800,
+      "language": "zh-CN",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。",
+      "rawIds": [
+        "audit:53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "profile:7b58baab-ef96-44bd-9665-7fb8b52d8924",
+        "53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "commit-snapshot:fba59ba0-9253-4bd5-a355-15671b6f4f56"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 995,
+          "clientHeight": 995,
+          "horizontal": false,
+          "footerBottom": 1228.5,
+          "dialogBottom": 1229.5,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 0,
+          "scrollHeight": 995,
+          "clientHeight": 995,
+          "horizontal": false,
+          "footerBottom": 1228.5,
+          "dialogBottom": 1229.5,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 0,
+          "scrollHeight": 995,
+          "clientHeight": 995,
+          "horizontal": false,
+          "footerBottom": 1228.5,
+          "dialogBottom": 1229.5,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 1672,
+      "language": "vi",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 175,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 350,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 1672,
+      "language": "vi",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 175,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 350,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 1672,
+      "language": "en",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Track operations and trace events within your authorized scope. Vietnam time.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 175,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 350,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 1672,
+      "language": "en",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Track operations and trace events within your authorized scope. Vietnam time.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 175,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 350,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 1672,
+      "language": "zh-CN",
+      "theme": "light",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。仅显示授权范围内的数据。越南时间。",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 175,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 350,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 1672,
+      "language": "zh-CN",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。仅显示授权范围内的数据。越南时间。",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgba(0, 0, 0, 0)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 175,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 350,
+          "scrollHeight": 1082,
+          "clientHeight": 732,
+          "horizontal": false,
+          "footerBottom": 916,
+          "dialogBottom": 917,
+          "viewportHeight": 941,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 800,
+      "language": "vi",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 386,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 772,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 800,
+      "language": "vi",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Theo dõi thao tác và truy vết sự kiện.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 386,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 772,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 800,
+      "language": "en",
+      "theme": "light",
+      "status": "PASS",
+      "description": "Track operations and trace events.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 386,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 772,
+          "scrollHeight": 1836,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 800,
+      "language": "en",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "Track operations and trace events.",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1845,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 391,
+          "scrollHeight": 1845,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 781,
+          "scrollHeight": 1845,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 800,
+      "language": "zh-CN",
+      "theme": "light",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(216, 227, 239)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1801,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 369,
+          "scrollHeight": 1801,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 737,
+          "scrollHeight": 1801,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    },
+    {
+      "kind": "synthetic-long",
+      "width": 800,
+      "language": "zh-CN",
+      "theme": "dark",
+      "status": "PASS",
+      "description": "跟踪操作并追溯事件。",
+      "rawIds": [
+        "audit:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "profile:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-",
+        "commit-snapshot:000-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-9a30b6de-"
+      ],
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "border": "rgb(52, 75, 101)",
+          "style": "solid",
+          "borderWidth": "1px"
+        }
+      ],
+      "scroll": [
+        {
+          "fraction": 0,
+          "scrollTop": 0,
+          "scrollHeight": 1801,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 0.5,
+          "scrollTop": 369,
+          "scrollHeight": 1801,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        },
+        {
+          "fraction": 1,
+          "scrollTop": 737,
+          "scrollHeight": 1801,
+          "clientHeight": 1064,
+          "horizontal": false,
+          "footerBottom": 1263,
+          "dialogBottom": 1264,
+          "viewportHeight": 1280,
+          "bodyLock": "hidden"
+        }
+      ],
+      "copySuccessAndFailure": true,
+      "reloadFocusFooter": true
+    }
+  ],
+  "focused": [
+    "Actual62 source projects; page2; raw actionsearch/action+actor filters2",
+    "Actual snapshot immutable across6profiles/list+detailreload/clipboard"
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "source": {
+    "token": {
+      "epoch": "f35d3b60-7ee2-46c4-9c24-54364198b563",
+      "revision": 69,
+      "scenarioId": "scenario:c549cc06-3264-4120-a06c-860b77084614",
+      "generation": 1
+    },
+    "rows": [
+      {
+        "id": "audit:8700624f-b12e-4f01-af50-e87cd3a134e4",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "scenario.reset-own",
+        "sourceSurface": "QA",
+        "entityId": "scenario:c549cc06-3264-4120-a06c-860b77084614",
+        "commandId": "8700624f-b12e-4f01-af50-e87cd3a134e4",
+        "commitSnapshotId": "commit-snapshot:07254810-4fed-4e1a-ae37-99b68cc0e754",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "operational-setup:location:1",
+          "operational-setup:tray:1",
+          "operational-setup:location:2",
+          "operational-setup:tray:2",
+          "operational-setup:location:3",
+          "operational-setup:tray:3",
+          "operational-setup:location:4",
+          "operational-setup:tray:4",
+          "operational-setup:location:5",
+          "operational-setup:tray:5",
+          "operational-setup:location:6",
+          "operational-setup:tray:6",
+          "operational-setup:location:7",
+          "operational-setup:tray:7",
+          "operational-setup:location:8",
+          "operational-setup:tray:8",
+          "operational-setup:location:9",
+          "operational-setup:tray:9"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:0958c4b1-37e0-4b6a-8f51-e6998da3ae62",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "stock-profiles.create",
+        "sourceSurface": "WEB",
+        "entityId": "profile:d8666fb6-281a-45ee-b9d9-ec43a52c9540",
+        "commandId": "0958c4b1-37e0-4b6a-8f51-e6998da3ae62",
+        "commitSnapshotId": "commit-snapshot:e92c8438-1747-4a84-a290-99b4d1605c48",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "stock-profiles.create",
+        "sourceSurface": "WEB",
+        "entityId": "profile:7b58baab-ef96-44bd-9665-7fb8b52d8924",
+        "commandId": "53ab922f-afdd-4110-9cf1-2f7763fa280d",
+        "commitSnapshotId": "commit-snapshot:fba59ba0-9253-4bd5-a355-15671b6f4f56",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:6e76afec-6ada-4e86-8124-eecbe20bcd49",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:c3a0c587-cd26-4b57-8e6f-9253a924c56e",
+        "commandId": "6e76afec-6ada-4e86-8124-eecbe20bcd49",
+        "commitSnapshotId": "commit-snapshot:68d7ddc1-6f8c-483f-a3a2-96304e03dba3",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:cd41ac6b-61f8-4525-b187-fe871003fb21",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:e5bad649-d66c-4f63-a6e7-ed027b9cbd08",
+        "commandId": "cd41ac6b-61f8-4525-b187-fe871003fb21",
+        "commitSnapshotId": "commit-snapshot:34242f30-50e7-4738-8360-a616daab1997",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:cedcab11-6d03-4788-8641-0d38ad214936",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:1d733695-aa2d-4bf0-be92-1f628fe69c35",
+        "commandId": "cedcab11-6d03-4788-8641-0d38ad214936",
+        "commitSnapshotId": "commit-snapshot:6a1c5bb3-4a4d-4acc-8ca9-11cdf7782bca",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:bcd3a701-10ef-4110-97dd-09d775f97fff",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.create",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:5ec66890-018e-4daa-b695-3b0df1fc24b7",
+        "commandId": "bcd3a701-10ef-4110-97dd-09d775f97fff",
+        "commitSnapshotId": "commit-snapshot:258cda70-1827-4386-ac67-172cf6836876",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:7fafddf7-ab32-4a42-8ac9-e465bab84638",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:c3a0c587-cd26-4b57-8e6f-9253a924c56e",
+        "commandId": "7fafddf7-ab32-4a42-8ac9-e465bab84638",
+        "commitSnapshotId": "commit-snapshot:9c99032e-d9b3-4261-b1f2-b46c50265a8b",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "physical:7fafddf7-ab32-4a42-8ac9-e465bab84638",
+          "inbound-line:7fafddf7-ab32-4a42-8ac9-e465bab84638",
+          "physical-registry:7fafddf7-ab32-4a42-8ac9-e465bab84638",
+          "scan-observation:7fafddf7-ab32-4a42-8ac9-e465bab84638"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:37421f1d-c2df-462c-9e78-03f77b780d95",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:c3a0c587-cd26-4b57-8e6f-9253a924c56e",
+        "commandId": "37421f1d-c2df-462c-9e78-03f77b780d95",
+        "commitSnapshotId": "commit-snapshot:bdd60a21-e64d-4f87-aa25-fb638ba6a8ad",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:37421f1d-c2df-462c-9e78-03f77b780d95"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:16f050eb-0550-4eaa-87db-37d6a3ead9a3",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:c3a0c587-cd26-4b57-8e6f-9253a924c56e",
+        "commandId": "16f050eb-0550-4eaa-87db-37d6a3ead9a3",
+        "commitSnapshotId": "commit-snapshot:5079ac10-8abe-4a3a-9081-c475f0735dd2",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "physical:7fafddf7-ab32-4a42-8ac9-e465bab84638",
+          "stock-event:7fafddf7-ab32-4a42-8ac9-e465bab84638"
+        ],
+        "eventIds": [
+          "stock-event:7fafddf7-ab32-4a42-8ac9-e465bab84638"
+        ]
+      },
+      {
+        "id": "audit:e22a3968-1612-45f2-893a-464515b81d29",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:e5bad649-d66c-4f63-a6e7-ed027b9cbd08",
+        "commandId": "e22a3968-1612-45f2-893a-464515b81d29",
+        "commitSnapshotId": "commit-snapshot:121e5211-a2a3-4d89-8e29-b5a10f32161b",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "physical:e22a3968-1612-45f2-893a-464515b81d29",
+          "inbound-line:e22a3968-1612-45f2-893a-464515b81d29",
+          "physical-registry:e22a3968-1612-45f2-893a-464515b81d29",
+          "scan-observation:e22a3968-1612-45f2-893a-464515b81d29"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:081c5e42-0867-440c-93be-f376dc4a224f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:e5bad649-d66c-4f63-a6e7-ed027b9cbd08",
+        "commandId": "081c5e42-0867-440c-93be-f376dc4a224f",
+        "commitSnapshotId": "commit-snapshot:8a9ccd18-0052-4e23-9eb2-3d6e69e68f10",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:081c5e42-0867-440c-93be-f376dc4a224f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:81f93298-f701-4893-b2d6-cbd8d749cd97",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:e5bad649-d66c-4f63-a6e7-ed027b9cbd08",
+        "commandId": "81f93298-f701-4893-b2d6-cbd8d749cd97",
+        "commitSnapshotId": "commit-snapshot:dca398b1-3606-4258-836f-5d4a05aac7c8",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "physical:e22a3968-1612-45f2-893a-464515b81d29",
+          "stock-event:e22a3968-1612-45f2-893a-464515b81d29"
+        ],
+        "eventIds": [
+          "stock-event:e22a3968-1612-45f2-893a-464515b81d29"
+        ]
+      },
+      {
+        "id": "audit:975ba5bf-f58d-4889-97dc-5d25c543476f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:1d733695-aa2d-4bf0-be92-1f628fe69c35",
+        "commandId": "975ba5bf-f58d-4889-97dc-5d25c543476f",
+        "commitSnapshotId": "commit-snapshot:288765c5-5be2-4587-bce6-a24b8fbb2a11",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "box:975ba5bf-f58d-4889-97dc-5d25c543476f",
+          "inbound-line:975ba5bf-f58d-4889-97dc-5d25c543476f",
+          "physical-registry:975ba5bf-f58d-4889-97dc-5d25c543476f",
+          "scan-observation:975ba5bf-f58d-4889-97dc-5d25c543476f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:1541f31c-bf62-4869-97c8-d2f10fa281a4",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:1d733695-aa2d-4bf0-be92-1f628fe69c35",
+        "commandId": "1541f31c-bf62-4869-97c8-d2f10fa281a4",
+        "commitSnapshotId": "commit-snapshot:281ea5fd-eb24-457b-81bf-0266928dc387",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:1541f31c-bf62-4869-97c8-d2f10fa281a4"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:ab87f1ca-6de5-4853-8059-50d43bb5d33b",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:1d733695-aa2d-4bf0-be92-1f628fe69c35",
+        "commandId": "ab87f1ca-6de5-4853-8059-50d43bb5d33b",
+        "commitSnapshotId": "commit-snapshot:250f36ee-3fdf-4aa8-897d-372ca489b9f0",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "box:975ba5bf-f58d-4889-97dc-5d25c543476f",
+          "stock-event:975ba5bf-f58d-4889-97dc-5d25c543476f"
+        ],
+        "eventIds": [
+          "stock-event:975ba5bf-f58d-4889-97dc-5d25c543476f"
+        ]
+      },
+      {
+        "id": "audit:877a6a01-1609-4447-9c22-dc9ad9a9a355",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.scan",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:5ec66890-018e-4daa-b695-3b0df1fc24b7",
+        "commandId": "877a6a01-1609-4447-9c22-dc9ad9a9a355",
+        "commitSnapshotId": "commit-snapshot:f53a6510-d251-45bb-80cb-eede1d8e6bd6",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "box:877a6a01-1609-4447-9c22-dc9ad9a9a355",
+          "inbound-line:877a6a01-1609-4447-9c22-dc9ad9a9a355",
+          "physical-registry:877a6a01-1609-4447-9c22-dc9ad9a9a355",
+          "scan-observation:877a6a01-1609-4447-9c22-dc9ad9a9a355"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:2c69a210-1e48-46f2-ac9b-615b22fb03f2",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.submit",
+        "sourceSurface": "APP_P04",
+        "entityId": "receipt:5ec66890-018e-4daa-b695-3b0df1fc24b7",
+        "commandId": "2c69a210-1e48-46f2-ac9b-615b22fb03f2",
+        "commitSnapshotId": "commit-snapshot:90916b47-7f7d-4e80-bd4f-e2e8e50aa8f8",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:2c69a210-1e48-46f2-ac9b-615b22fb03f2"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:ec2b2257-ceb2-4bbf-a262-48bddb214d66",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "inbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "receipt:5ec66890-018e-4daa-b695-3b0df1fc24b7",
+        "commandId": "ec2b2257-ceb2-4bbf-a262-48bddb214d66",
+        "commitSnapshotId": "commit-snapshot:c90fd562-4d0b-4f9b-b9a0-405c8bec1960",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "box:877a6a01-1609-4447-9c22-dc9ad9a9a355",
+          "stock-event:877a6a01-1609-4447-9c22-dc9ad9a9a355"
+        ],
+        "eventIds": [
+          "stock-event:877a6a01-1609-4447-9c22-dc9ad9a9a355"
+        ]
+      },
+      {
+        "id": "audit:cc11736e-bcad-461d-8240-2cf3ac49c38f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.create",
+        "sourceSurface": "APP_P05",
+        "entityId": "outbound:13b788a1-395f-4e4a-aa16-5e4380a6e8b5",
+        "commandId": "cc11736e-bcad-461d-8240-2cf3ac49c38f",
+        "commitSnapshotId": "commit-snapshot:e1861d50-771f-4db8-9699-1f777615857e",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:9e142207-29c3-47b8-936c-eaf79b650a6f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.scan",
+        "sourceSurface": "APP_P05",
+        "entityId": "outbound:13b788a1-395f-4e4a-aa16-5e4380a6e8b5",
+        "commandId": "9e142207-29c3-47b8-936c-eaf79b650a6f",
+        "commitSnapshotId": "commit-snapshot:49fcbfd4-2b42-43f0-9669-8a260c9b0884",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "scan-observation:9e142207-29c3-47b8-936c-eaf79b650a6f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:15e80a30-0d16-4b46-befa-7d686d358aed",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.submit",
+        "sourceSurface": "APP_P05",
+        "entityId": "outbound:13b788a1-395f-4e4a-aa16-5e4380a6e8b5",
+        "commandId": "15e80a30-0d16-4b46-befa-7d686d358aed",
+        "commitSnapshotId": "commit-snapshot:05c5df45-d95d-4b0a-b6cf-22b0bcb7e3b6",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "app-submission:15e80a30-0d16-4b46-befa-7d686d358aed"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:0aaa2395-5dfd-4189-9753-731acef4b5d7",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.receive",
+        "sourceSurface": "WEB",
+        "entityId": "outbound:13b788a1-395f-4e4a-aa16-5e4380a6e8b5",
+        "commandId": "0aaa2395-5dfd-4189-9753-731acef4b5d7",
+        "commitSnapshotId": "commit-snapshot:0798705d-5038-402b-bcb8-9145f6341e5e",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:4bdc416b-6017-4916-bcf3-548240cde5b1",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "outbound.post",
+        "sourceSurface": "WEB",
+        "entityId": "outbound:13b788a1-395f-4e4a-aa16-5e4380a6e8b5",
+        "commandId": "4bdc416b-6017-4916-bcf3-548240cde5b1",
+        "commitSnapshotId": "commit-snapshot:f28b3a64-9a4c-44cf-9b1b-479b65e9f986",
+        "previousVersion": 4,
+        "newVersion": 5,
+        "relatedIds": [
+          "stock-event:5c6e2adb-d533-484e-952c-644d5f779998",
+          "physical:7fafddf7-ab32-4a42-8ac9-e465bab84638"
+        ],
+        "eventIds": [
+          "stock-event:5c6e2adb-d533-484e-952c-644d5f779998"
+        ]
+      },
+      {
+        "id": "audit:a89f23f6-3877-462c-8551-be26630f567f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:a30a8c73-1a28-4db0-b0e4-7ce59573a92a",
+        "commandId": "a89f23f6-3877-462c-8551-be26630f567f",
+        "commitSnapshotId": "commit-snapshot:b6401bd5-387b-4f5d-9991-d34661736a2c",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:9e1e28ac-b7bc-4c3a-9616-15b654d36f45",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:a30a8c73-1a28-4db0-b0e4-7ce59573a92a",
+        "commandId": "9e1e28ac-b7bc-4c3a-9616-15b654d36f45",
+        "commitSnapshotId": "commit-snapshot:7580ed4e-bf96-4de5-95b9-6000ef7a1bf9",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "box:975ba5bf-f58d-4889-97dc-5d25c543476f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:approved:BOX-0001",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0001",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0001",
+          "receipt:approved:HN-PN-0001",
+          "stock-event:approved:BOX-0001"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0001"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0002",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0002",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0002",
+          "receipt:approved:HN-PN-0002",
+          "stock-event:approved:BOX-0002"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0002"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0003",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0003",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0003",
+          "receipt:approved:HN-PN-0003",
+          "stock-event:approved:BOX-0003"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0003"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0004",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0004",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0004",
+          "receipt:approved:HN-PN-0004",
+          "stock-event:approved:BOX-0004"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0004"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0005",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0005",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0005",
+          "receipt:approved:HN-PN-0005",
+          "stock-event:approved:BOX-0005"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0005"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0006",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0006",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0006",
+          "receipt:approved:HN-PN-0006",
+          "stock-event:approved:BOX-0006"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0006"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0007",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0007",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0007",
+          "receipt:approved:HN-PN-0007",
+          "stock-event:approved:BOX-0007"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0007"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0008",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0008",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0008",
+          "receipt:approved:HN-PN-0008",
+          "stock-event:approved:BOX-0008"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0008"
+        ]
+      },
+      {
+        "id": "audit:approved:HN-BOX-0009",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.confirm",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:HN-BOX-0009",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:HN-BOX-0009",
+          "receipt:approved:HN-PN-0009",
+          "stock-event:approved:HN-BOX-0009"
+        ],
+        "eventIds": [
+          "stock-event:approved:HN-BOX-0009"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0011",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0011",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0011",
+          "receipt:approved:HN-PN-0011",
+          "stock-event:approved:BOX-0011"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0011"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0012",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0012",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0012",
+          "receipt:approved:HN-PN-0012",
+          "stock-event:approved:BOX-0012"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0012"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0013",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0013",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0013",
+          "receipt:approved:HN-PN-0013",
+          "stock-event:approved:BOX-0013"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0013"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0014",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0014",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0014",
+          "receipt:approved:HN-PN-0014",
+          "stock-event:approved:BOX-0014"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0014"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0015",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0015",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0015",
+          "receipt:approved:HN-PN-0015",
+          "stock-event:approved:BOX-0015"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0015"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0016",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0016",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0016",
+          "receipt:approved:HN-PN-0016",
+          "stock-event:approved:BOX-0016"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0016"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0017",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0017",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0017",
+          "receipt:approved:HN-PN-0017",
+          "stock-event:approved:BOX-0017"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0017"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0018",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0018",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0018",
+          "receipt:approved:HN-PN-0018",
+          "stock-event:approved:BOX-0018"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0018"
+        ]
+      },
+      {
+        "id": "audit:approved:BOX-0019",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "putaway.create",
+        "sourceSurface": "WEB",
+        "entityId": "putaway:approved:BOX-0019",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "box:approved:BOX-0019",
+          "receipt:approved:HN-PN-0019",
+          "stock-event:approved:BOX-0019"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0019"
+        ]
+      },
+      {
+        "id": "audit:85d79349-474f-43a2-8ef3-32671d5cd687",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "scenario.seed-approved",
+        "sourceSurface": "QA",
+        "entityId": "scenario:c549cc06-3264-4120-a06c-860b77084614",
+        "commandId": "85d79349-474f-43a2-8ef3-32671d5cd687",
+        "commitSnapshotId": "commit-snapshot:5af6e49f-a8d0-4d10-a9e2-5e9e8622ecf2",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "receipt:approved:HN-PN-0001",
+          "box:approved:BOX-0001",
+          "stock-event:approved:BOX-0001",
+          "putaway:approved:BOX-0001",
+          "audit:approved:BOX-0001",
+          "receipt:approved:HN-PN-0002",
+          "box:approved:BOX-0002",
+          "stock-event:approved:BOX-0002",
+          "putaway:approved:BOX-0002",
+          "audit:approved:BOX-0002",
+          "receipt:approved:HN-PN-0003",
+          "box:approved:BOX-0003",
+          "stock-event:approved:BOX-0003",
+          "putaway:approved:BOX-0003",
+          "audit:approved:BOX-0003",
+          "receipt:approved:HN-PN-0004",
+          "box:approved:BOX-0004",
+          "stock-event:approved:BOX-0004",
+          "putaway:approved:BOX-0004",
+          "audit:approved:BOX-0004",
+          "receipt:approved:HN-PN-0005",
+          "box:approved:BOX-0005",
+          "stock-event:approved:BOX-0005",
+          "putaway:approved:BOX-0005",
+          "audit:approved:BOX-0005",
+          "receipt:approved:HN-PN-0006",
+          "box:approved:BOX-0006",
+          "stock-event:approved:BOX-0006",
+          "putaway:approved:BOX-0006",
+          "audit:approved:BOX-0006",
+          "receipt:approved:HN-PN-0007",
+          "box:approved:BOX-0007",
+          "stock-event:approved:BOX-0007",
+          "putaway:approved:BOX-0007",
+          "audit:approved:BOX-0007",
+          "receipt:approved:HN-PN-0008",
+          "box:approved:BOX-0008",
+          "stock-event:approved:BOX-0008",
+          "putaway:approved:BOX-0008",
+          "audit:approved:BOX-0008",
+          "receipt:approved:HN-PN-0009",
+          "box:approved:HN-BOX-0009",
+          "stock-event:approved:HN-BOX-0009",
+          "putaway:approved:HN-BOX-0009",
+          "audit:approved:HN-BOX-0009",
+          "receipt:approved:HN-PN-0011",
+          "box:approved:BOX-0011",
+          "stock-event:approved:BOX-0011",
+          "putaway:approved:BOX-0011",
+          "audit:approved:BOX-0011",
+          "receipt:approved:HN-PN-0012",
+          "box:approved:BOX-0012",
+          "stock-event:approved:BOX-0012",
+          "putaway:approved:BOX-0012",
+          "audit:approved:BOX-0012",
+          "receipt:approved:HN-PN-0013",
+          "box:approved:BOX-0013",
+          "stock-event:approved:BOX-0013",
+          "putaway:approved:BOX-0013",
+          "audit:approved:BOX-0013",
+          "receipt:approved:HN-PN-0014",
+          "box:approved:BOX-0014",
+          "stock-event:approved:BOX-0014",
+          "putaway:approved:BOX-0014",
+          "audit:approved:BOX-0014",
+          "receipt:approved:HN-PN-0015",
+          "box:approved:BOX-0015",
+          "stock-event:approved:BOX-0015",
+          "putaway:approved:BOX-0015",
+          "audit:approved:BOX-0015",
+          "receipt:approved:HN-PN-0016",
+          "box:approved:BOX-0016",
+          "stock-event:approved:BOX-0016",
+          "putaway:approved:BOX-0016",
+          "audit:approved:BOX-0016",
+          "receipt:approved:HN-PN-0017",
+          "box:approved:BOX-0017",
+          "stock-event:approved:BOX-0017",
+          "putaway:approved:BOX-0017",
+          "audit:approved:BOX-0017",
+          "receipt:approved:HN-PN-0018",
+          "box:approved:BOX-0018",
+          "stock-event:approved:BOX-0018",
+          "putaway:approved:BOX-0018",
+          "audit:approved:BOX-0018",
+          "receipt:approved:HN-PN-0019",
+          "box:approved:BOX-0019",
+          "stock-event:approved:BOX-0019",
+          "putaway:approved:BOX-0019",
+          "audit:approved:BOX-0019",
+          "receipt:approved:HN-PN-0021",
+          "box:approved:BOX-0021",
+          "stock-event:approved:BOX-0021",
+          "receipt:approved:HN-PN-0022",
+          "box:approved:BOX-0022",
+          "stock-event:approved:BOX-0022",
+          "receipt:approved:HN-PN-0023",
+          "box:approved:BOX-0023",
+          "stock-event:approved:BOX-0023",
+          "receipt:approved:HN-PN-0024",
+          "box:approved:BOX-0024",
+          "stock-event:approved:BOX-0024",
+          "receipt:approved:HN-PN-0025",
+          "box:approved:BOX-0025",
+          "stock-event:approved:BOX-0025",
+          "receipt:approved:HN-PN-0026",
+          "box:approved:BOX-0026",
+          "stock-event:approved:BOX-0026",
+          "receipt:approved:HN-PN-0027",
+          "box:approved:BOX-0027",
+          "stock-event:approved:BOX-0027",
+          "receipt:approved:HN-PN-0028",
+          "box:approved:BOX-0028",
+          "stock-event:approved:BOX-0028",
+          "receipt:approved:HN-PN-0029",
+          "box:approved:BOX-0029",
+          "stock-event:approved:BOX-0029"
+        ],
+        "eventIds": [
+          "stock-event:approved:BOX-0001",
+          "stock-event:approved:BOX-0002",
+          "stock-event:approved:BOX-0003",
+          "stock-event:approved:BOX-0004",
+          "stock-event:approved:BOX-0005",
+          "stock-event:approved:BOX-0006",
+          "stock-event:approved:BOX-0007",
+          "stock-event:approved:BOX-0008",
+          "stock-event:approved:HN-BOX-0009",
+          "stock-event:approved:BOX-0011",
+          "stock-event:approved:BOX-0012",
+          "stock-event:approved:BOX-0013",
+          "stock-event:approved:BOX-0014",
+          "stock-event:approved:BOX-0015",
+          "stock-event:approved:BOX-0016",
+          "stock-event:approved:BOX-0017",
+          "stock-event:approved:BOX-0018",
+          "stock-event:approved:BOX-0019",
+          "stock-event:approved:BOX-0021",
+          "stock-event:approved:BOX-0022",
+          "stock-event:approved:BOX-0023",
+          "stock-event:approved:BOX-0024",
+          "stock-event:approved:BOX-0025",
+          "stock-event:approved:BOX-0026",
+          "stock-event:approved:BOX-0027",
+          "stock-event:approved:BOX-0028",
+          "stock-event:approved:BOX-0029"
+        ]
+      },
+      {
+        "id": "audit:d4ce54eb-6790-49c0-abc9-aee3b9dddb42",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.intake",
+        "sourceSurface": "APP_P09",
+        "entityId": "warranty-case:6d5988cc-0db3-4e96-a2de-e5ca35e174bd",
+        "commandId": "d4ce54eb-6790-49c0-abc9-aee3b9dddb42",
+        "commitSnapshotId": "commit-snapshot:7574ec69-d70e-4db6-9b7a-47bdb202b6f2",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "case-event:d4ce54eb-6790-49c0-abc9-aee3b9dddb42"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:e316aab7-ad2e-45a8-a9b0-17ec9c5fa3c1",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.diagnose",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:6d5988cc-0db3-4e96-a2de-e5ca35e174bd",
+        "commandId": "e316aab7-ad2e-45a8-a9b0-17ec9c5fa3c1",
+        "commitSnapshotId": "commit-snapshot:e1d10869-ad79-4c9c-9068-aafa461030a5",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "case-event:e316aab7-ad2e-45a8-a9b0-17ec9c5fa3c1"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:f943510c-7e8a-4bd4-b008-f3609a10f48f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.transition",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:6d5988cc-0db3-4e96-a2de-e5ca35e174bd",
+        "commandId": "f943510c-7e8a-4bd4-b008-f3609a10f48f",
+        "commitSnapshotId": "commit-snapshot:50d77613-dcee-450e-915d-3a292b6a9b21",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "case-event:f943510c-7e8a-4bd4-b008-f3609a10f48f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:c52aa438-9677-460b-9d00-b15d6420f8c1",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.create",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:e65674b3-4a7b-4971-a922-e554adbaab4f",
+        "commandId": "c52aa438-9677-460b-9d00-b15d6420f8c1",
+        "commitSnapshotId": "commit-snapshot:687d965c-c9af-41a1-a3c2-4a18ea7b35e6",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:63ac4a8d-596c-4c92-b480-ca24d8b617b3",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.save",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:e65674b3-4a7b-4971-a922-e554adbaab4f",
+        "commandId": "63ac4a8d-596c-4c92-b480-ca24d8b617b3",
+        "commitSnapshotId": "commit-snapshot:5c9cba5b-801f-4b89-9f3b-968b97a10c6d",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:f3323d9e-55ad-4b06-bc08-fb0f84f9878f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.post",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:e65674b3-4a7b-4971-a922-e554adbaab4f",
+        "commandId": "f3323d9e-55ad-4b06-bc08-fb0f84f9878f",
+        "commitSnapshotId": "commit-snapshot:fba09085-4d8e-4960-80c6-4a173f31408b",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "box:975ba5bf-f58d-4889-97dc-5d25c543476f",
+          "stock-event:afae13f9-a9e8-4ddd-a61f-a6c3dc803d20"
+        ],
+        "eventIds": [
+          "stock-event:afae13f9-a9e8-4ddd-a61f-a6c3dc803d20"
+        ]
+      },
+      {
+        "id": "audit:7e67a398-82aa-4840-89a6-5a412a36233c",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.transition",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:6d5988cc-0db3-4e96-a2de-e5ca35e174bd",
+        "commandId": "7e67a398-82aa-4840-89a6-5a412a36233c",
+        "commitSnapshotId": "commit-snapshot:5ad3c830-e1c2-499c-aee5-9624ea69184b",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "case-event:7e67a398-82aa-4840-89a6-5a412a36233c"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:eb62d778-971b-4ffb-856b-f683cb13d16f",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.transition",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:6d5988cc-0db3-4e96-a2de-e5ca35e174bd",
+        "commandId": "eb62d778-971b-4ffb-856b-f683cb13d16f",
+        "commitSnapshotId": "commit-snapshot:4a92f9de-4d7c-4f99-9990-4d21452f19e3",
+        "previousVersion": 4,
+        "newVersion": 5,
+        "relatedIds": [
+          "case-event:eb62d778-971b-4ffb-856b-f683cb13d16f"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:495bcc32-e367-487a-9e41-7eca6c4d1fd3",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.intake",
+        "sourceSurface": "APP_P09",
+        "entityId": "warranty-case:6b6528bc-4652-46bf-9afd-78a482e25741",
+        "commandId": "495bcc32-e367-487a-9e41-7eca6c4d1fd3",
+        "commitSnapshotId": "commit-snapshot:e1ba4cc5-b543-4c1e-9a83-7efff0889868",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [
+          "case-event:495bcc32-e367-487a-9e41-7eca6c4d1fd3"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:1efebefc-4d08-4dad-b1cb-195c246fe0f9",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "warranty.diagnose",
+        "sourceSurface": "WEB",
+        "entityId": "warranty-case:6b6528bc-4652-46bf-9afd-78a482e25741",
+        "commandId": "1efebefc-4d08-4dad-b1cb-195c246fe0f9",
+        "commitSnapshotId": "commit-snapshot:468c2bac-185a-4c6c-8552-1e96f899bf26",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "case-event:1efebefc-4d08-4dad-b1cb-195c246fe0f9"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:609824df-6eea-4965-bb38-18a41d9370f3",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.create",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:b0e243f9-de6d-4da9-9ec0-c16725464ff0",
+        "commandId": "609824df-6eea-4965-bb38-18a41d9370f3",
+        "commitSnapshotId": "commit-snapshot:4d38fd5e-a6a3-40a9-bbca-7b2126adbec1",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:e844a4a1-9b7f-4430-8bd9-ed9b7d3fa22e",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.save",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:b0e243f9-de6d-4da9-9ec0-c16725464ff0",
+        "commandId": "e844a4a1-9b7f-4430-8bd9-ed9b7d3fa22e",
+        "commitSnapshotId": "commit-snapshot:15f1eb55-980f-4779-a690-796281b5f9da",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:efdb6281-5da1-4518-850b-f29fcc650535",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "parts.post",
+        "sourceSurface": "APP_P19",
+        "entityId": "parts-issue:b0e243f9-de6d-4da9-9ec0-c16725464ff0",
+        "commandId": "efdb6281-5da1-4518-850b-f29fcc650535",
+        "commitSnapshotId": "commit-snapshot:ec950d79-8e27-44d9-b1f0-19b224ba2fd5",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [
+          "box:975ba5bf-f58d-4889-97dc-5d25c543476f",
+          "stock-event:73492d76-f270-44bc-9c1e-33a9b54d1f2b"
+        ],
+        "eventIds": [
+          "stock-event:73492d76-f270-44bc-9c1e-33a9b54d1f2b"
+        ]
+      },
+      {
+        "id": "audit:e4e93d03-a5e7-419e-9487-5be0bead6f7e",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.create",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:7e70e767-3fe3-4147-885a-6a79ecf4a5fd",
+        "commandId": "e4e93d03-a5e7-419e-9487-5be0bead6f7e",
+        "commitSnapshotId": "commit-snapshot:fcac47fb-e7ce-49a0-869b-3ed5c52db5e8",
+        "previousVersion": null,
+        "newVersion": 1,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:277d6783-ba14-4f58-b4d8-7cb7b3148cda",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.attach-evidence",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:7e70e767-3fe3-4147-885a-6a79ecf4a5fd",
+        "commandId": "277d6783-ba14-4f58-b4d8-7cb7b3148cda",
+        "commitSnapshotId": "commit-snapshot:22973b1f-95fb-4a11-bf69-32e82d5d5e02",
+        "previousVersion": 1,
+        "newVersion": 2,
+        "relatedIds": [
+          "evidence:277d6783-ba14-4f58-b4d8-7cb7b3148cda"
+        ],
+        "eventIds": []
+      },
+      {
+        "id": "audit:73776a6f-b8a4-44da-8b9b-92b1a351d130",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.confirm-return",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:7e70e767-3fe3-4147-885a-6a79ecf4a5fd",
+        "commandId": "73776a6f-b8a4-44da-8b9b-92b1a351d130",
+        "commitSnapshotId": "commit-snapshot:3a81b171-182d-4a26-a213-79dc2dc02f14",
+        "previousVersion": 2,
+        "newVersion": 3,
+        "relatedIds": [],
+        "eventIds": []
+      },
+      {
+        "id": "audit:3b8030d1-4880-49d5-830a-9478dca8f09b",
+        "at": "2026-10-26T07:24:00.000Z",
+        "actorId": "preview:ducquang",
+        "action": "reversal.post",
+        "sourceSurface": "WEB",
+        "entityId": "reversal:7e70e767-3fe3-4147-885a-6a79ecf4a5fd",
+        "commandId": "3b8030d1-4880-49d5-830a-9478dca8f09b",
+        "commitSnapshotId": "commit-snapshot:3bf20263-5045-4b7c-bb84-f5de3e934d9f",
+        "previousVersion": 3,
+        "newVersion": 4,
+        "relatedIds": [
+          "box:975ba5bf-f58d-4889-97dc-5d25c543476f",
+          "stock-event:792e55b1-795c-45d8-b020-629c47ad6b02"
+        ],
+        "eventIds": [
+          "stock-event:792e55b1-795c-45d8-b020-629c47ad6b02"
+        ]
+      }
+    ]
+  },
+  "status": "PASS",
+  "end": "2026-10-27T13:15:18.157Z",
+  "endSHA": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "sourceStatus": ""
+}

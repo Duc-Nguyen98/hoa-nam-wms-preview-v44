@@ -1,0 +1,11 @@
+{
+  "sha": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "qualification": "6 actual desktop profiles passed before intentionally hidden tablet count wait; continuation fixed evidence selector only, passed6 actual tablet plus12 long synthetic. Separate fresh MOCK source originalIDs per browser run retained in each raw report.",
+  "actualDesktopEvidence": "browser-attempt1.json",
+  "continuationEvidence": "browser-results.json",
+  "actualPassed": 12,
+  "syntheticLongPassed": 12,
+  "profileFailures": 0,
+  "unexpectedPageErrors": 0,
+  "unexpectedConsoleErrors": 0
+}

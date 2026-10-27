@@ -1,0 +1,4 @@
+src/features/S27/OperationalAudit.tsx
+src/features/S27/audit-ui-copy.ts
+src/features/S27/system-audit.css
+tests/s27/copy-border-cascade.mjs

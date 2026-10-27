@@ -1,0 +1,11 @@
+{
+  "error": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('dialog.s27-detail-modal[open]').locator('[role=\"alert\"]')\nExpected substring: \"không có quyền\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toContainText\" locator('dialog.s27-detail-modal[open]').locator('[role=\"alert\"]') with timeout 5000ms\n  - waiting for locator('dialog.s27-detail-modal[open]').locator('[role=\"alert\"]')\n",
+  "stack": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('dialog.s27-detail-modal[open]').locator('[role=\"alert\"]')\nExpected substring: \"không có quyền\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toContainText\" locator('dialog.s27-detail-modal[open]').locator('[role=\"alert\"]') with timeout 5000ms\n  - waiting for locator('dialog.s27-detail-modal[open]').locator('[role=\"alert\"]')\n\n    at captureRawStack (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright-core\\lib\\coreBundle.js:9282:17)\n    at callMatcherAsStep (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright\\lib\\matchers\\expect.js:13316:57)\n    at Object.toContainText (E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\playwright\\lib\\matchers\\expect.js:13308:23)\n    at E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S27-005\\functional\\base-flow.mjs:28:142",
+  "checks": [
+    "combined action/actor/search filters and filtered totals",
+    "reset and default stable timestamp tie-break (other sort modes tested independently at binding)",
+    "page 2 and exact event retained through explicit/automatic refresh, close and scroll",
+    "error hides protected stale data, retry preserves exact event"
+  ],
+  "errors": []
+}

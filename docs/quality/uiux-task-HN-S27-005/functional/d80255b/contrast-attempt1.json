@@ -1,0 +1,617 @@
+{
+  "sha": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+  "mode": "MOCK actual app VI",
+  "scope": "Bounded sampled text contrast only; no full WCAG/a11y conformance claim",
+  "canvasRGBA": [
+    255,
+    255,
+    255,
+    1
+  ],
+  "profiles": [
+    {
+      "theme": "light",
+      "samples": [
+        {
+          "label": "body time text",
+          "selector": "SPAN.",
+          "text": "14:24",
+          "foregroundCSS": "rgb(23, 56, 88)",
+          "foregroundRGBA": [
+            23,
+            56,
+            88,
+            1
+          ],
+          "backgroundCSS": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "compositedBackgroundRGBA": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "gradientSamples": [
+            {
+              "position": null,
+              "rgba": [
+                255,
+                255,
+                255,
+                1
+              ],
+              "ratio": 12.048074234075393
+            }
+          ],
+          "minRatio": 12.048074234075393,
+          "fontSize": "17px",
+          "fontWeight": "400",
+          "ancestorLayers": [
+            {
+              "tag": "HTML",
+              "className": "",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell__workspace",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "MAIN",
+              "className": "hn-main",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-catalogue-screen s27-screen",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SECTION",
+              "className": "s27-operational",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SECTION",
+              "className": "s27-list",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "s27-operational-table-view",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-table-scroll",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TABLE",
+              "className": "hn-table",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TBODY",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TR",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TD",
+              "className": "",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TIME",
+              "className": "s27-time",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SPAN",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            }
+          ],
+          "threshold": 4.5,
+          "pass": true
+        },
+        {
+          "label": "muted description",
+          "selector": "P.s27-list-description-desktop",
+          "text": "Mã commit, bút toán và mã liên quan nằm trong chi tiết sự kiện.",
+          "foregroundCSS": "rgb(82, 107, 141)",
+          "foregroundRGBA": [
+            82,
+            107,
+            141,
+            1
+          ],
+          "backgroundCSS": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "none",
+          "compositedBackgroundRGBA": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "gradientSamples": [
+            {
+              "position": null,
+              "rgba": [
+                255,
+                255,
+                255,
+                1
+              ],
+              "ratio": 5.459560926557692
+            }
+          ],
+          "minRatio": 5.459560926557692,
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "ancestorLayers": [
+            {
+              "tag": "HTML",
+              "className": "",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell__workspace",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "MAIN",
+              "className": "hn-main",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-catalogue-screen s27-screen",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SECTION",
+              "className": "s27-operational",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SECTION",
+              "className": "s27-list",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "s27-list-heading",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "P",
+              "className": "s27-list-description-desktop",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            }
+          ],
+          "threshold": 4.5,
+          "pass": true
+        },
+        {
+          "label": "source badge",
+          "selector": "SPAN.s27-source-badge",
+          "text": "WEB",
+          "foregroundCSS": "rgb(0, 89, 141)",
+          "foregroundRGBA": [
+            0,
+            89,
+            141,
+            1
+          ],
+          "backgroundCSS": "rgb(247, 251, 255)",
+          "backgroundImage": "none",
+          "compositedBackgroundRGBA": [
+            247,
+            251,
+            255,
+            1
+          ],
+          "gradientSamples": [
+            {
+              "position": null,
+              "rgba": [
+                247,
+                251,
+                255,
+                1
+              ],
+              "ratio": 7.1786773887181115
+            }
+          ],
+          "minRatio": 7.1786773887181115,
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "ancestorLayers": [
+            {
+              "tag": "HTML",
+              "className": "",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell__workspace",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "MAIN",
+              "className": "hn-main",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-catalogue-screen s27-screen",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SECTION",
+              "className": "s27-operational",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SECTION",
+              "className": "s27-list",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "s27-operational-table-view",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-table-scroll",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TABLE",
+              "className": "hn-table",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TBODY",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TR",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "TD",
+              "className": "",
+              "bg": "rgb(255, 255, 255)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SPAN",
+              "className": "s27-source-badge",
+              "bg": "rgb(247, 251, 255)",
+              "image": "none",
+              "opacity": "1"
+            }
+          ],
+          "threshold": 4.5,
+          "pass": true
+        },
+        {
+          "label": "reload label",
+          "selector": "BUTTON.hn-button hn-button--primary ",
+          "text": "Đọc lại nhật ký",
+          "foregroundCSS": "rgb(255, 255, 255)",
+          "foregroundRGBA": [
+            255,
+            255,
+            255,
+            1
+          ],
+          "backgroundCSS": "rgba(0, 0, 0, 0)",
+          "backgroundImage": "linear-gradient(110deg, rgb(0, 76, 114), rgb(0, 94, 136))",
+          "compositedBackgroundRGBA": [
+            247,
+            248,
+            250,
+            1
+          ],
+          "gradientSamples": [
+            {
+              "position": 0,
+              "rgba": [
+                0,
+                76,
+                114,
+                1
+              ],
+              "ratio": 9.223643445087118
+            },
+            {
+              "position": 0.25,
+              "rgba": [
+                0,
+                80.5,
+                119.5,
+                1
+              ],
+              "ratio": 8.638581522854007
+            },
+            {
+              "position": 0.5,
+              "rgba": [
+                0,
+                85,
+                125,
+                1
+              ],
+              "ratio": 8.09082207575537
+            },
+            {
+              "position": 0.75,
+              "rgba": [
+                0,
+                89.5,
+                130.5,
+                1
+              ],
+              "ratio": 7.579352199160952
+            },
+            {
+              "position": 1,
+              "rgba": [
+                0,
+                94,
+                136,
+                1
+              ],
+              "ratio": 7.102762378890191
+            }
+          ],
+          "minRatio": 7.102762378890191,
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "ancestorLayers": [
+            {
+              "tag": "HTML",
+              "className": "",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-shell__workspace",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "MAIN",
+              "className": "hn-main",
+              "bg": "rgb(247, 248, 250)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-catalogue-screen s27-screen",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "SECTION",
+              "className": "s27-operational",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "HEADER",
+              "className": "hn-page-heading",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "hn-page-actions",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "DIV",
+              "className": "s27-operational-period",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "none",
+              "opacity": "1"
+            },
+            {
+              "tag": "BUTTON",
+              "className": "hn-button hn-button--primary ",
+              "bg": "rgba(0, 0, 0, 0)",
+              "image": "linear-gradient(110deg, rgb(0, 76, 114), rgb(0, 94, 136))",
+              "opacity": "1"
+            }
+          ],
+          "threshold": 4.5,
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "status": "FAIL",
+  "failure": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.hn-global-toast[data-tone=\"success\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.hn-global-toast[data-tone=\"success\"]') with timeout 5000ms\n  - waiting for locator('.hn-global-toast[data-tone=\"success\"]')\n"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "file": "browser-attempt1.json",
+    "bytes": 61015,
+    "sha256": "3b5e7ac33a59de7e21f4207262d68ee9b4a1bc1f17eca220de90b22bd9881926"
+  },
+  {
+    "file": "browser-combined.json",
+    "bytes": 579,
+    "sha256": "c8c9463e467c5eb6a4b57ed82f3152c37aaa9842bb95ed7473eef42a6310b4ad"
+  },
+  {
+    "file": "browser-results.json",
+    "bytes": 99547,
+    "sha256": "ab9c322a4419fa901178545c4504e4843efa42b59ba75599d194c86da79cef36"
+  },
+  {
+    "file": "changed-files.txt",
+    "bytes": 140,
+    "sha256": "c4cac24b45197e01bc6aef7eca9288797def624d7ac246440cb1931da7bf30ad"
+  },
+  {
+    "file": "contrast-attempt1.json",
+    "bytes": 17017,
+    "sha256": "bcd20a9d3f64e082895812c740f0ae5d5850dae2231e4479cc8e33c8be1be52b"
+  },
+  {
+    "file": "contrast-results.json",
+    "bytes": 52303,
+    "sha256": "d6c1105f58ed660b7d4c8fc80a0425a81ecbba681ed02f8f500a5d0a6a88e39b"
+  },
+  {
+    "file": "contrast.mjs",
+    "bytes": 6004,
+    "sha256": "5b23f835d8ae752f6ac10b4256681082dc57aeb13fccd01aea95c8c178fe161f"
+  },
+  {
+    "file": "final-browser.mjs",
+    "bytes": 11294,
+    "sha256": "83d7e450cd3cdd8493fe1074f6ace45eb910dedd97f825da667939d06fb5ac59"
+  },
+  {
+    "file": "scoped-tests.txt",
+    "bytes": 2533,
+    "sha256": "b0e50d139797c56f36dd39cfdfd81e851aa38a66b2489471fd177b8e509c5b70"
+  },
+  {
+    "file": "TRANSFER_AND_CUSTODY.md",
+    "bytes": 1166,
+    "sha256": "f6161f3609ae9b10e7a0c0036b441bfb30c44bf32a6c4ab54d07d89a816a1198"
+  }
+]

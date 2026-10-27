@@ -1,0 +1,67 @@
+{
+  "task": "HN-S27-UIUX-005",
+  "base": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+  "branch": "DEV",
+  "custodian": "S00#6",
+  "registeredAt": "2026-10-27T19:31:45.9244488+07:00",
+  "referenceStatus": "APPROVED_SCOPED_INPUT_BY_TASK_PACKET",
+  "globalContractChanged": false,
+  "references": [
+    {
+      "id": "S27-REF-9",
+      "state": "desktop-list",
+      "original": "C:/Users/Admin/Desktop/HN_Astra/9.png",
+      "custody": "design/references/9.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1359487,
+      "sha256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+      "custodySha256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+      "scope": "S27 page/list or detail modal content only; global shell excluded",
+      "sourceCssViewport": "UNKNOWN",
+      "sourceDpr": "UNKNOWN"
+    },
+    {
+      "id": "S27-REF-10",
+      "state": "tablet-list",
+      "original": "C:/Users/Admin/Desktop/HN_Astra/10.png",
+      "custody": "design/references/10.png",
+      "width": 992,
+      "height": 1586,
+      "bytes": 1250518,
+      "sha256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+      "custodySha256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+      "scope": "S27 page/list or detail modal content only; global shell excluded",
+      "sourceCssViewport": "UNKNOWN",
+      "sourceDpr": "UNKNOWN"
+    },
+    {
+      "id": "S27-REF-11",
+      "state": "desktop-detail",
+      "original": "C:/Users/Admin/Desktop/HN_Astra/11.png",
+      "custody": "design/references/11.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 1472507,
+      "sha256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+      "custodySha256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+      "scope": "S27 page/list or detail modal content only; global shell excluded",
+      "sourceCssViewport": "UNKNOWN",
+      "sourceDpr": "UNKNOWN"
+    },
+    {
+      "id": "S27-REF-12",
+      "state": "tablet-detail",
+      "original": "C:/Users/Admin/Desktop/HN_Astra/12.png",
+      "custody": "design/references/12.png",
+      "width": 992,
+      "height": 1586,
+      "bytes": 1292001,
+      "sha256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+      "custodySha256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+      "scope": "S27 page/list or detail modal content only; global shell excluded",
+      "sourceCssViewport": "UNKNOWN",
+      "sourceDpr": "UNKNOWN"
+    }
+  ]
+}

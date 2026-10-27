@@ -1,0 +1,32 @@
+[
+  {
+    "path": "functional/ebcf0d3/cards.mjs",
+    "beforeSha256": "7b9ee563b896c623cba59230d9cb8df5d0b3e90992c443532a110a1c2183d1bf",
+    "beforeBytes": 6003
+  },
+  {
+    "path": "functional/d80255b/final-browser.mjs",
+    "beforeSha256": "4852389b26b6ea7ff5b09256e7d3c16106151e78ada096879ae354189f51bd63",
+    "beforeBytes": 10988
+  },
+  {
+    "path": "functional/d80255b/contrast.mjs",
+    "beforeSha256": "e8d8fa7c0fb9290181a4079673dcfe2963486dd223388efe70dd6076ac3389cb",
+    "beforeBytes": 5698
+  },
+  {
+    "path": "functional/cc030be/notification-regression.spec.ts",
+    "beforeSha256": "3135802867da30c016afbb0bddf08590fc05833de0faad8f68b0e72b0b6601f1",
+    "beforeBytes": 11869
+  },
+  {
+    "path": "functional/cc030be/actual.mjs",
+    "beforeSha256": "2e953673d4c88b68ced3ee902bc566963ce5af43cee54eb2f6400dcf05579c29",
+    "beforeBytes": 11685
+  },
+  {
+    "path": "functional/actual-route.mjs",
+    "beforeSha256": "f6595da74ab223ee0232a77e7a5dcccd39f6c6ae5706494ced8404a524392af9",
+    "beforeBytes": 8637
+  }
+]

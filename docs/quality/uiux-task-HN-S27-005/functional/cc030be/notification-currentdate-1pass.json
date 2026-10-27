@@ -1,0 +1,152 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "docs/quality/uiux-task-HN-S27-005/functional/cc030be/regression.config.ts",
+      "--grep",
+      "actual local S01 shell"
+    ],
+    "configFile": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S27-005\\functional\\cc030be\\regression.config.ts",
+    "rootDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S27-005/functional/cc030be",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S27-005/functional/cc030be/notification-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/quality/uiux-task-HN-S27-005/functional/cc030be",
+        "testIgnore": [],
+        "testMatch": [
+          "notification-regression.spec.ts"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S27-005\\functional\\cc030be\\notification-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S27-005\\functional\\cc030be",
+        "snapshotDir": "E:\\WMS_HoaNam\\Scanner_CMS\\sites\\hoa-nam-wms-tray-approved-20261026\\docs\\quality\\uiux-task-HN-S27-005\\functional\\cc030be",
+        "testIgnore": [],
+        "testMatch": "notification-regression.spec.ts",
+        "timeout": 180000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5287",
+          "headless": true,
+          "locale": "vi-VN",
+          "timezoneId": "Asia/Bangkok",
+          "colorScheme": "light",
+          "reducedMotion": "reduce"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/quality/uiux-task-HN-S27-005/functional/cc030be/notification-regression.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "notification-regression.spec.ts",
+      "file": "notification-regression.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual local S01 shell opens approved data and persists read state without extra labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22590,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T12:54:51.573Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b8656bf4e484b4a3f498-8cf719f02780d6fb2e31",
+          "file": "notification-regression.spec.ts",
+          "line": 62,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T12:54:50.799Z",
+    "duration": 23692.129999999997,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

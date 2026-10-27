@@ -1,0 +1,530 @@
+[
+  {
+    "name": "desktop-list",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\9.png",
+    "referenceSHA256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+    "referenceROI": [
+      292,
+      230,
+      1647,
+      915
+    ],
+    "referenceScopedRasterSize": [
+      1355,
+      685
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\desktop-list-full.png",
+    "actualSHA256": "d85ce2b9a38650aa7087eadf979910ae259e8fef61a7d340868c2d9c4670896c",
+    "actualROI": [
+      292,
+      238,
+      1888,
+      1510
+    ],
+    "actualCSSBounds": {
+      "x": 292,
+      "y": 238,
+      "width": 1596,
+      "height": 1272,
+      "right": 1888,
+      "bottom": 1510,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(38, 60, 81)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "8px",
+      "display": "block",
+      "overflow": "visible",
+      "clientWidth": 1594,
+      "scrollWidth": 1594,
+      "clientHeight": 1270,
+      "scrollHeight": 1270
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      1596,
+      1272
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.177859778597786,
+    "referenceProjectedHeightRaster": 806.8339483394834,
+    "heightResidualActualMinusReferenceRaster": 465.1660516605166,
+    "heightResidualActualMinusReferenceCSS": 465.1660516605166,
+    "canvasSize": [
+      1596,
+      1272
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "desktop-modal",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\11.png",
+    "referenceSHA256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+    "referenceROI": [
+      484,
+      115,
+      1305,
+      875
+    ],
+    "referenceScopedRasterSize": [
+      821,
+      760
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\desktop-modal.png",
+    "actualSHA256": "59f6a791ad421f09d26f1edddcd0b0f6dbc3a8c7c6050981fece3a1e8e43a196",
+    "actualROI": [
+      550,
+      126,
+      1370,
+      954
+    ],
+    "actualCSSBounds": {
+      "x": 550,
+      "y": 126.5,
+      "width": 820,
+      "height": 827,
+      "right": 1370,
+      "bottom": 953.5,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(23, 56, 88)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "10px",
+      "display": "block",
+      "overflow": "hidden",
+      "clientWidth": 818,
+      "scrollWidth": 818,
+      "clientHeight": 825,
+      "scrollHeight": 825
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      820,
+      828
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 0.9987819732034104,
+    "referenceProjectedHeightRaster": 759.074299634592,
+    "heightResidualActualMinusReferenceRaster": 68.92570036540803,
+    "heightResidualActualMinusReferenceCSS": 68.92570036540803,
+    "canvasSize": [
+      820,
+      828
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "tablet-list",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\10.png",
+    "referenceSHA256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+    "referenceROI": [
+      27,
+      416,
+      967,
+      1547
+    ],
+    "referenceScopedRasterSize": [
+      940,
+      1131
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\tablet-list-full.png",
+    "actualSHA256": "d2f6f176d75f38da421dd11fe7293d8471fd4f632206bc105adc94294a622079",
+    "actualROI": [
+      48,
+      914,
+      1552,
+      6678
+    ],
+    "actualCSSBounds": {
+      "x": 24,
+      "y": 457,
+      "width": 752,
+      "height": 2882,
+      "right": 776,
+      "bottom": 3339,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(38, 60, 81)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "8px",
+      "display": "block",
+      "overflow": "visible",
+      "clientWidth": 750,
+      "scrollWidth": 750,
+      "clientHeight": 2880,
+      "scrollHeight": 2880
+    },
+    "actualDPR": 2,
+    "actualScopedRasterSize": [
+      1504,
+      5764
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.6,
+    "referenceProjectedHeightRaster": 1809.6000000000001,
+    "heightResidualActualMinusReferenceRaster": 3954.3999999999996,
+    "heightResidualActualMinusReferenceCSS": 1977.1999999999998,
+    "canvasSize": [
+      1504,
+      5764
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "tablet-modal",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\12.png",
+    "referenceSHA256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+    "referenceROI": [
+      108,
+      314,
+      884,
+      1470
+    ],
+    "referenceScopedRasterSize": [
+      776,
+      1156
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\tablet-modal.png",
+    "actualSHA256": "b3a34dc0cf8635c3293cc0bc904939298f289b63e50ccfc2c4c9ca39869c6207",
+    "actualROI": [
+      48,
+      59,
+      1552,
+      2501
+    ],
+    "actualCSSBounds": {
+      "x": 24,
+      "y": 29.5,
+      "width": 752,
+      "height": 1221,
+      "right": 776,
+      "bottom": 1250.5,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(23, 56, 88)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "10px",
+      "display": "block",
+      "overflow": "hidden",
+      "clientWidth": 750,
+      "scrollWidth": 750,
+      "clientHeight": 1219,
+      "scrollHeight": 1219
+    },
+    "actualDPR": 2,
+    "actualScopedRasterSize": [
+      1504,
+      2442
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.9381443298969072,
+    "referenceProjectedHeightRaster": 2240.494845360825,
+    "heightResidualActualMinusReferenceRaster": 201.5051546391751,
+    "heightResidualActualMinusReferenceCSS": 100.75257731958754,
+    "canvasSize": [
+      1504,
+      2442
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "desktop-native-list",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\9.png",
+    "referenceSHA256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+    "referenceROI": [
+      292,
+      230,
+      1647,
+      915
+    ],
+    "referenceScopedRasterSize": [
+      1355,
+      685
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\desktop-native-list-full.png",
+    "actualSHA256": "c142cc34c77ed1168d14c59839bf11634eecc1103cf545c4128379b294973784",
+    "actualROI": [
+      292,
+      238,
+      1640,
+      1510
+    ],
+    "actualCSSBounds": {
+      "x": 292,
+      "y": 238,
+      "width": 1348,
+      "height": 1272,
+      "right": 1640,
+      "bottom": 1510,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(38, 60, 81)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "8px",
+      "display": "block",
+      "overflow": "visible",
+      "clientWidth": 1346,
+      "scrollWidth": 1346,
+      "clientHeight": 1270,
+      "scrollHeight": 1270
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      1348,
+      1272
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 0.9948339483394834,
+    "referenceProjectedHeightRaster": 681.4612546125461,
+    "heightResidualActualMinusReferenceRaster": 590.5387453874539,
+    "heightResidualActualMinusReferenceCSS": 590.5387453874539,
+    "canvasSize": [
+      1348,
+      1272
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "desktop-native-modal",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\11.png",
+    "referenceSHA256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+    "referenceROI": [
+      484,
+      115,
+      1305,
+      875
+    ],
+    "referenceScopedRasterSize": [
+      821,
+      760
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\desktop-native-modal.png",
+    "actualSHA256": "675540866e2667c06da927155bd071839f7ef2697e403b25393f7ec82d7fd900",
+    "actualROI": [
+      426,
+      57,
+      1246,
+      884
+    ],
+    "actualCSSBounds": {
+      "x": 426,
+      "y": 57,
+      "width": 820,
+      "height": 827,
+      "right": 1246,
+      "bottom": 884,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(23, 56, 88)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "10px",
+      "display": "block",
+      "overflow": "hidden",
+      "clientWidth": 818,
+      "scrollWidth": 818,
+      "clientHeight": 825,
+      "scrollHeight": 825
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      820,
+      827
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 0.9987819732034104,
+    "referenceProjectedHeightRaster": 759.074299634592,
+    "heightResidualActualMinusReferenceRaster": 67.92570036540803,
+    "heightResidualActualMinusReferenceCSS": 67.92570036540803,
+    "canvasSize": [
+      820,
+      827
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "tablet-native-list",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\10.png",
+    "referenceSHA256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+    "referenceROI": [
+      27,
+      416,
+      967,
+      1547
+    ],
+    "referenceScopedRasterSize": [
+      940,
+      1131
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\tablet-native-list-full.png",
+    "actualSHA256": "b6dad73706ed2e791576bd28aa310674599f9271a30f7a4c83d784bff6ccc5b5",
+    "actualROI": [
+      24,
+      429,
+      968,
+      3279
+    ],
+    "actualCSSBounds": {
+      "x": 24,
+      "y": 429,
+      "width": 944,
+      "height": 2850,
+      "right": 968,
+      "bottom": 3279,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(38, 60, 81)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "8px",
+      "display": "block",
+      "overflow": "visible",
+      "clientWidth": 942,
+      "scrollWidth": 942,
+      "clientHeight": 2848,
+      "scrollHeight": 2848
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      944,
+      2850
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.004255319148936,
+    "referenceProjectedHeightRaster": 1135.8127659574468,
+    "heightResidualActualMinusReferenceRaster": 1714.1872340425532,
+    "heightResidualActualMinusReferenceCSS": 1714.1872340425532,
+    "canvasSize": [
+      944,
+      2850
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "tablet-native-modal",
+    "phase": "after-normal-cc030be",
+    "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+    "sourceSHA": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\12.png",
+    "referenceSHA256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+    "referenceROI": [
+      108,
+      314,
+      884,
+      1470
+    ],
+    "referenceScopedRasterSize": [
+      776,
+      1156
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\after-normal-cc030be\\tablet-native-modal.png",
+    "actualSHA256": "2c77b3a779e072cf5d5a5ec676b2c54e7b86f8028e1be2aade838848169dde19",
+    "actualROI": [
+      108,
+      194,
+      884,
+      1392
+    ],
+    "actualCSSBounds": {
+      "x": 108,
+      "y": 194.5,
+      "width": 776,
+      "height": 1197,
+      "right": 884,
+      "bottom": 1391.5,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(23, 56, 88)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "10px",
+      "display": "block",
+      "overflow": "hidden",
+      "clientWidth": 774,
+      "scrollWidth": 774,
+      "clientHeight": 1195,
+      "scrollHeight": 1195
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      776,
+      1198
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.0,
+    "referenceProjectedHeightRaster": 1156.0,
+    "heightResidualActualMinusReferenceRaster": 42.0,
+    "heightResidualActualMinusReferenceCSS": 42.0,
+    "canvasSize": [
+      776,
+      1198
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  }
+]

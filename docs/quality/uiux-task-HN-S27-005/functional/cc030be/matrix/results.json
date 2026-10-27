@@ -1,0 +1,237 @@
+{
+  "sha": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+  "base": "http://127.0.0.1:5287",
+  "mode": "MOCK isolated component fixture",
+  "results": [
+    {
+      "width": 1672,
+      "language": "vi",
+      "theme": "light",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 818,
+        "bodyScrollWidth": 818,
+        "footerBottom": 883,
+        "dialogBottom": 884
+      }
+    },
+    {
+      "width": 1672,
+      "language": "vi",
+      "theme": "dark",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 818,
+        "bodyScrollWidth": 818,
+        "footerBottom": 883,
+        "dialogBottom": 884
+      }
+    },
+    {
+      "width": 1672,
+      "language": "en",
+      "theme": "light",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 818,
+        "bodyScrollWidth": 818,
+        "footerBottom": 882.5,
+        "dialogBottom": 883.5
+      }
+    },
+    {
+      "width": 1672,
+      "language": "en",
+      "theme": "dark",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 818,
+        "bodyScrollWidth": 818,
+        "footerBottom": 883,
+        "dialogBottom": 884
+      }
+    },
+    {
+      "width": 1672,
+      "language": "zh-CN",
+      "theme": "light",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 818,
+        "bodyScrollWidth": 818,
+        "footerBottom": 883,
+        "dialogBottom": 884
+      }
+    },
+    {
+      "width": 1672,
+      "language": "zh-CN",
+      "theme": "dark",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 818,
+        "bodyScrollWidth": 818,
+        "footerBottom": 883,
+        "dialogBottom": 884
+      }
+    },
+    {
+      "width": 800,
+      "language": "vi",
+      "theme": "light",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 750,
+        "bodyScrollWidth": 750,
+        "footerBottom": 1249,
+        "dialogBottom": 1250
+      }
+    },
+    {
+      "width": 800,
+      "language": "vi",
+      "theme": "dark",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 750,
+        "bodyScrollWidth": 750,
+        "footerBottom": 1249,
+        "dialogBottom": 1250
+      }
+    },
+    {
+      "width": 800,
+      "language": "en",
+      "theme": "light",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 750,
+        "bodyScrollWidth": 750,
+        "footerBottom": 1249,
+        "dialogBottom": 1250
+      }
+    },
+    {
+      "width": 800,
+      "language": "en",
+      "theme": "dark",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 750,
+        "bodyScrollWidth": 750,
+        "footerBottom": 1249,
+        "dialogBottom": 1250
+      }
+    },
+    {
+      "width": 800,
+      "language": "zh-CN",
+      "theme": "light",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 750,
+        "bodyScrollWidth": 750,
+        "footerBottom": 1248.5,
+        "dialogBottom": 1249.5
+      }
+    },
+    {
+      "width": 800,
+      "language": "zh-CN",
+      "theme": "dark",
+      "checks": [
+        "list responsive/no horizontal page overflow/module mapping disabled",
+        "exact selected identity; keyboard forward/reverse focus stays in modal",
+        "modal body/footer/scroll lock; reload immutability; ESC restores opener and scroll",
+        "locale labels match active locale"
+      ],
+      "status": "PASS",
+      "geometry": {
+        "bodyOverflow": "hidden",
+        "bodyWidth": 750,
+        "bodyScrollWidth": 750,
+        "footerBottom": 1248.5,
+        "dialogBottom": 1249.5
+      }
+    }
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

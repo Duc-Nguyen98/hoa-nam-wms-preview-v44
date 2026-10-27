@@ -1,0 +1,9 @@
+{
+  "status": "SUPERSEDED_DO_NOT_USE",
+  "observedAtUtc": "2026-10-27T13:38:02.0463263+00:00",
+  "supersededArtifact": "release/FROZEN_INTEGRITY.json",
+  "reason": "Coordinator reopened freeze for documentation credential redaction in six stored FQA script copies; previous inventory is historical attempt only and cannot validate refreshed evidence",
+  "sourceCandidate": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+  "awaiting": "New coordinator freeze and refreshed functional manifest",
+  "oldReceiptSha256": "1bc70889716fce97c5a8bfeb77c5873dbe5e1848d7c376415b1954477da66671"
+}

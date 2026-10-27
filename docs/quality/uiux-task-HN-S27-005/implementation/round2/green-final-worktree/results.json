@@ -1,0 +1,395 @@
+{
+  "base": "http://127.0.0.1:5287",
+  "scenario": "LOCAL_PUBLIC_PREVIEW_MOCK_ACTUAL_APP_CASCADE",
+  "started": "2026-10-27T13:06:49.176Z",
+  "sourceStart": {
+    "head": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "status": "M src/features/S27/OperationalAudit.tsx\n M src/features/S27/audit-ui-copy.ts\n M src/features/S27/system-audit.css\n?? tests/s27/copy-border-cascade.mjs",
+    "cssSha256": "b285d6b98738cb64e72f999c751b946bf4e3e472c161e2a4445f1696b7abf971"
+  },
+  "results": [
+    {
+      "profile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 820,
+        "height": 789,
+        "top": 76,
+        "bottom": 865,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 818,
+        "height": 82,
+        "top": 77,
+        "bottom": 159,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "14px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 770,
+        "height": 87,
+        "top": 179,
+        "bottom": 266,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px 0px 18px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 770,
+        "height": 137,
+        "top": 282,
+        "bottom": 419,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 770,
+        "height": 230,
+        "top": 537,
+        "bottom": 767,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 818,
+        "height": 77,
+        "top": 787,
+        "bottom": 864,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "16px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 579,
+          "bottom": 623,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 627,
+          "bottom": 671,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 675,
+          "bottom": 719,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 723,
+          "bottom": 767,
+          "border": "rgba(0, 0, 0, 0)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:95113dea-62e3-4352-9057-188c4b82a92e",
+        "profile:ff9be7ec-80b2-40b8-9bc4-a66bd08409d1",
+        "95113dea-62e3-4352-9057-188c4b82a92e",
+        "commit-snapshot:a12022fe-bc03-40c2-952e-c9aa0e4a7458"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "pageDescription": "Theo dõi thao tác và truy vết sự kiện. Dữ liệu trong phạm vi được cấp. Giờ Việt Nam.",
+      "reloadLeadingIcons": 0,
+      "failures": []
+    },
+    {
+      "profile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 776,
+        "height": 1156,
+        "top": 215,
+        "bottom": 1371,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 774,
+        "height": 97,
+        "top": 216,
+        "bottom": 313,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "13px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 726,
+        "height": 105,
+        "top": 337,
+        "bottom": 442,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 726,
+        "height": 215,
+        "top": 464,
+        "bottom": 679,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 726,
+        "height": 314,
+        "top": 947,
+        "bottom": 1261,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px 22px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 774,
+        "height": 85,
+        "top": 1285,
+        "bottom": 1370,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "20px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1008,
+          "bottom": 1052,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1070,
+          "bottom": 1114,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1132,
+          "bottom": 1176,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1194,
+          "bottom": 1238,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:95113dea-62e3-4352-9057-188c4b82a92e",
+        "profile:ff9be7ec-80b2-40b8-9bc4-a66bd08409d1",
+        "95113dea-62e3-4352-9057-188c4b82a92e",
+        "commit-snapshot:a12022fe-bc03-40c2-952e-c9aa0e4a7458"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "pageDescription": "Theo dõi thao tác và truy vết sự kiện.",
+      "reloadLeadingIcons": 0,
+      "failures": []
+    },
+    {
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 1,
+        "purpose": "actual-app cascade and section geometry diagnostic"
+      },
+      "modal": {
+        "width": 752,
+        "height": 1180,
+        "top": 50,
+        "bottom": 1230,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "0px",
+        "gap": "normal"
+      },
+      "header": {
+        "width": 750,
+        "height": 97,
+        "top": 51,
+        "bottom": 148,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "13px 24px",
+        "gap": "16px"
+      },
+      "identity": {
+        "width": 702,
+        "height": 105,
+        "top": 172,
+        "bottom": 277,
+        "border": "rgb(23, 56, 88)",
+        "borderWidth": "0px",
+        "padding": "0px",
+        "gap": "16px"
+      },
+      "information": {
+        "width": 702,
+        "height": 215,
+        "top": 299,
+        "bottom": 514,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px",
+        "gap": "normal"
+      },
+      "trace": {
+        "width": 702,
+        "height": 338,
+        "top": 782,
+        "bottom": 1120,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "18px 22px",
+        "gap": "normal"
+      },
+      "footer": {
+        "width": 750,
+        "height": 85,
+        "top": 1144,
+        "bottom": 1229,
+        "border": "rgb(216, 227, 239)",
+        "borderWidth": "1px",
+        "padding": "20px 24px",
+        "gap": "8px"
+      },
+      "expectedBorder": "rgb(216, 227, 239)",
+      "copies": [
+        {
+          "width": 44,
+          "height": 44,
+          "top": 843,
+          "bottom": 887,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 905,
+          "bottom": 949,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 967,
+          "bottom": 1011,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        },
+        {
+          "width": 44,
+          "height": 44,
+          "top": 1029,
+          "bottom": 1073,
+          "border": "rgb(216, 227, 239)",
+          "borderWidth": "1px",
+          "padding": "10px 14px",
+          "gap": "8px"
+        }
+      ],
+      "rawIds": [
+        "audit:95113dea-62e3-4352-9057-188c4b82a92e",
+        "profile:ff9be7ec-80b2-40b8-9bc4-a66bd08409d1",
+        "95113dea-62e3-4352-9057-188c4b82a92e",
+        "commit-snapshot:a12022fe-bc03-40c2-952e-c9aa0e4a7458"
+      ],
+      "horizontalOverflow": false,
+      "footerReachable": true,
+      "pageDescription": "Theo dõi thao tác và truy vết sự kiện.",
+      "reloadLeadingIcons": 0,
+      "failures": []
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "sourceScenario": {
+    "date": "2026-10-26",
+    "count": 62
+  },
+  "status": "PASS",
+  "sourceEnd": {
+    "head": "cc030be40552845881d0a234a26e1e783f5e6e4f",
+    "status": "M src/features/S27/OperationalAudit.tsx\n M src/features/S27/audit-ui-copy.ts\n M src/features/S27/system-audit.css\n?? tests/s27/copy-border-cascade.mjs",
+    "cssSha256": "b285d6b98738cb64e72f999c751b946bf4e3e472c161e2a4445f1696b7abf971"
+  },
+  "finished": "2026-10-27T13:07:17.326Z",
+  "sourceStable": true
+}

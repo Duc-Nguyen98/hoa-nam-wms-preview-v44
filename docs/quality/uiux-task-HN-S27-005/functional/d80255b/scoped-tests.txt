@@ -1,0 +1,32 @@
+✔ every raw supported search field resolves the exact source record; normalized action and actor search (104.3837ms)
+✔ action/actor combination, all six sort variants, pages and source preservation (50.647ms)
+✔ inclusive Vietnam 90-day date limits, no future and exact midnight boundaries (12.6003ms)
+✔ details exactly match proof versions/raw IDs/relationships; changed query and mutation cannot select a substitute (17.2485ms)
+✔ reader safely rejects denied, unavailable, incomplete and actor-scoped snapshots (3.1305ms)
+✔ MOCK service read authority denies absent/wrong/unconfirmed/expired actors before repository access and fences scope (4.245ms)
+✔ canonical batch accepts complete per-entity subsets and command-wide relationships without mutating source (57.144ms)
+✔ self-consistent canonical audit cannot omit, duplicate, invent or borrow an unrelated event (46.2096ms)
+✔ proof event enumeration and per-audit linkage remain complete (24.8312ms)
+✔ canonical source gate still rejects tampered action, surface and event relationships (5.7502ms)
+✔ actor, command, time, entity, versions, scope and FK checks reject canonical relationship mismatches (95.6756ms)
+✔ Vietnam current date matches DatePicker policy at midnight; reload preserves a chosen historical period (34.9532ms)
+✔ every declared operational action has distinct nonempty labels in VI/EN/ZH (15.7839ms)
+✔ unknown action identifiers remain verbatim in every language (0.3485ms)
+✔ list identifiers shorten presentation only, preserving distinguishable ends (0.456ms)
+✔ initial resume uses the displayed period even when the clock is on the next day (60.243ms)
+✔ immutable proof projection, totals, versions and tied timestamp ordering (34.7627ms)
+✔ same exact event survives refresh and new model; stale scopes/content cannot substitute (40.3924ms)
+✔ reload preserves query/page and clamps only a now-invalid page (18.2612ms)
+✔ reader late response cannot overwrite new response; failed details retry same pin (7.1227ms)
+✔ read failures are not empty relationships or invented success/failure statuses (0.4568ms)
+✔ real rejection clears stale data; retry resolves the same event (5.4895ms)
+✔ reader refuses a successful-but-older snapshot after 10 → 12 → 11 (8.5635ms)
+✔ off-page pin survives, epoch/scenario/revision rollback and revoked scope do not (16.7111ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2051.5281

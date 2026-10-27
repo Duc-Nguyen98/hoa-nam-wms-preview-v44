@@ -1,0 +1,82 @@
+[
+  {
+    "name": "desktop-list",
+    "sourceBeforeSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "sourceAfterSHA": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+    "scenario": "QA_SYNTHETIC existing immutable3-event harness; actual normal62-event route separately evidenced",
+    "beforeCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\desktop-list-full.png",
+    "afterCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-ebcf0d3\\desktop-list-full.png",
+    "referenceOriginal": "C:\\Users\\Admin\\Desktop\\HN_Astra\\9.png",
+    "referenceSHA256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+    "registration": "Top-left component ROI; uniform width scaling only; canvas padded to maximum height; no anisotropic transforms",
+    "referenceUniformScale": 1.133579335793358,
+    "beforeUniformScale": 1.0,
+    "beforeHeightResidualCSS": -155.50184501845013,
+    "afterHeightResidualCSS": -106.50184501845013,
+    "canvasRasterSize": [
+      1536,
+      777
+    ],
+    "verdict": "Bounded defect retest only; exact fidelity DESIGN_GAP, no pixelPASS"
+  },
+  {
+    "name": "tablet-list",
+    "sourceBeforeSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "sourceAfterSHA": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+    "scenario": "QA_SYNTHETIC existing immutable3-event harness; actual normal62-event route separately evidenced",
+    "beforeCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\tablet-list-full.png",
+    "afterCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-tablet-retry-ebcf0d3\\tablet-list-full.png",
+    "referenceOriginal": "C:\\Users\\Admin\\Desktop\\HN_Astra\\10.png",
+    "referenceSHA256": "c6a3814e70d9056824fe43ad4d37e250fcc1ac2b2350da4427829f37ac2276fa",
+    "registration": "Top-left component ROI; uniform width scaling only; canvas padded to maximum height; no anisotropic transforms",
+    "referenceUniformScale": 1.6,
+    "beforeUniformScale": 1.0,
+    "beforeHeightResidualCSS": 279.19999999999993,
+    "afterHeightResidualCSS": 323.19999999999993,
+    "canvasRasterSize": [
+      1504,
+      2456
+    ],
+    "verdict": "Bounded defect retest only; exact fidelity DESIGN_GAP, no pixelPASS"
+  },
+  {
+    "name": "desktop-modal",
+    "sourceBeforeSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "sourceAfterSHA": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+    "scenario": "QA_SYNTHETIC existing immutable3-event harness; actual normal62-event route separately evidenced",
+    "beforeCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\desktop-modal.png",
+    "afterCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-ebcf0d3\\desktop-modal.png",
+    "referenceOriginal": "C:\\Users\\Admin\\Desktop\\HN_Astra\\11.png",
+    "referenceSHA256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+    "registration": "Top-left component ROI; uniform width scaling only; canvas padded to maximum height; no anisotropic transforms",
+    "referenceUniformScale": 0.9987819732034104,
+    "beforeUniformScale": 1.0,
+    "beforeHeightResidualCSS": 36.925700365408034,
+    "afterHeightResidualCSS": 28.925700365408034,
+    "canvasRasterSize": [
+      820,
+      796
+    ],
+    "verdict": "Bounded defect retest only; exact fidelity DESIGN_GAP, no pixelPASS"
+  },
+  {
+    "name": "tablet-modal",
+    "sourceBeforeSHA": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "sourceAfterSHA": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+    "scenario": "QA_SYNTHETIC existing immutable3-event harness; actual normal62-event route separately evidenced",
+    "beforeCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\before-synthetic\\tablet-modal.png",
+    "afterCapture": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-tablet-retry-ebcf0d3\\tablet-modal.png",
+    "referenceOriginal": "C:\\Users\\Admin\\Desktop\\HN_Astra\\12.png",
+    "referenceSHA256": "2320cd84b9994c115fb53660c76a2a0db083c2430493b7f2a3e4ca87072264ef",
+    "registration": "Top-left component ROI; uniform width scaling only; canvas padded to maximum height; no anisotropic transforms",
+    "referenceUniformScale": 1.9381443298969072,
+    "beforeUniformScale": 1.0,
+    "beforeHeightResidualCSS": 64.75257731958754,
+    "afterHeightResidualCSS": 60.752577319587544,
+    "canvasRasterSize": [
+      1504,
+      2370
+    ],
+    "verdict": "Bounded defect retest only; exact fidelity DESIGN_GAP, no pixelPASS"
+  }
+]

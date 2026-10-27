@@ -1,0 +1,65 @@
+{
+  "task": "HN-S27-UIUX-005",
+  "owner": "S00#4",
+  "sourceSHA": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+  "operation": "Post-execution archive credential redaction only",
+  "at": "2026-10-27T20:38:34.0926338+07:00",
+  "fileCount": 6,
+  "passwordLiteralCount": 6.0,
+  "files": [
+    {
+      "path": "functional/ebcf0d3/cards.mjs",
+      "beforeSha256": "7b9ee563b896c623cba59230d9cb8df5d0b3e90992c443532a110a1c2183d1bf",
+      "afterSha256": "4b059f1a3be3fd057c4c60f640736ec36bba1a7aad962d6c007465bddbb8a5ee",
+      "beforeBytes": 6003,
+      "afterBytes": 6309,
+      "passwordLiteralsRemoved": 1,
+      "rerun": false
+    },
+    {
+      "path": "functional/d80255b/final-browser.mjs",
+      "beforeSha256": "4852389b26b6ea7ff5b09256e7d3c16106151e78ada096879ae354189f51bd63",
+      "afterSha256": "83d7e450cd3cdd8493fe1074f6ace45eb910dedd97f825da667939d06fb5ac59",
+      "beforeBytes": 10988,
+      "afterBytes": 11294,
+      "passwordLiteralsRemoved": 1,
+      "rerun": false
+    },
+    {
+      "path": "functional/d80255b/contrast.mjs",
+      "beforeSha256": "e8d8fa7c0fb9290181a4079673dcfe2963486dd223388efe70dd6076ac3389cb",
+      "afterSha256": "5b23f835d8ae752f6ac10b4256681082dc57aeb13fccd01aea95c8c178fe161f",
+      "beforeBytes": 5698,
+      "afterBytes": 6004,
+      "passwordLiteralsRemoved": 1,
+      "rerun": false
+    },
+    {
+      "path": "functional/cc030be/notification-regression.spec.ts",
+      "beforeSha256": "3135802867da30c016afbb0bddf08590fc05833de0faad8f68b0e72b0b6601f1",
+      "afterSha256": "ffce12b723bdcec7ee6652b74d4a27f202bdb8caa9df3010f5fe8149d9d4657d",
+      "beforeBytes": 11869,
+      "afterBytes": 12175,
+      "passwordLiteralsRemoved": 1,
+      "rerun": false
+    },
+    {
+      "path": "functional/cc030be/actual.mjs",
+      "beforeSha256": "2e953673d4c88b68ced3ee902bc566963ce5af43cee54eb2f6400dcf05579c29",
+      "afterSha256": "6e937d48607c983a01a07950584c8421d4deb5f9f7f2e087b62c835330734c60",
+      "beforeBytes": 11685,
+      "afterBytes": 11991,
+      "passwordLiteralsRemoved": 1,
+      "rerun": false
+    },
+    {
+      "path": "functional/actual-route.mjs",
+      "beforeSha256": "f6595da74ab223ee0232a77e7a5dcccd39f6c6ae5706494ced8404a524392af9",
+      "afterSha256": "c1fe267c9c1ea28ee7a00690f7b54191330dce1a85fe2455fd66cb613f8a046a",
+      "beforeBytes": 8637,
+      "afterBytes": 8943,
+      "passwordLiteralsRemoved": 1,
+      "rerun": false
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "desktop-list",
+    "phase": "final-synthetic-ebcf0d3",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\9.png",
+    "referenceSHA256": "6e66a4da5dbbdbbc41a651c717ad2700bbc461f16c69a1d9f57be995a4f71ba1",
+    "referenceROI": [
+      292,
+      230,
+      1647,
+      915
+    ],
+    "referenceScopedRasterSize": [
+      1355,
+      685
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-ebcf0d3\\desktop-list-full.png",
+    "actualSHA256": "0700e3b53f927c31dce8df05cd965969d79003eb2ddce4d990bca560a8dbbf28",
+    "actualROI": [
+      322,
+      238,
+      1858,
+      908
+    ],
+    "actualCSSBounds": {
+      "x": 322,
+      "y": 238,
+      "width": 1536,
+      "height": 670,
+      "right": 1858,
+      "bottom": 908,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(38, 60, 81)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "8px",
+      "display": "block",
+      "overflow": "visible",
+      "clientWidth": 1534,
+      "scrollWidth": 1534,
+      "clientHeight": 668,
+      "scrollHeight": 668
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      1536,
+      670
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 1.133579335793358,
+    "referenceProjectedHeightRaster": 776.5018450184501,
+    "heightResidualActualMinusReferenceRaster": -106.50184501845013,
+    "heightResidualActualMinusReferenceCSS": -106.50184501845013,
+    "canvasSize": [
+      1536,
+      777
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  },
+  {
+    "name": "desktop-modal",
+    "phase": "final-synthetic-ebcf0d3",
+    "scenario": "QA_SYNTHETIC_EXISTING_S27_HARNESS_REAL_OPERATIONAL_COMPONENT",
+    "sourceSHA": "ebcf0d360e52bf2036c5a3c531563675ebf3580c",
+    "reference": "C:\\Users\\Admin\\Desktop\\HN_Astra\\11.png",
+    "referenceSHA256": "f232bae007fa84a0cc28ae79fe06ecf6ca86358e402a60152a72d9ea4b46f842",
+    "referenceROI": [
+      484,
+      115,
+      1305,
+      875
+    ],
+    "referenceScopedRasterSize": [
+      821,
+      760
+    ],
+    "actualSource": "docs\\quality\\uiux-task-HN-S27-005\\visual\\final-synthetic-ebcf0d3\\desktop-modal.png",
+    "actualSHA256": "ad49e4509a0f831619178005a3e85c056915407db62878e7da9d9d1308777070",
+    "actualROI": [
+      550,
+      146,
+      1370,
+      934
+    ],
+    "actualCSSBounds": {
+      "x": 550,
+      "y": 145.5,
+      "width": 820,
+      "height": 789,
+      "right": 1370,
+      "bottom": 934.5,
+      "font": "14px / 22px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "fontSize": "14px",
+      "lineHeight": "22px",
+      "fontWeight": "400",
+      "color": "rgb(23, 56, 88)",
+      "background": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "gap": "normal",
+      "grid": "none",
+      "border": "1px solid rgb(216, 227, 239)",
+      "borderRadius": "10px",
+      "display": "block",
+      "overflow": "hidden",
+      "clientWidth": 818,
+      "scrollWidth": 818,
+      "clientHeight": 787,
+      "scrollHeight": 787
+    },
+    "actualDPR": 1,
+    "actualScopedRasterSize": [
+      820,
+      788
+    ],
+    "registration": "FORMAL: isotropic width scale only, top-left component anchor, white canvas padding; no height stretch or source CSS viewport/DPR inference",
+    "uniformScale": 0.9987819732034104,
+    "referenceProjectedHeightRaster": 759.074299634592,
+    "heightResidualActualMinusReferenceRaster": 28.925700365408034,
+    "heightResidualActualMinusReferenceCSS": 28.925700365408034,
+    "canvasSize": [
+      820,
+      788
+    ],
+    "assessment": "NO_PIXEL_PASS; dynamic fixture content differs; modal shell excluded; geometry deviations retained"
+  }
+]

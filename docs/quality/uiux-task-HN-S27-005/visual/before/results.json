@@ -1,0 +1,134 @@
+{
+  "initial": {
+    "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+    "sourceStatus": "",
+    "utc": "2026-10-27T12:30:59.545Z"
+  },
+  "end": {
+    "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+    "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+    "sourceStatus": "",
+    "utc": "2026-10-27T12:34:53.151Z"
+  },
+  "phase": "before",
+  "base": "http://127.0.0.1:5287",
+  "results": [
+    {
+      "profile": {
+        "name": "desktop",
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "touch": false
+      },
+      "environment": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+      "runtimeModel": "UNVERIFIED",
+      "sourceStart": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:31:01.959Z"
+      },
+      "errors": [],
+      "networkFailures": [],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-audit-detail-open]:visible').first() to be visible\u001b[22m\n",
+      "sourceEnd": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:31:56.127Z"
+      },
+      "stable": true
+    },
+    {
+      "profile": {
+        "name": "tablet",
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "touch": true
+      },
+      "environment": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+      "runtimeModel": "UNVERIFIED",
+      "sourceStart": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:31:56.438Z"
+      },
+      "errors": [],
+      "networkFailures": [],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-audit-detail-open]:visible').first() to be visible\u001b[22m\n",
+      "sourceEnd": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:32:46.305Z"
+      },
+      "stable": true
+    },
+    {
+      "profile": {
+        "name": "desktop-native",
+        "width": 1672,
+        "height": 941,
+        "dpr": 1,
+        "touch": false
+      },
+      "environment": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+      "runtimeModel": "UNVERIFIED",
+      "sourceStart": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:32:46.529Z"
+      },
+      "errors": [],
+      "networkFailures": [],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-audit-detail-open]:visible').first() to be visible\u001b[22m\n",
+      "sourceEnd": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:33:44.663Z"
+      },
+      "stable": true
+    },
+    {
+      "profile": {
+        "name": "tablet-native",
+        "width": 992,
+        "height": 1586,
+        "dpr": 1,
+        "touch": true
+      },
+      "environment": "LOCAL_PUBLIC_PREVIEW_MOCK_SOURCE_FIXTURE",
+      "runtimeModel": "UNVERIFIED",
+      "sourceStart": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:33:46.838Z"
+      },
+      "errors": [],
+      "networkFailures": [],
+      "captures": [],
+      "result": "FAIL",
+      "failure": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-audit-detail-open]:visible').first() to be visible\u001b[22m\n",
+      "sourceEnd": {
+        "head": "bde0e4292ae4a7db569c7a5d56bce0c7ffa8e703",
+        "sourceTree": "edd34681bf20a5281188e9da49cdc91876a0845d",
+        "sourceStatus": "",
+        "utc": "2026-10-27T12:34:52.840Z"
+      },
+      "stable": true
+    }
+  ]
+}

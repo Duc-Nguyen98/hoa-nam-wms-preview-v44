@@ -1,0 +1,503 @@
+{
+  "before": {
+    "head": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+    "sourceTree": "09c0f24b3c58e00e0db7498e70a747232de28920",
+    "sourceStatus": ""
+  },
+  "after": {
+    "head": "d80255b94a3d6ad37e7c65eb34bb4f075e48deaf",
+    "sourceTree": "09c0f24b3c58e00e0db7498e70a747232de28920",
+    "sourceStatus": ""
+  },
+  "scenario": "ACTUAL_NORMAL_MOCK_62_DATE26",
+  "browser": "156.0.8078.4",
+  "profile": {
+    "width": 800,
+    "height": 1280,
+    "dpr": 2,
+    "touch": true
+  },
+  "labels": [
+    {
+      "card": 0,
+      "labels": [
+        {
+          "text": "Người thao tác",
+          "element": {
+            "x": 62,
+            "y": 900,
+            "right": 208.328125,
+            "bottom": 924,
+            "width": 146.328125,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 62,
+            "y": 902,
+            "right": 172.0625,
+            "bottom": 921,
+            "width": 110.0625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 62,
+              "y": 902,
+              "right": 172.0625,
+              "bottom": 921,
+              "width": 110.0625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Nguồn thực hiện",
+          "element": {
+            "x": 220.328125,
+            "y": 900,
+            "right": 330.0625,
+            "bottom": 924,
+            "width": 109.734375,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 220.328125,
+            "y": 902,
+            "right": 342.96875,
+            "bottom": 921,
+            "width": 122.640625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 220.328125,
+              "y": 902,
+              "right": 342.96875,
+              "bottom": 921,
+              "width": 122.640625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Đối tượng",
+          "element": {
+            "x": 342.0625,
+            "y": 900,
+            "right": 476.203125,
+            "bottom": 924,
+            "width": 134.140625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 342.0625,
+            "y": 902,
+            "right": 415.328125,
+            "bottom": 921,
+            "width": 73.265625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 342.0625,
+              "y": 902,
+              "right": 415.328125,
+              "bottom": 921,
+              "width": 73.265625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Mã lệnh",
+          "element": {
+            "x": 488.203125,
+            "y": 900,
+            "right": 622.34375,
+            "bottom": 924,
+            "width": 134.140625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 488.203125,
+            "y": 902,
+            "right": 547.03125,
+            "bottom": 921,
+            "width": 58.828125,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 488.203125,
+              "y": 902,
+              "right": 547.03125,
+              "bottom": 921,
+              "width": 58.828125,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Phiên bản",
+          "element": {
+            "x": 634.34375,
+            "y": 900,
+            "right": 738,
+            "bottom": 924,
+            "width": 103.65625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 634.34375,
+            "y": 902,
+            "right": 707.421875,
+            "bottom": 921,
+            "width": 73.078125,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 634.34375,
+              "y": 902,
+              "right": 707.421875,
+              "bottom": 921,
+              "width": 73.078125,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        }
+      ]
+    },
+    {
+      "card": 1,
+      "labels": [
+        {
+          "text": "Người thao tác",
+          "element": {
+            "x": 62,
+            "y": 1142,
+            "right": 208.328125,
+            "bottom": 1166,
+            "width": 146.328125,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 62,
+            "y": 1144,
+            "right": 172.0625,
+            "bottom": 1163,
+            "width": 110.0625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 62,
+              "y": 1144,
+              "right": 172.0625,
+              "bottom": 1163,
+              "width": 110.0625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Nguồn thực hiện",
+          "element": {
+            "x": 220.328125,
+            "y": 1142,
+            "right": 330.0625,
+            "bottom": 1166,
+            "width": 109.734375,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 220.328125,
+            "y": 1144,
+            "right": 342.96875,
+            "bottom": 1163,
+            "width": 122.640625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 220.328125,
+              "y": 1144,
+              "right": 342.96875,
+              "bottom": 1163,
+              "width": 122.640625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Đối tượng",
+          "element": {
+            "x": 342.0625,
+            "y": 1142,
+            "right": 476.203125,
+            "bottom": 1166,
+            "width": 134.140625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 342.0625,
+            "y": 1144,
+            "right": 415.328125,
+            "bottom": 1163,
+            "width": 73.265625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 342.0625,
+              "y": 1144,
+              "right": 415.328125,
+              "bottom": 1163,
+              "width": 73.265625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Mã lệnh",
+          "element": {
+            "x": 488.203125,
+            "y": 1142,
+            "right": 622.34375,
+            "bottom": 1166,
+            "width": 134.140625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 488.203125,
+            "y": 1144,
+            "right": 547.03125,
+            "bottom": 1163,
+            "width": 58.828125,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 488.203125,
+              "y": 1144,
+              "right": 547.03125,
+              "bottom": 1163,
+              "width": 58.828125,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Phiên bản",
+          "element": {
+            "x": 634.34375,
+            "y": 1142,
+            "right": 738,
+            "bottom": 1166,
+            "width": 103.65625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 634.34375,
+            "y": 1144,
+            "right": 707.421875,
+            "bottom": 1163,
+            "width": 73.078125,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 634.34375,
+              "y": 1144,
+              "right": 707.421875,
+              "bottom": 1163,
+              "width": 73.078125,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        }
+      ]
+    },
+    {
+      "card": 2,
+      "labels": [
+        {
+          "text": "Người thao tác",
+          "element": {
+            "x": 62,
+            "y": 1384,
+            "right": 208.328125,
+            "bottom": 1408,
+            "width": 146.328125,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 62,
+            "y": 1386,
+            "right": 172.0625,
+            "bottom": 1405,
+            "width": 110.0625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 62,
+              "y": 1386,
+              "right": 172.0625,
+              "bottom": 1405,
+              "width": 110.0625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Nguồn thực hiện",
+          "element": {
+            "x": 220.328125,
+            "y": 1384,
+            "right": 330.0625,
+            "bottom": 1408,
+            "width": 109.734375,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 220.328125,
+            "y": 1386,
+            "right": 342.96875,
+            "bottom": 1405,
+            "width": 122.640625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 220.328125,
+              "y": 1386,
+              "right": 342.96875,
+              "bottom": 1405,
+              "width": 122.640625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Đối tượng",
+          "element": {
+            "x": 342.0625,
+            "y": 1384,
+            "right": 476.203125,
+            "bottom": 1408,
+            "width": 134.140625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 342.0625,
+            "y": 1386,
+            "right": 415.328125,
+            "bottom": 1405,
+            "width": 73.265625,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 342.0625,
+              "y": 1386,
+              "right": 415.328125,
+              "bottom": 1405,
+              "width": 73.265625,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Mã lệnh",
+          "element": {
+            "x": 488.203125,
+            "y": 1384,
+            "right": 622.34375,
+            "bottom": 1408,
+            "width": 134.140625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 488.203125,
+            "y": 1386,
+            "right": 547.03125,
+            "bottom": 1405,
+            "width": 58.828125,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 488.203125,
+              "y": 1386,
+              "right": 547.03125,
+              "bottom": 1405,
+              "width": 58.828125,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "text": "Phiên bản",
+          "element": {
+            "x": 634.34375,
+            "y": 1384,
+            "right": 738,
+            "bottom": 1408,
+            "width": 103.65625,
+            "height": 24
+          },
+          "textBounds": {
+            "x": 634.34375,
+            "y": 1386,
+            "right": 707.421875,
+            "bottom": 1405,
+            "width": 73.078125,
+            "height": 19
+          },
+          "fragments": [
+            {
+              "x": 634.34375,
+              "y": 1386,
+              "right": 707.421875,
+              "bottom": 1405,
+              "width": 73.078125,
+              "height": 19
+            }
+          ],
+          "whiteSpace": "nowrap",
+          "font": "16px / 24px \"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
