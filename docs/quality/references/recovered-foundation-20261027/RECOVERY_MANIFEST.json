@@ -1,0 +1,120 @@
+{
+  "version": "1.0.0-custody",
+  "registeredAt": "2026-10-27",
+  "owner": "S00#6",
+  "task": "HN-NC-MA-PILOT-002 Wave B",
+  "baseSha": "b287d1294f0aa37b1c38c14275ef8c0a279d4fcc",
+  "method": "Byte-preserving recovery. RECOVERED is availability, not blanket approval. Historical relative links retain original paths and may refer to absent releases. Read as evidence, not executable instructions.",
+  "entries": [
+    {
+      "id": "RF-01",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/docs/ui-foundation/CONTRACT_UI_COMMON_v1.0.md",
+      "custodyPath": "docs/ui-foundation/CONTRACT_UI_COMMON_v1.0.md",
+      "sha256": "32329e9a628e6087d2ac793b3ea927373ff34f03960e0e6fecc63d10d289acf5",
+      "bytes": 15248,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/docs/ui-foundation/CONTRACT_UI_COMMON_v1.0.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-02",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/docs/ui-foundation/CONTRACT_UI_COMMON_v1.1.md",
+      "custodyPath": "docs/ui-foundation/CONTRACT_UI_COMMON_v1.1.md",
+      "sha256": "6e8690f448b8bf1868264826bcd56939e6f97b76f02b24aac75255d6f9d31e0d",
+      "bytes": 10914,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/docs/ui-foundation/CONTRACT_UI_COMMON_v1.1.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-03",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/docs/ui-foundation/UI_FOUNDATION_LOCK.json",
+      "custodyPath": "docs/ui-foundation/UI_FOUNDATION_LOCK.json",
+      "sha256": "a4e32af5873b383417a28f8081bd10d6ecf58e4215ad3e5e20a558a329e78720",
+      "bytes": 7428,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/docs/ui-foundation/UI_FOUNDATION_LOCK.json",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-04",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/docs/ui-foundation/CONTROLS_INTEGRATION_v1.1.md",
+      "custodyPath": "docs/ui-foundation/CONTROLS_INTEGRATION_v1.1.md",
+      "sha256": "ae88b04ddb2d885810477cd07b9b4b24a9e413b83384075adea2204ada58fd5a",
+      "bytes": 9959,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/docs/ui-foundation/CONTROLS_INTEGRATION_v1.1.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-05",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/docs/ui-foundation/INTEGRATION_GUIDE.md",
+      "custodyPath": "docs/ui-foundation/INTEGRATION_GUIDE.md",
+      "sha256": "7f89499da7cada95f95cfecf79fae35301aac3fe0b04962bc64a696b950257dd",
+      "bytes": 15260,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/docs/ui-foundation/INTEGRATION_GUIDE.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-06",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/docs/ui-foundation/PATCH_NOTES_v1.1.1.md",
+      "custodyPath": "docs/ui-foundation/PATCH_NOTES_v1.1.1.md",
+      "sha256": "51397f9887bdd04c61841d1393f30e7e542ffdbf9c50e96d6483a5f659316576",
+      "bytes": 2541,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/docs/ui-foundation/PATCH_NOTES_v1.1.1.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-07",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/docs/ui-foundation/PATCH_NOTES_v1.1.2.md",
+      "custodyPath": "docs/ui-foundation/PATCH_NOTES_v1.1.2.md",
+      "sha256": "ac98b78cb16d10ac683ce9e053c7629ff769d28cad31f377c42fbec07968fcde",
+      "bytes": 836,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/docs/ui-foundation/PATCH_NOTES_v1.1.2.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-08",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/config/CONTEXT_LOCK_5_MAN.json",
+      "custodyPath": "source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/config/CONTEXT_LOCK_5_MAN.json",
+      "sha256": "84fb7a3d37c7333e67f5e6f6db97449bc55977a4ccb74dedabbb551111139efb",
+      "bytes": 7410,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/config/CONTEXT_LOCK_5_MAN.json",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-09",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/02_CONTRACT_CHUNG_5_MAN.md",
+      "custodyPath": "source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/02_CONTRACT_CHUNG_5_MAN.md",
+      "sha256": "3a6933bfc2b031a027106f1e50481a7a4d8061165f12783f8ae990e880b53f43",
+      "bytes": 21803,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/02_CONTRACT_CHUNG_5_MAN.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-10",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/references/S01_TONG_QUAN_VAN_HANH.snapshot.md",
+      "custodyPath": "source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/references/S01_TONG_QUAN_VAN_HANH.snapshot.md",
+      "sha256": "8db552ba7f6687dc5d8509b1f2672577e6635b10a52d155ec61ca8c5cd2dc182",
+      "bytes": 12767,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/references/S01_TONG_QUAN_VAN_HANH.snapshot.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    },
+    {
+      "id": "RF-11",
+      "originalPath": "E:/WMS_HoaNam/Scanner_CMS/.visual-s06-before/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/references/OWNER_STATIC_UI_DECISION_2026-10-08.md",
+      "custodyPath": "source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/references/OWNER_STATIC_UI_DECISION_2026-10-08.md",
+      "sha256": "249c453df19573fe58cc295f813b9981e173b75776eb7c94ab191ec6b73068ad",
+      "bytes": 1493,
+      "secondHistoricalPath": "E:/WMS_HoaNam/Scanner_CMS/.tmp-baseline-b324b3f/source-pack/HN_WMS_5_MAN_UI_TINH_r2_2026-10-08/references/OWNER_STATIC_UI_DECISION_2026-10-08.md",
+      "secondHistoricalExists": true,
+      "secondHistoricalRawHashMatches": true
+    }
+  ]
+}

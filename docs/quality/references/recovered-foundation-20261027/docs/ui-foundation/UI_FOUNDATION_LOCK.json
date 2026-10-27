@@ -1,0 +1,149 @@
+{
+  "version": "HN_UI_SHARED_v1.1.2",
+  "owner": "S00 / Chat 1",
+  "status": "READY_FOR_SCREEN_INTEGRATION",
+  "contract": "docs/ui-foundation/CONTRACT_UI_COMMON_v1.1.md",
+  "foundationContract": "docs/ui-foundation/CONTRACT_UI_COMMON_v1.0.md",
+  "integrationGuide": "docs/ui-foundation/CONTROLS_INTEGRATION_v1.1.md",
+  "releaseDirectory": "output/S00/HEADER_BACKDROP_FIX_2026-10-12",
+  "sourceMilestone": "HN_UI_SHARED_v1.1.2+sha256.e2b9c3e08256",
+  "inheritedFoundation": {
+    "version": "HN_UI_SHARED_v1.0.2",
+    "milestone": "58aa9a6cb17f",
+    "lock": "output/S00/CONTROLS_ROLLOUT_2026-10-12/baseline/ROOT_UI_FOUNDATION_LOCK_v1.0.2.json"
+  },
+  "ownerApproval": {
+    "id": "HN_CONTROLS_R3_OWNER_APPROVED_2026-10-12",
+    "record": "output/S00/CONTROLS_ROLLOUT_2026-10-12/OWNER_APPROVAL.json",
+    "approvedControls": {
+      "version": "HN_CONTROLS_R3",
+      "source": "f1274685c7f5f17d37165a7ff36b264123819b29090ff87cf0678f09bac4a736",
+      "shared": "392e08a09a158725d8d0fed2ef0b7febc1beda1520918f05fac372817973101e",
+      "bundle": "10bd2b7353d0ab7d311ee15cd6c48befeb6dad3e0ff593223b3b1dc027d4b8c1"
+    },
+    "scope": "Approve R3 visual/control standard and roll out equivalent existing controls to sourced screens; no new business permission or workflow.",
+    "status": "OWNER_APPROVED"
+  },
+  "decisions": {
+    "dateModes": {
+      "single": "Basic",
+      "contiguous": "Range",
+      "discrete": "Multiple only with existing business source",
+      "disabled": "sourced rule only"
+    },
+    "timeZone": "Asia/Ho_Chi_Minh",
+    "dateFormat": "dd/MM/yyyy",
+    "rangeInclusive": true,
+    "search": "normalized Vietnamese substring per declared field",
+    "searchDebounceMs": 250,
+    "filterCombination": "AND",
+    "filterApply": "immediate",
+    "pageSize": 10,
+    "pageSizeOptions": [
+      10,
+      15,
+      25,
+      50
+    ],
+    "pipeline": [
+      "search/filter",
+      "sort entire detail result",
+      "paginate"
+    ],
+    "resetPageOn": [
+      "search",
+      "filter",
+      "sort",
+      "pageSize"
+    ],
+    "missingSort": "last both directions",
+    "tieSort": "stable ID ascending or original source order",
+    "aggregateSummary": "independent of list filters",
+    "unavailablePeriod": "restore accepted query/control/model; explicit notice",
+    "control": "#004E74",
+    "brand": "#0A3765",
+    "font": "Public Sans",
+    "select": "BasicSelect / FilterSelect",
+    "buttons": "Button with source-owned loading, text+icon or labelled iconOnly44",
+    "icons": "Local official Tabler outline; pinned provenance in source"
+  },
+  "source": {
+    "directory": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/source",
+    "manifest": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/SOURCE_MANIFEST.json",
+    "sha256": "e2b9c3e08256531e1e0767c0525bc5ca3ce2cdafc010d1d5c6efb5eaca60e5e8",
+    "fileCount": 705,
+    "generatedLockExcluded": true
+  },
+  "shared": {
+    "directory": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/source/src/shared",
+    "manifest": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/SHARED_MANIFEST.json",
+    "sha256": "1c13eb6b01c2b775e297d0a9dcdea12591b52e7ea277239c53b3f687881ae094",
+    "fileCount": 94
+  },
+  "bundle": {
+    "directory": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/bundle",
+    "manifest": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/BUNDLE_MANIFEST.json",
+    "sha256": "79f6efd221db831b9af43ed34d8ef534788eb5d75ed972d676d0e3c3a8ffee9a",
+    "builtFrom": "e2b9c3e08256531e1e0767c0525bc5ca3ce2cdafc010d1d5c6efb5eaca60e5e8",
+    "buildInputManifest": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/BUILD_INPUT_MANIFEST.json"
+  },
+  "componentVersions": {
+    "Button": "HN_UI_SHARED_v1.1.1",
+    "BasicSelect": "HN_UI_SHARED_v1.1.0",
+    "FilterSelect": "HN_UI_SHARED_v1.1.0",
+    "Icon": "HN_UI_SHARED_v1.1.0",
+    "Pagination": "HN_UI_SHARED_v1.1.0",
+    "RefreshButton": "HN_UI_SHARED_v1.1.0",
+    "ShellNavigation": "HN_UI_SHARED_v1.1.0",
+    "otherComponents": "Inherited approved R3; exact files in shared manifest",
+    "InteractionReview": "HN_INTERACTION_REVIEW_R3_UX1",
+    "ShellHeaderBackdrop": "HN_UI_SHARED_v1.1.2"
+  },
+  "screenReferences": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/SCREEN_PATCH_RECEIPTS.json",
+  "preview": "http://127.0.0.1:4453/?source=e2b9c3e08256#/preview/S01",
+  "verification": {
+    "typecheck": "PASS",
+    "build": "PASS",
+    "unit": "448/448 PASS",
+    "headerGeometry": "48/48 actual route cases at 1920x1080,1280x800,800x1280; DPR1/fine pointer",
+    "pageScroll": "37 actual scrolled cases; 11 with no outer scroll range",
+    "pairedGeometry": "6/6 final before/after pairs",
+    "blur": "Exact shared support branch verified in DEV4454 only; production4453 obeys reduced transparency",
+    "report": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/QA_REPORT.md",
+    "screenResults": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/SCREEN_RESULTS.md"
+  },
+  "visualApproval": "Prior R3/Foundation approval retained. Header backdrop technical patch is OWNER_VISUAL_REVIEW_PENDING; no blanket screen approval.",
+  "scope": "Shared floating header backdrop only. Runtime delta: s00-shell.css; isolated preview port config. No feature/controller/adapter/data changes.",
+  "openItems": [
+    "True browser zoom125/200, DPR2 and physical tablet touch: NOT_RUN",
+    "Native Select fallback browser and device-wide performance: NOT_RUN",
+    "S07/S08 auth success and full business flow remain BLOCKED by source",
+    "S11-S15 queries outside fixture coverage retain existing guards",
+    "S08 refined b38090631560 is a separate pending candidate; R3 S08 retained",
+    "All controls/states/workflows beyond recorded cases are not asserted PASS",
+    "This release retests 54 default geometry cases, selected shared guards and isolated review interactions; full screen workflows are NOT_RUN in this patch.",
+    "Observed retry feedback removal changes modal height; no claim of invariant geometry for every form state.",
+    "Header: native normal-transparency environment, forced-colors/unsupported browsers, DPR2/coarse-pointer rail/native zoom/device FPS NOT_RUN.",
+    "Header technical checks cover 48 geometry/hit-target cases (37 scrolled, 11 no outer scroll) and selected interactions only; visual Owner review pending.",
+    "S19 incoming handoff is recorded but not integrated or tested in this header patch."
+  ],
+  "realApi": "NOT_RUN",
+  "productionModified": false,
+  "autoAdvance": false,
+  "patchNotes": "docs/ui-foundation/PATCH_NOTES_v1.1.2.md",
+  "inheritedRelease": {
+    "version": "HN_UI_SHARED_v1.1.1",
+    "source": "235481861ec6046d09fb7929c7df0738ada82ea7e43e17f5cc3d881988dd631b",
+    "lock": "output/S00/HEADER_BACKDROP_FIX_2026-10-12/baseline/UI_FOUNDATION_LOCK_v1.1.1.json"
+  },
+  "maintenanceAuthorization": {
+    "date": "2026-10-12",
+    "scope": "Owner requested inspection and shared remedy for content leaking behind PC/Tablet header while scrolling; no new business scope."
+  },
+  "reviewPreview": "http://127.0.0.1:4451/tests/harness/interaction-review/index.html?source=235481861ec6#form",
+  "devBlurBranch": {
+    "preview": "http://127.0.0.1:4454/qa/header-blur.html?source=e2b9c3e08256#/preview/S01",
+    "production": false,
+    "reason": "Host prefers reduced transparency; exact shared support branch exercised separately."
+  }
+}
