@@ -121,6 +121,10 @@
 .hn-notification-business-status svg { flex-shrink:0; }
 .hn-notification-business-status--warning { color:var(--hn-notification-warning); background:var(--hn-notification-warning-fill); }
 .hn-notification-business-status--success { color:var(--hn-notification-success); background:var(--hn-notification-success-fill); }
+/* Scoped contrast repair: reuse existing shared status text colors; not new locked tokens. */
+html:not([data-hn-theme='dark']) .hn-notification-center .hn-notification-search input::placeholder { opacity:1; }
+html:not([data-hn-theme='dark']) .hn-notification-center .hn-notification-business-status--warning { color:#835811; }
+html:not([data-hn-theme='dark']) .hn-notification-center .hn-notification-business-status--success { color:#286645; }
 .hn-notification-detail-actions { display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:22px; }
 .hn-notification-primary { display:inline-flex; align-items:center; justify-content:center; gap:16px; min-height:52px; padding:12px 28px; border:1px solid var(--hn-notification-accent); border-radius:var(--hn-radius); background:var(--hn-notification-accent); color:#fff; font-size:16px; line-height:24px; font-weight:600; text-decoration:none; }
 .hn-notification-primary:hover { filter:brightness(.94); }
