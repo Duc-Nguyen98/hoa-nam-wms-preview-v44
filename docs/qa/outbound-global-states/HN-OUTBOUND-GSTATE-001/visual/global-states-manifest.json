@@ -1,0 +1,120 @@
+{
+  "base": "http://127.0.0.1:5188/tests/s15/harness.html",
+  "rows": [
+    {
+      "state": "empty",
+      "route": "http://127.0.0.1:5188/tests/s15/harness.html?state=empty&count=1",
+      "synthetic": true,
+      "geometry": {
+        "innerWidth": 1672,
+        "innerHeight": 941,
+        "dpr": 1,
+        "scrollWidth": 1672,
+        "scrollHeight": 941
+      },
+      "states": [
+        {
+          "state": "empty",
+          "text": "Chưa có phiếuChưa có phiếu xuất trong phiên hiện tại.Phiếu sẽ xuất hiện sau khi được gửi từ App quét.Đọc lại dữ liệu"
+        }
+      ],
+      "screenshot": "output/outbound-visual-qa/global-states/empty.png"
+    },
+    {
+      "state": "no-results",
+      "route": "http://127.0.0.1:5188/tests/s15/harness.html?count=1",
+      "synthetic": true,
+      "geometry": {
+        "innerWidth": 1672,
+        "innerHeight": 941,
+        "dpr": 1,
+        "scrollWidth": 1672,
+        "scrollHeight": 941
+      },
+      "states": [
+        {
+          "state": "no-results",
+          "text": "Không có kết quảKhông tìm thấy phiếu phù hợp.Xóa bộ lọc"
+        }
+      ],
+      "screenshot": "output/outbound-visual-qa/global-states/no-results.png"
+    },
+    {
+      "state": "error",
+      "route": "http://127.0.0.1:5188/tests/s15/harness.html?state=error",
+      "synthetic": true,
+      "geometry": {
+        "innerWidth": 1672,
+        "innerHeight": 941,
+        "dpr": 1,
+        "scrollWidth": 1672,
+        "scrollHeight": 941
+      },
+      "states": [
+        {
+          "state": "error",
+          "text": "Lỗi tải dữ liệuKhông thể tải danh sách phiếu xuất.Thử lại"
+        }
+      ],
+      "screenshot": "output/outbound-visual-qa/global-states/error.png"
+    },
+    {
+      "state": "loading",
+      "route": "http://127.0.0.1:5188/tests/s15/harness.html?state=loading",
+      "synthetic": true,
+      "geometry": {
+        "innerWidth": 1672,
+        "innerHeight": 941,
+        "dpr": 1,
+        "scrollWidth": 1672,
+        "scrollHeight": 941
+      },
+      "states": [
+        {
+          "state": "loading",
+          "text": "Đang đọc dữ liệu…Vui lòng chờ trong giây lát."
+        }
+      ],
+      "screenshot": "output/outbound-visual-qa/global-states/loading.png"
+    },
+    {
+      "state": "forbidden",
+      "route": "http://127.0.0.1:5188/tests/s15/harness.html?state=forbidden",
+      "synthetic": true,
+      "geometry": {
+        "innerWidth": 1672,
+        "innerHeight": 941,
+        "dpr": 1,
+        "scrollWidth": 1672,
+        "scrollHeight": 941
+      },
+      "states": [
+        {
+          "state": "forbidden",
+          "text": "Không có quyềnBạn không có quyền xem thông tin phiếu này.Tổng quan"
+        }
+      ],
+      "screenshot": "output/outbound-visual-qa/global-states/forbidden.png"
+    },
+    {
+      "state": "record-not-found",
+      "route": "http://127.0.0.1:5188/tests/s15/harness.html?state=ready",
+      "synthetic": true,
+      "geometry": {
+        "innerWidth": 1672,
+        "innerHeight": 941,
+        "dpr": 1,
+        "scrollWidth": 1672,
+        "scrollHeight": 941
+      },
+      "states": [
+        {
+          "state": "record-not-found",
+          "text": "Không tìm thấy phiếuKhông tìm thấy phiếu xuất được yêu cầu.Quay lại danh sách"
+        }
+      ],
+      "screenshot": "output/outbound-visual-qa/global-states/record-not-found.png"
+    }
+  ],
+  "events": []
+}

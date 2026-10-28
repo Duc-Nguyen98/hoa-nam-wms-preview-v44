@@ -1,0 +1,5137 @@
+{
+  "base": "http://127.0.0.1:5188",
+  "runs": [
+    {
+      "route": "/tests/s15/harness.html?count=1",
+      "requestCount": 260,
+      "responseCount": 260,
+      "statuses": {
+        "200": 260
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/tests/s15/harness.html?count=1",
+          "resourceType": "document"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/@vite/client",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/tests/s15/harness.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react-dom_client.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/OperationalOutbounds.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/index.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/GlobalToastProvider.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShellPreferencesRuntime.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/use-ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-design-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/tests/s27/fixture.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/styles.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/unified.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/components.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/premium.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/header-controls.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/dark-theme.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/premium-dark.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/table-presentation.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/preview-ui.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-slips.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/vite/dist/client/env.mjs",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s03-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react-dom.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shell-preferences.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/toast-store.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/toast-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/toast-config.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/global-toast.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/operational-preview-adapter.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/catalog-create-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/copy-text.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-feedback.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/GlobalShell.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/primitives.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/GlobalModal.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ConfirmDialog.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/FormField.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/PageState.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/InitialReadState.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/DataTable.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Pagination.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Icon.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s01-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s02-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/controls.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Catalogue.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/CatalogueNavTabs.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/table-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/DatePicker.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-picker-calendar.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/foundation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/search.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/list-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/screen-foundation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Notice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/RefreshButton.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-status.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-atomic.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/api-client.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/api-contract.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mode.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/command-recovery-context.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-outcome.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/catalog-create.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/catalog-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-repository.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/PreviewModeNotice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-shell-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShellHeader.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShellActionContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shell-locale.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/AccountCenterContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/body-scroll-lock.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-shell.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-sidebar-tone.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/modal-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/read-failure-kind.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/page-state.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/basic-select.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/format-declared-percentage.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/wave4-catalogue.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/format-business-date.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-picker.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/use-date-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-picker-keyboard.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-status.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/shared-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/date-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/zh-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/errors.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/axios.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/command-recovery.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inactive-master-scope.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/putaway-approved-seed.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inactive-master-allowlist.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/preview-mode.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/open-notification.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shortcut-preferences.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shortcut-model.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShortcutSettings.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/PreviewNotificationCenter.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-preview-store.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationBell.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/account-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/account-center-model.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/account-http.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/useProfileAvatar.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/account-runtime.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/read-diagnostics.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/command-diagnostics.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shortcut-settings.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-badge.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationIcon.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-target.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notifications.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/browser-runtime.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S01.presentation.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/notification-document-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/notification-document-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/overview-document-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/index.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/public-demo-login.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-persistence.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/qa-dataset.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/notification-design-seed.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-app-fixture.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/operational-qa-session.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/catalog-qa-session.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/account.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/approved-business-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-approved-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/domain.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-reads.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-command-transport.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/storage.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/notifications.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-command-service.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/pv-demo-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S28/warehouse-command.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S23/label-print-command.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/recipient-contact-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/defects.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/resource-defaults.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/readers.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/query-validation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/admin-data.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/parts-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inactive-master-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/reversal-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/linked-document-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/outbound-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/putaway-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inbound-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-service.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/defects-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/defects-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S23.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/label-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/recipients-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/warehouse-config-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/pv-demo.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/recipient-update-command.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/overview.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/products.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/skus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/recipients.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/pv-products.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/warranty-cases.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/parts-slips.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/trays.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/receipts.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/putaway-queue.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/putaway-orders.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/outbound-slips.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/inventory-reconciliation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/reversal-slips.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/inbound-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/outbound-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/movement-history.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/inventory-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/warranty-parts-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/label-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/data-quality-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/dealer-export-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/goods-trace-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/overview-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/overview-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/products-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/skus-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/pv-products-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/warranty-cases-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/parts-slips-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/trays-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/receipts-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/putaway-queue-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/putaway-orders-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/outbound-slips-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/inventory-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/reversal-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/inbound-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/outbound-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/movement-history-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/inventory-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/warranty-parts-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/data-quality-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/dealer-export-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/goods-trace-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/system-audit-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/s29-users-rbac.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/system-audit.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-hash.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S13.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S14.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S26.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S22.desktop.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/DESIGN_FIXTURE_SNAPSHOT.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/SCREEN_CONTRACTS.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/warehouse-config-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/warehouse-command-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S01_SCANNER_PINNED.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/overview-table-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/overview-document-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/overview-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/products-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/skus-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S06.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/pv-page-sort.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S09.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S10.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S11.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S12.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S15.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S16.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S17.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S18.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S19.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S20.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S21.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S22.summary.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S24.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S25.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-Regular.woff2",
+          "resourceType": "font"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-Bold.woff2",
+          "resourceType": "font"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-Medium.woff2",
+          "resourceType": "font"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-SemiBold.woff2",
+          "resourceType": "font"
+        }
+      ],
+      "responses": [
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/tests/s15/harness.html?count=1",
+          "resourceType": "document"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/tests/s15/harness.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/@vite/client",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s00-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/toast/GlobalToastProvider.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S15/OperationalOutbounds.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/index.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/use-ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/ShellPreferencesRuntime.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-design-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/tests/s27/fixture.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/styles.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/unified.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/components.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/premium.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/header-controls.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/dark-theme.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/premium-dark.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/table-presentation.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-slips.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/preview-ui.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/vite/dist/client/env.mjs",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s03-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react-dom.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/shell-preferences.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/toast/toast-store.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/toast/toast-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/toast/toast-config.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/toast/global-toast.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/operational-preview-adapter.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/catalog-create-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/copy-text.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-feedback.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/primitives.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/GlobalShell.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/GlobalModal.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/ConfirmDialog.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/FormField.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/InitialReadState.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/PageState.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/DataTable.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/Pagination.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s01-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s02-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/controls.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/Icon.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/CatalogueNavTabs.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/Catalogue.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/table-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/date-picker-calendar.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/foundation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react-dom_client.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/search.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/DatePicker.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/list-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/Notice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/screen-foundation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/report-status.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/RefreshButton.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/report-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-atomic.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/api-client.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mode.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/api-contract.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/command-recovery-context.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-outcome.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/contracts/catalog-create.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/PreviewModeNotice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/catalog-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-repository.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/ShellActionContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s00-shell-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/shell-locale.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/ShellHeader.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/account/AccountCenterContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/body-scroll-lock.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s00-shell.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s00-sidebar-tone.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/page-state.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/modal-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/read-failure-kind.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/basic-select.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/format-declared-percentage.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/wave4-catalogue.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/format-business-date.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/date-picker.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/date-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/use-date-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/date-picker-keyboard.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/report-status.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/shared-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/date-copy.ts",
+          "resourceType": "script"
+        }
+      ]
+    },
+    {
+      "route": "/#/preview/S15",
+      "requestCount": 561,
+      "responseCount": 561,
+      "statuses": {
+        "200": 561
+      },
+      "requests": [
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/",
+          "resourceType": "document"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/@vite/client",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/main.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react-dom_client.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/App.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/PublicDemoGate.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/AccountCenterContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/review-diagnostics.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShellActionContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/browser-runtime.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShellPreferencesRuntime.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/GlobalToastProvider.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/styles.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/setup.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/unified.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/components.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/premium.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/wave4-presentation.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/auth-layout.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S07/login.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S08/session.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/header-controls.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/dark-theme.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/premium-dark.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/table-presentation.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/preview-ui.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/vite/dist/client/env.mjs",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/notification-document-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/documents/NotificationSourceDocumentScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/SystemAuditScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S28/WarehouseConfigScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S29/UsersRbacScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/business-adapters.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/admin-adapters.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/overview-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/products-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/defects-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shell-locale.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/account-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mode.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/use-ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/admin-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/preview-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/index.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/registry.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/navigation-blocker.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/canonical-preview-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/app/overview-document-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/documents/OverviewSourceDocumentScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S01/OverviewScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/DefectsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-command-service.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-command-http.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-approved-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/ProductsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/SkusScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/RecipientsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/recipient-update-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/PvProductsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/WarrantyCasesScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S07/LoginScreen.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S08/SessionScreen.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S10/PartsSlipsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S11/TraysScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/ReceiptsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S13/PutawayQueueScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S14/PutawayOrdersScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/OutboundSlipsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S16/InventoryScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S17/ReversalSlipsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/putaway/PutawayHistoryScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/putaway-history-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/api-client.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S18/InboundReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S19/OutboundReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/MovementHistoryScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S21/InventoryReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/WarrantyPartsReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S23/LabelReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/label-print-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S24/DataQualityScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S25/DealerExportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S26/GoodsTraceScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/AccountCenterScreen.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/account-center-model.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shell-preferences.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/DatePolicyQaScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationHarnessScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationRepositoryQaScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/ToastQaScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/OperationalPreview.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/public-demo-setup.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/index.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/public-demo-login.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-persistence.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/command-recovery-context.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/qa-dataset.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/primitives.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Icon.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/account-http.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/useProfileAvatar.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/account-runtime.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react-dom.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/toast-store.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/toast-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/toast-config.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/global-toast.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/notification-document-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/open-notification.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/copy-text.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/documents/notification-source-document.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/PageState.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/audit-time.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/audit-ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/system-audit-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/system-audit.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/operational-preview-adapter.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/OperationalAudit.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/pv-demo-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/PvAudit.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/system-audit.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/warehouse-config-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/GlobalShell.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/InitialReadState.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/controls.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/GlobalModal.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S28/warehouse-config.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/report-date-display.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/format-business-timestamp.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/s29-users-rbac-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/s29-users-rbac.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S29/AcceptedRowDetail.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S29/users-rbac.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/resource-defaults.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/inbound-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/outbound-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/movement-history-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/inventory-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/warranty-parts-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/data-quality-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/dealer-export-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/goods-trace-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/overview.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/overview-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/read-diagnostics.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/list-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/api-contract.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/warehouse-command-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/defects.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/defects-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/products.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/products-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ConfirmDialog.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/FormField.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/DataTable.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Pagination.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s01-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s02-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s03-shell-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Catalogue.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/CatalogueNavTabs.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/table-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/DatePicker.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-picker-calendar.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/foundation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/search.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/screen-foundation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/Notice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/RefreshButton.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-status.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/overview-document-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/format-business-date.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S01/overview-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/documents/overview-source-document.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/overview-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/overview-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S01/AcceptedRowDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S01/overview.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/catalogue-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/reports-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/format-declared-percentage.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/toast/OperationResultToast.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/defects-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/defects-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/useDefectsTableLayout.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-command-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-reconciliation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S02/DefectsRecoveryPanel.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/errors.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/products-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/products-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/ProductNotice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/product-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/ProductDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/products.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/catalog-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/http/catalog-create-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/ProductCreateDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/CatalogProductsList.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/CatalogProductDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/selection-lifecycle.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/skus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/skus-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/skus-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/SkuNotice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/sku-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/skus.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/SkuDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/sku-detail.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/SkuCatalog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/sku-catalog-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/recipient-update-command.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/recipients.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/recipients-runtime.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/recipients-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/recipient-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/RecipientNotice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/RecipientDetailDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/RecipientUpdateDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/RecipientCatalog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/recipient-catalog-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/recipients.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/auth-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S07/AuthLayout.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/OperationalWarranty.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/operations-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/warranty-cases.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/warranty-cases-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/warranty-layout.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/WarrantyDetailDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/warranty-cases.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/pv-products.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/pv-products-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/PvRowAction.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/PvProductDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/PvDetailSelection.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/PvDemoCatalogue.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/pv-demo-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/pv-products.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/parts-slips.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/parts-slips-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S10/parts-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S10/PartsSlipDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S10/OperationalPartsIssues.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S10/parts-slips.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/PreviewModeNotice.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/AuthLayout.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/trays.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/trays-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S11/trays.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S11/TrayDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S11/OperationalTrays.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/putaway-queue-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/putaway-queue.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S13/OperationalPutawayQueue.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S13/putaway-queue.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/OperationalReceipts.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/receipts-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/receipts.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/receipts.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/ReceiptDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/receipt-detail.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/putaway-orders-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/putaway-orders.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S14/putaway-orders.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S14/OperationalPutawayOrders.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S14/PutawayOrderDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S14/PutawayDetailSelection.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-design-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/outbound-slips-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/outbound-slips.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/OutboundSlipDetailDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-detail-selection.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/OperationalOutbounds.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-slips.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/putaway/TrayUi.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/putaway/tray-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/putaway/tray-ui.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/reversal-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/reversal-slips.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S17/reversal-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S17/OperationalReversals.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S17/reversal-slips.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/axios.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/inventory-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/inventory-reconciliation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S16/inventory-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S16/inventory.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S16/OperationalInventory.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/exports/ReportExcelButton.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/inbound-report-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/inbound-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-compact-sort.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S18/InboundReportCharts.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S18/inbound-report.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S18/OperationalInboundReport.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/movement-history-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/movement-history.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/MovementHistoryCharts.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/MovementHistoryFeedback.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/movement-history-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/movement-history.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/OperationalMovementLedger.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/inventory-report-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/inventory-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S21/InventoryReportChart.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S21/inventory-report.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S21/OperationalStockReport.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/warranty-parts-report-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/warranty-parts-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/WarrantyPartsProgress.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/WarrantyPartsReadStatus.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/WarrantyPartsDetail.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/OperationalWarrantyReport.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/warranty-parts-report.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S23/label-print-command.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/label-report-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/label-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S23/label-report-scroll.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S23/label-print-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S23/label-report.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/data-quality-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/data-quality-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S24/AcceptedRowDetail.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S24/DataQualityCharts.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S24/data-quality-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S24/data-quality.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/dealer-export-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/dealer-export-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S25/DealerExportCharts.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S25/dealer-export-layout.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S25/dealer-export.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S25/OperationalRecipientReport.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/outbound-report-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/outbound-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S19/OutboundReportCharts.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S19/outbound-report-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S19/outbound-report.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S19/OperationalOutboundReport.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S01.presentation.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/goods-trace-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/goods-trace-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S26/TraceCharts.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S26/goods-trace.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S26/OperationalTrace.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/account/account-center.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-model.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notifications.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/storage.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/notifications.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/PreviewNotificationCenter.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationBell.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-app-fixture.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/operational-qa-session.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/catalog-qa-session.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/account.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/approved-business-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/domain.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-reads.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-command-transport.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/notification-design-seed.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/command-recovery.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/catalog-create.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/putaway-approved-seed.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/page-state.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/system-audit-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-outcome.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/pv-demo-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ReadState.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/audit-operational-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/OperationalDetail.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/audit-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/shared-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/date-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/i18n/zh-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/warehouse-config-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/read-failure-kind.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/preview-command-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/operational-preview.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/operational-reports.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/OperationalQaChecks.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/IncompleteExportQa.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/catalog-read-probe.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/ReadDiagnosticsQa.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/QaJsonDetails.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/CommandDiagnosticsQa.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/OutboundRequestDraft.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/InactiveMasterQa.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-shell-state.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShellHeader.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/body-scroll-lock.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-shell.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/s00-sidebar-tone.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S27/pv-audit-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/modal-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/basic-select.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S18.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S19.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S21.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S20.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S22.summary.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S22.desktop.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S24.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S25.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S26.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S01_SCANNER_PINNED.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/overview-table-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/DESIGN_FIXTURE_SNAPSHOT.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/SCREEN_CONTRACTS.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/defects-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/products-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/wave4-catalogue.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-picker.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/use-date-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/date-picker-keyboard.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-status.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S01/overview-document-link.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S01/overview-selection.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/defects-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S02.presentation.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S03.presentation.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/catalog-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-repository.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/catalog-products.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S03/catalog-focus.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/skus-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/skus-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/skus-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S04.presentation.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/sku-catalog.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/SkuCreateDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/SkuCatalogDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/OperationalProfilePanel.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/selection-lifecycle.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/recipients-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/recipients-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S05.presentation.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/CatalogRecipientDetailDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/RecipientCreateDialog.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S05/recipient-catalog.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S07.copy.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S08.copy.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/operational-warranty.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/WarrantyDiagnosisForm.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/warranty-diagnosis-form.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S09/warranty-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/warranty-cases-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/pv-products-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/parts-slips-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/pv-demo.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/usePvDemo.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/PvDemoForm.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/pv-demo-model.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/pv-demo-form.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/preview-mode.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/trays-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S10/parts-operational-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S10/operational-parts.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/putaway-queue-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S11/tray-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/receipts-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S13/putaway-create-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/putaway-orders-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S14/putaway-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/outbound-slips-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/ReceiptHeaderForm.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/receipt-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/reversal-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S17/reversal-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/inventory-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/exports/collect-report.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/exports/report-export.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S16/inventory-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-presentation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S15/outbound-feedback.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S18/OperationalDetail.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/report-chart-scale.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/movement-ledger-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S20/OperationalDetail.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S21/stock-report-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/controllers/warranty-parts-detail-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/contracts/warranty-parts-detail.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/label-report-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/warranty-operational-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S24/data-quality-chart-layout.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S25/OperationalDetail.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S25/recipient-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S19/outbound-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S19/OperationalDetail.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S26/trace-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-badge.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inactive-master-allowlist.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S28/warehouse-command.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/recipient-contact-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/readers.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/query-validation.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/admin-data.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationIcon.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-target.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/notifications/notification-preview-store.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/command-diagnostics.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/parts-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inactive-master-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/reversal-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/linked-document-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/outbound-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/putaway-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inbound-policy.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-service.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S23.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/inactive-master-scope.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/operational-hash.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/incomplete-export-qa.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/operations/outbound-request-draft.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shortcut-preferences.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shortcut-model.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/ShortcutSettings.tsx",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-atomic.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/OperationalProfileForm.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/operational-profile-binding.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S09.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S06.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/pv-page-sort.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S10.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/pv-demo-session.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/PvDemoDraft.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S11.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S14.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S13.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S12.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S15.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S17.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S12/receipt-header-form.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/fixtures/S16.seed.json?import",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S22/warranty-parts-query.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/exports/report-export-contract.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S18/inbound-binding.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/warranty-parts-detail-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/data/adapters/s29-users-rbac-fixture-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/shared/shortcut-settings.css",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S04/operational-profile-form.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/src/features/S06/pv-demo-receipt.ts",
+          "resourceType": "script"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-Bold.woff2",
+          "resourceType": "font"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-Regular.woff2",
+          "resourceType": "font"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+          "resourceType": "image"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-SemiBold.woff2",
+          "resourceType": "font"
+        },
+        {
+          "method": "GET",
+          "url": "http://127.0.0.1:5188/assets/fonts/s01/PublicSans-Medium.woff2",
+          "resourceType": "font"
+        }
+      ],
+      "responses": [
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/",
+          "resourceType": "document"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/main.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/@vite/client",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/App.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/PublicDemoGate.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/review-diagnostics.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/browser-runtime.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/ShellActionContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/ShellPreferencesRuntime.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/account/AccountCenterContext.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/setup.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/styles.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/toast/GlobalToastProvider.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/components.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/premium.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/unified.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/wave4-presentation.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/auth-layout.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S08/session.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S07/login.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/premium-dark.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/header-controls.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/table-presentation.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/dark-theme.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/preview-ui.css",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/vite/dist/client/env.mjs",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/notification-document-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/documents/NotificationSourceDocumentScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S27/SystemAuditScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S28/WarehouseConfigScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/node_modules/.vite/deps/react-dom_client.js?v=03b6ae94",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S29/UsersRbacScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/business-adapters.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/controllers/overview-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/admin-adapters.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/controllers/defects-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/controllers/products-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/shell-locale.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/account-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mode.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/use-ui-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/i18n/admin-copy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/controllers/preview-controller.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/index.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/registry.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/navigation-blocker.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/overview-document-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/app/canonical-preview-route.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/documents/OverviewSourceDocumentScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S01/OverviewScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S02/DefectsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-command-http.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-command-service.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S02/defects-approved-policy.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S03/ProductsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S04/SkusScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/recipient-update-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S05/RecipientsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S07/LoginScreen.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S09/WarrantyCasesScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S06/PvProductsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S10/PartsSlipsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S08/SessionScreen.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S11/TraysScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S13/PutawayQueueScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S12/ReceiptsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S14/PutawayOrdersScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S15/OutboundSlipsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/putaway/PutawayHistoryScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/putaway-history-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S17/ReversalSlipsScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/api-client.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S16/InventoryScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S18/InboundReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S20/MovementHistoryScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S21/InventoryReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S22/WarrantyPartsReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/data/http/label-print-adapter.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S23/LabelReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S24/DataQualityScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S25/DealerExportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S19/OutboundReportScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/account/account-center-model.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/shell-preferences.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/s00-navigation.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/features/S26/GoodsTraceScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/account/AccountCenterScreen.tsx",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/DatePolicyQaScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationHarnessScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/toast/ToastQaScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/notifications/NotificationRepositoryQaScreen.tsx?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/index.ts?t=1793159316729",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/public-demo-login.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/business-persistence.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/command-recovery-context.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/preview-mock/qa-dataset.ts",
+          "resourceType": "script"
+        },
+        {
+          "status": 200,
+          "url": "http://127.0.0.1:5188/src/shared/primitives.tsx",
+          "resourceType": "script"
+        }
+      ]
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "requestFailures": []
+}

@@ -378,3 +378,20 @@ html[data-hn-theme='dark'] .s15-selected-lines th { color:#b0c1d4; }
  .s15-operational-detail .s15-recipient-grid>div { padding:0 8px 12px; }
  .s15-operational-detail .s15-section-heading>span { font-style:italic; }
 }
+
+/* S15 visual repair: keep the approved 992px portrait pair within its frame.
+   This is deliberately narrower than the shared tablet rules so the 800px
+   functional profile and the desktop shell retain their existing geometry. */
+@media (min-width:900px) and (max-width:1000px){
+ .hn-shell .s15-screen .s15-outbound-card { padding:20px 24px; gap:12px; }
+ .hn-shell .s15-screen .s15-card-recipient { padding-top:12px; }
+ .hn-shell[data-shell-version][data-variant][data-layout] .s15-screen .s15-outbound-card>.s15-view-button { min-height:72px; }
+ .hn-shell .s15-screen .s15-card-expanded { font-size:22px; line-height:30px; }
+ .hn-shell .s15-screen .s15-card-expanded__contact { gap:16px; padding-bottom:16px; }
+ .hn-shell .s15-screen .s15-card-expanded__contact>div,
+ .hn-shell .s15-screen .s15-card-expanded__line { gap:24px; }
+ .hn-shell .s15-screen .s15-card-expanded__line { padding-block:12px; }
+ .hn-shell .s15-screen .s15-card-expanded__line:last-child { padding-bottom:0; }
+ .s15-operational-detail.hn-global-modal { translate:0 140px; }
+ .s15-operational-detail .s15-detail-sections { gap:16px; }
+}

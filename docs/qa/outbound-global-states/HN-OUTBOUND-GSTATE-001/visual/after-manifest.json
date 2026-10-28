@@ -1,0 +1,101 @@
+{
+  "base": "http://127.0.0.1:5188",
+  "candidate": "DEV working tree after scoped S15 CSS fix",
+  "profile": {
+    "cssWidth": 992,
+    "cssHeight": 1586,
+    "dpr": 1,
+    "pngPixels": "992x1586"
+  },
+  "rows": [
+    {
+      "id": "REF-02",
+      "route": "http://127.0.0.1:5188/#/preview/S15",
+      "state": {
+        "expanded": false,
+        "detail": false
+      },
+      "geometry": {
+        "innerWidth": 992,
+        "innerHeight": 1586,
+        "dpr": 1,
+        "scrollWidth": 992,
+        "scrollHeight": 1586,
+        "cta": {
+          "top": 816,
+          "bottom": 888,
+          "height": 72
+        },
+        "footer": {
+          "top": 950,
+          "bottom": 1012,
+          "height": 62
+        },
+        "modal": {},
+        "interactiveBelowMinimum": false
+      },
+      "screenshot": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/after/REF-02_Tablet.png",
+      "focusAfterEscape": null
+    },
+    {
+      "id": "REF-03",
+      "route": "http://127.0.0.1:5188/#/preview/S15",
+      "state": {
+        "expanded": true,
+        "detail": false
+      },
+      "geometry": {
+        "innerWidth": 992,
+        "innerHeight": 1586,
+        "dpr": 1,
+        "scrollWidth": 992,
+        "scrollHeight": 1586,
+        "cta": {
+          "top": 1388,
+          "bottom": 1460,
+          "height": 72
+        },
+        "footer": {
+          "top": 1522,
+          "bottom": 1584,
+          "height": 62
+        },
+        "modal": {},
+        "interactiveBelowMinimum": false
+      },
+      "screenshot": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/after/REF-03_Tablet.png",
+      "focusAfterEscape": null
+    },
+    {
+      "id": "REF-05",
+      "route": "http://127.0.0.1:5188/#/preview/S15",
+      "geometry": {
+        "innerWidth": 992,
+        "innerHeight": 1586,
+        "dpr": 1,
+        "scrollWidth": 992,
+        "scrollHeight": 1586,
+        "modal": {
+          "top": 294.5,
+          "bottom": 1571.5,
+          "height": 1277,
+          "left": 170,
+          "right": 822
+        },
+        "footer": {
+          "top": 1477.5,
+          "bottom": 1570.5,
+          "height": 93
+        },
+        "interactiveBelowMinimum": false
+      },
+      "focusAfterEscape": true,
+      "dialogAfterEscape": 0,
+      "screenshot": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/after/REF-05_Tablet.png"
+    }
+  ],
+  "diagnostics": {
+    "consoleErrors": [],
+    "requestFailures": []
+  }
+}

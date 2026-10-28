@@ -1,0 +1,57 @@
+[
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/before/REF-01_Desktop.png",
+    "sha256": "534474006BF06F50A7747297D6E4BC07E56EF96356BF76D8AEEAF9E4D479D776",
+    "bytes": 116509
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/before/REF-02_Tablet.png",
+    "sha256": "8200BF579F9EB691C00F715F91DF91070D044646B6E4D70083860D855F539E93",
+    "bytes": 87215
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/before/REF-03_Tablet.png",
+    "sha256": "C80AB683B3948EFC2C1AD7B239044202E1D451A2493BAEA138BAEBA38D46FC4A",
+    "bytes": 124104
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/before/REF-04_Desktop.png",
+    "sha256": "90A3D3AAC4DE1FC4570FEDFE77CB0DE3174F5EFDDF1EBB279D63818855A704E6",
+    "bytes": 145015
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/before/REF-05_Tablet.png",
+    "sha256": "88F954D4FAEDEF6B59CB5255CDB7D480A553120DC782E63C3A516F7CBBA96F1A",
+    "bytes": 139289
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/global-states/empty.png",
+    "sha256": "071DD0C2E0672B6ADD37307EFB38E99E3D15FA970150DE455D80D5E7132441A4",
+    "bytes": 111551
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/global-states/error.png",
+    "sha256": "72176404416F8309EC7B817723740E827C6CB9C6B681DA412EF3E5CC6D14D530",
+    "bytes": 98434
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/global-states/forbidden.png",
+    "sha256": "1ECE50B6D538E56610ED3245C00CBDBA72DF648C84BD117CC49AAAD52953F333",
+    "bytes": 100463
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/global-states/loading.png",
+    "sha256": "07FD4B57FE531C0F817A64B608979F273B14E8F6C266EDDA01ABED8F68ECC85B",
+    "bytes": 97930
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/global-states/no-results.png",
+    "sha256": "2487688449F6364BD4B8E207AA457929374192BB75576BD8DB858E64D5FEEB20",
+    "bytes": 109683
+  },
+  {
+    "path": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/global-states/record-not-found.png",
+    "sha256": "7EB41B0946FB62F6CC31F022D0A994D66CC4113EF5A761591C5DBE0B95F42C08",
+    "bytes": 109681
+  }
+]

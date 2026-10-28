@@ -1,0 +1,16 @@
+{
+  "base": "http://127.0.0.1:5188",
+  "candidate": "DEV@002e291f9005ec5e22c45d7f93350af12f9b26ec",
+  "browser": "Chromium via @playwright/test",
+  "locale": "vi-VN",
+  "timezone": "Asia/Bangkok",
+  "theme": "light",
+  "captures": [
+    {"id":"REF-01","route":"/#/preview/S15","profile":{"cssWidth":1672,"cssHeight":941,"dpr":1,"pngPixels":"1672x941"},"dom":{"tableRows":1,"cardRows":0,"detailOpen":false,"expandedCards":0},"scroll":{"innerWidth":1672,"innerHeight":941,"scrollWidth":1672,"scrollHeight":941,"horizontalOverflow":false},"screenshot":"before/REF-01_Desktop.png"},
+    {"id":"REF-02","route":"/#/preview/S15","profile":{"cssWidth":992,"cssHeight":1586,"dpr":1,"pngPixels":"992x1586"},"dom":{"tableRows":0,"cardRows":1,"detailOpen":false,"expandedCards":0},"scroll":{"innerWidth":992,"innerHeight":1586,"scrollWidth":992,"scrollHeight":1586,"horizontalOverflow":false},"screenshot":"before/REF-02_Tablet.png"},
+    {"id":"REF-03","route":"/#/preview/S15 (recipient disclosure)","profile":{"cssWidth":992,"cssHeight":1586,"dpr":1,"pngPixels":"992x1586"},"dom":{"tableRows":0,"cardRows":1,"detailOpen":false,"expandedCards":1},"scroll":{"innerWidth":992,"innerHeight":1586,"scrollWidth":992,"scrollHeight":1690,"horizontalOverflow":false,"verticalOverflow":true},"screenshot":"before/REF-03_Tablet.png"},
+    {"id":"REF-04","route":"/#/preview/S15 (detail modal)","profile":{"cssWidth":1672,"cssHeight":941,"dpr":1,"pngPixels":"1672x941"},"dom":{"tableRows":1,"cardRows":0,"detailOpen":true,"expandedCards":0},"scroll":{"innerWidth":1672,"innerHeight":941,"scrollWidth":1672,"scrollHeight":941,"horizontalOverflow":false},"screenshot":"before/REF-04_Desktop.png"},
+    {"id":"REF-05","route":"/#/preview/S15 (detail modal)","profile":{"cssWidth":992,"cssHeight":1586,"dpr":1,"pngPixels":"992x1586"},"dom":{"tableRows":0,"cardRows":1,"detailOpen":true,"expandedCards":0},"scroll":{"innerWidth":992,"innerHeight":1586,"scrollWidth":992,"scrollHeight":1586,"horizontalOverflow":false},"screenshot":"before/REF-05_Tablet.png"}
+  ],
+  "diagnostics": {"consoleErrors":0,"pageErrors":0,"requestFailures":0}
+}

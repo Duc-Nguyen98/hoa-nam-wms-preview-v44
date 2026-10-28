@@ -1,0 +1,29 @@
+[
+  {
+    "id": "REF-02",
+    "w": 992,
+    "h": 1586,
+    "changedPixels": 119867,
+    "totalPixels": 1573312,
+    "meanAbsRgb": 2.4909581401103744,
+    "diff": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/REF-02_before-after-diff.png"
+  },
+  {
+    "id": "REF-03",
+    "w": 992,
+    "h": 1586,
+    "changedPixels": 186160,
+    "totalPixels": 1573312,
+    "meanAbsRgb": 5.803850518312113,
+    "diff": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/REF-03_before-after-diff.png"
+  },
+  {
+    "id": "REF-05",
+    "w": 992,
+    "h": 1586,
+    "changedPixels": 383620,
+    "totalPixels": 1573312,
+    "meanAbsRgb": 21.783591557173658,
+    "diff": "docs/qa/outbound-global-states/HN-OUTBOUND-GSTATE-001/visual/REF-05_before-after-diff.png"
+  }
+]
