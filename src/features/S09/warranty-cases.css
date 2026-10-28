@@ -74,6 +74,21 @@
   .s09-metric:nth-child(3) { border-left: 0; }
   .s09-metric:nth-child(n+3) { border-top: 1px solid var(--hn-border); }
 }
+@media (max-width: 1100px) {
+  .s09-table .hn-table-scroll { overflow: visible; max-height: none; }
+  .s09-table .hn-table { display: block; width: 100%; min-width: 0; table-layout: auto; }
+  .s09-table .hn-table thead { display: none; }
+  .s09-table .hn-table tbody, .s09-table .hn-table tr { display: block; }
+  .s09-table .hn-table tr { margin: 0 0 12px; overflow: hidden; border: 1px solid var(--hn-border); border-radius: 10px; background: var(--hn-surface); }
+  .s09-table .hn-table td { display: flex; align-items: flex-start; gap: 12px; min-width: 0; padding: 12px 16px; border: 0; border-bottom: 1px solid var(--hn-border); text-align: start; }
+  .s09-table .hn-table td::before { content: attr(data-heading); flex: 0 0 34%; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+  .s09-table .hn-table td:last-child { border-bottom: 0; }
+  .s09-table .hn-table td[data-column='ordinal'] { display: none; }
+  .s09-table .hn-table td[data-column='action'] { justify-content: flex-end; padding-block: 14px; }
+  .s09-table .hn-table td[data-column='action']::before { display: none; }
+  .s09-table .hn-table td[data-column='action'] .hn-button { margin-inline-start: auto; }
+  .s09-table .hn-table [data-sticky-column] { position: static !important; box-shadow: none !important; }
+}
 
 /* S09 read-only accepted-row projection; native modal and shared theme remain
    owned by the existing shell. No table or global-shell geometry changes. */
@@ -89,6 +104,9 @@
 .s09-detail-dialog__fields > div { min-width: 0; padding: 10px 0; border-bottom: 1px solid var(--hn-border); }
 .s09-detail-dialog__fields dt { margin: 0 0 3px; color: var(--hn-muted); font-size: 12px; line-height: 18px; }
 .s09-detail-dialog__fields dd { margin: 0; color: var(--hn-text); font-size: 14px; line-height: 22px; overflow-wrap: anywhere; }
+.s09-detail-dialog__copy-value { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; }
+.s09-detail-dialog__copy-value code { overflow-wrap: anywhere; }
+.s09-detail-dialog__copy { width: 44px; min-width: 44px; height: 44px; padding: 10px; }
 .s09-detail-dialog__wide { grid-column: 1 / -1; }
 .s09-detail-dialog__due { display: block; margin-top: 4px; font-size: 12px; }
 .s09-detail-dialog__footer { display: flex; justify-content: flex-end; flex-shrink: 0; padding: 14px 24px; border-top: 1px solid var(--hn-border); }

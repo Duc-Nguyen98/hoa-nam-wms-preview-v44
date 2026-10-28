@@ -35,6 +35,13 @@ export const screenRegistry = [
 export function resolvePreviewRoute(hash: string) {
   const canonical = resolveCanonicalPreviewSelection(hash) ?? resolveNotificationDocumentSelection(hash) ?? resolveOverviewDocumentSelection(hash);
   const target = canonical ? `#/preview/${canonical.screen}` : hash;
+  const legacy = /^#\/preview\/(S09|S10)\?([^#]*)$/u.exec(hash);
+  if (legacy) {
+    const params = new URLSearchParams(legacy[2]);
+    if (params.getAll('catalog').length === 1 && params.get('catalog') === 'legacy' && [...params.keys()].every(key => key === 'catalog')) {
+      return screenRegistry.find(screen => screen.key === legacy[1]) ?? null;
+    }
+  }
   return [...screenRegistry, ...authScreenRegistry].find(screen => screen.href === target) ?? null;
 }
 

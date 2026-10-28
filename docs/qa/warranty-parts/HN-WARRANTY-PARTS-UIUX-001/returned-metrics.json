@@ -1,0 +1,223 @@
+{
+  "metrics": [
+    {
+      "ref": "bh-01",
+      "route": "S09",
+      "kind": "detail",
+      "expected": "returned warranty detail",
+      "viewport": {
+        "width": 1672,
+        "height": 941,
+        "dpr": 1
+      },
+      "dialog": {
+        "x": 356,
+        "y": 66.5,
+        "width": 960,
+        "height": 808
+      },
+      "scroll": {
+        "documentWidth": 1672,
+        "documentHeight": 941,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "controls": [
+        {
+          "text": "Thu gọn thanh điều hướng",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Nghiệp vụ",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Nhập kho",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Xuất kho",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Xếp khay",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Bảo hành & sửa chữa",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Tồn kho & đối soát",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Danh mục",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Quản lý mã SKU",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Báo cáo",
+          "width": 236,
+          "height": 44
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "width": 220,
+          "height": 44
+        },
+        {
+          "text": "Truy cập nhanh",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "VI",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "DQĐức Quang",
+          "width": 142.09375,
+          "height": 44
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "width": 123.5,
+          "height": 44
+        },
+        {
+          "text": "Xem",
+          "width": 53.6875,
+          "height": 44
+        },
+        {
+          "text": "Đóng",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "width": 123.5,
+          "height": 44
+        },
+        {
+          "text": "Đóng",
+          "width": 65.1875,
+          "height": 44
+        }
+      ],
+      "focus": "<button aria-label=\"Đóng\" type=\"button\" class=\"hn-button hn-button--ghost hn-global-modal__close\" data-hn-control=\"button\" data-tone=\"default\" data-icon-only=\"true\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"current"
+    },
+    {
+      "ref": "bh-05",
+      "route": "S09",
+      "kind": "detail",
+      "expected": "returned warranty detail",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "dialog": {
+        "x": 24,
+        "y": 389,
+        "width": 944,
+        "height": 808
+      },
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "controls": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Truy cập nhanh",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "VI",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "DQĐức Quang",
+          "width": 66,
+          "height": 44
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "width": 123.5,
+          "height": 44
+        },
+        {
+          "text": "Xem",
+          "width": 44,
+          "height": 58
+        },
+        {
+          "text": "Đóng",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "width": 123.5,
+          "height": 44
+        },
+        {
+          "text": "Đóng",
+          "width": 65.1875,
+          "height": 44
+        }
+      ],
+      "focus": "<button aria-label=\"Đóng\" type=\"button\" class=\"hn-button hn-button--ghost hn-global-modal__close\" data-hn-control=\"button\" data-tone=\"default\" data-icon-only=\"true\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"current"
+    }
+  ],
+  "errors": [],
+  "nets": []
+}

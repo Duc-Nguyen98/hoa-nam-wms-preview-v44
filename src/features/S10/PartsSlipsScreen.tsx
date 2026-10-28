@@ -18,12 +18,12 @@ import './parts-slips.css';
 type Operation = ReturnType<ReturnType<typeof createPartsController>['load']>;
 const COPY = { ...PARTS_DETAIL_COPY, 'Phiên hiện tại': 'Current session', 'Danh sách trước đây': 'Previous list' };
 
-export function PartsSlipsScreen({ adapter, operationalAdapter }: { adapter?: PartsAdapter; operationalAdapter?: PartsReadAdapter } = {}) {
+export function PartsSlipsScreen({ adapter, operationalAdapter, forceLegacy = false }: { adapter?: PartsAdapter; operationalAdapter?: PartsReadAdapter; forceLegacy?: boolean } = {}) {
   const tx = useUiCopy(COPY);
   const { language } = useShellPreferences();
   const locale = localeForLanguage(language);
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S10' }), [operationalAdapter]);
-  const [cohort, setCohort] = useState(operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState(operational.available && !forceLegacy ? 'scenario' : 'legacy');
   const controller = useMemo(() => createPartsController(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
   const model = state.model;
@@ -120,9 +120,9 @@ export function PartsSlipsScreen({ adapter, operationalAdapter }: { adapter?: Pa
   ];
   const activeFilters = model ? (['search', 'status'] as const).filter(key => key === 'search' ? model.query.search.trim() : model.query.status !== 'all').map(key => ({ key, label: `${tx(key === 'search' ? 'Tìm kiếm' : 'Trạng thái')}: ${key === 'search' ? model.query[key] : tx(model.query[key])}` })) : [];
   return <GlobalShell title={tx("Quản lý phiếu xuất linh kiện")} variant="wms" activeKey="S10" navigation={S00_SHELL_NAVIGATION} profile={{ displayName: 'Đức Quang', initials: 'DQ' }}>
-    <div ref={screen} className="hn-catalogue-screen s10-screen" data-screen="S10" data-visual-variant="premium" onFocusCapture={revealFocus}>
+    <div ref={screen} className="hn-catalogue-screen s10-screen" data-screen="S10" data-catalog-mode={forceLegacy ? 'legacy' : 'operational'} data-visual-variant="premium" onFocusCapture={revealFocus}>
       <header className="hn-page-heading s10-page-header"><div><p className="hn-breadcrumb">{tx("Bảo hành sửa chữa")} <span>/</span> {tx("Phiếu xuất linh kiện")}</p><h1>{tx("Quản lý phiếu xuất linh kiện")}</h1><p className="hn-page-description">{tx("Tra cứu phiếu xuất linh kiện bảo hành theo dữ liệu đã ghi nhận.")}</p></div><div className="hn-page-actions"><span className="hn-page-warehouse"><Icon name="warehouse" size={18} />{tx("Kho Hoa Nam")}</span>{cohort === 'legacy' && <Button variant="secondary" loading={state.loading} onClick={refresh}><Icon name="refresh" />{tx("Cập nhật danh sách")}</Button>}</div><NoticeSlot name="heading" /></header>
-      {operational.available && <div className="s10-cohort"><Button variant="secondary" aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{tx('Phiên hiện tại')}</Button><Button variant="secondary" aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{tx('Danh sách trước đây')}</Button></div>}
+      {operational.available && !forceLegacy && <div className="s10-cohort"><Button variant="secondary" aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{tx('Phiên hiện tại')}</Button><Button variant="secondary" aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{tx('Danh sách trước đây')}</Button></div>}
       {cohort === 'scenario' ? <OperationalPartsIssues adapter={operational} /> : <>
       {model && <>
         <section className="s10-overview"><CatalogueSummary label={tx("Tổng quan phiếu xuất linh kiện toàn danh mục")}><SummaryMetric label={tx("Đã xuất")} value={`${model.summary.exported} / ${model.summary.total}`} detail={tx('{percent}% tổng phiếu', { percent: model.summary.exportedPercent.toLocaleString(locale) })} icon="upload" /><SummaryMetric label={tx("Nháp")} value={model.summary.draft} icon="documents" /><SummaryMetric label={tx("Đang quét/nhập")} value={model.summary.scanning} icon="barcode" /><SummaryMetric label={tx("Đã hủy")} value={model.summary.cancelled} icon="close" /></CatalogueSummary><p className="s10-app-note"><Icon name="info" size={17} /><span>{tx("Xuất linh kiện thực hiện trên")} <strong>{tx("App Scanner")}</strong>{tx(". Web dùng để tra cứu và đối chiếu.")}</span></p></section>

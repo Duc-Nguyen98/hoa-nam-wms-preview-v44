@@ -14,8 +14,16 @@ import { createWarrantyReportReader } from '../../src/features/S22/warranty-oper
 import { createOperationalInventoryBinding } from '../../src/features/S16/inventory-binding';
 import { createStockReportBinding } from '../../src/features/S21/stock-report-binding';
 import type { OperationalSnapshot } from '../../src/contracts/operational-preview';
+import { createApprovedTraySeed } from '../../src/preview-mock/putaway-approved-seed';
 
 const now = () => '2026-10-26T10:00:00+07:00';
+const approvedTraySeed = createApprovedTraySeed();
+const approvedSeedQuantities = Object.fromEntries([...new Set(approvedTraySeed.boxes.map(row => row.skuCode))].map(code => [
+  code,
+  approvedTraySeed.boxes.filter(row => row.skuCode === code).reduce((sum, row) => sum + row.quantity, 0),
+]));
+const publicDemoQuantities = { 'PUBLIC-DEMO-SKU-A': 1, 'PUBLIC-DEMO-SKU-B': 16 };
+const expectedPublicSnapshotQuantities = { ...publicDemoQuantities, ...approvedSeedQuantities };
 async function fixture() {
   const client = createApiClient({ baseURL: 'https://public-warranty.test/api/v1' });
   const runtime = installPreviewMock(client, {
@@ -73,7 +81,15 @@ async function verifyScreens(f: Fixture) {
     const balance = stock.getSnapshot().model!.rows.find(row => row.skuCode === 'PUBLIC-DEMO-SKU-B')!;
     assert.equal(balance.closing, 16); assert.equal(balance.parts, 4); assert.equal(balance.reversals, 2);
     assert.equal(inventory.getSnapshot().model!.rows.find(row => row.skuCode === 'PUBLIC-DEMO-SKU-B')!.quantity, 16);
-    assert.deepEqual(await quantities(f, before), { 'PUBLIC-DEMO-SKU-A': 1, 'PUBLIC-DEMO-SKU-B': 16 });
+    assert.deepEqual(await quantities(f, before), expectedPublicSnapshotQuantities);
+    const approvedReceiptCodes = new Set(approvedTraySeed.boxes.map(row => row.receiptCode));
+    assert.equal(before.receipts.filter(row => approvedReceiptCodes.has(row.data.code)).length, approvedTraySeed.boxes.length);
+    for (const seedBox of approvedTraySeed.boxes) {
+      const box = before.boxes.find(row => row.data.physicalCode === seedBox.code);
+      assert.ok(box, `Approved tray seed box ${seedBox.code} is present`);
+      assert.equal(box!.data.trayId, seedBox.trayCode ? `operational-setup:tray:${Number(seedBox.trayCode.slice(-3))}` : null);
+    }
+    assert.ok(before.putaways.filter(row => row.data.status === 'CONFIRMED').length >= approvedTraySeed.trays.length);
     const box = before.boxes.find(row => row.data.physicalCode === 'PUBLIC-DEMO-BOX-0010')!;
     assert.equal(before.stockEvents.filter(row => row.data.boxId === box.id).reduce((sum, row) => sum + row.data.signedQuantity, 0), 10);
     assert.deepEqual(await f.web.read(), before, 'All five screen reads preserve documents, stock and timeline');
@@ -123,8 +139,8 @@ test('v45 session upgrades additively and a lost parts-post response resumes wit
     await assert.rejects(f.setup.initialize());
     const v45 = await f.web.read();
     assert.equal(v45.warrantyCases.length, 0); assert.equal(v45.partsIssues.length, 0);
-    assert.equal(v45.receipts.filter(row => row.data.status === 'POSTED').length, 4);
-    assert.deepEqual(await quantities(f, v45), { 'PUBLIC-DEMO-SKU-A': 1, 'PUBLIC-DEMO-SKU-B': 18 });
+    assert.equal(v45.receipts.filter(row => row.data.status === 'POSTED').length, approvedTraySeed.boxes.length + 4);
+    assert.deepEqual(await quantities(f, v45), { 'PUBLIC-DEMO-SKU-A': 1, 'PUBLIC-DEMO-SKU-B': 18, ...approvedSeedQuantities });
     assert.equal(await f.setup.ready(), false, 'Existing v45 data must request enrichment');
     stopBeforeIntake = false;
     await assert.rejects(f.setup.initialize());

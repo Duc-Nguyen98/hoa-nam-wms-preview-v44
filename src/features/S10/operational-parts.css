@@ -10,6 +10,25 @@
 .s10-operational__detail .s10-detail__fields { gap: 24px; }
 .s10-operational__detail .s10-detail__fields dt { margin-bottom: 8px; font-size: 14px; line-height: 22px; }
 .s10-operational__detail .s10-detail__fields dd { font-size: 16px; line-height: 24px; }
+.s10-operational__cards { display: none; }
+.s10-operational__card { display: grid; gap: 16px; min-width: 0; padding: 20px; border: 1px solid var(--hn-border); border-radius: 10px; background: var(--hn-surface); }
+.s10-operational__card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; min-width: 0; }
+.s10-operational__card-head strong { min-width: 0; overflow-wrap: anywhere; }
+.s10-operational__card dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0; }
+.s10-operational__card dt { color: var(--hn-muted); font-size: 12px; line-height: 18px; }
+.s10-operational__card dd { min-width: 0; margin: 3px 0 0; overflow-wrap: anywhere; }
+.s10-operational__card .hn-button { justify-self: start; min-height: 44px; }
+.s10-operational__copy-value { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; }
+.s10-operational__copy-value code { overflow-wrap: anywhere; }
+.s10-operational__copy { width: 44px; min-width: 44px; height: 44px; padding: 10px; }
 .s10-operational__detail .hn-table { min-width: 720px; table-layout: fixed; }
 .s10-operational__detail .hn-table :is(th, td) { white-space: normal; overflow-wrap: anywhere; }
 .s10-operational__links a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 1100px) {
+  .s10-operational__table { display: none; }
+  .s10-operational__cards { display: grid; gap: 12px; min-width: 0; }
+}
+@media (max-width: 560px) {
+  .s10-operational__card { padding: 16px; }
+  .s10-operational__card dl { grid-template-columns: minmax(0, 1fr); }
+}

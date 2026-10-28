@@ -179,7 +179,7 @@ export function DataTable<Row>({ caption, columns, rows, rowKey, sort, onSort, e
           </button><span className="hn-sr-only" id={sortDescriptionId}>{direction ? `${tx('Đang xếp')} ${orderLabels[direction === 'asc' ? 0 : 1]}. ` : ''}{tx("Kích hoạt để xếp")}{' '}{orderLabels[direction === 'asc' ? 1 : 0]}.</span></> : column.headingContent ?? tx(column.heading)}
         </th>;
       })}</tr></thead>
-      <tbody>{rows.map((row, index) => <tr key={rowKey(row)} data-selected={isRowSelected?.(row) || undefined}>{columns.map((column) => <td key={column.id} data-column={column.id} {...stickyCellProps(column.id)} className={column.align === 'end' ? 'hn-align-end' : undefined}>{column.render(row, index)}</td>)}</tr>)}</tbody>
+      <tbody>{rows.map((row, index) => <tr key={rowKey(row)} data-selected={isRowSelected?.(row) || undefined}>{columns.map((column) => <td key={column.id} data-column={column.id} data-heading={tx(column.heading)} {...stickyCellProps(column.id)} className={column.align === 'end' ? 'hn-align-end' : undefined}>{column.render(row, index)}</td>)}</tr>)}</tbody>
     </table>
     {rows.length === 0 && <div className="hn-table-empty">{busy ? <PageState kind="loading"/> : isValidElement(emptyContent) && typeof emptyContent.type !== 'string' ? emptyContent : <PageState kind={emptyStateKind} description={emptyContent ?? undefined} action={onResetFilters ? <Button onClick={onResetFilters}>{tx("Đặt lại bộ lọc")}</Button> : undefined}/>}</div>}
   </div>;

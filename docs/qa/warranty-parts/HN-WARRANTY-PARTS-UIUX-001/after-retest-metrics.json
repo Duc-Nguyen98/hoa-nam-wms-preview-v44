@@ -1,0 +1,1740 @@
+{
+  "results": [
+    {
+      "label": "s09-operational-tablet-list",
+      "route": "#/preview/S09",
+      "kind": "list",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s09-operational-tablet-list.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "operational",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 461
+      },
+      "root": {
+        "x": 24,
+        "y": 213,
+        "width": 944,
+        "height": 352
+      },
+      "dialog": null,
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "x": 823.5,
+          "y": 234,
+          "width": 123.5,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Xem",
+          "x": 66,
+          "y": 479,
+          "width": 59.83,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": true,
+      "sections": [],
+      "focus": "<main id=\"main-content\" class=\"hn-main\" tabindex=\"-1\"><div class=\"hn-catalogue-screen s09-screen\" data-screen=\"S09\" data-catalog-mode=\"operational\" data-visual-variant=\"premium\" style=\"--s09-wide-min: 1240px;\"><header class=\"hn-page-heading\"><div><p class=\"hn-breadcrumb\">Bảo hành sửa chữa <span>/</s",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Quản lý hồ sơ bảo hành\n\nQuản lý hồ sơ bảo hành\n\nTra cứu và theo dõi quá trình xử lý hồ sơ bảo hành\n\nHồ sơ phiên hiện tại\nĐọc lại dữ liệu\nPV-BH-5808af6c-574d-4b5f-afcd-91b834d2c062\nĐang kiểm tra\nSản phẩm / SKU\nLinh kiện máy in nhiệt · S10-A\nTiếp nhận\n26/10/2026\nNgày dự kiến sửa xong\n—\nXem"
+    },
+    {
+      "label": "s09-operational-tablet-detail",
+      "route": "#/preview/S09",
+      "kind": "detail",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s09-operational-tablet-detail.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "operational",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 461
+      },
+      "root": {
+        "x": 24,
+        "y": 213,
+        "width": 944,
+        "height": 352
+      },
+      "dialog": {
+        "x": 24,
+        "y": 279.61,
+        "width": 944,
+        "height": 1026.78
+      },
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "x": 823.5,
+          "y": 234,
+          "width": 123.5,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Xem",
+          "x": 66,
+          "y": 479,
+          "width": 59.83,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng",
+          "x": 899,
+          "y": 300.61,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã hồ sơ",
+          "x": 491.66,
+          "y": 406.61,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID hồ sơ",
+          "x": 440,
+          "y": 584.61,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã sản phẩm",
+          "x": 729.44,
+          "y": 582.61,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chẩn đoán",
+          "x": 49,
+          "y": 1114,
+          "width": 99.44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đang sửa chữa",
+          "x": 160.44,
+          "y": 1114,
+          "width": 129.28,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "x": 49,
+          "y": 1241.39,
+          "width": 123.5,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng",
+          "x": 877.81,
+          "y": 1241.39,
+          "width": 65.19,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": true,
+      "sections": [
+        {
+          "class": "",
+          "rect": {
+            "x": 49,
+            "y": 827.61,
+            "width": 894,
+            "height": 102.39
+          },
+          "text": "Các bệnh lỗi đã liên kếtChưa có bệnh lỗi liên kết."
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 49,
+            "y": 950,
+            "width": 894,
+            "height": 144
+          },
+          "text": "Lịch sử xử lýĐã tiếp nhận · 14:24:00 26/10/2026 · Người thực hiện: preview:ducquangĐang kiểm tra · 14:24:00 26/10/2026 ·"
+        }
+      ],
+      "focus": "<button aria-label=\"Đóng\" type=\"button\" class=\"hn-button hn-button--ghost hn-global-modal__close\" data-hn-control=\"button\" data-tone=\"default\" data-icon-only=\"true\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-line",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Quản lý hồ sơ bảo hành\n\nQuản lý hồ sơ bảo hành\n\nTra cứu và theo dõi quá trình xử lý hồ sơ bảo hành\n\nHồ sơ phiên hiện tại\nĐọc lại dữ liệu\nPV-BH-5808af6c-574d-4b5f-afcd-91b834d2c062\nĐang kiểm tra\nSản phẩm / SKU\nLinh kiện máy in nhiệt · S10-A\nTiếp nhận\n26/10/2026\nNgày dự kiến sửa xong\n—\nXem\nChi tiết hồ sơ bảo hành\nPV-BH-5808af6c-574d-4b5f-afcd-91b834d2c062\n\nĐang kiểm tra · Nhận dạng tạm\n\nID hồ sơ\nwarranty-case:5808af6c-574d-4b5f-afcd-91b834d2c062\nSản phẩm / SKU\nLinh kiện máy in nhiệt · \nS10-A\nKhách hàng phản ánh\nKhách báo máy không lên nguồn\nKỹ thuật viên chẩn đoán\nĐã kiểm tra nguồn và đầu in\nNgày dự kiến sửa xong\n—\nCác bệnh lỗi đã liên kết\n\nChưa có bệnh lỗi liên kết.\n\nLịch sử xử lý\nĐã tiếp nhận · 14:24:00 26/10/2026 · Người thực hiện: preview:ducquang\nĐang kiểm tra · 14:24:00 26/10/2026 · Người thực hiện: preview:ducquang\nChẩn đoán\nĐang sửa chữa\n\nChỉ bắt đầu sửa chữa khi có bệnh lỗi và ngày dự kiến sửa xong.\n\nĐọc lại dữ liệu\nĐóng",
+      "focusAfterClose": {
+        "tag": "BUTTON",
+        "text": "Xem",
+        "attrs": {
+          "s09": "warranty-case:5808af6c-574d-4b5f-afcd-91b834d2c062",
+          "s10": null,
+          "aria": null
+        }
+      }
+    },
+    {
+      "label": "s10-operational-tablet-list",
+      "route": "#/preview/S10",
+      "kind": "list",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s10-operational-tablet-list.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "operational",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 437.39
+      },
+      "root": {
+        "x": 24,
+        "y": 213,
+        "width": 944,
+        "height": 328.39
+      },
+      "dialog": null,
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "x": 823.5,
+          "y": 214,
+          "width": 123.5,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 66,
+          "y": 475.39,
+          "width": 77.59,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": true,
+      "sections": [],
+      "focus": "<main id=\"main-content\" class=\"hn-main\" tabindex=\"-1\"><div class=\"hn-catalogue-screen s10-screen\" data-screen=\"S10\" data-catalog-mode=\"operational\" data-visual-variant=\"premium\"><header class=\"hn-page-heading s10-page-header\"><div><p class=\"hn-breadcrumb\">Bảo hành sửa chữa <span>/</span> Phiếu xuất ",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Phiếu xuất linh kiện\n\nQuản lý phiếu xuất linh kiện\n\nTra cứu phiếu xuất linh kiện bảo hành theo dữ liệu đã ghi nhận.\n\nKho Hoa Nam\nPhiếu xuất linh kiện phiên hiện tại\nĐọc lại dữ liệu\n\nXuất linh kiện thực hiện trên App Scanner. Web dùng để tra cứu và đối chiếu.\n\nPV-CI-081190cb-25eb-4238-8779-28130d2b4b6c\nĐã xuất\nHồ sơ bảo hành\nPV-BH-5808af6c-574d-4b5f-afcd-91b834d2c062\nDòng linh kiện\n2 · S10-A, S10-B\nCập nhật\n14:24:00 26/10/2026\nChi tiết"
+    },
+    {
+      "label": "s10-operational-tablet-detail",
+      "route": "#/preview/S10",
+      "kind": "detail",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s10-operational-tablet-detail.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "operational",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 437.39
+      },
+      "root": {
+        "x": 24,
+        "y": 213,
+        "width": 944,
+        "height": 328.39
+      },
+      "dialog": {
+        "x": 24,
+        "y": 24,
+        "width": 944,
+        "height": 1538
+      },
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "x": 823.5,
+          "y": 214,
+          "width": 123.5,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 66,
+          "y": 475.39,
+          "width": 77.59,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng",
+          "x": 899,
+          "y": 45,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã phiếu",
+          "x": 424.47,
+          "y": 160,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID phiếu",
+          "x": 899,
+          "y": 162,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Hồ sơ bảo hành",
+          "x": 424.47,
+          "y": 262,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID hồ sơ",
+          "x": 899,
+          "y": 264,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép SKU",
+          "x": 109.5,
+          "y": 526.5,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID SKU",
+          "x": 138,
+          "y": 617.5,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã sản phẩm",
+          "x": 252.06,
+          "y": 617.5,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã vật lý / BOX",
+          "x": 585,
+          "y": 527,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID vật lý",
+          "x": 585,
+          "y": 618,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép SKU",
+          "x": 109.5,
+          "y": 731,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID SKU",
+          "x": 138,
+          "y": 822,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã sản phẩm",
+          "x": 252.06,
+          "y": 822,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã vật lý / BOX",
+          "x": 585,
+          "y": 742.5,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID vật lý",
+          "x": 585,
+          "y": 822.5,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID bút toán",
+          "x": 212.5,
+          "y": 1126.39,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID dòng",
+          "x": 436,
+          "y": 1126.39,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID bút toán",
+          "x": 212.5,
+          "y": 1240.39,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép ID dòng",
+          "x": 436,
+          "y": 1240.39,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đọc lại dữ liệu",
+          "x": 746.31,
+          "y": 1497,
+          "width": 123.5,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng",
+          "x": 877.81,
+          "y": 1497,
+          "width": 65.19,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": true,
+      "sections": [],
+      "focus": "<button aria-label=\"Đóng\" type=\"button\" class=\"hn-button hn-button--ghost hn-global-modal__close\" data-hn-control=\"button\" data-tone=\"default\" data-icon-only=\"true\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-line",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Phiếu xuất linh kiện\n\nQuản lý phiếu xuất linh kiện\n\nTra cứu phiếu xuất linh kiện bảo hành theo dữ liệu đã ghi nhận.\n\nKho Hoa Nam\nPhiếu xuất linh kiện phiên hiện tại\nĐọc lại dữ liệu\n\nXuất linh kiện thực hiện trên App Scanner. Web dùng để tra cứu và đối chiếu.\n\nPV-CI-081190cb-25eb-4238-8779-28130d2b4b6c\nĐã xuất\nHồ sơ bảo hành\nPV-BH-5808af6c-574d-4b5f-afcd-91b834d2c062\nDòng linh kiện\n2 · S10-A, S10-B\nCập nhật\n14:24:00 26/10/2026\nChi tiết\nChi tiết phiếu xuất linh kiện\nMã phiếu\nPV-CI-081190cb-25eb-4238-8779-28130d2b4b6c\nID phiếu\nparts-issue:081190cb-25eb-4238-8779-28130d2b4b6c\nHồ sơ bảo hành\nPV-BH-5808af6c-574d-4b5f-afcd-91b834d2c062\nID hồ sơ\nwarranty-case:5808af6c-574d-4b5f-afcd-91b834d2c062\nTrạng thái\nĐã xuất\nMục đích\nBảo hành\nDòng linh kiện\nDòng linh kiện\nSKU\tSản phẩm / Linh kiện\tTheo dõi\tMã vật lý / BOX\tSố lượng\tĐơn vị tính\n\nS10-A\npreview-sku:dcef2a51-c016-42f7-94c4-7e3f27e526ca\n\t\nLinh kiện máy in nhiệt\nS10-P\n\tSerial\t\nS10-SERIAL-A\n",
+      "focusAfterClose": {
+        "tag": "BUTTON",
+        "text": "Chi tiết",
+        "attrs": {
+          "s09": null,
+          "s10": "parts-issue:081190cb-25eb-4238-8779-28130d2b4b6c",
+          "aria": null
+        }
+      }
+    },
+    {
+      "label": "s09-legacy-tablet-list",
+      "route": "#/preview/S09?catalog=legacy",
+      "kind": "list",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s09-legacy-tablet-list.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "legacy",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 1178
+      },
+      "root": {
+        "x": 24,
+        "y": 347,
+        "width": 944,
+        "height": 935
+      },
+      "dialog": null,
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Bộ lọc",
+          "x": 738,
+          "y": 469,
+          "width": 120.45,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đặt lại",
+          "x": 874.45,
+          "y": 469,
+          "width": 72.55,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tiếp nhận / Hạn↓",
+          "x": 895,
+          "y": 605.5,
+          "width": 109.75,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 664,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 738.5,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 813,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 882,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 954.5,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 1027,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 1096,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cuộn bảng sang trái",
+          "x": 855,
+          "y": 1161,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cuộn bảng sang phải",
+          "x": 903,
+          "y": 1161,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang trước",
+          "x": 803,
+          "y": 1221,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "1",
+          "x": 853,
+          "y": 1221,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang sau",
+          "x": 903,
+          "y": 1221,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": false,
+      "sections": [],
+      "focus": "<main id=\"main-content\" class=\"hn-main\" tabindex=\"-1\"><div class=\"hn-catalogue-screen s09-screen\" data-screen=\"S09\" data-catalog-mode=\"legacy\" data-visual-variant=\"premium\" style=\"--s09-wide-min: 1240px;\"><header class=\"hn-page-heading\"><div><p class=\"hn-breadcrumb\">Bảo hành sửa chữa <span>/</span> ",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Quản lý hồ sơ bảo hành\n\nQuản lý hồ sơ bảo hành\n\nTra cứu và theo dõi quá trình xử lý hồ sơ bảo hành\n\nTổng hồ sơ\n186\nToàn danh mục\nĐã hoàn tất\n148\n79,6%\nChưa hoàn tất\n38\ntrong 186 hồ sơ\nQuá hạn\n7\ntrong 38 hồ sơ chưa hoàn tất\nDanh sách hồ sơ\n7 hồ sơ\nMốc dữ liệu 10/09/2026\n7 kết quả trong 7 hồ sơ hiện có · Tổng danh mục 186 hồ sơ\nTìm kiếm hồ sơ\nTìm kiếm hồ sơ\n\nTìm theo mã hồ sơ hoặc serial.\n\nBộ lọc\nĐặt lại\n\nChi tiết hiển thị thông tin hồ sơ hiện có. Lịch sử xử lý và chứng từ liên quan chưa có dữ liệu.\n\nDanh sách hồ sơ bảo hành\nSTT\tHồ sơ\tThiết bị / Sản phẩm\tKhách hàng\tTrạng thái\tTiếp nhận / Hạn\n↓\nĐang xếp mới đến cũ. Kích hoạt để xếp cũ đến mới.\n\tTuổi hồ sơ\tThao tác\n1\t\nBH-20260910-001\nSN: HN1234567890\n\t\nBộ nguồn điều khiển\nSP-HN-001\n\tCÔNG TY T*********\t\nĐã tiếp nhận\n\t\n10/09/2026\nHạn: 17/09/2026\n\tHôm nay\t\nChi tiết\n2\t\nTEMP-20260910-006\nTEMP_ONLY\n\t\nThiết bị chưa xác định mã\n\tCÔNG TY N*********\t\nĐã tiếp nhận\n\t\n10/09/2026\nHạn: 17/09/2026\n\tH"
+    },
+    {
+      "label": "s09-legacy-tablet-detail",
+      "route": "#/preview/S09?catalog=legacy",
+      "kind": "detail",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s09-legacy-tablet-detail.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "legacy",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 1178
+      },
+      "root": {
+        "x": 24,
+        "y": 347,
+        "width": 944,
+        "height": 935
+      },
+      "dialog": {
+        "x": 196,
+        "y": 140,
+        "width": 600,
+        "height": 741
+      },
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Bộ lọc",
+          "x": 738,
+          "y": 469,
+          "width": 120.45,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đặt lại",
+          "x": 874.45,
+          "y": 469,
+          "width": 72.55,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tiếp nhận / Hạn↓",
+          "x": 895,
+          "y": 605.5,
+          "width": 109.75,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 664,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 738.5,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 813,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 882,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 954.5,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 1027,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 855,
+          "y": 1096,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cuộn bảng sang trái",
+          "x": 855,
+          "y": 1161,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cuộn bảng sang phải",
+          "x": 903,
+          "y": 1161,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang trước",
+          "x": 803,
+          "y": 1221,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "1",
+          "x": 853,
+          "y": 1221,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang sau",
+          "x": 903,
+          "y": 1221,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng chi tiết hồ sơ bảo hành",
+          "x": 727,
+          "y": 161,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã hồ sơ",
+          "x": 342.47,
+          "y": 332,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Nhận dạng",
+          "x": 632.73,
+          "y": 332,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng",
+          "x": 705.81,
+          "y": 822,
+          "width": 65.19,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": false,
+      "sections": [
+        {
+          "class": "",
+          "rect": {
+            "x": 221,
+            "y": 272,
+            "width": 550,
+            "height": 377
+          },
+          "text": "Thông tin hồ sơMã hồ sơBH-20260910-001Nhận dạngSN: HN1234567890Thiết bị / Sản phẩmSP-HN-001 · Bộ nguồn điều khiểnKhách h"
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 221,
+            "y": 669,
+            "width": 550,
+            "height": 49
+          },
+          "text": "Lịch sử xử lýChưa có dữ liệu lịch sử xử lý cho hồ sơ này."
+        },
+        {
+          "class": "",
+          "rect": {
+            "x": 221,
+            "y": 738,
+            "width": 550,
+            "height": 49
+          },
+          "text": "Chứng từ / Phiếu xuất linh kiện liên quanChưa có dữ liệu liên kết chứng từ hoặc phiếu xuất linh kiện cho hồ sơ này."
+        }
+      ],
+      "focus": "<button type=\"button\" class=\"hn-button hn-button--ghost s09-detail-dialog__close\" aria-label=\"Đóng chi tiết hồ sơ bảo hành\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Quản lý hồ sơ bảo hành\n\nQuản lý hồ sơ bảo hành\n\nTra cứu và theo dõi quá trình xử lý hồ sơ bảo hành\n\nTổng hồ sơ\n186\nToàn danh mục\nĐã hoàn tất\n148\n79,6%\nChưa hoàn tất\n38\ntrong 186 hồ sơ\nQuá hạn\n7\ntrong 38 hồ sơ chưa hoàn tất\nDanh sách hồ sơ\n7 hồ sơ\nMốc dữ liệu 10/09/2026\n7 kết quả trong 7 hồ sơ hiện có · Tổng danh mục 186 hồ sơ\nTìm kiếm hồ sơ\nTìm kiếm hồ sơ\n\nTìm theo mã hồ sơ hoặc serial.\n\nBộ lọc\nĐặt lại\n\nChi tiết hiển thị thông tin hồ sơ hiện có. Lịch sử xử lý và chứng từ liên quan chưa có dữ liệu.\n\nDanh sách hồ sơ bảo hành\nSTT\tHồ sơ\tThiết bị / Sản phẩm\tKhách hàng\tTrạng thái\tTiếp nhận / Hạn\n↓\nĐang xếp mới đến cũ. Kích hoạt để xếp cũ đến mới.\n\tTuổi hồ sơ\tThao tác\n1\t\nBH-20260910-001\nSN: HN1234567890\n\t\nBộ nguồn điều khiển\nSP-HN-001\n\tCÔNG TY T*********\t\nĐã tiếp nhận\n\t\n10/09/2026\nHạn: 17/09/2026\n\tHôm nay\t\nChi tiết\n2\t\nTEMP-20260910-006\nTEMP_ONLY\n\t\nThiết bị chưa xác định mã\n\tCÔNG TY N*********\t\nĐã tiếp nhận\n\t\n10/09/2026\nHạn: 17/09/2026\n\tH",
+      "focusAfterClose": {
+        "tag": "BUTTON",
+        "text": "Chi tiết",
+        "attrs": {
+          "s09": null,
+          "s10": null,
+          "aria": "Chi tiết BH-20260910-001"
+        }
+      }
+    },
+    {
+      "label": "s10-legacy-tablet-list",
+      "route": "#/preview/S10?catalog=legacy",
+      "kind": "list",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s10-legacy-tablet-list.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "legacy",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 1246.78
+      },
+      "root": {
+        "x": 24,
+        "y": 395,
+        "width": 944,
+        "height": 955.78
+      },
+      "dialog": null,
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cập nhật danh sách",
+          "x": 781.27,
+          "y": 126.5,
+          "width": 186.73,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Bộ lọc",
+          "x": 682,
+          "y": 521.39,
+          "width": 120.45,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đặt lại",
+          "x": 818.45,
+          "y": 521.39,
+          "width": 72.55,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cập nhật mới nhất",
+          "x": 897,
+          "y": 521.39,
+          "width": 50,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cập nhật↓",
+          "x": 779,
+          "y": 685.28,
+          "width": 69.08,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 909,
+          "y": 744.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 909,
+          "y": 814.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 909,
+          "y": 884.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 909,
+          "y": 954.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 909,
+          "y": 1024.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 909,
+          "y": 1094.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Chi tiết",
+          "x": 909,
+          "y": 1164.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": false
+        },
+        {
+          "text": "Cuộn bảng sang trái",
+          "x": 855,
+          "y": 1229.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cuộn bảng sang phải",
+          "x": 903,
+          "y": 1229.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang trước",
+          "x": 803,
+          "y": 1289.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "1",
+          "x": 853,
+          "y": 1289.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang sau",
+          "x": 903,
+          "y": 1289.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": false,
+      "sections": [],
+      "focus": "<main id=\"main-content\" class=\"hn-main\" tabindex=\"-1\"><div class=\"hn-catalogue-screen s10-screen\" data-screen=\"S10\" data-catalog-mode=\"legacy\" data-visual-variant=\"premium\"><header class=\"hn-page-heading s10-page-header\"><div><p class=\"hn-breadcrumb\">Bảo hành sửa chữa <span>/</span> Phiếu xuất linh ",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Phiếu xuất linh kiện\n\nQuản lý phiếu xuất linh kiện\n\nTra cứu phiếu xuất linh kiện bảo hành theo dữ liệu đã ghi nhận.\n\nKho Hoa Nam\nCập nhật danh sách\nĐã xuất\n\n64 / 84\n76,2% tổng phiếu\n\nNháp\n\n12\n\nĐang quét/nhập\n\n5\n\nĐã hủy\n\n3\n\nXuất linh kiện thực hiện trên App Scanner. Web dùng để tra cứu và đối chiếu.\n\nDanh sách phiếu\n7 phiếu\n\n7 kết quả trong 7 phiếu hiện có · Tổng danh mục 84 phiếu · Cập nhật 10/09/2026\n\nTìm kiếm phiếu\nTìm kiếm phiếu\n\nTìm theo mã phiếu, mã hồ sơ, SKU hoặc tên linh kiện trong 7 phiếu hiện có.\n\nBộ lọc\nĐặt lại\nĐang hiển thị: Tất cả phiếu\n\nXem thông tin phiếu đã ghi nhận; dòng linh kiện và chứng từ liên quan chưa khả dụng.\n\nDanh sách phiếu xuất linh kiện\nSTT\tPhiếu / Hồ sơ bảo hành\tLinh kiện tóm tắt\tTrạng thái\tCập nhật\n↓\nĐang xếp mới đến cũ. Kích hoạt để xếp cũ đến mới.\n\tThao tác\n1\t\nPX-LK-260910-018\nBH-20260910-001\n\t\nVòng bi 6202\nLK-HN-014 · 2 SKU · 4 linh kiện · Box + SL\n\tNháp\t\n10/09/2026\n·\n16:42\n\t\nChi tiết\n2\t\nPX-LK-260"
+    },
+    {
+      "label": "s10-legacy-tablet-detail",
+      "route": "#/preview/S10?catalog=legacy",
+      "kind": "detail",
+      "path": "E:/WMS_HoaNam/Scanner_CMS/sites/hoa-nam-wms-tray-approved-20261026/docs/qa/warranty-parts/HN-WARRANTY-PARTS-UIUX-001/screenshots/after/s10-legacy-tablet-detail.png",
+      "viewport": {
+        "width": 992,
+        "height": 1586,
+        "dpr": 1
+      },
+      "catalogMode": "legacy",
+      "screen": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 1246.78
+      },
+      "root": {
+        "x": 24,
+        "y": 395,
+        "width": 944,
+        "height": 955.78
+      },
+      "dialog": {
+        "x": 136,
+        "y": 426,
+        "width": 720,
+        "height": 734
+      },
+      "scroll": {
+        "documentWidth": 992,
+        "documentHeight": 1586,
+        "overflowX": false,
+        "overflowY": false
+      },
+      "buttons": [
+        {
+          "text": "Mở trình đơn điều hướng",
+          "x": 37,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Tìm màn hình…Ctrl K",
+          "x": 473.63,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Truy cập nhanh",
+          "x": 697,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "2",
+          "x": 745,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "VI",
+          "x": 793,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Giao diện: Sáng",
+          "x": 841,
+          "y": 26,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "DQĐức Quang",
+          "x": 889,
+          "y": 26,
+          "width": 66,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cập nhật danh sách",
+          "x": 781.27,
+          "y": 126.5,
+          "width": 186.73,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Bộ lọc",
+          "x": 682,
+          "y": 521.39,
+          "width": 120.45,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đặt lại",
+          "x": 818.45,
+          "y": 521.39,
+          "width": 72.55,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cập nhật mới nhất",
+          "x": 897,
+          "y": 521.39,
+          "width": 50,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cập nhật↓",
+          "x": 735,
+          "y": 685.28,
+          "width": 69.08,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 865,
+          "y": 744.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 865,
+          "y": 814.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 865,
+          "y": 884.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 865,
+          "y": 954.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 865,
+          "y": 1024.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 865,
+          "y": 1094.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Chi tiết",
+          "x": 865,
+          "y": 1164.28,
+          "width": 96.2,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cuộn bảng sang trái",
+          "x": 855,
+          "y": 1229.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Cuộn bảng sang phải",
+          "x": 903,
+          "y": 1229.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang trước",
+          "x": 803,
+          "y": 1289.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "1",
+          "x": 853,
+          "y": 1289.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Trang sau",
+          "x": 903,
+          "y": 1289.78,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng chi tiết phiếu",
+          "x": 787,
+          "y": 452,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã phiếu",
+          "x": 298.95,
+          "y": 570,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã hồ sơ bảo hành đã ghi nhận",
+          "x": 635.72,
+          "y": 570,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Sao chép Mã linh kiện",
+          "x": 241.23,
+          "y": 658,
+          "width": 44,
+          "height": 44,
+          "withinViewport": true
+        },
+        {
+          "text": "Đóng",
+          "x": 765.81,
+          "y": 1095,
+          "width": 65.19,
+          "height": 44,
+          "withinViewport": true
+        }
+      ],
+      "allButtonsWithinViewport": true,
+      "sections": [],
+      "focus": "<button aria-label=\"Đóng chi tiết phiếu\" type=\"button\" class=\"hn-button hn-button--ghost \" data-hn-control=\"button\" data-tone=\"default\" data-icon-only=\"true\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"r",
+      "text": "Bỏ qua điều hướng\nHOA NAM WMS\n2\nDQ\n\nBảo hành sửa chữa / Phiếu xuất linh kiện\n\nQuản lý phiếu xuất linh kiện\n\nTra cứu phiếu xuất linh kiện bảo hành theo dữ liệu đã ghi nhận.\n\nKho Hoa Nam\nCập nhật danh sách\nĐã xuất\n\n64 / 84\n76,2% tổng phiếu\n\nNháp\n\n12\n\nĐang quét/nhập\n\n5\n\nĐã hủy\n\n3\n\nXuất linh kiện thực hiện trên App Scanner. Web dùng để tra cứu và đối chiếu.\n\nDanh sách phiếu\n7 phiếu\n\n7 kết quả trong 7 phiếu hiện có · Tổng danh mục 84 phiếu · Cập nhật 10/09/2026\n\nTìm kiếm phiếu\nTìm kiếm phiếu\n\nTìm theo mã phiếu, mã hồ sơ, SKU hoặc tên linh kiện trong 7 phiếu hiện có.\n\nBộ lọc\nĐặt lại\nĐang hiển thị: Tất cả phiếu\n\nXem thông tin phiếu đã ghi nhận; dòng linh kiện và chứng từ liên quan chưa khả dụng.\n\nDanh sách phiếu xuất linh kiện\nSTT\tPhiếu / Hồ sơ bảo hành\tLinh kiện tóm tắt\tTrạng thái\tCập nhật\n↓\nĐang xếp mới đến cũ. Kích hoạt để xếp cũ đến mới.\n\tThao tác\n1\t\nPX-LK-260910-018\nBH-20260910-001\n\t\nVòng bi 6202\nLK-HN-014 · 2 SKU · 4 linh kiện · Box + SL\n\tNháp\t\n10/09/2026\n·\n16:42\n\t\nChi tiết\n2\t\nPX-LK-260",
+      "focusAfterClose": {
+        "tag": "BUTTON",
+        "text": "Chi tiết",
+        "attrs": {
+          "s09": null,
+          "s10": null,
+          "aria": "Chi tiết PX-LK-260910-018"
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "nets": [],
+  "base": "http://127.0.0.1:5292",
+  "generatedAt": "2026-10-28T15:48:03.274Z"
+}

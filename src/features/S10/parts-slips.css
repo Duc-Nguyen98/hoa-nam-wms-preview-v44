@@ -37,6 +37,21 @@
   .s10-list { padding: 0 14px; }
   .s10-table { margin: 0 -14px; }
 }
+@media (max-width: 1100px) {
+  .s10-table .hn-table-scroll { overflow: visible; max-height: none; }
+  .s10-table .hn-table { display: block; width: 100%; min-width: 0; table-layout: auto; }
+  .s10-table .hn-table thead { display: none; }
+  .s10-table .hn-table tbody, .s10-table .hn-table tr { display: block; }
+  .s10-table .hn-table tr { margin: 0 0 12px; overflow: hidden; border: 1px solid var(--hn-border); border-radius: 10px; background: var(--hn-surface); }
+  .s10-table .hn-table td { display: flex; align-items: flex-start; gap: 12px; min-width: 0; padding: 12px 16px; border: 0; border-bottom: 1px solid var(--hn-border); text-align: start; }
+  .s10-table .hn-table td::before { content: attr(data-heading); flex: 0 0 34%; color: var(--hn-muted); font-size: 12px; line-height: 20px; }
+  .s10-table .hn-table td:last-child { border-bottom: 0; }
+  .s10-table .hn-table td[data-column='ordinal'] { display: none; }
+  .s10-table .hn-table td[data-column='action'] { justify-content: flex-end; padding-block: 14px; }
+  .s10-table .hn-table td[data-column='action']::before { display: none; }
+  .s10-table .hn-table td[data-column='action'] .hn-button { margin-inline-start: auto; min-height: 44px; }
+  .s10-table .hn-table [data-sticky-column] { position: static !important; box-shadow: none !important; }
+}
 /* S10 read-only accepted-row Detail. Shared dialog tokens and controls remain unchanged. */
 .s10-detail { width: min(720px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); margin: auto; padding: 0; border: 1px solid var(--hn-border); border-radius: 12px; color: var(--hn-text); background: var(--hn-surface); box-shadow: 0 24px 72px #102a4333; overflow: hidden; }
 .s10-detail[open] { display: flex; flex-direction: column; }
@@ -50,6 +65,11 @@
 .s10-detail__fields div { min-width: 0; }
 .s10-detail__fields dt { margin-bottom: 4px; color: var(--hn-muted); font-size: 13px; line-height: 20px; }
 .s10-detail__fields dd { margin: 0; font-size: 15px; line-height: 24px; font-weight: 600; overflow-wrap: anywhere; }
+.s10-detail__copy-value { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; }
+.s10-detail__copy-value code { overflow-wrap: anywhere; }
+.s10-detail__copy { width: 44px; min-width: 44px; height: 44px; padding: 10px; }
+.s10-detail__related-value { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.s10-detail__related-value a { color: var(--hn-link, var(--hn-primary)); font-size: 13px; font-weight: 600; text-decoration: underline; }
 .s10-detail__limits { display: grid; gap: 12px; margin-top: 24px; }
 .s10-detail__limits section { padding: 16px; border: 1px solid var(--hn-border); border-radius: 8px; background: var(--hn-page); }
 .s10-detail__limits h3 { margin: 0; font-size: 16px; line-height: 24px; }

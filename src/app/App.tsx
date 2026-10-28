@@ -77,6 +77,12 @@ const labelPrintCommands = IS_BROWSER_PREVIEW ? createLabelPrintHttpAdapter(unde
 const recipientUpdateCommands = IS_BROWSER_PREVIEW ? createRecipientUpdateHttpAdapter(undefined, { available: true, durableRecovery: true }) : undefined;
 const APP_EN_COPY = { ...ADMIN_EN_COPY, ...ACCOUNT_EN_COPY };
 type Health = Awaited<ReturnType<typeof controller.loadSetup>>;
+function isLegacyCatalogRoute(hash: string, screen: 'S09' | 'S10') {
+  const match = new RegExp(`^#/preview/${screen}\\?([^#]*)$`, 'u').exec(hash);
+  if (!match) return false;
+  const params = new URLSearchParams(match[1]);
+  return params.getAll('catalog').length === 1 && params.get('catalog') === 'legacy' && [...params.keys()].every(key => key === 'catalog');
+}
 
 /** Integrated preview routes; transport is explicitly selected by the host. */
 export function App() {
@@ -162,10 +168,10 @@ export function App() {
   if (selected?.key === 'S04') return <SkusScreen adapter={businessHttpAdapters.S04} selectedEntityId={resolveCanonicalPreviewSelection(hash)?.entityId} />;
   if (selected?.key === 'S05') return <RecipientsScreen adapter={businessHttpAdapters.S05} updateAdapter={recipientUpdateCommands} />;
   if (selected?.key === 'S06') return <PvProductsScreen adapter={businessHttpAdapters.S06} />;
-  if (selected?.key === 'S09') return <WarrantyCasesScreen adapter={businessHttpAdapters.S09} />;
+  if (selected?.key === 'S09') return <WarrantyCasesScreen adapter={businessHttpAdapters.S09} forceLegacy={isLegacyCatalogRoute(hash, 'S09')} />;
   if (selected?.key === 'S07') return <LoginScreen />;
   if (selected?.key === 'S08') return <SessionScreen />;
-  if (selected?.key === 'S10') return <PartsSlipsScreen adapter={businessHttpAdapters.S10} />;
+  if (selected?.key === 'S10') return <PartsSlipsScreen adapter={businessHttpAdapters.S10} forceLegacy={isLegacyCatalogRoute(hash, 'S10')} />;
   if (selected?.key === 'S11') return <TraysScreen adapter={businessHttpAdapters.S11} />;
   if (selected?.key === 'S12') return <ReceiptsScreen adapter={businessHttpAdapters.S12} />;
   if (selected?.key === 'S13') return <PutawayQueueScreen adapter={businessHttpAdapters.S13} />;

@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { WarrantyRow } from '../../contracts/warranty-cases';
 import { OPERATIONS_EN_COPY } from '../../i18n/operations-copy';
 import { useUiCopy } from '../../i18n/use-ui-copy';
-import { Icon, StatusBadge } from '../../shared';
+import { Button, Icon, StatusBadge, Notice, type NoticeFeedback } from '../../shared';
 import { acquireBodyScrollLock } from '../../shared/body-scroll-lock';
+import { copyText } from '../../shared/copy-text';
 
 export const WARRANTY_DETAIL_COPY = {
   ...OPERATIONS_EN_COPY,
@@ -19,6 +20,10 @@ export const WARRANTY_DETAIL_COPY = {
   'Chứng từ / Phiếu xuất linh kiện liên quan': 'Related documents / Parts issue slips',
   'Chưa có dữ liệu liên kết chứng từ hoặc phiếu xuất linh kiện cho hồ sơ này.': 'Document and parts issue slip links have not been supplied for this case.',
   'Chi tiết hiển thị thông tin hồ sơ hiện có. Lịch sử xử lý và chứng từ liên quan chưa có dữ liệu.': 'Details show the available case information. Processing history and related documents have not been supplied.',
+  'Sao chép': 'Copy',
+  'Sao chép {label}': 'Copy {label}',
+  'Đã sao chép.': 'Copied.',
+  'Không thể sao chép. Vui lòng thử lại.': 'Unable to copy. Please try again.',
 };
 
 /** Read-only projection of the accepted shared read model, not a new case DTO.
@@ -33,6 +38,9 @@ export function WarrantyDetailDialog({ row, snapshot, onClose }: {
   const backdropPointer = useRef(false);
   const releaseBodyLock = useRef<(() => void) | undefined>(undefined);
   const focusFrame = useRef<number | undefined>(undefined);
+  const [copyFeedback, setCopyFeedback] = useState<NoticeFeedback | null>(null);
+  const copySequence = useRef(0);
+  useEffect(() => { setCopyFeedback(null); copySequence.current += 1; }, [row?.caseCode]);
   const releaseDialogResources = useCallback(() => {
     if (focusFrame.current !== undefined) {
       cancelAnimationFrame(focusFrame.current);
@@ -65,6 +73,14 @@ export function WarrantyDetailDialog({ row, snapshot, onClose }: {
   const [status, ...dueStatus] = row?.statusLabel.split(' · ') ?? [];
   const tone = ['Hoàn tất sửa chữa', 'Đã trả khách'].includes(status) ? 'success'
     : status?.startsWith('Đang sửa chữa') ? 'warning' : 'neutral';
+  const copy = async (value: string, origin: HTMLElement) => {
+    const sequence = ++copySequence.current;
+    let success = false;
+    try { await copyText(value); success = true; } catch { /* Shared feedback handles clipboard rejection. */ }
+    if (sequence !== copySequence.current) return;
+    setCopyFeedback({ message: success ? 'Đã sao chép.' : 'Không thể sao chép. Vui lòng thử lại.', tone: success ? 'success' : 'error', sequence, origin, container: document.body });
+  };
+  const codeValue = (label: string, value: string) => <span className="s09-detail-dialog__copy-value"><code>{value}</code><Button variant="ghost" iconOnly className="s09-detail-dialog__copy" disabled={!value} aria-label={tx('Sao chép {label}', { label: tx(label) })} title={tx('Sao chép {label}', { label: tx(label) })} data-s09-copy={label} onClick={event => void copy(value, event.currentTarget)}><Icon name="copy" size={17} /></Button></span>;
   return <dialog ref={dialogRef} className="hn-shell-dialog s09-detail-dialog"
     data-case-code={row?.caseCode} aria-labelledby="s09-detail-title"
     onKeyDown={event => {
@@ -93,8 +109,8 @@ export function WarrantyDetailDialog({ row, snapshot, onClose }: {
       <div className="s09-detail-dialog__body">
         <section aria-labelledby="s09-detail-info"><h3 id="s09-detail-info">{tx('Thông tin hồ sơ')}</h3>
           <dl className="s09-detail-dialog__fields">
-            <div><dt>{tx('Mã hồ sơ')}</dt><dd>{row.caseCode}</dd></div>
-            <div><dt>{tx('Nhận dạng')}</dt><dd>{row.identity === 'TEMP_ONLY' ? <StatusBadge>{row.identity}</StatusBadge> : <>{tx('SN:')} {row.identity}</>}</dd></div>
+            <div><dt>{tx('Mã hồ sơ')}</dt><dd>{codeValue('Mã hồ sơ', row.caseCode)}</dd></div>
+            <div><dt>{tx('Nhận dạng')}</dt><dd>{row.identity === 'TEMP_ONLY' ? <StatusBadge>{row.identity}</StatusBadge> : <>{tx('SN:')} {codeValue('Nhận dạng', row.identity)}</>}</dd></div>
             <div className="s09-detail-dialog__wide"><dt>{tx('Thiết bị / Sản phẩm')}</dt><dd>{row.product}</dd></div>
             <div className="s09-detail-dialog__wide"><dt>{tx('Khách hàng')}</dt><dd>{row.maskedCustomer}</dd></div>
             <div><dt>{tx('Ngày tiếp nhận')}</dt><dd>{received}</dd></div>
@@ -107,6 +123,7 @@ export function WarrantyDetailDialog({ row, snapshot, onClose }: {
         <section aria-labelledby="s09-detail-documents" data-detail-unavailable="related-documents"><h3 id="s09-detail-documents">{tx('Chứng từ / Phiếu xuất linh kiện liên quan')}</h3><p>{tx('Chưa có dữ liệu liên kết chứng từ hoặc phiếu xuất linh kiện cho hồ sơ này.')}</p></section>
       </div>
       <footer className="s09-detail-dialog__footer"><button type="button" className="hn-button hn-button--secondary" onClick={closeDialog}>{tx('Đóng')}</button></footer>
+      {copyFeedback && <Notice feedback={{ ...copyFeedback, message: tx(copyFeedback.message) }} onClose={() => setCopyFeedback(null)} />}
     </>}
   </dialog>;
 }

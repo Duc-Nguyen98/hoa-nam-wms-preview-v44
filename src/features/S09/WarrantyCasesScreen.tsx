@@ -18,9 +18,9 @@ import './warranty-cases.css';
 
 type Operation = ReturnType<ReturnType<typeof createWarrantyController>['load']>;
 
-export function WarrantyCasesScreen({ adapter, operationalAdapter }: { adapter?: WarrantyAdapter; operationalAdapter?: WarrantyOperationalAdapter } = {}) {
+export function WarrantyCasesScreen({ adapter, operationalAdapter, forceLegacy = false }: { adapter?: WarrantyAdapter; operationalAdapter?: WarrantyOperationalAdapter; forceLegacy?: boolean } = {}) {
   const operational = useMemo(() => operationalAdapter ?? createOperationalWebAdapter(undefined, { scope: 'S09' }), [operationalAdapter]);
-  const [cohort, setCohort] = useState(operational.available ? 'scenario' : 'legacy');
+  const [cohort, setCohort] = useState(operational.available && !forceLegacy ? 'scenario' : 'legacy');
   const cohortTx = useUiCopy({ 'Phiên hiện tại': 'Current session', 'Danh sách trước đây': 'Historical list' });
   const tx = useUiCopy(WARRANTY_DETAIL_COPY);
   const { language } = useShellPreferences();
@@ -134,9 +134,9 @@ export function WarrantyCasesScreen({ adapter, operationalAdapter }: { adapter?:
     { id: 'action', heading: tx('Thao tác'), kind: 'actions', render: row => <Button variant="ghost" className="s09-view" aria-haspopup="dialog" aria-describedby="s09-detail-limit" aria-label={tx('Chi tiết {code}', { code: row.caseCode })} onClick={event => detail(row, event.currentTarget)}><Icon name="eye" size={18} />{tx(row.reviewAction)}</Button> },
   ];
   return <GlobalShell title={tx("Quản lý hồ sơ bảo hành")} variant="wms" activeKey="S09" navigation={S00_SHELL_NAVIGATION} profile={{ displayName: 'Đức Quang', initials: 'DQ' }}>
-    <div ref={screen} className="hn-catalogue-screen s09-screen" data-screen="S09" data-visual-variant="premium" style={{ '--s09-wide-min': `${WARRANTY_TABLE_WIDTHS.wide}px` } as CSSProperties} onFocusCapture={revealFocus}>
+    <div ref={screen} className="hn-catalogue-screen s09-screen" data-screen="S09" data-catalog-mode={forceLegacy ? 'legacy' : 'operational'} data-visual-variant="premium" style={{ '--s09-wide-min': `${WARRANTY_TABLE_WIDTHS.wide}px` } as CSSProperties} onFocusCapture={revealFocus}>
       <CataloguePageHeader title={tx("Quản lý hồ sơ bảo hành")} breadcrumb={tx("Quản lý hồ sơ bảo hành")} parentLabel={tx("Bảo hành sửa chữa")} description={tx("Tra cứu và theo dõi quá trình xử lý hồ sơ bảo hành")} />
-      {operational.available && <div className="s09-action-row"><Button variant="secondary" aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{cohortTx('Phiên hiện tại')}</Button><Button variant="secondary" aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{cohortTx('Danh sách trước đây')}</Button></div>}
+      {operational.available && !forceLegacy && <div className="s09-action-row"><Button variant="secondary" aria-pressed={cohort === 'scenario'} onClick={() => setCohort('scenario')}>{cohortTx('Phiên hiện tại')}</Button><Button variant="secondary" aria-pressed={cohort === 'legacy'} onClick={() => setCohort('legacy')}>{cohortTx('Danh sách trước đây')}</Button></div>}
       {cohort === 'scenario' ? <OperationalWarranty adapter={operational} notify={message => notify(uiText(message), null, 'success')} /> : <>
       {model && <>
         <section className="s09-summary" aria-label={tx("Tổng quan xử lý hồ sơ")}>
