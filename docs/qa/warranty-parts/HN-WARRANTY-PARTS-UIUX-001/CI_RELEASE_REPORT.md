@@ -34,3 +34,17 @@ The canonical URL in the task packet, [hoa-nam-wms-b17-candidate-20261024.wholet
 ## Release blocker
 
 Release is `BLOCKED` for this candidate. The hosted Site is not proven to serve the candidate SHA, the required visual/functional CI job is intentionally failing, and fresh browser acceptance is unavailable. Do not label the public URL as this candidate or approve rollout until the deployment metadata and required checks are tied to the exact candidate SHA.
+
+## Post-deploy verification (2026-10-28)
+
+The candidate was published after the audit with the following provenance:
+
+- Local application source SHA: `73bf351083efb48af360f3ad2512addb8b028560`.
+- Site source snapshot SHA: `63fe0af5acc674de1999e6adc561c111900ba890` (slim Site checkout; archive built from the same source state).
+- Site version: `61` (`appgprj_6adc45f730d88191ae066e8ff0c936aa~appgver_866194f688b881918f055c585e9bac45`).
+- Deployment: `appgdep_6ae21fff8aa081918448306a00900581`, status `succeeded`.
+- Preview URL: https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site
+- `/build-info.json`: HTTP 200; `sourceCommit=73bf351083efb48af360f3ad2512addb8b028560`, `buildId=0f2cce9cbfc97315331cea96fa863190cbdc3d400640c753c2fdbc7eaa1b6bc1`, `mode=MOCK`, `publicDemo=true`.
+- Direct HTML routes `/#/preview/S09`, `/#/preview/S10`, and both explicit `?catalog=legacy` routes returned HTTP 200.
+
+Hosted deployment provenance is now verified. GitHub CI and fresh hosted browser certification remain blocked by the intentional visual/functional placeholder job and stale harness selectors; preview deployment must not be interpreted as production release acceptance.

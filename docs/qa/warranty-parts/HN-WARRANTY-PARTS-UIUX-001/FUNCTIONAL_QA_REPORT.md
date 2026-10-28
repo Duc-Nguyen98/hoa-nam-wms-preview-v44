@@ -44,3 +44,14 @@ The test now imports the approved manifest and asserts the public-demo subset **
 2. **P2 — S09 lacks linked parts-slip navigation.** Add only when an approved relation key exists; the legacy contract currently says relation data is unavailable, so do not infer a join from codes.
 3. **P2 — public-demo test harness is stale.** Update selectors and setup synchronization (`Bắt đầu làm việc`, current overview readiness) in a separately owned test packet; do not loosen fixture assertions without an authority decision.
 
+
+## Post-fix correction and final disposition
+
+The first table above is the pre-fix registration run at 93371f4 and intentionally preserves its historical failures. On the corrected candidate 73bf351083efb48af360f3ad2512addb8b028560:
+
+- Public-demo flow: 2/2 PASS after updating stale expectations to assert the intentional approved tray seed.
+- S09/S10 operational binding subset: 22/22 PASS.
+- Copy controls: source/static PASS for legacy and operational S09/S10; browser click remains NOT_RUN because the setup harness is blocked.
+- Explicit legacy route parsing: PASS for both catalog=legacy routes and rejection of extra parameters.
+- S10 to S09/S17 links: PASS when relation data exists; reverse S09 parts-slip link remains PARTIAL because the current contract has no relation key.
+- Browser E2E, REAL_API RBAC and hosted CI: BLOCKED/NOT_RUN, not promoted to PASS.

@@ -26,3 +26,9 @@ Keep the currently hosted build as the rollback target until a candidate deploym
 - S00#3 visual: pending exact-SHA hosted capture.
 - S00#4 functional: pending fresh browser, accessibility and console run.
 - S00#1 integration/release: pending all gates and deployment provenance.
+
+## Updated decision after Preview deployment
+
+The Preview deployment completed successfully as Site version `61` (deployment `appgdep_6ae21fff8aa081918448306a00900581`). `/build-info.json` is tied to local application SHA `73bf351083efb48af360f3ad2512addb8b028560`; the Site checkout snapshot is `63fe0af5acc674de1999e6adc561c111900ba890`.
+
+Release remains **NOT_READY** for production or rollout because hosted CI visual/functional certification is intentionally blocked, REAL_API/RBAC evidence is unavailable, S10 detail density remains P2 open, and the historical fixture contains seven rows versus the nine-row reference density. The public Preview is available for review and rollback to the prior Site version remains possible.
