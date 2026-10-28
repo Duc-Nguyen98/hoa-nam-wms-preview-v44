@@ -1,6 +1,6 @@
 # Final sidebar verdict
 
-## Verdict: PARTIAL — local candidate quality gates pass; hosted Preview update pending
+## Verdict: PARTIAL — local and Preview provenance pass; full route/RBAC coverage remains open
 
 ### PASS
 
@@ -14,7 +14,8 @@
 
 - S01–S29 exhaustive browser matrix, locale/theme/zoom matrix: `NOT_RUN`.
 - Backend RBAC/data-scope certification: `BLOCKED` by absent server-authoritative capability contract; see `ROUTE_RBAC_AUDIT.md`.
-- Hosted CI and exact new Preview SHA: `NOT_RUN` until the candidate commit is deployed.
+- Hosted CI checks: `NOT_RUN` (no hosted CI result was available).
+- Preview provenance: PASS for Site version 62; `/build-info.json` matches app code commit `a617604…`; site source commit is recorded in `SIDEBAR_RELEASE_REPORT.md`.
 - Requested short video: `NOT_RUN`.
 
-This is not a production release approval. The next release step is to commit the verified source and evidence on `DEV`, rebuild with that commit SHA, deploy the existing Preview Site, and verify `/build-info.json` plus direct S01/S10 routes.
+This is not a production release approval. The Preview update is complete, but the S01–S29 exhaustive matrix and server-authoritative RBAC/data-scope certification remain open.

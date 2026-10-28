@@ -7,6 +7,7 @@
 - Scope: shared `GlobalShell` sidebar/drawer, navigation labels, function search, responsive states.
 - Business pages and fixtures: unchanged.
 - Candidate environment: local Vite preview at `http://127.0.0.1:5294/` for before/after QA. Public Preview deployment is performed only after this evidence is committed.
+- Published Preview: `https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site` (Site version 62; deployment `appgdep_6ae25a63759c8191a72fb4a7c49a1aca`).
 
 ## Completed
 
