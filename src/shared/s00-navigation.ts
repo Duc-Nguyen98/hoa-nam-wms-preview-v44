@@ -5,8 +5,8 @@ import { S03_SHELL_NAVIGATION } from './s03-shell-navigation';
 export const S00_SHELL_NAVIGATION: readonly ShellNavigationItem[] = S03_SHELL_NAVIGATION.map<ShellNavigationItem>(item =>
   item.key === 'operations'
     ? { ...item, children: [
-      { key: 'inbound-management', label: 'Nhập kho', icon: 'download' as const, defaultExpanded: false,
-        children: [{ key: 'S12', label: 'Danh sách phiếu nhập', href: '#/preview/S12', icon: 'documents' as const, leafIcon: true }] },
+      { key: 'inbound-management', label: 'Phiếu nhập kho', icon: 'download' as const, defaultExpanded: false,
+        children: [{ key: 'S12', label: 'Phiếu nhập kho', href: '#/preview/S12', icon: 'documents' as const, leafIcon: true }] },
       { key: 'outbound-management', label: 'Xuất kho', icon: 'upload' as const, defaultExpanded: false,
         children: [{ key: 'S15', label: 'Phiếu xuất kho', href: '#/preview/S15', icon: 'documents' as const, leafIcon: true }] },
       { key: 'putaway-management', label: 'Xếp khay', icon: 'tray' as const, defaultExpanded: false,
@@ -43,8 +43,8 @@ export const S00_SHELL_NAVIGATION: readonly ShellNavigationItem[] = S03_SHELL_NA
       { key: 'S04', label: 'SKU', href: '#/preview/S04', icon: 'tag', leafIcon: true },
       ...(item.children ?? []).flatMap(child => child.key === 'S03' ? [child, { key: 'S05', label: 'Đại lý & nơi nhận', href: '#/preview/S05', icon: 'building' as const, leafIcon: true }] : [child]),
     ] }
-    : item.key === 'users' ? { ...item, key: 'S29', href: '#/preview/S29' }
-    : item.key === 'settings' ? { ...item, key: 'S28', href: '#/preview/S28' }
+    : item.key === 'users' ? { ...item, key: 'S29', label: 'Người dùng & phân quyền', href: '#/preview/S29' }
+    : item.key === 'settings' ? { ...item, key: 'S28', label: 'Cấu hình hệ thống', href: '#/preview/S28' }
     : item.key === 'audit' ? { ...item, key: 'S27', href: '#/preview/S27' }
     : item,
 ).flatMap(item => item.key === 'catalog' ? [item, {

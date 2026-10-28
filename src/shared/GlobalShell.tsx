@@ -6,7 +6,7 @@ import type { KeyboardEvent, MouseEvent, ReactNode } from 'react';
 import { Icon } from './Icon';
 import type { IconName } from './Icon';
 import { useShellPreferences } from './s00-shell-state';
-import { getShellDestinations, S00_SHELL_NAVIGATION } from './s00-navigation';
+import { getShellDestinations, matchShellDestinations, S00_SHELL_NAVIGATION } from './s00-navigation';
 import { focusShellContent, ShellHeaderActions } from './ShellHeader';
 import { ShellActionContext } from './ShellActionContext';
 import { useShellUi } from './shell-locale';
@@ -67,6 +67,7 @@ export function GlobalShell({ title, children, navigation, activeKey, variant = 
   const [navFocused, setNavFocused] = useState(false);
   const [expansionDismissed, setExpansionDismissed] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [navigationQuery, setNavigationQuery] = useState('');
   const [navigationNotice, setNavigationNotice] = useState<{ label: string; key: string; origin: HTMLElement; sequence: number } | null>(null);
   const reportShellAction = useContext(ShellActionContext);
   const noticeSequence = useRef(0);
@@ -80,6 +81,19 @@ export function GlobalShell({ title, children, navigation, activeKey, variant = 
   const isWms = variant === 'wms';
   const localize = (items: readonly ShellNavigationItem[]): ShellNavigationItem[] => items.map(item => ({ ...item, label: navLabel(item.key, item.label), children: item.children ? localize(item.children) : undefined }));
   const shellNavigation = useMemo(() => localize(isWms ? S00_SHELL_NAVIGATION : navigation), [isWms, navigation, language]);
+  const visibleNavigation = useMemo(() => {
+    const query = navigationQuery.trim();
+    if (!query) return shellNavigation;
+    const matchingKeys = new Set(matchShellDestinations(getShellDestinations(shellNavigation), query).map(item => item.key));
+    const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[đĐ]/g, 'd').toLocaleLowerCase('vi');
+    const filter = (items: readonly ShellNavigationItem[]): ShellNavigationItem[] => items.flatMap(item => {
+      const children = item.children ? filter(item.children) : [];
+      const ownMatch = normalize(item.label).includes(normalize(query));
+      if (!ownMatch && !matchingKeys.has(item.key) && !children.length) return [];
+      return [{ ...item, defaultExpanded: Boolean(children.length || ownMatch), children: item.children ? (children.length ? children : item.children) : undefined }];
+    });
+    return filter(shellNavigation);
+  }, [navigationQuery, shellNavigation]);
   const destinations = useMemo(() => {
     const original = getShellDestinations(S00_SHELL_NAVIGATION);
     return getShellDestinations(localize(S00_SHELL_NAVIGATION)).map(item => ({ ...item, searchText: original.find(source => source.key === item.key)?.label ?? '' }));
@@ -229,7 +243,12 @@ export function GlobalShell({ title, children, navigation, activeKey, variant = 
       {isGroup && <div id={groupId} className="hn-navigation__children" hidden={!expanded || rail}>{renderItems(item.children!, rail, inDrawer, true)}</div>}
     </div>;
   });
-  const renderNavigation = (rail: boolean, inDrawer = false) => <nav className={`hn-navigation${rail ? ' hn-navigation--rail' : ''}`} aria-label={t('shell.menu')} lang={language} onPointerEnter={event => { if (!inDrawer && mode === 'desktop' && event.pointerType === 'mouse') { setHovered(true); setExpansionDismissed(false); } }} onFocus={() => { if (!inDrawer && mode === 'desktop') { setNavFocused(true); setExpansionDismissed(false); } }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget) && !(event.relatedTarget as HTMLElement)?.closest('.hn-global-toast')) setNavFocused(false); }} onScroll={event => updateScrolledTooltips(event.currentTarget)}>{renderItems(shellNavigation, rail, inDrawer)}</nav>;
+  const renderNavigation = (rail: boolean, inDrawer = false) => <nav className={`hn-navigation${rail ? ' hn-navigation--rail' : ''}`} aria-label={t('shell.menu')} lang={language} onPointerEnter={event => { if (!inDrawer && mode === 'desktop' && event.pointerType === 'mouse') { setHovered(true); setExpansionDismissed(false); } }} onFocus={() => { if (!inDrawer && mode === 'desktop') { setNavFocused(true); setExpansionDismissed(false); } }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget) && !(event.relatedTarget as HTMLElement)?.closest('.hn-global-toast')) setNavFocused(false); }} onScroll={event => updateScrolledTooltips(event.currentTarget)}>{renderItems(visibleNavigation, rail, inDrawer)}</nav>;
+  const renderNavigationSearch = (inDrawer = false) => <label className={`hn-sidebar__search${inDrawer ? ' hn-sidebar__search--drawer' : ''}`}>
+    <Icon name="search" aria-hidden="true" />
+    <input value={navigationQuery} onChange={event => setNavigationQuery(event.target.value)} placeholder={t('shell.functionSearch')} aria-label={t('shell.functionSearch')} />
+    {navigationQuery && <button type="button" className="hn-sidebar__search-clear" aria-label={t('shell.clearFunctionSearch')} onClick={() => setNavigationQuery('')}><Icon name="close" size={16} /></button>}
+  </label>;
   const renderMenuButton = () => <button ref={menuButtonRef} type="button" className={`hn-icon-button hn-menu-toggle${mode === 'desktop' ? ' hn-nav-pin' : ''}`} onClick={toggleMenu} onMouseEnter={event => { delete event.currentTarget.dataset.tooltipDismissed; }} onFocus={event => { delete event.currentTarget.dataset.tooltipDismissed; }} aria-label={menuLabel} aria-expanded={mode === 'desktop' ? !collapsed : drawerOpen} aria-controls={mode !== 'desktop' ? 'hn-navigation-drawer' : undefined}>
     <Icon name={mode === 'desktop' ? (collapsed ? 'unpin' : 'pin') : 'menu'} />
     <span className="hn-control-tooltip" aria-hidden="true">{menuLabel}</span>
@@ -241,6 +260,7 @@ export function GlobalShell({ title, children, navigation, activeKey, variant = 
     <a className="hn-skip-link" href="#main-content" onClick={(event) => { event.preventDefault(); document.getElementById('main-content')?.focus(); }}>{t('shell.skip')}</a>
     {mode !== 'drawer' && <aside lang={language} className="hn-sidebar" aria-label="Hoa Nam WMS" onPointerLeave={() => { setHovered(false); setExpansionDismissed(false); }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setNavFocused(false); }}>
       <div className="hn-brand" aria-label="Hoa Nam WMS">{renderBrand(!navExpanded)}{mode === 'desktop' && renderMenuButton()}</div>
+      {navExpanded && renderNavigationSearch()}
       {renderNavigation(!navExpanded)}
       {navExpanded && <div className="hn-sidebar__warehouse"><Icon name="warehouse" /><span>{t('shell.warehouse')}</span></div>}
       {renderSidebarFooter()}
@@ -252,6 +272,7 @@ export function GlobalShell({ title, children, navigation, activeKey, variant = 
     }}>
       <div className="hn-drawer__panel">
         <div className="hn-drawer__header">{isWms ? <div id="hn-drawer-title" className="hn-drawer__brand">{renderBrand(false)}</div> : <h2 id="hn-drawer-title">Hoa Nam WMS</h2>}<button type="button" className="hn-icon-button" autoFocus onClick={() => setDrawerOpen(false)} aria-label={t('shell.closeMenu')}><Icon name="close" /></button></div>
+        {renderNavigationSearch(true)}
         {renderNavigation(false, true)}
         {isWms && <div className="hn-drawer__warehouse"><Icon name="warehouse" /><span>{t('shell.warehouse')}</span></div>}
         {renderSidebarFooter(true)}
