@@ -1,0 +1,10 @@
+{
+  "task": "HN-PTW-26REF-001",
+  "base": "bca3db9062c9246d1fe780fc9e52110128d40859",
+  "head": "bca3db9062c9246d1fe780fc9e52110128d40859",
+  "branch": "DEV",
+  "remoteDev": "bfec7060cdf422a112ec5e644bf0b51401d9bda2",
+  "divergence": "local DEV is ahead of github/DEV by 3 commits",
+  "sourcePathsChangedAgainstBase": [],
+  "note": "Requested base equals local HEAD, so candidate source diff against base is empty."
+}

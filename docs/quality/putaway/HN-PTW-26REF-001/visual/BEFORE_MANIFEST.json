@@ -1,0 +1,856 @@
+{
+  "task": "HN-PTW-26REF-001",
+  "contract": "PTW-01",
+  "branch": "DEV",
+  "baseSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+  "previewBase": "http://127.0.0.1:5291",
+  "generatedAt": "2026-10-28T02:51:50.933Z",
+  "runtime": "Vite local preview; fixture/session memory only",
+  "credentials": "demo fixture entered at runtime; no credentials persisted",
+  "viewportMatrix": [
+    {
+      "device": "Desktop",
+      "width": 1672,
+      "height": 941,
+      "dpr": 1
+    },
+    {
+      "device": "Tablet",
+      "width": 992,
+      "height": 1586,
+      "dpr": 1
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "records": [
+    {
+      "reference": "REF-01",
+      "name": "queue-list",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-01_Desktop.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".s13-overview": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 89,
+          "visible": true
+        },
+        ".s13-tabs": {
+          "x": 284,
+          "y": 203,
+          "width": 1364,
+          "height": 57,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 284,
+          "y": 280,
+          "width": 1364,
+          "height": 967,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": {
+          "x": 284,
+          "y": 352,
+          "width": 1364,
+          "height": 745,
+          "visible": true
+        }
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-01",
+      "name": "queue-list",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-01_Tablet.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-sidebar": null,
+        ".s13-overview": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 89,
+          "visible": true
+        },
+        ".s13-tabs": {
+          "x": 24,
+          "y": 213,
+          "width": 944,
+          "height": 57,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 24,
+          "y": 290,
+          "width": 944,
+          "height": 967,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": {
+          "x": 24,
+          "y": 362,
+          "width": 944,
+          "height": 745,
+          "visible": true
+        }
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-02",
+      "name": "orders-list",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-02_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".s14-list": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1507,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1507,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": null
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-02",
+      "name": "orders-list",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-02_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-sidebar": null,
+        ".s14-list": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1507,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1507,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": null
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-03",
+      "name": "trays-list",
+      "device": "Desktop",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Actual S11 route fell back to operational source and returned INCOMPLETE_POPULATION; no legacy source switch was exposed."
+    },
+    {
+      "reference": "REF-03",
+      "name": "trays-list",
+      "device": "Tablet",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Actual S11 route fell back to operational source and returned INCOMPLETE_POPULATION; no legacy source switch was exposed."
+    },
+    {
+      "reference": "REF-04",
+      "name": "history-list",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-04_Desktop.png",
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-tray-panel": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 992.140625,
+          "visible": true
+        },
+        ".hn-tray-filter-card": {
+          "x": 284,
+          "y": 241.140625,
+          "width": 1364,
+          "height": 44,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": {
+          "x": 284,
+          "y": 309.140625,
+          "width": 1364,
+          "height": 709,
+          "visible": true
+        }
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-04",
+      "name": "history-list",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-04_Tablet.png",
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-sidebar": null,
+        ".hn-tray-panel": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 1020.140625,
+          "visible": true
+        },
+        ".hn-tray-filter-card": {
+          "x": 24,
+          "y": 251.140625,
+          "width": 944,
+          "height": 72,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": {
+          "x": 24,
+          "y": 347.140625,
+          "width": 944,
+          "height": 709,
+          "visible": true
+        }
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-05",
+      "name": "create-order-confirmation",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-05_Desktop.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".s13-overview": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 89,
+          "visible": true
+        },
+        ".s13-tabs": {
+          "x": 284,
+          "y": 203,
+          "width": 1364,
+          "height": 57,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 284,
+          "y": 280,
+          "width": 1364,
+          "height": 967,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": {
+          "x": 284,
+          "y": 352,
+          "width": 1364,
+          "height": 745,
+          "visible": true
+        }
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-05",
+      "name": "create-order-confirmation",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-05_Tablet.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-sidebar": null,
+        ".s13-overview": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 89,
+          "visible": true
+        },
+        ".s13-tabs": {
+          "x": 24,
+          "y": 213,
+          "width": 944,
+          "height": 57,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 24,
+          "y": 290,
+          "width": 944,
+          "height": 967,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": {
+          "x": 24,
+          "y": 362,
+          "width": 944,
+          "height": 745,
+          "visible": true
+        }
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-06",
+      "name": "create-order-success",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-06_Desktop.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-06",
+      "name": "create-order-success",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-06_Tablet.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-07",
+      "name": "confirmed-order-detail",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-07_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".s14-list": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1507,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1507,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": null
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-07",
+      "name": "confirmed-order-detail",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-07_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-sidebar": null,
+        ".s14-list": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1507,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1507,
+          "visible": true
+        },
+        ".hn-tray-table-wrap": null
+      },
+      "overflow": false,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-08",
+      "name": "order-validation",
+      "device": "Desktop",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Destination tray is required and confirm button is disabled with blank selection; deterministic validation state cannot be reached."
+    },
+    {
+      "reference": "REF-08",
+      "name": "order-validation",
+      "device": "Tablet",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Destination tray is required and confirm button is disabled with blank selection; deterministic validation state cannot be reached."
+    },
+    {
+      "reference": "REF-09",
+      "name": "tray-detail",
+      "device": "Desktop",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Depends on S11 accepted catalogue detail; unavailable while operational S11 source is incomplete."
+    },
+    {
+      "reference": "REF-09",
+      "name": "tray-detail",
+      "device": "Tablet",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Depends on S11 accepted catalogue detail; unavailable while operational S11 source is incomplete."
+    },
+    {
+      "reference": "REF-10",
+      "name": "order-confirm-editor",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-10_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-10",
+      "name": "order-confirm-editor",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-10_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Real runtime preview state captured before scoped implementation changes."
+    },
+    {
+      "reference": "REF-11",
+      "name": "stale-order-data",
+      "device": "Desktop",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "No deterministic stale-version fixture or mutation trigger exposed by runtime."
+    },
+    {
+      "reference": "REF-11",
+      "name": "stale-order-data",
+      "device": "Tablet",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "No deterministic stale-version fixture or mutation trigger exposed by runtime."
+    },
+    {
+      "reference": "REF-12",
+      "name": "no-tray-state",
+      "device": "Desktop",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "No deterministic empty-tray fixture exposed; seeded trays are available."
+    },
+    {
+      "reference": "REF-12",
+      "name": "no-tray-state",
+      "device": "Tablet",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "No deterministic empty-tray fixture exposed; seeded trays are available."
+    },
+    {
+      "reference": "REF-13",
+      "name": "forbidden-history",
+      "device": "Desktop",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Forbidden history requires an unavailable RBAC/permission fixture; actual preview history is readable."
+    },
+    {
+      "reference": "REF-13",
+      "name": "forbidden-history",
+      "device": "Tablet",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "sourceSha": "bca3db9062c9246d1fe780fc9e52110128d40859",
+      "domGeometry": null,
+      "overflow": null,
+      "notes": "Forbidden history requires an unavailable RBAC/permission fixture; actual preview history is readable."
+    }
+  ]
+}

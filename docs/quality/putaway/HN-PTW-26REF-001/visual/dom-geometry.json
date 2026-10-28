@@ -1,0 +1,466 @@
+[
+  {
+    "id": "REF-01",
+    "device": "Desktop",
+    "kind": "s13",
+    "route": "http://127.0.0.1:5291/#/preview/S13",
+    "innerWidth": 1672,
+    "innerHeight": 941,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 284,
+        "y": 16,
+        "width": 1364,
+        "height": 54,
+        "visible": true
+      },
+      ".hn-sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 260,
+        "height": 941,
+        "visible": true
+      },
+      ".s13-overview": {
+        "x": 284,
+        "y": 94,
+        "width": 1364,
+        "height": 89,
+        "visible": true
+      },
+      ".s13-tabs": {
+        "x": 284,
+        "y": 203,
+        "width": 1364,
+        "height": 57,
+        "visible": true
+      },
+      "[data-operational-putaway-queue]": {
+        "x": 284,
+        "y": 280,
+        "width": 1364,
+        "height": 967,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": {
+        "x": 284,
+        "y": 352,
+        "width": 1364,
+        "height": 745,
+        "visible": true
+      }
+    }
+  },
+  {
+    "id": "REF-05",
+    "device": "Desktop",
+    "kind": "s13",
+    "route": "http://127.0.0.1:5291/#/preview/S13",
+    "innerWidth": 1672,
+    "innerHeight": 941,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 284,
+        "y": 16,
+        "width": 1364,
+        "height": 54,
+        "visible": true
+      },
+      ".hn-sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 260,
+        "height": 941,
+        "visible": true
+      },
+      ".s13-overview": {
+        "x": 284,
+        "y": 94,
+        "width": 1364,
+        "height": 89,
+        "visible": true
+      },
+      ".s13-tabs": {
+        "x": 284,
+        "y": 203,
+        "width": 1364,
+        "height": 57,
+        "visible": true
+      },
+      "[data-operational-putaway-queue]": {
+        "x": 284,
+        "y": 280,
+        "width": 1364,
+        "height": 967,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": {
+        "x": 284,
+        "y": 352,
+        "width": 1364,
+        "height": 745,
+        "visible": true
+      }
+    }
+  },
+  {
+    "id": "REF-02",
+    "device": "Desktop",
+    "kind": "s14",
+    "route": "http://127.0.0.1:5291/#/preview/S14",
+    "innerWidth": 1672,
+    "innerHeight": 941,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 284,
+        "y": 16,
+        "width": 1364,
+        "height": 54,
+        "visible": true
+      },
+      ".hn-sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 260,
+        "height": 941,
+        "visible": true
+      },
+      ".s14-list": {
+        "x": 284,
+        "y": 237,
+        "width": 1364,
+        "height": 1507,
+        "visible": true
+      },
+      "[data-operational-putaways]": {
+        "x": 284,
+        "y": 237,
+        "width": 1364,
+        "height": 1507,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": null
+    }
+  },
+  {
+    "id": "REF-07",
+    "device": "Desktop",
+    "kind": "s14",
+    "route": "http://127.0.0.1:5291/#/preview/S14",
+    "innerWidth": 1672,
+    "innerHeight": 941,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 284,
+        "y": 16,
+        "width": 1364,
+        "height": 54,
+        "visible": true
+      },
+      ".hn-sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 260,
+        "height": 941,
+        "visible": true
+      },
+      ".s14-list": {
+        "x": 284,
+        "y": 237,
+        "width": 1364,
+        "height": 1507,
+        "visible": true
+      },
+      "[data-operational-putaways]": {
+        "x": 284,
+        "y": 237,
+        "width": 1364,
+        "height": 1507,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": null
+    }
+  },
+  {
+    "id": "REF-04",
+    "device": "Desktop",
+    "kind": "history",
+    "route": "http://127.0.0.1:5291/#/preview/S14/history",
+    "innerWidth": 1672,
+    "innerHeight": 941,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 284,
+        "y": 16,
+        "width": 1364,
+        "height": 54,
+        "visible": true
+      },
+      ".hn-sidebar": {
+        "x": 0,
+        "y": 0,
+        "width": 260,
+        "height": 941,
+        "visible": true
+      },
+      ".hn-tray-panel": {
+        "x": 284,
+        "y": 94,
+        "width": 1364,
+        "height": 992.140625,
+        "visible": true
+      },
+      ".hn-tray-filter-card": {
+        "x": 284,
+        "y": 241.140625,
+        "width": 1364,
+        "height": 44,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": {
+        "x": 284,
+        "y": 309.140625,
+        "width": 1364,
+        "height": 709,
+        "visible": true
+      }
+    }
+  },
+  {
+    "id": "REF-01",
+    "device": "Tablet",
+    "kind": "s13",
+    "route": "http://127.0.0.1:5291/#/preview/S13",
+    "innerWidth": 992,
+    "innerHeight": 1586,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 24,
+        "y": 16,
+        "width": 944,
+        "height": 64,
+        "visible": true
+      },
+      ".hn-sidebar": null,
+      ".s13-overview": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 89,
+        "visible": true
+      },
+      ".s13-tabs": {
+        "x": 24,
+        "y": 213,
+        "width": 944,
+        "height": 57,
+        "visible": true
+      },
+      "[data-operational-putaway-queue]": {
+        "x": 24,
+        "y": 290,
+        "width": 944,
+        "height": 967,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": {
+        "x": 24,
+        "y": 362,
+        "width": 944,
+        "height": 745,
+        "visible": true
+      }
+    }
+  },
+  {
+    "id": "REF-05",
+    "device": "Tablet",
+    "kind": "s13",
+    "route": "http://127.0.0.1:5291/#/preview/S13",
+    "innerWidth": 992,
+    "innerHeight": 1586,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 24,
+        "y": 16,
+        "width": 944,
+        "height": 64,
+        "visible": true
+      },
+      ".hn-sidebar": null,
+      ".s13-overview": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 89,
+        "visible": true
+      },
+      ".s13-tabs": {
+        "x": 24,
+        "y": 213,
+        "width": 944,
+        "height": 57,
+        "visible": true
+      },
+      "[data-operational-putaway-queue]": {
+        "x": 24,
+        "y": 290,
+        "width": 944,
+        "height": 967,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": {
+        "x": 24,
+        "y": 362,
+        "width": 944,
+        "height": 745,
+        "visible": true
+      }
+    }
+  },
+  {
+    "id": "REF-02",
+    "device": "Tablet",
+    "kind": "s14",
+    "route": "http://127.0.0.1:5291/#/preview/S14",
+    "innerWidth": 992,
+    "innerHeight": 1586,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 24,
+        "y": 16,
+        "width": 944,
+        "height": 64,
+        "visible": true
+      },
+      ".hn-sidebar": null,
+      ".s14-list": {
+        "x": 24,
+        "y": 247,
+        "width": 944,
+        "height": 1507,
+        "visible": true
+      },
+      "[data-operational-putaways]": {
+        "x": 24,
+        "y": 247,
+        "width": 944,
+        "height": 1507,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": null
+    }
+  },
+  {
+    "id": "REF-07",
+    "device": "Tablet",
+    "kind": "s14",
+    "route": "http://127.0.0.1:5291/#/preview/S14",
+    "innerWidth": 992,
+    "innerHeight": 1586,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 24,
+        "y": 16,
+        "width": 944,
+        "height": 64,
+        "visible": true
+      },
+      ".hn-sidebar": null,
+      ".s14-list": {
+        "x": 24,
+        "y": 247,
+        "width": 944,
+        "height": 1507,
+        "visible": true
+      },
+      "[data-operational-putaways]": {
+        "x": 24,
+        "y": 247,
+        "width": 944,
+        "height": 1507,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": null
+    }
+  },
+  {
+    "id": "REF-04",
+    "device": "Tablet",
+    "kind": "history",
+    "route": "http://127.0.0.1:5291/#/preview/S14/history",
+    "innerWidth": 992,
+    "innerHeight": 1586,
+    "dpr": 1,
+    "locale": "vi-VN",
+    "theme": "light",
+    "overflow": false,
+    "selectors": {
+      ".hn-header": {
+        "x": 24,
+        "y": 16,
+        "width": 944,
+        "height": 64,
+        "visible": true
+      },
+      ".hn-sidebar": null,
+      ".hn-tray-panel": {
+        "x": 24,
+        "y": 104,
+        "width": 944,
+        "height": 1020.140625,
+        "visible": true
+      },
+      ".hn-tray-filter-card": {
+        "x": 24,
+        "y": 251.140625,
+        "width": 944,
+        "height": 72,
+        "visible": true
+      },
+      ".hn-tray-table-wrap": {
+        "x": 24,
+        "y": 347.140625,
+        "width": 944,
+        "height": 709,
+        "visible": true
+      }
+    }
+  }
+]
