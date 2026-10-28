@@ -1,0 +1,662 @@
+{
+  "sha": "6ea167125643d10d6545b28df452511af54c6f09",
+  "base": "http://127.0.0.1:5291",
+  "capturedAt": "2026-10-28T03:28:51.991Z",
+  "results": [
+    {
+      "reference": "REF-01",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-01_Desktop.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 89,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 284,
+          "y": 280,
+          "width": 1364,
+          "height": 967,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-05",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-05_Desktop.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 89,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 284,
+          "y": 280,
+          "width": 1364,
+          "height": 967,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 476,
+          "y": 239.296875,
+          "width": 720,
+          "height": 462.390625,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-06",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-06_Desktop.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 89,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 284,
+          "y": 280,
+          "width": 1364,
+          "height": 967,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 476,
+          "y": 198,
+          "width": 720,
+          "height": 545,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-02",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-02_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1576,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-07",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-07_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1576,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 356,
+          "y": 259.5,
+          "width": 960,
+          "height": 422,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-10",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-10_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": -524,
+          "width": 1364,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 284,
+          "y": -381,
+          "width": 1364,
+          "height": 1576,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 476,
+          "y": 335.296875,
+          "width": 720,
+          "height": 270.390625,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-04",
+      "device": "Desktop",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-04_Desktop.png",
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        "[data-putaway-history]": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 992.140625,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-01",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-01_Tablet.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 89,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 24,
+          "y": 290,
+          "width": 944,
+          "height": 967,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-05",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-05_Tablet.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 89,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 24,
+          "y": 290,
+          "width": 944,
+          "height": 967,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 136,
+          "y": 561.796875,
+          "width": 720,
+          "height": 462.390625,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-06",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-06_Tablet.png",
+      "route": "#/preview/S13",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 89,
+          "visible": true
+        },
+        "[data-operational-putaway-queue]": {
+          "x": 24,
+          "y": 290,
+          "width": 944,
+          "height": 890,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 136,
+          "y": 531.5,
+          "width": 720,
+          "height": 523,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-02",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-02_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1645,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-07",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-07_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1645,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 24,
+          "y": 582,
+          "width": 944,
+          "height": 422,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-10",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-10_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1645,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 136,
+          "y": 657.796875,
+          "width": 720,
+          "height": 270.390625,
+          "visible": true
+        }
+      },
+      "notes": ""
+    },
+    {
+      "reference": "REF-04",
+      "device": "Tablet",
+      "status": "CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/before/REF-04_Tablet.png",
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "lang": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        "[data-putaway-history]": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 1020.140625,
+          "visible": true
+        }
+      },
+      "notes": ""
+    }
+  ],
+  "diagnostics": {
+    "errors": [],
+    "failed": []
+  }
+}

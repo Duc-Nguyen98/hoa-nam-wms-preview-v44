@@ -1,0 +1,42 @@
+[
+  {
+    "reference": "REF-03",
+    "device": "Desktop",
+    "w": 1672,
+    "h": 941,
+    "n": 771273,
+    "mean": 22.960746652158363,
+    "diff": "docs/quality/putaway/HN-PTW-26REF-001/visual/diff/REF-03_Desktop_reference_diff.png",
+    "changedPct": 49.02100737787857
+  },
+  {
+    "reference": "REF-09",
+    "device": "Desktop",
+    "w": 1672,
+    "h": 941,
+    "n": 988034,
+    "mean": 28.594301635404324,
+    "diff": "docs/quality/putaway/HN-PTW-26REF-001/visual/diff/REF-09_Desktop_reference_diff.png",
+    "changedPct": 62.79802612511377
+  },
+  {
+    "reference": "REF-03",
+    "device": "Tablet",
+    "w": 992,
+    "h": 1586,
+    "n": 542338,
+    "mean": 20.66637895090103,
+    "diff": "docs/quality/putaway/HN-PTW-26REF-001/visual/diff/REF-03_Tablet_reference_diff.png",
+    "changedPct": 34.47110299800675
+  },
+  {
+    "reference": "REF-09",
+    "device": "Tablet",
+    "w": 992,
+    "h": 1586,
+    "n": 797346,
+    "mean": 35.96414824268803,
+    "diff": "docs/quality/putaway/HN-PTW-26REF-001/visual/diff/REF-09_Tablet_reference_diff.png",
+    "changedPct": 50.67945836553716
+  }
+]

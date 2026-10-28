@@ -1,0 +1,452 @@
+{
+  "task": "HN-PTW-26REF-001",
+  "base": "http://127.0.0.1:5291",
+  "sourceSha": "6ea167125643d10d6545b28df452511af54c6f09",
+  "capturedAt": "2026-10-28T04:00:29.481Z",
+  "freshBrowserContext": true,
+  "results": [
+    {
+      "reference": "REF-03",
+      "device": "Desktop",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-03_Desktop.png",
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 66,
+          "visible": true
+        },
+        "[data-operational-trays]": {
+          "x": 284,
+          "y": 180,
+          "width": 1364,
+          "height": 1112,
+          "visible": true
+        }
+      },
+      "notes": "S11 operational tray list after FQ-PTW fixes"
+    },
+    {
+      "reference": "REF-09",
+      "device": "Desktop",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-09_Desktop.png",
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 66,
+          "visible": true
+        },
+        "[data-operational-trays]": {
+          "x": 284,
+          "y": 180,
+          "width": 1364,
+          "height": 1112,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 356,
+          "y": 90.5,
+          "width": 960,
+          "height": 760,
+          "visible": true
+        }
+      },
+      "notes": "S11 tray detail after FQ-PTW fixes; codes=TRAY-001,TRAY-002,TRAY-003,TRAY-004,TRAY-005,TRAY-006,TRAY-007,TRAY-008,TRAY-009"
+    },
+    {
+      "reference": "REF-02",
+      "device": "Desktop",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-02_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1507,
+          "visible": true
+        }
+      },
+      "notes": "S14 order list impacted-state retest"
+    },
+    {
+      "reference": "REF-07",
+      "device": "Desktop",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-07_Desktop.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 284,
+          "y": 237,
+          "width": 1364,
+          "height": 1507,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 356,
+          "y": 259.5,
+          "width": 960,
+          "height": 422,
+          "visible": true
+        }
+      },
+      "notes": "S14 confirmed order detail impacted-state retest"
+    },
+    {
+      "reference": "REF-04",
+      "device": "Desktop",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-04_Desktop.png",
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 1672,
+        "height": 941
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 284,
+          "y": 16,
+          "width": 1364,
+          "height": 54,
+          "visible": true
+        },
+        ".hn-sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 260,
+          "height": 941,
+          "visible": true
+        },
+        "[data-putaway-history]": {
+          "x": 284,
+          "y": 94,
+          "width": 1364,
+          "height": 992.140625,
+          "visible": true
+        }
+      },
+      "notes": "S14 history impacted-state retest"
+    },
+    {
+      "reference": "REF-03",
+      "device": "Tablet",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-03_Tablet.png",
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-trays]": {
+          "x": 24,
+          "y": 186,
+          "width": 944,
+          "height": 3792,
+          "visible": true
+        }
+      },
+      "notes": "S11 operational tray list after FQ-PTW fixes"
+    },
+    {
+      "reference": "REF-09",
+      "device": "Tablet",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-09_Tablet.png",
+      "route": "#/preview/S11",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-trays]": {
+          "x": 24,
+          "y": 186,
+          "width": 944,
+          "height": 3792,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 24,
+          "y": 165.8125,
+          "width": 944,
+          "height": 1254.375,
+          "visible": true
+        }
+      },
+      "notes": "S11 tray detail after FQ-PTW fixes; codes=TRAY-001,TRAY-002,TRAY-003,TRAY-004,TRAY-005,TRAY-006,TRAY-007,TRAY-008,TRAY-009"
+    },
+    {
+      "reference": "REF-02",
+      "device": "Tablet",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-02_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1507,
+          "visible": true
+        }
+      },
+      "notes": "S14 order list impacted-state retest"
+    },
+    {
+      "reference": "REF-07",
+      "device": "Tablet",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-07_Tablet.png",
+      "route": "#/preview/S14",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        ".hn-page-heading": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 62,
+          "visible": true
+        },
+        "[data-operational-putaways]": {
+          "x": 24,
+          "y": 247,
+          "width": 944,
+          "height": 1507,
+          "visible": true
+        },
+        "dialog[open]": {
+          "x": 24,
+          "y": 582,
+          "width": 944,
+          "height": 422,
+          "visible": true
+        }
+      },
+      "notes": "S14 confirmed order detail impacted-state retest"
+    },
+    {
+      "reference": "REF-04",
+      "device": "Tablet",
+      "status": "AFTER_CAPTURED",
+      "screenshot": "docs/quality/putaway/HN-PTW-26REF-001/visual/after/REF-04_Tablet.png",
+      "route": "#/preview/S14/history",
+      "viewport": {
+        "width": 992,
+        "height": 1586
+      },
+      "dpr": 1,
+      "locale": "vi-VN",
+      "theme": "light",
+      "overflow": false,
+      "geometry": {
+        ".hn-header": {
+          "x": 24,
+          "y": 16,
+          "width": 944,
+          "height": 64,
+          "visible": true
+        },
+        "[data-putaway-history]": {
+          "x": 24,
+          "y": 104,
+          "width": 944,
+          "height": 1020.140625,
+          "visible": true
+        }
+      },
+      "notes": "S14 history impacted-state retest"
+    }
+  ],
+  "consoleErrors": [],
+  "requestFailures": [],
+  "workingTreeDirty": true,
+  "sourceNote": "HEAD SHA plus current uncommitted source working tree under retest; no source edits by S00#3."
+}

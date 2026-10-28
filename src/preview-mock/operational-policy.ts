@@ -1,12 +1,13 @@
 import type { BusinessApplyContext, BusinessHandler, BusinessRecord, BusinessSnapshot } from './business-repository';
 import { canonicalBusinessJson } from './business-repository';
 import type { DependentRecordWrite } from './business-atomic';
-import type { OperationalCommand, OperationalCommandName, OperationalMeta, OperationalScope, OperationalSnapshot, OperationalSurface, ScenarioData, StockProfileData, TypedOperationalRecord, ReceiptData, BoxData, StockEventData, PutawayData } from '../contracts/operational-preview';
+import type { OperationalCommand, OperationalCommandName, OperationalMeta, OperationalScope, OperationalSnapshot, OperationalSurface, ScenarioData, StockProfileData, TypedOperationalRecord, ReceiptData, InboundLineData, BoxData, StockEventData, PutawayData } from '../contracts/operational-preview';
 import { projectCatalogSnapshot } from './catalog-policy';
 import { PreviewHttpError } from './errors';
 import { assertInactiveMasterSetupRequest } from './inactive-master-scope';
 import { createApprovedTraySeed } from './putaway-approved-seed';
 export const OPERATIONAL_ACTOR = 'preview:ducquang';
+const approvedTraySetup = createApprovedTraySeed().trays;
 export const OPERATIONAL_SURFACES: Readonly<Record<OperationalCommandName, OperationalSurface>> = {
   'qa.product.set-status':'QA', 'qa.sku.set-status':'QA', 'qa.recipient.set-status':'QA',
   'scenario.reset-own':'QA', 'scenario.seed-approved':'QA', 'stock-profiles.create':'WEB', 'inbound.create':'WEB', 'inbound.update-header':'WEB',
@@ -83,7 +84,7 @@ const reset:OperationPlanner=(raw,_current,c)=>{
   const writes:DependentRecordWrite[]=old?[{id:old.id,kind:old.kind,expectedVersion:old.version,data:{...old.data,status:'ARCHIVED',updatedAt:c.committedAt,updatedBy:c.actorKey}}]:[];
   for(const n of Array.from({ length: 9 }, (_, index) => index + 1))for(const kind of ['location','tray']){
     const id=`operational-setup:${kind}:${n}`;
-    const setup={warehouseId:'warehouse-hn-01',active:true,setupManifestId:'HN-SIX-FLOWS-v0.1',code:`PREVIEW-${kind.toUpperCase()}-${n}`,...(kind==='tray'?{locationId:`operational-setup:location:${n}`}:{})};
+    const setup={warehouseId:'warehouse-hn-01',active:true,setupManifestId:'HN-SIX-FLOWS-v0.1',code:kind==='tray'?approvedTraySetup[n-1].code:`PREVIEW-${kind.toUpperCase()}-${n}`,...(kind==='tray'?{locationId:`operational-setup:location:${n}`}:{})};
     const existing=c.records.find(r=>r.id===id);
     if(existing){if(existing.kind!=='operational-setup-'+kind||canonicalBusinessJson(existing.data)!==canonicalBusinessJson(setup))return opFail('MOCK_STATE_INVALID',503);}
     else writes.push({id,kind:'operational-setup-'+kind,expectedVersion:null,data:setup});
@@ -99,7 +100,7 @@ const seedApproved:OperationPlanner=(raw,current,c)=>{
   if(approvedSkuIds.length!==9)return opFail('SKU_UNAVAILABLE');
   const selectedSkuIds=[...new Set([...scenario.data.selectedSkuIds,...approvedSkuIds])];
   for(const n of Array.from({ length: 9 }, (_, index) => index + 1))for(const kind of ['location','tray']){
-    const id=`operational-setup:${kind}:${n}`,setup={warehouseId:'warehouse-hn-01',active:true,setupManifestId:'HN-SIX-FLOWS-v0.1',code:`PREVIEW-${kind.toUpperCase()}-${n}`,...(kind==='tray'?{locationId:`operational-setup:location:${n}`}:{})};
+    const id=`operational-setup:${kind}:${n}`,setup={warehouseId:'warehouse-hn-01',active:true,setupManifestId:'HN-SIX-FLOWS-v0.1',code:kind==='tray'?approvedTraySetup[n-1].code:`PREVIEW-${kind.toUpperCase()}-${n}`,...(kind==='tray'?{locationId:`operational-setup:location:${n}`}:{})};
     const existing=c.records.find(record=>record.id===id);
     if(existing){if(existing.kind!=='operational-setup-'+kind||canonicalBusinessJson(existing.data)!==canonicalBusinessJson(setup))return opFail('MOCK_STATE_INVALID',503);}
     else writes.push({id,kind:'operational-setup-'+kind,expectedVersion:null,data:setup});
@@ -107,15 +108,16 @@ const seedApproved:OperationPlanner=(raw,current,c)=>{
   for(const row of manifest.boxes){
     const sku=catalog.skus.find(item=>item.code===row.skuCode),product=sku&&catalog.products.find(item=>item.id===sku.productId);
     if(!sku||!product||!selectedSkuIds.includes(sku.id))return opFail('SKU_UNAVAILABLE');
-    const receiptId=`receipt:approved:${row.receiptCode}`,boxId=`box:approved:${row.code}`,eventId=`stock-event:approved:${row.code}`;
+    const receiptId=`receipt:approved:${row.receiptCode}`,boxId=`box:approved:${row.code}`,lineId=`inbound-line:approved:${row.code}`,eventId=`stock-event:approved:${row.code}`;
     const meta=opMeta({scenarioId:scenario.id,generation:scenario.data.generation},c.committedAt,c.actorKey),receipt:ReceiptData={...meta,code:row.receiptCode,mode:'COMPONENT',sourceText:'Kho Hoa Nam · dữ liệu duyệt HN_Astra',referenceText:row.receiptCode,status:'POSTED',appSubmissionId:null,submittedVersion:null,submittedHash:null,postedEventIds:[eventId]};
-    const box:BoxData={...meta,physicalCode:row.code,skuId:sku.id,sourceReceiptId:receiptId,sourceLineId:`inbound-line:approved:${row.code}`,unit:product.unit,status:'IN_STOCK',issuedDocumentId:null,posted:true,trayId:row.trayCode?`operational-setup:tray:${Number(row.trayCode.slice(-3))}`:null,contentRevision:2};
-    const event:StockEventData={...meta,eventType:'RECEIPT_POST',documentId:receiptId,sourceLineId:box.sourceLineId,skuId:sku.id,unit:product.unit,signedQuantity:row.quantity,physicalIds:[],boxId,originalEventId:null,commandId:c.commandId,actor:c.actorKey,committedAt:c.committedAt,commitSnapshotId:c.commitSnapshotId};
-    writes.push({id:receiptId,kind:'receipt',expectedVersion:null,data:receipt},{id:boxId,kind:'box',expectedVersion:null,data:box},{id:eventId,kind:'stock-event',expectedVersion:null,data:event});
+    const line:InboundLineData={...meta,receiptId,skuId:sku.id,tracking:'COMPONENT_BOX',unit:product.unit,quantity:row.quantity,physicalIds:[],boxId,skuVersion:sku.version,productVersion:product.version,profileId:`profile:approved:${row.skuCode}`,profileVersion:1};
+    const box:BoxData={...meta,physicalCode:row.code,skuId:sku.id,sourceReceiptId:receiptId,sourceLineId:lineId,unit:product.unit,status:'IN_STOCK',issuedDocumentId:null,posted:true,trayId:row.trayCode?`operational-setup:tray:${Number(row.trayCode.slice(-3))}`:null,contentRevision:2};
+    const event:StockEventData={...meta,eventType:'RECEIPT_POST',documentId:receiptId,sourceLineId:lineId,skuId:sku.id,unit:product.unit,signedQuantity:row.quantity,physicalIds:[],boxId,originalEventId:null,commandId:c.commandId,actor:c.actorKey,committedAt:c.committedAt,commitSnapshotId:c.commitSnapshotId};
+    writes.push({id:receiptId,kind:'receipt',expectedVersion:null,data:receipt},{id:lineId,kind:'inbound-line',expectedVersion:null,data:line},{id:boxId,kind:'box',expectedVersion:null,data:box},{id:eventId,kind:'stock-event',expectedVersion:null,data:event});
     if(row.status!=='QUEUE'){
       const putawayId=`putaway:approved:${row.code}`,putaway:PutawayData={...meta,boxId,receiptId,capturedBoxVersion:1,capturedContentRevision:2,quantityAtCreate:row.quantity,status:row.status==='CONFIRMED'?'CONFIRMED':'DRAFT',trayId:box.trayId,cancellationReason:null};
       writes.push({id:putawayId,kind:'putaway',expectedVersion:null,data:putaway});
-      writes.push({id:`audit:approved:${row.code}`,kind:'audit-event',expectedVersion:null,data:{...meta,entityId:putawayId,action:row.status==='CONFIRMED'?'putaway.confirm':'putaway.create',previousVersion:null,newVersion:1,commandId:c.commandId,sourceSurface:'WEB',actor:c.actorKey,timestamp:c.committedAt,FK:[boxId,receiptId,eventId],eventIds:[eventId],commitSnapshotId:c.commitSnapshotId}});
+      writes.push({id:`audit:approved:${row.code}`,kind:'audit-event',expectedVersion:null,data:{...meta,entityId:putawayId,action:row.status==='CONFIRMED'?'putaway.confirm':'putaway.create',previousVersion:null,newVersion:1,commandId:c.commandId,sourceSurface:'WEB',actor:c.actorKey,timestamp:c.committedAt,FK:[boxId,receiptId,lineId,eventId],eventIds:[eventId],commitSnapshotId:c.commitSnapshotId}});
     }
   }
   return {data:{...scenario.data,selectedSkuIds,updatedAt:c.committedAt,updatedBy:c.actorKey},writes};

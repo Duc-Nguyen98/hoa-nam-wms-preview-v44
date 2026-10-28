@@ -1,5 +1,7 @@
 # Data Integrity Report — HN-PTW-26REF-001
 
+Candidate SHA: `6ea167125643d10d6545b28df452511af54c6f09` (`DEV`) plus the uncommitted PTW seed fix, retested 2026-10-28 Asia/Bangkok. All writes below used fresh in-memory `installPreviewMock` persistence; no production/staging data was touched.
+
 ## Evidence (MOCK)
 
 The direct policy probe created a component BOX with quantity 5, then executed putaway commands through the canonical mock adapters:
@@ -14,6 +16,8 @@ The direct policy probe created a component BOX with quantity 5, then executed p
 }
 ```
 
+The candidate direct policy probe reproduced the same checks with a fresh component BOX quantity 5: Draft left `trayId: null`, `stockQty 5→5`, and `stockEvents 1→1`; duplicate create returned `BOX_HAS_ACTIVE_TASK`, stale observed version returned `STALE_BOX_VERSION`, confirmation mapped both task and BOX to `operational-setup:tray:1`, and a second confirmation returned `TASK_NOT_DRAFT`.
+
 ## Source/fixture audit
 
 - `eligibleBox` requires a posted, in-stock BOX, a posted source receipt, a positive ledger quantity, and `trayId === null`.
@@ -24,6 +28,8 @@ The direct policy probe created a component BOX with quantity 5, then executed p
 
 ## Integrity result
 
-Core PTW-01 data invariants PASS in MOCK. The approved seed’s display code contract needs review: the manifest labels trays `TRAY-001`…`TRAY-009`, while `operational-policy.ts` creates setup records with display codes `PREVIEW-TRAY-1`…`PREVIEW-TRAY-9`; browser history and S14 show the `PREVIEW-TRAY-*` values. This is recorded as `FQ-PTW-001` in `DEFECT_REGISTER.md`.
+Core Draft→Confirm, mapping and stock-neutrality invariants PASS in MOCK. Retest of the repaired seed verified 27 approved BOXes each have a matching receipt/line/BOX link, nine exact tray codes, and nine S11 rows/details; FQ-PTW-004 is FIX VERIFIED.
+
+The approved seed and operational setup now use the manifest display codes `TRAY-001`…`TRAY-009`; browser S11 retest and seed regression both verified the contract. FQ-PTW-001 is FIX VERIFIED.
 
 No production or REAL_API data was read or changed.
