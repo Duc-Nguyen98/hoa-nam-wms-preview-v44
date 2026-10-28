@@ -4,7 +4,7 @@ import { S03_SHELL_NAVIGATION } from './s03-shell-navigation';
 // UI navigation metadata for the delivered shell and explicitly registered preview leaves.
 export const S00_SHELL_NAVIGATION: readonly ShellNavigationItem[] = S03_SHELL_NAVIGATION.map<ShellNavigationItem>(item =>
   item.key === 'operations'
-    ? { ...item, children: [
+    ? { ...item, label: 'NGHIỆP VỤ', icon: 'section' as const, section: true, children: [
       { key: 'inbound-management', label: 'Phiếu nhập kho', icon: 'download' as const, defaultExpanded: false,
         children: [{ key: 'S12', label: 'Phiếu nhập kho', href: '#/preview/S12', icon: 'documents' as const, leafIcon: true }] },
       { key: 'outbound-management', label: 'Xuất kho', icon: 'upload' as const, defaultExpanded: false,
@@ -39,19 +39,20 @@ export const S00_SHELL_NAVIGATION: readonly ShellNavigationItem[] = S03_SHELL_NA
       { key: 'S26', label: 'Truy vết hàng hóa', href: '#/preview/S26', icon: 'chart' as const, leafIcon: true },
     ] }
   : item.key === 'catalog'
-    ? { ...item, children: [
+    ? { ...item, defaultExpanded: false, children: [
       { key: 'S04', label: 'SKU', href: '#/preview/S04', icon: 'tag', leafIcon: true },
       ...(item.children ?? []).flatMap(child => child.key === 'S03' ? [child, { key: 'S05', label: 'Đại lý & nơi nhận', href: '#/preview/S05', icon: 'building' as const, leafIcon: true }] : [child]),
+      { key: 'sku-management', label: 'Quản lý mã SKU', icon: 'barcode' as const, defaultExpanded: false,
+        children: [{ key: 'S06', label: 'Sản phẩm trên App PV', href: '#/preview/S06', icon: 'eye' as const, leafIcon: true }] },
     ] }
-    : item.key === 'users' ? { ...item, key: 'S29', label: 'Người dùng & phân quyền', href: '#/preview/S29' }
-    : item.key === 'settings' ? { ...item, key: 'S28', label: 'Cấu hình hệ thống', href: '#/preview/S28' }
-    : item.key === 'audit' ? { ...item, key: 'S27', href: '#/preview/S27' }
+    : item.key === 'users' ? { key: 'admin-section', label: 'QUẢN TRỊ', icon: 'section' as const, section: true, children: [
+      { key: 'S29', label: 'Người dùng & phân quyền', href: '#/preview/S29', icon: 'users' as const, leafIcon: true },
+      { key: 'S28', label: 'Cấu hình hệ thống', href: '#/preview/S28', icon: 'settings' as const, leafIcon: true },
+      { key: 'S27', label: 'Nhật ký hệ thống', href: '#/preview/S27', icon: 'audit' as const, leafIcon: true },
+    ] }
+    : item.key === 'settings' || item.key === 'audit' ? { ...item, hidden: true }
     : item,
-).flatMap(item => item.key === 'catalog' ? [item, {
-  key: 'sku-management', label: 'Quản lý mã SKU', icon: 'barcode' as const, defaultExpanded: false,
-  children: [{ key: 'S06', label: 'Sản phẩm trên App PV', href: '#/preview/S06', icon: 'eye' as const, leafIcon: true }],
-}] : [item],
-);
+).flatMap(item => item ? [item] : []);
 export interface ShellDestination { searchText?: string; key: string; label: string; href: string; group?: string; icon?: ShellNavigationItem['icon'] }
 export function getShellDestinations(items: readonly ShellNavigationItem[], group?: string): ShellDestination[] {
   return items.flatMap(item => item.children?.length

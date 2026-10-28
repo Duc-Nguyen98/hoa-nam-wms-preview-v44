@@ -24,6 +24,8 @@ export interface ShellNavigationItem {
   /** Preserve an explicitly sourced icon for a nested destination. */
   leafIcon?: boolean;
   children?: readonly ShellNavigationItem[];
+  section?: boolean;
+  hidden?: boolean;
   defaultExpanded?: boolean;
   hasSubmenu?: boolean;
 }
@@ -224,6 +226,11 @@ export function GlobalShell({ title, children, navigation, activeKey, variant = 
   const navigate = (inDrawer: boolean) => { if (inDrawer) setDrawerOpen(false); setNavigationNotice(null); setHovered(false); setNavFocused(false); focusShellContent(); };
   const containsActive = (item: ShellNavigationItem): boolean => item.key === activeKey || Boolean(item.children?.some(containsActive));
   const renderItems = (items: readonly ShellNavigationItem[], rail: boolean, inDrawer: boolean, nested = false): ReactNode => items.map((item) => {
+    if (item.hidden) return null;
+    if (item.section) return <div key={item.key} className="hn-navigation__section" aria-label={item.label}>
+      <span className="hn-navigation__section-label">{item.label}</span>
+      {item.children && renderItems(item.children, rail, inDrawer, false)}
+    </div>;
     const isGroup = Boolean(item.children?.length);
     const opensDrawer = mode === 'rail' && !inDrawer && (isGroup || !item.href);
     const expanded = expandedGroups[item.key] ?? item.defaultExpanded ?? false;
