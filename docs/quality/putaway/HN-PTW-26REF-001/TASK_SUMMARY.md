@@ -2,25 +2,35 @@
 
 - **Target:** Putaway Management / Xếp khay
 - **Contract:** PTW-01 — LOCKED
-- **Routes:** `#/preview/S13`, `#/preview/S14`, `#/preview/S11`, `#/preview/S14/history`
-- **Branch/base:** `DEV` / `bca3db9062c9246d1fe780fc9e52110128d40859`
+- **Routes:** `#/preview/S13` queue, `#/preview/S14` orders, `#/preview/S11` trays, `#/preview/S14/history` history
+- **Branch:** `DEV`
+- **Source/evidence commit:** `69dfa35ec7029fe38e927fc8bdcaf0ed18c1c43e`
 - **Environment:** local Vite MOCK; no production mutation
 
 ## Coverage
 
-All 26 references were registered and hash-verified. Browser QA captured 14/26 actual ref-device states (REF-01, 02, 04, 05, 06, 07, 10 on Desktop and Tablet). Twelve states are BLOCKED: tray list/detail, blank-tray validation, stale conflict, no-tray and forbidden history. BEFORE evidence is in `visual/before/`; no AFTER or DIFF exists because no source fix was authorized on unresolved design/fixture gaps.
+- 26/26 references registered and hash-verified.
+- BEFORE: 14 real runtime captures; 10 PASS in runnable scope, 4 FAIL for density/fixture content, 12 BLOCKED by unavailable state or permission fixtures.
+- AFTER: 10 fresh captures covering REF-02, REF-03, REF-04, REF-07 and REF-09 on Desktop/Tablet, with zero console/request errors and no horizontal overflow.
+- No fabricated screenshot or synthetic PASS was used.
+
+## Fixes
+
+1. Approved tray setup display codes now derive from the PTW-01 seed (`TRAY-001`…`TRAY-009`).
+2. Approved seed now persists canonical `inbound-line` records and audit FK links, allowing S11 tray projection/detail to resolve receipt, line, SKU and BOX links.
+3. Added `tests/putaway-approved/operational-seed.test.ts` covering tray identity and S11 lookup completeness.
 
 ## Verified
 
-- Design custody: 26/26 PASS.
-- Local contract quality: PASS, 13 states / 26 references.
-- Putaway seed tests: 4/4 PASS.
-- Operational binding tests: 17/17 PASS.
-- Draft creates no mapping; Confirm creates mapping.
-- Whole-BOX confirmation is stock-neutral.
-- Duplicate create/confirm and stale BOX versions are rejected.
-- No console errors or failed requests in successful visual capture.
+- Draft creates no mapping; Confirm creates one whole-BOX mapping.
+- Stock and stock-event counts remain unchanged through putaway.
+- Duplicate create/confirm and stale BOX versions fail closed.
+- Tray seed regression 5/5 PASS; S15/S16 regression 33/33 PASS.
+- Browser S13/S14/S11/history flow passes on local MOCK with no page/console errors; tablet overflow false.
 
-## Open blockers
+## Open gates
 
-P1 fixture/authority gaps: S11 incomplete population, unavailable blank-tray/stale/RBAC fixtures, and inconsistent `TRAY-*` versus `PREVIEW-TRAY-*` display identifiers. P2: queue/order density and preview identifiers differ from reference composition. REAL_API, hosted CI and exact public preview SHA are unavailable.
+- REF-01/02 remain P2 visual density/fixture gaps.
+- REF-08 validation, REF-11 stale conflict, REF-12 no-tray, REF-13 forbidden history remain BLOCKED/NOT_RUN because their approved runtime fixtures are unavailable.
+- DPR2, REAL_API, staging, real RBAC and lost-response replay remain BLOCKED/NOT_RUN.
+- Hosted CI and exact public preview SHA remain BLOCKED; no push/deploy was made.
