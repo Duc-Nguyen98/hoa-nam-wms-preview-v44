@@ -1,0 +1,20 @@
+{
+  "executedAt": "2026-10-29T07:54:03.071Z",
+  "head": "0dd709236cb43f497f9e349349eebd9144e7175d",
+  "mode": "MOCK_MEMORY_AND_PURE_UNITS",
+  "scope": "27 tests incl immutable fixture, inventory projection/navigation, shared classification, putaway and S21 operational bindings",
+  "hashes": {
+    "src/features/S16/approved/adapter.ts": "33eb60696f6cb8ab8e383363ae8e14c333a78149cb3d994e66d4778bc11a371e",
+    "src/features/S16/approved/InventoryDesignWorkspace.tsx": "9667af39776a310ef23230e57a8e7dd4ecbec6282d8b401ba6ac78fe1470c3da",
+    "src/features/S16/approved/approved.css": "f0d4c9d13ccadb5ca0f188e17f61a7730042cbb08e684c80911422f9697e94de",
+    "src/features/S16/approved/projection.ts": "29a0f0a5f9055c4f03a2311bcd83262aab0aab2b7a4e96ccdea747ec1bea0ddc",
+    "src/features/S16/approved/navigation.ts": "bf2fbb004362ad61af9bb589b4da32cd201aa54e951ad5ca0b166e0dbfde411e",
+    "src/features/S21/InventoryReportScreen.tsx": "28b7962eb31c03f87dc1ab4265425d7bdd2e9ed5dbda43ab3cbe803b4d820d11",
+    "src/features/putaway/TrayUi.tsx": "89bcac6a889f902a70821929034a5eb88b5a7110ed2d0251f77fa0c0a0cbbf0b",
+    "src/shared/read-failure-kind.ts": "b42f88273fe18e529ec005c03dbe092e529000d443143f07305bbaf2842f8c44",
+    "tests/inventory-fidelity/fixture-contract.test.ts": "d16bfaa354dbfe81942baf7c20e1248c96ed3cc998c73a7eb0d4832824b95227"
+  },
+  "modelTelemetry": "NOT_VERIFIED: runtime model identity not exposed to worker",
+  "committedCandidate": "0dd709236cb43f497f9e349349eebd9144e7175d",
+  "committedSourceMatchesExecutedHashes": true
+}

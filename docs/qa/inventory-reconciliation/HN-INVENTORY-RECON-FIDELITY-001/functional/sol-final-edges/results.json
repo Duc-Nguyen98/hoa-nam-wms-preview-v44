@@ -1,0 +1,162 @@
+{
+  "base": "http://127.0.0.1:5341",
+  "applicationSource": "0dd709236cb43f497f9e349349eebd9144e7175d",
+  "buildId": "1ef2777576367344d9f5e63bf6b345b310d334b10a5659b9da9f55eef374ea74",
+  "mode": "MOCK",
+  "checks": [
+    {
+      "name": "warehouse location dependency exposes HN02 locations",
+      "status": "PASS",
+      "observations": {
+        "rows": [
+          "HN-HMI-008⧉Màn hình điều khiểnHN02B02-02Cái751560Xem ›",
+          "HN-MTR-005⧉Mô tơ cửaHN02B01-02Cái901080Xem ›",
+          "HN-SEN-003⧉Cảm biến quangHN02B02-01Cái50080420Xem ›"
+        ],
+        "options": [
+          "Tất cả vị trí",
+          "B01-02",
+          "B02-01",
+          "B02-02"
+        ]
+      }
+    },
+    {
+      "name": "changing warehouse clears incompatible selected location",
+      "status": "PASS",
+      "observations": {
+        "location": "",
+        "state": null
+      }
+    },
+    {
+      "name": "typing search is draft until Search or Enter",
+      "status": "PASS",
+      "observations": {
+        "draftRows": 9,
+        "appliedRows": 1
+      }
+    },
+    {
+      "name": "sku direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "PASS",
+      "observations": {
+        "state": "not-found",
+        "visible": "Tra cứu tồn kho › Tổng quan tồn kho\n← Quay lại\nTổng quan tồn kho\nKhông tìm thấy bản ghi\nKhông có dữ liệu phù hợp.\nVề tra cứu tồn"
+      }
+    },
+    {
+      "name": "allocation direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "PASS",
+      "observations": {
+        "state": "not-found",
+        "visible": "Tra cứu tồn kho › Phân bổ theo BOX\n← Quay lại\nPhân bổ theo BOX\nKhông tìm thấy bản ghi\nKhông có dữ liệu phù hợp.\nVề tra cứu tồn"
+      }
+    },
+    {
+      "name": "box direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "PASS",
+      "observations": {
+        "state": "not-found",
+        "visible": "Tra cứu tồn kho › Chi tiết BOX\n← Quay lại\nChi tiết BOX\nKhông tìm thấy BOX\nBOX không tồn tại hoặc đã được thay đổi.\nVề tra cứu tồn"
+      }
+    },
+    {
+      "name": "tray direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "PASS",
+      "observations": {
+        "state": "not-found",
+        "visible": "Tra cứu tồn kho › Chi tiết khay\n← Quay lại\nChi tiết khay\nKhông tìm thấy BOX\nBOX không tồn tại hoặc đã được thay đổi.\nVề tra cứu tồn"
+      }
+    },
+    {
+      "name": "movement direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "PASS",
+      "observations": {
+        "state": "not-found",
+        "visible": "Tra cứu tồn kho › Lịch sử biến động\n← Quay lại\nLịch sử biến động\nKhông tìm thấy bản ghi\nKhông có dữ liệu phù hợp.\nVề tra cứu tồn"
+      }
+    },
+    {
+      "name": "saved snapshot heading agrees with pinned snapshot date",
+      "status": "PASS",
+      "observations": {
+        "headingTime": "Thời điểm số liệu: 14:25 27/10/2026",
+        "detail": "Mã đối soát\nDS-20261027-01\nPhạm vi\nTất cả kho\nThời điểm\n14:25 27/10/2026\nKết quả\nKết quả đã lưu"
+      }
+    },
+    {
+      "name": "location scope remains consistent when opening SKU and BOX allocation",
+      "status": "PASS",
+      "observations": {
+        "list": "HN-DRV-001\n⧉\nBộ điều khiển động cơ\nHN01\nA01-09\nCái\n10\n0\n10\nXem ›",
+        "url": "http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?v=1&view=sku&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261028-01&location=A01-09",
+        "metrics": "Tồn thực tế\n10\nĐã giữ\n0\nKhả dụng\n10",
+        "locations": 1
+      }
+    },
+    {
+      "name": "scoped reconciliation counts use filtered result set",
+      "status": "PASS",
+      "observations": {
+        "metrics": "Tổng số SKU\n2\nKhớp\n2\nThiếu\n0\nThừa\n0",
+        "rowCount": 2
+      }
+    },
+    {
+      "name": "refresh preserves applied search in detail return context",
+      "status": "PASS",
+      "observations": {
+        "query": "HN-PSU-002",
+        "rows": 1
+      }
+    },
+    {
+      "name": "browser Back Forward keeps selected stock and detail scope",
+      "status": "PASS",
+      "observations": {
+        "url": "http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?v=1&view=sku&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261028-01&warehouse=HN01"
+      }
+    },
+    {
+      "name": "history hash date query is validated or surfaced explicitly",
+      "status": "PASS",
+      "observations": {
+        "from": "Từ ngày: 01/01/2099",
+        "to": "Đến ngày: 02/01/2099",
+        "rowCount": 0,
+        "alert": 1
+      }
+    },
+    {
+      "name": "shared DatePicker rejects future manual date and applies valid range through Enter",
+      "status": "PASS",
+      "observations": {
+        "url": "http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?v=1&view=history&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261028-01&from=2026-10-27&to=2026-10-28",
+        "reloadRows": 2
+      }
+    },
+    {
+      "name": "invalid date draft never replaces last accepted history rows",
+      "status": "PASS",
+      "observations": {
+        "url": "http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?view=history&from=2026-10-27&to=2026-10-28"
+      }
+    },
+    {
+      "name": "saved result date scope survives Forward and refresh",
+      "status": "PASS",
+      "observations": {
+        "url": "http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?v=1&view=snapshot&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261027-01&warehouse=HN02&result=0&from=2026-10-27&to=2026-10-28&savedResult=0"
+      }
+    },
+    {
+      "name": "mismatched tray relation never falls back to the selected BOX tray",
+      "status": "PASS",
+      "observations": {
+        "text": "Tra cứu tồn kho › Chi tiết khay\n← Quay lại\nChi tiết khay\nKhông tìm thấy BOX\nBOX không tồn tại hoặc đã được thay đổi.\nVề tra cứu tồn"
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,21 @@
+✔ Vietnam midnight changes the accepted business date independently of UTC calendar day (6.1148ms)
+✔ versioned inventory URL roundtrip preserves applied scope, dates, sort and page without auth changes (2.1162ms)
+✔ history/date deep links keep invalid values available for validation instead of silently clearing them (0.6934ms)
+✔ return context is accepted only under the registered navigation version (0.2703ms)
+✔ unverified count stays unknown rather than becoming a zero physical count and false shortage (3.5546ms)
+✔ known negative, zero and positive variance remain distinct at large safe quantities (3.1648ms)
+✔ a partial BOX count makes its total unknown while explicit complete empty and zero remain zero (1.6464ms)
+✔ location projection keeps DRV actual/held/count scope and never mutates full SKU120 (1.0801ms)
+✔ one uncounted selected BOX invalidates projected counted total without losing known actual or held (0.3064ms)
+✔ same location text cannot combine BOXes from a different SKU or warehouse (0.3981ms)
+✔ known SKU location remains selectable without inventing BOX coverage or mixing units (0.8184ms)
+✔ read failures distinguish session, permission, missing resource and network failure (2.6695ms)
+✔ domain authorization codes take priority over incidental transport status (0.282ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 876.2016

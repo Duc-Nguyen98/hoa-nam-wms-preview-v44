@@ -1,0 +1,831 @@
+{
+  "candidateCommit": "0dd709236cb43f497f9e349349eebd9144e7175d",
+  "beforeSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "33eb60696f6cb8ab8e383363ae8e14c333a78149cb3d994e66d4778bc11a371e"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "9667af39776a310ef23230e57a8e7dd4ecbec6282d8b401ba6ac78fe1470c3da"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "f0d4c9d13ccadb5ca0f188e17f61a7730042cbb08e684c80911422f9697e94de"
+    },
+    {
+      "file": "src/features/S16/approved/projection.ts",
+      "sha256": "29a0f0a5f9055c4f03a2311bcd83262aab0aab2b7a4e96ccdea747ec1bea0ddc"
+    },
+    {
+      "file": "src/features/S16/approved/navigation.ts",
+      "sha256": "bf2fbb004362ad61af9bb589b4da32cd201aa54e951ad5ca0b166e0dbfde411e"
+    },
+    {
+      "file": "src/features/S21/InventoryReportScreen.tsx",
+      "sha256": "28b7962eb31c03f87dc1ab4265425d7bdd2e9ed5dbda43ab3cbe803b4d820d11"
+    },
+    {
+      "file": "src/features/putaway/TrayUi.tsx",
+      "sha256": "89bcac6a889f902a70821929034a5eb88b5a7110ed2d0251f77fa0c0a0cbbf0b"
+    },
+    {
+      "file": "src/shared/read-failure-kind.ts",
+      "sha256": "b42f88273fe18e529ec005c03dbe092e529000d443143f07305bbaf2842f8c44"
+    }
+  ],
+  "checks": [
+    {
+      "name": "desktop: normal-auth direct-route gate",
+      "status": "PASS",
+      "detail": "Fresh protected URL redirected to S07; normal login, confirmation and setup completed."
+    },
+    {
+      "name": "desktop: all ten registered view projections and responsive bounds",
+      "status": "PASS",
+      "detail": [
+        {
+          "view": "stock",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "sku",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "allocation",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "box",
+          "rows": 0,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "tray",
+          "rows": 1,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "movement",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "reconcile",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "difference",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "history",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "snapshot",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "name": "desktop: stock search BOX / SKU / name, no-result query and reset",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: warehouse HN02 filter and HN04 empty",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: SKU to allocation to BOX to tray and correct return context",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: BOX movement is scoped to selected BOX; return link retains BOX",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: reconciliation DRV and nine BOX discrepancy totals",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: filtered history to saved snapshot keeps scope and stored identity",
+      "status": "PASS",
+      "detail": {
+        "snapshot": "DS-20261028-01",
+        "savedRows": 2,
+        "context": "HN02 + match",
+        "moduleTabsOnDetail": 0
+      }
+    },
+    {
+      "name": "desktop: saved DRV detail uses same snapshot and back returns snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: history dates filter, reject reverse/future and retain input",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: invalid SKU/BOX/relation/snapshot IDs never return first record",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: loading/empty/no-result/error/forbidden/not-found semantic states and no false successful timestamp",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: exact clipboard copy and success feedback",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: one-page pagination boundaries stay disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: SKU sort reverses actual row order",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: locale/theme infrastructure and no untranslated fixed UI labels",
+      "status": "PASS",
+      "detail": [
+        {
+          "language": "vi",
+          "theme": "light",
+          "title": "Lịch sử đối soát",
+          "untranslatedFixedLabels": 2,
+          "ariaLabels": [
+            "Từ ngày",
+            "Đến ngày",
+            "Xem chi tiết DS-20261028-01",
+            "Xem chi tiết DS-20261027-01",
+            "Xem chi tiết DS-20261026-01",
+            "Xem chi tiết DS-20261025-01",
+            "Xem chi tiết DS-20261024-01",
+            "Xem chi tiết DS-20261023-01",
+            "Xem chi tiết DS-20261022-01",
+            "Xem chi tiết DS-20261021-01",
+            "Xem chi tiết DS-20261020-01",
+            "Trang trước",
+            "Trang tiếp theo"
+          ]
+        },
+        {
+          "language": "vi",
+          "theme": "dark",
+          "title": "Lịch sử đối soát",
+          "untranslatedFixedLabels": 2,
+          "ariaLabels": [
+            "Từ ngày",
+            "Đến ngày",
+            "Xem chi tiết DS-20261028-01",
+            "Xem chi tiết DS-20261027-01",
+            "Xem chi tiết DS-20261026-01",
+            "Xem chi tiết DS-20261025-01",
+            "Xem chi tiết DS-20261024-01",
+            "Xem chi tiết DS-20261023-01",
+            "Xem chi tiết DS-20261022-01",
+            "Xem chi tiết DS-20261021-01",
+            "Xem chi tiết DS-20261020-01",
+            "Trang trước",
+            "Trang tiếp theo"
+          ]
+        },
+        {
+          "language": "en",
+          "theme": "light",
+          "title": "Reconciliation history",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "From date",
+            "To date",
+            "View details DS-20261028-01",
+            "View details DS-20261027-01",
+            "View details DS-20261026-01",
+            "View details DS-20261025-01",
+            "View details DS-20261024-01",
+            "View details DS-20261023-01",
+            "View details DS-20261022-01",
+            "View details DS-20261021-01",
+            "View details DS-20261020-01",
+            "Previous page",
+            "Next page"
+          ]
+        },
+        {
+          "language": "en",
+          "theme": "dark",
+          "title": "Reconciliation history",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "From date",
+            "To date",
+            "View details DS-20261028-01",
+            "View details DS-20261027-01",
+            "View details DS-20261026-01",
+            "View details DS-20261025-01",
+            "View details DS-20261024-01",
+            "View details DS-20261023-01",
+            "View details DS-20261022-01",
+            "View details DS-20261021-01",
+            "View details DS-20261020-01",
+            "Previous page",
+            "Next page"
+          ]
+        },
+        {
+          "language": "zh-CN",
+          "theme": "light",
+          "title": "对账历史",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "开始日期",
+            "结束日期",
+            "查看详情 DS-20261028-01",
+            "查看详情 DS-20261027-01",
+            "查看详情 DS-20261026-01",
+            "查看详情 DS-20261025-01",
+            "查看详情 DS-20261024-01",
+            "查看详情 DS-20261023-01",
+            "查看详情 DS-20261022-01",
+            "查看详情 DS-20261021-01",
+            "查看详情 DS-20261020-01",
+            "上一页",
+            "下一页"
+          ]
+        },
+        {
+          "language": "zh-CN",
+          "theme": "dark",
+          "title": "对账历史",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "开始日期",
+            "结束日期",
+            "查看详情 DS-20261028-01",
+            "查看详情 DS-20261027-01",
+            "查看详情 DS-20261026-01",
+            "查看详情 DS-20261025-01",
+            "查看详情 DS-20261024-01",
+            "查看详情 DS-20261023-01",
+            "查看详情 DS-20261022-01",
+            "查看详情 DS-20261021-01",
+            "查看详情 DS-20261020-01",
+            "上一页",
+            "下一页"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop: primary action text contrast in Light/Dark",
+      "status": "PASS",
+      "detail": [
+        {
+          "theme": "light",
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(0, 119, 131)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "ratio": 5.294381419348166
+        },
+        {
+          "theme": "dark",
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(0, 119, 131)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "ratio": 5.294381419348166
+        }
+      ]
+    },
+    {
+      "name": "desktop: default S16/S11/S20/S21 remain operational without opt-in",
+      "status": "PASS",
+      "detail": [
+        {
+          "screen": "S16",
+          "rows": 11
+        },
+        {
+          "screen": "S11",
+          "rows": 9
+        },
+        {
+          "screen": "S20",
+          "rows": 35
+        },
+        {
+          "screen": "S21",
+          "rows": 11
+        }
+      ]
+    },
+    {
+      "name": "desktop: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    },
+    {
+      "name": "tablet: normal-auth direct-route gate",
+      "status": "PASS",
+      "detail": "Fresh protected URL redirected to S07; normal login, confirmation and setup completed."
+    },
+    {
+      "name": "tablet: all ten registered view projections and responsive bounds",
+      "status": "PASS",
+      "detail": [
+        {
+          "view": "stock",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "sku",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "allocation",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "box",
+          "rows": 0,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "tray",
+          "rows": 1,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "movement",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "reconcile",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "difference",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "history",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "snapshot",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "name": "tablet: stock search BOX / SKU / name, no-result query and reset",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: warehouse HN02 filter and HN04 empty",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: SKU to allocation to BOX to tray and correct return context",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: BOX movement is scoped to selected BOX; return link retains BOX",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: reconciliation DRV and nine BOX discrepancy totals",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: filtered history to saved snapshot keeps scope and stored identity",
+      "status": "PASS",
+      "detail": {
+        "snapshot": "DS-20261028-01",
+        "savedRows": 2,
+        "context": "HN02 + match",
+        "moduleTabsOnDetail": 0
+      }
+    },
+    {
+      "name": "tablet: saved DRV detail uses same snapshot and back returns snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: history dates filter, reject reverse/future and retain input",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: invalid SKU/BOX/relation/snapshot IDs never return first record",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: loading/empty/no-result/error/forbidden/not-found semantic states and no false successful timestamp",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: exact clipboard copy and success feedback",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: one-page pagination boundaries stay disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: default S16/S11/S20/S21 remain operational without opt-in",
+      "status": "PASS",
+      "detail": [
+        {
+          "screen": "S16",
+          "rows": 11
+        },
+        {
+          "screen": "S11",
+          "rows": 9
+        },
+        {
+          "screen": "S20",
+          "rows": 35
+        },
+        {
+          "screen": "S21",
+          "rows": 11
+        }
+      ]
+    },
+    {
+      "name": "tablet: computed muted label contrast on card and page backgrounds",
+      "status": "PASS",
+      "detail": [
+        {
+          "theme": "light",
+          "selector": ".iad-metrics span",
+          "foreground": "rgb(83, 109, 137)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "12px",
+          "text": "Tồn thực tế",
+          "ratio": 5.361951918115458
+        },
+        {
+          "theme": "light",
+          "selector": ".iad-heading small",
+          "foreground": "rgb(83, 109, 137)",
+          "background": "rgb(238, 245, 250)",
+          "fontSize": "11px",
+          "text": "Thời điểm số liệu: 14:25 28/10/2026",
+          "ratio": 4.870903648337635
+        },
+        {
+          "theme": "dark",
+          "selector": ".iad-metrics span",
+          "foreground": "rgb(164, 183, 201)",
+          "background": "rgb(29, 48, 66)",
+          "fontSize": "12px",
+          "text": "Tồn thực tế",
+          "ratio": 6.561984136000987
+        },
+        {
+          "theme": "dark",
+          "selector": ".iad-heading small",
+          "foreground": "rgb(164, 183, 201)",
+          "background": "rgb(20, 35, 51)",
+          "fontSize": "11px",
+          "text": "Thời điểm số liệu: 14:25 28/10/2026",
+          "ratio": 7.735669321820835
+        }
+      ]
+    },
+    {
+      "name": "tablet: history rolling90day lower bound rejects stale query without changing accepted results",
+      "status": "PASS",
+      "detail": {
+        "min": "2026-07-31",
+        "max": "2026-10-29",
+        "rejected": "2026-07-30"
+      }
+    },
+    {
+      "name": "tablet: saved-result tabs filter all/match/shortage/surplus and preserve result context",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: movement BOX/type/date/query filters act on rows and reject future date",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: short viewport back restores list scroll and meaningful focus",
+      "status": "PASS",
+      "detail": {
+        "beforeScroll": 657,
+        "afterScroll": 657
+      }
+    },
+    {
+      "name": "tablet:768px supported viewport and200percent equivalent reflow keep row actions reachable",
+      "status": "PASS",
+      "detail": {
+        "kind": "viewport reflow simulation; actual browser zoom NOT_RUN",
+        "result": [
+          {
+            "width": 768,
+            "height": 1024,
+            "outside": []
+          },
+          {
+            "width": 400,
+            "height": 640,
+            "outside": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "tablet: narrowed viewport pointer reachability diagnostic",
+      "status": "PASS",
+      "detail": [
+        {
+          "width": 768,
+          "height": 1024,
+          "left": 685,
+          "right": 731,
+          "viewport": 768,
+          "documentWidth": 768,
+          "ancestors": [
+            {
+              "className": "iad-card iad-table-wrap ",
+              "overflowX": "hidden",
+              "clientWidth": 720,
+              "scrollWidth": 720
+            }
+          ],
+          "pointerSucceeded": true,
+          "pointerError": null
+        },
+        {
+          "width": 400,
+          "height": 640,
+          "left": 328.984375,
+          "right": 375,
+          "viewport": 400,
+          "documentWidth": 400,
+          "ancestors": [
+            {
+              "className": "iad-card iad-table-wrap ",
+              "overflowX": "hidden",
+              "clientWidth": 376,
+              "scrollWidth": 376
+            }
+          ],
+          "pointerSucceeded": true,
+          "pointerError": null
+        }
+      ]
+    },
+    {
+      "name": "tablet: vi/light/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/light/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/light/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/light/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/light/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/light/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/light/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/dark/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/dark/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/dark/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/dark/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/dark/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: en/dark/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    },
+    {
+      "name": "tablet: expired MOCK session cannot reopen protected candidate route",
+      "status": "PASS",
+      "detail": {
+        "mode": "MOCK account clock advanced9h beyond existing8h lifetime; no session/auth state patch"
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,9 @@
+# Route, component and data boundary
+
+App.tsx selects InventoryDesignWorkspace only in the existing preview session and explicit inventoryDesign=20261029 query. The one S16 route exposes ten view states, not32 new routes. src/features/S16/approved/InventoryDesignWorkspace.tsx owns presentation and bounded read-only interaction; navigation.ts owns URL/history/date validation; projection.ts owns warehouse/location/count projection; adapter.ts owns immutable versioned fixtures. approved.css is scoped by .iad. Shared DatePicker/PageState/GlobalShell/navigation registry are reused.
+
+Stock→SKU→allocation→BOX→tray/movement preserves source identity and scope. Reconciliation→difference and history→snapshot→difference use saved rows/boxes when source=snapshot. No relation is derived by slicing a display code. Invalid warehouse/resource/tray combinations produce contextual not-found instead of returning another resource.
+
+Existing OperationalInventory, S21 InventoryReportScreen, operational-preview-adapter and canonical stock/mapping/event stores remain authoritative for their existing business semantics. The approved adapter has no REAL_API connection for physical count, held stock or immutable reconciliation snapshots. Backend DTOs, source versions, scope keys, server authorization, completeness/precision and snapshot immutability remain BLOCKED. A static403 fixture or normal synthetic login cannot certify server RBAC.
+
+Shared changes: read-failure-kind.ts recognizes domain session/permission/not-found codes and explicit401/403/404 transport statuses; S21 initial read state and putaway TrayReadState use that classification, retaining ordinary network Retry. No command registry or mutation permission changed. [Global inventory](design/SCREEN_STATE_MATRIX.md) is STATIC ONLY unless a functional receipt explicitly identifies a tested caller.

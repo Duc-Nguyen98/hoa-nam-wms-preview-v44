@@ -1,0 +1,1948 @@
+{
+  "captureSha256": "25811818e55b863a65504c4679bbbac04e274a88f8ba2071bcbb3a1bdbc2c15a",
+  "stabilitySha256": "613bb7c9cc1390a96e62437b06d846a2624fd01b9d53f514374d3d67a90fc50c",
+  "registrationSha256": "ff3adcb94fb9a977b7c8fcc4a6a230a488a5e06396e90442ffb83d50671b255e",
+  "provenance": {
+    "baseSha": "0dd709236cb43f497f9e349349eebd9144e7175d",
+    "diffSha256": "768303cb29bd868a97c8161938d1000374541d37aae92e5d1766ac8e32471e14",
+    "sourceHashes": {
+      "src/app/App.tsx": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23",
+      "src/features/S16/approved/InventoryDesignWorkspace.tsx": "9667af39776a310ef23230e57a8e7dd4ecbec6282d8b401ba6ac78fe1470c3da",
+      "src/features/S16/approved/approved.css": "f0d4c9d13ccadb5ca0f188e17f61a7730042cbb08e684c80911422f9697e94de",
+      "src/features/S16/approved/adapter.ts": "33eb60696f6cb8ab8e383363ae8e14c333a78149cb3d994e66d4778bc11a371e",
+      "src/features/S16/approved/navigation.ts": "bf2fbb004362ad61af9bb589b4da32cd201aa54e951ad5ca0b166e0dbfde411e",
+      "src/features/S16/approved/projection.ts": "29a0f0a5f9055c4f03a2311bcd83262aab0aab2b7a4e96ccdea747ec1bea0ddc"
+    },
+    "buildInfo": {
+      "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+      "sourceCommit": "0dd709236cb43f497f9e349349eebd9144e7175d",
+      "sourceCommitEvidence": "git-head",
+      "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+      "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+      "buildId": "1ef2777576367344d9f5e63bf6b345b310d334b10a5659b9da9f55eef374ea74",
+      "mode": "MOCK",
+      "publicDemo": true,
+      "assets": [
+        {
+          "path": "assets/fonts/s01/AUTHORS.txt",
+          "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+          "bytes": 349
+        },
+        {
+          "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+          "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+          "bytes": 4921
+        },
+        {
+          "path": "assets/fonts/s01/LICENSE.md",
+          "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+          "bytes": 6824
+        },
+        {
+          "path": "assets/fonts/s01/OFL.txt",
+          "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+          "bytes": 4483
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+          "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+          "bytes": 33664
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+          "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+          "bytes": 33676
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+          "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+          "bytes": 33612
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+          "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+          "bytes": 33636
+        },
+        {
+          "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+          "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+          "bytes": 18765
+        },
+        {
+          "path": "assets/index-B62dwuJZ.js",
+          "sha256": "f706f77cf29e56e1c8a86d29dab57e782f549592484f6d9faf0c0bfc0b2ffef8",
+          "bytes": 2323260
+        },
+        {
+          "path": "assets/index-DGLXYAuS.css",
+          "sha256": "2044f72143d465fa48260dfef0887e0f65852df5366ed1f7568fbcb0de242c1e",
+          "bytes": 618371
+        },
+        {
+          "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+          "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+          "bytes": 2651791
+        },
+        {
+          "path": "favicon.svg",
+          "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+          "bytes": 203
+        },
+        {
+          "path": "index.html",
+          "sha256": "7c05ae29143d30708c23482f1d63c8fe43ede5d1b4a13f5910084ef6e3f44396",
+          "bytes": 911
+        },
+        {
+          "path": "release.html",
+          "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+          "bytes": 2224
+        }
+      ]
+    },
+    "buildInfoSha256": "897b40403665fb8edce562d79e97ce313f1c75c504540c4192ca97acd7c70e00"
+  },
+  "stable": true,
+  "rows": [
+    {
+      "id": "01",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\01-Desktop.png",
+      "actualSha256": "6d9da335cdd2e7e91e1fbf49ce2c48b6b7f2b232b0075e0ebb1700fa54ccfb15",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/01_Tra_cuu_ton_kho_Desktop.png",
+      "referenceSha256": "9ed899985ca8937794686257312b1d2aa13404ebd4df817de24cba4fb5bac088",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\01-Desktop.png",
+      "beforeSha256": "6d9da335cdd2e7e91e1fbf49ce2c48b6b7f2b232b0075e0ebb1700fa54ccfb15",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Desktop-reference.png",
+          "sha256": "55ace7c27b1612474f71d29954ca010ca6f6d0a7ecee4c1fda7460cc69ac3bec"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Desktop-actual.png",
+          "sha256": "a5869d31f3c4d43beb94992d5198fa51a989cdf4fdfc4d722f6c15bb5af493bb"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Desktop-overlay.png",
+          "sha256": "db2979014c0ca07b26c5393872fcf7ac241c50f51939d9650a768966b6053b88"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Desktop-diff.png",
+          "sha256": "3a75079ef70c7c67eb356df11892b93e214664d814cd8c867f692a3edebcac50"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "02",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\02-Desktop.png",
+      "actualSha256": "5f78b3f07c5f1160b9473d11922deb2525dcacfe2b253abb75430c68a8978b94",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\02-Desktop-full.png",
+      "fullSha256": "0248e238c13001e7548293adeeb9da1f4c6d7a78119c9d2be29ea87672126be0",
+      "heightCssPx": 1343,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/02_Tong_quan_ton_SKU_Desktop.png",
+      "referenceSha256": "b6a3de41aa4e71f8d56464a0c9c277e50168c0bac59a4fa7772cfdf31e5441cc",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\02-Desktop.png",
+      "beforeSha256": "5f78b3f07c5f1160b9473d11922deb2525dcacfe2b253abb75430c68a8978b94",
+      "beforeHeightCssPx": 1343,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Desktop-reference.png",
+          "sha256": "e2c6a91c4147f921303a43c3ddd08bfebafa312d99dc5a61b5f02e35929814f8"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Desktop-actual.png",
+          "sha256": "8e9175fa65907fc2b052fcefdc658fa72e05387a5890ea584c59a4e5dff5c0fe"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Desktop-overlay.png",
+          "sha256": "db0865df643139dbcfcbdf694cdf53a5d5e533d618b7109a6eff675ea35e017a"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Desktop-diff.png",
+          "sha256": "222192b7de4b048b750a42546c26e37d9e6638475253af8b0b34c7c31b62b3f6"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 805
+      }
+    },
+    {
+      "id": "03",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\03-Desktop.png",
+      "actualSha256": "6d9e0da4cc661cc873b74e2350902635b558d4c0e2a35f9712fbb7cdde0a0288",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\03-Desktop-full.png",
+      "fullSha256": "a116b46cf79123bf8307df97429d35793f3c9c03aee49c71d55d9a33418e0e8e",
+      "heightCssPx": 1198,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/03_Phan_bo_theo_BOX_Desktop.png",
+      "referenceSha256": "8cbbf97238d68d5fbbfb37eb63de34dcf2819a76abf3db8da351533c0c2f215a",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\03-Desktop.png",
+      "beforeSha256": "d1d8ea216129944a4adae3a3b27c9339314013c398c7a9dd90f369c7016b873d",
+      "beforeHeightCssPx": 1198,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Desktop-reference.png",
+          "sha256": "30e7b4fefb9486ac2efb014a98caa0e9bf7146d601073e99fa2ba0168806b97a"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Desktop-actual.png",
+          "sha256": "4466af203ee88d6490ae34a988283ede589f4f52bc631646642bb0b0a417a33a"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Desktop-overlay.png",
+          "sha256": "9f5e05f6b667395dcf0b48ed663bb63922c2e70622184ded30890b77c03926b2"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Desktop-diff.png",
+          "sha256": "1d31e93b6a2ef07cb16a69964245ff6ff6ac57fb2b51d93b545304772a30f8d0"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 712
+      }
+    },
+    {
+      "id": "04",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\04-Desktop.png",
+      "actualSha256": "4ce5086a4d31a5727679e9e0fdc5ce56d83222d0ab809a6106804122caa9efcc",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/04_Chi_tiet_BOX_Desktop.png",
+      "referenceSha256": "5f6c3f066b2a4c1cab280f8f00e329b114b0e259cfb9cd9256ab486e281ae6e0",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\04-Desktop.png",
+      "beforeSha256": "4ce5086a4d31a5727679e9e0fdc5ce56d83222d0ab809a6106804122caa9efcc",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Desktop-reference.png",
+          "sha256": "30f96a82ab8627cc03c39a92de63c9a4eef8190fbf37eb9435c321dd72b6825c"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Desktop-actual.png",
+          "sha256": "788d7dfa26d6ca25514f1f4064ee6ec0e0fc69c263872cee9ed2d698820f013b"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Desktop-overlay.png",
+          "sha256": "bef694343af40148f590ccfd9ff98db35247875c54e66dc7197e3b99bdc95e0d"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Desktop-diff.png",
+          "sha256": "d45debf326e110ec78837f3bf1d0b08a1ed5c5fd12147b724bce2d8dfdc7c377"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "05",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\05-Desktop.png",
+      "actualSha256": "e4411a59bff2772b0df2b3b9d10c0c64fe1ff130e459c3481984b41a1958588f",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/05_Chi_tiet_khay_Desktop.png",
+      "referenceSha256": "70f8a89a9d2a5c36713f080bba3afca9c2fd70fd13404380892f3f80b825a686",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\05-Desktop.png",
+      "beforeSha256": "e4411a59bff2772b0df2b3b9d10c0c64fe1ff130e459c3481984b41a1958588f",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Desktop-reference.png",
+          "sha256": "e659297113a24c216cb6d8d85e0327bde05584cc62084f12dd942ef8519f0a55"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Desktop-actual.png",
+          "sha256": "4f2602497b42320eb8398b77c1dd02a16efc5d41a7ef028e7dd55e1d64d75434"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Desktop-overlay.png",
+          "sha256": "6f07f8b0beb23f0739de90b6192b3a3a4fe6aa53a26c7d38e5e6c5406be97af9"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Desktop-diff.png",
+          "sha256": "bad29626867daba85b833bbde91c700eed592a52d20078f2239d46e9d11ee623"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "06",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\06-Desktop.png",
+      "actualSha256": "0476ec31e2027e4aa14e8d143ed18abe5d1cf01a09ba55411b27297d7b163e8e",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/06_Lich_su_bien_dong_Desktop.png",
+      "referenceSha256": "655181441e55e6b5bc4b462662f4023968cec3ced4d49f63e69a36196d2dd7ca",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\06-Desktop.png",
+      "beforeSha256": "f9f10d6de5b44d928cde4b7f4aa028b8716e93dd39bf24179ca23d9ebe689187",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Desktop-reference.png",
+          "sha256": "ed53668a0397d0f2078b4710eced88d7b7793916d4050b32d878c6e8d6637b16"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Desktop-actual.png",
+          "sha256": "9c20f1485c55dc2a16ac64bdd2c7656ead093ccef35c3f0bc404f7a497d5e561"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Desktop-overlay.png",
+          "sha256": "8978c6ebbe5dcffd283ed69858b56d4a5297f49e43a5917ef5abf5ac78525d82"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Desktop-diff.png",
+          "sha256": "51fd4b70cbd3a16b511104ea2966f6216e7e397755df982fcd808560f8dd8f42"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "07",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\07-Desktop.png",
+      "actualSha256": "8c4a2033ebf9bc00eb1af1f51c761f659f000b8cde2d9844d189027865bf2be4",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\07-Desktop-full.png",
+      "fullSha256": "e77f6e484483472a3f827fba4fdbf27e22c77930cc789b93965313589cb3acf0",
+      "heightCssPx": 1198,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/07_Doi_soat_hien_tai_Desktop.png",
+      "referenceSha256": "042c8671e4d46ca28171dc895cda437b7d2efcaa54ef0f3e7437c3e48cfa9849",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\07-Desktop.png",
+      "beforeSha256": "17d6ea9a185ea77c918e1987caf4053a80732ea106ac40f20b4b638bde8ee02a",
+      "beforeHeightCssPx": 1198,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Desktop-reference.png",
+          "sha256": "a757f0c7828fc4e6a297ed66c981f0628f802263e5282eef468354e6abd69ae4"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Desktop-actual.png",
+          "sha256": "491a0a95a67c501f2bbcfba44c4bc278066c09ce9cc4eb9216b9e4d341fa5718"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Desktop-overlay.png",
+          "sha256": "16117a066a186aba6cb65c374ff93a28bf12f514276453d327a082532a1fb12c"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Desktop-diff.png",
+          "sha256": "d014cd28f39cedab7fe36a11f4cef9a4ef28053ecd684a9b83a12260e146994e"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 712
+      }
+    },
+    {
+      "id": "08",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\08-Desktop.png",
+      "actualSha256": "4bf8bf5a67c19ca0feecd1fa03715aa4b294f205e2f95f8a08027841a21d3804",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\08-Desktop-full.png",
+      "fullSha256": "ed18862cc2572090ed458a4016f475c2f01b07dc74681e25e849b4c3eb6afd1d",
+      "heightCssPx": 1343,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/08_Chi_tiet_chenh_lech_Desktop.png",
+      "referenceSha256": "2588704f6f06c53b587d4464d22c2a1a09480f29738009ec8b30f71b78fd8e69",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\08-Desktop.png",
+      "beforeSha256": "c02813de486be2a2427e186602d8510213651d90b75254c98831cd16579cf9e9",
+      "beforeHeightCssPx": 1343,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Desktop-reference.png",
+          "sha256": "3f0bee96ef82416e8afa557454b9b865f6e023a280f889dc24efe309016a6e1b"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Desktop-actual.png",
+          "sha256": "7c22d068d4ee3bc8bea18f8601e546586cbd87157dec3318238bf2f6a07589c6"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Desktop-overlay.png",
+          "sha256": "687f1d3a7354c7c1fe3f07f6242fa4fd9ef2abccd94a0ee639cacd40d41878d3"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Desktop-diff.png",
+          "sha256": "17136a4f5ea5ebb491948e44325d873c1a44a5060482f930ba518bc9aa104dd3"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 805
+      }
+    },
+    {
+      "id": "09",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\09-Desktop.png",
+      "actualSha256": "b83d4fc0b6ba46e172bf5492d8fa62eb3a5937d4293fa87d889090b322e01741",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/09_Lich_su_doi_soat_Desktop.png",
+      "referenceSha256": "7b410e96bb35bf98ffb85cf1894c89884713445601a6fe82f328884a68b21b6c",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\09-Desktop.png",
+      "beforeSha256": "40060537667f72dad01118f0194ff00e77b4128782ed424112b1d0d6d13fcf50",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Desktop-reference.png",
+          "sha256": "1a3a42fc4a697e1e4de2155c1ea60cbb143ec4d0b0ff482e27e3882d4ccb77b2"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Desktop-actual.png",
+          "sha256": "af3c7cdd15a31cbc65f832db2ec7f5321a845b7b0cc4eaf210c35e574bac3e45"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Desktop-overlay.png",
+          "sha256": "ae4dadd73f603cbeed2b0145340ac458307d2562df2dd39f6e571a1d9b461a57"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Desktop-diff.png",
+          "sha256": "7e38d7e85725c21cfae50755a8a42d650c6c27b04b9234805a0684ae13a8a553"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "10",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\10-Desktop.png",
+      "actualSha256": "9c0cba104e2a04b9200d5590431bf212f019ff32714e53d405f2ae1a71b38069",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\10-Desktop-full.png",
+      "fullSha256": "6cae84d990d763f4efa003b9b7fe387f3f6ab3c22438e38da726126254d8a1e4",
+      "heightCssPx": 1203,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/10_Chi_tiet_lich_su_doi_soat_Desktop.png",
+      "referenceSha256": "308ac0633b92d3b44d7cc7ec2a8ed78d096c7c31413f15c2efa11eae36534d14",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\10-Desktop.png",
+      "beforeSha256": "9c0cba104e2a04b9200d5590431bf212f019ff32714e53d405f2ae1a71b38069",
+      "beforeHeightCssPx": 1203,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Desktop-reference.png",
+          "sha256": "b64bf29ebace0688996fced7474818ee9f4969528258b4e996b1ff2c926bc97f"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Desktop-actual.png",
+          "sha256": "8b7d7f26a86af9f778c77213b09799e65735b0b44a451337ae717728607aec86"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Desktop-overlay.png",
+          "sha256": "03edf754eb4f697b7f2cbbdac7e195c89bedb82b8725a281e64a6f0d108593f5"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Desktop-diff.png",
+          "sha256": "58404e361eb80d02dfe1fc3a02550ae35005bf0b8529fbbf6623807f86e657ca"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 715
+      }
+    },
+    {
+      "id": "11",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\11-Desktop.png",
+      "actualSha256": "e0faccc904592b5c89738b591f45a6e3e13ae1d5d0b2f5086be6d805457ae0d2",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/11_Loading_Desktop.png",
+      "referenceSha256": "a01885e6a490ffe36a79c107811f94e967a725515d49d71558224dc189e5f1ca",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\11-Desktop.png",
+      "beforeSha256": "e0faccc904592b5c89738b591f45a6e3e13ae1d5d0b2f5086be6d805457ae0d2",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Desktop-reference.png",
+          "sha256": "e222f6967627fc9998680777a6dc7cb013b136cf232c2f0ddab596cb10088429"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Desktop-actual.png",
+          "sha256": "d0486e58960b30de31b13fd064213a113154b44b5d02351e329a2bde97349d76"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Desktop-overlay.png",
+          "sha256": "47dc3f13117e069b6035ca48231d5399afdfafd37e63d77d321304191bb356e5"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Desktop-diff.png",
+          "sha256": "934bdda0d72a89cdb44e914c399ae19305a89c6bf11605090c60da3ac1c126b6"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "12",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\12-Desktop.png",
+      "actualSha256": "8d0462518a69f4d2349f91ebe62ab06726a636f033cdab9ff3ad93b3f378b33d",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/12_Empty_Desktop.png",
+      "referenceSha256": "9114106994af5193b09ef18a3762098b0677fe3d46be13b5c1e3f3928b1869ce",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\12-Desktop.png",
+      "beforeSha256": "8d0462518a69f4d2349f91ebe62ab06726a636f033cdab9ff3ad93b3f378b33d",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Desktop-reference.png",
+          "sha256": "b6ce1f6d3e51bec43728a5a2eaeded9a086f3f33277c7cd251b4803c787e51cc"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Desktop-actual.png",
+          "sha256": "219d6d6924c2ab3bc06b96e860f208a14b564eea994edece4e1fb4006458b1a0"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Desktop-overlay.png",
+          "sha256": "43f3d02e2da3f80820e0e9ab788b034f624e0e28ebf59afd4f97748139db2f15"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Desktop-diff.png",
+          "sha256": "343de38f596904612910ac6822c2d218ecbbaec2700a34b9806f0bae82ce0ccf"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "13",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\13-Desktop.png",
+      "actualSha256": "95a90854c231f456dab0ac41db8d6201df726b61cfa03c3c9197290a9648a881",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/13_No_result_Desktop.png",
+      "referenceSha256": "973bdf6309f7d0558f9a395e3020ef70787e433daa8ea738817501f2eaf37141",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\13-Desktop.png",
+      "beforeSha256": "95a90854c231f456dab0ac41db8d6201df726b61cfa03c3c9197290a9648a881",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Desktop-reference.png",
+          "sha256": "9d392f5f6f3eae59a36473871b532b8c610415b118a4a529612e867bc5ab65ba"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Desktop-actual.png",
+          "sha256": "f380cefe25b3e9658ea3990197d6d31874094990c89a0fa84954b43c18bbfd41"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Desktop-overlay.png",
+          "sha256": "8b28516759bd9aa7cbc22139b5fbd02af55cde992ef3fe09599a389edf46c061"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Desktop-diff.png",
+          "sha256": "307d2ff9373d7ddcfce5a5900629260ac071eeb65823701f3190332f84e152df"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "14",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\14-Desktop.png",
+      "actualSha256": "ebe8b2878db6232f32ae13e3cf366db40ed8dbc8563d438a9041972d20ed2746",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/14_Load_error_Desktop.png",
+      "referenceSha256": "ccf101912100acb5a592cc1c39ed874a57671aa86e850c8b078a4ed065350d47",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\14-Desktop.png",
+      "beforeSha256": "ebe8b2878db6232f32ae13e3cf366db40ed8dbc8563d438a9041972d20ed2746",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Desktop-reference.png",
+          "sha256": "27fb110c33f5ea36badf8d771df40b0c2dd3acddf68d7d7b92015b7c0f651158"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Desktop-actual.png",
+          "sha256": "ab6e444f72026b575a7087ecf2cfd2bf1255d3492645592d69ea27461daf57a9"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Desktop-overlay.png",
+          "sha256": "bb663537a6039280e50efc791557618992caa056d0b0fc8791e07a895cba4b0a"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Desktop-diff.png",
+          "sha256": "25a1f9ad4ce52f7db89ca1aa7e200d6f9ca05c1dba15255856e924c194e542ee"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "15",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\15-Desktop.png",
+      "actualSha256": "2176889862f0ff4496287b9be3496c92065a2635a29c28ba443c88e784199d49",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/15_Forbidden_Desktop.png",
+      "referenceSha256": "804e8d61bbd15b010a88ef7e161a6aab01f0b309b591d6049beb64b271ad2d3b",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\15-Desktop.png",
+      "beforeSha256": "2176889862f0ff4496287b9be3496c92065a2635a29c28ba443c88e784199d49",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Desktop-reference.png",
+          "sha256": "b20e976bee840171e1a2ca5197a126126c1c2d30e9da132162a9206a12b6ad2e"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Desktop-actual.png",
+          "sha256": "5992d658046afc03dffa82aa743cad8af22d1f3a437327b0ad04a9408651065a"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Desktop-overlay.png",
+          "sha256": "97796346583396598356542a57d5b687d3e9a5c51ba1716a4ce063c36bdb30a3"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Desktop-diff.png",
+          "sha256": "b90301c4553647021f2c901f9fda0da45a8651d9e5c4265534d09c9547fb5045"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "16",
+      "device": "Desktop",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\16-Desktop.png",
+      "actualSha256": "aa8b65243215cb309ef9837657a3b8d0b042232c36818ce3606cd762042b1a13",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Desktop/16_Not_found_Desktop.png",
+      "referenceSha256": "b7153260f9cabd37d07ab9cce808f8eef4f660bcf7d6f2b65032f04aa7e1c7aa",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\16-Desktop.png",
+      "beforeSha256": "aa8b65243215cb309ef9837657a3b8d0b042232c36818ce3606cd762042b1a13",
+      "beforeHeightCssPx": 1080,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Desktop-reference.png",
+          "sha256": "7bd595b7cc64e0354653e77a2b7403c2d08674f0ec6ba675d60e69e690cd635b"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Desktop-actual.png",
+          "sha256": "6f07f9acdeffe105afc864ae3cd839f19bd3ba3c96717525a5a60c1768be03d6"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Desktop-overlay.png",
+          "sha256": "a7cb5f25e073de40314bb4cb881bde3898cfb3cfe1d0eff3cd8ee6b6a08947ef"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Desktop-diff.png",
+          "sha256": "0e8a6e0164096ab18374e89ad326e21cd190db86828e2b170931f4f50c76e9b2"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\01-Tablet.png",
+      "actualSha256": "463744710320d17a9c74735fbf5ea4aa7a414a75a78dece45a8f732c375f0da0",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\01-Tablet-full.png",
+      "fullSha256": "876920f2e31ed7a8292e7e6bd0f487540e745b0e273cfabb0abe3509e8e03533",
+      "heightCssPx": 1297,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/01_Tra_cuu_ton_kho_Tablet.png",
+      "referenceSha256": "96af162f1ae4017c6d8f21a54f6282d251782759b807b3d519c480ad1991b84a",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\01-Tablet.png",
+      "beforeSha256": "463744710320d17a9c74735fbf5ea4aa7a414a75a78dece45a8f732c375f0da0",
+      "beforeHeightCssPx": 1297,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Tablet-reference.png",
+          "sha256": "4ad0e1f67eaa7f8399fdc95724f5d2f9eb5ffc4a0d8612625b8b40208a9f8024"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Tablet-actual.png",
+          "sha256": "a407a946fe8bc842381157c7b9960ba3f7dfad5f38bbb1bb178463451a984f56"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Tablet-overlay.png",
+          "sha256": "b314cc73be455baea1b8644b8c83b589737fb620e2abadc72f0c0cc002c01cfd"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\01-Tablet-diff.png",
+          "sha256": "189a2544bac5d051805da6804d46fc5ca68582536f1ae9edb2f96c5e6b0adc74"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1032
+      }
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\02-Tablet.png",
+      "actualSha256": "bb8530964a5f1dda72d786d253ee1c65307c6e0ed09cc9103e23f23417d66b60",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\02-Tablet-full.png",
+      "fullSha256": "fc31d11eb83e3efc710c38135f6408db767e98d7be6e02565ebb0f49f0a6421d",
+      "heightCssPx": 1400,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/02_Tong_quan_ton_SKU_Tablet.png",
+      "referenceSha256": "46596d82ad3054c62d193a13c747b5ea3d03712873a74ac6fe8d53ee55997e53",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\02-Tablet.png",
+      "beforeSha256": "5e9ea81f4dd7fd36c5a81f41f71ade645a809a1de84f9c5b169dad7ce0748841",
+      "beforeHeightCssPx": 1370,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Tablet-reference.png",
+          "sha256": "c21f3d07a5b5fe8d38375c0d7a072b1e3f8826fa899bcc5910394916b12c8a6a"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Tablet-actual.png",
+          "sha256": "f18396aa6ac42a999e731ee23e0a75a86e1e52a179f99341aa5051f6ed561d9f"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Tablet-overlay.png",
+          "sha256": "a7377b3c57991d43059f558f25c77dc4466a8bfe86b85671d450dc22338f7bef"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\02-Tablet-diff.png",
+          "sha256": "6b0c63da1ce630c1780ffcbef4d018a57b09027d0799856f1e66ad4d2260c2fc"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1121
+      }
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\03-Tablet.png",
+      "actualSha256": "5a3afcf6d0b9e945c7d6c5cea9c4747ecd79fbe4a2d0eb682c23b3c88b9e8c6b",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\03-Tablet-full.png",
+      "fullSha256": "76da86713da56ebcadd1a0a031bc5a29c9465f07d20ab77dba753153612bc9e5",
+      "heightCssPx": 1559,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/03_Phan_bo_theo_BOX_Tablet.png",
+      "referenceSha256": "511c2909b7f93e13159df5ab37d76282b561dd157c09d7853e998ccce3bb02d1",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\03-Tablet.png",
+      "beforeSha256": "5a3afcf6d0b9e945c7d6c5cea9c4747ecd79fbe4a2d0eb682c23b3c88b9e8c6b",
+      "beforeHeightCssPx": 1559,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Tablet-reference.png",
+          "sha256": "911fd5a6ef1cee186a8ca6a19f83eec611d8842522879351e0270472af3ed33e"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Tablet-actual.png",
+          "sha256": "f2928065ab75856435267498a85bc1feefe2f0e5ecc9e519dfda94ff3991716e"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Tablet-overlay.png",
+          "sha256": "479f5ac38ac792b2e3bfd2221604cc60b01ce92047925feba3d1b7f7399ce7e4"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\03-Tablet-diff.png",
+          "sha256": "39fa6c14d56221ff0f8e5e1545b65937e47365a39299f03124da24a6cf34835e"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1258
+      }
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\04-Tablet.png",
+      "actualSha256": "fd20fd2c164fd8c399d008aafd6c9955ff2439ffe22a9df25a7fb0312c9b5c21",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/04_Chi_tiet_BOX_Tablet.png",
+      "referenceSha256": "cd992967108ee75f6b743acd0934c15b944dd46f96846cbd89b07c9f1266c907",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\04-Tablet.png",
+      "beforeSha256": "fd20fd2c164fd8c399d008aafd6c9955ff2439ffe22a9df25a7fb0312c9b5c21",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Tablet-reference.png",
+          "sha256": "6eb988cd94dde10406585b9209b8f7f688db11544b1761b1e8652c09f4b7735a"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Tablet-actual.png",
+          "sha256": "182b85ac5ee52ad09d4ca99f5f557c070ef6f3a80edc612abfc0e1b5db7511bd"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Tablet-overlay.png",
+          "sha256": "5c4b37eda6ee1ea5558961ac03918149d90c46c148285e70bd7d556c4de1bbd1"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\04-Tablet-diff.png",
+          "sha256": "52ff68914372d09363d63e0770d15a8571d65a30b20e3c7d6878b94829bbbfab"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\05-Tablet.png",
+      "actualSha256": "996ad8f1d7908f200d0d452ed5a3d70fe8272b438cfe735c21292d8b01e015a9",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/05_Chi_tiet_khay_Tablet.png",
+      "referenceSha256": "cc1aa68e475385eb3efc08ee3e5dfbde3b3b3ca44cae4891bae828a26abd3708",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\05-Tablet.png",
+      "beforeSha256": "996ad8f1d7908f200d0d452ed5a3d70fe8272b438cfe735c21292d8b01e015a9",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Tablet-reference.png",
+          "sha256": "99b674ae7864063dcd24a1d6771dcb4ebb744aaeb59804b7fa3e84e3c58802ca"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Tablet-actual.png",
+          "sha256": "d1fe60a19432f141a2470d1c6b16d219b741ca3d6815b89a35d2d98aa293114a"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Tablet-overlay.png",
+          "sha256": "f29e3af40b96ded618417ce4581c4550431ce4830f651dc1c8c0387085171d66"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\05-Tablet-diff.png",
+          "sha256": "3135fcd7103f48d9f1c9566989ed01b71007bc32533f00c046ae7843939af131"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 72,
+          "w": 1086
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\06-Tablet.png",
+      "actualSha256": "5c1f6953307b1544e7f6a3cd008af7f57216b563d59b523068ed6e1fe88cc203",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\06-Tablet-full.png",
+      "fullSha256": "e94a496fb385b1f516b9ecf6964474ff13983a6e693cbd29ac73578808f70013",
+      "heightCssPx": 2119,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/06_Lich_su_bien_dong_Tablet.png",
+      "referenceSha256": "4a898932401e3f428c78282312e86fbf8e35b80f6f8b6d9d2b1ba6d31e355307",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\06-Tablet.png",
+      "beforeSha256": "895ef4e9ba292d37d60eb9beae849b6cb87f960089d0dc3a514af29d3235859d",
+      "beforeHeightCssPx": 1604,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Tablet-reference.png",
+          "sha256": "ac94f6418afad126c6b7c61b990b3a63f857397635b578ac7e712537093fe9fa"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Tablet-actual.png",
+          "sha256": "0d5ba55636b07ae17afc1dcb58b5d33a021c9f39588cfdfd8df51c821340c2de"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Tablet-overlay.png",
+          "sha256": "d57ccc5b3f51a501604cf09535c356a994d31bd44a8f6aa7f46a391afccb603c"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\06-Tablet-diff.png",
+          "sha256": "baba96072665e86345892b5f286532622d9a3ff2165d6fb2894bd99032f62f37"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 993
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1742
+      }
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\07-Tablet.png",
+      "actualSha256": "d9c419a722bb9c71f9cd5c251daa52a5e834dcd3b343b1d0c9faf561b24d1201",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\07-Tablet-full.png",
+      "fullSha256": "664a24536704dc878e3c468b803e8881eb963b532062b5feb8d84699d5ddb80b",
+      "heightCssPx": 1514,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/07_Doi_soat_hien_tai_Tablet.png",
+      "referenceSha256": "8bc3b8594ceba10e028777c54dfa5aa566a860e1d27ecf0dbd77780168e5437d",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\07-Tablet.png",
+      "beforeSha256": "90ac1c0d70013edb54f22bc91a3b5aefaa61787bcd1721d8d12603cce9e2f106",
+      "beforeHeightCssPx": 1514,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Tablet-reference.png",
+          "sha256": "70f6f78c3561b4bab1076e56edf84b6edcf42efe876d822cc59b16d8fe9e8584"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Tablet-actual.png",
+          "sha256": "03dbee470aa061f0f4efb7ef7a22f23535bb7b0a9cb58bce38717141f70d3042"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Tablet-overlay.png",
+          "sha256": "358af74c4d1263b4197eed6602671b84326e28199b38d2a1f81c44309dc16c51"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\07-Tablet-diff.png",
+          "sha256": "02da0a99302bdcec8ed5ba09d7635e43d99b95879638b44518914a0df68eb81a"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1219
+      }
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\08-Tablet.png",
+      "actualSha256": "d9d1343cc6df57fdf0bff84c9a735d46bdaaaa9bcd5884e404cbd7d8841c4423",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\08-Tablet-full.png",
+      "fullSha256": "772d5e927b7861d408dd3ac8da89af04a336f0e6f2076b6500e70734819d9a27",
+      "heightCssPx": 1521,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/08_Chi_tiet_chenh_lech_Tablet.png",
+      "referenceSha256": "2f7520fb2c990da5a690aac3534c9ddd6de8e5e16ef25eb18c1d57383e6f0ef8",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\08-Tablet.png",
+      "beforeSha256": "d9d1343cc6df57fdf0bff84c9a735d46bdaaaa9bcd5884e404cbd7d8841c4423",
+      "beforeHeightCssPx": 1521,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Tablet-reference.png",
+          "sha256": "97ce06f0cba8d29e07f01db6af77f47f388c599a9f7357540e6319e9b61d2326"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Tablet-actual.png",
+          "sha256": "fde2aa95b1f67ca8752179f12ec60ab1c0f90d1a2c84f7305254fedcf5c5f2c5"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Tablet-overlay.png",
+          "sha256": "f04ead66ebe4431eab0a7e019d6bd9e7d4de1681f03265e50470e6b6c6c4af8b"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\08-Tablet-diff.png",
+          "sha256": "51740570d1cc58c11079deb3074ea740e6f856725e51778ad68f3607a46ac651"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1225
+      }
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\09-Tablet.png",
+      "actualSha256": "3d5b10e66842248777e1aefbb63c56417530337da204dc48b4f35de890b4f56a",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\09-Tablet-full.png",
+      "fullSha256": "0220511f03304aa38ee7921cbe9caa597cf8284f285fcaaeffc1b21cf70e9746",
+      "heightCssPx": 1509,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/09_Lich_su_doi_soat_Tablet.png",
+      "referenceSha256": "902cac4f4c2811753f2e6dd8b23084cf35ff814c093abfc1be46059b7ff22ea9",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\09-Tablet.png",
+      "beforeSha256": "f0729986af7a7b0a7490ddea84db5f41e8482d135b226b128b00ad8910211ba8",
+      "beforeHeightCssPx": 1581,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Tablet-reference.png",
+          "sha256": "d0a95e9eda72bd42e9f5c28ab790adc6b21471d81d28c81afff603f8050b1d3f"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Tablet-actual.png",
+          "sha256": "b6335d6f646023b43e416bb3a25fd9bbbd8e5987e83de4a0f7ac2fe28cb21729"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Tablet-overlay.png",
+          "sha256": "5fe2089b49b03cf19ade3352d5da5458bae7adbd34d79e4b29ff3e8863504a12"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\09-Tablet-diff.png",
+          "sha256": "1673f42b8f447e6e413edf662b7fcef577b9c6d982962c1df754a84911134df0"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 993
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1215
+      }
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\10-Tablet.png",
+      "actualSha256": "dee1250300d84a6916332fc56da4be89ad28dc062873a8379d10f32be337d19e",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\10-Tablet-full.png",
+      "fullSha256": "ca04986f44231fa0e0f6cb056a65937df676c53619f307ae362150d64b0d8437",
+      "heightCssPx": 1481,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/10_Chi_tiet_lich_su_doi_soat_Tablet.png",
+      "referenceSha256": "dc6cedbb600275c6c23644b1db988934ee09045c2b8b4d4c3fd68963bc24a6e7",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\10-Tablet.png",
+      "beforeSha256": "dee1250300d84a6916332fc56da4be89ad28dc062873a8379d10f32be337d19e",
+      "beforeHeightCssPx": 1481,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Tablet-reference.png",
+          "sha256": "e8207e73fffb58070ab4bd86c1b9dcafe4a797ff30c6639b253fc550dd8125dc"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Tablet-actual.png",
+          "sha256": "7cf1fc46e7e53831556e5a8d6afc7de163313aae480a205768f7ea7cd1363946"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Tablet-overlay.png",
+          "sha256": "5954b2881bc55e30a3715f5643e78ae98a99172e0d3492102f7627cead8a466c"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\10-Tablet-diff.png",
+          "sha256": "030e57ed49d50b192512d9e7e90535def02220758a5caf35af64ed35524a73b4"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1191
+      }
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\11-Tablet.png",
+      "actualSha256": "b3af8436246ceceb595556bbf369f13979e6d99023a8746e157ec084b5d8ddb8",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/11_Loading_Tablet.png",
+      "referenceSha256": "0534058b2270b624831eac4a4a1c51070e9925d2cc29925c3fdfb1cd133aed9e",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\11-Tablet.png",
+      "beforeSha256": "b3af8436246ceceb595556bbf369f13979e6d99023a8746e157ec084b5d8ddb8",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Tablet-reference.png",
+          "sha256": "0efe33ddbba04680a07bb10ebdf2424bb77136ae1ddc3370e7f539b7788cc669"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Tablet-actual.png",
+          "sha256": "7f9055f30653941a6bf2c31626eeb086e9faefd53664bad911a12dc662aece44"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Tablet-overlay.png",
+          "sha256": "1bf9f012328fc3eaa88cedb2a52f683e96349b87260d4b732796fdd89e5cca29"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\11-Tablet-diff.png",
+          "sha256": "95184545698d2ec1d76988b1fa3f7d2c01a9ad3584555d7db96bcfb01a7a428c"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 72,
+          "w": 1086
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\12-Tablet.png",
+      "actualSha256": "780922bd394591234ac773fbe9f78bc833d8d3a8a8823302c5992a5167eb5b9d",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/12_Empty_Tablet.png",
+      "referenceSha256": "67ec5b58dce86b5adf3b67e525e549d274b12f941f14f181a9d0c8c292d188b9",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\12-Tablet.png",
+      "beforeSha256": "780922bd394591234ac773fbe9f78bc833d8d3a8a8823302c5992a5167eb5b9d",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Tablet-reference.png",
+          "sha256": "698ea314c3e33f1b0cdba2f5ff0c4402a642b3c0d4b8c386c30486d9d7daa14c"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Tablet-actual.png",
+          "sha256": "42bc0d8ce84ea65425c92c875d944e795cfa2498c72ba0f7469e4621d0cf2fb7"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Tablet-overlay.png",
+          "sha256": "9d9782c2aacfd32adcdd6e8c0882a7bd8a624fffd5ca6d65534f505b59d0cf3c"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\12-Tablet-diff.png",
+          "sha256": "d3de9ce3a721eb365b572274cf21842d5b073c8fec2fbf791de6efa58d0aa713"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "13",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\13-Tablet.png",
+      "actualSha256": "1c3f0f5eebc72e6c2fae87ff28d735c9c1d99c8fee18af06ce4dfbfeb9fd66dd",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/13_No_result_Tablet.png",
+      "referenceSha256": "c8a97f64157ce09f298634398ca3c55ea32f81ab6974b29ba901c38b1d16b2c1",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\13-Tablet.png",
+      "beforeSha256": "1c3f0f5eebc72e6c2fae87ff28d735c9c1d99c8fee18af06ce4dfbfeb9fd66dd",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Tablet-reference.png",
+          "sha256": "2ddcbeecc2e9387db2c10181c8246d1ad37f74e33c0a4eb4d9daac102152d047"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Tablet-actual.png",
+          "sha256": "147b3d1e615e534f0253e012f0d26384ceb25d86502f9c978bffc304823dd020"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Tablet-overlay.png",
+          "sha256": "70eefdfb81876f1a6d8b181e061acc6520d5b78436b9793b79e58190dbf43132"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\13-Tablet-diff.png",
+          "sha256": "b658f411538a5c220c344413c2ef89d95de58fa68e9484ac7660cfd6c217f3b2"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "14",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\14-Tablet.png",
+      "actualSha256": "0c4644a7a97ae032a72e1c917ccd3afdad2d2d521d5c97cece75eb228caa140c",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/14_Load_error_Tablet.png",
+      "referenceSha256": "c1c747aa7e9fb6896e9d17812d42e5452be9771d659c535aa07b5a6e911f499d",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\14-Tablet.png",
+      "beforeSha256": "0c4644a7a97ae032a72e1c917ccd3afdad2d2d521d5c97cece75eb228caa140c",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Tablet-reference.png",
+          "sha256": "c3b554345b24e9bbe0b6cc2737b08e3f7858a99a0582783ff849bd19c6c44539"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Tablet-actual.png",
+          "sha256": "ea37d51a6a1565785c88898651b49d43f0cad317f51f89eb7e966b1bc7eff109"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Tablet-overlay.png",
+          "sha256": "613c9e8825f6f7932b3acd9ea44b5dc3e320cb4224e92dfa52f37ed0a44765ed"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\14-Tablet-diff.png",
+          "sha256": "fd7a09df3521d739df0006be256616dff9de8e4fe8146aea84a51779677ed086"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "15",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\15-Tablet.png",
+      "actualSha256": "35a08a7b08ed9382262962d187758f861da70386d18f4a2c9f2236ea9909c996",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/15_Forbidden_Tablet.png",
+      "referenceSha256": "98fca41f08739e2bd2b797dc96508e2c6928f10a5fbe5cbe6bc2eda7732b8ed2",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\15-Tablet.png",
+      "beforeSha256": "35a08a7b08ed9382262962d187758f861da70386d18f4a2c9f2236ea9909c996",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Tablet-reference.png",
+          "sha256": "9215bd4add73fe8d12b3048b718906f6750c4cfd69389114b7e072f2eb3a3247"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Tablet-actual.png",
+          "sha256": "0e5924a9d01eb4a6d94a8c67fe032cc79d5577bd172ab39f430cdf217af49d18"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Tablet-overlay.png",
+          "sha256": "d19804ec03a300d5cb47b25af8d0e8a81ea9a0198ec9932ff406acecfaa30602"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\15-Tablet-diff.png",
+          "sha256": "acad816e35c5a581c3bb81aa91f8f860d5060ed4c9ca9e1b49fe9f5619785736"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "16",
+      "device": "Tablet",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\16-Tablet.png",
+      "actualSha256": "8d9bff7cc24cd456e289b25f6b79e536c35aa5895b584eb21a4ff8588142989d",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0,
+      "reference": "docs/qa/inventory/HN-INVENTORY-32REF-001/design/references/Tablet/16_Not_found_Tablet.png",
+      "referenceSha256": "54a05fd43f2d5942ce9a37ccf206d853eeab37086b7a605f0108841e43b14a96",
+      "referenceMatchesManifest": true,
+      "before": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\functional\\before\\16-Tablet.png",
+      "beforeSha256": "8d9bff7cc24cd456e289b25f6b79e536c35aa5895b584eb21a4ff8588142989d",
+      "beforeHeightCssPx": 1280,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Tablet-reference.png",
+          "sha256": "26c57884e7a5bf987ad72aad30e3af5e35eaddc18f36c10ddfd489f30b430f45"
+        },
+        "actual": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Tablet-actual.png",
+          "sha256": "e9ab88c7bd7eee99d740201809dce425659f0d094ab862587c60b3d5179feee7"
+        },
+        "overlay": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Tablet-overlay.png",
+          "sha256": "6f7765ff132beb45e5682b0fb84357e836a4d3d107aa4a5eabdeecc4c834a3af"
+        },
+        "diff": {
+          "path": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\comparison\\16-Tablet-diff.png",
+          "sha256": "b0c1f78bf90f0890dafec5422f3e093cfa3e81d6926989a81eb6cd55a7a7d886"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "01",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\01-Mobile400.png",
+      "actualSha256": "82faa0eec164b5e600178a4c731d9597774d697d39fd632ae63c1c74d8e4b447",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\01-Mobile400-full.png",
+      "fullSha256": "dc9d79d1c8dc8471eb665a36412fcc40c53070548e045a56f6e882a85a0323af",
+      "heightCssPx": 3453,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "02",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\02-Mobile400.png",
+      "actualSha256": "723363bdca630904e6f52d73e0f8f41fbe3766c27ac48e1179794fa48efec812",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\02-Mobile400-full.png",
+      "fullSha256": "688c56ede1d04357dc6e192d722e625ba9892e51d4072a94eb0e704d00d5509d",
+      "heightCssPx": 2797,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "03",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\03-Mobile400.png",
+      "actualSha256": "ee5cf2b714c4807bd0f34ee3f58293a94667a3adafb5531a904b7532a21d9f5f",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\03-Mobile400-full.png",
+      "fullSha256": "3036ab7d211408b3d9ffa48c029abbadf877c70011fb9b101372d0264d3eedbd",
+      "heightCssPx": 3641,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "04",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\04-Mobile400.png",
+      "actualSha256": "0e0e7ee47669ee58dc5e8f46f56427ab31720922d2053efe457778522555d8e6",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\04-Mobile400-full.png",
+      "fullSha256": "75d3e7adf57954f149c7a05ae88a5340361e52452b5e838864497c72ca43de68",
+      "heightCssPx": 1308,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "05",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\05-Mobile400.png",
+      "actualSha256": "f5acb369f566030b08d11efe96f4604d85073ac6fa9823b3a1607ae576c7424e",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 900,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "06",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\06-Mobile400.png",
+      "actualSha256": "bb859b133cdd83ad9307567221811a1b8a7dea7d51f037e686836e691d32faf7",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\06-Mobile400-full.png",
+      "fullSha256": "11fd564eb9db1680eb657ab31844492b541887353b35c2c21a7931bcf2773427",
+      "heightCssPx": 3919,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "07",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\07-Mobile400.png",
+      "actualSha256": "aa441b5e92f677f9680f6398f87e3eac2829c6767505fb6227394adaaec4fc18",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\07-Mobile400-full.png",
+      "fullSha256": "8ca423d6800639d679b464a740b759e2c01d2f141c90b2b5b12322a8d77fff94",
+      "heightCssPx": 3863,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "08",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\08-Mobile400.png",
+      "actualSha256": "80c2b18c40ab5150fbdf077bebcf85f0f52ef739dd779824ba17fcf48b1cded6",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\08-Mobile400-full.png",
+      "fullSha256": "0b23bf4cb15d45fceb58a3f6eb33300aa84f061a5c0a1173ed1e5c9f41237e48",
+      "heightCssPx": 3329,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "09",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\09-Mobile400.png",
+      "actualSha256": "93ba2752c8ddabeef17f0004fedca6fd7fd8308e5bccb2f158125d704f1cf4be",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\09-Mobile400-full.png",
+      "fullSha256": "b2f3d29edf0041b6f82f663d7f0ba3047907d098d0f82a3632e85c226930824e",
+      "heightCssPx": 3415,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "10",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\10-Mobile400.png",
+      "actualSha256": "90951cdaf47654aee5ea2363dc5c8927b1319cb6bc69f509d1553e8d3b79ce77",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\10-Mobile400-full.png",
+      "fullSha256": "e0bc079f73ee4cfa5fa8dfcfb3c4f4e20123c8809ac0116fe24bdea8898e575c",
+      "heightCssPx": 3691,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "11",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\11-Mobile400.png",
+      "actualSha256": "3b8025b3f2ecd0f1ac26718dee914ff950ac4534aea41df5ac977e0eae76d7a0",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\11-Mobile400-full.png",
+      "fullSha256": "4b646a34a6cbf42a99c401d1eb5180e17cd1d5133d7e0de95a73fe0c5e9e83ff",
+      "heightCssPx": 1797,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "12",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\12-Mobile400.png",
+      "actualSha256": "ece0f7255148a110be4c5a07888821c1933fa9ed6b6d5befa0648c1769f33956",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\12-Mobile400-full.png",
+      "fullSha256": "34990f912b560a7247a2adf6f395b29360f10c7ef0bc68753a4f77e5497ee6bc",
+      "heightCssPx": 945,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "13",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\13-Mobile400.png",
+      "actualSha256": "7b5b0121bfa23a5c8ecb615d92b5ded2724240f0e82b1bef2755a3f1b5263437",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\13-Mobile400-full.png",
+      "fullSha256": "fe48fcd9f46fbd7aa40197a857077c2d341c59852a4ecbf74d58d6607360491d",
+      "heightCssPx": 945,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "14",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\14-Mobile400.png",
+      "actualSha256": "c4d4c4b3b4b2bf82b4a3758355cbdd8ad9b60d1f4bb80a34aa34c68a7988b247",
+      "full": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\14-Mobile400-full.png",
+      "fullSha256": "873ad6fd7e837b86006c6ea69cf3af9940a8e8c881a8bff641464122a8724c21",
+      "heightCssPx": 943,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "15",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\15-Mobile400.png",
+      "actualSha256": "d5a11d47bd6a3946c2e02aef0ee86b2554d849db01eb526ba137c4aff8a5f1a7",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 900,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    },
+    {
+      "id": "16",
+      "device": "Mobile400",
+      "actual": "docs\\qa\\inventory-reconciliation\\HN-INVENTORY-RECON-FIDELITY-001\\visual\\after\\16-Mobile400.png",
+      "actualSha256": "b81d8c3f9ac64284acd12e838cb4b6ca0a3211407cc86a598575fd44f7d2f78d",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 900,
+      "overflow": false,
+      "controlsUnder44": 0,
+      "errors": 0,
+      "failedRequests": 0
+    }
+  ]
+}

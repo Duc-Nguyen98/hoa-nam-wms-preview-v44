@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "name": "S21 initial s21-session maps to unauthorized",
+      "status": "PASS",
+      "observations": {
+        "text": "Phiên đăng nhập đã hết hạn\nVui lòng đăng nhập lại để tiếp tục.",
+        "buttons": []
+      }
+    },
+    {
+      "name": "S21 initial s21-forbidden maps to forbidden",
+      "status": "PASS",
+      "observations": {
+        "text": "Không có quyền\nHãy liên hệ quản trị viên nếu bạn cần quyền này.",
+        "buttons": []
+      }
+    },
+    {
+      "name": "S21 initial s21-notfound maps to record-not-found",
+      "status": "PASS",
+      "observations": {
+        "text": "Không tìm thấy bản ghi\nBản ghi yêu cầu không tồn tại hoặc đã được thay đổi.",
+        "buttons": []
+      }
+    },
+    {
+      "name": "S21 initial s21-network maps to error",
+      "status": "PASS",
+      "observations": {
+        "text": "Chưa thể đọc báo cáo\nChưa có dữ liệu để hiển thị. Bạn có thể thử đọc lại báo cáo.\nThử lại",
+        "buttons": [
+          "Thử lại"
+        ]
+      }
+    },
+    {
+      "name": "S21 initial s21-loading maps to loading",
+      "status": "PASS",
+      "observations": {
+        "text": "Đang đọc báo cáo tồn kho và đối soát…\nĐang đọc số liệu tổng hợp và chi tiết tồn kho.",
+        "buttons": []
+      }
+    },
+    {
+      "name": "S21 network retry accepts fixture read and replaces failure with report rows",
+      "status": "PASS",
+      "observations": {
+        "reads": 2,
+        "rows": 4
+      }
+    },
+    {
+      "name": "S21 later read failure retains accepted rows with visible feedback",
+      "status": "PASS",
+      "observations": {
+        "before": [
+          "1SP-0001Cáp mạng CAT6135134−1Cần kiểm tra120200180105",
+          "2SP-0002Bộ nguồn 12V9896−2Cần kiểm tra80320290208",
+          "3SP-0003Máy quét mã vạch2452450Khớp200500420405",
+          "4SP-0004Tem nhãn nhiệt 50×306867−1Cần kiểm tra112264296120"
+        ],
+        "reads": 2
+      }
+    }
+  ],
+  "errors": []
+}

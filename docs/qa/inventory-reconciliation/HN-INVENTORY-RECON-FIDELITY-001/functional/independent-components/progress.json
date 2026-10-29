@@ -1,0 +1,125 @@
+{
+  "beforeSource": {
+    "src/features/S16/approved/adapter.ts": "33eb60696f6cb8ab8e383363ae8e14c333a78149cb3d994e66d4778bc11a371e",
+    "src/features/S16/approved/InventoryDesignWorkspace.tsx": "403c5db809330467db8f686b4e965ba786a575d700d25d7bd70d3edaf71176fb",
+    "src/features/S16/approved/projection.ts": "29a0f0a5f9055c4f03a2311bcd83262aab0aab2b7a4e96ccdea747ec1bea0ddc",
+    "src/features/S16/approved/navigation.ts": "bf2fbb004362ad61af9bb589b4da32cd201aa54e951ad5ca0b166e0dbfde411e",
+    "src/features/putaway/TrayUi.tsx": "89bcac6a889f902a70821929034a5eb88b5a7110ed2d0251f77fa0c0a0cbbf0b",
+    "src/shared/read-failure-kind.ts": "b42f88273fe18e529ec005c03dbe092e529000d443143f07305bbaf2842f8c44"
+  },
+  "checks": [
+    {
+      "name": "null counted quantity is unknown rather than zero shortage",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=null-count#/preview/S16?view=reconcile\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=null-count#/preview/S16?view=reconcile\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-1.png"
+    },
+    {
+      "name": "BOX allocation preserves SKU unit instead of hardcoded pieces",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=unit#/preview/S16?view=allocation\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=unit#/preview/S16?view=allocation\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-2.png"
+    },
+    {
+      "name": "large signed variance follows current quantity locale",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=large#/preview/S16?view=reconcile\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=large#/preview/S16?view=reconcile\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-3.png"
+    },
+    {
+      "name": "large negative variance keeps localized magnitude and shortage label",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=negative#/preview/S16?view=reconcile\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=negative#/preview/S16?view=reconcile\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-4.png"
+    },
+    {
+      "name": "partial BOX null count does not produce false counted totals in difference",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=null-count#/preview/S16?view=difference\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=null-count#/preview/S16?view=difference\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-5.png"
+    },
+    {
+      "name": "saved unknown count stays unknown and receives its own result tab",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=null-count#/preview/S16?view=snapshot\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=null-count#/preview/S16?view=snapshot\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-6.png"
+    },
+    {
+      "name": "twelve row pagination keeps scope counts across page9 and3 then refresh",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=pagination#/preview/S16?view=reconcile\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=pagination#/preview/S16?view=reconcile\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-7.png"
+    },
+    {
+      "name": "out of order retry outcome cannot replace a newer scope success",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=retry#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=retry#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-8.png"
+    },
+    {
+      "name": "persistent retry failure remains error until an accepted successful read",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=retry#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=retry#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-9.png"
+    },
+    {
+      "name": "multi BOX multi SKU tray uses actual membership and per SKU units",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=multi-tray#/preview/S16?view=tray\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=multi-tray#/preview/S16?view=tray\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-10.png"
+    },
+    {
+      "name": "TrayReadState tray-session maps to unauthorized",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-session#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-session#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-11.png"
+    },
+    {
+      "name": "TrayReadState tray-forbidden maps to forbidden",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-forbidden#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-forbidden#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-12.png"
+    },
+    {
+      "name": "TrayReadState tray-notfound maps to record-not-found",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-notfound#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-notfound#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-13.png"
+    },
+    {
+      "name": "TrayReadState tray-network maps to error",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-network#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-network#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-14.png"
+    },
+    {
+      "name": "TrayReadState tray-loading maps to loading",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-loading#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-loading#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-15.png"
+    },
+    {
+      "name": "TrayReadState refresh keeps accepted data and omits initial loading state",
+      "status": "FAIL",
+      "error": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-refresh#/preview/S16?view=stock\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=tray-refresh#/preview/S16?view=stock\", waiting until \"load\"\u001b[22m\n",
+      "observations": {},
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/independent-components/failure-16.png"
+    }
+  ],
+  "errors": []
+}

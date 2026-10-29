@@ -1,0 +1,9 @@
+# Inventory integrity — bounded MOCK evidence
+
+The Candidate fixtures retain DRV120actual/20held/100available and120system/118counted/−2difference; WIR1200/200/1000 retains its own unit. No cross-unit total is presented as stock quantity. Nine SKU fixture rows classify3match/3short/3over. Counts are row/scoped-result counts for this fixture, not a newly approved production definition.
+
+The adapter declares complete versus unavailable allocation. Missing BOX coverage is unknown, not zero. Explicit complete empty coverage can be zero. Null/non-finite count remains unverified; one unknown BOX count makes its counted aggregate unknown without destroying known actual/held. BOX quantities use linked SKU units. Projection tests fence SKU, warehouse and location and preserve full-source rows. Safe large positive/negative/zero values and signed locale formatting were independently exercised; arbitrary decimal/unsafe-integer backend precision is not certified.
+
+Read-only normal app navigation/reloads left canonical stock/events/versions unchanged, with default S16/S11/S20/S21 row counts11/9/35/11. These are browser-local operational fixtures, not production database checks. PTW-01 single-SKU BOX, multi-BOX tray and confirmed mapping assumptions are preserved; no new putaway command/movement was created. Component tests include multi-SKU tray rendering and bounded relations. Existing putaway unit tests passed within the27-test run.
+
+Evidence: [source/data audit](functional/SOL_DATA_SCOPE_AUDIT.md), [unit receipts](functional/sol-independent-unit.txt), [normal edges](functional/sol-final-edges/results.json), [broad reads](functional/sol-final-broad/browser-results.json), and postCSS provenance in functional/SOL_FUNCTIONAL_QA_REPORT.md. REAL_API_INVENTORY_ACCURACY=BLOCKED pending authoritative counts/reservations/mappings/scope endpoints and safe backend environment.

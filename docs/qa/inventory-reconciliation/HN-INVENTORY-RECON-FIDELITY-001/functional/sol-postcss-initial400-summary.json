@@ -1,0 +1,151 @@
+[
+  {
+    "view": "stock",
+    "tabBounds": [
+      {
+        "text": "Tra cứu tồn",
+        "left": 12,
+        "right": 124.015625
+      },
+      {
+        "text": "Đối soát",
+        "left": 132.015625,
+        "right": 220.5
+      },
+      {
+        "text": "Lịch sử đối soát",
+        "left": 228.5,
+        "right": 365.234375
+      }
+    ]
+  },
+  {
+    "view": "sku",
+    "tabBounds": [
+      {
+        "text": "Tổng quan tồn kho",
+        "left": 12,
+        "right": 169.59375
+      },
+      {
+        "text": "Phân bổ theo BOX",
+        "left": 177.59375,
+        "right": 331.140625
+      },
+      {
+        "text": "Lịch sử biến động",
+        "left": 12,
+        "right": 162.09375
+      }
+    ]
+  },
+  {
+    "view": "allocation",
+    "tabBounds": [
+      {
+        "text": "Tổng quan tồn kho",
+        "left": 12,
+        "right": 167.46875
+      },
+      {
+        "text": "Phân bổ theo BOX",
+        "left": 175.46875,
+        "right": 331.265625
+      },
+      {
+        "text": "Lịch sử biến động",
+        "left": 12,
+        "right": 162.09375
+      }
+    ]
+  },
+  {
+    "view": "box",
+    "tabBounds": []
+  },
+  {
+    "view": "tray",
+    "tabBounds": [],
+    "trayDetails": [
+      {
+        "text": "Mã khayKH-001KhoHN01Vị tríA01-01Thời điểm số liệu14:25 28/10/2026Số BOX1Số SKU1",
+        "left": 29,
+        "right": 371,
+        "top": 300,
+        "bottom": 465,
+        "width": 342,
+        "height": 165,
+        "visible": true,
+        "centerHit": true
+      }
+    ]
+  },
+  {
+    "view": "movement",
+    "tabBounds": [
+      {
+        "text": "Tổng quan tồn kho",
+        "left": 12,
+        "right": 167.46875
+      },
+      {
+        "text": "Phân bổ theo BOX",
+        "left": 175.46875,
+        "right": 329.015625
+      },
+      {
+        "text": "Lịch sử biến động",
+        "left": 12,
+        "right": 164.59375
+      }
+    ]
+  },
+  {
+    "view": "reconcile",
+    "tabBounds": [
+      {
+        "text": "Tra cứu tồn",
+        "left": 12,
+        "right": 121.53125
+      },
+      {
+        "text": "Đối soát",
+        "left": 129.53125,
+        "right": 219.875
+      },
+      {
+        "text": "Lịch sử đối soát",
+        "left": 227.875,
+        "right": 364.609375
+      }
+    ]
+  },
+  {
+    "view": "difference",
+    "tabBounds": []
+  },
+  {
+    "view": "history",
+    "tabBounds": [
+      {
+        "text": "Tra cứu tồn",
+        "left": 12,
+        "right": 121.53125
+      },
+      {
+        "text": "Đối soát",
+        "left": 129.53125,
+        "right": 218.015625
+      },
+      {
+        "text": "Lịch sử đối soát",
+        "left": 226.015625,
+        "right": 365.515625
+      }
+    ]
+  },
+  {
+    "view": "snapshot",
+    "tabBounds": []
+  }
+]

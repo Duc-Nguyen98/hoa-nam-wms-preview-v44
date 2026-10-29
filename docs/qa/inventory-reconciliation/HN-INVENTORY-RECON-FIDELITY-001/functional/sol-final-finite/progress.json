@@ -1,0 +1,371 @@
+{
+  "checks": [
+    {
+      "name": "finite 400x640 all ten projections stay bounded and actions reachable",
+      "status": "PASS",
+      "observations": {
+        "views": [
+          {
+            "view": "stock",
+            "actions": 9,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "sku",
+            "actions": 9,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "allocation",
+            "actions": 9,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "box",
+            "actions": 0,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "tray",
+            "actions": 1,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "movement",
+            "actions": 0,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "reconcile",
+            "actions": 9,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "difference",
+            "actions": 0,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "history",
+            "actions": 9,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          },
+          {
+            "view": "snapshot",
+            "actions": 9,
+            "width": 400,
+            "height": 640,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 400,
+            "overflow": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "finite 768x1024 all ten projections stay bounded and actions reachable",
+      "status": "PASS",
+      "observations": {
+        "views": [
+          {
+            "view": "stock",
+            "actions": 9,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "sku",
+            "actions": 9,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "allocation",
+            "actions": 9,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "box",
+            "actions": 0,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "tray",
+            "actions": 1,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "movement",
+            "actions": 0,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "reconcile",
+            "actions": 9,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "difference",
+            "actions": 0,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "history",
+            "actions": 9,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          },
+          {
+            "view": "snapshot",
+            "actions": 9,
+            "width": 768,
+            "height": 1024,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 768,
+            "overflow": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "finite 800x1280 all ten projections stay bounded and actions reachable",
+      "status": "PASS",
+      "observations": {
+        "views": [
+          {
+            "view": "stock",
+            "actions": 9,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "sku",
+            "actions": 9,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "allocation",
+            "actions": 9,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "box",
+            "actions": 0,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "tray",
+            "actions": 1,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "movement",
+            "actions": 0,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "reconcile",
+            "actions": 9,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "difference",
+            "actions": 0,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "history",
+            "actions": 9,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          },
+          {
+            "view": "snapshot",
+            "actions": 9,
+            "width": 800,
+            "height": 1280,
+            "dpr": 2,
+            "visualScale": 1,
+            "documentWidth": 800,
+            "overflow": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "finite 400x640 DatePicker popup stays within viewport and accepts keyboard date",
+      "status": "PASS",
+      "observations": {
+        "bounds": {
+          "left": 30,
+          "right": 366,
+          "top": 8,
+          "bottom": 632,
+          "width": 400,
+          "height": 640
+        }
+      }
+    },
+    {
+      "name": "finite 768x1024 DatePicker popup stays within viewport and accepts keyboard date",
+      "status": "PASS",
+      "observations": {
+        "bounds": {
+          "left": 391,
+          "right": 727,
+          "top": 339,
+          "bottom": 1013,
+          "width": 768,
+          "height": 1024
+        }
+      }
+    },
+    {
+      "name": "finite 800x1280 DatePicker popup stays within viewport and accepts keyboard date",
+      "status": "PASS",
+      "observations": {
+        "bounds": {
+          "left": 407,
+          "right": 743,
+          "top": 339,
+          "bottom": 1013,
+          "width": 800,
+          "height": 1280
+        }
+      }
+    }
+  ],
+  "errors": []
+}

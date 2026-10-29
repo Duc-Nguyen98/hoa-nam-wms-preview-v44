@@ -1,0 +1,226 @@
+{
+  "applicationSource": "0dd709236cb43f497f9e349349eebd9144e7175d",
+  "status": "BLOCKED",
+  "reason": "First runner interrupted after13PASS; final all-case rerun OOM after6PASS. Tail3PASS has complete receipt. Per-case coverage is not a completed single-suite receipt.",
+  "firstReceipt": "sol-final-components/progress.json",
+  "tailReceipt": "sol-final-component-tail/results.json",
+  "perCaseChecks": [
+    {
+      "name": "null counted quantity is unknown rather than zero shortage",
+      "status": "PASS",
+      "observations": {
+        "cells": [
+          "HN-DRV-001⧉",
+          "Bộ điều khiển động cơ",
+          "HN01",
+          "Cái",
+          "120",
+          "Chưa kiểm đếm",
+          "Chưa xác định",
+          "Chưa kiểm đếm",
+          "Xem ›"
+        ],
+        "metrics": "Tổng số SKU\n9\nKhớp\n3\nThiếu\n2\nThừa\n3\nChưa kiểm đếm\n1"
+      }
+    },
+    {
+      "name": "BOX allocation preserves SKU unit instead of hardcoded pieces",
+      "status": "PASS",
+      "observations": {
+        "cells": [
+          "BOX-001⧉",
+          "KH-001",
+          "A01-01",
+          "Mét",
+          "20",
+          "5",
+          "15",
+          "Xem ›"
+        ]
+      }
+    },
+    {
+      "name": "large signed variance follows current quantity locale",
+      "status": "PASS",
+      "observations": {
+        "cells": [
+          "HN-DRV-001⧉",
+          "Bộ điều khiển động cơ",
+          "HN01",
+          "Cái",
+          "1.200.000.000",
+          "1.201.000.000",
+          "+1.000.000",
+          "Thừa",
+          "Xem ›"
+        ]
+      }
+    },
+    {
+      "name": "large negative variance keeps localized magnitude and shortage label",
+      "status": "PASS",
+      "observations": {
+        "cells": [
+          "HN-DRV-001⧉",
+          "Bộ điều khiển động cơ",
+          "HN01",
+          "Cái",
+          "1.200.000.000",
+          "1.199.000.000",
+          "−1.000.000",
+          "Thiếu",
+          "Xem ›"
+        ]
+      }
+    },
+    {
+      "name": "partial BOX null count does not produce false counted totals in difference",
+      "status": "PASS",
+      "observations": {
+        "metrics": [
+          "Tồn hệ thống120Kiểm đếmChưa kiểm đếmChênh lệchChưa xác địnhKết quảChưa kiểm đếm",
+          "Tồn hệ thống120Kiểm đếmChưa kiểm đếmChênh lệchChưa xác định"
+        ],
+        "firstBox": [
+          "BOX-001",
+          "KH-001",
+          "A01-01",
+          "20",
+          "Chưa kiểm đếm",
+          "Chưa xác định",
+          "Chưa kiểm đếm"
+        ]
+      }
+    },
+    {
+      "name": "saved unknown count stays unknown and receives its own result tab",
+      "status": "PASS",
+      "observations": {
+        "cells": [
+          "HN-DRV-001⧉",
+          "Bộ điều khiển động cơ",
+          "HN01",
+          "Cái",
+          "120",
+          "Chưa kiểm đếm",
+          "Chưa xác định",
+          "Chưa kiểm đếm",
+          "Xem ›"
+        ]
+      }
+    },
+    {
+      "name": "twelve row pagination keeps scope counts across page9 and3 then refresh",
+      "status": "PASS",
+      "observations": {
+        "firstMetrics": "Tổng số SKU\n12\nKhớp\n6\nThiếu\n3\nThừa\n3",
+        "page2Metrics": "Tổng số SKU\n12\nKhớp\n6\nThiếu\n3\nThừa\n3",
+        "returnUrl": "http://127.0.0.1:5340/tests/inventory-recon-fidelity/component-harness.html?case=pagination&qaVisit=7#/preview/S16?v=1&view=reconcile&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261028-01&page=2"
+      }
+    },
+    {
+      "name": "out of order retry outcome cannot replace a newer scope success",
+      "status": "PASS",
+      "observations": {
+        "retryCount": 2
+      }
+    },
+    {
+      "name": "persistent retry failure remains error until an accepted successful read",
+      "status": "PASS",
+      "observations": {
+        "retryCount": 2
+      }
+    },
+    {
+      "name": "multi BOX multi SKU tray uses actual membership and per SKU units",
+      "status": "PASS",
+      "observations": {
+        "details": "Mã khay\nKH-001\nKho\nHN01\nVị trí\nA01-01\nThời điểm số liệu\n14:25 28/10/2026\nSố BOX\n3\nSố SKU\n2",
+        "rows": [
+          "BOX-001⧉HN-DRV-001Bộ điều khiển động cơCái20515Xem ›",
+          "BOX-002⧉HN-DRV-001Bộ điều khiển động cơCái20515Xem ›",
+          "BOX-QA-WIRE⧉HN-WIR-006Dây tín hiệuMét312Xem ›"
+        ],
+        "fixture": [
+          {
+            "box": "BOX-001",
+            "sku": "HN-DRV-001",
+            "location": "A01-01",
+            "actual": 20
+          },
+          {
+            "box": "BOX-002",
+            "sku": "HN-DRV-001",
+            "location": "A01-01",
+            "actual": 20
+          },
+          {
+            "box": "BOX-QA-WIRE",
+            "sku": "HN-WIR-006",
+            "location": "A01-01",
+            "actual": 3
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrayReadState tray-session maps to unauthorized",
+      "status": "PASS",
+      "observations": {
+        "title": "Phiên đăng nhập đã hết hạn",
+        "buttons": []
+      }
+    },
+    {
+      "name": "TrayReadState tray-forbidden maps to forbidden",
+      "status": "PASS",
+      "observations": {
+        "title": "Không có quyền",
+        "buttons": []
+      }
+    },
+    {
+      "name": "TrayReadState tray-notfound maps to record-not-found",
+      "status": "PASS",
+      "observations": {
+        "title": "Không tìm thấy bản ghi",
+        "buttons": []
+      }
+    },
+    {
+      "name": "TrayReadState tray-network maps to error",
+      "status": "PASS",
+      "observations": {
+        "title": "Lỗi tải dữ liệu",
+        "buttons": [
+          "Thử lại"
+        ]
+      }
+    },
+    {
+      "name": "TrayReadState tray-loading maps to loading",
+      "status": "PASS",
+      "observations": {
+        "title": "Đang tải",
+        "buttons": []
+      }
+    },
+    {
+      "name": "TrayReadState refresh keeps accepted data and omits initial loading state",
+      "status": "PASS",
+      "observations": {
+        "acceptedVisible": true
+      }
+    }
+  ],
+  "allBeforeHashesMatchTail": true,
+  "allBeforeHashesMatchCurrent": true,
+  "tailSourceUnchanged": true,
+  "environmentFailure": {
+    "pid": 15560,
+    "message": "FATAL ERROR: Zone Allocation failed - process out of memory",
+    "rerunReceipt": "sol-final-components-complete/progress.json"
+  },
+  "errors": []
+}

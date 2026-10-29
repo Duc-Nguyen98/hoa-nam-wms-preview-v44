@@ -1,0 +1,161 @@
+{
+  "base": "http://127.0.0.1:5341",
+  "applicationSource": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "buildId": "ec7027a6f60c22cd53ab541636359823832a48424ecb8e688a39a6e7a52b0dab",
+  "mode": "MOCK",
+  "checks": [
+    {
+      "name": "warehouse location dependency exposes HN02 locations",
+      "status": "FAIL",
+      "error": "Error: expect(received).toContain(expected) // indexOf\n\nExpected value: \"B02-01\"\nReceived array: [\"Tất cả vị trí\", \"A01-01\", \"A01-02\", \"A01-03\", \"A01-04\", \"A01-05\", \"A01-06\", \"A01-07\", \"A01-08\", \"A01-09\"]",
+      "observations": {
+        "rows": [
+          "HN-HMI-008⧉Màn hình điều khiểnHN02B02-02Cái751560Xem ›",
+          "HN-MTR-005⧉Mô tơ cửaHN02B01-02Cái901080Xem ›",
+          "HN-SEN-003⧉Cảm biến quangHN02B02-01Cái50080420Xem ›"
+        ],
+        "options": [
+          "Tất cả vị trí",
+          "A01-01",
+          "A01-02",
+          "A01-03",
+          "A01-04",
+          "A01-05",
+          "A01-06",
+          "A01-07",
+          "A01-08",
+          "A01-09"
+        ]
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-1.png"
+    },
+    {
+      "name": "changing warehouse clears incompatible selected location",
+      "status": "FAIL",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"\"\nReceived: \"A01-09\"",
+      "observations": {
+        "location": "A01-09",
+        "state": "no-results"
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-2.png"
+    },
+    {
+      "name": "typing search is draft until Search or Enter",
+      "status": "PASS",
+      "observations": {
+        "draftRows": 9,
+        "appliedRows": 1
+      }
+    },
+    {
+      "name": "sku direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"not-found\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"not-found\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"not-found\"]')\n",
+      "observations": {
+        "state": null,
+        "visible": "Tra cứu tồn kho › Tổng quan tồn kho\n← Quay lại\nTổng quan tồn kho\nThời điểm số liệu: 14:25 28/10/2026\nBộ điều khiển động cơ\nHN-DRV-001\n⧉\n\nHN01 · Cái\n\nTồn thực tế\n120\nĐã giữ\n20\nKhả dụng\n100\nTổng quan tồn kho\nPhân bổ theo BOX\nLịch sử biến động\nTổng số BOX\n9\nTổng số khay\n9\nTổng số vị trí\n9\nPhân bổ theo vị trí\nA01-01\nKH-001\nHN01\n1\n20\n5\n15\nXem ›\nA01-02\nKH-002\nHN01\n1\n20\n5\n15\nXem ›\nA01-03\nKH-003\nHN01\n1\n20\n5\n15\nXem ›\nA01-04\nKH-004\nHN01\n1\n10\n5\n5\nXem ›\nA01-05\nKH-005\nHN01\n1\n10\n0\n10\nXem ›\nA01-06\nKH-006\nHN01\n1\n10\n0\n10\nXem ›\nA01-07\nKH-007\nHN01\n1\n10\n0\n10\nXem ›\nA01-08\nKH-008\nHN01\n1\n10\n0\n10\nXem ›\nA01-09\nKH-009\nHN01\n1\n10\n0\n10\nXem ›\n9 Tổng cộng\n‹ 1 ›\nTồn thực tế\n120\nĐã giữ\n20\nKhả dụng\n100"
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-4.png"
+    },
+    {
+      "name": "allocation direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"not-found\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"not-found\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"not-found\"]')\n",
+      "observations": {
+        "state": null,
+        "visible": "Tra cứu tồn kho › Phân bổ theo BOX\n← Quay lại\nPhân bổ theo BOX\nThời điểm số liệu: 14:25 28/10/2026\nBộ điều khiển động cơ\nHN-DRV-001\n⧉\n\nHN01 · Cái\n\nTồn thực tế\n120\nĐã giữ\n20\nKhả dụng\n100\nTổng quan tồn kho\nPhân bổ theo BOX\nLịch sử biến động\nBOX-001\n⧉\nKH-001\nA01-01\nCái\n20\n5\n15\nXem ›\nBOX-002\n⧉\nKH-002\nA01-02\nCái\n20\n5\n15\nXem ›\nBOX-003\n⧉\nKH-003\nA01-03\nCái\n20\n5\n15\nXem ›\nBOX-004\n⧉\nKH-004\nA01-04\nCái\n10\n5\n5\nXem ›\nBOX-005\n⧉\nKH-005\nA01-05\nCái\n10\n0\n10\nXem ›\nBOX-006\n⧉\nKH-006\nA01-06\nCái\n10\n0\n10\nXem ›\nBOX-007\n⧉\nKH-007\nA01-07\nCái\n10\n0\n10\nXem ›\nBOX-008\n⧉\nKH-008\nA01-08\nCái\n10\n0\n10\nXem ›\nBOX-009\n⧉\nKH-009\nA01-09\nCái\n10\n0\n10\nXem ›\n9 Tổng cộng\n‹ 1 ›\nTồn thực tế\n120\nĐã giữ\n20\nKhả dụng\n100"
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-5.png"
+    },
+    {
+      "name": "box direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"not-found\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"not-found\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"not-found\"]')\n",
+      "observations": {
+        "state": null,
+        "visible": "Tra cứu tồn kho › Chi tiết BOX\n← Quay lại\nChi tiết BOX\nThời điểm số liệu: 14:25 28/10/2026\nThông tin chung\nBOX\nBOX-001⧉\nMã SKU\nHN-DRV-001⧉\nTên hàng\nBộ điều khiển động cơ\nĐVT\nCái\nKho\nHN01\nKhay\nKH-001\nVị trí\nA01-01\nThời điểm số liệu\n14:25 28/10/2026\nTổng quan số lượng\nTồn thực tế\n20\nĐã giữ\n5\nKhả dụng\n15\nVị trí hiện tại\nKho\nHN01\nVị trí\nA01-01\nKhay\nKH-001\nBOX\nBOX-001\nLiên kết truy vết\nXem tồn SKU Xem lịch sử BOX"
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-6.png"
+    },
+    {
+      "name": "tray direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"not-found\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"not-found\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"not-found\"]')\n",
+      "observations": {
+        "state": null,
+        "visible": "Tra cứu tồn kho › Chi tiết khay\n← Quay lại\nChi tiết khay\nThời điểm số liệu: 14:25 28/10/2026\nMã khay\nKH-001\nKho\nHN01\nVị trí\nA01-01\nThời điểm số liệu\n14:25 28/10/2026\nSố BOX\n1\nSố SKU\n1\nBOX trên khay\nBOX\tSKU ↑\tTên hàng\tĐVT\tTồn thực tế\tĐã giữ\tKhả dụng\tXem\n\nBOX-001\n⧉\n\tHN-DRV-001\tBộ điều khiển động cơ\tCái\t20\t5\t15\tXem ›\n1 Tổng cộng\n‹ 1 ›"
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-7.png"
+    },
+    {
+      "name": "movement direct link rejects HN01 object outside HN02 warehouse scope",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"not-found\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"not-found\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"not-found\"]')\n",
+      "observations": {
+        "state": null,
+        "visible": "Tra cứu tồn kho › Lịch sử biến động\n← Quay lại\nLịch sử biến động\nThời điểm số liệu: 14:25 28/10/2026\nBộ điều khiển động cơ\nHN-DRV-001\n⧉\n\nHN01 · Cái\n\nTồn thực tế\n120\nĐã giữ\n20\nKhả dụng\n100\nTổng quan tồn kho\nPhân bổ theo BOX\nLịch sử biến động\nNgày giao dịch\nLoại giao dịch\nTất cả\nNhập kho\nBOX\nTất cả\nBOX-001\nBOX-002\nBOX-003\nBOX-004\nBOX-005\nBOX-006\nBOX-007\nBOX-008\nBOX-009\nTừ khóa\nTìm kiếm\n14:20 28/10/2026\nNK-009\nBOX-009\nNhập kho\n+10\n120\nNguyễn Văn Nam\n13:20 28/10/2026\nNK-008\nBOX-008\nNhập kho\n+10\n110\nNguyễn Văn Nam\n12:20 28/10/2026\nNK-007\nBOX-007\nNhập kho\n+10\n100\nNguyễn Văn Nam\n11:20 28/10/2026\nNK-006\nBOX-006\nNhập kho\n+10\n90\nNguyễn Văn Nam\n10:20 28/10/2026\nNK-005\nBOX-005\nNhập kho\n+10\n80\nNguyễn Văn Nam\n09:20 28/10/2026\nNK-004\nBOX-004\nNhập kho\n+10\n70\nNguyễn Văn Nam\n08:20 28/10/2026\nNK-003\nBOX-003\nNhập kho\n+20\n60\nNguyễn Văn Nam\n07:20 28/10/2026\nNK-002\nBOX-002\nNhập kho\n+20\n40\nNguyễn Văn Nam\n06:20 28/10/2026\nNK-001\nBOX-001\nNhập kho\n+20\n20\nNguyễn Văn Nam\n9 Tổng cộng\n‹ 1 ›"
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-8.png"
+    },
+    {
+      "name": "saved snapshot heading agrees with pinned snapshot date",
+      "status": "FAIL",
+      "error": "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"27/10/2026\"\nReceived string:    \"Thời điểm số liệu: 14:25 28/10/2026\"",
+      "observations": {
+        "headingTime": "Thời điểm số liệu: 14:25 28/10/2026",
+        "detail": "Mã đối soát\nDS-20261027-01\nPhạm vi\nTất cả kho\nThời điểm\n14:25 27/10/2026\nKết quả\nKết quả đã lưu"
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-9.png"
+    },
+    {
+      "name": "location scope remains consistent when opening SKU and BOX allocation",
+      "status": "FAIL",
+      "error": "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"location=A01-09\"\nReceived string:    \"http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?view=sku&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261028-01\"",
+      "observations": {
+        "list": "HN-DRV-001\n⧉\nBộ điều khiển động cơ\nHN01\nA01-09\nCái\n10\n0\n10\nXem ›",
+        "url": "http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?view=sku&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261028-01",
+        "metrics": "Tồn thực tế\n120\nĐã giữ\n20\nKhả dụng\n100",
+        "locations": 9
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-10.png"
+    },
+    {
+      "name": "scoped reconciliation counts use filtered result set",
+      "status": "PASS",
+      "observations": {
+        "metrics": "Tổng số SKU\n2\nKhớp\n2\nThiếu\n0\nThừa\n0",
+        "rowCount": 2
+      }
+    },
+    {
+      "name": "refresh preserves applied search in detail return context",
+      "status": "FAIL",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"HN-PSU-002\"\nReceived: \"\"",
+      "observations": {
+        "query": "",
+        "rows": 9
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-12.png"
+    },
+    {
+      "name": "browser Back Forward keeps selected stock and detail scope",
+      "status": "PASS",
+      "observations": {
+        "url": "http://127.0.0.1:5341/?inventoryDesign=20261029#/preview/S16?view=sku&sku=HN-DRV-001&box=BOX-001&snapshot=DS-20261028-01&warehouse=HN01"
+      }
+    },
+    {
+      "name": "history hash date query is validated or surfaced explicitly",
+      "status": "FAIL",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"2099-01-01\"\nReceived: \"\"",
+      "observations": {
+        "from": "",
+        "to": "",
+        "rowCount": 9,
+        "alert": 0
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-edges/failure-14.png"
+    }
+  ],
+  "errors": []
+}

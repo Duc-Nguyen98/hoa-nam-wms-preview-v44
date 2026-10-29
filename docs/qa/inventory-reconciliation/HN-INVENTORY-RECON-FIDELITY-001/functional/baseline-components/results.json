@@ -1,0 +1,71 @@
+{
+  "scope": "Isolated actual component with bounded QA adapter. Null extends the old non-null DTO solely to test defensive handling; not a backend payload claim.",
+  "beforeSource": {
+    "src/features/S16/approved/adapter.ts": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433",
+    "src/features/S16/approved/InventoryDesignWorkspace.tsx": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285"
+  },
+  "afterSource": {
+    "src/features/S16/approved/adapter.ts": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433",
+    "src/features/S16/approved/InventoryDesignWorkspace.tsx": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285"
+  },
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "null counted quantity is unknown rather than zero shortage",
+      "status": "FAIL",
+      "error": "Error: expect(received).not.toBe(expected) // Object.is equality\n\nExpected: not \"0\"",
+      "observations": {
+        "cells": [
+          "HN-DRV-001⧉",
+          "Bộ điều khiển động cơ",
+          "HN01",
+          "Cái",
+          "120",
+          "0",
+          "−120",
+          "Thiếu",
+          "Xem ›"
+        ]
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-components/failure-1.png"
+    },
+    {
+      "name": "BOX allocation preserves SKU unit instead of hardcoded pieces",
+      "status": "FAIL",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Mét\"\nReceived: \"Cái\"",
+      "observations": {
+        "cells": [
+          "BOX-001⧉",
+          "KH-001",
+          "A01-01",
+          "Cái",
+          "20",
+          "5",
+          "15",
+          "Xem ›"
+        ]
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-components/failure-2.png"
+    },
+    {
+      "name": "large signed variance follows current quantity locale",
+      "status": "FAIL",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"+1.000.000\"\nReceived: \"+1000000\"",
+      "observations": {
+        "cells": [
+          "HN-DRV-001⧉",
+          "Bộ điều khiển động cơ",
+          "HN01",
+          "Cái",
+          "1.200.000.000",
+          "1.201.000.000",
+          "+1000000",
+          "Thừa",
+          "Xem ›"
+        ]
+      },
+      "screenshot": "docs/qa/inventory-reconciliation/HN-INVENTORY-RECON-FIDELITY-001/functional/baseline-components/failure-3.png"
+    }
+  ],
+  "errors": []
+}

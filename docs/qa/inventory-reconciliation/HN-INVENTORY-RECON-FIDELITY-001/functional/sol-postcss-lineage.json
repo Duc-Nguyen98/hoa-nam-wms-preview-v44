@@ -1,0 +1,43 @@
+{
+  "priorSource": "0dd709236cb43f497f9e349349eebd9144e7175d",
+  "priorBuild": "1ef2777576367344d9f5e63bf6b345b310d334b10a5659b9da9f55eef374ea74",
+  "currentSource": "ecb2bdac211e392bb71d2f885725a6ecca3f3ce8",
+  "currentBuild": "caea03c77fb6deb73deb274ef3c8e4679e4e269b105705212ff9c18d71988e15",
+  "priorJavascript": [
+    {
+      "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+      "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+      "bytes": 18765
+    },
+    {
+      "path": "assets/index-B62dwuJZ.js",
+      "sha256": "f706f77cf29e56e1c8a86d29dab57e782f549592484f6d9faf0c0bfc0b2ffef8",
+      "bytes": 2323260
+    }
+  ],
+  "currentJavascript": [
+    {
+      "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+      "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+      "bytes": 18765
+    },
+    {
+      "path": "assets/index-BOv_oiSY.js",
+      "sha256": "f706f77cf29e56e1c8a86d29dab57e782f549592484f6d9faf0c0bfc0b2ffef8",
+      "bytes": 2323260
+    }
+  ],
+  "javascriptBytesEquivalent": true,
+  "evidence": "Prior manifest is visual/after/capture.json provenance.buildInfo; current is dist/build-info.json. Lineage only; old tests are not relabeled as current execution.",
+  "currentFilesVerified": [
+    {
+      "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+      "matchesManifest": true
+    },
+    {
+      "path": "assets/index-BOv_oiSY.js",
+      "matchesManifest": true
+    }
+  ],
+  "note": "Bundler output index filename differs; JavaScript SHA256 and byte lengths are identical. Current files verified against current manifest."
+}

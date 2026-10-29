@@ -1,0 +1,24 @@
+✔ approved nine-SKU scope has three match, three shortage and three surplus across HN01/HN02/HN03 (29.8403ms)
+✔ DRV nine BOX allocation, reservations and counts reconcile independently to 120/20/100 and 120/118/-2 (0.9114ms)
+✔ each BOX belongs to an existing SKU; KH-001 contains exactly its one BOX (0.8426ms)
+✔ saved results own immutable rows and BOX copies; live and saved objects cannot silently alias or mutate (21.7676ms)
+✔ allocation completeness is explicit, reconciles complete SKU quantities and remains pinned in saved results (3.5849ms)
+✔ Vietnam midnight changes the accepted business date independently of UTC calendar day (20.3922ms)
+✔ versioned inventory URL roundtrip preserves applied scope, dates, sort and page without auth changes (7.8658ms)
+✔ history/date deep links keep invalid values available for validation instead of silently clearing them (4.1792ms)
+✔ return context is accepted only under the registered navigation version (0.4869ms)
+✔ unverified count stays unknown rather than becoming a zero physical count and false shortage (2.6716ms)
+✔ known negative, zero and positive variance remain distinct at large safe quantities (1.5988ms)
+✔ a partial BOX count makes its total unknown while explicit complete empty and zero remain zero (0.4621ms)
+✔ location projection keeps DRV actual/held/count scope and never mutates full SKU120 (2.6233ms)
+✔ one uncounted selected BOX invalidates projected counted total without losing known actual or held (0.9278ms)
+✔ same location text cannot combine BOXes from a different SKU or warehouse (0.5136ms)
+✔ known SKU location remains selectable without inventing BOX coverage or mixing units (1.075ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2149.5416

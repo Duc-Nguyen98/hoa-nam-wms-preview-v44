@@ -1,0 +1,38 @@
+[
+  {
+    "width": 768,
+    "height": 1024,
+    "left": 685,
+    "right": 731,
+    "viewport": 768,
+    "documentWidth": 768,
+    "ancestors": [
+      {
+        "className": "iad-card iad-table-wrap ",
+        "overflowX": "hidden",
+        "clientWidth": 720,
+        "scrollWidth": 720
+      }
+    ],
+    "pointerSucceeded": true,
+    "pointerError": null
+  },
+  {
+    "width": 400,
+    "height": 640,
+    "left": 328.984375,
+    "right": 375,
+    "viewport": 400,
+    "documentWidth": 400,
+    "ancestors": [
+      {
+        "className": "iad-card iad-table-wrap ",
+        "overflowX": "hidden",
+        "clientWidth": 376,
+        "scrollWidth": 376
+      }
+    ],
+    "pointerSucceeded": true,
+    "pointerError": null
+  }
+]
