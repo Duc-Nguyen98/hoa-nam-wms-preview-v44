@@ -43,3 +43,19 @@
 .rev-return-progress li.done>span{background:#07956f;color:#fff}.rev-return-progress li.current>span{background:#dc8100;color:#fff}
 .rev-return-progress strong{color:var(--ink);overflow-wrap:anywhere}.rev-return-progress small{font-size:12px;overflow-wrap:anywhere}
 @media(max-width:599px){.rev-return-progress{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}.rev-return-progress li:after{display:none}}
+
+/* Escalation repair: item geometry follows each approved state's fields. */
+.rev .rev-table-items td.rev-numeric{text-align:right;font-variant-numeric:tabular-nums}
+.rev .rev-table-items .rev-col-name{overflow-wrap:normal;word-break:normal}
+.rev .rev-table-items .rev-col-sku{overflow-wrap:anywhere}
+.rev-item-details{padding:12px;background:var(--bg);display:grid;gap:12px}
+.rev-item-feedback{display:flex;flex-direction:column;gap:8px;min-width:0}
+.rev-item-feedback .rev-error{display:block;text-align:left;line-height:1.5;overflow-wrap:normal}
+.rev-item-feedback label{max-width:100%;font-weight:400}
+@media(min-width:600px) and (max-width:900px){
+ .rev .rev-items-posted th,.rev .rev-items-posted td,.rev .rev-items-impact th,.rev .rev-items-impact td,.rev .rev-items-edit th,.rev .rev-items-edit td,.rev .rev-items-success th,.rev .rev-items-success td{padding:7px 6px}
+ .rev .rev-items-posted th.rev-col-index{width:4%}.rev .rev-items-posted th.rev-col-sku{width:16%}.rev .rev-items-posted th.rev-col-name{width:26%}.rev .rev-items-posted th.rev-col-original,.rev .rev-items-posted th.rev-col-prior,.rev .rev-items-posted th.rev-col-quantity{width:14%}.rev .rev-items-posted th.rev-col-after{width:12%}
+ .rev .rev-items-impact th.rev-col-index{width:4%}.rev .rev-items-impact th.rev-col-sku{width:15%}.rev .rev-items-impact th.rev-col-name{width:25%}.rev .rev-items-impact th.rev-col-unit{width:7%}.rev .rev-items-impact th.rev-col-original,.rev .rev-items-impact th.rev-col-prior,.rev .rev-items-impact th.rev-col-after{width:12%}.rev .rev-items-impact th.rev-col-change{width:13%}
+ .rev .rev-items-edit th.rev-col-index{width:4%}.rev .rev-items-edit th.rev-col-sku{width:15%}.rev .rev-items-edit th.rev-col-name{width:23%}.rev .rev-items-edit th.rev-col-unit{width:7%}.rev .rev-items-edit th.rev-col-original{width:12%}.rev .rev-items-edit th.rev-col-prior{width:10%}.rev .rev-items-edit th.rev-col-remaining{width:11%}.rev .rev-items-edit th.rev-col-quantity{width:18%}
+ .rev .rev-items-success th.rev-col-index{width:4%}.rev .rev-items-success th.rev-col-sku{width:15%}.rev .rev-items-success th.rev-col-name{width:23%}.rev .rev-items-success th.rev-col-unit{width:7%}.rev .rev-items-success th.rev-col-before,.rev .rev-items-success th.rev-col-quantity,.rev .rev-items-success th.rev-col-change{width:13%}.rev .rev-items-success th.rev-col-after{width:12%}
+}

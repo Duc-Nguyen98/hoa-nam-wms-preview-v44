@@ -1,4 +1,5 @@
 export const reversalExtraCopy:Record<string,[string,string]>={
+ 'Tồn trước':['Stock before','变动前库存'],'Tồn sau':['Stock after','变动后库存'],
  'Tồn kho & Đối soát':['Inventory & reconciliation','库存与对账'],'Phiếu đảo':['Reversal','冲销单'],'Tra cứu giao dịch đảo và chứng từ gốc':['Search reversals and source documents','查询冲销交易和原始单据'],
  'Đảo nhập':['Inbound reversal','入库冲销'],'Đảo xuất':['Outbound reversal','出库冲销'],'Nhập kho':['Inbound','入库'],'Cái':['pcs','件'],'phiếu':['slips','单据'],
  'SKU – Số lượng':['SKU – Quantity','SKU – 数量'],'Số SKU':['SKU count','SKU 数量'],'Số mặt hàng':['Item count','商品数'],'Tổng số lượng đảo':['Total reversal quantity','冲销总数量'],
