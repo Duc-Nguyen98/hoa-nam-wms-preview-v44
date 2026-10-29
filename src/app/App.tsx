@@ -41,6 +41,7 @@ import { PutawayQueueScreen } from '../features/S13/PutawayQueueScreen';
 import { PutawayOrdersScreen } from '../features/S14/PutawayOrdersScreen';
 import { OutboundSlipsScreen } from '../features/S15/OutboundSlipsScreen';
 import { InventoryScreen } from '../features/S16/InventoryScreen';
+import { InventoryDesignWorkspace } from '../features/S16/approved/InventoryDesignWorkspace';
 import { ReversalSlipsScreen } from '../features/S17/ReversalSlipsScreen';
 import { PutawayHistoryScreen } from '../features/putaway/PutawayHistoryScreen';
 import { createPutawayHistoryAdapter } from '../data/http/putaway-history-adapter';
@@ -122,7 +123,8 @@ export function App() {
       .catch(() => { if (active) setFailed(true); });
     return () => { active = false; };
   }, []);
-  const selected = resolvePreviewRoute(hash);
+  const inventoryCandidate = IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('inventoryDesign') === '20261029';
+  const selected = resolvePreviewRoute(inventoryCandidate && /^#\/preview\/S16(?:\?|$)/.test(hash) ? '#/preview/S16' : hash);
   const notificationDocument = resolveNotificationDocumentSelection(hash);
   const overviewDocument = resolveOverviewDocumentSelection(hash);
   const accountPanel = resolveAccountPanel(hash);
@@ -177,7 +179,8 @@ export function App() {
   if (selected?.key === 'S13') return <PutawayQueueScreen adapter={businessHttpAdapters.S13} />;
   if (selected?.key === 'S14') return <PutawayOrdersScreen adapter={businessHttpAdapters.S14} />;
   if (selected?.key === 'S15') return <OutboundSlipsScreen adapter={businessHttpAdapters.S15} />;
-  if (selected?.key === 'S16') return <InventoryScreen adapter={businessHttpAdapters.S16} />;
+  if (selected?.key === 'S16') return IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('inventoryDesign') === '20261029'
+    ? <InventoryDesignWorkspace /> : <InventoryScreen adapter={businessHttpAdapters.S16} />;
   if (selected?.key === 'S17') return <ReversalSlipsScreen adapter={businessHttpAdapters.S17} />;
   if (selected?.key === 'S18') return <InboundReportScreen adapter={businessHttpAdapters.S18} />;
   if (selected?.key === 'S19') return <OutboundReportScreen adapter={businessHttpAdapters.S19} />;
