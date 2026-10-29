@@ -1,4 +1,5 @@
 export const reversalExtraCopy:Record<string,[string,string]>={
+ 'Tìm theo mã phiếu đảo hoặc chứng từ gốc':['Search by reversal or source ID','按冲销单号或原始单据搜索'],'Chỉ phản ánh chuỗi giao dịch này, không phải toàn bộ tồn SKU.':['Reflects this transaction chain only, not total SKU stock.','仅反映此交易链，并非 SKU 全部库存。'],
  'Tất cả phiếu':['All reversals','所有冲销单'],'Kết quả sau lọc':['Filtered results','筛选结果'],
  'Số lượng chứng từ trước đảo':['Document quantity before reversal','冲销前单据数量'],'Số lượng chứng từ còn lại':['Remaining document quantity','单据剩余数量'],'Chưa xác định đơn vị':['Unit unknown','单位未知'],
  'Tồn trước':['Stock before','变动前库存'],'Tồn sau':['Stock after','变动后库存'],
