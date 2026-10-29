@@ -2,7 +2,6 @@
    remain neutral; only the navigation sidebar and responsive drawer receive
    the warehouse image and navy readability veil. */
 .hn-shell[data-shell-version='s00'][data-variant][data-layout] :is(.hn-sidebar, .hn-drawer) {
-  --hn-sidebar-expanded: 320px;
   --hn-drawer-width: 350px;
   background: #0b4a7d !important;
   color: #dbeaf5;

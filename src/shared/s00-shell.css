@@ -11,7 +11,7 @@ html:has(.hn-shell[data-shell-version='s00']) { scroll-padding-block-start: 96px
    historical S01 shell presentation without changing its source or content.
    Pointer/orientation layout policy lives in GlobalShell, never in this CSS. */
 .hn-shell[data-shell-version='s00'][data-variant][data-layout] {
-  --hn-sidebar-expanded: 260px;
+  --hn-sidebar-expanded: 320px;
   --hn-sidebar-collapsed: 70px;
   --hn-header-desktop: 54px;
   --hn-header-tablet: 64px;
@@ -21,7 +21,7 @@ html:has(.hn-shell[data-shell-version='s00']) { scroll-padding-block-start: 96px
   --hn-s00-muted: #637184;
   --hn-s00-border: #e3e7ee;
   --hn-s00-shadow: none;
-  --hn-s00-offset: 260px;
+  --hn-s00-offset: var(--hn-sidebar-expanded);
   display: block;
   min-height: 100dvh;
   width: 100%;
