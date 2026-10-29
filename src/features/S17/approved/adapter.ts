@@ -1,6 +1,6 @@
 export type Status = 'Đã ghi sổ' | 'Nháp' | 'Chờ hàng trả về' | 'Đã hủy';
 export type Line = { sku:string; name:string; original:number; prior:number; quantity:number; note:string };
-export type RecordRow = { id:string; source:string; type:'Đảo nhập'|'Đảo xuất'; status:Status; reason:string; note?:string; created:string; lines:Line[] };
+export type RecordRow = { id:string; source:string; type:'Đảo nhập'|'Đảo xuất'; status:Status; reason:string; note?:string; cancelledAt?:string; cancelledBy?:string; created:string; lines:Line[] };
 export type Receipt = { kind:'confirmed'; key:string; recordId:string; postedAt:string; version:number };
 export type PostResult = Receipt | {kind:'unknown';key:string} | {kind:'conflict'} | {kind:'blocked'};
 export interface ReversalDesignAdapter {
@@ -15,7 +15,7 @@ const fixtureRows:RecordRow[]=[
  row('20261028-008','PX-20261025-008','Đảo xuất','Chờ hàng trả về','Hàng quay lại kho','2026-10-28T13:40',lines(3,()=>2).map(l=>({...l,original:2}))),
  row('20261028-007','PN-20261022-007','Đảo nhập','Nháp','Nhầm hàng','2026-10-28T11:15',lines(2,()=>2)),
  row('20261027-006','PX-20261024-006','Đảo xuất','Đã ghi sổ','Sai chứng từ','2026-10-27T16:20',lines(1,()=>1)),
- row('20261027-005','PN-20261021-005','Đảo nhập','Đã hủy','Không thực hiện','2026-10-27T10:00',lines(1,()=>2).map(l=>({...l,original:2}))),
+ {...row('20261027-005','PN-20261021-005','Đảo nhập','Đã hủy','Không thực hiện','2026-10-27T10:00',lines(1,()=>2).map(l=>({...l,original:2}))),cancelledAt:'2026-10-27T10:15',cancelledBy:'Nguyễn Văn Nam'},
  row('20261026-004','PX-20261023-004','Đảo xuất','Đã ghi sổ','Hàng quay lại kho','2026-10-26T15:30',lines(2,i=>i+1)),
  row('20261026-003','PN-20261019-003','Đảo nhập','Đã ghi sổ','Nhầm hàng','2026-10-26T09:40',lines(1,()=>5)),
  row('20261025-002','PN-20261018-002','Đảo nhập','Nháp','Sai chứng từ','2026-10-25T14:10',lines(1,()=>1)),
@@ -33,7 +33,7 @@ export function reversalImpact(r:RecordRow) {
 const fingerprint=(r:RecordRow)=>JSON.stringify({id:r.id,source:r.source,type:r.type,status:r.status,reason:r.reason,note:r.note??'',created:r.created,lines:r.lines.map(l=>({sku:l.sku,name:l.name,original:l.original,prior:l.prior,quantity:l.quantity,note:l.note}))});
 /** Local in-memory design adapter, not a backend posting or permission contract. */
 export function createReversalDesignAdapter(options:{unknownFirst?:boolean;now?:()=>Date}={}):ReversalDesignAdapter {
- const sourceBase=clone([...fixtureRows.filter(x=>x.type==='Đảo nhập').sort((a,b)=>Number(b.id.endsWith('-007'))-Number(a.id.endsWith('-007'))),row('20261024-011','PN-20261024-011','Đảo nhập','Đã ghi sổ','', '2026-10-24T10:00',lines(1,()=>0)),row('20261025-012','PN-20261025-012','Đảo nhập','Đã ghi sổ','', '2026-10-25T10:00',lines(2,()=>0)),row('20261026-013','PN-20261026-013','Đảo nhập','Đã ghi sổ','', '2026-10-26T10:00',lines(1,()=>0))]);
+ const sourceBase=clone([...fixtureRows.filter(x=>x.type==='Đảo nhập').sort((a,b)=>Number(b.id.endsWith('-007'))-Number(a.id.endsWith('-007'))),row('20261023-010','PN-20261023-010','Đảo nhập','Đã ghi sổ','', '2026-10-23T10:00',lines(1,()=>0).map(l=>({...l,original:8}))),row('20261024-011','PN-20261024-011','Đảo nhập','Đã ghi sổ','', '2026-10-24T10:00',lines(1,()=>0).map(l=>({...l,original:12}))),row('20261025-012','PN-20261025-012','Đảo nhập','Đã ghi sổ','', '2026-10-25T10:00',lines(2,()=>0)),row('20261026-013','PN-20261026-013','Đảo nhập','Đã ghi sổ','', '2026-10-26T10:00',lines(1,()=>0).map(l=>({...l,original:6})))]);
  Object.freeze(sourceBase);for(const source of sourceBase){Object.freeze(source.lines);for(const line of source.lines)Object.freeze(line);Object.freeze(source)}
  const postingTime=(r:RecordRow)=>{if(r.id==='REV-20261028-007')return '28/10/2026 14:35';const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Ho_Chi_Minh',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts((options.now??(()=>new Date()))());const value=(name:string)=>parts.find(p=>p.type===name)?.value;return `${value('day')}/${value('month')}/${value('year')} ${value('hour')}:${value('minute')}`};
  let records=clone(fixtureRows), rev=1; const receipts=new Map<string,{receipt:Receipt;fingerprint:string}>(); const pending=new Map<string,{receipt:Receipt;fingerprint:string}>();

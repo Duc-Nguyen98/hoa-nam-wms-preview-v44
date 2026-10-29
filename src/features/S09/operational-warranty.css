@@ -1,4 +1,5 @@
-.s09-operational { display: grid; gap: 20px; min-width: 0; }
+.s09-operational { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; min-width: 0; }
+.s09-operational__table { min-width: 0; max-width: 100%; overflow-x: auto; }
 .s09-operational__heading, .s09-operational__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
 .s09-operational__heading { justify-content: space-between; }
 .s09-operational__heading h2 { margin: 0; font-size: 18px; line-height: 26px; font-weight: 600; }

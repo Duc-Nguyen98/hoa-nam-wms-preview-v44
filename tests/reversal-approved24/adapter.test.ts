@@ -2,6 +2,15 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createReversalDesignAdapter, reversalImpact } from '../../src/features/S17/approved/adapter';
 
+test('cancelled fixture metadata belongs only to its own record and missing history stays unavailable',()=>{
+ const rows=createReversalDesignAdapter().list();assert.equal(rows.find(r=>r.id==='REV-20261027-005')!.cancelledAt,'2026-10-27T10:15');assert.equal(rows.find(r=>r.id==='REV-20261025-001')!.cancelledAt,undefined);
+});
+
+test('isolated reference scenario has nine eligible source identities and per-document quantities',()=>{
+ const sources=createReversalDesignAdapter().sources();assert.equal(sources.length,9);assert.equal(new Set(sources.map(s=>s.source)).size,9);
+ for(const [code,total]of[['PN-20261023-010',8],['PN-20261024-011',12],['PN-20261026-013',6]] as const){const source=sources.find(s=>s.source===code)!;assert.equal(source.lines.reduce((n,l)=>n+l.original-l.prior,0),total);}
+});
+
 test('new drafts use current Vietnam posting time rather than the reference fixture date',async()=>{
  const a=createReversalDesignAdapter({now:()=>new Date('2026-10-29T08:45:00Z')});
  const r=structuredClone(a.list().find(x=>x.id.endsWith('-007'))!);r.id='REV-20261029-101';r.created='2026-10-29T15:30';
