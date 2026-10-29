@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-29T15:58:07.957Z",
+  "sourceCommit": "e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f",
+  "buildId": "1bebecb3e20357207c7f6eb09c9ed987661c32c553451aeed3fe38a9f8b8b955",
+  "manifestSha256": "4b622be9fa7bb19968358b538617a193b51a4b1206f8f9ce33bc309aad8325ac",
+  "verifiedFiles": 1831,
+  "totalBytes": 507391522,
+  "requiredReports": 16,
+  "actualBeforeCases": 36,
+  "actualAfterCases": 36,
+  "independentModelPass": 28,
+  "independentBrowserPass": 23,
+  "sourceHashesMatch": true,
+  "protectedSharedBusinessDiffEmpty": true,
+  "selfExcluded": [
+    "ARTIFACT_MANIFEST.json",
+    "ARTIFACT_INTEGRITY.json"
+  ]
+}

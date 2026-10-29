@@ -1,0 +1,11 @@
+# Independent visual defect register — HN-REVERSAL-FIDELITY-001
+
+Final source `e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f`: **PARTIAL; visual approval remains open**. No new P1 observed in the 36 reviewed captures. Differences are assessed by composition and hierarchy, not a pixel threshold; reference viewport and DPR are uncertified.
+
+| ID | Final disposition and evidence | Next action |
+|---|---|---|
+| VQ-F01 | **OPEN P2: state 08 hierarchy and density differ from the reference.** At desktop, the reference uses side-by-side impact and trace/history sections, whereas the actual stacks them; on tablet, actual sections remain taller and grouped differently despite the same general sequence. See [desktop reference](after-e7b145f/comparison/08-Desktop1440-reference.png), [desktop actual](after-e7b145f/comparison/08-Desktop1440-actual.png), [tablet reference](after-e7b145f/comparison/08-Tablet-reference.png), and [tablet actual](after-e7b145f/comparison/08-Tablet-actual.png). The duplicate impact totals are absent from final capture. | Design owner to resolve responsive hierarchy and review a new capture while preserving values. |
+| VQ-F02 | **IMPROVED, pending design approval:** tablet 01 now places the four filters on the first row, search/actions on the second, and five summaries on one row like the reference. Details such as row density, labels, icons and spacing still differ; this finding's former row-grouping description no longer applies. [Reference](after-e7b145f/comparison/01-Tablet-reference.png), [actual](after-e7b145f/comparison/01-Tablet-actual.png). | Owner to review remaining differences and explicit count semantics. |
+| VQ-F03 | **OPEN authority/data gap:** state 08 reference depicts a review/validation event, but the local actual provides only source posting, reversal creation and reversal posting. A screenshot does not prove the missing event happened. | Obtain authoritative audit contract and event data; do not invent an event. |
+
+State 10 AFTER reference comparisons use document-space registration; its historical BEFORE origin is negative and the BEFORE/AFTER registration is flagged unreliable. Review raw full-page captures for that comparison. No formal approval is inferred for the other references.

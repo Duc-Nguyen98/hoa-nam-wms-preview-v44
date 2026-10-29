@@ -1,0 +1,48 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "workspaceHead": "e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f",
+  "sourceCommit": "e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f",
+  "buildId": "1bebecb3e20357207c7f6eb09c9ed987661c32c553451aeed3fe38a9f8b8b955",
+  "checkedAt": "2026-10-29T15:43:29.320Z",
+  "historicalBaselineReceipts": [
+    {
+      "path": "baseline-negative/results.json",
+      "sha256": "dbc2c3c64f437722a5e8ebdb42db5fac5828f09cc4984f820eb7985cc51d89ab",
+      "unchanged": true
+    },
+    {
+      "path": "baseline-semantic/results.json",
+      "sha256": "3534b46e3c370523de2d2db9c4dfac96099cf7d547a764e86308daef24ab34d0",
+      "unchanged": true
+    }
+  ],
+  "allHistoricalBaselineReceiptsUnchanged": true,
+  "finalAcceptance": "e7b145f-final/FINAL_ACCEPTANCE.json",
+  "finalAcceptanceSha256": "77ad8e6b2e1e925623440388a00b75a9eeeb7c839befb8a44a6a39e7eaf25cd1",
+  "finalSourceHashUnchanged": true,
+  "modelSourceMatchesBrowser": true,
+  "singleCleanFullRunPass": true,
+  "coreBrowserCasePass": 22,
+  "supplementalBrowserCasePass": 1,
+  "canonicalComparisons": "23 equal before/after pairs; no cross-context equality claim.",
+  "sourceHashes": {
+    "src/app/App.tsx": "9b33ce51d90d4079d004571a0fa2a8c82824626b9406ecfd4bb82a16b0f8f92d",
+    "src/features/S17/approved/adapter.ts": "ecdc8123dfc93fec1f8e338ba73e44193afd1619672df1366b6d82c6e416badf",
+    "src/features/S17/approved/durable-adapter.ts": "fb5fb8fa3f7962ac36845e3861205e8c41fe3a94097d0d5a9b6b54458df64edd",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "c79faece7039800a53c509bfc8532e1729c2d30e546bfa14d22aae4fbae6a440",
+    "src/features/S17/approved/approved.css": "fc2d32b026f0557b1ff5f7ea3f92c15f837327d82fe22a2d515b9583f916c09c",
+    "src/features/S17/approved/presentation.ts": "5929c920b729cf4e203a4d30919abf4a0980cc205c2e528869d3eb227a220c07",
+    "src/features/S17/approved/copy.ts": "7db858827ed715808997f7cb95f7b173ce33f03e901fe28fd6329fe8fabffb5b",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+  },
+  "reportHashes": {
+    "FUNCTIONAL_QA_REPORT.md": "3d4e612c34d1af7ad20b40587e702f5359de8c9e9059c525efba27a73c819a07",
+    "BUSINESS_RULE_MATRIX.md": "7416ce04130eecab37635f5b94d8d8c49aaaeeb52ee5e5e2423aac3e3e019280",
+    "TRANSACTION_INTEGRITY_REPORT.md": "afcf0303025e99dd1506fbd9563ea16773fcc214fa1ddbe2c83277030106a92f",
+    "IDEMPOTENCY_CONCURRENCY_REPORT.md": "03c73363c450102ea28574f397043b43ef112f02933c2c6859e111b0717e522e",
+    "RBAC_AUDIT_REPORT.md": "39edfbf3458a8ed51022e698d63bd26a257ee0f6e655dceb804de309c89ae2cc",
+    "REGRESSION_REPORT.md": "66b650509ec82c83ffa28256194da997b5433dc82678899a009ce99cff52c0eb"
+  }
+}

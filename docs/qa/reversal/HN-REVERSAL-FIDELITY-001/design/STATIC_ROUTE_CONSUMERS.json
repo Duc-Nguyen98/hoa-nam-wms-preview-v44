@@ -1,0 +1,556 @@
+{
+  "base": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+  "method": "Static lexical file scan; no reachability or behavior inference",
+  "routes": [
+    {
+      "route": "S01",
+      "files": [
+        {
+          "path": "src/features/S01/OverviewScreen.tsx",
+          "sha256": "b68290c9a8951631e23cd7ce0257a88a4164b8d13a60d9ef97a209892273bca3",
+          "symbols": [
+            "InitialReadState",
+            "PageState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S02",
+      "files": [
+        {
+          "path": "src/features/S02/DefectsScreen.tsx",
+          "sha256": "a7dcda4beefee8025a23df498dd92140b60f67bf01d54931e809bed04b557b03",
+          "symbols": [
+            "PageState",
+            "ReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S03",
+      "files": [
+        {
+          "path": "src/features/S03/CatalogProductsList.tsx",
+          "sha256": "c2659ffefd9d5ad43b64811289a18721d5f2733a11b846cb21569cddb541637d",
+          "symbols": [
+            "emptyStateKind"
+          ]
+        },
+        {
+          "path": "src/features/S03/ProductsScreen.tsx",
+          "sha256": "2c055265eaab0c3a55bfa79f6158632bcab9bbcfcd3127cab75193c085594840",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S04",
+      "files": [
+        {
+          "path": "src/features/S04/SkusScreen.tsx",
+          "sha256": "3ec8d55de6e47223a1f9781c0f1c2f823e750b5f12f3c01dff2006084ca3b427",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S05",
+      "files": [
+        {
+          "path": "src/features/S05/RecipientsScreen.tsx",
+          "sha256": "f64911c306bb8cfb63ee85301cf497a471ef008c2def817d940c203229cafe18",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S06",
+      "files": [
+        {
+          "path": "src/features/S06/PvDemoCatalogue.tsx",
+          "sha256": "4bbdaa6e42716719015b903c24d7efb3158d09ce14052dd62163b828b86264b4",
+          "symbols": [
+            "emptyStateKind"
+          ]
+        },
+        {
+          "path": "src/features/S06/PvProductsScreen.tsx",
+          "sha256": "e79f9b585e11bcd7187d3b7d749bd6ff1cf57acd34266d6908666870c7f29f8b",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S07",
+      "files": []
+    },
+    {
+      "route": "S08",
+      "files": []
+    },
+    {
+      "route": "S09",
+      "files": [
+        {
+          "path": "src/features/S09/OperationalWarranty.tsx",
+          "sha256": "85c5f528074c4d6d806ef1f54cba9ee1fccb984a939c39b8bc52813412e20389",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S09/WarrantyCasesScreen.tsx",
+          "sha256": "d40571145cc2cd8f27e41c2346ea86af3c5c6e3096934d921232e2aa204f434a",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S10",
+      "files": [
+        {
+          "path": "src/features/S10/OperationalPartsIssues.tsx",
+          "sha256": "5322d8916e09f7f0364b8c70a584440e4e60317f7033e2da905bc5f445684e71",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S10/PartsSlipsScreen.tsx",
+          "sha256": "3f3e1e0034bbea78d359c6b4e710690d4adcc3c08fe6c747cb9d6ede0e9be08e",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S11",
+      "files": [
+        {
+          "path": "src/features/S11/OperationalTrays.tsx",
+          "sha256": "b92b3a9b3d8bafafa1317fa1c48589ada4b924f8a7caa80c445f41b90f7f8f3b",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S11/TraysScreen.tsx",
+          "sha256": "ded59528646ddbdfb194c913bfe4c78b3d1ac832ef62ae7ae1ffacddcab91719",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S12",
+      "files": [
+        {
+          "path": "src/features/S12/OperationalReceipts.tsx",
+          "sha256": "ac13b0f446e9bb2a7590f4dc2051cf9126244e17b9a55094fdbcd7278f196656",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S12/ReceiptsScreen.tsx",
+          "sha256": "c904de2fa9f1b98fbea825f47452b943e014c3f8fe389e0e38294b1f61bcf53b",
+          "symbols": [
+            "InitialReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S13",
+      "files": [
+        {
+          "path": "src/features/S13/OperationalPutawayQueue.tsx",
+          "sha256": "a7feb7a66d7d39c915486421f0ad1ee2b1f8b5f9b182357f4eb28459ab41d62d",
+          "symbols": [
+            "PageState"
+          ]
+        },
+        {
+          "path": "src/features/S13/PutawayQueueScreen.tsx",
+          "sha256": "18a79693ad537bba7df0be1e5cc01cb6e230849af9abb8fe1fdeb0fd05073c57",
+          "symbols": [
+            "InitialReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S14",
+      "files": [
+        {
+          "path": "src/features/S14/OperationalPutawayOrders.tsx",
+          "sha256": "30e25c5eb9b82cefa43cf580bd0eb5eb04c879d63d20248f8777c48aa4241ea6",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S14/PutawayOrdersScreen.tsx",
+          "sha256": "7387a6796a80576212d17f227bc880b42a7cedd0c98d9fc378c172d68cff3dd5",
+          "symbols": [
+            "InitialReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S15",
+      "files": [
+        {
+          "path": "src/features/S15/OperationalOutbounds.tsx",
+          "sha256": "471218dab938b8febfa64df683071cf0a84265518eefaa422450f04bdc69a1d2",
+          "symbols": [
+            "PageState"
+          ]
+        },
+        {
+          "path": "src/features/S15/OutboundSlipsScreen.tsx",
+          "sha256": "4c8c0aa04859806ab6704351a526fdb4d584eba639e8a072449cdf69fdf61782",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S16",
+      "files": [
+        {
+          "path": "src/features/S16/InventoryScreen.tsx",
+          "sha256": "d78a763e97ffe25e7b80d5801eee3367d7b394ca4fdd69f73e4a686ec544ac8e",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        },
+        {
+          "path": "src/features/S16/OperationalInventory.tsx",
+          "sha256": "5b6921e85f5fda593e2c3ce958304a8657f6844ea329cf5c26510ebf89db6383",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+          "sha256": "9667af39776a310ef23230e57a8e7dd4ecbec6282d8b401ba6ac78fe1470c3da",
+          "symbols": [
+            "PageState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S17",
+      "files": [
+        {
+          "path": "src/features/S17/OperationalReversals.tsx",
+          "sha256": "c8b7026f07486f1abd66b2d55bd12a1aca32704b63e6872cf68f3cdd46250562",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S17/ReversalSlipsScreen.tsx",
+          "sha256": "1311f540bad69f95185bd7543d7afac7a77a26e09ae73e830c4002b3efbf7874",
+          "symbols": [
+            "InitialReadState",
+            "emptyStateKind"
+          ]
+        },
+        {
+          "path": "src/features/S17/approved/ReversalDesignWorkspace.tsx",
+          "sha256": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+          "symbols": [
+            "PageState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S18",
+      "files": [
+        {
+          "path": "src/features/S18/InboundReportScreen.tsx",
+          "sha256": "32cd1c7587a799fa17c850929588dc2bf8a934941f188e26b0b0f28905ae8695",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState"
+          ]
+        },
+        {
+          "path": "src/features/S18/OperationalInboundReport.tsx",
+          "sha256": "3202cdb8d4cb1b63c48e2bac7c8afc9cfb38fbbe1bd6841274aa13a89161d819",
+          "symbols": [
+            "ReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S19",
+      "files": [
+        {
+          "path": "src/features/S19/OperationalOutboundReport.tsx",
+          "sha256": "34307bd39073956deb8bcb8d3d1822f41573a535c9b5714ee44c3a289db92a94",
+          "symbols": [
+            "ReadState"
+          ]
+        },
+        {
+          "path": "src/features/S19/OutboundReportScreen.tsx",
+          "sha256": "8d317cba2d1775acda5a3d596b0ffdf988f722d5d5992606b650d1fad11ea681",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S20",
+      "files": [
+        {
+          "path": "src/features/S20/MovementHistoryFeedback.tsx",
+          "sha256": "3859793d9c80cc7067a5636ac093f4653078c53eefa8cf7548631c8313bec036",
+          "symbols": [
+            "PageState"
+          ]
+        },
+        {
+          "path": "src/features/S20/MovementHistoryScreen.tsx",
+          "sha256": "ce2c7887d8b928ae666a35e536e87f382328dd194172320f138727492cb44a16",
+          "symbols": [
+            "ReportEmptyState"
+          ]
+        },
+        {
+          "path": "src/features/S20/OperationalMovementLedger.tsx",
+          "sha256": "8722f0cce1c58e5e0c6d62fe1c34a52d823a8bccade0622d6c6c906520df1d32",
+          "symbols": [
+            "ReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S21",
+      "files": [
+        {
+          "path": "src/features/S21/InventoryReportScreen.tsx",
+          "sha256": "28b7962eb31c03f87dc1ab4265425d7bdd2e9ed5dbda43ab3cbe803b4d820d11",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S21/OperationalStockReport.tsx",
+          "sha256": "a7e4b674e79702c4ade222b0e92a20f4621f63606e5e50bc3f451092c57fbc9a",
+          "symbols": [
+            "ReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S22",
+      "files": [
+        {
+          "path": "src/features/S22/OperationalWarrantyReport.tsx",
+          "sha256": "da7ba7ce50cbe4e0ef55e28afe2f7a30e23efec4976def90e55179fac45e305b",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S22/WarrantyPartsDetail.tsx",
+          "sha256": "00ff75e27946110a1031a7077c78b416c44f559a6c5e26abba836294a5bdd8f8",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState"
+          ]
+        },
+        {
+          "path": "src/features/S22/WarrantyPartsReportScreen.tsx",
+          "sha256": "6fdcc512c87834e40a7634835b646994a823cd3d22c0f2b2ece9ae594ff10c2b",
+          "symbols": [
+            "PageState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S23",
+      "files": [
+        {
+          "path": "src/features/S23/LabelReportScreen.tsx",
+          "sha256": "f089f22dc59b2974dfc164feb9ea466c6bf8e745c7ef7a7e24c5838f4aab57ed",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S24",
+      "files": [
+        {
+          "path": "src/features/S24/DataQualityScreen.tsx",
+          "sha256": "fe9489b881360be13506253cd928e100980999d07c5c5684cd28f584ea439bf2",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S25",
+      "files": [
+        {
+          "path": "src/features/S25/DealerExportScreen.tsx",
+          "sha256": "a436f313609e0d19a6d687743a7fb32c29f062cb11547a67716fc8cc5c998af4",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState"
+          ]
+        },
+        {
+          "path": "src/features/S25/OperationalRecipientReport.tsx",
+          "sha256": "9570b53848470f2961952940fd3d2a72384b1297735e3e19f9dbf74d28f9096b",
+          "symbols": [
+            "ReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S26",
+      "files": [
+        {
+          "path": "src/features/S26/GoodsTraceScreen.tsx",
+          "sha256": "17aea054a5953ae86e9da56c6ee6d69fd06e53eaf0b162b4ae1f1a5b9e489c6f",
+          "symbols": [
+            "PageState",
+            "ReportEmptyState"
+          ]
+        },
+        {
+          "path": "src/features/S26/OperationalTrace.tsx",
+          "sha256": "3d029b7955d781c16ca02b17f6903ed8ef9d958d355c408a2cbefb9abddab335",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S27",
+      "files": [
+        {
+          "path": "src/features/S27/OperationalAudit.tsx",
+          "sha256": "8a0259589c7b3f4b5a7d4901eded32d8e0e2068dda6d89bf094c7b1122b53dce",
+          "symbols": [
+            "PageState",
+            "ReadState"
+          ]
+        },
+        {
+          "path": "src/features/S27/OperationalDetail.tsx",
+          "sha256": "7394a599b9f10f95fbc690bc53ea52c74427161d309b8ee4fad9acc2ec5d6dac",
+          "symbols": [
+            "PageState",
+            "ReadState",
+            "readFailureKind"
+          ]
+        },
+        {
+          "path": "src/features/S27/PvAudit.tsx",
+          "sha256": "655e29ef3dea9ef38e51054ec6c19bc58e0e1b76c20bdce5b83b4346f931d2fa",
+          "symbols": [
+            "emptyStateKind"
+          ]
+        },
+        {
+          "path": "src/features/S27/SystemAuditScreen.tsx",
+          "sha256": "29482ec0eee404e8053e0fb9d5d4e65e2fbf4a981d5a85de6da6672a9547d68f",
+          "symbols": [
+            "PageState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S28",
+      "files": [
+        {
+          "path": "src/features/S28/WarehouseConfigScreen.tsx",
+          "sha256": "78d9ea4d7ae7983ae5550b1c5292ee0adf948b791da17c579ccbe9b75f271d6a",
+          "symbols": [
+            "InitialReadState"
+          ]
+        }
+      ]
+    },
+    {
+      "route": "S29",
+      "files": [
+        {
+          "path": "src/features/S29/UsersRbacScreen.tsx",
+          "sha256": "92f57820a71ff3a3859414bcaf8fbd055223c0d37d1cf6d0f608fb7935bdfb41",
+          "symbols": [
+            "PageState",
+            "emptyStateKind"
+          ]
+        }
+      ]
+    }
+  ]
+}

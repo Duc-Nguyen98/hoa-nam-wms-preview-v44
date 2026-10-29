@@ -1,0 +1,858 @@
+{
+  "method": "Measured module origin/width, proportional scaling, full remaining image height, 50% overlay and absolute RGB difference; no threshold or exact-pixel inference.",
+  "before": {
+    "head": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+    "files": {
+      "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+      "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+      "src/features/S17/approved/approved.css": "751395db45934b5b8bf57b7d16f9e7789b24f72161db0a564d834015556de0ac",
+      "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+      "src/features/S17/approved/copy.ts": "982dd9bfb25e1d2f68a9b400e9f71702f38e8f9f6817c3e1ad4362d4350cfa72",
+      "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+      "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+      "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+      "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+    },
+    "build": {
+      "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+      "sourceCommit": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+      "sourceCommitEvidence": "git-head",
+      "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+      "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+      "buildId": "551357b4a3e3ff7448da0ebfc39a0cc5dfbed6263d1ed7cea9b293a512625def",
+      "mode": "MOCK",
+      "publicDemo": true,
+      "assets": [
+        {
+          "path": "assets/fonts/s01/AUTHORS.txt",
+          "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+          "bytes": 349
+        },
+        {
+          "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+          "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+          "bytes": 4921
+        },
+        {
+          "path": "assets/fonts/s01/LICENSE.md",
+          "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+          "bytes": 6824
+        },
+        {
+          "path": "assets/fonts/s01/OFL.txt",
+          "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+          "bytes": 4483
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+          "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+          "bytes": 33664
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+          "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+          "bytes": 33676
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+          "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+          "bytes": 33612
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+          "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+          "bytes": 33636
+        },
+        {
+          "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+          "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+          "bytes": 18765
+        },
+        {
+          "path": "assets/index-Bm5bF4i4.js",
+          "sha256": "b9232190a2407d2b5a9a6a81c8db0daa6759e187b57b04e5292049d2add44182",
+          "bytes": 2367306
+        },
+        {
+          "path": "assets/index-D0XUoAcl.css",
+          "sha256": "82b6e026e1a7b771af9825546ab7421e6f8d9d6a1ac34a6fce6efc370def247b",
+          "bytes": 631539
+        },
+        {
+          "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+          "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+          "bytes": 2651791
+        },
+        {
+          "path": "favicon.svg",
+          "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+          "bytes": 203
+        },
+        {
+          "path": "index.html",
+          "sha256": "20df098aa996c8d6a5eb1e8dea3cc6d3d3d1dfa6fbb955a1b9a8b478287718e7",
+          "bytes": 911
+        },
+        {
+          "path": "release.html",
+          "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+          "bytes": 2224
+        }
+      ]
+    },
+    "buildInfoSha256": "21d494c085b0c67d0ef8394f8973d9bf56163a8187a0058249d69c624566d233"
+  },
+  "after": {
+    "head": "a98b0357b0e4738bd5236f935fc3e3adbe35576c",
+    "files": {
+      "src/app/App.tsx": "9b33ce51d90d4079d004571a0fa2a8c82824626b9406ecfd4bb82a16b0f8f92d",
+      "src/features/S17/approved/ReversalDesignWorkspace.tsx": "5c437dec4fbeabe6caec392c3176ea85cb2d637b56a1bb8efccb19a4c1d72609",
+      "src/features/S17/approved/approved.css": "751395db45934b5b8bf57b7d16f9e7789b24f72161db0a564d834015556de0ac",
+      "src/features/S17/approved/adapter.ts": "ecdc8123dfc93fec1f8e338ba73e44193afd1619672df1366b6d82c6e416badf",
+      "src/features/S17/approved/durable-adapter.ts": "fb5fb8fa3f7962ac36845e3861205e8c41fe3a94097d0d5a9b6b54458df64edd",
+      "src/features/S17/approved/copy.ts": "8f69d8bc8b682282e38397640762334f59baff7e2a45a819cc0ecaee3bb1aa23",
+      "src/features/S17/approved/presentation.ts": "5929c920b729cf4e203a4d30919abf4a0980cc205c2e528869d3eb227a220c07",
+      "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+      "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+      "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+    },
+    "build": {
+      "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+      "sourceCommit": "a98b0357b0e4738bd5236f935fc3e3adbe35576c",
+      "sourceCommitEvidence": "git-head",
+      "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+      "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+      "buildId": "705689f29593dfd62472b3c85851554daaa2199a68512bb43e929b49ef8033fd",
+      "mode": "MOCK",
+      "publicDemo": true,
+      "assets": [
+        {
+          "path": "assets/fonts/s01/AUTHORS.txt",
+          "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+          "bytes": 349
+        },
+        {
+          "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+          "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+          "bytes": 4921
+        },
+        {
+          "path": "assets/fonts/s01/LICENSE.md",
+          "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+          "bytes": 6824
+        },
+        {
+          "path": "assets/fonts/s01/OFL.txt",
+          "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+          "bytes": 4483
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+          "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+          "bytes": 33664
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+          "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+          "bytes": 33676
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+          "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+          "bytes": 33612
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+          "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+          "bytes": 33636
+        },
+        {
+          "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+          "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+          "bytes": 18765
+        },
+        {
+          "path": "assets/index-D0XUoAcl.css",
+          "sha256": "82b6e026e1a7b771af9825546ab7421e6f8d9d6a1ac34a6fce6efc370def247b",
+          "bytes": 631539
+        },
+        {
+          "path": "assets/index-OHvvL5SX.js",
+          "sha256": "fcba620ce087a2622702d0d0416c828167f3556d9aa0c55eb5430212d10b4a3e",
+          "bytes": 2380794
+        },
+        {
+          "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+          "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+          "bytes": 2651791
+        },
+        {
+          "path": "favicon.svg",
+          "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+          "bytes": 203
+        },
+        {
+          "path": "index.html",
+          "sha256": "8f68e1035148bcc6156d336612a76f1e6be2f58700ebc96397f8e29b881f5871",
+          "bytes": 911
+        },
+        {
+          "path": "release.html",
+          "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+          "bytes": 2224
+        }
+      ]
+    },
+    "buildInfoSha256": "2581c3f76a4bd7b629d83a648ec3ba8690fa827a3d90f133536cef577de72bf2"
+  },
+  "rows": [
+    {
+      "id": "01",
+      "device": "Desktop1920",
+      "beforeSha256": "52bd6799b67bdebf156c16eb8bf76d07772c6e5c3b5154b3d4b881f7e332f787",
+      "afterSha256": "ef3c001e2afcf97823070ce5ffadb738ad44a4325da6f36086d4221f3910e175",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 699
+    },
+    {
+      "id": "02",
+      "device": "Desktop1920",
+      "beforeSha256": "7ced462eec5dd9ec4db3acb4275ba713c8ba38f353cccdaee648944d9a44f0d8",
+      "afterSha256": "1218451d5335283e6abf78614ab8ddfc7e5a351d0700d4ea3978b850e5e14659",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 816
+    },
+    {
+      "id": "03",
+      "device": "Desktop1920",
+      "beforeSha256": "6539e8825a0ce6a8dc6b388ae16cd2debd386a9c6c056f447f41d12cc8540e0c",
+      "afterSha256": "b4a072281ef1a793e478f4e28d13ca5ec9678fcc5dd429d3f8c6266217acce60",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 792
+    },
+    {
+      "id": "04",
+      "device": "Desktop1920",
+      "beforeSha256": "b49b66477d8086f96c07dcaa9b21a39356c29876c1ec919fdd62edd9b36f1e04",
+      "afterSha256": "b6c7d50d38fd1b22690f9129db11a2444dcf9ebddcb5c990fbe3d87986a07579",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "05",
+      "device": "Desktop1920",
+      "beforeSha256": "3db1ea2dc47f80714c7822b8b22f480b81b51a1adcf2eff4e6cdcc2416e7135f",
+      "afterSha256": "b0b091bfc86181f85009b89d4a0f6e3a46d05d2a9ea0d148b3de1d98a02c1bd1",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 687
+    },
+    {
+      "id": "06",
+      "device": "Desktop1920",
+      "beforeSha256": "c112971261865390a815b485cabf4cfd7f3ae822a8d0fec955ec995f44f3f0e1",
+      "afterSha256": "0cf5544468bd14c890d39b4869b6f036947402af69ac3fc6d9d9074e899bc6f1",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 662
+    },
+    {
+      "id": "07",
+      "device": "Desktop1920",
+      "beforeSha256": "ad043fe968ae2c732d09532069fc966ece5af45b90a19ffe5cff2b5ae4f6aa3f",
+      "afterSha256": "cb82c725fa12d05279a0e277231dd4e699dadb392982b03e806bc344414b06dd",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "08",
+      "device": "Desktop1920",
+      "beforeSha256": "c1ed00c36c0467202a6cbc59d2d17786819fd852454dbddd48dff5b089e00885",
+      "afterSha256": "95afb01984b68785c8e4f87cd7406d35cf27e2e2a478976cf46f3c49c9230a91",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 1002
+    },
+    {
+      "id": "09",
+      "device": "Desktop1920",
+      "beforeSha256": "24841bac54d58958822e3ae589f17451d80d353f07ff8c031db23356ad40c018",
+      "afterSha256": "333c487fabcf68f34f3b07cfe1d85090aa829f03bd6cf6301e1e7b0a95649e38",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "10",
+      "device": "Desktop1920",
+      "beforeSha256": "c55955adc76b6116eeded91c4ab99895b6459f90ff981cb1df92a5213880dfaa",
+      "afterSha256": "38be1cc149eb2808e347069848e720d02a8ba5b3d98aff19ac4acee13b5172fd",
+      "beforeCrop": {
+        "x": 344,
+        "y": -148,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": -148,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 964
+    },
+    {
+      "id": "11",
+      "device": "Desktop1920",
+      "beforeSha256": "24c917ab11847e7ab9aaeb599c52416b159d7935fa155162e2d738548f3ca2a2",
+      "afterSha256": "24c917ab11847e7ab9aaeb599c52416b159d7935fa155162e2d738548f3ca2a2",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "12",
+      "device": "Desktop1920",
+      "beforeSha256": "3b5435edf1835d9e62a3384ad31922d8c7d4df80ad94833dcfed0f7b3adf8d1b",
+      "afterSha256": "1d87c875b7413371d6602830a08b89f222307cf1cc9067ff2a920896ef6d14ce",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "01",
+      "device": "Desktop1440",
+      "beforeSha256": "a283afd2eabf474747998afa78817f63e1a95f97ade3e8cfd10767ba4fd8e090",
+      "afterSha256": "f88e8261ab668c4da6ac1d28be7ef9b9a6aa36703368a3e2d830bd5abde25fa1",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 1083
+    },
+    {
+      "id": "02",
+      "device": "Desktop1440",
+      "beforeSha256": "4e7b07676039dce59f6786d16e78e76283ab1085b9fc28d2127708c07c25a6be",
+      "afterSha256": "0e082e2228156de2e88fbf62370ba43397541d6028c6bb132a2c727663a1c87b",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 1181
+    },
+    {
+      "id": "03",
+      "device": "Desktop1440",
+      "beforeSha256": "d131e130651fbceee24a10e363a533863a8c580503613cc4c42c0987d8dc4e6a",
+      "afterSha256": "307da920276a058eb490fbc11f62d518197e75e0579954f11da0abfa60ccec56",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 1146
+    },
+    {
+      "id": "04",
+      "device": "Desktop1440",
+      "beforeSha256": "16ea4208d694db9187aa536e6a3ed2f2ba4b9efa282ceb633457ab8be48824b0",
+      "afterSha256": "08779b1a0f34f12498576e581bddda462f782c0d49818baf8e14486145ac98fd",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 873
+    },
+    {
+      "id": "05",
+      "device": "Desktop1440",
+      "beforeSha256": "b50f13f1f4093c7927598f1593f5bcb02d7205548c34b2dfa543d5c50d414ae4",
+      "afterSha256": "32ec5a0c4557cbfbe0d96cf8ccf6fe05a3f2195bcb79c3b2f4e2011c0d5c9b35",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 994
+    },
+    {
+      "id": "06",
+      "device": "Desktop1440",
+      "beforeSha256": "83b571f05f091a1811da74cd852b6210f9744c7c7d6edc1eb2697de1ecadd768",
+      "afterSha256": "e8b4e093cbf8a42ad9b07d9e084267d9405ea93d6016075cc9f58bfc13fdec24",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 959
+    },
+    {
+      "id": "07",
+      "device": "Desktop1440",
+      "beforeSha256": "7859a43cc235040e85cc006a14528b4d1b7d9f80bb12f7432d7b8a1758e2501c",
+      "afterSha256": "d9fa3ba01fdc620cc052a32adc4a2496603f50ce8a720a29f711a56b33b85fe3",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 833
+    },
+    {
+      "id": "08",
+      "device": "Desktop1440",
+      "beforeSha256": "c272cb59b5ba9a95226ef63ff2d240035067e4bb3c0848b03d9c04d3b2ca9ed7",
+      "afterSha256": "bfaa62d089ddc6877d13be7a2cd06b74c690704caaa1f6bea1382d380f1f1f7a",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 1451
+    },
+    {
+      "id": "09",
+      "device": "Desktop1440",
+      "beforeSha256": "783282d948cf7ad657bba001bcdab6b1042e34484c992e0d0b7e9a253ef3173a",
+      "afterSha256": "9b489faa14007123a263dcd35aa61fd593d4fff3e3b13a88ac208c0daa8e700e",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 772
+    },
+    {
+      "id": "10",
+      "device": "Desktop1440",
+      "beforeSha256": "afbb9d0d673f3fb94acac075becb13e12802d9657295588fa892c1f99c38b40c",
+      "afterSha256": "f6ecda3b2ff1b499927265a53b12b35ce8a52b5bc518e0a24358f6eea9c23fa1",
+      "beforeCrop": {
+        "x": 344,
+        "y": -328,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": -328,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 1564
+    },
+    {
+      "id": "11",
+      "device": "Desktop1440",
+      "beforeSha256": "51e8268070bf642828165c3b608b1e294ac70abf7fc6047dc347a070e94c95ad",
+      "afterSha256": "61410b4fb672c1fa07f00a8388323a8d86aa0fb6b0a543ad42c06c5fdb4d51fe",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 762
+    },
+    {
+      "id": "12",
+      "device": "Desktop1440",
+      "beforeSha256": "60c41d9093e261ac228b31cf0e5f373200af77a165c4ac3d708af9aa6d0d993e",
+      "afterSha256": "85855f4517e37170195e1ed1892ee14a3c1957c85f5718e8f9b6beaa81531a1b",
+      "beforeCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "afterCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "width": 1000,
+      "height": 764
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "beforeSha256": "32da11a83d8ce6e78787edd31e4270ffe37f87cd874619a465cbd0fd3a355723",
+      "afterSha256": "56982f4f5764a8958d52ab6bed44470d1d46b04638daaff62accd3b41827cd6e",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "beforeSha256": "7c97df81e55a0d091c8fe651e16e19f7dddc11ed6989826560c2138c91aa8008",
+      "afterSha256": "0103b26de806d784004a48f7597bdf334a6759242b437aa84f5be4a07c9552d3",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "beforeSha256": "d08894c16e86ab218e00fe9900d29a7aa688db42a9ecb25a43d60328606f3f7a",
+      "afterSha256": "cec2828dfb12cc1be27f7583602e21cae5b8c10aad15b9796938786656bf1b44",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1311
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "beforeSha256": "2c857fb917cb18971a444c80ec9a0ca70623d7a8847bd4b4cbf3ded3b3f75dc0",
+      "afterSha256": "5d780f01e99dfda6e478f1b3b42cd3060f6799d298ad1c6e8caed493feefb43c",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "beforeSha256": "518083c9428e3029a41f6e5bafe4eea3e270f426d7ee78ef61b52bccc802c6bd",
+      "afterSha256": "ffef7e1b090947a2b734d1e91067e9254fd76ed86b4869c20971ffed1a20eba4",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "beforeSha256": "ab6785aed083132eff895889a3606b2443e103ff9bd92894c3e83998ed5cf393",
+      "afterSha256": "62275241a1c8efdb246834d71d920733bb52ffabe0817f9945f3f5e695f24211",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1025
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "beforeSha256": "7d7f3a939c3c1f0879c36739133abae3cf07d0c88643bf4b99f75f8124989ee8",
+      "afterSha256": "810a82d616e4ffdfb01c2e38e7ecfc604fe680549aacaa72e5bed95677e25cf0",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "beforeSha256": "6808c79881042aaa64b6ead1353b163cef757373fc75ed3d0fd73ec2de99d810",
+      "afterSha256": "b64122e630bc77bdd5f032559a05e002fc2d802d0e2f17c7f883e607082621c0",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1439
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "beforeSha256": "83964bc0c284ac3b547df422e371e50cb62ebe2bd9a0b9ee5b85365f8d1d2375",
+      "afterSha256": "7cb4bca5dcabcbfa0b985e54e3de0731a716f0bc5c6398fa7a99491e833e6a13",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "beforeSha256": "1515ac88cebea96c1330732868defa57e4fd1d080f6e6007363560d7312dfea5",
+      "afterSha256": "1515ac88cebea96c1330732868defa57e4fd1d080f6e6007363560d7312dfea5",
+      "beforeCrop": {
+        "x": 48,
+        "y": -472,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": -472,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1651
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "beforeSha256": "5d19f787b774d803d57751cbb088b35e21fe28148c6f4104c94fbf2d10d6ed69",
+      "afterSha256": "5d19f787b774d803d57751cbb088b35e21fe28148c6f4104c94fbf2d10d6ed69",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "beforeSha256": "dc381b76afd16e2190f26affc666d2d876341ec4b49e64ea79ce017d23d5c07d",
+      "afterSha256": "6292e5dd95d704699d9bd242fe4234576a0b661dfcb9708e61da335b2cee6ff1",
+      "beforeCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "afterCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "width": 650,
+      "height": 1017
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "mode": "MOCK_NORMAL_APP_NEGATIVE_BASELINE",
+  "build": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+    "sourceCommitEvidence": "git-head",
+    "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "551357b4a3e3ff7448da0ebfc39a0cc5dfbed6263d1ed7cea9b293a512625def",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-Bm5bF4i4.js",
+        "sha256": "b9232190a2407d2b5a9a6a81c8db0daa6759e187b57b04e5292049d2add44182",
+        "bytes": 2367306
+      },
+      {
+        "path": "assets/index-D0XUoAcl.css",
+        "sha256": "82b6e026e1a7b771af9825546ab7421e6f8d9d6a1ac34a6fce6efc370def247b",
+        "bytes": 631539
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "20df098aa996c8d6a5eb1e8dea3cc6d3d3d1dfa6fbb955a1b9a8b478287718e7",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "beforeSource": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/features/S17/approved/copy.ts": "982dd9bfb25e1d2f68a9b400e9f71702f38e8f9f6817c3e1ad4362d4350cfa72"
+  },
+  "afterSource": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/features/S17/approved/copy.ts": "982dd9bfb25e1d2f68a9b400e9f71702f38e8f9f6817c3e1ad4362d4350cfa72"
+  },
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "unknown operation remains visible when returning to list",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('.rev').locator('tbody tr').filter({ hasText: 'REV-20261028-007' })\nExpected pattern: /Chưa xác định|Đang kiểm tra|Chờ xác minh/\nReceived string:  \"REV-20261028-007Nhầm hàngPN-20261022-007Đảo nhập2 SKU – 4 CáiNhápNhầm hàng28/10/2026 11:15Nguyễn Văn NamNguyễn Văn Nam\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"toContainText\" locator('.rev').locator('tbody tr').filter({ hasText: 'REV-20261028-007' }) with timeout 5000ms\n  - waiting for locator('.rev').locator('tbody tr').filter({ hasText: 'REV-20261028-007' })\n    13 × locator resolved to <tr>…</tr>\n       - unexpected value \"REV-20261028-007Nhầm hàngPN-20261022-007Đảo nhập2 SKU – 4 CáiNhápNhầm hàng28/10/2026 11:15Nguyễn Văn NamNguyễn Văn Nam\"\n",
+      "observations": {
+        "beforeUrl": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalOutcome=unknown#/preview/S17?view=unknown&id=REV-20261028-007&q=&type=&status=&from=2026-10-25&to=2026-10-28&page=1",
+        "row": "REV-20261028-007\nNhầm hàng\n\tPN-20261022-007\tĐảo nhập\t2 SKU – 4 Cái\tNháp\t28/10/2026 11:15\nNguyễn Văn Nam\n\t"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-negative/failure-1.png",
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "reopening same unknown row preserves status recovery instead of clearing operation",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true }) with timeout 5000ms\n  - waiting for locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true })\n",
+      "observations": {
+        "heading": "Sửa phiếu đảo nháp Nháp",
+        "url": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalOutcome=unknown#/preview/S17?view=edit&id=REV-20261028-007&q=&type=&status=&from=2026-10-25&to=2026-10-28&page=1"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-negative/failure-2.png",
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "unknown refresh preserves recovery state and accepted input without automatic repost",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true }) with timeout 5000ms\n  - waiting for locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true })\n",
+      "observations": {
+        "beforeUrl": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalOutcome=unknown#/preview/S17?view=unknown&id=REV-20261028-007&q=&type=&status=&from=2026-10-25&to=2026-10-28&page=1",
+        "before": "Tồn kho & Đối soát › Phiếu đảo\nPhiếu đảo REV-20261028-007 Chưa xác định kết quả ghi sổ\nYêu cầu đã được gửi nhưng chưa nhận được xác nhận.\n\nKiểm tra trạng thái trước khi thao tác tiếp.\n\nThông tin chung\nMã phiếu đảo\nREV-20261028-007\nChứng từ gốc\nPN-20261022-007 ↗\nLoại\nĐảo nhập\nKho\nHN01\nLý do\nNhầm hàng\nNgày tạo\n28/10/2026 11:15\nNgười tạo\nNguyễn Văn Nam\nDanh sách hàng hóa\n#\tMã hàng\tTên hàng\tĐơn vị\tSố lượng gốc\tĐã đảo\tSố lượng đảo\tTác động tồn hiện tại\tCòn lại\n1\tHN-DRV-001\tBộ điều khiển động cơ\tCái\t10\t0\t3\tĐang kiểm tra\tĐang kiểm tra\n2\tHN-PSU-002\tBộ nguồn 24V\tCái\t10\t0\t2\tĐang kiểm tra\tĐang kiểm tra\nSố mặt hàng\n2 SKU\nTổng số lượng đảo\n5 Cái\nTác động tồn hiện tại\nĐang kiểm tra\nVề danh sách\nKiểm tra trạng thái",
+        "afterUrl": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalOutcome=unknown#/preview/S17?view=unknown&id=REV-20261028-007&q=&type=&status=&from=2026-10-25&to=2026-10-28&page=1",
+        "after": "Tồn kho & Đối soát › Phiếu đảo\nDanh sách phiếu đảo\n\nTra cứu giao dịch đảo và chứng từ gốc\n\nTạo phiếu đảo\nTừ ngày\n25/10/2026\nĐến ngày\n28/10/2026\nLoại\nTất cả\nĐảo nhập\nĐảo xuất\nTrạng thái\nTất cả\nĐã ghi sổ\nNháp\nChờ hàng trả về\nĐã hủy\nMã phiếu đảo hoặc chứng từ gốc\nTìm kiếm\nXóa bộ lọc\n9\nphiếu\n4\nĐã ghi sổ\n2\nNháp\n1\nChờ hàng trả về\n2\nĐã hủy\nMã phiếu đảo\tChứng từ gốc\tLoại\tSKU – Số lượng\tTrạng thái\tNgày tạo\tXem\nREV-20261028-009\nSai chứng từ\n\tPN-20261020-001\tĐảo nhập\t9 SKU – 45 Cái\tĐã ghi sổ\t28/10/2026 14:25\nNguyễn Văn Nam\n\t\nREV-20261028-008\nHàng quay lại kho\n\tPX-20261025-008\tĐảo xuất\t3 SKU – 6 Cái\tChờ hàng trả về\t28/10/2026 13:40\nNguyễn Văn Nam\n\t\nREV-20261028-007\nNhầm hàng\n\tPN-20261022-007\tĐảo nhập\t2 SKU – 4 Cái\tNháp\t28/10/2026 11:15\nNguyễn Văn Nam\n\t\nREV-20261027-006\nSai chứng từ\n\tPX-20261024-006\tĐảo xuất\t1 SKU – 1 Cái\tĐã ghi sổ\t27/10/2026 16:20\nNguyễn Văn Nam\n\t\nREV-20261027-005\nKhông thực hiện\n\tPN-20261021-005\tĐảo nhập\t1 SKU – 2 Cái\tĐã hủy\t27/10/2026 10:00\nNguyễn Văn Nam\n\t\nREV-20261026-004\nHàng quay lại kho\n\tPX-20261023-004\tĐảo xuất\t2 SKU – 3 Cái\tĐã ghi sổ\t26/10/2026 15:30\nNguyễn Văn Nam\n\t\nREV-20261026-003\nNhầm hàng\n\tPN-20261019-003\tĐảo nhập\t1 SKU – 5 Cái\tĐã ghi sổ\t26/10/2026 09:40\nNguyễn Văn Nam\n\t\nREV-20261025-002\nSai chứng từ\n\tPN-20261018-002\tĐảo nhập\t1 SKU – 1 Cái\tNháp\t25/10/2026 14:10\nNguyễn Văn Nam\n\t\nREV-20261025-001\nKhông thực hiện\n\tPX-20261018-001\tĐảo xuất\t1 SKU – 1 Cái\tĐã hủy\t25/10/2026 08:45\nNguyễn Văn Nam\n\t\n9 Tổng cộng\n‹\n1\n›"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-negative/failure-3.png",
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "close and reopen tab preserves same authenticated unknown operation",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true }) with timeout 5000ms\n  - waiting for locator('.rev').getByRole('button', { name: 'Kiểm tra trạng thái', exact: true })\n",
+      "observations": {
+        "reopenedUrl": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalOutcome=unknown#/preview/S17?view=unknown&id=REV-20261028-007&q=&type=&status=&from=2026-10-25&to=2026-10-28&page=1",
+        "heading": "Danh sách phiếu đảo"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-negative/failure-4.png",
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "saved draft inputs survive normal page reload",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toHaveValue(expected) failed\n\nLocator:  locator('.rev').getByRole('textbox', { name: 'Ghi chú', exact: true })\nExpected: \"FIDELITY saved draft\"\nReceived: \"\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveValue\" locator('.rev').getByRole('textbox', { name: 'Ghi chú', exact: true }) with timeout 5000ms\n  - waiting for locator('.rev').getByRole('textbox', { name: 'Ghi chú', exact: true })\n    14 × locator resolved to <textarea></textarea>\n       - unexpected value \"\"\n",
+      "observations": {
+        "note": "",
+        "quantity": "2"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-negative/failure-5.png",
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "selected source survives reload of selection context",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeChecked() failed\n\nLocator:  locator('.rev').getByRole('radio', { name: 'PN-20261024-011', exact: true })\nExpected: checked\nReceived: unchecked\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeChecked\" locator('.rev').getByRole('radio', { name: 'PN-20261024-011', exact: true }) with timeout 5000ms\n  - waiting for locator('.rev').getByRole('radio', { name: 'PN-20261024-011', exact: true })\n    14 × locator resolved to <input type=\"radio\" name=\"source\" aria-label=\"PN-20261024-011\"/>\n       - unexpected value \"unchecked\"\n",
+      "observations": {
+        "checked": "PN-20261022-007"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-negative/failure-6.png",
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "second tab cannot confirm a stale parallel posting of same draft",
+      "status": "FAIL",
+      "error": "Error: expect(locator).not.toBeVisible() failed\n\nLocator:  locator('.rev').getByRole('heading', { name: 'Ghi sổ phiếu đảo thành công', exact: true })\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n  - Expect \"not toBeVisible\" locator('.rev').getByRole('heading', { name: 'Ghi sổ phiếu đảo thành công', exact: true }) with timeout 5000ms\n  - waiting for locator('.rev').getByRole('heading', { name: 'Ghi sổ phiếu đảo thành công', exact: true })\n    14 × locator resolved to <h1 tabindex=\"-1\">Ghi sổ phiếu đảo thành công</h1>\n       - unexpected value \"visible\"\n",
+      "observations": {
+        "first": "Ghi sổ phiếu đảo thành công",
+        "second": "Ghi sổ phiếu đảo thành công"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-negative/failure-7.png",
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "list count scope observed independently of filtered rows",
+      "status": "OBSERVED",
+      "observations": {
+        "rows": 2,
+        "metrics": "9\nphiếu\n4\nĐã ghi sổ\n2\nNháp\n1\nChờ hàng trả về\n2\nĐã hủy",
+        "footer": "2 Tổng cộng\n‹\n1\n›",
+        "classification": "MISSING explicit total-scope labeling/contract; no arbitrary assertion that all-record metrics must equal filtered rows."
+      },
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "normal expired session removes protected design surface",
+      "status": "PASS",
+      "observations": {
+        "scope": "Fresh normal MOCK expiry through account guard; no token or auth storage patch."
+      },
+      "canonicalBefore": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalAfter": "587e257fdb61ed78140b03bea5ca56cf9f5f360c0f3344175c6203a444fbe23f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    }
+  ],
+  "errors": [],
+  "limits": "No server posting/role guarantee; HTTP counts do not expose in-memory adapter calls. Reopen means tab close/reopen within authenticated context, not browser-process restart. Cross-actor account test BLOCKED without second authorized normal account."
+}

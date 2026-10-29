@@ -1,0 +1,28 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "mode": "MOCK_INDEPENDENT_SHARED_PERSISTENCE",
+  "capturedAt": "2026-10-29T13:20:08.708Z",
+  "before": {
+    "src/features/S17/approved/durable-adapter.ts": "b8a12caf306ffec0c66b35555fc7e185f0fc2cf67d30b1ffc3c53a4c5b57f0da",
+    "src/features/S17/approved/adapter.ts": "82310885af3646d11cb8b60545263a3b5d9e48dd519e8eb7cc17b80e4a20902c",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "50910236cc420dabd8d0457866c144a18bd5d3be8c47962260f39fda19b38a2d"
+  },
+  "after": {
+    "src/features/S17/approved/durable-adapter.ts": "b8a12caf306ffec0c66b35555fc7e185f0fc2cf67d30b1ffc3c53a4c5b57f0da",
+    "src/features/S17/approved/adapter.ts": "82310885af3646d11cb8b60545263a3b5d9e48dd519e8eb7cc17b80e4a20902c",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "50910236cc420dabd8d0457866c144a18bd5d3be8c47962260f39fda19b38a2d"
+  },
+  "sourceUnchanged": true,
+  "savedWinner": true,
+  "staleSave": false,
+  "aVersion": 1,
+  "bVersion": 1,
+  "committedBefore": "ACKNOWLEDGED WINNER",
+  "scratchNote": "REJECTED STALE INPUT",
+  "restoredNote": "REJECTED STALE INPUT",
+  "adoptedVersion": 2,
+  "silentlySaved": true,
+  "committedAfter": "REJECTED STALE INPUT",
+  "defectProved": true,
+  "scope": "Separate explicit memory backing only. Uses actual Workspace restore expression; no browser claim, account or canonical-store access."
+}

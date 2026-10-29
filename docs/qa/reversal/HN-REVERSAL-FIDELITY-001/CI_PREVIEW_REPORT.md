@@ -1,0 +1,17 @@
+# CI / Preview / release provenance
+
+Application source e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f; build1bebecb3e20357207c7f6eb09c9ed987661c32c553451aeed3fe38a9f8b8b955. [Build/source freeze](release/SOURCE_BUILD_FREEZE.json). Branch candidate/reversal-fidelity-001-20261029; base71cfa02f96c51a17c188ac8a90fca558941d8638. Evidence is committed separately; its later docs commit is not the tested application source.
+
+[Draft PR2](https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/2) targets the prior reversal candidate, not protectedDEV/main. GitHub branch was read back at e7b145f before evidence packaging. No Site-origin push, merge, production mutation or deployment was performed.
+
+Fresh [remote receipts](release/REMOTE_GATE_FINAL.json): [Actions run40893644398](https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40893644398), exact e7b145f, critical FAILURE before starting: account locked due to billing. Visual-and-functional was SKIPPED. Combined status list is empty; it is not PASS. The workflow also intentionally exits1 until its runtime capture job is wired; clearing billing alone does not satisfy that gate. Hosted CI = BLOCKED. No test was removed or bypassed.
+
+Sites get_site and list_site_versions for .openai/hosting.json project appgprj_6adc45f730d88191ae066e8ff0c936aa currently return NOT_FOUND/project_not_found404. Current public source cannot be reverified. Prior version63/bfddf139… is inherited historical metadata, not today's verified release. No alternate project/domain was created. Public preview revision/deployment = BLOCKED; existing public URL is not presented as this candidate.
+
+Verified local static Candidate: http://127.0.0.1:5341/?reversalDesign=20261029#/preview/S17 . Actual captures compare served build-info with local source/build. Unknown outcome is reached via actual isolated submission with reversalOutcome=unknown, never trusted from success URL. Vite5340 is an isolated component harness; no live backend claim. Preview data model is scoped MOCK and opt-in. DefaultS17 still uses its existing operational source.
+
+Local fresh checks: typecheck and quality-contract pass (contract13states/26putaway references is not reversal visual acceptance); [87 combined model/operational regression tests PASS](release/unit-regression-e7b145f.log), [28 independent models +23 clean browser cases](functional/e7b145f-final/FINAL_ACCEPTANCE.json). A previous294c9d0 combined run exhausted resources; its raw log remains, and final sequential e7b145f run passes without assertion changes. Final build existed before capture and is recorded in the freeze. Existing bundle-size warning remains. Lint NOT_APPLICABLE, no declared script.
+
+PR metadata update through the connected GitHub integration returned403 Resource not accessible by integration. No gh CLI is available for a supported fallback. PR2 exists and its source head e7b145f was verified; its initial description may lag the final evidence. Current final scope, results and blockers are recorded here and in FINAL_GO_NO_GO.md rather than asserting the remote description was updated.
+
+Rollback: use the preserved71cfa02 application/evidence lineage or reviewed inverse of the four source commits in a new candidate. Remove reversalDesign query to return to existing operationalS17. Dedicated hoa-nam-wms-reversal-design-v1 scope never reads/writes canonical stores; do not destroy unresolved operation intent while rolling back. Public Site unchanged, no production rollback required.

@@ -1,0 +1,85 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "applicationSource": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+  "buildId": "551357b4a3e3ff7448da0ebfc39a0cc5dfbed6263d1ed7cea9b293a512625def",
+  "mode": "MOCK",
+  "recordedAt": "2026-10-29T13:03:51.876Z",
+  "sourceCapture": "Historical before/after hashes captured during each fresh71cfa02 browser execution. No later working-tree hashes are relabeled as baseline.",
+  "sourceBefore": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/features/S17/approved/copy.ts": "982dd9bfb25e1d2f68a9b400e9f71702f38e8f9f6817c3e1ad4362d4350cfa72"
+  },
+  "sourceAfter": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/features/S17/approved/copy.ts": "982dd9bfb25e1d2f68a9b400e9f71702f38e8f9f6817c3e1ad4362d4350cfa72"
+  },
+  "bothRunsSourceUnchanged": true,
+  "bothRunsSameSource": true,
+  "canonicalUnchangedEveryCase": true,
+  "checks": [
+    {
+      "name": "unknown operation remains visible when returning to list",
+      "status": "FAIL"
+    },
+    {
+      "name": "reopening same unknown row preserves status recovery instead of clearing operation",
+      "status": "FAIL"
+    },
+    {
+      "name": "unknown refresh preserves recovery state and accepted input without automatic repost",
+      "status": "FAIL"
+    },
+    {
+      "name": "close and reopen tab preserves same authenticated unknown operation",
+      "status": "FAIL"
+    },
+    {
+      "name": "saved draft inputs survive normal page reload",
+      "status": "FAIL"
+    },
+    {
+      "name": "selected source survives reload of selection context",
+      "status": "FAIL"
+    },
+    {
+      "name": "second tab cannot confirm a stale parallel posting of same draft",
+      "status": "FAIL"
+    },
+    {
+      "name": "list count scope observed independently of filtered rows",
+      "status": "OBSERVED"
+    },
+    {
+      "name": "normal expired session removes protected design surface",
+      "status": "PASS"
+    },
+    {
+      "name": "success document quantities are not presented as authoritative SKU stock balances",
+      "status": "FAIL"
+    },
+    {
+      "name": "bounded mixed-unit fixture extension preserves provided unit and does not sum unlike units as pieces",
+      "status": "FAIL"
+    }
+  ],
+  "pageErrors": [],
+  "receipts": [
+    {
+      "path": "baseline-negative/results.json",
+      "sha256": "dbc2c3c64f437722a5e8ebdb42db5fac5828f09cc4984f820eb7985cc51d89ab"
+    },
+    {
+      "path": "baseline-semantic/results.json",
+      "sha256": "3534b46e3c370523de2d2db9c4dfac96099cf7d547a764e86308daef24ab34d0"
+    }
+  ],
+  "browserClosed": true,
+  "backendGate": "BLOCKED",
+  "modelTelemetry": "NOT_VERIFIED"
+}

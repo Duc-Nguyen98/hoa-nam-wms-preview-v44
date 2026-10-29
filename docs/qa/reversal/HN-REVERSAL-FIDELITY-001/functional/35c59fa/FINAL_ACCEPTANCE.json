@@ -1,0 +1,616 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "sourceCommit": "35c59fa5f38ba3c820e07ce84ef153b7af622922",
+  "buildId": "ee58fe43e9dee43af5c551173c9c5ca54f721f12703a1477af5d39520c9ad7eb",
+  "mode": "MOCK",
+  "independentModelPass": 28,
+  "uniqueBrowserCasePass": 22,
+  "aggregateAcrossRuns": false,
+  "singleCleanFullRunPass": true,
+  "consolePageErrors": 0,
+  "sourceUnchangedEveryRun": true,
+  "canonicalUnchangedEveryCompletedCase": true,
+  "model": {
+    "receipt": "35c59fa/model/results.json",
+    "sha256": "5304f8cbe23beac634cafe36c0098af07786611f2b11e7cb2122cf6cff8ca772",
+    "sourceMatchesBrowserCustody": true
+  },
+  "browser": {
+    "receipt": "35c59fa/browser/results.json",
+    "sha256": "b82ca5cd99a8f31ca8bc42cb72f92288321accacff8fd0d9992fa763dd136e38",
+    "caseCount": 22,
+    "passCount": 22,
+    "errorCount": 0
+  },
+  "historicalBaselineReceipts": [
+    {
+      "path": "baseline-negative/results.json",
+      "sha256": "dbc2c3c64f437722a5e8ebdb42db5fac5828f09cc4984f820eb7985cc51d89ab",
+      "unchanged": true
+    },
+    {
+      "path": "baseline-semantic/results.json",
+      "sha256": "3534b46e3c370523de2d2db9c4dfac96099cf7d547a764e86308daef24ab34d0",
+      "unchanged": true
+    }
+  ],
+  "latestCases": [
+    {
+      "name": "B01 unknown list resource remains visible with original operation key/input",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-1",
+        "phase": "unknown"
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B02 unknown refresh preserves input/key and status recovery consumes no second reversal",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-2",
+        "version": 2
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B03 tab close/reopen preserves unknown operation without new intent",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-3",
+        "phase": "unknown"
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B04 saved draft reload preserves quantity/header/per-SKU note and source originals",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-4",
+        "rev": 2
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B05 source selection survives reload and unrelated scenario does not inherit draft",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-5",
+        "scope": "Different scenario only; no second authenticated actor account supplied."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B06 same-scope tabs stale posting cannot both confirm and operation count stays one",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-6",
+        "scope": "Same normal session and dedicated fixture scenario shared by two tabs; backend concurrency not exercised."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B07 same-scope tabs stale save cannot overwrite acknowledged draft",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-7",
+        "restoredAfterRejectedStaleSave": "CAS winner",
+        "scope": "Shared persisted draft CAS plus stale scratch recovery; reload must not silently promote rejected edits to a fresh version."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B08 validation suppresses invalid projection with per-SKU error association",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-8",
+        "association": "rev-quantity-error-HN-DRV-001"
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B18 blank quantity survives scratch restore and can be corrected without read failure",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-9",
+        "scope": "Blank UI value uses explicit finite scratch marker; precision policy is not invented."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B09 scoped document quantities and count scopes are explicitly labelled",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-10",
+        "headers": [
+          "#",
+          "Mã hàng",
+          "Tên hàng",
+          "Đơn vị",
+          "Số lượng chứng từ trước đảo",
+          "Số lượng đảo",
+          "Biến động",
+          "Số lượng chứng từ còn lại"
+        ],
+        "listText": "Tất cả phiếu\n9 phiếu\nĐã ghi sổ\n5 phiếu\nNháp\n1 phiếu\nChờ hàng trả về\n1 phiếu\nĐã hủy\n2 phiếu"
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B10 pending/cancelled impacts and known-only history remain honest",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-11",
+        "scope": "No fabricated review event or receive/stock command asserted; posted inbound/outbound direction and source relation checked."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B11 dedicated storage read failure blocks data instead of fallback seeding",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-12",
+        "injection": "Dedicated fixture IDB open only; canonical/account namespace unaffected."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B12 mixed-unit isolated component preserves units and grouped quantity summaries",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-13",
+        "summary": "Số mặt hàng\n2 SKU\nTổng số lượng đảo\n2 Cái · 2 Mét\nBiến động dự kiến khi ghi sổ\n−2 Cái · −2 Mét\nTác động tồn hiện tại\n0 Cái · 0 Mét",
+        "scope": "Explicit fixture extension only, not approved live DTO."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B13 filtered query survives reload and browser history",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-14",
+        "url": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalScenario=functional-mvtm21x0-14#/preview/S17?view=list&id=REV-20261028-007&q=&type=&status=Nh%C3%A1p&from=2026-10-25&to=2026-10-28&page=1"
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B19 search/date validation preserve accepted rows and expose true no-results",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-15",
+        "scope": "Search only applies after explicit accept; invalid dates retain previous accepted result."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B20 source-bound new draft saves and posts exact notes/current creation date",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-16",
+        "id": "REV-20261029-1793282511185"
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B21 Tablet single interactive binding44px targets and native radio keyboard",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-17",
+        "targets": [
+          {
+            "label": "PN-20261022-007",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261020-001",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261021-005",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261019-003",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261018-002",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261023-010",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261024-011",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261025-012",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261026-013",
+            "width": 44,
+            "height": 44
+          }
+        ],
+        "binding": {
+          "headers": [
+            "#",
+            "Mã hàng",
+            "Tên hàng",
+            "Đơn vị",
+            "Số lượng gốc",
+            "Đã đảo",
+            "Còn được đảo",
+            "Số lượng đảo"
+          ],
+          "rows": [
+            [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Còn được đảo",
+              "Số lượng đảo"
+            ],
+            [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Còn được đảo",
+              "Số lượng đảo"
+            ]
+          ]
+        },
+        "listAccessible": "- text: Tất cả phiếu\n- strong: 9 phiếu\n- text: Đã ghi sổ\n- strong: 4 phiếu\n- text: Nháp\n- strong: 2 phiếu\n- text: Chờ hàng trả về\n- strong: 1 phiếu\n- text: Đã hủy\n- strong: 2 phiếu",
+        "impactAccessible": "- text: Giao dịch gốc\n- strong: +90 Cái\n- text: Phiếu đảo này\n- strong: −45 Cái\n- text: Ảnh hưởng thuần của chuỗi\n- strong: +45 Cái\n- text: Chỉ phản ánh chuỗi giao dịch này, không phải toàn bộ tồn SKU.",
+        "readonlyControls": [
+          {
+            "name": "PN-20261020-001 ↗",
+            "height": 44,
+            "width": 135.34375
+          }
+        ],
+        "compactReadonlyScope": "Only actionable controls require44px targets; readonly label/value rows retain compact presentation."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B22 isolated twelve-record pagination shows9and3 with explicit filtered total",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-18",
+        "scope": "Bounded component fixture extension only; does not mutate durable source fixtures."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B16 inherited workspace read states and retry never masquerade as data",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-19",
+        "states": [
+          {
+            "which": "loading",
+            "kind": "loading",
+            "buttons": []
+          },
+          {
+            "which": "session",
+            "kind": "unauthorized",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "forbidden",
+            "kind": "forbidden",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "offline",
+            "kind": "offline",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "network",
+            "kind": "error",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "empty",
+            "kind": "empty",
+            "buttons": []
+          }
+        ],
+        "scope": "Actual workspace with explicit component read injection; no backend 401/403 certification."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B17 normal S16 S17 S21 and putaway surfaces retain bounded shared shell",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-20",
+        "routes": [
+          {
+            "route": "#/preview/S16",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Tra cứu tồn & đối soát"
+          },
+          {
+            "route": "#/preview/S17",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Phiếu đảo tồn kho"
+          },
+          {
+            "route": "#/preview/S21",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Tồn kho & Đối soát"
+          },
+          {
+            "route": "#/preview/S12",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Danh sách phiếu nhập"
+          },
+          {
+            "route": "#/preview/S14",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Lệnh xếp khay"
+          }
+        ],
+        "scope": "Fresh readonly normal-route smoke only; legacy transaction/recovery behavior remains separate."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B14 locale/theme/deep-state bounded controls at400/800/1440",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-21",
+        "profiles": [
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "list",
+            "heading": "Danh sách phiếu đảo",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "choose",
+            "heading": "Tạo phiếu đảo",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "edit",
+            "heading": "Sửa phiếu đảo nháp Nháp",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "detail",
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "list",
+            "heading": "Reversal slips",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "choose",
+            "heading": "Create reversal",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "edit",
+            "heading": "Edit reversal draft Draft",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "detail",
+            "heading": "Reversal details Posted",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "list",
+            "heading": "冲销单列表",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "choose",
+            "heading": "创建冲销单",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "edit",
+            "heading": "编辑冲销草稿 草稿",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "detail",
+            "heading": "冲销单详情 已过账",
+            "documentWidth": 1440,
+            "outside": []
+          }
+        ]
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B15 normal session expiry removes protected recovery surface",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtm21x0-22",
+        "scope": "Normal MOCK session guard, no token/auth storage patch; live expiry/RBAC remain blocked."
+      },
+      "canonicalBefore": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalAfter": "7e76ba66f7c8d2b0ceae23f8a5f3eda4ad54dcfd40e1e3916819f7eb6040bc8f",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    }
+  ],
+  "previousCandidate": "a98b0357 cumulative results and all raw harness/environment failures remain preserved separately; not relabelled as this run.",
+  "limits": "Fresh isolated fixture scenarios, normal existing login. Canonical state hash equality per case. No auth storage or request bodies persisted. Browser uses Chromium; Edge-specific browser not certified.",
+  "blocked": [
+    "REAL_API generic partial inbound/outbound DTO and backend atomicity",
+    "Second authorized actor/role/warehouse account; live RBAC and revocation",
+    "Backend read-after-unknown receipt authentication/audit proof",
+    "Generic unit precision/rounding policy"
+  ]
+}

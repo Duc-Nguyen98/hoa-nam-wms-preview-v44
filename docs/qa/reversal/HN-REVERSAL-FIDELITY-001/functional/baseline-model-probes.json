@@ -1,0 +1,64 @@
+{
+  "executedAt": "2026-10-29T12:50:51.399Z",
+  "scope": "Fresh current-behavior observations of isolated MOCK adapter instances; not backend tests or acceptance PASS.",
+  "sourceHashes": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/data/command-recovery.ts": "cfc15bb1b3280eeaa501d37ef5fd3c3ea60579ec4c8454545bd6ab918811e195"
+  },
+  "observations": {
+    "saveAccepted": true,
+    "submittedResult": {
+      "kind": "unknown",
+      "key": "fidelity-original-operation"
+    },
+    "originalOperationLookupAfterFreshInstance": {
+      "kind": "unknown",
+      "key": "fidelity-original-operation"
+    },
+    "savedInput": {
+      "note": "FIDELITY persisted-input probe",
+      "quantity": 3
+    },
+    "freshInstanceInput": {
+      "note": null,
+      "quantity": 2
+    },
+    "independentInstances": {
+      "outcomes": [
+        {
+          "kind": "confirmed",
+          "key": "fidelity-instance-A",
+          "recordId": "REV-20261028-007",
+          "postedAt": "28/10/2026 14:35",
+          "version": 2
+        },
+        {
+          "kind": "confirmed",
+          "key": "fidelity-instance-B",
+          "recordId": "REV-20261028-007",
+          "postedAt": "28/10/2026 14:35",
+          "version": 2
+        }
+      ],
+      "scope": "Each has independent records/version/maps. Two confirmed outcomes demonstrate no shared CAS; not proof of duplicate real stock effects."
+    },
+    "decimal": {
+      "unit": "Cái fixture",
+      "quantity": 0.5,
+      "presentationAccepts": true,
+      "postResult": {
+        "kind": "confirmed",
+        "key": "fidelity-fraction",
+        "recordId": "REV-20261028-007",
+        "postedAt": "28/10/2026 14:35",
+        "version": 2
+      },
+      "classification": "MISSING precision authority; observing acceptance is not approval of fractional pieces."
+    }
+  },
+  "verdict": "REQUIREMENT_GAPS_OBSERVED; browser negatives NOT_RUN pending serialized slot",
+  "modelTelemetry": "NOT_VERIFIED"
+}
