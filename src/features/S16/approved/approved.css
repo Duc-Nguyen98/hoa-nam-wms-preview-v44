@@ -31,6 +31,7 @@
  .iad .iad-tray-table table{display:table;min-width:680px}.iad .iad-tray-table thead{display:table-header-group}.iad .iad-tray-table tbody{display:table-row-group}.iad .iad-tray-table tr{display:table-row}.iad .iad-tray-table td{display:table-cell;padding:10px 8px;border-bottom:1px solid var(--line)}.iad .iad-tray-table td:before{display:none}
  .iad .iad-number{text-align:right}.iad .iad-loading-head,.iad .iad-loading-row{grid-template-columns:1.2fr 2fr repeat(6,1fr);gap:8px}.iad .iad-loading-head{font-size:11px}
 }
+
 @media(max-width:900px){
  .iad-view-stock .iad-table-wrap tr,.iad-view-reconcile .iad-table-wrap tr,.iad-view-snapshot .iad-table-wrap tr{grid-template-columns:minmax(130px,1.5fr) minmax(85px,1fr) repeat(4,minmax(58px,1fr)) 50px;grid-template-rows:auto auto}
  .iad-view-stock .iad-table-wrap td:first-child,.iad-view-reconcile .iad-table-wrap td:first-child,.iad-view-snapshot .iad-table-wrap td:first-child{grid-column:1;grid-row:1}
@@ -145,4 +146,28 @@
  .iad .iad-loading-head,.iad .iad-loading-row{grid-template-columns:repeat(2,minmax(0,1fr))}
  .iad-filters>label,.iad-filters>.hn-date-picker,.iad-readonly-date{flex-basis:100%;min-width:0}
  .iad .iad-details{gap:12px}.iad .iad-code{max-width:100%}.iad .iad-code strong{min-width:0}
+}
+
+/* Keep movement metadata readable while reducing tablet card spacing. */
+@media (min-width:600px) and (max-width:900px){
+ .iad.iad-view-movement .iad-table-wrap tr{gap:4px 12px;padding:6px 12px}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='operation'],
+ .iad.iad-view-movement .iad-table-wrap td[data-field='change'],
+ .iad.iad-view-movement .iad-table-wrap td[data-field='balance'],
+ .iad.iad-view-movement .iad-table-wrap td[data-field='actor']{padding-top:3px}
+}
+
+/* Expose all navigation and tray fields within the mobile viewport. */
+@media (max-width:599px){
+ .iad .iad-tabs{flex-wrap:wrap;overflow:visible}
+ .iad .iad-tabs button{white-space:normal;max-width:100%}
+ .iad .iad-tray-table{overflow:visible;background:transparent;border:0}
+ .iad .iad-tray-table table,.iad .iad-tray-table tbody{display:block;min-width:0}
+ .iad .iad-tray-table thead{display:none}
+ .iad .iad-tray-table tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;padding:12px}
+ .iad .iad-tray-table td{display:block;min-width:0;padding:0;border:0;overflow-wrap:anywhere;text-align:left}
+ .iad .iad-tray-table td:before{display:block}
+ .iad .iad-tray-table td:nth-child(-n+3){grid-column:1 / -1}
+ .iad .iad-tray-table td.iad-number{text-align:right}
+ .iad .iad-tray-table td:last-child{grid-column:1 / -1;text-align:right}
 }
