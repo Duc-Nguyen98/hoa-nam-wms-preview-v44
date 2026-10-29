@@ -13,7 +13,7 @@ import { ACCOUNT_EN_COPY } from '../i18n/account-copy';
 import { IS_BROWSER_PREVIEW } from '../preview-mode';
 import { useUiCopy } from '../i18n/use-ui-copy';
 import { ADMIN_EN_COPY } from '../i18n/admin-copy';
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPreviewController } from '../controllers/preview-controller';
 import { Button, Card, Feedback, GlobalShell, PageState } from '../shared';
 import { resolvePreviewRoute, screenRegistry } from './registry';
@@ -43,6 +43,8 @@ import { OutboundSlipsScreen } from '../features/S15/OutboundSlipsScreen';
 import { InventoryScreen } from '../features/S16/InventoryScreen';
 import { InventoryDesignWorkspace } from '../features/S16/approved/InventoryDesignWorkspace';
 import { ReversalSlipsScreen } from '../features/S17/ReversalSlipsScreen';
+import { ReversalDesignWorkspace } from '../features/S17/approved/ReversalDesignWorkspace';
+import { createReversalDesignAdapter } from '../features/S17/approved/adapter';
 import { PutawayHistoryScreen } from '../features/putaway/PutawayHistoryScreen';
 import { createPutawayHistoryAdapter } from '../data/http/putaway-history-adapter';
 import { apiClient } from '../data/http/api-client';
@@ -124,7 +126,9 @@ export function App() {
     return () => { active = false; };
   }, []);
   const inventoryCandidate = IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('inventoryDesign') === '20261029';
-  const selected = resolvePreviewRoute(inventoryCandidate && /^#\/preview\/S16(?:\?|$)/.test(hash) ? '#/preview/S16' : hash);
+  const reversalCandidate = IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('reversalDesign') === '20261029';
+  const reversalDesignAdapter = useMemo(() => reversalCandidate ? createReversalDesignAdapter({ unknownFirst: new URLSearchParams(window.location.search).get('reversalOutcome') === 'unknown' }) : null, [reversalCandidate]);
+  const selected = resolvePreviewRoute(inventoryCandidate && /^#\/preview\/S16(?:\?|$)/.test(hash) ? '#/preview/S16' : reversalCandidate && /^#\/preview\/S17(?:\?|$)/.test(hash) ? '#/preview/S17' : hash);
   const notificationDocument = resolveNotificationDocumentSelection(hash);
   const overviewDocument = resolveOverviewDocumentSelection(hash);
   const accountPanel = resolveAccountPanel(hash);
@@ -181,7 +185,7 @@ export function App() {
   if (selected?.key === 'S15') return <OutboundSlipsScreen adapter={businessHttpAdapters.S15} />;
   if (selected?.key === 'S16') return IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('inventoryDesign') === '20261029'
     ? <InventoryDesignWorkspace /> : <InventoryScreen adapter={businessHttpAdapters.S16} />;
-  if (selected?.key === 'S17') return <ReversalSlipsScreen adapter={businessHttpAdapters.S17} />;
+  if (selected?.key === 'S17') return reversalDesignAdapter ? <ReversalDesignWorkspace adapter={reversalDesignAdapter} /> : <ReversalSlipsScreen adapter={businessHttpAdapters.S17} />;
   if (selected?.key === 'S18') return <InboundReportScreen adapter={businessHttpAdapters.S18} />;
   if (selected?.key === 'S19') return <OutboundReportScreen adapter={businessHttpAdapters.S19} />;
   if (selected?.key === 'S20') return <MovementHistoryScreen adapter={businessHttpAdapters.S20} />;

@@ -1,0 +1,12 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Independent reversal component QA</title></head><body><div id="root"></div><script type="module">
+import React from 'react';import{createRoot}from'react-dom/client';
+import{ReversalDesignWorkspace}from'/src/features/S17/approved/ReversalDesignWorkspace.tsx';
+import{createReversalDesignAdapter}from'/src/features/S17/approved/adapter.ts';
+import{GlobalToastProvider}from'/src/toast/GlobalToastProvider.tsx';
+import{ShellPreferencesRuntime}from'/src/shared/ShellPreferencesRuntime.tsx';
+import'/src/shared/styles.css';import'/src/shared/unified.css';import'/src/shared/components.css';
+const which=new URLSearchParams(location.search).get('case'),base=createReversalDesignAdapter({unknownFirst:which==='unknown'});
+window.reversalQa={calls:[],adapter:base,pending:[],saved:[]};const qa=window.reversalQa;
+const adapter={...base,list:()=>{const rows=base.list();if(which==='pagination')rows.push(...[1,2,3].map(i=>({...structuredClone(rows[2]),id:'REV-QA-PAGE-'+i,source:'PN-QA-PAGE-'+i})));return rows;},save:(row,version)=>{qa.saved.push(structuredClone(row));qa.calls.push({method:'save',row:structuredClone(row),version});return base.save(row,version);},post:async(row,key,version)=>{qa.calls.push({method:'post',row:structuredClone(row),key,version});if(which==='bad-receipt')return{kind:'confirmed',key:'WRONG-KEY',recordId:'WRONG-ID',version:999,postedAt:'29/10/2026 10:00'};if(which==='delayed')return new Promise(resolve=>qa.pending.push(resolve));if(which==='conflict'){const changed=structuredClone(row);changed.reason='Sai chứng từ';base.save(changed,base.version());}return base.post(row,key,version);},status:async(key)=>{qa.calls.push({method:'status',key});return base.status(key);}};
+createRoot(document.getElementById('root')).render(React.createElement(ShellPreferencesRuntime,null,React.createElement(GlobalToastProvider,null,React.createElement(ReversalDesignWorkspace,{adapter}))));
+</script></body></html>
