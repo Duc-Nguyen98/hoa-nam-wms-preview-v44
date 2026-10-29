@@ -1,0 +1,828 @@
+{
+  "stage": "after-f99405e",
+  "method": "Content-origin alignment, proportional width normalization; canvas height includes full reference and full-page actual content with no bottom clipping. Fixed-viewport original remains separately available. Locked shell excluded, no data masking, no pixel PASS threshold. Raster profile unverified; diagnostic comparison is not certified pixel equality.",
+  "provenance": {
+    "head": "f99405e7e01f53cd8e460a9ae6f651f525712268",
+    "files": {
+      "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+      "src/features/S17/approved/ReversalDesignWorkspace.tsx": "c01ffdaf50a865af7b4afee96585f0d4712313c6594ec64c16aec62227114f03",
+      "src/features/S17/approved/approved.css": "81ab2d0ac70851ac74fa444f0c011377f23a810af42d5ebfbd3499a72dd1144d",
+      "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+      "src/features/S17/approved/copy.ts": "2e81a9ec2080420eb6ae6415e5797a07157e4f4f6b3505aeb58b94880c1f45ce",
+      "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+      "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+      "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+      "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+    },
+    "build": {
+      "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+      "sourceCommit": "f99405e7e01f53cd8e460a9ae6f651f525712268",
+      "sourceCommitEvidence": "git-head",
+      "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+      "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+      "buildId": "54a54ea0493cf28968d605b911719707eb96e29e2211c88a4d9f2e21d4a1e9b9",
+      "mode": "MOCK",
+      "publicDemo": true,
+      "assets": [
+        {
+          "path": "assets/fonts/s01/AUTHORS.txt",
+          "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+          "bytes": 349
+        },
+        {
+          "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+          "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+          "bytes": 4921
+        },
+        {
+          "path": "assets/fonts/s01/LICENSE.md",
+          "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+          "bytes": 6824
+        },
+        {
+          "path": "assets/fonts/s01/OFL.txt",
+          "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+          "bytes": 4483
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+          "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+          "bytes": 33664
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+          "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+          "bytes": 33676
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+          "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+          "bytes": 33612
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+          "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+          "bytes": 33636
+        },
+        {
+          "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+          "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+          "bytes": 18765
+        },
+        {
+          "path": "assets/index-Kn02pBW0.js",
+          "sha256": "5bac9406d022194486111ecc4488186ce6c7ebb73db2d25805146407b4824425",
+          "bytes": 2365888
+        },
+        {
+          "path": "assets/index-YcZqaxam.css",
+          "sha256": "dd7d7ec853f516e821fdeb13546c8720ab6560d1ad10f2458b2ff00490461ed7",
+          "bytes": 629268
+        },
+        {
+          "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+          "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+          "bytes": 2651791
+        },
+        {
+          "path": "favicon.svg",
+          "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+          "bytes": 203
+        },
+        {
+          "path": "index.html",
+          "sha256": "8000270d237701cc5e92ffee1ea56bf98fc781549407c888c6035c9d511d1cf4",
+          "bytes": 911
+        },
+        {
+          "path": "release.html",
+          "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+          "bytes": 2224
+        }
+      ]
+    },
+    "buildInfoSha256": "be3be544f649260ae5fd1d5e3024be1565afe5a86c5dcecea2aa01b147ce2b2b"
+  },
+  "results": [
+    {
+      "id": "01",
+      "device": "Desktop1920",
+      "originalReference": "01_Danh_sach_phieu_dao_Desktop.png",
+      "referenceSha256": "e8c45587fb7e061249078e4175c1a9eb0ac2310767eeb92892f0f253104e0550",
+      "actualSha256": "52bd6799b67bdebf156c16eb8bf76d07772c6e5c3b5154b3d4b881f7e332f787",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 14.232581306628516,
+      "width": 1000,
+      "height": 699
+    },
+    {
+      "id": "02",
+      "device": "Desktop1920",
+      "originalReference": "02_Tao_phieu_Chon_chung_tu_Desktop.png",
+      "referenceSha256": "dee3c05f1bc4b0ab9c407fc0bf725a5e894cedaed06744b7432416cee4bde7c5",
+      "actualSha256": "7ced462eec5dd9ec4db3acb4275ba713c8ba38f353cccdaee648944d9a44f0d8",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 11.742516748366013,
+      "width": 1000,
+      "height": 816
+    },
+    {
+      "id": "03",
+      "device": "Desktop1920",
+      "originalReference": "03_Chinh_sua_phieu_nhap_Desktop.png",
+      "referenceSha256": "87be7c6f7f04d09bc12a64530520ee6b0b58d4daf153419454a7be31cb1ac38c",
+      "actualSha256": "27c3703a90681a62e263ace0bb75c6f8b7aaabda100529b7a04dd231eea20efa",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 11.609251479289941,
+      "width": 1000,
+      "height": 676
+    },
+    {
+      "id": "04",
+      "device": "Desktop1920",
+      "originalReference": "04_Kiem_tra_va_ghi_so_Desktop.png",
+      "referenceSha256": "d713edb0f6404377720f8c109f3447c72e7faa4401de908df1e0f101f7553e0f",
+      "actualSha256": "34209e736266e1982fa2e7da125ce8ada4b598b33f70d4d6fa4ed5a524b88545",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 14.459900419287212,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "05",
+      "device": "Desktop1920",
+      "originalReference": "05_Chi_tiet_Da_ghi_so_Desktop.png",
+      "referenceSha256": "896cccc8e72913d92bb5e456c25f0d4c340510d40e32af54144215e7209b20b3",
+      "actualSha256": "d80756bbfec78c7db3437a3a2bc206aaf074e6728921068a7b1a919d2f077fea",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 12.163436681222707,
+      "width": 1000,
+      "height": 687
+    },
+    {
+      "id": "06",
+      "device": "Desktop1920",
+      "originalReference": "06_Chi_tiet_Cho_hang_tra_ve_Desktop.png",
+      "referenceSha256": "3962e2e5a21b60d2ec93c1a667368a8c2e75f504cbea3c66ebf3aab6ac83bd2a",
+      "actualSha256": "35d7249b60c9d1d38d39daf8abac01c6bef79336b4da8cd535b94bbcf5ff5ce0",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 13.159594086021505,
+      "width": 1000,
+      "height": 744
+    },
+    {
+      "id": "07",
+      "device": "Desktop1920",
+      "originalReference": "07_Chi_tiet_Da_huy_Desktop.png",
+      "referenceSha256": "11ad174904271629ac00493b19214682fc7152eae8e67ae05805285be6352e83",
+      "actualSha256": "4d99c7cae50681f60bc5c207328bfc2724b5584dd37deb187647cdcd0bddc6d0",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 12.352503144654088,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "08",
+      "device": "Desktop1920",
+      "originalReference": "08_Tac_dong_ton_va_truy_vet_Desktop.png",
+      "referenceSha256": "b07ff398fa15389913cdde7b0e2e6d94c51ce70ba289f0982694b9feae033f8e",
+      "actualSha256": "b4c373d84655da847a7a6ebd15c58eb30a04692051231d46925e32d4f52b6d4b",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 14.156801729873585,
+      "width": 1000,
+      "height": 1002
+    },
+    {
+      "id": "09",
+      "device": "Desktop1920",
+      "originalReference": "09_Chan_giao_dich_lien_quan_Desktop.png",
+      "referenceSha256": "09ebf83d4aefc056ac69380327500c6bca3906f9e3efc1692a0af43cf76829ac",
+      "actualSha256": "24841bac54d58958822e3ae589f17451d80d353f07ff8c031db23356ad40c018",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 14.734711215932913,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "10",
+      "device": "Desktop1920",
+      "originalReference": "10_Loi_nhap_lieu_Desktop.png",
+      "referenceSha256": "918024a906025a3632f6a812036da7bb25aaf7caa332c96ed5829e4855e6570c",
+      "actualSha256": "5accc1e88f509344a24a1ee9d6e555c406ecb21e7e449116db31ae89c811bb0d",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 76,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 11.775682336182337,
+      "width": 1000,
+      "height": 702
+    },
+    {
+      "id": "11",
+      "device": "Desktop1920",
+      "originalReference": "11_Ket_qua_chua_xac_dinh_Desktop.png",
+      "referenceSha256": "08926904e7e249c54b7ce8df1e7b88e0189d819354c7693f89cdf650c83635c1",
+      "actualSha256": "291d52c8e60473f2531dbe0bee333985a527df7a257befb3d6f719132c031de8",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 14.313980083857443,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "12",
+      "device": "Desktop1920",
+      "originalReference": "12_Ghi_so_thanh_cong_Desktop.png",
+      "referenceSha256": "4377df747467f76a62c2c3f58fa41bed80fb6bc71533e7aac27f5c0bd8a1619c",
+      "actualSha256": "20ad21616bd37495b3540c450a59d858e83270306c31cb6a6b33033e8845c2bc",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 13.000627358490567,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "01",
+      "device": "Desktop1440",
+      "originalReference": "01_Danh_sach_phieu_dao_Desktop.png",
+      "referenceSha256": "e8c45587fb7e061249078e4175c1a9eb0ac2310767eeb92892f0f253104e0550",
+      "actualSha256": "a283afd2eabf474747998afa78817f63e1a95f97ade3e8cfd10767ba4fd8e090",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 15.896766697445369,
+      "width": 1000,
+      "height": 1083
+    },
+    {
+      "id": "02",
+      "device": "Desktop1440",
+      "originalReference": "02_Tao_phieu_Chon_chung_tu_Desktop.png",
+      "referenceSha256": "dee3c05f1bc4b0ab9c407fc0bf725a5e894cedaed06744b7432416cee4bde7c5",
+      "actualSha256": "4e7b07676039dce59f6786d16e78e76283ab1085b9fc28d2127708c07c25a6be",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 13.97158622636184,
+      "width": 1000,
+      "height": 1181
+    },
+    {
+      "id": "03",
+      "device": "Desktop1440",
+      "originalReference": "03_Chinh_sua_phieu_nhap_Desktop.png",
+      "referenceSha256": "87be7c6f7f04d09bc12a64530520ee6b0b58d4daf153419454a7be31cb1ac38c",
+      "actualSha256": "6e71b210511bb87f38e56430b11a4124f21af85182c032fbb557aba16dfb6ed3",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 13.231351738241308,
+      "width": 1000,
+      "height": 978
+    },
+    {
+      "id": "04",
+      "device": "Desktop1440",
+      "originalReference": "04_Kiem_tra_va_ghi_so_Desktop.png",
+      "referenceSha256": "d713edb0f6404377720f8c109f3447c72e7faa4401de908df1e0f101f7553e0f",
+      "actualSha256": "9f31b0e351975b983e3bb882b64ac4af599fbdd2957fd3c22bc4d7218b9b5a2e",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 14.29111760213822,
+      "width": 1000,
+      "height": 873
+    },
+    {
+      "id": "05",
+      "device": "Desktop1440",
+      "originalReference": "05_Chi_tiet_Da_ghi_so_Desktop.png",
+      "referenceSha256": "896cccc8e72913d92bb5e456c25f0d4c340510d40e32af54144215e7209b20b3",
+      "actualSha256": "43fb3759a993518ff3f0412b3c8d8b2519c74fd3d5aea91dbf8c88ef94e90440",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 13.911225352112677,
+      "width": 1000,
+      "height": 994
+    },
+    {
+      "id": "06",
+      "device": "Desktop1440",
+      "originalReference": "06_Chi_tiet_Cho_hang_tra_ve_Desktop.png",
+      "referenceSha256": "3962e2e5a21b60d2ec93c1a667368a8c2e75f504cbea3c66ebf3aab6ac83bd2a",
+      "actualSha256": "788ffa49b022a09b09bd31fe7695f8f22702c0a9f82168d2cef5020fbc25a2bb",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 13.565170535437945,
+      "width": 1000,
+      "height": 1077
+    },
+    {
+      "id": "07",
+      "device": "Desktop1440",
+      "originalReference": "07_Chi_tiet_Da_huy_Desktop.png",
+      "referenceSha256": "11ad174904271629ac00493b19214682fc7152eae8e67ae05805285be6352e83",
+      "actualSha256": "c4965987e83cc7a2eb99145ec309840bd070f8f49a34a00eac79005c88e3766b",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 12.826146058423369,
+      "width": 1000,
+      "height": 833
+    },
+    {
+      "id": "08",
+      "device": "Desktop1440",
+      "originalReference": "08_Tac_dong_ton_va_truy_vet_Desktop.png",
+      "referenceSha256": "b07ff398fa15389913cdde7b0e2e6d94c51ce70ba289f0982694b9feae033f8e",
+      "actualSha256": "390fa9a3b8e33f2f8f5cde7a252570adfd4df89f8db27bb33bbb17b60d5d11e0",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 14.739181713760624,
+      "width": 1000,
+      "height": 1451
+    },
+    {
+      "id": "09",
+      "device": "Desktop1440",
+      "originalReference": "09_Chan_giao_dich_lien_quan_Desktop.png",
+      "referenceSha256": "09ebf83d4aefc056ac69380327500c6bca3906f9e3efc1692a0af43cf76829ac",
+      "actualSha256": "783282d948cf7ad657bba001bcdab6b1042e34484c992e0d0b7e9a253ef3173a",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 14.734891191709844,
+      "width": 1000,
+      "height": 772
+    },
+    {
+      "id": "10",
+      "device": "Desktop1440",
+      "originalReference": "10_Loi_nhap_lieu_Desktop.png",
+      "referenceSha256": "918024a906025a3632f6a812036da7bb25aaf7caa332c96ed5829e4855e6570c",
+      "actualSha256": "f645dbdfee17a58468200d59dd6c4a922d63060c07c92755d117348e549cfe35",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": -148,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 13.013525568942436,
+      "width": 1000,
+      "height": 1245
+    },
+    {
+      "id": "11",
+      "device": "Desktop1440",
+      "originalReference": "11_Ket_qua_chua_xac_dinh_Desktop.png",
+      "referenceSha256": "08926904e7e249c54b7ce8df1e7b88e0189d819354c7693f89cdf650c83635c1",
+      "actualSha256": "de5c3deb849ec7745222ffa3740a6c7e37a0ecff4eda559b8ac24839307bcc62",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 14.93680358705162,
+      "width": 1000,
+      "height": 762
+    },
+    {
+      "id": "12",
+      "device": "Desktop1440",
+      "originalReference": "12_Ghi_so_thanh_cong_Desktop.png",
+      "referenceSha256": "4377df747467f76a62c2c3f58fa41bed80fb6bc71533e7aac27f5c0bd8a1619c",
+      "actualSha256": "e70fc75625f5b2b1438597bc97c7c7a884ab4356df5a6c6c88d5b0d594673d78",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 344,
+        "y": 94,
+        "w": 1072
+      },
+      "diagnosticMeanAbsoluteRGB": 14.20195767888307,
+      "width": 1000,
+      "height": 764
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "originalReference": "01_Danh_sach_phieu_dao_Tablet.png",
+      "referenceSha256": "c908fc320223d901f100638f32e058c29772f631383bed7ee24313a8922e447a",
+      "actualSha256": "32da11a83d8ce6e78787edd31e4270ffe37f87cd874619a465cbd0fd3a355723",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 16.60683861533419,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "originalReference": "02_Tao_phieu_Chon_chung_tu_Tablet.png",
+      "referenceSha256": "ed950bbd818fe5aaaf474b69529a92b49f33d4143f7ff632277bec9207a41fbf",
+      "actualSha256": "aaab00090c1f923a813684afb0fa5a46bf8af702d8b7c0419e2e9823bc456e7d",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 15.284240728134533,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "originalReference": "03_Chinh_sua_phieu_nhap_Tablet.png",
+      "referenceSha256": "ff2acd3b33de61e88db1b575b4f6a0e24665e5114d517e18722471bb2e2f3c10",
+      "actualSha256": "be169e3c58c8e2696ba293aaf814fb4ca570015aeaf5f9e46553c025d0ded301",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 13.989153734184303,
+      "width": 650,
+      "height": 1145
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "originalReference": "04_Kiem_tra_va_ghi_so_Tablet.png",
+      "referenceSha256": "7ab91236d082610c5b7b94ea9c902809d4fa93da51adaefd2eb017b45c82114b",
+      "actualSha256": "2c857fb917cb18971a444c80ec9a0ca70623d7a8847bd4b4cbf3ded3b3f75dc0",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 16.080253636890806,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "originalReference": "05_Chi_tiet_Da_ghi_so_Tablet.png",
+      "referenceSha256": "868887081ec28655c428c9befdf64cd93ccebe5f122a761a82c1f8a8cbdd2565",
+      "actualSha256": "f856d3406777723d4d833ac78dd110952913c25480034cddc3468f63a784210b",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 16.066009631142375,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "originalReference": "06_Chi_tiet_Cho_hang_tra_ve_Tablet.png",
+      "referenceSha256": "8b61f582fc9cd987804eb75ddcfc4cacef76a092f7b0dd444e4681723538430f",
+      "actualSha256": "807f8482d9ca44beb766f010f14ad8c7fff3df77eea1143c8e0f236f5fa095dd",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 14.510639661756683,
+      "width": 650,
+      "height": 1128
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "originalReference": "07_Chi_tiet_Da_huy_Tablet.png",
+      "referenceSha256": "efe30904ddfbd0aa0951e81c863e7f16ce3a57ca958460cd8f61d51271b3464a",
+      "actualSha256": "09225abf4fd8e5625164b4fdd062d004dad69283431c713e61a85b53e4db596e",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 13.216212086831556,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "originalReference": "08_Tac_dong_ton_va_truy_vet_Tablet.png",
+      "referenceSha256": "c4f17b63dd02a0365a60f64344651d759d1e8b9597a1ef556689f789a7adf0cd",
+      "actualSha256": "4bf03e69cf7b9152c7617d61463618dd7d3c89082192430e2808b99e4f5e7131",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 15.162397712599152,
+      "width": 650,
+      "height": 1390
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "originalReference": "09_Chan_giao_dich_lien_quan_Tablet.png",
+      "referenceSha256": "c1ea1851f8c2d803331a7328dbeca2dc928811d0fdeefb77bbf318ca80862ead",
+      "actualSha256": "83964bc0c284ac3b547df422e371e50cb62ebe2bd9a0b9ee5b85365f8d1d2375",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 15.577828706855255,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "originalReference": "10_Loi_nhap_lieu_Tablet.png",
+      "referenceSha256": "7c7eacf61b72af46d7badd84322daeb2b0b47530cdba7b243fb69fe46c9f8647",
+      "actualSha256": "0d47bff3be6d0b0bf403efe50849980f6ae6d58c6ea4e5109090b602ecbecdcc",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": -88,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 13.52053274682307,
+      "width": 650,
+      "height": 1364
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "originalReference": "11_Ket_qua_chua_xac_dinh_Tablet.png",
+      "referenceSha256": "6d8d223473cdde12b771efeabd7d1078a1d6c486f004b8dda48e7c55325b3bb6",
+      "actualSha256": "79ebf006ba2f5930139eed164261bbfcab4fef5e0c76457865f1a867eae9dab0",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 16.893008597433376,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "originalReference": "12_Ghi_so_thanh_cong_Tablet.png",
+      "referenceSha256": "90bf29163e5a3245fa05f9121dd48b6c8f6846f14b77c35ef1ebb883b4ddad19",
+      "actualSha256": "212ca9e587dadc75051e037f05bc5b0ccf25ad493e4ea58e4c8cd0036d67aec0",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 14.137146458916371,
+      "width": 650,
+      "height": 1017
+    }
+  ]
+}

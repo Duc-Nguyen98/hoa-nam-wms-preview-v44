@@ -1,0 +1,2356 @@
+{
+  "applicationSource": "f99405e7e01f53cd8e460a9ae6f651f525712268",
+  "buildId": "54a54ea0493cf28968d605b911719707eb96e29e2211c88a4d9f2e21d4a1e9b9",
+  "mode": "MOCK_NORMAL_APP_AND_COMPONENT",
+  "core": {
+    "checks": 22,
+    "pass": 22,
+    "errors": [],
+    "receipt": "independent-final-f99405e/results.json"
+  },
+  "supplemental": {
+    "checks": 10,
+    "pass": 10,
+    "deepGeometryRecords": 60,
+    "errors": [],
+    "receipt": "supplemental-final-f99405e/results.json"
+  },
+  "sharedShell": {
+    "routeCount": 29,
+    "distinctChecks": 44,
+    "distinctPass": 44,
+    "checks": [
+      {
+        "name": "1440 expanded S01 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S01",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1476.296875
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1406.296875
+            },
+            "firstContent": {
+              "x": 352,
+              "y": 82,
+              "left": 352,
+              "right": 1408,
+              "width": 1056,
+              "height": 1362.296875
+            },
+            "heading": "Tổng quan vận hành",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S02 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S02",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 781
+            },
+            "heading": "Danh mục bệnh / lỗi",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S03 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S03",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1285.796875
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1215.796875
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 1167.796875
+            },
+            "heading": "Danh mục sản phẩm",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S04 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S04",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1304
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1234
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 1186
+            },
+            "heading": "Danh mục SKU",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S05 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S05",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1152
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1082
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 92,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 1038
+            },
+            "heading": "Danh mục đại lý & nơi nhận",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S06 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S06",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1150
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1080
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 1032
+            },
+            "heading": "Quản lý sản phẩm PV",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S09 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S09",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 442
+            },
+            "heading": "Quản lý hồ sơ bảo hành",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S10 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S10",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 584.78125
+            },
+            "heading": "Quản lý phiếu xuất linh kiện",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S11 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S11",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 673.390625
+            },
+            "heading": "Danh sách khay",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S12 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S12",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 366,
+              "y": 94,
+              "left": 366,
+              "right": 1410,
+              "width": 1044,
+              "height": 595.390625
+            },
+            "heading": "Danh sách phiếu nhập",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S13 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S13",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 651.390625
+            },
+            "heading": "Hàng chờ xếp khay",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S14 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S14",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 664.390625
+            },
+            "heading": "Lệnh xếp khay",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S15 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S15",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 802.390625
+            },
+            "heading": "Phiếu xuất kho",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S16 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S16",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1520
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1450
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 1402
+            },
+            "heading": "Tra cứu tồn & đối soát",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S17 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S17",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 650.390625
+            },
+            "heading": "Phiếu đảo tồn kho",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S18 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S18",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 761.78125
+            },
+            "heading": "Báo cáo nhập kho",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S19 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S19",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 723.78125
+            },
+            "heading": "Báo cáo xuất kho",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S20 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S20",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 3158.5625
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 3088.5625
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 3040.5625
+            },
+            "heading": "Lịch sử nhập - xuất - tồn kho",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S21 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S21",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 760.171875
+            },
+            "heading": "Tồn kho & Đối soát",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S22 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S22",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 647.78125
+            },
+            "heading": "Báo cáo bảo hành linh kiện",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S23 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S23",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1057
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 987
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 939
+            },
+            "heading": "Nhãn, đóng gói & in lại",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S24 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S24",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1406
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1336
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 1288
+            },
+            "heading": "Báo cáo Nhập liệu, đối chiếu & lỗi dữ liệu",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S25 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S25",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 723.78125
+            },
+            "heading": "Xuất theo người nhận",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S26 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S26",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 900
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 721.5625
+            },
+            "heading": "Truy vết hàng hóa",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S27 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S27",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1179
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1109
+            },
+            "firstContent": {
+              "x": 352,
+              "y": 102,
+              "left": 352,
+              "right": 1408,
+              "width": 1056,
+              "height": 1045
+            },
+            "heading": "Nhật ký hệ thống",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S28 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S28",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1076.125
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1006.125
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 958.125
+            },
+            "heading": "Bỏ thay đổi chưa lưu?",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 expanded S29 content clears fixed sidebar",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S29",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "320px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 320,
+              "width": 320,
+              "height": 900
+            },
+            "workspace": {
+              "x": 320,
+              "y": 0,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 1008.96875
+            },
+            "main": {
+              "x": 320,
+              "y": 70,
+              "left": 320,
+              "right": 1440,
+              "width": 1120,
+              "height": 938.96875
+            },
+            "firstContent": {
+              "x": 344,
+              "y": 94,
+              "left": 344,
+              "right": 1416,
+              "width": 1072,
+              "height": 890.96875
+            },
+            "heading": "Người dùng & RBAC",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 collapsed S01 uses rail offset",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S01",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "true",
+            "expanded": "false",
+            "expandedToken": "320px",
+            "offsetToken": "70px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 70,
+              "width": 70,
+              "height": 900
+            },
+            "workspace": {
+              "x": 70,
+              "y": 0,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1317
+            },
+            "main": {
+              "x": 70,
+              "y": 70,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1247
+            },
+            "firstContent": {
+              "x": 102,
+              "y": 82,
+              "left": 102,
+              "right": 1408,
+              "width": 1306,
+              "height": 1203
+            },
+            "heading": "Tổng quan vận hành",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 collapsed S12 uses rail offset",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S12",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "true",
+            "expanded": "false",
+            "expandedToken": "320px",
+            "offsetToken": "70px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 70,
+              "width": 70,
+              "height": 900
+            },
+            "workspace": {
+              "x": 70,
+              "y": 0,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 900
+            },
+            "main": {
+              "x": 70,
+              "y": 70,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 116,
+              "y": 94,
+              "left": 116,
+              "right": 1410,
+              "width": 1294,
+              "height": 595.390625
+            },
+            "heading": "Danh sách phiếu nhập",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 collapsed S16 uses rail offset",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S16",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "true",
+            "expanded": "false",
+            "expandedToken": "320px",
+            "offsetToken": "70px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 70,
+              "width": 70,
+              "height": 900
+            },
+            "workspace": {
+              "x": 70,
+              "y": 0,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1498
+            },
+            "main": {
+              "x": 70,
+              "y": 70,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1428
+            },
+            "firstContent": {
+              "x": 94,
+              "y": 94,
+              "left": 94,
+              "right": 1416,
+              "width": 1322,
+              "height": 1380
+            },
+            "heading": "Tra cứu tồn & đối soát",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 collapsed S17 uses rail offset",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S17",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "true",
+            "expanded": "false",
+            "expandedToken": "320px",
+            "offsetToken": "70px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 70,
+              "width": 70,
+              "height": 900
+            },
+            "workspace": {
+              "x": 70,
+              "y": 0,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 900
+            },
+            "main": {
+              "x": 70,
+              "y": 70,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 830
+            },
+            "firstContent": {
+              "x": 94,
+              "y": 94,
+              "left": 94,
+              "right": 1416,
+              "width": 1322,
+              "height": 378
+            },
+            "heading": "Phiếu đảo tồn kho",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 collapsed S27 uses rail offset",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S27",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "true",
+            "expanded": "false",
+            "expandedToken": "320px",
+            "offsetToken": "70px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 70,
+              "width": 70,
+              "height": 900
+            },
+            "workspace": {
+              "x": 70,
+              "y": 0,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 966
+            },
+            "main": {
+              "x": 70,
+              "y": 70,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 896
+            },
+            "firstContent": {
+              "x": 102,
+              "y": 102,
+              "left": 102,
+              "right": 1408,
+              "width": 1306,
+              "height": 832
+            },
+            "heading": "Nhật ký hệ thống",
+            "authUsername": false
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "800x1280 drawer S01 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S01",
+            "width": 800,
+            "height": 1280,
+            "documentWidth": 800,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 2062
+            },
+            "main": {
+              "x": 0,
+              "y": 80,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 1982
+            },
+            "firstContent": {
+              "x": 46,
+              "y": 96,
+              "left": 46,
+              "right": 754,
+              "width": 708,
+              "height": 1950
+            },
+            "heading": "Tổng quan vận hành",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 1280
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "800x1280 drawer S12 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S12",
+            "width": 800,
+            "height": 1280,
+            "documentWidth": 800,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 11012
+            },
+            "main": {
+              "x": 0,
+              "y": 80,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 10932
+            },
+            "firstContent": {
+              "x": 24,
+              "y": 104,
+              "left": 24,
+              "right": 776,
+              "width": 752,
+              "height": 10884
+            },
+            "heading": "Danh sách phiếu nhập",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 1280
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "800x1280 drawer S16 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S16",
+            "width": 800,
+            "height": 1280,
+            "documentWidth": 800,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 4388
+            },
+            "main": {
+              "x": 0,
+              "y": 80,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 4308
+            },
+            "firstContent": {
+              "x": 24,
+              "y": 104,
+              "left": 24,
+              "right": 776,
+              "width": 752,
+              "height": 4260
+            },
+            "heading": "Tra cứu tồn & đối soát",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 1280
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "800x1280 drawer S17 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S17",
+            "width": 800,
+            "height": 1280,
+            "documentWidth": 800,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 1280
+            },
+            "main": {
+              "x": 0,
+              "y": 80,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 1200
+            },
+            "firstContent": {
+              "x": 24,
+              "y": 104,
+              "left": 24,
+              "right": 776,
+              "width": 752,
+              "height": 627.6875
+            },
+            "heading": "Phiếu đảo tồn kho",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 1280
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "800x1280 drawer S27 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S27",
+            "width": 800,
+            "height": 1280,
+            "documentWidth": 800,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 1280
+            },
+            "main": {
+              "x": 0,
+              "y": 80,
+              "left": 0,
+              "right": 800,
+              "width": 800,
+              "height": 1200
+            },
+            "firstContent": {
+              "x": 24,
+              "y": 104,
+              "left": 24,
+              "right": 776,
+              "width": 752,
+              "height": 1069
+            },
+            "heading": "Nhật ký hệ thống",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 1280
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "400x640 drawer S01 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S01",
+            "width": 400,
+            "height": 640,
+            "documentWidth": 400,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 3271.5
+            },
+            "main": {
+              "x": 0,
+              "y": 120,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 3151.5
+            },
+            "firstContent": {
+              "x": 16,
+              "y": 132,
+              "left": 16,
+              "right": 384,
+              "width": 368,
+              "height": 3123.5
+            },
+            "heading": "Tổng quan vận hành",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 640
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "400x640 drawer S12 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S12",
+            "width": 400,
+            "height": 640,
+            "documentWidth": 400,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 751.6875
+            },
+            "main": {
+              "x": 0,
+              "y": 120,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 631.6875
+            },
+            "firstContent": {
+              "x": 12,
+              "y": 136,
+              "left": 12,
+              "right": 388,
+              "width": 376,
+              "height": 599.6875
+            },
+            "heading": "Danh sách phiếu nhập",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 640
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "400x640 drawer S16 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S16",
+            "width": 400,
+            "height": 640,
+            "documentWidth": 400,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 965.6875
+            },
+            "main": {
+              "x": 0,
+              "y": 120,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 845.6875
+            },
+            "firstContent": {
+              "x": 12,
+              "y": 136,
+              "left": 12,
+              "right": 388,
+              "width": 376,
+              "height": 813.6875
+            },
+            "heading": "Tra cứu tồn & đối soát",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 640
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "400x640 drawer S17 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S17",
+            "width": 400,
+            "height": 640,
+            "documentWidth": 400,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 763.6875
+            },
+            "main": {
+              "x": 0,
+              "y": 120,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 643.6875
+            },
+            "firstContent": {
+              "x": 12,
+              "y": 136,
+              "left": 12,
+              "right": 388,
+              "width": 376,
+              "height": 611.6875
+            },
+            "heading": "Phiếu đảo tồn kho",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 640
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "400x640 drawer S27 content/menu remain reachable",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S27",
+            "width": 400,
+            "height": 640,
+            "documentWidth": 400,
+            "layout": "drawer",
+            "collapsed": "false",
+            "expanded": "true",
+            "expandedToken": "320px",
+            "offsetToken": "0px",
+            "sidebar": null,
+            "workspace": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 1127
+            },
+            "main": {
+              "x": 0,
+              "y": 120,
+              "left": 0,
+              "right": 400,
+              "width": 400,
+              "height": 1007
+            },
+            "firstContent": {
+              "x": 16,
+              "y": 136,
+              "left": 16,
+              "right": 384,
+              "width": 368,
+              "height": 975
+            },
+            "heading": "Nhật ký hệ thống",
+            "authUsername": false
+          },
+          "drawer": {
+            "x": 0,
+            "y": 0,
+            "width": 350,
+            "height": 640
+          }
+        },
+        "receipt": "shared-shell-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 auth route S07 actual surface recorded",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S01",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "true",
+            "expanded": "false",
+            "expandedToken": "320px",
+            "offsetToken": "70px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 70,
+              "width": 70,
+              "height": 900
+            },
+            "workspace": {
+              "x": 70,
+              "y": 0,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1317
+            },
+            "main": {
+              "x": 70,
+              "y": 70,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1247
+            },
+            "firstContent": {
+              "x": 102,
+              "y": 82,
+              "left": 102,
+              "right": 1408,
+              "width": 1306,
+              "height": 1203
+            },
+            "heading": "Tổng quan vận hành",
+            "authUsername": false
+          },
+          "title": "Tổng quan vận hành · Hoa Nam WMS",
+          "scope": "Authenticated attempt to S07 correctly redirects toS01 under App.tsx active-session guard. Fresh sign-in/confirmation are separately exercised by normal setup; this is not an auth-surface geometry claim."
+        },
+        "receipt": "shared-auth-ret-final-f99405e/results.json"
+      },
+      {
+        "name": "1440 auth route S08 actual surface recorded",
+        "status": "PASS",
+        "observations": {
+          "geometry": {
+            "route": "#/preview/S01",
+            "width": 1440,
+            "height": 900,
+            "documentWidth": 1440,
+            "layout": "desktop",
+            "collapsed": "true",
+            "expanded": "false",
+            "expandedToken": "320px",
+            "offsetToken": "70px",
+            "sidebar": {
+              "x": 0,
+              "y": 0,
+              "left": 0,
+              "right": 70,
+              "width": 70,
+              "height": 900
+            },
+            "workspace": {
+              "x": 70,
+              "y": 0,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1317
+            },
+            "main": {
+              "x": 70,
+              "y": 70,
+              "left": 70,
+              "right": 1440,
+              "width": 1370,
+              "height": 1247
+            },
+            "firstContent": {
+              "x": 102,
+              "y": 82,
+              "left": 102,
+              "right": 1408,
+              "width": 1306,
+              "height": 1203
+            },
+            "heading": "Tổng quan vận hành",
+            "authUsername": false
+          },
+          "title": "Tổng quan vận hành · Hoa Nam WMS",
+          "scope": "Authenticated attempt to S08 correctly redirects toS01 under App.tsx active-session guard. Fresh sign-in/confirmation are separately exercised by normal setup; this is not an auth-surface geometry claim."
+        },
+        "receipt": "shared-auth-ret-final-f99405e/results.json"
+      }
+    ],
+    "initialAttempt": {
+      "pass": 46,
+      "fail": 2,
+      "reason": "Two auth route assumptions raced the documented active-session redirect toS01. Actual product behavior is expected; original failures retained."
+    },
+    "authGuardRetest": {
+      "checks": 2,
+      "pass": 2,
+      "receipt": "shared-auth-ret-final-f99405e/results.json"
+    },
+    "errors": []
+  },
+  "s09Stress": {
+    "checks": 4,
+    "pass": 4,
+    "canonicalUnchanged": true
+  },
+  "unit": {
+    "checks": 22,
+    "pass": 22,
+    "receipt": "independent-unit-final-f99405e.txt"
+  },
+  "sourceHashes": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "c01ffdaf50a865af7b4afee96585f0d4712313c6594ec64c16aec62227114f03",
+    "src/features/S17/approved/approved.css": "81ab2d0ac70851ac74fa444f0c011377f23a810af42d5ebfbd3499a72dd1144d",
+    "src/features/S17/approved/copy.ts": "2e81a9ec2080420eb6ae6415e5797a07157e4f4f6b3505aeb58b94880c1f45ce",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/shared/GlobalShell.tsx": "f4dc2cd2f04ec6a5034e1380a4c542b3fafd76bda2333e224b824d1643a0d4c0",
+    "src/app/registry.ts": "7b667bde1f2ef72c7a9c425158d73e20ee28fc20d019bf6991ec934bae35aa38"
+  },
+  "currentSourceMatches": true,
+  "allRunsSourceUnchanged": true,
+  "sameSourceAcrossCoreSupplement": true,
+  "browserClosed": true,
+  "modelTelemetry": "NOT_VERIFIED",
+  "dataGaps": [
+    "View08 review/audit event has no authoritative model field; no invented event added."
+  ],
+  "acceptanceLimits": [
+    "REAL_API/permissions/atomic posting BLOCKED",
+    "Read lifecycle/role state API contracts BLOCKED",
+    "Actual200percent browser zoom NOT_RUN",
+    "Fresh expired-session probe NOT_RUN",
+    "Full WCAG certification NOT_RUN"
+  ]
+}

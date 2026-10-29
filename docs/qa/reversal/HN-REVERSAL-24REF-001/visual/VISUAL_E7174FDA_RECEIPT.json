@@ -1,0 +1,2302 @@
+{
+  "captureSha256": "369d4daac21929ff087e7e1212ea8152d8a77d418969f8ed2fdbadf72eda28fa",
+  "stabilitySha256": "facef686e99ceb520db04d380c342e671fa1c2111e70f12a8690a8fd5ae5f0cd",
+  "registrationSha256": "388c4ffa64426cf881bf317905faafdf502f2ae3fc19fedae4aefc3c2ef50a9c",
+  "source": {
+    "head": "e7174fda97ab3ab147cb1dd332e7b942f5088c87",
+    "files": {
+      "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+      "src/features/S17/approved/ReversalDesignWorkspace.tsx": "397698498012ee7033fbbd3f9557ab17bbe5816141e6d83cd9aa8ea8569aadd3",
+      "src/features/S17/approved/approved.css": "fe9a7881bea8278e0b0e31a83c02746262c483c4dd8ac21c59b67156fdcaae35",
+      "src/features/S17/approved/adapter.ts": "b16b1fa20cdc0565cf40d374fd4c9e74c0f3b0facd6562cab7b425f4fe0a5372",
+      "src/features/S17/approved/copy.ts": "cfac9578776816664f679b7353313806ddde0244761a756d258b0494aeff93bc"
+    },
+    "build": {
+      "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+      "sourceCommit": "e7174fda97ab3ab147cb1dd332e7b942f5088c87",
+      "sourceCommitEvidence": "git-head",
+      "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+      "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+      "buildId": "46f2aa4b604a659bbf07be7c13973258e4b63b4e18e18714345df92eb296a056",
+      "mode": "MOCK",
+      "publicDemo": true,
+      "assets": [
+        {
+          "path": "assets/fonts/s01/AUTHORS.txt",
+          "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+          "bytes": 349
+        },
+        {
+          "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+          "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+          "bytes": 4921
+        },
+        {
+          "path": "assets/fonts/s01/LICENSE.md",
+          "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+          "bytes": 6824
+        },
+        {
+          "path": "assets/fonts/s01/OFL.txt",
+          "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+          "bytes": 4483
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+          "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+          "bytes": 33664
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+          "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+          "bytes": 33676
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+          "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+          "bytes": 33612
+        },
+        {
+          "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+          "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+          "bytes": 33636
+        },
+        {
+          "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+          "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+          "bytes": 18765
+        },
+        {
+          "path": "assets/index-CCWDH9DW.css",
+          "sha256": "992df24c5e0b68256c04f09962aa45754b9a5b66907d065f7677096589fab1a1",
+          "bytes": 624348
+        },
+        {
+          "path": "assets/index-D_f5Z2Py.js",
+          "sha256": "98842e0a458e19f7a189844a5959c8021271ac47d4f62820a2fa63560b78d2ba",
+          "bytes": 2363498
+        },
+        {
+          "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+          "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+          "bytes": 2651791
+        },
+        {
+          "path": "favicon.svg",
+          "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+          "bytes": 203
+        },
+        {
+          "path": "index.html",
+          "sha256": "e9dccab6efdf64927b043da7ca1dad5003cd9856f46cc32b49cfce56024768ee",
+          "bytes": 911
+        },
+        {
+          "path": "release.html",
+          "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+          "bytes": 2224
+        }
+      ]
+    },
+    "buildInfoSha256": "a689d38ae8b1b72aa34a0ad55575b9ef594398de5d041fe7cd6948992d07e7c5"
+  },
+  "stable": true,
+  "rows": [
+    {
+      "id": "01",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\01_Danh_sach_phieu_dao_Desktop.png",
+      "referenceSha256": "e8c45587fb7e061249078e4175c1a9eb0ac2310767eeb92892f0f253104e0550",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\01-Desktop1920.png",
+      "actualSha256": "310c8c80064fdb1969ff14d09267d57664e99058ca36b9abe078a443dc1dfdfa",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\01-Desktop1920-full.png",
+      "fullSha256": "19e1f171c0181d0eef80856a8312784cb979798c93b85ff8254d8c910fc6eced",
+      "heightCssPx": 1178,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 1060.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1920-reference.png",
+          "sha256": "ee72eb5b6c9547dca3f4a93e7f37b26829eda093921e11aa62a86256cc77c88a"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1920-actual.png",
+          "sha256": "26e2356b8bc6b4b77bc348837dd0f80a81029af37b58358e98b50fa891dade9a"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1920-overlay.png",
+          "sha256": "2799bd4bd2f7bbaf74dddaa21b3195f97a3e35c9d36a559820208e2ce07a21c8"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1920-diff.png",
+          "sha256": "50ef2e64f60c13d058fbfec0a5af0bdae8f971262e6d73609fc819d2258aab1d"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 699
+      }
+    },
+    {
+      "id": "02",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\02_Tao_phieu_Chon_chung_tu_Desktop.png",
+      "referenceSha256": "dee3c05f1bc4b0ab9c407fc0bf725a5e894cedaed06744b7432416cee4bde7c5",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\02-Desktop1920.png",
+      "actualSha256": "64d226cb5cf5b3cf9067d46a8265c4d0403dfa9510dd96eb8ed63f90a017d836",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\02-Desktop1920-full.png",
+      "fullSha256": "5faf7be024b7cf86eaefe96621a25e78d44f59172e8c72ef6f7265d735bf5f05",
+      "heightCssPx": 1289,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 1171.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 8,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1920-reference.png",
+          "sha256": "432c641b37cb206cb26fae7d6008488516b07cbc4dffcabcc1988a76a45103a6"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1920-actual.png",
+          "sha256": "dffb040c0d314c95776c3ce896ed169d6bcb51d1fb3887402e7004d50b0c6df8"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1920-overlay.png",
+          "sha256": "76df46069089a0be4c2d64766ac274a66cc14e996f768fffecef3c6c756d727d"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1920-diff.png",
+          "sha256": "c89cd06dca15190440525c05ff2b2e101005c08831f8cbdba96ad1b84711f985"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 770
+      }
+    },
+    {
+      "id": "03",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\03_Chinh_sua_phieu_nhap_Desktop.png",
+      "referenceSha256": "87be7c6f7f04d09bc12a64530520ee6b0b58d4daf153419454a7be31cb1ac38c",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\03-Desktop1920.png",
+      "actualSha256": "263d94095df39b67a059350a669e6ba5deb380b84ca1a20dd25aee4e216bfe4c",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\03-Desktop1920-full.png",
+      "fullSha256": "1b4f8eeaf4b47eb3ad77a05bfc88d50a6a5deb80788c682a19933604b43042f6",
+      "heightCssPx": 1142,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 1024.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1920-reference.png",
+          "sha256": "e17dae8c4589e29175649e184f9b660cc516db4bbf7553401e9dd5ef9f5342b7"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1920-actual.png",
+          "sha256": "d573bfa9792ea31cb92c8d7ffff7810dde5a2971bacf6b514e7c65b30a4839b8"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1920-overlay.png",
+          "sha256": "85b290eb67faf16e49fe7309a807fbd985e055cdbbcc1be1767093ad8ba81a65"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1920-diff.png",
+          "sha256": "b7a3fa4fdf41bcfe03a4222f18fe209f76b6f6808e2802049d0b1fe0a486033c"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 676
+      }
+    },
+    {
+      "id": "04",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\04_Kiem_tra_va_ghi_so_Desktop.png",
+      "referenceSha256": "d713edb0f6404377720f8c109f3447c72e7faa4401de908df1e0f101f7553e0f",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\04-Desktop1920.png",
+      "actualSha256": "c170140ef636263c7e5225b963a7dce2557e3310c85e8d037e2b1d46803c7890",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 911.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1920-reference.png",
+          "sha256": "23b8de911c8f48b6632ff0ba25f763c9f48fd9c945893c9ca083304d32f0c67b"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1920-actual.png",
+          "sha256": "b96ac9f737dce43adfbba9ae590e84a8d5a36ebe027fd9028575c10dcdb5ad2c"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1920-overlay.png",
+          "sha256": "e88dd620aabf92a54ebfb3019f3ce017c9997e2f8d95922a299321d558214fdb"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1920-diff.png",
+          "sha256": "1e17109b20ce1ef173bf899399b4c3977ee9d0967a14aaf403cc4c1aba53aafe"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "05",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\05_Chi_tiet_Da_ghi_so_Desktop.png",
+      "referenceSha256": "896cccc8e72913d92bb5e456c25f0d4c340510d40e32af54144215e7209b20b3",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\05-Desktop1920.png",
+      "actualSha256": "04dc2d359cbc1deda3e1def43d2a9d857472d57d60a50badae378fcd4f41c1a9",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\05-Desktop1920-full.png",
+      "fullSha256": "0fac4c1b1e019ffd0e924c482c1df68af1f3f34c82faf214f7f8eabd21aade5e",
+      "heightCssPx": 1159,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 1041.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1920-reference.png",
+          "sha256": "64ffe14a488766bf7e58eb72fb25b4fc4a27119345ce3496c6e5665379a288e0"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1920-actual.png",
+          "sha256": "7f42292c8f56f42fae33ca7208ce360b20712b0aa597ebaeea9f0b5aa6e9165d"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1920-overlay.png",
+          "sha256": "308cd7474746e9551e5719aca7ab025aae8f98ab5086e76d557d4cfd19f32448"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1920-diff.png",
+          "sha256": "2d9314431c9f53a16167643cf3e1b4da4b1dac894f71f52c6839f35e124429aa"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 687
+      }
+    },
+    {
+      "id": "06",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\06_Chi_tiet_Cho_hang_tra_ve_Desktop.png",
+      "referenceSha256": "3962e2e5a21b60d2ec93c1a667368a8c2e75f504cbea3c66ebf3aab6ac83bd2a",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\06-Desktop1920.png",
+      "actualSha256": "d3a68c66a04032c11e53171033ab5f10e49298bd1bd85e535cbfc3d383848599",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 945.78125,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1920-reference.png",
+          "sha256": "177937c20d9e8868cbee2a04c784b59713171858668f35d8f6ad6f8a2eca8418"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1920-actual.png",
+          "sha256": "65f43d9748e42c58c632c2483705fa6f5ebdf18738c53481b4aaf7c75f3efc6e"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1920-overlay.png",
+          "sha256": "deb3820500a4b9e2009905f808638850acc3e45c6162c9d7584517420cdf7154"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1920-diff.png",
+          "sha256": "60665f6966b9d448ad26d9ab40dc25c20b789523a2093f718d095a3814649d95"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "07",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\07_Chi_tiet_Da_huy_Desktop.png",
+      "referenceSha256": "11ad174904271629ac00493b19214682fc7152eae8e67ae05805285be6352e83",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\07-Desktop1920.png",
+      "actualSha256": "2a9e4e821efdc1d3fc21612e0b3ed0372cdd33c8de868c9620aae82e4ef26768",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 867.78125,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1920-reference.png",
+          "sha256": "3141f94b3d95f548e501322df90f4618108755436ca8dc04e00e463d2fe3f419"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1920-actual.png",
+          "sha256": "f3104eb2c5c08c27a8515eb2b46760b0dad6a0d670d93733c768d634695c7213"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1920-overlay.png",
+          "sha256": "47d561228e212fabd9419038f5299273331b8fa100b1a94838ba3ddab5e7b2f1"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1920-diff.png",
+          "sha256": "ed1c4193ab9df3c94eee0b8ec47f07bf2d6f25e90b1f91ca4298d913cc8bf2b3"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "08",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\08_Tac_dong_ton_va_truy_vet_Desktop.png",
+      "referenceSha256": "b07ff398fa15389913cdde7b0e2e6d94c51ce70ba289f0982694b9feae033f8e",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\08-Desktop1920.png",
+      "actualSha256": "5a603914774efed72a7587aa8c98abea6f8d65b61e5b48fc4333e08cc65c7da8",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\08-Desktop1920-full.png",
+      "fullSha256": "42b6e6e1ff00ba72fdd9e85e19e0505305b6630456de51642d759acd5151e915",
+      "heightCssPx": 1649,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 1530.5625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1920-reference.png",
+          "sha256": "ce379f11db607d01d571f8e7ba8ec9838da80040b55667ad1a8ed33205d9f096"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1920-actual.png",
+          "sha256": "91305e6712e244935c892561ba4b53bc8c634f00585aafa67dcf5098da297121"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1920-overlay.png",
+          "sha256": "3871e5d2d933d35a5b4e8667fc488f6a632a8b0909e32484d32709feaa785a58"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1920-diff.png",
+          "sha256": "de3a026ea7ce3054f76581ad7ba928d800a4b4a4bc0e504c629cd84e89bd1984"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 1002
+      }
+    },
+    {
+      "id": "09",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\09_Chan_giao_dich_lien_quan_Desktop.png",
+      "referenceSha256": "09ebf83d4aefc056ac69380327500c6bca3906f9e3efc1692a0af43cf76829ac",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\09-Desktop1920.png",
+      "actualSha256": "894509e2e75158616565b48104e7cf647e8a66c685c63dabcfc7562fef61325b",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 803.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1920-reference.png",
+          "sha256": "b67a63f6f5632857ffbdbfff07902a69af4e7d2b65d7322486321c841663c8f0"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1920-actual.png",
+          "sha256": "37c0fe37cf2a8d748e57e6e5decd76e2b886e43dfc0fface0c6cc895d4e675e7"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1920-overlay.png",
+          "sha256": "4e86aa8f58f45efe0a08ab7402685200fb974a6edfd7fa2a04b6af0c4f6f5cf7"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1920-diff.png",
+          "sha256": "a4bffbe3b06433afb0e145a0123ccba6bb8d7a1a6ec2808f3a4d1c860c37e4e5"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "10",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\10_Loi_nhap_lieu_Desktop.png",
+      "referenceSha256": "918024a906025a3632f6a812036da7bb25aaf7caa332c96ed5829e4855e6570c",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\10-Desktop1920.png",
+      "actualSha256": "f9ee2908a77b49bb5b0b06de3cd8d934d7c8ad1b97b7e4259b8ffb070e305f2a",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\10-Desktop1920-full.png",
+      "fullSha256": "0406ea5c1cf6be203338d54a4cf7fcac354cb315259f429c721ab1c18644b28f",
+      "heightCssPx": 1164,
+      "rootGeometry": {
+        "x": 314,
+        "y": 76,
+        "width": 1552,
+        "height": 1046.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "invalid reason and quantity via form",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1920-reference.png",
+          "sha256": "4c0276a81291c6cb5ffbd84d9eea3d91a13c233eeffda91a8dbb800aa33282e1"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1920-actual.png",
+          "sha256": "1fb57e6b1e167f000f6d2441189d12330bf4ec8044e60719fa413da3ffbd6049"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1920-overlay.png",
+          "sha256": "aec9b51a5784e29d884d4240ed87a2d418fff198f9c5d84420f4663d09cf002c"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1920-diff.png",
+          "sha256": "73cbe8da8b185db124e85605e7e06be14b0e95fd7caa89b91c928af5d8e31bc9"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 76,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 702
+      }
+    },
+    {
+      "id": "11",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\11_Ket_qua_chua_xac_dinh_Desktop.png",
+      "referenceSha256": "08926904e7e249c54b7ce8df1e7b88e0189d819354c7693f89cdf650c83635c1",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\11-Desktop1920.png",
+      "actualSha256": "1b02e6eeffcbf366878cab5ae8785a1b46577cf716b02b6449534cc8a1979028",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 792.390625,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "submitted local adapter request; returned unknown",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1920-reference.png",
+          "sha256": "324ddb34c5d5a0379426c747fc9940a6526deddff2725476fb9521b9a53d8547"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1920-actual.png",
+          "sha256": "fbdf89dde19f23d4ce3bcda99c2cdc64ec16eb82d4f5cde32ef1ccca4421b456"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1920-overlay.png",
+          "sha256": "0e1988587c7250ce82b425fdf3f32f5f07888f0500bd9f61017d2df7effa71ea"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1920-diff.png",
+          "sha256": "2b1462c8563c9a42c2fc41120004b798beee241ee5cf740aa068be21192d9198"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "12",
+      "device": "Desktop1920",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\12_Ghi_so_thanh_cong_Desktop.png",
+      "referenceSha256": "4377df747467f76a62c2c3f58fa41bed80fb6bc71533e7aac27f5c0bd8a1619c",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\12-Desktop1920.png",
+      "actualSha256": "c0a35c002ad8923f2c64cc4f53f1231afadd156294fff46d7ef024f58374ef88",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1080,
+      "rootGeometry": {
+        "x": 314,
+        "y": 94,
+        "width": 1552,
+        "height": 793.78125,
+        "scrollWidth": 1552,
+        "clientWidth": 1552,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "submitted local adapter request; matched confirmed receipt",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1920-reference.png",
+          "sha256": "cc0ad4a28a0f05dab684d6ad5143debd8c4e875fead91c9605b2bc08748f1b10"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1920-actual.png",
+          "sha256": "17f3020d553fdfc7255af026eaeabf4751f614fd3aad36b64bbdd9d158eb16b3"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1920-overlay.png",
+          "sha256": "578fdbe622ac34fe6f47c0c0310a62da04cf09d556ae66b67aa95b3730b93b9d"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1920-diff.png",
+          "sha256": "bce88d36785d5814244a421c547271a54e3483552765cd11049578e169b7508e"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 314,
+          "y": 94,
+          "w": 1552
+        },
+        "width": 1000,
+        "height": 636
+      }
+    },
+    {
+      "id": "01",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\01_Danh_sach_phieu_dao_Desktop.png",
+      "referenceSha256": "e8c45587fb7e061249078e4175c1a9eb0ac2310767eeb92892f0f253104e0550",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\01-Desktop1440.png",
+      "actualSha256": "4413f67934633e1cd81e6d8d7ca8fa564bf27aa6c10adfe654593c8a4feaa96c",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\01-Desktop1440-full.png",
+      "fullSha256": "2ce9c76c24350bc9687dcd5c25c1c8f209d7bcac1b2eed8e29cc8961bb30183e",
+      "heightCssPx": 1200,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 1082.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1440-reference.png",
+          "sha256": "6f5c3e34c9f97e5cc741724783c9e378066286642ac02b4419a843edf4e72338"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1440-actual.png",
+          "sha256": "db7363be5c89f849b3ee6de0a561e2dbe90b81cee3feff07dbe55495e1a08261"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1440-overlay.png",
+          "sha256": "fd49f75732998cafc6ba3ac393d924425c33ce23ffb278036a14f0694f2535dd"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Desktop1440-diff.png",
+          "sha256": "3c06e964827ab78547705a3ec9e9a97fbbeca30ae58d940c5832d2db96144898"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 978
+      }
+    },
+    {
+      "id": "02",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\02_Tao_phieu_Chon_chung_tu_Desktop.png",
+      "referenceSha256": "dee3c05f1bc4b0ab9c407fc0bf725a5e894cedaed06744b7432416cee4bde7c5",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\02-Desktop1440.png",
+      "actualSha256": "ce8b30bb12f1fcf78c3fe7d8e15c351493f0fb2f69f4e56d98cade67e5e5b99c",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\02-Desktop1440-full.png",
+      "fullSha256": "95b29cc2f95a947995147b32bbe2b5d6dcc0a94acb846c19dc3d61a16b2f6f04",
+      "heightCssPx": 1289,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 1171.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 8,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1440-reference.png",
+          "sha256": "f4c382df5a62023f14e008fc7847cf353a2511a46dd34dd67f72925e462e06d2"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1440-actual.png",
+          "sha256": "329f2c10b61bb2cc581840ac36eb4584ab7edede9d397216f341ff9f4c68be2f"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1440-overlay.png",
+          "sha256": "5e9e93d867301d08abf3f66404320511d595a524dab08c809dbe845a320c3b31"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Desktop1440-diff.png",
+          "sha256": "154f5bfe54fbaebc0fa155de92506e5375e1893ba03c85b97e07a245ec020ec4"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 1056
+      }
+    },
+    {
+      "id": "03",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\03_Chinh_sua_phieu_nhap_Desktop.png",
+      "referenceSha256": "87be7c6f7f04d09bc12a64530520ee6b0b58d4daf153419454a7be31cb1ac38c",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\03-Desktop1440.png",
+      "actualSha256": "4dfd0ebf27b1274a07ded46f5503f868d400f6e6b5b18d5c62621f21edce3246",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\03-Desktop1440-full.png",
+      "fullSha256": "0189ec3ee9041e5af6dc6426e6a08b0e288e7bd33a9feed414ba1a959c48f01c",
+      "heightCssPx": 1142,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 1024.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1440-reference.png",
+          "sha256": "72c2c58e3d2f26ad1b32d8c3acc83863e2d3f9c99f71d2d515e47fb00dbe183a"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1440-actual.png",
+          "sha256": "4dcc64ff20f1978a40fbc0136b065dd59766a19cf5f020a79964d6829291b939"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1440-overlay.png",
+          "sha256": "8c202326dab5c4ae27c589eead2718eab0c731facb155d2e2ff32eed56c04284"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Desktop1440-diff.png",
+          "sha256": "413f955d73336f4f1b03cf5f600837c85e3b5ceefb79658768cefcf815abab70"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 926
+      }
+    },
+    {
+      "id": "04",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\04_Kiem_tra_va_ghi_so_Desktop.png",
+      "referenceSha256": "d713edb0f6404377720f8c109f3447c72e7faa4401de908df1e0f101f7553e0f",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\04-Desktop1440.png",
+      "actualSha256": "c067e2054f86b3a3eb9bf83276966f397d88982adeebb3c957a28119749c257c",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\04-Desktop1440-full.png",
+      "fullSha256": "25d4ef622b88ca733539e01c5db709ebe080c7ad780c3e8d1da280b3f9981233",
+      "heightCssPx": 1029,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 911.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1440-reference.png",
+          "sha256": "9ad46e0de1941b30df0aed0d48e92fa3a110bd1c3be8ffb036b9da200e2dfbc7"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1440-actual.png",
+          "sha256": "10014bce8ab1732dcfec40e85ffd2312831bc57171f48150097f47f1e5641f88"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1440-overlay.png",
+          "sha256": "38a428db979c01c4871b03b75904867422e29c669216ba0acee699617e1e5002"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Desktop1440-diff.png",
+          "sha256": "88f78c6e880b2bfcfb124ea089f89711c586383178ebdb33860b78e7c1c9a5b0"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 826
+      }
+    },
+    {
+      "id": "05",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\05_Chi_tiet_Da_ghi_so_Desktop.png",
+      "referenceSha256": "896cccc8e72913d92bb5e456c25f0d4c340510d40e32af54144215e7209b20b3",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\05-Desktop1440.png",
+      "actualSha256": "4490df15ecb7ecff0cb7eea5b79091735c93c294fd5c0f4efa7427b53bea540a",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\05-Desktop1440-full.png",
+      "fullSha256": "8b1b878a3ffa4ed727e806f1d7a36903326bb55c234c7a5ad77c4abcbd481558",
+      "heightCssPx": 1159,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 1041.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1440-reference.png",
+          "sha256": "957a0b6cacdaf4b369ae28ed209103d5faa4cc06e081de7cbcb31e8c52d9b53e"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1440-actual.png",
+          "sha256": "48c1d1f21a29618388c7d7536e901092e0422dfd58f1c0a10e15514cba3d5ca6"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1440-overlay.png",
+          "sha256": "0ff1223a6569c2cbab1f6590fcbc0d484ee82c63987b72d78753d459d70dd7c4"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Desktop1440-diff.png",
+          "sha256": "34af0b98cdd8c9baee780a64fc52b6c15f9cc3c799e15f93b704aa09cf28af32"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 941
+      }
+    },
+    {
+      "id": "06",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\06_Chi_tiet_Cho_hang_tra_ve_Desktop.png",
+      "referenceSha256": "3962e2e5a21b60d2ec93c1a667368a8c2e75f504cbea3c66ebf3aab6ac83bd2a",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\06-Desktop1440.png",
+      "actualSha256": "6d4c2f156998f26dfd56cb5a6cefe77bf24de03b8834ae9e9f9581b151e4820e",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\06-Desktop1440-full.png",
+      "fullSha256": "84c3d9b6cd3537bfb403616b8eda0969eee308cf17f351ac6dccebe80f488d97",
+      "heightCssPx": 1064,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 945.78125,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1440-reference.png",
+          "sha256": "97d0da3182d7e95fca6bce6e1e18f5bc70ec697d0fcfa3dafab8d2ed0cee3e0f"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1440-actual.png",
+          "sha256": "85d3b50d962eddfc0e2ce6b6969e5fc25acfad3d2be416f3b8103ba1ed1f78b0"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1440-overlay.png",
+          "sha256": "3e392ce30460aadc911ad0255fd5b33f3a99eec2af4b75a86433bb9af10ece31"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Desktop1440-diff.png",
+          "sha256": "bc8c4715447bc3fed26782793dafb1fb690afff34ba9bee575dbb5ba0b29b88d"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 857
+      }
+    },
+    {
+      "id": "07",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\07_Chi_tiet_Da_huy_Desktop.png",
+      "referenceSha256": "11ad174904271629ac00493b19214682fc7152eae8e67ae05805285be6352e83",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\07-Desktop1440.png",
+      "actualSha256": "bd3a173a3aaeb8fdbc07e579f75a3c3a480332a59aebef8591487af2e0cd1aa9",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\07-Desktop1440-full.png",
+      "fullSha256": "808ec7ac7868503029889d104fea83da74d43fda1773ef926d9ea0fd092cb056",
+      "heightCssPx": 986,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 867.78125,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1440-reference.png",
+          "sha256": "0f825f16c190bedaa69e54a3876ce90cbd235a01a250297315a993180c24718f"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1440-actual.png",
+          "sha256": "76f766aae791a74402a2b5fa9ba8d1a9a90106c62f6b77ddadec453cec29f4dd"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1440-overlay.png",
+          "sha256": "1d3825e631449e0915a409c9662de91a4d780f5c1d6b79b5f58a6fee1b2b5b9d"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Desktop1440-diff.png",
+          "sha256": "efd15f2ad020a82de134fb686d5d47ac101233a4007137488c8c6d2b55fba246"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 788
+      }
+    },
+    {
+      "id": "08",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\08_Tac_dong_ton_va_truy_vet_Desktop.png",
+      "referenceSha256": "b07ff398fa15389913cdde7b0e2e6d94c51ce70ba289f0982694b9feae033f8e",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\08-Desktop1440.png",
+      "actualSha256": "6e34134b69b3e098b3b3e9e1bdb94f519a72da730ae0c427d28eb6f0bf5f2abf",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\08-Desktop1440-full.png",
+      "fullSha256": "b4f0d0a8a8369dd396ba95a0bf52a3ab8a6073bd2a5ae127ae9a006673fabb85",
+      "heightCssPx": 1649,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 1530.5625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1440-reference.png",
+          "sha256": "2a8ae6a0cda7e1aeef40c8255642b5639b78b56829330b52f2e77a580d428a0f"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1440-actual.png",
+          "sha256": "3ef53c14ae0dd2735eb300b8fc8a4bd2eadcbcc486f85ab5a09024e1c4fa258e"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1440-overlay.png",
+          "sha256": "a3c606b5b84ef7b6bd5da2e8eac859799e3287a4e39d97e19d58c280d43326d6"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Desktop1440-diff.png",
+          "sha256": "eee971ca2546e4ff94a05dca75331d5ef242943e03694198ae713cf8f0886174"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 1374
+      }
+    },
+    {
+      "id": "09",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\09_Chan_giao_dich_lien_quan_Desktop.png",
+      "referenceSha256": "09ebf83d4aefc056ac69380327500c6bca3906f9e3efc1692a0af43cf76829ac",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\09-Desktop1440.png",
+      "actualSha256": "f17a63360f2d2dceec4f75bc67637749a09dd4f75a61dacd0beb30742859ac0f",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\09-Desktop1440-full.png",
+      "fullSha256": "3b06306019ae4f6261a994cdd0e7515eb9b768ff08f497e18c23cffe251f1a7d",
+      "heightCssPx": 921,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 803.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1440-reference.png",
+          "sha256": "044f438dc6bea6ae5440c99493db19569804fd42eafe3ce12fd964b778813612"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1440-actual.png",
+          "sha256": "3943bb8504c50cfb451c29811f4a6530e3613959e68e807fee2333da661f7b23"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1440-overlay.png",
+          "sha256": "e6fc012d00532e824b95ba91f2d111609eb090dfa2ebba64079004941781990f"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Desktop1440-diff.png",
+          "sha256": "7b7f7318230ac130f3e1743d381fc3067fdc748111133a80af25b97768b4bf7a"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 731
+      }
+    },
+    {
+      "id": "10",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\10_Loi_nhap_lieu_Desktop.png",
+      "referenceSha256": "918024a906025a3632f6a812036da7bb25aaf7caa332c96ed5829e4855e6570c",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\10-Desktop1440.png",
+      "actualSha256": "f3ef2a65fc81b629ab09798600774f98de2dc05810bf71313acb89d41a4ae294",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\10-Desktop1440-full.png",
+      "fullSha256": "301775b791927ab56c1bea2269a15f62fdb1175964cbba5a21d2cc989e9da7f2",
+      "heightCssPx": 1186,
+      "rootGeometry": {
+        "x": 284,
+        "y": -148,
+        "width": 1132,
+        "height": 1068.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "invalid reason and quantity via form",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1440-reference.png",
+          "sha256": "47408e721e7f569702f53f216b18364ac45ded68188f41e7e46845b2b2e991fb"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1440-actual.png",
+          "sha256": "e6151591c0179a1f4ccf85056ad982c868cd06eb955dcade49b0d8b664e14b09"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1440-overlay.png",
+          "sha256": "02b2ec624e9fde43539ffc06b75da3e3b7d138df136d6ab463c8833d54e72cef"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Desktop1440-diff.png",
+          "sha256": "f57472e38acaa261e842d7dca9c414f40d5d9ac534804805d4c2ce08a54acdbd"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": -148,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 1179
+      }
+    },
+    {
+      "id": "11",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\11_Ket_qua_chua_xac_dinh_Desktop.png",
+      "referenceSha256": "08926904e7e249c54b7ce8df1e7b88e0189d819354c7693f89cdf650c83635c1",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\11-Desktop1440.png",
+      "actualSha256": "6f4b095c296b97021a94214b75bfa9c71aca448084417de1aeef7210e28f4b22",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\11-Desktop1440-full.png",
+      "fullSha256": "3171f93183af7385e601b6d951f8894ccaca55bfc8c3e2a1a1a20b34cf8b26f8",
+      "heightCssPx": 910,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 792.390625,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "submitted local adapter request; returned unknown",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1440-reference.png",
+          "sha256": "7b9ecdb1520d38c42b6fa240bfe99cb559fc2c3423b084f228a1d5c2cb1a7d90"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1440-actual.png",
+          "sha256": "abddc51a556b6aa4ab2996bca2e98dcee18824c506e9a79b0efc32bbd5d27767"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1440-overlay.png",
+          "sha256": "15bb49a06bd9647653daee8ba0b1fc29c762b0094e251b5546b8fbe613428a0d"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Desktop1440-diff.png",
+          "sha256": "1ef09a128a7c6f7aa0ae00e56768b03ecd22368a836e7f74c3004d890edea164"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 721
+      }
+    },
+    {
+      "id": "12",
+      "device": "Desktop1440",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Desktop\\12_Ghi_so_thanh_cong_Desktop.png",
+      "referenceSha256": "4377df747467f76a62c2c3f58fa41bed80fb6bc71533e7aac27f5c0bd8a1619c",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\12-Desktop1440.png",
+      "actualSha256": "92f86c4cf959a7f823c7e835e2762be048ebac9eaabfd3fed85165f2d5710b55",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\12-Desktop1440-full.png",
+      "fullSha256": "4a713060cc5a458012d85d57dc87d28f95ee1b6b45839721759b473ca78c2195",
+      "heightCssPx": 912,
+      "rootGeometry": {
+        "x": 284,
+        "y": 94,
+        "width": 1132,
+        "height": 793.78125,
+        "scrollWidth": 1132,
+        "clientWidth": 1132,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "8px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "submitted local adapter request; matched confirmed receipt",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1440-reference.png",
+          "sha256": "117c2010f79a2dfffa4d5d1a673717f3166d3e09590a75cd4728de26253a48f9"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1440-actual.png",
+          "sha256": "fd641412f7d24bc0215f93fa3365ad1b0821a619c45aa3bed99123f1e2426b34"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1440-overlay.png",
+          "sha256": "8a69b7fe0407bdd35a8c29e5aaf20754c76d6cdc5498cdfd144c372f5d1084da"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Desktop1440-diff.png",
+          "sha256": "36b48214e278cbe3c75295401e4ad00eb287011b4c2f49a1380d4e48dcad4ad4"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 237,
+          "y": 60,
+          "w": 1435
+        },
+        "actualCrop": {
+          "x": 284,
+          "y": 94,
+          "w": 1132
+        },
+        "width": 1000,
+        "height": 723
+      }
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\01_Danh_sach_phieu_dao_Tablet.png",
+      "referenceSha256": "c908fc320223d901f100638f32e058c29772f631383bed7ee24313a8922e447a",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\01-Tablet.png",
+      "actualSha256": "3022d1d8a85cd37b60095f74f3ec4159aeec4d3851b7ea4684dd3dda26fa2ac6",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\01-Tablet-full.png",
+      "fullSha256": "694afdabb607ed8a8e250d3fad6bdbfe6797ff08b6448abe25cc4ddd8868be2f",
+      "heightCssPx": 1464,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 1324.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Tablet-reference.png",
+          "sha256": "53832ce5f3af0321e3ff02742e65fb01190cd13b4ac7ad34f9273a71976130a9"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Tablet-actual.png",
+          "sha256": "a8d3a95dac784faefbcd7c5dc8193bfc1633d1c270046ee755fd6682491bc270"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Tablet-overlay.png",
+          "sha256": "1362805f217bdb915451b58b3a8b51d2e547d47abd6318d0928783ef7d2bd5c1"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\01-Tablet-diff.png",
+          "sha256": "c6b18bdfb5281838beb4009cbd263f9f3468802d7628a4890d1b64199350d906"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1176
+      }
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\02_Tao_phieu_Chon_chung_tu_Tablet.png",
+      "referenceSha256": "ed950bbd818fe5aaaf474b69529a92b49f33d4143f7ff632277bec9207a41fbf",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\02-Tablet.png",
+      "actualSha256": "189b491f268e99a1484abd57620384261fb007d40719b9df16caa34e0b1cb64c",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\02-Tablet-full.png",
+      "fullSha256": "23197f306dcbf378fef07d6a399aae89ff833d4f4191de5e4fee18703ca417b6",
+      "heightCssPx": 1287,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 1147.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 8,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Tablet-reference.png",
+          "sha256": "644134ff6d42509de898ef8cbffe7f29e9b66004389cc9b2d289f5099fa0f7b1"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Tablet-actual.png",
+          "sha256": "bd5f20833acc4abe412d1907d54b6a456f59e5719d91a7f1416801becb5b40a4"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Tablet-overlay.png",
+          "sha256": "06f7450c064758bd5d52eec2be56b1525ce44bdba7b276c6fc210c99a9b166a3"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\02-Tablet-diff.png",
+          "sha256": "869ad5a34058c961f6b4dd897c70e75375bf60c6e6da870462e7afc6b738782e"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1023
+      }
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\03_Chinh_sua_phieu_nhap_Tablet.png",
+      "referenceSha256": "ff2acd3b33de61e88db1b575b4f6a0e24665e5114d517e18722471bb2e2f3c10",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\03-Tablet.png",
+      "actualSha256": "f5dc524c5cbbce4eeb779333133d1c28d0a6403f637cff30b9b508b3e2df0b34",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\03-Tablet-full.png",
+      "fullSha256": "5d1af5917f12e1a5ce9f49c8afe5b11f3808437fd52caa522334733cec07d209",
+      "heightCssPx": 1428,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 1288.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Tablet-reference.png",
+          "sha256": "b4a345ec2af79d373f71a23bad8e82c3883d09288e5b1cfe3eedf217c1eee1a7"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Tablet-actual.png",
+          "sha256": "36eb41dda862a2641d8f1606e9efea30aba90795bbd82c5518c15d5d36c2748f"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Tablet-overlay.png",
+          "sha256": "20f6b5ae47d53ab9212cfffee2a17d5f4e715e7a2c5a843afac675254ac21b88"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\03-Tablet-diff.png",
+          "sha256": "4c22753db4da1844fa21674ad95350e8e1d3b7698d632cc5a62b5b300cffa1f8"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1145
+      }
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\04_Kiem_tra_va_ghi_so_Tablet.png",
+      "referenceSha256": "7ab91236d082610c5b7b94ea9c902809d4fa93da51adaefd2eb017b45c82114b",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\04-Tablet.png",
+      "actualSha256": "c1fe9ee233f11b63a86ce2195260f6f9210274cf197ca5d69eae8fc5714a1cca",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 1105.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Tablet-reference.png",
+          "sha256": "0f81f752c077468300ece12a8e89bea5bdeae34beed851e30e45b2108aa151da"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Tablet-actual.png",
+          "sha256": "d19b5332a8dc08be867aecab35e6b11509afa24321cfee7975e6f51f52a78d26"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Tablet-overlay.png",
+          "sha256": "7c0231865785d45212a17d671a3784abdc8df8b40582c7a08cf196c5342695d5"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\04-Tablet-diff.png",
+          "sha256": "affc2d0941e82a62ecf2927844d3d27f30bdccbee8a95f0d8be146e3c80d4202"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\05_Chi_tiet_Da_ghi_so_Tablet.png",
+      "referenceSha256": "868887081ec28655c428c9befdf64cd93ccebe5f122a761a82c1f8a8cbdd2565",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\05-Tablet.png",
+      "actualSha256": "ecc998eea96b8a9ed3626c3d36cd68a03438df0b730d16a15364ecb369e7e90d",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\05-Tablet-full.png",
+      "fullSha256": "b31a4870b7218b2a9364714cca2729fc0e35f194d58c9cbb38c3af265c7bdc0c",
+      "heightCssPx": 1493,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 1353.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Tablet-reference.png",
+          "sha256": "0d52051a3fd10271f390c83b1a911bfedb08056d2bd029af1ffe631dd1687e7d"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Tablet-actual.png",
+          "sha256": "0e07e7ea379a53e316ef09259e34c1885ea6cdde60f101219eb3958abbaac156"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Tablet-overlay.png",
+          "sha256": "eee0c0abd266df690a1992d7ee04b7bbcacdf78cd37929470654408dd80b7f95"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\05-Tablet-diff.png",
+          "sha256": "293febadc53d0cdb0a238840fba10a7dbbd35af06f579b7e89ecdde948e13ce1"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1201
+      }
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\06_Chi_tiet_Cho_hang_tra_ve_Tablet.png",
+      "referenceSha256": "8b61f582fc9cd987804eb75ddcfc4cacef76a092f7b0dd444e4681723538430f",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\06-Tablet.png",
+      "actualSha256": "820eb99fb4875fee8ad6d25bb49d30f5b2ac3f6efbf5167cb6d784f37a971fc9",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 1139.78125,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Tablet-reference.png",
+          "sha256": "b1a9e089ce7b16a0c02f56598e8df61db5e9fba540750a3fec425f5bb05a9658"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Tablet-actual.png",
+          "sha256": "3155281f1663fe3b884476a16b5cb57a5cd24a910d552ab3f034f6fef3abf955"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Tablet-overlay.png",
+          "sha256": "23f10c9f8cfbb398689265f73eed543bffdb247190383a233ec543ef5c97d1e2"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\06-Tablet-diff.png",
+          "sha256": "248a86f3a9ad7e7e2d2dc82eeaa58fd9c4a617ef4b063d5639b6fb9fc270c8a1"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\07_Chi_tiet_Da_huy_Tablet.png",
+      "referenceSha256": "efe30904ddfbd0aa0951e81c863e7f16ce3a57ca958460cd8f61d51271b3464a",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\07-Tablet.png",
+      "actualSha256": "3f4a96e9b8e224bd6623219dbd88859dd34dfeab6f644c8a5ef3f383d38bb245",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 995.78125,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Tablet-reference.png",
+          "sha256": "acc4e54ee5a7ce6797f6355a3fa5003913fd9c4189a349e499d967bc149f15a8"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Tablet-actual.png",
+          "sha256": "a0b08c3fcd1650682a0f82b358eab13fc77173611ae68c17de07b6cb47f97f06"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Tablet-overlay.png",
+          "sha256": "7a5c1932dcae1b2d1e281b89dae5f9b3050a721546f925ab0b55fdeb4d0789a3"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\07-Tablet-diff.png",
+          "sha256": "3826eba27963fa99fe3d44a653e5100b26241159402abdef2d08d163916e8e69"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\08_Tac_dong_ton_va_truy_vet_Tablet.png",
+      "referenceSha256": "c4f17b63dd02a0365a60f64344651d759d1e8b9597a1ef556689f789a7adf0cd",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\08-Tablet.png",
+      "actualSha256": "15c8b6d7401ba91ab08f99fe504d6eba8d182c381b770dd52257a35fc077ed64",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\08-Tablet-full.png",
+      "fullSha256": "e16ea0a33b35abcbe44d8b74e96292cfd615114097dd5e2c422bb689756b4e58",
+      "heightCssPx": 1967,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 1826.5625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Tablet-reference.png",
+          "sha256": "5455cc1c8a288296520dff20efa0719fc5228e9f5dabfa362afea05087710fc0"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Tablet-actual.png",
+          "sha256": "22ab13de42c34335a9c021c3cb9210f7aa5e1facb191c3dfeb117415fe141c59"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Tablet-overlay.png",
+          "sha256": "5cd6438c3fe1b57c7789f2f363b72125fdc4bf0e6ada6a07744f97f42094e95e"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\08-Tablet-diff.png",
+          "sha256": "14303af27678caa79a7a65476e579688371c70984dd22fb842de7bbf54ac4ad1"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1611
+      }
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\09_Chan_giao_dich_lien_quan_Tablet.png",
+      "referenceSha256": "c1ea1851f8c2d803331a7328dbeca2dc928811d0fdeefb77bbf318ca80862ead",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\09-Tablet.png",
+      "actualSha256": "d4bbaabff0e0dfef14ba6860c7f00a2ae45eb0650f03d3cbee1cf517a7ffd546",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 939.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "Candidate deep link",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Tablet-reference.png",
+          "sha256": "d41020dbbd69c071a57a8f466ace7fb9e3a59370e2f09c732a2457b9b947b34a"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Tablet-actual.png",
+          "sha256": "8c80b72f3b88db6d3306d577a034df3f9d2e24e229df66f37e448228dff9a44f"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Tablet-overlay.png",
+          "sha256": "9a6224248119c6340d78948de6df805b312c47092f53f274aaadc3a0adf7621c"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\09-Tablet-diff.png",
+          "sha256": "bf0e0f48ce8471762e0ad89d8121bb19652e46fb81016e209f1841b3ad94408e"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\10_Loi_nhap_lieu_Tablet.png",
+      "referenceSha256": "7c7eacf61b72af46d7badd84322daeb2b0b47530cdba7b243fb69fe46c9f8647",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\10-Tablet.png",
+      "actualSha256": "1ee53604d9cafa4ddc17390a8b97d224e5a63bba8e92e1e6c9bb298f2d176314",
+      "full": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\10-Tablet-full.png",
+      "fullSha256": "3053aa0435c29f0b9ead7a765ad52f9deac9989ee9ec6fc423c4de64544b419c",
+      "heightCssPx": 1544,
+      "rootGeometry": {
+        "x": 24,
+        "y": -44,
+        "width": 752,
+        "height": 1404.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "invalid reason and quantity via form",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Tablet-reference.png",
+          "sha256": "147bf9635087fb37c0aaaa6db26e1e575cced8195eb27f856cc43be4f1f23f1e"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Tablet-actual.png",
+          "sha256": "25be387079e588d9dc7aecc866b2ec3d0b6b94ebe62c6dcee2a35d9336be8731"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Tablet-overlay.png",
+          "sha256": "6eafd7ea34ce489861bb1108d1ef11a5b7d3b0be208b74c44c207e7a5b1016f9"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\10-Tablet-diff.png",
+          "sha256": "6a3504617e44490de71ae49ab77b3c2a6eab845df96cf6d6c648b0f7e68d6bf6"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": -88,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1373
+      }
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\11_Ket_qua_chua_xac_dinh_Tablet.png",
+      "referenceSha256": "6d8d223473cdde12b771efeabd7d1078a1d6c486f004b8dda48e7c55325b3bb6",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\11-Tablet.png",
+      "actualSha256": "267da10784f984cfd398fc200aa6ee7e30ea99f7a8c92bb35e4a116b451aaf5b",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 994.390625,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "submitted local adapter request; returned unknown",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Tablet-reference.png",
+          "sha256": "bccc5a84c2484840b0fe12e025070cea8ad0d1610a7fe7d5555713dc404638a2"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Tablet-actual.png",
+          "sha256": "0779e64a632817a640482a9783e5a0b3670c3f3a2d45e2193c8aeb46dddef26a"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Tablet-overlay.png",
+          "sha256": "a14ce1aab2ee4eb728779dc966dee275a182d9652804fb38e04481092846c2be"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\11-Tablet-diff.png",
+          "sha256": "3da80861ad1d0140b2dfc6efd2642036dfd461f062af5bb72700a8f5be6e7e98"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 77,
+          "w": 1024
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "reference": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\design\\references\\Tablet\\12_Ghi_so_thanh_cong_Tablet.png",
+      "referenceSha256": "90bf29163e5a3245fa05f9121dd48b6c8f6846f14b77c35ef1ebb883b4ddad19",
+      "referenceMatchesManifest": true,
+      "actual": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\12-Tablet.png",
+      "actualSha256": "c12a8188018bd1d9f0c6880ebff4542168f1139e20e9f6dfd3d4d7510522d4a3",
+      "full": null,
+      "fullSha256": null,
+      "heightCssPx": 1280,
+      "rootGeometry": {
+        "x": 24,
+        "y": 104,
+        "width": 752,
+        "height": 951.78125,
+        "scrollWidth": 752,
+        "clientWidth": 752,
+        "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "padding": "0px"
+      },
+      "overflow": false,
+      "controlsUnder44": 0,
+      "setup": "submitted local adapter request; matched confirmed receipt",
+      "errors": 0,
+      "failedRequests": 0,
+      "comparison": {
+        "reference": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Tablet-reference.png",
+          "sha256": "f5f7f57618f4772ecdcd98892dc9940461ebb702e4ad04a5c1a4c7a5df48094b"
+        },
+        "actual": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Tablet-actual.png",
+          "sha256": "cae7425986019263d75e58377f69e6a8ee6c11a39c9b342b734253c55ae6328b"
+        },
+        "overlay": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Tablet-overlay.png",
+          "sha256": "aefc57d03a8773292cdfb32d886cf2ca1af0e14d340b129d36c7bdeac6037106"
+        },
+        "diff": {
+          "path": "docs\\qa\\reversal\\HN-REVERSAL-24REF-001\\visual\\after\\comparison\\12-Tablet-diff.png",
+          "sha256": "195f81db722422df74243396d556a28886721ffdef38cdf5978184226a826d91"
+        }
+      },
+      "registration": {
+        "referenceCrop": {
+          "x": 0,
+          "y": 79,
+          "w": 992
+        },
+        "actualCrop": {
+          "x": 48,
+          "y": 208,
+          "w": 1504
+        },
+        "width": 650,
+        "height": 1017
+      }
+    }
+  ]
+}

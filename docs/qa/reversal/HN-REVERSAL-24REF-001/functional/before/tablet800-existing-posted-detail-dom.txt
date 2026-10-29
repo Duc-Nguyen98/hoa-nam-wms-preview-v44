@@ -1,0 +1,39 @@
+Bỏ qua điều hướng
+HOA NAM WMS
+2
+DQ
+
+Tồn kho & Đối soát / Phiếu đảo tồn kho
+
+Phiếu đảo tồn kho
+
+Quản lý phiếu điều chỉnh tồn kho và chứng từ gốc.
+
+Phiếu hoàn phiên hiện tại
+Tạo phiếu hoàn
+Đọc lại dữ liệu
+Phiếu hoàn phiên hiện tại
+Phiếu hoàn	Phiếu cấp gốc	Trạng thái	Nhận lại hàng	Thao tác
+PV-REV-d78e1905-f2bd-4a6b-9612-242cf01192aa	PV-CI-b951c691-c2d7-4f7e-b545-7d75f1c46034	Đã ghi sổ	Đã xác nhận nhận lại	Xem
+Chi tiết phiếu hoàn
+Phiếu hoàn
+PV-REV-d78e1905-f2bd-4a6b-9612-242cf01192aa
+Phiếu cấp gốc
+PV-CI-b951c691-c2d7-4f7e-b545-7d75f1c46034
+Ca bảo hành
+PV-BH-27201910-0c9f-4b73-ab99-d59e462a8c0b
+Trạng thái
+Đã ghi sổ
+Lý do hoàn
+Demo hoàn trả: nhận lại đủ 2 linh kiện chưa sử dụng · PUBLIC-DEMO-RETURN-0010
+Nhận lại hàng
+Đã xác nhận nhận lại
+Số bút toán hoàn
+1
+Số lượng hoàn
+SKU	Mã vật lý / BOX	Số lượng hoàn	Đơn vị
+PUBLIC-DEMO-SKU-B	PUBLIC-DEMO-BOX-0010	2	Cái
+Bằng chứng đã lưu
+bien-ban-hoan-linh-kien-demo.txt (text/plain, 211 B)
+Đọc lại dữ liệu
+Đóng

@@ -1,0 +1,39 @@
+✔ approved reference02 source chooser keeps exact nine identities and original/prior/remaining totals (7.023ms)
+✔ returned record/source copies cannot rewrite internal identity, units, reason or original quantities (1.7506ms)
+✔ save accepts only a draft; posted/pending/cancelled identities cannot be downgraded (6.025ms)
+✔ existing draft source, type and creation identity cannot be retargeted (4.2729ms)
+✔ accepted save copies payload; stale second save leaves accepted data and version unchanged (3.8383ms)
+✔ all SKU identities must be unique and match authoritative source line fields (6.3204ms)
+✔ zero, negative, NaN, infinity and excessive requested quantities never post (5.9559ms)
+✔ missing reason blocks posting and preserves draft/source/version (1.2551ms)
+✔ unregistered draft, missing key and stale revision cannot post (4.1631ms)
+✔ posted, pending and cancelled records cannot be posted as current drafts (7.9459ms)
+✔ dependency-blocked draft and outbound fixture are fenced without changes (7.3174ms)
+✔ one posted partial consumes remaining once; new excessive draft is rejected at posting (53.6317ms)
+✔ draft and cancelled quantities do not consume source remaining; posted rows alone contribute (1.5287ms)
+✔ same key+same payload replays exact confirmed receipt without another revision or impact (3.3669ms)
+✔ same key rejects changed payload fields including line note and row reason (9.1033ms)
+✔ unknown submission/status lookups retain same key and never duplicate posting (7.0324ms)
+✔ pending/cancelled impacts are zero; posted inbound is negative and outbound positive (1.9616ms)
+✔ a caller cannot mutate the stored idempotency receipt through a returned receipt object (1.0734ms)
+✔ saved header note is copied and participates in idempotency payload identity (1.2153ms)
+✔ new draft receipt uses Vietnam posting day across UTC midnight boundary (1.8092ms)
+✔ unknown status confirmation preserves submission timestamp instead of query time (1.5289ms)
+✔ approved007 reference keeps original creation time and pinned reference posting minute (1.0684ms)
+✔ cancelled fixture metadata belongs only to its own record and missing history stays unavailable (2.8643ms)
+✔ isolated reference scenario has nine eligible source identities and per-document quantities (1.2311ms)
+✔ new drafts use current Vietnam posting time rather than the reference fixture date (45.3372ms)
+✔ availability excludes drafts/cancellations and returned copies cannot mutate sources (1.3597ms)
+✔ unknown remains unknown on resubmit; same key query resolves and collision conflicts (3.7855ms)
+✔ draft save fences stale writes and cannot spoof source or posted state (2.5411ms)
+✔ duplicate SKU, dependency guard, invalid amount and outbound cannot post (7.0628ms)
+✔ impact uses record quantities and reverses outbound direction (7.1844ms)
+✔ projection requires each quantity to be finite, positive and within remaining stock (2.871ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 643.6421

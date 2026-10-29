@@ -1,0 +1,46 @@
+✔ returned record/source copies cannot rewrite internal identity, units, reason or original quantities (3.6221ms)
+✔ save accepts only a draft; posted/pending/cancelled identities cannot be downgraded (3.1481ms)
+✔ existing draft source, type and creation identity cannot be retargeted (2.4548ms)
+✔ accepted save copies payload; stale second save leaves accepted data and version unchanged (0.9729ms)
+✔ all SKU identities must be unique and match authoritative source line fields (3.8929ms)
+✔ zero, negative, NaN, infinity and excessive requested quantities never post (5.0731ms)
+✔ missing reason blocks posting and preserves draft/source/version (0.8542ms)
+✔ unregistered draft, missing key and stale revision cannot post (0.8605ms)
+✔ posted, pending and cancelled records cannot be posted as current drafts (2.0776ms)
+✔ dependency-blocked draft and outbound fixture are fenced without changes (1.7888ms)
+✔ one posted partial consumes remaining once; new excessive draft is rejected at posting (1.4878ms)
+✔ draft and cancelled quantities do not consume source remaining; posted rows alone contribute (0.7308ms)
+✔ same key+same payload replays exact confirmed receipt without another revision or impact (2.8828ms)
+✔ same key rejects changed payload fields including line note and row reason (4.9602ms)
+✔ unknown submission/status lookups retain same key and never duplicate posting (1.9056ms)
+✔ pending/cancelled impacts are zero; posted inbound is negative and outbound positive (0.6788ms)
+✖ a caller cannot mutate the stored idempotency receipt through a returned receipt object (2.8908ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 16
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 406.4452
+
+✖ failing tests:
+
+test at tests\reversal-approved24-qa\independent-guards.test.ts:23:1
+✖ a caller cannot mutate the stored idempotency receipt through a returned receipt object (2.8908ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'FORGED'
+  - 'REV-20261028-007'
+  
+      at TestContext.<anonymous> (E:\WMS_HoaNam\Scanner_CMS\sites\hoa-nam-wms-tray-approved-20261026\tests\reversal-approved24-qa\independent-guards.test.ts:23:480)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FORGED',
+    expected: 'REV-20261028-007',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

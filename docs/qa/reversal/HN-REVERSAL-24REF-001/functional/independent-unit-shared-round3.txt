@@ -1,0 +1,29 @@
+✔ returned record/source copies cannot rewrite internal identity, units, reason or original quantities (4.3975ms)
+✔ save accepts only a draft; posted/pending/cancelled identities cannot be downgraded (6.4125ms)
+✔ existing draft source, type and creation identity cannot be retargeted (3.3051ms)
+✔ accepted save copies payload; stale second save leaves accepted data and version unchanged (0.8133ms)
+✔ all SKU identities must be unique and match authoritative source line fields (6.8117ms)
+✔ zero, negative, NaN, infinity and excessive requested quantities never post (6.1716ms)
+✔ missing reason blocks posting and preserves draft/source/version (0.8858ms)
+✔ unregistered draft, missing key and stale revision cannot post (0.9987ms)
+✔ posted, pending and cancelled records cannot be posted as current drafts (3.3323ms)
+✔ dependency-blocked draft and outbound fixture are fenced without changes (1.3555ms)
+✔ one posted partial consumes remaining once; new excessive draft is rejected at posting (24.4755ms)
+✔ draft and cancelled quantities do not consume source remaining; posted rows alone contribute (0.6262ms)
+✔ same key+same payload replays exact confirmed receipt without another revision or impact (2.2874ms)
+✔ same key rejects changed payload fields including line note and row reason (6.4839ms)
+✔ unknown submission/status lookups retain same key and never duplicate posting (2.8538ms)
+✔ pending/cancelled impacts are zero; posted inbound is negative and outbound positive (0.963ms)
+✔ a caller cannot mutate the stored idempotency receipt through a returned receipt object (0.807ms)
+✔ saved header note is copied and participates in idempotency payload identity (1.1947ms)
+✔ new draft receipt uses Vietnam posting day across UTC midnight boundary (1.8048ms)
+✔ unknown status confirmation preserves submission timestamp instead of query time (1.3527ms)
+✔ approved007 reference keeps original creation time and pinned reference posting minute (0.9358ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 369.7605

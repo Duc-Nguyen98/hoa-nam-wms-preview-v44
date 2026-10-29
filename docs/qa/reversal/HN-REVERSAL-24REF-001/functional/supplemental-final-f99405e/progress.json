@@ -1,0 +1,2618 @@
+{
+  "build": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "f99405e7e01f53cd8e460a9ae6f651f525712268",
+    "sourceCommitEvidence": "git-head",
+    "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "54a54ea0493cf28968d605b911719707eb96e29e2211c88a4d9f2e21d4a1e9b9",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-Kn02pBW0.js",
+        "sha256": "5bac9406d022194486111ecc4488186ce6c7ebb73db2d25805146407b4824425",
+        "bytes": 2365888
+      },
+      {
+        "path": "assets/index-YcZqaxam.css",
+        "sha256": "dd7d7ec853f516e821fdeb13546c8720ab6560d1ad10f2458b2ff00490461ed7",
+        "bytes": 629268
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "8000270d237701cc5e92ffee1ea56bf98fc781549407c888c6035c9d511d1cf4",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "beforeSource": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "c01ffdaf50a865af7b4afee96585f0d4712313c6594ec64c16aec62227114f03",
+    "src/features/S17/approved/approved.css": "81ab2d0ac70851ac74fa444f0c011377f23a810af42d5ebfbd3499a72dd1144d",
+    "src/features/S17/approved/copy.ts": "2e81a9ec2080420eb6ae6415e5797a07157e4f4f6b3505aeb58b94880c1f45ce",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9"
+  },
+  "checks": [
+    {
+      "name": "supplemental compact list retains reasons creators values and unique reachable actions",
+      "status": "PASS",
+      "observations": {
+        "widths": [
+          {
+            "width": 800,
+            "headers": [
+              "Mã phiếu đảo",
+              "Chứng từ gốc",
+              "Loại",
+              "SKU – Số lượng",
+              "Trạng thái",
+              "Lý do",
+              "Ngày tạo",
+              "Người tạo",
+              "Xem"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-009\nSai chứng từ",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261020-001",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "9 SKU – 45 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "28/10/2026 14:25\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-009",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-008\nHàng quay lại kho",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261025-008",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "3 SKU – 6 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Chờ hàng trả về",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Hàng quay lại kho",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "28/10/2026 13:40\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Hàng quay lại kho",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-008",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-007\nNhầm hàng",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261022-007",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "2 SKU – 4 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nháp",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nhầm hàng",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "28/10/2026 11:15\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Nhầm hàng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-007",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261027-006\nSai chứng từ",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261024-006",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "27/10/2026 16:20\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261027-006",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261027-005\nKhông thực hiện",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261021-005",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 2 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã hủy",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Không thực hiện",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "27/10/2026 10:00\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Không thực hiện",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261027-005",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261026-004\nHàng quay lại kho",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261023-004",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "2 SKU – 3 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Hàng quay lại kho",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "26/10/2026 15:30\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Hàng quay lại kho",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261026-004",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261026-003\nNhầm hàng",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261019-003",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 5 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nhầm hàng",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "26/10/2026 09:40\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Nhầm hàng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261026-003",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261025-002\nSai chứng từ",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261018-002",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nháp",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "25/10/2026 14:10\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261025-002",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261025-001\nKhông thực hiện",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261018-001",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã hủy",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Không thực hiện",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "25/10/2026 08:45\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Không thực hiện",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261025-001",
+                    "left": 710.84375,
+                    "right": 754.84375,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              }
+            ]
+          },
+          {
+            "width": 600,
+            "headers": [
+              "Mã phiếu đảo",
+              "Chứng từ gốc",
+              "Loại",
+              "SKU – Số lượng",
+              "Trạng thái",
+              "Lý do",
+              "Ngày tạo",
+              "Người tạo",
+              "Xem"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-009\nSai chứng từ",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261020-001",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "9 SKU – 45 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "28/10/2026 14:25\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-009",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-008\nHàng quay lại kho",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261025-008",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "3 SKU – 6 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Chờ hàng trả về",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Hàng quay lại kho",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "28/10/2026 13:40\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Hàng quay lại kho",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-008",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-007\nNhầm hàng",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261022-007",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "2 SKU – 4 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nháp",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nhầm hàng",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "28/10/2026 11:15\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Nhầm hàng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-007",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261027-006\nSai chứng từ",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261024-006",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "27/10/2026 16:20\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261027-006",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261027-005\nKhông thực hiện",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261021-005",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 2 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã hủy",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Không thực hiện",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "27/10/2026 10:00\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Không thực hiện",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261027-005",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261026-004\nHàng quay lại kho",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261023-004",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "2 SKU – 3 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Hàng quay lại kho",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "26/10/2026 15:30\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Hàng quay lại kho",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261026-004",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261026-003\nNhầm hàng",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261019-003",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 5 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nhầm hàng",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "26/10/2026 09:40\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Nhầm hàng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261026-003",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261025-002\nSai chứng từ",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PN-20261018-002",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nháp",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "25/10/2026 14:10\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261025-002",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261025-001\nKhông thực hiện",
+                    "label": "Mã phiếu đảo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "PX-20261018-001",
+                    "label": "Chứng từ gốc",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Đã hủy",
+                    "label": "Trạng thái",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Không thực hiện",
+                    "label": "Lý do",
+                    "display": "none"
+                  },
+                  {
+                    "text": "25/10/2026 08:45\nNguyễn Văn Nam",
+                    "label": "Ngày tạo",
+                    "display": "table-cell"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "none"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "table-cell"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Không thực hiện",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "block"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261025-001",
+                    "left": 517,
+                    "right": 561,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "table-row"
+              }
+            ]
+          },
+          {
+            "width": 400,
+            "headers": [
+              "Mã phiếu đảo",
+              "Chứng từ gốc",
+              "Loại",
+              "SKU – Số lượng",
+              "Trạng thái",
+              "Lý do",
+              "Ngày tạo",
+              "Người tạo",
+              "Xem"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-009",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PN-20261020-001",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "9 SKU – 45 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "28/10/2026 14:25",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-009",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-008",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PX-20261025-008",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "3 SKU – 6 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Chờ hàng trả về",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Hàng quay lại kho",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "28/10/2026 13:40",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Hàng quay lại kho",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-008",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261028-007",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PN-20261022-007",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "2 SKU – 4 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nháp",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nhầm hàng",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "28/10/2026 11:15",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Nhầm hàng",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261028-007",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261027-006",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PX-20261024-006",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "27/10/2026 16:20",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261027-006",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261027-005",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PN-20261021-005",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "1 SKU – 2 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đã hủy",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Không thực hiện",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "27/10/2026 10:00",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Không thực hiện",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261027-005",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261026-004",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PX-20261023-004",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "2 SKU – 3 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Hàng quay lại kho",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "26/10/2026 15:30",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Hàng quay lại kho",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261026-004",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261026-003",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PN-20261019-003",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "1 SKU – 5 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đã ghi sổ",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nhầm hàng",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "26/10/2026 09:40",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Nhầm hàng",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261026-003",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261025-002",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PN-20261018-002",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo nhập",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nháp",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Sai chứng từ",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "25/10/2026 14:10",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Sai chứng từ",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261025-002",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              },
+              {
+                "cells": [
+                  {
+                    "text": "REV-20261025-001",
+                    "label": "Mã phiếu đảo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "PX-20261018-001",
+                    "label": "Chứng từ gốc",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đảo xuất",
+                    "label": "Loại",
+                    "display": "block"
+                  },
+                  {
+                    "text": "1 SKU – 1 Cái",
+                    "label": "SKU – Số lượng",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Đã hủy",
+                    "label": "Trạng thái",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Không thực hiện",
+                    "label": "Lý do",
+                    "display": "block"
+                  },
+                  {
+                    "text": "25/10/2026 08:45",
+                    "label": "Ngày tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "label": "Người tạo",
+                    "display": "block"
+                  },
+                  {
+                    "text": "",
+                    "label": "Xem",
+                    "display": "block"
+                  }
+                ],
+                "extras": [
+                  {
+                    "text": "Không thực hiện",
+                    "display": "none"
+                  },
+                  {
+                    "text": "Nguyễn Văn Nam",
+                    "display": "none"
+                  }
+                ],
+                "actions": [
+                  {
+                    "label": "Xem REV-20261025-001",
+                    "left": 42,
+                    "right": 86,
+                    "width": 44,
+                    "height": 44
+                  }
+                ],
+                "rowDisplay": "grid"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental Tablet editable inputs and source headers bind values with44px keyboard controls",
+      "status": "PASS",
+      "observations": {
+        "sourceHeaders": [
+          "Chọn",
+          "Chứng từ gốc",
+          "Loại",
+          "Số SKU",
+          "Số lượng gốc",
+          "Đã đảo",
+          "Còn được đảo",
+          "Trạng thái"
+        ],
+        "controls": [
+          {
+            "type": "select-one",
+            "label": null,
+            "width": 718,
+            "height": 44
+          },
+          {
+            "type": "textarea",
+            "label": null,
+            "width": 718,
+            "height": 76
+          },
+          {
+            "type": "number",
+            "label": "Số lượng đảo HN-DRV-001",
+            "width": 87.375,
+            "height": 44
+          },
+          {
+            "type": "text",
+            "label": "Ghi chú HN-DRV-001",
+            "width": 110.8125,
+            "height": 44
+          },
+          {
+            "type": "number",
+            "label": "Số lượng đảo HN-PSU-002",
+            "width": 87.375,
+            "height": 44
+          },
+          {
+            "type": "text",
+            "label": "Ghi chú HN-PSU-002",
+            "width": 110.8125,
+            "height": 44
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental pending progress is read-only current-wait with future stages incomplete",
+      "status": "PASS",
+      "observations": {
+        "text": "✓\nYêu cầu đảo xuất\nHoàn thành\n2\nChờ hàng trả về\nĐang chờ hàng được trả về kho\n3\nXác nhận tình trạng\nChưa thực hiện\n4\nGhi sổ\nChưa thực hiện"
+      }
+    },
+    {
+      "name": "supplemental deep geometry vi/light",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Danh sách phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Tạo phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Sửa phiếu đảo nháp Nháp",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Chờ hàng trả về",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã hủy",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261025-002 Nháp",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Danh sách phiếu đảo",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry vi/dark",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Danh sách phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Tạo phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Sửa phiếu đảo nháp Nháp",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Chờ hàng trả về",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã hủy",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261025-002 Nháp",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Danh sách phiếu đảo",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry en/light",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal slips",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Create reversal",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Edit reversal draft Draft",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Awaiting return",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Cancelled",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261025-002 Draft",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal slips",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry en/dark",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal slips",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Create reversal",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Edit reversal draft Draft",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Awaiting return",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Cancelled",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261025-002 Draft",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal slips",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry zh-CN/light",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单列表",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "创建冲销单",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "编辑冲销草稿 草稿",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 等待退货",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已取消",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261025-002 草稿",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单列表",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry zh-CN/dark",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单列表",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "创建冲销单",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "编辑冲销草稿 草稿",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 等待退货",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已取消",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261025-002 草稿",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单列表",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "candidate reads/model-only interactions leave canonical operational store unchanged",
+      "status": "PASS",
+      "observations": {
+        "canonicalUnchanged": true
+      }
+    }
+  ],
+  "errors": []
+}

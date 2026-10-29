@@ -1,0 +1,5 @@
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 quality:contract
+> node scripts/quality-contract.mjs
+
+QUALITY_CONTRACT_PASS: 13 states, 26 references, immutable source policy

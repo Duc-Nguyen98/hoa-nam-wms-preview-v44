@@ -1,0 +1,26 @@
+✔ returned record/source copies cannot rewrite internal identity, units, reason or original quantities (2.8542ms)
+✔ save accepts only a draft; posted/pending/cancelled identities cannot be downgraded (3.9415ms)
+✔ existing draft source, type and creation identity cannot be retargeted (2.6019ms)
+✔ accepted save copies payload; stale second save leaves accepted data and version unchanged (0.9037ms)
+✔ all SKU identities must be unique and match authoritative source line fields (4.9638ms)
+✔ zero, negative, NaN, infinity and excessive requested quantities never post (4.89ms)
+✔ missing reason blocks posting and preserves draft/source/version (0.8572ms)
+✔ unregistered draft, missing key and stale revision cannot post (0.753ms)
+✔ posted, pending and cancelled records cannot be posted as current drafts (2.0273ms)
+✔ dependency-blocked draft and outbound fixture are fenced without changes (2.1922ms)
+✔ one posted partial consumes remaining once; new excessive draft is rejected at posting (1.8205ms)
+✔ draft and cancelled quantities do not consume source remaining; posted rows alone contribute (0.5485ms)
+✔ same key+same payload replays exact confirmed receipt without another revision or impact (2.0537ms)
+✔ same key rejects changed payload fields including line note and row reason (4.6093ms)
+✔ unknown submission/status lookups retain same key and never duplicate posting (1.5854ms)
+✔ pending/cancelled impacts are zero; posted inbound is negative and outbound positive (0.5523ms)
+✔ a caller cannot mutate the stored idempotency receipt through a returned receipt object (0.5054ms)
+✔ saved header note is copied and participates in idempotency payload identity (0.6951ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 496.5251

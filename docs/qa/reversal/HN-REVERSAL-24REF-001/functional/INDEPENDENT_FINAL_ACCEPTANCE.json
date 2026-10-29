@@ -1,0 +1,55 @@
+{
+  "applicationSource": "72a87608301f0ecd8b1f3a97f326a9bccbba2bbf",
+  "buildId": "9684ed3f5723dd24548fed0a55308c8b4bf2cfe2b7813fae884a7d24e6e7b24d",
+  "mode": "MOCK_NORMAL_APP_AND_COMPONENT",
+  "functional": {
+    "checks": 22,
+    "pass": 22,
+    "fail": 0,
+    "errors": [],
+    "receipt": "independent-final-72a8760/results.json"
+  },
+  "sharedShell": {
+    "registeredRoutes": 29,
+    "checks": 44,
+    "pass": 44,
+    "fail": 0,
+    "errors": [],
+    "receipt": "shared-shell-final-72a8760/results.json"
+  },
+  "deterministicS09": {
+    "checks": 4,
+    "pass": 4,
+    "canonicalUnchanged": true,
+    "scope": "DOM-only synthetic long-code stress; original display text restored, no database edits"
+  },
+  "unit": {
+    "checks": 22,
+    "pass": 22,
+    "fail": 0,
+    "receipt": "independent-unit-final-72a8760.txt"
+  },
+  "sourceHashes": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "56f0ef72f2e3bb1389c58e0a55eeb2420af1c76f5c83299b9b28599154f434ae",
+    "src/features/S17/approved/approved.css": "9ea8ca59fa42bbf1bad9a41c47f2e20947edcd07d92dcdde3b2bf438309a9892",
+    "src/features/S17/approved/copy.ts": "cfac9578776816664f679b7353313806ddde0244761a756d258b0494aeff93bc",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/shared/GlobalShell.tsx": "f4dc2cd2f04ec6a5034e1380a4c542b3fafd76bda2333e224b824d1643a0d4c0",
+    "src/app/registry.ts": "7b667bde1f2ef72c7a9c425158d73e20ee28fc20d019bf6991ec934bae35aa38"
+  },
+  "currentSourceMatches": true,
+  "sourceUnchangedDuringRuns": true,
+  "browserClosed": true,
+  "modelTelemetry": "NOT_VERIFIED",
+  "blocked": [
+    "REAL_API partial inbound/outbound contracts and server authorization/atomicity",
+    "New-build session-expiry probe NOT_RUN",
+    "Actual browser200percent zoom NOT_RUN",
+    "Complete WCAG certification NOT_RUN"
+  ]
+}

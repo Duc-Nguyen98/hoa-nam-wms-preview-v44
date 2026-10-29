@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-29T12:30:55.514Z",
+  "projectId": "appgprj_6adc45f730d88191ae066e8ff0c936aa",
+  "url": "https://hoa-nam-wms-b17-candidate-20261024.wholetide18.chatgpt.site",
+  "access": "public",
+  "version": 63,
+  "versions": [
+    {
+      "number": 63,
+      "source": "bfddf139492e4012f369610d2014028c947a8f7c",
+      "deployment": "appgdep_6ae28cea54a88191b518478ac94bf91a",
+      "archive": "sha256:ea1b950f4a1a7932a6c4deef4ee22877977ab3b004f8be7069e1b1d7b3524c8a"
+    }
+  ],
+  "candidate": "a75ded0c426f8548be2af25e85ed9482b25917ff",
+  "deployedCandidate": false
+}

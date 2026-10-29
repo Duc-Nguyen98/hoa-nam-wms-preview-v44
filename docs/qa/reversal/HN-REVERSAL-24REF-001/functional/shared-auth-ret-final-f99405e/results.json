@@ -1,0 +1,249 @@
+{
+  "mode": "MOCK_NORMAL_APP_SHARED_SHELL",
+  "caseFilter": "auth route",
+  "build": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "f99405e7e01f53cd8e460a9ae6f651f525712268",
+    "sourceCommitEvidence": "git-head",
+    "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "54a54ea0493cf28968d605b911719707eb96e29e2211c88a4d9f2e21d4a1e9b9",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-Kn02pBW0.js",
+        "sha256": "5bac9406d022194486111ecc4488186ce6c7ebb73db2d25805146407b4824425",
+        "bytes": 2365888
+      },
+      {
+        "path": "assets/index-YcZqaxam.css",
+        "sha256": "dd7d7ec853f516e821fdeb13546c8720ab6560d1ad10f2458b2ff00490461ed7",
+        "bytes": 629268
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "8000270d237701cc5e92ffee1ea56bf98fc781549407c888c6035c9d511d1cf4",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "routes": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S25",
+    "S26",
+    "S27",
+    "S28",
+    "S29",
+    "S07",
+    "S08"
+  ],
+  "routeCount": 29,
+  "beforeSource": {
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/shared/GlobalShell.tsx": "f4dc2cd2f04ec6a5034e1380a4c542b3fafd76bda2333e224b824d1643a0d4c0",
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/app/registry.ts": "7b667bde1f2ef72c7a9c425158d73e20ee28fc20d019bf6991ec934bae35aa38",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+  },
+  "afterSource": {
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/shared/GlobalShell.tsx": "f4dc2cd2f04ec6a5034e1380a4c542b3fafd76bda2333e224b824d1643a0d4c0",
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/app/registry.ts": "7b667bde1f2ef72c7a9c425158d73e20ee28fc20d019bf6991ec934bae35aa38",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+  },
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "1440 auth route S07 actual surface recorded",
+      "status": "PASS",
+      "observations": {
+        "geometry": {
+          "route": "#/preview/S01",
+          "width": 1440,
+          "height": 900,
+          "documentWidth": 1440,
+          "layout": "desktop",
+          "collapsed": "true",
+          "expanded": "false",
+          "expandedToken": "320px",
+          "offsetToken": "70px",
+          "sidebar": {
+            "x": 0,
+            "y": 0,
+            "left": 0,
+            "right": 70,
+            "width": 70,
+            "height": 900
+          },
+          "workspace": {
+            "x": 70,
+            "y": 0,
+            "left": 70,
+            "right": 1440,
+            "width": 1370,
+            "height": 1317
+          },
+          "main": {
+            "x": 70,
+            "y": 70,
+            "left": 70,
+            "right": 1440,
+            "width": 1370,
+            "height": 1247
+          },
+          "firstContent": {
+            "x": 102,
+            "y": 82,
+            "left": 102,
+            "right": 1408,
+            "width": 1306,
+            "height": 1203
+          },
+          "heading": "Tổng quan vận hành",
+          "authUsername": false
+        },
+        "title": "Tổng quan vận hành · Hoa Nam WMS",
+        "scope": "Authenticated attempt to S07 correctly redirects toS01 under App.tsx active-session guard. Fresh sign-in/confirmation are separately exercised by normal setup; this is not an auth-surface geometry claim."
+      }
+    },
+    {
+      "name": "1440 auth route S08 actual surface recorded",
+      "status": "PASS",
+      "observations": {
+        "geometry": {
+          "route": "#/preview/S01",
+          "width": 1440,
+          "height": 900,
+          "documentWidth": 1440,
+          "layout": "desktop",
+          "collapsed": "true",
+          "expanded": "false",
+          "expandedToken": "320px",
+          "offsetToken": "70px",
+          "sidebar": {
+            "x": 0,
+            "y": 0,
+            "left": 0,
+            "right": 70,
+            "width": 70,
+            "height": 900
+          },
+          "workspace": {
+            "x": 70,
+            "y": 0,
+            "left": 70,
+            "right": 1440,
+            "width": 1370,
+            "height": 1317
+          },
+          "main": {
+            "x": 70,
+            "y": 70,
+            "left": 70,
+            "right": 1440,
+            "width": 1370,
+            "height": 1247
+          },
+          "firstContent": {
+            "x": 102,
+            "y": 82,
+            "left": 102,
+            "right": 1408,
+            "width": 1306,
+            "height": 1203
+          },
+          "heading": "Tổng quan vận hành",
+          "authUsername": false
+        },
+        "title": "Tổng quan vận hành · Hoa Nam WMS",
+        "scope": "Authenticated attempt to S08 correctly redirects toS01 under App.tsx active-session guard. Fresh sign-in/confirmation are separately exercised by normal setup; this is not an auth-surface geometry claim."
+      }
+    }
+  ],
+  "errors": []
+}

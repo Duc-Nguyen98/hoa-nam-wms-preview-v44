@@ -1,0 +1,31 @@
+✔ returned record/source copies cannot rewrite internal identity, units, reason or original quantities (3.659ms)
+✔ save accepts only a draft; posted/pending/cancelled identities cannot be downgraded (4.7146ms)
+✔ existing draft source, type and creation identity cannot be retargeted (2.6586ms)
+✔ accepted save copies payload; stale second save leaves accepted data and version unchanged (2.786ms)
+✔ all SKU identities must be unique and match authoritative source line fields (7.3313ms)
+✔ zero, negative, NaN, infinity and excessive requested quantities never post (7.0162ms)
+✔ missing reason blocks posting and preserves draft/source/version (1.3488ms)
+✔ unregistered draft, missing key and stale revision cannot post (1.6193ms)
+✔ posted, pending and cancelled records cannot be posted as current drafts (3.4525ms)
+✔ dependency-blocked draft and outbound fixture are fenced without changes (1.6777ms)
+✔ one posted partial consumes remaining once; new excessive draft is rejected at posting (1.3811ms)
+✔ draft and cancelled quantities do not consume source remaining; posted rows alone contribute (0.6399ms)
+✔ same key+same payload replays exact confirmed receipt without another revision or impact (1.8751ms)
+✔ same key rejects changed payload fields including line note and row reason (3.9056ms)
+✔ unknown submission/status lookups retain same key and never duplicate posting (3.0679ms)
+✔ pending/cancelled impacts are zero; posted inbound is negative and outbound positive (0.6217ms)
+✔ a caller cannot mutate the stored idempotency receipt through a returned receipt object (0.4537ms)
+✔ saved header note is copied and participates in idempotency payload identity (0.65ms)
+✔ availability excludes drafts/cancellations and returned copies cannot mutate sources (3.0152ms)
+✔ unknown remains unknown on resubmit; same key query resolves and collision conflicts (2.1129ms)
+✔ draft save fences stale writes and cannot spoof source or posted state (2.1029ms)
+✔ duplicate SKU, dependency guard, invalid amount and outbound cannot post (1.4085ms)
+✔ impact uses record quantities and reverses outbound direction (1.0587ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 296.714

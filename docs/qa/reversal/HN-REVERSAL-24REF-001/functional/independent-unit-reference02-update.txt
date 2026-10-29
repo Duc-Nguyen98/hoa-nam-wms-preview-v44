@@ -1,0 +1,30 @@
+✔ approved reference02 source chooser keeps exact nine identities and original/prior/remaining totals (4.1512ms)
+✔ returned record/source copies cannot rewrite internal identity, units, reason or original quantities (1.5124ms)
+✔ save accepts only a draft; posted/pending/cancelled identities cannot be downgraded (7.117ms)
+✔ existing draft source, type and creation identity cannot be retargeted (2.9104ms)
+✔ accepted save copies payload; stale second save leaves accepted data and version unchanged (1.0344ms)
+✔ all SKU identities must be unique and match authoritative source line fields (5.5398ms)
+✔ zero, negative, NaN, infinity and excessive requested quantities never post (6.1062ms)
+✔ missing reason blocks posting and preserves draft/source/version (1.544ms)
+✔ unregistered draft, missing key and stale revision cannot post (1.4014ms)
+✔ posted, pending and cancelled records cannot be posted as current drafts (4.5215ms)
+✔ dependency-blocked draft and outbound fixture are fenced without changes (1.7272ms)
+✔ one posted partial consumes remaining once; new excessive draft is rejected at posting (34.2603ms)
+✔ draft and cancelled quantities do not consume source remaining; posted rows alone contribute (1.2363ms)
+✔ same key+same payload replays exact confirmed receipt without another revision or impact (1.9916ms)
+✔ same key rejects changed payload fields including line note and row reason (5.418ms)
+✔ unknown submission/status lookups retain same key and never duplicate posting (1.9506ms)
+✔ pending/cancelled impacts are zero; posted inbound is negative and outbound positive (0.8212ms)
+✔ a caller cannot mutate the stored idempotency receipt through a returned receipt object (0.7942ms)
+✔ saved header note is copied and participates in idempotency payload identity (1.0503ms)
+✔ new draft receipt uses Vietnam posting day across UTC midnight boundary (1.6127ms)
+✔ unknown status confirmation preserves submission timestamp instead of query time (1.2819ms)
+✔ approved007 reference keeps original creation time and pinned reference posting minute (1.0071ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 582.1172

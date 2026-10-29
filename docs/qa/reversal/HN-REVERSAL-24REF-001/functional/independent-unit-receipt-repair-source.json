@@ -1,0 +1,10 @@
+{
+  "executedAt": "2026-10-29T10:29:02.127Z",
+  "mode": "MOCK_PURE_UNITS",
+  "sourceFile": "src/features/S17/approved/adapter.ts",
+  "sha256": "06a43b90adec7778ac5a12cf0182058bb491c5ec1eb5e296f0237124be15110e",
+  "tests": 18,
+  "pass": 18,
+  "fail": 0,
+  "modelTelemetry": "NOT_VERIFIED"
+}

@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-29T11:19:31.210Z",
+  "candidate": "be02145d461e8fd37345e63dbdc76657bb09c1d9",
+  "combined": {
+    "statuses": []
+  },
+  "prTriggeredFirstPageRuns": {
+    "workflow_runs": []
+  },
+  "scope": "Workflow wrapper filters PR-triggered runs on first page; empty results do not prove all Actions are healthy or billing unlocked."
+}

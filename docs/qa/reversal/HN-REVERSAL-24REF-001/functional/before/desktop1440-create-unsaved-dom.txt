@@ -1,0 +1,56 @@
+Bỏ qua điều hướng
+HOA NAM WMS
+Hệ thống quản lý kho
+Tổng quan
+NGHIỆP VỤ
+Phiếu nhập kho
+Xuất kho
+Xếp khay
+Bảo hành & sửa chữa
+Tồn kho & đối soát
+Tra cứu tồn & đối soát
+Phiếu đảo tồn kho
+Danh mục
+Báo cáo
+QUẢN TRỊ
+Người dùng & phân quyền
+Cấu hình hệ thống
+Nhật ký hệ thống
+Kho Hoa Nam
+© 2006 Hoa Nam. Bảo lưu mọi quyền.
+Tìm màn hình…
+Ctrl K
+2
+VI
+DQ
+Đức Quang
+
+Tồn kho & Đối soát / Phiếu đảo tồn kho
+
+Phiếu đảo tồn kho
+
+Quản lý phiếu điều chỉnh tồn kho và chứng từ gốc.
+
+Phiếu hoàn phiên hiện tại
+Tạo phiếu hoàn
+Đọc lại dữ liệu
+Phiếu hoàn phiên hiện tại
+Phiếu hoàn	Phiếu cấp gốc	Trạng thái	Nhận lại hàng	Thao tác
+PV-REV-a40a8923-5dae-4b73-9ee9-88c3f7fda65b	PV-CI-e48587fa-3d7a-49cb-a36c-2b550d427e07	Đã ghi sổ	Đã xác nhận nhận lại	Xem
+Tạo phiếu hoàn
+
+Chỉ hoàn toàn bộ phiếu cấp bảo hành đã ghi sổ. Số lượng và mã hàng giữ đúng phiếu gốc.
+
+Phiếu cấp gốc
+*
+Chọn phiếu cấp gốc
+PV-CI-b00ae1f9-364f-432f-a4d2-84cd294e8e36
+Lý do hoàn
+*
+
+Tối đa 500 ký tự, một dòng.
+
+Tôi xác nhận trả toàn bộ hàng của phiếu gốc và hàng chưa sử dụng. *
+Đọc lại dữ liệu
+Hủy thao tác
+Lưu

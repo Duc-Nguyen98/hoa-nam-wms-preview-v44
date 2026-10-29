@@ -1,0 +1,39 @@
+Bỏ qua điều hướng
+HOA NAM WMS
+Hệ thống quản lý kho
+Tổng quan
+NGHIỆP VỤ
+Phiếu nhập kho
+Xuất kho
+Xếp khay
+Bảo hành & sửa chữa
+Tồn kho & đối soát
+Tra cứu tồn & đối soát
+Phiếu đảo tồn kho
+Danh mục
+Báo cáo
+QUẢN TRỊ
+Người dùng & phân quyền
+Cấu hình hệ thống
+Nhật ký hệ thống
+Kho Hoa Nam
+© 2006 Hoa Nam. Bảo lưu mọi quyền.
+Tìm màn hình…
+Ctrl K
+2
+VI
+DQ
+Đức Quang
+
+Tồn kho & Đối soát / Phiếu đảo tồn kho
+
+Phiếu đảo tồn kho
+
+Quản lý phiếu điều chỉnh tồn kho và chứng từ gốc.
+
+Phiếu hoàn phiên hiện tại
+Tạo phiếu hoàn
+Đọc lại dữ liệu
+Phiếu hoàn phiên hiện tại
+Phiếu hoàn	Phiếu cấp gốc	Trạng thái	Nhận lại hàng	Thao tác
+PV-REV-a40a8923-5dae-4b73-9ee9-88c3f7fda65b	PV-CI-e48587fa-3d7a-49cb-a36c-2b550d427e07	Đã ghi sổ	Đã xác nhận nhận lại	Xem

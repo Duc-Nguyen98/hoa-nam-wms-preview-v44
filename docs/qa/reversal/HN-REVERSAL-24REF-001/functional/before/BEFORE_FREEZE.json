@@ -1,0 +1,11 @@
+{
+  "frozenAt": "2026-10-29T10:01:05.766Z",
+  "applicationSource": "ecb2bdac211e392bb71d2f885725a6ecca3f3ce8",
+  "buildId": "caea03c77fb6deb73deb274ef3c8e4679e4e269b105705212ff9c18d71988e15",
+  "captureCount": 12,
+  "profiles": 3,
+  "sourceUnchanged": true,
+  "canonicalBusinessUnchanged": true,
+  "browserClosed": true,
+  "receipt": "capture.json"
+}

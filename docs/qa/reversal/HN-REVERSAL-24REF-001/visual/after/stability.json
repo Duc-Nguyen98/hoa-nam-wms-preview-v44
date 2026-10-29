@@ -1,0 +1,12 @@
+{
+  "head": "e7174fda97ab3ab147cb1dd332e7b942f5088c87",
+  "files": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "397698498012ee7033fbbd3f9557ab17bbe5816141e6d83cd9aa8ea8569aadd3",
+    "src/features/S17/approved/approved.css": "fe9a7881bea8278e0b0e31a83c02746262c483c4dd8ac21c59b67156fdcaae35",
+    "src/features/S17/approved/adapter.ts": "b16b1fa20cdc0565cf40d374fd4c9e74c0f3b0facd6562cab7b425f4fe0a5372",
+    "src/features/S17/approved/copy.ts": "cfac9578776816664f679b7353313806ddde0244761a756d258b0494aeff93bc"
+  },
+  "buildInfoSha256": "a689d38ae8b1b72aa34a0ad55575b9ef594398de5d041fe7cd6948992d07e7c5",
+  "stable": true
+}

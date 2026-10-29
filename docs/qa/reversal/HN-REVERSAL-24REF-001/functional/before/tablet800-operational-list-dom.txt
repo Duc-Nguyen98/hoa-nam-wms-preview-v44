@@ -1,0 +1,17 @@
+Bỏ qua điều hướng
+HOA NAM WMS
+2
+DQ
+
+Tồn kho & Đối soát / Phiếu đảo tồn kho
+
+Phiếu đảo tồn kho
+
+Quản lý phiếu điều chỉnh tồn kho và chứng từ gốc.
+
+Phiếu hoàn phiên hiện tại
+Tạo phiếu hoàn
+Đọc lại dữ liệu
+Phiếu hoàn phiên hiện tại
+Phiếu hoàn	Phiếu cấp gốc	Trạng thái	Nhận lại hàng	Thao tác
+PV-REV-d78e1905-f2bd-4a6b-9612-242cf01192aa	PV-CI-b951c691-c2d7-4f7e-b545-7d75f1c46034	Đã ghi sổ	Đã xác nhận nhận lại	Xem

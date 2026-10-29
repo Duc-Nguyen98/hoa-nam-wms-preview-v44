@@ -1,0 +1,34 @@
+✔ Vietnam midnight changes the accepted business date independently of UTC calendar day (4.4579ms)
+✔ versioned inventory URL roundtrip preserves applied scope, dates, sort and page without auth changes (3.2965ms)
+✔ history/date deep links keep invalid values available for validation instead of silently clearing them (0.9027ms)
+✔ return context is accepted only under the registered navigation version (0.5607ms)
+✔ fresh public demo preserves the repaired case and reconciles the separate unused return on all screens (60936.1037ms)
+✔ v46 upgrade is additive: stock16→14 on surplus issue, stays14 until return post, then16 exactly once (71423.7636ms)
+✔ lost committed return response is recovered with the original command; retries and a second return cannot inflate stock (51856.5181ms)
+✔ S17 actual BOX10 -> P19 issue2 -> create/file bytes/confirm stock8 -> Post10, immutable original/FKs/reload (3362.6777ms)
+✔ S17 SERIAL return restores same physical ID and exact original event while original bytes stay identical (2827.4114ms)
+✔ S17 missing evidence/return, unsupported/empty/oversized files and unused declaration reject without mutation (2851.1234ms)
+✔ S17 cancel is stock-neutral, keeps its reason, and permits new reversal only for an actually eligible original (3112.7948ms)
+✔ S17 duplicate clicks and repeated posted action never duplicate compensation or create a second reversal (4279.9635ms)
+✔ S17 stale version and generation preserve original reason/file target and do not silently rebase (3150.7982ms)
+✔ S17 reviewed version adoption preserves File/label/reason and rejects changed scope, terminal or ineligible actions (4308.2682ms)
+✔ S17 normal reload rejects missing or tampered persisted evidence and restores verified download bytes only after a valid read (3729.7911ms)
+✔ S17 intervening real BOX consumption blocks Post atomically; originals remain immutable (3229.8106ms)
+✔ S17 accepted Post proof survives a subsequent legitimate reissue before read/ACK (6968.4701ms)
+✔ S17 precommit failure preserves whole repository and original command retry posts exactly once (2427.9619ms)
+✔ S17 lost Post response survives navigation and only explicit original-journal retry ACKs without extra stock (2556.6078ms)
+✔ S17 denied actor cannot create and read-after-commit failure never ACKs until valid reread (1745.2284ms)
+✔ S17 navigation while reading selected File never dispatches a stale command or loses original file bytes (2246.8818ms)
+✔ S17 explicit archived recovery is informational and missing/tampered proof preserves original journal (7134.3433ms)
+✔ S17 tampered original/event/evidence reads retain accepted intent instead of reporting success (8753.9713ms)
+✔ S17 rereads a coherent pair after real catalog Create and reversal Create between catalog and operations reads (1917.2719ms)
+✔ S17 persistent real catalog skew rejects after three pairs and never ACKs or claims committed-command success until coherent read (3396.3908ms)
+✔ S17 detail selection cannot follow an equal ID into another epoch, scenario or generation (3.4964ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 186480.3809

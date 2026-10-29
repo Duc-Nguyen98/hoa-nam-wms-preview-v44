@@ -1,0 +1,415 @@
+{
+  "build": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "e7174fda97ab3ab147cb1dd332e7b942f5088c87",
+    "sourceCommitEvidence": "git-head",
+    "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "46f2aa4b604a659bbf07be7c13973258e4b63b4e18e18714345df92eb296a056",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-CCWDH9DW.css",
+        "sha256": "992df24c5e0b68256c04f09962aa45754b9a5b66907d065f7677096589fab1a1",
+        "bytes": 624348
+      },
+      {
+        "path": "assets/index-D_f5Z2Py.js",
+        "sha256": "98842e0a458e19f7a189844a5959c8021271ac47d4f62820a2fa63560b78d2ba",
+        "bytes": 2363498
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "e9dccab6efdf64927b043da7ca1dad5003cd9856f46cc32b49cfce56024768ee",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "beforeSource": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "b16b1fa20cdc0565cf40d374fd4c9e74c0f3b0facd6562cab7b425f4fe0a5372",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "397698498012ee7033fbbd3f9557ab17bbe5816141e6d83cd9aa8ea8569aadd3",
+    "src/features/S17/approved/approved.css": "fe9a7881bea8278e0b0e31a83c02746262c483c4dd8ac21c59b67156fdcaae35",
+    "src/features/S17/approved/copy.ts": "cfac9578776816664f679b7353313806ddde0244761a756d258b0494aeff93bc"
+  },
+  "checks": [
+    {
+      "name": "normal list preserves nine fixture identities and4posted2draft1pending2cancelled",
+      "status": "PASS",
+      "observations": {
+        "badges": [
+          "Đã ghi sổ",
+          "Chờ hàng trả về",
+          "Nháp",
+          "Đã ghi sổ",
+          "Đã hủy",
+          "Đã ghi sổ",
+          "Đã ghi sổ",
+          "Nháp",
+          "Đã hủy"
+        ]
+      }
+    },
+    {
+      "name": "search is draft until Enter; source-ID query and status filter apply then clear",
+      "status": "PASS",
+      "observations": {}
+    },
+    {
+      "name": "reversed/future list dates are rejected with visible validation",
+      "status": "PASS",
+      "observations": {
+        "text": "Tồn kho & Đối soát › Phiếu đảo\nKhoảng ngày không hợp lệ. Vui lòng kiểm tra ngày tra cứu.\nDanh sách phiếu đảo\n\nTra cứu giao dịch đảo và chứng từ gốc\n\nTạo phiếu đảo\nTừ ngày\n28/10/2026\nĐến ngày\n27/10/2026\nLoại\nTất cả\nĐảo nhập\nĐảo xuất\nTrạng thái\nTất cả\nĐã ghi sổ\nNháp\nChờ hàng trả về\nĐã hủy\nMã phiếu đảo hoặc chứng từ gốc\nTìm kiếm\nXóa bộ lọc\n9\nphiếu\n4\nĐã ghi sổ\n2\nNháp\n1\nChờ hàng trả về\n2\nĐã hủy\nMã phiếu đảo\tChứng từ gốc\tLoại\tSKU – Số lượng\tTrạng thái\tLý do\tNgày tạo\tNgười tạo\tXem\nREV-20261028-009\tPN-20261020-001\tĐảo nhập\t9 SKU – 45 Cái\tĐã ghi sổ\tSai chứng từ\t28/10/2026 14:25\tNguyễn Văn Nam\t\nREV-20261028-008\tPX-20261025-008\tĐảo xuất\t3 SKU – 6 Cái\tChờ hàng trả về\tHàng quay lại kho\t28/10/2026 13:40\tNguyễn Văn Nam\t\nREV-20261028-007\tPN-20261022-007\tĐảo nhập\t2 SKU – 4 Cái\tNháp\tNhầm hàng\t28/10/2026 11:15\tNguyễn Văn Nam\t\nREV-20261027-006\tPX-20261024-006\tĐảo xuất\t1 SKU – 1 Cái\tĐã ghi sổ\tSai chứng từ\t27/10/2026 16:20\tNguyễn Văn Nam\t\nREV-20261027-005\tPN-20261021-005\tĐảo nhập\t1 SKU – 2 Cái\tĐã hủy\tKhông thực hiện\t27/10/2026 10:00\tNguyễn Văn Nam\t\nREV-20261026-004\tPX-20261023-004\tĐảo xuất\t2 SKU – 3 Cái\tĐã ghi sổ\tHàng quay lại kho\t26/10/2026 15:30\tNguyễn Văn Nam\t\nREV-20261026-003\tPN-20261019-003\tĐảo nhập\t1 SKU – 5 Cái\tĐã ghi sổ\tNhầm hàng\t26/10/2026 09:40\tNguyễn Văn Nam\t\nREV-20261025-002\tPN-20261018-002\tĐảo nhập\t1 SKU – 1 Cái\tNháp\tSai chứng từ\t25/10/2026 14:10\tNguyễn Văn Nam\t\nREV-20261025-001\tPX-20261018-001\tĐảo xuất\t1 SKU – 1 Cái\tĐã hủy\tKhông thực hiện\t25/10/2026 08:45\tNguyễn Văn Nam\t\n9 Tổng cộng\n‹\n1\n›"
+      }
+    },
+    {
+      "name": "unknown direct record identity never silently displays first draft",
+      "status": "PASS",
+      "observations": {
+        "text": "Tồn kho & Đối soát › Phiếu đảo\nKhông tìm thấy bản ghi\nBản ghi yêu cầu không tồn tại hoặc đã được thay đổi.\nVề danh sách"
+      }
+    },
+    {
+      "name": "pending/cancelled show zero actual impact and preserved exact rows",
+      "status": "PASS",
+      "observations": {
+        "REV-20261028-008": "Số mặt hàng\n3 SKU\nTổng số lượng đảo\n6 Cái\nTác động tồn hiện tại\n0 Cái\nTác động tồn hiện tại\n0 Cái",
+        "REV-20261027-005": "Số mặt hàng\n1 SKU\nTổng số lượng đảo\n2 Cái\nTác động tồn hiện tại\n0 Cái\nTác động tồn hiện tại\n0 Cái"
+      }
+    },
+    {
+      "name": "posted inbound/outbound details preserve negative/positive direction and source dialog relation",
+      "status": "PASS",
+      "observations": {}
+    },
+    {
+      "name": "back/forward refresh retain selected record, accepted list filter and meaningful focus",
+      "status": "PASS",
+      "observations": {
+        "detailUrl": "http://127.0.0.1:5341/?reversalDesign=20261029#/preview/S17?view=detail&id=REV-20261028-009&q=REV-20261028-009&type=&status=&from=2026-10-25&to=2026-10-28&page=1",
+        "returnFocus": {
+          "tag": "BUTTON",
+          "label": "Xem REV-20261028-009"
+        }
+      }
+    },
+    {
+      "name": "blocked dependency exposes BOX and source link with posting disabled",
+      "status": "PASS",
+      "observations": {}
+    },
+    {
+      "name": "short viewport return restores list scroll and meaningful keyboard focus",
+      "status": "PASS",
+      "observations": {
+        "before": 824,
+        "after": 824,
+        "focus": {
+          "tag": "BUTTON",
+          "label": "Xem REV-20261025-001"
+        }
+      }
+    },
+    {
+      "name": "validation associates required reason and excessive quantity while retaining valid line",
+      "status": "PASS",
+      "observations": {}
+    },
+    {
+      "name": "header draft note is actually included in saved model payload",
+      "status": "FAIL",
+      "error": "TimeoutError: page.goto: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5340/tests/reversal-approved24-qa/component-harness.html?case=base&visit=1#/preview/S17?view=edit\", waiting until \"load\"\u001b[22m\n",
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-24REF-001/functional/independent-round2/failure-11.png",
+      "observations": {}
+    },
+    {
+      "name": "twelve records paginate9and3 and preserve total count",
+      "status": "PASS",
+      "observations": {
+        "footer": "12 Tổng cộng\n‹\n2\n›"
+      }
+    },
+    {
+      "name": "new draft binds chosen source and system creation date then posts exact reviewed payload",
+      "status": "PASS",
+      "observations": {
+        "draft": {
+          "id": "REV-20261029-1793271426293",
+          "source": "PN-20261024-011",
+          "type": "Đảo nhập",
+          "status": "Nháp",
+          "reason": "",
+          "created": "2026-10-29T17:57",
+          "lines": [
+            {
+              "sku": "HN-DRV-001",
+              "name": "Bộ điều khiển động cơ",
+              "original": 10,
+              "prior": 0,
+              "quantity": 0,
+              "note": ""
+            }
+          ]
+        },
+        "posted": {
+          "method": "post",
+          "row": {
+            "id": "REV-20261029-1793271426293",
+            "source": "PN-20261024-011",
+            "type": "Đảo nhập",
+            "status": "Nháp",
+            "reason": "Nhầm hàng",
+            "created": "2026-10-29T17:57",
+            "lines": [
+              {
+                "sku": "HN-DRV-001",
+                "name": "Bộ điều khiển động cơ",
+                "original": 10,
+                "prior": 0,
+                "quantity": 3,
+                "note": ""
+              }
+            ],
+            "note": ""
+          },
+          "key": "reversal-REV-20261029-1793271426293-1793271427054",
+          "version": 3
+        }
+      }
+    },
+    {
+      "name": "submitting disables repeat posting and accepts only matching receipt identity",
+      "status": "PASS",
+      "observations": {
+        "posts": [
+          {
+            "method": "post",
+            "row": {
+              "id": "REV-20261028-007",
+              "source": "PN-20261022-007",
+              "type": "Đảo nhập",
+              "status": "Nháp",
+              "reason": "Nhầm hàng",
+              "created": "2026-10-28T11:15",
+              "lines": [
+                {
+                  "sku": "HN-DRV-001",
+                  "name": "Bộ điều khiển động cơ",
+                  "original": 10,
+                  "prior": 0,
+                  "quantity": 2,
+                  "note": ""
+                },
+                {
+                  "sku": "HN-PSU-002",
+                  "name": "Bộ nguồn 24V",
+                  "original": 10,
+                  "prior": 0,
+                  "quantity": 2,
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            "key": "reversal-REV-20261028-007-1793271429241",
+            "version": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "empty list and filtered no-results are distinct semantic states without fake records",
+      "status": "PASS",
+      "observations": {}
+    },
+    {
+      "name": "unknown outcome checks exact existing request key without another POST",
+      "status": "PASS",
+      "observations": {
+        "before": [
+          {
+            "method": "post",
+            "row": {
+              "id": "REV-20261028-007",
+              "source": "PN-20261022-007",
+              "type": "Đảo nhập",
+              "status": "Nháp",
+              "reason": "Nhầm hàng",
+              "created": "2026-10-28T11:15",
+              "lines": [
+                {
+                  "sku": "HN-DRV-001",
+                  "name": "Bộ điều khiển động cơ",
+                  "original": 10,
+                  "prior": 0,
+                  "quantity": 2,
+                  "note": ""
+                },
+                {
+                  "sku": "HN-PSU-002",
+                  "name": "Bộ nguồn 24V",
+                  "original": 10,
+                  "prior": 0,
+                  "quantity": 2,
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            "key": "reversal-REV-20261028-007-1793271437575",
+            "version": 1
+          }
+        ],
+        "after": [
+          {
+            "method": "post",
+            "row": {
+              "id": "REV-20261028-007",
+              "source": "PN-20261022-007",
+              "type": "Đảo nhập",
+              "status": "Nháp",
+              "reason": "Nhầm hàng",
+              "created": "2026-10-28T11:15",
+              "lines": [
+                {
+                  "sku": "HN-DRV-001",
+                  "name": "Bộ điều khiển động cơ",
+                  "original": 10,
+                  "prior": 0,
+                  "quantity": 2,
+                  "note": ""
+                },
+                {
+                  "sku": "HN-PSU-002",
+                  "name": "Bộ nguồn 24V",
+                  "original": 10,
+                  "prior": 0,
+                  "quantity": 2,
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            "key": "reversal-REV-20261028-007-1793271437575",
+            "version": 1
+          },
+          {
+            "method": "status",
+            "key": "reversal-REV-20261028-007-1793271437575"
+          }
+        ]
+      }
+    },
+    {
+      "name": "mismatched receipt cannot produce verified success screen",
+      "status": "PASS",
+      "observations": {
+        "text": "Tồn kho & Đối soát › Phiếu đảo\nPhiếu đảo REV-20261028-007 Nháp\nThông tin chung\nMã phiếu đảo\nREV-20261028-007\nChứng từ gốc\nPN-20261022-007 ↗\nLoại\nĐảo nhập\nKho\nHN01\nLý do\nNhầm hàng\nNgày tạo\n28/10/2026 11:15\nNgười tạo\nNguyễn Văn Nam\nChưa thể ghi sổ phiếu đảo\n\nHàng được chọn đã có giao dịch xuất liên quan. Cần xử lý giao dịch liên quan theo đúng thứ tự nghiệp vụ.\n\nHàng hóa bị ảnh hưởng\nMã hàng\tTên hàng\tBOX\tSố lượng đảo\tĐơn vị\tTrạng thái\nHN-DRV-001\tBộ điều khiển động cơ\tBOX-018-01\t1\tCái\tBị chặn\nGiao dịch liên quan\nChứng từ nhập gốc\nPN-20261018-002\nGiao dịch xuất liên quan\nPX-20261024-015 ↗\n24/10/2026 09:30 · BOX-018-01 · 1 Cái\nPhiếu đảo này\nREV-20261028-007\nTác động hiện tại 0 Cái\nVề danh sách\nGhi sổ phiếu đảo"
+      }
+    },
+    {
+      "name": "conflict preserves draft and requires reload/review before another posting",
+      "status": "PASS",
+      "observations": {
+        "posts": 1
+      }
+    },
+    {
+      "name": "EN/zh themes translate fixed module labels and keep bounded document",
+      "status": "PASS",
+      "observations": {
+        "profiles": [
+          {
+            "language": "en",
+            "theme": "light",
+            "heading": "Reversal slips"
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "heading": "Reversal slips"
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "heading": "冲销单列表"
+          },
+          {
+            "language": "zh-CN",
+            "theme": "dark",
+            "heading": "冲销单列表"
+          }
+        ]
+      }
+    },
+    {
+      "name": "candidate reads/model-only interactions leave canonical operational store unchanged",
+      "status": "PASS",
+      "observations": {
+        "canonicalUnchanged": true
+      }
+    }
+  ],
+  "errors": []
+}

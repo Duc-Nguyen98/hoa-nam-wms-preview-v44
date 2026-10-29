@@ -1,0 +1,1109 @@
+{
+  "build": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "a75ded0c426f8548be2af25e85ed9482b25917ff",
+    "sourceCommitEvidence": "git-head",
+    "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "551357b4a3e3ff7448da0ebfc39a0cc5dfbed6263d1ed7cea9b293a512625def",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-Bm5bF4i4.js",
+        "sha256": "b9232190a2407d2b5a9a6a81c8db0daa6759e187b57b04e5292049d2add44182",
+        "bytes": 2367306
+      },
+      {
+        "path": "assets/index-D0XUoAcl.css",
+        "sha256": "82b6e026e1a7b771af9825546ab7421e6f8d9d6a1ac34a6fce6efc370def247b",
+        "bytes": 631539
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "20df098aa996c8d6a5eb1e8dea3cc6d3d3d1dfa6fbb955a1b9a8b478287718e7",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "beforeSource": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+    "src/features/S17/approved/approved.css": "751395db45934b5b8bf57b7d16f9e7789b24f72161db0a564d834015556de0ac",
+    "src/features/S17/approved/copy.ts": "982dd9bfb25e1d2f68a9b400e9f71702f38e8f9f6817c3e1ad4362d4350cfa72",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9"
+  },
+  "checks": [
+    {
+      "name": "supplemental mode-specific columns keep oneSKUrow and valid header associations",
+      "status": "PASS",
+      "observations": {
+        "modes": [
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "mode": "posted",
+            "columns": 7,
+            "count": 9,
+            "headers": [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Số lượng đảo",
+              "Còn lại"
+            ],
+            "displayed": [
+              [
+                "1",
+                "HN-DRV-001",
+                "Bộ điều khiển động cơ",
+                "10 Cái",
+                "0 Cái",
+                "1 Cái",
+                "9 Cái"
+              ],
+              [
+                "2",
+                "HN-PSU-002",
+                "Bộ nguồn 24V",
+                "10 Cái",
+                "0 Cái",
+                "2 Cái",
+                "8 Cái"
+              ],
+              [
+                "3",
+                "HN-SEN-003",
+                "Cảm biến quang",
+                "10 Cái",
+                "0 Cái",
+                "3 Cái",
+                "7 Cái"
+              ],
+              [
+                "4",
+                "HN-PCB-004",
+                "Bo mạch điều khiển",
+                "10 Cái",
+                "0 Cái",
+                "4 Cái",
+                "6 Cái"
+              ],
+              [
+                "5",
+                "HN-MTR-005",
+                "Mô tơ cửa",
+                "10 Cái",
+                "0 Cái",
+                "5 Cái",
+                "5 Cái"
+              ],
+              [
+                "6",
+                "HN-SWT-007",
+                "Công tắc hành trình",
+                "10 Cái",
+                "0 Cái",
+                "6 Cái",
+                "4 Cái"
+              ],
+              [
+                "7",
+                "HN-HMI-008",
+                "Màn hình điều khiển",
+                "10 Cái",
+                "0 Cái",
+                "7 Cái",
+                "3 Cái"
+              ],
+              [
+                "8",
+                "HN-FAN-009",
+                "Quạt tản nhiệt",
+                "10 Cái",
+                "0 Cái",
+                "8 Cái",
+                "2 Cái"
+              ],
+              [
+                "9",
+                "HN-RLY-010",
+                "Rơ le điều khiển",
+                "10 Cái",
+                "0 Cái",
+                "9 Cái",
+                "1 Cái"
+              ]
+            ]
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "mode": "impact",
+            "columns": 8,
+            "count": 9,
+            "headers": [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Biến động",
+              "Ảnh hưởng thuần của chuỗi"
+            ],
+            "displayed": [
+              [
+                "1",
+                "HN-DRV-001",
+                "Bộ điều khiển động cơ",
+                "Cái",
+                "10",
+                "0",
+                "−1",
+                "9"
+              ],
+              [
+                "2",
+                "HN-PSU-002",
+                "Bộ nguồn 24V",
+                "Cái",
+                "10",
+                "0",
+                "−2",
+                "8"
+              ],
+              [
+                "3",
+                "HN-SEN-003",
+                "Cảm biến quang",
+                "Cái",
+                "10",
+                "0",
+                "−3",
+                "7"
+              ],
+              [
+                "4",
+                "HN-PCB-004",
+                "Bo mạch điều khiển",
+                "Cái",
+                "10",
+                "0",
+                "−4",
+                "6"
+              ],
+              [
+                "5",
+                "HN-MTR-005",
+                "Mô tơ cửa",
+                "Cái",
+                "10",
+                "0",
+                "−5",
+                "5"
+              ],
+              [
+                "6",
+                "HN-SWT-007",
+                "Công tắc hành trình",
+                "Cái",
+                "10",
+                "0",
+                "−6",
+                "4"
+              ],
+              [
+                "7",
+                "HN-HMI-008",
+                "Màn hình điều khiển",
+                "Cái",
+                "10",
+                "0",
+                "−7",
+                "3"
+              ],
+              [
+                "8",
+                "HN-FAN-009",
+                "Quạt tản nhiệt",
+                "Cái",
+                "10",
+                "0",
+                "−8",
+                "2"
+              ],
+              [
+                "9",
+                "HN-RLY-010",
+                "Rơ le điều khiển",
+                "Cái",
+                "10",
+                "0",
+                "−9",
+                "1"
+              ]
+            ]
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "mode": "edit",
+            "columns": 8,
+            "count": 2,
+            "headers": [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Còn được đảo",
+              "Số lượng đảo"
+            ],
+            "displayed": [
+              [
+                "1",
+                "HN-DRV-001",
+                "Bộ điều khiển động cơ",
+                "Cái",
+                "10",
+                "0",
+                "10",
+                ""
+              ],
+              [
+                "2",
+                "HN-PSU-002",
+                "Bộ nguồn 24V",
+                "Cái",
+                "10",
+                "0",
+                "10",
+                ""
+              ]
+            ]
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "mode": "review",
+            "columns": 9,
+            "count": 2,
+            "headers": [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Số lượng đảo",
+              "Biến động",
+              "Còn lại"
+            ],
+            "displayed": [
+              [
+                "1",
+                "HN-DRV-001",
+                "Bộ điều khiển động cơ",
+                "Cái",
+                "10",
+                "0",
+                "2",
+                "−2",
+                "8"
+              ],
+              [
+                "2",
+                "HN-PSU-002",
+                "Bộ nguồn 24V",
+                "Cái",
+                "10",
+                "0",
+                "2",
+                "−2",
+                "8"
+              ]
+            ]
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "mode": "pending",
+            "columns": 9,
+            "count": 3,
+            "headers": [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Số lượng đảo",
+              "Biến động",
+              "Còn lại"
+            ],
+            "displayed": [
+              [
+                "1",
+                "HN-DRV-001",
+                "Bộ điều khiển động cơ",
+                "Cái",
+                "2",
+                "0",
+                "2",
+                "0",
+                "Chưa xác định"
+              ],
+              [
+                "2",
+                "HN-PSU-002",
+                "Bộ nguồn 24V",
+                "Cái",
+                "2",
+                "0",
+                "2",
+                "0",
+                "Chưa xác định"
+              ],
+              [
+                "3",
+                "HN-SEN-003",
+                "Cảm biến quang",
+                "Cái",
+                "2",
+                "0",
+                "2",
+                "0",
+                "Chưa xác định"
+              ]
+            ]
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "mode": "cancelled",
+            "columns": 9,
+            "count": 1,
+            "headers": [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Số lượng đảo",
+              "Biến động",
+              "Còn lại"
+            ],
+            "displayed": [
+              [
+                "1",
+                "HN-DRV-001",
+                "Bộ điều khiển động cơ",
+                "Cái",
+                "2",
+                "0",
+                "2",
+                "0",
+                "0"
+              ]
+            ]
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "mode": "unknown",
+            "columns": 9,
+            "count": 2,
+            "headers": [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Số lượng đảo",
+              "Tác động tồn hiện tại",
+              "Còn lại"
+            ],
+            "displayed": [
+              [
+                "1",
+                "HN-DRV-001",
+                "Bộ điều khiển động cơ",
+                "Cái",
+                "10",
+                "0",
+                "2",
+                "Đang kiểm tra",
+                "Đang kiểm tra"
+              ],
+              [
+                "2",
+                "HN-PSU-002",
+                "Bộ nguồn 24V",
+                "Cái",
+                "10",
+                "0",
+                "2",
+                "Đang kiểm tra",
+                "Đang kiểm tra"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental pending cancelled and unknown summary meanings remain distinct",
+      "status": "PASS",
+      "observations": {
+        "pending": [
+          {
+            "label": "Yêu cầu trả",
+            "value": "6 Cái"
+          },
+          {
+            "label": "Đã nhận",
+            "value": "0 Cái"
+          },
+          {
+            "label": "Cộng khả dụng",
+            "value": "0 Cái"
+          }
+        ],
+        "cancelled": [
+          {
+            "label": "Số mặt hàng",
+            "value": "1 SKU"
+          },
+          {
+            "label": "Tổng số lượng đảo",
+            "value": "2 Cái"
+          },
+          {
+            "label": "Tác động tồn hiện tại",
+            "value": "0 Cái"
+          }
+        ],
+        "unknown": [
+          {
+            "label": "Số mặt hàng",
+            "value": "2 SKU"
+          },
+          {
+            "label": "Tổng số lượng đảo",
+            "value": "4 Cái"
+          },
+          {
+            "label": "Tác động tồn hiện tại",
+            "value": "Đang kiểm tra"
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry vi/light",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Danh sách phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Tạo phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Sửa phiếu đảo nháp Nháp",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Chờ hàng trả về",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã hủy",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261025-002 Nháp",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261028-007 Chưa xác định kết quả ghi sổ",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry vi/dark",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Danh sách phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Tạo phiếu đảo",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Sửa phiếu đảo nháp Nháp",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Chờ hàng trả về",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã hủy",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261025-002 Nháp",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Phiếu đảo REV-20261028-007 Chưa xác định kết quả ghi sổ",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry en/light",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal slips",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Create reversal",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Edit reversal draft Draft",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Awaiting return",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Cancelled",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261025-002 Draft",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261028-007 Posting outcome unknown",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry en/dark",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal slips",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Create reversal",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Edit reversal draft Draft",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Awaiting return",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Cancelled",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal details Posted",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261025-002 Draft",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "Reversal REV-20261028-007 Posting outcome unknown",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry zh-CN/light",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单列表",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "创建冲销单",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "编辑冲销草稿 草稿",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 等待退货",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已取消",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261025-002 草稿",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261028-007 过账结果未知",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "supplemental deep geometry zh-CN/dark",
+      "status": "PASS",
+      "observations": {
+        "states": [
+          {
+            "view": "list",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单列表",
+            "actions": []
+          },
+          {
+            "view": "choose",
+            "id": "",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "创建冲销单",
+            "actions": []
+          },
+          {
+            "view": "edit",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "编辑冲销草稿 草稿",
+            "actions": []
+          },
+          {
+            "view": "review",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261028-007",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261028-008",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 等待退货",
+            "actions": []
+          },
+          {
+            "view": "detail",
+            "id": "REV-20261027-005",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已取消",
+            "actions": []
+          },
+          {
+            "view": "impact",
+            "id": "REV-20261028-009",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单详情 已过账",
+            "actions": []
+          },
+          {
+            "view": "blocked",
+            "id": "REV-20261025-002",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261025-002 草稿",
+            "actions": []
+          },
+          {
+            "view": "unknown",
+            "id": "REV-20261028-007",
+            "width": 800,
+            "documentWidth": 800,
+            "heading": "冲销单 REV-20261028-007 过账结果未知",
+            "actions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "candidate reads/model-only interactions leave canonical operational store unchanged",
+      "status": "PASS",
+      "observations": {
+        "canonicalUnchanged": true
+      }
+    }
+  ],
+  "errors": []
+}

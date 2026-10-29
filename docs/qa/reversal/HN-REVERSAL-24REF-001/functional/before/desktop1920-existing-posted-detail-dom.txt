@@ -1,0 +1,61 @@
+Bỏ qua điều hướng
+HOA NAM WMS
+Hệ thống quản lý kho
+Tổng quan
+NGHIỆP VỤ
+Phiếu nhập kho
+Xuất kho
+Xếp khay
+Bảo hành & sửa chữa
+Tồn kho & đối soát
+Tra cứu tồn & đối soát
+Phiếu đảo tồn kho
+Danh mục
+Báo cáo
+QUẢN TRỊ
+Người dùng & phân quyền
+Cấu hình hệ thống
+Nhật ký hệ thống
+Kho Hoa Nam
+© 2006 Hoa Nam. Bảo lưu mọi quyền.
+Tìm màn hình…
+Ctrl K
+2
+VI
+DQ
+Đức Quang
+
+Tồn kho & Đối soát / Phiếu đảo tồn kho
+
+Phiếu đảo tồn kho
+
+Quản lý phiếu điều chỉnh tồn kho và chứng từ gốc.
+
+Phiếu hoàn phiên hiện tại
+Tạo phiếu hoàn
+Đọc lại dữ liệu
+Phiếu hoàn phiên hiện tại
+Phiếu hoàn	Phiếu cấp gốc	Trạng thái	Nhận lại hàng	Thao tác
+PV-REV-1aa889c2-d15a-4a1c-8b20-ac395a76e051	PV-CI-01a3a581-1f4e-491e-b249-60b44fc1e372	Đã ghi sổ	Đã xác nhận nhận lại	Xem
+Chi tiết phiếu hoàn
+Phiếu hoàn
+PV-REV-1aa889c2-d15a-4a1c-8b20-ac395a76e051
+Phiếu cấp gốc
+PV-CI-01a3a581-1f4e-491e-b249-60b44fc1e372
+Ca bảo hành
+PV-BH-16bc8d8e-9301-485f-9618-4b2a65cd8e76
+Trạng thái
+Đã ghi sổ
+Lý do hoàn
+Demo hoàn trả: nhận lại đủ 2 linh kiện chưa sử dụng · PUBLIC-DEMO-RETURN-0010
+Nhận lại hàng
+Đã xác nhận nhận lại
+Số bút toán hoàn
+1
+Số lượng hoàn
+SKU	Mã vật lý / BOX	Số lượng hoàn	Đơn vị
+PUBLIC-DEMO-SKU-B	PUBLIC-DEMO-BOX-0010	2	Cái
+Bằng chứng đã lưu
+bien-ban-hoan-linh-kien-demo.txt (text/plain, 211 B)
+Đọc lại dữ liệu
+Đóng

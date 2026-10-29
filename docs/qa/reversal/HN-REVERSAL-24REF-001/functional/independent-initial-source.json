@@ -1,0 +1,15 @@
+{
+  "head": "d9e267cf4765fe5a10ad050fa1a408f5377ca316",
+  "mode": "MOCK_PURE_UNITS",
+  "executedAt": "2026-10-29T10:23:33.213Z",
+  "modelTelemetry": "NOT_VERIFIED",
+  "sourceHashes": {
+    "src/features/S17/approved/adapter.ts": "b48ecd2064af2b533e58ad8fdcffdf73abd774bc9f3c16f0f03e26139daa05f6",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "62f85580df47cd74bbba3ce0d04838406921834363beb1f23c12d456673cc501",
+    "src/features/S17/approved/approved.css": "fe9a7881bea8278e0b0e31a83c02746262c483c4dd8ac21c59b67156fdcaae35",
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c"
+  },
+  "checks": 17,
+  "pass": 16,
+  "fail": 1
+}
