@@ -1,6 +1,6 @@
 export type Scenario = 'ready' | 'loading' | 'empty' | 'no-results' | 'error' | 'forbidden' | 'not-found';
-export interface Sku { readonly sku:string; readonly name:string; readonly warehouse:string; readonly location:string; readonly unit:string; readonly actual:number; readonly held:number; readonly count:number }
-export interface Box { readonly id:string; readonly sku:string; readonly tray:string; readonly location:string; readonly warehouse:string; readonly actual:number; readonly held:number; readonly count:number }
+export interface Sku { readonly sku:string; readonly name:string; readonly warehouse:string; readonly location:string; readonly unit:string; readonly actual:number; readonly held:number; readonly count:number|null }
+export interface Box { readonly id:string; readonly sku:string; readonly tray:string; readonly location:string; readonly warehouse:string; readonly actual:number; readonly held:number; readonly count:number|null }
 // Only complete coverage makes an absent BOX row an authoritative zero allocation.
 export interface AllocationCoverage { readonly sku:string; readonly status:'complete'|'unavailable' }
 export interface Snapshot { readonly id:string; readonly date:string; readonly rows:readonly Sku[]; readonly boxes:readonly Box[]; readonly allocationCoverage:readonly AllocationCoverage[] }

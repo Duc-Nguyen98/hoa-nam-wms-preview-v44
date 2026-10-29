@@ -80,3 +80,69 @@
 @media(max-width:599px){.iad .iad-details{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .iad-dark .iad-tabs button:not(.iad-link):not(.iad-back).selected{color:#80e1e3}
+
+/* Date controls use the shared calendar; screen filters keep draft values until Search. */
+.iad-filters>.hn-date-picker,.iad-readonly-date{flex:1;min-width:150px;gap:8px}
+.iad-filters .hn-date-picker__label,.iad-readonly-date>span{font-size:12px;font-weight:700;line-height:normal}
+.iad .hn-date-picker__field{background:var(--card);border-color:var(--line)}
+.iad .hn-date-picker button.hn-date-picker__trigger,.iad .hn-date-picker button.hn-date-picker__clear{background:transparent;border:0;color:var(--ink);padding:10px 12px}
+.iad .hn-date-picker button.hn-date-picker__clear{width:44px;padding:8px}
+.iad .hn-date-picker__popup{background:var(--card);color:var(--ink);border-color:var(--line)}
+.iad .hn-date-picker .hn-date-picker__popup button{min-width:44px;min-height:44px;padding:0;border:1px solid transparent;background:transparent;color:var(--ink)}
+.iad .hn-date-picker__popup button.hn-date-picker__text-button{padding:10px 12px}
+.iad .hn-date-picker__popup button.hn-date-picker__day[aria-current='date']{border-color:var(--teal)}
+.iad .hn-date-picker__popup button.hn-date-picker__day[data-selected]{background:#007783;border-color:#007783;color:#fff}
+.iad .hn-date-picker__manual label{display:block;min-width:0;flex:none;font-weight:500}
+.iad .hn-date-picker__header h2{font-size:15px;margin:0}
+.iad-readonly-date{display:flex;flex-direction:column;font-size:12px}
+.iad-readonly-date output{display:flex;align-items:center;height:44px;padding:0 12px;border:1px solid var(--line);border-radius:4px;font-size:14px}
+.iad-badge.unknown{color:var(--ink);background:var(--bg)}
+@media(max-width:900px){
+ .iad .iad-location-table tr{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:44px auto auto;gap:6px}
+ .iad .iad-location-table td:nth-child(2):before,.iad .iad-location-table td:nth-child(3):before,.iad .iad-location-table td:nth-child(4):before{display:block;white-space:nowrap;margin-right:0}
+ .iad .iad-location-table td:nth-child(2),.iad .iad-location-table td:nth-child(3){overflow-wrap:normal}
+ /* Named rows group identity metadata above quantities and operator. */
+ .iad.iad-view-movement .iad-table-wrap tr{grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:auto auto;grid-template-areas:"time time time time document document document document box box box box" "operation operation operation change change change balance balance balance actor actor actor";gap:8px 12px;padding:12px}
+ .iad.iad-view-movement .iad-table-wrap td:nth-child(n){grid-column:auto;grid-row:auto;text-align:left;padding:0;min-width:0;overflow-wrap:normal}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='time']{grid-area:time;white-space:nowrap}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='document']{grid-area:document}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='box']{grid-area:box}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='operation']{grid-area:operation;border-top:1px solid var(--line);padding-top:6px}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='change']{grid-area:change;text-align:right;border-top:1px solid var(--line);padding-top:6px}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='balance']{grid-area:balance;text-align:right;border-top:1px solid var(--line);padding-top:6px}
+ .iad.iad-view-movement .iad-table-wrap td[data-field='actor']{grid-area:actor;border-top:1px solid var(--line);padding-top:6px}
+ .iad.iad-view-movement .iad-table-wrap td:nth-child(n):before{display:block;margin:0 0 3px;font-size:11px}
+ .iad.iad-view-history .iad-table-wrap tr{grid-template-columns:minmax(170px,2fr) minmax(65px,.8fr) repeat(3,minmax(54px,.65fr)) 44px;grid-template-rows:auto auto auto;grid-template-areas:"run run match shortage excess action" "time time match shortage excess action" "scope total match shortage excess action";gap:3px 12px;padding:12px;align-items:center}
+ .iad.iad-view-history .iad-table-wrap td:nth-child(n){grid-column:auto;grid-row:auto;min-width:0;padding:0;overflow-wrap:normal}
+ .iad.iad-view-history .iad-table-wrap td[data-field='run']{grid-area:run;white-space:nowrap}
+ .iad.iad-view-history .iad-table-wrap td[data-field='time']{grid-area:time;white-space:nowrap}
+ .iad.iad-view-history .iad-table-wrap td[data-field='scope']{grid-area:scope;white-space:nowrap}
+ .iad.iad-view-history .iad-table-wrap td[data-field='total']{grid-area:total;text-align:right}
+ .iad.iad-view-history .iad-table-wrap td[data-field='match']{grid-area:match}
+ .iad.iad-view-history .iad-table-wrap td[data-field='shortage']{grid-area:shortage}
+ .iad.iad-view-history .iad-table-wrap td[data-field='excess']{grid-area:excess}
+ .iad.iad-view-history .iad-table-wrap tr:has(td[data-field='unknown']){grid-template-columns:minmax(170px,2fr) minmax(65px,.8fr) repeat(4,minmax(54px,.65fr)) 44px;grid-template-areas:"run run match shortage excess unknown action" "time time match shortage excess unknown action" "scope total match shortage excess unknown action"}
+ .iad.iad-view-history .iad-table-wrap td[data-field='unknown']{grid-area:unknown}
+ .iad.iad-view-history .iad-table-wrap td:last-child{grid-area:action}
+ .iad.iad-view-history .iad-table-wrap td.iad-number:before{display:block;margin:0 0 4px}
+ .iad.iad-view-history .iad-table-wrap td[data-field='total']:before{display:inline;margin-right:4px}
+ .iad.iad-view-history .iad-table-wrap td[data-field='time']:before{display:none}
+}
+/* Compact reflow is confined below the approved Tablet profile. */
+@media(max-width:599px){
+ .iad{min-width:0;padding:4px 0}
+ .iad-heading{flex-direction:column;gap:0;margin-bottom:12px}.iad-heading h1{margin-bottom:4px}
+ .iad-card{padding:16px}.iad-summary{overflow-wrap:anywhere}
+ .iad-metrics{flex-wrap:wrap}.iad-metrics>div{flex:1 1 50%;padding:12px;overflow-wrap:anywhere}.iad-metrics>div:nth-child(3){border-left:0}
+ .iad .iad-table-wrap{padding:0;min-width:0}
+ .iad.iad .iad-table-wrap:not(.iad-tray-table):not(.iad-location-table) tr{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-template-areas:none;padding:12px;gap:8px 12px}
+ .iad.iad .iad-table-wrap:not(.iad-tray-table):not(.iad-location-table) tr td:nth-child(n){grid-area:auto;grid-column:auto;grid-row:auto;min-width:0;white-space:normal;overflow-wrap:anywhere;padding:0;text-align:left}
+ .iad.iad .iad-table-wrap:not(.iad-tray-table):not(.iad-location-table) tr td.iad-number{ text-align:right }
+ .iad.iad .iad-table-wrap:not(.iad-tray-table):not(.iad-location-table) tr td:first-child,.iad.iad .iad-table-wrap:not(.iad-tray-table):not(.iad-location-table) tr td:nth-child(2){grid-column:1 / -1}
+ .iad.iad .iad-table-wrap:not(.iad-tray-table):not(.iad-location-table) tr td:last-child:has(button){grid-column:1 / -1;justify-self:end}
+ .iad .iad-location-table tbody{grid-template-columns:1fr}.iad .iad-location-table tr{padding:12px}
+ .iad.iad-view-history .iad-table-wrap tr td[data-field='run'],.iad.iad-view-history .iad-table-wrap tr td[data-field='time']{white-space:nowrap}
+ .iad .iad-loading-head,.iad .iad-loading-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .iad-filters>label,.iad-filters>.hn-date-picker,.iad-readonly-date{flex-basis:100%;min-width:0}
+ .iad .iad-details{gap:12px}.iad .iad-code{max-width:100%}.iad .iad-code strong{min-width:0}
+}

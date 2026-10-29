@@ -14,6 +14,7 @@ import { createOperationalWebAdapter } from '../../data/http/operational-preview
 import { OperationalStockReport, STOCK_REPORT_COPY } from './OperationalStockReport';
 import type { StockReportReader } from './stock-report-binding';
 import { useUiCopy } from '../../i18n/use-ui-copy';
+import { readFailureKind } from '../../shared/read-failure-kind';
 
 type Operation = ReturnType<ReturnType<typeof createInventoryReportController>['load']>;
 const amountLabels = { opening: 'Tồn đầu', inbound: 'Nhập', outboundProducts: 'Xuất SP', outboundWarranty: 'Xuất BH', reversals: 'Hoàn tác', closing: 'Tồn cuối', actual: 'Thực tế', difference: 'Chênh lệch' };
@@ -32,6 +33,7 @@ export function InventoryReportScreen({ adapter, operationalAdapter }: { adapter
   const controller = useMemo(() => createInventoryReportController(adapter), [adapter]);
   const state = useSyncExternalStore(controller.subscribe, controller.getSnapshot, controller.getSnapshot);
   const model = state.model, query = state.intendedQuery ?? defaults;
+  const initialFailureKind = state.error ? readFailureKind(state.error) : null;
   const emptyReason = model ? getReportEmptyReason(model) : null;
   const screen = useRef<HTMLDivElement>(null), list = useRef<HTMLElement>(null);
   const [notice, setNotice] = useState<NoticeFeedback | null>(null);
@@ -189,10 +191,10 @@ export function InventoryReportScreen({ adapter, operationalAdapter }: { adapter
         </div>
       </> : <section className="s21-panel hn-premium-panel s21-read-state" aria-label={tx("Báo cáo tồn kho và đối soát")}>
         <CatalogueListHeader id="s21-read-title" title={tx("Tồn kho & đối soát")} density="compact" />
-        <PageState kind={pending || !state.error && !state.blocker ? 'loading' : state.error ? 'error' : 'stale'}
-          title={tx(pending || !state.error && !state.blocker ? 'Đang đọc báo cáo tồn kho và đối soát…' : state.error ? 'Chưa thể đọc báo cáo' : 'Chưa có dữ liệu cho kỳ báo cáo đã chọn')}
-          description={tx(pending ? 'Đang đọc số liệu tổng hợp và chi tiết tồn kho.' : state.error ? 'Chưa có dữ liệu để hiển thị. Bạn có thể thử đọc lại báo cáo.' : 'Kỳ báo cáo này chưa có số liệu được cung cấp.')}
-          onRetry={initialReadFailed && !pending ? retryRead : undefined} />
+        <PageState kind={pending || !state.error && !state.blocker ? 'loading' : initialFailureKind ?? 'stale'}
+          title={initialFailureKind && initialFailureKind !== 'error' && !pending ? undefined : tx(pending || !state.error && !state.blocker ? 'Đang đọc báo cáo tồn kho và đối soát…' : state.error ? 'Chưa thể đọc báo cáo' : 'Chưa có dữ liệu cho kỳ báo cáo đã chọn')}
+          description={initialFailureKind && initialFailureKind !== 'error' && !pending ? undefined : tx(pending ? 'Đang đọc số liệu tổng hợp và chi tiết tồn kho.' : state.error ? 'Chưa có dữ liệu để hiển thị. Bạn có thể thử đọc lại báo cáo.' : 'Kỳ báo cáo này chưa có số liệu được cung cấp.')}
+          onRetry={initialReadFailed && !pending && initialFailureKind === 'error' ? retryRead : undefined} />
       </section>}
       {notice && <Notice feedback={{ ...notice, message: tx(notice.message) }} onClose={() => setNotice(null)} resolveFocusFallback={() => screen.current?.querySelector<HTMLElement>('#s21-search') ?? null} resolveInlineSlot={inlineSlot} revealInlineOnOpen protectedContentSelector=".s21-reconciliation,.s21-summary,.s21-analysis,.s21-list" />}
     </div>

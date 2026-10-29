@@ -1,0 +1,30 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inventory reconciliation bounded component QA</title></head><body><div id="root"></div><script type="module">
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import {InventoryDesignWorkspace} from '/src/features/S16/approved/InventoryDesignWorkspace.tsx';
+import {createInventoryDesignAdapter} from '/src/features/S16/approved/adapter.ts';
+import {GlobalToastProvider} from '/src/toast/GlobalToastProvider.tsx';
+import {ShellPreferencesRuntime} from '/src/shared/ShellPreferencesRuntime.tsx';
+import {TrayReadState} from '/src/features/putaway/TrayUi.tsx';
+import {InventoryReportScreen} from '/src/features/S21/InventoryReportScreen.tsx';
+import {createInventoryReportFixtureAdapter} from '/src/data/adapters/inventory-report-fixture-adapter.ts';
+import '/src/shared/styles.css';import '/src/shared/unified.css';import '/src/shared/components.css';
+const original=createInventoryDesignAdapter(),which=new URLSearchParams(location.search).get('case');let adapter=original;
+if(which==='null-count'){const skus=original.skus.map((r,i)=>i?r:{...r,count:null}),boxes=original.boxes.map((b,i)=>i?b:{...b,count:null});adapter={...original,skus,boxes,snapshots:original.snapshots.map(s=>Object.freeze({...s,rows:Object.freeze(skus.map(r=>Object.freeze({...r}))),boxes:Object.freeze(boxes.map(b=>Object.freeze({...b})))}))};}
+if(which==='unit')adapter={...original,skus:original.skus.map((r,i)=>i?r:{...r,unit:'Mét'})};
+if(which==='large')adapter={...original,skus:original.skus.map((r,i)=>i?r:{...r,actual:1200000000,held:200000000,count:1201000000}),boxes:[],allocationCoverage:original.allocationCoverage.map((c,i)=>i?c:{...c,status:'unavailable'})};
+if(which==='pagination'){const extra=[1,2,3].map(i=>({...original.skus[0],sku:'QA-PAGE-'+i,name:'Additional matching SKU '+i,actual:10,held:0,count:10})),skus=[...original.skus,...extra];adapter={...original,skus,allocationCoverage:[...original.allocationCoverage,...extra.map(r=>({sku:r.sku,status:'unavailable'}))],snapshots:original.snapshots.map(s=>({...s,rows:skus.map(r=>({...r}))}))};}
+if(which==='negative')adapter={...original,skus:original.skus.map((r,i)=>i?r:{...r,actual:1200000000,held:200000000,count:1199000000}),boxes:[],allocationCoverage:original.allocationCoverage.map((c,i)=>i?c:{...c,status:'unavailable'})};
+if(which==='multi-tray')adapter={...original,boxes:[...original.boxes.map(b=>b.id==='BOX-002'?{...b,tray:'KH-001',location:'A01-01'}:b),{id:'BOX-QA-WIRE',sku:'HN-WIR-006',tray:'KH-001',location:'A01-01',warehouse:'HN01',actual:3,held:1,count:3}]};
+window.reconQaPending=[];
+if(which==='retry')adapter={...original,scenario:'error',retry:()=>new Promise((resolve,reject)=>window.reconQaPending.push({resolve,reject}))};
+window.reconQaOriginal=original;window.reconQaAdapter=adapter;window.reconQaTrayRetryCount=0;
+const trayStates={'tray-session':{busy:false,error:'SESSION_EXPIRED',hasData:false},'tray-forbidden':{busy:false,error:'FORBIDDEN_HISTORY',hasData:false},'tray-notfound':{busy:false,error:'NOT_FOUND',hasData:false},'tray-network':{busy:false,error:'NETWORK_ERROR',hasData:false},'tray-loading':{busy:true,error:'',hasData:false},'tray-refresh':{busy:true,error:'',hasData:true}};
+const content=trayStates[which]?React.createElement('main',{id:'tray-read-qa'},trayStates[which].hasData?React.createElement('div',{'data-testid':'accepted-tray-data'},'KH-001 — accepted tray record'):null,React.createElement(TrayReadState,{...trayStates[which],retry:()=>window.reconQaTrayRetryCount++})):React.createElement(InventoryDesignWorkspace,{adapter});
+window.reconQaReportReads=0;window.reconQaReportPending=[];
+const reportFixture=createInventoryReportFixtureAdapter();
+const reportCodes={'s21-session':'SESSION_EXPIRED','s21-forbidden':'FORBIDDEN_HISTORY','s21-notfound':'NOT_FOUND','s21-network':'NETWORK_ERROR'};
+const reportAdapter={read:(query,context)=>{window.reconQaReportReads++;if(which==='s21-loading')return new Promise(()=>{});if(which==='s21-retry'&&window.reconQaReportReads===1)return Promise.reject(Object.assign(new Error('bounded network failure'),{code:'NETWORK_ERROR'}));if(which==='s21-accepted'&&window.reconQaReportReads>1)return Promise.reject(Object.assign(new Error('bounded refresh failure'),{code:'NETWORK_ERROR'}));if(reportCodes[which])return Promise.reject(Object.assign(new Error(reportCodes[which]),{code:reportCodes[which]}));return reportFixture.read(query,context);}};
+const rendered=which?.startsWith('s21-')?React.createElement(InventoryReportScreen,{adapter:reportAdapter,operationalAdapter:{available:false,read:()=>Promise.reject(Error('Isolated legacy report harness has no operational source'))}}):content;
+createRoot(document.getElementById('root')).render(React.createElement(ShellPreferencesRuntime,null,React.createElement(GlobalToastProvider,null,rendered)));
+</script></body></html>
