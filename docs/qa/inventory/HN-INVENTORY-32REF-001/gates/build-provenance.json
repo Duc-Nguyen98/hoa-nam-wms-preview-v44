@@ -1,0 +1,11 @@
+{
+  "candidate": "baebfc49aa15452a4c2720b62e045f6301bfb49e",
+  "pass": 4,
+  "fail": 0,
+  "results": [
+    "invalid explicit source rejected",
+    "archive without Git or source identity remains unverified",
+    "explicit archive source identity honored",
+    "Git build identity separated from historical import"
+  ]
+}

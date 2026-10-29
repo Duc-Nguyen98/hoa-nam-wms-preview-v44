@@ -1,0 +1,24 @@
+{
+  "scope": "Isolated same-source component edges; not auth/API integration or final visual capture.",
+  "checks": [
+    {
+      "name": "new movement keyword no-match uses shared no-results state",
+      "status": "FAIL",
+      "error": "Error: page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-baebfc4/edge-new-short/failure-1.png"
+    },
+    {
+      "name": "saved-result zero-count tab uses shared no-results state",
+      "status": "PASS"
+    },
+    {
+      "name": "current difference rejects SKU outside propagated warehouse scope",
+      "status": "PASS"
+    },
+    {
+      "name": "non-DRV allocation coverage is unknown rather than false zero balances/counts",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,191 @@
+{
+  "base": "http://127.0.0.1:5341",
+  "mode": "MOCK",
+  "candidateCommit": "baebfc49aa15452a4c2720b62e045f6301bfb49e",
+  "beforeSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "bac516946748b1283a71234270ea464050cacc2d3428888df5b888ac13615605"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "ef8914572ef9733790453d35c08fca217ca2a6f59c71abd43a2b3baef77628c7"
+    }
+  ],
+  "afterSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "bac516946748b1283a71234270ea464050cacc2d3428888df5b888ac13615605"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "ef8914572ef9733790453d35c08fca217ca2a6f59c71abd43a2b3baef77628c7"
+    }
+  ],
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "tablet: normal-auth direct-route gate",
+      "status": "PASS",
+      "detail": "Fresh protected URL redirected to S07; normal login, confirmation and setup completed."
+    },
+    {
+      "name": "tablet: all ten registered view projections and responsive bounds",
+      "status": "PASS",
+      "detail": [
+        {
+          "view": "stock",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "sku",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "allocation",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "box",
+          "rows": 0,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "tray",
+          "rows": 1,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "movement",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "reconcile",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "difference",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "history",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "snapshot",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "name": "tablet: stock search BOX / SKU / name, no-result query and reset",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: warehouse HN02 filter and HN04 empty",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: SKU to allocation to BOX to tray and correct return context",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: BOX movement is scoped to selected BOX; return link retains BOX",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: reconciliation DRV and nine BOX discrepancy totals",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: filtered history to saved snapshot keeps scope and stored identity",
+      "status": "PASS",
+      "detail": {
+        "snapshot": "DS-20261028-01",
+        "savedRows": 2,
+        "context": "HN02 + match",
+        "moduleTabsOnDetail": 0
+      }
+    },
+    {
+      "name": "tablet: saved DRV detail uses same snapshot and back returns snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: history dates filter, reject reverse/future and retain input",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: invalid SKU/BOX/relation/snapshot IDs never return first record",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "pass": 12,
+    "fail": 0,
+    "blocked": 0
+  }
+}

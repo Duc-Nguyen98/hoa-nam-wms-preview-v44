@@ -1,0 +1,1017 @@
+{
+  "review": "S00#3 independent visual round1",
+  "captureManifestSha256": "653c5ea299be64ef9b4d51b589f46efee3599c4e484ef4f32c06f58e90bb9a5f",
+  "all32Viewed": true,
+  "result": "FAIL",
+  "lockedShellExcluded": true,
+  "sourceProvenance": {
+    "baseSha": "57b9f399a55d41d43ecad7a31e1b279da2cda717",
+    "diffSha256": "7bbfd336421b46cd39c396f18118a33014081b4cb1cdae772b0a4a12c90bb00e",
+    "sourceHashes": {
+      "src/app/App.tsx": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23",
+      "src/features/S16/approved/InventoryDesignWorkspace.tsx": "1d674cb73c55d2e20027dc74cc85ea06616178582832b5459326c03496b7cd71",
+      "src/features/S16/approved/approved.css": "5131f0b9a60fef436ac1d149b91975f426e587968e72bb703d86a5dc837223ac",
+      "src/features/S16/approved/adapter.ts": "2665bc49266d8a734f429b76fb268863ccb23ba8311d02f0be16220deb47e802"
+    }
+  },
+  "rows": [
+    {
+      "id": "01",
+      "device": "Desktop",
+      "view": "stock",
+      "file": "round1/01-Desktop.png",
+      "screenshotSha256": "22443138a17522fe48a52d2ad0fa21038a0cb02f79e4416145a3eb5bd1a6cabe",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 21,
+      "smallControlExamples": [
+        {
+          "name": "SKU ↑",
+          "width": 36.859375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-DRV-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-FAN-009",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "02",
+      "device": "Desktop",
+      "view": "sku",
+      "file": "round1/02-Desktop.png",
+      "screenshotSha256": "8d3886072097e9ec8d49c241e91e484bb0e3eb003b8edb12ac64c6594fa87e6b",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1245,
+      "horizontalOverflow": false,
+      "controlsBelow44": 22,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết BOX-001",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "03",
+      "device": "Desktop",
+      "view": "allocation",
+      "file": "round1/03-Desktop.png",
+      "screenshotSha256": "e51bbcb69e3fb258589e2efb8b669af495f8ee36ee6fc3b35cca8702aded430d",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 22,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết BOX-001",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "04",
+      "device": "Desktop",
+      "view": "box",
+      "file": "round1/04-Desktop.png",
+      "screenshotSha256": "3e1d387d218ae572beb6603f571df3eab6ce03779bcf59e4051a50e5aeb105ff",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 4,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "KH-001",
+          "width": 50.328125,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "05",
+      "device": "Desktop",
+      "view": "tray",
+      "file": "round1/05-Desktop.png",
+      "screenshotSha256": "b2ace636de0ab02b7dfd73a554e616d5e26232a7f9381332bf1a1c0e2709a598",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 5,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết BOX-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Previous page",
+          "width": 29.90625,
+          "height": 36
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "06",
+      "device": "Desktop",
+      "view": "movement",
+      "file": "round1/06-Desktop.png",
+      "screenshotSha256": "732a1f71f10c54e94ff377ba3dcccdd5fe388fcec3773d38a7c890b35d0b4192",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 4,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Previous page",
+          "width": 29.90625,
+          "height": 36
+        },
+        {
+          "name": "Next page",
+          "width": 29.890625,
+          "height": 36
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "07",
+      "device": "Desktop",
+      "view": "reconcile",
+      "file": "round1/07-Desktop.png",
+      "screenshotSha256": "c6f26d29439d88fb5c5249e655117abdc9cd6f9d3145704aca4c5b901c7c55b0",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1153,
+      "horizontalOverflow": false,
+      "controlsBelow44": 21,
+      "smallControlExamples": [
+        {
+          "name": "SKU ↑",
+          "width": 36.859375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-DRV-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-FAN-009",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "08",
+      "device": "Desktop",
+      "view": "difference",
+      "file": "round1/08-Desktop.png",
+      "screenshotSha256": "5add6989a325d98c30236b3617ddfd055b99e6f0b248a453186c79073e005579",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1318,
+      "horizontalOverflow": false,
+      "controlsBelow44": 3,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Previous page",
+          "width": 29.90625,
+          "height": 36
+        },
+        {
+          "name": "Next page",
+          "width": 29.890625,
+          "height": 36
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "09",
+      "device": "Desktop",
+      "view": "history",
+      "file": "round1/09-Desktop.png",
+      "screenshotSha256": "50bd48ca7f8045e55596af8b2b41bbdc5c19ae52c4d0246c61c87462eaa73e0a",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 11,
+      "smallControlExamples": [
+        {
+          "name": "Xem chi tiết DS-20261028-01",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Xem chi tiết DS-20261027-01",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Xem chi tiết DS-20261026-01",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Xem chi tiết DS-20261025-01",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "10",
+      "device": "Desktop",
+      "view": "snapshot",
+      "file": "round1/10-Desktop.png",
+      "screenshotSha256": "1b33e7c9d8425d92f9b6cf0276bc71847e051a217e90f06ac72aef936cb1d592",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 21,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-DRV-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-PSU-002",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "11",
+      "device": "Desktop",
+      "view": "stock",
+      "file": "round1/11-Desktop.png",
+      "screenshotSha256": "c667fd6c192dae53ea4678cd58cbde91432f148ac5bf75b6780da6b81798562d",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "12",
+      "device": "Desktop",
+      "view": "stock",
+      "file": "round1/12-Desktop.png",
+      "screenshotSha256": "f21a470eb76b59bdc0e53cd2314db3baabbd38e744fb8e605e9466f375b7c393",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "13",
+      "device": "Desktop",
+      "view": "stock",
+      "file": "round1/13-Desktop.png",
+      "screenshotSha256": "cb42e68c22eeb365dcc9d173ca43f92182d25ce044963fb6cc08af3bd0be5aba",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "14",
+      "device": "Desktop",
+      "view": "stock",
+      "file": "round1/14-Desktop.png",
+      "screenshotSha256": "a4eeb5e094e5036937d83c457c3d682ea428428ffb6724141d375ce53f2b8797",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "15",
+      "device": "Desktop",
+      "view": "history",
+      "file": "round1/15-Desktop.png",
+      "screenshotSha256": "3b4297112c14f94da1ab3f44cd2d2774b8f9b282b00a3d5a19de144935cb828d",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "16",
+      "device": "Desktop",
+      "view": "box",
+      "file": "round1/16-Desktop.png",
+      "screenshotSha256": "a8fc1d4f41ebc516ae7aa477a9917f8347b632cf15c057335f98dfc04f0a27d9",
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1
+      },
+      "pageHeight": 1128,
+      "horizontalOverflow": false,
+      "controlsBelow44": 1,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "view": "stock",
+      "file": "round1/01-Tablet.png",
+      "screenshotSha256": "bcc629b99661970590c0b379912c4cf823fd6619be195a2f5273f3ad889fe682",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 3124,
+      "horizontalOverflow": false,
+      "controlsBelow44": 20,
+      "smallControlExamples": [
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-DRV-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-FAN-009",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-FAN-009",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "view": "sku",
+      "file": "round1/02-Tablet.png",
+      "screenshotSha256": "38d75d1d2384a3e5da1d944404a79d0cc4078951c10d8fab040ea81598ca9bd0",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 2814,
+      "horizontalOverflow": false,
+      "controlsBelow44": 22,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết BOX-001",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "view": "allocation",
+      "file": "round1/03-Tablet.png",
+      "screenshotSha256": "b07c5746179e44d88327c928ec19b70cd34d09fe4a7cb0b895387d869601e4cb",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 2681,
+      "horizontalOverflow": false,
+      "controlsBelow44": 22,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết BOX-001",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "view": "box",
+      "file": "round1/04-Tablet.png",
+      "screenshotSha256": "1ad353b63dd108dc4f90d13deb4fe9ff0fa33178b5c3edf70b4c3ba09e9ae177",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 4,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "KH-001",
+          "width": 50.328125,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "view": "tray",
+      "file": "round1/05-Tablet.png",
+      "screenshotSha256": "361e860c61272ea6ea7cefad1367d6be623cefca34067a9b1ec3259384d36ff5",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 5,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép BOX-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết BOX-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Previous page",
+          "width": 29.90625,
+          "height": 36
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "view": "movement",
+      "file": "round1/06-Tablet.png",
+      "screenshotSha256": "b45576dbfa2801c78c0935eea6e9ceb697fda93e5c593b7b06d40029385eca5a",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 2591,
+      "horizontalOverflow": false,
+      "controlsBelow44": 4,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Previous page",
+          "width": 29.90625,
+          "height": 36
+        },
+        {
+          "name": "Next page",
+          "width": 29.890625,
+          "height": 36
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "view": "reconcile",
+      "file": "round1/07-Tablet.png",
+      "screenshotSha256": "85221230e75fdddef7166888aeb1333be8b41c761745c72db1e96abdd27b819a",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 3291,
+      "horizontalOverflow": false,
+      "controlsBelow44": 20,
+      "smallControlExamples": [
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-DRV-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-FAN-009",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-FAN-009",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "view": "difference",
+      "file": "round1/08-Tablet.png",
+      "screenshotSha256": "c325ec46b937444984b6671800387707bddf81141b417ba0c6f81a1a5cf18eb5",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 2958,
+      "horizontalOverflow": false,
+      "controlsBelow44": 3,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Previous page",
+          "width": 29.90625,
+          "height": 36
+        },
+        {
+          "name": "Next page",
+          "width": 29.890625,
+          "height": 36
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "view": "history",
+      "file": "round1/09-Tablet.png",
+      "screenshotSha256": "06b0cac1f4517386f82eb4a3c30df2c71c147a6d998718b6d6c9ea532684e809",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 2544,
+      "horizontalOverflow": false,
+      "controlsBelow44": 11,
+      "smallControlExamples": [
+        {
+          "name": "Xem chi tiết DS-20261028-01",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Xem chi tiết DS-20261027-01",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Xem chi tiết DS-20261026-01",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Xem chi tiết DS-20261025-01",
+          "width": 34.015625,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "view": "snapshot",
+      "file": "round1/10-Tablet.png",
+      "screenshotSha256": "1390db8ec52ce24adc9430e549e8c8ba0c263b05b5278c48158765bc8414c7a0",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 3312,
+      "horizontalOverflow": false,
+      "controlsBelow44": 21,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-DRV-001",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "name": "Xem chi tiết HN-DRV-001",
+          "width": 34.015625,
+          "height": 22
+        },
+        {
+          "name": "Sao chép HN-PSU-002",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "view": "stock",
+      "file": "round1/11-Tablet.png",
+      "screenshotSha256": "c07e789425a68d4007022fa7987c5c7f855d1e308842ca96755e8d21823d7f56",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "view": "stock",
+      "file": "round1/12-Tablet.png",
+      "screenshotSha256": "88882d6e21c0ee21bdfeaa41008ada8facd46d5702c1b3b2f6fae9322afcf6fe",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "13",
+      "device": "Tablet",
+      "view": "stock",
+      "file": "round1/13-Tablet.png",
+      "screenshotSha256": "fbf66f50bb9f83fc17bb3cd49bf0f03a592b2a645180d9f0d0e105a005b71dbd",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "14",
+      "device": "Tablet",
+      "view": "stock",
+      "file": "round1/14-Tablet.png",
+      "screenshotSha256": "c97c554538901b1cdc0a26dc5af1cd0c5f7e9d7d11e67430dd29261ba19d3d98",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "15",
+      "device": "Tablet",
+      "view": "history",
+      "file": "round1/15-Tablet.png",
+      "screenshotSha256": "47976c30433f523a39aab245b1bde59c234813b46fb0cf3b28e4a898fd84ad5e",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 0,
+      "smallControlExamples": [],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "id": "16",
+      "device": "Tablet",
+      "view": "box",
+      "file": "round1/16-Tablet.png",
+      "screenshotSha256": "dca5279173a2a68b443e28b16f9e6440c11256c592a2b4337735a9a11c86a893",
+      "viewport": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2
+      },
+      "pageHeight": 1338,
+      "horizontalOverflow": false,
+      "controlsBelow44": 1,
+      "smallControlExamples": [
+        {
+          "name": "← Quay lại",
+          "width": 69.734375,
+          "height": 22
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    }
+  ]
+}

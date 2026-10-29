@@ -1,0 +1,1930 @@
+{
+  "task": "HN-INVENTORY-32REF-001",
+  "reviewer": "independent S00#3",
+  "stage": "final-build-3f8cf44",
+  "authoritativeFinal": true,
+  "excludedInvalidStage": "final-baebfc4",
+  "priorValidStage": "final-build-baebfc4",
+  "sourceCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "captureManifestSha256": "d8bbb4e9d5d0943f9ff6d45c72dd0ebc7e5b5ebb345d805340cf6f4694602d9d",
+  "captureProvenance": {
+    "baseSha": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+    "diffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sourceHashes": {
+      "src/app/App.tsx": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23",
+      "src/features/S16/approved/InventoryDesignWorkspace.tsx": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285",
+      "src/features/S16/approved/approved.css": "6a9e82331b14bfaa0bba5f12433f70e7e0c121751fe392107d58f2eb0a6a81b5",
+      "src/features/S16/approved/adapter.ts": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    }
+  },
+  "sourceChecks": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23",
+      "captureMatch": true
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285",
+      "captureMatch": true
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "6a9e82331b14bfaa0bba5f12433f70e7e0c121751fe392107d58f2eb0a6a81b5",
+      "captureMatch": true
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433",
+      "captureMatch": true
+    }
+  ],
+  "build": {
+    "buildId": "ec7027a6f60c22cd53ab541636359823832a48424ecb8e688a39a6e7a52b0dab",
+    "sourceCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+    "buildInfoSha256": "c8ffef37e6bc512d6580a96388020474dea90f3eec3af74b8f48f821e8742eb5",
+    "assets": [
+      {
+        "file": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "match": true
+      },
+      {
+        "file": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "match": true
+      },
+      {
+        "file": "assets/index-0nD5dNFN.js",
+        "sha256": "ccfafa9a7d0cb286b0fc125877e8535eae5dea80999c048a0fc929dc479282d4",
+        "match": true
+      },
+      {
+        "file": "assets/index-CrR7GU2Z.css",
+        "sha256": "684f12362150d60e4ba2da5ffe7e53f1f8fce9d7ec2dace2f77d8fdce977bb4c",
+        "match": true
+      },
+      {
+        "file": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "match": true
+      },
+      {
+        "file": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "match": true
+      },
+      {
+        "file": "index.html",
+        "sha256": "32413ddcc377af3625867db554f70b3377ae6b3ec8c8198a32b27cbb74b8169f",
+        "match": true
+      },
+      {
+        "file": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "match": true
+      }
+    ]
+  },
+  "mode": "MOCK",
+  "captureBase": "http://127.0.0.1:5341",
+  "coreCoverage": 32,
+  "priorManualOriginalReviewCount": 32,
+  "finalRepresentativeManualReviewCount": 4,
+  "geometryNormalization": "Only expected foreground rgb(99,124,152) to rgb(83,109,137); full remaining geometry/text/control fields unchanged",
+  "sourceDelta": "Light feature muted token #637c98 to #536d89 and EOF whitespace trimming only",
+  "sourceEdited": false,
+  "browserRunByReviewer": false,
+  "lockedShellToastDiffVsBase": "EMPTY",
+  "finalDefectCounts": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 3
+  },
+  "results": [
+    {
+      "id": "01",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": true,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/01_Tra_cuu_ton_kho_Desktop.png",
+        "sha256": "9ed899985ca8937794686257312b1d2aa13404ebd4df817de24cba4fb5bac088",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/01-Desktop.png",
+        "bytes": 139407,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "6d9da335cdd2e7e91e1fbf49ce2c48b6b7f2b232b0075e0ebb1700fa54ccfb15"
+      },
+      "full": null,
+      "domSha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 907,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "02",
+      "device": "Desktop",
+      "view": "sku",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/02_Tong_quan_ton_SKU_Desktop.png",
+        "sha256": "b6a3de41aa4e71f8d56464a0c9c277e50168c0bac59a4fa7772cfdf31e5441cc",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/02-Desktop.png",
+        "bytes": 127730,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "5f78b3f07c5f1160b9473d11922deb2525dcacfe2b253abb75430c68a8978b94"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/02-Desktop-full.png",
+        "bytes": 140605,
+        "width": 1920,
+        "height": 1343,
+        "sha256": "0248e238c13001e7548293adeeb9da1f4c6d7a78119c9d2be29ea87672126be0"
+      },
+      "domSha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-sku",
+        "overflow": false,
+        "pageHeight": 1343,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1225.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "03",
+      "device": "Desktop",
+      "view": "allocation",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/03_Phan_bo_theo_BOX_Desktop.png",
+        "sha256": "8cbbf97238d68d5fbbfb37eb63de34dcf2819a76abf3db8da351533c0c2f215a",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/03-Desktop.png",
+        "bytes": 130539,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "6d9e0da4cc661cc873b74e2350902635b558d4c0e2a35f9712fbb7cdde0a0288"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/03-Desktop-full.png",
+        "bytes": 136360,
+        "width": 1920,
+        "height": 1198,
+        "sha256": "a116b46cf79123bf8307df97429d35793f3c9c03aee49c71d55d9a33418e0e8e"
+      },
+      "domSha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-allocation",
+        "overflow": false,
+        "pageHeight": 1198,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1080.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "04",
+      "device": "Desktop",
+      "view": "box",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/04_Chi_tiet_BOX_Desktop.png",
+        "sha256": "5f6c3f066b2a4c1cab280f8f00e329b114b0e259cfb9cd9256ab486e281ae6e0",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/04-Desktop.png",
+        "bytes": 108202,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "4ce5086a4d31a5727679e9e0fdc5ce56d83222d0ab809a6106804122caa9efcc"
+      },
+      "full": null,
+      "domSha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 837,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "05",
+      "device": "Desktop",
+      "view": "tray",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/05_Chi_tiet_khay_Desktop.png",
+        "sha256": "70f8a89a9d2a5c36713f080bba3afca9c2fd70fd13404380892f3f80b825a686",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/05-Desktop.png",
+        "bytes": 97065,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "e4411a59bff2772b0df2b3b9d10c0c64fe1ff130e459c3481984b41a1958588f"
+      },
+      "full": null,
+      "domSha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-tray",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 563,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "06",
+      "device": "Desktop",
+      "view": "movement",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/06_Lich_su_bien_dong_Desktop.png",
+        "sha256": "655181441e55e6b5bc4b462662f4023968cec3ced4d49f63e69a36196d2dd7ca",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/06-Desktop.png",
+        "bytes": 155659,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "f9f10d6de5b44d928cde4b7f4aa028b8716e93dd39bf24179ca23d9ebe689187"
+      },
+      "full": null,
+      "domSha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-movement",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 915.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "07",
+      "device": "Desktop",
+      "view": "reconcile",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/07_Doi_soat_hien_tai_Desktop.png",
+        "sha256": "042c8671e4d46ca28171dc895cda437b7d2efcaa54ef0f3e7437c3e48cfa9849",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/07-Desktop.png",
+        "bytes": 156450,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "17d6ea9a185ea77c918e1987caf4053a80732ea106ac40f20b4b638bde8ee02a"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/07-Desktop-full.png",
+        "bytes": 160391,
+        "width": 1920,
+        "height": 1198,
+        "sha256": "e5c893daf800c4bf633b99d3866d2baaddf1f3a5c28dd5c056b7e4fd954a38fd"
+      },
+      "domSha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-reconcile",
+        "overflow": false,
+        "pageHeight": 1198,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1080,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "08",
+      "device": "Desktop",
+      "view": "difference",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/08_Chi_tiet_chenh_lech_Desktop.png",
+        "sha256": "2588704f6f06c53b587d4464d22c2a1a09480f29738009ec8b30f71b78fd8e69",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/08-Desktop.png",
+        "bytes": 138992,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "4bf8bf5a67c19ca0feecd1fa03715aa4b294f205e2f95f8a08027841a21d3804"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/08-Desktop-full.png",
+        "bytes": 151663,
+        "width": 1920,
+        "height": 1343,
+        "sha256": "ed18862cc2572090ed458a4016f475c2f01b07dc74681e25e849b4c3eb6afd1d"
+      },
+      "domSha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-difference",
+        "overflow": false,
+        "pageHeight": 1343,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1225,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "09",
+      "device": "Desktop",
+      "view": "history",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/09_Lich_su_doi_soat_Desktop.png",
+        "sha256": "7b410e96bb35bf98ffb85cf1894c89884713445601a6fe82f328884a68b21b6c",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/09-Desktop.png",
+        "bytes": 145524,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "40060537667f72dad01118f0194ff00e77b4128782ed424112b1d0d6d13fcf50"
+      },
+      "full": null,
+      "domSha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 885,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "10",
+      "device": "Desktop",
+      "view": "snapshot",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/10_Chi_tiet_lich_su_doi_soat_Desktop.png",
+        "sha256": "308ac0633b92d3b44d7cc7ec2a8ed78d096c7c31413f15c2efa11eae36534d14",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/10-Desktop.png",
+        "bytes": 157236,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "9c0cba104e2a04b9200d5590431bf212f019ff32714e53d405f2ae1a71b38069"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/10-Desktop-full.png",
+        "bytes": 161206,
+        "width": 1920,
+        "height": 1203,
+        "sha256": "6cae84d990d763f4efa003b9b7fe387f3f6ab3c22438e38da726126254d8a1e4"
+      },
+      "domSha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-snapshot",
+        "overflow": false,
+        "pageHeight": 1203,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1085,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "11",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/11_Loading_Desktop.png",
+        "sha256": "a01885e6a490ffe36a79c107811f94e967a725515d49d71558224dc189e5f1ca",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/11-Desktop.png",
+        "bytes": 89759,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "e0faccc904592b5c89738b591f45a6e3e13ae1d5d0b2f5086be6d805457ae0d2"
+      },
+      "full": null,
+      "domSha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 752.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "12",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/12_Empty_Desktop.png",
+        "sha256": "9114106994af5193b09ef18a3762098b0677fe3d46be13b5c1e3f3928b1869ce",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/12-Desktop.png",
+        "bytes": 92698,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "8d0462518a69f4d2349f91ebe62ab06726a636f033cdab9ff3ad93b3f378b33d"
+      },
+      "full": null,
+      "domSha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 587,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "13",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/13_No_result_Desktop.png",
+        "sha256": "973bdf6309f7d0558f9a395e3020ef70787e433daa8ea738817501f2eaf37141",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/13-Desktop.png",
+        "bytes": 95066,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "95a90854c231f456dab0ac41db8d6201df726b61cfa03c3c9197290a9648a881"
+      },
+      "full": null,
+      "domSha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 587,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "14",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": true,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/14_Load_error_Desktop.png",
+        "sha256": "ccf101912100acb5a592cc1c39ed874a57671aa86e850c8b078a4ed065350d47",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/14-Desktop.png",
+        "bytes": 92378,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "ebe8b2878db6232f32ae13e3cf366db40ed8dbc8563d438a9041972d20ed2746"
+      },
+      "full": null,
+      "domSha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 587,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "15",
+      "device": "Desktop",
+      "view": "history",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/15_Forbidden_Desktop.png",
+        "sha256": "804e8d61bbd15b010a88ef7e161a6aab01f0b309b591d6049beb64b271ad2d3b",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/15-Desktop.png",
+        "bytes": 87653,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "2176889862f0ff4496287b9be3496c92065a2635a29c28ba443c88e784199d49"
+      },
+      "full": null,
+      "domSha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 447,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "16",
+      "device": "Desktop",
+      "view": "box",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Desktop/16_Not_found_Desktop.png",
+        "sha256": "b7153260f9cabd37d07ab9cce808f8eef4f660bcf7d6f2b65032f04aa7e1c7aa",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/16-Desktop.png",
+        "bytes": 84252,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "aa8b65243215cb309ef9837657a3b8d0b042232c36818ce3606cd762042b1a13"
+      },
+      "full": null,
+      "domSha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 437,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/01_Tra_cuu_ton_kho_Tablet.png",
+        "sha256": "96af162f1ae4017c6d8f21a54f6282d251782759b807b3d519c480ad1991b84a",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/01-Tablet.png",
+        "bytes": 266379,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "463744710320d17a9c74735fbf5ea4aa7a414a75a78dece45a8f732c375f0da0"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/01-Tablet-full.png",
+        "bytes": 266630,
+        "width": 1600,
+        "height": 2594,
+        "sha256": "876920f2e31ed7a8292e7e6bd0f487540e745b0e273cfabb0abe3509e8e03533"
+      },
+      "domSha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1297,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1153,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "view": "sku",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": true,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/02_Tong_quan_ton_SKU_Tablet.png",
+        "sha256": "46596d82ad3054c62d193a13c747b5ea3d03712873a74ac6fe8d53ee55997e53",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/02-Tablet.png",
+        "bytes": 173753,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "5e9ea81f4dd7fd36c5a81f41f71ade645a809a1de84f9c5b169dad7ce0748841"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/02-Tablet-full.png",
+        "bytes": 179044,
+        "width": 1600,
+        "height": 2740,
+        "sha256": "12b1c082d43e91de81b35ab7ada54dab38ea64acaaa93f2140f98d90581e3b91"
+      },
+      "domSha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-sku",
+        "overflow": false,
+        "pageHeight": 1370,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1226.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "view": "allocation",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/03_Phan_bo_theo_BOX_Tablet.png",
+        "sha256": "511c2909b7f93e13159df5ab37d76282b561dd157c09d7853e998ccce3bb02d1",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/03-Tablet.png",
+        "bytes": 234406,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "5a3afcf6d0b9e945c7d6c5cea9c4747ecd79fbe4a2d0eb682c23b3c88b9e8c6b"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/03-Tablet-full.png",
+        "bytes": 269506,
+        "width": 1600,
+        "height": 3118,
+        "sha256": "76da86713da56ebcadd1a0a031bc5a29c9465f07d20ab77dba753153612bc9e5"
+      },
+      "domSha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-allocation",
+        "overflow": false,
+        "pageHeight": 1559,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1415.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "view": "box",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/04_Chi_tiet_BOX_Tablet.png",
+        "sha256": "cd992967108ee75f6b743acd0934c15b944dd46f96846cbd89b07c9f1266c907",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/04-Tablet.png",
+        "bytes": 129667,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "fd20fd2c164fd8c399d008aafd6c9955ff2439ffe22a9df25a7fb0312c9b5c21"
+      },
+      "full": null,
+      "domSha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 920,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "view": "tray",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/05_Chi_tiet_khay_Tablet.png",
+        "sha256": "cc1aa68e475385eb3efc08ee3e5dfbde3b3b3ca44cae4891bae828a26abd3708",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/05-Tablet.png",
+        "bytes": 105089,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "996ad8f1d7908f200d0d452ed5a3d70fe8272b438cfe735c21292d8b01e015a9"
+      },
+      "full": null,
+      "domSha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-tray",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 524,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "view": "movement",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/06_Lich_su_bien_dong_Tablet.png",
+        "sha256": "4a898932401e3f428c78282312e86fbf8e35b80f6f8b6d9d2b1ba6d31e355307",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/06-Tablet.png",
+        "bytes": 302217,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "895ef4e9ba292d37d60eb9beae849b6cb87f960089d0dc3a514af29d3235859d"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/06-Tablet-full.png",
+        "bytes": 374184,
+        "width": 1600,
+        "height": 3208,
+        "sha256": "31ea93e0a480dd9284a46111c041f42956061fe1f68f6b6b6a6dbf05a5f4be76"
+      },
+      "domSha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-movement",
+        "overflow": false,
+        "pageHeight": 1604,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1460.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "view": "reconcile",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/07_Doi_soat_hien_tai_Tablet.png",
+        "sha256": "8bc3b8594ceba10e028777c54dfa5aa566a860e1d27ecf0dbd77780168e5437d",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/07-Tablet.png",
+        "bytes": 281953,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "90ac1c0d70013edb54f22bc91a3b5aefaa61787bcd1721d8d12603cce9e2f106"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/07-Tablet-full.png",
+        "bytes": 317872,
+        "width": 1600,
+        "height": 3028,
+        "sha256": "45906955c5119a089cd0828a0fafba8d83428f04f34a5e84a0c9dc742181532a"
+      },
+      "domSha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-reconcile",
+        "overflow": false,
+        "pageHeight": 1514,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1370,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "view": "difference",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": true,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/08_Chi_tiet_chenh_lech_Tablet.png",
+        "sha256": "2f7520fb2c990da5a690aac3534c9ddd6de8e5e16ef25eb18c1d57383e6f0ef8",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/08-Tablet.png",
+        "bytes": 255603,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "d9d1343cc6df57fdf0bff84c9a735d46bdaaaa9bcd5884e404cbd7d8841c4423"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/08-Tablet-full.png",
+        "bytes": 279535,
+        "width": 1600,
+        "height": 3042,
+        "sha256": "772d5e927b7861d408dd3ac8da89af04a336f0e6f2076b6500e70734819d9a27"
+      },
+      "domSha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-difference",
+        "overflow": false,
+        "pageHeight": 1521,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1377,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "view": "history",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/09_Lich_su_doi_soat_Tablet.png",
+        "sha256": "902cac4f4c2811753f2e6dd8b23084cf35ff814c093abfc1be46059b7ff22ea9",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/09-Tablet.png",
+        "bytes": 264544,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "f0729986af7a7b0a7490ddea84db5f41e8482d135b226b128b00ad8910211ba8"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/09-Tablet-full.png",
+        "bytes": 318609,
+        "width": 1600,
+        "height": 3162,
+        "sha256": "d78932b0c7b756b355f66ca727c8d5e243ed324af50485be18ac596b8d2535c9"
+      },
+      "domSha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1581,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1437,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "view": "snapshot",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/10_Chi_tiet_lich_su_doi_soat_Tablet.png",
+        "sha256": "dc6cedbb600275c6c23644b1db988934ee09045c2b8b4d4c3fd68963bc24a6e7",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/10-Tablet.png",
+        "bytes": 288670,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "dee1250300d84a6916332fc56da4be89ad28dc062873a8379d10f32be337d19e"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/10-Tablet-full.png",
+        "bytes": 318086,
+        "width": 1600,
+        "height": 2962,
+        "sha256": "ca04986f44231fa0e0f6cb056a65937df676c53619f307ae362150d64b0d8437"
+      },
+      "domSha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-snapshot",
+        "overflow": false,
+        "pageHeight": 1481,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1337,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/11_Loading_Tablet.png",
+        "sha256": "0534058b2270b624831eac4a4a1c51070e9925d2cc29925c3fdfb1cd133aed9e",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/11-Tablet.png",
+        "bytes": 85700,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "b3af8436246ceceb595556bbf369f13979e6d99023a8746e157ec084b5d8ddb8"
+      },
+      "full": null,
+      "domSha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 720.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/12_Empty_Tablet.png",
+        "sha256": "67ec5b58dce86b5adf3b67e525e549d274b12f941f14f181a9d0c8c292d188b9",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/12-Tablet.png",
+        "bytes": 94611,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "780922bd394591234ac773fbe9f78bc833d8d3a8a8823302c5992a5167eb5b9d"
+      },
+      "full": null,
+      "domSha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 571,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "13",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/13_No_result_Tablet.png",
+        "sha256": "c8a97f64157ce09f298634398ca3c55ea32f81ab6974b29ba901c38b1d16b2c1",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/13-Tablet.png",
+        "bytes": 99760,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "1c3f0f5eebc72e6c2fae87ff28d735c9c1d99c8fee18af06ce4dfbfeb9fd66dd"
+      },
+      "full": null,
+      "domSha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 571,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "14",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/14_Load_error_Tablet.png",
+        "sha256": "c1c747aa7e9fb6896e9d17812d42e5452be9771d659c535aa07b5a6e911f499d",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/14-Tablet.png",
+        "bytes": 93484,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "0c4644a7a97ae032a72e1c917ccd3afdad2d2d521d5c97cece75eb228caa140c"
+      },
+      "full": null,
+      "domSha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 571,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "15",
+      "device": "Tablet",
+      "view": "history",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/15_Forbidden_Tablet.png",
+        "sha256": "98fca41f08739e2bd2b797dc96508e2c6928f10a5fbe5cbe6bc2eda7732b8ed2",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/15-Tablet.png",
+        "bytes": 83799,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "35a08a7b08ed9382262962d187758f861da70386d18f4a2c9f2236ea9909c996"
+      },
+      "full": null,
+      "domSha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 431,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "16",
+      "device": "Tablet",
+      "view": "box",
+      "reviewCoverage": "Prior all32 manual review; final source delta verified color-only plus EOF trim; all32 geometry compared excluding expected muted color; representative final images reopened",
+      "finalRepresentativeManuallyViewed": false,
+      "geometryIdenticalToBaebfc49ExcludingExpectedMutedColor": true,
+      "reference": {
+        "file": "Tablet/16_Not_found_Tablet.png",
+        "sha256": "54a05fd43f2d5942ce9a37ccf206d853eeab37086b7a605f0108841e43b14a96",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-3f8cf44/16-Tablet.png",
+        "bytes": 75575,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "8d9bff7cc24cd456e289b25f6b79e536c35aa5895b584eb21a4ff8588142989d"
+      },
+      "full": null,
+      "domSha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 421,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    }
+  ],
+  "mutedContrastReceipt": {
+    "functionalSourceCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+    "functionalSourceUnchanged": true,
+    "computedStyleCheck": "PASS",
+    "observationFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-3f8cf44/critical-contrast-reflow/muted-contrast-observation.json",
+    "observationSha256": "8661e9928df04de4e350683ef762475bca1e22a47c27bbc2be36452a121926ab",
+    "computedSamples": [
+      {
+        "theme": "light",
+        "selector": ".iad-metrics span",
+        "foreground": "rgb(83, 109, 137)",
+        "background": "rgb(255, 255, 255)",
+        "fontSize": "12px",
+        "text": "Tồn thực tế",
+        "ratio": 5.361951918115458
+      },
+      {
+        "theme": "light",
+        "selector": ".iad-heading small",
+        "foreground": "rgb(83, 109, 137)",
+        "background": "rgb(238, 245, 250)",
+        "fontSize": "11px",
+        "text": "Thời điểm số liệu: 14:25 28/10/2026",
+        "ratio": 4.870903648337635
+      },
+      {
+        "theme": "dark",
+        "selector": ".iad-metrics span",
+        "foreground": "rgb(164, 183, 201)",
+        "background": "rgb(29, 48, 66)",
+        "fontSize": "12px",
+        "text": "Tồn thực tế",
+        "ratio": 6.561984136000987
+      },
+      {
+        "theme": "dark",
+        "selector": ".iad-heading small",
+        "foreground": "rgb(164, 183, 201)",
+        "background": "rgb(20, 35, 51)",
+        "fontSize": "11px",
+        "text": "Thời điểm số liệu: 14:25 28/10/2026",
+        "ratio": 7.735669321820835
+      }
+    ],
+    "broaderReflowStressResult": "FAIL",
+    "broaderReflowNotWaived": true
+  }
+}

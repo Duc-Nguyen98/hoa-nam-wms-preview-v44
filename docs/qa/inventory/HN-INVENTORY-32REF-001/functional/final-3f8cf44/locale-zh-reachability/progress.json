@@ -1,0 +1,122 @@
+{
+  "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "beforeSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "6a9e82331b14bfaa0bba5f12433f70e7e0c121751fe392107d58f2eb0a6a81b5"
+    }
+  ],
+  "checks": [
+    {
+      "name": "tablet: narrowed viewport pointer reachability diagnostic",
+      "status": "PASS",
+      "detail": [
+        {
+          "width": 768,
+          "height": 1024,
+          "left": 685,
+          "right": 731,
+          "viewport": 768,
+          "documentWidth": 768,
+          "ancestors": [
+            {
+              "className": "iad-card iad-table-wrap ",
+              "overflowX": "hidden",
+              "clientWidth": 720,
+              "scrollWidth": 720
+            }
+          ],
+          "pointerSucceeded": true,
+          "pointerError": null
+        },
+        {
+          "width": 400,
+          "height": 640,
+          "left": 535,
+          "right": 581,
+          "viewport": 400,
+          "documentWidth": 400,
+          "ancestors": [
+            {
+              "className": "iad-card iad-table-wrap ",
+              "overflowX": "hidden",
+              "clientWidth": 360,
+              "scrollWidth": 563
+            }
+          ],
+          "pointerSucceeded": true,
+          "pointerError": null
+        }
+      ]
+    },
+    {
+      "name": "tablet: zh-CN/light/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/light/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: zh-CN/dark/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    }
+  ],
+  "errors": []
+}

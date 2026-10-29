@@ -1,0 +1,69 @@
+{
+  "sku": "HN-PSU-002",
+  "knownActual": 340,
+  "fixtureBoxCoverage": 0,
+  "overview": [
+    {
+      "label": "Tồn thực tế",
+      "value": "340"
+    },
+    {
+      "label": "Đã giữ",
+      "value": "50"
+    },
+    {
+      "label": "Khả dụng",
+      "value": "290"
+    },
+    {
+      "label": "Tổng số BOX",
+      "value": "0"
+    },
+    {
+      "label": "Tổng số khay",
+      "value": "0"
+    },
+    {
+      "label": "Tổng số vị trí",
+      "value": "0"
+    },
+    {
+      "label": "Tồn thực tế",
+      "value": "0"
+    },
+    {
+      "label": "Đã giữ",
+      "value": "0"
+    },
+    {
+      "label": "Khả dụng",
+      "value": "0"
+    }
+  ],
+  "allocation": [
+    {
+      "label": "Tồn thực tế",
+      "value": "340"
+    },
+    {
+      "label": "Đã giữ",
+      "value": "50"
+    },
+    {
+      "label": "Khả dụng",
+      "value": "290"
+    },
+    {
+      "label": "Tồn thực tế",
+      "value": "0"
+    },
+    {
+      "label": "Đã giữ",
+      "value": "0"
+    },
+    {
+      "label": "Khả dụng",
+      "value": "0"
+    }
+  ]
+}

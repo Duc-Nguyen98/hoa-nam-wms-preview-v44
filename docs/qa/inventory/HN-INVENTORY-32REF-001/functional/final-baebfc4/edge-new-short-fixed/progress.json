@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "name": "new movement keyword no-match uses shared no-results state",
+      "status": "PASS"
+    },
+    {
+      "name": "saved-result zero-count tab uses shared no-results state",
+      "status": "PASS"
+    },
+    {
+      "name": "current difference rejects SKU outside propagated warehouse scope",
+      "status": "PASS"
+    },
+    {
+      "name": "non-DRV allocation coverage is unknown rather than false zero balances/counts",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

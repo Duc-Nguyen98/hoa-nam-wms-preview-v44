@@ -1,0 +1,20 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inventory component contract harness</title></head><body><div id="root"></div><script type="module">
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import {InventoryDesignWorkspace} from '/src/features/S16/approved/InventoryDesignWorkspace.tsx';
+import {createInventoryDesignAdapter} from '/src/features/S16/approved/adapter.ts';
+import {GlobalToastProvider} from '/src/toast/GlobalToastProvider.tsx';
+import {ShellPreferencesRuntime} from '/src/shared/ShellPreferencesRuntime.tsx';
+import '/src/shared/styles.css';
+import '/src/shared/unified.css';
+import '/src/shared/components.css';
+const original=createInventoryDesignAdapter();const p=new URLSearchParams(location.search),which=p.get('case');
+let adapter=original;window.inventoryQaRetryCount=0;
+if(which==='retry')adapter={...original,scenario:'error',retry:async()=>{window.inventoryQaRetryCount++;await new Promise(r=>setTimeout(r,100));if(window.inventoryQaRetryCount===1)throw Error('fixture-persistent-read-error');return 'ready';}};
+if(which==='snapshot')adapter={...original,skus:original.skus.map(row=>row.sku==='HN-DRV-001'?{...row,actual:240,held:20,count:240}:row),boxes:original.boxes.map(box=>({...box,actual:box.actual*2,count:box.actual*2}))};
+if(which==='pagination')adapter={...original,skus:[...original.skus,...[1,2,3].map(i=>({...original.skus[0],sku:'ZZ-QA-'+i,name:'Additional page contract item '+i}))],allocationCoverage:[...original.allocationCoverage,...[1,2,3].map(i=>({sku:'ZZ-QA-'+i,status:'unavailable'}))]};
+if(which==='long'){const code='LONG-'+('ABCDEFGHIJ-'.repeat(18));adapter={...original,skus:[{...original.skus[0],sku:code,name:'Long code contract item'}],boxes:[],allocationCoverage:[{sku:code,status:'unavailable'}]};}
+if(which==='complete-zero')adapter={...original,skus:original.skus.map(row=>row.sku==='HN-DRV-001'?{...row,actual:0,held:0,count:0}:row),boxes:[]};
+window.inventoryQaOriginal=original;window.inventoryQaAdapter=adapter;
+createRoot(document.getElementById('root')).render(React.createElement(ShellPreferencesRuntime,null,React.createElement(GlobalToastProvider,null,React.createElement(InventoryDesignWorkspace,{adapter}))));
+</script></body></html>

@@ -1,0 +1,25 @@
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 build
+> npm run typecheck && vite build && node scripts/write-build-info.mjs
+
+
+> hoa-nam-wms-b17-public-candidate@0.1.0-b17-public.2 typecheck
+> tsc --noEmit
+
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 621 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                           0.91 kB │ gzip:   0.48 kB
+dist/assets/index-B-3qk8Ry.css          611.65 kB │ gzip:  92.51 kB
+dist/assets/hoa-nam-xlsx-4YPyl83_.js     18.76 kB │ gzip:   7.66 kB
+dist/assets/index-BpvQRHXA.js         2,318.23 kB │ gzip: 630.89 kB
+
+✓ built in 1.72s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+{"release":"HN-B17-PUBLIC-CANDIDATE-20261024.2","buildId":"740f0e00ec66eaee2d452b90852aef608d736bcb85ffdb3af9b0400c5cda3a43","assets":15}

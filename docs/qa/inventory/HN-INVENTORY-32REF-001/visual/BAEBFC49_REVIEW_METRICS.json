@@ -1,0 +1,1914 @@
+{
+  "task": "HN-INVENTORY-32REF-001",
+  "reviewer": "independent S00#3",
+  "stage": "final-build-baebfc4",
+  "authoritativeFinal": true,
+  "excludedInvalidStage": "final-baebfc4",
+  "sourceCommit": "baebfc49aa15452a4c2720b62e045f6301bfb49e",
+  "captureManifestSha256": "088619b520c8f8bba34f616d39e43166dddd800a9f85cac128f90650661d294b",
+  "captureProvenance": {
+    "baseSha": "baebfc49aa15452a4c2720b62e045f6301bfb49e",
+    "diffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sourceHashes": {
+      "src/app/App.tsx": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23",
+      "src/features/S16/approved/InventoryDesignWorkspace.tsx": "bac516946748b1283a71234270ea464050cacc2d3428888df5b888ac13615605",
+      "src/features/S16/approved/approved.css": "ef8914572ef9733790453d35c08fca217ca2a6f59c71abd43a2b3baef77628c7",
+      "src/features/S16/approved/adapter.ts": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    }
+  },
+  "sourceChecks": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23",
+      "captureMatch": true
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "bac516946748b1283a71234270ea464050cacc2d3428888df5b888ac13615605",
+      "captureMatch": true
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "ef8914572ef9733790453d35c08fca217ca2a6f59c71abd43a2b3baef77628c7",
+      "captureMatch": true
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433",
+      "captureMatch": true
+    }
+  ],
+  "build": {
+    "buildId": "dff490a047a3915d0313c55dbe00b03cb078692e5167aecf667285a466fb045b",
+    "sourceCommit": "baebfc49aa15452a4c2720b62e045f6301bfb49e",
+    "buildInfoSha256": "44836ee49dbac9b09c43f7f6649add4c011b69f483ccbea864a28e60f2368a27",
+    "assets": [
+      {
+        "file": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "match": true
+      },
+      {
+        "file": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "match": true
+      },
+      {
+        "file": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "match": true
+      },
+      {
+        "file": "assets/index-B-3qk8Ry.css",
+        "sha256": "a57448b34087775df4e3f844c3c37d68b9337f3af2c06df5dcfc221649776c80",
+        "match": true
+      },
+      {
+        "file": "assets/index-Dnn6s9ij.js",
+        "sha256": "ccfafa9a7d0cb286b0fc125877e8535eae5dea80999c048a0fc929dc479282d4",
+        "match": true
+      },
+      {
+        "file": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "match": true
+      },
+      {
+        "file": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "match": true
+      },
+      {
+        "file": "index.html",
+        "sha256": "79685825f8fd78127624bc36b5ace96e8f13ed4f23999fafccd664da211b0c4c",
+        "match": true
+      },
+      {
+        "file": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "match": true
+      }
+    ]
+  },
+  "mode": "MOCK",
+  "captureBase": "http://127.0.0.1:5341",
+  "coreCoverage": 32,
+  "priorManualOriginalReviewCount": 32,
+  "finalFixedIdenticalCount": 28,
+  "finalChangedDirectReviewCount": 4,
+  "sourceEdited": false,
+  "browserRunByReviewer": false,
+  "lockedShellToastDiffVsBase": "EMPTY",
+  "cssByteUnchangedVsRound3": true,
+  "finalDefectCounts": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 3
+  },
+  "results": [
+    {
+      "id": "01",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/01_Tra_cuu_ton_kho_Desktop.png",
+        "sha256": "9ed899985ca8937794686257312b1d2aa13404ebd4df817de24cba4fb5bac088",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/01-Desktop.png",
+        "bytes": 139412,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "b9d7167b82fedfdf1fd4f164328a80bf80bbee087fd985e5c22901e57f095871"
+      },
+      "full": null,
+      "domSha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 907,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "02",
+      "device": "Desktop",
+      "view": "sku",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/02_Tong_quan_ton_SKU_Desktop.png",
+        "sha256": "b6a3de41aa4e71f8d56464a0c9c277e50168c0bac59a4fa7772cfdf31e5441cc",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/02-Desktop.png",
+        "bytes": 127812,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "902cf4497d3ce6ec7162d2dc364f5bef17f0b595155a10eccbfeb5322f964516"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/02-Desktop-full.png",
+        "bytes": 140699,
+        "width": 1920,
+        "height": 1343,
+        "sha256": "591b532c406813087f4048d942e0e183813d27b093c046145aff9b98438d877b"
+      },
+      "domSha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-sku",
+        "overflow": false,
+        "pageHeight": 1343,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1225.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "03",
+      "device": "Desktop",
+      "view": "allocation",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/03_Phan_bo_theo_BOX_Desktop.png",
+        "sha256": "8cbbf97238d68d5fbbfb37eb63de34dcf2819a76abf3db8da351533c0c2f215a",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/03-Desktop.png",
+        "bytes": 130530,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "3247f19aa13f9f57b6cc282dde9584c6e7ddd590ce974a95d3bae822d89758b0"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/03-Desktop-full.png",
+        "bytes": 136346,
+        "width": 1920,
+        "height": 1198,
+        "sha256": "3c15a6620086328cd664b77f28d3e2aa897ad14bcd0e9df1a2d7fdb92ad0bfbf"
+      },
+      "domSha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-allocation",
+        "overflow": false,
+        "pageHeight": 1198,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1080.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "04",
+      "device": "Desktop",
+      "view": "box",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": false,
+      "finalDirectChangedImageReview": true,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/04_Chi_tiet_BOX_Desktop.png",
+        "sha256": "5f6c3f066b2a4c1cab280f8f00e329b114b0e259cfb9cd9256ab486e281ae6e0",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/04-Desktop.png",
+        "bytes": 108134,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "88cd8085284d6d06909405540ce6710d6ae4090440def9a12426e94d7c20c58b"
+      },
+      "full": null,
+      "domSha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 837,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "05",
+      "device": "Desktop",
+      "view": "tray",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/05_Chi_tiet_khay_Desktop.png",
+        "sha256": "70f8a89a9d2a5c36713f080bba3afca9c2fd70fd13404380892f3f80b825a686",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/05-Desktop.png",
+        "bytes": 97020,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "79ca241d1bd6dcc655bcd110b1671a13bb30ebd8741a25a207fdf232dc5f2075"
+      },
+      "full": null,
+      "domSha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-tray",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 563,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "06",
+      "device": "Desktop",
+      "view": "movement",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/06_Lich_su_bien_dong_Desktop.png",
+        "sha256": "655181441e55e6b5bc4b462662f4023968cec3ced4d49f63e69a36196d2dd7ca",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/06-Desktop.png",
+        "bytes": 155651,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "a69474cf028546b304734adb205b13443560fceb0ae638e2e95e8d5f80385bfe"
+      },
+      "full": null,
+      "domSha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-movement",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 915.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "07",
+      "device": "Desktop",
+      "view": "reconcile",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": false,
+      "finalDirectChangedImageReview": true,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/07_Doi_soat_hien_tai_Desktop.png",
+        "sha256": "042c8671e4d46ca28171dc895cda437b7d2efcaa54ef0f3e7437c3e48cfa9849",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/07-Desktop.png",
+        "bytes": 156466,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "094da342780d02c90647be7b0d8d51d7e52457848349a2096449e0aa064267ae"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/07-Desktop-full.png",
+        "bytes": 160416,
+        "width": 1920,
+        "height": 1198,
+        "sha256": "bc932d8f12ae21be80fe1fa2cda2130ced0a69272719414d0f65d72140402048"
+      },
+      "domSha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-reconcile",
+        "overflow": false,
+        "pageHeight": 1198,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1080,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "08",
+      "device": "Desktop",
+      "view": "difference",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": false,
+      "finalDirectChangedImageReview": true,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/08_Chi_tiet_chenh_lech_Desktop.png",
+        "sha256": "2588704f6f06c53b587d4464d22c2a1a09480f29738009ec8b30f71b78fd8e69",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/08-Desktop.png",
+        "bytes": 139098,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "28c36b11c6374b7c04caaef5f58af6195cf501cd364825d8f3c2250ddc9278a2"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/08-Desktop-full.png",
+        "bytes": 151766,
+        "width": 1920,
+        "height": 1343,
+        "sha256": "7681deb8609beab3b12614696731c35b0a4eff4eb184b0f43da5e0d42443c3e9"
+      },
+      "domSha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-difference",
+        "overflow": false,
+        "pageHeight": 1343,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1225,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "09",
+      "device": "Desktop",
+      "view": "history",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": false,
+      "finalDirectChangedImageReview": true,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/09_Lich_su_doi_soat_Desktop.png",
+        "sha256": "7b410e96bb35bf98ffb85cf1894c89884713445601a6fe82f328884a68b21b6c",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/09-Desktop.png",
+        "bytes": 145505,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "ec16c4da49f47d3129ff86168a94a653dbc17c30f1e8ede339855e3ce5656a78"
+      },
+      "full": null,
+      "domSha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 885,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "10",
+      "device": "Desktop",
+      "view": "snapshot",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/10_Chi_tiet_lich_su_doi_soat_Desktop.png",
+        "sha256": "308ac0633b92d3b44d7cc7ec2a8ed78d096c7c31413f15c2efa11eae36534d14",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/10-Desktop.png",
+        "bytes": 157305,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "99442d651867929436a942ae26691d76ada30d66409695b6dbca32e992c62d7e"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/10-Desktop-full.png",
+        "bytes": 161275,
+        "width": 1920,
+        "height": 1203,
+        "sha256": "ac680e8b23226ebb5a0dec894d942a23d49b9a33abbdb521b504f229affbeec7"
+      },
+      "domSha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-snapshot",
+        "overflow": false,
+        "pageHeight": 1203,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 1085,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "11",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/11_Loading_Desktop.png",
+        "sha256": "a01885e6a490ffe36a79c107811f94e967a725515d49d71558224dc189e5f1ca",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/11-Desktop.png",
+        "bytes": 89743,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "777321326decd1c8bbb3431957cf32a19a23a6ca294681827154d2d726169e89"
+      },
+      "full": null,
+      "domSha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 752.390625,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "12",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/12_Empty_Desktop.png",
+        "sha256": "9114106994af5193b09ef18a3762098b0677fe3d46be13b5c1e3f3928b1869ce",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/12-Desktop.png",
+        "bytes": 92654,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "6465163e050e41f497f96812231f3a7a944d59af9636d7ec3e8331cf3eb21c54"
+      },
+      "full": null,
+      "domSha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 587,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "13",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/13_No_result_Desktop.png",
+        "sha256": "973bdf6309f7d0558f9a395e3020ef70787e433daa8ea738817501f2eaf37141",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/13-Desktop.png",
+        "bytes": 95032,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "372d5a10bd3dc062893994aa25641f0e18813e5105136cb37e7e1f3caab60630"
+      },
+      "full": null,
+      "domSha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 587,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "14",
+      "device": "Desktop",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/14_Load_error_Desktop.png",
+        "sha256": "ccf101912100acb5a592cc1c39ed874a57671aa86e850c8b078a4ed065350d47",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/14-Desktop.png",
+        "bytes": 92348,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "88b4e1f5ba30060a074ceeec70c74ac152df298ea39f99a592dbd663729ffa59"
+      },
+      "full": null,
+      "domSha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 587,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "15",
+      "device": "Desktop",
+      "view": "history",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/15_Forbidden_Desktop.png",
+        "sha256": "804e8d61bbd15b010a88ef7e161a6aab01f0b309b591d6049beb64b271ad2d3b",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/15-Desktop.png",
+        "bytes": 87642,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "9ed764defaa4d12f303ddcf11941d7633a504033c12596f7930d9efbfaab660f"
+      },
+      "full": null,
+      "domSha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 447,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "16",
+      "device": "Desktop",
+      "view": "box",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Desktop/16_Not_found_Desktop.png",
+        "sha256": "b7153260f9cabd37d07ab9cce808f8eef4f660bcf7d6f2b65032f04aa7e1c7aa",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/16-Desktop.png",
+        "bytes": 84238,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "83b9e0b15e4f347739560f156ae8a1d77dab3cf336389127fe208c30a01150c0"
+      },
+      "full": null,
+      "domSha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640",
+      "geometry": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1080,
+        "root": {
+          "tag": "DIV",
+          "x": 314,
+          "y": 94,
+          "width": 1552,
+          "height": 437,
+          "scrollWidth": 1552,
+          "clientWidth": 1552,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "8px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/01_Tra_cuu_ton_kho_Tablet.png",
+        "sha256": "96af162f1ae4017c6d8f21a54f6282d251782759b807b3d519c480ad1991b84a",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/01-Tablet.png",
+        "bytes": 266415,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "df83876654d29abbe778f1cd2482d326ddf3b6177c445f416c9ec0b500bf6e44"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/01-Tablet-full.png",
+        "bytes": 266666,
+        "width": 1600,
+        "height": 2594,
+        "sha256": "932367ca166ebcb9abb64bbcad7ef7a39a480efb7598d7efa4a30b9378bbaf4b"
+      },
+      "domSha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1297,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1153,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "view": "sku",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/02_Tong_quan_ton_SKU_Tablet.png",
+        "sha256": "46596d82ad3054c62d193a13c747b5ea3d03712873a74ac6fe8d53ee55997e53",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/02-Tablet.png",
+        "bytes": 173566,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "93f2cda090515808bd1f0fff834fa786f37ef4b7799c5548fd46b49257ba97bd"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/02-Tablet-full.png",
+        "bytes": 178862,
+        "width": 1600,
+        "height": 2740,
+        "sha256": "d53a0b7b731444129df655f326a9180c17aefc9214a5ace6c22ee06a88efee55"
+      },
+      "domSha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-sku",
+        "overflow": false,
+        "pageHeight": 1370,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1226.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "view": "allocation",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/03_Phan_bo_theo_BOX_Tablet.png",
+        "sha256": "511c2909b7f93e13159df5ab37d76282b561dd157c09d7853e998ccce3bb02d1",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/03-Tablet.png",
+        "bytes": 234179,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "98dcb469681b34093d7a63274aabb067541a9d94afb931d93d7fc64b6fc82746"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/03-Tablet-full.png",
+        "bytes": 269191,
+        "width": 1600,
+        "height": 3118,
+        "sha256": "1de12ee219d33ced6c891ba1b943ada41ba1f18a384250fbc031bb9a6cde5caf"
+      },
+      "domSha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-allocation",
+        "overflow": false,
+        "pageHeight": 1559,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1415.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "view": "box",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/04_Chi_tiet_BOX_Tablet.png",
+        "sha256": "cd992967108ee75f6b743acd0934c15b944dd46f96846cbd89b07c9f1266c907",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/04-Tablet.png",
+        "bytes": 129622,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "79a063a118830b193b60564045d1a29530c5131f5f69e93b7a9618560616d410"
+      },
+      "full": null,
+      "domSha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 920,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "view": "tray",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/05_Chi_tiet_khay_Tablet.png",
+        "sha256": "cc1aa68e475385eb3efc08ee3e5dfbde3b3b3ca44cae4891bae828a26abd3708",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/05-Tablet.png",
+        "bytes": 105177,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "a087ce5af8090bde4d4892fcfac3420b6b64fde89768a25126f320896bd5fccc"
+      },
+      "full": null,
+      "domSha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-tray",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 524,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "view": "movement",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/06_Lich_su_bien_dong_Tablet.png",
+        "sha256": "4a898932401e3f428c78282312e86fbf8e35b80f6f8b6d9d2b1ba6d31e355307",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/06-Tablet.png",
+        "bytes": 302261,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "75e4a0673b6fa46d2a76efdd7821102ed676768a8a6d206fdabf176cfd8effe6"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/06-Tablet-full.png",
+        "bytes": 374190,
+        "width": 1600,
+        "height": 3208,
+        "sha256": "927b4ecc86577ecd80c9c81528bf29259b44e031370d07952b0e6495db8a63d7"
+      },
+      "domSha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-movement",
+        "overflow": false,
+        "pageHeight": 1604,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1460.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "view": "reconcile",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/07_Doi_soat_hien_tai_Tablet.png",
+        "sha256": "8bc3b8594ceba10e028777c54dfa5aa566a860e1d27ecf0dbd77780168e5437d",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/07-Tablet.png",
+        "bytes": 281895,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "b980f8181f0d4100ae760801734c176411509d6d407795a9371104d5a647ddf2"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/07-Tablet-full.png",
+        "bytes": 317714,
+        "width": 1600,
+        "height": 3028,
+        "sha256": "cc0e090d42f238dd28df628effc68ae4061c13f4a95786626bf8f6174b5c42a2"
+      },
+      "domSha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-reconcile",
+        "overflow": false,
+        "pageHeight": 1514,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1370,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "view": "difference",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/08_Chi_tiet_chenh_lech_Tablet.png",
+        "sha256": "2f7520fb2c990da5a690aac3534c9ddd6de8e5e16ef25eb18c1d57383e6f0ef8",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/08-Tablet.png",
+        "bytes": 255660,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "56d8d8e61d92b6135145da349d6c309afe39081dbb77754867954082552c664a"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/08-Tablet-full.png",
+        "bytes": 279571,
+        "width": 1600,
+        "height": 3042,
+        "sha256": "ac6b899344940772d28e32514fd3cd1b3bc18b04898772dcc34ffed2ff65d7f3"
+      },
+      "domSha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-difference",
+        "overflow": false,
+        "pageHeight": 1521,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1377,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "view": "history",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/09_Lich_su_doi_soat_Tablet.png",
+        "sha256": "902cac4f4c2811753f2e6dd8b23084cf35ff814c093abfc1be46059b7ff22ea9",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/09-Tablet.png",
+        "bytes": 264061,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "e354eac2e4b6afe2caa70d7259ba7e8f0897da8c9c35f1db9aa32d11b2929fea"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/09-Tablet-full.png",
+        "bytes": 317939,
+        "width": 1600,
+        "height": 3162,
+        "sha256": "48334415779a4e74c2d7e201ca434d2de0a6ee22b9fc8e25f5c5f80e6710ce6d"
+      },
+      "domSha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1581,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1437,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "view": "snapshot",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/10_Chi_tiet_lich_su_doi_soat_Tablet.png",
+        "sha256": "dc6cedbb600275c6c23644b1db988934ee09045c2b8b4d4c3fd68963bc24a6e7",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/10-Tablet.png",
+        "bytes": 288512,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "35f282babe2a9e70428a3274143d621ace4d7f9072e5e35abf4d60e1b9f3facd"
+      },
+      "full": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/10-Tablet-full.png",
+        "bytes": 317897,
+        "width": 1600,
+        "height": 2962,
+        "sha256": "c40e86a648abd211dd129201e0294fb2c8e6a079d4a95b8cf3e1d0e6d70e2b87"
+      },
+      "domSha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-snapshot",
+        "overflow": false,
+        "pageHeight": 1481,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 1337,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/11_Loading_Tablet.png",
+        "sha256": "0534058b2270b624831eac4a4a1c51070e9925d2cc29925c3fdfb1cd133aed9e",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/11-Tablet.png",
+        "bytes": 85622,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "f24eeb7ddbf6189dde564ffd09f5a9709299e8dba4e5a34829e12b36bee8fc9c"
+      },
+      "full": null,
+      "domSha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 720.390625,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/12_Empty_Tablet.png",
+        "sha256": "67ec5b58dce86b5adf3b67e525e549d274b12f941f14f181a9d0c8c292d188b9",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/12-Tablet.png",
+        "bytes": 94573,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "b23420d18875cf73577b645d4cd0b44398945c8a0e177f608025278fc755df2f"
+      },
+      "full": null,
+      "domSha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 571,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "13",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/13_No_result_Tablet.png",
+        "sha256": "c8a97f64157ce09f298634398ca3c55ea32f81ab6974b29ba901c38b1d16b2c1",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/13-Tablet.png",
+        "bytes": 99727,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "99efa195754474a6ec3bee3dd633335ed770befc8ada7f23dd15b890c6e36250"
+      },
+      "full": null,
+      "domSha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 571,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "14",
+      "device": "Tablet",
+      "view": "stock",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/14_Load_error_Tablet.png",
+        "sha256": "c1c747aa7e9fb6896e9d17812d42e5452be9771d659c535aa07b5a6e911f499d",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/14-Tablet.png",
+        "bytes": 93450,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "af530618e26024049f5ecd1b3c5efff3e557497a3921cf5dc05f4353df80c84e"
+      },
+      "full": null,
+      "domSha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-stock",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 571,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "15",
+      "device": "Tablet",
+      "view": "history",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/15_Forbidden_Tablet.png",
+        "sha256": "98fca41f08739e2bd2b797dc96508e2c6928f10a5fbe5cbe6bc2eda7732b8ed2",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/15-Tablet.png",
+        "bytes": 83802,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "090551016de289b69780d9a6c983c2461ccda16289e34212963e969bb666a408"
+      },
+      "full": null,
+      "domSha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-history",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 431,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    },
+    {
+      "id": "16",
+      "device": "Tablet",
+      "view": "box",
+      "reviewCoverage": "Manual round3 original review plus final file identity or direct changed-image review",
+      "finalFixedByteIdenticalToReviewedRound3": true,
+      "finalDirectChangedImageReview": false,
+      "geometryIdenticalToRound3": true,
+      "reference": {
+        "file": "Tablet/16_Not_found_Tablet.png",
+        "sha256": "54a05fd43f2d5942ce9a37ccf206d853eeab37086b7a605f0108841e43b14a96",
+        "manifestMatch": true
+      },
+      "fixed": {
+        "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/16-Tablet.png",
+        "bytes": 75587,
+        "width": 1600,
+        "height": 2560,
+        "sha256": "61adf2103538864b7f351970c7a0d2d03ac91a0c96abad98191506ced7a753e3"
+      },
+      "full": null,
+      "domSha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640",
+      "geometry": {
+        "viewport": {
+          "width": 800,
+          "height": 1280,
+          "dpr": 2
+        },
+        "zoom": 1,
+        "language": "vi-VN",
+        "theme": "iad iad-light iad-view-box",
+        "overflow": false,
+        "pageHeight": 1280,
+        "root": {
+          "tag": "DIV",
+          "x": 24,
+          "y": 104,
+          "width": 752,
+          "height": 421,
+          "scrollWidth": 752,
+          "clientWidth": 752,
+          "font": "\"HN S00 Public Sans\", \"Noto Sans SC\", \"Microsoft YaHei\", \"PingFang SC\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "fontSize": "14px",
+          "lineHeight": "22px",
+          "padding": "0px",
+          "color": "rgb(16, 42, 76)",
+          "background": "rgb(238, 245, 250)"
+        }
+      },
+      "sub44Count": 0,
+      "consolePageErrorCount": 0,
+      "failedRequestCount": 0
+    }
+  ]
+}

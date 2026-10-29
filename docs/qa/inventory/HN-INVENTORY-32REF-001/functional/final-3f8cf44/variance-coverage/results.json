@@ -1,0 +1,10 @@
+{
+  "scope": "Isolated same-source component edges; not auth/API integration or final visual capture.",
+  "checks": [
+    {
+      "name": "non-DRV current and saved variance allocation coverage remains unavailable",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

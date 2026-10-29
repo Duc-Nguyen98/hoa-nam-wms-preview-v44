@@ -1,0 +1,26 @@
+[
+  {
+    "language": "vi",
+    "buttons": [
+      "Trang trước",
+      "Trang tiếp theo"
+    ],
+    "date": "14:25 28/10/2026"
+  },
+  {
+    "language": "en",
+    "buttons": [
+      "Previous page",
+      "Next page"
+    ],
+    "date": "10/28/2026, 14:25"
+  },
+  {
+    "language": "zh-CN",
+    "buttons": [
+      "上一页",
+      "下一页"
+    ],
+    "date": "2026/10/28 14:25"
+  }
+]

@@ -1,0 +1,826 @@
+{
+  "checks": [
+    {
+      "name": "desktop: normal-auth direct-route gate",
+      "status": "PASS",
+      "detail": "Fresh protected URL redirected to S07; normal login, confirmation and setup completed."
+    },
+    {
+      "name": "desktop: all ten registered view projections and responsive bounds",
+      "status": "PASS",
+      "detail": [
+        {
+          "view": "stock",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "sku",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "allocation",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "box",
+          "rows": 0,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "tray",
+          "rows": 1,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "movement",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "reconcile",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "difference",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "history",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        },
+        {
+          "view": "snapshot",
+          "rows": 9,
+          "w": 1920,
+          "h": 1080,
+          "dpr": 1,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "name": "desktop: stock search BOX / SKU / name, no-result query and reset",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: warehouse HN02 filter and HN04 empty",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: SKU to allocation to BOX to tray and correct return context",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: BOX movement is scoped to selected BOX; return link retains BOX",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: reconciliation DRV and nine BOX discrepancy totals",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: filtered history to saved snapshot keeps scope and stored identity",
+      "status": "PASS",
+      "detail": {
+        "snapshot": "DS-20261028-01",
+        "savedRows": 2,
+        "context": "HN02 + match",
+        "moduleTabsOnDetail": 0
+      }
+    },
+    {
+      "name": "desktop: saved DRV detail uses same snapshot and back returns snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: history dates filter, reject reverse/future and retain input",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: invalid SKU/BOX/relation/snapshot IDs never return first record",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: loading/empty/no-result/error/forbidden/not-found semantic states and no false successful timestamp",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: exact clipboard copy and success feedback",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: one-page pagination boundaries stay disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: SKU sort reverses actual row order",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: locale/theme infrastructure and no untranslated fixed UI labels",
+      "status": "PASS",
+      "detail": [
+        {
+          "language": "vi",
+          "theme": "light",
+          "title": "Lịch sử đối soát",
+          "untranslatedFixedLabels": 2,
+          "ariaLabels": [
+            "Xem chi tiết DS-20261028-01",
+            "Xem chi tiết DS-20261027-01",
+            "Xem chi tiết DS-20261026-01",
+            "Xem chi tiết DS-20261025-01",
+            "Xem chi tiết DS-20261024-01",
+            "Xem chi tiết DS-20261023-01",
+            "Xem chi tiết DS-20261022-01",
+            "Xem chi tiết DS-20261021-01",
+            "Xem chi tiết DS-20261020-01",
+            "Trang trước",
+            "Trang tiếp theo"
+          ]
+        },
+        {
+          "language": "vi",
+          "theme": "dark",
+          "title": "Lịch sử đối soát",
+          "untranslatedFixedLabels": 2,
+          "ariaLabels": [
+            "Xem chi tiết DS-20261028-01",
+            "Xem chi tiết DS-20261027-01",
+            "Xem chi tiết DS-20261026-01",
+            "Xem chi tiết DS-20261025-01",
+            "Xem chi tiết DS-20261024-01",
+            "Xem chi tiết DS-20261023-01",
+            "Xem chi tiết DS-20261022-01",
+            "Xem chi tiết DS-20261021-01",
+            "Xem chi tiết DS-20261020-01",
+            "Trang trước",
+            "Trang tiếp theo"
+          ]
+        },
+        {
+          "language": "en",
+          "theme": "light",
+          "title": "Reconciliation history",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "View details DS-20261028-01",
+            "View details DS-20261027-01",
+            "View details DS-20261026-01",
+            "View details DS-20261025-01",
+            "View details DS-20261024-01",
+            "View details DS-20261023-01",
+            "View details DS-20261022-01",
+            "View details DS-20261021-01",
+            "View details DS-20261020-01",
+            "Previous page",
+            "Next page"
+          ]
+        },
+        {
+          "language": "en",
+          "theme": "dark",
+          "title": "Reconciliation history",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "View details DS-20261028-01",
+            "View details DS-20261027-01",
+            "View details DS-20261026-01",
+            "View details DS-20261025-01",
+            "View details DS-20261024-01",
+            "View details DS-20261023-01",
+            "View details DS-20261022-01",
+            "View details DS-20261021-01",
+            "View details DS-20261020-01",
+            "Previous page",
+            "Next page"
+          ]
+        },
+        {
+          "language": "zh-CN",
+          "theme": "light",
+          "title": "对账历史",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "查看详情 DS-20261028-01",
+            "查看详情 DS-20261027-01",
+            "查看详情 DS-20261026-01",
+            "查看详情 DS-20261025-01",
+            "查看详情 DS-20261024-01",
+            "查看详情 DS-20261023-01",
+            "查看详情 DS-20261022-01",
+            "查看详情 DS-20261021-01",
+            "查看详情 DS-20261020-01",
+            "上一页",
+            "下一页"
+          ]
+        },
+        {
+          "language": "zh-CN",
+          "theme": "dark",
+          "title": "对账历史",
+          "untranslatedFixedLabels": 0,
+          "ariaLabels": [
+            "查看详情 DS-20261028-01",
+            "查看详情 DS-20261027-01",
+            "查看详情 DS-20261026-01",
+            "查看详情 DS-20261025-01",
+            "查看详情 DS-20261024-01",
+            "查看详情 DS-20261023-01",
+            "查看详情 DS-20261022-01",
+            "查看详情 DS-20261021-01",
+            "查看详情 DS-20261020-01",
+            "上一页",
+            "下一页"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop: primary action text contrast in Light/Dark",
+      "status": "PASS",
+      "detail": [
+        {
+          "theme": "light",
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(0, 119, 131)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "ratio": 5.294381419348166
+        },
+        {
+          "theme": "dark",
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(0, 119, 131)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "ratio": 5.294381419348166
+        }
+      ]
+    },
+    {
+      "name": "desktop: default S16/S11/S20/S21 remain operational without opt-in",
+      "status": "PASS",
+      "detail": [
+        {
+          "screen": "S16",
+          "rows": 11
+        },
+        {
+          "screen": "S11",
+          "rows": 9
+        },
+        {
+          "screen": "S20",
+          "rows": 35
+        },
+        {
+          "screen": "S21",
+          "rows": 11
+        }
+      ]
+    },
+    {
+      "name": "desktop: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    },
+    {
+      "name": "tablet: normal-auth direct-route gate",
+      "status": "PASS",
+      "detail": "Fresh protected URL redirected to S07; normal login, confirmation and setup completed."
+    },
+    {
+      "name": "tablet: all ten registered view projections and responsive bounds",
+      "status": "PASS",
+      "detail": [
+        {
+          "view": "stock",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "sku",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "allocation",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "box",
+          "rows": 0,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "tray",
+          "rows": 1,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "movement",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "reconcile",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "difference",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "history",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        },
+        {
+          "view": "snapshot",
+          "rows": 9,
+          "w": 800,
+          "h": 1280,
+          "dpr": 2,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "name": "tablet: stock search BOX / SKU / name, no-result query and reset",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: warehouse HN02 filter and HN04 empty",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: SKU to allocation to BOX to tray and correct return context",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: BOX movement is scoped to selected BOX; return link retains BOX",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: reconciliation DRV and nine BOX discrepancy totals",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: filtered history to saved snapshot keeps scope and stored identity",
+      "status": "PASS",
+      "detail": {
+        "snapshot": "DS-20261028-01",
+        "savedRows": 2,
+        "context": "HN02 + match",
+        "moduleTabsOnDetail": 0
+      }
+    },
+    {
+      "name": "tablet: saved DRV detail uses same snapshot and back returns snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: history dates filter, reject reverse/future and retain input",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: invalid SKU/BOX/relation/snapshot IDs never return first record",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: loading/empty/no-result/error/forbidden/not-found semantic states and no false successful timestamp",
+      "status": "FAIL",
+      "error": "TimeoutError: locator.waitFor: Timeout 7000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.iad') to be visible\u001b[22m\n",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-00e06e9/core/failure-1.png"
+    }
+  ],
+  "errors": [
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    },
+    {
+      "profile": "tablet",
+      "kind": "console",
+      "message": "Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+    }
+  ]
+}

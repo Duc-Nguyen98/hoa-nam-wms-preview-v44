@@ -1,0 +1,6 @@
+{
+  "testedSource": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "checked": "staged Git blob bytes against original artifact SHA-256 manifest",
+  "passed": 894,
+  "failures": []
+}

@@ -1,0 +1,106 @@
+{
+  "base": "http://127.0.0.1:5341",
+  "mode": "MOCK",
+  "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "beforeSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "6a9e82331b14bfaa0bba5f12433f70e7e0c121751fe392107d58f2eb0a6a81b5"
+    }
+  ],
+  "afterSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "6a9e82331b14bfaa0bba5f12433f70e7e0c121751fe392107d58f2eb0a6a81b5"
+    }
+  ],
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "tablet: vi/light/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/light/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/loading translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/empty translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/no-results translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/error translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/forbidden translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: vi/dark/not-found translated semantic state",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "pass": 13,
+    "fail": 0,
+    "blocked": 0
+  }
+}

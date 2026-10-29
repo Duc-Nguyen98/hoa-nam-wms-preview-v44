@@ -1,0 +1,1659 @@
+{
+  "task": "HN-INVENTORY-32REF-001",
+  "sourceCommit": "baebfc49aa15452a4c2720b62e045f6301bfb49e",
+  "stage": "final-build-baebfc4",
+  "registrationSha256": "6201072dfe5e8ce1aae9a4fa01d20b134e940f145ba8cfa779f2b6d41c47a653",
+  "registrationProvenanceMatchesCapture": true,
+  "method": "Content-origin alignment, proportional width normalization; canvas height includes full reference and full-page actual content with no bottom clipping. Fixed-viewport original remains separately available. Locked shell excluded, no data masking, no pixel PASS threshold. Raster profile unverified; diagnostic comparison is not certified pixel equality.",
+  "manualSamples": [
+    "01-Desktop",
+    "02-Tablet",
+    "08-Tablet",
+    "14-Desktop"
+  ],
+  "manualViewsPerSample": [
+    "overlay",
+    "diff",
+    "actual"
+  ],
+  "sampleObservation": "All requested samples inspected; no diagnostic row/footer/totals/cause/action clipping found. Large registration differences remain visible and are not erased or scored into a pass.",
+  "referenceActualPairs": 32,
+  "derivedPngs": 128,
+  "scoreIsAcceptanceGate": false,
+  "sourceEdited": false,
+  "browserRunByReviewer": false,
+  "results": [
+    {
+      "id": "01",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/01-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 11.824987421383648,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Desktop-reference.png",
+          "sha256": "55ace7c27b1612474f71d29954ca010ca6f6d0a7ecee4c1fda7460cc69ac3bec",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Desktop-actual.png",
+          "sha256": "5c2e5261e853d4a2bb6f98213983c5e9850f65ac1cc18fc53288fe71eda4c168",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Desktop-overlay.png",
+          "sha256": "385845482af6739fb2ec20a7b5c62ca2182a274fd71fa226e46ddbb5d4f1f821",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Desktop-diff.png",
+          "sha256": "f346715b0bf89aa3da7f138c856fcb21337cf34161daf919dbcd5380a789bef3",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/02-Desktop-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 805.0,
+      "actualScaledHeight": 804.7680412371134,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 11.489812008281573,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Desktop-reference.png",
+          "sha256": "e2c6a91c4147f921303a43c3ddd08bfebafa312d99dc5a61b5f02e35929814f8",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Desktop-actual.png",
+          "sha256": "0106bad0a14c136ec9db783a58808f3dcfc6d1c04b702ceb4dafd2b2aef13123",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Desktop-overlay.png",
+          "sha256": "2a3fe5050abf67e8dabc3b3776c0da33460aa7be6847649b560317f8762cc0f5",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Desktop-diff.png",
+          "sha256": "c425ac9e745e334ca376af9e4bf9aa525e63e25ef5bf328aa11b96e1de3f1603",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/03-Desktop-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 712.0,
+      "actualScaledHeight": 711.340206185567,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 10.04588904494382,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Desktop-reference.png",
+          "sha256": "30e7b4fefb9486ac2efb014a98caa0e9bf7146d601073e99fa2ba0168806b97a",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Desktop-actual.png",
+          "sha256": "c8ad78e43017bb69b3b7b99993159278942a99d17b2ec1bba467f2c3e02cc32d",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Desktop-overlay.png",
+          "sha256": "1d7e32d2c6fbf25943536aa33074988e2163441107f4b4a86199789951789e4e",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Desktop-diff.png",
+          "sha256": "25e7e1401c3eb1ec233c5d22b29ed68805722a86fe0c50d7a038eb9d5b849c4d",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/04-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 8.16567033542977,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Desktop-reference.png",
+          "sha256": "30f96a82ab8627cc03c39a92de63c9a4eef8190fbf37eb9435c321dd72b6825c",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Desktop-actual.png",
+          "sha256": "79c175af26470a9b87864b4e38ba7449ca735635c55879c8a3a59d27922a83f2",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Desktop-overlay.png",
+          "sha256": "cccf6897e5c011221d6349b04dc23f37377d1ad3dd1aa9763670321f2b27ac01",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Desktop-diff.png",
+          "sha256": "004a7753787ca2602c677155b48e88eb585e1358f79762acaea7549543903201",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/05-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 8.770253668763102,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Desktop-reference.png",
+          "sha256": "e659297113a24c216cb6d8d85e0327bde05584cc62084f12dd942ef8519f0a55",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Desktop-actual.png",
+          "sha256": "bcba78aac586e532dedf16db41ed3c99b1592a8feb58d9713714100f215254a9",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Desktop-overlay.png",
+          "sha256": "5184257d26ece268560a1eefeab0ed41a4e4df23bb097d9d55c03d2789ad2e80",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Desktop-diff.png",
+          "sha256": "41f31ae76f4f0ad3691bcc57a8dd5838b5cccc45c6747922532667d74fd6d187",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/06-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 13.54230922431866,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Desktop-reference.png",
+          "sha256": "ed53668a0397d0f2078b4710eced88d7b7793916d4050b32d878c6e8d6637b16",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Desktop-actual.png",
+          "sha256": "c4cb96a6e16f0b58d086f2206884555654087354924b87ce18ef8254a04b9eb7",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Desktop-overlay.png",
+          "sha256": "366df4ee7de61b5bde7d5e32c794307f56c5726e8e6773124b0e2ce1a0f5c91a",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Desktop-diff.png",
+          "sha256": "64bf3cf1e4300c1f63d5238164eb319679cf596993074279a7a6a505e876a3b4",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/07-Desktop-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 712.0,
+      "actualScaledHeight": 711.340206185567,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 12.211679307116105,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Desktop-reference.png",
+          "sha256": "a757f0c7828fc4e6a297ed66c981f0628f802263e5282eef468354e6abd69ae4",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Desktop-actual.png",
+          "sha256": "678b11bffe2a68ba0c76271514578354a5e05bb1e12f6198b73d4c8a43a21c04",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Desktop-overlay.png",
+          "sha256": "d25f68a69417fd347166ac4876bec3444c666208f640492819a51ea872a4086c",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Desktop-diff.png",
+          "sha256": "f4b3d127c913912cc9bc8213ddafcae06cb997730b4f775b1dfddf67e49c0155",
+          "width": 1000,
+          "height": 712,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/08-Desktop-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 805.0,
+      "actualScaledHeight": 804.7680412371134,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 11.339519254658384,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Desktop-reference.png",
+          "sha256": "3f0bee96ef82416e8afa557454b9b865f6e023a280f889dc24efe309016a6e1b",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Desktop-actual.png",
+          "sha256": "40fcc3259d18723fb2451b3b670e066e0faff32c45477c5e51afbd06180e6e03",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Desktop-overlay.png",
+          "sha256": "3daffaff0a27e63f757089e6f75fada844d83c70ddb11e0b0d7fb48cb94038bd",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Desktop-diff.png",
+          "sha256": "6e92ce6fafe78583edf3f6559d8ca811a1f961244d1a7eeb75aef4c611ade1a9",
+          "width": 1000,
+          "height": 805,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/09-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 11.375381027253669,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Desktop-reference.png",
+          "sha256": "1a3a42fc4a697e1e4de2155c1ea60cbb143ec4d0b0ff482e27e3882d4ccb77b2",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Desktop-actual.png",
+          "sha256": "5629cf63153aec851775fdd1d4a70cf0776d83a07bb00f4a40eec8ec6824b46f",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Desktop-overlay.png",
+          "sha256": "0ff0e22fd908a45bbf67f45f236b275211f48156ae3ceb9994aa1b3a3079a905",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Desktop-diff.png",
+          "sha256": "ea4d0605810049f455df67f96cbb90ded8e2f788ac582f936ecfaa19ec85a863",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/10-Desktop-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 715.0,
+      "actualScaledHeight": 714.5618556701031,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 12.56554592074592,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Desktop-reference.png",
+          "sha256": "b64bf29ebace0688996fced7474818ee9f4969528258b4e996b1ff2c926bc97f",
+          "width": 1000,
+          "height": 715,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Desktop-actual.png",
+          "sha256": "b3347aef17f3b6273344021ed250ae6daf1ed061d933a6f47b6fe233f6424b9a",
+          "width": 1000,
+          "height": 715,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Desktop-overlay.png",
+          "sha256": "93daa4fc6975ed2ec00c597628952d8cffd44023564884072cdf6a62c5a3778b",
+          "width": 1000,
+          "height": 715,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Desktop-diff.png",
+          "sha256": "2c6918044276ea89ad5218be61579366363d3c847bf2012face8a8c8b88121e1",
+          "width": 1000,
+          "height": 715,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/11-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 10.214047693920335,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Desktop-reference.png",
+          "sha256": "e222f6967627fc9998680777a6dc7cb013b136cf232c2f0ddab596cb10088429",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Desktop-actual.png",
+          "sha256": "54f6ddb4381b1d76660aed9b50978c1354e92aff208c8ffcf37c579a5066ccbc",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Desktop-overlay.png",
+          "sha256": "e050ad08105e1669ca5c874f18ab7ff93abe5ca57a9c45581940c0d93ecdd005",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Desktop-diff.png",
+          "sha256": "25bddeaa4d0185dd7dc00b7d524cb78e6de08a36be0af4c01f48f06b25e231fa",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/12-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 9.806220649895177,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Desktop-reference.png",
+          "sha256": "b6ce1f6d3e51bec43728a5a2eaeded9a086f3f33277c7cd251b4803c787e51cc",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Desktop-actual.png",
+          "sha256": "3183e1f3ec2104e431a15663bfa4fcd13762f0d41056c1362f4b7c4daadd94da",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Desktop-overlay.png",
+          "sha256": "5d05ca683bb9acc93caaebf2fc558690a27aec273775f59643352148baa8f7d7",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Desktop-diff.png",
+          "sha256": "78f0f35b71836934c8a24a0cb32a0eb5072413467c7b8856d60de1b64299d9e4",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/13-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 9.84212788259958,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Desktop-reference.png",
+          "sha256": "9d392f5f6f3eae59a36473871b532b8c610415b118a4a529612e867bc5ab65ba",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Desktop-actual.png",
+          "sha256": "6bf327e10f1acd3818a59fcc5fd621857aae0513a239548110a5011438384100",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Desktop-overlay.png",
+          "sha256": "e52e1c11fd142d27473a357ee2d4d309cdf3dad047399b02693b4bfea491514b",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Desktop-diff.png",
+          "sha256": "d2dbf70159b02560939d5c223a61b3fef576a87709f23e35816b5f4a8c3064d3",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/14-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 9.464269392033543,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Desktop-reference.png",
+          "sha256": "27fb110c33f5ea36badf8d771df40b0c2dd3acddf68d7d7b92015b7c0f651158",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Desktop-actual.png",
+          "sha256": "713e64b8b3105d56c78250f042dea74e8240673af483140c9ea871ee09cd2fb4",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Desktop-overlay.png",
+          "sha256": "d5cd08bcabd2c04018b9b67560ac73409d03a5aca9ed160ba054235b65e102a7",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Desktop-diff.png",
+          "sha256": "12f50ab0a714104010771693569bb1a58b262e41a694bed0ab11d3696bb4dbfb",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/15-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 9.307043501048218,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Desktop-reference.png",
+          "sha256": "b20e976bee840171e1a2ca5197a126126c1c2d30e9da132162a9206a12b6ad2e",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Desktop-actual.png",
+          "sha256": "a9b9c2ff06913b950bd1aed42ab54e948f87b897a52bd61d232d763d5f1b1947",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Desktop-overlay.png",
+          "sha256": "2903b44416c2abbc1042e6dd1a7049915adec00d2852372b14712061ed840754",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Desktop-diff.png",
+          "sha256": "fb5febdaf669eb93946e23bd4c3ebf8ef5f0df3ffa194867896d63287e7cb6dd",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "device": "Desktop",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/16-Desktop.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 636.0,
+      "actualScaledHeight": 635.3092783505155,
+      "referenceScaledHeight": 613.9372822299651,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 9.000937106918238,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Desktop-reference.png",
+          "sha256": "7bd595b7cc64e0354653e77a2b7403c2d08674f0ec6ba675d60e69e690cd635b",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Desktop-actual.png",
+          "sha256": "156c067751054ce81ae82f506af84644a23484ef26fd12d172a09cc4e0bdc6b2",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Desktop-overlay.png",
+          "sha256": "46f56a80ab09df2f30906222d6a7e223a41f88734b3168a5829a140218d6e93a",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Desktop-diff.png",
+          "sha256": "d9528eb4fa16d40dd41eff6dbc965010667897430ad813e3244f510292eb9f24",
+          "width": 1000,
+          "height": 636,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/01-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1032.0,
+      "actualScaledHeight": 1031.1835106382978,
+      "referenceScaledHeight": 926.123046875,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 14.226504174120453,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Tablet-reference.png",
+          "sha256": "4ad0e1f67eaa7f8399fdc95724f5d2f9eb5ffc4a0d8612625b8b40208a9f8024",
+          "width": 650,
+          "height": 1032,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Tablet-actual.png",
+          "sha256": "72a6f8ccb466caf7009d078e76b6b8f99e3be8a5bc1fc6a408ecd2e137447b78",
+          "width": 650,
+          "height": 1032,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Tablet-overlay.png",
+          "sha256": "b9e0b2aaee054ad287a737df9034997e13dfd31e33c4fb25ab82aef4ade3cbcf",
+          "width": 650,
+          "height": 1032,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/01-Tablet-diff.png",
+          "sha256": "0175f0bfc32df0f0c761143f9d1f71775fecf35b67dc9d5c41f34e65924ec9f0",
+          "width": 650,
+          "height": 1032,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/02-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1095.0,
+      "actualScaledHeight": 1094.281914893617,
+      "referenceScaledHeight": 926.123046875,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 14.837611052569956,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Tablet-reference.png",
+          "sha256": "7a3691a9590963f067fc6180eac3ad6f2e8b6c7ba6f06a7b1ac90a0102de685d",
+          "width": 650,
+          "height": 1095,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Tablet-actual.png",
+          "sha256": "b695a6f6656c4a314aeaee0d06ea1c1896ad4f0aaad7f4d5a0a550340f4b26dd",
+          "width": 650,
+          "height": 1095,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Tablet-overlay.png",
+          "sha256": "a5430facec3eafa4448ef769bdd6890c0ed770f6036b9a93b0bb94494ea94b25",
+          "width": 650,
+          "height": 1095,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/02-Tablet-diff.png",
+          "sha256": "c6e7c782a4c75cc9ab8c1f7293239ea56c2a9dec73cf363c6d04d59dc45d05ff",
+          "width": 650,
+          "height": 1095,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/03-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1258.0,
+      "actualScaledHeight": 1257.6462765957447,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 12.763109534874241,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Tablet-reference.png",
+          "sha256": "911fd5a6ef1cee186a8ca6a19f83eec611d8842522879351e0270472af3ed33e",
+          "width": 650,
+          "height": 1258,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Tablet-actual.png",
+          "sha256": "82489c33d40ceb21fbc48fc0e4affefadf7099884543ccb4913280dfa9657b10",
+          "width": 650,
+          "height": 1258,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Tablet-overlay.png",
+          "sha256": "dc7e19a68282ca4b0221e9b80d000f01de94398926a2a209b2989f4ab31eadaa",
+          "width": 650,
+          "height": 1258,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/03-Tablet-diff.png",
+          "sha256": "df7495eada0300ec1acf1f40e58cfda065696aed7fb3aaf2f584898b4b7b5f89",
+          "width": 650,
+          "height": 1258,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/04-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 9.63815041726546,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Tablet-reference.png",
+          "sha256": "6eb988cd94dde10406585b9209b8f7f688db11544b1761b1e8652c09f4b7735a",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Tablet-actual.png",
+          "sha256": "c2896629e4c2bea84b59d4fc4e0c02350f82a0c4e75ba7d2dadd2164774e89a9",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Tablet-overlay.png",
+          "sha256": "0f013e83c4861926e8e76a719c3bccd4c198c55012b77f5879282ade1ca15146",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/04-Tablet-diff.png",
+          "sha256": "7e2580d8e590a9c5f515043ecf8e7eb0787b222e7691ce2f2b863d6d905d51a5",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/05-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 823.572744014733,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 8.755552025817513,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Tablet-reference.png",
+          "sha256": "99b674ae7864063dcd24a1d6771dcb4ebb744aaeb59804b7fa3e84e3c58802ca",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Tablet-actual.png",
+          "sha256": "f7ba0086d40a304b761884f0d1b45767ef2b2a3b68921383aa5d5ae6e5dc8f98",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Tablet-overlay.png",
+          "sha256": "cab4be0c2c88c4abc42fd5888330597fdf7e9e373ffe334cf74852deecb47010",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/05-Tablet-diff.png",
+          "sha256": "311fdf001d6d363bcd71753da9c2ec9702c5f676ab8b25195a3d8f30a92f8a9b",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/06-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1297.0,
+      "actualScaledHeight": 1296.5425531914893,
+      "referenceScaledHeight": 985.1460221550856,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 15.189908467271612,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Tablet-reference.png",
+          "sha256": "14218bc88a35ffa57fcdf23b4f0fe393216b10e81432f8cdc41865affbc1131a",
+          "width": 650,
+          "height": 1297,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Tablet-actual.png",
+          "sha256": "6e489149f71a44d8e8b038aaf8d5a365493bb800ff81cf1e8c0c5609619f38d3",
+          "width": 650,
+          "height": 1297,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Tablet-overlay.png",
+          "sha256": "ed9d7e6895e8cc77ad0d6f9906a2c22dc53da3a55e0b6c35e937516e50dc18c0",
+          "width": 650,
+          "height": 1297,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/06-Tablet-diff.png",
+          "sha256": "e441b95272d005a6144b33b0733413fd01f659788a8f21160952e9672dcb7397",
+          "width": 650,
+          "height": 1297,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/07-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1219.0,
+      "actualScaledHeight": 1218.75,
+      "referenceScaledHeight": 926.123046875,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 14.669377589869796,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Tablet-reference.png",
+          "sha256": "70f6f78c3561b4bab1076e56edf84b6edcf42efe876d822cc59b16d8fe9e8584",
+          "width": 650,
+          "height": 1219,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Tablet-actual.png",
+          "sha256": "8ca38a29c81e3e826b768e601467b665dc7ee0325a8f925c710999c12f514bf0",
+          "width": 650,
+          "height": 1219,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Tablet-overlay.png",
+          "sha256": "5df4fa2127f4986fc3f056f891f3b2b00af6fda83c67910351c9fb601182a0d8",
+          "width": 650,
+          "height": 1219,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/07-Tablet-diff.png",
+          "sha256": "f5a74588c57c60cfc6f7fd0c7bf6aabf1610bac51e4406ee3119ce58a72a9625",
+          "width": 650,
+          "height": 1219,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/08-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1225.0,
+      "actualScaledHeight": 1224.8005319148936,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 14.815840502354789,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Tablet-reference.png",
+          "sha256": "97ce06f0cba8d29e07f01db6af77f47f388c599a9f7357540e6319e9b61d2326",
+          "width": 650,
+          "height": 1225,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Tablet-actual.png",
+          "sha256": "47a500ca222d7d33994b35ca480db24214070c563b9deb9c7064992b3369c728",
+          "width": 650,
+          "height": 1225,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Tablet-overlay.png",
+          "sha256": "a239af7a417d6403d9c29b9e2eecc09a5731301fdacb1120df528d03acaa7fb4",
+          "width": 650,
+          "height": 1225,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/08-Tablet-diff.png",
+          "sha256": "8d74a59bae97079f9b51fd725de099fa4af9d1754a1ac4c92c4010ed0ddcf75d",
+          "width": 650,
+          "height": 1225,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/09-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1277.0,
+      "actualScaledHeight": 1276.662234042553,
+      "referenceScaledHeight": 985.1460221550856,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 14.892677951127443,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Tablet-reference.png",
+          "sha256": "4065f0914876ae3c5514e1961d70361f02eb27ae49db1fd45aa161f843de53d7",
+          "width": 650,
+          "height": 1277,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Tablet-actual.png",
+          "sha256": "0ff1606d256070c5a1a9928222c474076fdac8e898247e093e4c31edf87b645b",
+          "width": 650,
+          "height": 1277,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Tablet-overlay.png",
+          "sha256": "2fbe980086cfc92c0ecfd7825abd6eb80c892514c24116cabc36c8cbe57585f4",
+          "width": 650,
+          "height": 1277,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/09-Tablet-diff.png",
+          "sha256": "6367dc47096adba21b2fb71196a266f430236facaecb9cd9d7657e66e3f43518",
+          "width": 650,
+          "height": 1277,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/10-Tablet-full.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1191.0,
+      "actualScaledHeight": 1190.2260638297873,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 15.414896768498783,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Tablet-reference.png",
+          "sha256": "e8207e73fffb58070ab4bd86c1b9dcafe4a797ff30c6639b253fc550dd8125dc",
+          "width": 650,
+          "height": 1191,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Tablet-actual.png",
+          "sha256": "8ed3727731b88bffee7cca8a23033685316c8bdb40d4eb4bb5f122235bd2afbd",
+          "width": 650,
+          "height": 1191,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Tablet-overlay.png",
+          "sha256": "a6008c762457a0b79c6c77b7cbe1509742db5c8baae5b920d0762dd13456b1dd",
+          "width": 650,
+          "height": 1191,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/10-Tablet-diff.png",
+          "sha256": "407fb13adb02319e7f1a60bb9482cf09e545ece31c6cf64e38b7be437d077493",
+          "width": 650,
+          "height": 1191,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/11-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 823.572744014733,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 11.235910546353024,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Tablet-reference.png",
+          "sha256": "0efe33ddbba04680a07bb10ebdf2424bb77136ae1ddc3370e7f539b7788cc669",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Tablet-actual.png",
+          "sha256": "1b4697d36015fa8786adf3024889c20ca92e939f7530104dd18ce31d98ad39e0",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Tablet-overlay.png",
+          "sha256": "9811f9a7c87f55e1b68ea0ff25eac90f0dd6694ca7afb1ab5033c998b35740d4",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/11-Tablet-diff.png",
+          "sha256": "5487337130cb8754a9048c3ef95f85d14f189de7e8c73f5e7f1698a4cd1b8efc",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/12-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 12.071985477649195,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Tablet-reference.png",
+          "sha256": "698ea314c3e33f1b0cdba2f5ff0c4402a642b3c0d4b8c386c30486d9d7daa14c",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Tablet-actual.png",
+          "sha256": "ad3fd5fece4f1e88bfb37053f8926de6fa378cc15ed32e7b15d4ce6e1c60773b",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Tablet-overlay.png",
+          "sha256": "487636198c9de7f3dee8c2f8978804f71dab6e0e7ba3bfa6d7bbc2df40987a1f",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/12-Tablet-diff.png",
+          "sha256": "0064ad6baf513bde2e968a34b562fed5e87db071b402469cf6ff454af3b00ff4",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/13-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 10.599509870660313,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Tablet-reference.png",
+          "sha256": "2ddcbeecc2e9387db2c10181c8246d1ad37f74e33c0a4eb4d9daac102152d047",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Tablet-actual.png",
+          "sha256": "71ad9e0b9f91a608763d47e1e1638709adbf52e84a7dab946220f3764e839bfb",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Tablet-overlay.png",
+          "sha256": "6f757a1d820da35f41e1f94f3bf2b5c79c005ead8754b1289ded01f25fd45bac",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/13-Tablet-diff.png",
+          "sha256": "cadf931f4d13ea8393a04d61ecd1266ca6d2de573cf10c590284fb38ff9a501f",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/14-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 11.607257645664726,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Tablet-reference.png",
+          "sha256": "c3b554345b24e9bbe0b6cc2737b08e3f7858a99a0582783ff849bd19c6c44539",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Tablet-actual.png",
+          "sha256": "317c1031ff8197507945b29bbc9b7929074beaaa7d9cc599d744ce501a5922de",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Tablet-overlay.png",
+          "sha256": "381a040212a6f68a30d3ac6cf8eebd1d7263336a35bd09f0e23d6f67396f816b",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/14-Tablet-diff.png",
+          "sha256": "596b100afb25c298d641dfcf52fea3386244ee3fefb471570ab4841a9fac82f0",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/15-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 9.451548798628444,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Tablet-reference.png",
+          "sha256": "9215bd4add73fe8d12b3048b718906f6750c4cfd69389114b7e072f2eb3a3247",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Tablet-actual.png",
+          "sha256": "ac9f7b87b88e7eadd9c41c2414c427f3051a0d0543f0f93d2194ef137b108802",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Tablet-overlay.png",
+          "sha256": "361ee487b4f65cf8ab81dd02d4a0811ddf070c6a9eb68f804616b4410ebd007e",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/15-Tablet-diff.png",
+          "sha256": "aad91da83ea5cf7295dc150ce6f6e0fe380d96e99305ff4c189f8b03ba868291",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "device": "Tablet",
+      "referenceShaMatch": true,
+      "actualShaMatch": true,
+      "actualFile": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/16-Tablet.png",
+      "actualUsesFullWhenPresent": true,
+      "referenceCropBoundsValid": true,
+      "actualCropBoundsValid": true,
+      "expectedCanvasHeight": 1017.0,
+      "actualScaledHeight": 1016.4893617021277,
+      "referenceScaledHeight": 987.4495967741935,
+      "canvasHeightMatches": true,
+      "noBottomClipping": true,
+      "diagnosticMeanAbsoluteRGB": 7.699489196480347,
+      "scoreUsedAsGate": false,
+      "assets": [
+        {
+          "kind": "reference",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Tablet-reference.png",
+          "sha256": "26c57884e7a5bf987ad72aad30e3af5e35eaddc18f36c10ddfd489f30b430f45",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "actual",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Tablet-actual.png",
+          "sha256": "8ccfa809c277a706ccb4ce3ed38ca1cf39259ddfa6eb899c28a054fc9f419d01",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "overlay",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Tablet-overlay.png",
+          "sha256": "fd376955abf4a6e44f7ed0137c4ce46f7bfb4d7c8ed3363cc9f797efd9b9ba65",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        },
+        {
+          "kind": "diff",
+          "file": "docs/qa/inventory/HN-INVENTORY-32REF-001/visual/final-build-baebfc4/comparison/16-Tablet-diff.png",
+          "sha256": "8f906ffffba2aea77abbabc8fd9313a6d251ec4e580d694c9c4e42eaeec5a0ad",
+          "width": 650,
+          "height": 1017,
+          "dimensionsMatch": true
+        }
+      ]
+    }
+  ]
+}

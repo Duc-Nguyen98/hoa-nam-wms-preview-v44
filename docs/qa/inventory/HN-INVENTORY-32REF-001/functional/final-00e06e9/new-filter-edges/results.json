@@ -1,0 +1,65 @@
+{
+  "scope": "Isolated same-source component edges; not auth/API integration or final visual capture.",
+  "checks": [
+    {
+      "name": "history search zero results uses no-results state",
+      "status": "PASS"
+    },
+    {
+      "name": "reconciliation empty HN04 uses empty state",
+      "status": "PASS"
+    },
+    {
+      "name": "location A01-09 quantity scope excludes the other eight DRV locations",
+      "status": "PASS",
+      "detail": [
+        "HN-DRV-001⧉",
+        "Bộ điều khiển động cơ",
+        "HN01",
+        "A01-09",
+        "Cái",
+        "10",
+        "0",
+        "10",
+        "Xem ›"
+      ]
+    },
+    {
+      "name": "saved difference rejects SKU outside propagated warehouse scope",
+      "status": "PASS"
+    },
+    {
+      "name": "Tablet visible controls meet44x44 targets",
+      "status": "PASS"
+    },
+    {
+      "name": "locale pagination names and dates are localized",
+      "status": "PASS"
+    },
+    {
+      "name": "new movement keyword no-match uses shared no-results state",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"no-results\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"no-results\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"no-results\"]')\n",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-00e06e9/new-filter-edges/failure-1.png"
+    },
+    {
+      "name": "saved-result zero-count tab uses shared no-results state",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"no-results\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"no-results\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"no-results\"]')\n",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-00e06e9/new-filter-edges/failure-2.png"
+    },
+    {
+      "name": "current difference rejects SKU outside propagated warehouse scope",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"not-found\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"not-found\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"not-found\"]')\n",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-00e06e9/new-filter-edges/failure-3.png"
+    },
+    {
+      "name": "non-DRV allocation coverage is unknown rather than false zero balances/counts",
+      "status": "FAIL",
+      "error": "Error: expect(received).not.toBe(expected) // Object.is equality\n\nExpected: not \"0\"",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-00e06e9/new-filter-edges/failure-4.png"
+    }
+  ],
+  "errors": []
+}

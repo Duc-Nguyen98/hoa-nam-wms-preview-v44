@@ -1,0 +1,104 @@
+{
+  "candidateCommit": "baebfc49aa15452a4c2720b62e045f6301bfb49e",
+  "beforeSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "bac516946748b1283a71234270ea464050cacc2d3428888df5b888ac13615605"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "ef8914572ef9733790453d35c08fca217ca2a6f59c71abd43a2b3baef77628c7"
+    }
+  ],
+  "checks": [
+    {
+      "name": "tablet: loading/empty/no-result/error/forbidden/not-found semantic states and no false successful timestamp",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: exact clipboard copy and success feedback",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: one-page pagination boundaries stay disabled",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: default S16/S11/S20/S21 remain operational without opt-in",
+      "status": "PASS",
+      "detail": [
+        {
+          "screen": "S16",
+          "rows": 11
+        },
+        {
+          "screen": "S11",
+          "rows": 9
+        },
+        {
+          "screen": "S20",
+          "rows": 35
+        },
+        {
+          "screen": "S21",
+          "rows": 11
+        }
+      ]
+    },
+    {
+      "name": "tablet: computed muted label contrast on card and page backgrounds",
+      "status": "FAIL",
+      "error": "Error: expect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 4.5\nReceived:    4.314781715623967",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-baebfc4/static-tablet-tail/failure-1.png"
+    },
+    {
+      "name": "tablet: history rolling90day lower bound rejects stale query without changing accepted results",
+      "status": "PASS",
+      "detail": {
+        "min": "2026-07-31",
+        "max": "2026-10-29",
+        "rejected": "2026-07-30"
+      }
+    },
+    {
+      "name": "tablet: saved-result tabs filter all/match/shortage/surplus and preserve result context",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: movement BOX/type/date/query filters act on rows and reject future date",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: short viewport back restores list scroll and meaningful focus",
+      "status": "PASS",
+      "detail": {
+        "beforeScroll": 657,
+        "afterScroll": 657
+      }
+    },
+    {
+      "name": "tablet: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    },
+    {
+      "name": "tablet: expired MOCK session cannot reopen protected candidate route",
+      "status": "PASS",
+      "detail": {
+        "mode": "MOCK account clock advanced9h beyond existing8h lifetime; no session/auth state patch"
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,23 @@
+✔ putaway history adapter accepts the scoped result envelope (2.0929ms)
+✔ history route forwards only typed query fields to the business reader (1.8769ms)
+✔ history route is a distinct API surface for forbidden readers (1.6212ms)
+✔ approved putaway seed keeps tray display identity and complete S11 lookup links (25435.0214ms)
+✔ approved tray seed keeps 27 boxes, 18 orders and nine linked confirmation rows (7.2521ms)
+✔ S16 actual HTTP receipt A4/B16 → neutral putaway → outbound A1 → parts B14 → reversal B16, reload preserves IDs/unit/token (10873.5514ms)
+✔ S16 reset empties active inventory and old detail fence cannot select same SKU in another generation (1160.3471ms)
+✔ S16 concurrent read retries label/quantity pair at one actual revision; persistent skew refuses a model (751.3078ms)
+✔ S16 rejects incomplete population, forged stock total and missing Product/SKU links without false quantities (1268.2319ms)
+✔ S16 read/session failures clear current model; refresh recovers without any business command or journal ACK (1926.1301ms)
+✔ S16 superseded read and suspended response never republish stale model (971.2505ms)
+✔ S21 HTTP commands A4/B16 -> A1/B16 -> B14 -> B16; exact catalog IDs, units and pinned XLSX survive later mutations/navigation (8122.3996ms)
+✔ S21 Vietnam midnight boundary: receipt in day20, outbound/parts/reversal in day21; opening distinct from compensation (6585.5824ms)
+✔ S21 incomplete proof/population, missing catalog FK and tampered export refuse unverified data (2680.5838ms)
+✔ S21 bounded coherent revision retry, reset clears old rows, read failures and navigation fence exports (2760.7512ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 30125.6064

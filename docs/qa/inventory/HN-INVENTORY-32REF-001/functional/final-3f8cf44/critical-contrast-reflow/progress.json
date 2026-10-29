@@ -1,0 +1,89 @@
+{
+  "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "beforeSource": [
+    {
+      "file": "src/app/App.tsx",
+      "sha256": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23"
+    },
+    {
+      "file": "src/features/S16/approved/adapter.ts",
+      "sha256": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    },
+    {
+      "file": "src/features/S16/approved/InventoryDesignWorkspace.tsx",
+      "sha256": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285"
+    },
+    {
+      "file": "src/features/S16/approved/approved.css",
+      "sha256": "6a9e82331b14bfaa0bba5f12433f70e7e0c121751fe392107d58f2eb0a6a81b5"
+    }
+  ],
+  "checks": [
+    {
+      "name": "tablet: normal-auth direct-route gate",
+      "status": "PASS",
+      "detail": "Fresh protected URL redirected to S07; normal login, confirmation and setup completed."
+    },
+    {
+      "name": "tablet: SKU to allocation to BOX to tray and correct return context",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet: computed muted label contrast on card and page backgrounds",
+      "status": "PASS",
+      "detail": [
+        {
+          "theme": "light",
+          "selector": ".iad-metrics span",
+          "foreground": "rgb(83, 109, 137)",
+          "background": "rgb(255, 255, 255)",
+          "fontSize": "12px",
+          "text": "Tồn thực tế",
+          "ratio": 5.361951918115458
+        },
+        {
+          "theme": "light",
+          "selector": ".iad-heading small",
+          "foreground": "rgb(83, 109, 137)",
+          "background": "rgb(238, 245, 250)",
+          "fontSize": "11px",
+          "text": "Thời điểm số liệu: 14:25 28/10/2026",
+          "ratio": 4.870903648337635
+        },
+        {
+          "theme": "dark",
+          "selector": ".iad-metrics span",
+          "foreground": "rgb(164, 183, 201)",
+          "background": "rgb(29, 48, 66)",
+          "fontSize": "12px",
+          "text": "Tồn thực tế",
+          "ratio": 6.561984136000987
+        },
+        {
+          "theme": "dark",
+          "selector": ".iad-heading small",
+          "foreground": "rgb(164, 183, 201)",
+          "background": "rgb(20, 35, 51)",
+          "fontSize": "11px",
+          "text": "Thời điểm số liệu: 14:25 28/10/2026",
+          "ratio": 7.735669321820835
+        }
+      ]
+    },
+    {
+      "name": "tablet:768px supported viewport and200percent equivalent reflow keep row actions reachable",
+      "status": "FAIL",
+      "error": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 47\n\n- Array []\n+ Array [\n+   Object {\n+     \"label\": \"Xem chi tiết HN-DRV-001\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-FAN-009\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-HMI-008\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-MTR-005\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-PCB-004\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-PSU-002\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-SEN-003\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-SWT-007\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+   Object {\n+     \"label\": \"Xem chi tiết HN-WIR-006\",\n+     \"left\": 535,\n+     \"right\": 581,\n+   },\n+ ]",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/final-3f8cf44/critical-contrast-reflow/failure-1.png"
+    },
+    {
+      "name": "tablet: all fixture reads/navigation preserve canonical operational stock/events/versions",
+      "status": "PASS",
+      "detail": {
+        "snapshotRevision": 69,
+        "preserved": true
+      }
+    }
+  ],
+  "errors": []
+}

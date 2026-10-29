@@ -1,0 +1,133 @@
+{
+  "base": "http://127.0.0.1:5334",
+  "mode": "MOCK",
+  "source": "normal-login-confirm-setup",
+  "results": [
+    {
+      "name": "desktop",
+      "screen": "S16",
+      "metadata": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "overflow": false,
+        "layout": "desktop"
+      },
+      "rows": 11,
+      "states": [],
+      "title": "Tra cứu tồn & đối soát"
+    },
+    {
+      "name": "desktop",
+      "screen": "S11",
+      "metadata": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "overflow": false,
+        "layout": "desktop"
+      },
+      "rows": 9,
+      "states": [],
+      "title": "Danh sách khay"
+    },
+    {
+      "name": "desktop",
+      "screen": "S20",
+      "metadata": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "overflow": false,
+        "layout": "desktop"
+      },
+      "rows": 35,
+      "states": [],
+      "title": "Lịch sử nhập - xuất - tồn kho"
+    },
+    {
+      "name": "desktop",
+      "screen": "S21",
+      "metadata": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 1,
+        "overflow": false,
+        "layout": "desktop"
+      },
+      "rows": 11,
+      "states": [],
+      "title": "Tồn kho & Đối soát"
+    },
+    {
+      "name": "tablet",
+      "screen": "S16",
+      "metadata": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "overflow": false,
+        "layout": "drawer"
+      },
+      "rows": 11,
+      "states": [],
+      "title": "Tra cứu tồn & đối soát"
+    },
+    {
+      "name": "tablet",
+      "screen": "S11",
+      "metadata": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "overflow": false,
+        "layout": "drawer"
+      },
+      "rows": 9,
+      "states": [],
+      "title": "Danh sách khay"
+    },
+    {
+      "name": "tablet",
+      "screen": "S20",
+      "metadata": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "overflow": false,
+        "layout": "drawer"
+      },
+      "rows": 35,
+      "states": [],
+      "title": "Lịch sử nhập - xuất - tồn kho"
+    },
+    {
+      "name": "tablet",
+      "screen": "S21",
+      "metadata": {
+        "width": 800,
+        "height": 1280,
+        "dpr": 2,
+        "overflow": false,
+        "layout": "drawer"
+      },
+      "rows": 11,
+      "states": [],
+      "title": "Tồn kho & Đối soát"
+    }
+  ],
+  "errors": [],
+  "snapshots": [
+    {
+      "name": "desktop",
+      "snapshotRevision": 69,
+      "preserved": true
+    },
+    {
+      "name": "tablet",
+      "snapshotRevision": 69,
+      "preserved": true
+    }
+  ],
+  "readOnlySnapshotPreserved": true
+}

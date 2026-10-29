@@ -1,0 +1,60 @@
+{
+  "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "mode": "MOCK",
+  "groups": [
+    {
+      "group": "critical-contrast-reflow",
+      "pass": 4,
+      "fail": 1,
+      "blocked": 0,
+      "errors": 0,
+      "sourceUnchanged": true,
+      "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca"
+    },
+    {
+      "group": "locale-vi",
+      "pass": 13,
+      "fail": 0,
+      "blocked": 0,
+      "errors": 0,
+      "sourceUnchanged": true,
+      "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca"
+    },
+    {
+      "group": "locale-en",
+      "pass": 13,
+      "fail": 0,
+      "blocked": 0,
+      "errors": 0,
+      "sourceUnchanged": true,
+      "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca"
+    },
+    {
+      "group": "locale-zh-reachability",
+      "pass": 14,
+      "fail": 0,
+      "blocked": 0,
+      "errors": 0,
+      "sourceUnchanged": true,
+      "candidateCommit": "3f8cf44ac531d72d50a42003cafecf6d726085ca"
+    }
+  ],
+  "finalStaticTotal": {
+    "pass": 44,
+    "fail": 1,
+    "blocked": 0
+  },
+  "localeSemanticChecks": 36,
+  "isolatedVariancePass": 1,
+  "openObservations": [
+    {
+      "id": "INV-F-011",
+      "priority": "P2",
+      "scope": "400x640 layout simulation below approved tablet profiles",
+      "observed": "Initial row values/actions clipped; auto-scroll pointer reaches detail; actual browser zoom NOT_RUN"
+    }
+  ],
+  "productionApi": "BLOCKED",
+  "productionRbac": "BLOCKED",
+  "qaBrowserClosed": true
+}

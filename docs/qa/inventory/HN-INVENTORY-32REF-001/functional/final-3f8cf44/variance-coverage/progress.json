@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "name": "non-DRV current and saved variance allocation coverage remains unavailable",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

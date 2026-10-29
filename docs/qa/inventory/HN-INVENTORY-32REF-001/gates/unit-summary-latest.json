@@ -1,0 +1,15 @@
+{
+  "traySeed": 1,
+  "receipts": [
+    "unit-regression-final.tap",
+    "operational-seed-final.tap",
+    "tray-seed-final.tap"
+  ],
+  "operationalSeed": 1,
+  "scopedUnit": 18,
+  "candidate": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "fail": 0,
+  "fixtureTests": 5,
+  "existingRegressionTests": 15,
+  "pass": 20
+}

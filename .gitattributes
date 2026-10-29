@@ -1,0 +1,2 @@
+# Preserve reference and QA receipt bytes so SHA-256 custody survives checkout.
+docs/qa/inventory/HN-INVENTORY-32REF-001/** -text

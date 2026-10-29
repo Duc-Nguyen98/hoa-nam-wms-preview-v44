@@ -1,0 +1,12 @@
+✔ approved nine-SKU scope has three match, three shortage and three surplus across HN01/HN02/HN03 (5.2504ms)
+✔ DRV nine BOX allocation, reservations and counts reconcile independently to 120/20/100 and 120/118/-2 (0.4426ms)
+✔ each BOX belongs to an existing SKU; KH-001 contains exactly its one BOX (0.3261ms)
+✔ saved results own immutable rows and BOX copies; live and saved objects cannot silently alias or mutate (3.1247ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 801.185

@@ -1,0 +1,23 @@
+{
+  "mode": "MOCK isolated component contract",
+  "scope": "Only injected adapter behavior. Not route/auth/API certification or final visual capture.",
+  "checks": [
+    {
+      "name": "injected error adapter: retry performs read; persistent failure remains error; later success transitions to ready",
+      "status": "PASS"
+    },
+    {
+      "name": "injected changed live balance: saved snapshot/difference retain 120 system,118 counted,-2 while live is240",
+      "status": "PASS"
+    },
+    {
+      "name": "injected twelve rows: next/previous change record population and sorting is global",
+      "status": "PASS"
+    },
+    {
+      "name": "injected long ID: copy is exact and text wraps within document width at desktop/tablet",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

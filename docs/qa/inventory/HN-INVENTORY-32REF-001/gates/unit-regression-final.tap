@@ -1,0 +1,26 @@
+✔ approved nine-SKU scope has three match, three shortage and three surplus across HN01/HN02/HN03 (9.2283ms)
+✔ DRV nine BOX allocation, reservations and counts reconcile independently to 120/20/100 and 120/118/-2 (0.6901ms)
+✔ each BOX belongs to an existing SKU; KH-001 contains exactly its one BOX (0.4547ms)
+✔ saved results own immutable rows and BOX copies; live and saved objects cannot silently alias or mutate (11.9432ms)
+✔ allocation completeness is explicit, reconciles complete SKU quantities and remains pinned in saved results (1.1457ms)
+✔ putaway history adapter accepts the scoped result envelope (2.6746ms)
+✔ history route forwards only typed query fields to the business reader (5.2627ms)
+✔ history route is a distinct API surface for forbidden readers (1.8717ms)
+✔ S16 actual HTTP receipt A4/B16 → neutral putaway → outbound A1 → parts B14 → reversal B16, reload preserves IDs/unit/token (5434.8133ms)
+✔ S16 reset empties active inventory and old detail fence cannot select same SKU in another generation (734.1407ms)
+✔ S16 concurrent read retries label/quantity pair at one actual revision; persistent skew refuses a model (495.7098ms)
+✔ S16 rejects incomplete population, forged stock total and missing Product/SKU links without false quantities (666.7785ms)
+✔ S16 read/session failures clear current model; refresh recovers without any business command or journal ACK (1021.5449ms)
+✔ S16 superseded read and suspended response never republish stale model (531.036ms)
+✔ S21 HTTP commands A4/B16 -> A1/B16 -> B14 -> B16; exact catalog IDs, units and pinned XLSX survive later mutations/navigation (4111.8713ms)
+✔ S21 Vietnam midnight boundary: receipt in day20, outbound/parts/reversal in day21; opening distinct from compensation (3660.3531ms)
+✔ S21 incomplete proof/population, missing catalog FK and tampered export refuse unverified data (1578.0857ms)
+✔ S21 bounded coherent revision retry, reset clears old rows, read failures and navigation fence exports (1973.8362ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13333.5028

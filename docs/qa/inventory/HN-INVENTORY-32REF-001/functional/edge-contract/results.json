@@ -1,0 +1,42 @@
+{
+  "scope": "Isolated same-source component edges; not auth/API integration or final visual capture.",
+  "checks": [
+    {
+      "name": "history search zero results uses no-results state",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"no-results\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"no-results\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"no-results\"]')\n",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/edge-contract/failure-1.png"
+    },
+    {
+      "name": "reconciliation empty HN04 uses empty state",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"empty\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"empty\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"empty\"]')\n",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/edge-contract/failure-2.png"
+    },
+    {
+      "name": "location A01-09 quantity scope excludes the other eight DRV locations",
+      "status": "FAIL",
+      "error": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 3\n+ Received  + 3\n\n  Array [\n-   \"10\",\n-   \"0\",\n-   \"10\",\n+   \"120\",\n+   \"20\",\n+   \"100\",\n  ]",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/edge-contract/failure-3.png"
+    },
+    {
+      "name": "saved difference rejects SKU outside propagated warehouse scope",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: locator('.iad').locator('[data-state=\"not-found\"]')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" locator('.iad').locator('[data-state=\"not-found\"]') with timeout 5000ms\n  - waiting for locator('.iad').locator('[data-state=\"not-found\"]')\n",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/edge-contract/failure-4.png"
+    },
+    {
+      "name": "Tablet visible controls meet44x44 targets",
+      "status": "FAIL",
+      "error": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  -   1\n+ Received  + 102\n\n- Array []\n+ Array [\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-DRV-001\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-DRV-001\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-FAN-009\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-FAN-009\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-HMI-008\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-HMI-008\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-MTR-005\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-MTR-005\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-PCB-004\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-PCB-004\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-PSU-002\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-PSU-002\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-SEN-003\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-SEN-003\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-SWT-007\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-SWT-007\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 32,\n+     \"name\": \"Sao chép HN-WIR-006\",\n+     \"w\": 32,\n+   },\n+   Object {\n+     \"h\": 22,\n+     \"name\": \"Xem chi tiết HN-WIR-006\",\n+     \"w\": 34.015625,\n+   },\n+   Object {\n+     \"h\": 36,\n+     \"name\": \"Previous page\",\n+     \"w\": 29.90625,\n+   },\n+   Object {\n+     \"h\": 36,\n+     \"name\": \"Next page\",\n+     \"w\": 29.890625,\n+   },\n+ ]",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/edge-contract/failure-5.png"
+    },
+    {
+      "name": "locale pagination names and dates are localized",
+      "status": "FAIL",
+      "error": "Error: expect(received).not.toContain(expected) // indexOf\n\nExpected value: not \"Previous page\"\nReceived array:     [\"Previous page\", \"Next page\"]",
+      "screenshot": "docs/qa/inventory/HN-INVENTORY-32REF-001/functional/edge-contract/failure-6.png"
+    }
+  ],
+  "errors": []
+}

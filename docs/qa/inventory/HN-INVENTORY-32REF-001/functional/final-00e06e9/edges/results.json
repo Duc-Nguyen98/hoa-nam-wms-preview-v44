@@ -1,0 +1,41 @@
+{
+  "scope": "Isolated same-source component edges; not auth/API integration or final visual capture.",
+  "checks": [
+    {
+      "name": "history search zero results uses no-results state",
+      "status": "PASS"
+    },
+    {
+      "name": "reconciliation empty HN04 uses empty state",
+      "status": "PASS"
+    },
+    {
+      "name": "location A01-09 quantity scope excludes the other eight DRV locations",
+      "status": "PASS",
+      "detail": [
+        "HN-DRV-001⧉",
+        "Bộ điều khiển động cơ",
+        "HN01",
+        "A01-09",
+        "Cái",
+        "10",
+        "0",
+        "10",
+        "Xem ›"
+      ]
+    },
+    {
+      "name": "saved difference rejects SKU outside propagated warehouse scope",
+      "status": "PASS"
+    },
+    {
+      "name": "Tablet visible controls meet44x44 targets",
+      "status": "PASS"
+    },
+    {
+      "name": "locale pagination names and dates are localized",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

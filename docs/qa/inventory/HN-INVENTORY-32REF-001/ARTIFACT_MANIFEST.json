@@ -1,0 +1,4483 @@
+{
+  "task": "HN-INVENTORY-32REF-001",
+  "testedSource": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+  "authoritativeCapture": "visual/final-build-3f8cf44",
+  "files": [
+    {
+      "path": "AGENT_EXECUTION_TRACE.md",
+      "bytes": 4433,
+      "sha256": "8b54541de4aa663e78943cf19c65fe7bfa9dd5f2b6e0b819e3ec724e2a25c5b7"
+    },
+    {
+      "path": "COMMANDS_AND_PROVENANCE.md",
+      "bytes": 3186,
+      "sha256": "b0455630ca3c3074eaa688612ead19bc762cf4d98799daa13b862a7f95bd1f02"
+    },
+    {
+      "path": "DATA_INTEGRITY_REPORT.md",
+      "bytes": 2655,
+      "sha256": "040d815924323ac7f59fc290bca8d2f8f55453f5d1b441d14659453d55d27b59"
+    },
+    {
+      "path": "design/COMPONENT_ROUTE_MAPPING.md",
+      "bytes": 8509,
+      "sha256": "16ceedb81c9281fff1c23754e6a972b2ecdbe1bb86b6fa22e35d3a767dce28e4"
+    },
+    {
+      "path": "design/contact-sheets/inventory-01-02.png",
+      "bytes": 1494953,
+      "sha256": "bbd5c5e3784fbaae4b331123d2a41c98ae7aa3691fac964d5645d42c78729411"
+    },
+    {
+      "path": "design/contact-sheets/inventory-03-04.png",
+      "bytes": 1347139,
+      "sha256": "cb25306fdf6f87289079a710002f20cd2bf4cc0f61d82a972979d0e37619296f"
+    },
+    {
+      "path": "design/contact-sheets/inventory-05-06.png",
+      "bytes": 1436799,
+      "sha256": "a137232fb1b740e57b02f3b0744e76cd8c406307c728af84ba793f02e560b7ac"
+    },
+    {
+      "path": "design/contact-sheets/inventory-07-08.png",
+      "bytes": 1500540,
+      "sha256": "c517933efb45da02988bd3872d3a2fa685844c955644dfee906e4018b88d03c5"
+    },
+    {
+      "path": "design/contact-sheets/inventory-09-10.png",
+      "bytes": 1679891,
+      "sha256": "63eeee2c720ba46e09b423885fb1f307c389e7628a996f87625ff3e6460bde25"
+    },
+    {
+      "path": "design/contact-sheets/inventory-11-12.png",
+      "bytes": 1223509,
+      "sha256": "dbafd3dd2b2b1e71a4ae3c5ad245cd97cc9e124610a866fc612e95b02c72d3e7"
+    },
+    {
+      "path": "design/contact-sheets/inventory-13-14.png",
+      "bytes": 1254228,
+      "sha256": "219daa20143ad94ed743bf337f297447ce22941bf3e4d76bc19ce574dbb1e5c5"
+    },
+    {
+      "path": "design/contact-sheets/inventory-15-16.png",
+      "bytes": 1317791,
+      "sha256": "3a64d5fa9bb4fba46db2b3188c00da4fc6beceb75cd1b7bf310c43aa3b5787ce"
+    },
+    {
+      "path": "design/DESIGN_ACCEPTANCE_MATRIX.md",
+      "bytes": 7095,
+      "sha256": "888d797a7c13085d08b5cf5b1016e1d08d523a15e3fdedab753c8219d1c527b6"
+    },
+    {
+      "path": "design/DESIGN_AUTHORITY_REPORT.md",
+      "bytes": 8543,
+      "sha256": "fcf9f90b2c864a5efebfe336f184e6456baad3f4f060f18ee3edab416aeafe87"
+    },
+    {
+      "path": "design/REFERENCE_MANIFEST.md",
+      "bytes": 9405,
+      "sha256": "d64a2819f771f778dc5a2405d4cbaa3f0220d1f9856fa542ae6a2e04279231d5"
+    },
+    {
+      "path": "design/REFERENCE_VALIDATION.json",
+      "bytes": 10598,
+      "sha256": "ed07ec75e32cbac5ecda04117c8d52afa45e880c6fc3601fe481c4d7edec191e"
+    },
+    {
+      "path": "design/references/Desktop/01_Tra_cuu_ton_kho_Desktop.png",
+      "bytes": 1569310,
+      "sha256": "9ed899985ca8937794686257312b1d2aa13404ebd4df817de24cba4fb5bac088"
+    },
+    {
+      "path": "design/references/Desktop/02_Tong_quan_ton_SKU_Desktop.png",
+      "bytes": 1339975,
+      "sha256": "b6a3de41aa4e71f8d56464a0c9c277e50168c0bac59a4fa7772cfdf31e5441cc"
+    },
+    {
+      "path": "design/references/Desktop/03_Phan_bo_theo_BOX_Desktop.png",
+      "bytes": 1251171,
+      "sha256": "8cbbf97238d68d5fbbfb37eb63de34dcf2819a76abf3db8da351533c0c2f215a"
+    },
+    {
+      "path": "design/references/Desktop/04_Chi_tiet_BOX_Desktop.png",
+      "bytes": 1245607,
+      "sha256": "5f6c3f066b2a4c1cab280f8f00e329b114b0e259cfb9cd9256ab486e281ae6e0"
+    },
+    {
+      "path": "design/references/Desktop/05_Chi_tiet_khay_Desktop.png",
+      "bytes": 1254317,
+      "sha256": "70f8a89a9d2a5c36713f080bba3afca9c2fd70fd13404380892f3f80b825a686"
+    },
+    {
+      "path": "design/references/Desktop/06_Lich_su_bien_dong_Desktop.png",
+      "bytes": 1557217,
+      "sha256": "655181441e55e6b5bc4b462662f4023968cec3ced4d49f63e69a36196d2dd7ca"
+    },
+    {
+      "path": "design/references/Desktop/07_Doi_soat_hien_tai_Desktop.png",
+      "bytes": 1408981,
+      "sha256": "042c8671e4d46ca28171dc895cda437b7d2efcaa54ef0f3e7437c3e48cfa9849"
+    },
+    {
+      "path": "design/references/Desktop/08_Chi_tiet_chenh_lech_Desktop.png",
+      "bytes": 1297148,
+      "sha256": "2588704f6f06c53b587d4464d22c2a1a09480f29738009ec8b30f71b78fd8e69"
+    },
+    {
+      "path": "design/references/Desktop/09_Lich_su_doi_soat_Desktop.png",
+      "bytes": 1607840,
+      "sha256": "7b410e96bb35bf98ffb85cf1894c89884713445601a6fe82f328884a68b21b6c"
+    },
+    {
+      "path": "design/references/Desktop/10_Chi_tiet_lich_su_doi_soat_Desktop.png",
+      "bytes": 1632239,
+      "sha256": "308ac0633b92d3b44d7cc7ec2a8ed78d096c7c31413f15c2efa11eae36534d14"
+    },
+    {
+      "path": "design/references/Desktop/11_Loading_Desktop.png",
+      "bytes": 1222290,
+      "sha256": "a01885e6a490ffe36a79c107811f94e967a725515d49d71558224dc189e5f1ca"
+    },
+    {
+      "path": "design/references/Desktop/12_Empty_Desktop.png",
+      "bytes": 1196348,
+      "sha256": "9114106994af5193b09ef18a3762098b0677fe3d46be13b5c1e3f3928b1869ce"
+    },
+    {
+      "path": "design/references/Desktop/13_No_result_Desktop.png",
+      "bytes": 1210238,
+      "sha256": "973bdf6309f7d0558f9a395e3020ef70787e433daa8ea738817501f2eaf37141"
+    },
+    {
+      "path": "design/references/Desktop/14_Load_error_Desktop.png",
+      "bytes": 1198497,
+      "sha256": "ccf101912100acb5a592cc1c39ed874a57671aa86e850c8b078a4ed065350d47"
+    },
+    {
+      "path": "design/references/Desktop/15_Forbidden_Desktop.png",
+      "bytes": 1531657,
+      "sha256": "804e8d61bbd15b010a88ef7e161a6aab01f0b309b591d6049beb64b271ad2d3b"
+    },
+    {
+      "path": "design/references/Desktop/16_Not_found_Desktop.png",
+      "bytes": 1226125,
+      "sha256": "b7153260f9cabd37d07ab9cce808f8eef4f660bcf7d6f2b65032f04aa7e1c7aa"
+    },
+    {
+      "path": "design/references/IMAGE_INDEX.md",
+      "bytes": 4360,
+      "sha256": "1300a4df905edd8f8c67f59a840c075c4164d7de90d45760382ba7832d6380d9"
+    },
+    {
+      "path": "design/references/MANIFEST.csv",
+      "bytes": 5157,
+      "sha256": "b056451dd634ae9d9b6afc49af0fa0faa5e598cc55691a008b86b365cbeb3174"
+    },
+    {
+      "path": "design/references/PROMPT_S00-1.md",
+      "bytes": 15969,
+      "sha256": "23de30dd078d56fcd6d3c4546c9f2a1c4c917660d29cb7df686b02a2ebfced9c"
+    },
+    {
+      "path": "design/references/README.md",
+      "bytes": 953,
+      "sha256": "af2a333b1565ca9da3d5e649ec22180b1d01fe3779834f77404360d932f84485"
+    },
+    {
+      "path": "design/references/Tablet/01_Tra_cuu_ton_kho_Tablet.png",
+      "bytes": 1429145,
+      "sha256": "96af162f1ae4017c6d8f21a54f6282d251782759b807b3d519c480ad1991b84a"
+    },
+    {
+      "path": "design/references/Tablet/02_Tong_quan_ton_SKU_Tablet.png",
+      "bytes": 1347206,
+      "sha256": "46596d82ad3054c62d193a13c747b5ea3d03712873a74ac6fe8d53ee55997e53"
+    },
+    {
+      "path": "design/references/Tablet/03_Phan_bo_theo_BOX_Tablet.png",
+      "bytes": 1380748,
+      "sha256": "511c2909b7f93e13159df5ab37d76282b561dd157c09d7853e998ccce3bb02d1"
+    },
+    {
+      "path": "design/references/Tablet/04_Chi_tiet_BOX_Tablet.png",
+      "bytes": 1150589,
+      "sha256": "cd992967108ee75f6b743acd0934c15b944dd46f96846cbd89b07c9f1266c907"
+    },
+    {
+      "path": "design/references/Tablet/05_Chi_tiet_khay_Tablet.png",
+      "bytes": 1162399,
+      "sha256": "cc1aa68e475385eb3efc08ee3e5dfbde3b3b3ca44cae4891bae828a26abd3708"
+    },
+    {
+      "path": "design/references/Tablet/06_Lich_su_bien_dong_Tablet.png",
+      "bytes": 1588181,
+      "sha256": "4a898932401e3f428c78282312e86fbf8e35b80f6f8b6d9d2b1ba6d31e355307"
+    },
+    {
+      "path": "design/references/Tablet/07_Doi_soat_hien_tai_Tablet.png",
+      "bytes": 1523261,
+      "sha256": "8bc3b8594ceba10e028777c54dfa5aa566a860e1d27ecf0dbd77780168e5437d"
+    },
+    {
+      "path": "design/references/Tablet/08_Chi_tiet_chenh_lech_Tablet.png",
+      "bytes": 1352748,
+      "sha256": "2f7520fb2c990da5a690aac3534c9ddd6de8e5e16ef25eb18c1d57383e6f0ef8"
+    },
+    {
+      "path": "design/references/Tablet/09_Lich_su_doi_soat_Tablet.png",
+      "bytes": 1345161,
+      "sha256": "902cac4f4c2811753f2e6dd8b23084cf35ff814c093abfc1be46059b7ff22ea9"
+    },
+    {
+      "path": "design/references/Tablet/10_Chi_tiet_lich_su_doi_soat_Tablet.png",
+      "bytes": 1486736,
+      "sha256": "dc6cedbb600275c6c23644b1db988934ee09045c2b8b4d4c3fd68963bc24a6e7"
+    },
+    {
+      "path": "design/references/Tablet/11_Loading_Tablet.png",
+      "bytes": 1092826,
+      "sha256": "0534058b2270b624831eac4a4a1c51070e9925d2cc29925c3fdfb1cd133aed9e"
+    },
+    {
+      "path": "design/references/Tablet/12_Empty_Tablet.png",
+      "bytes": 1086158,
+      "sha256": "67ec5b58dce86b5adf3b67e525e549d274b12f941f14f181a9d0c8c292d188b9"
+    },
+    {
+      "path": "design/references/Tablet/13_No_result_Tablet.png",
+      "bytes": 1385442,
+      "sha256": "c8a97f64157ce09f298634398ca3c55ea32f81ab6974b29ba901c38b1d16b2c1"
+    },
+    {
+      "path": "design/references/Tablet/14_Load_error_Tablet.png",
+      "bytes": 1070402,
+      "sha256": "c1c747aa7e9fb6896e9d17812d42e5452be9771d659c535aa07b5a6e911f499d"
+    },
+    {
+      "path": "design/references/Tablet/15_Forbidden_Tablet.png",
+      "bytes": 1448217,
+      "sha256": "98fca41f08739e2bd2b797dc96508e2c6928f10a5fbe5cbe6bc2eda7732b8ed2"
+    },
+    {
+      "path": "design/references/Tablet/16_Not_found_Tablet.png",
+      "bytes": 1003703,
+      "sha256": "54a05fd43f2d5942ce9a37ccf206d853eeab37086b7a605f0108841e43b14a96"
+    },
+    {
+      "path": "FINAL_GO_NO_GO.md",
+      "bytes": 7572,
+      "sha256": "1817e8b6425030fa8245fe86626c8ade36de7327454054c2359fdbc34c7e1cb8"
+    },
+    {
+      "path": "functional/baseline-browser.json",
+      "bytes": 2703,
+      "sha256": "445e5e92e1044602438bc263c28936be7f2b79655dde28d5713af1f8773a71f3"
+    },
+    {
+      "path": "functional/before-desktop-S11.png",
+      "bytes": 187736,
+      "sha256": "2be71474fef94e2ea00e20e3671675060d369b79cc94ec4376f3868aeb6cd9bc"
+    },
+    {
+      "path": "functional/before-desktop-S16.png",
+      "bytes": 196489,
+      "sha256": "e7055ea68aac514f9c7a9f56644edbdcf5b02703312e376d703b871e00835484"
+    },
+    {
+      "path": "functional/before-desktop-S20.png",
+      "bytes": 572010,
+      "sha256": "ffa9350a3a2c197c6923fb44ae041ae5653d679a75f17c7b4e198759de4a2a48"
+    },
+    {
+      "path": "functional/before-desktop-S21.png",
+      "bytes": 206810,
+      "sha256": "b843d1f9f1fd50070c3e4502d49e477e3078ac5b4d5b25614d2d05cd23884ebd"
+    },
+    {
+      "path": "functional/before-tablet-S11.png",
+      "bytes": 476642,
+      "sha256": "2c1ea8b1a2d570d75923c6c07862632cee1b3afcc0a14ab1fa137f7b863f1b3a"
+    },
+    {
+      "path": "functional/before-tablet-S16.png",
+      "bytes": 544519,
+      "sha256": "b1e61ab3c57b2ac355c0f050835c7348adf552e264df16874d1413a6b14584eb"
+    },
+    {
+      "path": "functional/before-tablet-S20.png",
+      "bytes": 649411,
+      "sha256": "5f0f9e1abf0100dc1c5675e2cfc1e17d178aae591a95b30ab8551f67ea98a040"
+    },
+    {
+      "path": "functional/before-tablet-S21.png",
+      "bytes": 283115,
+      "sha256": "a50fc417c00c5d35ba251e1dd064f8533aa52a3791cf95e4d5b3420b487bc507"
+    },
+    {
+      "path": "functional/BUSINESS_CONTRACT_AUDIT.md",
+      "bytes": 9945,
+      "sha256": "17b490800f97767c9b6f04db5ce08a93d2035439631723c37e26cd7964dbf79f"
+    },
+    {
+      "path": "functional/edge-contract/failure-1.png",
+      "bytes": 85923,
+      "sha256": "dc7d97c013ba032aef8a58ff3d29978645fb376b12d2fab9afa93a70b27c72d9"
+    },
+    {
+      "path": "functional/edge-contract/failure-2.png",
+      "bytes": 86317,
+      "sha256": "5434bfe3e2283371b84e8c665a17eae56bf54859a3e65e94120d302b6d55ffc7"
+    },
+    {
+      "path": "functional/edge-contract/failure-3.png",
+      "bytes": 101842,
+      "sha256": "5b4b6945a1d0a5b3489150e81663cff0506bc8b3ad2397191977d647e57770fa"
+    },
+    {
+      "path": "functional/edge-contract/failure-4.png",
+      "bytes": 329742,
+      "sha256": "f38f975ff307b390e87e2cd4030eaa9ca0b490436790189d12c4e3f2f0deb2a7"
+    },
+    {
+      "path": "functional/edge-contract/failure-5.png",
+      "bytes": 332271,
+      "sha256": "fadabdeec2773629d212308eebd0c70e61d44015951f1722958197f37e08454e"
+    },
+    {
+      "path": "functional/edge-contract/failure-6.png",
+      "bytes": 340573,
+      "sha256": "81bee5f7c4543a78b073aa5a867c672997deea46af4fbca51a71ce7239a3b5a0"
+    },
+    {
+      "path": "functional/edge-contract/locale-observation.json",
+      "bytes": 386,
+      "sha256": "80f5edab19cb4fef77b6aab4ee6c56d659468ad9875528f86eb2983fc0f192dc"
+    },
+    {
+      "path": "functional/edge-contract/results.json",
+      "bytes": 5179,
+      "sha256": "12b49ebbe11b10eb4b5639226e537b326e28eb5b9945f4dacb18abec2d0512fb"
+    },
+    {
+      "path": "functional/existing-tests.log",
+      "bytes": 1814,
+      "sha256": "a18c71cf79b336e68f864075df8ea3b0db7ba66238cc028b7c2631575f8912ef"
+    },
+    {
+      "path": "functional/existing-tests.tap",
+      "bytes": 1814,
+      "sha256": "a18c71cf79b336e68f864075df8ea3b0db7ba66238cc028b7c2631575f8912ef"
+    },
+    {
+      "path": "functional/FINAL_00E06E9_FINDINGS.md",
+      "bytes": 4947,
+      "sha256": "5db2d4cc0fe91b195ac6131e412b0c9f50d17e4bbdb2924a0984f89e36c49e31"
+    },
+    {
+      "path": "functional/final-00e06e9/core/after-desktop-S11.png",
+      "bytes": 184097,
+      "sha256": "d2b768ef9db54f236d752064f135c8dadedaa994f6462b392a958b7cc015f5bb"
+    },
+    {
+      "path": "functional/final-00e06e9/core/after-desktop-S16.png",
+      "bytes": 196229,
+      "sha256": "a7d891fb8ce27fbf5b3cb120fadab69fc3884a3a622818b7ac1d99e223167f35"
+    },
+    {
+      "path": "functional/final-00e06e9/core/after-desktop-S20.png",
+      "bytes": 580052,
+      "sha256": "77f5aa12dded596f4a979464be013131d3cf49f0c026e142d79facfc9d5587f4"
+    },
+    {
+      "path": "functional/final-00e06e9/core/after-desktop-S21.png",
+      "bytes": 209870,
+      "sha256": "6fc7fbe0c2a00db787403490969c856c76f83c68a20eb4c9fe2a2219df3c2103"
+    },
+    {
+      "path": "functional/final-00e06e9/core/contrast-observation.json",
+      "bytes": 379,
+      "sha256": "f6c100d82c689e525a33b44e7509ee36ebbf16791ca6969478351ea03d7d4293"
+    },
+    {
+      "path": "functional/final-00e06e9/core/failure-1.png",
+      "bytes": 17783,
+      "sha256": "45ecbc62333e569640096e441e9314ac5a7b0baf29b86001c061c42c7046bff6"
+    },
+    {
+      "path": "functional/final-00e06e9/core/progress.json",
+      "bytes": 22716,
+      "sha256": "480b537a8fddda0c8a65a4b94c3408091422bc78641ffaa45949ecb3bc34f58d"
+    },
+    {
+      "path": "functional/final-00e06e9/edges/locale-observation.json",
+      "bytes": 392,
+      "sha256": "d2a42baa24985ec0285f8fdcc85b3070d7d4dcdbf458127ef802513247f69c1b"
+    },
+    {
+      "path": "functional/final-00e06e9/edges/results.json",
+      "bytes": 978,
+      "sha256": "11fc5e9300c11addc4ff1c8660e05155080ef7c614244235fc71d9b34ea2a32a"
+    },
+    {
+      "path": "functional/final-00e06e9/injected/results.json",
+      "bytes": 789,
+      "sha256": "5512fb3f9db9fd14e490595f3395e900b776673a042590a996624f59244b063b"
+    },
+    {
+      "path": "functional/final-00e06e9/new-filter-edges/failure-1.png",
+      "bytes": 109015,
+      "sha256": "04d610f51e53a42f3273163b5aba4036655765970eb8bd3cd99c2a95d1d54e5e"
+    },
+    {
+      "path": "functional/final-00e06e9/new-filter-edges/failure-2.png",
+      "bytes": 107567,
+      "sha256": "6cd806135a81b9ba2d21c0716fd0a08fba95ebfb5565c0e8b31a4ae8619e08cf"
+    },
+    {
+      "path": "functional/final-00e06e9/new-filter-edges/failure-3.png",
+      "bytes": 273842,
+      "sha256": "b14b950926dd91e3aed64c0cc247af8dfa9eac5e8e01a366b95209bb57d91204"
+    },
+    {
+      "path": "functional/final-00e06e9/new-filter-edges/failure-4.png",
+      "bytes": 100592,
+      "sha256": "82f5a7f6cdb84e88b7c26fcd3ccd346ab2262a02212aa039b205488da90aec98"
+    },
+    {
+      "path": "functional/final-00e06e9/new-filter-edges/locale-observation.json",
+      "bytes": 392,
+      "sha256": "d2a42baa24985ec0285f8fdcc85b3070d7d4dcdbf458127ef802513247f69c1b"
+    },
+    {
+      "path": "functional/final-00e06e9/new-filter-edges/psu-allocation-observation.json",
+      "bytes": 1099,
+      "sha256": "b7a4596627341d3cdbfb137543b3d343276c408b0bef32061783def9ef475d7c"
+    },
+    {
+      "path": "functional/final-00e06e9/new-filter-edges/results.json",
+      "bytes": 3185,
+      "sha256": "2c708a44bbd43079fe595effa49df3872395f02ce37301e95d06729732128fed"
+    },
+    {
+      "path": "functional/final-3f8cf44/critical-contrast-reflow/browser-results.json",
+      "bytes": 4852,
+      "sha256": "a62e59dda3c809e17084097a910049ff3a6842347490127e35a2ef3c507cf277"
+    },
+    {
+      "path": "functional/final-3f8cf44/critical-contrast-reflow/failure-1.png",
+      "bytes": 189216,
+      "sha256": "2f9e661c9ef9e4a91acf18bf2031a5d0f938b1fe7ca2d6afd993a8dd7343a772"
+    },
+    {
+      "path": "functional/final-3f8cf44/critical-contrast-reflow/muted-contrast-observation.json",
+      "bytes": 992,
+      "sha256": "8661e9928df04de4e350683ef762475bca1e22a47c27bbc2be36452a121926ab"
+    },
+    {
+      "path": "functional/final-3f8cf44/critical-contrast-reflow/progress.json",
+      "bytes": 4083,
+      "sha256": "45c89ba4b005688c53fe14eb1c93a42b967c004ad908992b7868e80fcad7cb86"
+    },
+    {
+      "path": "functional/final-3f8cf44/functional-summary.json",
+      "bytes": 1495,
+      "sha256": "33cd463ca72f1d3f887e27f75f7ff9dca6ab66dccab10bd62ff15d2224e98f01"
+    },
+    {
+      "path": "functional/final-3f8cf44/javascript-equivalence.json",
+      "bytes": 387,
+      "sha256": "e6388eabcc926b114173e3790c39f1ad77436319c3843c2d2e969db9fffb4005"
+    },
+    {
+      "path": "functional/final-3f8cf44/locale-en/browser-results.json",
+      "bytes": 2970,
+      "sha256": "ef978ef15ae151059753ff5cdb72da876e4abccd18fc263ab6c63da35b5b6c91"
+    },
+    {
+      "path": "functional/final-3f8cf44/locale-en/progress.json",
+      "bytes": 2200,
+      "sha256": "7af07f0f0995d4257cf80af2a4274303e1e4529836ae099db05aa496a737d1f0"
+    },
+    {
+      "path": "functional/final-3f8cf44/locale-vi/browser-results.json",
+      "bytes": 2970,
+      "sha256": "192733cd84a8712cb6f452ee44b58903f8bf3293bb33db47411ecea42cc3d6e3"
+    },
+    {
+      "path": "functional/final-3f8cf44/locale-vi/progress.json",
+      "bytes": 2200,
+      "sha256": "92780c59cb7f65f78929c7ebe58de623391d8c196ffc1733a3913b4e11529efe"
+    },
+    {
+      "path": "functional/final-3f8cf44/locale-zh-reachability/browser-results.json",
+      "bytes": 4080,
+      "sha256": "c2af2993d482bf66241b856a6a73d61b3b782dbcd721eae3604e73888a7fd0a3"
+    },
+    {
+      "path": "functional/final-3f8cf44/locale-zh-reachability/progress.json",
+      "bytes": 3310,
+      "sha256": "aff0f4ce5ebe2a6a27ad1a887b8cfa645022ba8e9c97d7739a79d16872a44bd2"
+    },
+    {
+      "path": "functional/final-3f8cf44/locale-zh-reachability/reflow-reachability.json",
+      "bytes": 723,
+      "sha256": "86d513bd2642a8f01ce8a72d1cddfbec859973691180d8362122ce1cae33ab97"
+    },
+    {
+      "path": "functional/final-3f8cf44/source-equivalence.diff",
+      "bytes": 11280,
+      "sha256": "ac03e2a18bdda1d329de8172ff8ac2749cc109a5f2aa75df96f23acae3977332"
+    },
+    {
+      "path": "functional/final-3f8cf44/static-build-info.json",
+      "bytes": 2916,
+      "sha256": "c8ffef37e6bc512d6580a96388020474dea90f3eec3af74b8f48f821e8742eb5"
+    },
+    {
+      "path": "functional/final-3f8cf44/variance-coverage/progress.json",
+      "bytes": 164,
+      "sha256": "dabdeb8a5d2d30ae8ff39e45c830a9d6bf1a08862311ff07514540034f83aeca"
+    },
+    {
+      "path": "functional/final-3f8cf44/variance-coverage/results.json",
+      "bytes": 266,
+      "sha256": "ed52ab4086e8f538ccfb5ce2ccc2ebc6a162546e5d1608942e5171c260619b72"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-new-short-fixed/progress.json",
+      "bytes": 508,
+      "sha256": "f1419b095d225ada7cea0f4fe1a4111dd7f293d934ba96c16ac08f9baac67203"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-new-short-fixed/psu-allocation-observation.json",
+      "bytes": 1252,
+      "sha256": "ef3a41d33f46a1523174ab52ca6c2fd65f8669e8b96963690c0f3b1f1827cb9a"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-new-short-fixed/results.json",
+      "bytes": 610,
+      "sha256": "dbcfbf76f3aed0f17acc6870e928ef6bc781f028eed4ce65cd505a922cf1e72d"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-new-short/failure-1.png",
+      "bytes": 17783,
+      "sha256": "45ecbc62333e569640096e441e9314ac5a7b0baf29b86001c061c42c7046bff6"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-new-short/progress.json",
+      "bytes": 880,
+      "sha256": "c5df28b9d2fc66ae5bc22f473bd997ee77baf08b048e3cb2d5c87545603855d3"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-new-short/psu-allocation-observation.json",
+      "bytes": 1252,
+      "sha256": "ef3a41d33f46a1523174ab52ca6c2fd65f8669e8b96963690c0f3b1f1827cb9a"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-new-short/results.json",
+      "bytes": 982,
+      "sha256": "363b8f2f799621f581b81ef04a5f058229530572c590b459f35b44300f242b29"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-original-six/locale-observation.json",
+      "bytes": 392,
+      "sha256": "d2a42baa24985ec0285f8fdcc85b3070d7d4dcdbf458127ef802513247f69c1b"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-original-six/progress.json",
+      "bytes": 876,
+      "sha256": "b9bc044f5799a7f07000d453f5d4cf5941227d464b466f0a67fe00daab5c3fbe"
+    },
+    {
+      "path": "functional/final-baebfc4/edge-original-six/results.json",
+      "bytes": 978,
+      "sha256": "11fc5e9300c11addc4ff1c8660e05155080ef7c614244235fc71d9b34ea2a32a"
+    },
+    {
+      "path": "functional/final-baebfc4/edges/locale-observation.json",
+      "bytes": 392,
+      "sha256": "d2a42baa24985ec0285f8fdcc85b3070d7d4dcdbf458127ef802513247f69c1b"
+    },
+    {
+      "path": "functional/final-baebfc4/fixture-contract.tap",
+      "bytes": 684,
+      "sha256": "438b14e2c85ef019475c3ee4aa71ba803a53b6707691f91f1e1f1fb7736b160d"
+    },
+    {
+      "path": "functional/final-baebfc4/injected-five/results.json",
+      "bytes": 928,
+      "sha256": "42b51120994e7d2f9060d053fac5171583e17214144f2f61e73300d883dbc498"
+    },
+    {
+      "path": "functional/final-baebfc4/static-build-info.json",
+      "bytes": 3004,
+      "sha256": "3e3d14fd689fa3c97dea0ea61ff28ff6b7c83c2aa9b52abccd0571126e9e3c01"
+    },
+    {
+      "path": "functional/final-baebfc4/static-desktop/after-desktop-S11.png",
+      "bytes": 183716,
+      "sha256": "dd2284b749f3461cd74b772245f04961eb8bcd48ee2a574998032a63dba8345d"
+    },
+    {
+      "path": "functional/final-baebfc4/static-desktop/after-desktop-S16.png",
+      "bytes": 196186,
+      "sha256": "280df3a7ac4bc79a677d38c356f2dc4140564333ab50df6081f8ac5a5cc55f73"
+    },
+    {
+      "path": "functional/final-baebfc4/static-desktop/after-desktop-S20.png",
+      "bytes": 579915,
+      "sha256": "eca3fc5cf4ae89488f9ca8a849dfbd525e2f2cf1091996f82dd74f2c686ad09f"
+    },
+    {
+      "path": "functional/final-baebfc4/static-desktop/after-desktop-S21.png",
+      "bytes": 210056,
+      "sha256": "448402ca98925e21690194e9a810a7acb2e5d14f7875072e8d394e05880c73c5"
+    },
+    {
+      "path": "functional/final-baebfc4/static-desktop/browser-results.json",
+      "bytes": 10431,
+      "sha256": "571c36ddfd0fc9676762b5a08482f16ed313c83c28fcf13d8de8016f8c273d34"
+    },
+    {
+      "path": "functional/final-baebfc4/static-desktop/contrast-observation.json",
+      "bytes": 379,
+      "sha256": "f6c100d82c689e525a33b44e7509ee36ebbf16791ca6969478351ea03d7d4293"
+    },
+    {
+      "path": "functional/final-baebfc4/static-desktop/progress.json",
+      "bytes": 9661,
+      "sha256": "e3f09795489a49c51079cd00ddcd254a35b84975a8a2b64bdb142dfa484f482c"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-core/browser-results.json",
+      "bytes": 4889,
+      "sha256": "b20eed1f8bb408c7e9ffe3f7a4cd92ff11d0c86df63f5e71f21b11581c3a49fb"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-core/progress.json",
+      "bytes": 4119,
+      "sha256": "72ff7a799f45b15d7e7b898fa87431cc76900e6014863ae0441429e77d535662"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/after-tablet-S11.png",
+      "bytes": 475488,
+      "sha256": "871d0d6cc8faa43798640beb227f6f92524267f756c86bc950292f75ae6a37b7"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/after-tablet-S16.png",
+      "bytes": 544437,
+      "sha256": "93e22a86567328fda7968c10d65a0eaa5aff5bd199d4accbeec10c0319651f71"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/after-tablet-S20.png",
+      "bytes": 608258,
+      "sha256": "32330f2f8aa7c9414f5b6309a587e400b021a3f3651b48df11413a982dbda411"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/after-tablet-S21.png",
+      "bytes": 282410,
+      "sha256": "0fab86118b94d970320c166de57ea57736d9b1a094f7c5fb1fa6118a486c24dc"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/browser-results.json",
+      "bytes": 3880,
+      "sha256": "7be0de90dc9fe48bda58c8758986e70e381b9903cf0a414cbb48370a00307f31"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/failure-1.png",
+      "bytes": 178862,
+      "sha256": "d53a0b7b731444129df655f326a9180c17aefc9214a5ace6c22ee06a88efee55"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/muted-contrast-observation.json",
+      "bytes": 993,
+      "sha256": "dbcf4cc6b26fb8a88e75c87f9ad9c6e3f3d3023a7a2ec30093b8c479b7285a62"
+    },
+    {
+      "path": "functional/final-baebfc4/static-tablet-tail/progress.json",
+      "bytes": 3110,
+      "sha256": "d745434f56de29367ce8b3e3537ba309389a0cf3701f20ef70433355e23fc567"
+    },
+    {
+      "path": "functional/fixture-contract-round1.tap",
+      "bytes": 559,
+      "sha256": "088d3301a67634a5a18491e724392aabe346a7bf50b73af235c1f12422798391"
+    },
+    {
+      "path": "functional/FUNCTIONAL_BASELINE_REPORT.md",
+      "bytes": 4532,
+      "sha256": "b7ac4d0af94cb309b7857f3e9b02059037039a96117014bf61a76462ef0fed44"
+    },
+    {
+      "path": "functional/INDEPENDENT_FUNCTIONAL_QA_FINAL.md",
+      "bytes": 11518,
+      "sha256": "5f9b5373327e1ebb3419bf42f18364c27e11e0ae23d24e6120f5c3d9287b48da"
+    },
+    {
+      "path": "functional/INDEPENDENT_FUNCTIONAL_QA_ROUND1.md",
+      "bytes": 7333,
+      "sha256": "c08e74c5607591e9beb3f257721e0f42fb88958572a65fef5f847fea0cdd6c14"
+    },
+    {
+      "path": "functional/injected-contract/failure-1.png",
+      "bytes": 8512,
+      "sha256": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3"
+    },
+    {
+      "path": "functional/injected-contract/failure-2.png",
+      "bytes": 8512,
+      "sha256": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3"
+    },
+    {
+      "path": "functional/injected-contract/failure-3.png",
+      "bytes": 8512,
+      "sha256": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3"
+    },
+    {
+      "path": "functional/injected-contract/failure-4.png",
+      "bytes": 8512,
+      "sha256": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3"
+    },
+    {
+      "path": "functional/injected-contract/results.json",
+      "bytes": 789,
+      "sha256": "5512fb3f9db9fd14e490595f3395e900b776673a042590a996624f59244b063b"
+    },
+    {
+      "path": "functional/REGRESSION_RBAC_REPORT.md",
+      "bytes": 2300,
+      "sha256": "30a520e6814a87a4287dec9a30ee7837c06b4d44bb726bc3544955674286dc4b"
+    },
+    {
+      "path": "functional/round1-corrected-harness/failure-2.png",
+      "bytes": 8512,
+      "sha256": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3"
+    },
+    {
+      "path": "functional/round1-corrected-harness/failure-3.png",
+      "bytes": 8512,
+      "sha256": "e474a175f992442a69e502e42d7748076f7b37bd4715cf7c03ed2b7ff55231c3"
+    },
+    {
+      "path": "functional/round1-serial/browser-results.json",
+      "bytes": 9331,
+      "sha256": "e4114e465c664f3f9562497ae628c01c1e4ba5b16470a902f65993b213406b5f"
+    },
+    {
+      "path": "functional/round1/browser-results.json",
+      "bytes": 14964,
+      "sha256": "90e2648c8d1d1c196c2af822e008e2bf3940dfedd4d4884c6834256563e2ae46"
+    },
+    {
+      "path": "functional/round1/failure-1.png",
+      "bytes": 140480,
+      "sha256": "d5e89d5768825230c153ffd9c056a27d9c1b90d0873e7d0152d2a1d7d0b6aef8"
+    },
+    {
+      "path": "functional/round1/failure-10.png",
+      "bytes": 92895,
+      "sha256": "0b7ee98b22dbf2d102f2158db63c41ffe24f1b37f560b5f9e81b14afc372e567"
+    },
+    {
+      "path": "functional/round1/failure-11.png",
+      "bytes": 105118,
+      "sha256": "c8e13eb729cdb29cddd9eed134a256bb1aa26efe4eaf00bf7091ad8fa324b7be"
+    },
+    {
+      "path": "functional/round1/failure-12.png",
+      "bytes": 105118,
+      "sha256": "c8e13eb729cdb29cddd9eed134a256bb1aa26efe4eaf00bf7091ad8fa324b7be"
+    },
+    {
+      "path": "functional/round1/failure-2.png",
+      "bytes": 102312,
+      "sha256": "4f29e2cdb40c5904c07187abd611525e50c8b7e530bd9be1dfa3aecde9dc943f"
+    },
+    {
+      "path": "functional/round1/failure-3.png",
+      "bytes": 94716,
+      "sha256": "6abf071ecee2caec30a8f5dad0e2371a47d9ea50681602512b90d7acc6e5a6f2"
+    },
+    {
+      "path": "functional/round1/failure-4.png",
+      "bytes": 95919,
+      "sha256": "cd41aaff975a839971492001592e93b2e6021dddaf29a525c50b6ec8ff0ee06b"
+    },
+    {
+      "path": "functional/round1/failure-5.png",
+      "bytes": 97280,
+      "sha256": "dfbaf9d8ac6c7751ea912771e8c556af58b736134ca23af55b338703a79fc5bc"
+    },
+    {
+      "path": "functional/round1/failure-6.png",
+      "bytes": 97280,
+      "sha256": "dfbaf9d8ac6c7751ea912771e8c556af58b736134ca23af55b338703a79fc5bc"
+    },
+    {
+      "path": "functional/round1/failure-7.png",
+      "bytes": 336360,
+      "sha256": "3604b84236512d121395d2699e85cef9edd163cf5a0d8917165d712fa2af1415"
+    },
+    {
+      "path": "functional/round1/failure-8.png",
+      "bytes": 117124,
+      "sha256": "e502d3bcab9e181fcd88e9d9fa1fecb4f715cf21c737ef753b17bdc3cc8e1366"
+    },
+    {
+      "path": "functional/round1/failure-9.png",
+      "bytes": 89852,
+      "sha256": "f58dacb923402c0a0b807a9c23dc70e3ca84a62feabf13d6e5907f3cc56279b4"
+    },
+    {
+      "path": "functional/round2/unit-custody.txt",
+      "bytes": 281,
+      "sha256": "6d0e801fa4ff2d6fa84d857117b3a6a247b9bb36d1f5f3fcfa08cf4dd928ee18"
+    },
+    {
+      "path": "functional/round2/unit-regression.tap",
+      "bytes": 2248,
+      "sha256": "03b8b5f93745772b5161b027f7e2a5af5d41300ab12731748a1ba245851bd785"
+    },
+    {
+      "path": "functional/SCREEN_STATE_MATRIX.md",
+      "bytes": 3625,
+      "sha256": "82e294351d6a568930109d68bc85c988c016b407d8f8b08f248ec4a115a737e2"
+    },
+    {
+      "path": "gates/build-contrast-final.log",
+      "bytes": 1275,
+      "sha256": "a6f20bbe0b13d10d9553732c931dd6d4399e468098482abdb5235f5a091bda4d"
+    },
+    {
+      "path": "gates/build-final.log",
+      "bytes": 1275,
+      "sha256": "287f40db632ffa66a27d24f74f422187be352129994b758a594d2804eb98d08e"
+    },
+    {
+      "path": "gates/build-provenance-latest.json",
+      "bytes": 330,
+      "sha256": "1d2c3bf1fefde8bc032eebef93a9583b02f9c4d3c92b9c0e10c4f475b8b75e2c"
+    },
+    {
+      "path": "gates/build-provenance.json",
+      "bytes": 330,
+      "sha256": "7e38a14789dceca9531f6379dbeab0cbecc160dc4f48c20fdeb4a4c0c1a25e39"
+    },
+    {
+      "path": "gates/build.log",
+      "bytes": 1183,
+      "sha256": "04ca58df4d09971934eed6373be5025e6d66af28f93cca25aa5749b31eaacd0e"
+    },
+    {
+      "path": "gates/contract-final.log",
+      "bytes": 187,
+      "sha256": "4c5f09058324ef578563caeddc24dc3e7a2ab08cf28c2e8510936825a1617871"
+    },
+    {
+      "path": "gates/contract-latest.log",
+      "bytes": 187,
+      "sha256": "4c5f09058324ef578563caeddc24dc3e7a2ab08cf28c2e8510936825a1617871"
+    },
+    {
+      "path": "gates/contract.log",
+      "bytes": 187,
+      "sha256": "4c5f09058324ef578563caeddc24dc3e7a2ab08cf28c2e8510936825a1617871"
+    },
+    {
+      "path": "gates/operational-seed-final.tap",
+      "bytes": 223,
+      "sha256": "515c3d68625ab357fef5acb4758234378988c71446a5460690bb5b44d0e13c68"
+    },
+    {
+      "path": "gates/results-contrast-final.json",
+      "bytes": 281,
+      "sha256": "0bb41d93f7581c8ad1882db382344a30e244c1419c2f3280e361b3c65060163a"
+    },
+    {
+      "path": "gates/results-final.json",
+      "bytes": 303,
+      "sha256": "cc16590a8ade2667843158aa11730e2ab6c2ecc66c18e2769303901227ea68a2"
+    },
+    {
+      "path": "gates/results.json",
+      "bytes": 159,
+      "sha256": "f18c18b8a4e97a791d17a6c71ab42802231e2a07bea27b6061194cfc6dbc39de"
+    },
+    {
+      "path": "gates/tests-latest.json",
+      "bytes": 129,
+      "sha256": "b5ae5984eb20da9f233df9f4a2b149db45282b95937e017c87971cdbd613ae48"
+    },
+    {
+      "path": "gates/tray-seed-final.tap",
+      "bytes": 217,
+      "sha256": "bf959ed3cb588d74bfd1e878d4c58689058ee947512a5713d1f91b96cc5b13b4"
+    },
+    {
+      "path": "gates/unit-regression-final.tap",
+      "bytes": 2179,
+      "sha256": "a1e29e083146b43ff03664f420cf71124a209646617ff73b0f4535cc27f7b2fc"
+    },
+    {
+      "path": "gates/unit-summary-latest.json",
+      "bytes": 333,
+      "sha256": "1e05b0a016f25edabdbd0527eb73f3aba264f2b44d4ced8fcc7571e756db7dab"
+    },
+    {
+      "path": "GIT_CUSTODY_RECEIPT.json",
+      "bytes": 180,
+      "sha256": "f0172bb2a3341f9cafc3daf4c150f365c268185a33e10be367a0cba3799ae454"
+    },
+    {
+      "path": "release/CI_PREVIEW_REPORT.md",
+      "bytes": 2995,
+      "sha256": "9668212c9496bba544d576ea2aed3644d46081016cc54478657d823e2c77aded"
+    },
+    {
+      "path": "release/RELEASE_AUDIT.md",
+      "bytes": 2865,
+      "sha256": "44cd4cc383f574eb0737a8c40f46391326cfbf9c57f948450944220ec9c93b78"
+    },
+    {
+      "path": "TASK_SUMMARY.md",
+      "bytes": 5194,
+      "sha256": "07e2d9811e9140a3f3031dd7edd14f0dbfce8bd1b9b22bc0193bdbea59307450"
+    },
+    {
+      "path": "visual/BAEBFC49_DIAGNOSTIC_REVIEW_RECEIPT.json",
+      "bytes": 67884,
+      "sha256": "1d1bf6a91add43557a89c1ef413b9ea7dd9e118f0fdea24919126f949d60be48"
+    },
+    {
+      "path": "visual/BAEBFC49_REVIEW_METRICS.json",
+      "bytes": 69615,
+      "sha256": "4b96eb3c4d0c718b1ce937f08ace1d7673c3eee6c245d53dd63bfdd3dd48bcc1"
+    },
+    {
+      "path": "visual/DIAGNOSTIC_REVIEW_RECEIPT.json",
+      "bytes": 68008,
+      "sha256": "ceda2b0f8008be65909703b412d88c418b67d33321c9eab15a8063c3faa9d20a"
+    },
+    {
+      "path": "visual/FINAL_BUILD_REVIEW_METRICS.json",
+      "bytes": 73626,
+      "sha256": "8d9da9da596d2572da3e96cd9be30755fcfd3dc56dc20737b9ec4d372c1f6078"
+    },
+    {
+      "path": "visual/FINAL_VISUAL_RETEST_REPORT.md",
+      "bytes": 16923,
+      "sha256": "48bd214423db24df684ecb448b5a277ff7b78b74cba49fab224b74796999f962"
+    },
+    {
+      "path": "visual/final-baebfc4/01-Desktop-dom.html",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/final-baebfc4/01-Desktop.png",
+      "bytes": 139412,
+      "sha256": "b9d7167b82fedfdf1fd4f164328a80bf80bbee087fd985e5c22901e57f095871"
+    },
+    {
+      "path": "visual/final-baebfc4/02-Desktop-dom.html",
+      "bytes": 1624,
+      "sha256": "fcec182a060060372e9ed6eee54fc456e71148acf4ea82d4c55cf5e28595f2b9"
+    },
+    {
+      "path": "visual/final-baebfc4/02-Desktop.png",
+      "bytes": 114081,
+      "sha256": "81c0357e437fabcb2686d565c57b7941cb8629a2db98acc9fc7810f256b79522"
+    },
+    {
+      "path": "visual/final-baebfc4/03-Desktop-dom.html",
+      "bytes": 1333,
+      "sha256": "0811e29a7126c3d0901ac19af8e758dfa1350d6eeae6bf5659aa72ea2ec3710d"
+    },
+    {
+      "path": "visual/final-baebfc4/03-Desktop.png",
+      "bytes": 102870,
+      "sha256": "3d27b408b71c8ec6876e29d22796dec3d5c6a46ad358fd4983d1d0d5825c17d0"
+    },
+    {
+      "path": "visual/final-baebfc4/04-Desktop-dom.html",
+      "bytes": 1881,
+      "sha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05"
+    },
+    {
+      "path": "visual/final-baebfc4/04-Desktop.png",
+      "bytes": 108134,
+      "sha256": "88cd8085284d6d06909405540ce6710d6ae4090440def9a12426e94d7c20c58b"
+    },
+    {
+      "path": "visual/final-baebfc4/capture.json",
+      "bytes": 39121,
+      "sha256": "01e2db0b8a3d1cedd234664cc24903971d29eacfffc023a54d7239f430e9871d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/01-Desktop-dom.txt",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/01-Desktop.png",
+      "bytes": 139407,
+      "sha256": "6d9da335cdd2e7e91e1fbf49ce2c48b6b7f2b232b0075e0ebb1700fa54ccfb15"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/01-Tablet-dom.txt",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/01-Tablet-full.png",
+      "bytes": 266630,
+      "sha256": "876920f2e31ed7a8292e7e6bd0f487540e745b0e273cfabb0abe3509e8e03533"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/01-Tablet.png",
+      "bytes": 266379,
+      "sha256": "463744710320d17a9c74735fbf5ea4aa7a414a75a78dece45a8f732c375f0da0"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/02-Desktop-dom.txt",
+      "bytes": 6013,
+      "sha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/02-Desktop-full.png",
+      "bytes": 140605,
+      "sha256": "0248e238c13001e7548293adeeb9da1f4c6d7a78119c9d2be29ea87672126be0"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/02-Desktop.png",
+      "bytes": 127730,
+      "sha256": "5f78b3f07c5f1160b9473d11922deb2525dcacfe2b253abb75430c68a8978b94"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/02-Tablet-dom.txt",
+      "bytes": 6013,
+      "sha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/02-Tablet-full.png",
+      "bytes": 179044,
+      "sha256": "12b1c082d43e91de81b35ab7ada54dab38ea64acaaa93f2140f98d90581e3b91"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/02-Tablet.png",
+      "bytes": 173753,
+      "sha256": "5e9ea81f4dd7fd36c5a81f41f71ade645a809a1de84f9c5b169dad7ce0748841"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/03-Desktop-dom.txt",
+      "bytes": 6461,
+      "sha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/03-Desktop-full.png",
+      "bytes": 136360,
+      "sha256": "a116b46cf79123bf8307df97429d35793f3c9c03aee49c71d55d9a33418e0e8e"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/03-Desktop.png",
+      "bytes": 130539,
+      "sha256": "6d9e0da4cc661cc873b74e2350902635b558d4c0e2a35f9712fbb7cdde0a0288"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/03-Tablet-dom.txt",
+      "bytes": 6461,
+      "sha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/03-Tablet-full.png",
+      "bytes": 269506,
+      "sha256": "76da86713da56ebcadd1a0a031bc5a29c9465f07d20ab77dba753153612bc9e5"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/03-Tablet.png",
+      "bytes": 234406,
+      "sha256": "5a3afcf6d0b9e945c7d6c5cea9c4747ecd79fbe4a2d0eb682c23b3c88b9e8c6b"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/04-Desktop-dom.txt",
+      "bytes": 1881,
+      "sha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/04-Desktop.png",
+      "bytes": 108202,
+      "sha256": "4ce5086a4d31a5727679e9e0fdc5ce56d83222d0ab809a6106804122caa9efcc"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/04-Tablet-dom.txt",
+      "bytes": 1881,
+      "sha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/04-Tablet.png",
+      "bytes": 129667,
+      "sha256": "fd20fd2c164fd8c399d008aafd6c9955ff2439ffe22a9df25a7fb0312c9b5c21"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/05-Desktop-dom.txt",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/05-Desktop.png",
+      "bytes": 97065,
+      "sha256": "e4411a59bff2772b0df2b3b9d10c0c64fe1ff130e459c3481984b41a1958588f"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/05-Tablet-dom.txt",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/05-Tablet.png",
+      "bytes": 105089,
+      "sha256": "996ad8f1d7908f200d0d452ed5a3d70fe8272b438cfe735c21292d8b01e015a9"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/06-Desktop-dom.txt",
+      "bytes": 5355,
+      "sha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/06-Desktop.png",
+      "bytes": 155659,
+      "sha256": "f9f10d6de5b44d928cde4b7f4aa028b8716e93dd39bf24179ca23d9ebe689187"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/06-Tablet-dom.txt",
+      "bytes": 5355,
+      "sha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/06-Tablet-full.png",
+      "bytes": 374184,
+      "sha256": "31ea93e0a480dd9284a46111c041f42956061fe1f68f6b6b6a6dbf05a5f4be76"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/06-Tablet.png",
+      "bytes": 302217,
+      "sha256": "895ef4e9ba292d37d60eb9beae849b6cb87f960089d0dc3a514af29d3235859d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/07-Desktop-dom.txt",
+      "bytes": 7839,
+      "sha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/07-Desktop-full.png",
+      "bytes": 160391,
+      "sha256": "e5c893daf800c4bf633b99d3866d2baaddf1f3a5c28dd5c056b7e4fd954a38fd"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/07-Desktop.png",
+      "bytes": 156450,
+      "sha256": "17d6ea9a185ea77c918e1987caf4053a80732ea106ac40f20b4b638bde8ee02a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/07-Tablet-dom.txt",
+      "bytes": 7839,
+      "sha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/07-Tablet-full.png",
+      "bytes": 317872,
+      "sha256": "45906955c5119a089cd0828a0fafba8d83428f04f34a5e84a0c9dc742181532a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/07-Tablet.png",
+      "bytes": 281953,
+      "sha256": "90ac1c0d70013edb54f22bc91a3b5aefaa61787bcd1721d8d12603cce9e2f106"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/08-Desktop-dom.txt",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/08-Desktop-full.png",
+      "bytes": 151663,
+      "sha256": "ed18862cc2572090ed458a4016f475c2f01b07dc74681e25e849b4c3eb6afd1d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/08-Desktop.png",
+      "bytes": 138992,
+      "sha256": "4bf8bf5a67c19ca0feecd1fa03715aa4b294f205e2f95f8a08027841a21d3804"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/08-Tablet-dom.txt",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/08-Tablet-full.png",
+      "bytes": 279535,
+      "sha256": "772d5e927b7861d408dd3ac8da89af04a336f0e6f2076b6500e70734819d9a27"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/08-Tablet.png",
+      "bytes": 255603,
+      "sha256": "d9d1343cc6df57fdf0bff84c9a735d46bdaaaa9bcd5884e404cbd7d8841c4423"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/09-Desktop-dom.txt",
+      "bytes": 6245,
+      "sha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/09-Desktop.png",
+      "bytes": 145524,
+      "sha256": "40060537667f72dad01118f0194ff00e77b4128782ed424112b1d0d6d13fcf50"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/09-Tablet-dom.txt",
+      "bytes": 6245,
+      "sha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/09-Tablet-full.png",
+      "bytes": 318609,
+      "sha256": "d78932b0c7b756b355f66ca727c8d5e243ed324af50485be18ac596b8d2535c9"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/09-Tablet.png",
+      "bytes": 264544,
+      "sha256": "f0729986af7a7b0a7490ddea84db5f41e8482d135b226b128b00ad8910211ba8"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/10-Desktop-dom.txt",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/10-Desktop-full.png",
+      "bytes": 161206,
+      "sha256": "6cae84d990d763f4efa003b9b7fe387f3f6ab3c22438e38da726126254d8a1e4"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/10-Desktop.png",
+      "bytes": 157236,
+      "sha256": "9c0cba104e2a04b9200d5590431bf212f019ff32714e53d405f2ae1a71b38069"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/10-Tablet-dom.txt",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/10-Tablet-full.png",
+      "bytes": 318086,
+      "sha256": "ca04986f44231fa0e0f6cb056a65937df676c53619f307ae362150d64b0d8437"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/10-Tablet.png",
+      "bytes": 288670,
+      "sha256": "dee1250300d84a6916332fc56da4be89ad28dc062873a8379d10f32be337d19e"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/11-Desktop-dom.txt",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/11-Desktop.png",
+      "bytes": 89759,
+      "sha256": "e0faccc904592b5c89738b591f45a6e3e13ae1d5d0b2f5086be6d805457ae0d2"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/11-Tablet-dom.txt",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/11-Tablet.png",
+      "bytes": 85700,
+      "sha256": "b3af8436246ceceb595556bbf369f13979e6d99023a8746e157ec084b5d8ddb8"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/12-Desktop-dom.txt",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/12-Desktop.png",
+      "bytes": 92698,
+      "sha256": "8d0462518a69f4d2349f91ebe62ab06726a636f033cdab9ff3ad93b3f378b33d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/12-Tablet-dom.txt",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/12-Tablet.png",
+      "bytes": 94611,
+      "sha256": "780922bd394591234ac773fbe9f78bc833d8d3a8a8823302c5992a5167eb5b9d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/13-Desktop-dom.txt",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/13-Desktop.png",
+      "bytes": 95066,
+      "sha256": "95a90854c231f456dab0ac41db8d6201df726b61cfa03c3c9197290a9648a881"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/13-Tablet-dom.txt",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/13-Tablet.png",
+      "bytes": 99760,
+      "sha256": "1c3f0f5eebc72e6c2fae87ff28d735c9c1d99c8fee18af06ce4dfbfeb9fd66dd"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/14-Desktop-dom.txt",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/14-Desktop.png",
+      "bytes": 92378,
+      "sha256": "ebe8b2878db6232f32ae13e3cf366db40ed8dbc8563d438a9041972d20ed2746"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/14-Tablet-dom.txt",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/14-Tablet.png",
+      "bytes": 93484,
+      "sha256": "0c4644a7a97ae032a72e1c917ccd3afdad2d2d521d5c97cece75eb228caa140c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/15-Desktop-dom.txt",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/15-Desktop.png",
+      "bytes": 87653,
+      "sha256": "2176889862f0ff4496287b9be3496c92065a2635a29c28ba443c88e784199d49"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/15-Tablet-dom.txt",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/15-Tablet.png",
+      "bytes": 83799,
+      "sha256": "35a08a7b08ed9382262962d187758f861da70386d18f4a2c9f2236ea9909c996"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/16-Desktop-dom.txt",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/16-Desktop.png",
+      "bytes": 84252,
+      "sha256": "aa8b65243215cb309ef9837657a3b8d0b042232c36818ce3606cd762042b1a13"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/16-Tablet-dom.txt",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/16-Tablet.png",
+      "bytes": 75575,
+      "sha256": "8d9bff7cc24cd456e289b25f6b79e536c35aa5895b584eb21a4ff8588142989d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/capture.json",
+      "bytes": 357648,
+      "sha256": "d8bbb4e9d5d0943f9ff6d45c72dd0ebc7e5b5ebb345d805340cf6f4694602d9d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Desktop-actual.png",
+      "bytes": 96880,
+      "sha256": "a5869d31f3c4d43beb94992d5198fa51a989cdf4fdfc4d722f6c15bb5af493bb"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Desktop-diff.png",
+      "bytes": 870753,
+      "sha256": "3a75079ef70c7c67eb356df11892b93e214664d814cd8c867f692a3edebcac50"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Desktop-overlay.png",
+      "bytes": 561065,
+      "sha256": "db2979014c0ca07b26c5393872fcf7ac241c50f51939d9650a768966b6053b88"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Desktop-reference.png",
+      "bytes": 805453,
+      "sha256": "55ace7c27b1612474f71d29954ca010ca6f6d0a7ecee4c1fda7460cc69ac3bec"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Tablet-actual.png",
+      "bytes": 180530,
+      "sha256": "a407a946fe8bc842381157c7b9960ba3f7dfad5f38bbb1bb178463451a984f56"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Tablet-diff.png",
+      "bytes": 880210,
+      "sha256": "189a2544bac5d051805da6804d46fc5ca68582536f1ae9edb2f96c5e6b0adc74"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Tablet-overlay.png",
+      "bytes": 601672,
+      "sha256": "b314cc73be455baea1b8644b8c83b589737fb620e2abadc72f0c0cc002c01cfd"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/01-Tablet-reference.png",
+      "bytes": 755220,
+      "sha256": "4ad0e1f67eaa7f8399fdc95724f5d2f9eb5ffc4a0d8612625b8b40208a9f8024"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Desktop-actual.png",
+      "bytes": 93094,
+      "sha256": "8e9175fa65907fc2b052fcefdc658fa72e05387a5890ea584c59a4e5dff5c0fe"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Desktop-diff.png",
+      "bytes": 809659,
+      "sha256": "222192b7de4b048b750a42546c26e37d9e6638475253af8b0b34c7c31b62b3f6"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Desktop-overlay.png",
+      "bytes": 531144,
+      "sha256": "db0865df643139dbcfcbdf694cdf53a5d5e533d618b7109a6eff675ea35e017a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Desktop-reference.png",
+      "bytes": 746445,
+      "sha256": "e2c6a91c4147f921303a43c3ddd08bfebafa312d99dc5a61b5f02e35929814f8"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Tablet-actual.png",
+      "bytes": 174005,
+      "sha256": "6811350094a134cd6270c0d22053c480db38874abec9d6c604aa6203c1438d8c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Tablet-diff.png",
+      "bytes": 882210,
+      "sha256": "e427a1876804f0a7f43f8cd66e68dea389d4ab4c772ffb9157b4201fba875a51"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Tablet-overlay.png",
+      "bytes": 690680,
+      "sha256": "1af9ca21c6d10cf4ae8a5db66e3e657c6fda8d86fea175087ed1f1f36e5dbddf"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/02-Tablet-reference.png",
+      "bytes": 765297,
+      "sha256": "7a3691a9590963f067fc6180eac3ad6f2e8b6c7ba6f06a7b1ac90a0102de685d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Desktop-actual.png",
+      "bytes": 92756,
+      "sha256": "4466af203ee88d6490ae34a988283ede589f4f52bc631646642bb0b0a417a33a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Desktop-diff.png",
+      "bytes": 758875,
+      "sha256": "1d31e93b6a2ef07cb16a69964245ff6ff6ac57fb2b51d93b545304772a30f8d0"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Desktop-overlay.png",
+      "bytes": 516335,
+      "sha256": "9f5e05f6b667395dcf0b48ed663bb63922c2e70622184ded30890b77c03926b2"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Desktop-reference.png",
+      "bytes": 696032,
+      "sha256": "30e7b4fefb9486ac2efb014a98caa0e9bf7146d601073e99fa2ba0168806b97a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Tablet-actual.png",
+      "bytes": 178473,
+      "sha256": "f2928065ab75856435267498a85bc1feefe2f0e5ecc9e519dfda94ff3991716e"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Tablet-diff.png",
+      "bytes": 925335,
+      "sha256": "39fa6c14d56221ff0f8e5e1545b65937e47365a39299f03124da24a6cf34835e"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Tablet-overlay.png",
+      "bytes": 646219,
+      "sha256": "479f5ac38ac792b2e3bfd2221604cc60b01ce92047925feba3d1b7f7399ce7e4"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/03-Tablet-reference.png",
+      "bytes": 806099,
+      "sha256": "911fd5a6ef1cee186a8ca6a19f83eec611d8842522879351e0270472af3ed33e"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Desktop-actual.png",
+      "bytes": 59563,
+      "sha256": "788d7dfa26d6ca25514f1f4064ee6ec0e0fc69c263872cee9ed2d698820f013b"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Desktop-diff.png",
+      "bytes": 718451,
+      "sha256": "d45debf326e110ec78837f3bf1d0b08a1ed5c5fd12147b724bce2d8dfdc7c377"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Desktop-overlay.png",
+      "bytes": 448439,
+      "sha256": "bef694343af40148f590ccfd9ff98db35247875c54e66dc7197e3b99bdc95e0d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Desktop-reference.png",
+      "bytes": 678099,
+      "sha256": "30f96a82ab8627cc03c39a92de63c9a4eef8190fbf37eb9435c321dd72b6825c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Tablet-actual.png",
+      "bytes": 86456,
+      "sha256": "182b85ac5ee52ad09d4ca99f5f557c070ef6f3a80edc612abfc0e1b5db7511bd"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Tablet-diff.png",
+      "bytes": 738425,
+      "sha256": "52ff68914372d09363d63e0770d15a8571d65a30b20e3c7d6878b94829bbbfab"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Tablet-overlay.png",
+      "bytes": 516013,
+      "sha256": "5c4b37eda6ee1ea5558961ac03918149d90c46c148285e70bd7d556c4de1bbd1"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/04-Tablet-reference.png",
+      "bytes": 683452,
+      "sha256": "6eb988cd94dde10406585b9209b8f7f688db11544b1761b1e8652c09f4b7735a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Desktop-actual.png",
+      "bytes": 48386,
+      "sha256": "4f2602497b42320eb8398b77c1dd02a16efc5d41a7ef028e7dd55e1d64d75434"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Desktop-diff.png",
+      "bytes": 690633,
+      "sha256": "bad29626867daba85b833bbde91c700eed592a52d20078f2239d46e9d11ee623"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Desktop-overlay.png",
+      "bytes": 405103,
+      "sha256": "6f07f8b0beb23f0739de90b6192b3a3a4fe6aa53a26c7d38e5e6c5406be97af9"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Desktop-reference.png",
+      "bytes": 661333,
+      "sha256": "e659297113a24c216cb6d8d85e0327bde05584cc62084f12dd942ef8519f0a55"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Tablet-actual.png",
+      "bytes": 68621,
+      "sha256": "d1fe60a19432f141a2470d1c6b16d219b741ca3d6815b89a35d2d98aa293114a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Tablet-diff.png",
+      "bytes": 644824,
+      "sha256": "3135fcd7103f48d9f1c9566989ed01b71007bc32533f00c046ae7843939af131"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Tablet-overlay.png",
+      "bytes": 533644,
+      "sha256": "f29e3af40b96ded618417ce4581c4550431ce4830f651dc1c8c0387085171d66"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/05-Tablet-reference.png",
+      "bytes": 606436,
+      "sha256": "99b674ae7864063dcd24a1d6771dcb4ebb744aaeb59804b7fa3e84e3c58802ca"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Desktop-actual.png",
+      "bytes": 114860,
+      "sha256": "aae9bf8efa044185d32a26971e304317ca2e51136cb2503278363b6f50123664"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Desktop-diff.png",
+      "bytes": 892066,
+      "sha256": "300e73c7f156798f1d2ab38d2f852b0c49e19442a23651cd594893a799efec8f"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Desktop-overlay.png",
+      "bytes": 575294,
+      "sha256": "0348e6d5df9e5c7ae72589897e6b26d44d870211937050f12056370614029412"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Desktop-reference.png",
+      "bytes": 812975,
+      "sha256": "ed53668a0397d0f2078b4710eced88d7b7793916d4050b32d878c6e8d6637b16"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Tablet-actual.png",
+      "bytes": 245901,
+      "sha256": "2074a499f5f595641a4217a5ff0988f890f638926aa48bace773447f654224a1"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Tablet-diff.png",
+      "bytes": 1069185,
+      "sha256": "78c732f905a4aec9a3fba973623ca5e38a4ee4d674ed8eb8f91cbc65b1274f44"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Tablet-overlay.png",
+      "bytes": 833798,
+      "sha256": "6e7e664cdbc160487fe6e1c21a074bafb242dbfdb56f74f9927723327ea8d96f"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/06-Tablet-reference.png",
+      "bytes": 893766,
+      "sha256": "14218bc88a35ffa57fcdf23b4f0fe393216b10e81432f8cdc41865affbc1131a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Desktop-actual.png",
+      "bytes": 114928,
+      "sha256": "6e3af28c6e50841946ae0a754c0268678e6626c0346eb1a3922604034e1a1bfc"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Desktop-diff.png",
+      "bytes": 851340,
+      "sha256": "f6f402c711fdd49969e3622a3f22f33a9f64665b725298fa5dfba930c01de798"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Desktop-overlay.png",
+      "bytes": 606016,
+      "sha256": "4839af5f246f5b66b19ff42cad982cb4e251482694eaf9775c4d4e35f687fc5b"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Desktop-reference.png",
+      "bytes": 771851,
+      "sha256": "a757f0c7828fc4e6a297ed66c981f0628f802263e5282eef468354e6abd69ae4"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Tablet-actual.png",
+      "bytes": 217236,
+      "sha256": "ad5c24a05a9b183a82689a61589a03df00feccef0250bd1fba38216a1256f06d"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Tablet-diff.png",
+      "bytes": 961133,
+      "sha256": "5a8e48550886085735317503bd9405f134894878ead44aa979220aef440c68be"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Tablet-overlay.png",
+      "bytes": 677025,
+      "sha256": "2884f8a2b7d8e6404e6d1495d9cbeed74582eb5cf40da3527f87c86a0c816424"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/07-Tablet-reference.png",
+      "bytes": 802038,
+      "sha256": "70f6f78c3561b4bab1076e56edf84b6edcf42efe876d822cc59b16d8fe9e8584"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Desktop-actual.png",
+      "bytes": 111321,
+      "sha256": "7c22d068d4ee3bc8bea18f8601e546586cbd87157dec3318238bf2f6a07589c6"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Desktop-diff.png",
+      "bytes": 807172,
+      "sha256": "17136a4f5ea5ebb491948e44325d873c1a44a5060482f930ba518bc9aa104dd3"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Desktop-overlay.png",
+      "bytes": 584949,
+      "sha256": "687f1d3a7354c7c1fe3f07f6242fa4fd9ef2abccd94a0ee639cacd40d41878d3"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Desktop-reference.png",
+      "bytes": 733258,
+      "sha256": "3f0bee96ef82416e8afa557454b9b865f6e023a280f889dc24efe309016a6e1b"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Tablet-actual.png",
+      "bytes": 202390,
+      "sha256": "fde2aa95b1f67ca8752179f12ec60ab1c0f90d1a2c84f7305254fedcf5c5f2c5"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Tablet-diff.png",
+      "bytes": 963062,
+      "sha256": "51740570d1cc58c11079deb3074ea740e6f856725e51778ad68f3607a46ac651"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Tablet-overlay.png",
+      "bytes": 747633,
+      "sha256": "f04ead66ebe4431eab0a7e019d6bd9e7d4de1681f03265e50470e6b6c6c4af8b"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/08-Tablet-reference.png",
+      "bytes": 820523,
+      "sha256": "97ce06f0cba8d29e07f01db6af77f47f388c599a9f7357540e6319e9b61d2326"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Desktop-actual.png",
+      "bytes": 99120,
+      "sha256": "a7912ed26fd417a02749e7f579445912457ef1b1da10cd76cc695086d9d81c21"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Desktop-diff.png",
+      "bytes": 877858,
+      "sha256": "e5a0394fcd31eb1d6e0cab738ecc3108834c1e18fc2c4ffb08fa067648f7a381"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Desktop-overlay.png",
+      "bytes": 593214,
+      "sha256": "bfd481edb814c9b54bdf2c8b89a5eede8919dc2b1404e2dcd2f1d3df92239e42"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Desktop-reference.png",
+      "bytes": 813490,
+      "sha256": "1a3a42fc4a697e1e4de2155c1ea60cbb143ec4d0b0ff482e27e3882d4ccb77b2"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Tablet-actual.png",
+      "bytes": 206216,
+      "sha256": "3633f5c382032bd2ad772bd676eb34805b63c2e8065ae1b954da32db1cea351c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Tablet-diff.png",
+      "bytes": 976525,
+      "sha256": "cdfacd0926c1ee3f04e351d015c946bec173632b922f002c8275d6327bcd9a75"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Tablet-overlay.png",
+      "bytes": 726361,
+      "sha256": "c843844f39436639045b8439c7065977a6f1f96a5a7ff6caab09f300e3f329cb"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/09-Tablet-reference.png",
+      "bytes": 825187,
+      "sha256": "4065f0914876ae3c5514e1961d70361f02eb27ae49db1fd45aa161f843de53d7"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Desktop-actual.png",
+      "bytes": 116590,
+      "sha256": "8b7d7f26a86af9f778c77213b09799e65735b0b44a451337ae717728607aec86"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Desktop-diff.png",
+      "bytes": 936753,
+      "sha256": "58404e361eb80d02dfe1fc3a02550ae35005bf0b8529fbbf6623807f86e657ca"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Desktop-overlay.png",
+      "bytes": 646594,
+      "sha256": "03edf754eb4f697b7f2cbbdac7e195c89bedb82b8725a281e64a6f0d108593f5"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Desktop-reference.png",
+      "bytes": 858459,
+      "sha256": "b64bf29ebace0688996fced7474818ee9f4969528258b4e996b1ff2c926bc97f"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Tablet-actual.png",
+      "bytes": 220214,
+      "sha256": "7cf1fc46e7e53831556e5a8d6afc7de163313aae480a205768f7ea7cd1363946"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Tablet-diff.png",
+      "bytes": 1025950,
+      "sha256": "030e57ed49d50b192512d9e7e90535def02220758a5caf35af64ed35524a73b4"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Tablet-overlay.png",
+      "bytes": 798778,
+      "sha256": "5954b2881bc55e30a3715f5643e78ae98a99172e0d3492102f7627cead8a466c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/10-Tablet-reference.png",
+      "bytes": 863155,
+      "sha256": "e8207e73fffb58070ab4bd86c1b9dcafe4a797ff30c6639b253fc550dd8125dc"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Desktop-actual.png",
+      "bytes": 47455,
+      "sha256": "d0486e58960b30de31b13fd064213a113154b44b5d02351e329a2bde97349d76"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Desktop-diff.png",
+      "bytes": 695662,
+      "sha256": "934bdda0d72a89cdb44e914c399ae19305a89c6bf11605090c60da3ac1c126b6"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Desktop-overlay.png",
+      "bytes": 445466,
+      "sha256": "47dc3f13117e069b6035ca48231d5399afdfafd37e63d77d321304191bb356e5"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Desktop-reference.png",
+      "bytes": 653744,
+      "sha256": "e222f6967627fc9998680777a6dc7cb013b136cf232c2f0ddab596cb10088429"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Tablet-actual.png",
+      "bytes": 62178,
+      "sha256": "7f9055f30653941a6bf2c31626eeb086e9faefd53664bad911a12dc662aece44"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Tablet-diff.png",
+      "bytes": 625409,
+      "sha256": "95184545698d2ec1d76988b1fa3f7d2c01a9ad3584555d7db96bcfb01a7a428c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Tablet-overlay.png",
+      "bytes": 386290,
+      "sha256": "1bf9f012328fc3eaa88cedb2a52f683e96349b87260d4b732796fdd89e5cca29"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/11-Tablet-reference.png",
+      "bytes": 580745,
+      "sha256": "0efe33ddbba04680a07bb10ebdf2424bb77136ae1ddc3370e7f539b7788cc669"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Desktop-actual.png",
+      "bytes": 45600,
+      "sha256": "219d6d6924c2ab3bc06b96e860f208a14b564eea994edece4e1fb4006458b1a0"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Desktop-diff.png",
+      "bytes": 671208,
+      "sha256": "343de38f596904612910ac6822c2d218ecbbaec2700a34b9806f0bae82ce0ccf"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Desktop-overlay.png",
+      "bytes": 398992,
+      "sha256": "43f3d02e2da3f80820e0e9ab788b034f624e0e28ebf59afd4f97748139db2f15"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Desktop-reference.png",
+      "bytes": 644237,
+      "sha256": "b6ce1f6d3e51bec43728a5a2eaeded9a086f3f33277c7cd251b4803c787e51cc"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Tablet-actual.png",
+      "bytes": 62932,
+      "sha256": "42bc0d8ce84ea65425c92c875d944e795cfa2498c72ba0f7469e4621d0cf2fb7"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Tablet-diff.png",
+      "bytes": 681285,
+      "sha256": "d3de9ce3a721eb365b572274cf21842d5b073c8fec2fbf791de6efa58d0aa713"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Tablet-overlay.png",
+      "bytes": 427555,
+      "sha256": "9d9782c2aacfd32adcdd6e8c0882a7bd8a624fffd5ca6d65534f505b59d0cf3c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/12-Tablet-reference.png",
+      "bytes": 638076,
+      "sha256": "698ea314c3e33f1b0cdba2f5ff0c4402a642b3c0d4b8c386c30486d9d7daa14c"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Desktop-actual.png",
+      "bytes": 47839,
+      "sha256": "f380cefe25b3e9658ea3990197d6d31874094990c89a0fa84954b43c18bbfd41"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Desktop-diff.png",
+      "bytes": 682692,
+      "sha256": "307d2ff9373d7ddcfce5a5900629260ac071eeb65823701f3190332f84e152df"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Desktop-overlay.png",
+      "bytes": 428257,
+      "sha256": "8b28516759bd9aa7cbc22139b5fbd02af55cde992ef3fe09599a389edf46c061"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Desktop-reference.png",
+      "bytes": 652921,
+      "sha256": "9d392f5f6f3eae59a36473871b532b8c610415b118a4a529612e867bc5ab65ba"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Tablet-actual.png",
+      "bytes": 66827,
+      "sha256": "147b3d1e615e534f0253e012f0d26384ceb25d86502f9c978bffc304823dd020"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Tablet-diff.png",
+      "bytes": 758580,
+      "sha256": "b658f411538a5c220c344413c2ef89d95de58fa68e9484ac7660cfd6c217f3b2"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Tablet-overlay.png",
+      "bytes": 469108,
+      "sha256": "70eefdfb81876f1a6d8b181e061acc6520d5b78436b9793b79e58190dbf43132"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/13-Tablet-reference.png",
+      "bytes": 714762,
+      "sha256": "2ddcbeecc2e9387db2c10181c8246d1ad37f74e33c0a4eb4d9daac102152d047"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Desktop-actual.png",
+      "bytes": 45391,
+      "sha256": "ab6e444f72026b575a7087ecf2cfd2bf1255d3492645592d69ea27461daf57a9"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Desktop-diff.png",
+      "bytes": 672712,
+      "sha256": "25a1f9ad4ce52f7db89ca1aa7e200d6f9ca05c1dba15255856e924c194e542ee"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Desktop-overlay.png",
+      "bytes": 391580,
+      "sha256": "bb663537a6039280e50efc791557618992caa056d0b0fc8791e07a895cba4b0a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Desktop-reference.png",
+      "bytes": 644407,
+      "sha256": "27fb110c33f5ea36badf8d771df40b0c2dd3acddf68d7d7b92015b7c0f651158"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Tablet-actual.png",
+      "bytes": 62264,
+      "sha256": "ea37d51a6a1565785c88898651b49d43f0cad317f51f89eb7e966b1bc7eff109"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Tablet-diff.png",
+      "bytes": 662054,
+      "sha256": "fd7a09df3521d739df0006be256616dff9de8e4fe8146aea84a51779677ed086"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Tablet-overlay.png",
+      "bytes": 450869,
+      "sha256": "613c9e8825f6f7932b3acd9ea44b5dc3e320cb4224e92dfa52f37ed0a44765ed"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/14-Tablet-reference.png",
+      "bytes": 620823,
+      "sha256": "c3b554345b24e9bbe0b6cc2737b08e3f7858a99a0582783ff849bd19c6c44539"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Desktop-actual.png",
+      "bytes": 40367,
+      "sha256": "5992d658046afc03dffa82aa743cad8af22d1f3a437327b0ad04a9408651065a"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Desktop-diff.png",
+      "bytes": 739947,
+      "sha256": "b90301c4553647021f2c901f9fda0da45a8651d9e5c4265534d09c9547fb5045"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Desktop-overlay.png",
+      "bytes": 441225,
+      "sha256": "97796346583396598356542a57d5b687d3e9a5c51ba1716a4ce063c36bdb30a3"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Desktop-reference.png",
+      "bytes": 718890,
+      "sha256": "b20e976bee840171e1a2ca5197a126126c1c2d30e9da132162a9206a12b6ad2e"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Tablet-actual.png",
+      "bytes": 54450,
+      "sha256": "0e5924a9d01eb4a6d94a8c67fe032cc79d5577bd172ab39f430cdf217af49d18"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Tablet-diff.png",
+      "bytes": 729395,
+      "sha256": "acad816e35c5a581c3bb81aa91f8f860d5060ed4c9ca9e1b49fe9f5619785736"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Tablet-overlay.png",
+      "bytes": 518263,
+      "sha256": "d19804ec03a300d5cb47b25af8d0e8a81ea9a0198ec9932ff406acecfaa30602"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/15-Tablet-reference.png",
+      "bytes": 699710,
+      "sha256": "9215bd4add73fe8d12b3048b718906f6750c4cfd69389114b7e072f2eb3a3247"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Desktop-actual.png",
+      "bytes": 35879,
+      "sha256": "6f07f9acdeffe105afc864ae3cd839f19bd3ba3c96717525a5a60c1768be03d6"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Desktop-diff.png",
+      "bytes": 656865,
+      "sha256": "0e8a6e0164096ab18374e89ad326e21cd190db86828e2b170931f4f50c76e9b2"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Desktop-overlay.png",
+      "bytes": 388231,
+      "sha256": "a7cb5f25e073de40314bb4cb881bde3898cfb3cfe1d0eff3cd8ee6b6a08947ef"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Desktop-reference.png",
+      "bytes": 636726,
+      "sha256": "7bd595b7cc64e0354653e77a2b7403c2d08674f0ec6ba675d60e69e690cd635b"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Tablet-actual.png",
+      "bytes": 48724,
+      "sha256": "e9ab88c7bd7eee99d740201809dce425659f0d094ab862587c60b3d5179feee7"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Tablet-diff.png",
+      "bytes": 618450,
+      "sha256": "b0c1f78bf90f0890dafec5422f3e093cfa3e81d6926989a81eb6cd55a7a7d886"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Tablet-overlay.png",
+      "bytes": 295100,
+      "sha256": "6f7765ff132beb45e5682b0fb84357e836a4d3d107aa4a5eabdeecc4c834a3af"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/16-Tablet-reference.png",
+      "bytes": 595287,
+      "sha256": "26c57884e7a5bf987ad72aad30e3af5e35eaddc18f36c10ddfd489f30b430f45"
+    },
+    {
+      "path": "visual/final-build-3f8cf44/comparison/registration.json",
+      "bytes": 19142,
+      "sha256": "a827368d5cedf0906f7e430be2a23ca7a416fa3fb7a824d465423856cb0f0c46"
+    },
+    {
+      "path": "visual/final-build-baebfc4/01-Desktop-dom.txt",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/01-Desktop.png",
+      "bytes": 139412,
+      "sha256": "b9d7167b82fedfdf1fd4f164328a80bf80bbee087fd985e5c22901e57f095871"
+    },
+    {
+      "path": "visual/final-build-baebfc4/01-Tablet-dom.txt",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/01-Tablet-full.png",
+      "bytes": 266666,
+      "sha256": "932367ca166ebcb9abb64bbcad7ef7a39a480efb7598d7efa4a30b9378bbaf4b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/01-Tablet.png",
+      "bytes": 266415,
+      "sha256": "df83876654d29abbe778f1cd2482d326ddf3b6177c445f416c9ec0b500bf6e44"
+    },
+    {
+      "path": "visual/final-build-baebfc4/02-Desktop-dom.txt",
+      "bytes": 6013,
+      "sha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109"
+    },
+    {
+      "path": "visual/final-build-baebfc4/02-Desktop-full.png",
+      "bytes": 140699,
+      "sha256": "591b532c406813087f4048d942e0e183813d27b093c046145aff9b98438d877b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/02-Desktop.png",
+      "bytes": 127812,
+      "sha256": "902cf4497d3ce6ec7162d2dc364f5bef17f0b595155a10eccbfeb5322f964516"
+    },
+    {
+      "path": "visual/final-build-baebfc4/02-Tablet-dom.txt",
+      "bytes": 6013,
+      "sha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109"
+    },
+    {
+      "path": "visual/final-build-baebfc4/02-Tablet-full.png",
+      "bytes": 178862,
+      "sha256": "d53a0b7b731444129df655f326a9180c17aefc9214a5ace6c22ee06a88efee55"
+    },
+    {
+      "path": "visual/final-build-baebfc4/02-Tablet.png",
+      "bytes": 173566,
+      "sha256": "93f2cda090515808bd1f0fff834fa786f37ef4b7799c5548fd46b49257ba97bd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/03-Desktop-dom.txt",
+      "bytes": 6461,
+      "sha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18"
+    },
+    {
+      "path": "visual/final-build-baebfc4/03-Desktop-full.png",
+      "bytes": 136346,
+      "sha256": "3c15a6620086328cd664b77f28d3e2aa897ad14bcd0e9df1a2d7fdb92ad0bfbf"
+    },
+    {
+      "path": "visual/final-build-baebfc4/03-Desktop.png",
+      "bytes": 130530,
+      "sha256": "3247f19aa13f9f57b6cc282dde9584c6e7ddd590ce974a95d3bae822d89758b0"
+    },
+    {
+      "path": "visual/final-build-baebfc4/03-Tablet-dom.txt",
+      "bytes": 6461,
+      "sha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18"
+    },
+    {
+      "path": "visual/final-build-baebfc4/03-Tablet-full.png",
+      "bytes": 269191,
+      "sha256": "1de12ee219d33ced6c891ba1b943ada41ba1f18a384250fbc031bb9a6cde5caf"
+    },
+    {
+      "path": "visual/final-build-baebfc4/03-Tablet.png",
+      "bytes": 234179,
+      "sha256": "98dcb469681b34093d7a63274aabb067541a9d94afb931d93d7fc64b6fc82746"
+    },
+    {
+      "path": "visual/final-build-baebfc4/04-Desktop-dom.txt",
+      "bytes": 1881,
+      "sha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05"
+    },
+    {
+      "path": "visual/final-build-baebfc4/04-Desktop.png",
+      "bytes": 108134,
+      "sha256": "88cd8085284d6d06909405540ce6710d6ae4090440def9a12426e94d7c20c58b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/04-Tablet-dom.txt",
+      "bytes": 1881,
+      "sha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05"
+    },
+    {
+      "path": "visual/final-build-baebfc4/04-Tablet.png",
+      "bytes": 129622,
+      "sha256": "79a063a118830b193b60564045d1a29530c5131f5f69e93b7a9618560616d410"
+    },
+    {
+      "path": "visual/final-build-baebfc4/05-Desktop-dom.txt",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/05-Desktop.png",
+      "bytes": 97020,
+      "sha256": "79ca241d1bd6dcc655bcd110b1671a13bb30ebd8741a25a207fdf232dc5f2075"
+    },
+    {
+      "path": "visual/final-build-baebfc4/05-Tablet-dom.txt",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/05-Tablet.png",
+      "bytes": 105177,
+      "sha256": "a087ce5af8090bde4d4892fcfac3420b6b64fde89768a25126f320896bd5fccc"
+    },
+    {
+      "path": "visual/final-build-baebfc4/06-Desktop-dom.txt",
+      "bytes": 5355,
+      "sha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819"
+    },
+    {
+      "path": "visual/final-build-baebfc4/06-Desktop.png",
+      "bytes": 155651,
+      "sha256": "a69474cf028546b304734adb205b13443560fceb0ae638e2e95e8d5f80385bfe"
+    },
+    {
+      "path": "visual/final-build-baebfc4/06-Tablet-dom.txt",
+      "bytes": 5355,
+      "sha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819"
+    },
+    {
+      "path": "visual/final-build-baebfc4/06-Tablet-full.png",
+      "bytes": 374190,
+      "sha256": "927b4ecc86577ecd80c9c81528bf29259b44e031370d07952b0e6495db8a63d7"
+    },
+    {
+      "path": "visual/final-build-baebfc4/06-Tablet.png",
+      "bytes": 302261,
+      "sha256": "75e4a0673b6fa46d2a76efdd7821102ed676768a8a6d206fdabf176cfd8effe6"
+    },
+    {
+      "path": "visual/final-build-baebfc4/07-Desktop-dom.txt",
+      "bytes": 7839,
+      "sha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6"
+    },
+    {
+      "path": "visual/final-build-baebfc4/07-Desktop-full.png",
+      "bytes": 160416,
+      "sha256": "bc932d8f12ae21be80fe1fa2cda2130ced0a69272719414d0f65d72140402048"
+    },
+    {
+      "path": "visual/final-build-baebfc4/07-Desktop.png",
+      "bytes": 156466,
+      "sha256": "094da342780d02c90647be7b0d8d51d7e52457848349a2096449e0aa064267ae"
+    },
+    {
+      "path": "visual/final-build-baebfc4/07-Tablet-dom.txt",
+      "bytes": 7839,
+      "sha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6"
+    },
+    {
+      "path": "visual/final-build-baebfc4/07-Tablet-full.png",
+      "bytes": 317714,
+      "sha256": "cc0e090d42f238dd28df628effc68ae4061c13f4a95786626bf8f6174b5c42a2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/07-Tablet.png",
+      "bytes": 281895,
+      "sha256": "b980f8181f0d4100ae760801734c176411509d6d407795a9371104d5a647ddf2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/08-Desktop-dom.txt",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/final-build-baebfc4/08-Desktop-full.png",
+      "bytes": 151766,
+      "sha256": "7681deb8609beab3b12614696731c35b0a4eff4eb184b0f43da5e0d42443c3e9"
+    },
+    {
+      "path": "visual/final-build-baebfc4/08-Desktop.png",
+      "bytes": 139098,
+      "sha256": "28c36b11c6374b7c04caaef5f58af6195cf501cd364825d8f3c2250ddc9278a2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/08-Tablet-dom.txt",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/final-build-baebfc4/08-Tablet-full.png",
+      "bytes": 279571,
+      "sha256": "ac6b899344940772d28e32514fd3cd1b3bc18b04898772dcc34ffed2ff65d7f3"
+    },
+    {
+      "path": "visual/final-build-baebfc4/08-Tablet.png",
+      "bytes": 255660,
+      "sha256": "56d8d8e61d92b6135145da349d6c309afe39081dbb77754867954082552c664a"
+    },
+    {
+      "path": "visual/final-build-baebfc4/09-Desktop-dom.txt",
+      "bytes": 6245,
+      "sha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9"
+    },
+    {
+      "path": "visual/final-build-baebfc4/09-Desktop.png",
+      "bytes": 145505,
+      "sha256": "ec16c4da49f47d3129ff86168a94a653dbc17c30f1e8ede339855e3ce5656a78"
+    },
+    {
+      "path": "visual/final-build-baebfc4/09-Tablet-dom.txt",
+      "bytes": 6245,
+      "sha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9"
+    },
+    {
+      "path": "visual/final-build-baebfc4/09-Tablet-full.png",
+      "bytes": 317939,
+      "sha256": "48334415779a4e74c2d7e201ca434d2de0a6ee22b9fc8e25f5c5f80e6710ce6d"
+    },
+    {
+      "path": "visual/final-build-baebfc4/09-Tablet.png",
+      "bytes": 264061,
+      "sha256": "e354eac2e4b6afe2caa70d7259ba7e8f0897da8c9c35f1db9aa32d11b2929fea"
+    },
+    {
+      "path": "visual/final-build-baebfc4/10-Desktop-dom.txt",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/final-build-baebfc4/10-Desktop-full.png",
+      "bytes": 161275,
+      "sha256": "ac680e8b23226ebb5a0dec894d942a23d49b9a33abbdb521b504f229affbeec7"
+    },
+    {
+      "path": "visual/final-build-baebfc4/10-Desktop.png",
+      "bytes": 157305,
+      "sha256": "99442d651867929436a942ae26691d76ada30d66409695b6dbca32e992c62d7e"
+    },
+    {
+      "path": "visual/final-build-baebfc4/10-Tablet-dom.txt",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/final-build-baebfc4/10-Tablet-full.png",
+      "bytes": 317897,
+      "sha256": "c40e86a648abd211dd129201e0294fb2c8e6a079d4a95b8cf3e1d0e6d70e2b87"
+    },
+    {
+      "path": "visual/final-build-baebfc4/10-Tablet.png",
+      "bytes": 288512,
+      "sha256": "35f282babe2a9e70428a3274143d621ace4d7f9072e5e35abf4d60e1b9f3facd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/11-Desktop-dom.txt",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/final-build-baebfc4/11-Desktop.png",
+      "bytes": 89743,
+      "sha256": "777321326decd1c8bbb3431957cf32a19a23a6ca294681827154d2d726169e89"
+    },
+    {
+      "path": "visual/final-build-baebfc4/11-Tablet-dom.txt",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/final-build-baebfc4/11-Tablet.png",
+      "bytes": 85622,
+      "sha256": "f24eeb7ddbf6189dde564ffd09f5a9709299e8dba4e5a34829e12b36bee8fc9c"
+    },
+    {
+      "path": "visual/final-build-baebfc4/12-Desktop-dom.txt",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/final-build-baebfc4/12-Desktop.png",
+      "bytes": 92654,
+      "sha256": "6465163e050e41f497f96812231f3a7a944d59af9636d7ec3e8331cf3eb21c54"
+    },
+    {
+      "path": "visual/final-build-baebfc4/12-Tablet-dom.txt",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/final-build-baebfc4/12-Tablet.png",
+      "bytes": 94573,
+      "sha256": "b23420d18875cf73577b645d4cd0b44398945c8a0e177f608025278fc755df2f"
+    },
+    {
+      "path": "visual/final-build-baebfc4/13-Desktop-dom.txt",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/final-build-baebfc4/13-Desktop.png",
+      "bytes": 95032,
+      "sha256": "372d5a10bd3dc062893994aa25641f0e18813e5105136cb37e7e1f3caab60630"
+    },
+    {
+      "path": "visual/final-build-baebfc4/13-Tablet-dom.txt",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/final-build-baebfc4/13-Tablet.png",
+      "bytes": 99727,
+      "sha256": "99efa195754474a6ec3bee3dd633335ed770befc8ada7f23dd15b890c6e36250"
+    },
+    {
+      "path": "visual/final-build-baebfc4/14-Desktop-dom.txt",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/final-build-baebfc4/14-Desktop.png",
+      "bytes": 92348,
+      "sha256": "88b4e1f5ba30060a074ceeec70c74ac152df298ea39f99a592dbd663729ffa59"
+    },
+    {
+      "path": "visual/final-build-baebfc4/14-Tablet-dom.txt",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/final-build-baebfc4/14-Tablet.png",
+      "bytes": 93450,
+      "sha256": "af530618e26024049f5ecd1b3c5efff3e557497a3921cf5dc05f4353df80c84e"
+    },
+    {
+      "path": "visual/final-build-baebfc4/15-Desktop-dom.txt",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/final-build-baebfc4/15-Desktop.png",
+      "bytes": 87642,
+      "sha256": "9ed764defaa4d12f303ddcf11941d7633a504033c12596f7930d9efbfaab660f"
+    },
+    {
+      "path": "visual/final-build-baebfc4/15-Tablet-dom.txt",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/final-build-baebfc4/15-Tablet.png",
+      "bytes": 83802,
+      "sha256": "090551016de289b69780d9a6c983c2461ccda16289e34212963e969bb666a408"
+    },
+    {
+      "path": "visual/final-build-baebfc4/16-Desktop-dom.txt",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/final-build-baebfc4/16-Desktop.png",
+      "bytes": 84238,
+      "sha256": "83b9e0b15e4f347739560f156ae8a1d77dab3cf336389127fe208c30a01150c0"
+    },
+    {
+      "path": "visual/final-build-baebfc4/16-Tablet-dom.txt",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/final-build-baebfc4/16-Tablet.png",
+      "bytes": 75587,
+      "sha256": "61adf2103538864b7f351970c7a0d2d03ac91a0c96abad98191506ced7a753e3"
+    },
+    {
+      "path": "visual/final-build-baebfc4/capture.json",
+      "bytes": 357648,
+      "sha256": "088619b520c8f8bba34f616d39e43166dddd800a9f85cac128f90650661d294b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Desktop-actual.png",
+      "bytes": 96868,
+      "sha256": "5c2e5261e853d4a2bb6f98213983c5e9850f65ac1cc18fc53288fe71eda4c168"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Desktop-diff.png",
+      "bytes": 870799,
+      "sha256": "f346715b0bf89aa3da7f138c856fcb21337cf34161daf919dbcd5380a789bef3"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Desktop-overlay.png",
+      "bytes": 560946,
+      "sha256": "385845482af6739fb2ec20a7b5c62ca2182a274fd71fa226e46ddbb5d4f1f821"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Desktop-reference.png",
+      "bytes": 805453,
+      "sha256": "55ace7c27b1612474f71d29954ca010ca6f6d0a7ecee4c1fda7460cc69ac3bec"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Tablet-actual.png",
+      "bytes": 179954,
+      "sha256": "72a6f8ccb466caf7009d078e76b6b8f99e3be8a5bc1fc6a408ecd2e137447b78"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Tablet-diff.png",
+      "bytes": 879593,
+      "sha256": "0175f0bfc32df0f0c761143f9d1f71775fecf35b67dc9d5c41f34e65924ec9f0"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Tablet-overlay.png",
+      "bytes": 601101,
+      "sha256": "b9e0b2aaee054ad287a737df9034997e13dfd31e33c4fb25ab82aef4ade3cbcf"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/01-Tablet-reference.png",
+      "bytes": 755220,
+      "sha256": "4ad0e1f67eaa7f8399fdc95724f5d2f9eb5ffc4a0d8612625b8b40208a9f8024"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Desktop-actual.png",
+      "bytes": 93005,
+      "sha256": "0106bad0a14c136ec9db783a58808f3dcfc6d1c04b702ceb4dafd2b2aef13123"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Desktop-diff.png",
+      "bytes": 809333,
+      "sha256": "c425ac9e745e334ca376af9e4bf9aa525e63e25ef5bf328aa11b96e1de3f1603"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Desktop-overlay.png",
+      "bytes": 531084,
+      "sha256": "2a3fe5050abf67e8dabc3b3776c0da33460aa7be6847649b560317f8762cc0f5"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Desktop-reference.png",
+      "bytes": 746445,
+      "sha256": "e2c6a91c4147f921303a43c3ddd08bfebafa312d99dc5a61b5f02e35929814f8"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Tablet-actual.png",
+      "bytes": 173136,
+      "sha256": "b695a6f6656c4a314aeaee0d06ea1c1896ad4f0aaad7f4d5a0a550340f4b26dd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Tablet-diff.png",
+      "bytes": 881230,
+      "sha256": "c6e7c782a4c75cc9ab8c1f7293239ea56c2a9dec73cf363c6d04d59dc45d05ff"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Tablet-overlay.png",
+      "bytes": 689484,
+      "sha256": "a5430facec3eafa4448ef769bdd6890c0ed770f6036b9a93b0bb94494ea94b25"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/02-Tablet-reference.png",
+      "bytes": 765297,
+      "sha256": "7a3691a9590963f067fc6180eac3ad6f2e8b6c7ba6f06a7b1ac90a0102de685d"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Desktop-actual.png",
+      "bytes": 92732,
+      "sha256": "c8ad78e43017bb69b3b7b99993159278942a99d17b2ec1bba467f2c3e02cc32d"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Desktop-diff.png",
+      "bytes": 758605,
+      "sha256": "25e7e1401c3eb1ec233c5d22b29ed68805722a86fe0c50d7a038eb9d5b849c4d"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Desktop-overlay.png",
+      "bytes": 516134,
+      "sha256": "1d7e32d2c6fbf25943536aa33074988e2163441107f4b4a86199789951789e4e"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Desktop-reference.png",
+      "bytes": 696032,
+      "sha256": "30e7b4fefb9486ac2efb014a98caa0e9bf7146d601073e99fa2ba0168806b97a"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Tablet-actual.png",
+      "bytes": 177919,
+      "sha256": "82489c33d40ceb21fbc48fc0e4affefadf7099884543ccb4913280dfa9657b10"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Tablet-diff.png",
+      "bytes": 924596,
+      "sha256": "df7495eada0300ec1acf1f40e58cfda065696aed7fb3aaf2f584898b4b7b5f89"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Tablet-overlay.png",
+      "bytes": 645392,
+      "sha256": "dc7e19a68282ca4b0221e9b80d000f01de94398926a2a209b2989f4ab31eadaa"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/03-Tablet-reference.png",
+      "bytes": 806099,
+      "sha256": "911fd5a6ef1cee186a8ca6a19f83eec611d8842522879351e0270472af3ed33e"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Desktop-actual.png",
+      "bytes": 59475,
+      "sha256": "79c175af26470a9b87864b4e38ba7449ca735635c55879c8a3a59d27922a83f2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Desktop-diff.png",
+      "bytes": 718194,
+      "sha256": "004a7753787ca2602c677155b48e88eb585e1358f79762acaea7549543903201"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Desktop-overlay.png",
+      "bytes": 448196,
+      "sha256": "cccf6897e5c011221d6349b04dc23f37377d1ad3dd1aa9763670321f2b27ac01"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Desktop-reference.png",
+      "bytes": 678099,
+      "sha256": "30f96a82ab8627cc03c39a92de63c9a4eef8190fbf37eb9435c321dd72b6825c"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Tablet-actual.png",
+      "bytes": 86285,
+      "sha256": "c2896629e4c2bea84b59d4fc4e0c02350f82a0c4e75ba7d2dadd2164774e89a9"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Tablet-diff.png",
+      "bytes": 738233,
+      "sha256": "7e2580d8e590a9c5f515043ecf8e7eb0787b222e7691ce2f2b863d6d905d51a5"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Tablet-overlay.png",
+      "bytes": 515776,
+      "sha256": "0f013e83c4861926e8e76a719c3bccd4c198c55012b77f5879282ade1ca15146"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/04-Tablet-reference.png",
+      "bytes": 683452,
+      "sha256": "6eb988cd94dde10406585b9209b8f7f688db11544b1761b1e8652c09f4b7735a"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Desktop-actual.png",
+      "bytes": 48269,
+      "sha256": "bcba78aac586e532dedf16db41ed3c99b1592a8feb58d9713714100f215254a9"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Desktop-diff.png",
+      "bytes": 690489,
+      "sha256": "41f31ae76f4f0ad3691bcc57a8dd5838b5cccc45c6747922532667d74fd6d187"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Desktop-overlay.png",
+      "bytes": 404935,
+      "sha256": "5184257d26ece268560a1eefeab0ed41a4e4df23bb097d9d55c03d2789ad2e80"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Desktop-reference.png",
+      "bytes": 661333,
+      "sha256": "e659297113a24c216cb6d8d85e0327bde05584cc62084f12dd942ef8519f0a55"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Tablet-actual.png",
+      "bytes": 68433,
+      "sha256": "f7ba0086d40a304b761884f0d1b45767ef2b2a3b68921383aa5d5ae6e5dc8f98"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Tablet-diff.png",
+      "bytes": 644510,
+      "sha256": "311fdf001d6d363bcd71753da9c2ec9702c5f676ab8b25195a3d8f30a92f8a9b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Tablet-overlay.png",
+      "bytes": 533348,
+      "sha256": "cab4be0c2c88c4abc42fd5888330597fdf7e9e373ffe334cf74852deecb47010"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/05-Tablet-reference.png",
+      "bytes": 606436,
+      "sha256": "99b674ae7864063dcd24a1d6771dcb4ebb744aaeb59804b7fa3e84e3c58802ca"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Desktop-actual.png",
+      "bytes": 114790,
+      "sha256": "c4cb96a6e16f0b58d086f2206884555654087354924b87ce18ef8254a04b9eb7"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Desktop-diff.png",
+      "bytes": 891817,
+      "sha256": "64bf3cf1e4300c1f63d5238164eb319679cf596993074279a7a6a505e876a3b4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Desktop-overlay.png",
+      "bytes": 575227,
+      "sha256": "366df4ee7de61b5bde7d5e32c794307f56c5726e8e6773124b0e2ce1a0f5c91a"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Desktop-reference.png",
+      "bytes": 812975,
+      "sha256": "ed53668a0397d0f2078b4710eced88d7b7793916d4050b32d878c6e8d6637b16"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Tablet-actual.png",
+      "bytes": 245111,
+      "sha256": "6e489149f71a44d8e8b038aaf8d5a365493bb800ff81cf1e8c0c5609619f38d3"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Tablet-diff.png",
+      "bytes": 1067803,
+      "sha256": "e441b95272d005a6144b33b0733413fd01f659788a8f21160952e9672dcb7397"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Tablet-overlay.png",
+      "bytes": 832662,
+      "sha256": "ed9d7e6895e8cc77ad0d6f9906a2c22dc53da3a55e0b6c35e937516e50dc18c0"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/06-Tablet-reference.png",
+      "bytes": 893766,
+      "sha256": "14218bc88a35ffa57fcdf23b4f0fe393216b10e81432f8cdc41865affbc1131a"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Desktop-actual.png",
+      "bytes": 114919,
+      "sha256": "678b11bffe2a68ba0c76271514578354a5e05bb1e12f6198b73d4c8a43a21c04"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Desktop-diff.png",
+      "bytes": 851262,
+      "sha256": "f4b3d127c913912cc9bc8213ddafcae06cb997730b4f775b1dfddf67e49c0155"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Desktop-overlay.png",
+      "bytes": 605853,
+      "sha256": "d25f68a69417fd347166ac4876bec3444c666208f640492819a51ea872a4086c"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Desktop-reference.png",
+      "bytes": 771851,
+      "sha256": "a757f0c7828fc4e6a297ed66c981f0628f802263e5282eef468354e6abd69ae4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Tablet-actual.png",
+      "bytes": 216587,
+      "sha256": "8ca38a29c81e3e826b768e601467b665dc7ee0325a8f925c710999c12f514bf0"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Tablet-diff.png",
+      "bytes": 960304,
+      "sha256": "f5a74588c57c60cfc6f7fd0c7bf6aabf1610bac51e4406ee3119ce58a72a9625"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Tablet-overlay.png",
+      "bytes": 676340,
+      "sha256": "5df4fa2127f4986fc3f056f891f3b2b00af6fda83c67910351c9fb601182a0d8"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/07-Tablet-reference.png",
+      "bytes": 802038,
+      "sha256": "70f6f78c3561b4bab1076e56edf84b6edcf42efe876d822cc59b16d8fe9e8584"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Desktop-actual.png",
+      "bytes": 111238,
+      "sha256": "40fcc3259d18723fb2451b3b670e066e0faff32c45477c5e51afbd06180e6e03"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Desktop-diff.png",
+      "bytes": 806949,
+      "sha256": "6e92ce6fafe78583edf3f6559d8ca811a1f961244d1a7eeb75aef4c611ade1a9"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Desktop-overlay.png",
+      "bytes": 584726,
+      "sha256": "3daffaff0a27e63f757089e6f75fada844d83c70ddb11e0b0d7fb48cb94038bd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Desktop-reference.png",
+      "bytes": 733258,
+      "sha256": "3f0bee96ef82416e8afa557454b9b865f6e023a280f889dc24efe309016a6e1b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Tablet-actual.png",
+      "bytes": 201710,
+      "sha256": "47a500ca222d7d33994b35ca480db24214070c563b9deb9c7064992b3369c728"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Tablet-diff.png",
+      "bytes": 962261,
+      "sha256": "8d74a59bae97079f9b51fd725de099fa4af9d1754a1ac4c92c4010ed0ddcf75d"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Tablet-overlay.png",
+      "bytes": 746809,
+      "sha256": "a239af7a417d6403d9c29b9e2eecc09a5731301fdacb1120df528d03acaa7fb4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/08-Tablet-reference.png",
+      "bytes": 820523,
+      "sha256": "97ce06f0cba8d29e07f01db6af77f47f388c599a9f7357540e6319e9b61d2326"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Desktop-actual.png",
+      "bytes": 99100,
+      "sha256": "5629cf63153aec851775fdd1d4a70cf0776d83a07bb00f4a40eec8ec6824b46f"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Desktop-diff.png",
+      "bytes": 877784,
+      "sha256": "ea4d0605810049f455df67f96cbb90ded8e2f788ac582f936ecfaa19ec85a863"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Desktop-overlay.png",
+      "bytes": 593223,
+      "sha256": "0ff0e22fd908a45bbf67f45f236b275211f48156ae3ceb9994aa1b3a3079a905"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Desktop-reference.png",
+      "bytes": 813490,
+      "sha256": "1a3a42fc4a697e1e4de2155c1ea60cbb143ec4d0b0ff482e27e3882d4ccb77b2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Tablet-actual.png",
+      "bytes": 205631,
+      "sha256": "0ff1606d256070c5a1a9928222c474076fdac8e898247e093e4c31edf87b645b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Tablet-diff.png",
+      "bytes": 975908,
+      "sha256": "6367dc47096adba21b2fb71196a266f430236facaecb9cd9d7657e66e3f43518"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Tablet-overlay.png",
+      "bytes": 725603,
+      "sha256": "2fbe980086cfc92c0ecfd7825abd6eb80c892514c24116cabc36c8cbe57585f4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/09-Tablet-reference.png",
+      "bytes": 825187,
+      "sha256": "4065f0914876ae3c5514e1961d70361f02eb27ae49db1fd45aa161f843de53d7"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Desktop-actual.png",
+      "bytes": 116568,
+      "sha256": "b3347aef17f3b6273344021ed250ae6daf1ed061d933a6f47b6fe233f6424b9a"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Desktop-diff.png",
+      "bytes": 936634,
+      "sha256": "2c6918044276ea89ad5218be61579366363d3c847bf2012face8a8c8b88121e1"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Desktop-overlay.png",
+      "bytes": 646354,
+      "sha256": "93daa4fc6975ed2ec00c597628952d8cffd44023564884072cdf6a62c5a3778b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Desktop-reference.png",
+      "bytes": 858459,
+      "sha256": "b64bf29ebace0688996fced7474818ee9f4969528258b4e996b1ff2c926bc97f"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Tablet-actual.png",
+      "bytes": 219647,
+      "sha256": "8ed3727731b88bffee7cca8a23033685316c8bdb40d4eb4bb5f122235bd2afbd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Tablet-diff.png",
+      "bytes": 1025011,
+      "sha256": "407fb13adb02319e7f1a60bb9482cf09e545ece31c6cf64e38b7be437d077493"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Tablet-overlay.png",
+      "bytes": 798196,
+      "sha256": "a6008c762457a0b79c6c77b7cbe1509742db5c8baae5b920d0762dd13456b1dd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/10-Tablet-reference.png",
+      "bytes": 863155,
+      "sha256": "e8207e73fffb58070ab4bd86c1b9dcafe4a797ff30c6639b253fc550dd8125dc"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Desktop-actual.png",
+      "bytes": 47410,
+      "sha256": "54f6ddb4381b1d76660aed9b50978c1354e92aff208c8ffcf37c579a5066ccbc"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Desktop-diff.png",
+      "bytes": 695657,
+      "sha256": "25bddeaa4d0185dd7dc00b7d524cb78e6de08a36be0af4c01f48f06b25e231fa"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Desktop-overlay.png",
+      "bytes": 445344,
+      "sha256": "e050ad08105e1669ca5c874f18ab7ff93abe5ca57a9c45581940c0d93ecdd005"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Desktop-reference.png",
+      "bytes": 653744,
+      "sha256": "e222f6967627fc9998680777a6dc7cb013b136cf232c2f0ddab596cb10088429"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Tablet-actual.png",
+      "bytes": 62063,
+      "sha256": "1b4697d36015fa8786adf3024889c20ca92e939f7530104dd18ce31d98ad39e0"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Tablet-diff.png",
+      "bytes": 625350,
+      "sha256": "5487337130cb8754a9048c3ef95f85d14f189de7e8c73f5e7f1698a4cd1b8efc"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Tablet-overlay.png",
+      "bytes": 386251,
+      "sha256": "9811f9a7c87f55e1b68ea0ff25eac90f0dd6694ca7afb1ab5033c998b35740d4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/11-Tablet-reference.png",
+      "bytes": 580745,
+      "sha256": "0efe33ddbba04680a07bb10ebdf2424bb77136ae1ddc3370e7f539b7788cc669"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Desktop-actual.png",
+      "bytes": 45548,
+      "sha256": "3183e1f3ec2104e431a15663bfa4fcd13762f0d41056c1362f4b7c4daadd94da"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Desktop-diff.png",
+      "bytes": 671173,
+      "sha256": "78f0f35b71836934c8a24a0cb32a0eb5072413467c7b8856d60de1b64299d9e4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Desktop-overlay.png",
+      "bytes": 399011,
+      "sha256": "5d05ca683bb9acc93caaebf2fc558690a27aec273775f59643352148baa8f7d7"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Desktop-reference.png",
+      "bytes": 644237,
+      "sha256": "b6ce1f6d3e51bec43728a5a2eaeded9a086f3f33277c7cd251b4803c787e51cc"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Tablet-actual.png",
+      "bytes": 62839,
+      "sha256": "ad3fd5fece4f1e88bfb37053f8926de6fa378cc15ed32e7b15d4ce6e1c60773b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Tablet-diff.png",
+      "bytes": 681197,
+      "sha256": "0064ad6baf513bde2e968a34b562fed5e87db071b402469cf6ff454af3b00ff4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Tablet-overlay.png",
+      "bytes": 427522,
+      "sha256": "487636198c9de7f3dee8c2f8978804f71dab6e0e7ba3bfa6d7bbc2df40987a1f"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/12-Tablet-reference.png",
+      "bytes": 638076,
+      "sha256": "698ea314c3e33f1b0cdba2f5ff0c4402a642b3c0d4b8c386c30486d9d7daa14c"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Desktop-actual.png",
+      "bytes": 47787,
+      "sha256": "6bf327e10f1acd3818a59fcc5fd621857aae0513a239548110a5011438384100"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Desktop-diff.png",
+      "bytes": 682586,
+      "sha256": "d2dbf70159b02560939d5c223a61b3fef576a87709f23e35816b5f4a8c3064d3"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Desktop-overlay.png",
+      "bytes": 428176,
+      "sha256": "e52e1c11fd142d27473a357ee2d4d309cdf3dad047399b02693b4bfea491514b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Desktop-reference.png",
+      "bytes": 652921,
+      "sha256": "9d392f5f6f3eae59a36473871b532b8c610415b118a4a529612e867bc5ab65ba"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Tablet-actual.png",
+      "bytes": 66737,
+      "sha256": "71ad9e0b9f91a608763d47e1e1638709adbf52e84a7dab946220f3764e839bfb"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Tablet-diff.png",
+      "bytes": 758616,
+      "sha256": "cadf931f4d13ea8393a04d61ecd1266ca6d2de573cf10c590284fb38ff9a501f"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Tablet-overlay.png",
+      "bytes": 469072,
+      "sha256": "6f757a1d820da35f41e1f94f3bf2b5c79c005ead8754b1289ded01f25fd45bac"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/13-Tablet-reference.png",
+      "bytes": 714762,
+      "sha256": "2ddcbeecc2e9387db2c10181c8246d1ad37f74e33c0a4eb4d9daac102152d047"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Desktop-actual.png",
+      "bytes": 45338,
+      "sha256": "713e64b8b3105d56c78250f042dea74e8240673af483140c9ea871ee09cd2fb4"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Desktop-diff.png",
+      "bytes": 672561,
+      "sha256": "12f50ab0a714104010771693569bb1a58b262e41a694bed0ab11d3696bb4dbfb"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Desktop-overlay.png",
+      "bytes": 391587,
+      "sha256": "d5cd08bcabd2c04018b9b67560ac73409d03a5aca9ed160ba054235b65e102a7"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Desktop-reference.png",
+      "bytes": 644407,
+      "sha256": "27fb110c33f5ea36badf8d771df40b0c2dd3acddf68d7d7b92015b7c0f651158"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Tablet-actual.png",
+      "bytes": 62180,
+      "sha256": "317c1031ff8197507945b29bbc9b7929074beaaa7d9cc599d744ce501a5922de"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Tablet-diff.png",
+      "bytes": 661887,
+      "sha256": "596b100afb25c298d641dfcf52fea3386244ee3fefb471570ab4841a9fac82f0"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Tablet-overlay.png",
+      "bytes": 450854,
+      "sha256": "381a040212a6f68a30d3ac6cf8eebd1d7263336a35bd09f0e23d6f67396f816b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/14-Tablet-reference.png",
+      "bytes": 620823,
+      "sha256": "c3b554345b24e9bbe0b6cc2737b08e3f7858a99a0582783ff849bd19c6c44539"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Desktop-actual.png",
+      "bytes": 40348,
+      "sha256": "a9b9c2ff06913b950bd1aed42ab54e948f87b897a52bd61d232d763d5f1b1947"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Desktop-diff.png",
+      "bytes": 739817,
+      "sha256": "fb5febdaf669eb93946e23bd4c3ebf8ef5f0df3ffa194867896d63287e7cb6dd"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Desktop-overlay.png",
+      "bytes": 441136,
+      "sha256": "2903b44416c2abbc1042e6dd1a7049915adec00d2852372b14712061ed840754"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Desktop-reference.png",
+      "bytes": 718890,
+      "sha256": "b20e976bee840171e1a2ca5197a126126c1c2d30e9da132162a9206a12b6ad2e"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Tablet-actual.png",
+      "bytes": 54408,
+      "sha256": "ac9f7b87b88e7eadd9c41c2414c427f3051a0d0543f0f93d2194ef137b108802"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Tablet-diff.png",
+      "bytes": 729245,
+      "sha256": "aad91da83ea5cf7295dc150ce6f6e0fe380d96e99305ff4c189f8b03ba868291"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Tablet-overlay.png",
+      "bytes": 518201,
+      "sha256": "361ee487b4f65cf8ab81dd02d4a0811ddf070c6a9eb68f804616b4410ebd007e"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/15-Tablet-reference.png",
+      "bytes": 699710,
+      "sha256": "9215bd4add73fe8d12b3048b718906f6750c4cfd69389114b7e072f2eb3a3247"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Desktop-actual.png",
+      "bytes": 35852,
+      "sha256": "156c067751054ce81ae82f506af84644a23484ef26fd12d172a09cc4e0bdc6b2"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Desktop-diff.png",
+      "bytes": 656852,
+      "sha256": "d9528eb4fa16d40dd41eff6dbc965010667897430ad813e3244f510292eb9f24"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Desktop-overlay.png",
+      "bytes": 388272,
+      "sha256": "46f56a80ab09df2f30906222d6a7e223a41f88734b3168a5829a140218d6e93a"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Desktop-reference.png",
+      "bytes": 636726,
+      "sha256": "7bd595b7cc64e0354653e77a2b7403c2d08674f0ec6ba675d60e69e690cd635b"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Tablet-actual.png",
+      "bytes": 48703,
+      "sha256": "8ccfa809c277a706ccb4ce3ed38ca1cf39259ddfa6eb899c28a054fc9f419d01"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Tablet-diff.png",
+      "bytes": 618190,
+      "sha256": "8f906ffffba2aea77abbabc8fd9313a6d251ec4e580d694c9c4e42eaeec5a0ad"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Tablet-overlay.png",
+      "bytes": 295082,
+      "sha256": "fd376955abf4a6e44f7ed0137c4ce46f7bfb4d7c8ed3363cc9f797efd9b9ba65"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/16-Tablet-reference.png",
+      "bytes": 595287,
+      "sha256": "26c57884e7a5bf987ad72aad30e3af5e35eaddc18f36c10ddfd489f30b430f45"
+    },
+    {
+      "path": "visual/final-build-baebfc4/comparison/registration.json",
+      "bytes": 19141,
+      "sha256": "6201072dfe5e8ce1aae9a4fa01d20b134e940f145ba8cfa779f2b6d41c47a653"
+    },
+    {
+      "path": "visual/ROUND1_REVIEW_METRICS.json",
+      "bytes": 26244,
+      "sha256": "408df1082d86feefa13a811380bcce190b7f7120580e35d7341f8b3b1d5850dc"
+    },
+    {
+      "path": "visual/round1/01-Desktop-dom.html",
+      "bytes": 6445,
+      "sha256": "7cc580812b2d98f211e3bea14fbe6c9bf084f99d363480a371eae8ec16f775df"
+    },
+    {
+      "path": "visual/round1/01-Desktop-full.png",
+      "bytes": 140480,
+      "sha256": "d5e89d5768825230c153ffd9c056a27d9c1b90d0873e7d0152d2a1d7d0b6aef8"
+    },
+    {
+      "path": "visual/round1/01-Desktop.png",
+      "bytes": 139865,
+      "sha256": "22443138a17522fe48a52d2ad0fa21038a0cb02f79e4416145a3eb5bd1a6cabe"
+    },
+    {
+      "path": "visual/round1/01-Tablet-dom.html",
+      "bytes": 6445,
+      "sha256": "7cc580812b2d98f211e3bea14fbe6c9bf084f99d363480a371eae8ec16f775df"
+    },
+    {
+      "path": "visual/round1/01-Tablet-full.png",
+      "bytes": 336360,
+      "sha256": "3604b84236512d121395d2699e85cef9edd163cf5a0d8917165d712fa2af1415"
+    },
+    {
+      "path": "visual/round1/01-Tablet.png",
+      "bytes": 150368,
+      "sha256": "bcc629b99661970590c0b379912c4cf823fd6619be195a2f5273f3ad889fe682"
+    },
+    {
+      "path": "visual/round1/02-Desktop-dom.html",
+      "bytes": 5901,
+      "sha256": "6a68c4474dccf8a6c2e28bd31bf00390a2612020d1135c843eeef6bbd7e327ea"
+    },
+    {
+      "path": "visual/round1/02-Desktop-full.png",
+      "bytes": 142487,
+      "sha256": "45e597b22195791410548cdf16fb392c5b6b86ef484876cf6964f6d665669a47"
+    },
+    {
+      "path": "visual/round1/02-Desktop.png",
+      "bytes": 134258,
+      "sha256": "8d3886072097e9ec8d49c241e91e484bb0e3eb003b8edb12ac64c6594fa87e6b"
+    },
+    {
+      "path": "visual/round1/02-Tablet-dom.html",
+      "bytes": 5901,
+      "sha256": "6a68c4474dccf8a6c2e28bd31bf00390a2612020d1135c843eeef6bbd7e327ea"
+    },
+    {
+      "path": "visual/round1/02-Tablet-full.png",
+      "bytes": 313885,
+      "sha256": "82a8ad73147b16ea94b69f25f8d032975b795a4db6237f48066860da96a13135"
+    },
+    {
+      "path": "visual/round1/02-Tablet.png",
+      "bytes": 162405,
+      "sha256": "38d75d1d2384a3e5da1d944404a79d0cc4078951c10d8fab040ea81598ca9bd0"
+    },
+    {
+      "path": "visual/round1/03-Desktop-dom.html",
+      "bytes": 5660,
+      "sha256": "b3468d399a15c6a9225812b213425c41dbc506e15c960609334226022e00421c"
+    },
+    {
+      "path": "visual/round1/03-Desktop-full.png",
+      "bytes": 134534,
+      "sha256": "5dcbb1e5d1c59637d4d3b26eefd132e3add801114e09ac0c32c50536541d6d80"
+    },
+    {
+      "path": "visual/round1/03-Desktop.png",
+      "bytes": 133873,
+      "sha256": "e51bbcb69e3fb258589e2efb8b669af495f8ee36ee6fc3b35cca8702aded430d"
+    },
+    {
+      "path": "visual/round1/03-Tablet-dom.html",
+      "bytes": 5660,
+      "sha256": "b3468d399a15c6a9225812b213425c41dbc506e15c960609334226022e00421c"
+    },
+    {
+      "path": "visual/round1/03-Tablet-full.png",
+      "bytes": 298148,
+      "sha256": "1e2c36bccbc5327d9104a291d93586e4e793ab28e304e5f32e58721ad5f6e8f6"
+    },
+    {
+      "path": "visual/round1/03-Tablet.png",
+      "bytes": 158466,
+      "sha256": "b07c5746179e44d88327c928ec19b70cd34d09fe4a7cb0b895387d869601e4cb"
+    },
+    {
+      "path": "visual/round1/04-Desktop-dom.html",
+      "bytes": 1538,
+      "sha256": "2ed25b6ace3808edeb9ce58ded030387a37682f7520fdbe3eccd6efd1a51d23f"
+    },
+    {
+      "path": "visual/round1/04-Desktop-full.png",
+      "bytes": 102786,
+      "sha256": "7a9b35e242a6b80e8649c9a4c397627dab081ee1d25c9a2bd4fe534d6f719e6e"
+    },
+    {
+      "path": "visual/round1/04-Desktop.png",
+      "bytes": 102151,
+      "sha256": "3e1d387d218ae572beb6603f571df3eab6ce03779bcf59e4051a50e5aeb105ff"
+    },
+    {
+      "path": "visual/round1/04-Tablet-dom.html",
+      "bytes": 1538,
+      "sha256": "2ed25b6ace3808edeb9ce58ded030387a37682f7520fdbe3eccd6efd1a51d23f"
+    },
+    {
+      "path": "visual/round1/04-Tablet-full.png",
+      "bytes": 118224,
+      "sha256": "2eb1496fc385036795354edfe54611d75b8b76e380855f29258486ae1ac0faeb"
+    },
+    {
+      "path": "visual/round1/04-Tablet.png",
+      "bytes": 117378,
+      "sha256": "1ad353b63dd108dc4f90d13deb4fe9ff0fa33178b5c3edf70b4c3ba09e9ae177"
+    },
+    {
+      "path": "visual/round1/05-Desktop-dom.html",
+      "bytes": 1637,
+      "sha256": "74e93713401fad093a271fd32d694d7d18b3dfcd30d04c303d3ed00bd95db298"
+    },
+    {
+      "path": "visual/round1/05-Desktop-full.png",
+      "bytes": 95433,
+      "sha256": "520fc1a50a3a1f02b72eca9bed7c834aaf26400e7cdd776552103bca5121c465"
+    },
+    {
+      "path": "visual/round1/05-Desktop.png",
+      "bytes": 94878,
+      "sha256": "b2ace636de0ab02b7dfd73a554e616d5e26232a7f9381332bf1a1c0e2709a598"
+    },
+    {
+      "path": "visual/round1/05-Tablet-dom.html",
+      "bytes": 1637,
+      "sha256": "74e93713401fad093a271fd32d694d7d18b3dfcd30d04c303d3ed00bd95db298"
+    },
+    {
+      "path": "visual/round1/05-Tablet-full.png",
+      "bytes": 102788,
+      "sha256": "3835ba63f942a4856dfa71be2b00712bb89943525896392e3f211e4c99602cd6"
+    },
+    {
+      "path": "visual/round1/05-Tablet.png",
+      "bytes": 101875,
+      "sha256": "361e860c61272ea6ea7cefad1367d6be623cefca34067a9b1ec3259384d36ff5"
+    },
+    {
+      "path": "visual/round1/06-Desktop-dom.html",
+      "bytes": 4281,
+      "sha256": "f7650d703e814c79e649399582d0a3c573829c8f98502343f29c16153c95abba"
+    },
+    {
+      "path": "visual/round1/06-Desktop-full.png",
+      "bytes": 149722,
+      "sha256": "20a5ca5a7891a4c91b8509107ead741c615fa3d9ae1db51cfc3873c3c5dc5139"
+    },
+    {
+      "path": "visual/round1/06-Desktop.png",
+      "bytes": 149093,
+      "sha256": "732a1f71f10c54e94ff377ba3dcccdd5fe388fcec3773d38a7c890b35d0b4192"
+    },
+    {
+      "path": "visual/round1/06-Tablet-dom.html",
+      "bytes": 4281,
+      "sha256": "f7650d703e814c79e649399582d0a3c573829c8f98502343f29c16153c95abba"
+    },
+    {
+      "path": "visual/round1/06-Tablet-full.png",
+      "bytes": 360279,
+      "sha256": "c60213e109c037e4cfb3bce7da6470a2d50236f0cfc280f7299a2b5679c0eebe"
+    },
+    {
+      "path": "visual/round1/06-Tablet.png",
+      "bytes": 186574,
+      "sha256": "b45576dbfa2801c78c0935eea6e9ceb697fda93e5c593b7b06d40029385eca5a"
+    },
+    {
+      "path": "visual/round1/07-Desktop-dom.html",
+      "bytes": 6970,
+      "sha256": "19ca86fc5291b2cc2037dcf8c39fb5612862afbb7ffc7df3d6276315d4298e0b"
+    },
+    {
+      "path": "visual/round1/07-Desktop-full.png",
+      "bytes": 149406,
+      "sha256": "1b7df15fa5293df4c71ced25ea470b06054b836a823781647ca734c19c19e007"
+    },
+    {
+      "path": "visual/round1/07-Desktop.png",
+      "bytes": 148095,
+      "sha256": "c6f26d29439d88fb5c5249e655117abdc9cd6f9d3145704aca4c5b901c7c55b0"
+    },
+    {
+      "path": "visual/round1/07-Tablet-dom.html",
+      "bytes": 6970,
+      "sha256": "19ca86fc5291b2cc2037dcf8c39fb5612862afbb7ffc7df3d6276315d4298e0b"
+    },
+    {
+      "path": "visual/round1/07-Tablet-full.png",
+      "bytes": 365777,
+      "sha256": "aec1975daf7dcf939b56a6da62e7c220303acf5ade63891671187f780ff0afde"
+    },
+    {
+      "path": "visual/round1/07-Tablet.png",
+      "bytes": 163923,
+      "sha256": "85221230e75fdddef7166888aeb1333be8b41c761745c72db1e96abdd27b819a"
+    },
+    {
+      "path": "visual/round1/08-Desktop-dom.html",
+      "bytes": 4452,
+      "sha256": "286e2c5466ed2536a59a47e41cc5b07905030eb0e3875251728d71036021f3a3"
+    },
+    {
+      "path": "visual/round1/08-Desktop-full.png",
+      "bytes": 144607,
+      "sha256": "458d903756ba3e00fd727b5f9962fccfdeb00576cf5b23c965aa87c489bca56a"
+    },
+    {
+      "path": "visual/round1/08-Desktop.png",
+      "bytes": 133591,
+      "sha256": "5add6989a325d98c30236b3617ddfd055b99e6f0b248a453186c79073e005579"
+    },
+    {
+      "path": "visual/round1/08-Tablet-dom.html",
+      "bytes": 4452,
+      "sha256": "286e2c5466ed2536a59a47e41cc5b07905030eb0e3875251728d71036021f3a3"
+    },
+    {
+      "path": "visual/round1/08-Tablet-full.png",
+      "bytes": 333535,
+      "sha256": "22e4ac07c1cc60d0fc41500536841692c475445ffc40a727efd81c26fbf19c17"
+    },
+    {
+      "path": "visual/round1/08-Tablet.png",
+      "bytes": 164060,
+      "sha256": "c325ec46b937444984b6671800387707bddf81141b417ba0c6f81a1a5cf18eb5"
+    },
+    {
+      "path": "visual/round1/09-Desktop-dom.html",
+      "bytes": 5423,
+      "sha256": "bc06534b9a79b65f783dd3022e0530d5ab540bbc18ef4a088aa39b2e2b7aa3c8"
+    },
+    {
+      "path": "visual/round1/09-Desktop-full.png",
+      "bytes": 144389,
+      "sha256": "17f5353e8f8284b59b5bacfd0a81a51122d1fc8b5b1be867b6515e6ae53667a4"
+    },
+    {
+      "path": "visual/round1/09-Desktop.png",
+      "bytes": 143824,
+      "sha256": "50bd48ca7f8045e55596af8b2b41bbdc5c19ae52c4d0246c61c87462eaa73e0a"
+    },
+    {
+      "path": "visual/round1/09-Tablet-dom.html",
+      "bytes": 5423,
+      "sha256": "bc06534b9a79b65f783dd3022e0530d5ab540bbc18ef4a088aa39b2e2b7aa3c8"
+    },
+    {
+      "path": "visual/round1/09-Tablet-full.png",
+      "bytes": 332470,
+      "sha256": "6d69f43f3187b421f0ef0054f145681b422ba39842d87b7772b808e0ba41f240"
+    },
+    {
+      "path": "visual/round1/09-Tablet.png",
+      "bytes": 182313,
+      "sha256": "06b0cac1f4517386f82eb4a3c30df2c71c147a6d998718b6d6c9ea532684e809"
+    },
+    {
+      "path": "visual/round1/10-Desktop-dom.html",
+      "bytes": 6616,
+      "sha256": "a29137c5c893955ce7957633755c157e9bd07123a13b5347bfb9cbf5d95383a1"
+    },
+    {
+      "path": "visual/round1/10-Desktop-full.png",
+      "bytes": 149985,
+      "sha256": "5c252fcb4f81b24b6fe68aae82a77d3dfe9fe3b7eb4c0f6f4a8baf6641671e7b"
+    },
+    {
+      "path": "visual/round1/10-Desktop.png",
+      "bytes": 149298,
+      "sha256": "1b33e7c9d8425d92f9b6cf0276bc71847e051a217e90f06ac72aef936cb1d592"
+    },
+    {
+      "path": "visual/round1/10-Tablet-dom.html",
+      "bytes": 6616,
+      "sha256": "a29137c5c893955ce7957633755c157e9bd07123a13b5347bfb9cbf5d95383a1"
+    },
+    {
+      "path": "visual/round1/10-Tablet-full.png",
+      "bytes": 371120,
+      "sha256": "153e45f88937709397d579bdf2cb293602bf7c3a96998c2dee085b2a7a87e489"
+    },
+    {
+      "path": "visual/round1/10-Tablet.png",
+      "bytes": 168443,
+      "sha256": "1390db8ec52ce24adc9430e549e8c8ba0c263b05b5278c48158765bc8414c7a0"
+    },
+    {
+      "path": "visual/round1/11-Desktop-dom.html",
+      "bytes": 1824,
+      "sha256": "3a5a6a2ccadcf335917242091f03ce54ef68799b5ceb92d83581528c51e7cdff"
+    },
+    {
+      "path": "visual/round1/11-Desktop-full.png",
+      "bytes": 88276,
+      "sha256": "a0df89ff16a0d30b801ac45a788fba4e60b855e13379dd29ba016bd48dd2fde7"
+    },
+    {
+      "path": "visual/round1/11-Desktop.png",
+      "bytes": 87721,
+      "sha256": "c667fd6c192dae53ea4678cd58cbde91432f148ac5bf75b6780da6b81798562d"
+    },
+    {
+      "path": "visual/round1/11-Tablet-dom.html",
+      "bytes": 1824,
+      "sha256": "3a5a6a2ccadcf335917242091f03ce54ef68799b5ceb92d83581528c51e7cdff"
+    },
+    {
+      "path": "visual/round1/11-Tablet-full.png",
+      "bytes": 84338,
+      "sha256": "b307bbb3106bfb04f91aa55e685db6a40634126ad203a4fd438d877dda894f58"
+    },
+    {
+      "path": "visual/round1/11-Tablet.png",
+      "bytes": 83478,
+      "sha256": "c07e789425a68d4007022fa7987c5c7f855d1e308842ca96755e8d21823d7f56"
+    },
+    {
+      "path": "visual/round1/12-Desktop-dom.html",
+      "bytes": 1778,
+      "sha256": "d90b08576c11a96618acb53ee440d1b87782e7d26ed7094ff7a522c8d77a232e"
+    },
+    {
+      "path": "visual/round1/12-Desktop-full.png",
+      "bytes": 91623,
+      "sha256": "158fa5d7c5888f045d85830c8bf0230b5a7a304ba7039470956e6ef820846553"
+    },
+    {
+      "path": "visual/round1/12-Desktop.png",
+      "bytes": 91066,
+      "sha256": "f21a470eb76b59bdc0e53cd2314db3baabbd38e744fb8e605e9466f375b7c393"
+    },
+    {
+      "path": "visual/round1/12-Tablet-dom.html",
+      "bytes": 1778,
+      "sha256": "d90b08576c11a96618acb53ee440d1b87782e7d26ed7094ff7a522c8d77a232e"
+    },
+    {
+      "path": "visual/round1/12-Tablet-full.png",
+      "bytes": 91544,
+      "sha256": "ba1e1e69c6a3ac1e26d56cf0519bc117555e757000394283591707fea9a1c082"
+    },
+    {
+      "path": "visual/round1/12-Tablet.png",
+      "bytes": 90668,
+      "sha256": "88882d6e21c0ee21bdfeaa41008ada8facd46d5702c1b3b2f6fae9322afcf6fe"
+    },
+    {
+      "path": "visual/round1/13-Desktop-dom.html",
+      "bytes": 1805,
+      "sha256": "1d2356ffd50832590150286e18d10f15b38b22c5a05edd591f262a6a1909d6a3"
+    },
+    {
+      "path": "visual/round1/13-Desktop-full.png",
+      "bytes": 94075,
+      "sha256": "91df24dad4f8ac4e87049f8f70be217c9f1391215ad521ad3e8a7386a6342992"
+    },
+    {
+      "path": "visual/round1/13-Desktop.png",
+      "bytes": 93519,
+      "sha256": "cb42e68c22eeb365dcc9d173ca43f92182d25ce044963fb6cc08af3bd0be5aba"
+    },
+    {
+      "path": "visual/round1/13-Tablet-dom.html",
+      "bytes": 1805,
+      "sha256": "1d2356ffd50832590150286e18d10f15b38b22c5a05edd591f262a6a1909d6a3"
+    },
+    {
+      "path": "visual/round1/13-Tablet-full.png",
+      "bytes": 95390,
+      "sha256": "55eb08f2051c8ccb12de55fff61d8ea9d5d6fba5519c24cae378a55d5db0ad27"
+    },
+    {
+      "path": "visual/round1/13-Tablet.png",
+      "bytes": 94494,
+      "sha256": "fbf66f50bb9f83fc17bb3cd49bf0f03a592b2a645180d9f0d0e105a005b71dbd"
+    },
+    {
+      "path": "visual/round1/14-Desktop-dom.html",
+      "bytes": 1914,
+      "sha256": "e021cea4716c426ce54cd6d435c1ab4efab66e04b9b9c4f261e5a1a6bde4b635"
+    },
+    {
+      "path": "visual/round1/14-Desktop-full.png",
+      "bytes": 92340,
+      "sha256": "d402bf7da91888fc3ae1c0f1fbdffdbeedee43bfeaaa9d68ce9c2438911f0684"
+    },
+    {
+      "path": "visual/round1/14-Desktop.png",
+      "bytes": 91783,
+      "sha256": "a4eeb5e094e5036937d83c457c3d682ea428428ffb6724141d375ce53f2b8797"
+    },
+    {
+      "path": "visual/round1/14-Tablet-dom.html",
+      "bytes": 1914,
+      "sha256": "e021cea4716c426ce54cd6d435c1ab4efab66e04b9b9c4f261e5a1a6bde4b635"
+    },
+    {
+      "path": "visual/round1/14-Tablet-full.png",
+      "bytes": 91698,
+      "sha256": "ffbb59c1edaeaa13facf1a0932368702df8c9430e5b0bcc0a4815cb640cfaf27"
+    },
+    {
+      "path": "visual/round1/14-Tablet.png",
+      "bytes": 90821,
+      "sha256": "c97c554538901b1cdc0a26dc5af1cd0c5f7e9d7d11e67430dd29261ba19d3d98"
+    },
+    {
+      "path": "visual/round1/15-Desktop-dom.html",
+      "bytes": 1237,
+      "sha256": "992b5764d6a4d7197a4feaf7ae3762e551eac53c72adb95cd57bd408cff4dda2"
+    },
+    {
+      "path": "visual/round1/15-Desktop-full.png",
+      "bytes": 87711,
+      "sha256": "9dcf04d8a31fbd32c226c0072f5bf3c929048f8f99ebb285e2a76fadd62f91b3"
+    },
+    {
+      "path": "visual/round1/15-Desktop.png",
+      "bytes": 87157,
+      "sha256": "3b4297112c14f94da1ab3f44cd2d2774b8f9b282b00a3d5a19de144935cb828d"
+    },
+    {
+      "path": "visual/round1/15-Tablet-dom.html",
+      "bytes": 1237,
+      "sha256": "992b5764d6a4d7197a4feaf7ae3762e551eac53c72adb95cd57bd408cff4dda2"
+    },
+    {
+      "path": "visual/round1/15-Tablet-full.png",
+      "bytes": 84158,
+      "sha256": "74f0960bd5faf13aacd8177f87c090b6619d34c7df511343bf118ae3b7b5b261"
+    },
+    {
+      "path": "visual/round1/15-Tablet.png",
+      "bytes": 83296,
+      "sha256": "47976c30433f523a39aab245b1bde59c234813b46fb0cf3b28e4a898fd84ad5e"
+    },
+    {
+      "path": "visual/round1/16-Desktop-dom.html",
+      "bytes": 1025,
+      "sha256": "09dac7aecb8f41e32aacfb5495875cbd0cc57136e3672469e82248ef508356ef"
+    },
+    {
+      "path": "visual/round1/16-Desktop-full.png",
+      "bytes": 85292,
+      "sha256": "13f0392a06452df80da120da13eed670d3af62390c6970866fa4564b1dd3d47d"
+    },
+    {
+      "path": "visual/round1/16-Desktop.png",
+      "bytes": 84740,
+      "sha256": "a8fc1d4f41ebc516ae7aa477a9917f8347b632cf15c057335f98dfc04f0a27d9"
+    },
+    {
+      "path": "visual/round1/16-Tablet-dom.html",
+      "bytes": 1025,
+      "sha256": "09dac7aecb8f41e32aacfb5495875cbd0cc57136e3672469e82248ef508356ef"
+    },
+    {
+      "path": "visual/round1/16-Tablet-full.png",
+      "bytes": 76217,
+      "sha256": "c828941bd2bf2e40811c4404b46a7525a0dc819d75816e258a6eea9e5dff6469"
+    },
+    {
+      "path": "visual/round1/16-Tablet.png",
+      "bytes": 75373,
+      "sha256": "dca5279173a2a68b443e28b16f9e6440c11256c592a2b4337735a9a11c86a893"
+    },
+    {
+      "path": "visual/round1/capture.json",
+      "bytes": 351472,
+      "sha256": "653c5ea299be64ef9b4d51b589f46efee3599c4e484ef4f32c06f58e90bb9a5f"
+    },
+    {
+      "path": "visual/ROUND2_RETEST_REPORT.md",
+      "bytes": 7521,
+      "sha256": "6a949fc50f8a0b21f064954970dc2b1aeafa93b47efa41009b1cf0c93acc725e"
+    },
+    {
+      "path": "visual/ROUND2_REVIEW_METRICS.json",
+      "bytes": 17609,
+      "sha256": "48c9c933dbb148729732fb838fa41c8869cfb060f26c8ae421aab441cc334d49"
+    },
+    {
+      "path": "visual/round2/01-Desktop-dom.html",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/round2/01-Desktop-full.png",
+      "bytes": 140923,
+      "sha256": "b58b1879274397ae0fe243527f6d678f12df43f6f03eb0d95dac23c7f28c6dc1"
+    },
+    {
+      "path": "visual/round2/01-Desktop.png",
+      "bytes": 137306,
+      "sha256": "29652703ddff32909dd9e29959e268d2707ec5052845f28eced82c5b798f43ac"
+    },
+    {
+      "path": "visual/round2/01-Tablet-dom.html",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/round2/01-Tablet-full.png",
+      "bytes": 279484,
+      "sha256": "7054af66dffd3b2e55d0c52d36d0b06dca6b64038949ea7c886034a9dc52bc0b"
+    },
+    {
+      "path": "visual/round2/01-Tablet.png",
+      "bytes": 224222,
+      "sha256": "d5ba899f516b7a870b02fb786cc6bb0d82aa837d1588d42330028071b615cb08"
+    },
+    {
+      "path": "visual/round2/02-Desktop-dom.html",
+      "bytes": 6103,
+      "sha256": "63642ca9e73cf1cadf039fdb288de42df965229e03313931a589ed0f88fa86f1"
+    },
+    {
+      "path": "visual/round2/02-Desktop-full.png",
+      "bytes": 139706,
+      "sha256": "860e71ce938fb1bcf789fd632f26283d0b728540ed564a9134329f06b059b11a"
+    },
+    {
+      "path": "visual/round2/02-Desktop.png",
+      "bytes": 120152,
+      "sha256": "e5787c04487748d6694b502eae4f936c21b102e8a02f4e8892cb201b2e6bcf37"
+    },
+    {
+      "path": "visual/round2/02-Tablet-dom.html",
+      "bytes": 6103,
+      "sha256": "63642ca9e73cf1cadf039fdb288de42df965229e03313931a589ed0f88fa86f1"
+    },
+    {
+      "path": "visual/round2/02-Tablet-full.png",
+      "bytes": 197732,
+      "sha256": "f3315788aaf726133c29e2814cabf2993c64331a90880513b82d46fa13e15cdf"
+    },
+    {
+      "path": "visual/round2/02-Tablet.png",
+      "bytes": 152089,
+      "sha256": "c8d4e743ee0ae9c2f6f9e2df44331fc372acb1789c4347b129b7a951d3957c35"
+    },
+    {
+      "path": "visual/round2/03-Desktop-dom.html",
+      "bytes": 6260,
+      "sha256": "2d0b4f409707d3e4dc8c8c3abf7ea2c612e935536dee17dfcea3730bdb5adfd4"
+    },
+    {
+      "path": "visual/round2/03-Desktop-full.png",
+      "bytes": 132205,
+      "sha256": "8d2b76619ad86418ab420abf644a531c47e292da20656af3ae56ea29544719d2"
+    },
+    {
+      "path": "visual/round2/03-Desktop.png",
+      "bytes": 124235,
+      "sha256": "e7a3fe9480fa73092a91e23e468c36517c868da1f0f6e72130fdd6a8466a477d"
+    },
+    {
+      "path": "visual/round2/03-Tablet-dom.html",
+      "bytes": 6260,
+      "sha256": "2d0b4f409707d3e4dc8c8c3abf7ea2c612e935536dee17dfcea3730bdb5adfd4"
+    },
+    {
+      "path": "visual/round2/03-Tablet-full.png",
+      "bytes": 292389,
+      "sha256": "ffe9d73d0d84442ef33f6b23c6da64972c197bcb9c63d5412473b3e4accf4e70"
+    },
+    {
+      "path": "visual/round2/03-Tablet.png",
+      "bytes": 191119,
+      "sha256": "3094122df44e9dc20542814d2a70623a7be3707da79fbf67a0697837a0e4c418"
+    },
+    {
+      "path": "visual/round2/04-Desktop-dom.html",
+      "bytes": 1847,
+      "sha256": "6e20b50d13955a6a64a95fefce03085512e3f18c16c7d158730dd0e4f06c7114"
+    },
+    {
+      "path": "visual/round2/04-Desktop-full.png",
+      "bytes": 108320,
+      "sha256": "5ec0037cc67f60ef7caee6d839563c779921544a9be354b215265a2a01944461"
+    },
+    {
+      "path": "visual/round2/04-Desktop.png",
+      "bytes": 107637,
+      "sha256": "3ac270d0db21956c85b2f9f8ad74c81f53f8928c1f8291539a9c8b8b32e7f0de"
+    },
+    {
+      "path": "visual/round2/04-Tablet-dom.html",
+      "bytes": 1847,
+      "sha256": "6e20b50d13955a6a64a95fefce03085512e3f18c16c7d158730dd0e4f06c7114"
+    },
+    {
+      "path": "visual/round2/04-Tablet-full.png",
+      "bytes": 131784,
+      "sha256": "dfdcaac0e47b6cab84206910dbc58724ebb88c108dee30468dab605df789a2c1"
+    },
+    {
+      "path": "visual/round2/04-Tablet.png",
+      "bytes": 130948,
+      "sha256": "fd501273e52c2fac37e0f3913a3ef26a737d65665629446094c5838ed070a8e1"
+    },
+    {
+      "path": "visual/round2/05-Desktop-dom.html",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/round2/05-Desktop-full.png",
+      "bytes": 97921,
+      "sha256": "4c983831edc5475d535d375bc77f83b760789587690b7ab489113777762f2533"
+    },
+    {
+      "path": "visual/round2/05-Desktop.png",
+      "bytes": 97367,
+      "sha256": "8c14fa2b3bbfcc955bb5126fc7147b54fc87a8e88a10489f181fdc0067bdd0bf"
+    },
+    {
+      "path": "visual/round2/05-Tablet-dom.html",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/round2/05-Tablet-full.png",
+      "bytes": 107594,
+      "sha256": "b4ef584d3738e7f6bdf652c0f6c6c42a2c4ac54dc1173d0f225810cc1d9f9df1"
+    },
+    {
+      "path": "visual/round2/05-Tablet.png",
+      "bytes": 106673,
+      "sha256": "439008051289d48296e87c6cdf00efd4f7eacc9ec785c0e51d23f62938f4ccbd"
+    },
+    {
+      "path": "visual/round2/06-Desktop-dom.html",
+      "bytes": 5342,
+      "sha256": "a2687a9fd6ec04d8e8e8c0d6531c9c3a4baebeb42c22e82c0fdd040e24e1101b"
+    },
+    {
+      "path": "visual/round2/06-Desktop-full.png",
+      "bytes": 156895,
+      "sha256": "e93469de71c090e114dc04341753355ebff5f311ae01c75ee6c8b3f8eb51221c"
+    },
+    {
+      "path": "visual/round2/06-Desktop.png",
+      "bytes": 152929,
+      "sha256": "51b808188d84c104be30e2c4d65701271d43272ecfa5c1f52969a3c121f04505"
+    },
+    {
+      "path": "visual/round2/06-Tablet-dom.html",
+      "bytes": 5342,
+      "sha256": "a2687a9fd6ec04d8e8e8c0d6531c9c3a4baebeb42c22e82c0fdd040e24e1101b"
+    },
+    {
+      "path": "visual/round2/06-Tablet-full.png",
+      "bytes": 374475,
+      "sha256": "b02c1652cf3bc0f82db0682a2ec357c6bd032d7b59a6eeef4facadf272abc6a4"
+    },
+    {
+      "path": "visual/round2/06-Tablet.png",
+      "bytes": 233572,
+      "sha256": "75ea5c2ae91639612270dc1425b6a504896a28c222483c6a6b9a65f2f5a1ea0b"
+    },
+    {
+      "path": "visual/round2/07-Desktop-dom.html",
+      "bytes": 7826,
+      "sha256": "496ee0c7cb9f64fee2d6c28d57e720599c658a1a1027c4ed079a9cdae51e1842"
+    },
+    {
+      "path": "visual/round2/07-Desktop-full.png",
+      "bytes": 162341,
+      "sha256": "fab2848de65554b8e94eb68a252ff4652bc0cce54a66cff3bb01a404c2873768"
+    },
+    {
+      "path": "visual/round2/07-Desktop.png",
+      "bytes": 145008,
+      "sha256": "3b696f65d0304cb1706e2c16167bec3f3b29cbdc1f2e97bfe7406ec9a0fbace6"
+    },
+    {
+      "path": "visual/round2/07-Tablet-dom.html",
+      "bytes": 7826,
+      "sha256": "496ee0c7cb9f64fee2d6c28d57e720599c658a1a1027c4ed079a9cdae51e1842"
+    },
+    {
+      "path": "visual/round2/07-Tablet-full.png",
+      "bytes": 330447,
+      "sha256": "dc281a08086fc26c69aff900a2eea55927467326e30e24674de1c137954008db"
+    },
+    {
+      "path": "visual/round2/07-Tablet.png",
+      "bytes": 223991,
+      "sha256": "310548ed7a79536ad070face5fb25634fe740dacde3f58713fe5f10874de50d8"
+    },
+    {
+      "path": "visual/round2/08-Desktop-dom.html",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/round2/08-Desktop-full.png",
+      "bytes": 153679,
+      "sha256": "0f238c66f22acbe2136543d755caeb85aefa03232eef04f40bfe17d3b2f668df"
+    },
+    {
+      "path": "visual/round2/08-Desktop.png",
+      "bytes": 130003,
+      "sha256": "2c74302d565f0a6138d764af5dfd44d718b4973d54db0d8e04133118724d1663"
+    },
+    {
+      "path": "visual/round2/08-Tablet-dom.html",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/round2/08-Tablet-full.png",
+      "bytes": 339386,
+      "sha256": "219205b92d680c8a9b8461ba5f7a8935fda36d1384e6335c907d4054133a557e"
+    },
+    {
+      "path": "visual/round2/08-Tablet.png",
+      "bytes": 195456,
+      "sha256": "e6f4e1c8f5fd3a04f69de92031278aceb6a3b172bc81a7556f6ef15dc38a99e7"
+    },
+    {
+      "path": "visual/round2/09-Desktop-dom.html",
+      "bytes": 6219,
+      "sha256": "b1fc83e0232542938ac124e7e6c2c1a5e4b74302659b6839a2d5b842089fb0f8"
+    },
+    {
+      "path": "visual/round2/09-Desktop-full.png",
+      "bytes": 147279,
+      "sha256": "e0c24b2d6554fd55b5775d110592eecd2cc064567985a1ceb54fe09387a9d872"
+    },
+    {
+      "path": "visual/round2/09-Desktop.png",
+      "bytes": 145805,
+      "sha256": "374065d75a24f4e347514aa48d08c14975f89a87ac4c89d5d6e4e2bd29caf08c"
+    },
+    {
+      "path": "visual/round2/09-Tablet-dom.html",
+      "bytes": 6219,
+      "sha256": "b1fc83e0232542938ac124e7e6c2c1a5e4b74302659b6839a2d5b842089fb0f8"
+    },
+    {
+      "path": "visual/round2/09-Tablet-full.png",
+      "bytes": 322447,
+      "sha256": "45a346e8c1282abb8a45030067a6bcd6c233cbdd3a1df31e077313f031c1a1e5"
+    },
+    {
+      "path": "visual/round2/09-Tablet.png",
+      "bytes": 236763,
+      "sha256": "0111ee3795227617a0713419db4896b5bbb9b503fb23a09a21087bb7f17d3be9"
+    },
+    {
+      "path": "visual/round2/10-Desktop-dom.html",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/round2/10-Desktop-full.png",
+      "bytes": 162784,
+      "sha256": "3a79fc359e3a3e2a35cc6b6c6df7f1c671cf99cdd70fa1c62e927a2355e3b99d"
+    },
+    {
+      "path": "visual/round2/10-Desktop.png",
+      "bytes": 145990,
+      "sha256": "848ccc0b3021cac51bc32f489c8d6a08be667ce9980d3910a9e426756959f3a9"
+    },
+    {
+      "path": "visual/round2/10-Tablet-dom.html",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/round2/10-Tablet-full.png",
+      "bytes": 335616,
+      "sha256": "2d67698df5f02223a7ad6343be022384f9ed80ad4418d72cb02761e3ccccf44a"
+    },
+    {
+      "path": "visual/round2/10-Tablet.png",
+      "bytes": 228769,
+      "sha256": "95bdb650829ef6a1fb184fb7db559657ca9c7997766caff34c0a1f312b90cb8c"
+    },
+    {
+      "path": "visual/round2/11-Desktop-dom.html",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/round2/11-Desktop-full.png",
+      "bytes": 90191,
+      "sha256": "ad801c612c909e1613ad7957e1d0ddd73bd868b630e9f185df2c7a4e3e26e71f"
+    },
+    {
+      "path": "visual/round2/11-Desktop.png",
+      "bytes": 89636,
+      "sha256": "61bbbf9ffdd48f86ea0042f38356d42eba4a89fd88b9d6a2e04f0e152d27b678"
+    },
+    {
+      "path": "visual/round2/11-Tablet-dom.html",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/round2/11-Tablet-full.png",
+      "bytes": 86486,
+      "sha256": "aafe3ac2a4b5f5e3e798821e35ed25fcbf42bddbc233fda1f91beed494c4d3be"
+    },
+    {
+      "path": "visual/round2/11-Tablet.png",
+      "bytes": 85613,
+      "sha256": "f1b9fa91905d279dda6c6cd8fa097083627d369bf931c145e1a1621651fbc427"
+    },
+    {
+      "path": "visual/round2/12-Desktop-dom.html",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/round2/12-Desktop-full.png",
+      "bytes": 93250,
+      "sha256": "4f98c05c13c9be4704f0911007d366f9061a6af115402ca88db0c4b4a4b49f50"
+    },
+    {
+      "path": "visual/round2/12-Desktop.png",
+      "bytes": 92694,
+      "sha256": "d22537f1690f96382965942cf14b944007aebeeb0039b16da6865e3d1fe1b167"
+    },
+    {
+      "path": "visual/round2/12-Tablet-dom.html",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/round2/12-Tablet-full.png",
+      "bytes": 95490,
+      "sha256": "dab3f81ab2dca5abee026bdf784e898d1b09a755a8e791e6a863f418009280e8"
+    },
+    {
+      "path": "visual/round2/12-Tablet.png",
+      "bytes": 94605,
+      "sha256": "741cae5618c7970d816254f60bfbb5fb45a35dccd5eed9665b504b0372c1160c"
+    },
+    {
+      "path": "visual/round2/13-Desktop-dom.html",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/round2/13-Desktop-full.png",
+      "bytes": 95604,
+      "sha256": "d584122cb263acae563c5b923fc23dbf4db2363ef45110dddf3b4e069fe88da1"
+    },
+    {
+      "path": "visual/round2/13-Desktop.png",
+      "bytes": 95047,
+      "sha256": "80f5a43270c81d26ea9fce2d51825c44aeb09527ac440ee6cbf096390a418165"
+    },
+    {
+      "path": "visual/round2/13-Tablet-dom.html",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/round2/13-Tablet-full.png",
+      "bytes": 100511,
+      "sha256": "2449f4670c9552b61ff46256a37eaed5b4fc2624624c90bc8a127a80d82d8d08"
+    },
+    {
+      "path": "visual/round2/13-Tablet.png",
+      "bytes": 99616,
+      "sha256": "9b3fa85c3ab924cca7ff46e950e63ea65c868988bc4c9fe807a95608250084ca"
+    },
+    {
+      "path": "visual/round2/14-Desktop-dom.html",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/round2/14-Desktop-full.png",
+      "bytes": 92847,
+      "sha256": "10aa3599fa309c1c25991adeaae420bc17510554ac4097db9366cc56a476b660"
+    },
+    {
+      "path": "visual/round2/14-Desktop.png",
+      "bytes": 92288,
+      "sha256": "640f9427b0e76e808ee0e91593285d0891a859302fd9aaac3c1a0f623313bb05"
+    },
+    {
+      "path": "visual/round2/14-Tablet-dom.html",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/round2/14-Tablet-full.png",
+      "bytes": 94307,
+      "sha256": "b64adf512b746f4abe0d8fc5287122ffc62e14074f41c4b5a1a0d092ad8dc432"
+    },
+    {
+      "path": "visual/round2/14-Tablet.png",
+      "bytes": 93426,
+      "sha256": "4df994b67424dc9edfdef462a56ff54206b717041cfcf7aaa767e2bb9c6a1b72"
+    },
+    {
+      "path": "visual/round2/15-Desktop-dom.html",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/round2/15-Desktop-full.png",
+      "bytes": 88210,
+      "sha256": "f86b2d7105c703becce1b005313416f634ac3a11f0662884d1e9e314f663318e"
+    },
+    {
+      "path": "visual/round2/15-Desktop.png",
+      "bytes": 87657,
+      "sha256": "396dc5c633bc4941c0aa40f084f4b1a72e47b082f187b623e1244e919378b8a9"
+    },
+    {
+      "path": "visual/round2/15-Tablet-dom.html",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/round2/15-Tablet-full.png",
+      "bytes": 84610,
+      "sha256": "aea4888a219192bb87e85a9ec576e2d430ea75541f122898199c4af81a834540"
+    },
+    {
+      "path": "visual/round2/15-Tablet.png",
+      "bytes": 83747,
+      "sha256": "260f24a67e57b79d7876735a6f0a32ac4f1a135cb1d20502e17e8c28c8fa8245"
+    },
+    {
+      "path": "visual/round2/16-Desktop-dom.html",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/round2/16-Desktop-full.png",
+      "bytes": 84831,
+      "sha256": "9a3465b1f848deebf184b820ee64487f6b9f002735aeb8d77289a9bfaf311275"
+    },
+    {
+      "path": "visual/round2/16-Desktop.png",
+      "bytes": 84288,
+      "sha256": "3e1e2c3a89315872fbdba28504557c3bfde1cba9a08d5f0828ef53552c9a0942"
+    },
+    {
+      "path": "visual/round2/16-Tablet-dom.html",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/round2/16-Tablet-full.png",
+      "bytes": 76393,
+      "sha256": "6eef98a9052c4e4159075fdd08e8ec6bc76b4453cc61ae816fdd2d985640bc7a"
+    },
+    {
+      "path": "visual/round2/16-Tablet.png",
+      "bytes": 75549,
+      "sha256": "b629acb1ac7abd0ea0c0e2c0242ce42477f297852bbc753ccc708d9d579438b1"
+    },
+    {
+      "path": "visual/round2/capture.json",
+      "bytes": 357379,
+      "sha256": "e0a02a85b097d9d63b411012d02d968252b7c73862c1dc140ea8417058db60fa"
+    },
+    {
+      "path": "visual/ROUND3_FINAL_REVIEW_METRICS.json",
+      "bytes": 62694,
+      "sha256": "01ef79eb80c1d4910ebe4ba4d051e57472bc89df38c207d715aeb8e4758bf475"
+    },
+    {
+      "path": "visual/round3/01-Desktop-dom.html",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/round3/01-Desktop.png",
+      "bytes": 139412,
+      "sha256": "b9d7167b82fedfdf1fd4f164328a80bf80bbee087fd985e5c22901e57f095871"
+    },
+    {
+      "path": "visual/round3/01-Tablet-dom.html",
+      "bytes": 7040,
+      "sha256": "68ba04381688b2f219e4cce1661b827270086b07fd3fc1872432ff720d7a9afd"
+    },
+    {
+      "path": "visual/round3/01-Tablet-full.png",
+      "bytes": 266666,
+      "sha256": "932367ca166ebcb9abb64bbcad7ef7a39a480efb7598d7efa4a30b9378bbaf4b"
+    },
+    {
+      "path": "visual/round3/01-Tablet.png",
+      "bytes": 266415,
+      "sha256": "df83876654d29abbe778f1cd2482d326ddf3b6177c445f416c9ec0b500bf6e44"
+    },
+    {
+      "path": "visual/round3/02-Desktop-dom.html",
+      "bytes": 6013,
+      "sha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109"
+    },
+    {
+      "path": "visual/round3/02-Desktop-full.png",
+      "bytes": 140699,
+      "sha256": "591b532c406813087f4048d942e0e183813d27b093c046145aff9b98438d877b"
+    },
+    {
+      "path": "visual/round3/02-Desktop.png",
+      "bytes": 127812,
+      "sha256": "902cf4497d3ce6ec7162d2dc364f5bef17f0b595155a10eccbfeb5322f964516"
+    },
+    {
+      "path": "visual/round3/02-Tablet-dom.html",
+      "bytes": 6013,
+      "sha256": "80f1bc5b80607d8f6a86ef179cdaf51f704e1705d8e691d5b801833ff3fa7109"
+    },
+    {
+      "path": "visual/round3/02-Tablet-full.png",
+      "bytes": 178862,
+      "sha256": "d53a0b7b731444129df655f326a9180c17aefc9214a5ace6c22ee06a88efee55"
+    },
+    {
+      "path": "visual/round3/02-Tablet.png",
+      "bytes": 173566,
+      "sha256": "93f2cda090515808bd1f0fff834fa786f37ef4b7799c5548fd46b49257ba97bd"
+    },
+    {
+      "path": "visual/round3/03-Desktop-dom.html",
+      "bytes": 6461,
+      "sha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18"
+    },
+    {
+      "path": "visual/round3/03-Desktop-full.png",
+      "bytes": 136346,
+      "sha256": "3c15a6620086328cd664b77f28d3e2aa897ad14bcd0e9df1a2d7fdb92ad0bfbf"
+    },
+    {
+      "path": "visual/round3/03-Desktop.png",
+      "bytes": 130530,
+      "sha256": "3247f19aa13f9f57b6cc282dde9584c6e7ddd590ce974a95d3bae822d89758b0"
+    },
+    {
+      "path": "visual/round3/03-Tablet-dom.html",
+      "bytes": 6461,
+      "sha256": "0d828ac170d09fbc6724024c116d0ad741b3f89d85ee8d682fd7566298184d18"
+    },
+    {
+      "path": "visual/round3/03-Tablet-full.png",
+      "bytes": 269191,
+      "sha256": "1de12ee219d33ced6c891ba1b943ada41ba1f18a384250fbc031bb9a6cde5caf"
+    },
+    {
+      "path": "visual/round3/03-Tablet.png",
+      "bytes": 234179,
+      "sha256": "98dcb469681b34093d7a63274aabb067541a9d94afb931d93d7fc64b6fc82746"
+    },
+    {
+      "path": "visual/round3/04-Desktop-dom.html",
+      "bytes": 1881,
+      "sha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05"
+    },
+    {
+      "path": "visual/round3/04-Desktop.png",
+      "bytes": 108143,
+      "sha256": "93cadb1b7412348c6601878d9a29bb0b88693a6542426f37b446c9b89bb5a599"
+    },
+    {
+      "path": "visual/round3/04-Tablet-dom.html",
+      "bytes": 1881,
+      "sha256": "fcd17e094e0f6e980424f437585966d8f7b768598241c6bc685031d50b877f05"
+    },
+    {
+      "path": "visual/round3/04-Tablet.png",
+      "bytes": 129622,
+      "sha256": "79a063a118830b193b60564045d1a29530c5131f5f69e93b7a9618560616d410"
+    },
+    {
+      "path": "visual/round3/05-Desktop-dom.html",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/round3/05-Desktop.png",
+      "bytes": 97020,
+      "sha256": "79ca241d1bd6dcc655bcd110b1671a13bb30ebd8741a25a207fdf232dc5f2075"
+    },
+    {
+      "path": "visual/round3/05-Tablet-dom.html",
+      "bytes": 1840,
+      "sha256": "8213292d0cf2426d9761042cd54fbeadd30ece0c137900615ca3d2e527003ad2"
+    },
+    {
+      "path": "visual/round3/05-Tablet.png",
+      "bytes": 105177,
+      "sha256": "a087ce5af8090bde4d4892fcfac3420b6b64fde89768a25126f320896bd5fccc"
+    },
+    {
+      "path": "visual/round3/06-Desktop-dom.html",
+      "bytes": 5355,
+      "sha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819"
+    },
+    {
+      "path": "visual/round3/06-Desktop.png",
+      "bytes": 155651,
+      "sha256": "a69474cf028546b304734adb205b13443560fceb0ae638e2e95e8d5f80385bfe"
+    },
+    {
+      "path": "visual/round3/06-Tablet-dom.html",
+      "bytes": 5355,
+      "sha256": "033bfbbe6fd3f44e781f3412d621723671fd3d7aa433c8277d121a4a4e52d819"
+    },
+    {
+      "path": "visual/round3/06-Tablet-full.png",
+      "bytes": 374190,
+      "sha256": "927b4ecc86577ecd80c9c81528bf29259b44e031370d07952b0e6495db8a63d7"
+    },
+    {
+      "path": "visual/round3/06-Tablet.png",
+      "bytes": 302261,
+      "sha256": "75e4a0673b6fa46d2a76efdd7821102ed676768a8a6d206fdabf176cfd8effe6"
+    },
+    {
+      "path": "visual/round3/07-Desktop-dom.html",
+      "bytes": 7839,
+      "sha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6"
+    },
+    {
+      "path": "visual/round3/07-Desktop-full.png",
+      "bytes": 160416,
+      "sha256": "bc932d8f12ae21be80fe1fa2cda2130ced0a69272719414d0f65d72140402048"
+    },
+    {
+      "path": "visual/round3/07-Desktop.png",
+      "bytes": 156472,
+      "sha256": "d55d9f88030814b392ba021de7f285525a0c6079984a6cd43a607f212a7c1d82"
+    },
+    {
+      "path": "visual/round3/07-Tablet-dom.html",
+      "bytes": 7839,
+      "sha256": "a01d0bbc178becafbe5f229ede63af81fc96c51ed6d8c845e397aa86b80255a6"
+    },
+    {
+      "path": "visual/round3/07-Tablet-full.png",
+      "bytes": 317714,
+      "sha256": "cc0e090d42f238dd28df628effc68ae4061c13f4a95786626bf8f6174b5c42a2"
+    },
+    {
+      "path": "visual/round3/07-Tablet.png",
+      "bytes": 281895,
+      "sha256": "b980f8181f0d4100ae760801734c176411509d6d407795a9371104d5a647ddf2"
+    },
+    {
+      "path": "visual/round3/08-Desktop-dom.html",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/round3/08-Desktop-full.png",
+      "bytes": 151766,
+      "sha256": "7681deb8609beab3b12614696731c35b0a4eff4eb184b0f43da5e0d42443c3e9"
+    },
+    {
+      "path": "visual/round3/08-Desktop.png",
+      "bytes": 139105,
+      "sha256": "f13dfe2754d44a0875344d9143e3c0caaa182e9fe00ba8c0d9b7d39cdf07b8bf"
+    },
+    {
+      "path": "visual/round3/08-Tablet-dom.html",
+      "bytes": 5341,
+      "sha256": "ec6b15aa58b3b4035a8ad2b3dfbd5530b51f90bb7fdf13bb9fe7b9bed891e039"
+    },
+    {
+      "path": "visual/round3/08-Tablet-full.png",
+      "bytes": 279571,
+      "sha256": "ac6b899344940772d28e32514fd3cd1b3bc18b04898772dcc34ffed2ff65d7f3"
+    },
+    {
+      "path": "visual/round3/08-Tablet.png",
+      "bytes": 255660,
+      "sha256": "56d8d8e61d92b6135145da349d6c309afe39081dbb77754867954082552c664a"
+    },
+    {
+      "path": "visual/round3/09-Desktop-dom.html",
+      "bytes": 6245,
+      "sha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9"
+    },
+    {
+      "path": "visual/round3/09-Desktop.png",
+      "bytes": 145505,
+      "sha256": "de32b357ef60e9ff65ed4de8cbc87f47cfcad2046bf88ffb7fd957dfa35f31b5"
+    },
+    {
+      "path": "visual/round3/09-Tablet-dom.html",
+      "bytes": 6245,
+      "sha256": "33fdb4504136c15e0c6061ef8343a8d71c05e3395f8005da25a5d79cb85a96c9"
+    },
+    {
+      "path": "visual/round3/09-Tablet-full.png",
+      "bytes": 317939,
+      "sha256": "48334415779a4e74c2d7e201ca434d2de0a6ee22b9fc8e25f5c5f80e6710ce6d"
+    },
+    {
+      "path": "visual/round3/09-Tablet.png",
+      "bytes": 264061,
+      "sha256": "e354eac2e4b6afe2caa70d7259ba7e8f0897da8c9c35f1db9aa32d11b2929fea"
+    },
+    {
+      "path": "visual/round3/10-Desktop-dom.html",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/round3/10-Desktop-full.png",
+      "bytes": 161275,
+      "sha256": "ac680e8b23226ebb5a0dec894d942a23d49b9a33abbdb521b504f229affbeec7"
+    },
+    {
+      "path": "visual/round3/10-Desktop.png",
+      "bytes": 157305,
+      "sha256": "99442d651867929436a942ae26691d76ada30d66409695b6dbca32e992c62d7e"
+    },
+    {
+      "path": "visual/round3/10-Tablet-dom.html",
+      "bytes": 7619,
+      "sha256": "992a8c0b40e246a24552e5e1c9db1acd0c20ee4528724a82ac9db8c2c2e6e734"
+    },
+    {
+      "path": "visual/round3/10-Tablet-full.png",
+      "bytes": 317897,
+      "sha256": "c40e86a648abd211dd129201e0294fb2c8e6a079d4a95b8cf3e1d0e6d70e2b87"
+    },
+    {
+      "path": "visual/round3/10-Tablet.png",
+      "bytes": 288512,
+      "sha256": "35f282babe2a9e70428a3274143d621ace4d7f9072e5e35abf4d60e1b9f3facd"
+    },
+    {
+      "path": "visual/round3/11-Desktop-dom.html",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/round3/11-Desktop.png",
+      "bytes": 89743,
+      "sha256": "777321326decd1c8bbb3431957cf32a19a23a6ca294681827154d2d726169e89"
+    },
+    {
+      "path": "visual/round3/11-Tablet-dom.html",
+      "bytes": 2708,
+      "sha256": "41b5005e3d72f4c95614228acec629c34a3527df4378bc171b133d9ae8cb9c04"
+    },
+    {
+      "path": "visual/round3/11-Tablet.png",
+      "bytes": 85622,
+      "sha256": "f24eeb7ddbf6189dde564ffd09f5a9709299e8dba4e5a34829e12b36bee8fc9c"
+    },
+    {
+      "path": "visual/round3/12-Desktop-dom.html",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/round3/12-Desktop.png",
+      "bytes": 92654,
+      "sha256": "6465163e050e41f497f96812231f3a7a944d59af9636d7ec3e8331cf3eb21c54"
+    },
+    {
+      "path": "visual/round3/12-Tablet-dom.html",
+      "bytes": 1828,
+      "sha256": "dc23b100056d5850491557a44d75e9b7c0b941535e1f017fc5168338d6bf708c"
+    },
+    {
+      "path": "visual/round3/12-Tablet.png",
+      "bytes": 94573,
+      "sha256": "b23420d18875cf73577b645d4cd0b44398945c8a0e177f608025278fc755df2f"
+    },
+    {
+      "path": "visual/round3/13-Desktop-dom.html",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/round3/13-Desktop.png",
+      "bytes": 95032,
+      "sha256": "372d5a10bd3dc062893994aa25641f0e18813e5105136cb37e7e1f3caab60630"
+    },
+    {
+      "path": "visual/round3/13-Tablet-dom.html",
+      "bytes": 1828,
+      "sha256": "4dd1632c44230d45ae17073f7defb766af9a3dab41aa061ba398abda57ff8079"
+    },
+    {
+      "path": "visual/round3/13-Tablet.png",
+      "bytes": 99727,
+      "sha256": "99efa195754474a6ec3bee3dd633335ed770befc8ada7f23dd15b890c6e36250"
+    },
+    {
+      "path": "visual/round3/14-Desktop-dom.html",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/round3/14-Desktop.png",
+      "bytes": 92348,
+      "sha256": "88b4e1f5ba30060a074ceeec70c74ac152df298ea39f99a592dbd663729ffa59"
+    },
+    {
+      "path": "visual/round3/14-Tablet-dom.html",
+      "bytes": 1940,
+      "sha256": "a7ffedf09e827d51e1ecc86abf1d50492a0b86342d6ae0a05c8840a4ddf869ce"
+    },
+    {
+      "path": "visual/round3/14-Tablet.png",
+      "bytes": 93450,
+      "sha256": "af530618e26024049f5ecd1b3c5efff3e557497a3921cf5dc05f4353df80c84e"
+    },
+    {
+      "path": "visual/round3/15-Desktop-dom.html",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/round3/15-Desktop.png",
+      "bytes": 87642,
+      "sha256": "9ed764defaa4d12f303ddcf11941d7633a504033c12596f7930d9efbfaab660f"
+    },
+    {
+      "path": "visual/round3/15-Tablet-dom.html",
+      "bytes": 1256,
+      "sha256": "1489025c273c92431c72d0d39985a0cefbd613a4415da382c9b4fe06e533fdf3"
+    },
+    {
+      "path": "visual/round3/15-Tablet.png",
+      "bytes": 83802,
+      "sha256": "090551016de289b69780d9a6c983c2461ccda16289e34212963e969bb666a408"
+    },
+    {
+      "path": "visual/round3/16-Desktop-dom.html",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/round3/16-Desktop.png",
+      "bytes": 84238,
+      "sha256": "83b9e0b15e4f347739560f156ae8a1d77dab3cf336389127fe208c30a01150c0"
+    },
+    {
+      "path": "visual/round3/16-Tablet-dom.html",
+      "bytes": 1038,
+      "sha256": "426da179526f61cd9967765ff436dab92481dcfb414411af6d583c1752c95640"
+    },
+    {
+      "path": "visual/round3/16-Tablet.png",
+      "bytes": 75587,
+      "sha256": "61adf2103538864b7f351970c7a0d2d03ac91a0c96abad98191506ced7a753e3"
+    },
+    {
+      "path": "visual/round3/capture.json",
+      "bytes": 357648,
+      "sha256": "ae3d2b71cea75e4e4cab1bdefbd2511e843d5ba591f9dd96f5aaf2421bad97bf"
+    },
+    {
+      "path": "visual/VISUAL_DEFECT_REGISTER.md",
+      "bytes": 16096,
+      "sha256": "7ce6b861a870e9c180397dcf5ab99ee1a9481a378bd9125f4f5f322ae8f59d56"
+    },
+    {
+      "path": "visual/VISUAL_EVIDENCE_INDEX.md",
+      "bytes": 11587,
+      "sha256": "6916fb857e6c7efbdabda8857d0e6c1a68dd57c0b3e03e67af8148042654d9b8"
+    },
+    {
+      "path": "visual/VISUAL_QA_REPORT.md",
+      "bytes": 7499,
+      "sha256": "742b1a49a90d876d6d0fe2beec9b0f85d8a3939bd6f1820f86d475ae5170e9a6"
+    }
+  ],
+  "missingLocalMarkdownLinks": []
+}

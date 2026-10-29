@@ -1,0 +1,656 @@
+{
+  "stage": "final-build-3f8cf44",
+  "method": "Content-origin alignment, proportional width normalization; canvas height includes full reference and full-page actual content with no bottom clipping. Fixed-viewport original remains separately available. Locked shell excluded, no data masking, no pixel PASS threshold. Raster profile unverified; diagnostic comparison is not certified pixel equality.",
+  "provenance": {
+    "baseSha": "3f8cf44ac531d72d50a42003cafecf6d726085ca",
+    "diffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sourceHashes": {
+      "src/app/App.tsx": "70105d4e13c83fac9c7005956e42a7b58d06d4b464d3289b2264c90e16c76e23",
+      "src/features/S16/approved/InventoryDesignWorkspace.tsx": "800441796a0b185d630d46ca99e2f16a6f1674b3fa07b3aabcfc94516e794285",
+      "src/features/S16/approved/approved.css": "6a9e82331b14bfaa0bba5f12433f70e7e0c121751fe392107d58f2eb0a6a81b5",
+      "src/features/S16/approved/adapter.ts": "9d50ece8ab93da0a75e21277899d9be172a6b4c4e75d2594b0e4dc1748648433"
+    }
+  },
+  "results": [
+    {
+      "id": "01",
+      "device": "Desktop",
+      "originalReference": "01_Tra_cuu_ton_kho_Desktop.png",
+      "referenceSha256": "9ed899985ca8937794686257312b1d2aa13404ebd4df817de24cba4fb5bac088",
+      "actualSha256": "6d9da335cdd2e7e91e1fbf49ce2c48b6b7f2b232b0075e0ebb1700fa54ccfb15",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 11.839146750524108,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "02",
+      "device": "Desktop",
+      "originalReference": "02_Tong_quan_ton_SKU_Desktop.png",
+      "referenceSha256": "b6a3de41aa4e71f8d56464a0c9c277e50168c0bac59a4fa7772cfdf31e5441cc",
+      "actualSha256": "0248e238c13001e7548293adeeb9da1f4c6d7a78119c9d2be29ea87672126be0",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 11.513540786749482,
+      "width": 1000,
+      "height": 805
+    },
+    {
+      "id": "03",
+      "device": "Desktop",
+      "originalReference": "03_Phan_bo_theo_BOX_Desktop.png",
+      "referenceSha256": "8cbbf97238d68d5fbbfb37eb63de34dcf2819a76abf3db8da351533c0c2f215a",
+      "actualSha256": "a116b46cf79123bf8307df97429d35793f3c9c03aee49c71d55d9a33418e0e8e",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 10.068623127340825,
+      "width": 1000,
+      "height": 712
+    },
+    {
+      "id": "04",
+      "device": "Desktop",
+      "originalReference": "04_Chi_tiet_BOX_Desktop.png",
+      "referenceSha256": "5f6c3f066b2a4c1cab280f8f00e329b114b0e259cfb9cd9256ab486e281ae6e0",
+      "actualSha256": "4ce5086a4d31a5727679e9e0fdc5ce56d83222d0ab809a6106804122caa9efcc",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 8.192371593291405,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "05",
+      "device": "Desktop",
+      "originalReference": "05_Chi_tiet_khay_Desktop.png",
+      "referenceSha256": "70f8a89a9d2a5c36713f080bba3afca9c2fd70fd13404380892f3f80b825a686",
+      "actualSha256": "e4411a59bff2772b0df2b3b9d10c0c64fe1ff130e459c3481984b41a1958588f",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 8.7866142557652,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "06",
+      "device": "Desktop",
+      "originalReference": "06_Lich_su_bien_dong_Desktop.png",
+      "referenceSha256": "655181441e55e6b5bc4b462662f4023968cec3ced4d49f63e69a36196d2dd7ca",
+      "actualSha256": "f9f10d6de5b44d928cde4b7f4aa028b8716e93dd39bf24179ca23d9ebe689187",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 13.565029874213836,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "07",
+      "device": "Desktop",
+      "originalReference": "07_Doi_soat_hien_tai_Desktop.png",
+      "referenceSha256": "042c8671e4d46ca28171dc895cda437b7d2efcaa54ef0f3e7437c3e48cfa9849",
+      "actualSha256": "e5c893daf800c4bf633b99d3866d2baaddf1f3a5c28dd5c056b7e4fd954a38fd",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 12.22754541198502,
+      "width": 1000,
+      "height": 712
+    },
+    {
+      "id": "08",
+      "device": "Desktop",
+      "originalReference": "08_Chi_tiet_chenh_lech_Desktop.png",
+      "referenceSha256": "2588704f6f06c53b587d4464d22c2a1a09480f29738009ec8b30f71b78fd8e69",
+      "actualSha256": "ed18862cc2572090ed458a4016f475c2f01b07dc74681e25e849b4c3eb6afd1d",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 11.35964596273292,
+      "width": 1000,
+      "height": 805
+    },
+    {
+      "id": "09",
+      "device": "Desktop",
+      "originalReference": "09_Lich_su_doi_soat_Desktop.png",
+      "referenceSha256": "7b410e96bb35bf98ffb85cf1894c89884713445601a6fe82f328884a68b21b6c",
+      "actualSha256": "40060537667f72dad01118f0194ff00e77b4128782ed424112b1d0d6d13fcf50",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 11.389067085953878,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "10",
+      "device": "Desktop",
+      "originalReference": "10_Chi_tiet_lich_su_doi_soat_Desktop.png",
+      "referenceSha256": "308ac0633b92d3b44d7cc7ec2a8ed78d096c7c31413f15c2efa11eae36534d14",
+      "actualSha256": "6cae84d990d763f4efa003b9b7fe387f3f6ab3c22438e38da726126254d8a1e4",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 12.583740792540793,
+      "width": 1000,
+      "height": 715
+    },
+    {
+      "id": "11",
+      "device": "Desktop",
+      "originalReference": "11_Loading_Desktop.png",
+      "referenceSha256": "a01885e6a490ffe36a79c107811f94e967a725515d49d71558224dc189e5f1ca",
+      "actualSha256": "e0faccc904592b5c89738b591f45a6e3e13ae1d5d0b2f5086be6d805457ae0d2",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 10.223021488469602,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "12",
+      "device": "Desktop",
+      "originalReference": "12_Empty_Desktop.png",
+      "referenceSha256": "9114106994af5193b09ef18a3762098b0677fe3d46be13b5c1e3f3928b1869ce",
+      "actualSha256": "8d0462518a69f4d2349f91ebe62ab06726a636f033cdab9ff3ad93b3f378b33d",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 9.813680817610063,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "13",
+      "device": "Desktop",
+      "originalReference": "13_No_result_Desktop.png",
+      "referenceSha256": "973bdf6309f7d0558f9a395e3020ef70787e433daa8ea738817501f2eaf37141",
+      "actualSha256": "95a90854c231f456dab0ac41db8d6201df726b61cfa03c3c9197290a9648a881",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 9.849373165618449,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "14",
+      "device": "Desktop",
+      "originalReference": "14_Load_error_Desktop.png",
+      "referenceSha256": "ccf101912100acb5a592cc1c39ed874a57671aa86e850c8b078a4ed065350d47",
+      "actualSha256": "ebe8b2878db6232f32ae13e3cf366db40ed8dbc8563d438a9041972d20ed2746",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 9.471910901467504,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "15",
+      "device": "Desktop",
+      "originalReference": "15_Forbidden_Desktop.png",
+      "referenceSha256": "804e8d61bbd15b010a88ef7e161a6aab01f0b309b591d6049beb64b271ad2d3b",
+      "actualSha256": "2176889862f0ff4496287b9be3496c92065a2635a29c28ba443c88e784199d49",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 9.314165094339623,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "16",
+      "device": "Desktop",
+      "originalReference": "16_Not_found_Desktop.png",
+      "referenceSha256": "b7153260f9cabd37d07ab9cce808f8eef4f660bcf7d6f2b65032f04aa7e1c7aa",
+      "actualSha256": "aa8b65243215cb309ef9837657a3b8d0b042232c36818ce3606cd762042b1a13",
+      "referenceCrop": {
+        "x": 237,
+        "y": 60,
+        "w": 1435
+      },
+      "actualCrop": {
+        "x": 314,
+        "y": 94,
+        "w": 1552
+      },
+      "diagnosticMeanAbsoluteRGB": 9.004794025157233,
+      "width": 1000,
+      "height": 636
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "originalReference": "01_Tra_cuu_ton_kho_Tablet.png",
+      "referenceSha256": "96af162f1ae4017c6d8f21a54f6282d251782759b807b3d519c480ad1991b84a",
+      "actualSha256": "876920f2e31ed7a8292e7e6bd0f487540e745b0e273cfabb0abe3509e8e03533",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 14.314057344464322,
+      "width": 650,
+      "height": 1032
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "originalReference": "02_Tong_quan_ton_SKU_Tablet.png",
+      "referenceSha256": "46596d82ad3054c62d193a13c747b5ea3d03712873a74ac6fe8d53ee55997e53",
+      "actualSha256": "12b1c082d43e91de81b35ab7ada54dab38ea64acaaa93f2140f98d90581e3b91",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 14.955043671701207,
+      "width": 650,
+      "height": 1095
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "originalReference": "03_Phan_bo_theo_BOX_Tablet.png",
+      "referenceSha256": "511c2909b7f93e13159df5ab37d76282b561dd157c09d7853e998ccce3bb02d1",
+      "actualSha256": "76da86713da56ebcadd1a0a031bc5a29c9465f07d20ab77dba753153612bc9e5",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 12.847416738004974,
+      "width": 650,
+      "height": 1258
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "originalReference": "04_Chi_tiet_BOX_Tablet.png",
+      "referenceSha256": "cd992967108ee75f6b743acd0934c15b944dd46f96846cbd89b07c9f1266c907",
+      "actualSha256": "fd20fd2c164fd8c399d008aafd6c9955ff2439ffe22a9df25a7fb0312c9b5c21",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 9.682328114363512,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "originalReference": "05_Chi_tiet_khay_Tablet.png",
+      "referenceSha256": "cc1aa68e475385eb3efc08ee3e5dfbde3b3b3ca44cae4891bae828a26abd3708",
+      "actualSha256": "996ad8f1d7908f200d0d452ed5a3d70fe8272b438cfe735c21292d8b01e015a9",
+      "referenceCrop": {
+        "x": 0,
+        "y": 72,
+        "w": 1086
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 8.783492423669415,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "originalReference": "06_Lich_su_bien_dong_Tablet.png",
+      "referenceSha256": "4a898932401e3f428c78282312e86fbf8e35b80f6f8b6d9d2b1ba6d31e355307",
+      "actualSha256": "31ea93e0a480dd9284a46111c041f42956061fe1f68f6b6b6a6dbf05a5f4be76",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 993
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 15.310370677895735,
+      "width": 650,
+      "height": 1297
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "originalReference": "07_Doi_soat_hien_tai_Tablet.png",
+      "referenceSha256": "8bc3b8594ceba10e028777c54dfa5aa566a860e1d27ecf0dbd77780168e5437d",
+      "actualSha256": "45906955c5119a089cd0828a0fafba8d83428f04f34a5e84a0c9dc742181532a",
+      "referenceCrop": {
+        "x": 0,
+        "y": 77,
+        "w": 1024
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 14.767208514755685,
+      "width": 650,
+      "height": 1219
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "originalReference": "08_Chi_tiet_chenh_lech_Tablet.png",
+      "referenceSha256": "2f7520fb2c990da5a690aac3534c9ddd6de8e5e16ef25eb18c1d57383e6f0ef8",
+      "actualSha256": "772d5e927b7861d408dd3ac8da89af04a336f0e6f2076b6500e70734819d9a27",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 14.913790057561487,
+      "width": 650,
+      "height": 1225
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "originalReference": "09_Lich_su_doi_soat_Tablet.png",
+      "referenceSha256": "902cac4f4c2811753f2e6dd8b23084cf35ff814c093abfc1be46059b7ff22ea9",
+      "actualSha256": "d78932b0c7b756b355f66ca727c8d5e243ed324af50485be18ac596b8d2535c9",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 993
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 14.986799991968356,
+      "width": 650,
+      "height": 1277
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "originalReference": "10_Chi_tiet_lich_su_doi_soat_Tablet.png",
+      "referenceSha256": "dc6cedbb600275c6c23644b1db988934ee09045c2b8b4d4c3fd68963bc24a6e7",
+      "actualSha256": "ca04986f44231fa0e0f6cb056a65937df676c53619f307ae362150d64b0d8437",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 15.516082154621197,
+      "width": 650,
+      "height": 1191
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "originalReference": "11_Loading_Tablet.png",
+      "referenceSha256": "0534058b2270b624831eac4a4a1c51070e9925d2cc29925c3fdfb1cd133aed9e",
+      "actualSha256": "b3af8436246ceceb595556bbf369f13979e6d99023a8746e157ec084b5d8ddb8",
+      "referenceCrop": {
+        "x": 0,
+        "y": 72,
+        "w": 1086
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 11.25118422711343,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "originalReference": "12_Empty_Tablet.png",
+      "referenceSha256": "67ec5b58dce86b5adf3b67e525e549d274b12f941f14f181a9d0c8c292d188b9",
+      "actualSha256": "780922bd394591234ac773fbe9f78bc833d8d3a8a8823302c5992a5167eb5b9d",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 12.084834732622344,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "13",
+      "device": "Tablet",
+      "originalReference": "13_No_result_Tablet.png",
+      "referenceSha256": "c8a97f64157ce09f298634398ca3c55ea32f81ab6974b29ba901c38b1d16b2c1",
+      "actualSha256": "1c3f0f5eebc72e6c2fae87ff28d735c9c1d99c8fee18af06ce4dfbfeb9fd66dd",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 10.612267352444343,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "14",
+      "device": "Tablet",
+      "originalReference": "14_Load_error_Tablet.png",
+      "referenceSha256": "c1c747aa7e9fb6896e9d17812d42e5452be9771d659c535aa07b5a6e911f499d",
+      "actualSha256": "0c4644a7a97ae032a72e1c917ccd3afdad2d2d521d5c97cece75eb228caa140c",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 11.620002016993167,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "15",
+      "device": "Tablet",
+      "originalReference": "15_Forbidden_Tablet.png",
+      "referenceSha256": "98fca41f08739e2bd2b797dc96508e2c6928f10a5fbe5cbe6bc2eda7732b8ed2",
+      "actualSha256": "35a08a7b08ed9382262962d187758f861da70386d18f4a2c9f2236ea9909c996",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 9.463610922018002,
+      "width": 650,
+      "height": 1017
+    },
+    {
+      "id": "16",
+      "device": "Tablet",
+      "originalReference": "16_Not_found_Tablet.png",
+      "referenceSha256": "54a05fd43f2d5942ce9a37ccf206d853eeab37086b7a605f0108841e43b14a96",
+      "actualSha256": "8d9bff7cc24cd456e289b25f6b79e536c35aa5895b584eb21a4ff8588142989d",
+      "referenceCrop": {
+        "x": 0,
+        "y": 79,
+        "w": 992
+      },
+      "actualCrop": {
+        "x": 48,
+        "y": 208,
+        "w": 1504
+      },
+      "diagnosticMeanAbsoluteRGB": 7.705564379900663,
+      "width": 650,
+      "height": 1017
+    }
+  ]
+}
