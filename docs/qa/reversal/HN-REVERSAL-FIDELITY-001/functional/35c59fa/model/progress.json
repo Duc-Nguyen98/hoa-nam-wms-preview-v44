@@ -1,0 +1,114 @@
+[
+  {
+    "name": "R01 scope components and scenario partition without ambiguous concatenation",
+    "status": "PASS"
+  },
+  {
+    "name": "R02 initialization is awaited; no writes or successful posts before readiness",
+    "status": "PASS"
+  },
+  {
+    "name": "R03 save persists quantity/header/per-SKU note across independent factory",
+    "status": "PASS"
+  },
+  {
+    "name": "R03 failed save is rejected with durable data and revision unchanged",
+    "status": "PASS"
+  },
+  {
+    "name": "R04 intent and original payload persist before dispatch hook and survive interrupted dispatch",
+    "status": "PASS"
+  },
+  {
+    "name": "R04 prepare storage failure never enters simulated dispatch hook",
+    "status": "PASS"
+  },
+  {
+    "name": "R05 unknown restore preserves key, input, receipt and posted consumption once",
+    "status": "PASS"
+  },
+  {
+    "name": "R06 repeated status reads perform zero persistence writes and no extra posting hook",
+    "status": "PASS"
+  },
+  {
+    "name": "R06 receipt acknowledgement rejects wrong key/record/version without state write",
+    "status": "PASS"
+  },
+  {
+    "name": "R07 exact replay retains original receipt; changed payload/new unresolved key conflict",
+    "status": "PASS"
+  },
+  {
+    "name": "R08 independent instances use shared CAS for stale save",
+    "status": "PASS"
+  },
+  {
+    "name": "R08 simultaneous different-key post of same draft consumes exactly once",
+    "status": "PASS"
+  },
+  {
+    "name": "R08 simultaneous same-key replay invokes dispatch once and adds one receipt",
+    "status": "PASS"
+  },
+  {
+    "name": "R09 source originals immutable and forged unit rejected; defensive returned data",
+    "status": "PASS"
+  },
+  {
+    "name": "R10 corrupt envelope schema stays blocked without silently resetting fixture",
+    "status": "PASS"
+  },
+  {
+    "name": "R10 non-finite persisted quantity fails initialization without replacement",
+    "status": "PASS"
+  },
+  {
+    "name": "R10 corrupt persisted document/source relation fails initialization",
+    "status": "PASS"
+  },
+  {
+    "name": "R10 corrupt operation fingerprint rejected and raw journal preserved",
+    "status": "PASS"
+  },
+  {
+    "name": "R11 actor/role/warehouse/scenario mismatch never reads another model scope",
+    "status": "PASS"
+  },
+  {
+    "name": "R12 failed post commit after prepare retains recoverable unknown with zero consumption",
+    "status": "PASS"
+  },
+  {
+    "name": "R15 mixed/unknown unit groups preserve sums without claiming one unit aggregate",
+    "status": "PASS"
+  },
+  {
+    "name": "R09 posted/cancelled/pending records remain read-only under save and post",
+    "status": "PASS"
+  },
+  {
+    "name": "R09 newly saved partial consumes only posted amount and rejects excess remaining",
+    "status": "PASS"
+  },
+  {
+    "name": "R09 nonpositive/nonfinite/excess quantities never create operation or receipt",
+    "status": "PASS"
+  },
+  {
+    "name": "R09 duplicate/missing/forged SKU identities and source amounts are rejected",
+    "status": "PASS"
+  },
+  {
+    "name": "R05 ui draft and source selection survive independent factory without mutation leakage",
+    "status": "PASS"
+  },
+  {
+    "name": "R11 stale scratch cannot promote rejected edits to current revision after reopen",
+    "status": "PASS"
+  },
+  {
+    "name": "R11 draft scratch cannot silently borrow current version when caller omits base",
+    "status": "PASS"
+  }
+]

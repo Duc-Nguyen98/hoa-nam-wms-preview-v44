@@ -1,0 +1,33 @@
+{
+  "sourceCommit": "e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f",
+  "commands": [
+    {
+      "command": "git status --short; git branch --show-current; git rev-parse HEAD",
+      "result": "candidate/reversal-fidelity-001-20261029, e7b145f, only new evidence/tests untracked"
+    },
+    {
+      "command": "git ls-remote github refs/heads/candidate/reversal-fidelity-001-20261029",
+      "result": "remote e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f"
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "exitCode": 0
+    },
+    {
+      "command": "node scripts/quality-contract.mjs",
+      "exitCode": 0,
+      "output": "QUALITY_CONTRACT_PASS: 13 states, 26 references, immutable source policy"
+    },
+    {
+      "command": "node --import tsx --test --test-concurrency=1 tests/reversal-approved24/*.test.ts tests/reversal-approved24-qa/independent-guards.test.ts tests/reversal-fidelity-001/implementation/*.test.ts tests/reversal-public/*.test.ts tests/reversal-ui/*.test.ts tests/inventory-recon-fidelity/navigation.test.ts",
+      "exitCode": 0,
+      "tests": 87,
+      "pass": 87,
+      "fail": 0,
+      "receipt": "unit-regression-e7b145f.log"
+    }
+  ],
+  "processEnvironment": "TEMP/TMP E:/WMS_HoaNam/temp; no global configuration change",
+  "independentCommands": "see functional/RUN_REPORT.md and visual capture scripts/receipts",
+  "remoteCalls": "see REMOTE_GATE_FINAL.json; read-only GitHub status/jobs/annotations and Sites404"
+}

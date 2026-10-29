@@ -1,0 +1,302 @@
+{
+  "capturedAt": "2026-10-29T12:49:54.970Z",
+  "source": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+  "buildId": "551357b4a3e3ff7448da0ebfc39a0cc5dfbed6263d1ed7cea9b293a512625def",
+  "buildSource": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+  "captureSha256": "0021403545b6e575f151ee5d0b5770066c2698be5f72f25999b3d9426c2fcc58",
+  "stabilitySha256": "9fb8287d1dd5fbf5b54489397c3dca3d3c005237c150f7954bdeeabf676a540d",
+  "stable": true,
+  "browserClosed": true,
+  "captureCount": 36,
+  "mode": "LOCAL_CANDIDATE_MOCK",
+  "rows": [
+    {
+      "id": "01",
+      "device": "Desktop1920",
+      "sha256": "b580729c38e28cf37ce63a013493ca52423c18849e850e0904c321e8322a08aa",
+      "pageHeight": 1178,
+      "requests": 7,
+      "responses": 7
+    },
+    {
+      "id": "02",
+      "device": "Desktop1920",
+      "sha256": "a4eccbd652e3a6dafefbba9ee79f9619aeaaa337b9aa76acf9d46a032b5e702a",
+      "pageHeight": 1360,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "03",
+      "device": "Desktop1920",
+      "sha256": "feb9a59bb312f1bcc3dae05b8f5c1acb33875a6157d744505f498b778185c2f1",
+      "pageHeight": 1322,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "04",
+      "device": "Desktop1920",
+      "sha256": "b49b66477d8086f96c07dcaa9b21a39356c29876c1ec919fdd62edd9b36f1e04",
+      "pageHeight": 1080,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "05",
+      "device": "Desktop1920",
+      "sha256": "bec0c4c9cd5c3bfe26d75ed7a5fdfce2944aaa3f163c441dea85a9eec232a8d2",
+      "pageHeight": 1159,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "06",
+      "device": "Desktop1920",
+      "sha256": "c018b9cea857af3e27aba347cca71a996fd5c7e280a5c5ddca6941461092227c",
+      "pageHeight": 1121,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "07",
+      "device": "Desktop1920",
+      "sha256": "ad043fe968ae2c732d09532069fc966ece5af45b90a19ffe5cff2b5ae4f6aa3f",
+      "pageHeight": 1080,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "08",
+      "device": "Desktop1920",
+      "sha256": "6f02131cd65f233e2766ae1f74f517e005511dfcc4761dbf6420e411fe9048fe",
+      "pageHeight": 1649,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "09",
+      "device": "Desktop1920",
+      "sha256": "24841bac54d58958822e3ae589f17451d80d353f07ff8c031db23356ad40c018",
+      "pageHeight": 1080,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "10",
+      "device": "Desktop1920",
+      "sha256": "4d0df23bcf30d83a3da00d8f4b9e4bcd283bdabf4b8c8f2f602b533065993111",
+      "pageHeight": 1348,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "11",
+      "device": "Desktop1920",
+      "sha256": "24c917ab11847e7ab9aaeb599c52416b159d7935fa155162e2d738548f3ca2a2",
+      "pageHeight": 1080,
+      "requests": 7,
+      "responses": 7
+    },
+    {
+      "id": "12",
+      "device": "Desktop1920",
+      "sha256": "3b5435edf1835d9e62a3384ad31922d8c7d4df80ad94833dcfed0f7b3adf8d1b",
+      "pageHeight": 1080,
+      "requests": 7,
+      "responses": 7
+    },
+    {
+      "id": "01",
+      "device": "Desktop1440",
+      "sha256": "9b38004c12180df9180faa56ccafecd4867361ed1490b952735e07570957ff39",
+      "pageHeight": 1254,
+      "requests": 7,
+      "responses": 7
+    },
+    {
+      "id": "02",
+      "device": "Desktop1440",
+      "sha256": "e4b9eb7514ad5d5770438d0ffda0acb273dd30d721d0b67095e99109299920ac",
+      "pageHeight": 1360,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "03",
+      "device": "Desktop1440",
+      "sha256": "7c9744f078d7da96d79550d65eb5e0d4cd457a27a4fc32c5f13d689925ddbb20",
+      "pageHeight": 1322,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "04",
+      "device": "Desktop1440",
+      "sha256": "b38d5378c7aa32606a0e0d5db26cfca4edee8baa3833ce139f8eda5e0a2817d4",
+      "pageHeight": 1029,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "05",
+      "device": "Desktop1440",
+      "sha256": "48624d14dd9ca101fc4c64026b8dbdaa26f73d7be3b3dc9af32cfb446a30386d",
+      "pageHeight": 1159,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "06",
+      "device": "Desktop1440",
+      "sha256": "a8fa49f975864f1d01b9689397f99b5081716ecfd60effd8e639ae14d7a63fdd",
+      "pageHeight": 1121,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "07",
+      "device": "Desktop1440",
+      "sha256": "16f0db93c7db1d90102b7276b884f3508268870081fde7c4c8b3f063f299dab3",
+      "pageHeight": 986,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "08",
+      "device": "Desktop1440",
+      "sha256": "75b1a341145fe87880b576ce53a60522c4c25529efe95597e393812a4940a5f4",
+      "pageHeight": 1649,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "09",
+      "device": "Desktop1440",
+      "sha256": "9ae5cf8d6f816d27d5255e5872e9bf7105a887ec47222918fd83475c57b9a9a0",
+      "pageHeight": 921,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "10",
+      "device": "Desktop1440",
+      "sha256": "9863331bf659706f019e9d5ddef1f5133e4279fc7bfd3f72b1dc7ef38352a63c",
+      "pageHeight": 1348,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "11",
+      "device": "Desktop1440",
+      "sha256": "0ef1199306145da6e6fad2c2e58a1f5458d2bd52b98bbd258a0821e2065c7f4d",
+      "pageHeight": 910,
+      "requests": 7,
+      "responses": 7
+    },
+    {
+      "id": "12",
+      "device": "Desktop1440",
+      "sha256": "086032e45fb6652c1786dd031c3eecff86c5239a6d38f16eac4267f6b6f3523f",
+      "pageHeight": 912,
+      "requests": 7,
+      "responses": 7
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "sha256": "32da11a83d8ce6e78787edd31e4270ffe37f87cd874619a465cbd0fd3a355723",
+      "pageHeight": 1280,
+      "requests": 6,
+      "responses": 6
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "sha256": "7c97df81e55a0d091c8fe651e16e19f7dddc11ed6989826560c2138c91aa8008",
+      "pageHeight": 1280,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "sha256": "ee47a393f10173e9e954ae375a807397bca445aa8559c1570bdebb936ba9b8d1",
+      "pageHeight": 1620,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "sha256": "2c857fb917cb18971a444c80ec9a0ca70623d7a8847bd4b4cbf3ded3b3f75dc0",
+      "pageHeight": 1280,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "sha256": "518083c9428e3029a41f6e5bafe4eea3e270f426d7ee78ef61b52bccc802c6bd",
+      "pageHeight": 1280,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "sha256": "9a3ca50e8e23cc06fb8f93475efcb17e4aa56c95c41ddf1040bfe2e55c2e7e9a",
+      "pageHeight": 1289,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "sha256": "7d7f3a939c3c1f0879c36739133abae3cf07d0c88643bf4b99f75f8124989ee8",
+      "pageHeight": 1280,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "sha256": "abe6d9da21e1d608372c0e1e0a43f6cf155e15351e3b7266eae4469aaacacc1a",
+      "pageHeight": 1768,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "sha256": "83964bc0c284ac3b547df422e371e50cb62ebe2bd9a0b9ee5b85365f8d1d2375",
+      "pageHeight": 1280,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "sha256": "4437b823ee27e11683516119dce0581ea510cd21f0a6dd30016f8d5813d08669",
+      "pageHeight": 1674,
+      "requests": 0,
+      "responses": 0
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "sha256": "5d19f787b774d803d57751cbb088b35e21fe28148c6f4104c94fbf2d10d6ed69",
+      "pageHeight": 1280,
+      "requests": 6,
+      "responses": 6
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "sha256": "dc381b76afd16e2190f26affc666d2d876341ec4b49e64ea79ce017d23d5c07d",
+      "pageHeight": 1280,
+      "requests": 6,
+      "responses": 6
+    }
+  ]
+}

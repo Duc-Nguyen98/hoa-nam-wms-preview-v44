@@ -1,0 +1,2767 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "sourceCommit": "294c9d0f4044eaea33972e49dd0ed7041f0ba150",
+  "buildId": "233db62c29e3875b9b361af55cf9ed48c31aa02f34d9e133ce9ffb2af7663a2b",
+  "mode": "MOCK",
+  "independentModelPass": 28,
+  "uniqueBrowserCasePass": 23,
+  "coreBrowserCasePass": 22,
+  "supplementalBrowserCasePass": 1,
+  "aggregateAcrossRuns": true,
+  "singleCleanFullRunPass": false,
+  "runs": [
+    {
+      "receipt": "294c9d0/browser/results.json",
+      "sha256": "0df07bfe13817276fd01925e2b9178c775bd9b060850ebba2a007f912bf33fa0",
+      "cases": 23,
+      "passed": 22,
+      "failed": [
+        {
+          "name": "B16 inherited workspace read states and retry never masquerade as data",
+          "status": "FAIL",
+          "error": "TimeoutError: locator.waitFor: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.rev').locator('[data-state=loading]') to be visible\u001b[22m\n",
+          "observations": {
+            "scenario": "functional-mvtmqmj3-19"
+          },
+          "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/294c9d0/browser/failure-19.png",
+          "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+          "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+          "canonicalUnchanged": true,
+          "transport": [],
+          "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+        }
+      ],
+      "errors": [
+        "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+      ]
+    },
+    {
+      "receipt": "294c9d0/readstates/results.json",
+      "sha256": "870b92dc156cd84811688cf13bb65ac96045c9691fbca4d3098206329edeb91c",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "errors": []
+    }
+  ],
+  "model": {
+    "receipt": "294c9d0/model/results.json",
+    "sha256": "131f71677ccddc89c99e9d97d2657380e683b6a5e4adfe76b316051b9a72ce98",
+    "sourceMatchesBrowserCustody": true
+  },
+  "sourceUnchangedEveryRun": true,
+  "canonicalUnchangedEveryCompletedCase": true,
+  "historicalBaselineReceipts": [
+    {
+      "path": "baseline-negative/results.json",
+      "sha256": "dbc2c3c64f437722a5e8ebdb42db5fac5828f09cc4984f820eb7985cc51d89ab",
+      "unchanged": true
+    },
+    {
+      "path": "baseline-semantic/results.json",
+      "sha256": "3534b46e3c370523de2d2db9c4dfac96099cf7d547a764e86308daef24ab34d0",
+      "unchanged": true
+    }
+  ],
+  "latestCases": [
+    {
+      "name": "B01 unknown list resource remains visible with original operation key/input",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-1",
+        "phase": "unknown"
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B02 unknown refresh preserves input/key and status recovery consumes no second reversal",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-2",
+        "version": 2
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B03 tab close/reopen preserves unknown operation without new intent",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-3",
+        "phase": "unknown"
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B04 saved draft reload preserves quantity/header/per-SKU note and source originals",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-4",
+        "rev": 2
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B05 source selection survives reload and unrelated scenario does not inherit draft",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-5",
+        "scope": "Different scenario only; no second authenticated actor account supplied."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B06 same-scope tabs stale posting cannot both confirm and operation count stays one",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-6",
+        "scope": "Same normal session and dedicated fixture scenario shared by two tabs; backend concurrency not exercised."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B07 same-scope tabs stale save cannot overwrite acknowledged draft",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-7",
+        "restoredAfterRejectedStaleSave": "CAS winner",
+        "scope": "Shared persisted draft CAS plus stale scratch recovery; reload must not silently promote rejected edits to a fresh version."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B08 validation suppresses invalid projection with per-SKU error association",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-8",
+        "association": "rev-quantity-error-HN-DRV-001"
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B18 blank quantity survives scratch restore and can be corrected without read failure",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-9",
+        "scope": "Blank UI value uses explicit finite scratch marker; precision policy is not invented."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B09 scoped document quantities and count scopes are explicitly labelled",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-10",
+        "headers": [
+          "#",
+          "Mã hàng",
+          "Tên hàng",
+          "Đơn vị",
+          "Số lượng chứng từ trước đảo",
+          "Số lượng đảo",
+          "Biến động",
+          "Số lượng chứng từ còn lại"
+        ],
+        "listText": "Tất cả phiếu\n9 phiếu\nĐã ghi sổ\n5 phiếu\nNháp\n1 phiếu\nChờ hàng trả về\n1 phiếu\nĐã hủy\n2 phiếu"
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B10 pending/cancelled impacts and known-only history remain honest",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-11",
+        "scope": "No fabricated review event or receive/stock command asserted; posted inbound/outbound direction and source relation checked."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B11 dedicated storage read failure blocks data instead of fallback seeding",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-12",
+        "injection": "Dedicated fixture IDB open only; canonical/account namespace unaffected."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B12 mixed-unit isolated component preserves units and grouped quantity summaries",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-13",
+        "summary": "Số mặt hàng\n2 SKU\nTổng số lượng đảo\n2 Cái · 2 Mét\nBiến động dự kiến khi ghi sổ\n−2 Cái · −2 Mét\nTác động tồn hiện tại\n0 Cái · 0 Mét",
+        "scope": "Explicit fixture extension only, not approved live DTO."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B13 filtered query survives reload and browser history",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-14",
+        "url": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalScenario=functional-mvtmqmj3-14#/preview/S17?view=list&id=REV-20261028-007&q=&type=&status=Nh%C3%A1p&from=2026-10-25&to=2026-10-28&page=1"
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B19 search/date validation preserve accepted rows and expose true no-results",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-15",
+        "scope": "Search only applies after explicit accept; invalid dates retain previous accepted result."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B20 source-bound new draft saves and posts exact notes/current creation date",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-16",
+        "id": "REV-20261029-1793283668504"
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B21 Tablet single interactive binding44px targets and native radio keyboard",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-17",
+        "targets": [
+          {
+            "label": "PN-20261022-007",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261020-001",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261021-005",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261019-003",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261018-002",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261023-010",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261024-011",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261025-012",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261026-013",
+            "width": 44,
+            "height": 44
+          }
+        ],
+        "binding": {
+          "headers": [
+            "#",
+            "Mã hàng",
+            "Tên hàng",
+            "Đơn vị",
+            "Số lượng gốc",
+            "Đã đảo",
+            "Còn được đảo",
+            "Số lượng đảo"
+          ],
+          "rows": [
+            [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Còn được đảo",
+              "Số lượng đảo"
+            ],
+            [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Còn được đảo",
+              "Số lượng đảo"
+            ]
+          ]
+        },
+        "listAccessible": "- text: Tất cả phiếu\n- strong: 9 phiếu\n- text: Đã ghi sổ\n- strong: 4 phiếu\n- text: Nháp\n- strong: 2 phiếu\n- text: Chờ hàng trả về\n- strong: 1 phiếu\n- text: Đã hủy\n- strong: 2 phiếu",
+        "impactAccessible": "- text: Giao dịch gốc\n- strong: +90 Cái\n- text: Phiếu đảo này\n- strong: −45 Cái\n- text: Ảnh hưởng thuần của chuỗi\n- strong: +45 Cái\n- text: Chỉ phản ánh chuỗi giao dịch này, không phải toàn bộ tồn SKU.",
+        "readonlyControls": [
+          {
+            "name": "PN-20261020-001 ↗",
+            "height": 44,
+            "width": 135.34375
+          }
+        ],
+        "compactReadonlyScope": "Only actionable controls require44px targets; readonly label/value rows retain compact presentation."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B22 isolated twelve-record pagination shows9and3 with explicit filtered total",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-18",
+        "scope": "Bounded component fixture extension only; does not mutate durable source fixtures."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B16 inherited workspace read states and retry never masquerade as data",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmuyik-1",
+        "states": [
+          {
+            "which": "loading",
+            "kind": "loading",
+            "buttons": []
+          },
+          {
+            "which": "session",
+            "kind": "unauthorized",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "forbidden",
+            "kind": "forbidden",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "offline",
+            "kind": "offline",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "network",
+            "kind": "error",
+            "buttons": [
+              "Thử lại"
+            ]
+          },
+          {
+            "which": "empty",
+            "kind": "empty",
+            "buttons": []
+          }
+        ],
+        "scope": "Actual workspace with explicit component read injection; no backend 401/403 certification."
+      },
+      "canonicalBefore": "2deb07dcb7ff38ac0ec5704207f40d035466a3d19ad9377e629ada4ae5eb14b3",
+      "canonicalAfter": "2deb07dcb7ff38ac0ec5704207f40d035466a3d19ad9377e629ada4ae5eb14b3",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/readstates/results.json"
+    },
+    {
+      "name": "B17 normal S16 S17 S21 and putaway surfaces retain bounded shared shell",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-20",
+        "routes": [
+          {
+            "route": "#/preview/S16",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Tra cứu tồn & đối soát"
+          },
+          {
+            "route": "#/preview/S17",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Phiếu đảo tồn kho"
+          },
+          {
+            "route": "#/preview/S21",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Tồn kho & Đối soát"
+          },
+          {
+            "route": "#/preview/S12",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Danh sách phiếu nhập"
+          },
+          {
+            "route": "#/preview/S14",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Lệnh xếp khay"
+          }
+        ],
+        "scope": "Fresh readonly normal-route smoke only; legacy transaction/recovery behavior remains separate."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B14 locale/theme/deep-state bounded controls at400/800/1440",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-21",
+        "profiles": [
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "list",
+            "heading": "Danh sách phiếu đảo",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "choose",
+            "heading": "Tạo phiếu đảo",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "edit",
+            "heading": "Sửa phiếu đảo nháp Nháp",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "detail",
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "list",
+            "heading": "Reversal slips",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "choose",
+            "heading": "Create reversal",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "edit",
+            "heading": "Edit reversal draft Draft",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "detail",
+            "heading": "Reversal details Posted",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "list",
+            "heading": "冲销单列表",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "choose",
+            "heading": "创建冲销单",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "edit",
+            "heading": "编辑冲销草稿 草稿",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "detail",
+            "heading": "冲销单详情 已过账",
+            "documentWidth": 1440,
+            "outside": []
+          }
+        ]
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B23 date text fits breakpoint widths and impact timeline retains only known events",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-22",
+        "profiles": [
+          {
+            "language": "vi",
+            "width": 600,
+            "documentWidth": 600,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Từ ngày: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Đến ngày: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Tạo phiếu đảo",
+                "width": 119.890625,
+                "height": 44,
+                "left": 456.109375,
+                "right": 576
+              },
+              {
+                "label": "Từ ngày: 25/10/2026",
+                "width": 205,
+                "height": 44,
+                "left": 42,
+                "right": 247
+              },
+              {
+                "label": "Xóa ngày Từ ngày",
+                "width": 47,
+                "height": 44,
+                "left": 247,
+                "right": 294
+              },
+              {
+                "label": "Đến ngày: 28/10/2026",
+                "width": 205,
+                "height": 44,
+                "left": 306,
+                "right": 511
+              },
+              {
+                "label": "Xóa ngày Đến ngày",
+                "width": 47,
+                "height": 44,
+                "left": 511,
+                "right": 558
+              },
+              {
+                "label": "Tất cảĐảo nhậpĐảo xuất",
+                "width": 254,
+                "height": 44,
+                "left": 41,
+                "right": 295
+              },
+              {
+                "label": "Tất cảĐã ghi sổNhápChờ hàng trả vềĐã hủy",
+                "width": 254,
+                "height": 44,
+                "left": 305,
+                "right": 559
+              },
+              {
+                "label": "",
+                "width": 518,
+                "height": 44,
+                "left": 41,
+                "right": 559
+              },
+              {
+                "label": "Tìm kiếm",
+                "width": 254,
+                "height": 44,
+                "left": 41,
+                "right": 295
+              },
+              {
+                "label": "Xóa bộ lọc",
+                "width": 254,
+                "height": 44,
+                "left": 305,
+                "right": 559
+              },
+              {
+                "label": "Xem REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "Xem REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 425,
+                "right": 469
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 515,
+                "right": 559
+              }
+            ]
+          },
+          {
+            "language": "vi",
+            "width": 759,
+            "documentWidth": 759,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Từ ngày: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Đến ngày: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Tạo phiếu đảo",
+                "width": 119.890625,
+                "height": 44,
+                "left": 615.109375,
+                "right": 735
+              },
+              {
+                "label": "Từ ngày: 25/10/2026",
+                "width": 284.5,
+                "height": 44,
+                "left": 42,
+                "right": 326.5
+              },
+              {
+                "label": "Xóa ngày Từ ngày",
+                "width": 47,
+                "height": 44,
+                "left": 326.5,
+                "right": 373.5
+              },
+              {
+                "label": "Đến ngày: 28/10/2026",
+                "width": 284.5,
+                "height": 44,
+                "left": 385.5,
+                "right": 670
+              },
+              {
+                "label": "Xóa ngày Đến ngày",
+                "width": 47,
+                "height": 44,
+                "left": 670,
+                "right": 717
+              },
+              {
+                "label": "Tất cảĐảo nhậpĐảo xuất",
+                "width": 333.5,
+                "height": 44,
+                "left": 41,
+                "right": 374.5
+              },
+              {
+                "label": "Tất cảĐã ghi sổNhápChờ hàng trả vềĐã hủy",
+                "width": 333.5,
+                "height": 44,
+                "left": 384.5,
+                "right": 718
+              },
+              {
+                "label": "",
+                "width": 677,
+                "height": 44,
+                "left": 41,
+                "right": 718
+              },
+              {
+                "label": "Tìm kiếm",
+                "width": 333.5,
+                "height": 44,
+                "left": 41,
+                "right": 374.5
+              },
+              {
+                "label": "Xóa bộ lọc",
+                "width": 333.5,
+                "height": 44,
+                "left": 384.5,
+                "right": 718
+              },
+              {
+                "label": "Xem REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "Xem REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 584,
+                "right": 628
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 674,
+                "right": 718
+              }
+            ]
+          },
+          {
+            "language": "vi",
+            "width": 760,
+            "documentWidth": 760,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Từ ngày: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Đến ngày: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Tạo phiếu đảo",
+                "width": 119.890625,
+                "height": 44,
+                "left": 616.109375,
+                "right": 736
+              },
+              {
+                "label": "Từ ngày: 25/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 42,
+                "right": 198
+              },
+              {
+                "label": "Xóa ngày Từ ngày",
+                "width": 47,
+                "height": 44,
+                "left": 198,
+                "right": 245
+              },
+              {
+                "label": "Đến ngày: 28/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 257,
+                "right": 413
+              },
+              {
+                "label": "Xóa ngày Đến ngày",
+                "width": 47,
+                "height": 44,
+                "left": 413,
+                "right": 460
+              },
+              {
+                "label": "Tất cảĐảo nhậpĐảo xuất",
+                "width": 119,
+                "height": 44,
+                "left": 471,
+                "right": 590
+              },
+              {
+                "label": "Tất cảĐã ghi sổNhápChờ hàng trả vềĐã hủy",
+                "width": 119,
+                "height": 44,
+                "left": 600,
+                "right": 719
+              },
+              {
+                "label": "",
+                "width": 420,
+                "height": 44,
+                "left": 41,
+                "right": 461
+              },
+              {
+                "label": "Tìm kiếm",
+                "width": 119,
+                "height": 44,
+                "left": 471,
+                "right": 590
+              },
+              {
+                "label": "Xóa bộ lọc",
+                "width": 119,
+                "height": 44,
+                "left": 600,
+                "right": 719
+              },
+              {
+                "label": "Xem REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "Xem REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 585,
+                "right": 629
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 675,
+                "right": 719
+              }
+            ]
+          },
+          {
+            "language": "vi",
+            "width": 800,
+            "documentWidth": 800,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Từ ngày: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "Đến ngày: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Tạo phiếu đảo",
+                "width": 119.890625,
+                "height": 44,
+                "left": 656.109375,
+                "right": 776
+              },
+              {
+                "label": "Từ ngày: 25/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 42,
+                "right": 198
+              },
+              {
+                "label": "Xóa ngày Từ ngày",
+                "width": 47,
+                "height": 44,
+                "left": 198,
+                "right": 245
+              },
+              {
+                "label": "Đến ngày: 28/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 257,
+                "right": 413
+              },
+              {
+                "label": "Xóa ngày Đến ngày",
+                "width": 47,
+                "height": 44,
+                "left": 413,
+                "right": 460
+              },
+              {
+                "label": "Tất cảĐảo nhậpĐảo xuất",
+                "width": 139,
+                "height": 44,
+                "left": 471,
+                "right": 610
+              },
+              {
+                "label": "Tất cảĐã ghi sổNhápChờ hàng trả vềĐã hủy",
+                "width": 139,
+                "height": 44,
+                "left": 620,
+                "right": 759
+              },
+              {
+                "label": "",
+                "width": 420,
+                "height": 44,
+                "left": 41,
+                "right": 461
+              },
+              {
+                "label": "Tìm kiếm",
+                "width": 139,
+                "height": 44,
+                "left": 471,
+                "right": 610
+              },
+              {
+                "label": "Xóa bộ lọc",
+                "width": 139,
+                "height": 44,
+                "left": 620,
+                "right": 759
+              },
+              {
+                "label": "Xem REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "Xem REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 625,
+                "right": 669
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 715,
+                "right": 759
+              }
+            ]
+          },
+          {
+            "language": "en",
+            "width": 600,
+            "documentWidth": 600,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "From date: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "To date: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Create reversal",
+                "width": 129.3125,
+                "height": 44,
+                "left": 446.6875,
+                "right": 576
+              },
+              {
+                "label": "From date: 25/10/2026",
+                "width": 205,
+                "height": 44,
+                "left": 42,
+                "right": 247
+              },
+              {
+                "label": "Clear date From date",
+                "width": 47,
+                "height": 44,
+                "left": 247,
+                "right": 294
+              },
+              {
+                "label": "To date: 28/10/2026",
+                "width": 205,
+                "height": 44,
+                "left": 306,
+                "right": 511
+              },
+              {
+                "label": "Clear date To date",
+                "width": 47,
+                "height": 44,
+                "left": 511,
+                "right": 558
+              },
+              {
+                "label": "AllInbound reversalOutbound reversal",
+                "width": 254,
+                "height": 44,
+                "left": 41,
+                "right": 295
+              },
+              {
+                "label": "AllPostedDraftAwaiting returnCancelled",
+                "width": 254,
+                "height": 44,
+                "left": 305,
+                "right": 559
+              },
+              {
+                "label": "",
+                "width": 518,
+                "height": 44,
+                "left": 41,
+                "right": 559
+              },
+              {
+                "label": "Search",
+                "width": 254,
+                "height": 44,
+                "left": 41,
+                "right": 295
+              },
+              {
+                "label": "Clear filters",
+                "width": 254,
+                "height": 44,
+                "left": 305,
+                "right": 559
+              },
+              {
+                "label": "View REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "View REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 425,
+                "right": 469
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 515,
+                "right": 559
+              }
+            ]
+          },
+          {
+            "language": "en",
+            "width": 759,
+            "documentWidth": 759,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "From date: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "To date: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Create reversal",
+                "width": 129.3125,
+                "height": 44,
+                "left": 605.6875,
+                "right": 735
+              },
+              {
+                "label": "From date: 25/10/2026",
+                "width": 284.5,
+                "height": 44,
+                "left": 42,
+                "right": 326.5
+              },
+              {
+                "label": "Clear date From date",
+                "width": 47,
+                "height": 44,
+                "left": 326.5,
+                "right": 373.5
+              },
+              {
+                "label": "To date: 28/10/2026",
+                "width": 284.5,
+                "height": 44,
+                "left": 385.5,
+                "right": 670
+              },
+              {
+                "label": "Clear date To date",
+                "width": 47,
+                "height": 44,
+                "left": 670,
+                "right": 717
+              },
+              {
+                "label": "AllInbound reversalOutbound reversal",
+                "width": 333.5,
+                "height": 44,
+                "left": 41,
+                "right": 374.5
+              },
+              {
+                "label": "AllPostedDraftAwaiting returnCancelled",
+                "width": 333.5,
+                "height": 44,
+                "left": 384.5,
+                "right": 718
+              },
+              {
+                "label": "",
+                "width": 677,
+                "height": 44,
+                "left": 41,
+                "right": 718
+              },
+              {
+                "label": "Search",
+                "width": 333.5,
+                "height": 44,
+                "left": 41,
+                "right": 374.5
+              },
+              {
+                "label": "Clear filters",
+                "width": 333.5,
+                "height": 44,
+                "left": 384.5,
+                "right": 718
+              },
+              {
+                "label": "View REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "View REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 584,
+                "right": 628
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 674,
+                "right": 718
+              }
+            ]
+          },
+          {
+            "language": "en",
+            "width": 760,
+            "documentWidth": 760,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "From date: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "To date: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Create reversal",
+                "width": 129.3125,
+                "height": 44,
+                "left": 606.6875,
+                "right": 736
+              },
+              {
+                "label": "From date: 25/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 42,
+                "right": 198
+              },
+              {
+                "label": "Clear date From date",
+                "width": 47,
+                "height": 44,
+                "left": 198,
+                "right": 245
+              },
+              {
+                "label": "To date: 28/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 257,
+                "right": 413
+              },
+              {
+                "label": "Clear date To date",
+                "width": 47,
+                "height": 44,
+                "left": 413,
+                "right": 460
+              },
+              {
+                "label": "AllInbound reversalOutbound reversal",
+                "width": 119,
+                "height": 44,
+                "left": 471,
+                "right": 590
+              },
+              {
+                "label": "AllPostedDraftAwaiting returnCancelled",
+                "width": 119,
+                "height": 44,
+                "left": 600,
+                "right": 719
+              },
+              {
+                "label": "",
+                "width": 420,
+                "height": 44,
+                "left": 41,
+                "right": 461
+              },
+              {
+                "label": "Search",
+                "width": 119,
+                "height": 44,
+                "left": 471,
+                "right": 590
+              },
+              {
+                "label": "Clear filters",
+                "width": 119,
+                "height": 44,
+                "left": 600,
+                "right": 719
+              },
+              {
+                "label": "View REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "View REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 585,
+                "right": 629
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 675,
+                "right": 719
+              }
+            ]
+          },
+          {
+            "language": "en",
+            "width": 800,
+            "documentWidth": 800,
+            "dates": [
+              {
+                "text": "25/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "From date: 25/10/2026"
+              },
+              {
+                "text": "28/10/2026",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "To date: 28/10/2026"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "Create reversal",
+                "width": 129.3125,
+                "height": 44,
+                "left": 646.6875,
+                "right": 776
+              },
+              {
+                "label": "From date: 25/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 42,
+                "right": 198
+              },
+              {
+                "label": "Clear date From date",
+                "width": 47,
+                "height": 44,
+                "left": 198,
+                "right": 245
+              },
+              {
+                "label": "To date: 28/10/2026",
+                "width": 156,
+                "height": 44,
+                "left": 257,
+                "right": 413
+              },
+              {
+                "label": "Clear date To date",
+                "width": 47,
+                "height": 44,
+                "left": 413,
+                "right": 460
+              },
+              {
+                "label": "AllInbound reversalOutbound reversal",
+                "width": 139,
+                "height": 44,
+                "left": 471,
+                "right": 610
+              },
+              {
+                "label": "AllPostedDraftAwaiting returnCancelled",
+                "width": 139,
+                "height": 44,
+                "left": 620,
+                "right": 759
+              },
+              {
+                "label": "",
+                "width": 420,
+                "height": 44,
+                "left": 41,
+                "right": 461
+              },
+              {
+                "label": "Search",
+                "width": 139,
+                "height": 44,
+                "left": 471,
+                "right": 610
+              },
+              {
+                "label": "Clear filters",
+                "width": 139,
+                "height": 44,
+                "left": 620,
+                "right": 759
+              },
+              {
+                "label": "View REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "View REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 625,
+                "right": 669
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 715,
+                "right": 759
+              }
+            ]
+          },
+          {
+            "language": "zh-CN",
+            "width": 600,
+            "documentWidth": 600,
+            "dates": [
+              {
+                "text": "2026/10/25",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "开始日期: 2026/10/25"
+              },
+              {
+                "text": "2026/10/28",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "结束日期: 2026/10/28"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "创建冲销单",
+                "width": 100,
+                "height": 44,
+                "left": 476,
+                "right": 576
+              },
+              {
+                "label": "开始日期: 2026/10/25",
+                "width": 205,
+                "height": 44,
+                "left": 42,
+                "right": 247
+              },
+              {
+                "label": "清除日期 开始日期",
+                "width": 47,
+                "height": 44,
+                "left": 247,
+                "right": 294
+              },
+              {
+                "label": "结束日期: 2026/10/28",
+                "width": 205,
+                "height": 44,
+                "left": 306,
+                "right": 511
+              },
+              {
+                "label": "清除日期 结束日期",
+                "width": 47,
+                "height": 44,
+                "left": 511,
+                "right": 558
+              },
+              {
+                "label": "全部入库冲销出库冲销",
+                "width": 254,
+                "height": 44,
+                "left": 41,
+                "right": 295
+              },
+              {
+                "label": "全部已过账草稿等待退货已取消",
+                "width": 254,
+                "height": 44,
+                "left": 305,
+                "right": 559
+              },
+              {
+                "label": "",
+                "width": 518,
+                "height": 44,
+                "left": 41,
+                "right": 559
+              },
+              {
+                "label": "搜索",
+                "width": 254,
+                "height": 44,
+                "left": 41,
+                "right": 295
+              },
+              {
+                "label": "清除筛选",
+                "width": 254,
+                "height": 44,
+                "left": 305,
+                "right": 559
+              },
+              {
+                "label": "查看 REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "查看 REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 517,
+                "right": 561
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 425,
+                "right": 469
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 515,
+                "right": 559
+              }
+            ]
+          },
+          {
+            "language": "zh-CN",
+            "width": 759,
+            "documentWidth": 759,
+            "dates": [
+              {
+                "text": "2026/10/25",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "开始日期: 2026/10/25"
+              },
+              {
+                "text": "2026/10/28",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "结束日期: 2026/10/28"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "创建冲销单",
+                "width": 100,
+                "height": 44,
+                "left": 635,
+                "right": 735
+              },
+              {
+                "label": "开始日期: 2026/10/25",
+                "width": 284.5,
+                "height": 44,
+                "left": 42,
+                "right": 326.5
+              },
+              {
+                "label": "清除日期 开始日期",
+                "width": 47,
+                "height": 44,
+                "left": 326.5,
+                "right": 373.5
+              },
+              {
+                "label": "结束日期: 2026/10/28",
+                "width": 284.5,
+                "height": 44,
+                "left": 385.5,
+                "right": 670
+              },
+              {
+                "label": "清除日期 结束日期",
+                "width": 47,
+                "height": 44,
+                "left": 670,
+                "right": 717
+              },
+              {
+                "label": "全部入库冲销出库冲销",
+                "width": 333.5,
+                "height": 44,
+                "left": 41,
+                "right": 374.5
+              },
+              {
+                "label": "全部已过账草稿等待退货已取消",
+                "width": 333.5,
+                "height": 44,
+                "left": 384.5,
+                "right": 718
+              },
+              {
+                "label": "",
+                "width": 677,
+                "height": 44,
+                "left": 41,
+                "right": 718
+              },
+              {
+                "label": "搜索",
+                "width": 333.5,
+                "height": 44,
+                "left": 41,
+                "right": 374.5
+              },
+              {
+                "label": "清除筛选",
+                "width": 333.5,
+                "height": 44,
+                "left": 384.5,
+                "right": 718
+              },
+              {
+                "label": "查看 REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "查看 REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 672.75,
+                "right": 716.75
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 584,
+                "right": 628
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 674,
+                "right": 718
+              }
+            ]
+          },
+          {
+            "language": "zh-CN",
+            "width": 760,
+            "documentWidth": 760,
+            "dates": [
+              {
+                "text": "2026/10/25",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "开始日期: 2026/10/25"
+              },
+              {
+                "text": "2026/10/28",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "结束日期: 2026/10/28"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "创建冲销单",
+                "width": 100,
+                "height": 44,
+                "left": 636,
+                "right": 736
+              },
+              {
+                "label": "开始日期: 2026/10/25",
+                "width": 156,
+                "height": 44,
+                "left": 42,
+                "right": 198
+              },
+              {
+                "label": "清除日期 开始日期",
+                "width": 47,
+                "height": 44,
+                "left": 198,
+                "right": 245
+              },
+              {
+                "label": "结束日期: 2026/10/28",
+                "width": 156,
+                "height": 44,
+                "left": 257,
+                "right": 413
+              },
+              {
+                "label": "清除日期 结束日期",
+                "width": 47,
+                "height": 44,
+                "left": 413,
+                "right": 460
+              },
+              {
+                "label": "全部入库冲销出库冲销",
+                "width": 119,
+                "height": 44,
+                "left": 471,
+                "right": 590
+              },
+              {
+                "label": "全部已过账草稿等待退货已取消",
+                "width": 119,
+                "height": 44,
+                "left": 600,
+                "right": 719
+              },
+              {
+                "label": "",
+                "width": 420,
+                "height": 44,
+                "left": 41,
+                "right": 461
+              },
+              {
+                "label": "搜索",
+                "width": 119,
+                "height": 44,
+                "left": 471,
+                "right": 590
+              },
+              {
+                "label": "清除筛选",
+                "width": 119,
+                "height": 44,
+                "left": 600,
+                "right": 719
+              },
+              {
+                "label": "查看 REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "查看 REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 673.625,
+                "right": 717.625
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 585,
+                "right": 629
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 675,
+                "right": 719
+              }
+            ]
+          },
+          {
+            "language": "zh-CN",
+            "width": 800,
+            "documentWidth": 800,
+            "dates": [
+              {
+                "text": "2026/10/25",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "开始日期: 2026/10/25"
+              },
+              {
+                "text": "2026/10/28",
+                "scrollWidth": 75,
+                "clientWidth": 75,
+                "accessibleName": "结束日期: 2026/10/28"
+              }
+            ],
+            "clearCount": 2,
+            "controls": [
+              {
+                "label": "创建冲销单",
+                "width": 100,
+                "height": 44,
+                "left": 676,
+                "right": 776
+              },
+              {
+                "label": "开始日期: 2026/10/25",
+                "width": 156,
+                "height": 44,
+                "left": 42,
+                "right": 198
+              },
+              {
+                "label": "清除日期 开始日期",
+                "width": 47,
+                "height": 44,
+                "left": 198,
+                "right": 245
+              },
+              {
+                "label": "结束日期: 2026/10/28",
+                "width": 156,
+                "height": 44,
+                "left": 257,
+                "right": 413
+              },
+              {
+                "label": "清除日期 结束日期",
+                "width": 47,
+                "height": 44,
+                "left": 413,
+                "right": 460
+              },
+              {
+                "label": "全部入库冲销出库冲销",
+                "width": 139,
+                "height": 44,
+                "left": 471,
+                "right": 610
+              },
+              {
+                "label": "全部已过账草稿等待退货已取消",
+                "width": 139,
+                "height": 44,
+                "left": 620,
+                "right": 759
+              },
+              {
+                "label": "",
+                "width": 420,
+                "height": 44,
+                "left": 41,
+                "right": 461
+              },
+              {
+                "label": "搜索",
+                "width": 139,
+                "height": 44,
+                "left": 471,
+                "right": 610
+              },
+              {
+                "label": "清除筛选",
+                "width": 139,
+                "height": 44,
+                "left": 620,
+                "right": 759
+              },
+              {
+                "label": "查看 REV-20261028-009",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261028-008",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261028-007",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261027-006",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261027-005",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261026-004",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261026-003",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261025-002",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "查看 REV-20261025-001",
+                "width": 44,
+                "height": 44,
+                "left": 710.84375,
+                "right": 754.84375
+              },
+              {
+                "label": "‹",
+                "width": 44,
+                "height": 46,
+                "left": 625,
+                "right": 669
+              },
+              {
+                "label": "›",
+                "width": 44,
+                "height": 46,
+                "left": 715,
+                "right": 759
+              }
+            ]
+          }
+        ],
+        "timelines": [
+          {
+            "language": "vi",
+            "rows": [
+              {
+                "time": "20/10/2026 08:30",
+                "text": "Ghi sổ chứng từ gốc PN-20261020-001"
+              },
+              {
+                "time": "28/10/2026 14:25",
+                "text": "Tạo phiếu đảo REV-20261028-009"
+              },
+              {
+                "time": "28/10/2026 14:25",
+                "text": "Ghi sổ phiếu đảo"
+              }
+            ]
+          },
+          {
+            "language": "en",
+            "rows": [
+              {
+                "time": "20/10/2026 08:30",
+                "text": "Source document posted PN-20261020-001"
+              },
+              {
+                "time": "28/10/2026 14:25",
+                "text": "Create reversal REV-20261028-009"
+              },
+              {
+                "time": "28/10/2026 14:25",
+                "text": "Post reversal"
+              }
+            ]
+          },
+          {
+            "language": "zh-CN",
+            "rows": [
+              {
+                "time": "2026/10/20 08:30",
+                "text": "原始单据已过账 PN-20261020-001"
+              },
+              {
+                "time": "2026/10/28 14:25",
+                "text": "创建冲销单 REV-20261028-009"
+              },
+              {
+                "time": "2026/10/28 14:25",
+                "text": "过账冲销单"
+              }
+            ]
+          }
+        ],
+        "scope": "Rendered date span width measured directly; no ellipsis allowance. Three existing fixture history events only; no missing review event invented. Readonly fixture presentation, no business mutation."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    },
+    {
+      "name": "B15 normal session expiry removes protected recovery surface",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtmqmj3-23",
+        "scope": "Normal MOCK session guard, no token/auth storage patch; live expiry/RBAC remain blocked."
+      },
+      "canonicalBefore": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalAfter": "d501d072d333423f98257b94042fcfb6bf35d76583a4e65eec0ba0660490359c",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts.",
+      "receipt": "294c9d0/browser/results.json"
+    }
+  ],
+  "limits": [
+    "Full attempt had one development-module ERR_INSUFFICIENT_RESOURCES before B16 rendered; fresh bounded B16 retest passed with zero errors. No single clean full-run claim.",
+    "Chromium browser only; Edge-specific execution not certified.",
+    "All real generic partial API/backend atomicity/receipt/RBAC boundaries remain blocked."
+  ],
+  "blocked": [
+    "REAL_API generic partial inbound/outbound DTO and backend atomicity",
+    "Second authorized actor/role/warehouse account; live RBAC and revocation",
+    "Backend read-after-unknown receipt authentication/audit proof",
+    "Generic unit precision/rounding policy"
+  ]
+}

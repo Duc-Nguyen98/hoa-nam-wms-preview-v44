@@ -1,0 +1,137 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "mode": "MOCK_INDEPENDENT_MODEL",
+  "capturedAt": "2026-10-29T14:00:30.604Z",
+  "before": {
+    "src/features/S17/approved/durable-adapter.ts": "fb5fb8fa3f7962ac36845e3861205e8c41fe3a94097d0d5a9b6b54458df64edd",
+    "src/features/S17/approved/adapter.ts": "ecdc8123dfc93fec1f8e338ba73e44193afd1619672df1366b6d82c6e416badf",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "e7107e8d5c784aa4dd7e27900dcfc06b2db309c3d201a4545c59ada74fe8ed29",
+    "src/features/S17/approved/presentation.ts": "5929c920b729cf4e203a4d30919abf4a0980cc205c2e528869d3eb227a220c07",
+    "src/features/S17/approved/copy.ts": "7db858827ed715808997f7cb95f7b173ce33f03e901fe28fd6329fe8fabffb5b",
+    "src/app/App.tsx": "9b33ce51d90d4079d004571a0fa2a8c82824626b9406ecfd4bb82a16b0f8f92d"
+  },
+  "after": {
+    "src/features/S17/approved/durable-adapter.ts": "fb5fb8fa3f7962ac36845e3861205e8c41fe3a94097d0d5a9b6b54458df64edd",
+    "src/features/S17/approved/adapter.ts": "ecdc8123dfc93fec1f8e338ba73e44193afd1619672df1366b6d82c6e416badf",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "e7107e8d5c784aa4dd7e27900dcfc06b2db309c3d201a4545c59ada74fe8ed29",
+    "src/features/S17/approved/presentation.ts": "5929c920b729cf4e203a4d30919abf4a0980cc205c2e528869d3eb227a220c07",
+    "src/features/S17/approved/copy.ts": "7db858827ed715808997f7cb95f7b173ce33f03e901fe28fd6329fe8fabffb5b",
+    "src/app/App.tsx": "9b33ce51d90d4079d004571a0fa2a8c82824626b9406ecfd4bb82a16b0f8f92d"
+  },
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "R01 scope components and scenario partition without ambiguous concatenation",
+      "status": "PASS"
+    },
+    {
+      "name": "R02 initialization is awaited; no writes or successful posts before readiness",
+      "status": "PASS"
+    },
+    {
+      "name": "R03 save persists quantity/header/per-SKU note across independent factory",
+      "status": "PASS"
+    },
+    {
+      "name": "R03 failed save is rejected with durable data and revision unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "R04 intent and original payload persist before dispatch hook and survive interrupted dispatch",
+      "status": "PASS"
+    },
+    {
+      "name": "R04 prepare storage failure never enters simulated dispatch hook",
+      "status": "PASS"
+    },
+    {
+      "name": "R05 unknown restore preserves key, input, receipt and posted consumption once",
+      "status": "PASS"
+    },
+    {
+      "name": "R06 repeated status reads perform zero persistence writes and no extra posting hook",
+      "status": "PASS"
+    },
+    {
+      "name": "R06 receipt acknowledgement rejects wrong key/record/version without state write",
+      "status": "PASS"
+    },
+    {
+      "name": "R07 exact replay retains original receipt; changed payload/new unresolved key conflict",
+      "status": "PASS"
+    },
+    {
+      "name": "R08 independent instances use shared CAS for stale save",
+      "status": "PASS"
+    },
+    {
+      "name": "R08 simultaneous different-key post of same draft consumes exactly once",
+      "status": "PASS"
+    },
+    {
+      "name": "R08 simultaneous same-key replay invokes dispatch once and adds one receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "R09 source originals immutable and forged unit rejected; defensive returned data",
+      "status": "PASS"
+    },
+    {
+      "name": "R10 corrupt envelope schema stays blocked without silently resetting fixture",
+      "status": "PASS"
+    },
+    {
+      "name": "R10 non-finite persisted quantity fails initialization without replacement",
+      "status": "PASS"
+    },
+    {
+      "name": "R10 corrupt persisted document/source relation fails initialization",
+      "status": "PASS"
+    },
+    {
+      "name": "R10 corrupt operation fingerprint rejected and raw journal preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "R11 actor/role/warehouse/scenario mismatch never reads another model scope",
+      "status": "PASS"
+    },
+    {
+      "name": "R12 failed post commit after prepare retains recoverable unknown with zero consumption",
+      "status": "PASS"
+    },
+    {
+      "name": "R15 mixed/unknown unit groups preserve sums without claiming one unit aggregate",
+      "status": "PASS"
+    },
+    {
+      "name": "R09 posted/cancelled/pending records remain read-only under save and post",
+      "status": "PASS"
+    },
+    {
+      "name": "R09 newly saved partial consumes only posted amount and rejects excess remaining",
+      "status": "PASS"
+    },
+    {
+      "name": "R09 nonpositive/nonfinite/excess quantities never create operation or receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "R09 duplicate/missing/forged SKU identities and source amounts are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "R05 ui draft and source selection survive independent factory without mutation leakage",
+      "status": "PASS"
+    },
+    {
+      "name": "R11 stale scratch cannot promote rejected edits to current revision after reopen",
+      "status": "PASS"
+    },
+    {
+      "name": "R11 draft scratch cannot silently borrow current version when caller omits base",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Memory persistence is explicit test backing. Independent factories/CAS are local MOCK only; no backend atomicity, live generic DTO, actor authentication or RBAC approval. Canonical stores never opened."
+}

@@ -1,0 +1,908 @@
+{
+  "method": "AFTER document-space module origin for full-page images; historical negative BEFORE y clamped to zero and flagged as unreliable. Proportional scaling, full remaining image height, 50% overlay and absolute RGB difference; no threshold or exact-pixel inference.",
+  "registrationSha256": "b312d43b6a951cbe71d86c2e8686234553e757856e0480ae39b61705a1b38ae0",
+  "sets": 36,
+  "derivedImages": 144,
+  "rows": [
+    {
+      "id": "01",
+      "device": "Desktop1920",
+      "beforeInputSha256": "52bd6799b67bdebf156c16eb8bf76d07772c6e5c3b5154b3d4b881f7e332f787",
+      "afterInputSha256": "7ae86208e0300d7992f28f7ed777b8e021f48fae202ec6647a80fe87d50e129f",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/01-Desktop1920-before.png",
+          "sha256": "42b223775f0fe085a5f91efa2e13fc254a08d0fd873f7cf664af294c188d1d3a"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/01-Desktop1920-after.png",
+          "sha256": "05739ad052e8adacce1be5e30fa175ac0ea5e594da48f7a3861d51780055148e"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/01-Desktop1920-overlay.png",
+          "sha256": "e02d7c8153b3bc47d1ef6a85694378e3a0701a22b3c5bf612b9fd5f7cf26cfc5"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/01-Desktop1920-diff.png",
+          "sha256": "b5bd9424cace69e02946c7dd492ea67011c6fdf29e17bca590524f98a0ec909b"
+        }
+      }
+    },
+    {
+      "id": "02",
+      "device": "Desktop1920",
+      "beforeInputSha256": "7ced462eec5dd9ec4db3acb4275ba713c8ba38f353cccdaee648944d9a44f0d8",
+      "afterInputSha256": "1218451d5335283e6abf78614ab8ddfc7e5a351d0700d4ea3978b850e5e14659",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/02-Desktop1920-before.png",
+          "sha256": "da34fbde57770e653046eb28e70079098df8825bd99f010febd0aab188e63042"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/02-Desktop1920-after.png",
+          "sha256": "bef769bdb79683ed18b709723e33b474b78d10cb6bac9c43f4df7412d50d8b1e"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/02-Desktop1920-overlay.png",
+          "sha256": "83f1f921123ba771fe095f7e3a91465cfe239511dba5d2ff2029cf7c541cd0cb"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/02-Desktop1920-diff.png",
+          "sha256": "dd4e985836aea24936e5d84a360489910005ca70969168d92bb9694ccd787592"
+        }
+      }
+    },
+    {
+      "id": "03",
+      "device": "Desktop1920",
+      "beforeInputSha256": "6539e8825a0ce6a8dc6b388ae16cd2debd386a9c6c056f447f41d12cc8540e0c",
+      "afterInputSha256": "b4a072281ef1a793e478f4e28d13ca5ec9678fcc5dd429d3f8c6266217acce60",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/03-Desktop1920-before.png",
+          "sha256": "a64713a2a31b097eed5a228825af22628b22b580b7a645d99fa08efba57daf63"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/03-Desktop1920-after.png",
+          "sha256": "59994cce9ce17a1ee8c4412b0519c82daf3a8a5a77489b88549af0b74596f2de"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/03-Desktop1920-overlay.png",
+          "sha256": "41a9d3e2fe7fd2eca390740d6a9817d185a13639239cbe966a8c015e7c988cbe"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/03-Desktop1920-diff.png",
+          "sha256": "4fa3c6435cb3b92026a49d3d035e51a38e1def1d6b5e02f0e52e2a002edac973"
+        }
+      }
+    },
+    {
+      "id": "04",
+      "device": "Desktop1920",
+      "beforeInputSha256": "b49b66477d8086f96c07dcaa9b21a39356c29876c1ec919fdd62edd9b36f1e04",
+      "afterInputSha256": "b6c7d50d38fd1b22690f9129db11a2444dcf9ebddcb5c990fbe3d87986a07579",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/04-Desktop1920-before.png",
+          "sha256": "aef07c56c29e0e3d05b826334baa19f48a829fef412bc7b907795061d1a4dc61"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/04-Desktop1920-after.png",
+          "sha256": "09cbd03cab66e58e9b181ee0f5724ad742929c71e2294ddba6056c6976f6eebd"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/04-Desktop1920-overlay.png",
+          "sha256": "9a684b899d27028a804b54fb138f7e162df9ee955026aead9c7956d68c39fef4"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/04-Desktop1920-diff.png",
+          "sha256": "eb4286024a36faf6523ce0d6cbd74e3a94e955cdcaf47d3d101c9f91655bb389"
+        }
+      }
+    },
+    {
+      "id": "05",
+      "device": "Desktop1920",
+      "beforeInputSha256": "3db1ea2dc47f80714c7822b8b22f480b81b51a1adcf2eff4e6cdcc2416e7135f",
+      "afterInputSha256": "b0b091bfc86181f85009b89d4a0f6e3a46d05d2a9ea0d148b3de1d98a02c1bd1",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/05-Desktop1920-before.png",
+          "sha256": "3d9eb116ba6263d00a77e05d9eff41056bbd007f44504ff3f8e30bc1b390dadd"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/05-Desktop1920-after.png",
+          "sha256": "062d28ca6f3a2f515acf9be58c4ccb3e11851cbcdf3834d90f86f2031d446d97"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/05-Desktop1920-overlay.png",
+          "sha256": "8d49261cf98e954f9f90e2e0617d4f1cb46948a5faac12233b21d24a7dbb4a83"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/05-Desktop1920-diff.png",
+          "sha256": "ed1d96d58bc811930e602cc33c1e415d2177a7b5ad5262d8594ebf7a791eab39"
+        }
+      }
+    },
+    {
+      "id": "06",
+      "device": "Desktop1920",
+      "beforeInputSha256": "c112971261865390a815b485cabf4cfd7f3ae822a8d0fec955ec995f44f3f0e1",
+      "afterInputSha256": "e82987665e2980d22b5949a8296d85133da10a9278bcf9f5e0910bab12037ec4",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/06-Desktop1920-before.png",
+          "sha256": "90c043caafbe85c9f3fc3d2b1b9da3260800a9b3ea13608137f34cba6ed14ee1"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/06-Desktop1920-after.png",
+          "sha256": "03faafc4157243343112c9b9474ad7b8bebd703c89ee8cd98710dd890632b96c"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/06-Desktop1920-overlay.png",
+          "sha256": "a8fa2dff735c7623d609ea80dbf96097f981142e76e5964203bd5cdfd0bfc67c"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/06-Desktop1920-diff.png",
+          "sha256": "445edb4520dac58154e0fb1b7f913dba4cc8b728bcbfab8a1173b66b1ed33180"
+        }
+      }
+    },
+    {
+      "id": "07",
+      "device": "Desktop1920",
+      "beforeInputSha256": "ad043fe968ae2c732d09532069fc966ece5af45b90a19ffe5cff2b5ae4f6aa3f",
+      "afterInputSha256": "0c44be8bfa32bb841ca5f250f0238cbfcc6a17ae8761c019a138331ccdc6da96",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/07-Desktop1920-before.png",
+          "sha256": "8dcf9e3d0cfdbf59775e14d23592d0ed75fbfaa4e2d9d69ffd5191260e6154e4"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/07-Desktop1920-after.png",
+          "sha256": "894b38384291c40eb65c433cd6e1157630a064a46b9ecbc1d2fc2da51ec255cb"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/07-Desktop1920-overlay.png",
+          "sha256": "da476165b1f36998d12ba45e8d0d03d15b4b0441422e6dce18c166a391ba98c4"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/07-Desktop1920-diff.png",
+          "sha256": "09cc19e9990d1fce979eb19c112e7c412e0fa287f5d8c1b245ffb653595eeac8"
+        }
+      }
+    },
+    {
+      "id": "08",
+      "device": "Desktop1920",
+      "beforeInputSha256": "c1ed00c36c0467202a6cbc59d2d17786819fd852454dbddd48dff5b089e00885",
+      "afterInputSha256": "6a16f3715faab32f800af0e1e9d3747376a13184f45606c82006f49cbab93f10",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/08-Desktop1920-before.png",
+          "sha256": "c29fb099d3f1f6e0d560019e5ddcd027f97fe1dfccc8c0f54c0fc1ef389f83b6"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/08-Desktop1920-after.png",
+          "sha256": "5dc78a991c4b8b5930f5b28638540d10c8e6b1be6a76da94f3e57a5a832716a2"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/08-Desktop1920-overlay.png",
+          "sha256": "4bfe5086460f563b249be17a64aee41999a233f14cd28c250fb2153826833348"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/08-Desktop1920-diff.png",
+          "sha256": "557413bc2c5f3cdf7f03667276e4ff19c10976beaa2cbc4fe2ab2ac94ddbb73b"
+        }
+      }
+    },
+    {
+      "id": "09",
+      "device": "Desktop1920",
+      "beforeInputSha256": "24841bac54d58958822e3ae589f17451d80d353f07ff8c031db23356ad40c018",
+      "afterInputSha256": "333c487fabcf68f34f3b07cfe1d85090aa829f03bd6cf6301e1e7b0a95649e38",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/09-Desktop1920-before.png",
+          "sha256": "cecf91d7046bd039e7566eaf99d85e4d45e4451bc52021e4ffb6f456d1f6594c"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/09-Desktop1920-after.png",
+          "sha256": "dc7aab64cbb905595b2bd8c1dcdf3117c32f10b99da69c2131024aeb9de6407b"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/09-Desktop1920-overlay.png",
+          "sha256": "b67c5b881075ed90bd141789fa0c4f5ae8247525e9e6663e1386da5b2aa6214a"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/09-Desktop1920-diff.png",
+          "sha256": "09cc19e9990d1fce979eb19c112e7c412e0fa287f5d8c1b245ffb653595eeac8"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "device": "Desktop1920",
+      "beforeInputSha256": "c55955adc76b6116eeded91c4ab99895b6459f90ff981cb1df92a5213880dfaa",
+      "afterInputSha256": "38be1cc149eb2808e347069848e720d02a8ba5b3d98aff19ac4acee13b5172fd",
+      "warning": "Historical viewport-relative origin was negative; baseline full-page crop uses y=0 and is not reliably registered",
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/10-Desktop1920-before.png",
+          "sha256": "1a4db5f805376e70b406ffaecf3f08f9af5ffedd7131ed107efb47e025d8d00b"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/10-Desktop1920-after.png",
+          "sha256": "ba983c1c7cc7462129ef526dcc60443bad32b6a8d16c26a5ab49866419e1606c"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/10-Desktop1920-overlay.png",
+          "sha256": "b5136db0b9201f843cf5641cf73dba3bb61a15e921f8ee3a6a4ac8bbc9495b5f"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/10-Desktop1920-diff.png",
+          "sha256": "ffd432d6ec029ad2179b8890dcbaccde27bdbcd6fa0b200a181f559aa2ad4a5b"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "device": "Desktop1920",
+      "beforeInputSha256": "24c917ab11847e7ab9aaeb599c52416b159d7935fa155162e2d738548f3ca2a2",
+      "afterInputSha256": "24c917ab11847e7ab9aaeb599c52416b159d7935fa155162e2d738548f3ca2a2",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/11-Desktop1920-before.png",
+          "sha256": "0100f6e3c384fc868cb0084be057b16f46f783f6fea2b7f9964b33b246d84d66"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/11-Desktop1920-after.png",
+          "sha256": "0100f6e3c384fc868cb0084be057b16f46f783f6fea2b7f9964b33b246d84d66"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/11-Desktop1920-overlay.png",
+          "sha256": "0100f6e3c384fc868cb0084be057b16f46f783f6fea2b7f9964b33b246d84d66"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/11-Desktop1920-diff.png",
+          "sha256": "80b538792b717cde6d6893f5195953072d535ba4180b2ba2989823f95e77e9e9"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "device": "Desktop1920",
+      "beforeInputSha256": "3b5435edf1835d9e62a3384ad31922d8c7d4df80ad94833dcfed0f7b3adf8d1b",
+      "afterInputSha256": "1d87c875b7413371d6602830a08b89f222307cf1cc9067ff2a920896ef6d14ce",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/12-Desktop1920-before.png",
+          "sha256": "431ff9cc1aba7d7ddc68931dc573f18e8a33fb0216efe2471ae1ed3a92fbd768"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/12-Desktop1920-after.png",
+          "sha256": "3fa8818a1e32cde6a87ae1cb9daafa1e630b99245faf63040f33991eae937dd9"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/12-Desktop1920-overlay.png",
+          "sha256": "ba94a162bdcf29be87408c81d82e6a6100b63b34992a0c89c92e20ed16c76c11"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/12-Desktop1920-diff.png",
+          "sha256": "dc54e23056e8e4c94ee71b9e5cb32cf31619e14dda13631ad5bca0a48a3b597b"
+        }
+      }
+    },
+    {
+      "id": "01",
+      "device": "Desktop1440",
+      "beforeInputSha256": "a283afd2eabf474747998afa78817f63e1a95f97ade3e8cfd10767ba4fd8e090",
+      "afterInputSha256": "f8794d72a45499d55cd4eb6205c77cb00ec48d96eb77b744e14a6be7da20a435",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/01-Desktop1440-before.png",
+          "sha256": "51b0ce27a22b7786451141dcb47b1cc6b881e998c2206a69535badcec02859af"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/01-Desktop1440-after.png",
+          "sha256": "1d611207887b7c8ca2ca9401f8ca6593d73706ee86d3f0179811db5a963fc79c"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/01-Desktop1440-overlay.png",
+          "sha256": "40ea47addc14e32f005948b20668f708152e977dfe58812cb7a3ff4dff1092b5"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/01-Desktop1440-diff.png",
+          "sha256": "0a2558ead59f56a266fef67ed77be7f428e7b0bb51fd41a77fc04de8cc48e4de"
+        }
+      }
+    },
+    {
+      "id": "02",
+      "device": "Desktop1440",
+      "beforeInputSha256": "4e7b07676039dce59f6786d16e78e76283ab1085b9fc28d2127708c07c25a6be",
+      "afterInputSha256": "0e082e2228156de2e88fbf62370ba43397541d6028c6bb132a2c727663a1c87b",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/02-Desktop1440-before.png",
+          "sha256": "d93040802c1c09597ef8f0987c25c69c46a541c54744795ca94d529946929c98"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/02-Desktop1440-after.png",
+          "sha256": "d4ec4c99571e15ab5a650b63bebb9c0d2b81e2a7aa9ebcd00bfdfde6a000775f"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/02-Desktop1440-overlay.png",
+          "sha256": "0776dc33e96131950f7af0b96d00e917d103f5380fa9760957135239b886600d"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/02-Desktop1440-diff.png",
+          "sha256": "3fa91a2da372e7ab7730af9a328db14fbe1dab7f9503e4c0fb1dab2be5a8aa87"
+        }
+      }
+    },
+    {
+      "id": "03",
+      "device": "Desktop1440",
+      "beforeInputSha256": "d131e130651fbceee24a10e363a533863a8c580503613cc4c42c0987d8dc4e6a",
+      "afterInputSha256": "307da920276a058eb490fbc11f62d518197e75e0579954f11da0abfa60ccec56",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/03-Desktop1440-before.png",
+          "sha256": "fcac811cb3e1c6f766e86cde0c4a9d500e65bb1fca8b3ceff9659f292ae397d3"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/03-Desktop1440-after.png",
+          "sha256": "583e090d7cbacc6236401ade3783747227e905379ea3d46b76c3ef82cd692ba9"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/03-Desktop1440-overlay.png",
+          "sha256": "e835d27b58d6fb19b84d4528a7ca24240bd356fea651ba07d8135547b57ee605"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/03-Desktop1440-diff.png",
+          "sha256": "9897f0d6554464e84351abdcd6f9033c713674aa1f1be08b930515d0047fb99a"
+        }
+      }
+    },
+    {
+      "id": "04",
+      "device": "Desktop1440",
+      "beforeInputSha256": "16ea4208d694db9187aa536e6a3ed2f2ba4b9efa282ceb633457ab8be48824b0",
+      "afterInputSha256": "08779b1a0f34f12498576e581bddda462f782c0d49818baf8e14486145ac98fd",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/04-Desktop1440-before.png",
+          "sha256": "232f0d735b67e6c66f6af0c60e1341fa676cbc4ba84a0419522535dd1f80f12b"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/04-Desktop1440-after.png",
+          "sha256": "f4901fe6b0a6bccc2bf9bdeac5d112ba907dbfceb6054e0ff1536338aab62152"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/04-Desktop1440-overlay.png",
+          "sha256": "40c9b48a33226d7ec5e256058330bde881ab4c9b914513b9c4101711927581c0"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/04-Desktop1440-diff.png",
+          "sha256": "034d4dd532b7dae83207edb1d9a4c6c8d1d88c331b47d08e49a9b1b94804811f"
+        }
+      }
+    },
+    {
+      "id": "05",
+      "device": "Desktop1440",
+      "beforeInputSha256": "b50f13f1f4093c7927598f1593f5bcb02d7205548c34b2dfa543d5c50d414ae4",
+      "afterInputSha256": "32ec5a0c4557cbfbe0d96cf8ccf6fe05a3f2195bcb79c3b2f4e2011c0d5c9b35",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/05-Desktop1440-before.png",
+          "sha256": "723d63b498aafe99bbdde29fe38654f3fc3af9f57ba080dee4d52d4de05c6811"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/05-Desktop1440-after.png",
+          "sha256": "3af0c3e8b60d9ad705bcff2ab1967f4e83a761aa69d6e4c1c51445ca0ffabf3e"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/05-Desktop1440-overlay.png",
+          "sha256": "b78622e1ef64336d25347a6d19d49467b893e072aed6bf89855c8461ba5d61d9"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/05-Desktop1440-diff.png",
+          "sha256": "ddd36fbfcc08be4b51f0653deacd7a60653685d12a486a1580f5c0e04a1c86f7"
+        }
+      }
+    },
+    {
+      "id": "06",
+      "device": "Desktop1440",
+      "beforeInputSha256": "83b571f05f091a1811da74cd852b6210f9744c7c7d6edc1eb2697de1ecadd768",
+      "afterInputSha256": "e8b4e093cbf8a42ad9b07d9e084267d9405ea93d6016075cc9f58bfc13fdec24",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/06-Desktop1440-before.png",
+          "sha256": "a9063ae0e79ef0c1d08c4c9ca74f094c865325639aea1e9800d6a3d1530d7354"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/06-Desktop1440-after.png",
+          "sha256": "795ea0a427d41034c372e04dac26fc94ccdef4085a1297c3b01814953a3904fe"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/06-Desktop1440-overlay.png",
+          "sha256": "513d468c136b0a1491cd3d63fa38279d84c4d38537f55a22d560e9d71269d58c"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/06-Desktop1440-diff.png",
+          "sha256": "71f16062f013fdca0232fd93deef1bc4c44d5f5d7a1c9bedf21d628aff015dab"
+        }
+      }
+    },
+    {
+      "id": "07",
+      "device": "Desktop1440",
+      "beforeInputSha256": "7859a43cc235040e85cc006a14528b4d1b7d9f80bb12f7432d7b8a1758e2501c",
+      "afterInputSha256": "d9fa3ba01fdc620cc052a32adc4a2496603f50ce8a720a29f711a56b33b85fe3",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/07-Desktop1440-before.png",
+          "sha256": "e5d7a6fc8428a37401782737d079171a7a84aaa81617476a2eff592bab8bf5cb"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/07-Desktop1440-after.png",
+          "sha256": "e5f6e3d17b3743e060cbb948b11519d17e5b025c98fc6814480b587cf0beb468"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/07-Desktop1440-overlay.png",
+          "sha256": "09eb62658aa7b4f3810340749772acc033bd3cf7f7e62413e483ddf905275215"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/07-Desktop1440-diff.png",
+          "sha256": "ac184d1f6f8e8298175b93754e2bca651b690edbec2b4682762a8d5fa9f88ee4"
+        }
+      }
+    },
+    {
+      "id": "08",
+      "device": "Desktop1440",
+      "beforeInputSha256": "c272cb59b5ba9a95226ef63ff2d240035067e4bb3c0848b03d9c04d3b2ca9ed7",
+      "afterInputSha256": "89f2ec88ce6e7f0d424d6b4fc99b636c629fe33ff505fc86e63b14c373f34d42",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/08-Desktop1440-before.png",
+          "sha256": "75da44607d1345d15c78c53e478c46c56970fb5725cc00a0cf16920cacc97a13"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/08-Desktop1440-after.png",
+          "sha256": "04e6b44dd16501f42acecefbb0cdc76e0df41a8e35963cdb2349f5499d627a44"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/08-Desktop1440-overlay.png",
+          "sha256": "f8be60cea3db4e87df96f0b4c902458f31c5e045163e5d47384e2f98b248c717"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/08-Desktop1440-diff.png",
+          "sha256": "72e2d25abca94cce9a117d0e4cc311189566d05ef7d40507d22e694d2cc67e20"
+        }
+      }
+    },
+    {
+      "id": "09",
+      "device": "Desktop1440",
+      "beforeInputSha256": "783282d948cf7ad657bba001bcdab6b1042e34484c992e0d0b7e9a253ef3173a",
+      "afterInputSha256": "9b489faa14007123a263dcd35aa61fd593d4fff3e3b13a88ac208c0daa8e700e",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/09-Desktop1440-before.png",
+          "sha256": "c84606861d3fa1e4c6c5a52e94c4e71876e9ede48da91b4c8d2d7bc09e98438c"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/09-Desktop1440-after.png",
+          "sha256": "3a5b1778ef409bbf08cf70950434ca2d03dd597ad58ab5b34e940c09a28059f3"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/09-Desktop1440-overlay.png",
+          "sha256": "2e0e735b192b61eec21b1b4d6e3ea14ae6825a35eaefa08a1c08800fde441a84"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/09-Desktop1440-diff.png",
+          "sha256": "c8a7768c074ea2524908cde78eb46462568244e7513f704572ed231697bffdec"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "device": "Desktop1440",
+      "beforeInputSha256": "afbb9d0d673f3fb94acac075becb13e12802d9657295588fa892c1f99c38b40c",
+      "afterInputSha256": "f6ecda3b2ff1b499927265a53b12b35ce8a52b5bc518e0a24358f6eea9c23fa1",
+      "warning": "Historical viewport-relative origin was negative; baseline full-page crop uses y=0 and is not reliably registered",
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/10-Desktop1440-before.png",
+          "sha256": "d854e699269a91424e6e7f9e3f851998a59bcaf7a98ba3fb4deb3bf7c68597af"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/10-Desktop1440-after.png",
+          "sha256": "6ded4cc51a1b93bef238c0e5e1d05f1a7d3a879c886dca377b4d385a438eba33"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/10-Desktop1440-overlay.png",
+          "sha256": "095b30fea220019602415608cfd61734ece07701c645c925a63dc4315871dae4"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/10-Desktop1440-diff.png",
+          "sha256": "72cc8a7686656043428b29cde39597f5a6afdb625cdd66470a8305a57ce4c2f0"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "device": "Desktop1440",
+      "beforeInputSha256": "51e8268070bf642828165c3b608b1e294ac70abf7fc6047dc347a070e94c95ad",
+      "afterInputSha256": "61410b4fb672c1fa07f00a8388323a8d86aa0fb6b0a543ad42c06c5fdb4d51fe",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/11-Desktop1440-before.png",
+          "sha256": "1817ec7178b98f9b5e69756bdcd1786df57e278677b0b3ab176382be84300a0b"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/11-Desktop1440-after.png",
+          "sha256": "1817ec7178b98f9b5e69756bdcd1786df57e278677b0b3ab176382be84300a0b"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/11-Desktop1440-overlay.png",
+          "sha256": "1817ec7178b98f9b5e69756bdcd1786df57e278677b0b3ab176382be84300a0b"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/11-Desktop1440-diff.png",
+          "sha256": "c3a806dfb25af5133af326ed586afb0edb03d53ea9f038e7cd01aafe2fddaf36"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "device": "Desktop1440",
+      "beforeInputSha256": "60c41d9093e261ac228b31cf0e5f373200af77a165c4ac3d708af9aa6d0d993e",
+      "afterInputSha256": "85855f4517e37170195e1ed1892ee14a3c1957c85f5718e8f9b6beaa81531a1b",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/12-Desktop1440-before.png",
+          "sha256": "a55f35ff2fa9de7a69f73a2fda67fa4d27bdb87b8a31c4c63a2eac8cee9ee771"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/12-Desktop1440-after.png",
+          "sha256": "9b0da95e10fe96c6c9d5b7435816a5f63b4c3c2edf5fd502c49a6b9b46a493ca"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/12-Desktop1440-overlay.png",
+          "sha256": "4547b4a7bb00182fde6a7fb12d209ef5f6bf6e0ab08b182fc38a2c44c8d04050"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/12-Desktop1440-diff.png",
+          "sha256": "5f4f24839d773ab097fa1a19a41dcfeb57ad0f8f3d2fbe08048a62a7a0d51eb8"
+        }
+      }
+    },
+    {
+      "id": "01",
+      "device": "Tablet",
+      "beforeInputSha256": "32da11a83d8ce6e78787edd31e4270ffe37f87cd874619a465cbd0fd3a355723",
+      "afterInputSha256": "ea9d2e7774858c9a9e8ff2b900b1c97b0d5dcc960c2e223aa7ac4662f51e2de8",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/01-Tablet-before.png",
+          "sha256": "07984a04236c4c574055367d1b2bbd6edb5fe47475b71db8f51d21c60868dfc8"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/01-Tablet-after.png",
+          "sha256": "a7a9c9938860a64be9161fc4c27de468ce73d1c449eb42cd3f47ba6a9b62a43e"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/01-Tablet-overlay.png",
+          "sha256": "0c3eb36a3f7d24d553ac7a3a8b3eb1b3ca67ac92049b483036382f5f62d5e453"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/01-Tablet-diff.png",
+          "sha256": "9547f6282a1e832ac20e47d62c60c0a351f37ef4792a477ee2225d5da8cb458f"
+        }
+      }
+    },
+    {
+      "id": "02",
+      "device": "Tablet",
+      "beforeInputSha256": "7c97df81e55a0d091c8fe651e16e19f7dddc11ed6989826560c2138c91aa8008",
+      "afterInputSha256": "0103b26de806d784004a48f7597bdf334a6759242b437aa84f5be4a07c9552d3",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/02-Tablet-before.png",
+          "sha256": "ad76e1b3d384c94baa1ad05748702e486b61c3f896800f3f4d2759aeaf4b3198"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/02-Tablet-after.png",
+          "sha256": "628ba3018bb352c95755e5172315c5a57fb79c5dd5e83583acd7e16af76571a2"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/02-Tablet-overlay.png",
+          "sha256": "2dfe520bf4b4225e079efcfd453e92752e8c1f57c10b1cfb0ce45a2a04110b0d"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/02-Tablet-diff.png",
+          "sha256": "e91a76f43b33a8d202d898a27b62d3a4c4b69beeaffa2e1d23130d76f2d86df1"
+        }
+      }
+    },
+    {
+      "id": "03",
+      "device": "Tablet",
+      "beforeInputSha256": "d08894c16e86ab218e00fe9900d29a7aa688db42a9ecb25a43d60328606f3f7a",
+      "afterInputSha256": "cec2828dfb12cc1be27f7583602e21cae5b8c10aad15b9796938786656bf1b44",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/03-Tablet-before.png",
+          "sha256": "612f23edf919d0a66986fc7de7b3f33b6a04daf77d9818ebcd681aa808815c43"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/03-Tablet-after.png",
+          "sha256": "9c5ceb43507030b40b7ed13515054a369ebe91e1951075d37198dc2ec81e830c"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/03-Tablet-overlay.png",
+          "sha256": "65525914cee4f0c6d8bc864d4cdc0a7daddf78937b28b3a210480d08b4a41bfb"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/03-Tablet-diff.png",
+          "sha256": "a1229ab6768745de161d50a7503841818e8513d51bd496baeb5a015ad17de91d"
+        }
+      }
+    },
+    {
+      "id": "04",
+      "device": "Tablet",
+      "beforeInputSha256": "2c857fb917cb18971a444c80ec9a0ca70623d7a8847bd4b4cbf3ded3b3f75dc0",
+      "afterInputSha256": "5d780f01e99dfda6e478f1b3b42cd3060f6799d298ad1c6e8caed493feefb43c",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/04-Tablet-before.png",
+          "sha256": "7f6aa458c3ca348027d54479f295966a84c9fd3c6637ab17dd07909ee15eb4e2"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/04-Tablet-after.png",
+          "sha256": "004914649a71790ca0381ff1109374f00aba9afac10e820593093c40337d0914"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/04-Tablet-overlay.png",
+          "sha256": "97049f5fbbd49a89659027c7c1141b37ae23bc84613c9e1605a93f9c4c2e262d"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/04-Tablet-diff.png",
+          "sha256": "80b9f2eb8346653613863766dbb313f50c4fc0456cfcab69689c625ccc168e75"
+        }
+      }
+    },
+    {
+      "id": "05",
+      "device": "Tablet",
+      "beforeInputSha256": "518083c9428e3029a41f6e5bafe4eea3e270f426d7ee78ef61b52bccc802c6bd",
+      "afterInputSha256": "ffef7e1b090947a2b734d1e91067e9254fd76ed86b4869c20971ffed1a20eba4",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/05-Tablet-before.png",
+          "sha256": "11ae74b1153f2e47d7bc135e786b7382a4523ff300c56ddc61edde2cf8532277"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/05-Tablet-after.png",
+          "sha256": "a827f3071727c9cccba6745becb0022a91ecbc4bd7c54f81cf1cdb1310afcb30"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/05-Tablet-overlay.png",
+          "sha256": "a77d9fb95216ebb607120cf1d7c8c570f696393ccbd83542116227f3730afd96"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/05-Tablet-diff.png",
+          "sha256": "af5820e44ddef23e399077f675993a98904324d765d5c83103f694ecadb08122"
+        }
+      }
+    },
+    {
+      "id": "06",
+      "device": "Tablet",
+      "beforeInputSha256": "ab6785aed083132eff895889a3606b2443e103ff9bd92894c3e83998ed5cf393",
+      "afterInputSha256": "62275241a1c8efdb246834d71d920733bb52ffabe0817f9945f3f5e695f24211",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/06-Tablet-before.png",
+          "sha256": "f680ae8b2a3fb6bf0a985e4d4ac3bd2c430a91b3898cbb308d263833093fb64f"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/06-Tablet-after.png",
+          "sha256": "93b0947e2ab248e017398092f577f9fca814901caf3581fa95de645ab0cac66f"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/06-Tablet-overlay.png",
+          "sha256": "42038fc7f1161ec0683fbfd954c1058d7135ea6ebd7fd9d4321f13af21f20386"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/06-Tablet-diff.png",
+          "sha256": "7d9be31430ca58a818cc8732511b9c021f00b7fbdc804f78ec23eb433012b51c"
+        }
+      }
+    },
+    {
+      "id": "07",
+      "device": "Tablet",
+      "beforeInputSha256": "7d7f3a939c3c1f0879c36739133abae3cf07d0c88643bf4b99f75f8124989ee8",
+      "afterInputSha256": "810a82d616e4ffdfb01c2e38e7ecfc604fe680549aacaa72e5bed95677e25cf0",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/07-Tablet-before.png",
+          "sha256": "4c5c563a94cf01f4a200b7084932afbaff546d036ec1b85ac8a7170790f232bd"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/07-Tablet-after.png",
+          "sha256": "055d1aa221699fb17be06eee20fba54f4a976aa357fcbf2dac316b3217dc6854"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/07-Tablet-overlay.png",
+          "sha256": "c4738e047940f9b890d88c021918d7bc5d9781c569513cb548a73b4fd520019c"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/07-Tablet-diff.png",
+          "sha256": "af5820e44ddef23e399077f675993a98904324d765d5c83103f694ecadb08122"
+        }
+      }
+    },
+    {
+      "id": "08",
+      "device": "Tablet",
+      "beforeInputSha256": "6808c79881042aaa64b6ead1353b163cef757373fc75ed3d0fd73ec2de99d810",
+      "afterInputSha256": "b651e410d91b3b997a834038348aec3b28535bff5efc64e48df368c7df96fa96",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/08-Tablet-before.png",
+          "sha256": "800346a8c2c8655d35dc1dba27bc2cf835c2db829dc0a74cd9c3a63b22a1907c"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/08-Tablet-after.png",
+          "sha256": "8e051436b454b494ae8767eefa98aea0ddb59c2892dfc948ae6b1b95cf8515de"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/08-Tablet-overlay.png",
+          "sha256": "afe88bc4842d187a9f398cc64d8f6f527bcd997e8fd2a42a308b051d031850ef"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/08-Tablet-diff.png",
+          "sha256": "6dfb989eb526e3fb01212697fcce508de35430461197bdd14425c6535e859a6c"
+        }
+      }
+    },
+    {
+      "id": "09",
+      "device": "Tablet",
+      "beforeInputSha256": "83964bc0c284ac3b547df422e371e50cb62ebe2bd9a0b9ee5b85365f8d1d2375",
+      "afterInputSha256": "7cb4bca5dcabcbfa0b985e54e3de0731a716f0bc5c6398fa7a99491e833e6a13",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/09-Tablet-before.png",
+          "sha256": "316bdba07b88fca30986de6923858234594fb0525fd16386213d654a1ffa13df"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/09-Tablet-after.png",
+          "sha256": "bd486c4f0bbd05f59ddd1ea2ce399dfa58cebc9e65569a321358488b208b1d7c"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/09-Tablet-overlay.png",
+          "sha256": "391e26c69b3b9ee592babf9a15e02e6b242a1a64a670f69328528291e48f6df6"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/09-Tablet-diff.png",
+          "sha256": "af5820e44ddef23e399077f675993a98904324d765d5c83103f694ecadb08122"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "device": "Tablet",
+      "beforeInputSha256": "1515ac88cebea96c1330732868defa57e4fd1d080f6e6007363560d7312dfea5",
+      "afterInputSha256": "1515ac88cebea96c1330732868defa57e4fd1d080f6e6007363560d7312dfea5",
+      "warning": "Historical viewport-relative origin was negative; baseline full-page crop uses y=0 and is not reliably registered",
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/10-Tablet-before.png",
+          "sha256": "27073b85d95396a244a3f44c04cdf767800e34f6d865805c84f185f5bb84a428"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/10-Tablet-after.png",
+          "sha256": "d75ed799dd843d4f21deea7728113d9912cee012f742f1febd4f66326bdd99f4"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/10-Tablet-overlay.png",
+          "sha256": "011a1e0f188931ea4806cc6922cbd3c4185d8cc19af31a3a4b91fa0fc3a80a89"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/10-Tablet-diff.png",
+          "sha256": "fd7a84ce55c5c2bada0aa49ce6ec1ce4fd4ad98c1740bc62fb71cfd6324c472a"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "device": "Tablet",
+      "beforeInputSha256": "5d19f787b774d803d57751cbb088b35e21fe28148c6f4104c94fbf2d10d6ed69",
+      "afterInputSha256": "5d19f787b774d803d57751cbb088b35e21fe28148c6f4104c94fbf2d10d6ed69",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/11-Tablet-before.png",
+          "sha256": "347661737154e97f9cc3a6be7ff8a0f627ffee4ea9bc577b8901b21dcc78b613"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/11-Tablet-after.png",
+          "sha256": "347661737154e97f9cc3a6be7ff8a0f627ffee4ea9bc577b8901b21dcc78b613"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/11-Tablet-overlay.png",
+          "sha256": "347661737154e97f9cc3a6be7ff8a0f627ffee4ea9bc577b8901b21dcc78b613"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/11-Tablet-diff.png",
+          "sha256": "f2f760a970e291c484da9dd90c9fcd553edcfd19f6deb00b38d34a3d07086540"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "device": "Tablet",
+      "beforeInputSha256": "dc381b76afd16e2190f26affc666d2d876341ec4b49e64ea79ce017d23d5c07d",
+      "afterInputSha256": "6292e5dd95d704699d9bd242fe4234576a0b661dfcb9708e61da335b2cee6ff1",
+      "warning": null,
+      "outputs": {
+        "before": {
+          "path": "after-e7b145f/before-after/12-Tablet-before.png",
+          "sha256": "f4725cf8d47beac1de6f2a2d47c46d98ee13d082cc0c6cbcb0c3e59f51aaa4db"
+        },
+        "after": {
+          "path": "after-e7b145f/before-after/12-Tablet-after.png",
+          "sha256": "ee8e403702b60a2366ea252df0026c6db64a30b96025f21b8a365705fa7f3709"
+        },
+        "overlay": {
+          "path": "after-e7b145f/before-after/12-Tablet-overlay.png",
+          "sha256": "66b7665d50bf998c07ab9f8f01cdbf73996aad79cc0a1d454a7446e175b38682"
+        },
+        "diff": {
+          "path": "after-e7b145f/before-after/12-Tablet-diff.png",
+          "sha256": "75a85c1ce1935f42ce6d3b1a50b9a63f6ee88c96b51fdbff266d4aa21ac3106a"
+        }
+      }
+    }
+  ]
+}

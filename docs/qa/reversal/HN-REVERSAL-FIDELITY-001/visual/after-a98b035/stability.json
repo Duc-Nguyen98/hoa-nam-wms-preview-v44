@@ -1,0 +1,17 @@
+{
+  "head": "a98b0357b0e4738bd5236f935fc3e3adbe35576c",
+  "files": {
+    "src/app/App.tsx": "9b33ce51d90d4079d004571a0fa2a8c82824626b9406ecfd4bb82a16b0f8f92d",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "5c437dec4fbeabe6caec392c3176ea85cb2d637b56a1bb8efccb19a4c1d72609",
+    "src/features/S17/approved/approved.css": "751395db45934b5b8bf57b7d16f9e7789b24f72161db0a564d834015556de0ac",
+    "src/features/S17/approved/adapter.ts": "ecdc8123dfc93fec1f8e338ba73e44193afd1619672df1366b6d82c6e416badf",
+    "src/features/S17/approved/durable-adapter.ts": "fb5fb8fa3f7962ac36845e3861205e8c41fe3a94097d0d5a9b6b54458df64edd",
+    "src/features/S17/approved/copy.ts": "8f69d8bc8b682282e38397640762334f59baff7e2a45a819cc0ecaee3bb1aa23",
+    "src/features/S17/approved/presentation.ts": "5929c920b729cf4e203a4d30919abf4a0980cc205c2e528869d3eb227a220c07",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+  },
+  "buildInfoSha256": "2581c3f76a4bd7b629d83a648ec3ba8690fa827a3d90f133536cef577de72bf2",
+  "stable": true
+}

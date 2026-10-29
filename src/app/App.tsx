@@ -44,7 +44,7 @@ import { InventoryScreen } from '../features/S16/InventoryScreen';
 import { InventoryDesignWorkspace } from '../features/S16/approved/InventoryDesignWorkspace';
 import { ReversalSlipsScreen } from '../features/S17/ReversalSlipsScreen';
 import { ReversalDesignWorkspace } from '../features/S17/approved/ReversalDesignWorkspace';
-import { createReversalDesignAdapter } from '../features/S17/approved/adapter';
+import { createDurableReversalDesignAdapter, reversalModelScopeKey } from '../features/S17/approved/durable-adapter';
 import { PutawayHistoryScreen } from '../features/putaway/PutawayHistoryScreen';
 import { createPutawayHistoryAdapter } from '../data/http/putaway-history-adapter';
 import { apiClient } from '../data/http/api-client';
@@ -127,7 +127,19 @@ export function App() {
   }, []);
   const inventoryCandidate = IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('inventoryDesign') === '20261029';
   const reversalCandidate = IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('reversalDesign') === '20261029';
-  const reversalDesignAdapter = useMemo(() => reversalCandidate ? createReversalDesignAdapter({ unknownFirst: new URLSearchParams(window.location.search).get('reversalOutcome') === 'unknown' }) : null, [reversalCandidate]);
+  const reversalScenario = new URLSearchParams(window.location.search).get('reversalScenario') ?? 'default';
+  const reversalUnknown = new URLSearchParams(window.location.search).get('reversalOutcome') === 'unknown';
+  const reversalSession = accountCenter?.sessionContext;
+  const reversalModel = useMemo(() => {
+    if (!reversalCandidate || accountCenter?.authStatus !== 'active') return null;
+    try {
+      // Fixture isolation uses confirmed session labels. This is not a backend authorization grant.
+      const scope = { username: reversalSession?.username ?? '', roleLabel: reversalSession?.roleLabel ?? '', warehouseLabel: reversalSession?.warehouseLabel ?? '', scenario: reversalScenario };
+      return { key: reversalModelScopeKey(scope), adapter: createDurableReversalDesignAdapter({ scope, unknownFirst: reversalUnknown }), error: false };
+    } catch {
+      return { key: '', adapter: null, error: true };
+    }
+  }, [reversalCandidate, accountCenter?.authStatus, reversalSession?.username, reversalSession?.roleLabel, reversalSession?.warehouseLabel, reversalScenario, reversalUnknown]);
   const selected = resolvePreviewRoute(inventoryCandidate && /^#\/preview\/S16(?:\?|$)/.test(hash) ? '#/preview/S16' : reversalCandidate && /^#\/preview\/S17(?:\?|$)/.test(hash) ? '#/preview/S17' : hash);
   const notificationDocument = resolveNotificationDocumentSelection(hash);
   const overviewDocument = resolveOverviewDocumentSelection(hash);
@@ -185,7 +197,10 @@ export function App() {
   if (selected?.key === 'S15') return <OutboundSlipsScreen adapter={businessHttpAdapters.S15} />;
   if (selected?.key === 'S16') return IS_BROWSER_PREVIEW && new URLSearchParams(window.location.search).get('inventoryDesign') === '20261029'
     ? <InventoryDesignWorkspace /> : <InventoryScreen adapter={businessHttpAdapters.S16} />;
-  if (selected?.key === 'S17') return reversalDesignAdapter ? <ReversalDesignWorkspace adapter={reversalDesignAdapter} /> : <ReversalSlipsScreen adapter={businessHttpAdapters.S17} />;
+  if (selected?.key === 'S17') {
+    if (reversalCandidate && (!reversalModel || reversalModel.error || !reversalModel.adapter)) return <GlobalShell title={tx('Danh sách phiếu đảo')} variant="wms" navigation={S00_SHELL_NAVIGATION}><PageState kind="error" title={tx('Không thể mở dữ liệu phiếu đảo')} description={tx('Phạm vi phiên hoặc tình huống kiểm thử không hợp lệ.')} /></GlobalShell>;
+    return reversalModel?.adapter ? <ReversalDesignWorkspace key={reversalModel.key} adapter={reversalModel.adapter} /> : <ReversalSlipsScreen adapter={businessHttpAdapters.S17} />;
+  }
   if (selected?.key === 'S18') return <InboundReportScreen adapter={businessHttpAdapters.S18} />;
   if (selected?.key === 'S19') return <OutboundReportScreen adapter={businessHttpAdapters.S19} />;
   if (selected?.key === 'S20') return <MovementHistoryScreen adapter={businessHttpAdapters.S20} />;

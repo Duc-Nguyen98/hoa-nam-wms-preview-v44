@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-10-29T15:46:55.864Z",
+  "source": "e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f",
+  "pr": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/2",
+      "number": 2,
+      "state": "open",
+      "merged": false,
+      "mergeable": true,
+      "draft": true,
+      "body": "The opt-in reversal Candidate lost operation identity and input after reload and could promote stale scratch data to a fresh revision. Persist the isolated MOCK model and operation intent, use read-only status recovery, reject stale/corrupt scratch state, and scope storage to confirmed session labels and scenario. Group quantities by unit and distinguish document quantities from current SKU stock.\n\nValidation at application source a98b0357b0e4738bd5236f935fc3e3adbe35576c: build/typecheck/contract checks passed; 83 combined model/operational tests passed; independent QA passed 28 model contracts and 22 distinct browser cases cumulatively, with raw harness retries retained. 36 fresh AFTER captures completed; visual review/evidence aggregation ongoing.\n\nDraft incremental review against prior reversal candidate. Generic partial-reversal live DTO, authorization, atomicity and audit authority remain blocked. Default operational S17, locked shell and production data remain unchanged. Hosted CI and Preview require separate verification. No merge or production deployment requested.",
+      "title": "Preserve reversal operation recovery and reject stale fixture drafts",
+      "base": "candidate/reversal-24ref-20261029",
+      "base_sha": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+      "head": "candidate/reversal-fidelity-001-20261029",
+      "head_sha": "e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f",
+      "head_repo_id": 1433906288,
+      "head_repo_full_name": "Duc-Nguyen98/hoa-nam-wms-preview-v44",
+      "merge_commit_sha": "750bc21dea14c0fdcc170a050c1168b5b2666ae3",
+      "user": {
+        "login": "Duc-Nguyen98",
+        "name": "Duc-Nguyen98",
+        "email": null,
+        "avatar_url": "https://avatars.githubusercontent.com/u/52225998?v=4",
+        "id": 52225998
+      },
+      "requested_reviewers": null,
+      "requested_team_reviewers": null,
+      "diff": null,
+      "comments": null,
+      "created_at": "2026-10-29T13:45:48Z",
+      "updated_at": "2026-10-29T14:39:14Z",
+      "closed_at": null,
+      "merged_at": null,
+      "commits": 4,
+      "changed_files": 9,
+      "additions": 414,
+      "deletions": 38,
+      "display_url": "https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/pull/2",
+      "display_title": "Preserve reversal operation recovery and reject stale fixture drafts"
+    },
+    "isError": false
+  },
+  "workflow": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "workflow_runs": [
+        {
+          "id": 40893644398,
+          "name": "Hoa Nam quality gates",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 22,
+          "jobs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40893644398/jobs",
+          "logs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40893644398/logs",
+          "workflow_id": 397560825
+        }
+      ]
+    },
+    "isError": false
+  },
+  "combined": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "statuses": []
+    },
+    "isError": false
+  },
+  "annotations": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"headRevision\":\"e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f\",\"checks\":[{\"id\":123516769174,\"name\":\"critical\",\"head_sha\":\"e7b145feb3d8ec4b42bb2ba8fa66bfb5b3d9bf2f\",\"status\":\"completed\",\"conclusion\":\"failure\",\"details_url\":\"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40893644398/job/123516769174\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2}}],\"statuses\":[],\"annotations\":[{\"path\":\".github\",\"start_line\":1,\"end_line\":1,\"annotation_level\":\"failure\",\"message\":\"The job was not started because your account is locked due to a billing issue.\",\"title\":\"\",\"raw_details\":\"\"},{\"path\":\".github\",\"start_line\":1,\"end_line\":1,\"annotation_level\":\"notice\",\"message\":\"\\\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\\\"\",\"title\":\"\",\"raw_details\":\"\"}],\"hasMore\":false,\"job\":null,\"jobs\":[],\"log\":null,\"logTruncated\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "site": {
+    "error": "SitesConnectorError: Sites project not found",
+    "error_code": "NOT_FOUND",
+    "error_data": {
+      "type": "project_not_found",
+      "message": "Sites project not found",
+      "code": 404
+    }
+  }
+}

@@ -1,0 +1,721 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "mode": "MOCK_NORMAL_APP",
+  "build": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "a98b0357b0e4738bd5236f935fc3e3adbe35576c",
+    "sourceCommitEvidence": "git-head",
+    "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "705689f29593dfd62472b3c85851554daaa2199a68512bb43e929b49ef8033fd",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-D0XUoAcl.css",
+        "sha256": "82b6e026e1a7b771af9825546ab7421e6f8d9d6a1ac34a6fce6efc370def247b",
+        "bytes": 631539
+      },
+      {
+        "path": "assets/index-OHvvL5SX.js",
+        "sha256": "fcba620ce087a2622702d0d0416c828167f3556d9aa0c55eb5430212d10b4a3e",
+        "bytes": 2380794
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "8f68e1035148bcc6156d336612a76f1e6be2f58700ebc96397f8e29b881f5871",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "beforeSource": {
+    "src/app/App.tsx": "9b33ce51d90d4079d004571a0fa2a8c82824626b9406ecfd4bb82a16b0f8f92d",
+    "src/features/S17/approved/adapter.ts": "ecdc8123dfc93fec1f8e338ba73e44193afd1619672df1366b6d82c6e416badf",
+    "src/features/S17/approved/durable-adapter.ts": "fb5fb8fa3f7962ac36845e3861205e8c41fe3a94097d0d5a9b6b54458df64edd",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "5c437dec4fbeabe6caec392c3176ea85cb2d637b56a1bb8efccb19a4c1d72609",
+    "src/features/S17/approved/approved.css": "751395db45934b5b8bf57b7d16f9e7789b24f72161db0a564d834015556de0ac",
+    "src/features/S17/approved/presentation.ts": "5929c920b729cf4e203a4d30919abf4a0980cc205c2e528869d3eb227a220c07",
+    "src/features/S17/approved/copy.ts": "8f69d8bc8b682282e38397640762334f59baff7e2a45a819cc0ecaee3bb1aa23",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+  },
+  "afterSource": {
+    "src/app/App.tsx": "9b33ce51d90d4079d004571a0fa2a8c82824626b9406ecfd4bb82a16b0f8f92d",
+    "src/features/S17/approved/adapter.ts": "ecdc8123dfc93fec1f8e338ba73e44193afd1619672df1366b6d82c6e416badf",
+    "src/features/S17/approved/durable-adapter.ts": "fb5fb8fa3f7962ac36845e3861205e8c41fe3a94097d0d5a9b6b54458df64edd",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "5c437dec4fbeabe6caec392c3176ea85cb2d637b56a1bb8efccb19a4c1d72609",
+    "src/features/S17/approved/approved.css": "751395db45934b5b8bf57b7d16f9e7789b24f72161db0a564d834015556de0ac",
+    "src/features/S17/approved/presentation.ts": "5929c920b729cf4e203a4d30919abf4a0980cc205c2e528869d3eb227a220c07",
+    "src/features/S17/approved/copy.ts": "8f69d8bc8b682282e38397640762334f59baff7e2a45a819cc0ecaee3bb1aa23",
+    "src/shared/s00-shell.css": "b12e98ac34936b5dda8b2306eabf77790dcef372d76514f757804a66684d1741",
+    "src/shared/s00-sidebar-tone.css": "13b6f561dfdfcd7995ca42e9c4ec27520b993d30f7760792793851d16b9d8a23",
+    "src/features/S09/operational-warranty.css": "45d791eeb415e2dcc72dcb05aca92d706a5765f97032ed5e15c232555e2f366b"
+  },
+  "sourceUnchanged": true,
+  "checks": [
+    {
+      "name": "B01 unknown list resource remains visible with original operation key/input",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-1",
+        "phase": "unknown"
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B02 unknown refresh preserves input/key and status recovery consumes no second reversal",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-2",
+        "version": 2
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B03 tab close/reopen preserves unknown operation without new intent",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-3",
+        "phase": "unknown"
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B04 saved draft reload preserves quantity/header/per-SKU note and source originals",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-4",
+        "rev": 2
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B05 source selection survives reload and unrelated scenario does not inherit draft",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-5",
+        "scope": "Different scenario only; no second authenticated actor account supplied."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B06 same-scope tabs stale posting cannot both confirm and operation count stays one",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-6",
+        "scope": "Same normal session and dedicated fixture scenario shared by two tabs; backend concurrency not exercised."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B07 same-scope tabs stale save cannot overwrite acknowledged draft",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-7",
+        "restoredAfterRejectedStaleSave": "CAS winner",
+        "scope": "Shared persisted draft CAS plus stale scratch recovery; reload must not silently promote rejected edits to a fresh version."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B08 validation suppresses invalid projection with per-SKU error association",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-8",
+        "association": "rev-quantity-error-HN-DRV-001"
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B18 blank quantity survives scratch restore and can be corrected without read failure",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-9",
+        "scope": "Blank UI value uses explicit finite scratch marker; precision policy is not invented."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B09 scoped document quantities and count scopes are explicitly labelled",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-10",
+        "headers": [
+          "#",
+          "Mã hàng",
+          "Tên hàng",
+          "Đơn vị",
+          "Số lượng chứng từ trước đảo",
+          "Số lượng đảo",
+          "Biến động",
+          "Số lượng chứng từ còn lại"
+        ],
+        "listText": "9\nTất cả phiếu\n5\nĐã ghi sổ\n1\nNháp\n1\nChờ hàng trả về\n2\nĐã hủy"
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B10 pending/cancelled impacts and known-only history remain honest",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-11",
+        "scope": "No fabricated review event or receive/stock command asserted; posted inbound/outbound direction and source relation checked."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B11 dedicated storage read failure blocks data instead of fallback seeding",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-12",
+        "injection": "Dedicated fixture IDB open only; canonical/account namespace unaffected."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B12 mixed-unit isolated component preserves units and grouped quantity summaries",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-13",
+        "summary": "Số mặt hàng\n2 SKU\nTổng số lượng đảo\n2 Cái · 2 Mét\nBiến động dự kiến khi ghi sổ\n−2 Cái · −2 Mét\nTác động tồn hiện tại\n0 Cái · 0 Mét",
+        "scope": "Explicit fixture extension only, not approved live DTO."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [
+        {
+          "method": "GET",
+          "path": "/src/operations/operational-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/catalog-qa-session.ts"
+        }
+      ],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B13 filtered query survives reload and browser history",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-14",
+        "url": "http://127.0.0.1:5341/?reversalDesign=20261029&reversalScenario=functional-mvtl1gf3-14#/preview/S17?view=list&id=REV-20261028-007&q=&type=&status=Nh%C3%A1p&from=2026-10-25&to=2026-10-28&page=1"
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B19 search/date validation preserve accepted rows and expose true no-results",
+      "status": "FAIL",
+      "error": "TimeoutError: locator.click: Timeout 6000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.rev').getByRole('button', { name: /^Từ ngày:/ })\u001b[22m\n",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-15"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/repaired-browser/failure-15.png",
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B20 source-bound new draft saves and posts exact notes/current creation date",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-16",
+        "id": "REV-20261029-1793280809184"
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B21 Tablet single interactive binding44px targets and native radio keyboard",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-17",
+        "targets": [
+          {
+            "label": "PN-20261022-007",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261020-001",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261021-005",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261019-003",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261018-002",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261023-010",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261024-011",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261025-012",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "label": "PN-20261026-013",
+            "width": 44,
+            "height": 44
+          }
+        ],
+        "binding": {
+          "headers": [
+            "#",
+            "Mã hàng",
+            "Tên hàng",
+            "Đơn vị",
+            "Số lượng gốc",
+            "Đã đảo",
+            "Còn được đảo",
+            "Số lượng đảo"
+          ],
+          "rows": [
+            [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Còn được đảo",
+              "Số lượng đảo"
+            ],
+            [
+              "#",
+              "Mã hàng",
+              "Tên hàng",
+              "Đơn vị",
+              "Số lượng gốc",
+              "Đã đảo",
+              "Còn được đảo",
+              "Số lượng đảo"
+            ]
+          ]
+        }
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B22 isolated twelve-record pagination shows9and3 with explicit filtered total",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-18",
+        "scope": "Bounded component fixture extension only; does not mutate durable source fixtures."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [
+        {
+          "method": "GET",
+          "path": "/src/operations/operational-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/catalog-qa-session.ts"
+        }
+      ],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B16 inherited workspace read states and retry never masquerade as data",
+      "status": "FAIL",
+      "error": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator: locator('.rev').locator('[data-state]')\nExpected: \"forbidden\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('.rev').locator('[data-state]') with timeout 5000ms\n  - waiting for locator('.rev').locator('[data-state]')\n",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-19",
+        "states": [
+          {
+            "which": "loading",
+            "kind": "loading",
+            "buttons": []
+          },
+          {
+            "which": "session",
+            "kind": "unauthorized",
+            "buttons": [
+              "Thử lại"
+            ]
+          }
+        ]
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/repaired-browser/failure-19.png",
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [
+        {
+          "method": "GET",
+          "path": "/src/operations/operational-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/catalog-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/operational-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/catalog-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/operational-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/catalog-qa-session.ts"
+        }
+      ],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B17 normal S16 S17 S21 and putaway surfaces retain bounded shared shell",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-20",
+        "routes": [
+          {
+            "route": "#/preview/S16",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Tra cứu tồn & đối soát"
+          },
+          {
+            "route": "#/preview/S17",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Phiếu đảo tồn kho"
+          },
+          {
+            "route": "#/preview/S21",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Tồn kho & Đối soát"
+          },
+          {
+            "route": "#/preview/S12",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Danh sách phiếu nhập"
+          },
+          {
+            "route": "#/preview/S14",
+            "width": 800,
+            "documentWidth": 800,
+            "head": "Lệnh xếp khay"
+          }
+        ],
+        "scope": "Fresh readonly normal-route smoke only; legacy transaction/recovery behavior remains separate."
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B14 locale/theme/deep-state bounded controls at400/800/1440",
+      "status": "PASS",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-21",
+        "profiles": [
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "list",
+            "heading": "Danh sách phiếu đảo",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "choose",
+            "heading": "Tạo phiếu đảo",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "edit",
+            "heading": "Sửa phiếu đảo nháp Nháp",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "vi",
+            "theme": "light",
+            "width": 400,
+            "view": "detail",
+            "heading": "Chi tiết phiếu đảo Đã ghi sổ",
+            "documentWidth": 400,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "list",
+            "heading": "Reversal slips",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "choose",
+            "heading": "Create reversal",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "edit",
+            "heading": "Edit reversal draft Draft",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "en",
+            "theme": "dark",
+            "width": 800,
+            "view": "detail",
+            "heading": "Reversal details Posted",
+            "documentWidth": 800,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "list",
+            "heading": "冲销单列表",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "choose",
+            "heading": "创建冲销单",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "edit",
+            "heading": "编辑冲销草稿 草稿",
+            "documentWidth": 1440,
+            "outside": []
+          },
+          {
+            "language": "zh-CN",
+            "theme": "light",
+            "width": 1440,
+            "view": "detail",
+            "heading": "冲销单详情 已过账",
+            "documentWidth": 1440,
+            "outside": []
+          }
+        ]
+      },
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    },
+    {
+      "name": "B15 normal session expiry removes protected recovery surface",
+      "status": "FAIL",
+      "error": "Error: page.evaluate: SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "observations": {
+        "scenario": "functional-mvtl1gf3-22"
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/repaired-browser/failure-22.png",
+      "canonicalBefore": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalAfter": "bce67ed78d47a35d26fbed133b4f1c70cb24da94ba7d00f3d013bead3a07b2ce",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Actual sanitized HTTP operations only. Local adapter dispatch/writes separately measured by independent model contracts."
+    }
+  ],
+  "errors": [
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES",
+    "console error: Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES"
+  ],
+  "blocked": [
+    "REAL_API generic partial inbound/outbound DTO and backend atomicity",
+    "Second authorized actor/role/warehouse account; live RBAC and revocation",
+    "Backend read-after-unknown receipt authentication/audit proof",
+    "Generic unit precision/rounding policy"
+  ],
+  "limits": "Fresh isolated fixture scenarios, normal existing login. Canonical state hash equality per case. No auth storage or request bodies persisted. Browser uses Chromium; Edge-specific browser not certified."
+}

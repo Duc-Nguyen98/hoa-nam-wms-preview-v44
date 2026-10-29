@@ -1,0 +1,173 @@
+{
+  "build": {
+    "release": "HN-B17-PUBLIC-CANDIDATE-20261024.2",
+    "sourceCommit": "71cfa02f96c51a17c188ac8a90fca558941d8638",
+    "sourceCommitEvidence": "git-head",
+    "importedSourceCommit": "d2547577f342402136f464d4cee3ff237f77bf99",
+    "baseBuildId": "5cc7a740e59009ac925899ff620c9ca8d2d7a01e843e83710b3847e073f5d3a0",
+    "buildId": "551357b4a3e3ff7448da0ebfc39a0cc5dfbed6263d1ed7cea9b293a512625def",
+    "mode": "MOCK",
+    "publicDemo": true,
+    "assets": [
+      {
+        "path": "assets/fonts/s01/AUTHORS.txt",
+        "sha256": "99978d8cc58182b32c413cbbc8b5a51e07ea99bc586b45bfd21a5c27c9445ab3",
+        "bytes": 349
+      },
+      {
+        "path": "assets/fonts/s01/FONT_PROVENANCE.json",
+        "sha256": "f6fd8e75225c94f67b6ae3a2614c7372fa5ee5e28a444e5c0558fbe0b84bf71c",
+        "bytes": 4921
+      },
+      {
+        "path": "assets/fonts/s01/LICENSE.md",
+        "sha256": "46bc7afe12c5689342e876d4beb5a768bcccafbd62bebab1d7d8c5fbc9417c4a",
+        "bytes": 6824
+      },
+      {
+        "path": "assets/fonts/s01/OFL.txt",
+        "sha256": "e0468b7b70bcf81a25f3f2347080e05514562380f54d998711fc356f0c8fda33",
+        "bytes": 4483
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Bold.woff2",
+        "sha256": "908322301d5d82f217d2819708c41e097528276b9e7296e0f7388c3a4e320c8c",
+        "bytes": 33664
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Medium.woff2",
+        "sha256": "26cedea8665bacddb7c2d9e22327cdfcfc00c517d1b9aef4c3e4dc54d792a1e4",
+        "bytes": 33676
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-Regular.woff2",
+        "sha256": "f3931c3c3ec5301043634ac8f39bcfa7b30d29181864f2fd0c3e6796feacc471",
+        "bytes": 33612
+      },
+      {
+        "path": "assets/fonts/s01/PublicSans-SemiBold.woff2",
+        "sha256": "f99ffc265cc790e0f058a9f430a465c88996008327abb0f8561cb713add40d73",
+        "bytes": 33636
+      },
+      {
+        "path": "assets/hoa-nam-xlsx-4YPyl83_.js",
+        "sha256": "7ee54383d4765087f3b6c7c753351d1004c599ec99282be30b8ddd5f5cb4f120",
+        "bytes": 18765
+      },
+      {
+        "path": "assets/index-Bm5bF4i4.js",
+        "sha256": "b9232190a2407d2b5a9a6a81c8db0daa6759e187b57b04e5292049d2add44182",
+        "bytes": 2367306
+      },
+      {
+        "path": "assets/index-D0XUoAcl.css",
+        "sha256": "82b6e026e1a7b771af9825546ab7421e6f8d9d6a1ac34a6fce6efc370def247b",
+        "bytes": 631539
+      },
+      {
+        "path": "assets/S07/bg_warehouse_main_4k_enhanced.jpg",
+        "sha256": "5444c04172cdc30a8497921b185f622bdbba71ba10d1eae898ab010df4ef49f1",
+        "bytes": 2651791
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "7fe05ed54b84e6ed5a1ea67f9c08170ae5f54facc917c324be4c478410b941ca",
+        "bytes": 203
+      },
+      {
+        "path": "index.html",
+        "sha256": "20df098aa996c8d6a5eb1e8dea3cc6d3d3d1dfa6fbb955a1b9a8b478287718e7",
+        "bytes": 911
+      },
+      {
+        "path": "release.html",
+        "sha256": "4038d39e7d93ea4c9cf614e0a4d5a7193cf0e9b5b69dbec4333657fcb8853e48",
+        "bytes": 2224
+      }
+    ]
+  },
+  "beforeSource": {
+    "src/app/App.tsx": "03324c498855a8cc79dbc00e10edd0b072d0b6bb158afbcbd984d3c721954a5c",
+    "src/features/S17/approved/adapter.ts": "2793cffdf0a99b61e85048e4ba37dd2bc88f480500a4aef27c7d4e604eac8610",
+    "src/features/S17/approved/ReversalDesignWorkspace.tsx": "3e405af6726e869880bf633648144c3ba3fa51c1647ca73280b5b4f2db5d6f38",
+    "src/features/S17/approved/presentation.ts": "cd4535738aeb5857e3f40f240ab9af310aa9a77851ad1f3b50f3dacc484b60e9",
+    "src/features/S17/approved/copy.ts": "982dd9bfb25e1d2f68a9b400e9f71702f38e8f9f6817c3e1ad4362d4350cfa72"
+  },
+  "checks": [
+    {
+      "name": "success document quantities are not presented as authoritative SKU stock balances",
+      "status": "FAIL",
+      "error": "Error: expect(received).not.toContain(expected) // indexOf\n\nExpected value: not \"Tồn trước\"\nReceived array:     [\"#\", \"Mã hàng\", \"Tên hàng\", \"Đơn vị\", \"Tồn trước\", \"Số lượng đảo\", \"Biến động\", \"Tồn sau\"]",
+      "observations": {
+        "headers": [
+          "#",
+          "Mã hàng",
+          "Tên hàng",
+          "Đơn vị",
+          "Tồn trước",
+          "Số lượng đảo",
+          "Biến động",
+          "Tồn sau"
+        ],
+        "cells": [
+          "1",
+          "HN-DRV-001",
+          "Bộ điều khiển động cơ",
+          "Cái",
+          "10",
+          "2",
+          "−2",
+          "8"
+        ],
+        "scope": "Line.original/prior/quantity supply document-chain arithmetic; there is no SKU stock reader or balance field in this adapter."
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-semantic/failure-1.png",
+      "canonicalBefore": "c06cd2e4ac021a837e3361ca8d874159b2d2ac6b07eb4171bff21f273f6a9937",
+      "canonicalAfter": "c06cd2e4ac021a837e3361ca8d874159b2d2ac6b07eb4171bff21f273f6a9937",
+      "canonicalUnchanged": true,
+      "transport": [],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    },
+    {
+      "name": "bounded mixed-unit fixture extension preserves provided unit and does not sum unlike units as pieces",
+      "status": "FAIL",
+      "error": "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 1\n\n  Array [\n    \"Cái\",\n-   \"Mét\",\n+   \"Cái\",\n  ]",
+      "observations": {
+        "provided": [
+          {
+            "sku": "HN-DRV-001",
+            "unit": "Cái",
+            "quantity": 2
+          },
+          {
+            "sku": "HN-PSU-002",
+            "unit": "Mét",
+            "quantity": 2
+          }
+        ],
+        "displayed": [
+          "Cái",
+          "Cái"
+        ],
+        "summary": "Số mặt hàng\n2 SKU\nTổng số lượng đảo\n4 Cái\nBiến động dự kiến khi ghi sổ\n−4 Cái\nTác động tồn hiện tại\n0 Cái",
+        "scope": "Bounded extension input beyond old Line DTO, which has no unit field. This exposes the new presentation requirement; it is not a valid live API payload or approved generic unit contract."
+      },
+      "screenshot": "docs/qa/reversal/HN-REVERSAL-FIDELITY-001/functional/baseline-semantic/failure-2.png",
+      "canonicalBefore": "c06cd2e4ac021a837e3361ca8d874159b2d2ac6b07eb4171bff21f273f6a9937",
+      "canonicalAfter": "c06cd2e4ac021a837e3361ca8d874159b2d2ac6b07eb4171bff21f273f6a9937",
+      "canonicalUnchanged": true,
+      "transport": [
+        {
+          "method": "GET",
+          "path": "/src/operations/operational-qa-session.ts"
+        },
+        {
+          "method": "GET",
+          "path": "/src/operations/catalog-qa-session.ts"
+        }
+      ],
+      "transportScope": "Sanitized actual HTTP operations requests only; design-adapter in-memory calls are not network POST telemetry."
+    }
+  ],
+  "errors": []
+}

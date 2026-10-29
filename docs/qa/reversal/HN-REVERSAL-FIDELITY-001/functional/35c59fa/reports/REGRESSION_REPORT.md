@@ -1,0 +1,23 @@
+# Regression report
+
+Frozen source35c59fa/build ee58fe43. [Independent functional receipt](../../../functional/35c59fa/FINAL_ACCEPTANCE.json) records28 fresh model passes and22 browser passes in one clean full run with zero console/page errors. Earlier a98b0357 cumulative receipts and raw unsuccessful harness attempts remain historical. No confirmed product failure remains in the executed scope.
+
+| Changed/preserved boundary | Fresh regression result |
+|---|---|
+| Dedicated durable fixture storage | Independent factories restore saved/posted records, UI selection and unknown intent. Missing/malformed storage and failed writes fail visibly without memory-success fallback. |
+| Status recovery | Repeated model status reads cause zero persistence writes or extra dispatch hooks. Separate acknowledgement changes metadata only; normal reload/reopen preserves original operation identity and inputs. |
+| Transaction concurrency | Shared backing CAS rejects stale save and simultaneous different-key posting; same-key replay consumes once. Browser same-scope tabs produce one receipt/revision increment. Backend semantics remain blocked. |
+| Stale scratch race introduced by durability | Independently proved before repair. Explicit base revision now prevents missing/stale scratch from overwriting acknowledged content; browser shows stale state and restores the winner on reload. |
+| R10 corruption guards | Infinite quantity, forged source relation, corrupt operation fingerprint/schema reject without replacing original test persistence. Source/SKU/unit identity guards remain; finite invalid drafts still receive normal field validation. |
+| Editable quantity lifecycle | Blank is serialized with finite marker, restores blank, suppresses projection, and corrects/saves normally. Invalid/excess quantity creates no operation/receipt. No fractional precision policy is inferred. |
+| Presentation semantics | Stock-like labels from document arithmetic replaced by document-qualified labels. Units group honestly; pending/cancelled/unknown values retain distinct meanings. Source fixture originals remain immutable. |
+| Earlier UI interactions | Search, DatePicker acceptance/validation, history, source relation/focus, pagination, required reason/quantity, per-SKU notes/error association,44px controls and header bindings remain exercised. |
+| Legacy operational paths | Normal S16, S17, S21, S12 and putaway S14 readonly shell smoke passes. Every test preserves canonical business state. No existing operational post/recovery command is called by the new fixture adapter. |
+| Shared/responsive behavior | Fresh bounded list/choose/edit/detail geometry at VI/light400, EN/dark800 and Chinese/light1440 passes. New list/impact ARIA snapshots preserve labels while decorative icons remain hidden; compact readonly fields retain values and actual source controls meet44px. Source custody includes shared shell/sidebar and S09 CSS. Full29-route and other historical results are not relabelled as current tests. |
+| Session/resource behavior | Fresh normal MOCK expiry hides protected module; actual workspace component read injection verifies loading/401/403/offline/error/empty/retry/not-found, and dedicated-storage read-failure injection blocks the module. |
+
+Integrity is measured directly: final browser before/after source maps match, all model file hashes match browser custody, and all22 final case executions have equal canonical hashes before/after. Canonical values themselves, account storage, tokens and credentials are not saved. The model backing is separate memory persistence; the browser backing is the opt-in fixture namespace scoped by confirmed session labels plus unique scenario. Labels are not production permissions.
+
+The earlier a98b0357 full attempt encountered development-module resource exhaustion and harness assumptions. Original failures/screenshots and its cumulative summary remain [archived](../../../functional/a98b035-FINAL_ACCEPTANCE.json). The corrected final35c59fa suite passes all22 cases together with zero console/page errors; no historical failure is hidden or relabelled.
+
+Not certified: real generic partial API/RBAC/backend concurrency or atomicity, real stock balance/availability, second-role denial/revocation, cross-actor in-flight session replacement, unknown reauthentication policy, precision/rounding, missing review-audit data, Edge-specific browser execution, full screen-reader testing and a complete viewport/zoom/locale Cartesian product. Existing whole-unused warranty return policy is preserved as a separate authority; fixture pass does not approve a new live DTO or BPD.

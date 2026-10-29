@@ -1,0 +1,11 @@
+# Independent final visual retest — 294c9d0
+
+**Verdict: PARTIAL.** All 36 AFTER captures were reviewed, and the targeted date and timeline styling repairs are visible. A residual Tablet 08 hierarchy difference and the missing authoritative review event remain in the [defect register](VISUAL_DEFECT_REGISTER.md). No new P1 was observed and exact-pixel approval is not established.
+
+Frozen source `294c9d0f4044eaea33972e49dd0ed7041f0ba150`, build `233db62c29e3875b9b361af55cf9ed48c31aa02f34d9e133ce9ffb2af7663a2b`; source and build were stable during capture. [Receipt](../after-294c9d0-receipt.json) records 36 successful cases, 36 matched reference hashes and registration. The [manifest](REFERENCE_MANIFEST.md) links 24 immutable reference PNGs to the 36 fresh BEFORE and 36 AFTER cases and their reference and true BEFORE/AFTER overlays/diffs; the [BEFORE/AFTER receipt](BEFORE_AFTER_RECEIPT.json) hashes all 144 derived images. [Gallery](GALLERY.md) provides nine contact sheets for all 36. Desktop 1920×1080 and 1440×900 use DPR 1; Tablet 800×1280 uses DPR 2. Normalized reference images are diagnostics only: reference PNG viewport, DPR and font conditions are not certified.
+
+Tablet 01 displays both dates in full. Tablet 08 has connected document trace and a three-entry marker timeline with natural-height tiles. Its total document height is 1694 CSS px, versus 1689 in 35c59fa and 1768 in a98b035; height alone does not measure fidelity. Additional summary boxes and separate audit/trace sections remain compared with the reference. Reference review/actor events cannot be inferred from the available data.
+
+Across the 36 captures, recorded document horizontal overflow, cell overflow flags, visible module controls below 44 CSS px, browser errors and failed requests were zero. These metrics are bounded to the captured fixture and do not replace accessibility or live integration testing. State 10 AFTER uses measured document-space crop origin; historical BEFORE state 10 lacks scroll position and its before/after overlay is flagged as unreliable. Scrolled full-page screenshots can reposition sticky shell elements; raw images remain available.
+
+States 11 and 12 use isolated local synthetic submissions and are not proof of production transaction atomicity or audit. Earlier stage artifacts and references remain unchanged.

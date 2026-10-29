@@ -1,0 +1,27 @@
+# Functional QA report
+
+Independent local MOCK verdict: **PASS within the tested scope** on source `294c9d0f4044eaea33972e49dd0ed7041f0ba150`, build `233db62c29e3875b9b361af55cf9ed48c31aa02f34d9e133ce9ffb2af7663a2b`. There are 28 fresh independent model PASS and 23 unique browser PASS:22 core cases plus B23. This is cumulative across a full22 PASS/one environment failure attempt and a fresh B16 PASS retest. **No single clean full-run claim on this source.** [Consolidated receipt](functional/FINAL_ACCEPTANCE.json), [full report](functional/RUN_REPORT.md), [full raw attempt](functional/294c9d0/browser/results.json), [bounded read-state retest](functional/294c9d0/readstates/results.json).
+
+The original nine baseline failures remain immutable. The independent R10 malformed-read defects are closed by retained corruption assertions in the28-case model run; the initial19 PASS/two FAIL receipt is preserved. R11's independently proved stale-scratch overwrite is closed by explicit base-version rejection, winner-preservation model assertions and normal-app B07 showing a stale PageState followed by acknowledged content after reload. [Historical R10](functional/durable-contracts/round1-results.json), [historical R11](functional/scratch-race-pre-repair.json), [repaired model](functional/294c9d0/model/results.json).
+
+| Acceptance area | Fresh evidence / scope |
+|---|---|
+| Unknown identity/input across list, reopen, refresh and tab closure | B01–B03; durable original key, same payload and one receipt; no extra model revision on status resolution |
+| Draft/source persistence and tab races | B04–B07; shared fixture scope admits one posting; stale scratch cannot silently adopt the current version |
+| Blank/invalid fields and per-SKU association | B08/B18; blank marker restores and can be corrected; invalid projection remains unavailable; model rejects nonpositive/nonfinite/excess posting |
+| Document quantities, counts, units | B09/B12; document-qualified labels, explicit all-record/filter labels and grouped unlike-unit presentation; actual stock and live unit DTO not invented |
+| Pending/cancelled/posting signs/history | B10; requested6/received0/available0, zero unposted impact, known-only cancellation history, inbound−/outbound+ and source-dialog focus relation |
+| Reads and resource states | B11/B16; dedicated storage failure blocks; injected loading/session/forbidden/offline/error/empty/retry and actual not-found rendering |
+| Search/date/history/pagination | B13/B19/B22; accepted query survives; invalid dates retain accepted rows; no-results clears;12-row extension paginates9/3 |
+| Creation/posting | B20; chosen011 source/current Vietnam creation date, saved notes/quantity and exact durable reviewed payload; success survives reload |
+| Controls and responsive/localized geometry | B14/B21;44px Tablet radio/number/source controls, native radio keyboard, single bindings and header/data-label alignment;12 VI/EN/Chinese deep profiles at400/800/1440. Fresh ARIA snapshots retain list/impact labels and hide decorative icons; compact readonly rows keep all seven values. |
+| Existing operations/shared shell/session | B17 normal S16/S17/S21/S12/S14 readonly smoke; B15 fresh normal MOCK expiry removes protected module |
+| Date breakpoint and timeline repair | B23: direct rendered span scrollWidth<=clientWidth in VI/EN/Chinese at600/759/760/800; all visible native controls >=44x44 and zero page overflow. Three known timeline events remain; no invented review event; source dialog returns focus. |
+
+Both current browser receipts have unchanged matching source hashes; model hashes match that browser custody. All 24 completed browser-case executions preserve their own before/after canonical business hash. Canonical hashes are compared within each execution, not across separately seeded authenticated contexts. Model tests use dedicated explicit memory backing and never open canonical/account stores. Runtime credentials and account storage were never persisted to evidence.
+
+The current full attempt recorded one development-module `ERR_INSUFFICIENT_RESOURCES` before B16's initial component could render. A fresh bounded B16 run passed all states/retry/not-found with zero errors. No source, locator or assertion was changed for this retest. Earlier35c59fa clean-run and a98b0357 cumulative results remain historical; none is relabelled as294c9d0. All raw failures and original baseline receipts remain intact.
+
+REAL_API generic partial inbound/outbound commands, backend atomicity/idempotency, trusted receipt identity, authoritative source permissions, second authorized normal actor/role tests and live RBAC are **BLOCKED**. Generic precision/rounding and missing view08 review-audit data are **MISSING**. No production stock command, auth bypass, canonical mutation, fabricated audit event or bridge to existing whole-unused warranty return was introduced. Browser runtime is Chromium; Edge-specific execution is not certified. Screen-reader testing, a full locale/theme/view Cartesian product, cross-actor in-flight session replacement and reauthentication recovery policy are NOT_RUN/BLOCKED rather than inferred passes.
+
+Root-owned build/typecheck/combined-unit receipts are separate validation and are not added to these independent28 model cases. Requested worker configuration is Sol High; actual runtime model telemetry is unverified. Browser cleanup completed and its lease was released before visual recapture.

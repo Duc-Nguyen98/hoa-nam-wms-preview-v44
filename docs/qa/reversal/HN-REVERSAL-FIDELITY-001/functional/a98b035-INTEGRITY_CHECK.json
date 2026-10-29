@@ -1,0 +1,22 @@
+{
+  "task": "HN-REVERSAL-FIDELITY-001",
+  "sourceCommit": "a98b0357b0e4738bd5236f935fc3e3adbe35576c",
+  "checkedAt": "2026-10-29T13:42:01.4869832Z",
+  "historicalBaselineReceipts": [
+    {
+      "path": "baseline-negative/results.json",
+      "expected": "dbc2c3c64f437722a5e8ebdb42db5fac5828f09cc4984f820eb7985cc51d89ab",
+      "actual": "dbc2c3c64f437722a5e8ebdb42db5fac5828f09cc4984f820eb7985cc51d89ab",
+      "unchanged": true
+    },
+    {
+      "path": "baseline-semantic/results.json",
+      "expected": "3534b46e3c370523de2d2db9c4dfac96099cf7d547a764e86308daef24ab34d0",
+      "actual": "3534b46e3c370523de2d2db9c4dfac96099cf7d547a764e86308daef24ab34d0",
+      "unchanged": true
+    }
+  ],
+  "allHistoricalBaselineReceiptsUnchanged": true,
+  "finalAcceptance": "FINAL_ACCEPTANCE.json",
+  "canonicalComparisons": "Equal before/after in all26 completed browser-case executions; no cross-context hash equality claim."
+}
