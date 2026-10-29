@@ -1,4 +1,6 @@
 export const reversalExtraCopy:Record<string,[string,string]>={
+ 'Tất cả phiếu':['All reversals','所有冲销单'],'Kết quả sau lọc':['Filtered results','筛选结果'],
+ 'Số lượng chứng từ trước đảo':['Document quantity before reversal','冲销前单据数量'],'Số lượng chứng từ còn lại':['Remaining document quantity','单据剩余数量'],'Chưa xác định đơn vị':['Unit unknown','单位未知'],
  'Tồn trước':['Stock before','变动前库存'],'Tồn sau':['Stock after','变动后库存'],
  'Tồn kho & Đối soát':['Inventory & reconciliation','库存与对账'],'Phiếu đảo':['Reversal','冲销单'],'Tra cứu giao dịch đảo và chứng từ gốc':['Search reversals and source documents','查询冲销交易和原始单据'],
  'Đảo nhập':['Inbound reversal','入库冲销'],'Đảo xuất':['Outbound reversal','出库冲销'],'Nhập kho':['Inbound','入库'],'Cái':['pcs','件'],'phiếu':['slips','单据'],
