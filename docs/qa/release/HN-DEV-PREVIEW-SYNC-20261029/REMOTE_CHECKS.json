@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-29T16:28:15.653Z",
+  "sourceCommit": "bbf8d33a57cc7f82d566a21bae639afc56968c6a",
+  "sites": {
+    "error": "SitesConnectorError: Sites project not found",
+    "error_code": "NOT_FOUND"
+  },
+  "commitRunsFiltered": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "workflow_runs": [
+        {
+          "id": 40907545919,
+          "name": "Hoa Nam quality gates",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 24,
+          "jobs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40907545919/jobs",
+          "logs_url": "https://api.github.com/repos/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40907545919/logs",
+          "workflow_id": 397560825
+        }
+      ]
+    },
+    "isError": false
+  },
+  "checks": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"headRevision\":\"bbf8d33a57cc7f82d566a21bae639afc56968c6a\",\"checks\":[{\"id\":123579833383,\"name\":\"visual-and-functional\",\"head_sha\":\"bbf8d33a57cc7f82d566a21bae639afc56968c6a\",\"status\":\"completed\",\"conclusion\":\"skipped\",\"details_url\":\"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40911339285/job/123579833383\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":0}},{\"id\":123579807582,\"name\":\"critical\",\"head_sha\":\"bbf8d33a57cc7f82d566a21bae639afc56968c6a\",\"status\":\"completed\",\"conclusion\":\"failure\",\"details_url\":\"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40911339285/job/123579807582\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2}},{\"id\":123566347286,\"name\":\"visual-and-functional\",\"head_sha\":\"bbf8d33a57cc7f82d566a21bae639afc56968c6a\",\"status\":\"completed\",\"conclusion\":\"skipped\",\"details_url\":\"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40907545919/job/123566347286\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":0}},{\"id\":123566319716,\"name\":\"critical\",\"head_sha\":\"bbf8d33a57cc7f82d566a21bae639afc56968c6a\",\"status\":\"completed\",\"conclusion\":\"failure\",\"details_url\":\"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40907545919/job/123566319716\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2}}],\"statuses\":[],\"annotations\":[],\"hasMore\":false,\"job\":null,\"jobs\":[],\"log\":null,\"logTruncated\":false}"
+      }
+    ],
+    "isError": false
+  },
+  "annotations": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"headRevision\":\"bbf8d33a57cc7f82d566a21bae639afc56968c6a\",\"checks\":[{\"id\":123579807582,\"name\":\"critical\",\"head_sha\":\"bbf8d33a57cc7f82d566a21bae639afc56968c6a\",\"status\":\"completed\",\"conclusion\":\"failure\",\"details_url\":\"https://github.com/Duc-Nguyen98/hoa-nam-wms-preview-v44/actions/runs/40911339285/job/123579807582\",\"output\":{\"title\":null,\"summary\":null,\"text\":null,\"annotations_count\":2}}],\"statuses\":[],\"annotations\":[{\"path\":\".github\",\"start_line\":1,\"end_line\":1,\"annotation_level\":\"failure\",\"message\":\"The job was not started because your account is locked due to a billing issue.\",\"title\":\"\",\"raw_details\":\"\"},{\"path\":\".github\",\"start_line\":1,\"end_line\":1,\"annotation_level\":\"notice\",\"message\":\"\\\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\\\"\",\"title\":\"\",\"raw_details\":\"\"}],\"hasMore\":false,\"job\":null,\"jobs\":[],\"log\":null,\"logTruncated\":false}"
+      }
+    ],
+    "isError": false
+  }
+}
