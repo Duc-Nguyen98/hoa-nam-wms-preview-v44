@@ -2,6 +2,13 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createReversalDesignAdapter, reversalImpact } from '../../src/features/S17/approved/adapter';
 
+test('new drafts use current Vietnam posting time rather than the reference fixture date',async()=>{
+ const a=createReversalDesignAdapter({now:()=>new Date('2026-10-29T08:45:00Z')});
+ const r=structuredClone(a.list().find(x=>x.id.endsWith('-007'))!);r.id='REV-20261029-101';r.created='2026-10-29T15:30';
+ assert.equal(a.save(r,a.version()),true);const result=await a.post(r,'new-draft',a.version());
+ assert.equal(result.kind,'confirmed');if(result.kind==='confirmed')assert.equal(result.postedAt,'29/10/2026 15:45');
+});
+
 test('availability excludes drafts/cancellations and returned copies cannot mutate sources',()=>{
  const a=createReversalDesignAdapter();const s=a.sources();const draft=s.find(r=>r.source==='PN-20261022-007')!;assert.equal(draft.lines.reduce((n,l)=>n+l.original-l.prior,0),20);const posted=s.find(r=>r.source==='PN-20261020-001')!;assert.equal(posted.lines.reduce((n,l)=>n+l.prior,0),45);draft.lines[0].original=0;assert.equal(a.sources().find(r=>r.source===draft.source)!.lines[0].original,10);
 });
